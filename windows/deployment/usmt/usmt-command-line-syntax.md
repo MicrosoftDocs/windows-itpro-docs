@@ -1,55 +1,23 @@
 ---
 title: User State Migration Tool (USMT) Command-line Syntax (Windows 10)
 description: Learn about the User State Migration Tool (USMT) command-line syntax for using the ScanState tool, LoadState tool, and UsmtUtils tool.
-ms.assetid: f9d205c9-e824-46c7-8d8b-d7e4b52fd514
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
-# User State Migration Tool (USMT) Command-line Syntax
+# User State Migration Tool (USMT) command-line syntax
 
+The User State Migration Tool (USMT) 10.0 migrates user files and settings during large deployments of Windows. To improve and simplify the migration process, USMT captures desktop, network, and application settings in addition to a user's files. USMT then migrates these items to a new Windows installation.
 
-The User State Migration Tool (USMT) 10.0 migrates user files and settings during large deployments of Windows. To improve and simplify the migration process, USMT captures desktop, network, and application settings in addition to a user's files. USMT then migrates these items to a new Windows installation.
+## In this Section
 
-## In This Section
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><a href="usmt-scanstate-syntax.md" data-raw-source="[ScanState Syntax](usmt-scanstate-syntax.md)">ScanState Syntax</a></p></td>
-<td align="left"><p>Lists the command-line options for using the ScanState tool.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="usmt-loadstate-syntax.md" data-raw-source="[LoadState Syntax](usmt-loadstate-syntax.md)">LoadState Syntax</a></p></td>
-<td align="left"><p>Lists the command-line options for using the LoadState tool.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><a href="usmt-utilities.md" data-raw-source="[UsmtUtils Syntax](usmt-utilities.md)">UsmtUtils Syntax</a></p></td>
-<td align="left"><p>Lists the command-line options for using the UsmtUtils tool.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+| Link | Description |
+|--- |--- |
+|[ScanState syntax](usmt-scanstate-syntax.md)|Lists the command-line options for using the ScanState tool.|
+|[LoadState syntax](usmt-loadstate-syntax.md)|Lists the command-line options for using the LoadState tool.|
+|[UsmtUtils syntax](usmt-utilities.md)|Lists the command-line options for using the UsmtUtils tool.|

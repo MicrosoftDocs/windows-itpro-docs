@@ -1,28 +1,16 @@
 ---
-title: Checklist Creating Inbound Firewall Rules (Windows 10)
+title: Checklist Creating Inbound Firewall Rules (Windows)
 description: Use these tasks for creating inbound firewall rules in your GPOs for Windows Defender Firewall with Advanced Security.
-ms.assetid: 0520e14e-5c82-48da-8fbf-87cef36ce02f
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Creating Inbound Firewall Rules
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 This checklist includes tasks for creating firewall rules in your GPOs.
 

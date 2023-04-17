@@ -1,28 +1,32 @@
 ---
-title: Tools to use with AppLocker (Windows 10)
+title: Tools to use with AppLocker (Windows)
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Tools to use with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 
@@ -44,7 +48,7 @@ The following tools can help you administer the application control policies cre
 
     You can edit an AppLocker policy by adding, changing, or removing rules by using the Group Policy Management Console (GPMC).
 
-    If you want additional features to manage AppLocker policies, such as version control, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack.
+    If you want more features to manage AppLocker policies, such as version control, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack.
 
 -   **Remote Server Administration Tools (RSAT)**
 
@@ -56,7 +60,7 @@ The following tools can help you administer the application control policies cre
 
 -   **AppLocker PowerShell cmdlets**
 
-    The AppLocker Windows PowerShell cmdlets are designed to streamline the administration of AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the Local Security Policy snap-in and the GPMC. For information about the cmdlets, see the [AppLocker PowerShell Command Reference](https://technet.microsoft.com/itpro/powershell/windows/applocker/applocker).
+    The AppLocker Windows PowerShell cmdlets are designed to streamline the administration of AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the Local Security Policy snap-in and the GPMC. For information about the cmdlets, see the [AppLocker PowerShell Command Reference](/powershell/module/applocker/).
 
 ## Related topics
 

@@ -1,18 +1,14 @@
 ---
 title: Windows 10, version 20H2, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 20H2.
-keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: gental-giant
-ms.author: v-hakima
-manager: robsize
-ms.collection: M365-security-compliance
-ms.topic: article
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.date: 12/17/2020
+ms.topic: reference
 ---
 # Windows 10, version 20H2, connection endpoints for non-Enterprise editions
 

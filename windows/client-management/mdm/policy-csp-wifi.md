@@ -1,449 +1,378 @@
 ---
-title: Policy CSP - Wifi
-description: Learn how the Policy CSP - Wifi setting allows or disallows the device to automatically connect to Wi-Fi hotspots.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Wifi Policy CSP
+description: Learn more about the Wifi Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Wifi-Begin -->
 # Policy CSP - Wifi
 
+<!-- Wifi-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Wifi-Editable-End -->
 
+<!-- AllowAutoConnectToWiFiSenseHotspots-Begin -->
+## AllowAutoConnectToWiFiSenseHotspots
 
-<hr/>
+<!-- AllowAutoConnectToWiFiSenseHotspots-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowAutoConnectToWiFiSenseHotspots-Applicability-End -->
 
-<!--Policies-->
-## Wifi policies  
+<!-- AllowAutoConnectToWiFiSenseHotspots-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowAutoConnectToWiFiSenseHotspots
+```
+<!-- AllowAutoConnectToWiFiSenseHotspots-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#wifi-allowwifihotspotreporting">WiFi/AllowWiFiHotSpotReporting</a>
-  </dd>
-  <dd>
-    <a href="#wifi-allowautoconnecttowifisensehotspots">Wifi/AllowAutoConnectToWiFiSenseHotspots</a>
-  </dd>
-  <dd>
-    <a href="#wifi-allowinternetsharing">Wifi/AllowInternetSharing</a>
-  </dd>
-  <dd>
-    <a href="#wifi-allowmanualwificonfiguration">Wifi/AllowManualWiFiConfiguration</a>
-  </dd>
-  <dd>
-    <a href="#wifi-allowwifi">Wifi/AllowWiFi</a>
-  </dd>
-  <dd>
-    <a href="#wifi-allowwifidirect">Wifi/AllowWiFiDirect</a>
-  </dd>
-  <dd>
-    <a href="#wifi-wlanscanmode">Wifi/WLANScanMode</a>
-  </dd>
-</dl>
+<!-- AllowAutoConnectToWiFiSenseHotspots-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether users can enable the following WLAN settings: "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services".
 
+"Connect to suggested open hotspots" enables Windows to automatically connect users to open hotspots it knows about by crowdsourcing networks that other people using Windows have connected to.
 
-<hr/>
+"Connect to networks shared by my contacts" enables Windows to automatically connect to networks that the user's contacts have shared with them, and enables users on this device to share networks with their contacts.
 
-<!--Policy-->
-<a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
+"Enable paid services" enables Windows to temporarily connect to open hotspots to determine if paid services are available.
 
-<hr/>
+- If this policy setting is disabled, both "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services" will be turned off and users on this device will be prevented from enabling them.
 
-<!--Description-->
-This policy has been deprecated.
+- If this policy setting is not configured or is enabled, users can choose to enable or disable either "Connect to suggested open hotspots" or "Connect to networks shared by my contacts".
+<!-- AllowAutoConnectToWiFiSenseHotspots-Description-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- AllowAutoConnectToWiFiSenseHotspots-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAutoConnectToWiFiSenseHotspots-Editable-End -->
 
-<hr/>
+<!-- AllowAutoConnectToWiFiSenseHotspots-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowAutoConnectToWiFiSenseHotspots-DFProperties-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowAutoConnectToWiFiSenseHotspots-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowAutoConnectToWiFiSenseHotspots-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowAutoConnectToWiFiSenseHotspots-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | WiFiSense |
+| Friendly Name | Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services |
+| Location | Computer Configuration |
+| Path | Network > WLAN Service > WLAN Settings |
+| Registry Key Name | Software\Microsoft\wcmsvc\wifinetworkmanager\config |
+| Registry Value Name | AutoConnectAllowedOEM |
+| ADMX File Name | wlansvc.admx |
+<!-- AllowAutoConnectToWiFiSenseHotspots-GpMapping-End -->
 
-<hr/>
+<!-- AllowAutoConnectToWiFiSenseHotspots-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAutoConnectToWiFiSenseHotspots-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allow or disallow the device to automatically connect to Wi-Fi hotspots.
+<!-- AllowAutoConnectToWiFiSenseHotspots-End -->
 
-Most restricted value is 0.
+<!-- AllowInternetSharing-Begin -->
+## AllowInternetSharing
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
--   GP name: *WiFiSense*
--   GP path: *Network/WLAN Service/WLAN Settings*
--   GP ADMX file name: *wlansvc.admx*
+<!-- AllowInternetSharing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowInternetSharing-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowInternetSharing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowInternetSharing
+```
+<!-- AllowInternetSharing-OmaUri-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowInternetSharing-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Determines whether administrators can enable and configure the Internet Connection Sharing (ICS) feature of an Internet connection and if the ICS service can run on the computer.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+ICS lets administrators configure their system as an Internet gateway for a small network and provides network services, such as name resolution and addressing through DHCP, to the local private network.
 
-<hr/>
+- If you enable this setting, ICS cannot be enabled or configured by administrators, and the ICS service cannot run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
 
-<!--Policy-->
-<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
+- If you disable this setting or do not configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional.)
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allow or disallow internet sharing.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
--   GP name: *NC_ShowSharedAccessUI*
--   GP path: *Network/Network Connections*
--   GP ADMX file name: *NetworkConnections.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Do not allow the use of Internet Sharing.
--   1 (default) – Allow the use of Internet Sharing.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
-
-Most restricted value is 0.
+By default, ICS is disabled when you create a remote access connection, but administrators can use the Advanced tab to enable it. When running the New Connection Wizard or Network Setup Wizard, administrators can choose to enable ICS.
 
 > [!NOTE]
-> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+> Internet Connection Sharing is only available when two or more network connections are present.
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+> [!NOTE]
+> When the "Prohibit access to properties of a LAN connection," "Ability to change properties of an all user remote access connection," or "Prohibit changing properties of a private remote access connection" settings are set to deny access to the Connection Properties dialog box, the Advanced tab for the connection is blocked.
 
--   0 – No Wi-Fi connection outside of MDM provisioned network is allowed.
--   1 (default) – Adding new network SSIDs beyond the already MDM provisioned ones is allowed.
+> [!NOTE]
+> Nonadministrators are already prohibited from configuring Internet Connection Sharing, regardless of this setting.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+> [!NOTE]
+> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Don't use hosted networks" check box.
+<!-- AllowInternetSharing-Description-End -->
 
-<hr/>
+<!-- AllowInternetSharing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowInternetSharing-Editable-End -->
 
-<!--Policy-->
-<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
+<!-- AllowInternetSharing-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowInternetSharing-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowInternetSharing-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowInternetSharing-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowInternetSharing-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NC_ShowSharedAccessUI |
+| Friendly Name | Prohibit use of Internet Connection Sharing on your DNS domain network |
+| Location | Computer Configuration |
+| Path | Network > Network Connections |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Network Connections |
+| Registry Value Name | NC_ShowSharedAccessUI |
+| ADMX File Name | NetworkConnections.admx |
+<!-- AllowInternetSharing-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allow or disallow WiFi connection.
+<!-- AllowInternetSharing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowInternetSharing-Examples-End -->
 
-Most restricted value is 0.
+<!-- AllowInternetSharing-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowManualWiFiConfiguration-Begin -->
+## AllowManualWiFiConfiguration
 
--   0 – WiFi connection is not allowed.
--   1 (default) – WiFi connection is allowed.
+<!-- AllowManualWiFiConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowManualWiFiConfiguration-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowManualWiFiConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowManualWiFiConfiguration
+```
+<!-- AllowManualWiFiConfiguration-OmaUri-End -->
 
-<hr/>
+<!-- AllowManualWiFiConfiguration-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0.
 
-<!--Policy-->
-<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
+> [!NOTE]
+> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+<!-- AllowManualWiFiConfiguration-Description-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+<!-- AllowManualWiFiConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowManualWiFiConfiguration-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowManualWiFiConfiguration-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowManualWiFiConfiguration-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowManualWiFiConfiguration-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | No Wi-Fi connection outside of MDM provisioned network is allowed. |
+| 1 (Default) | Adding new network SSIDs beyond the already MDM provisioned ones is allowed. |
+<!-- AllowManualWiFiConfiguration-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Allow WiFi Direct connection..
+<!-- AllowManualWiFiConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowManualWiFiConfiguration-Examples-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowManualWiFiConfiguration-End -->
 
-- 0 - WiFi Direct connection is not allowed.
-- 1 - WiFi Direct connection is allowed.
+<!-- AllowWiFi-Begin -->
+## AllowWiFi
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowWiFi-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowWiFi-Applicability-End -->
 
-<hr/>
+<!-- AllowWiFi-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowWiFi
+```
+<!-- AllowWiFi-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
+<!-- AllowWiFi-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy has been deprecated.
+<!-- AllowWiFi-Description-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowWiFi-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWiFi-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowWiFi-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWiFi-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowWiFi-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWiFi-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected.
+<!-- AllowWiFi-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWiFi-Examples-End -->
 
-Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency.
+<!-- AllowWiFi-End -->
 
-The default value is 0.
+<!-- AllowWiFiDirect-Begin -->
+## AllowWiFiDirect
 
-Supported operations are Add, Delete, Get, and Replace.
+<!-- AllowWiFiDirect-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowWiFiDirect-Applicability-End -->
 
-<!--/Description-->
-<!--/Policy-->
-<hr/>
+<!-- AllowWiFiDirect-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowWiFiDirect
+```
+<!-- AllowWiFiDirect-OmaUri-End -->
 
-Footnotes:
+<!-- AllowWiFiDirect-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow WiFi Direct connection. .
+<!-- AllowWiFiDirect-Description-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- AllowWiFiDirect-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWiFiDirect-Editable-End -->
 
-<!--/Policies-->
+<!-- AllowWiFiDirect-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWiFiDirect-DFProperties-End -->
+
+<!-- AllowWiFiDirect-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWiFiDirect-AllowedValues-End -->
+
+<!-- AllowWiFiDirect-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWiFiDirect-Examples-End -->
+
+<!-- AllowWiFiDirect-End -->
+
+<!-- WLANScanMode-Begin -->
+## WLANScanMode
+
+<!-- WLANScanMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- WLANScanMode-Applicability-End -->
+
+<!-- WLANScanMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/WLANScanMode
+```
+<!-- WLANScanMode-OmaUri-End -->
+
+<!-- WLANScanMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected. Supported values are 0-500, where 100 = normal scan frequency and 500 = low scan frequency. The default value is 0.
+<!-- WLANScanMode-Description-End -->
+
+<!-- WLANScanMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WLANScanMode-Editable-End -->
+
+<!-- WLANScanMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-500]` |
+| Default Value  | 0 |
+<!-- WLANScanMode-DFProperties-End -->
+
+<!-- WLANScanMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WLANScanMode-Examples-End -->
+
+<!-- WLANScanMode-End -->
+
+<!-- Wifi-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Wifi-CspMoreInfo-End -->
+
+<!-- Wifi-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

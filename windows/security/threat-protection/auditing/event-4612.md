@@ -2,23 +2,20 @@
 title: 4612(S) Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits. (Windows 10)
 description: Describes security event 4612(S) Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4612(S): Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event is generated when audit queues are filled and events must be discarded. This most commonly occurs when security events are being generated faster than they are being written to disk.

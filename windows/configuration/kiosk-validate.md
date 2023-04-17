@@ -1,18 +1,15 @@
 ---
-title: Validate kiosk configuration (Windows 10)
-description: In this article, learn what to expect on a multi-app kiosk in Windows 10 Pro, Enterprise, and Education.
-ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: dansimp
+title: Validate kiosk configuration (Windows 10/11)
+description: In this article, learn what to expect on a multi-app kiosk in Windows 10/11 Pro, Enterprise, and Education.
+ms.reviewer: sybruckm
+manager: aaroncz
+ms.author: lizlong
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
-ms.date: 07/30/2018
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Validate kiosk configuration
@@ -20,7 +17,8 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
+- Windows 11
 
 To identify the provisioning packages applied to a device, go to **Settings** > **Accounts** > **Access work or school**, and then click **Add or remove a provisioning package**. You should see a list of packages that were applied to the device.
 
@@ -49,7 +47,7 @@ When the assigned access user signs in, you should see a restricted Start experi
   - The user cannot pin additional tiles on the start.
 - Start hides **All Apps** list.
 - Start hides all the folders on Start (including File Explorer, Settings, Documents, Downloads, Music, Pictures, Videos, HomeGroup, Network, and Personal folders). 
-- Only **User** and **Power** buttons are available. (You can control whether to show the **User/Power** buttons using [existing policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start).) 
+- Only **User** and **Power** buttons are available. (You can control whether to show the **User/Power** buttons using [existing policies](/windows/client-management/mdm/policy-csp-start).) 
 - Start hides **Change account settings** option under **User** button.
 
 ### Taskbar changes
@@ -93,6 +91,4 @@ The multi-app mode removes options (e.g. **Change a password**, **Task Manager**
 
 ### Auto-trigger touch keyboard
 
-In the multi-app mode, the touch keyboard will be automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don’t need to configure any other setting to enforce this behavior. 
-
-
+In the multi-app mode, the touch keyboard will be automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don’t need to configure any other setting to enforce this behavior.

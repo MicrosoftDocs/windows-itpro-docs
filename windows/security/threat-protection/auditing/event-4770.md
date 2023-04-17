@@ -2,23 +2,20 @@
 title: 4770(S) A Kerberos service ticket was renewed. (Windows 10)
 description: Describes security event 4770(S) A Kerberos service ticket was renewed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4770(S): A Kerberos service ticket was renewed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4770.png" alt="Event 4770 illustration" width="449" height="524" hspace="10" align="left" />
@@ -148,8 +145,8 @@ The most common values:
 | 2     | Forwarded                | Indicates either that a TGT has been forwarded or that a ticket was issued from a forwarded TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 3     | Proxiable                | (TGT only). Tells the ticket-granting service that it can issue tickets with a network address that differs from the one in the TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 4     | Proxy                    | Indicates that the network address in the ticket is different from the one in the TGT used to obtain the ticket.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 5     | Allow-postdate           | Postdated tickets SHOULD NOT be supported in [KILE](https://msdn.microsoft.com/library/cc233855.aspx) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 6     | Postdated                | Postdated tickets SHOULD NOT be supported in [KILE](https://msdn.microsoft.com/library/cc233855.aspx) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 5     | Allow-postdate           | Postdated tickets SHOULD NOT be supported in [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 6     | Postdated                | Postdated tickets SHOULD NOT be supported in [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 7     | Invalid                  | This flag indicates that a ticket is invalid, and it must be validated by the KDC before use. Application servers must reject tickets which have this flag set.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | 8     | Renewable                | Used in combination with the End Time and Renew Till fields to cause tickets with long life spans to be renewed at the KDC periodically.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | 9     | Initial                  | Indicates that a ticket was issued using the authentication service (AS) exchange and not issued based on a TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -185,4 +182,3 @@ The most common values:
 For 4770(S): A Kerberos service ticket was renewed.
 
 -   This event typically has informational only purpose.
-

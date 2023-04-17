@@ -1,26 +1,17 @@
 ---
-title: Configure the Rules to Require Encryption (Windows 10)
-description: Learn how to configure rules to add encryption algorithms and delete the algorithm combinations that do not use encryption for zones that require encryption.
-ms.assetid: 07b7760f-3225-4b4b-b418-51787b0972a0
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+title: Configure the Rules to Require Encryption (Windows)
+description: Learn how to configure rules to add encryption algorithms and delete the algorithm combinations that don't use encryption for zones that require encryption.
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Configure the Rules to Require Encryption
 
-If you are creating a zone that requires encryption, you must configure the rules to add the encryption algorithms and delete the algorithm combinations that do not use encryption.
+If you're creating a zone that requires encryption, you must configure the rules to add the encryption algorithms and delete the algorithm combinations that don't use encryption.
 
 **Administrative credentials**
 
@@ -46,9 +37,9 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 9. Click **Require encryption for all connection security rules that use these settings**.
 
-   This disables the data integrity rules section. Make sure the **Data integrity and encryption** list contains all of the combinations that your client devices will use to connect to members of the encryption zone. The client devices receive their rules through the GPO for the zone to which they reside. You must make sure that those rules contain at least one of the data integrity and encryption algorithms that are configured in this rule, or the client devices in that zone will not be able to connect to devices in this zone.
+   This setting disables the data integrity rules section. Ensure the **Data integrity and encryption** list contains all of the combinations that your client devices will use to connect to members of the encryption zone. The client devices receive their rules through the GPO for the zone to which they reside. You must make sure that those rules contain at least one of the data integrity and encryption algorithms that are configured in this rule, or the client devices in that zone won't be able to connect to devices in this zone.
 
-10. If you need to add an algorithm combination, click **Add**, and then select the combination of encryption and integrity algorithms. The options are described in [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings.md).
+10. If you need to add an algorithm combination, click **Add** and then select the combination of encryption and integrity algorithms. The options are described in [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings.md).
 
     **Note**  
     Not all of the algorithms available in Windows 8 or Windows Server 2012 and later can be selected in the Windows Defender Firewall with Advanced Security user interface. To select them, you can use Windows PowerShell.
@@ -57,6 +48,6 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
     For more info, see [Windows Defender Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
 
-11. During negotiation, algorithm combinations are proposed in the order shown in the list. Make sure that the more secure combinations are at the top of the list so that the negotiating devices select the most secure combination that they can jointly support.
+11. During negotiation, algorithm combinations are proposed in the order shown in the list. Ensure that the more secure combinations are at the top of the list so that the negotiating devices select the most secure combination that they can jointly support.
 
 12. Click **OK** three times to save your changes.

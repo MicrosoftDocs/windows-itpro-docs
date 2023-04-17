@@ -1,30 +1,23 @@
 ---
-title: VPN security features (Windows 10)
+title: VPN security features
 description: Learn about security features for VPN, including LockDown VPN, Windows Information Protection integration with VPN, and traffic filters.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
-ms.localizationpriority: medium
-ms.date: 07/27/2017
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+ms.date: 07/21/2022
+ms.topic: conceptual
 ---
 
 # VPN security features
 
-**Applies to**
-- Windows 10
-- Windows 10 Mobile
+## Hyper-V based containers and VPN
 
+Windows supports different kinds of Hyper-V based containers. This support includes, but isn't limited to, Microsoft Defender Application Guard and Windows Sandbox. When you use 3rd party VPN solutions, these Hyper-V based containers may not be able to seamlessly connect to the internet. Additional configurational changes might be needed to resolve connectivity issues.
+
+For example, for more information on a workaround for Cisco AnyConnect VPN, see [Cisco AnyConnect Secure Mobility Client Administrator Guide: Connectivity issues with VM-based subsystems](https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/anyconnect410/administration/guide/b-anyconnect-admin-guide-4-10/troubleshoot-anyconnect.html#Cisco_Task_in_List_GUI.dita_3a9a8101-f034-4e9b-b24a-486ee47b5e9f).
 
 ## Windows Information Protection (WIP) integration with VPN
 
 Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices, without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
 
-The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
+The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 or Windows 11 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
 
 - Core functionality: File encryption and file access blocking
 - UX policy enforcement: Restricting copy/paste, drag/drop, and sharing operations
@@ -55,11 +48,11 @@ For example, an admin could define rules that specify:
 
 ## Configure traffic filters
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) for XML configuration.
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp) for XML configuration.
 
 The following image shows the interface to configure traffic rules in a VPN Profile configuration policy, using Microsoft Intune.
 
-![Add a traffic rule](images/vpn-traffic-rules.png)
+![Add a traffic rule.](images/vpn-traffic-rules.png)
 
 
 ## LockDown VPN

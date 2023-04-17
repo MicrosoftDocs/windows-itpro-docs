@@ -1,179 +1,129 @@
 ---
-title: Policy CSP - Cryptography
-description: Learn how to use the Policy CSP - Cryptography setting to allow or disallow the Federal Information Processing Standard (FIPS) policy.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Cryptography Policy CSP
+description: Learn more about the Cryptography Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Cryptography-Begin -->
 # Policy CSP - Cryptography
 
+<!-- Cryptography-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Cryptography-Editable-End -->
 
+<!-- AllowFipsAlgorithmPolicy-Begin -->
+## AllowFipsAlgorithmPolicy
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowFipsAlgorithmPolicy-Applicability-End -->
 
-<!--Policies-->
-## Cryptography policies  
+<!-- AllowFipsAlgorithmPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/AllowFipsAlgorithmPolicy
+```
+<!-- AllowFipsAlgorithmPolicy-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
-  </dd>
-  <dd>
-    <a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowFipsAlgorithmPolicy-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows or disallows the Federal Information Processing Standard (FIPS) policy.
+<!-- AllowFipsAlgorithmPolicy-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+<!-- AllowFipsAlgorithmPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFipsAlgorithmPolicy-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowFipsAlgorithmPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 (default) – Not allowed.
--   1– Allowed.
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowFipsAlgorithmPolicy-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowFipsAlgorithmPolicy-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 1 | Allow. |
+| 0 (Default) | Block. |
+<!-- AllowFipsAlgorithmPolicy-AllowedValues-End -->
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
+| Name | Value |
+|:--|:--|
+| Name | System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- AllowFipsAlgorithmPolicy-GpMapping-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowFipsAlgorithmPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFipsAlgorithmPolicy-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TLSCipherSuites-Begin -->
+## TLSCipherSuites
 
-> [!div class = "checklist"]
-> * Device
+<!-- TLSCipherSuites-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- TLSCipherSuites-Applicability-End -->
 
-<hr/>
+<!-- TLSCipherSuites-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/TLSCipherSuites
+```
+<!-- TLSCipherSuites-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TLSCipherSuites-Description-Begin -->
+<!-- Description-Source-DDF -->
 Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
+<!-- TLSCipherSuites-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
+<!-- TLSCipherSuites-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TLSCipherSuites-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- TLSCipherSuites-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- TLSCipherSuites-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- TLSCipherSuites-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TLSCipherSuites-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- TLSCipherSuites-End -->
 
-Footnotes:
+<!-- Cryptography-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Cryptography-CspMoreInfo-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- Cryptography-End -->
 
-<!--/Policies-->
+## Related articles
 
+[Policy configuration service provider](policy-configuration-service-provider.md)

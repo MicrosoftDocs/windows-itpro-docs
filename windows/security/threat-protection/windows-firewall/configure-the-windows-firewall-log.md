@@ -1,28 +1,16 @@
 ---
-title: Configure the Windows Defender Firewall Log (Windows 10)
+title: Configure the Windows Defender Firewall Log (Windows)
 description: Learn how to configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections by using Group Policy Management MMC.
-ms.assetid: f037113d-506b-44d3-b9c0-0b79d03e7d18
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Configure the Windows Defender Firewall with Advanced Security Log
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 To configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in.
 
@@ -42,11 +30,11 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     2.  Under **Logging**, click **Customize**.
 
-    3.  The default path for the log is **%windir%\\system32\\logfiles\\firewall\\pfirewall.log**. If you want to change this, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location.
+    3.  The default path for the log is **%windir%\\system32\\logfiles\\firewall\\pfirewall.log**. If you want to change this path, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location.
 
         >**Important:**  The location you specify must have permissions assigned that permit the Windows Defender Firewall service to write to the log file.
 
-    4.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file will not grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
+    4.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
 
     5.  No logging occurs until you set one of following two options:
 
@@ -57,4 +45,4 @@ To complete these procedures, you must be a member of the Domain Administrators 
     6.  Click **OK** twice.
 
 ### Troubleshooting Slow Log Ingestion
-If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this will result in more resource usage due to the increased resource usage for log rotation. 
+If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation. 

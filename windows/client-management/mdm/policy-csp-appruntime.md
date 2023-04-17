@@ -1,114 +1,96 @@
 ---
-title: Policy CSP - AppRuntime
-description: Learn how the Policy CSP - AppRuntime setting controls whether Microsoft accounts are optional for Windows Store apps that require an account to sign in.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: AppRuntime Policy CSP
+description: Learn more about the AppRuntime Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- AppRuntime-Begin -->
 # Policy CSP - AppRuntime
 
-
-
-<hr/>
-
-<!--Policies-->
-## AppRuntime policies  
-
-<dl>
-  <dd>
-    <a href="#appruntime-allowmicrosoftaccountstobeoptional">AppRuntime/AllowMicrosoftAccountsToBeOptional</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="appruntime-allowmicrosoftaccountstobeoptional"></a>**AppRuntime/AllowMicrosoftAccountsToBeOptional**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it.
-
-If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.
-
-If you disable or do not configure this policy setting, users will need to sign in with a Microsoft account.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow Microsoft accounts to be optional*
--   GP name: *AppxRuntimeMicrosoftAccountsOptional*
--   GP path: *Windows Components/App runtime*
--   GP ADMX file name: *AppXRuntime.admx*
+<!-- AppRuntime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppRuntime-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AllowMicrosoftAccountsToBeOptional-Begin -->
+## AllowMicrosoftAccountsToBeOptional
 
-Footnotes:
+<!-- AllowMicrosoftAccountsToBeOptional-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowMicrosoftAccountsToBeOptional-Applicability-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- AllowMicrosoftAccountsToBeOptional-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppRuntime/AllowMicrosoftAccountsToBeOptional
+```
+<!-- AllowMicrosoftAccountsToBeOptional-OmaUri-End -->
 
-<!--/Policies-->
+<!-- AllowMicrosoftAccountsToBeOptional-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it.
 
+- If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.
+
+- If you disable or do not configure this policy setting, users will need to sign in with a Microsoft account.
+<!-- AllowMicrosoftAccountsToBeOptional-Description-End -->
+
+<!-- AllowMicrosoftAccountsToBeOptional-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowMicrosoftAccountsToBeOptional-Editable-End -->
+
+<!-- AllowMicrosoftAccountsToBeOptional-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowMicrosoftAccountsToBeOptional-DFProperties-End -->
+
+<!-- AllowMicrosoftAccountsToBeOptional-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AppxRuntimeMicrosoftAccountsOptional |
+| Friendly Name | Allow Microsoft accounts to be optional |
+| Location | Computer Configuration |
+| Path | Windows Components > App runtime |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | MSAOptional |
+| ADMX File Name | AppXRuntime.admx |
+<!-- AllowMicrosoftAccountsToBeOptional-AdmxBacked-End -->
+
+<!-- AllowMicrosoftAccountsToBeOptional-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowMicrosoftAccountsToBeOptional-Examples-End -->
+
+<!-- AllowMicrosoftAccountsToBeOptional-End -->
+
+<!-- AppRuntime-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- AppRuntime-CspMoreInfo-End -->
+
+<!-- AppRuntime-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

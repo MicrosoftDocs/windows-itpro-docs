@@ -2,23 +2,20 @@
 title: 4691(S) Indirect access to an object was requested. (Windows 10)
 description: Describes security event 4691(S) Indirect access to an object was requested.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4691(S): Indirect access to an object was requested.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4691.png" alt="Event 4691 illustration" width="485" height="515" hspace="10" align="left" />
@@ -29,7 +26,7 @@ ms.technology: mde
 
 This event indicates that indirect access to an object was requested.
 
-These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/windows/desktop/aa964738(v=vs.85).aspx) access request actions.
+These events are generated for [ALPC Ports](/windows/win32/etw/alpc) access request actions.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -93,7 +90,7 @@ These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/w
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -129,13 +126,12 @@ These events are generated for [ALPC Ports](https://msdn.microsoft.com/library/w
 
 **Access Request Information:**
 
--   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. “Table 13. File access codes.” contains information about the most common access rights for file system objects. For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
+-   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes) contains information about the most common access rights for file system objects. For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
 
--   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. See “Table 13. File access codes.” for more information about file access rights. For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
+-   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. For more information about file access rights, see [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes). For information about ALPC ports access rights, use <https://technet.microsoft.com/> or other informational resources.
 
 ## Security Monitoring Recommendations
 
 For 4691(S): Indirect access to an object was requested.
 
 -   Typically this event has little to no security relevance and is hard to parse or analyze. There is no recommendation for this event, unless you know exactly what you need to monitor with ALPC Ports.
-

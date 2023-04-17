@@ -1,94 +1,80 @@
 ---
-title: Policy CSP - TaskScheduler
-description: Learn how to use the Policy CSP - TaskScheduler setting to determine whether the specific task is enabled (1) or disabled (0).
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: TaskScheduler Policy CSP
+description: Learn more about the TaskScheduler Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- TaskScheduler-Begin -->
 # Policy CSP - TaskScheduler
 
+<!-- TaskScheduler-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskScheduler-Editable-End -->
 
+<!-- EnableXboxGameSaveTask-Begin -->
+## EnableXboxGameSaveTask
 
-<hr/>
+<!-- EnableXboxGameSaveTask-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableXboxGameSaveTask-Applicability-End -->
 
-<!--Policies-->
-## TaskScheduler policies  
+<!-- EnableXboxGameSaveTask-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/TaskScheduler/EnableXboxGameSaveTask
+```
+<!-- EnableXboxGameSaveTask-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#taskscheduler-enablexboxgamesavetask">TaskScheduler/EnableXboxGameSaveTask</a>
-  </dd>
-</dl>
+<!-- EnableXboxGameSaveTask-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting determines whether the specific task is enabled (1) or disabled (0). Default: Enabled.
+<!-- EnableXboxGameSaveTask-Description-End -->
 
+<!-- EnableXboxGameSaveTask-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableXboxGameSaveTask-Editable-End -->
 
-<hr/>
+<!-- EnableXboxGameSaveTask-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="taskscheduler-enablexboxgamesavetask"></a>**TaskScheduler/EnableXboxGameSaveTask**  
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableXboxGameSaveTask-DFProperties-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+<!-- EnableXboxGameSaveTask-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableXboxGameSaveTask-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableXboxGameSaveTask-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableXboxGameSaveTask-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableXboxGameSaveTask-End -->
 
-<hr/>
+<!-- TaskScheduler-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- TaskScheduler-CspMoreInfo-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1803. This setting determines whether the specific task is enabled (1) or disabled (0). Default: Disabled.
+<!-- TaskScheduler-End -->
 
-<!--/Description-->
-<!--/Policy-->
-<hr/>
+## Related articles
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

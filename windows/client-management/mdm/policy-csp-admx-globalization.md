@@ -1,1896 +1,1617 @@
 ---
-title: Policy CSP - ADMX_Globalization
-description: Policy CSP - ADMX_Globalization
-ms.author: dansimp
+title: ADMX_Globalization Policy CSP
+description: Learn more about the ADMX_Globalization Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 12/14/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Globalization-Begin -->
 # Policy CSP - ADMX_Globalization
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_Globalization policies  
-
-<dl>
-  <dd>
-    <a href="#admx-globalization-blockuserinputmethodsforsignin">ADMX_Globalization/BlockUserInputMethodsForSignIn</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-customlocalesnoselect-1">ADMX_Globalization/CustomLocalesNoSelect_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-customlocalesnoselect-2">ADMX_Globalization/CustomLocalesNoSelect_2</a>
-  </dd>
-    <dd>
-    <a href="#admx-globalization-hideadminoptions">ADMX_Globalization/HideAdminOptions</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-hidecurrentlocation">ADMX_Globalization/HideCurrentLocation</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-hidelanguageselection">ADMX_Globalization/HideLanguageSelection</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-hidelocaleselectandcustomize">ADMX_Globalization/HideLocaleSelectAndCustomize</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-implicitdatacollectionoff-1">ADMX_Globalization/ImplicitDataCollectionOff_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-implicitdatacollectionoff-2">ADMX_Globalization/ImplicitDataCollectionOff_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-localesystemrestrict">ADMX_Globalization/LocaleSystemRestrict</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-localeuserrestrict-1">ADMX_Globalization/LocaleUserRestrict_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-localeuserrestrict-2">ADMX_Globalization/LocaleUserRestrict_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-lockmachineuilanguage">ADMX_Globalization/LockMachineUILanguage</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-lockuseruilanguage">ADMX_Globalization/LockUserUILanguage</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-preventgeoidchange-1">ADMX_Globalization/PreventGeoIdChange_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-preventgeoidchange-2">ADMX_Globalization/PreventGeoIdChange_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-preventuseroverrides-1">ADMX_Globalization/PreventUserOverrides_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-preventuseroverrides-2">ADMX_Globalization/PreventUserOverrides_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-restrictuilangselect">ADMX_Globalization/RestrictUILangSelect</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-turnoffautocorrectmisspelledwords">ADMX_Globalization/TurnOffAutocorrectMisspelledWords</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-turnoffhighlightmisspelledwords">ADMX_Globalization/TurnOffHighlightMisspelledWords</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-turnoffinsertspace">ADMX_Globalization/TurnOffInsertSpace</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-turnoffoffertextpredictions">ADMX_Globalization/TurnOffOfferTextPredictions</a>
-  </dd>
-  <dd>
-    <a href="#admx-globalization-y2k">ADMX_Globalization/Y2K</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-globalization-blockuserinputmethodsforsignin"></a>**ADMX_Globalization/BlockUserInputMethodsForSignIn**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
-
-Note this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
-
-If the policy is Enabled, then the user will get input methods enabled for the system account on the sign-in page.
-
-If the policy is Disabled or Not Configured, then the user will be able to use input methods enabled for their user account on the sign-in page.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow copying of user input methods to the system account for sign-in*
--   GP name: *BlockUserInputMethodsForSignIn*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+<!-- ADMX_Globalization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Globalization-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- BlockUserInputMethodsForSignIn-Begin -->
+## BlockUserInputMethodsForSignIn
 
-<!--Policy-->
-<a href="" id="admx-globalization-customlocalesnoselect-1"></a>**ADMX_Globalization/CustomLocalesNoSelect_1**  
+<!-- BlockUserInputMethodsForSignIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- BlockUserInputMethodsForSignIn-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- BlockUserInputMethodsForSignIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/BlockUserInputMethodsForSignIn
+```
+<!-- BlockUserInputMethodsForSignIn-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- BlockUserInputMethodsForSignIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**Note** this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
 
-> [!div class = "checklist"]
-> * User
+- If the policy is enabled, then the user will get input methods enabled for the system account on the sign-in page.
 
-<hr/>
+- If the policy is disabled or Not Configured, then the user will be able to use input methods enabled for their user account on the sign-in page.
+<!-- BlockUserInputMethodsForSignIn-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
+<!-- BlockUserInputMethodsForSignIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- BlockUserInputMethodsForSignIn-Editable-End -->
+
+<!-- BlockUserInputMethodsForSignIn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- BlockUserInputMethodsForSignIn-DFProperties-End -->
+
+<!-- BlockUserInputMethodsForSignIn-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | BlockUserInputMethodsForSignIn |
+| Friendly Name | Disallow copying of user input methods to the system account for sign-in |
+| Location | Computer Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | BlockUserInputMethodsForSignIn |
+| ADMX File Name | Globalization.admx |
+<!-- BlockUserInputMethodsForSignIn-AdmxBacked-End -->
+
+<!-- BlockUserInputMethodsForSignIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BlockUserInputMethodsForSignIn-Examples-End -->
+
+<!-- BlockUserInputMethodsForSignIn-End -->
+
+<!-- CustomLocalesNoSelect_1-Begin -->
+## CustomLocalesNoSelect_1
+
+<!-- CustomLocalesNoSelect_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomLocalesNoSelect_1-Applicability-End -->
+
+<!-- CustomLocalesNoSelect_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/CustomLocalesNoSelect_1
+```
+<!-- CustomLocalesNoSelect_1-OmaUri-End -->
+
+<!-- CustomLocalesNoSelect_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
 This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
 The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting is not configured.
 
-If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
+- If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
 
-If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
+- If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
 
-If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting. If this policy setting is disabled at the machine level, the per-user policy setting will be ignored. If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
+- If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
+- If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
+- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
+<!-- CustomLocalesNoSelect_1-Description-End -->
 
-<!--/Description-->
+<!-- CustomLocalesNoSelect_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomLocalesNoSelect_1-Editable-End -->
+
+<!-- CustomLocalesNoSelect_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomLocalesNoSelect_1-DFProperties-End -->
+
+<!-- CustomLocalesNoSelect_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow selection of Custom Locales*
--   GP name: *CustomLocalesNoSelect_1*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | CustomLocalesNoSelect_1 |
+| Friendly Name | Disallow selection of Custom Locales |
+| Location | User Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | CustomLocalesNoSelect |
+| ADMX File Name | Globalization.admx |
+<!-- CustomLocalesNoSelect_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-customlocalesnoselect-2"></a>**ADMX_Globalization/CustomLocalesNoSelect_2**  
+<!-- CustomLocalesNoSelect_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomLocalesNoSelect_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- CustomLocalesNoSelect_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomLocalesNoSelect_2-Begin -->
+## CustomLocalesNoSelect_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomLocalesNoSelect_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomLocalesNoSelect_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CustomLocalesNoSelect_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/CustomLocalesNoSelect_2
+```
+<!-- CustomLocalesNoSelect_2-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
+<!-- CustomLocalesNoSelect_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
 This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
 The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting is not configured.
 
-If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
+- If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
 
-If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
+- If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
 
-If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting. If this policy setting is disabled at the machine level, the per-user policy setting will be ignored. If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
+- If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
+- If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
+- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
+<!-- CustomLocalesNoSelect_2-Description-End -->
 
-<!--/Description-->
+<!-- CustomLocalesNoSelect_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomLocalesNoSelect_2-Editable-End -->
+
+<!-- CustomLocalesNoSelect_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomLocalesNoSelect_2-DFProperties-End -->
+
+<!-- CustomLocalesNoSelect_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow selection of Custom Locales*
--   GP name: *CustomLocalesNoSelect_2*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | CustomLocalesNoSelect_2 |
+| Friendly Name | Disallow selection of Custom Locales |
+| Location | Computer Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | CustomLocalesNoSelect |
+| ADMX File Name | Globalization.admx |
+<!-- CustomLocalesNoSelect_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-hideadminoptions"></a>**ADMX_Globalization/HideAdminOptions**  
+<!-- CustomLocalesNoSelect_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomLocalesNoSelect_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- CustomLocalesNoSelect_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideAdminOptions-Begin -->
+## HideAdminOptions
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideAdminOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideAdminOptions-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideAdminOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/HideAdminOptions
+```
+<!-- HideAdminOptions-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Administrative options from the Region settings control panel.
-
-Administrative options include interfaces for setting system locale and copying settings to the default user. This policy setting does not, however, prevent an administrator or another application from changing these values programmatically.
+<!-- HideAdminOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes the Administrative options from the Region settings control panel. Administrative options include interfaces for setting system locale and copying settings to the default user. This policy setting does not, however, prevent an administrator or another application from changing these values programmatically.
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-If you enable this policy setting, the user cannot see the Administrative options.
+- If you enable this policy setting, the user cannot see the Administrative options.
 
-If you disable or do not configure this policy setting, the user can see the Administrative options.
+- If you disable or do not configure this policy setting, the user can see the Administrative options.
 
 > [!NOTE]
 > Even if a user can see the Administrative options, other policies may prevent them from modifying the values.
+<!-- HideAdminOptions-Description-End -->
 
+<!-- HideAdminOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideAdminOptions-Editable-End -->
 
-<!--/Description-->
+<!-- HideAdminOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideAdminOptions-DFProperties-End -->
+
+<!-- HideAdminOptions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide Regional and Language Options administrative options*
--   GP name: *HideAdminOptions*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideAdminOptions |
+| Friendly Name | Hide Regional and Language Options administrative options |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | HideAdminOptions |
+| ADMX File Name | Globalization.admx |
+<!-- HideAdminOptions-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-hidecurrentlocation"></a>**ADMX_Globalization/HideCurrentLocation**  
+<!-- HideAdminOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideAdminOptions-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideAdminOptions-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideCurrentLocation-Begin -->
+## HideCurrentLocation
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideCurrentLocation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideCurrentLocation-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideCurrentLocation-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/HideCurrentLocation
+```
+<!-- HideCurrentLocation-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the option to change the user's geographical location (GeoID) from the Region settings control panel.
+<!-- HideCurrentLocation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes the option to change the user's geographical location (GeoID) from the Region settings control panel.
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-If you enable this policy setting, the user does not see the option to change the GeoID. This does not prevent the user or an application from changing the GeoID programmatically.
+- If you enable this policy setting, the user does not see the option to change the GeoID. This does not prevent the user or an application from changing the GeoID programmatically.
 
-If you disable or do not configure this policy setting, the user sees the option for changing the user location (GeoID).
+- If you disable or do not configure this policy setting, the user sees the option for changing the user location (GeoID).
 
 > [!NOTE]
 > Even if a user can see the GeoID option, the "Disallow changing of geographical location" option can prevent them from actually changing their current geographical location.
+<!-- HideCurrentLocation-Description-End -->
 
-<!--/Description-->
+<!-- HideCurrentLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideCurrentLocation-Editable-End -->
+
+<!-- HideCurrentLocation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideCurrentLocation-DFProperties-End -->
+
+<!-- HideCurrentLocation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide the geographic location option*
--   GP name: *HideCurrentLocation*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideCurrentLocation |
+| Friendly Name | Hide the geographic location option |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | HideCurrentLocation |
+| ADMX File Name | Globalization.admx |
+<!-- HideCurrentLocation-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-hidelanguageselection"></a>**ADMX_Globalization/HideLanguageSelection**  
+<!-- HideCurrentLocation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideCurrentLocation-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideCurrentLocation-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideLanguageSelection-Begin -->
+## HideLanguageSelection
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideLanguageSelection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideLanguageSelection-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideLanguageSelection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/HideLanguageSelection
+```
+<!-- HideLanguageSelection-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the option to change the user's menus and dialogs (UI) language from the Language and Regional Options control panel.
+<!-- HideLanguageSelection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes the option to change the user's menus and dialogs (UI) language from the Language and Regional Options control panel.
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-If you enable this policy setting, the user does not see the option for changing the UI language. This does not prevent the user or an application from changing the UI language programmatically.  If you disable or do not configure this policy setting, the user sees the option for changing the UI language.
+- If you enable this policy setting, the user does not see the option for changing the UI language. This does not prevent the user or an application from changing the UI language programmatically.
+
+- If you disable or do not configure this policy setting, the user sees the option for changing the UI language.
 
 > [!NOTE]
 > Even if a user can see the option to change the UI language, other policy settings can prevent them from changing their UI language.
+<!-- HideLanguageSelection-Description-End -->
 
+<!-- HideLanguageSelection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideLanguageSelection-Editable-End -->
 
-<!--/Description-->
+<!-- HideLanguageSelection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideLanguageSelection-DFProperties-End -->
+
+<!-- HideLanguageSelection-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide the select language group options*
--   GP name: *HideLanguageSelection*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideLanguageSelection |
+| Friendly Name | Hide the select language group options |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | HideLanguageSelection |
+| ADMX File Name | Globalization.admx |
+<!-- HideLanguageSelection-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-hidelocaleselectandcustomize"></a>**ADMX_Globalization/HideLocaleSelectAndCustomize**  
+<!-- HideLanguageSelection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideLanguageSelection-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideLanguageSelection-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideLocaleSelectAndCustomize-Begin -->
+## HideLocaleSelectAndCustomize
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideLocaleSelectAndCustomize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideLocaleSelectAndCustomize-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideLocaleSelectAndCustomize-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/HideLocaleSelectAndCustomize
+```
+<!-- HideLocaleSelectAndCustomize-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the regional formats interface from the Region settings control panel.
+<!-- HideLocaleSelectAndCustomize-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes the regional formats interface from the Region settings control panel.
 
 This policy setting is used only to simplify the Regional and Language Options control panel.
 
-If you enable this policy setting, the user does not see the regional formats options. This does not prevent the user or an application from changing their user locale or user overrides programmatically.
+- If you enable this policy setting, the user does not see the regional formats options. This does not prevent the user or an application from changing their user locale or user overrides programmatically.
 
-If you disable or do not configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
+- If you disable or do not configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
+<!-- HideLocaleSelectAndCustomize-Description-End -->
 
-<!--/Description-->
+<!-- HideLocaleSelectAndCustomize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideLocaleSelectAndCustomize-Editable-End -->
+
+<!-- HideLocaleSelectAndCustomize-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideLocaleSelectAndCustomize-DFProperties-End -->
+
+<!-- HideLocaleSelectAndCustomize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide user locale selection and customization options*
--   GP name: *HideLocaleSelectAndCustomize*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideLocaleSelectAndCustomize |
+| Friendly Name | Hide user locale selection and customization options |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | HideLocaleSelectAndCustomize |
+| ADMX File Name | Globalization.admx |
+<!-- HideLocaleSelectAndCustomize-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-implicitdatacollectionoff-1"></a>**ADMX_Globalization/ImplicitDataCollectionOff_1**  
+<!-- HideLocaleSelectAndCustomize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideLocaleSelectAndCustomize-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideLocaleSelectAndCustomize-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ImplicitDataCollectionOff_1-Begin -->
+## ImplicitDataCollectionOff_1
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ImplicitDataCollectionOff_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ImplicitDataCollectionOff_1-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ImplicitDataCollectionOff_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/ImplicitDataCollectionOff_1
+```
+<!-- ImplicitDataCollectionOff_1-OmaUri-End -->
 
-<hr/>
+<!-- ImplicitDataCollectionOff_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the automatic learning component of handwriting recognition personalization.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the automatic learning component of handwriting recognition personalization.
+Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.
 
-Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.  Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
+Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. See Tablet PC Help for more information.
 
-If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
+- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
 
-If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
+- If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
-If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
+- If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
 
 This policy setting is related to the "Turn off handwriting personalization" policy setting.
 
 > [!NOTE]
 > The amount of stored ink is limited to 50 MB and the amount of text information to approximately 5 MB. When these limits are reached and new data is collected, old data is deleted to make room for more recent data.
->
+
+> [!NOTE]
 > Handwriting personalization works only for Microsoft handwriting recognizers, and not with third-party recognizers.
+<!-- ImplicitDataCollectionOff_1-Description-End -->
 
-<!--/Description-->
+<!-- ImplicitDataCollectionOff_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ImplicitDataCollectionOff_1-Editable-End -->
+
+<!-- ImplicitDataCollectionOff_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ImplicitDataCollectionOff_1-DFProperties-End -->
+
+<!-- ImplicitDataCollectionOff_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off automatic learning*
--   GP name: *ImplicitDataCollectionOff_1*
--   GP path: *Control Panel\Regional and Language Options\Handwriting personalization*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ImplicitDataCollectionOff_1 |
+| Friendly Name | Turn off automatic learning |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options > Handwriting personalization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\InputPersonalization |
+| ADMX File Name | Globalization.admx |
+<!-- ImplicitDataCollectionOff_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-implicitdatacollectionoff-2"></a>**ADMX_Globalization/ImplicitDataCollectionOff_2**  
+<!-- ImplicitDataCollectionOff_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ImplicitDataCollectionOff_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ImplicitDataCollectionOff_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ImplicitDataCollectionOff_2-Begin -->
+## ImplicitDataCollectionOff_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ImplicitDataCollectionOff_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ImplicitDataCollectionOff_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ImplicitDataCollectionOff_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/ImplicitDataCollectionOff_2
+```
+<!-- ImplicitDataCollectionOff_2-OmaUri-End -->
 
-<hr/>
+<!-- ImplicitDataCollectionOff_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the automatic learning component of handwriting recognition personalization.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the automatic learning component of handwriting recognition personalization.
+Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.
 
-Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.  Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
+Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. See Tablet PC Help for more information.
 
-If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
+- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
 
-If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
+- If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
-If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
+- If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
 
 This policy setting is related to the "Turn off handwriting personalization" policy setting.
 
 > [!NOTE]
 > The amount of stored ink is limited to 50 MB and the amount of text information to approximately 5 MB. When these limits are reached and new data is collected, old data is deleted to make room for more recent data.
-> 
+
+> [!NOTE]
 > Handwriting personalization works only for Microsoft handwriting recognizers, and not with third-party recognizers.
+<!-- ImplicitDataCollectionOff_2-Description-End -->
 
-<!--/Description-->
+<!-- ImplicitDataCollectionOff_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ImplicitDataCollectionOff_2-Editable-End -->
+
+<!-- ImplicitDataCollectionOff_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ImplicitDataCollectionOff_2-DFProperties-End -->
+
+<!-- ImplicitDataCollectionOff_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off automatic learning*
--   GP name: *ImplicitDataCollectionOff_2*
--   GP path: *Control Panel\Regional and Language Options\Handwriting personalization*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ImplicitDataCollectionOff_2 |
+| Friendly Name | Turn off automatic learning |
+| Location | Computer Configuration |
+| Path | Control Panel > Regional and Language Options > Handwriting personalization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\InputPersonalization |
+| ADMX File Name | Globalization.admx |
+<!-- ImplicitDataCollectionOff_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-localesystemrestrict"></a>**ADMX_Globalization/LocaleSystemRestrict**  
+<!-- ImplicitDataCollectionOff_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ImplicitDataCollectionOff_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ImplicitDataCollectionOff_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LocaleSystemRestrict-Begin -->
+## LocaleSystemRestrict
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LocaleSystemRestrict-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LocaleSystemRestrict-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LocaleSystemRestrict-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/LocaleSystemRestrict
+```
+<!-- LocaleSystemRestrict-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting does not change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
+<!-- LocaleSystemRestrict-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting does not change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
 
 The locale list is specified using language names, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-US;en-CA" would restrict the system locale to English (United States) and English (Canada).
 
-If you enable this policy setting, administrators can select a system locale only from the specified system locale list.
+- If you enable this policy setting, administrators can select a system locale only from the specified system locale list.
 
-If you disable or do not configure this policy setting, administrators can select any system locale shipped with the operating system.
+- If you disable or do not configure this policy setting, administrators can select any system locale shipped with the operating system.
+<!-- LocaleSystemRestrict-Description-End -->
 
-<!--/Description-->
+<!-- LocaleSystemRestrict-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocaleSystemRestrict-Editable-End -->
+
+<!-- LocaleSystemRestrict-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocaleSystemRestrict-DFProperties-End -->
+
+<!-- LocaleSystemRestrict-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict system locales*
--   GP name: *LocaleSystemRestrict*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | LocaleSystemRestrict |
+| Friendly Name | Restrict system locales |
+| Location | Computer Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | RestrictSystemLocales |
+| ADMX File Name | Globalization.admx |
+<!-- LocaleSystemRestrict-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-localeuserrestrict-1"></a>**ADMX_Globalization/LocaleUserRestrict_1**  
+<!-- LocaleSystemRestrict-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocaleSystemRestrict-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- LocaleSystemRestrict-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LocaleUserRestrict_1-Begin -->
+## LocaleUserRestrict_1
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LocaleUserRestrict_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LocaleUserRestrict_1-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- LocaleUserRestrict_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/LocaleUserRestrict_1
+```
+<!-- LocaleUserRestrict_1-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+<!-- LocaleUserRestrict_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
 
 The locale list is specified using language tags, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-CA;fr-CA" would restrict the user locale to English (Canada) and French (Canada).
 
-If you enable this policy setting, only locales in the specified locale list can be selected by users.
+- If you enable this policy setting, only locales in the specified locale list can be selected by users.
 
-If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.  If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy. If this policy setting is disabled at the computer level, the per-user policy is ignored. If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+- If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
-<!--/Description-->
+- If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
+- If this policy setting is disabled at the computer level, the per-user policy is ignored.
+- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+<!-- LocaleUserRestrict_1-Description-End -->
+
+<!-- LocaleUserRestrict_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocaleUserRestrict_1-Editable-End -->
+
+<!-- LocaleUserRestrict_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocaleUserRestrict_1-DFProperties-End -->
+
+<!-- LocaleUserRestrict_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict user locales*
--   GP name: *LocaleUserRestrict_1*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | LocaleUserRestrict_1 |
+| Friendly Name | Restrict user locales |
+| Location | User Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | RestrictUserLocales |
+| ADMX File Name | Globalization.admx |
+<!-- LocaleUserRestrict_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-localeuserrestrict-2"></a>**ADMX_Globalization/LocaleUserRestrict_2**  
+<!-- LocaleUserRestrict_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocaleUserRestrict_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- LocaleUserRestrict_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LocaleUserRestrict_2-Begin -->
+## LocaleUserRestrict_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LocaleUserRestrict_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LocaleUserRestrict_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LocaleUserRestrict_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/LocaleUserRestrict_2
+```
+<!-- LocaleUserRestrict_2-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+<!-- LocaleUserRestrict_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
 
 The locale list is specified using language tags, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-CA;fr-CA" would restrict the user locale to English (Canada) and French (Canada).
 
-If you enable this policy setting, only locales in the specified locale list can be selected by users.
+- If you enable this policy setting, only locales in the specified locale list can be selected by users.
 
-If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
+- If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
-If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy. If this policy setting is disabled at the computer level, the per-user policy is ignored. If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+- If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
+- If this policy setting is disabled at the computer level, the per-user policy is ignored.
+- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+<!-- LocaleUserRestrict_2-Description-End -->
 
-<!--/Description-->
+<!-- LocaleUserRestrict_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocaleUserRestrict_2-Editable-End -->
+
+<!-- LocaleUserRestrict_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocaleUserRestrict_2-DFProperties-End -->
+
+<!-- LocaleUserRestrict_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict user locales*
--   GP name: *LocaleUserRestrict_2*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | LocaleUserRestrict_2 |
+| Friendly Name | Restrict user locales |
+| Location | Computer Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | RestrictUserLocales |
+| ADMX File Name | Globalization.admx |
+<!-- LocaleUserRestrict_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-lockmachineuilanguage"></a>**ADMX_Globalization/LockMachineUILanguage**  
+<!-- LocaleUserRestrict_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocaleUserRestrict_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- LocaleUserRestrict_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LockMachineUILanguage-Begin -->
+## LockMachineUILanguage
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LockMachineUILanguage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LockMachineUILanguage-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LockMachineUILanguage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/LockMachineUILanguage
+```
+<!-- LockMachineUILanguage-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts the Windows UI language for all users.
+<!-- LockMachineUILanguage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting restricts the Windows UI language for all users.
 
 This is a policy setting for computers with more than one UI language installed.
 
-If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language will follow the language specified by the administrator as the system UI languages. The UI language selected by the user will be ignored if it is different than any of the system UI languages.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language will follow the language specified by the administrator as the system UI languages. The UI language selected by the user will be ignored if it is different than any of the system UI languages.
 
-If you disable or do not configure this policy setting, the user can specify which UI language is used.
+- If you disable or do not configure this policy setting, the user can specify which UI language is used.
+<!-- LockMachineUILanguage-Description-End -->
 
-<!--/Description-->
+<!-- LockMachineUILanguage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockMachineUILanguage-Editable-End -->
+
+<!-- LockMachineUILanguage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LockMachineUILanguage-DFProperties-End -->
+
+<!-- LockMachineUILanguage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restricts the UI language Windows uses for all logged users*
--   GP name: *LockMachineUILanguage*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | LockMachineUILanguage |
+| Friendly Name | Restricts the UI language Windows uses for all logged users |
+| Location | Computer Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\MUI\Settings |
+| ADMX File Name | Globalization.admx |
+<!-- LockMachineUILanguage-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-lockuseruilanguage"></a>**ADMX_Globalization/LockUserUILanguage**  
+<!-- LockMachineUILanguage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LockMachineUILanguage-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- LockMachineUILanguage-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LockUserUILanguage-Begin -->
+## LockUserUILanguage
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LockUserUILanguage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LockUserUILanguage-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- LockUserUILanguage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/LockUserUILanguage
+```
+<!-- LockUserUILanguage-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts the Windows UI language for specific users.
+<!-- LockUserUILanguage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting restricts the Windows UI language for specific users.
 
 This policy setting applies to computers with more than one UI language installed.
 
-If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language for the selected user. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the user.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language for the selected user. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the user.
 
-If you disable or do not configure this policy setting, there is no restriction on which language users should use.
+- If you disable or do not configure this policy setting, there is no restriction on which language users should use.
 
 To enable this policy setting in Windows Server 2003, Windows XP, or Windows 2000, to use the "Restrict selection of Windows menus and dialogs language" policy setting.
+<!-- LockUserUILanguage-Description-End -->
 
-<!--/Description-->
+<!-- LockUserUILanguage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockUserUILanguage-Editable-End -->
+
+<!-- LockUserUILanguage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LockUserUILanguage-DFProperties-End -->
+
+<!-- LockUserUILanguage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restricts the UI languages Windows should use for the selected user*
--   GP name: *LockUserUILanguage*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | LockUserUILanguage |
+| Friendly Name | Restricts the UI languages Windows should use for the selected user |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\Desktop |
+| ADMX File Name | Globalization.admx |
+<!-- LockUserUILanguage-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-preventgeoidchange-1"></a>**ADMX_Globalization/PreventGeoIdChange_1**  
+<!-- LockUserUILanguage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LockUserUILanguage-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- LockUserUILanguage-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventGeoIdChange_1-Begin -->
+## PreventGeoIdChange_1
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventGeoIdChange_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PreventGeoIdChange_1-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PreventGeoIdChange_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/PreventGeoIdChange_1
+```
+<!-- PreventGeoIdChange_1-OmaUri-End -->
 
-<hr/>
+<!-- PreventGeoIdChange_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from changing their user geographical location (GeoID).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from changing their user geographical location (GeoID).
+- If you enable this policy setting, users cannot change their GeoID.
 
-If you enable this policy setting, users cannot change their GeoID.
+- If you disable or do not configure this policy setting, users may select any GeoID.
 
-If you disable or do not configure this policy setting, users may select any GeoID.
-
-If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting. If you disable this policy setting at the computer level, the per-user policy is ignored. If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
+- If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting.
+- If you disable this policy setting at the computer level, the per-user policy is ignored.
+- If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
 
 To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
+<!-- PreventGeoIdChange_1-Description-End -->
 
-<!--/Description-->
+<!-- PreventGeoIdChange_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventGeoIdChange_1-Editable-End -->
+
+<!-- PreventGeoIdChange_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventGeoIdChange_1-DFProperties-End -->
+
+<!-- PreventGeoIdChange_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow changing of geographic location*
--   GP name: *PreventGeoIdChange_1*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PreventGeoIdChange_1 |
+| Friendly Name | Disallow changing of geographic location |
+| Location | User Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | PreventGeoIdChange |
+| ADMX File Name | Globalization.admx |
+<!-- PreventGeoIdChange_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-preventgeoidchange-2"></a>**ADMX_Globalization/PreventGeoIdChange_2**  
+<!-- PreventGeoIdChange_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventGeoIdChange_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PreventGeoIdChange_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventGeoIdChange_2-Begin -->
+## PreventGeoIdChange_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventGeoIdChange_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PreventGeoIdChange_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PreventGeoIdChange_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/PreventGeoIdChange_2
+```
+<!-- PreventGeoIdChange_2-OmaUri-End -->
 
-<hr/>
+<!-- PreventGeoIdChange_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from changing their user geographical location (GeoID).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from changing their user geographical location (GeoID).
+- If you enable this policy setting, users cannot change their GeoID.
 
-If you enable this policy setting, users cannot change their GeoID.
+- If you disable or do not configure this policy setting, users may select any GeoID.
 
-If you disable or do not configure this policy setting, users may select any GeoID.
-
-If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting. If you disable this policy setting at the computer level, the per-user policy is ignored. If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
+- If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting.
+- If you disable this policy setting at the computer level, the per-user policy is ignored.
+- If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
 
 To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
+<!-- PreventGeoIdChange_2-Description-End -->
 
-<!--/Description-->
+<!-- PreventGeoIdChange_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventGeoIdChange_2-Editable-End -->
+
+<!-- PreventGeoIdChange_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventGeoIdChange_2-DFProperties-End -->
+
+<!-- PreventGeoIdChange_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow changing of geographic location*
--   GP name: *PreventGeoIdChange_2*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PreventGeoIdChange_2 |
+| Friendly Name | Disallow changing of geographic location |
+| Location | Computer Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | PreventGeoIdChange |
+| ADMX File Name | Globalization.admx |
+<!-- PreventGeoIdChange_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-preventuseroverrides-1"></a>**ADMX_Globalization/PreventUserOverrides_1**  
+<!-- PreventGeoIdChange_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventGeoIdChange_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PreventGeoIdChange_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventUserOverrides_1-Begin -->
+## PreventUserOverrides_1
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventUserOverrides_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PreventUserOverrides_1-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PreventUserOverrides_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/PreventUserOverrides_1
+```
+<!-- PreventUserOverrides_1-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the user from customizing their locale by changing their user overrides.
+<!-- PreventUserOverrides_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents the user from customizing their locale by changing their user overrides.
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
-When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices.
+When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user cannot customize their user locale with user overrides.
 
-The user cannot customize their user locale with user overrides.
+- If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
 
-If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
-
-If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy. If this policy is set to Disabled at the computer level, then the per-User policy will be ignored. If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
+- If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy.
+- If this policy is set to Disabled at the computer level, then the per-User policy will be ignored.
+- If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
 
 To set this policy on a per-user basis, make sure that the per-computer policy is set to Not Configured.
+<!-- PreventUserOverrides_1-Description-End -->
 
-<!--/Description-->
+<!-- PreventUserOverrides_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventUserOverrides_1-Editable-End -->
+
+<!-- PreventUserOverrides_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventUserOverrides_1-DFProperties-End -->
+
+<!-- PreventUserOverrides_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow user override of locale settings*
--   GP name: *PreventUserOverrides_1*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PreventUserOverrides_1 |
+| Friendly Name | Disallow user override of locale settings |
+| Location | User Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | PreventUserOverrides |
+| ADMX File Name | Globalization.admx |
+<!-- PreventUserOverrides_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-preventuseroverrides-2"></a>**ADMX_Globalization/PreventUserOverrides_2**  
+<!-- PreventUserOverrides_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventUserOverrides_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PreventUserOverrides_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventUserOverrides_2-Begin -->
+## PreventUserOverrides_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventUserOverrides_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PreventUserOverrides_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PreventUserOverrides_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Globalization/PreventUserOverrides_2
+```
+<!-- PreventUserOverrides_2-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the user from customizing their locale by changing their user overrides.
+<!-- PreventUserOverrides_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents the user from customizing their locale by changing their user overrides.
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
-When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices.
+When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user cannot customize their user locale with user overrides.
 
-The user cannot customize their user locale with user overrides.
+- If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
 
-If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
-
-If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy. If this policy is set to Disabled at the computer level, then the per-User policy will be ignored. If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
+- If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy.
+- If this policy is set to Disabled at the computer level, then the per-User policy will be ignored.
+- If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
 
 To set this policy on a per-user basis, make sure that the per-computer policy is set to Not Configured.
+<!-- PreventUserOverrides_2-Description-End -->
 
-<!--/Description-->
+<!-- PreventUserOverrides_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventUserOverrides_2-Editable-End -->
+
+<!-- PreventUserOverrides_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventUserOverrides_2-DFProperties-End -->
+
+<!-- PreventUserOverrides_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disallow user override of locale settings*
--   GP name: *PreventUserOverrides_2*
--   GP path: *System\Locale Services*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PreventUserOverrides_2 |
+| Friendly Name | Disallow user override of locale settings |
+| Location | Computer Configuration |
+| Path | System > Locale Services |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | PreventUserOverrides |
+| ADMX File Name | Globalization.admx |
+<!-- PreventUserOverrides_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-restrictuilangselect"></a>**ADMX_Globalization/RestrictUILangSelect**  
+<!-- PreventUserOverrides_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventUserOverrides_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PreventUserOverrides_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RestrictUILangSelect-Begin -->
+## RestrictUILangSelect
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RestrictUILangSelect-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictUILangSelect-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RestrictUILangSelect-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/RestrictUILangSelect
+```
+<!-- RestrictUILangSelect-OmaUri-End -->
 
-<hr/>
+<!-- RestrictUILangSelect-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language is not installed on the target computer, the language selection defaults to English.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language is not installed on the target computer, the language selection defaults to English.
-
-If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel are not accessible to the logged on user. This prevents users from specifying a language different than the one used.
+- If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel are not accessible to the logged on user. This prevents users from specifying a language different than the one used.
 
 To enable this policy setting in Windows Vista, use the "Restricts the UI languages Windows should use for the selected user" policy setting.
 
-If you disable or do not configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
+- If you disable or do not configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
+<!-- RestrictUILangSelect-Description-End -->
 
-<!--/Description-->
+<!-- RestrictUILangSelect-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictUILangSelect-Editable-End -->
+
+<!-- RestrictUILangSelect-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictUILangSelect-DFProperties-End -->
+
+<!-- RestrictUILangSelect-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict selection of Windows menus and dialogs language*
--   GP name: *RestrictUILangSelect*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RestrictUILangSelect |
+| Friendly Name | Restrict selection of Windows menus and dialogs language |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\Desktop |
+| ADMX File Name | Globalization.admx |
+<!-- RestrictUILangSelect-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-turnoffautocorrectmisspelledwords"></a>**ADMX_Globalization/TurnOffAutocorrectMisspelledWords**  
+<!-- RestrictUILangSelect-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictUILangSelect-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- RestrictUILangSelect-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffAutocorrectMisspelledWords-Begin -->
+## TurnOffAutocorrectMisspelledWords
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffAutocorrectMisspelledWords-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffAutocorrectMisspelledWords-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TurnOffAutocorrectMisspelledWords-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/TurnOffAutocorrectMisspelledWords
+```
+<!-- TurnOffAutocorrectMisspelledWords-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the autocorrect misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
+<!-- TurnOffAutocorrectMisspelledWords-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy turns off the autocorrect misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The autocorrect misspelled words option controls whether or not errors in typed text will be automatically corrected.
 
-If the policy is Enabled, then the option will be locked to not autocorrect misspelled words.
+- If the policy is enabled, then the option will be locked to not autocorrect misspelled words.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+- If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-Note that the availability and function of this setting is dependent on supported languages being enabled.
-<!--/Description-->
+**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+<!-- TurnOffAutocorrectMisspelledWords-Description-End -->
+
+<!-- TurnOffAutocorrectMisspelledWords-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffAutocorrectMisspelledWords-Editable-End -->
+
+<!-- TurnOffAutocorrectMisspelledWords-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffAutocorrectMisspelledWords-DFProperties-End -->
+
+<!-- TurnOffAutocorrectMisspelledWords-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off autocorrect misspelled words*
--   GP name: *TurnOffAutocorrectMisspelledWords*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TurnOffAutocorrectMisspelledWords |
+| Friendly Name | Turn off autocorrect misspelled words |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | TurnOffAutocorrectMisspelledWords |
+| ADMX File Name | Globalization.admx |
+<!-- TurnOffAutocorrectMisspelledWords-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-turnoffhighlightmisspelledwords"></a>**ADMX_Globalization/TurnOffHighlightMisspelledWords**  
+<!-- TurnOffAutocorrectMisspelledWords-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffAutocorrectMisspelledWords-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TurnOffAutocorrectMisspelledWords-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffHighlightMisspelledWords-Begin -->
+## TurnOffHighlightMisspelledWords
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffHighlightMisspelledWords-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffHighlightMisspelledWords-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TurnOffHighlightMisspelledWords-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/TurnOffHighlightMisspelledWords
+```
+<!-- TurnOffHighlightMisspelledWords-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the highlight misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
+<!-- TurnOffHighlightMisspelledWords-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy turns off the highlight misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The highlight misspelled words option controls whether or next spelling errors in typed text will be highlighted.
 
-If the policy is Enabled, then the option will be locked to not highlight misspelled words.
+- If the policy is enabled, then the option will be locked to not highlight misspelled words.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+- If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-Note that the availability and function of this setting is dependent on supported languages being enabled.
+**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+<!-- TurnOffHighlightMisspelledWords-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffHighlightMisspelledWords-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffHighlightMisspelledWords-Editable-End -->
+
+<!-- TurnOffHighlightMisspelledWords-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffHighlightMisspelledWords-DFProperties-End -->
+
+<!-- TurnOffHighlightMisspelledWords-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off highlight misspelled words*
--   GP name: *TurnOffHighlightMisspelledWords*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TurnOffHighlightMisspelledWords |
+| Friendly Name | Turn off highlight misspelled words |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | TurnOffHighlightMisspelledWords |
+| ADMX File Name | Globalization.admx |
+<!-- TurnOffHighlightMisspelledWords-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-turnoffinsertspace"></a>**ADMX_Globalization/TurnOffInsertSpace**  
+<!-- TurnOffHighlightMisspelledWords-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffHighlightMisspelledWords-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TurnOffHighlightMisspelledWords-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffInsertSpace-Begin -->
+## TurnOffInsertSpace
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffInsertSpace-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffInsertSpace-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TurnOffInsertSpace-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/TurnOffInsertSpace
+```
+<!-- TurnOffInsertSpace-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the insert a space after selecting a text prediction option. This does not, however, prevent the user or an application from changing the setting programmatically.
+<!-- TurnOffInsertSpace-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy turns off the insert a space after selecting a text prediction option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The insert a space after selecting a text prediction option controls whether or not a space will be inserted after the user selects a text prediction candidate when using the on-screen keyboard.
 
-If the policy is Enabled, then the option will be locked to not insert a space after selecting a text prediction.
+- If the policy is enabled, then the option will be locked to not insert a space after selecting a text prediction.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+- If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-Note that the availability and function of this setting is dependent on supported languages being enabled.
-<!--/Description-->
+**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+<!-- TurnOffInsertSpace-Description-End -->
+
+<!-- TurnOffInsertSpace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffInsertSpace-Editable-End -->
+
+<!-- TurnOffInsertSpace-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffInsertSpace-DFProperties-End -->
+
+<!-- TurnOffInsertSpace-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off insert a space after selecting a text prediction*
--   GP name: *TurnOffInsertSpace*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TurnOffInsertSpace |
+| Friendly Name | Turn off insert a space after selecting a text prediction |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | TurnOffInsertSpace |
+| ADMX File Name | Globalization.admx |
+<!-- TurnOffInsertSpace-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-turnoffoffertextpredictions"></a>**ADMX_Globalization/TurnOffOfferTextPredictions**  
+<!-- TurnOffInsertSpace-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffInsertSpace-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TurnOffInsertSpace-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffOfferTextPredictions-Begin -->
+## TurnOffOfferTextPredictions
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffOfferTextPredictions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffOfferTextPredictions-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TurnOffOfferTextPredictions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/TurnOffOfferTextPredictions
+```
+<!-- TurnOffOfferTextPredictions-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the offer text predictions as I type option. This does not, however, prevent the user or an application from changing the setting programmatically.
+<!-- TurnOffOfferTextPredictions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy turns off the offer text predictions as I type option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The offer text predictions as I type option controls whether or not text prediction suggestions will be presented to the user on the on-screen keyboard.
 
-If the policy is Enabled, then the option will be locked to not offer text predictions.
+- If the policy is enabled, then the option will be locked to not offer text predictions.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+- If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-Note that the availability and function of this setting is dependent on supported languages being enabled.
+**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+<!-- TurnOffOfferTextPredictions-Description-End -->
 
-<!--/Description-->
+<!-- TurnOffOfferTextPredictions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffOfferTextPredictions-Editable-End -->
+
+<!-- TurnOffOfferTextPredictions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffOfferTextPredictions-DFProperties-End -->
+
+<!-- TurnOffOfferTextPredictions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off offer text predictions as I type*
--   GP name: *TurnOffOfferTextPredictions*
--   GP path: *Control Panel\Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TurnOffOfferTextPredictions |
+| Friendly Name | Turn off offer text predictions as I type |
+| Location | User Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International |
+| Registry Value Name | TurnOffOfferTextPredictions |
+| ADMX File Name | Globalization.admx |
+<!-- TurnOffOfferTextPredictions-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-globalization-y2k"></a>**ADMX_Globalization/Y2K**  
+<!-- TurnOffOfferTextPredictions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffOfferTextPredictions-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TurnOffOfferTextPredictions-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Y2K-Begin -->
+## Y2K
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Y2K-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Y2K-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- Y2K-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Globalization/Y2K
+```
+<!-- Y2K-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting determines how programs interpret two-digit years.
+<!-- Y2K-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines how programs interpret two-digit years.
 
 This policy setting affects only the programs that use this Windows feature to interpret two-digit years. If a program does not interpret two-digit years correctly, consult the documentation or manufacturer of the program.
 
-If you enable this policy setting, the system specifies the largest two-digit year interpreted as being preceded by 20. All numbers less than or equal to the specified value are interpreted as being preceded by 20. All numbers greater than the specified value are interpreted as being preceded by 19.
+- If you enable this policy setting, the system specifies the largest two-digit year interpreted as being preceded by 20. All numbers less than or equal to the specified value are interpreted as being preceded by 20. All numbers greater than the specified value are interpreted as being preceded by 19.
 
 For example, the default value, 2029, specifies that all two-digit years less than or equal to 29 (00 to 29) are interpreted as being preceded by 20, that is 2000 to 2029. Conversely, all two-digit years greater than 29 (30 to 99) are interpreted as being preceded by 19, that is, 1930 to 1999.
 
-If you disable or do not configure this policy setting, Windows does not interpret two-digit year formats using this scheme for the program.
+- If you disable or do not configure this policy setting, Windows does not interpret two-digit year formats using this scheme for the program.
+<!-- Y2K-Description-End -->
 
-<!--/Description-->
+<!-- Y2K-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Y2K-Editable-End -->
+
+<!-- Y2K-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Y2K-DFProperties-End -->
+
+<!-- Y2K-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Century interpretation for Year 2000*
--   GP name: *Y2K*
--   GP path: *System*
--   GP ADMX file name: *Globalization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Y2K |
+| Friendly Name | Century interpretation for Year 2000 |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Control Panel\International\Calendars\TwoDigitYearMax |
+| ADMX File Name | Globalization.admx |
+<!-- Y2K-AdmxBacked-End -->
 
-Footnotes:
+<!-- Y2K-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Y2K-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- Y2K-End -->
 
-<!--/Policies-->
+<!-- ADMX_Globalization-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Globalization-CspMoreInfo-End -->
+
+<!-- ADMX_Globalization-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

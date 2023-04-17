@@ -2,23 +2,20 @@
 title: 4622(S) A security package has been loaded by the Local Security Authority. (Windows 10)
 description: Describes security event 4622(S) A security package has been loaded by the Local Security Authority.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4622(S): A security package has been loaded by the Local Security Authority.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4622.png" alt="Event 4622 illustration" width="449" height="317" hspace="10" align="left" />
@@ -27,13 +24,13 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time [Security Package](https://msdn.microsoft.com/library/windows/desktop/aa380501(v=vs.85).aspx) has been loaded by the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)).
+This event generates every time [Security Package](/windows/win32/secauthn/ssp-aps-versus-ssps) has been loaded by the Local Security Authority ([LSA](/windows/win32/secauthn/lsa-authentication)).
 
 Security Package is the software implementation of a security protocol (Kerberos, NTLM, for example). Security packages are contained in security support provider DLLs or security support provider/authentication package DLLs.
 
 Each time the system starts, the LSA loads the Security Package DLLs from **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\OSConfig\\Security Packages** registry value and performs the initialization sequence for every package located in these DLLs.
 
-It is also possible to add security package dynamically using [AddSecurityPackage](https://msdn.microsoft.com/library/windows/desktop/dd401506(v=vs.85).aspx) function, not only during system startup process.
+It is also possible to add security package dynamically using [AddSecurityPackage](/windows/win32/api/sspi/nf-sspi-addsecuritypackagea) function, not only during system startup process.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -101,5 +98,4 @@ These are some Security Package DLLs loaded by default in Windows 10:
 
 For 4622(S): A security package has been loaded by the Local Security Authority.
 
--   Typically this event has an informational purpose. If you defined the list of allowed Security Packages in the system, then you can check is “**Security Package Name”** field value in the allow list or not.
-
+-   Typically this event has an informational purpose. If you defined the list of allowed Security Packages in the system, then you can check is “**Security Package Name”** field value in the allowlist or not.

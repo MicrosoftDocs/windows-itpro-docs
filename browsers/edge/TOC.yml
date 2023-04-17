@@ -1,0 +1,7 @@
+- name: Microsoft Edge deployment for IT Pros
+  href: index.yml
+  items:
+  - name: Group policies & configuration options
+    href: group-policies/index.yml
+  - name: Microsoft Edge Frequently Asked Questions (FAQ)
+    href: microsoft-edge-faq.yml

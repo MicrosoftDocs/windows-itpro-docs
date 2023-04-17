@@ -1,28 +1,32 @@
 ---
-title: AppLocker architecture and components (Windows 10)
+title: AppLocker architecture and components (Windows)
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
 ms.assetid: efdd8494-553c-443f-bd5f-c8976535135a
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # AppLocker architecture and components
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professional describes AppLocker’s basic architecture and its major components.
 
@@ -40,7 +44,7 @@ When a new DLL loads, a notification is sent to AppLocker to verify that the DLL
 
 **A script is run**
 
-Before a script file is run, the script host (for example. for .ps1 files the script host is PowerShell) invokes AppLocker to verify the script. AppLocker invokes the Application Identity component in user-mode with the file name or file handle to calculate the file properties. The script file then is evaluated against the AppLocker policy to verify that it is allowed to run. In each case, the actions taken by AppLocker are written to the event log.
+Before a script file is run, the script host (for example, for .ps1 files, the script host is PowerShell) invokes AppLocker to verify the script. AppLocker invokes the Application Identity component in user-mode with the file name or file handle to calculate the file properties. The script file then is evaluated against the AppLocker policy to verify that it's allowed to run. In each case, the actions taken by AppLocker are written to the event log.
 
 ## Related topics
 

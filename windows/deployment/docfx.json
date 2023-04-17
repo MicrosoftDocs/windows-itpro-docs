@@ -21,9 +21,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif",
-          "**/*.pdf",
-          "**/*.vsdx"
+          "**/*.svg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -34,22 +33,34 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
+      "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
-      "audience": "ITPro",
-      "ms.topic": "article",
-      "ms.author": "greglin",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-development",
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Deployment" 
+      "titleSuffix": "Windows Deployment",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric",
+        "beccarobins"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

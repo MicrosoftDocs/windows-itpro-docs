@@ -3,31 +3,31 @@ title: UAC Run all administrators in Admin Approval Mode (Windows 10)
 description: Learn about best practices, security considerations and more for the security policy setting, User Account Control Run all administrators in Admin Approval Mode.
 ms.assetid: b838c561-7bfc-41ef-a7a5-55857259c7bf
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # User Account Control: Run all administrators in Admin Approval Mode
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting.
 
 ## Reference
 
-This policy setting determines the behavior of all User Account Control (UAC) policies for the entire system. This is the setting that turns UAC on or off.
+This policy setting determines the behavior of all User Account Control (UAC) policies for the entire system. This setting is the one that turns on or off the UAC.
 
 ### Possible values
 
@@ -40,8 +40,8 @@ This policy setting determines the behavior of all User Account Control (UAC) po
     Admin Approval Mode and all related UAC policies are disabled.
 
     > [!NOTE]
-    > If this security setting is configured to **Disabled**, the Security Center notifies the user that the overall security of the operating system has been reduced.
-     
+    > If this security setting is configured to **Disabled**, Windows Security app notifies the user that the overall security of the operating system has been reduced.
+
 ### Best practices
 
 -   Turn on this policy to allow all other UAC features and policies to function.
@@ -52,7 +52,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default values for this policy. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |

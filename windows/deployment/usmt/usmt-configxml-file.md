@@ -1,102 +1,55 @@
 ---
 title: Config.xml File (Windows 10)
-description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the /genconfig option with the ScanState.exe tool.
-ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the /genconfig option with the ScanState.exe tool.
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Config.xml File
 
+The `Config.xml` file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the `/genconfig` option with the ScanState tool. If you want to include all of the default components, and don't want to change the default store-creation or profile-migration behavior, you don't need to create a `Config.xml` file.
 
-## Config.xml File
+However, if you're satisfied with the default migration behavior defined in the `MigApp.xml`, `MigUser.xml` and `MigDocs.xml` files, but you want to exclude certain components, you can create and modify a `Config.xml` file and leave the other .xml files unchanged. For example, you must create and modify the `Config.xml` file if you want to exclude any of the operating-system settings that are migrated. It's necessary to create and modify this file if you want to change any of the default store-creation or profile-migration behavior.
 
+The `Config.xml` file has a different format than the other migration .xml files, because it doesn't contain any migration rules. It contains only a list of the operating-system components, applications, user documents that can be migrated, and user-profile policy and error-control policy. For this reason, excluding components using the `Config.xml` file is easier than modifying the migration .xml files, because you don't need to be familiar with the migration rules and syntax. However, you can't use wildcard characters in this file.
 
-The Config.xml file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the **/genconfig** option with the ScanState.exe tool. If you want to include all of the default components, and do not want to change the default store-creation or profile-migration behavior, you do not need to create a Config.xml file.
+For more information about using the `Config.xml` file with other migration files, such as the `MigDocs.xml` and `MigApps.xml` files, see [Understanding Migration XML Files](understanding-migration-xml-files.md).
 
-However, if you are satisfied with the default migration behavior defined in the MigApp.xml, MigUser.xml and MigDocs.xml files, but you want to exclude certain components, you can create and modify a Config.xml file and leave the other .xml files unchanged. For example, you must create and modify the Config.xml file if you want to exclude any of the operating-system settings that are migrated. It is necessary to create and modify this file if you want to change any of the default store-creation or profile-migration behavior.
+> [!NOTE]
+> To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file will not exclude the component from your migration.
 
-The Config.xml file has a different format than the other migration .xml files, because it does not contain any migration rules. It contains only a list of the operating-system components, applications, user documents that can be migrated, as well as user-profile policy and error-control policy. For this reason, excluding components using the Config.xml file is easier than modifying the migration .xml files, because you do not need to be familiar with the migration rules and syntax. However, you cannot use wildcard characters in this file.
+## Migration Policies
 
-For more information about using the Config.xml file with other migration files, such as the MigDocs.xml and MigApps.xml files, see [Understanding Migration XML Files](understanding-migration-xml-files.md).
+In USMT there are new migration policies that can be configured in the `Config.xml` file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the `Config.xml` file only.
 
-**Note**  
-To exclude a component from the Config.xml file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the Config.xml file will not exclude the component from your migration.
-
- 
-
-## In this topic
-
-
-In USMT there are new migration policies that can be configured in the Config.xml file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the Config.xml file only.
-
-[&lt;Policies&gt;](#bkmk-policies)
-
-[&lt;ErrorControl&gt;](#bkmk-errorcontrol)
-
-[&lt;fatal&gt;](#bkmk-fatal)
-
-[&lt;fileError&gt;](#bkmk-fileerror)
-
-[&lt;nonfatal&gt;](#bkmk-nonfatal)
-
-[&lt;registryError&gt;](#bkmk-registryerror)
-
-[&lt;HardLinkStoreControl&gt;](#bkmk-hardlinkstorecontrol)
-
-[&lt;fileLocked&gt;](#bkmk-filelock)
-
-[&lt;createHardLink&gt;](#bkmk-createhardlink)
-
-[&lt;errorHardLink&gt;](#bkmk-errorhardlink)
-
-[&lt;ProfileControl&gt;](#bkmk-profilecontrol)
-
-[&lt;localGroups&gt;](#bkmk-localgroups)
-
-[&lt;mappings&gt;](#bkmk-mappings)
-
-[&lt;changeGroup&gt;](#bkmk-changegrou)
-
-[&lt;include&gt;](#bkmk-include)
-
-[&lt;exclude&gt;](#bkmk-exclude)
-
-[Sample Config.xml File](#bkmk-sampleconfigxjmlfile)
-
-## <a href="" id="bkmk-policies"></a>&lt;Policies&gt;
-
+### &lt;Policies&gt;
 
 The **&lt;Policies&gt;** element contains elements that describe the policies that USMT follows while creating a migration store. Valid children of the **&lt;Policies&gt;** element are **&lt;ErrorControl&gt;** and **&lt;HardLinkStoreControl&gt;**. The **&lt;Policies&gt;** element is a child of **&lt;Configuration&gt;**.
 
-Syntax: `<Policies> </Policies>`
+Syntax: `<Policies>` `</Policies>`
 
-## <a href="" id="bkmk-errorcontrol"></a>&lt;ErrorControl&gt;
+### &lt;ErrorControl&gt;
 
+The **&lt;ErrorControl&gt;** element is an optional element you can configure in the `Config.xml` file. The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
-The **&lt;ErrorControl&gt;** element is an optional element you can configure in the Config.xml file. The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+- **Number of occurrences**: Once for each component
 
--   **Number of occurrences**: Once for each component
+- **Parent elements**: The **&lt;Policies&gt;** element
 
--   **Parent elements**: The **&lt;Policies&gt;** element
+- **Child elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** element
 
--   **Child elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** element
+Syntax: `<ErrorControl>` `</ErrorControl>`
 
-Syntax: `<ErrorControl></ErrorControl>`
-
-The following example specifies that all locked files, regardless of their location (including files in C:\\Users), should be ignored. However, the migration fails if any file in C:\\Users cannot be accessed because of any other reason. In the example below, the **&lt;ErrorControl&gt;** element ignores any problems in migrating registry keys that match the supplied pattern, and it resolves them to an **Access denied** error.
+The following example specifies that all locked files, regardless of their location (including files in C:\\Users), should be ignored. However, the migration fails if any file in C:\\Users can't be accessed because of any other reason. In the example below, the **&lt;ErrorControl&gt;** element ignores any problems in migrating registry keys that match the supplied pattern, and it resolves them to an **Access denied** error.
 
 Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority. In this example, the first **&lt;nonFatal&gt;** tag takes precedence over the second **&lt;fatal&gt;** tag. This precedence is applied, regardless of how many tags are listed.
 
-``` xml
+```xml
 <ErrorControl>
   <fileError>
     <nonFatal errorCode="33">* [*]</nonFatal>
@@ -108,165 +61,97 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 </ErrorControl>
 ```
 
-**Important**  
-The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+> [!IMPORTANT]
+> The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
- 
+### &lt;fatal&gt;
 
-### <a href="" id="bkmk-fatal"></a>&lt;fatal&gt;
+The **&lt;fatal&gt;** element isn't required.
 
-The **&lt;fatal&gt;** element is not required.
+- **Number of occurrences**: Once for each component
 
--   **Number of occurrences**: Once for each component
+- **Parent elements**: **&lt;fileError&gt;** and **&lt;registryError&gt;**
 
--   **Parent elements**: **&lt;fileError&gt;** and **&lt;registryError&gt;**
+- **Child elements**: None.
 
--   **Child elements**: None.
+Syntax: `<fatal errorCode="any">` *&lt;pattern&gt;* `</fatal>`
 
-Syntax: `<fatal errorCode="any">`*&lt;pattern&gt;*`</fatal>`
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>errorCode</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>&quot;any&quot; or &quot;<em>specify system error message here</em>&quot;</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Parameter|Required|Value|
+|--- |--- |--- |
+|errorCode|No|"any" or "*specify system error message here*"|
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
-## <a href="" id="bkmk-fileerror"></a>&lt;fileError&gt;
+### &lt;fileError&gt;
 
+The **&lt;fileError&gt;** element isn't required.
 
-The **&lt;fileError&gt;** element is not required.
+- **Number of occurrences**: Once for each component
 
--   **Number of occurrences**: Once for each component
+- **Parent elements**: **&lt;ErrorControl&gt;**
 
--   **Parent elements**: **&lt;ErrorControl&gt;**
+- **Child elements**: **&lt;nonFatal&gt;** and **&lt;fatal&gt;**
 
--   **Child elements**: **&lt;nonFatal&gt;** and **&lt;fatal&gt;**
-
-Syntax: `<fileError></fileError>`
+Syntax: `<fileError>` `</fileError>`
 
 You use the **&lt;fileError&gt;** element to represent the behavior associated with file errors.
 
-## <a href="" id="bkmk-nonfatal"></a>&lt;nonFatal&gt;
+### &lt;nonFatal&gt;
 
+The **&lt;nonFatal&gt;** element isn't required.
 
-The **&lt;nonFatal&gt;** element is not required.
+- **Number of occurrences**: Once for each component
 
--   **Number of occurrences**: Once for each component
+- **Parent elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** elements.
 
--   **Parent elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** elements.
+- **Child elements**: None.
 
--   **Child elements**: None.
+Syntax: `<nonfatal errorCode="any">` *&lt;pattern&gt;* `</nonFatal>`
 
-Syntax: `<nonfatal errorCode="any">`*&lt;pattern&gt;*`</nonFatal>`
+|Parameter|Required|Value|
+|--- |--- |--- |
+|**&lt;errorCode&gt;**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>&lt;errorCode&gt;</strong></p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>&quot;any&quot; or &quot;<em>specify system error message here</em>&quot;. If system error messages are not specified, the default behavior applies the parameter to all system error messages.</p></td>
-</tr>
-</tbody>
-</table>
+You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
- 
+### &lt;registryError&gt;
 
-You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern should not cause USMT to halt the migration.
+The **&lt;registryError&gt;** element isn't required.
 
-## <a href="" id="bkmk-registryerror"></a>&lt;registryError&gt;
+- **Number of occurrences**: Once for each component
 
+- **Parent elements**: **&lt;ErrorControl&gt;**
 
-The <strong>&lt;registryError&gt;</strong>element is not required.
+- **Child elements**: **&lt;nonfatal&gt;** and **&lt;fatal&gt;**
 
--   **Number of occurrences**: Once for each component
+Syntax: `<registryError>` `</registryError>`
 
--   **Parent elements**: **&lt;ErrorControl&gt;**
+|Parameter|Required|Value|
+|--- |--- |--- |
+|**&lt;errorCode&gt;**|No|"any" or "*specify system error message here*". If system error messages aren't specified, the default behavior applies the parameter to all system error messages.|
 
--   **Child elements**: **&lt;nonfatal&gt;** and **&lt;fatal&gt;**
+You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-Syntax: `<registryError></registryError>`
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>&lt;errorCode&gt;</strong></p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>&quot;any&quot; or &quot;<em>specify system error message here</em>&quot;. If system error messages are not specified, the default behavior applies the parameter to all system error messages.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern should not cause USMT to halt the migration.
-
-## <a href="" id="bkmk-hardlinkstorecontrol"></a>&lt;HardLinkStoreControl&gt;
-
+### &lt;HardLinkStoreControl&gt;
 
 The **&lt;HardLinkStoreControl&gt;** element contains elements that describe how to handle files during the creation of a hard-link migration store. Its only valid child is **&lt;fileLocked&gt;**.
 
-Syntax: `<HardLinkStoreControl> </HardLinkStoreControl>`
+Syntax: `<HardLinkStoreControl>` `</HardLinkStoreControl>`
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: **&lt;Policies&gt;**
+- **Parent elements**: **&lt;Policies&gt;**
 
--   **Child elements**: **&lt;fileLocked&gt;**
+- **Child elements**: **&lt;fileLocked&gt;**
 
-Syntax: `<HardLinkStoreControl></HardLinkStoreControl>`
+Syntax: `<HardLinkStoreControl>` `</HardLinkStoreControl>`
 
-The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that cannot be copied, even though is technically possible for the link to be created.
+The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that can't be copied, even though is technically possible for the link to be created.
 
-**Important**  
-The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file’s location.
+> [!IMPORTANT]
+> The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file's location.
 
- 
-
-``` xml
+```xml
 <Policy>
    <HardLinkStoreControl>
       <fileLocked>
@@ -280,109 +165,75 @@ The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore f
 </Policy>
 ```
 
-## <a href="" id="bkmk-filelock"></a>&lt;fileLocked&gt;
-
+### &lt;fileLocked&gt;
 
 The **&lt;fileLocked&gt;** element contains elements that describe how to handle files that are locked for editing. The rules defined by the **&lt;fileLocked&gt;** element are processed in the order in which they appear in the XML file.
 
-Syntax: `<fileLocked></fileLocked>`
+Syntax: `<fileLocked>` `</fileLocked>`
 
-## <a href="" id="bkmk-createhardlink"></a>&lt;createHardLink&gt;
-
+### &lt;createHardLink&gt;
 
 The **&lt;createHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.
 
-Syntax: `<createHardLink>`*&lt;pattern&gt;*`</createHardLink>`
+Syntax: `<createHardLink>` *&lt;pattern&gt;* `</createHardLink>`
 
-## <a href="" id="bkmk-errorhardlink"></a>&lt;errorHardLink&gt;
+### &lt;errorHardLink&gt;
 
+The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created if the file is locked for editing by another application. USMT will attempt to copy files under these paths into the migration store. However, if that isn't possible, **Error\_Locked** is thrown. This error is a standard Windows application programming interface (API) error that can be captured by the **&lt;ErrorControl&gt;** section to either cause USMT to skip the file or abort the migration.
 
-The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links should not be created if the file is locked for editing by another application. USMT will attempt to copy files under these paths into the migration store. However, if that is not possible, **Error\_Locked** is thrown. This is a standard Windows application programming interface (API) error that can be captured by the **&lt;ErrorControl&gt;** section to either cause USMT to skip the file or abort the migration.
+Syntax: `<errorHardLink>` *&lt;pattern&gt;* `</errorHardLink>`
 
-Syntax: `<errorHardLink>`*&lt;pattern&gt;*`</errorHardLink>`
-
-## <a href="" id="bkmk-profilecontrol"></a>&lt;ProfileControl&gt;
-
+### &lt;ProfileControl&gt;
 
 This element is used to contain other elements that establish rules for migrating profiles, users, and policies around local group membership during the migration. **&lt;ProfileMigration&gt;** is a child of **&lt;Configuration&gt;**.
 
-Syntax: &lt;`ProfileControl> </ProfileControl>`
+Syntax: &lt;`ProfileControl>` `</ProfileControl>`
 
-## <a href="" id="bkmk-localgroups"></a>&lt;localGroups&gt;
-
+### &lt;localGroups&gt;
 
 This element is used to contain other elements that establish rules for how to migrate local groups. **&lt;localGroups&gt;** is a child of **&lt;ProfileControl&gt;**.
 
-Syntax: `<localGroups> </localGroups>`
+Syntax: `<localGroups>` `</localGroups>`
 
-## <a href="" id="bkmk-mappings"></a>&lt;mappings&gt;
-
+### &lt;mappings&gt;
 
 This element is used to contain other elements that establish mappings between groups.
 
-Syntax: `<mappings> </mappings>`
+Syntax: `<mappings>` `</mappings>`
 
-## <a href="" id="bkmk-changegrou"></a>&lt;changeGroup&gt;
+### &lt;changeGroup&gt;
 
+This element describes the source and destination groups for a local group membership change during the migration. It's a child of **&lt;localGroups&gt;**. The following parameters are defined:
 
-This element describes the source and destination groups for a local group membership change during the migration. It is a child of **&lt;localGroups&gt;**. The following parameters are defined:
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Required</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>From</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>A valid local group on the source machine that contains users selected for migration on the command line.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>To</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>A local group that the users are to be moved to during the migration.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>appliesTo</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>nonmigratedUsers, migratedUsers, AllUsers. This value defines which users the change group operation should apply to.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Parameter|Required|Value|
+|--- |--- |--- |
+|From|Yes|A valid local group on the source machine that contains users selected for migration on the command line.|
+|To|Yes|A local group that the users are to be moved to during the migration.|
+|appliesTo|Yes|nonmigratedUsers, migratedUsers, AllUsers. This value defines which users the change group operation should apply to.|
 
 The valid and required children of **&lt;changeGroup&gt;** are **&lt;include&gt;** and **&lt;exclude&gt;**. Although both can be children at the same time, only one is required.
 
-Syntax: `<changeGroup From="Group1" To= "Group2"> </changeGroup>`
+Syntax: `<changeGroup From="Group1" To= "Group2">` `</changeGroup>`
 
-## <a href="" id="bkmk-include"></a>&lt;include&gt;
-
+### &lt;include&gt;
 
 This element specifies that its required child, *&lt;pattern&gt;*, should be included in the migration.
 
-Syntax: `<include>``</include>`
+Syntax: `<include>` `</include>`
 
-## <a href="" id="bkmk-exclude"></a>&lt;exclude&gt;
-
+### &lt;exclude&gt;
 
 This element specifies that its required child, *&lt;pattern&gt;*, should be excluded from the migration.
 
-Syntax: `<exclude>`` </exclude>`
+Syntax: `<exclude>` `</exclude>`
 
-## <a href="" id="bkmk-sampleconfigxjmlfile"></a>Sample Config.xml File
+## Sample Config.xml File
 
-
-Refer to the following sample Config.xml file for additional details about items you can choose to exclude from a migration.
+Refer to the following sample `Config.xml` file for more details about items you can choose to exclude from a migration.
+<br>
+<br>
+<details>
+  <summary>Expand for sample Config.xml file:</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -575,16 +426,8 @@ Refer to the following sample Config.xml file for additional details about items
 </Configuration>
 ```
 
-## Related topics
+</details>
 
+## Related articles
 
-[USMT XML Reference](usmt-xml-reference.md)
-
- 
-
- 
-
-
-
-
-
+[USMT XML reference](usmt-xml-reference.md)

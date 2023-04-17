@@ -2,23 +2,20 @@
 title: 4775(F) An account could not be mapped for logon. (Windows 10)
 description: Describes security event 4775(F) An account could not be mapped for logon.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4775(F): An account could not be mapped for logon.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 It appears that this event never occurs.

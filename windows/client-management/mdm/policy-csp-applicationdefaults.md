@@ -1,97 +1,87 @@
 ---
-title: Policy CSP - ApplicationDefaults
-description: Learn about various Policy configuration service provider (CSP) - ApplicationDefaults, including SyncML, for Windows 10.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: ApplicationDefaults Policy CSP
+description: Learn more about the ApplicationDefaults Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ApplicationDefaults-Begin -->
 # Policy CSP - ApplicationDefaults
 
+<!-- ApplicationDefaults-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ApplicationDefaults-Editable-End -->
 
+<!-- DefaultAssociationsConfiguration-Begin -->
+## DefaultAssociationsConfiguration
 
-<hr/>
+<!-- DefaultAssociationsConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DefaultAssociationsConfiguration-Applicability-End -->
 
-<!--Policies-->
-## ApplicationDefaults policies  
+<!-- DefaultAssociationsConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ApplicationDefaults/DefaultAssociationsConfiguration
+```
+<!-- DefaultAssociationsConfiguration-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#applicationdefaults-defaultassociationsconfiguration">ApplicationDefaults/DefaultAssociationsConfiguration</a>
-  </dd>
-  <dd>
-    <a href="#applicationdefaults-enableappurihandlers">ApplicationDefaults/EnableAppUriHandlers</a>
-  </dd>
-</dl>
+<!-- DefaultAssociationsConfiguration-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy specifies the path to a file (e.g. either stored locally or on a network location) that contains file type and protocol default application associations. This file can be created using the DISM tool.
 
+For example:
+Dism.exe /Online /Export-DefaultAppAssociations:C:\AppAssoc.txt
 
-<hr/>
+For more information, refer to the DISM documentation on TechNet.
 
-<!--Policy-->
-<a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**  
+If this group policy is enabled and the client machine is domain-joined, the file will be processed and default associations will be applied at logon time.
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+If the group policy is not configured, disabled, or the client machine is not domain-joined, no default associations will be applied at logon time.
 
-<!--/SupportedSKUs-->
-<hr/>
+If the policy is enabled, disabled, or not configured, users will still be able to override default file type and protocol associations.
+<!-- DefaultAssociationsConfiguration-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DefaultAssociationsConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DefaultAssociationsConfiguration-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DefaultAssociationsConfiguration-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DefaultAssociationsConfiguration-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml), and then needs to be  base64 encoded before being added to SyncML.
- 
-If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
+<!-- DefaultAssociationsConfiguration-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Set a default associations configuration file*
--   GP name: *DefaultAssociationsConfiguration*
--   GP element: *DefaultAssociationsConfiguration_TextBox*
--   GP path: *File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Name | Value |
+|:--|:--|
+| Name | DefaultAssociationsConfiguration |
+| Friendly Name | Set a default associations configuration file |
+| Element Name | Default Associations Configuration File. |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DefaultAssociationsConfiguration-GpMapping-End -->
 
-<!--/ADMXMapped-->
-<!--Example-->
+<!-- DefaultAssociationsConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
 To create the SyncML, follow these steps:
 <ol>
 <li>Install a few apps and change your defaults.</li>
@@ -100,8 +90,7 @@ To create the SyncML, follow these steps:
 <li>Paste the base64 encoded XML into the SyncML</li>
 </ol>
 
-Here is an example output from the dism default association export command:
-
+Here's an example output from the dism default association export command:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <DefaultAssociations>
@@ -110,16 +99,15 @@ Here is an example output from the dism default association export command:
   <Association Identifier=".pdf" ProgId="AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723" ApplicationName="Microsoft Edge" />
   <Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />
   <Association Identifier="https" ProgId="AppX90nv6nhay5n6a98fnetv7tpk64pp35es" ApplicationName="Microsoft Edge" />
-</DefaultAssociations
+</DefaultAssociations>
 ```
 
-Here is the base64 encoded result:
+Here's the base64 encoded result:
 
 ``` syntax
 PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25zPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLmh0bSIgUHJvZ0lkPSJBcHBYNGh4dGFkNzdmYmszamtrZWVya3JtMHplOTR3amYzczkiIEFwcGxpY2F0aW9uTmFtZT0iTWljcm9zb2Z0IEVkZ2UiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuaHRtbCIgUHJvZ0lkPSJBcHBYNGh4dGFkNzdmYmszamtrZWVya3JtMHplOTR3amYzczkiIEFwcGxpY2F0aW9uTmFtZT0iTWljcm9zb2Z0IEVkZ2UiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIucGRmIiBQcm9nSWQ9IkFwcFhkNG5yejhmZjY4c3JuaGY5dDVhOHNianlhcjFjcjcyMyIgQXBwbGljYXRpb25OYW1lPSJNaWNyb3NvZnQgRWRnZSIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Imh0dHAiIFByb2dJZD0iQXBwWHEwZmV2em1lMnB5czYybjNlMGZicWE3cGVhcHlrcjh2IiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iaHR0cHMiIFByb2dJZD0iQXBwWDkwbnY2bmhheTVuNmE5OGZuZXR2N3RwazY0cHAzNWVzIiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIiAvPg0KPC9EZWZhdWx0QXNzb2NpYXRpb25zPg0KDQo=
 ```
-
-Here is the SyncMl example:
+Here's the SyncML example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,56 +131,27 @@ Here is the SyncMl example:
   </SyncBody>
 </SyncML>
 ```
+<!-- DefaultAssociationsConfiguration-Examples-End -->
 
-<!--/Example-->
-<!--/Policy-->
+<!-- DefaultAssociationsConfiguration-End -->
 
-<hr/>
+<!-- EnableAppUriHandlers-Begin -->
+## EnableAppUriHandlers
 
-<!--Policy-->
-<a href="" id="applicationdefaults-enableappurihandlers"></a>**ApplicationDefaults/EnableAppUriHandlers**  
+<!-- EnableAppUriHandlers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableAppUriHandlers-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+<!-- EnableAppUriHandlers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ApplicationDefaults/EnableAppUriHandlers
+```
+<!-- EnableAppUriHandlers-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnableAppUriHandlers-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines whether Windows supports web-to-app linking with app URI handlers.
 
 Enabling this policy setting enables web-to-app linking so that apps can be launched with a http(s) URI.
@@ -200,33 +159,57 @@ Enabling this policy setting enables web-to-app linking so that apps can be laun
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
 If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+<!-- EnableAppUriHandlers-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Configure web-to-app linking with app URI handlers*
--   GP name: *EnableAppUriHandlers*
--   GP path: *System/Group Policy*
--   GP ADMX file name: *GroupPolicy.admx*
+<!-- EnableAppUriHandlers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableAppUriHandlers-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-This setting supports a range of values between 0 and 1.
+<!-- EnableAppUriHandlers-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableAppUriHandlers-DFProperties-End -->
 
-Footnotes:
+<!-- EnableAppUriHandlers-AllowedValues-Begin -->
+**Allowed values**:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- EnableAppUriHandlers-AllowedValues-End -->
 
-<!--/Policies-->
+<!-- EnableAppUriHandlers-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | EnableAppUriHandlers |
+| Friendly Name | Configure web-to-app linking with app URI handlers |
+| Location | Computer Configuration |
+| Path | System > Group Policy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | EnableAppUriHandlers |
+| ADMX File Name | GroupPolicy.admx |
+<!-- EnableAppUriHandlers-GpMapping-End -->
+
+<!-- EnableAppUriHandlers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableAppUriHandlers-Examples-End -->
+
+<!-- EnableAppUriHandlers-End -->
+
+<!-- ApplicationDefaults-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ApplicationDefaults-CspMoreInfo-End -->
+
+<!-- ApplicationDefaults-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

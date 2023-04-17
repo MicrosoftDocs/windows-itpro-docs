@@ -1,32 +1,20 @@
 ---
-title: Smart Cards for Windows Service (Windows 10)
+title: Smart Cards for Windows Service (Windows)
 description: This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service manages readers and application interactions.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 04/19/2017
-ms.reviewer: 
+ms.date: 09/24/2021
 ---
 
 # Smart Cards for Windows Service
 
-Applies To: Windows 10, Windows Server 2016
-
 This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service (formerly called Smart Card Resource Manager) manages readers and application interactions.
 
-The Smart Cards for Windows service provides the basic infrastructure for all other smart card components as it manages smart card readers and application interactions on the computer. It is fully compliant with the specifications set by the PC/SC Workgroup. For information about these specifications, see the [PC/SC Workgroup Specifications website](https://www.pcscworkgroup.com/).
+The Smart Cards for Windows service provides the basic infrastructure for all other smart card components as it manages smart card readers and application interactions on the computer. It is fully compliant with the specifications set by the PC/SC Workgroup. For information about these specifications, see the [PC/SC Workgroup Specifications website](https://pcscworkgroup.com/).
 
 The Smart Cards for Windows service runs in the context of a local service, and it is implemented as a shared service of the services host (svchost) process. The Smart Cards for Windows service, Scardsvr, has the following service description:
 
-```
+```PowerShell
 <serviceData
     dependOnService="PlugPlay"
     description="@%SystemRoot%\System32\SCardSvr.dll,-5"

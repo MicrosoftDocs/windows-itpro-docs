@@ -1,20 +1,18 @@
 ---
-title: How to apply the user configuration file by using Windows PowerShell (Windows 10)
-description: How to apply the user configuration file by using Windows PowerShell (Windows 10).
-author: dansimp
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+title: How to apply the user configuration file by using Windows PowerShell (Windows 10/11)
+description: How to apply the user configuration file by using Windows PowerShell (Windows 10/11).
+author: aczechowski
+ms.prod: windows-client
 ms.date: 06/15/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to apply the user configuration file by using Windows PowerShell
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 When you publish a package to a specific user, you'll also need to specify a dynamic user configuration file to tell that package how to run.
 
@@ -44,6 +42,6 @@ Here's how to specify a user-specific configuration file:
 
 
 
-## Related topics
+## Related articles
 
 * [Operations for App-V](appv-operations.md)

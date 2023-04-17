@@ -1,177 +1,145 @@
 ---
-title: Policy CSP - Maps
-description: Use the Policy CSP - Maps setting to allow the download and update of map data over metered connections.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Maps Policy CSP
+description: Learn more about the Maps Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Maps-Begin -->
 # Policy CSP - Maps
 
+<!-- Maps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Maps-Editable-End -->
 
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Begin -->
+## AllowOfflineMapsDownloadOverMeteredConnection
 
-<hr/>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Applicability-End -->
 
-<!--Policies-->
-## Maps policies  
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Maps/AllowOfflineMapsDownloadOverMeteredConnection
+```
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#maps-allowofflinemapsdownloadovermeteredconnection">Maps/AllowOfflineMapsDownloadOverMeteredConnection</a>
-  </dd>
-  <dd>
-    <a href="#maps-enableofflinemapsautoupdate">Maps/EnableOfflineMapsAutoUpdate</a>
-  </dd>
-</dl>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the download and update of map data over metered connections. After the policy is applied, you can verify the settings in the user interface in System > Offline Maps.
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Description-End -->
 
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Editable-End -->
 
-<hr/>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**  
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 65535 |
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-DFProperties-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. Force disable auto-update over metered connection. |
+| 1 | Enabled. Force enable auto-update over metered connection. |
+| 65535 (Default) | Not configured. User's choice. |
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-End -->
 
-<hr/>
+<!-- EnableOfflineMapsAutoUpdate-Begin -->
+## EnableOfflineMapsAutoUpdate
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1607. Allows the download and update of map data over metered connections.
+<!-- EnableOfflineMapsAutoUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- EnableOfflineMapsAutoUpdate-Applicability-End -->
 
-After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
+<!-- EnableOfflineMapsAutoUpdate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Maps/EnableOfflineMapsAutoUpdate
+```
+<!-- EnableOfflineMapsAutoUpdate-OmaUri-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- EnableOfflineMapsAutoUpdate-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disables the automatic download and update of map data. After the policy is applied, you can verify the settings in the user interface in System > Offline Maps.
+<!-- EnableOfflineMapsAutoUpdate-Description-End -->
 
--   0 – Disabled. Force disable auto-update over metered connection.
--   1 – Enabled. Force enable auto-update over metered connection.
--   65535 (default) – Not configured. User's choice.
+<!-- EnableOfflineMapsAutoUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableOfflineMapsAutoUpdate-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- EnableOfflineMapsAutoUpdate-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 65535 |
+<!-- EnableOfflineMapsAutoUpdate-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**  
+<!-- EnableOfflineMapsAutoUpdate-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. Force off auto-update. |
+| 1 | Enabled. Force on auto-update. |
+| 65535 (Default) | Not configured. User's choice. |
+<!-- EnableOfflineMapsAutoUpdate-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableOfflineMapsAutoUpdate-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | TurnOffAutoUpdate |
+| Friendly Name | Turn off Automatic Download and Update of Map Data |
+| Location | Computer Configuration |
+| Path | Windows Components > Maps |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Maps |
+| Registry Value Name | AutoDownloadAndUpdateMapData |
+| ADMX File Name | WinMaps.admx |
+<!-- EnableOfflineMapsAutoUpdate-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableOfflineMapsAutoUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableOfflineMapsAutoUpdate-Examples-End -->
 
-<hr/>
+<!-- EnableOfflineMapsAutoUpdate-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1607. Disables the automatic download and update of map data.
+<!-- Maps-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Maps-CspMoreInfo-End -->
 
-After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
+<!-- Maps-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off Automatic Download and Update of Map Data*
--   GP name: *TurnOffAutoUpdate*
--   GP path: *Windows Components/Maps*
--   GP ADMX file name: *WinMaps.admx*
+## Related articles
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Disabled. Force off auto-update.
--   1 – Enabled. Force on auto-update.
--   65535 (default) – Not configured. User's choice.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

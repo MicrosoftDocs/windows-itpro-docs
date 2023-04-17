@@ -2,26 +2,23 @@
 title: 5155(F) The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections. (Windows 10)
 description: Describes security event 5155(F) The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5155(F): The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-By default Windows firewall won't prevent a port from being listened by an application. In the other word, Windows system will not generate Event 5155 by itself.
+By default Windows firewall won't prevent a port from being listened by an application. In the other word, Windows system won't generate Event 5155 by itself.
 
 You can add your own filters using the WFP APIs to block listen to reproduce this event: <https://msdn.microsoft.com/library/aa364046(v=vs.85).aspx>.
 
@@ -29,7 +26,7 @@ You can add your own filters using the WFP APIs to block listen to reproduce thi
 
 ***Event Description:***
 
-This event generates every time the [Windows Filtering Platform](https://docs.microsoft.com/windows/win32/fwp/windows-filtering-platform-start-page) blocks an application or service from listening on a port for incoming connections.
+This event generates every time the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) blocks an application or service from listening on a port for incoming connections.
 
 <br clear="all">
 
@@ -76,7 +73,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
 **Application Information**:
 
--   **Process ID** \[Type = Pointer\]: Hexadecimal Process ID (PID) of the process which was permitted to bind to the local port. The PID is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: Hexadecimal Process ID (PID) of the process that was permitted to bind to the local port. The PID is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -104,7 +101,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]**:** The port number used by the application.
 
@@ -130,19 +127,18 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: A unique filter ID which blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding to an application, and if this application doesn’t match any filters, you will get a 0 value in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: A unique filter ID that blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding to an application, and if this application doesn’t match any filters, you'll get a 0 value in this field.
 
     To find a specific Windows Filtering Platform filter by ID, you need to execute the following command: **netsh wfp show filters**. As a result of this command, a **filters.xml** file will be generated. You need to open this file and find the specific substring with the required filter ID (**&lt;filterId&gt;**), for example:
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
--   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, you need to execute the following command: **netsh wfp show state**. As result of this command, a **wfpstate.xml** file will be generated. You need to open this file and find the specific substring with the required layer ID (**&lt;layerId&gt;**), for example:
+-   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, you need to execute the following command: **netsh wfp show state**. As a result of this command, a **wfpstate.xml** file will be generated. You need to open this file and find the specific substring with the required layer ID (**&lt;layerId&gt;**), for example:
 
 <img src="images/wfpstate-xml.png" alt="Wfpstate xml illustration" width="1563" height="780" />
 
 ## Security Monitoring Recommendations
 
 -   If you use Windows Filtering Platform APIs to block application or services from listening on a port, then you can use this event for troubleshooting and monitoring.
-

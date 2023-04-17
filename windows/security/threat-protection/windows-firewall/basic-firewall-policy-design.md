@@ -1,35 +1,24 @@
 ---
-title: Basic Firewall Policy Design (Windows 10)
+title: Basic Firewall Policy Design (Windows)
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
-ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.technology: mde
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
+ms.date: 12/31/2017
 ---
 
 # Basic Firewall Policy Design
 
-**Applies to**
-- Windows 10
-- Windows Server 2016
 
-Many organizations have a network perimeter firewall that is designed to prevent the entry of malicious traffic in to the organization's network, but do not have a host-based firewall enabled on each device in the organization.
+Many organizations have a network perimeter firewall that is designed to prevent the entry of malicious traffic in to the organization's network, but don't have a host-based firewall enabled on each device in the organization.
 
-The Basic Firewall Policy Design helps you to protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses, or that originates from inside your network. In this design, you deploy firewall rules to each device in your organization to allow traffic that is required by the programs that are used. Traffic that does not match the rules is dropped.
+The Basic Firewall Policy Design helps you to protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses, or that originates from inside your network. In this design, you deploy firewall rules to each device in your organization to allow traffic that is required by the programs that are used. Traffic that doesn't match the rules is dropped.
 
 Traffic can be blocked or permitted based on the characteristics of each network packet: its source or destination IP address, its source or destination port numbers, the program on the device that receives the inbound packet, and so on. This design can also be deployed together with one or more of the other designs that add IPsec protection to the network traffic permitted.
 
-Many network administrators do not want to tackle the difficult task of determining all the appropriate rules for every program that is used by the organization, and then maintaining that list over time. In fact, most programs do not require specific firewall rules. The default behavior of Windows and most contemporary applications makes this task easy:
+Many network administrators don't want to tackle the difficult task of determining all the appropriate rules for every program that is used by the organization, and then maintaining that list over time. In fact, most programs don't require specific firewall rules. The default behavior of Windows and most contemporary applications makes this task easy:
 
 - On client devices, the default firewall behavior already supports typical client programs. Programs create any required rules for you as part of the installation process. You only have to create a rule if the client program must be able to receive unsolicited inbound network traffic from another device.
 
@@ -37,11 +26,11 @@ Many network administrators do not want to tackle the difficult task of determin
 
   For example, when you install a server role, the appropriate firewall rules are created and enabled automatically.
 
-- For other standard network behavior, the predefined rules that are built into Windows 10, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, and Windows 7 can easily be configured in a GPO and deployed to the devices in your organization.
+- For other standard network behavior, the predefined rules that are built into Windows 11, Windows 10, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, and Windows 7 can easily be configured in a GPO and deployed to the devices in your organization.
 
   For example, by using the predefined groups for Core Networking and File and Printer Sharing you can easily configure GPOs with rules for those frequently used networking protocols.
 
-With few exceptions, the firewall can be enabled on all configurations. Therefore, we recommended that you enable the firewall on every device in your organization. This includes servers in your perimeter network, on mobile and remote clients that connect to the network, and on all servers and clients in your internal network.
+With a few exceptions, the firewall can be enabled on all configurations. Therefore, we recommend that you enable the firewall on every device in your organization. The term "device" includes servers in your perimeter network, on mobile and remote clients that connect to the network, and on all servers and clients in your internal network.
 
 > [!CAUTION]
 > Stopping the service associated with Windows Defender Firewall with Advanced Security is not supported by Microsoft.
@@ -50,11 +39,11 @@ By default, in new installations, Windows Defender Firewall with Advanced Securi
 
 If you turn off the Windows Defender Firewall service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
 
-Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This is the recommended approach for third-party firewalls to coexist with the Windows Defender Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft. 
+Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This approach is the recommended one for third-party firewalls to coexist with the Windows Defender Firewall; third-party firewalls that comply with this recommendation have the certified logo from Microsoft.
 
 An organization typically uses this design as a first step toward a more comprehensive Windows Defender Firewall design that adds server isolation and domain isolation.
 
-After implementing this design, you will have centralized management of the firewall rules applied to all devices that are running Windows in your organization.
+After implementing this design, you'll have centralized management of the firewall rules applied to all devices that are running Windows in your organization.
 
 > [!IMPORTANT] 
 > If you also intend to deploy the [Domain Isolation Policy Design](domain-isolation-policy-design.md), or the [Server Isolation Policy Design](server-isolation-policy-design.md), we recommend that you do the design work for all three designs together, and then deploy in layers that correspond with each design.

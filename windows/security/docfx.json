@@ -33,25 +33,100 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
+      "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.topic": "article",
-      "manager": "dansimp",
-      "audience": "ITPro",
+      "ms.localizationpriority": "medium",
+      "ms.prod": "windows-client",
+      "ms.technology": "itpro-security",
+      "manager": "aaroncz",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.security",
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Microsoft 365 Security"
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",
+        "garycentric",
+        "beccarobins"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {
-      "titleSuffix":{
-        "threat-protection/**/*.md": "Windows security"
+      "author":{
+        "identity-protection/**/*.md": "paolomatarazzo",
+        "threat-protection/windows-firewall/**/*.md": "aczechowski"
+      },
+      "ms.author":{
+        "identity-protection/**/*.md": "paoloma",
+        "threat-protection/windows-firewall/*.md": "aaroncz"
+      },
+      "appliesto":{
+        "identity-protection/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "identity-protection/credential-guard/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "identity-protection/smart-cards/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "identity-protection/user-account-control/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "identity-protection/virtual-smart-cards/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ]
+      },
+      "ms.reviewer":{
+        "identity-protection/hello-for-business/*.md": "erikdau",
+        "identity-protection/credential-guard/*.md": "zwhittington",
+        "identity-protection/access-control/*.md": "sulahiri",
+        "threat-protection/windows-firewall/*.md": "paoloma",
+        "identity-protection/vpn/*.md": "pesmith"
+      },
+      "ms.collection":{
+        "identity-protection/hello-for-business/*.md": "tier1",
+        "information-protection/bitlocker/*.md": "tier1",
+        "information-protection/personal-data-encryption/*.md": "tier1",
+        "information-protection/pluton/*.md": "tier1",
+        "information-protection/tpm/*.md": "tier1",
+        "threat-protection/auditing/*.md": "tier3",
+        "threat-protection/windows-defender-application-control/*.md": "tier3",
+        "threat-protection/windows-firewall/*.md": "tier3"
       }
     },
     "template": [],

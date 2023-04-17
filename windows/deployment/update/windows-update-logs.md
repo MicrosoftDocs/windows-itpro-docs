@@ -1,16 +1,16 @@
 ---
-title: Windows Update log files 
+title: Windows Update log files
 description: Learn about the Windows Update log files and how to merge and convert Windows Update trace files (.etl files) into a single readable WindowsUpdate.log file.
-ms.prod: w10
-ms.mktglfcycl: 
-audience: itpro
-itproauthor: jaimeo
-ms.audience: itpro
-author: jaimeo
-ms.reviewer: 
-manager: laurawi
-ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
+ms.topic: troubleshooting
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows Update log files
@@ -28,10 +28,10 @@ The following table describes the log files created by Windows Update.
 |CBS.log|%systemroot%\Logs\CBS|This log provides insight on the update installation part in the servicing stack.|To troubleshoot the issues related to Windows Update installation.|
 
 ## Generating WindowsUpdate.log 
-To merge and convert Windows Update trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](https://docs.microsoft.com/powershell/module/windowsupdate/get-windowsupdatelog?view=win10-ps&preserve-view=tru). 
+To merge and convert Windows Update trace files (.etl files) into a single readable WindowsUpdate.log file, see [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog?preserve-view=tru&view=win10-ps). 
 
 >[!NOTE]
->When you run the **Get-WindowsUpdateLog** cmdlet, an copy of WindowsUpdate.log file is created as a static log file. It does not update as the old WindowsUpate.log unless you run **Get-WindowsUpdateLog** again. 
+>When you run the **Get-WindowsUpdateLog** cmdlet, an copy of WindowsUpdate.log file is created as a static log file. It does not update as the old WindowsUpdate.log unless you run **Get-WindowsUpdateLog** again. 
  
 ### Windows Update log components 
 The Windows Update engine has different component names. The following are some of the most common components that appear in the WindowsUpdate.log file: 
@@ -85,7 +85,7 @@ The time stamp indicates the time at which the logging occurs.
 - Messages are usually in chronological order, but there may be exceptions. 
 - A pause during a sync can indicate a network problem, even if the scan succeeds. 
 - A long pause near the end of a scan can indicate a supersedence chain issue.   
-   ![Windows Update time stamps](images/update-time-log.png)
+   ![Windows Update time stamps.](images/update-time-log.png)
 
 
 #### Process ID and thread ID  
@@ -93,7 +93,7 @@ The Process IDs and Thread IDs are random, and they can vary from log to log and
 - The first four hex digits are the process ID. 
 - The next four hex digits are the thread ID. 
 - Each component, such as the USO, Windows Update engine, COM API callers, and Windows Update installer handlers, has its own process ID.   
-   ![Windows Update process and thread IDs](images/update-process-id.png)
+   ![Windows Update process and thread IDs.](images/update-process-id.png)
 
 
 #### Component name  
@@ -106,7 +106,7 @@ Search for and identify the components that are associated with the IDs. Differe
 - DataStore - Caching update data locally 
 - IdleTimer - Tracking active calls, stopping service 
 
-![Windows Update component name](images/update-component-name.png)
+![Windows Update component name.](images/update-component-name.png)
 
 
 #### Update identifiers  
@@ -117,7 +117,7 @@ There are different identifiers for the same update in different contexts. It's 
 - Revision number: A number incremented every time that a given update (that has a given update ID) is modified and republished on a service 
 - Revision numbers are reused from one update to another (not a unique identifier). 
 - The update ID and revision number are often shown together as "{GUID}.revision." 
-   ![Windows Update update identifiers](images/update-update-id.png)
+   ![Windows Update update identifiers.](images/update-update-id.png)
 
 
 ##### Revision ID 
@@ -141,7 +141,7 @@ There are different identifiers for the same update in different contexts. It's 
    - Small integers that appear alongside an update ID are revision numbers 
    - Large integers are typically revision IDs 
    - Small integers (especially in Datastore) can be local IDs 
-      ![Windows Update inconsisten terminology](images/update-inconsistent.png)
+      ![Windows Update inconsisten terminology.](images/update-inconsistent.png)
 
 ## Windows Setup log files analysis using SetupDiag tool
-SetupDiag is a diagnostic tool that can be used for analysis of logs related to installation of Windows Updates. For detailed information, see [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag).
+SetupDiag is a diagnostic tool that can be used for analysis of logs related to installation of Windows Updates. For detailed information, see [SetupDiag](../upgrade/setupdiag.md).

@@ -1,30 +1,18 @@
 ---
-title: GPO\_DOMISO\_IsolatedDomain\_Clients (Windows 10)
-description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
-ms.assetid: 73cd9e25-f2f1-4ef6-b0d1-d36209518cd9
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+title: GPO\_DOMISO\_IsolatedDomain\_Clients (Windows)
+description: Author this GPO by using Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # GPO\_DOMISO\_IsolatedDomain\_Clients
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-This GPO is authored by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to client devices that are running Windows 8, Windows 7, or Windows Vista.
+This GPO is authored by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It's intended to only apply to client devices that are running Windows 8, Windows 7, or Windows Vista.
 
 Because client devices can sometimes be portable, the settings and rules for this GPO are applied to only the domain profile.
 
@@ -36,7 +24,7 @@ This GPO provides the following settings:
 
 -   The ICMP protocol is exempted from authentication requirements to support easier network troubleshooting.
 
--   Diffie-Hellman Group 2 is specified as the key exchange algorithm. This is the strongest algorithm available that is supported by all the operating systems that are being used at Woodgrove Bank. After Woodgrove Bank has completed the upgrade to versions of Windows that support stronger algorithms, they can remove the weaker key exchange algorithms, and use only the stronger ones.
+-   Diffie-Hellman Group 2 is specified as the key exchange algorithm. This algorithm is the strongest algorithm available that is supported by all the operating systems that are being used at Woodgrove Bank. After Woodgrove Bank has completed the upgrade to versions of Windows that support stronger algorithms, they can remove the weaker key exchange algorithms, and use only the stronger ones.
 
 -   The registry settings shown in the following table. For more information, see the description of the registry settings in [Isolated Domain](isolated-domain.md).
 
@@ -79,7 +67,7 @@ This GPO provides the following rules:
 
         >**Important:**  On this, and all other GPOs that require authentication, Woodgrove Bank first chose to only request authentication. After confirming that the devices were successfully communicating by using IPsec, they switched the GPOs to require authentication.
 
-    -   For **First authentication methods**, select **Computer Kerberos v5** as the primary method. Add certificate-based authentication from **DC=com,DC=woodgrovebank,CN=CorporateCertServer** for devices that cannot run Windows or cannot join the domain, but must still participate in the isolated domain.
+    -   For **First authentication methods**, select **Computer Kerberos v5** as the primary method. Add certificate-based authentication from **DC=com,DC=woodgrovebank,CN=CorporateCertServer** for devices that can't run Windows or can't join the domain, but must still participate in the isolated domain.
 
     -   For **Second authentication**, select **User Kerberos v5**, and then select the **Second authentication is optional** check box.
 

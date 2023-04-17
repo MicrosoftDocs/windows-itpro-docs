@@ -2,23 +2,20 @@
 title: 4946(S) A change has been made to Windows Firewall exception list. A rule was added. (Windows 10)
 description: Describes security event 4946(S) A change has been made to Windows Firewall exception list. A rule was added.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4946(S): A change has been made to Windows Firewall exception list. A rule was added.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4946.png" alt="Event 4946 illustration" width="449" height="350" hspace="10" align="left" />
@@ -75,11 +72,11 @@ This event doesn't generate when new rule was added via Group Policy.
 
 -   All
 
--   Domain,Public
+-   Domain, Public
 
--   Domain,Private
+-   Domain, Private
 
--   Private,Public
+-   Private, Public
 
 -   Public
 
@@ -91,11 +88,11 @@ This event doesn't generate when new rule was added via Group Policy.
 
 -   **Rule ID** \[Type = UnicodeString\]: the unique new firewall rule identifier.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you'll see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Rule Name** \[Type = UnicodeString\]: the name of the rule which was added. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Rule Name** \[Type = UnicodeString\]: the name of the rule that was added. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 
@@ -103,5 +100,5 @@ This event doesn't generate when new rule was added via Group Policy.
 
 For 4946(S): A change has been made to Windows Firewall exception list. A rule was added.
 
--   This event can be helpful in case you want to monitor all creations of new Firewall rules which were done locally.
+-   This event can be helpful in case you want to monitor all creations of new Firewall rules that were done locally.
 

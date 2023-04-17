@@ -3,23 +3,21 @@ title: Audit Handle Manipulation (Windows 10)
 description: The Advanced Security Audit policy setting, Audit Handle Manipulation, determines if audit events are generated when a handle to an object is opened or closed.
 ms.assetid: 1fbb004a-ccdc-4c80-b3da-a4aa7a9f4091
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Handle Manipulation
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Audit Handle Manipulation enables generation of “4658: The handle to an object was closed” in [Audit File System](audit-file-system.md), [Audit Kernel Object](audit-kernel-object.md), [Audit Registry](audit-registry.md), [Audit Removable Storage](audit-removable-storage.md) and [Audit SAM](audit-sam.md) subcategories, and shows object’s handle duplication and close actions.
 

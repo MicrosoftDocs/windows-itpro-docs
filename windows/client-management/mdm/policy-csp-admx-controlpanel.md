@@ -1,93 +1,52 @@
 ---
-title: Policy CSP - ADMX_ControlPanel
-description: Policy CSP - ADMX_ControlPanel
-ms.author: dansimp
+title: ADMX_ControlPanel Policy CSP
+description: Learn more about the ADMX_ControlPanel Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 11/05/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_ControlPanel-Begin -->
 # Policy CSP - ADMX_ControlPanel
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## ADMX_ControlPanel policies  
+<!-- ADMX_ControlPanel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ControlPanel-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-controlpanel-disallowcpls">ADMX_ControlPanel/DisallowCpls</a>
-  </dd>
-  <dd>
-    <a href="#admx-controlpanel-forceclassiccontrolpanel">ADMX_ControlPanel/ForceClassicControlPanel</a>
-  </dd>
-  <dd>
-    <a href="#admx-controlpanel-nocontrolpanel">ADMX_ControlPanel/NoControlPanel</a>
-  </dd>
-  <dd>
-    <a href="#admx-controlpanel-restrictcpls">ADMX_ControlPanel/RestrictCpls</a>
-  </dd>
-</dl>
+<!-- DisallowCpls-Begin -->
+## DisallowCpls
 
+<!-- DisallowCpls-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisallowCpls-Applicability-End -->
 
-<hr/>
+<!-- DisallowCpls-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ControlPanel/DisallowCpls
+```
+<!-- DisallowCpls-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-controlpanel-disallowcpls"></a>**ADMX_ControlPanel/DisallowCpls**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting allows you to display or hide specified Control Panel items, such as Mouse, System, or Personalization, from the Control Panel window and the Start screen. The setting affects the Start screen and Control Panel window, as well as other ways to access Control Panel items, such as shortcuts in Help and Support or command lines that use control.exe. This policy has no effect on items displayed in PC settings.
+<!-- DisallowCpls-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting allows you to display or hide specified Control Panel items, such as Mouse, System, or Personalization, from the Control Panel window and the Start screen. The setting affects the Start screen and Control Panel window, as well as other ways to access Control Panel items, such as shortcuts in Help and Support or command lines that use control.exe. This policy has no effect on items displayed in PC settings.
 
 If you enable this setting, you can select specific items not to display on the Control Panel window and the Start screen.
 
-To hide a Control Panel item, enable this policy setting and click Show to access the list of disallowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft.Mouse, Microsoft.System, or Microsoft.Personalization.
+To hide a Control Panel item, enable this policy setting and click Show to access the list of disallowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft. Mouse, Microsoft. System, or Microsoft. Personalization.
 
 > [!NOTE]
 > For Windows Vista, Windows Server 2008, and earlier versions of Windows, the module name should be entered, for example timedate.cpl or inetcpl.cpl. If a Control Panel item does not have a CPL file, or the CPL file contains multiple applets, then its module name and string resource identification number should be entered, for example @systemcpl.dll,-1 for System, or @themecpl.dll,-1 for Personalization. A complete list of canonical and module names can be found in MSDN by searching "Control Panel items".
@@ -95,229 +54,203 @@ To hide a Control Panel item, enable this policy setting and click Show to acces
 If both the "Hide specified Control Panel items" setting and the "Show only specified Control Panel items" setting are enabled, the "Show only specified Control Panel items" setting is ignored.
 
 > [!NOTE]
-> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.  Note: To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
+> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
 
-<!--/Description-->
+> [!NOTE]
+> To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
+<!-- DisallowCpls-Description-End -->
+
+<!-- DisallowCpls-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowCpls-Editable-End -->
+
+<!-- DisallowCpls-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowCpls-DFProperties-End -->
+
+<!-- DisallowCpls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide specified Control Panel items*
--   GP name: *DisallowCpls*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisallowCpls |
+| Friendly Name | Hide specified Control Panel items |
+| Location | User Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisallowCpl |
+| ADMX File Name | ControlPanel.admx |
+<!-- DisallowCpls-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-controlpanel-forceclassiccontrolpanel"></a>**ADMX_ControlPanel/ForceClassicControlPanel**  
+<!-- DisallowCpls-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowCpls-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisallowCpls-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ForceClassicControlPanel-Begin -->
+## ForceClassicControlPanel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ForceClassicControlPanel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceClassicControlPanel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ForceClassicControlPanel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ControlPanel/ForceClassicControlPanel
+```
+<!-- ForceClassicControlPanel-OmaUri-End -->
 
-<hr/>
+<!-- ForceClassicControlPanel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls the default Control Panel view, whether by category or icons.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls the default Control Panel view, whether by category or icons. 
+- If this policy setting is enabled, the Control Panel opens to the icon view.
 
-If this policy setting is enabled, the Control Panel opens to the icon view.
+- If this policy setting is disabled, the Control Panel opens to the category view.
 
-If this policy setting is disabled, the Control Panel opens to the category view.
-
-If this policy setting is not configured, the Control Panel opens to the view used in the last Control Panel session.
+- If this policy setting is not configured, the Control Panel opens to the view used in the last Control Panel session.
 
 > [!NOTE]
 > Icon size is dependent upon what the user has set it to in the previous session.
+<!-- ForceClassicControlPanel-Description-End -->
 
-<!--/Description-->
+<!-- ForceClassicControlPanel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceClassicControlPanel-Editable-End -->
+
+<!-- ForceClassicControlPanel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ForceClassicControlPanel-DFProperties-End -->
+
+<!-- ForceClassicControlPanel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Always open All Control Panel Items when opening Control Panel*
--   GP name: *ForceClassicControlPanel*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ForceClassicControlPanel |
+| Friendly Name | Always open All Control Panel Items when opening Control Panel |
+| Location | User Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ForceClassicControlPanel |
+| ADMX File Name | ControlPanel.admx |
+<!-- ForceClassicControlPanel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-controlpanel-nocontrolpanel"></a>**ADMX_ControlPanel/NoControlPanel**  
+<!-- ForceClassicControlPanel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceClassicControlPanel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ForceClassicControlPanel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoControlPanel-Begin -->
+## NoControlPanel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoControlPanel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoControlPanel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoControlPanel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ControlPanel/NoControlPanel
+```
+<!-- NoControlPanel-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Disables all Control Panel programs and the PC settings app.
+<!-- NoControlPanel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disables all Control Panel programs and the PC settings app.
 
 This setting prevents Control.exe and SystemSettings.exe, the program files for Control Panel and PC settings, from starting. As a result, users cannot start Control Panel or PC settings, or run any of their items.
 
 This setting removes Control Panel from:
-
-- The Start screen
-- File Explorer
+The Start screen
+File Explorer
 
 This setting removes PC settings from:
-
-- The Start screen
-- Settings charm
-- Account picture
-- Search results
+The Start screen
+Settings charm
+Account picture
+Search results
 
 If users try to select a Control Panel item from the Properties item on a context menu, a message appears explaining that a setting prevents the action.
+<!-- NoControlPanel-Description-End -->
 
-<!--/Description-->
+<!-- NoControlPanel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoControlPanel-Editable-End -->
+
+<!-- NoControlPanel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoControlPanel-DFProperties-End -->
+
+<!-- NoControlPanel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit access to Control Panel and PC settings*
--   GP name: *NoControlPanel*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoControlPanel |
+| Friendly Name | Prohibit access to Control Panel and PC settings |
+| Location | User Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoControlPanel |
+| ADMX File Name | ControlPanel.admx |
+<!-- NoControlPanel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-controlpanel-restrictcpls"></a>**ADMX_ControlPanel/RestrictCpls**  
+<!-- NoControlPanel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoControlPanel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoControlPanel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RestrictCpls-Begin -->
+## RestrictCpls
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RestrictCpls-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictCpls-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RestrictCpls-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_ControlPanel/RestrictCpls
+```
+<!-- RestrictCpls-OmaUri-End -->
 
-<hr/>
+<!-- RestrictCpls-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls which Control Panel items such as Mouse, System, or Personalization, are displayed on the Control Panel window and the Start screen. The only items displayed in Control Panel are those you specify in this setting. This setting affects the Start screen and Control Panel, as well as other ways to access Control Panel items such as shortcuts in Help and Support or command lines that use control.exe. This policy has no effect on items displayed in PC settings.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls which Control Panel items such as Mouse, System, or Personalization, are displayed on the Control Panel window and the Start screen. The only items displayed in Control Panel are those you specify in this setting. This setting affects the Start screen and Control Panel, as well as other ways to access Control Panel items such as shortcuts in Help and Support or command lines that use control.exe. This policy has no effect on items displayed in PC settings.
-
-To display a Control Panel item, enable this policy setting and click Show to access the list of allowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft.Mouse, Microsoft.System, or Microsoft.Personalization.
+To display a Control Panel item, enable this policy setting and click Show to access the list of allowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft. Mouse, Microsoft. System, or Microsoft. Personalization.
 
 > [!NOTE]
 > For Windows Vista, Windows Server 2008, and earlier versions of Windows, the module name, for example timedate.cpl or inetcpl.cpl, should be entered. If a Control Panel item does not have a CPL file, or the CPL file contains multiple applets, then its module name and string resource identification number should be entered. For example, enter @systemcpl.dll,-1 for System or @themecpl.dll,-1 for Personalization. A complete list of canonical and module names of Control Panel items can be found in MSDN by searching "Control Panel items".
@@ -326,37 +259,53 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 > [!NOTE]
 > The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
->
+
+> [!NOTE]
 > To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
+<!-- RestrictCpls-Description-End -->
 
-<!--/Description-->
+<!-- RestrictCpls-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictCpls-Editable-End -->
+
+<!-- RestrictCpls-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictCpls-DFProperties-End -->
+
+<!-- RestrictCpls-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Show only specified Control Panel items*
--   GP name: *RestrictCpls*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RestrictCpls |
+| Friendly Name | Show only specified Control Panel items |
+| Location | User Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | RestrictCpl |
+| ADMX File Name | ControlPanel.admx |
+<!-- RestrictCpls-AdmxBacked-End -->
 
-Footnotes:
+<!-- RestrictCpls-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictCpls-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- RestrictCpls-End -->
 
-<!--/Policies-->
+<!-- ADMX_ControlPanel-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ControlPanel-CspMoreInfo-End -->
+
+<!-- ADMX_ControlPanel-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

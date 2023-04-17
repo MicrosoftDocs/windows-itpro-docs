@@ -1,451 +1,298 @@
 ---
-title: Policy CSP - ADMX_Desktop
-description: Policy CSP - ADMX_Desktop
-ms.author: dansimp
+title: ADMX_Desktop Policy CSP
+description: Learn more about the ADMX_Desktop Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 12/02/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Desktop-Begin -->
 # Policy CSP - ADMX_Desktop
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_Desktop policies  
-
-<dl>
-  <dd>
-    <a href="#admx-desktop-ad-enablefilter">ADMX_Desktop/AD_EnableFilter</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-ad-hidedirectoryfolder">ADMX_Desktop/AD_HideDirectoryFolder</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-ad-querylimit">ADMX_Desktop/AD_QueryLimit</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-forceactivedesktopon">ADMX_Desktop/ForceActiveDesktopOn</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-noactivedesktop">ADMX_Desktop/NoActiveDesktop</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-noactivedesktopchanges">ADMX_Desktop/NoActiveDesktopChanges</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nodesktop">ADMX_Desktop/NoDesktop</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nodesktopcleanupwizard">ADMX_Desktop/NoDesktopCleanupWizard</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nointerneticon">ADMX_Desktop/NoInternetIcon</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nomycomputericon">ADMX_Desktop/NoMyComputerIcon</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nomydocumentsicon">ADMX_Desktop/NoMyDocumentsIcon</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nonethood">ADMX_Desktop/NoNetHood</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nopropertiesmycomputer">ADMX_Desktop/NoPropertiesMyComputer</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nopropertiesmydocuments">ADMX_Desktop/NoPropertiesMyDocuments</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-norecentdocsnethood">ADMX_Desktop/NoRecentDocsNetHood</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-norecyclebinicon">ADMX_Desktop/NoRecycleBinIcon</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-norecyclebinproperties">ADMX_Desktop/NoRecycleBinProperties</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nosavesettings">ADMX_Desktop/NoSaveSettings</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-nowindowminimizingshortcuts">ADMX_Desktop/NoWindowMinimizingShortcuts</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-wallpaper">ADMX_Desktop/Wallpaper</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-atc-disableadd">ADMX_Desktop/sz_ATC_DisableAdd</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-atc-disableclose">ADMX_Desktop/sz_ATC_DisableClose</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-atc-disabledel">ADMX_Desktop/sz_ATC_DisableDel</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-atc-disableedit">ADMX_Desktop/sz_ATC_DisableEdit</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-atc-nocomponents">ADMX_Desktop/sz_ATC_NoComponents</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-admincomponents-title">ADMX_Desktop/sz_AdminComponents_Title</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-db-dragdropclose">ADMX_Desktop/sz_DB_DragDropClose</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-db-moving">ADMX_Desktop/sz_DB_Moving</a>
-  </dd>
-  <dd>
-    <a href="#admx-desktop-sz-dwp-nohtmlpaper">ADMX_Desktop/sz_DWP_NoHTMLPaper</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-ad-enablefilter"></a>**ADMX_Desktop/AD_EnableFilter**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Displays the filter bar above the results of an Active Directory search. The filter bar consists of buttons for applying additional filters to search results.
-
-If you enable this setting, the filter bar appears when the Active Directory Find dialog box opens, but users can hide it.
-
-If you disable this setting or do not configure it, the filter bar does not appear, but users can display it by selecting "Filter" on the "View" menu.
-
-To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as  "Administrator." If the filter bar does not appear above the resulting display, on the View menu, click Filter.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable filter in Find dialog box*
--   GP name: *AD_EnableFilter*
--   GP path: *Desktop\Active Directory*
--   GP ADMX file name: *Desktop.admx*
+<!-- ADMX_Desktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Desktop-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AD_EnableFilter-Begin -->
+## AD_EnableFilter
 
-<!--Policy-->
-<a href="" id="admx-desktop-ad-hidedirectoryfolder"></a>**ADMX_Desktop/AD_HideDirectoryFolder**  
+<!-- AD_EnableFilter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AD_EnableFilter-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AD_EnableFilter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/AD_EnableFilter
+```
+<!-- AD_EnableFilter-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AD_EnableFilter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Displays the filter bar above the results of an Active Directory search. The filter bar consists of buttons for applying additional filters to search results.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this setting, the filter bar appears when the Active Directory Find dialog box opens, but users can hide it.
 
-> [!div class = "checklist"]
-> * User
+- If you disable this setting or do not configure it, the filter bar does not appear, but users can display it by selecting "Filter" on the "View" menu.
 
-<hr/>
+To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as "Administrator." If the filter bar does not appear above the resulting display, on the View menu, click Filter.
+<!-- AD_EnableFilter-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Hides the Active Directory folder in Network Locations.
+<!-- AD_EnableFilter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AD_EnableFilter-Editable-End -->
+
+<!-- AD_EnableFilter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AD_EnableFilter-DFProperties-End -->
+
+<!-- AD_EnableFilter-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AD_EnableFilter |
+| Friendly Name | Enable filter in Find dialog box |
+| Location | User Configuration |
+| Path | Desktop > Active Directory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Directory UI |
+| Registry Value Name | EnableFilter |
+| ADMX File Name | Desktop.admx |
+<!-- AD_EnableFilter-AdmxBacked-End -->
+
+<!-- AD_EnableFilter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AD_EnableFilter-Examples-End -->
+
+<!-- AD_EnableFilter-End -->
+
+<!-- AD_HideDirectoryFolder-Begin -->
+## AD_HideDirectoryFolder
+
+<!-- AD_HideDirectoryFolder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AD_HideDirectoryFolder-Applicability-End -->
+
+<!-- AD_HideDirectoryFolder-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/AD_HideDirectoryFolder
+```
+<!-- AD_HideDirectoryFolder-OmaUri-End -->
+
+<!-- AD_HideDirectoryFolder-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hides the Active Directory folder in Network Locations.
 
 The Active Directory folder displays Active Directory objects in a browse window.
 
-If you enable this setting, the Active Directory folder does not appear in the Network Locations folder.
+- If you enable this setting, the Active Directory folder does not appear in the Network Locations folder.
 
-If you disable this setting or do not configure it, the Active Directory folder appears in the Network Locations folder.
+- If you disable this setting or do not configure it, the Active Directory folder appears in the Network Locations folder.
 
 This setting is designed to let users search Active Directory but not tempt them to casually browse Active Directory.
+<!-- AD_HideDirectoryFolder-Description-End -->
 
-<!--/Description-->
+<!-- AD_HideDirectoryFolder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AD_HideDirectoryFolder-Editable-End -->
+
+<!-- AD_HideDirectoryFolder-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AD_HideDirectoryFolder-DFProperties-End -->
+
+<!-- AD_HideDirectoryFolder-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide Active Directory folder*
--   GP name: *AD_HideDirectoryFolder*
--   GP path: *Desktop\Active Directory*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AD_HideDirectoryFolder |
+| Friendly Name | Hide Active Directory folder |
+| Location | User Configuration |
+| Path | Desktop > Active Directory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Directory UI |
+| Registry Value Name | HideDirectoryFolder |
+| ADMX File Name | Desktop.admx |
+<!-- AD_HideDirectoryFolder-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-ad-querylimit"></a>**ADMX_Desktop/AD_QueryLimit**  
+<!-- AD_HideDirectoryFolder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AD_HideDirectoryFolder-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AD_HideDirectoryFolder-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AD_QueryLimit-Begin -->
+## AD_QueryLimit
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AD_QueryLimit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AD_QueryLimit-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- AD_QueryLimit-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/AD_QueryLimit
+```
+<!-- AD_QueryLimit-OmaUri-End -->
 
-<hr/>
+<!-- AD_QueryLimit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the maximum number of objects the system displays in response to a command to browse or search Active Directory. This setting affects all browse displays associated with Active Directory, such as those in Local Users and Groups, Active Directory Users and Computers, and dialog boxes used to set permissions for user or group objects in Active Directory.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Specifies the maximum number of objects the system displays in response to a command to browse or search Active Directory. This setting affects all browse displays associated with Active Directory, such as those in Local Users and Groups, Active Directory Users and Computers, and dialog boxes used to set permissions for user or group objects in Active Directory.
+- If you enable this setting, you can use the "Number of objects returned" box to limit returns from an Active Directory search.
 
-If you enable this setting, you can use the "Number of objects returned" box to limit returns from an Active Directory search.
-
-If you disable this setting or do not configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
+- If you disable this setting or do not configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
 
 This setting is designed to protect the network and the domain controller from the effect of expansive searches.
+<!-- AD_QueryLimit-Description-End -->
 
-<!--/Description-->
+<!-- AD_QueryLimit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AD_QueryLimit-Editable-End -->
+
+<!-- AD_QueryLimit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AD_QueryLimit-DFProperties-End -->
+
+<!-- AD_QueryLimit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Maximum size of Active Directory searches*
--   GP name: *AD_QueryLimit*
--   GP path: *Desktop\Active Directory*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AD_QueryLimit |
+| Friendly Name | Maximum size of Active Directory searches |
+| Location | User Configuration |
+| Path | Desktop > Active Directory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Directory UI |
+| ADMX File Name | Desktop.admx |
+<!-- AD_QueryLimit-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-forceactivedesktopon"></a>**ADMX_Desktop/ForceActiveDesktopOn**  
+<!-- AD_QueryLimit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AD_QueryLimit-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AD_QueryLimit-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ForceActiveDesktopOn-Begin -->
+## ForceActiveDesktopOn
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ForceActiveDesktopOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceActiveDesktopOn-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ForceActiveDesktopOn-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/ForceActiveDesktopOn
+```
+<!-- ForceActiveDesktopOn-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Enables Active Desktop and prevents users from disabling it.
+<!-- ForceActiveDesktopOn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enables Active Desktop and prevents users from disabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
 If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
-> If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored.  If the "Turn on Classic Shell" setting (in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both of these policies are ignored.
+> If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting ( in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both of these policies are ignored.
+<!-- ForceActiveDesktopOn-Description-End -->
 
-<!--/Description-->
+<!-- ForceActiveDesktopOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceActiveDesktopOn-Editable-End -->
+
+<!-- ForceActiveDesktopOn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ForceActiveDesktopOn-DFProperties-End -->
+
+<!-- ForceActiveDesktopOn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable Active Desktop*
--   GP name: *ForceActiveDesktopOn*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ForceActiveDesktopOn |
+| Friendly Name | Enable Active Desktop |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ForceActiveDesktopOn |
+| ADMX File Name | Desktop.admx |
+<!-- ForceActiveDesktopOn-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-noactivedesktop"></a>**ADMX_Desktop/NoActiveDesktop**  
+<!-- ForceActiveDesktopOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceActiveDesktopOn-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ForceActiveDesktopOn-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoActiveDesktop-Begin -->
+## NoActiveDesktop
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoActiveDesktop-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoActiveDesktop-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoActiveDesktop-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoActiveDesktop
+```
+<!-- NoActiveDesktop-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Disables Active Desktop and prevents users from enabling it.
+<!-- NoActiveDesktop-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disables Active Desktop and prevents users from enabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
@@ -453,420 +300,370 @@ If you disable this setting or do not configure it, Active Desktop is disabled b
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting (in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both these policies are ignored.
+<!-- NoActiveDesktop-Description-End -->
 
-<!--/Description-->
+<!-- NoActiveDesktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoActiveDesktop-Editable-End -->
+
+<!-- NoActiveDesktop-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoActiveDesktop-DFProperties-End -->
+
+<!-- NoActiveDesktop-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disable Active Desktop*
--   GP name: *NoActiveDesktop*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoActiveDesktop |
+| Friendly Name | Disable Active Desktop |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoActiveDesktop |
+| ADMX File Name | Desktop.admx |
+<!-- NoActiveDesktop-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-noactivedesktopchanges"></a>**ADMX_Desktop/NoActiveDesktopChanges**  
+<!-- NoActiveDesktop-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoActiveDesktop-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoActiveDesktop-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoActiveDesktopChanges-Begin -->
+## NoActiveDesktopChanges
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoActiveDesktopChanges-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoActiveDesktopChanges-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoActiveDesktopChanges-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoActiveDesktopChanges
+```
+<!-- NoActiveDesktopChanges-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents the user from enabling or disabling Active Desktop or changing the Active Desktop configuration.
+<!-- NoActiveDesktopChanges-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents the user from enabling or disabling Active Desktop or changing the Active Desktop configuration.
 
 This is a comprehensive setting that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users cannot enable or disable Active Desktop. If Active Desktop is already enabled, users cannot add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
+<!-- NoActiveDesktopChanges-Description-End -->
 
-<!--/Description-->
+<!-- NoActiveDesktopChanges-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoActiveDesktopChanges-Editable-End -->
+
+<!-- NoActiveDesktopChanges-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoActiveDesktopChanges-DFProperties-End -->
+
+<!-- NoActiveDesktopChanges-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit changes*
--   GP name: *NoActiveDesktopChanges*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoActiveDesktopChanges |
+| Friendly Name | Prohibit changes |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoActiveDesktopChanges |
+| ADMX File Name | Desktop.admx |
+<!-- NoActiveDesktopChanges-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nodesktop"></a>**ADMX_Desktop/NoDesktop**  
+<!-- NoActiveDesktopChanges-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoActiveDesktopChanges-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoActiveDesktopChanges-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoDesktop-Begin -->
+## NoDesktop
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoDesktop-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoDesktop-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoDesktop-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoDesktop
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoDesktop
+```
+<!-- NoDesktop-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes icons, shortcuts, and other default and user-defined items from the desktop, including Briefcase, Recycle Bin, Computer, and Network Locations.
+<!-- NoDesktop-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes icons, shortcuts, and other default and user-defined items from the desktop, including Briefcase, Recycle Bin, Computer, and Network Locations.
 
 Removing icons and shortcuts does not prevent the user from using another method to start the programs or opening the items they represent.
 
 Also, see "Items displayed in Places Bar" in User Configuration\Administrative Templates\Windows Components\Common Open File Dialog to remove the Desktop icon from the Places Bar. This will help prevent users from saving data to the Desktop.
+<!-- NoDesktop-Description-End -->
 
-<!--/Description-->
+<!-- NoDesktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoDesktop-Editable-End -->
+
+<!-- NoDesktop-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoDesktop-DFProperties-End -->
+
+<!-- NoDesktop-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide and disable all items on the desktop*
--   GP name: *NoDesktop*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoDesktop |
+| Friendly Name | Hide and disable all items on the desktop |
+| Location | Computer and User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoDesktop |
+| ADMX File Name | Desktop.admx |
+<!-- NoDesktop-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nodesktopcleanupwizard"></a>**ADMX_Desktop/NoDesktopCleanupWizard**  
+<!-- NoDesktop-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoDesktop-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoDesktop-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoDesktopCleanupWizard-Begin -->
+## NoDesktopCleanupWizard
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoDesktopCleanupWizard-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoDesktopCleanupWizard-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoDesktopCleanupWizard-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoDesktopCleanupWizard
+```
+<!-- NoDesktopCleanupWizard-OmaUri-End -->
 
-<hr/>
+<!-- NoDesktopCleanupWizard-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from using the Desktop Cleanup Wizard.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from using the Desktop Cleanup Wizard.
+- If you enable this setting, the Desktop Cleanup wizard does not automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
 
-If you enable this setting, the Desktop Cleanup wizard does not automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
-
-If you disable this setting or do not configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
+- If you disable this setting or do not configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
 
 > [!NOTE]
 > When this setting is not enabled, users can run the Desktop Cleanup Wizard, or have it run automatically every 60 days from Display, by clicking the Desktop tab and then clicking the Customize Desktop button.
+<!-- NoDesktopCleanupWizard-Description-End -->
 
-<!--/Description-->
+<!-- NoDesktopCleanupWizard-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoDesktopCleanupWizard-Editable-End -->
+
+<!-- NoDesktopCleanupWizard-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoDesktopCleanupWizard-DFProperties-End -->
+
+<!-- NoDesktopCleanupWizard-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove the Desktop Cleanup Wizard*
--   GP name: *NoDesktopCleanupWizard*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoDesktopCleanupWizard |
+| Friendly Name | Remove the Desktop Cleanup Wizard |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoDesktopCleanupWizard |
+| ADMX File Name | Desktop.admx |
+<!-- NoDesktopCleanupWizard-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nointerneticon"></a>**ADMX_Desktop/NoInternetIcon**  
+<!-- NoDesktopCleanupWizard-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoDesktopCleanupWizard-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoDesktopCleanupWizard-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoInternetIcon-Begin -->
+## NoInternetIcon
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoInternetIcon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoInternetIcon-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoInternetIcon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoInternetIcon
+```
+<!-- NoInternetIcon-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes the Internet Explorer icon from the desktop and from the Quick Launch bar on the taskbar.
+<!-- NoInternetIcon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Internet Explorer icon from the desktop and from the Quick Launch bar on the taskbar.
 
 This setting does not prevent the user from starting Internet Explorer by using other methods.
+<!-- NoInternetIcon-Description-End -->
 
-<!--/Description-->
+<!-- NoInternetIcon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoInternetIcon-Editable-End -->
+
+<!-- NoInternetIcon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoInternetIcon-DFProperties-End -->
+
+<!-- NoInternetIcon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide Internet Explorer icon on desktop*
--   GP name: *NoInternetIcon*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoInternetIcon |
+| Friendly Name | Hide Internet Explorer icon on desktop |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoInternetIcon |
+| ADMX File Name | Desktop.admx |
+<!-- NoInternetIcon-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nomycomputericon"></a>**ADMX_Desktop/NoMyComputerIcon**  
+<!-- NoInternetIcon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoInternetIcon-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoInternetIcon-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoMyComputerIcon-Begin -->
+## NoMyComputerIcon
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoMyComputerIcon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoMyComputerIcon-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoMyComputerIcon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoMyComputerIcon
+```
+<!-- NoMyComputerIcon-OmaUri-End -->
 
-<hr/>
+<!-- NoMyComputerIcon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting hides Computer from the desktop and from the new Start menu. It also hides links to Computer in the Web view of all Explorer windows, and it hides Computer in the Explorer folder tree pane. If the user navigates into Computer via the "Up" button while this setting is enabled, they view an empty Computer folder. This setting allows administrators to restrict their users from seeing Computer in the shell namespace, allowing them to present their users with a simpler desktop environment.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting hides Computer from the desktop and from the new Start menu. It also hides links to Computer in the Web view of all Explorer windows, and it hides Computer in the Explorer folder tree pane. If the user navigates into Computer via the "Up" button while this setting is enabled, they view an empty Computer folder. This setting allows administrators to restrict their users from seeing Computer in the shell namespace, allowing them to present their users with a simpler desktop environment.
+- If you enable this setting, Computer is hidden on the desktop, the new Start menu, the Explorer folder tree pane, and the Explorer Web views. If the user manages to navigate to Computer, the folder will be empty.
 
-If you enable this setting, Computer is hidden on the desktop, the new Start menu, the Explorer folder tree pane, and the Explorer Web views. If the user manages to navigate to Computer, the folder will be empty.
+- If you disable this setting, Computer is displayed as usual, appearing as normal on the desktop, Start menu, folder tree pane, and Web views, unless restricted by another setting.
 
-If you disable this setting, Computer is displayed as usual, appearing as normal on the desktop, Start menu, folder tree pane, and Web views, unless restricted by another setting.
-
-If you do not configure this setting, the default is to display Computer as usual.
+- If you do not configure this setting, the default is to display Computer as usual.
 
 > [!NOTE]
 > In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Computer icon. Hiding Computer and its contents does not hide the contents of the child folders of Computer. For example, if the users navigate into one of their hard drives, they see all of their folders and files there, even if this setting is enabled.
+<!-- NoMyComputerIcon-Description-End -->
 
-<!--/Description-->
+<!-- NoMyComputerIcon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoMyComputerIcon-Editable-End -->
+
+<!-- NoMyComputerIcon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoMyComputerIcon-DFProperties-End -->
+
+<!-- NoMyComputerIcon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Computer icon on the desktop*
--   GP name: *NoMyComputerIcon*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoMyComputerIcon |
+| Friendly Name | Remove Computer icon on the desktop |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\NonEnum |
+| Registry Value Name | {20D04FE0-3AEA-1069-A2D8-08002B30309D} |
+| ADMX File Name | Desktop.admx |
+<!-- NoMyComputerIcon-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nomydocumentsicon"></a>**ADMX_Desktop/NoMyDocumentsIcon**  
+<!-- NoMyComputerIcon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoMyComputerIcon-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoMyComputerIcon-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoMyDocumentsIcon-Begin -->
+## NoMyDocumentsIcon
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoMyDocumentsIcon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoMyDocumentsIcon-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoMyDocumentsIcon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoMyDocumentsIcon
+```
+<!-- NoMyDocumentsIcon-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes most occurrences of the My Documents icon.
+<!-- NoMyDocumentsIcon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes most occurrences of the My Documents icon.
 
 This setting removes the My Documents icon from the desktop, from File Explorer, from programs that use the File Explorer windows, and from the standard Open dialog box.
 
@@ -876,352 +673,307 @@ This setting does not remove the My Documents icon from the Start menu. To do so
 
 > [!NOTE]
 > To make changes to this setting effective, you must log off from and log back on to Windows 2000 Professional.
+<!-- NoMyDocumentsIcon-Description-End -->
 
-<!--/Description-->
+<!-- NoMyDocumentsIcon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoMyDocumentsIcon-Editable-End -->
+
+<!-- NoMyDocumentsIcon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoMyDocumentsIcon-DFProperties-End -->
+
+<!-- NoMyDocumentsIcon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove My Documents icon on the desktop*
--   GP name: *NoMyDocumentsIcon*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoMyDocumentsIcon |
+| Friendly Name | Remove My Documents icon on the desktop |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\NonEnum |
+| Registry Value Name | {450D8FBA-AD25-11D0-98A8-0800361B1103} |
+| ADMX File Name | Desktop.admx |
+<!-- NoMyDocumentsIcon-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nonethood"></a>**ADMX_Desktop/NoNetHood**  
+<!-- NoMyDocumentsIcon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoMyDocumentsIcon-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoMyDocumentsIcon-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoNetHood-Begin -->
+## NoNetHood
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoNetHood-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoNetHood-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoNetHood-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoNetHood
+```
+<!-- NoNetHood-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes the Network Locations icon from the desktop.
+<!-- NoNetHood-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Network Locations icon from the desktop.
 
 This setting only affects the desktop icon. It does not prevent users from connecting to the network or browsing for shared computers on the network.
 
 > [!NOTE]
 > In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Network Places icon.
+<!-- NoNetHood-Description-End -->
 
-<!--/Description-->
+<!-- NoNetHood-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoNetHood-Editable-End -->
+
+<!-- NoNetHood-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoNetHood-DFProperties-End -->
+
+<!-- NoNetHood-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide Network Locations icon on desktop*
--   GP name: *NoNetHood*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoNetHood |
+| Friendly Name | Hide Network Locations icon on desktop |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoNetHood |
+| ADMX File Name | Desktop.admx |
+<!-- NoNetHood-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nopropertiesmycomputer"></a>**ADMX_Desktop/NoPropertiesMyComputer**  
+<!-- NoNetHood-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoNetHood-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoNetHood-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPropertiesMyComputer-Begin -->
+## NoPropertiesMyComputer
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPropertiesMyComputer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPropertiesMyComputer-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPropertiesMyComputer-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoPropertiesMyComputer
+```
+<!-- NoPropertiesMyComputer-OmaUri-End -->
 
-<hr/>
+<!-- NoPropertiesMyComputer-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting hides Properties on the context menu for Computer.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting hides Properties on the context menu for Computer.
+- If you enable this setting, the Properties option will not be present when the user right-clicks My Computer or clicks Computer and then goes to the File menu. Likewise, Alt-Enter does nothing when Computer is selected.
 
-If you enable this setting, the Properties option will not be present when the user right-clicks My Computer or clicks Computer and then goes to the File menu.  Likewise, Alt-Enter does nothing when Computer is selected.
+- If you disable or do not configure this setting, the Properties option is displayed as usual.
+<!-- NoPropertiesMyComputer-Description-End -->
 
-If you disable or do not configure this setting, the Properties option is displayed as usual.
+<!-- NoPropertiesMyComputer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPropertiesMyComputer-Editable-End -->
 
-<!--/Description-->
+<!-- NoPropertiesMyComputer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPropertiesMyComputer-DFProperties-End -->
+
+<!-- NoPropertiesMyComputer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Properties from the Computer icon context menu*
--   GP name: *NoPropertiesMyComputer*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoPropertiesMyComputer |
+| Friendly Name | Remove Properties from the Computer icon context menu |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoPropertiesMyComputer |
+| ADMX File Name | Desktop.admx |
+<!-- NoPropertiesMyComputer-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nopropertiesmydocuments"></a>**ADMX_Desktop/NoPropertiesMyDocuments**  
+<!-- NoPropertiesMyComputer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPropertiesMyComputer-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoPropertiesMyComputer-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPropertiesMyDocuments-Begin -->
+## NoPropertiesMyDocuments
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPropertiesMyDocuments-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPropertiesMyDocuments-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPropertiesMyDocuments-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoPropertiesMyDocuments
+```
+<!-- NoPropertiesMyDocuments-OmaUri-End -->
 
-<hr/>
+<!-- NoPropertiesMyDocuments-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting hides the Properties menu command on the shortcut menu for the My Documents icon.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting hides the Properties menu command on the shortcut menu for the My Documents icon.
+- If you enable this policy setting, the Properties menu command will not be displayed when the user does any of the following:
 
-If you enable this policy setting, the Properties menu command will not be displayed when the user does any of the following:
+Right-clicks the My Documents icon.
+Clicks the My Documents icon, and then opens the File menu.
+Clicks the My Documents icon, and then presses ALT+ENTER.
 
-- Right-clicks the My Documents icon.
-- Clicks the My Documents icon, and then opens the File menu.
-- Clicks the My Documents icon, and then presses ALT+ENTER.
+- If you disable or do not configure this policy setting, the Properties menu command is displayed.
+<!-- NoPropertiesMyDocuments-Description-End -->
 
-If you disable or do not configure this policy setting, the Properties menu command is displayed.
+<!-- NoPropertiesMyDocuments-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPropertiesMyDocuments-Editable-End -->
 
-<!--/Description-->
+<!-- NoPropertiesMyDocuments-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPropertiesMyDocuments-DFProperties-End -->
+
+<!-- NoPropertiesMyDocuments-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Properties from the Documents icon context menu*
--   GP name: *NoPropertiesMyDocuments*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoPropertiesMyDocuments |
+| Friendly Name | Remove Properties from the Documents icon context menu |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoPropertiesMyDocuments |
+| ADMX File Name | Desktop.admx |
+<!-- NoPropertiesMyDocuments-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-norecentdocsnethood"></a>**ADMX_Desktop/NoRecentDocsNetHood**  
+<!-- NoPropertiesMyDocuments-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPropertiesMyDocuments-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoPropertiesMyDocuments-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRecentDocsNetHood-Begin -->
+## NoRecentDocsNetHood
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRecentDocsNetHood-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRecentDocsNetHood-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRecentDocsNetHood-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoRecentDocsNetHood
+```
+<!-- NoRecentDocsNetHood-OmaUri-End -->
 
-<hr/>
+<!-- NoRecentDocsNetHood-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Remote shared folders are not added to Network Locations whenever you open a document in the shared folder.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Remote shared folders are not added to Network Locations whenever you open a document in the shared folder.
+- If you disable this setting or do not configure it, when you open a document in a remote shared folder, the system adds a connection to the shared folder to Network Locations.
 
-If you disable this setting or do not configure it, when you open a document in a remote shared folder, the system adds a connection to the shared folder to Network Locations.
+- If you enable this setting, shared folders are not added to Network Locations automatically when you open a document in the shared folder.
+<!-- NoRecentDocsNetHood-Description-End -->
 
-If you enable this setting, shared folders are not added to Network Locations automatically when you open a document in the shared folder.
+<!-- NoRecentDocsNetHood-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRecentDocsNetHood-Editable-End -->
 
-<!--/Description-->
+<!-- NoRecentDocsNetHood-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRecentDocsNetHood-DFProperties-End -->
+
+<!-- NoRecentDocsNetHood-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not add shares of recently opened documents to Network Locations*
--   GP name: *NoRecentDocsNetHood*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoRecentDocsNetHood |
+| Friendly Name | Do not add shares of recently opened documents to Network Locations |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoRecentDocsNetHood |
+| ADMX File Name | Desktop.admx |
+<!-- NoRecentDocsNetHood-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-norecyclebinicon"></a>**ADMX_Desktop/NoRecycleBinIcon**  
+<!-- NoRecentDocsNetHood-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRecentDocsNetHood-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRecentDocsNetHood-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRecycleBinIcon-Begin -->
+## NoRecycleBinIcon
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRecycleBinIcon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRecycleBinIcon-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRecycleBinIcon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoRecycleBinIcon
+```
+<!-- NoRecycleBinIcon-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes most occurrences of the Recycle Bin icon.
+<!-- NoRecycleBinIcon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes most occurrences of the Recycle Bin icon.
 
 This setting removes the Recycle Bin icon from the desktop, from File Explorer, from programs that use the File Explorer windows, and from the standard Open dialog box.
 
@@ -1229,701 +981,240 @@ This setting does not prevent the user from using other methods to gain access t
 
 > [!NOTE]
 > To make changes to this setting effective, you must log off and then log back on.
+<!-- NoRecycleBinIcon-Description-End -->
 
-<!--/Description-->
+<!-- NoRecycleBinIcon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRecycleBinIcon-Editable-End -->
+
+<!-- NoRecycleBinIcon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRecycleBinIcon-DFProperties-End -->
+
+<!-- NoRecycleBinIcon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Recycle Bin icon from desktop*
--   GP name: *NoRecycleBinIcon*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoRecycleBinIcon |
+| Friendly Name | Remove Recycle Bin icon from desktop |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\NonEnum |
+| Registry Value Name | {645FF040-5081-101B-9F08-00AA002F954E} |
+| ADMX File Name | Desktop.admx |
+<!-- NoRecycleBinIcon-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-norecyclebinproperties"></a>**ADMX_Desktop/NoRecycleBinProperties**  
+<!-- NoRecycleBinIcon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRecycleBinIcon-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRecycleBinIcon-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRecycleBinProperties-Begin -->
+## NoRecycleBinProperties
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRecycleBinProperties-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRecycleBinProperties-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRecycleBinProperties-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoRecycleBinProperties
+```
+<!-- NoRecycleBinProperties-OmaUri-End -->
 
-<hr/>
+<!-- NoRecycleBinProperties-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Properties option from the Recycle Bin context menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes the Properties option from the Recycle Bin context menu.
+- If you enable this setting, the Properties option will not be present when the user right-clicks on Recycle Bin or opens Recycle Bin and then clicks File. Likewise, Alt-Enter does nothing when Recycle Bin is selected.
 
-If you enable this setting, the Properties option will not be present when the user right-clicks on Recycle Bin or opens Recycle Bin and then clicks File. Likewise, Alt-Enter does nothing when Recycle Bin is selected.
+- If you disable or do not configure this setting, the Properties option is displayed as usual.
+<!-- NoRecycleBinProperties-Description-End -->
 
-If you disable or do not configure this setting, the Properties option is displayed as usual.
+<!-- NoRecycleBinProperties-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRecycleBinProperties-Editable-End -->
 
-<!--/Description-->
+<!-- NoRecycleBinProperties-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRecycleBinProperties-DFProperties-End -->
+
+<!-- NoRecycleBinProperties-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Properties from the Recycle Bin context menu*
--   GP name: *NoRecycleBinProperties*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoRecycleBinProperties |
+| Friendly Name | Remove Properties from the Recycle Bin context menu |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoPropertiesRecycleBin |
+| ADMX File Name | Desktop.admx |
+<!-- NoRecycleBinProperties-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nosavesettings"></a>**ADMX_Desktop/NoSaveSettings**  
+<!-- NoRecycleBinProperties-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRecycleBinProperties-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRecycleBinProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSaveSettings-Begin -->
+## NoSaveSettings
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSaveSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSaveSettings-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSaveSettings-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoSaveSettings
+```
+<!-- NoSaveSettings-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from saving certain changes to the desktop.
+<!-- NoSaveSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from saving certain changes to the desktop.
 
 If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, are not saved when users log off. However, shortcuts placed on the desktop are always saved.
+<!-- NoSaveSettings-Description-End -->
 
-<!--/Description-->
+<!-- NoSaveSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSaveSettings-Editable-End -->
+
+<!-- NoSaveSettings-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSaveSettings-DFProperties-End -->
+
+<!-- NoSaveSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Don't save settings at exit*
--   GP name: *NoSaveSettings*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSaveSettings |
+| Friendly Name | Don't save settings at exit |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSaveSettings |
+| ADMX File Name | Desktop.admx |
+<!-- NoSaveSettings-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-nowindowminimizingshortcuts"></a>**ADMX_Desktop/NoWindowMinimizingShortcuts**  
+<!-- NoSaveSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSaveSettings-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSaveSettings-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoWindowMinimizingShortcuts-Begin -->
+## NoWindowMinimizingShortcuts
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoWindowMinimizingShortcuts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWindowMinimizingShortcuts-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoWindowMinimizingShortcuts-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/NoWindowMinimizingShortcuts
+```
+<!-- NoWindowMinimizingShortcuts-OmaUri-End -->
 
-<hr/>
+<!-- NoWindowMinimizingShortcuts-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents windows from being minimized or restored when the active window is shaken back and forth with the mouse.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents windows from being minimized or restored when the active window is shaken back and forth with the mouse.
+- If you enable this policy, application windows will not be minimized or restored when the active window is shaken back and forth with the mouse.
 
-If you enable this policy, application windows will not be minimized or restored when the active window is shaken back and forth with the mouse.
+- If you disable or do not configure this policy, this window minimizing and restoring gesture will apply.
+<!-- NoWindowMinimizingShortcuts-Description-End -->
 
-If you disable or do not configure this policy, this window minimizing and restoring gesture will apply.
+<!-- NoWindowMinimizingShortcuts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWindowMinimizingShortcuts-Editable-End -->
 
-<!--/Description-->
+<!-- NoWindowMinimizingShortcuts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWindowMinimizingShortcuts-DFProperties-End -->
+
+<!-- NoWindowMinimizingShortcuts-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off Aero Shake window minimizing mouse gesture*
--   GP name: *NoWindowMinimizingShortcuts*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-wallpaper"></a>**ADMX_Desktop/Wallpaper**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Specifies the desktop background ("wallpaper") displayed on all users' desktops.
-
-This setting lets you specify the wallpaper on users' desktops and prevents users from changing the image or its presentation. The wallpaper you specify can be stored in a bitmap (*.bmp) or JPEG (*.jpg) file.
-
-To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\\Server\Share\Corp.jpg. If the specified file is not available when the user logs on, no wallpaper is displayed. Users cannot specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users cannot change this specification.
-
-If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
-
-Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
-
-> [!NOTE]
-> This setting does not apply to remote desktop server sessions.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Desktop Wallpaper*
--   GP name: *Wallpaper*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disableadd"></a>**ADMX_Desktop/sz_ATC_DisableAdd**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from adding Web content to their Active Desktop.
-
-This setting removes the "New" button from Web tab in Display in Control Panel. As a result, users cannot add Web pages or pictures from the Internet or an intranet to the desktop. This setting does not remove existing Web content from their Active Desktop, or prevent users from removing existing Web content.
-
-Also, see the "Disable all items" setting.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit adding items*
--   GP name: *sz_ATC_DisableAdd*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disableclose"></a>**ADMX_Desktop/sz_ATC_DisableClose**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from removing Web content from their Active Desktop.
-
-In Active Desktop, you can add items to the desktop but close them so they are not displayed.
-
-If you enable this setting, items added to the desktop cannot be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
-
-> [!NOTE]
-> This setting does not prevent users from deleting items from their Active Desktop.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit closing items*
--   GP name: *sz_ATC_DisableClose*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disabledel"></a>**ADMX_Desktop/sz_ATC_DisableDel**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from deleting Web content from their Active Desktop.
-
-This setting removes the Delete button from the Web tab in Display in Control Panel. As a result, users can temporarily remove, but not delete, Web content from their Active Desktop.
-
-This setting does not prevent users from adding Web content to their Active Desktop.
-
-Also, see the "Prohibit closing items" and "Disable all items" settings.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit deleting items*
--   GP name: *sz_ATC_DisableDel*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disableedit"></a>**ADMX_Desktop/sz_ATC_DisableEdit**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from changing the properties of Web content items on their Active Desktop.
-
-This setting disables the Properties button on the Web tab in Display in Control Panel. Also, it removes the Properties item from the menu for each item on the Active Desktop. As a result, users cannot change the properties of an item, such as its synchronization schedule, password, or display characteristics.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit editing items*
--   GP name: *sz_ATC_DisableEdit*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-sz-atc-nocomponents"></a>**ADMX_Desktop/sz_ATC_NoComponents**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes Active Desktop content and prevents users from adding Active Desktop content. 
-
-This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users cannot add Web pages or  pictures from the Internet or an intranet to the desktop.
-
-> [!NOTE]
-> This setting does not disable Active Desktop. Users can  still use image formats, such as JPEG and GIF, for their desktop wallpaper.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disable all items*
--   GP name: *sz_ATC_NoComponents*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-desktop-sz-admincomponents-title"></a>**ADMX_Desktop/sz_AdminComponents_Title**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Adds and deletes specified Web content items.
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoWindowMinimizingShortcuts |
+| Friendly Name | Turn off Aero Shake window minimizing mouse gesture |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoWindowMinimizingShortcuts |
+| ADMX File Name | Desktop.admx |
+<!-- NoWindowMinimizingShortcuts-AdmxBacked-End -->
+
+<!-- NoWindowMinimizingShortcuts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWindowMinimizingShortcuts-Examples-End -->
+
+<!-- NoWindowMinimizingShortcuts-End -->
+
+<!-- sz_AdminComponents_Title-Begin -->
+## sz_AdminComponents_Title
+
+<!-- sz_AdminComponents_Title-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_AdminComponents_Title-Applicability-End -->
+
+<!-- sz_AdminComponents_Title-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_AdminComponents_Title
+```
+<!-- sz_AdminComponents_Title-OmaUri-End -->
+
+<!-- sz_AdminComponents_Title-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Adds and deletes specified Web content items.
 
 You can use the "Add" box in this setting to add particular Web-based items or shortcuts to users' desktops. Users can close or delete the items (if settings allow), but the items are added again each time the setting is refreshed.
 
@@ -1934,71 +1225,365 @@ You can also use this setting to delete particular Web-based items from users' d
 
 > [!NOTE]
 > For this setting to take affect, you must log off and log on to the system.
+<!-- sz_AdminComponents_Title-Description-End -->
 
-<!--/Description-->
+<!-- sz_AdminComponents_Title-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_AdminComponents_Title-Editable-End -->
+
+<!-- sz_AdminComponents_Title-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_AdminComponents_Title-DFProperties-End -->
+
+<!-- sz_AdminComponents_Title-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Add/Delete items*
--   GP name: *sz_AdminComponents_Title*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | sz_AdminComponents_Title |
+| Friendly Name | Add/Delete items |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop\AdminComponent |
+| ADMX File Name | Desktop.admx |
+<!-- sz_AdminComponents_Title-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-sz-db-dragdropclose"></a>**ADMX_Desktop/sz_DB_DragDropClose**  
+<!-- sz_AdminComponents_Title-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_AdminComponents_Title-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- sz_AdminComponents_Title-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- sz_ATC_DisableAdd-Begin -->
+## sz_ATC_DisableAdd
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- sz_ATC_DisableAdd-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_ATC_DisableAdd-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- sz_ATC_DisableAdd-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_ATC_DisableAdd
+```
+<!-- sz_ATC_DisableAdd-OmaUri-End -->
 
-<hr/>
+<!-- sz_ATC_DisableAdd-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from adding Web content to their Active Desktop.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from manipulating desktop toolbars.
+This setting removes the "New" button from Web tab in Display in Control Panel. As a result, users cannot add Web pages or pictures from the Internet or an intranet to the desktop. This setting does not remove existing Web content from their Active Desktop, or prevent users from removing existing Web content.
+
+Also, see the "Disable all items" setting.
+<!-- sz_ATC_DisableAdd-Description-End -->
+
+<!-- sz_ATC_DisableAdd-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_ATC_DisableAdd-Editable-End -->
+
+<!-- sz_ATC_DisableAdd-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_ATC_DisableAdd-DFProperties-End -->
+
+<!-- sz_ATC_DisableAdd-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | sz_ATC_DisableAdd |
+| Friendly Name | Prohibit adding items |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop |
+| Registry Value Name | NoAddingComponents |
+| ADMX File Name | Desktop.admx |
+<!-- sz_ATC_DisableAdd-AdmxBacked-End -->
+
+<!-- sz_ATC_DisableAdd-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_ATC_DisableAdd-Examples-End -->
+
+<!-- sz_ATC_DisableAdd-End -->
+
+<!-- sz_ATC_DisableClose-Begin -->
+## sz_ATC_DisableClose
+
+<!-- sz_ATC_DisableClose-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_ATC_DisableClose-Applicability-End -->
+
+<!-- sz_ATC_DisableClose-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_ATC_DisableClose
+```
+<!-- sz_ATC_DisableClose-OmaUri-End -->
+
+<!-- sz_ATC_DisableClose-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from removing Web content from their Active Desktop.
+
+In Active Desktop, you can add items to the desktop but close them so they are not displayed.
+
+If you enable this setting, items added to the desktop cannot be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
+
+> [!NOTE]
+> This setting does not prevent users from deleting items from their Active Desktop.
+<!-- sz_ATC_DisableClose-Description-End -->
+
+<!-- sz_ATC_DisableClose-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_ATC_DisableClose-Editable-End -->
+
+<!-- sz_ATC_DisableClose-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_ATC_DisableClose-DFProperties-End -->
+
+<!-- sz_ATC_DisableClose-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | sz_ATC_DisableClose |
+| Friendly Name | Prohibit closing items |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop |
+| Registry Value Name | NoClosingComponents |
+| ADMX File Name | Desktop.admx |
+<!-- sz_ATC_DisableClose-AdmxBacked-End -->
+
+<!-- sz_ATC_DisableClose-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_ATC_DisableClose-Examples-End -->
+
+<!-- sz_ATC_DisableClose-End -->
+
+<!-- sz_ATC_DisableDel-Begin -->
+## sz_ATC_DisableDel
+
+<!-- sz_ATC_DisableDel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_ATC_DisableDel-Applicability-End -->
+
+<!-- sz_ATC_DisableDel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_ATC_DisableDel
+```
+<!-- sz_ATC_DisableDel-OmaUri-End -->
+
+<!-- sz_ATC_DisableDel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from deleting Web content from their Active Desktop.
+
+This setting removes the Delete button from the Web tab in Display in Control Panel. As a result, users can temporarily remove, but not delete, Web content from their Active Desktop.
+
+This setting does not prevent users from adding Web content to their Active Desktop.
+
+Also, see the "Prohibit closing items" and "Disable all items" settings.
+<!-- sz_ATC_DisableDel-Description-End -->
+
+<!-- sz_ATC_DisableDel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_ATC_DisableDel-Editable-End -->
+
+<!-- sz_ATC_DisableDel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_ATC_DisableDel-DFProperties-End -->
+
+<!-- sz_ATC_DisableDel-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | sz_ATC_DisableDel |
+| Friendly Name | Prohibit deleting items |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop |
+| Registry Value Name | NoDeletingComponents |
+| ADMX File Name | Desktop.admx |
+<!-- sz_ATC_DisableDel-AdmxBacked-End -->
+
+<!-- sz_ATC_DisableDel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_ATC_DisableDel-Examples-End -->
+
+<!-- sz_ATC_DisableDel-End -->
+
+<!-- sz_ATC_DisableEdit-Begin -->
+## sz_ATC_DisableEdit
+
+<!-- sz_ATC_DisableEdit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_ATC_DisableEdit-Applicability-End -->
+
+<!-- sz_ATC_DisableEdit-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_ATC_DisableEdit
+```
+<!-- sz_ATC_DisableEdit-OmaUri-End -->
+
+<!-- sz_ATC_DisableEdit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from changing the properties of Web content items on their Active Desktop.
+
+This setting disables the Properties button on the Web tab in Display in Control Panel. Also, it removes the Properties item from the menu for each item on the Active Desktop. As a result, users cannot change the properties of an item, such as its synchronization schedule, password, or display characteristics.
+<!-- sz_ATC_DisableEdit-Description-End -->
+
+<!-- sz_ATC_DisableEdit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_ATC_DisableEdit-Editable-End -->
+
+<!-- sz_ATC_DisableEdit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_ATC_DisableEdit-DFProperties-End -->
+
+<!-- sz_ATC_DisableEdit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | sz_ATC_DisableEdit |
+| Friendly Name | Prohibit editing items |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop |
+| Registry Value Name | NoEditingComponents |
+| ADMX File Name | Desktop.admx |
+<!-- sz_ATC_DisableEdit-AdmxBacked-End -->
+
+<!-- sz_ATC_DisableEdit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_ATC_DisableEdit-Examples-End -->
+
+<!-- sz_ATC_DisableEdit-End -->
+
+<!-- sz_ATC_NoComponents-Begin -->
+## sz_ATC_NoComponents
+
+<!-- sz_ATC_NoComponents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_ATC_NoComponents-Applicability-End -->
+
+<!-- sz_ATC_NoComponents-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_ATC_NoComponents
+```
+<!-- sz_ATC_NoComponents-OmaUri-End -->
+
+<!-- sz_ATC_NoComponents-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes Active Desktop content and prevents users from adding Active Desktop content.
+
+This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users cannot add Web pages or pictures from the Internet or an intranet to the desktop.
+
+> [!NOTE]
+> This setting does not disable Active Desktop. Users can still use image formats, such as JPEG and GIF, for their desktop wallpaper.
+<!-- sz_ATC_NoComponents-Description-End -->
+
+<!-- sz_ATC_NoComponents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_ATC_NoComponents-Editable-End -->
+
+<!-- sz_ATC_NoComponents-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_ATC_NoComponents-DFProperties-End -->
+
+<!-- sz_ATC_NoComponents-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | sz_ATC_NoComponents |
+| Friendly Name | Disable all items |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop |
+| Registry Value Name | NoComponents |
+| ADMX File Name | Desktop.admx |
+<!-- sz_ATC_NoComponents-AdmxBacked-End -->
+
+<!-- sz_ATC_NoComponents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_ATC_NoComponents-Examples-End -->
+
+<!-- sz_ATC_NoComponents-End -->
+
+<!-- sz_DB_DragDropClose-Begin -->
+## sz_DB_DragDropClose
+
+<!-- sz_DB_DragDropClose-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_DB_DragDropClose-Applicability-End -->
+
+<!-- sz_DB_DragDropClose-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_DB_DragDropClose
+```
+<!-- sz_DB_DragDropClose-OmaUri-End -->
+
+<!-- sz_DB_DragDropClose-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from manipulating desktop toolbars.
 
 If you enable this setting, users cannot add or remove toolbars from the desktop. Also, users cannot drag toolbars on to or off of docked toolbars.
 
@@ -2009,71 +1594,62 @@ If you enable this setting, users cannot add or remove toolbars from the desktop
 > To view the toolbars that can be added to the desktop, right-click a docked toolbar (such as the taskbar beside the Start button), and point to "Toolbars."
 
 Also, see the "Prohibit adjusting desktop toolbars" setting.
+<!-- sz_DB_DragDropClose-Description-End -->
 
-<!--/Description-->
+<!-- sz_DB_DragDropClose-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_DB_DragDropClose-Editable-End -->
+
+<!-- sz_DB_DragDropClose-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_DB_DragDropClose-DFProperties-End -->
+
+<!-- sz_DB_DragDropClose-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent adding, dragging, dropping and closing the Taskbar's toolbars*
--   GP name: *sz_DB_DragDropClose*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | sz_DB_DragDropClose |
+| Friendly Name | Prevent adding, dragging, dropping and closing the Taskbar's toolbars |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoCloseDragDropBands |
+| ADMX File Name | Desktop.admx |
+<!-- sz_DB_DragDropClose-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-sz-db-moving"></a>**ADMX_Desktop/sz_DB_Moving**  
+<!-- sz_DB_DragDropClose-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_DB_DragDropClose-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- sz_DB_DragDropClose-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- sz_DB_Moving-Begin -->
+## sz_DB_Moving
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- sz_DB_Moving-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_DB_Moving-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- sz_DB_Moving-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_DB_Moving
+```
+<!-- sz_DB_Moving-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from adjusting the length of desktop toolbars. Also, users cannot reposition items or toolbars on docked toolbars.
+<!-- sz_DB_Moving-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from adjusting the length of desktop toolbars. Also, users cannot reposition items or toolbars on docked toolbars.
 
 This setting does not prevent users from adding or removing toolbars on the desktop.
 
@@ -2081,103 +1657,174 @@ This setting does not prevent users from adding or removing toolbars on the desk
 > If users have adjusted their toolbars, this setting prevents them from restoring the default configuration.
 
 Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's toolbars" setting.
+<!-- sz_DB_Moving-Description-End -->
 
-<!--/Description-->
+<!-- sz_DB_Moving-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_DB_Moving-Editable-End -->
+
+<!-- sz_DB_Moving-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_DB_Moving-DFProperties-End -->
+
+<!-- sz_DB_Moving-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit adjusting desktop toolbars*
--   GP name: *sz_DB_Moving*
--   GP path: *Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | sz_DB_Moving |
+| Friendly Name | Prohibit adjusting desktop toolbars |
+| Location | User Configuration |
+| Path | Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoMovingBands |
+| ADMX File Name | Desktop.admx |
+<!-- sz_DB_Moving-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-desktop-sz-dwp-nohtmlpaper"></a>**ADMX_Desktop/sz_DWP_NoHTMLPaper**  
+<!-- sz_DB_Moving-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_DB_Moving-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- sz_DB_Moving-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- sz_DWP_NoHTMLPaper-Begin -->
+## sz_DWP_NoHTMLPaper
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- sz_DWP_NoHTMLPaper-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- sz_DWP_NoHTMLPaper-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- sz_DWP_NoHTMLPaper-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/sz_DWP_NoHTMLPaper
+```
+<!-- sz_DWP_NoHTMLPaper-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper does not load. Files that are autoconverted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
+<!-- sz_DWP_NoHTMLPaper-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper does not load. Files that are autoconverted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
 
 Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User Configuration\Administrative Templates\Control Panel\Display) settings.
+<!-- sz_DWP_NoHTMLPaper-Description-End -->
 
-<!--/Description-->
+<!-- sz_DWP_NoHTMLPaper-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- sz_DWP_NoHTMLPaper-Editable-End -->
+
+<!-- sz_DWP_NoHTMLPaper-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- sz_DWP_NoHTMLPaper-DFProperties-End -->
+
+<!-- sz_DWP_NoHTMLPaper-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow only bitmapped wallpaper*
--   GP name: *sz_DWP_NoHTMLPaper*
--   GP path: *Desktop\Desktop*
--   GP ADMX file name: *Desktop.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | sz_DWP_NoHTMLPaper |
+| Friendly Name | Allow only bitmapped wallpaper |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop |
+| Registry Value Name | NoHTMLWallPaper |
+| ADMX File Name | Desktop.admx |
+<!-- sz_DWP_NoHTMLPaper-AdmxBacked-End -->
 
-Footnotes:
+<!-- sz_DWP_NoHTMLPaper-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- sz_DWP_NoHTMLPaper-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- sz_DWP_NoHTMLPaper-End -->
 
-<!--/Policies-->
+<!-- Wallpaper-Begin -->
+## Wallpaper
 
+<!-- Wallpaper-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Wallpaper-Applicability-End -->
+
+<!-- Wallpaper-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Desktop/Wallpaper
+```
+<!-- Wallpaper-OmaUri-End -->
+
+<!-- Wallpaper-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the desktop background ("wallpaper") displayed on all users' desktops.
+
+This setting lets you specify the wallpaper on users' desktops and prevents users from changing the image or its presentation. The wallpaper you specify can be stored in a bitmap (*.bmp) or JPEG (*.jpg) file.
+
+To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\Server\Share\Corp.jpg. If the specified file is not available when the user logs on, no wallpaper is displayed. Users cannot specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users cannot change this specification.
+
+If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
+
+Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
+
+> [!NOTE]
+> This setting does not apply to remote desktop server sessions.
+<!-- Wallpaper-Description-End -->
+
+<!-- Wallpaper-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Wallpaper-Editable-End -->
+
+<!-- Wallpaper-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Wallpaper-DFProperties-End -->
+
+<!-- Wallpaper-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Wallpaper |
+| Friendly Name | Desktop Wallpaper |
+| Location | User Configuration |
+| Path | Desktop > Desktop |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | Desktop.admx |
+<!-- Wallpaper-AdmxBacked-End -->
+
+<!-- Wallpaper-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Wallpaper-Examples-End -->
+
+<!-- Wallpaper-End -->
+
+<!-- ADMX_Desktop-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Desktop-CspMoreInfo-End -->
+
+<!-- ADMX_Desktop-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

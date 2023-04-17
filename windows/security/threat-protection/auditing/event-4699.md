@@ -2,23 +2,20 @@
 title: 4699(S) A scheduled task was deleted. (Windows 10)
 description: Describes security event 4699(S) A scheduled task was deleted. This event is generated every time a scheduled task is deleted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4699(S): A scheduled task was deleted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4699.png" alt="Event 4699 illustration" width="363" height="551" hspace="10" align="left" />
@@ -99,7 +96,7 @@ This event generates every time a scheduled task was deleted.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -111,7 +108,7 @@ This event generates every time a scheduled task was deleted.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) of the deleted task. Here “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
+-   **Task Content** \[Type = UnicodeString\]: the [XML](/previous-versions/aa286548(v=msdn.10)) of the deleted task. Here “[XML Task Definition Format](/openspecs/windows_protocols/ms-tsch/0d6383e4-de92-43e7-b0bb-a60cfa36379f)” you can read more about the XML format for scheduled tasks.
 
 ## Security Monitoring Recommendations
 
@@ -124,4 +121,3 @@ For 4699(S): A scheduled task was deleted.
 -   Monitor for deleted tasks located in the **Task Scheduler Library** root node, that is, where **Task Name** looks like ‘\\TASK\_NAME’. Scheduled tasks that are created manually or by malware are often located in the **Task Scheduler Library** root node. Deletion of such tasks can be a sign of malicious activity.
 
 -   If a highly critical scheduled task exists on some computers, and it should never be deleted, monitor for [4699](event-4699.md) events with the corresponding **Task Name**.
-

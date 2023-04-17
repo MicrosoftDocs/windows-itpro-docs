@@ -2,23 +2,20 @@
 title: 4779(S) A session was disconnected from a Window Station. (Windows 10)
 description: Describes security event 4779(S) A session was disconnected from a Window Station.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4779(S): A session was disconnected from a Window Station.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4779.png" alt="Event 4779 illustration" width="449" height="504" hspace="10" align="left" />
@@ -27,7 +24,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](https://docs.microsoft.com/windows-hardware/drivers/display/fast-user-switching).
+This event is generated when a user disconnects from an existing Terminal Services session, or when a user switches away from an existing desktop using [Fast User Switching](/windows-hardware/drivers/display/fast-user-switching).
 
 This event also generated when user disconnects from virtual host Hyper-V Enhanced Session, for example.
 
@@ -86,7 +83,7 @@ This event also generated when user disconnects from virtual host Hyper-V Enhanc
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -131,7 +128,7 @@ For 4779(S): A session was disconnected from a Window Station.
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Subject\\Account Name”** that corresponds to the high-value account or accounts.                                                                                                                                                                                                                                                                   |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Subject\\Account Name”** (with other information) to monitor how or when a particular account is being used.                                                                                                                                                                                                      |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“Subject\\Account Name”** that corresponds to the accounts that should never be used.                                                                                                                                                                                                                                                               |
-| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“Subject\\Account Name”** for accounts that are outside the whitelist.                                                                                                                                                                                                                                       |
+| **Account allowlist**: You might have a specific allowlist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to an “allowlist-only” action, review the **“Subject\\Account Name”** for accounts that are outside the allowlist.                                                                                                                                                                                                                                       |
 | **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **“Subject\\Account Name”** to see whether the account type is as expected.                                                                                                                                                                                                      |
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **“Subject\\Account Domain”** corresponding to accounts from another domain or “external” accounts.                                                                                                                                                                                                                                                    |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.<br>For example, you might have computers to which connections should not be made from certain accounts or addresses.           | Monitor the target **Computer:** (or other target device) for actions performed by the **“Subject\\Account Name”** that you are concerned about.<br>If you have a target **Computer:** (or other target device) to which connections should not be made from certain accounts or addresses, monitor this event for the corresponding **Client Name** or **Client Address**. |
@@ -142,4 +139,3 @@ For 4779(S): A session was disconnected from a Window Station.
 -   If Remote Desktop Connections are not allowed for specific users (**Subject\\Account Name**) or disabled on some computers, then monitor for **Session Name** = RDP-Tcp\# (substring).
 
 -   To ensure that connections are made only from your internal IP address list, monitor the **Additional Information\\Client Address** in this event.
-

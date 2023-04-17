@@ -3,25 +3,22 @@ title: Monitor central access policies for files or folders (Windows 10)
 description: Monitor changes to central access policies associated with files and folders, when using advanced security auditing options for dynamic access control objects.
 ms.assetid: 2ea8fc23-b3ac-432f-87b0-6a16506e8eed
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/09/2021
+ms.technology: itpro-security
 ---
 
 # Monitor the central access policies associated with files and folders
 
-**Applies to**
--   Windows 10
 
 This article for IT professionals describes how to monitor changes to the central access policies that are associated with files and folders when you're using advanced security auditing options to monitor dynamic access control objects.
 
@@ -29,7 +26,7 @@ This security audit policy and the event that it records are generated when the 
 
 For information about monitoring potential central access policy changes for an entire file server, see [Monitor the central access policies that apply on a file server](monitor-the-central-access-policies-that-apply-on-a-file-server.md).
 
-Use the following procedures to configure settings to monitor central access policies that are associated with files. These procedures assume that you have configured and deployed Dynamic Access Control in your network. For more information about how to configure and deploy Dynamic Access Control, see [Dynamic Access Control: Scenario Overview](https://technet.microsoft.com/library/hh831717.aspx).
+Use the following procedures to configure settings to monitor central access policies that are associated with files. These procedures assume that you have configured and deployed Dynamic Access Control in your network. For more information about how to configure and deploy Dynamic Access Control, see [Dynamic Access Control: Scenario Overview](/windows-server/identity/solution-guides/dynamic-access-control--scenario-overview).
 
 > [!NOTE]
 > Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.

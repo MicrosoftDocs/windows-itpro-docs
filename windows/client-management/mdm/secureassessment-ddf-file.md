@@ -1,14 +1,13 @@
 ---
 title: SecureAssessment DDF file
 description: View the OMA DM device description framework (DDF) for the SecureAssessment configuration service provider. DDF files are used only with OMA DM provisioning XML
-ms.assetid: 68D17F2A-FAEA-4608-8727-DBEC1D7BE48A
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
@@ -16,7 +15,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **SecureAssessment** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 
@@ -84,7 +83,7 @@ The XML below is the current version for this CSP.
               <Delete />
               <Replace />
             </AccessType>
-            <Description>The user name of the test taking account.  To specify a domain account, use domain\user. To specify an AAD account, use username@tenant.com. To specify a local account, use the username.</Description>
+            <Description>The user name of the test taking account.  To specify a domain account, use domain\user. To specify an Azure Active Directory account, use username@tenant.com. To specify a local account, use the username.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -184,12 +183,6 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[SecureAssessment CSP](secureassessment-csp.md)

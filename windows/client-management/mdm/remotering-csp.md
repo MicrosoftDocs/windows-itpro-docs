@@ -1,27 +1,38 @@
 ---
 title: RemoteRing CSP
 description: The RemoteRing CSP can be used to remotely trigger a device to produce an audible ringing sound regardless of the volume that's set on the device.
-ms.assetid: 70015243-c07f-46cb-a0f9-4b4ad13a5609
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
 # RemoteRing CSP
 
 
-The RemoteRing configuration service provider can be used to remotely trigger a device to produce an audible ringing sound regardless of the volume that is set on the device.
+You can use the RemoteRing configuration service provider to remotely trigger a device to produce an audible ringing sound, regardless of the volume that is set on the device.
 
-The following diagram shows the RemoteRing configuration service provider in tree format.
+The following DDF format shows the RemoteRing configuration service provider in tree format.
+```
+./User/Vendor/MSFT
+RemoteRing
+----Ring
 
-![provisioning\-csp\-remotering](images/provisioning-csp-remotering.png)
 
-<a href="" id="ring"></a>**Ring**  
+./Device/Vendor/MSFT
+Root
+
+
+./User/Vendor/MSFT
+./Device/Vendor/MSFT
+RemoteRing
+----Ring
+```
+<a href="" id="ring"></a>**Ring**
 Required. The node accepts requests to ring the device.
 
 The supported operation is Exec.

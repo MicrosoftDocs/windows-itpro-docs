@@ -1,19 +1,14 @@
 ---
 title: Windows 10 diagnostic data for the Full diagnostic data level (Windows 10)
 description: Use this article to learn about the types of data that is collected the Full diagnostic data level.
-keywords: privacy,Windows 10
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 11/28/2017
-ms.reviewer: 
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 03/31/2017
+ms.topic: reference
 ---
 
 # Windows 10 diagnostic data for the Full diagnostic data level
@@ -21,7 +16,7 @@ ms.reviewer:
 **Applies to:**
 - Windows 10, version 1703
 
-Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full diagnostic data level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](https://docs.microsoft.com/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709) and [Windows 10, version 1703 Basic level diagnostic events and fields](https://docs.microsoft.com/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703).
+Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full diagnostic data level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](./basic-level-windows-diagnostic-events-and-fields-1709.md) and [Windows 10, version 1703 Basic level diagnostic events and fields](./basic-level-windows-diagnostic-events-and-fields-1703.md).
 
 The data covered in this article is grouped into the following categories:
 
@@ -42,7 +37,7 @@ Most diagnostic events contain a header of common data:
 
 | Category Name | Examples |
 | - | - |
-| Common Data | Information that is added to most diagnostic events, if relevant and available:<br><ul><li>OS name, version, build, and [locale](https://msdn.microsoft.com/library/windows/desktop/dd318716.aspx)</li><li>User ID - a unique identifier associated with the user's Microsoft Account (if one is used) or local account. The user's Microsoft Account identifier is not collected from devices configured to send Basic diagnostic data</li><li>Xbox UserID</li><li>Environment from which the event was logged - Application ID of app or component that logged the event, Session GUID. Used to track events over a given period of time such the period an app is running or between boots of the OS.</li><li>The diagnostic event name, Event ID, [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803.aspx) opcode, version, schema signature, keywords, and flags</li><li>HTTP header information, including the IP address. This IP address is the source address that’s provided by the network packet header and received by the diagnostics ingestion service.</li><li>Various IDs that are used to correlate and sequence related events together.</li><li>Device ID. This ID is not the user provided device name, but an ID that is unique for that device.</li><li>Device class - Desktop, Server, or Mobile</li><li>Event collection time</li><li>Diagnostic level -  Basic or Full, Sample level - for sampled data, what sample level is this device opted into</li></ul> |
+| Common Data | Information that is added to most diagnostic events, if relevant and available:<br><ul><li>OS name, version, build, and [locale](/windows/win32/intl/locales-and-languages)</li><li>User ID - a unique identifier associated with the user's Microsoft Account (if one is used) or local account. The user's Microsoft Account identifier is not collected from devices configured to send Basic diagnostic data</li><li>Xbox UserID</li><li>Environment from which the event was logged - Application ID of app or component that logged the event, Session GUID. Used to track events over a given period of time such the period an app is running or between boots of the OS.</li><li>The diagnostic event name, Event ID, [ETW](/windows/win32/etw/event-tracing-portal) opcode, version, schema signature, keywords, and flags</li><li>HTTP header information, including the IP address. This IP address is the source address that’s provided by the network packet header and received by the diagnostics ingestion service.</li><li>Various IDs that are used to correlate and sequence related events together.</li><li>Device ID. This ID is not the user provided device name, but an ID that is unique for that device.</li><li>Device class - Desktop, Server, or Mobile</li><li>Event collection time</li><li>Diagnostic level -  Basic or Full, Sample level - for sampled data, what sample level is this device opted into</li></ul> |
 
 ## ​Device, Connectivity, and Configuration data
 
@@ -53,7 +48,7 @@ This type of data includes details about the device, its configuration and conne
 | Device properties | Information about the OS and device hardware, such as:<br><ul><li> OS - version name, Edition</li><li>Installation type, subscription status, and genuine OS status</li><li>Processor architecture, speed, number of cores, manufacturer, and model</li><li>OEM details - manufacturer, model, and serial number<li>Device identifier and Xbox serial number</li><li>Firmware/BIOS - type, manufacturer, model, and version</li><li>Memory - total memory, video memory, speed, and how much memory is available after the device has reserved memory</li><li>Storage - total capacity and disk type</li><li>Battery - charge capacity and InstantOn support</li><li>Hardware chassis type, color, and form factor</li><li>Is this machine a virtual machine?</li></ul> |
 | Device capabilities | Information about the specific device capabilities such as:<br/><ul><li>Camera - whether the device has a front facing, a rear facing camera, or both.</li><li>Touch screen - does the device include a touch screen? If so, how many hardware touch points are supported?</li><li>Processor capabilities - CompareExchange128, LahfSahf, NX, PrefetchW, and SSE2</li><li>Trusted Platform Module (TPM) – whether present and what version</li><li>Virtualization hardware - whether an IOMMU is present, SLAT support, is virtualization enabled in the firmware</li><li>Voice – whether voice interaction is supported and the number of active microphones</li><li>Number of displays, resolutions, DPI</li><li>Wireless capabilities</li><li>OEM or platform face detection</li><li>OEM or platform video stabilization and quality level set</li><li>Advanced Camera Capture mode (HDR vs. LowLight), OEM vs. platform implementation, HDR probability, and Low Light probability</li></ul> |
 | Device preferences and settings | Information about the device settings and user preferences such as:<br><ul><li>User Settings – System, Device, Network &amp; Internet, Personalization, Cortana, Apps, Accounts, Time &amp; Language, Gaming, Ease of Access, Privacy, Update &amp; Security</li><li>User-provided device name</li><li>Whether device is domain-joined, or cloud-domain joined (that is, part of a company-managed network)</li><li>Hashed representation of the domain name</li><li>MDM (mobile device management) enrollment settings and status</li><li>BitLocker, Secure Boot, encryption settings, and status</li><li>Windows Update settings and status</li><li>Developer Unlock settings and status</li><li>Default app choices</li><li>Default browser choice</li><li>Default language settings for app, input, keyboard, speech, and display</li><li>App store update settings</li><li>Enterprise OrganizationID, Commercial ID</li></ul> |
-| Device peripherals | Information about the device peripherals such as:<br><ul><li>Peripheral name, device model, class, manufacturer, and description</li><li>Peripheral device state, install state, and checksum</li><li>Driver name, package name, version, and manufacturer</li><li>HWID - A hardware vendor defined ID to match a device to a driver [INF file](https://msdn.microsoft.com/windows/hardware/drivers/install/hardware-ids)</li><li>Driver state, problem code, and checksum</li><li>Whether driver is kernel mode, signed, and image size</li></ul> |
+| Device peripherals | Information about the device peripherals such as:<br><ul><li>Peripheral name, device model, class, manufacturer, and description</li><li>Peripheral device state, install state, and checksum</li><li>Driver name, package name, version, and manufacturer</li><li>HWID - A hardware vendor defined ID to match a device to a driver [INF file](/windows-hardware/drivers/install/hardware-ids)</li><li>Driver state, problem code, and checksum</li><li>Whether driver is kernel mode, signed, and image size</li></ul> |
 | Device network info | Information about the device network configuration such as:<br><ul><li>Network system capabilities</li><li>Local or Internet connectivity status</li><li>Proxy, gateway, DHCP, DNS details, and addresses</li><li>Paid or free network</li><li>Wireless driver is emulated or not</li><li>Access point mode capable</li><li>Access point manufacturer, model, and MAC address</li><li>WDI Version</li><li>Name of networking driver service</li><li>Wi-Fi Direct details</li><li>Wi-Fi device hardware ID and manufacturer</li><li>Wi-Fi scan attempt counts and item counts</li><li>Mac randomization is supported/enabled or not</li><li>Number of spatial streams and channel frequencies supported</li><li>Manual or Auto Connect enabled</li><li>Time and result of each connection attempt</li><li>Airplane mode status and attempts</li><li>Interface description provided by the manufacturer</li><li>Data transfer rates</li><li>Cipher algorithm</li><li>Mobile Equipment ID (IMEI) and Mobile Country Code (MCCO)</li><li>Mobile operator and service provider name</li><li>Available SSIDs and BSSIDs</li><li>IP Address type - IPv4 or IPv6</li><li>Signal Quality percentage and changes</li><li>Hotspot presence detection and success rate</li><li>TCP connection performance</li><li>Miracast device names</li><li>Hashed IP address</li></ul>
 
 ## Product and Service Usage data
@@ -94,17 +89,29 @@ This type of data includes software installation and update information on the d
 
 ## Browsing History data
 
-This type of data includes details about web browsing in the Microsoft browsers.
+**Microsoft browser data**: This type of data includes details about web browsing, the address bar, and search box performance on the device in the Microsoft browsers, such as:
 
-| Category Name | Description and Examples |
-| - | - |
-| Microsoft browser data | Information about Address bar and search box performance on the device such as:<ul><li>Text typed in address bar and search box</li><li>Text selected for Ask Cortana search</li><li>Service response time </li><li>Autocompleted text if there was an autocomplete</li><li>Navigation suggestions provided based on local history and favorites</li><li>Browser ID</li><li>URLs (which may include search terms)</li><li>Page title</li></ul>|
-
+- Text typed in address bar and search box
+- Text selected for Ask Cortana search
+- Service response time
+- Autocompleted text if there was an autocomplete
+- Navigation suggestions provided based on local history and favorites
+- Browser ID
+- URLs (which may include search terms)
+- Page title
 
 ## Inking Typing and Speech Utterance data
 
-This type of data gathers details about the voice, inking, and typing input features on the device.
+**Voice, inking, and typing**: This type of data gathers details about the voice, inking, and typing input features on the device, such as:
 
-| Category Name | Description and Examples |
-| - | - |
-| Voice, inking, and typing | Information about voice, inking, and typing features such as:<br><ul><li>Type of pen used (highlighter, ball point, pencil), pen color, stroke height and width, and how long it is used</li><li>Pen gestures (click, double-click, pan, zoom, rotate)</li><li>Palm Touch x,y coordinates</li><li>Input latency, missed pen signals, number of frames, strokes, first frame commit time, sample rate</li><li>Ink strokes written, text before and after the ink insertion point, recognized text entered, Input language - processed to remove identifiers, sequencing information, and other data (such as email addresses and numeric values) which could be used to reconstruct the original content or associate the input to the user.</li><li>Text input from Windows Mobile on-screen keyboards except from password fields and private sessions - processed to remove identifiers, sequencing information, and other data (such as email addresses, and numeric values) which could be used to reconstruct the original content or associate the input to the user.</li><li>Text of speech recognition results - result codes and recognized text</li><li>Language and model of the recognizer, System Speech language</li><li>App ID using speech features</li><li>Whether user is known to be a child</li><li>Confidence and Success/Failure of speech recognition</li></ul> |
+- Type of pen used (highlighter, ball point, pencil), pen color, stroke height and width, and how long it is used
+- Pen gestures (click, double-click, pan, zoom, rotate)
+- Palm Touch x,y coordinates
+- Input latency, missed pen signals, number of frames, strokes, first frame commit time, sample rate
+- Ink strokes written, text before and after the ink insertion point, recognized text entered, Input language - processed to remove identifiers, sequencing information, and other data (such as email addresses and numeric values) which could be used to reconstruct the original content or associate the input to the user.
+- Text input from Windows on-screen keyboards except from password fields and private sessions - processed to remove identifiers, sequencing information, and other data (such as email addresses, and numeric values) which could be used to reconstruct the original content or associate the input to the user.
+- Text of speech recognition results - result codes and recognized text
+- Language and model of the recognizer, System Speech language
+- App ID using speech features
+- Whether user is known to be a child
+- Confidence and Success/Failure of speech recognition

@@ -2,23 +2,20 @@
 title: 5158(S) The Windows Filtering Platform has permitted a bind to a local port. (Windows 10)
 description: Describes security event 5158(S) The Windows Filtering Platform has permitted a bind to a local port.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5158(S): The Windows Filtering Platform has permitted a bind to a local port.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5158.png" alt="Event 5158 illustration" width="491" height="466" hspace="10" align="left" />
@@ -27,7 +24,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) permits an application or service to bind to a local port.
+This event generates every time [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) permits an application or service to bind to a local port.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -94,7 +91,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 **Network Information:**
 
--   **Source Address** \[Type = UnicodeString\]**:** local IP address on which application was bind the port.
+-   **Source Address** \[Type = UnicodeString\]**:** local IP address on which application was bound the port.
 
     -   IPv4 Address
 
@@ -104,7 +101,7 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]**:** port number which application was bind.
 
@@ -130,13 +127,13 @@ This event generates every time [Windows Filtering Platform](https://msdn.micros
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows the application to bind the port. By default, Windows firewall won't prevent a port from being bound by an application. If this application doesn’t match any filters, you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows the application to bind the port. By default, Windows firewall won't prevent a port from being bound by an application. If this application doesn’t match any filters, you'll get value 0 in this field.
 
     To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
 -   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command, the **wfpstate.xml** file will be generated. Open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
 
@@ -148,7 +145,7 @@ For 5158(S): The Windows Filtering Platform has permitted a bind to a local port
 
 -   If you have a predefined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
--   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if “**Application**” isn't in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 -   If you have a pre-defined list of restricted substrings or words in application names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Application**.”
 
@@ -156,7 +153,6 @@ For 5158(S): The Windows Filtering Platform has permitted a bind to a local port
 
 -   If you need to monitor all actions with a specific local port, monitor for [5158](event-5158.md) events with that “**Source Port.”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 6 or 17.
+-   Monitor for all connections with a “**Protocol Number”** that isn't typical for this device or computer, for example, anything other than 6 or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
-

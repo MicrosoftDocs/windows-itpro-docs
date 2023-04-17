@@ -1,16 +1,15 @@
 ---
 title: ConnectivityProfiles (Windows 10)
 description: This section describes the ConnectivityProfile settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # ConnectivityProfiles (Windows Configuration Designer reference)
@@ -19,21 +18,21 @@ Use to configure profiles that a user will connect with, such as an email accoun
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Email](#email)  | X |  X  | X |  |  |
-| [Exchange](#exchange) | X |  X  | X |  |  |
-| [KnownAccounts](#knownaccounts) | X |  X  | X |  |  |
-| [VPN](#vpn) | X |  X  | X | X |  |
-| [WiFiSense](#wifisense) | X |  X  | X |  |  |
-| [WLAN](#wlan) | X |  X  | X | X |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [Email](#email)  | ✔️ |  ✔️ |  |  |
+| [Exchange](#exchange) | ✔️ |  ✔️ |  |  |
+| [KnownAccounts](#knownaccounts) | ✔️ |  ✔️ |  |  |
+| [VPN](#vpn) | ✔️ |  ✔️ | ✔️ |  |
+| [WiFiSense](#wifisense) | ✔️ | ✔️ |  |  |
+| [WLAN](#wlan) | ✔️ | ✔️ | ✔️ |  |
 
 ## Email
 
 Specify an email account to be automatically set up on the device. 
 
 1. In **Available customizations**, select **Email**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure for each account. Settings in **bold** are required.
+2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure for each account. Settings in **bold** are required.
 
 | Setting | Description | 
 | --- | --- |
@@ -59,11 +58,11 @@ Specify an email account to be automatically set up on the device.
 
 ## Exchange
 
-Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/activesync-csp).
+Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](/windows/client-management/mdm/activesync-csp).
 
 
 1. In **Available customizations**, select **Exchange**, enter a name for the account, and then click **Add**. A globally unique identifier (GUID) is generated for the account.
-2. In **Available customizations**, select the GUID that you just created. The following table describes the settings you can configure. Settings in **bold** are required.
+2. In **Available customizations**, select the GUID that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description | 
 | --- | --- |
@@ -90,7 +89,7 @@ Configure settings related to Exchange email server. These settings are related 
 
 ## KnownAccounts
 
-Configure the settings to add additional email accounts.
+Configure the settings to add more email accounts.
 
 | Setting | Description |
 | --- | --- |
@@ -112,36 +111,36 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 ### VPN
 
 1. In **Available customizations**, select **VPNSetting**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure. Settings in **bold** are required.
+2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description |
 | --- | --- |
 | **ProfileType**  | Choose between **Native** and **Third Party**  |
 | AlwaysOn | Set to **True** to automatically connect the VPN at sign-in  |
-| ByPassForLocal | When set to **True**, requests to local resources on the same Wi-Fi neetwork as the VPN client can bypass VPN  |
-| DnsSuffix | Enter one or more comma-separated DNS suffixes. The first suffix listed is usedas the primary connection-specific DNS suffix for the VPN interface. The list is added to the SuffixSearchList.  |
-| LockDown | When set to **True**:</br>- Profile automatically becomes an "always on" profile</br>- VPN cannot be disconnected</br>-If the profile is not connected, the user has no network connectivity</br>- No other profiles can be connected or modified |
+| ByPassForLocal | When set to **True**, requests to local resources on the same Wi-Fi network as the VPN client can bypass VPN  |
+| DnsSuffix | Enter one or more comma-separated DNS suffixes. The first suffix listed is used as the primary connection-specific DNS suffix for the VPN interface. The list is added to the SuffixSearchList.  |
+| LockDown | When set to **True**:</br>- Profile automatically becomes an "always on" profile</br>- VPN can't be disconnected</br>-If the profile isn't connected, the user has no network connectivity</br>- No other profiles can be connected or modified |
 | Proxy | Configure to **Automatic** or **Manual**  |
 | ProxyAutoConfigUrl  | When **Proxy** is set to **Automatic**, enter the URL to automatically retrieve the proxy settings |
 | ProxyServer | When **Proxy** is set to **Manual**, enter the proxy server address as a fully qualified hostname or enter `IP address:Port` |
 | RememberCredentials | Select whether credentials should be cached |
-| TrustedNetworkDetection | Enter a comma-separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device. |
+| TrustedNetworkDetection | Enter a comma-separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device. |
 
-When **ProfileType** is set to **Native**, the following additional settings are available.
+When **ProfileType** is set to **Native**, the following extra settings are available.
 
 Setting | Description 
 --- | ---
 AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**.
-EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
+EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
 NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
 RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
-Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the exteranl IP of a gateway or a virtual IP for a server farm.
+Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm.
 
-When **ProfileType** is set to **Third Party**, the following additional settings are available.
+When **ProfileType** is set to **Third Party**, the following extra settings are available.
 
 Setting | Description
 --- |---
-PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations as well as defaults.
+PluginProfileCustomConfiguration | Enter HTML-encoded XML for SSL-VPN plug-in specific configuration, including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plug-in provider for format and other details. Most plug-ins can also configure values based on the server negotiations and defaults.
 PluginProfilePackageFamilyName | Choose between **Pulse Secure VPN**, **F5 VPN Client**, and **SonicWALL Mobile Connect**.
 PluginProfileServerUrlList | Enter a comma-separated list of servers in URL, hostname, or IP format.
 
@@ -175,7 +174,7 @@ You can use these settings to configure system capabilities for Wi-Fi adapters, 
 | --- | --- |
 | CoexistenceSupport | Specify the type of co-existence that's supported on the device:</br></br>- **Both**: Both Wi-Fi and Bluetooth work at the same performance level during co-existence</br>- **Wi-Fi reduced**: On a 2X2 system, Wi-Fi performance is reduced to 1X1 level</br>- **Bluetooth centered**: When co-existing, Bluetooth has priority and restricts Wi-Fi performance</br>- **One**: Either Wi-Fi or Bluetooth will stop working  |
 | NumAntennaConnected | Enter the number of antennas that are connected to the WLAN radio |
-| SimultaneousMultiChannelSupported | Enter the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously.  |
+| SimultaneousMultiChannelSupported | Enter the maximum number of channels that the Wi-Fi device can simultaneously operate on. For example, you can use this setting to specify support for Station mode and Wi-Fi Direct GO on separate channels simultaneously.  |
 | WLANFunctionLevelDeviceResetSupported | Select whether the device supports functional level device reset (FLDR). The FLDR feature in the OS checks this system capability exclusively to determine if it can run. |
 | WLANPlatformLevelDeviceResetSupported | Select whether the device supports platform level device reset (PLDR). The PLDR feature in the OS checks this system capability exclusively to determine if it can run. |
 
@@ -188,17 +187,17 @@ Configure settings for wireless connectivity.
 
 **To add a profile**
 
-1. Create [the wireless profile XML](https://msdn.microsoft.com/library/windows/desktop/aa369853.aspx).
+1. Create [the wireless profile XML](/windows/win32/nativewifi/wireless-profile-samples).
 2. In **WLAN > Profiles**, browse to and select the profile XML file.
 3. Click **Add**.
 
 ### WLANXmlSettings
 
-Enter a SSID, click **Add**, and then configure the following settings for the SSID.
+Enter an SSID, click **Add**, and then configure the following settings for the SSID.
 
 | Settings | Description |
 | --- |  --- |
-| ProxyServerPort |  (Optional) Specify the configuration of the network proxy as **host:port**. A proxy server host and port can be specified per connection for Windows 10 for mobile devices. The host can be server name, FQDN, or SLN or IPv4 or IPv6 address. This proxy configuration is only supported in Windows 10 for mobile devices. Using this configuration in Windows 10 for desktop editions will result in failure.   |
+| ProxyServerPort |  (Optional) Don't use. Using this configuration in Windows 10 client editions will result in failure.   |
 | AutoConnect |  (Optional) Select **True** or **false** to specify whether to automatically connect to WLAN.     |
 | HiddenNetwork |  (Optional) Select **True** or **false** to specify whether the network is hidden.    |
 | SecurityType |  Choose between **Open**, **WEP**, and **WPA2-Personal**. </br></br>If you select **WEP** or **WPA2-Personal**, enter the **SecurityKey** required by the WLAN.    |

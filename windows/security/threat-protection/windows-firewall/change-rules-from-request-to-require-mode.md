@@ -1,30 +1,18 @@
 ---
-title: Change Rules from Request to Require Mode (Windows 10)
+title: Change Rules from Request to Require Mode (Windows)
 description: Learn how to convert a rule from request to require mode and apply the modified GPOs to the client devices.
-ms.assetid: ad969eda-c681-48cb-a2c4-0b6cae5f4cff
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Change Rules from Request to Require Mode
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Do not change the rules for the boundary zone; they must stay in request mode so that devices in the boundary zone can continue to accept connections from devices that are not part of the isolated domain.
+After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Don't change the rules for the boundary zone; they must stay in request mode so that devices in the boundary zone can continue to accept connections from devices that aren't part of the isolated domain.
 
 **Administrative credentials**
 

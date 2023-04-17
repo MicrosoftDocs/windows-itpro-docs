@@ -1,28 +1,32 @@
 ---
-title: DLL rules in AppLocker (Windows 10)
+title: DLL rules in AppLocker (Windows)
 description: This topic describes the file formats and available default rules for the DLL rule collection.
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # DLL rules in AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes the file formats and available default rules for the DLL rule collection.
 
@@ -35,12 +39,9 @@ The following table lists the default rules that are available for the DLL rule 
 
 | Purpose | Name | User | Rule condition type |
 | - | - | - | - |
-| Allows members of the local Administrators group to run all DLLs | (Default Rule) All DLLs| 
-| BUILTIN\Administrators | Path: *| 
-| Allow all users to run DLLs in the Windows folder| (Default Rule) Microsoft Windows DLLs | 
-| Everyone | Path: %windir%\*| 
-| Allow all users to run DLLs in the Program Files folder | (Default Rule) All DLLs located in the Program Files folder| 
-| Everyone | Path: %programfiles%\*| 
+| Allows members of the local Administrators group to run all DLLs | (Default Rule) All DLLs| BUILTIN\Administrators | Path: *| 
+| Allow all users to run DLLs in the Windows folder| (Default Rule) Microsoft Windows DLLs | Everyone | Path: %windir%\*| 
+| Allow all users to run DLLs in the Program Files folder | (Default Rule) All DLLs located in the Program Files folder| Everyone | Path: %programfiles%\*| 
  
 > [!IMPORTANT]
 > If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps

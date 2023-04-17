@@ -2,23 +2,20 @@
 title: 4782(S) The password hash of an account was accessed. (Windows 10)
 description: Describes security event 4782(S) The password hash of an account was accessed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4782(S): The password hash of an account was accessed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4782.png" alt="Event 4782 illustration" width="449" height="407" hspace="10" align="left" />
@@ -27,7 +24,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates on domain controllers during password migration of an account using [Active Directory Migration Toolkit](https://technet.microsoft.com/library/cc974332(v=ws.10).aspx).
+This event generates on domain controllers during password migration of an account using [Active Directory Migration Toolkit](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc974332(v=ws.10)).
 
 Typically **“Subject\\Security ID”** is the SYSTEM account.
 
@@ -115,4 +112,3 @@ Typically **“Subject\\Security ID”** is the SYSTEM account.
 For 4782(S): The password hash of an account was accessed.
 
 -   Monitor for all events of this type, because any actions with account’s password hashes should be planned. If this action was not planned, investigate the reason for the change.
-

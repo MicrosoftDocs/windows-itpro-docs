@@ -2,23 +2,20 @@
 title: 4697(S) A service was installed in the system. (Windows 10)
 description: Describes security event 4697(S) A service was installed in the system.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4697(S): A service was installed in the system.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4697.png" alt="Event 4697 illustration" width="438" height="380" hspace="10" align="left" />
@@ -91,7 +88,7 @@ This event generates when new service was installed in the system.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -107,7 +104,7 @@ This event generates when new service was installed in the system.
 
     Note that this is the path to the file when the service is created. If the path is changed afterwards, the change is not logged. This would have to be tracked via Process Create events.
 
--   **Service Type** \[Type = HexInt32\]: Indicates the [type](https://msdn.microsoft.com/library/tfdtdw0e(v=vs.110).aspx?cs-save-lang=1&cs-lang=csharp#code-snippet-1) of service that was registered with the Service Control Manager. It can be one of the following:
+-   **Service Type** \[Type = HexInt32\]: Indicates the [type](/dotnet/api/system.serviceprocess.servicetype?cs-lang=csharp&cs-save-lang=1#code-snippet-1) of service that was registered with the Service Control Manager. It can be one of the following:
 
 | Value | Service Type              | Description                                                                                                                                                                                   |
 |-------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -159,4 +156,3 @@ For 4697(S): A service was installed in the system.
 -   Report all “**Service Start Type**” equals “**4**”. It is not common to install a new service in the **Disabled** state.
 
 -   Report all “**Service Account**” not equals “**localSystem**”, “**localService**” or “**networkService**” to identify services which are running under a user account.
-

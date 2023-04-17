@@ -1,28 +1,32 @@
 ---
-title: Configure the AppLocker reference device (Windows 10)
+title: Configure the AppLocker reference device (Windows)
 description: This topic for the IT professional describes the steps to create an AppLocker policy platform structure on a reference computer.
 ms.assetid: 034bd367-146d-4956-873c-e1e09e6fefee
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Configure the AppLocker reference device
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the steps to create an AppLocker policy platform structure on a reference computer.
 
@@ -31,15 +35,15 @@ An AppLocker reference device that is used for the development and deployment of
 -   Maintain an application list for each business group.
 -   Develop AppLocker policies by creating individual rules or by creating a policy by automatically generating rules.
 -   Create the default rules to allow the Windows system files to run properly.
--   Run tests and analyze the event logs to determine the affect of the policies that you intend to deploy.
+-   Run tests and analyze the event logs to determine the effect of the policies that you intend to deploy.
 
-The reference device does not need to be joined to a domain, but it must be able to import and export AppLocker policies in XML format. The reference computer must be running one of the supported editions of Windows as listed in [Requirements to use AppLocker](requirements-to-use-applocker.md).
+The reference device doesn't need to be joined to a domain, but it must be able to import and export AppLocker policies in XML format. The reference computer must be running one of the supported editions of Windows as listed in [Requirements to use AppLocker](requirements-to-use-applocker.md).
 
 >**Warning:**  Do not use operating system snapshots when creating AppLocker rules. If you take a snapshot of the operating system, install an app, create AppLocker rules, and then revert to a clean snapshot and repeat the process for another app, there is a chance that duplicate rule GUIDs can be created. If duplicate GUIDs are present, AppLocker policies will not work as expected.
  
 **To configure a reference device**
 
-1.  If the operating system is not already installed, install one of the supported editions of Windows on the device.
+1.  If the operating system isn't already installed, install one of the supported editions of Windows on the device.
 
     >**Note:**  If you have the Group Policy Management Console (GPMC) installed on another device to test your implementation of AppLocker policies, you can export the policies to that device
      
@@ -53,7 +57,7 @@ The reference device does not need to be joined to a domain, but it must be able
 
 ### See also
 
--   After you configure the reference computer, you can create the AppLocker rule collections. You can build, import, or automatically generate the rules. For procedures to do this, see [Working with AppLocker rules](working-with-applocker-rules.md).
+-   After you configure the reference computer, you can create the AppLocker rule collections. You can build, import, or automatically generate the rules. For procedures to do this task, see [Working with AppLocker rules](working-with-applocker-rules.md).
 -   [Use a reference device to create and maintain AppLocker policies](use-a-reference-computer-to-create-and-maintain-applocker-policies.md)
  
  

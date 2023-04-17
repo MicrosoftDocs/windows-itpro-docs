@@ -1,28 +1,32 @@
 ---
-title: Understand the AppLocker policy deployment process (Windows 10)
+title: Understand the AppLocker policy deployment process (Windows)
 description: This planning and deployment topic for the IT professional describes the process for using AppLocker when deploying application control policies.
 ms.assetid: 4cfd95c1-fbd3-41fa-8efc-d23c1ea6fb16
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Understand the AppLocker policy deployment process
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This planning and deployment topic for the IT professional describes the process for using AppLocker when deploying application control policies.
 
@@ -30,7 +34,7 @@ To successfully deploy AppLocker policies, you need to identify your application
 
 The following diagram shows the main points in the design, planning, and deployment process for AppLocker.
 
-![applocker quick reference guide](images/applocker-plandeploy-quickreference.gif)
+![applocker quick reference guide.](images/applocker-plandeploy-quickreference.gif)
 
 ## Resources to support the deployment process
 

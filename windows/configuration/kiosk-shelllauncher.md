@@ -1,36 +1,35 @@
 ---
-title: Use Shell Launcher to create a Windows 10 kiosk (Windows 10)
+title: Use Shell Launcher to create a Windows 10/11 kiosk (Windows 10/11)
 description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
-ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: dansimp
+ms.reviewer: sybruckm
+manager: aaroncz
+ms.author: lizlong
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
-# Use Shell Launcher to create a Windows 10 kiosk
+# Use Shell Launcher to create a Windows client kiosk
 
 
 **Applies to**
 - Windows 10 Ent, Edu
+- Windows 11
 
-Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10, version 1809 and above, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update. 
+Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows client, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10 version 1809+ / Windows 11, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in Windows 10 version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update. 
 
 >[!NOTE]
 >Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
 >
 >Methods of controlling access to other desktop applications and system components can be used in addition to using the Shell Launcher. These methods include, but are not limited to:
 >- [Group Policy](https://www.microsoft.com/download/details.aspx?id=25250) - example: Prevent access to registry editing tools
->- [AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
->- [Mobile Device Management](https://docs.microsoft.com/windows/client-management/mdm) - Enterprise management of device security policies
+>- [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
+>- [Mobile Device Management](/windows/client-management/mdm) - Enterprise management of device security policies
 
-You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). In Windows 10, version 1803 and later, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
+You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). Starting with Windows 10 version 1803+, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
 
 
 ## Differences between Shell Launcher v1 and Shell Launcher v2
@@ -57,7 +56,7 @@ For sample XML configurations for the different app combinations, see [Samples f
 
 -   A Windows application that is installed for that account. The app can be your own company application or a common app like Internet Explorer.
 
-[See the technical reference for the shell launcher component.](https://docs.microsoft.com/windows-hardware/customize/enterprise/shell-launcher)
+[See the technical reference for the shell launcher component.](/windows-hardware/customize/enterprise/shell-launcher)
 
 ## Enable Shell Launcher feature
 
@@ -131,13 +130,13 @@ xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 ### Custom OMA-URI setting
 
-In your MDM service, you can create a [custom OMA-URI setting](https://docs.microsoft.com/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v2. (The [XML](#xml-for-shell-launcher-configuration) that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
+In your MDM service, you can create a [custom OMA-URI setting](/intune/custom-settings-windows-10) to configure Shell Launcher v1 or v2. (The [XML](#xml-for-shell-launcher-configuration) that you use for your setting will determine whether you apply Shell Launcher v1 or v2.)
 
 The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
 For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)`. 
 
-![Screenshot of custom OMA-URI settings](images/slv2-oma-uri.png)
+![Screenshot of custom OMA-URI settings.](images/slv2-oma-uri.png)
 
 After you configure the profile containing the custom Shell Launcher setting, select **All Devices** or selected groups of devices to apply the profile to. Don't assign the profile to users or user groups.
 
@@ -290,9 +289,9 @@ Value|Description
 2|Shut down the device
 3|Do nothing
 
-These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](https://docs.microsoft.com/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
+These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
 
-To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommeded to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommended to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
 ``` xml
 <ReturnCodeActions>
     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>

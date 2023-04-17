@@ -1,1663 +1,1379 @@
 ---
-title: Policy CSP - ADMX_Taskbar
-description: Policy CSP - ADMX_Taskbar
-ms.author: dansimp
+title: ADMX_Taskbar Policy CSP
+description: Learn more about the ADMX_Taskbar Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 10/26/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Taskbar-Begin -->
 # Policy CSP - ADMX_Taskbar
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## ADMX_Taskbar policies  
+<!-- ADMX_Taskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Taskbar-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-taskbar-disablenotificationcenter">ADMX_Taskbar/DisableNotificationCenter</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-enablelegacyballoonnotifications">ADMX_Taskbar/EnableLegacyBalloonNotifications</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescahealth">ADMX_Taskbar/HideSCAHealth</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescanetwork">ADMX_Taskbar/HideSCANetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescapower">ADMX_Taskbar/HideSCAPower</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescavolume">ADMX_Taskbar/HideSCAVolume</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-noballoonfeatureadvertisements">ADMX_Taskbar/NoBalloonFeatureAdvertisements</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nopinningstoretotaskbar">ADMX_Taskbar/NoPinningStoreToTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nopinningtodestinations">ADMX_Taskbar/NoPinningToDestinations</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nopinningtotaskbar">ADMX_Taskbar/NoPinningToTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-noremotedestinations">ADMX_Taskbar/NoRemoteDestinations</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nosystraysystempromotion">ADMX_Taskbar/NoSystraySystemPromotion</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-showwindowsstoreappsontaskbar">ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarlockall">ADMX_Taskbar/TaskbarLockAll</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnoaddremovetoolbar">ADMX_Taskbar/TaskbarNoAddRemoveToolbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnodragtoolbar">ADMX_Taskbar/TaskbarNoDragToolbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnomultimon">ADMX_Taskbar/TaskbarNoMultimon</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnonotification">ADMX_Taskbar/TaskbarNoNotification</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnopinnedlist">ADMX_Taskbar/TaskbarNoPinnedList</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnoredock">ADMX_Taskbar/TaskbarNoRedock</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnoresize">ADMX_Taskbar/TaskbarNoResize</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnothumbnail">ADMX_Taskbar/TaskbarNoThumbnail</a>
-  </dd>
-</dl>
+<!-- DisableNotificationCenter-Begin -->
+## DisableNotificationCenter
 
+<!-- DisableNotificationCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableNotificationCenter-Applicability-End -->
 
-<hr/>
+<!-- DisableNotificationCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/DisableNotificationCenter
+```
 
-<!--Policy-->
-<a href="" id="admx-taskbar-disablenotificationcenter"></a>**ADMX_Taskbar/DisableNotificationCenter**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Taskbar/DisableNotificationCenter
+```
+<!-- DisableNotificationCenter-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes Notifications and Action Center from the notification area on the taskbar.
+<!-- DisableNotificationCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting removes Notifications and Action Center from the notification area on the taskbar.
 
 The notification area is located at the far right end of the taskbar and includes icons for current notifications and the system clock.
 
-If this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won’t be able to review any notifications they miss.
+- If this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won't be able to review any notifications they miss.
 
-If you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
-
-A reboot is required for this policy setting to take effect.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Notifications and Action Center*
--   GP name: *DisableNotificationCenter*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-taskbar-enablelegacyballoonnotifications"></a>**ADMX_Taskbar/EnableLegacyBalloonNotifications**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy disables the functionality that converts balloons to toast notifications.
-
-If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
-
-Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications. 
-
-If you disable or don’t configure this policy setting, all notifications will appear as toast notifications.
+- If you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
 
 A reboot is required for this policy setting to take effect.
+<!-- DisableNotificationCenter-Description-End -->
 
-<!--/Description-->
+<!-- DisableNotificationCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableNotificationCenter-Editable-End -->
+
+<!-- DisableNotificationCenter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableNotificationCenter-DFProperties-End -->
+
+<!-- DisableNotificationCenter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disable showing balloon notifications as toasts.*
--   GP name: *EnableLegacyBalloonNotifications*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableNotificationCenter |
+| Friendly Name | Remove Notifications and Action Center |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableNotificationCenter |
+| ADMX File Name | Taskbar.admx |
+<!-- DisableNotificationCenter-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescahealth"></a>**ADMX_Taskbar/HideSCAHealth**  
+<!-- DisableNotificationCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableNotificationCenter-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableNotificationCenter-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableLegacyBalloonNotifications-Begin -->
+## EnableLegacyBalloonNotifications
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableLegacyBalloonNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableLegacyBalloonNotifications-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- EnableLegacyBalloonNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/EnableLegacyBalloonNotifications
+```
+<!-- EnableLegacyBalloonNotifications-OmaUri-End -->
 
-<hr/>
+<!-- EnableLegacyBalloonNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy disables the functionality that converts balloons to toast notifications.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove Security and Maintenance from the system control area.
+- If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
 
-If you enable this policy setting, the Security and Maintenance icon is not displayed in the system notification area.
+Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications.
 
-If you disable or do not configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, all notifications will appear as toast notifications.
 
-<!--/Description-->
+A reboot is required for this policy setting to take effect.
+<!-- EnableLegacyBalloonNotifications-Description-End -->
+
+<!-- EnableLegacyBalloonNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableLegacyBalloonNotifications-Editable-End -->
+
+<!-- EnableLegacyBalloonNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableLegacyBalloonNotifications-DFProperties-End -->
+
+<!-- EnableLegacyBalloonNotifications-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove the Security and Maintenance icon*
--   GP name: *HideSCAHealth*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EnableLegacyBalloonNotifications |
+| Friendly Name | Disable showing balloon notifications as toasts. |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | EnableLegacyBalloonNotifications |
+| ADMX File Name | Taskbar.admx |
+<!-- EnableLegacyBalloonNotifications-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescanetwork"></a>**ADMX_Taskbar/HideSCANetwork**  
+<!-- EnableLegacyBalloonNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableLegacyBalloonNotifications-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- EnableLegacyBalloonNotifications-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCAHealth-Begin -->
+## HideSCAHealth
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCAHealth-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCAHealth-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCAHealth-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCAHealth
+```
+<!-- HideSCAHealth-OmaUri-End -->
 
-<hr/>
+<!-- HideSCAHealth-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove Security and Maintenance from the system control area.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the networking icon from the system control area.
+- If you enable this policy setting, the Security and Maintenance icon is not displayed in the system notification area.
 
-If you enable this policy setting, the networking icon is not displayed in the system notification area.
+- If you disable or do not configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
+<!-- HideSCAHealth-Description-End -->
 
-If you disable or do not configure this policy setting, the networking icon is displayed in the system notification area.
+<!-- HideSCAHealth-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCAHealth-Editable-End -->
 
-<!--/Description-->
+<!-- HideSCAHealth-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCAHealth-DFProperties-End -->
+
+<!-- HideSCAHealth-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove the networking icon*
--   GP name: *HideSCANetwork*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideSCAHealth |
+| Friendly Name | Remove the Security and Maintenance icon |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCAHealth |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCAHealth-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescapower"></a>**ADMX_Taskbar/HideSCAPower**  
+<!-- HideSCAHealth-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCAHealth-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideSCAHealth-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCANetwork-Begin -->
+## HideSCANetwork
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCANetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCANetwork-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCANetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCANetwork
+```
+<!-- HideSCANetwork-OmaUri-End -->
 
-<hr/>
+<!-- HideSCANetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the networking icon from the system control area.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the battery meter from the system control area.
+- If you enable this policy setting, the networking icon is not displayed in the system notification area.
 
-If you enable this policy setting, the battery meter is not displayed in the system notification area.
+- If you disable or do not configure this policy setting, the networking icon is displayed in the system notification area.
+<!-- HideSCANetwork-Description-End -->
 
-If you disable or do not configure this policy setting, the battery meter is displayed in the system notification area.
+<!-- HideSCANetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCANetwork-Editable-End -->
 
-<!--/Description-->
+<!-- HideSCANetwork-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCANetwork-DFProperties-End -->
+
+<!-- HideSCANetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove the battery meter*
--   GP name: *HideSCAPower*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideSCANetwork |
+| Friendly Name | Remove the networking icon |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCANetwork |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCANetwork-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescavolume"></a>**ADMX_Taskbar/HideSCAVolume**  
+<!-- HideSCANetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCANetwork-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideSCANetwork-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCAPower-Begin -->
+## HideSCAPower
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCAPower-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCAPower-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCAPower-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCAPower
+```
+<!-- HideSCAPower-OmaUri-End -->
 
-<hr/>
+<!-- HideSCAPower-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the battery meter from the system control area.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the volume control icon from the system control area.
+- If you enable this policy setting, the battery meter is not displayed in the system notification area.
 
-If you enable this policy setting, the volume control icon is not displayed in the system notification area.
+- If you disable or do not configure this policy setting, the battery meter is displayed in the system notification area.
+<!-- HideSCAPower-Description-End -->
 
-If you disable or do not configure this policy setting, the volume control icon is displayed in the system notification area.
+<!-- HideSCAPower-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCAPower-Editable-End -->
 
-<!--/Description-->
+<!-- HideSCAPower-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCAPower-DFProperties-End -->
+
+<!-- HideSCAPower-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove the volume control icon*
--   GP name: *HideSCAVolume*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HideSCAPower |
+| Friendly Name | Remove the battery meter |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCAPower |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCAPower-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-noballoonfeatureadvertisements"></a>**ADMX_Taskbar/NoBalloonFeatureAdvertisements**  
+<!-- HideSCAPower-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCAPower-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HideSCAPower-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCAVolume-Begin -->
+## HideSCAVolume
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCAVolume-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCAVolume-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCAVolume-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCAVolume
+```
+<!-- HideSCAVolume-OmaUri-End -->
 
-<hr/>
+<!-- HideSCAVolume-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the volume control icon from the system control area.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off feature advertisement balloon notifications.
+- If you enable this policy setting, the volume control icon is not displayed in the system notification area.
+
+- If you disable or do not configure this policy setting, the volume control icon is displayed in the system notification area.
+<!-- HideSCAVolume-Description-End -->
+
+<!-- HideSCAVolume-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCAVolume-Editable-End -->
+
+<!-- HideSCAVolume-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCAVolume-DFProperties-End -->
+
+<!-- HideSCAVolume-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideSCAVolume |
+| Friendly Name | Remove the volume control icon |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCAVolume |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCAVolume-AdmxBacked-End -->
+
+<!-- HideSCAVolume-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCAVolume-Examples-End -->
+
+<!-- HideSCAVolume-End -->
+
+<!-- NoBalloonFeatureAdvertisements-Begin -->
+## NoBalloonFeatureAdvertisements
+
+<!-- NoBalloonFeatureAdvertisements-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoBalloonFeatureAdvertisements-Applicability-End -->
+
+<!-- NoBalloonFeatureAdvertisements-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoBalloonFeatureAdvertisements
+```
+<!-- NoBalloonFeatureAdvertisements-OmaUri-End -->
+
+<!-- NoBalloonFeatureAdvertisements-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off feature advertisement balloon notifications.
 
 If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
 
 If you disable do not configure this policy setting, feature advertisement balloons are shown.
+<!-- NoBalloonFeatureAdvertisements-Description-End -->
 
-<!--/Description-->
+<!-- NoBalloonFeatureAdvertisements-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoBalloonFeatureAdvertisements-Editable-End -->
+
+<!-- NoBalloonFeatureAdvertisements-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoBalloonFeatureAdvertisements-DFProperties-End -->
+
+<!-- NoBalloonFeatureAdvertisements-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off feature advertisement balloon notifications*
--   GP name: *NoBalloonFeatureAdvertisements*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoBalloonFeatureAdvertisements |
+| Friendly Name | Turn off feature advertisement balloon notifications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoBalloonFeatureAdvertisements |
+| ADMX File Name | Taskbar.admx |
+<!-- NoBalloonFeatureAdvertisements-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nopinningstoretotaskbar"></a>**ADMX_Taskbar/NoPinningStoreToTaskbar**  
+<!-- NoBalloonFeatureAdvertisements-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoBalloonFeatureAdvertisements-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoBalloonFeatureAdvertisements-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinningStoreToTaskbar-Begin -->
+## NoPinningStoreToTaskbar
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPinningStoreToTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinningStoreToTaskbar-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinningStoreToTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoPinningStoreToTaskbar
+```
+<!-- NoPinningStoreToTaskbar-OmaUri-End -->
 
-<hr/>
+<!-- NoPinningStoreToTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control pinning the Store app to the Taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control pinning the Store app to the Taskbar.
+- If you enable this policy setting, users cannot pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
 
-If you enable this policy setting, users cannot pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
+- If you disable or do not configure this policy setting, users can pin the Store app to the Taskbar.
+<!-- NoPinningStoreToTaskbar-Description-End -->
 
-If you disable or do not configure this policy setting, users can pin the Store app to the Taskbar.
+<!-- NoPinningStoreToTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinningStoreToTaskbar-Editable-End -->
 
-<!--/Description-->
+<!-- NoPinningStoreToTaskbar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinningStoreToTaskbar-DFProperties-End -->
+
+<!-- NoPinningStoreToTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not allow pinning Store app to the Taskbar*
--   GP name: *NoPinningStoreToTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoPinningStoreToTaskbar |
+| Friendly Name | Do not allow pinning Store app to the Taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoPinningStoreToTaskbar |
+| ADMX File Name | Taskbar.admx |
+<!-- NoPinningStoreToTaskbar-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nopinningtodestinations"></a>**ADMX_Taskbar/NoPinningToDestinations**  
+<!-- NoPinningStoreToTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinningStoreToTaskbar-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoPinningStoreToTaskbar-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinningToDestinations-Begin -->
+## NoPinningToDestinations
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPinningToDestinations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinningToDestinations-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinningToDestinations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoPinningToDestinations
+```
+<!-- NoPinningToDestinations-OmaUri-End -->
 
-<hr/>
+<!-- NoPinningToDestinations-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control pinning items in Jump Lists.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control pinning items in Jump Lists.
+- If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
 
-If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
+- If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+<!-- NoPinningToDestinations-Description-End -->
 
-If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+<!-- NoPinningToDestinations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinningToDestinations-Editable-End -->
 
-<!--/Description-->
+<!-- NoPinningToDestinations-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinningToDestinations-DFProperties-End -->
+
+<!-- NoPinningToDestinations-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not allow pinning items in Jump Lists*
--   GP name: *NoPinningToDestinations*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoPinningToDestinations |
+| Friendly Name | Do not allow pinning items in Jump Lists |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoPinningToDestinations |
+| ADMX File Name | Taskbar.admx |
+<!-- NoPinningToDestinations-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nopinningtotaskbar"></a>**ADMX_Taskbar/NoPinningToTaskbar**  
+<!-- NoPinningToDestinations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinningToDestinations-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoPinningToDestinations-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinningToTaskbar-Begin -->
+## NoPinningToTaskbar
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPinningToTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinningToTaskbar-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinningToTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoPinningToTaskbar
+```
+<!-- NoPinningToTaskbar-OmaUri-End -->
 
-<hr/>
+<!-- NoPinningToTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control pinning programs to the Taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control pinning programs to the Taskbar.
+- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
 
-If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
+- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+<!-- NoPinningToTaskbar-Description-End -->
 
-If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+<!-- NoPinningToTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinningToTaskbar-Editable-End -->
 
-<!--/Description-->
+<!-- NoPinningToTaskbar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinningToTaskbar-DFProperties-End -->
+
+<!-- NoPinningToTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not allow pinning programs to the Taskbar*
--   GP name: *NoPinningToTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoPinningToTaskbar |
+| Friendly Name | Do not allow pinning programs to the Taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoPinningToTaskbar |
+| ADMX File Name | Taskbar.admx |
+<!-- NoPinningToTaskbar-AdmxBacked-End -->
 
-<hr/>
+<!-- NoPinningToTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinningToTaskbar-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-noremotedestinations"></a>**ADMX_Taskbar/NoRemoteDestinations**  
+<!-- NoPinningToTaskbar-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRemoteDestinations-Begin -->
+## NoRemoteDestinations
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRemoteDestinations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRemoteDestinations-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRemoteDestinations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoRemoteDestinations
+```
+<!-- NoRemoteDestinations-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control displaying or tracking items in Jump Lists from remote locations.
+<!-- NoRemoteDestinations-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control displaying or tracking items in Jump Lists from remote locations.
 
 The Start Menu and Taskbar display Jump Lists off of programs. These menus include files, folders, websites and other relevant items for that program. This helps users more easily reopen their most important documents and other tasks.
 
-If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers are not tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
+- If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers are not tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
 
-If you disable or do not configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.  Note: This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
+- If you disable or do not configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
 
+> [!NOTE]
+> This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
+<!-- NoRemoteDestinations-Description-End -->
 
-<!--/Description-->
+<!-- NoRemoteDestinations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRemoteDestinations-Editable-End -->
+
+<!-- NoRemoteDestinations-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRemoteDestinations-DFProperties-End -->
+
+<!-- NoRemoteDestinations-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not display or track items in Jump Lists from remote locations*
--   GP name: *NoRemoteDestinations*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoRemoteDestinations |
+| Friendly Name | Do not display or track items in Jump Lists from remote locations |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoRemoteDestinations |
+| ADMX File Name | Taskbar.admx |
+<!-- NoRemoteDestinations-AdmxBacked-End -->
 
-<hr/>
+<!-- NoRemoteDestinations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRemoteDestinations-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nosystraysystempromotion"></a>**ADMX_Taskbar/NoSystraySystemPromotion**  
+<!-- NoRemoteDestinations-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSystraySystemPromotion-Begin -->
+## NoSystraySystemPromotion
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSystraySystemPromotion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSystraySystemPromotion-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSystraySystemPromotion-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoSystraySystemPromotion
+```
+<!-- NoSystraySystemPromotion-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSystraySystemPromotion-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off automatic promotion of notification icons to the taskbar.
 
-<hr/>
+- If you enable this policy setting, newly added notification icons are not temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off automatic promotion of notification icons to the taskbar.
+- If you disable or do not configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+<!-- NoSystraySystemPromotion-Description-End -->
 
-If you enable this policy setting, newly added notification icons are not temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
+<!-- NoSystraySystemPromotion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSystraySystemPromotion-Editable-End -->
 
-If you disable or do not configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+<!-- NoSystraySystemPromotion-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSystraySystemPromotion-DFProperties-End -->
+
+<!-- NoSystraySystemPromotion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off automatic promotion of notification icons to the taskbar*
--   GP name: *NoSystraySystemPromotion*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSystraySystemPromotion |
+| Friendly Name | Turn off automatic promotion of notification icons to the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoSystraySystemPromotion |
+| ADMX File Name | Taskbar.admx |
+<!-- NoSystraySystemPromotion-AdmxBacked-End -->
 
-<hr/>
+<!-- NoSystraySystemPromotion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSystraySystemPromotion-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-showwindowsstoreappsontaskbar"></a>**ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar**  
+<!-- NoSystraySystemPromotion-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ShowWindowsStoreAppsOnTaskbar-Begin -->
+## ShowWindowsStoreAppsOnTaskbar
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowWindowsStoreAppsOnTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowWindowsStoreAppsOnTaskbar-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowWindowsStoreAppsOnTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar
+```
+<!-- ShowWindowsStoreAppsOnTaskbar-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ShowWindowsStoreAppsOnTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows users to see Windows Store apps on the taskbar.
 
-<hr/>
+- If you enable this policy setting, users will see Windows Store apps on the taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows users to see Windows Store apps on the taskbar.
+- If you disable this policy setting, users won't see Windows Store apps on the taskbar.
 
-If you enable this policy setting, users will see Windows Store apps on the taskbar.
+- If you don't configure this policy setting, the default setting for the user's device will be used, and the user can choose to change it.
+<!-- ShowWindowsStoreAppsOnTaskbar-Description-End -->
 
-If you disable this policy setting, users won’t see Windows Store apps on the taskbar.
+<!-- ShowWindowsStoreAppsOnTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowWindowsStoreAppsOnTaskbar-Editable-End -->
 
-If you don’t configure this policy setting, the default setting for the user’s device will be used, and the user can choose to change it.
+<!-- ShowWindowsStoreAppsOnTaskbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowWindowsStoreAppsOnTaskbar-DFProperties-End -->
+
+<!-- ShowWindowsStoreAppsOnTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Show Windows Store apps on the taskbar*
--   GP name: *ShowWindowsStoreAppsOnTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShowWindowsStoreAppsOnTaskbar |
+| Friendly Name | Show Windows Store apps on the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowWindowsStoreAppsOnTaskbar |
+| ADMX File Name | Taskbar.admx |
+<!-- ShowWindowsStoreAppsOnTaskbar-AdmxBacked-End -->
 
-<hr/>
+<!-- ShowWindowsStoreAppsOnTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowWindowsStoreAppsOnTaskbar-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarlockall"></a>**ADMX_Taskbar/TaskbarLockAll**  
+<!-- ShowWindowsStoreAppsOnTaskbar-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarLockAll-Begin -->
+## TaskbarLockAll
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarLockAll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarLockAll-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarLockAll-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarLockAll
+```
+<!-- TaskbarLockAll-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarLockAll-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to lock all taskbar settings.
 
-<hr/>
+- If you enable this policy setting, the user cannot access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to lock all taskbar settings.
+- If you disable or do not configure this policy setting, the user will be able to set any taskbar setting that is not prevented by another policy setting.
+<!-- TaskbarLockAll-Description-End -->
 
-If you enable this policy setting, the user cannot access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
+<!-- TaskbarLockAll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarLockAll-Editable-End -->
 
-If you disable or do not configure this policy setting, the user will be able to set any taskbar setting that is not prevented by another policy setting.
+<!-- TaskbarLockAll-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarLockAll-DFProperties-End -->
+
+<!-- TaskbarLockAll-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Lock all taskbar settings*
--   GP name: *TaskbarLockAll*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarLockAll |
+| Friendly Name | Lock all taskbar settings |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarLockAll |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarLockAll-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarLockAll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarLockAll-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoaddremovetoolbar"></a>**ADMX_Taskbar/TaskbarNoAddRemoveToolbar**  
+<!-- TaskbarLockAll-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoAddRemoveToolbar-Begin -->
+## TaskbarNoAddRemoveToolbar
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoAddRemoveToolbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoAddRemoveToolbar-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoAddRemoveToolbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoAddRemoveToolbar
+```
+<!-- TaskbarNoAddRemoveToolbar-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoAddRemoveToolbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent users from adding or removing toolbars.
 
-<hr/>
+- If you enable this policy setting, the user is not allowed to add or remove any toolbars to the taskbar. Applications are not able to add toolbars either.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent users from adding or removing toolbars.
+- If you disable or do not configure this policy setting, the users and applications are able to add toolbars to the taskbar.
+<!-- TaskbarNoAddRemoveToolbar-Description-End -->
 
-If you enable this policy setting, the user is not allowed to add or remove any toolbars to the taskbar. Applications are not able to add toolbars either.
+<!-- TaskbarNoAddRemoveToolbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoAddRemoveToolbar-Editable-End -->
 
-If you disable or do not configure this policy setting, the users and applications are able to add toolbars to the taskbar.
+<!-- TaskbarNoAddRemoveToolbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoAddRemoveToolbar-DFProperties-End -->
+
+<!-- TaskbarNoAddRemoveToolbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users from adding or removing toolbars*
--   GP name: *TaskbarNoAddRemoveToolbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoAddRemoveToolbar |
+| Friendly Name | Prevent users from adding or removing toolbars |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoAddRemoveToolbar |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoAddRemoveToolbar-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoAddRemoveToolbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoAddRemoveToolbar-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnodragtoolbar"></a>**ADMX_Taskbar/TaskbarNoDragToolbar**  
+<!-- TaskbarNoAddRemoveToolbar-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoDragToolbar-Begin -->
+## TaskbarNoDragToolbar
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoDragToolbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoDragToolbar-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoDragToolbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoDragToolbar
+```
+<!-- TaskbarNoDragToolbar-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoDragToolbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent users from rearranging toolbars.
 
-<hr/>
+- If you enable this policy setting, users are not able to drag or drop toolbars to the taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent users from rearranging toolbars.
+- If you disable or do not configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+<!-- TaskbarNoDragToolbar-Description-End -->
 
-If you enable this policy setting, users are not able to drag or drop toolbars to the taskbar.
+<!-- TaskbarNoDragToolbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoDragToolbar-Editable-End -->
 
-If you disable or do not configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+<!-- TaskbarNoDragToolbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoDragToolbar-DFProperties-End -->
+
+<!-- TaskbarNoDragToolbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users from rearranging toolbars*
--   GP name: *TaskbarNoDragToolbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoDragToolbar |
+| Friendly Name | Prevent users from rearranging toolbars |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoDragToolbar |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoDragToolbar-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoDragToolbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoDragToolbar-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnomultimon"></a>**ADMX_Taskbar/TaskbarNoMultimon**  
+<!-- TaskbarNoDragToolbar-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoMultimon-Begin -->
+## TaskbarNoMultimon
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoMultimon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoMultimon-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoMultimon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoMultimon
+```
+<!-- TaskbarNoMultimon-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoMultimon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent taskbars from being displayed on more than one monitor.
 
-<hr/>
+- If you enable this policy setting, users are not able to show taskbars on more than one display. The multiple display section is not enabled in the taskbar properties dialog.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent taskbars from being displayed on more than one monitor.
+- If you disable or do not configure this policy setting, users can show taskbars on more than one display.
+<!-- TaskbarNoMultimon-Description-End -->
 
-If you enable this policy setting, users are not able to show taskbars on more than one display. The multiple display section is not enabled in the taskbar properties dialog.
+<!-- TaskbarNoMultimon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoMultimon-Editable-End -->
 
-If you disable or do not configure this policy setting, users can show taskbars on more than one display.
+<!-- TaskbarNoMultimon-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoMultimon-DFProperties-End -->
+
+<!-- TaskbarNoMultimon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not allow taskbars on more than one display*
--   GP name: *TaskbarNoMultimon*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoMultimon |
+| Friendly Name | Do not allow taskbars on more than one display |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TaskbarNoMultimon |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoMultimon-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoMultimon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoMultimon-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnonotification"></a>**ADMX_Taskbar/TaskbarNoNotification**  
+<!-- TaskbarNoMultimon-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoNotification-Begin -->
+## TaskbarNoNotification
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoNotification-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoNotification-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoNotification
+```
+<!-- TaskbarNoNotification-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off all notification balloons.
 
-<hr/>
+- If you enable this policy setting, no notification balloons are shown to the user.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off all notification balloons.
+- If you disable or do not configure this policy setting, notification balloons are shown to the user.
+<!-- TaskbarNoNotification-Description-End -->
 
-If you enable this policy setting, no notification balloons are shown to the user.
+<!-- TaskbarNoNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoNotification-Editable-End -->
 
-If you disable or do not configure this policy setting, notification balloons are shown to the user.
+<!-- TaskbarNoNotification-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoNotification-DFProperties-End -->
+
+<!-- TaskbarNoNotification-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off all balloon notifications*
--   GP name: *TaskbarNoNotification*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoNotification |
+| Friendly Name | Turn off all balloon notifications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoNotification |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoNotification-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoNotification-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnopinnedlist"></a>**ADMX_Taskbar/TaskbarNoPinnedList**  
+<!-- TaskbarNoNotification-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoPinnedList-Begin -->
+## TaskbarNoPinnedList
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoPinnedList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoPinnedList-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoPinnedList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
+```
 
-> [!div class = "checklist"]
-> * User
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
+```
+<!-- TaskbarNoPinnedList-OmaUri-End -->
 
-<hr/>
+<!-- TaskbarNoPinnedList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove pinned programs from the taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove pinned programs from the taskbar.
+- If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users cannot pin programs to the Taskbar.
 
-If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users cannot pin programs to the Taskbar.
+- If you disable or do not configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
+<!-- TaskbarNoPinnedList-Description-End -->
 
-If you disable or do not configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
+<!-- TaskbarNoPinnedList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoPinnedList-Editable-End -->
 
-<!--/Description-->
+<!-- TaskbarNoPinnedList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoPinnedList-DFProperties-End -->
+
+<!-- TaskbarNoPinnedList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove pinned programs from the Taskbar*
--   GP name: *TaskbarNoPinnedList*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoPinnedList |
+| Friendly Name | Remove pinned programs from the Taskbar |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TaskbarNoPinnedList |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoPinnedList-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoPinnedList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoPinnedList-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoredock"></a>**ADMX_Taskbar/TaskbarNoRedock**  
+<!-- TaskbarNoPinnedList-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoRedock-Begin -->
+## TaskbarNoRedock
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoRedock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoRedock-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoRedock-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoRedock
+```
+<!-- TaskbarNoRedock-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoRedock-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent users from moving taskbar to another screen dock location.
 
-<hr/>
+- If you enable this policy setting, users are not able to drag their taskbar to another area of the monitor(s).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent users from moving taskbar to another screen dock location.
+- If you disable or do not configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
+<!-- TaskbarNoRedock-Description-End -->
 
-If you enable this policy setting, users are not able to drag their taskbar to another area of the monitor(s).
+<!-- TaskbarNoRedock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoRedock-Editable-End -->
 
-If you disable or do not configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
+<!-- TaskbarNoRedock-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoRedock-DFProperties-End -->
+
+<!-- TaskbarNoRedock-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users from moving taskbar to another screen dock location*
--   GP name: *TaskbarNoRedock*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoRedock |
+| Friendly Name | Prevent users from moving taskbar to another screen dock location |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoRedock |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoRedock-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoRedock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoRedock-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoresize"></a>**ADMX_Taskbar/TaskbarNoResize**  
+<!-- TaskbarNoRedock-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoResize-Begin -->
+## TaskbarNoResize
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoResize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoResize-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoResize-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoResize
+```
+<!-- TaskbarNoResize-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoResize-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent users from resizing the taskbar.
 
-<hr/>
+- If you enable this policy setting, users are not be able to resize their taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent users from resizing the taskbar.
+- If you disable or do not configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+<!-- TaskbarNoResize-Description-End -->
 
-If you enable this policy setting, users are not be able to resize their taskbar.
+<!-- TaskbarNoResize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoResize-Editable-End -->
 
-If you disable or do not configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+<!-- TaskbarNoResize-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoResize-DFProperties-End -->
+
+<!-- TaskbarNoResize-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users from resizing the taskbar*
--   GP name: *TaskbarNoResize*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoResize |
+| Friendly Name | Prevent users from resizing the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoResize |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoResize-AdmxBacked-End -->
 
-<hr/>
+<!-- TaskbarNoResize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoResize-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnothumbnail"></a>**ADMX_Taskbar/TaskbarNoThumbnail**  
+<!-- TaskbarNoResize-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TaskbarNoThumbnail-Begin -->
+## TaskbarNoThumbnail
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoThumbnail-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoThumbnail-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoThumbnail-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoThumbnail
+```
+<!-- TaskbarNoThumbnail-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoThumbnail-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off taskbar thumbnails.
 
-<hr/>
+- If you enable this policy setting, the taskbar thumbnails are not displayed and the system uses standard text for the tooltips.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off taskbar thumbnails.
+- If you disable or do not configure this policy setting, the taskbar thumbnails are displayed.
+<!-- TaskbarNoThumbnail-Description-End -->
 
-If you enable this policy setting, the taskbar thumbnails are not displayed and the system uses standard text for the tooltips.
+<!-- TaskbarNoThumbnail-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoThumbnail-Editable-End -->
 
-If you disable or do not configure this policy setting, the taskbar thumbnails are displayed.
+<!-- TaskbarNoThumbnail-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoThumbnail-DFProperties-End -->
+
+<!-- TaskbarNoThumbnail-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off taskbar thumbnails*
--   GP name: *TaskbarNoThumbnail*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoThumbnail |
+| Friendly Name | Turn off taskbar thumbnails |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoThumbnail |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoThumbnail-AdmxBacked-End -->
 
-Footnotes:
+<!-- TaskbarNoThumbnail-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoThumbnail-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- TaskbarNoThumbnail-End -->
 
-<!--/Policies-->
+<!-- ADMX_Taskbar-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Taskbar-CspMoreInfo-End -->
 
+<!-- ADMX_Taskbar-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

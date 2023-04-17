@@ -1,81 +1,80 @@
 ---
-title: Windows security baselines guide
-description: Learn how to use Windows security baselines in your organization. Specific to Windows 10, Windows Server 2016, and Office 2016.
-keywords: virtualization, security, malware
-ms.prod: m365-security
-ms.mktglfcycl: deploy
+title: Security baselines guide
+description: Learn how to use security baselines in your organization.
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.author: vinpa
+author: vinaypamnani-msft
+manager: aaroncz
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
-ms.date: 06/25/2018
-ms.reviewer: 
-ms.technology: mde
+ms.date: 01/26/2022
+ms.reviewer: jmunck
+ms.technology: itpro-security
 ---
 
-# Windows security baselines
+# Security baselines
 
-**Applies to**  
+## Using security baselines in your organization
 
--   Windows 10
--   Windows Server 2016 
--   Office 2016 
-
-## Using security baselines in your organization 
-
-Microsoft is dedicated to providing its customers with secure operating systems, such as Windows 10 and Windows Server, and secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control over your environments by providing various configuration capabilities. 
+Microsoft is dedicated to providing its customers with secure operating systems, such as Windows and Windows Server, and secure apps, such as Microsoft 365 apps for enterprise and Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control over your environments by providing various configuration capabilities.
 
 Even though Windows and Windows Server are designed to be secure out-of-the-box, many organizations still want more granular control over their security configurations. To navigate the large number of controls, organizations need guidance on configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
-We recommend that you implement an industry-standard configuration that is broadly known and well-tested, such as Microsoft security baselines, as opposed to creating a baseline yourself. This helps increase flexibility and reduce costs. 
+We recommend that you implement an industry-standard configuration that is broadly known and well-tested, such as Microsoft security baselines, as opposed to creating a baseline yourself. This industry-standard configuration helps increase flexibility and reduce costs.
 
-Here is a good blog about [Sticking with Well-Known and Proven Solutions](https://blogs.technet.microsoft.com/fdcc/2010/10/06/sticking-with-well-known-and-proven-solutions/).
+For more information, see the following blog post: [Sticking with well-known and proven solutions](/archive/blogs/fdcc/sticking-with-well-known-and-proven-solutions).
 
-## What are security baselines? 
+## What are security baselines?
 
-Every organization faces security threats. However, the types of security threats that are of most concern to one organization can be completely different from another organization. For example, an e-commerce company may focus on protecting its Internet-facing web apps, while a hospital may focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization. 
+Every organization faces security threats. However, the types of security threats that are of most concern to one organization can be different from another organization. For example, an e-commerce company may focus on protecting its internet-facing web apps, while a hospital may focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
 
-A security baseline is a group of Microsoft-recommended configuration settings that explains their security impact. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers. 
+A security baseline is a group of Microsoft-recommended configuration settings that explains their security implication. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
 
-## Why are security baselines needed? 
+## Why are security baselines needed?
 
-Security baselines are an essential benefit to customers because they bring together expert knowledge from Microsoft, partners, and customers. 
+Security baselines are an essential benefit to customers because they bring together expert knowledge from Microsoft, partners, and customers.
 
-For example, there are over 3,000 Group Policy settings for Windows 10, which does not include over 1,800 Internet Explorer 11 settings. Of these 4,800 settings, only some are security-related. Although Microsoft provides extensive guidance on different security features, exploring each one can take a long time. You would have to determine the security impact of each setting on your own. Then, you would still need to determine  the appropriate value for each setting. 
+For example, there are over 3,000 group policy settings for Windows 10, which doesn't include over 1,800 Internet Explorer 11 settings. Of these 4,800 settings, only some are security-related. Although Microsoft provides extensive guidance on different security features, exploring each one can take a long time. You would have to determine the security implication of each setting on your own. Then, you would still need to determine  the appropriate value for each setting.
 
-In modern organizations, the security threat landscape is constantly evolving, and IT pros and policy-makers must keep up with security threats and make required changes to Windows security settings to help mitigate these threats. To enable faster deployments and make managing Windows easier, Microsoft provides customers with security baselines that are available in consumable formats, such as Group Policy Objects Backups.
+In modern organizations, the security threat landscape is constantly evolving, and IT pros and policy-makers must keep up with security threats and make required changes to security settings to help mitigate these threats. To enable faster deployments and make managing Microsoft products easier, Microsoft provides customers with security baselines that are available in consumable formats, such as group policy object backups.
 
-## How can you use security baselines? 
+## Baseline principles
 
-You can use security baselines to: 
--   Ensure that user and device configuration settings are compliant with the baseline. 
--   Set configuration settings. For example, you can use Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
+Our recommendations follow a streamlined and efficient approach to baseline definitions. The foundation of that approach is essentially:
 
-## Where can I get the security baselines? 
+- The baselines are designed for well-managed, security-conscious organizations in which standard end users don't have administrative rights.
+- A baseline enforces a setting only if it mitigates a contemporary security threat and doesn't cause operational issues that are worse than the risks they mitigate.
+- A baseline enforces a default only if it's otherwise likely to be set to an insecure state by an authorized user:
+  - If a non-administrator can set an insecure state, enforce the default.
+  - If setting an insecure state requires administrative rights, enforce the default only if it's likely that a misinformed administrator will otherwise choose poorly.
 
-You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit (SCT), which comprises tools that can assist admins in managing  baselines in addition to the security baselines.
+## How can you use security baselines?
 
-The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
+You can use security baselines to:
 
-[![Security Compliance Toolkit](./../images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
-[![Get Support](./../images/get-support.png)](get-support-for-security-baselines.md) 
+- Ensure that user and device configuration settings are compliant with the baseline.
+- Set configuration settings. For example, you can use group policy, Microsoft Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline.
+
+## Where can I get the security baselines?
+
+There are several ways to get and use security baselines:
+
+1. You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which comprises tools that can assist admins in managing baselines in addition to the security baselines. The SCT also includes tools to help you manage the security baselines. You can also [get support for the security baselines](get-support-for-security-baselines.md)
+
+2. [Mobile device management (MDM) security baselines](/windows/client-management/mdm/#mdm-security-baseline) function like the Microsoft group policy-based security baselines and can easily integrate these baselines into an existing MDM management tool.
+
+3. MDM security baselines can easily be configured in Microsoft Intune on devices that run Windows 10 and Windows 11. For more information, see [List of the settings in the Windows 10/11 MDM security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all).
 
 ## Community
 
-[![Microsoft Security Guidance Blog](./../images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
+[![Microsoft Security Guidance Blog.](./../images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 
-## Related Videos
 
-You may also be interested in this msdn channel 9 video: 
--   [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-174-Security-Baseline-Policy-Analyzer-and-LGPO)
+## See also
 
-## See Also
-
--   [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/)
--   [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)
--   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
--   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
--   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
+- [Microsoft Security Baselines Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
+- [Microsoft Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319)
+- [Security Baseline Policy Analyzer](https://learn-video.azurefd.net/vod/player?show=defrag-tools&ep=174-security-baseline-policy-analyzer-lgpo)

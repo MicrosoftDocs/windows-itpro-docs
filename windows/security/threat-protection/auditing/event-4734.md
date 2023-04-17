@@ -2,23 +2,20 @@
 title: 4734(S) A security-enabled local group was deleted. (Windows 10)
 description: Describes security event 4734(S) A security-enabled local group was deleted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4734(S): A security-enabled local group was deleted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4734.png" alt="Event 4734 illustration" width="449" height="463" hspace="10" align="left" />
@@ -92,7 +89,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -114,7 +111,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   For a local group, this field will contain the name of the computer to which this new group belongs, for example: “Win81”.
 
-    -   [Built-in groups](https://technet.microsoft.com/library/dn169025(v=ws.10).aspx): Builtin
+    -   [Built-in groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169025(v=ws.10)): Builtin
 
 **Additional Information:**
 
@@ -129,4 +126,3 @@ For 4734(S): A security-enabled local group was deleted.
 -   If you have a list of critical local or domain security groups in the organization, and need to specifically monitor these groups for any change, especially group deletion, monitor events with the “**Group\\Group Name”** values that correspond to the critical local or domain security groups. Examples of critical local or domain groups are built-in local administrators group, domain admins, enterprise admins, and so on.
 
 -   If you need to monitor each time a local or domain security group is deleted, to see who deleted it and when, monitor this event. Typically, this event is used as an informational event, to be reviewed if needed.
-

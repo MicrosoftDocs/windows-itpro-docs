@@ -1,16 +1,15 @@
 ---
 title: DeviceManagement (Windows 10)
 description: This section describes the DeviceManagement setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)
@@ -19,17 +18,17 @@ Use to configure device management settings.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Accounts](#accounts) | X  | X | X |  |  |
-| [PGList](#pglist) | X  | X | X |  |  |
-| [Policies](#policies) | X  | X | X |  |  |
-| [TrustedProvisioningSource](#trustedprovisioningsource) | X  | X | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [Accounts](#accounts) | ✔️  | ✔️ |  |  |
+| [PGList](#pglist) | ✔️  | ✔️ |  |  |
+| [Policies](#policies) | ✔️  | ✔️ |  |  |
+| [TrustedProvisioningSource](#trustedprovisioningsource) | ✔️  | ✔️ |  |  |
 
 ## Accounts
 
 1. In **Available customizations**, select **Accounts**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the account that you just created. The following table describes the settings you can configure. Settings in **bold** are required.
+2. In **Available customizations**, select the account that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description | 
 | --- | --- |
@@ -45,14 +44,14 @@ Use to configure device management settings.
 | DisableOnRoaming | Specify whether the client will connect while cellular roaming |
 | InitialBackOffTime | Specify the initial amount of time (in milliseconds) that the DM client waits before attempting a connection retry  |
 | InitiateSession | Specify whether a session should be started with the MDM server when the account is provisioned |
-| MaxBackOffTime | Specify the maximum number of milliseconds to wait before attemption a connection retry |
+| MaxBackOffTime | Specify the maximum number of milliseconds to wait before attempting a connection retry |
 | Name | Enter a display name for the management server  |
 | Port | Enter the OMA DM server port |
 | PrefConRef | Enter a URI to NAP management object or a connection GUID used by the device Connection Manager |
 | ProtocolVersion | Select between **1.1** and **1.2** for the OMA DM protocol version that the server supports |
 | **Role** | Select between **Enterprise** and **Mobile Operator** for the role mask that the DM session runs with when it communicates with the server |
 | **ServerID** | Enter the OMA DM server's unique identifier for the current OMA DM account |
-| SSLClientCertSearchCriteria | Specify the client certificate search criteria, by subject attribute and certificate stores. For details, see [DMAcc configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmacc-csp). |
+| SSLClientCertSearchCriteria | Specify the client certificate search criteria, by subject attribute and certificate stores. For details, see [DMAcc configuration service provider (CSP)](/windows/client-management/mdm/dmacc-csp). |
 | UseHardwareDeviceID | Specify whether to use the hardware ID for the ./DevInfo/DevID parameter in the DM account to identify the device |
 | UseNonceResync | Specify whether the OMA DM client should use the nonce resynchronization procedure if the server trigger notification fails authentication |
 
@@ -60,14 +59,14 @@ Use to configure device management settings.
 ## PGList
 
 1. In **Available customizations**, select **PGList**, enter a LogicalProxyName, and then click **Add**.
-2. In **Available customizations**, select the LogicalProxyName that you just created, and then select **PhysicalProxies**.
+2. In **Available customizations**, select the LogicalProxyName that you created, and then select **PhysicalProxies**.
 3. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**. 
 
 | Setting | Description | 
 | --- | --- |
 | Address | Enter the address of the physical proxy |
 | AddressType | Select between **E164**, **IPV4**, and **IPV^** for the format and protocol of the PXADDR element for a physical proxy |
-| MatchedNapID | Enter a string that defines the SMS bearer. This string must match the NAPID exactly. The value must contains MVID macro if it is an IPv4 PXADDRTYPE.  |
+| MatchedNapID | Enter a string that defines the SMS bearer. This string must match the NAPID exactly. The value must contain MVID macro if it's an IPv4 PXADDRTYPE.  |
 | PushEnabled | Select whether push operations are enabled  |
 | Trust | Specify whether or not the physical proxies in this logical proxy are privileged  |
 
@@ -91,5 +90,5 @@ In **PROVURL**, enter the URL for a Trusted Provisioning Server (TPS).
 
 ## Related topics
 
-- [DMAcc configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmacc-csp)
-- [PXLOGICAL CSP](https://docs.microsoft.com/windows/client-management/mdm/pxlogical-csp)
+- [DMAcc configuration service provider (CSP)](/windows/client-management/mdm/dmacc-csp)
+- [PXLOGICAL CSP](/windows/client-management/mdm/pxlogical-csp)

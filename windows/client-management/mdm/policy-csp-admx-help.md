@@ -1,162 +1,112 @@
 ---
-title: Policy CSP - ADMX_Help
-description: Policy CSP - ADMX_Help
-ms.author: dansimp
+title: ADMX_Help Policy CSP
+description: Learn more about the ADMX_Help Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 09/03/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Help-Begin -->
 # Policy CSP - ADMX_Help
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## ADMX_Help policies  
+<!-- ADMX_Help-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Help-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-help-disablehhdep">ADMX_Help/DisableHHDEP</a>
-  </dd>
-  <dd>
-    <a href="#admx-help-helpqualifiedrootdir-comp">ADMX_Help/HelpQualifiedRootDir_Comp</a>
-  </dd>
-  <dd>
-    <a href="#admx-help-restrictrunfromhelp">ADMX_Help/RestrictRunFromHelp</a>
-  </dd>
-  <dd>
-    <a href="#admx-help-restrictrunfromhelp-comp">ADMX_Help/RestrictRunFromHelp_Comp</a>
-  </dd>
-</dl>
+<!-- DisableHHDEP-Begin -->
+## DisableHHDEP
 
+<!-- DisableHHDEP-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableHHDEP-Applicability-End -->
 
-<hr/>
+<!-- DisableHHDEP-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/DisableHHDEP
+```
+<!-- DisableHHDEP-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-help-disablehhdep"></a>**ADMX_Help/DisableHHDEP**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to exclude HTML Help Executable from being monitored by software-enforced Data Execution Prevention.
+<!-- DisableHHDEP-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to exclude HTML Help Executable from being monitored by software-enforced Data Execution Prevention.
 
 Data Execution Prevention (DEP) is designed to block malicious code that takes advantage of exception-handling mechanisms in Windows by monitoring your programs to make sure that they use system memory safely.
 
-If you enable this policy setting, DEP for HTML Help Executable is turned off. This will allow certain legacy ActiveX controls to function without DEP shutting down HTML Help Executable.
+- If you enable this policy setting, DEP for HTML Help Executable is turned off. This will allow certain legacy ActiveX controls to function without DEP shutting down HTML Help Executable.
 
-If you disable or do not configure this policy setting, DEP is turned on for HTML Help Executable. This provides an additional security benefit, but HTML Help stops if DEP detects system memory abnormalities.
+- If you disable or do not configure this policy setting, DEP is turned on for HTML Help Executable. This provides an additional security benefit, but HTLM Help stops if DEP detects system memory abnormalities.
+<!-- DisableHHDEP-Description-End -->
 
-<!--/Description-->
+<!-- DisableHHDEP-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableHHDEP-Editable-End -->
+
+<!-- DisableHHDEP-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableHHDEP-DFProperties-End -->
+
+<!-- DisableHHDEP-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off Data Execution Prevention for HTML Help Executible*
--   GP name: *DisableHHDEP*
--   GP path: *System*
--   GP ADMX file name: *Help.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableHHDEP |
+| Friendly Name | Turn off Data Execution Prevention for HTML Help Executible |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DisableHHDEP |
+| ADMX File Name | Help.admx |
+<!-- DisableHHDEP-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-help-helpqualifiedrootdir-comp"></a>**ADMX_Help/HelpQualifiedRootDir_Comp**  
+<!-- DisableHHDEP-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableHHDEP-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableHHDEP-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HelpQualifiedRootDir_Comp-Begin -->
+## HelpQualifiedRootDir_Comp
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HelpQualifiedRootDir_Comp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HelpQualifiedRootDir_Comp-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HelpQualifiedRootDir_Comp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/HelpQualifiedRootDir_Comp
+```
+<!-- HelpQualifiedRootDir_Comp-OmaUri-End -->
 
-<hr/>
+<!-- HelpQualifiedRootDir_Comp-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to restrict certain HTML Help commands to function only in HTML Help (.chm) files within specified folders and their subfolders. Alternatively, you can disable these commands on the entire system. It is strongly recommended that only folders requiring administrative privileges be added to this policy setting.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to restrict certain HTML Help commands to function only in HTML Help (.chm) files within specified folders and their subfolders. Alternatively, you can disable these commands on the entire system. It is strongly recommended that only folders requiring administrative privileges be added to this policy setting.
-
-If you enable this policy setting, the commands function only for .chm files in the specified folders and their subfolders.
+- If you enable this policy setting, the commands function only for .chm files in the specified folders and their subfolders.
 
 To restrict the commands to one or more folders, enable the policy setting and enter the desired folders in the text box on the Settings tab of the Policy Properties dialog box. Use a semicolon to separate folders. For example, to restrict the commands to only .chm files in the %windir%\help folder and D:\somefolder, add the following string to the edit box: "%windir%\help;D:\somefolder".
 
@@ -167,189 +117,185 @@ The "Shortcut" command is used to add a link to a Help topic, and runs executabl
 
 To disallow the "Shortcut" and "WinHelp" commands on the entire local system, enable the policy setting and leave the text box on the Settings tab of the Policy Properties dialog box blank.
 
-If you disable or do not configure this policy setting, these commands are fully functional for all Help files.
+- If you disable or do not configure this policy setting, these commands are fully functional for all Help files.
 
 > [!NOTE]
 > Only folders on the local computer can be specified in this policy setting. You cannot use this policy setting to enable the "Shortcut" and "WinHelp" commands for .chm files that are stored on mapped drives or accessed using UNC paths.
 
 For additional options, see the "Restrict these programs from being launched from Help" policy.
+<!-- HelpQualifiedRootDir_Comp-Description-End -->
 
-<!--/Description-->
+<!-- HelpQualifiedRootDir_Comp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HelpQualifiedRootDir_Comp-Editable-End -->
+
+<!-- HelpQualifiedRootDir_Comp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HelpQualifiedRootDir_Comp-DFProperties-End -->
+
+<!-- HelpQualifiedRootDir_Comp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict potentially unsafe HTML Help functions to specified folders*
--   GP name: *HelpQualifiedRootDir_Comp*
--   GP path: *System*
--   GP ADMX file name: *Help.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HelpQualifiedRootDir_Comp |
+| Friendly Name | Restrict potentially unsafe HTML Help functions to specified folders |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | Help.admx |
+<!-- HelpQualifiedRootDir_Comp-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-help-restrictrunfromhelp"></a>**ADMX_Help/RestrictRunFromHelp**  
+<!-- HelpQualifiedRootDir_Comp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HelpQualifiedRootDir_Comp-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HelpQualifiedRootDir_Comp-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RestrictRunFromHelp-Begin -->
+## RestrictRunFromHelp
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RestrictRunFromHelp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictRunFromHelp-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RestrictRunFromHelp-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Help/RestrictRunFromHelp
+```
+<!-- RestrictRunFromHelp-OmaUri-End -->
 
-<hr/>
+<!-- RestrictRunFromHelp-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to restrict programs from being run from online Help.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to restrict programs from being run from online Help.
+- If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
 
-If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
-
-If you disable or do not configure this policy setting, users can run all applications from online Help.
+- If you disable or do not configure this policy setting, users can run all applications from online Help.
 
 > [!NOTE]
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-> 
+
+> [!NOTE]
 > This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
+<!-- RestrictRunFromHelp-Description-End -->
 
-<!--/Description-->
+<!-- RestrictRunFromHelp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictRunFromHelp-Editable-End -->
+
+<!-- RestrictRunFromHelp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictRunFromHelp-DFProperties-End -->
+
+<!-- RestrictRunFromHelp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict these programs from being launched from Help*
--   GP name: *RestrictRunFromHelp*
--   GP path: *System*
--   GP ADMX file name: *Help.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RestrictRunFromHelp |
+| Friendly Name | Restrict these programs from being launched from Help |
+| Location | User Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | Help.admx |
+<!-- RestrictRunFromHelp-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-help-restrictrunfromhelp-comp"></a>**ADMX_Help/RestrictRunFromHelp_Comp**  
+<!-- RestrictRunFromHelp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictRunFromHelp-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- RestrictRunFromHelp-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RestrictRunFromHelp_Comp-Begin -->
+## RestrictRunFromHelp_Comp
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RestrictRunFromHelp_Comp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictRunFromHelp_Comp-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RestrictRunFromHelp_Comp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Help/RestrictRunFromHelp_Comp
+```
+<!-- RestrictRunFromHelp_Comp-OmaUri-End -->
 
-<hr/>
+<!-- RestrictRunFromHelp_Comp-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to restrict programs from being run from online Help.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to restrict programs from being run from online Help.
+- If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
 
-If you enable this policy setting, you can prevent specified programs from being run from Help. When you enable this policy setting, enter the file names names of the programs you want to restrict, separated by commas.
-
-If you disable or do not configure this policy setting, users can run all applications from online Help.
+- If you disable or do not configure this policy setting, users can run all applications from online Help.
 
 > [!NOTE]
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-> 
+
+> [!NOTE]
 > This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
-<!--/Description-->
+<!-- RestrictRunFromHelp_Comp-Description-End -->
+
+<!-- RestrictRunFromHelp_Comp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictRunFromHelp_Comp-Editable-End -->
+
+<!-- RestrictRunFromHelp_Comp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictRunFromHelp_Comp-DFProperties-End -->
+
+<!-- RestrictRunFromHelp_Comp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict these programs from being launched from Help*
--   GP name: *RestrictRunFromHelp_Comp*
--   GP path: *System*
--   GP ADMX file name: *Help.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RestrictRunFromHelp_Comp |
+| Friendly Name | Restrict these programs from being launched from Help |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| ADMX File Name | Help.admx |
+<!-- RestrictRunFromHelp_Comp-AdmxBacked-End -->
 
-Footnotes:
+<!-- RestrictRunFromHelp_Comp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictRunFromHelp_Comp-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- RestrictRunFromHelp_Comp-End -->
 
-<!--/Policies-->
+<!-- ADMX_Help-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Help-CspMoreInfo-End -->
 
+<!-- ADMX_Help-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

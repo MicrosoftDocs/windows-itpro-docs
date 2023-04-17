@@ -1,29 +1,28 @@
 ---
 title: EditionUpgrade (Windows 10)
 description: This section describes the EditionUpgrade settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # EditionUpgrade (Windows Configuration Designer reference)
 
-Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 edition upgrades.](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades)
+Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 edition upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)
 
 ## Applies to
 
-| Setting  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChangeProductKey](#changeproductkey) | X  | X |  |  |  |
-| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | X  | X |  | X |  |
-| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | X  | X |  |  |  |
+| Setting  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChangeProductKey](#changeproductkey) | ✔️  |  |  |  |
+| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | ✔️  |  | ✔️ |  |
+| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | ✔️  |  |  |  |
 
 
 ## ChangeProductKey
@@ -46,4 +45,4 @@ After the device restarts, the edition upgrade process completes. The user will 
 
 ## Related topics
 
-- [WindowsLicensing configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/windowslicensing-csp)
+- [WindowsLicensing configuration service provider (CSP)](/windows/client-management/mdm/windowslicensing-csp)

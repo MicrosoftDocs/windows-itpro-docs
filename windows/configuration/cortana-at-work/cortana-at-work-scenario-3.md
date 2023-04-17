@@ -1,15 +1,15 @@
 ---
-title: Set a reminder for a location with Cortana at work (Windows 10)
+title: Set a reminder for a location with Cortana at work (Windows)
 description: A test scenario about how to set a location-based reminder using Cortana at work.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+ms.collection: tier3
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Test scenario 3 - Set a reminder

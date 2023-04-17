@@ -1,28 +1,16 @@
 ---
-title: Create an Inbound Program or Service Rule (Windows 10)
+title: Create an Inbound Program or Service Rule (Windows)
 description: Learn how to allow inbound traffic to a program or service by using the Group Policy Management MMC snap-in to create firewall rules.
-ms.assetid: 00b7fa60-7c64-4ba5-ba95-c542052834cf
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Create an Inbound Program or Service Rule
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 To allow inbound network traffic to a specified program or service, use the Windows Defender Firewall with Advanced Securitynode in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows the program to listen and receive inbound network traffic on any port.
 
@@ -65,7 +53,7 @@ To create an inbound firewall rule for a program or service
 
     To set a SID type on a service, run the following command:
 
-    **sc** **sidtype** *&lt;Type&gt; &lt;ServiceName&gt;*
+    **sc** **sidtype** *&lt;ServiceName&gt; &lt;Type&gt;*
 
     In the preceding command, the value of *&lt;Type&gt;* can be **UNRESTRICTED** or **RESTRICTED**. Although the command also permits the value of **NONE**, that setting means the service cannot be used in a firewall rule as described here. By default, most services in Windows are configured as **UNRESTRICTED**. If you change the SID type to **RESTRICTED**, the service might fail to start. We recommend that you change the SID type only on services that you want to use in firewall rules, and that you change the SID type to **UNRESTRICTED**.
 

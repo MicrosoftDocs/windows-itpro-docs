@@ -1,209 +1,103 @@
 ---
 title: AssignedAccess CSP
-description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
-ms.assetid: 421CC07D-6000-48D9-B6A3-C638AAF83984
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: lomayor
-ms.date: 09/18/2018
+description: Learn more about the AssignedAccess CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 02/28/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- AssignedAccess-Begin -->
 # AssignedAccess CSP
 
-The AssignedAccess configuration service provider (CSP) is used to set the device to run in kiosk mode. Once the CSP has been executed, then the next user login that is associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
+<!-- AssignedAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The AssignedAccess configuration service provider (CSP) is used to set the device to run in kiosk mode. Once the CSP has been executed, the next user login that is associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
-For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](https://go.microsoft.com/fwlink/p/?LinkID=722211)
+- For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a single-app kiosk on Windows 10/11](/windows/configuration/kiosk-single-app).
+- For a step-by-step guide for configuring multi-app kiosks, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
 
- In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
+> [!IMPORTANT]
+> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709, it is supported in Windows 10 Pro and Windows 10 S. Starting from Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
-> [!Warning]
+> [!WARNING]
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
 
-> [!Note]
-> If the application calls KeyCredentialManager.IsSupportedAsync when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select a convenience PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again. 
+> [!NOTE]
+> If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
+<!-- AssignedAccess-Editable-End -->
 
-> [!Note]
-> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
+<!-- AssignedAccess-Tree-Begin -->
+The following list shows the AssignedAccess configuration service provider nodes:
 
-The following diagram shows the AssignedAccess configuration service provider in tree format
+- ./Vendor/MSFT/AssignedAccess
+  - [Configuration](#configuration)
+  - [KioskModeApp](#kioskmodeapp)
+  - [ShellLauncher](#shelllauncher)
+  - [Status](#status)
+  - [StatusConfiguration](#statusconfiguration)
+<!-- AssignedAccess-Tree-End -->
 
-![assignedaccess csp diagram](images/provisioning-csp-assignedaccess.png)
+<!-- Device-Configuration-Begin -->
+## Configuration
 
-<a href="" id="--vendor-msft-assignedaccess"></a>**./Device/Vendor/MSFT/AssignedAccess**
-Root node for the CSP.
+<!-- Device-Configuration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Configuration-Applicability-End -->
 
-<a href="" id="assignedaccess-kioskmodeapp"></a>**./Device/Vendor/MSFT/AssignedAccess/KioskModeApp**
-A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](https://go.microsoft.com/fwlink/p/?LinkID=722211)
-
-> [!Note]
-> In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
->
-> Starting in Windows 10, version 1803 the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
-
-> [!Note]
-> You cannot set both KioskModeApp and ShellLauncher at the same time on the device.
-
-Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
-
-Here's an example:
-
-``` syntax
-{"Account":"contoso\\kioskuser","AUMID":"Microsoft.Windows.Contoso_cw5n1h2txyewy!Microsoft.ContosoApp.ContosoApp"}
+<!-- Device-Configuration-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AssignedAccess/Configuration
 ```
+<!-- Device-Configuration-OmaUri-End -->
 
-> [!Tip]
-> In this example the double \\\ is required because it's in JSON and JSON escapes \ into \\\\. If an MDM server uses JSON parser\composer, they should ask customers to type only one \\, which will be \\\ in the JSON. If user types \\\\, it'll become \\\\\\\ in JSON, which will cause erroneous results. For the same reason, domain\account used in Configuration xml does not need \\\ but only one \\, because xml does not (need to) escape \\.
-> 
-> This applies to both domain\account, AzureAD\someone@contoso.onmicrosoft.com, i.e. as long as a \ used in JSON string. 
+<!-- Device-Configuration-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node accepts an AssignedAccessConfiguration xml as input.
+<!-- Device-Configuration-Description-End -->
 
-When configuring the kiosk mode app, the account name will be used to find the target user. The account name includes domain name and user name.
+<!-- Device-Configuration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The input XML specifies the settings that you can configure in the kiosk or device.
 
-> [!Note]
-> The domain name can be optional if the user name is unique across the system.
+In **Windows 10, version 1803** the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
 
-For a local account, the domain name should be the device name. When Get is executed on this node, the domain name is always returned in the output.
+In **Windows 10, version 1909**, Microsoft Edge kiosk mode support was added. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like `shift+alt+a`, where `shift` and `alt` are the modifiers and `a` is the key.
 
+- For more information about setting up a multi-app kiosk, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
+- For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd).
+- For examples, see [AssignedAccessConfiguration examples](#assignedaccessconfiguration-examples).
 
-The supported operations are Add, Delete, Get and Replace. When there's no configuration, the Get and Delete methods fail. When there's already a configuration for kiosk mode app, the Add method fails. The data pattern for Add and Replace is the same.
+> [!NOTE]
+> Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies (for example, Start Layout).
+<!-- Device-Configuration-Editable-End -->
 
-<a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
-Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
+<!-- Device-Configuration-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!Note]
-> In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
->
-> Starting in Windows 10, version 1803 the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-DFProperties-End -->
 
-Enterprises can use this to easily configure and manage the curated lockdown experience.
+<!-- Device-Configuration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Examples**:
 
-Supported operations are Add, Get, Delete, and Replace.
+For more examples, see [AssignedAccessConfiguration examples](#assignedaccessconfiguration-examples).
 
-Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies back (e.g. Start Layout).
-
-<a href="" id="assignedaccess-status"></a>**./Device/Vendor/MSFT/AssignedAccess/Status**
-Added in Windows 10, version 1803. This read only polling node allows MDM server to query the current KioskModeAppRuntimeStatus as long as the StatusConfiguration node is set to “On” or “OnWithAlerts”. If the StatusConfiguration is “Off”, a node not found error will be reported to the MDM server. Click [link](#status-example) to see an example SyncML. [Here](#assignedaccessalert-xsd) is the schema for the Status payload.
-
-In Windows 10, version 1803, Assigned Access runtime status only supports monitoring single app kiosk mode. Here are the possible status available for single app kiosk mode.
-
-|Status  |Description  |
-|---------|---------|---------|
-| KioskModeAppRunning | This means the kiosk app is running normally. |
-| KioskModeAppNotFound | This occurs when the kiosk app is not deployed to the machine. |
-| KioskModeAppActivationFailure | This happens when the assigned access controller detects the process terminated unexpectedly after exceeding the max retry. |
-
-Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
-
-|Status code  | KioskModeAppRuntimeStatus |
-|---------|---------|
-| 1     | KioskModeAppRunning         |
-| 2     | KioskModeAppNotFound          |
-| 3     | KioskModeAppActivationFailure         |
-
-Additionally, the status payload includes a profileId that can be used by the MDM server to correlate which kiosk app caused the error.
-
-In Windows 10, version 1809, Assigned Access runtime status supports monitoring single-app kiosk and multi-app modes. Here are the possible status codes.
-
-|Status|Description|
-|---|---|
-|Running|The AssignedAccess account (kiosk or multi-app) is running normally.|
-|AppNotFound|The kiosk app isn't deployed to the machine.|
-|ActivationFailed|The AssignedAccess account (kiosk or multi-app) failed to sign in.|
-|AppNoResponse|The kiosk app launched successfully but is now unresponsive.|
-
-Note that status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
-
-|Status code|AssignedAccessRuntimeStatus|
-|---|---|
-|1|Running|
-|2|AppNotFound|
-|3|ActivationFailed|
-|4|AppNoResponse|
-
-Additionally, the Status payload includes the following fields:
-
-- profileId: can be used by the MDM server to correlate which account caused the error.
-- OperationList: list of failed operations that occurred while applying the assigned access CSP, if any exist.
-
-Supported operation is Get.
-
-<a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**
-Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](https://docs.microsoft.com/windows/configuration/kiosk-shelllauncher).
-
-> [!Note]
-> You cannot set both ShellLauncher and KioskModeApp at the same time on the device.
->
-> Configuring Shell Launcher using the ShellLauncher node automatically enables the Shell Launcher feature if it is available within the SKU. I. Shell Launcher as a feature and the ShellLauncher node both require Windows Enterprise or Windows Education to function.
->
->The ShellLauncher node is not supported in Windows 10 Pro.
-
-<a href="" id="assignedaccess-statusconfiguration"></a>**./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration**
-Added in Windows 10, version 1803. This node accepts a StatusConfiguration xml as input to configure the Kiosk App Health monitoring. There are three possible values for StatusEnabled node inside StatusConfiguration xml: On, OnWithAlerts, and Off. Click [link](#statusconfiguration-xsd) to see the StatusConfiguration schema.
-
-By default the StatusConfiguration node does not exist, and it implies this feature is off. Once enabled via CSP, Assigned Access will check kiosk app status and wait for MDM server to query the latest status from the Status node.
-
-Optionally, the MDM server can opt-in to the MDM alert so a MDM alert will be generated and sent immediately to the MDM server when the assigned access runtime status is changed. This MDM alert will contain the status payload that is available via the Status node.
-
-This MDM alert header is defined as follows:
-
--  MDMAlertMark: Critical
--  MDMAlertType: "com.microsoft.mdm.assignedaccess.status"
--  MDMAlertDataType: String
--  Source: "./Vendor/MSFT/AssignedAccess"
--  Target: N/A
-
-> [!Note]
-> MDM alert will only be sent for errors.
-
-
-## KioskModeApp examples
-
-KioskModeApp Add
-
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Add>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
-               </Target>
-               <Meta>
-                   <Format xmlns="syncml:metinf">chr</Format>
-               </Meta>
-               <Data>{"Account":"Domain\\AccountName","AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}</Data>
-           </Item>
-       </Add>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
-
-KioskModeApp Delete
-
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Delete>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
-               </Target>
-           </Item>
-       </Delete>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
-
-KioskModeApp Get
+<br>
+<details>
+  <summary>Get Configuration</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -212,7 +106,7 @@ KioskModeApp Get
            <CmdID>2</CmdID>
            <Item>
                <Target>
-                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
+                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
                </Target>
            </Item>
        </Get>
@@ -221,491 +115,179 @@ KioskModeApp Get
 </SyncML>
 ```
 
-KioskModeApp Replace
+</details>
+
+<br>
+<details>
+  <summary>Delete Configuration</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
-       <Replace>
+       <Delete>
            <CmdID>2</CmdID>
            <Item>
                <Target>
-                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
+                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
                </Target>
-               <Meta>
-                   <Format xmlns="syncml:metinf">chr</Format>
-               </Meta>
-               <Data>{"Account":"Domain\\AccountName","AUMID":"Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"}</Data>
            </Item>
-       </Replace>
+       </Delete>
        <Final />
    </SyncBody>
 </SyncML>
 ```
 
-## AssignedAccessConfiguration XSD
+</details>
+<!-- Device-Configuration-Examples-End -->
 
-Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
+<!-- Device-Configuration-End -->
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema
-    elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    >
+<!-- Device-KioskModeApp-Begin -->
+## KioskModeApp
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
 
-    <xs:complexType name="profile_list_t">
-        <xs:sequence minOccurs="1" >
-            <xs:element name="Profile" type="profile_t" minOccurs="1" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
+<!-- Device-KioskModeApp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- Device-KioskModeApp-Applicability-End -->
 
-    <xs:complexType name="kioskmodeapp_t">
-        <xs:attribute name="AppUserModelId" type="xs:string"/>
-    </xs:complexType>
-
-    <xs:complexType name="profile_t">
-        <xs:choice>
-            <xs:sequence minOccurs="1" maxOccurs="1">
-                <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
-                <xs:element ref="rs5:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
-                <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
-            </xs:sequence>
-            <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1"/>
-        </xs:choice>
-        <xs:attribute name="Id" type="guid_t" use="required"/>
-        <xs:attribute name="Name" type="xs:string" use="optional"/>
-    </xs:complexType>
-
-    <xs:complexType name="allappslist_t">
-        <xs:sequence minOccurs="1" >
-            <xs:element name="AllowedApps" type="allowedapps_t" minOccurs="1" maxOccurs="1">
-                <xs:unique name="ForbidDupApps">
-                    <xs:selector xpath="default:App"/>
-                    <xs:field xpath="@AppUserModelId|@DesktopAppPath"/>
-                </xs:unique>
-                <xs:unique name="OnlyOneAppCanHaveAutoLaunch">
-                    <xs:selector xpath="default:App"/>
-                    <xs:field xpath="@rs5:AutoLaunch"/>
-                </xs:unique>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="allowedapps_t">
-        <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:element name="App" type="app_t" minOccurs="1" maxOccurs="unbounded">
-                <xs:key name="mutexAumidOrDesktopApp">
-                    <xs:selector xpath="."/>
-                    <xs:field xpath="@AppUserModelId|@DesktopAppPath"/>
-                </xs:key>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="app_t">
-        <xs:attribute name="AppUserModelId" type="xs:string"/>
-        <xs:attribute name="DesktopAppPath" type="xs:string"/>
-        <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
-    </xs:complexType>
-    
-    <xs:attributeGroup name="autoLaunch_attributeGroup">
-        <xs:attribute ref="rs5:AutoLaunch"/>
-        <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
-    </xs:attributeGroup>
-
-    <xs:complexType name="taskbar_t">
-        <xs:attribute name="ShowTaskbar" type="xs:boolean" use="required"/>
-    </xs:complexType>
-
-    <xs:complexType name="profileId_t">
-        <xs:attribute name="Id" type="guid_t" use="required"/>
-    </xs:complexType>
-
-    <xs:simpleType name="guid_t">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:complexType name="config_list_t">
-        <xs:sequence minOccurs="1" >
-            <xs:element ref="v3:GlobalProfile" minOccurs="0" maxOccurs="1"/>
-            <xs:element name="Config" type="config_t" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="config_t">
-        <xs:sequence minOccurs="1" maxOccurs="1">
-            <xs:choice>
-                <xs:element name="Account" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="AutoLogonAccount" type="autologon_account_t" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="UserGroup" type="group_t" minOccurs="1" maxOccurs="1"/>
-                <xs:element name="SpecialGroup" type="specialGroup_t" minOccurs="1" maxOccurs="1" />
-            </xs:choice>
-            <xs:element name="DefaultProfile" type="profileId_t" minOccurs="1" maxOccurs="1"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="autologon_account_t">
-        <xs:attribute name="HiddenId" type="guid_t" fixed="{74331115-F68A-4DF9-8D2C-52BA2CE2ADB1}"/>
-        <xs:attribute ref="rs5:DisplayName" use="optional" />
-    </xs:complexType>
-
-    <xs:complexType name="group_t">
-        <xs:attribute name="Name" type="xs:string" use="required"/>
-        <xs:attribute name="Type" type="groupType_t" use="required"/>
-    </xs:complexType>
-
-    <xs:complexType name="specialGroup_t">
-        <xs:attribute name="Name" type="specialGroupType_t" use="required"/>
-    </xs:complexType>
-
-    <xs:simpleType name="groupType_t">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="LocalGroup"/>
-            <xs:enumeration value="ActiveDirectoryGroup"/>
-            <xs:enumeration value="AzureActiveDirectoryGroup"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="specialGroupType_t">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Visitor"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:complexType name="fileExplorerNamespaceRestrictions_t">
-        <xs:sequence minOccurs="1">
-            <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="allowedFileExplorerNamespace_t">
-        <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t"/>
-    </xs:complexType>
-
-    <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Downloads"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <!--below is the definition of the config xml content-->
-    <xs:element name="AssignedAccessConfiguration">
-        <xs:complexType>
-            <xs:all minOccurs="1">
-                <xs:element name="Profiles" type="profile_list_t">
-                    <xs:unique name="duplicateRolesForbidden">
-                        <xs:selector xpath="default:Profile"/>
-                        <xs:field xpath="@Id"/>
-                    </xs:unique>
-                </xs:element>
-                <xs:element name="Configs" type="config_list_t">
-                    <xs:unique name="duplicateAutoLogonAccountForbidden">
-                        <xs:selector xpath=".//default:AutoLogonAccount"/>
-                        <xs:field xpath="@HiddenId"/>
-                    </xs:unique>
-                </xs:element>
-            </xs:all>
-        </xs:complexType>
-    </xs:element>
-</xs:schema>
+<!-- Device-KioskModeApp-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AssignedAccess/KioskModeApp
 ```
+<!-- Device-KioskModeApp-OmaUri-End -->
 
-Here is the schema for new features introduced in Windows 10 1809 release
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema
-    elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    >
+<!-- Device-KioskModeApp-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node can accept and return json string which comprises of account name, and AUMID for Kiosk mode app.
 
-    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+Example: `{"User":"domain\\user", "AUMID":"Microsoft. WindowsCalculator_8wekyb3d8bbwe!App"}`.
 
-    <xs:complexType name="fileExplorerNamespaceRestrictions_t">
-        <xs:choice>
-            <xs:sequence minOccurs="0">
-                <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t" minOccurs="0"/>
-                <xs:element ref="v3:AllowRemovableDrives" minOccurs="0" maxOccurs="1"/>
-            </xs:sequence>
-            <xs:element ref="v3:NoRestriction" minOccurs="0" maxOccurs="1" />
-        </xs:choice>
-    </xs:complexType>
+When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
 
-    <xs:complexType name="allowedFileExplorerNamespace_t">
-        <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t" use="required"/>
-    </xs:complexType>
+This node supports Add, Delete, Replace and Get methods. When there's no configuration, "Get" and "Delete" methods fail. When there's already a configuration for kiosk mode app, "Add" method fails. The data pattern for "Add" and "Replace" is the same.
+<!-- Device-KioskModeApp-Description-End -->
 
-    <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Downloads"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:element name="FileExplorerNamespaceRestrictions" type="fileExplorerNamespaceRestrictions_t" />
-
-    <xs:attribute name="AutoLaunch" type="xs:boolean"/>
-
-    <xs:attribute name="AutoLaunchArguments" type="xs:string"/>
-
-    <xs:attribute name="DisplayName" type="xs:string"/>
-
-</xs:schema>
-```
-
-Schema for Windows 10 prerelease
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema
-    elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-    vc:minVersion="1.1"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2020/config"
-    >
-
-    <xs:simpleType name="guid_t">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:complexType name="globalProfile_t">
-        <xs:attribute name="Id" type="guid_t" />
-    </xs:complexType>
-  
-    <xs:element name="AllowRemovableDrives"/>
-    <xs:element name="NoRestriction" />
-    <xs:element name="GlobalProfile" type="globalProfile_t" />
-
-</xs:schema>
-```
-
-To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. e.g. to configure auto-launch feature which is added in 1809 release, use below sample, notice an alias r1809 is given to the 201810 namespace for 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
-```xml
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+<!-- Device-KioskModeApp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!TIP]
+> In the above example the double `\\` is required because it's in JSON and JSON escapes `\\` into `\`. If an MDM server uses JSON parser\composer, they should ask customers to type only one `\`, which will be `\\` in the JSON. If user types `\\`, it'll become `\\\\` in JSON, which will cause erroneous results. For the same reason, `domain\user` used in Configuration xml does not need `\\` but only one `\`, because xml does not (need to) escape `\`.
 >
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                  <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" r1809:AutoLaunch="true" r1809:AutoLaunchArguments="1.txt"/>
-```
+> This applies to both `domain\user`, `AzureAD\someone@contoso.onmicrosoft.com`, as long as a `\` is used in JSON string.
 
-## Example AssignedAccessConfiguration XML
+- For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/find-the-application-user-model-id-of-an-installed-app).
+- For more information about single-app kiosk, see [Set up a single-app kiosk on Windows 10/11.](/windows/configuration/kiosk-single-app)
+
+> [!IMPORTANT]
+>
+> - In Windows 10, version 1803, the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
+> - Additionally, starting in Windows 10, version 1803, the KioskModeApp node becomes No-Op if Configuration node is configured on the device. Add/Replace/Delete commands on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it's not effective.
+> - You can't set both KioskModeApp and ShellLauncher at the same time on the device.
+<!-- Device-KioskModeApp-Editable-End -->
+
+<!-- Device-KioskModeApp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-KioskModeApp-DFProperties-End -->
+
+<!-- Device-KioskModeApp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Examples**:
+
+<br>
+<details>
+  <summary>Add KioskModeApp</summary>
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
-  <Profiles>
-    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-      <AllAppsList>
-        <AllowedApps>
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
-        </AllowedApps>
-      </AllAppsList>
-      <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-                      <LayoutOptions StartTileGroupCellWidth="6" />
-                      <DefaultLayoutOverride>
-                        <StartLayoutCollection>
-                          <defaultlayout:StartLayout GroupCellWidth="6">
-                            <start:Group Name="Group1">
-                              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-                              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-                              <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                              <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-                            </start:Group>
-                            <start:Group Name="Group2">
-                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe" />
-                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe" />
-                            </start:Group>
-                          </defaultlayout:StartLayout>
-                        </StartLayoutCollection>
-                      </DefaultLayoutOverride>
-                    </LayoutModificationTemplate>
-                ]]>
-      </StartLayout>
-      <Taskbar ShowTaskbar="true"/>
-    </Profile>
-  </Profiles>
-  <Configs>
-    <Config>
-      <Account>MultiAppKioskUser</Account>
-      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-    </Config>
-  </Configs>
-</AssignedAccessConfiguration>
-```
-
-## Configuration examples
-
-XML encoding (escaped) and CDATA of the XML in the Data node both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
-
-Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you’ll have nested CDATA so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
-
-Escape and CDATA are mechanisms when handling xml in xml. Consider it’s a transportation channel to send the configuration xml as payload from server to client. It’s transparent to both end user who configures the CSP and transparent to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
-
-This example shows escaped XML of the Data node.
-
-```
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Add>
             <CmdID>2</CmdID>
             <Item>
                 <Target>
-                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
                 </Target>
                 <Meta>
                     <Format xmlns="syncml:metinf">chr</Format>
                 </Meta>
-                <Data>
-                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
-    &lt;Profiles&gt;
-        &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
-            &lt;AllAppsList&gt;
-                &lt;AllowedApps&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
-                    &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
-                &lt;/AllowedApps&gt;
-            &lt;/AllAppsList&gt;
-            &lt;StartLayout&gt;
-                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-                      &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
-                      &lt;DefaultLayoutOverride&gt;
-                        &lt;StartLayoutCollection&gt;
-                          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
-                            &lt;start:Group Name=&quot;Group1&quot;&gt;
-                              &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                            &lt;/start:Group&gt;
-                            &lt;start:Group Name=&quot;Group2&quot;&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe&quot; /&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe&quot; /&gt;
-                            &lt;/start:Group&gt;
-                          &lt;/defaultlayout:StartLayout&gt;
-                        &lt;/StartLayoutCollection&gt;
-                      &lt;/DefaultLayoutOverride&gt;
-                    &lt;/LayoutModificationTemplate&gt;
-                ]]&gt;
-            &lt;/StartLayout&gt;
-            &lt;Taskbar ShowTaskbar=&quot;true&quot;/&gt;
-        &lt;/Profile&gt;
-    &lt;/Profiles&gt;
-    &lt;Configs&gt;
-        &lt;Config&gt;
-            &lt;Account&gt;MultiAppKioskUser&lt;/Account&gt;
-            &lt;DefaultProfile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;/&gt;
-        &lt;/Config&gt;
-    &lt;/Configs&gt;
-&lt;/AssignedAccessConfiguration&gt;
-
-                </Data>
+                <Data>{"Account":"Domain\\AccountName","AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}</Data>
             </Item>
         </Add>
         <Final />
     </SyncBody>
 </SyncML>
 ```
-This example shows escaped XML of the Data node.
+
+</details>
+
+<br>
+<details>
+  <summary>Delete KioskModeApp</summary>
+
+```xml
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+    <SyncBody>
+        <Delete>
+            <CmdID>2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
+                </Target>
+            </Item>
+        </Delete>
+        <Final />
+    </SyncBody>
+</SyncML>
 ```
+
+</details>
+
+<br>
+<details>
+  <summary>Get KioskModeApp</summary>
+
+```xml
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+    <SyncBody>
+        <Get>
+            <CmdID>2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
+                </Target>
+            </Item>
+        </Get>
+        <Final />
+    </SyncBody>
+</SyncML>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Replace KioskModeApp</summary>
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Replace>
             <CmdID>2</CmdID>
             <Item>
                 <Target>
-                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/KioskModeApp</LocURI>
                 </Target>
                 <Meta>
                     <Format xmlns="syncml:metinf">chr</Format>
                 </Meta>
-                <Data>
-                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
-    &lt;Profiles&gt;
-        &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
-            &lt;AllAppsList&gt;
-                &lt;AllowedApps&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
-                    &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
-                &lt;/AllowedApps&gt;
-            &lt;/AllAppsList&gt;
-            &lt;StartLayout&gt;
-                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-                      &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
-                      &lt;DefaultLayoutOverride&gt;
-                        &lt;StartLayoutCollection&gt;
-                          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
-                            &lt;start:Group Name=&quot;Group1&quot;&gt;
-                              &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                            &lt;/start:Group&gt;
-                            &lt;start:Group Name=&quot;Group2&quot;&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe&quot; /&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe&quot; /&gt;
-                            &lt;/start:Group&gt;
-                          &lt;/defaultlayout:StartLayout&gt;
-                        &lt;/StartLayoutCollection&gt;
-                      &lt;/DefaultLayoutOverride&gt;
-                    &lt;/LayoutModificationTemplate&gt;
-                ]]&gt;
-            &lt;/StartLayout&gt;
-            &lt;Taskbar ShowTaskbar=&quot;true&quot;/&gt;
-        &lt;/Profile&gt;
-    &lt;/Profiles&gt;
-    &lt;Configs&gt;
-        &lt;Config&gt;
-            &lt;Account&gt;MultiAppKioskUser&lt;/Account&gt;
-            &lt;DefaultProfile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;/&gt;
-        &lt;/Config&gt;
-    &lt;/Configs&gt;
-&lt;/AssignedAccessConfiguration&gt;
-
-                </Data>
+                <Data>{"Account":"Domain\\AccountName","AUMID":"Microsoft.WindowsAlarms_8wekyb3d8bbwe!App"}</Data>
             </Item>
         </Replace>
         <Final />
@@ -713,260 +295,65 @@ This example shows escaped XML of the Data node.
 </SyncML>
 ```
 
-This example uses CData for the XML.
+</details>
+<!-- Device-KioskModeApp-Examples-End -->
+
+<!-- Device-KioskModeApp-End -->
+
+<!-- Device-ShellLauncher-Begin -->
+## ShellLauncher
+
+<!-- Device-ShellLauncher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-ShellLauncher-Applicability-End -->
+
+<!-- Device-ShellLauncher-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AssignedAccess/ShellLauncher
 ```
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-    <SyncBody>
-        <Add>
-            <CmdID>2</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
-                </Meta>
-                <Data>
-                    <![CDATA[<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
-  <Profiles>
-    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-      <AllAppsList>
-        <AllowedApps>
-          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
-          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
-        </AllowedApps>
-      </AllAppsList>
-      <StartLayout>
-        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-                      <LayoutOptions StartTileGroupCellWidth="6" />
-                      <DefaultLayoutOverride>
-                        <StartLayoutCollection>
-                          <defaultlayout:StartLayout GroupCellWidth="6">
-                            <start:Group Name="Group1">
-                              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
-                              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
-                              <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-                              <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
-                            </start:Group>
-                            <start:Group Name="Group2">
-                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe" />
-                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe" />
-                            </start:Group>
-                          </defaultlayout:StartLayout>
-                        </StartLayoutCollection>
-                      </DefaultLayoutOverride>
-                    </LayoutModificationTemplate>
-                  ]]]]><![CDATA[>
-      </StartLayout>
-      <Taskbar ShowTaskbar="true"/>
-    </Profile>
-  </Profiles>
-  <Configs>
-    <Config>
-      <Account>MultiAppKioskUser</Account>
-      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-    </Config>
-  </Configs>
-</AssignedAccessConfiguration>
-]]>
-                </Data>
-            </Item>
-        </Add>
-        <Final />
-    </SyncBody>
-</SyncML>
-```
+<!-- Device-ShellLauncher-OmaUri-End -->
 
-Example of Get command that returns the configuration in the device.
-```
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Get>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
-               </Target>
-           </Item>
-       </Get>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
+<!-- Device-ShellLauncher-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node accepts a ShellLauncherConfiguration xml as input.
+<!-- Device-ShellLauncher-Description-End -->
 
-Example of the Delete command.
-```
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Delete>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                   <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
-               </Target>
-           </Item>
-       </Delete>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
+<!-- Device-ShellLauncher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+In **Windows 10, version 1903**, Shell Launcher V2 was introduced to support both UWP and Win32 apps as the custom shell.
 
-## StatusConfiguration XSD
+For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema
-    elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
-    >
+> [!IMPORTANT]
+> You can't set both ShellLauncher and KioskModeApp at the same time on the device.
 
-    <xs:simpleType name="status_enabled_t">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Off"/>
-            <xs:enumeration value="On"/>
-            <xs:enumeration value="OnWithAlerts"/>
-        </xs:restriction>
-    </xs:simpleType>
+> [!NOTE]
+> Configuring Shell Launcher using the ShellLauncher node automatically enables the Shell Launcher feature, if it is available within the SKU.
+>
+> Shell Launcher as a feature and the ShellLauncher node both require Windows Enterprise or Windows Education to function. The ShellLauncher node is not supported in Windows 10 Pro.
+<!-- Device-ShellLauncher-Editable-End -->
 
-    <!--below is the definition of the config xml content-->
-    <xs:element name="StatusConfiguration">
-        <xs:complexType>
-            <xs:sequence minOccurs="1" maxOccurs="1">
-                <xs:element name="StatusEnabled" type="status_enabled_t" minOccurs="1" maxOccurs="1"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-</xs:schema>
-```
+<!-- Device-ShellLauncher-DFProperties-Begin -->
+**Description framework properties**:
 
-## StatusConfiguration example
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ShellLauncher-DFProperties-End -->
 
-StatusConfiguration Add OnWithAlerts
+<!-- Device-ShellLauncher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**ShellLauncherConfiguration XSD**:
 
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-  <SyncBody>
-    <Add>
-      <CmdID>2</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
-        </Target>
-        <Meta>
-          <Format xmlns="syncml:metinf">chr</Format>
-        </Meta>
-        <Data>
-          <![CDATA[
-          <?xml version="1.0" encoding="utf-8" ?>
-          <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
-            <StatusEnabled>OnWithAlerts</StatusEnabled>
-          </StatusConfiguration>
-          ]]>
-        </Data>
-      </Item>
-    </Add>
-    <Final />
-  </SyncBody>
-</SyncML>
-```
+> [!NOTE]
+> Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD.
 
-
-StatusConfiguration Delete
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Delete>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
-               </Target>
-           </Item>
-       </Delete>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
-
-StatusConfiguration Get
-
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Get>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
-               </Target>
-           </Item>
-       </Get>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
-
-StatusConfiguration Replace On
-
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-  <SyncBody>
-    <Replace>
-      <CmdID>2</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
-        </Target>
-        <Meta>
-          <Format xmlns="syncml:metinf">chr</Format>
-        </Meta>
-        <Data>
-          <![CDATA[
-          <?xml version="1.0" encoding="utf-8" ?>
-          <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
-            <StatusEnabled>On</StatusEnabled>
-          </StatusConfiguration>
-          ]]>
-        </Data>
-      </Item>
-    </Replace>
-    <Final />
-  </SyncBody>
-</SyncML>
-```
-
-## Status example
-
-Status Get
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-   <SyncBody>
-       <Get>
-           <CmdID>2</CmdID>
-           <Item>
-               <Target>
-                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/Status</LocURI>
-               </Target>
-           </Item>
-       </Get>
-       <Final />
-   </SyncBody>
-</SyncML>
-```
-
-## ShellLauncherConfiguration XSD
-
-Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD. 
+<br>
+<details>
+  <summary>Shell Launcher V1 XSD</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1122,7 +509,12 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
     </xs:element>
 </xs:schema>
 ```
-### Shell Launcher V2 XSD
+
+</details>
+
+<br>
+<details>
+  <summary>Shell Launcher V2 XSD</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1148,10 +540,15 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 </xs:schema>
 ```
 
-## ShellLauncherConfiguration examples
+</details><br>
 
-ShellLauncherConfiguration Add
-```
+**Examples**:
+
+<br>
+<details>
+  <summary>Add</summary>
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1219,8 +616,18 @@ ShellLauncherConfiguration Add
 </SyncML>
 ```
 
-ShellLauncherConfiguration Add AutoLogon
-```
+</details>
+
+<br>
+<details>
+  <summary>Add AutoLogon</summary>
+
+This function creates an auto-logon account on your behalf. It's a standard user with no password. The auto-logon account is managed by AssignedAccessCSP, so the account name isn't exposed.
+
+> [!NOTE]
+> The auto-logon function is designed to be used after OOBE with provisioning packages.
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1267,8 +674,13 @@ ShellLauncherConfiguration Add AutoLogon
 </SyncML>
 ```
 
-ShellLauncher V2 Add
-```
+</details>
+
+<br>
+<details>
+  <summary>V2 Add</summary>
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1287,12 +699,12 @@ ShellLauncher V2 Add
         <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
 xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Profiles>
-                <DefaultProfile> 
-                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true"> 
-                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"--> 
-                        <DefaultAction Action="RestartShell"/> 
-                    </Shell> 
-                </DefaultProfile> 
+                <DefaultProfile>
+                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true">
+                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
+                        <DefaultAction Action="RestartShell"/>
+                    </Shell>
+                </DefaultProfile>
                 <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
                     <Shell Shell="%SystemRoot%\System32\notepad.exe" V2:AllAppsFullScreen="true">
                         <ReturnCodeActions>
@@ -1322,8 +734,13 @@ xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 ```
 
-ShellLauncherConfiguration Get
-```
+</details>
+
+<br>
+<details>
+  <summary>Get</summary>
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Get>
@@ -1339,7 +756,67 @@ ShellLauncherConfiguration Get
 </SyncML>
 ```
 
-## AssignedAccessAlert XSD
+</details>
+<!-- Device-ShellLauncher-Examples-End -->
+
+<!-- Device-ShellLauncher-End -->
+
+<!-- Device-Status-Begin -->
+## Status
+
+<!-- Device-Status-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-Status-Applicability-End -->
+
+<!-- Device-Status-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AssignedAccess/Status
+```
+<!-- Device-Status-OmaUri-End -->
+
+<!-- Device-Status-Description-Begin -->
+<!-- Description-Source-DDF -->
+This read only node contains kiosk health event xml.
+<!-- Device-Status-Description-End -->
+
+<!-- Device-Status-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This allows MDM server to query the current KioskModeAppRuntimeStatus as long as the StatusConfiguration node is set to "On" or "OnWithAlerts". If the StatusConfiguration is "Off", a "node not found" error will be reported to the MDM server.
+
+Starting in **Windows 10, version 1809**, Assigned Access runtime status supports monitoring single-app kiosk and multi-app modes. Here are the possible status codes:
+
+| Status Code | Status | Description |
+|--|--|--|
+| 0 | Unknown | Unknown status. |
+| 1 | Running | The AssignedAccess account (kiosk or multi-app) is running normally. |
+| 2 | AppNotFound | The kiosk app isn't deployed to the machine. |
+| 3 | ActivationFailed | The AssignedAccess account (kiosk or multi-app) failed to sign in. |
+| 4 | AppNoResponse | The kiosk app launched successfully but is now unresponsive. |
+
+Additionally, the Status payload includes the following fields:
+
+- profileId: It can be used by the MDM server to correlate which account caused the error.
+- OperationList: It gives the list of failed operations that occurred while applying the assigned access CSP, if any exist.
+<!-- Device-Status-Editable-End -->
+
+<!-- Device-Status-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Get |
+<!-- Device-Status-DFProperties-End -->
+
+<!-- Device-Status-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**AssignedAccessAlert XSD**:
+
+<br>
+<details>
+  <summary>Expand this section to see the schema XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1401,9 +878,694 @@ ShellLauncherConfiguration Get
 </xs:schema>
 ```
 
+</details><br>
+
+**Example**:
+
+```xml
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+   <SyncBody>
+       <Get>
+           <CmdID>2</CmdID>
+           <Item>
+               <Target>
+                 <LocURI>./Device/Vendor/MSFT/AssignedAccess/Status</LocURI>
+               </Target>
+           </Item>
+       </Get>
+       <Final />
+   </SyncBody>
+</SyncML>
+```
+<!-- Device-Status-Examples-End -->
+
+<!-- Device-Status-End -->
+
+<!-- Device-StatusConfiguration-Begin -->
+## StatusConfiguration
+
+<!-- Device-StatusConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-StatusConfiguration-Applicability-End -->
+
+<!-- Device-StatusConfiguration-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AssignedAccess/StatusConfiguration
+```
+<!-- Device-StatusConfiguration-OmaUri-End -->
+
+<!-- Device-StatusConfiguration-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node accepts a StatusConfiguration xml as input.
+<!-- Device-StatusConfiguration-Description-End -->
+
+<!-- Device-StatusConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+There are three possible values for StatusEnabled node inside StatusConfiguration xml:
+
+- On
+- OnWithAlerts
+- Off
+
+By default, the StatusConfiguration node doesn't exist, and it implies this feature is off. Once enabled via CSP, Assigned Access will check kiosk app status and wait for MDM server to query the latest status from the Status node. Optionally, the MDM server can opt in to the MDM alert so that an MDM alert will be generated and sent immediately to the MDM server when the assigned access runtime status is changed. This MDM alert will contain the status payload that is available via the Status node. This MDM alert header is defined as follows:
+
+- MDMAlertMark: `Critical`
+- MDMAlertType: `com.microsoft.mdm.assignedaccess.status`
+- MDMAlertDataType: `string`
+- Source: `./Vendor/MSFT/AssignedAccess`
+- Target: `N/A`
+
+> [!NOTE]
+> MDM alert are only sent for errors.
+<!-- Device-StatusConfiguration-Editable-End -->
+
+<!-- Device-StatusConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-StatusConfiguration-DFProperties-End -->
+
+<!-- Device-StatusConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**StatusConfiguration XSD**:
+
+<br>
+<details>
+  <summary>Expand this section to see the schema XML</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration"
+    >
+
+    <xs:simpleType name="status_enabled_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Off"/>
+            <xs:enumeration value="On"/>
+            <xs:enumeration value="OnWithAlerts"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--below is the definition of the config xml content-->
+    <xs:element name="StatusConfiguration">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="StatusEnabled" type="status_enabled_t" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
+
+</details><br>
+
+**Examples**:
+
+<br>
+<details>
+  <summary>Add StatusConfiguration with StatusEnabled set to OnWithAlerts</summary>
+
+  ```xml
+  <SyncML xmlns='SYNCML:SYNCML1.2'>
+    <SyncBody>
+      <Add>
+        <CmdID>2</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>
+            <![CDATA[
+            <?xml version="1.0" encoding="utf-8" ?>
+            <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
+              <StatusEnabled>OnWithAlerts</StatusEnabled>
+            </StatusConfiguration>
+            ]]>
+          </Data>
+        </Item>
+      </Add>
+      <Final />
+    </SyncBody>
+  </SyncML>
+  ```
+
+</details>
+
+<br>
+<details>
+  <summary>Delete StatusConfiguration</summary>
+
+  ```xml
+  <SyncML xmlns='SYNCML:SYNCML1.2'>
+      <SyncBody>
+          <Delete>
+              <CmdID>2</CmdID>
+              <Item>
+                  <Target>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
+                  </Target>
+              </Item>
+          </Delete>
+          <Final />
+      </SyncBody>
+  </SyncML>
+  ```
+
+</details>
+
+<br>
+<details>
+  <summary>Get StatusConfiguration</summary>
+
+  ```xml
+  <SyncML xmlns='SYNCML:SYNCML1.2'>
+      <SyncBody>
+          <Get>
+              <CmdID>2</CmdID>
+              <Item>
+                  <Target>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
+                  </Target>
+              </Item>
+          </Get>
+          <Final />
+      </SyncBody>
+  </SyncML>
+  ```
+
+</details>
+
+<br>
+<details>
+  <summary>Replace StatusEnabled value with On</summary>
+
+  ```xml
+  <SyncML xmlns='SYNCML:SYNCML1.2'>
+    <SyncBody>
+      <Replace>
+        <CmdID>2</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>
+            <![CDATA[
+            <?xml version="1.0" encoding="utf-8" ?>
+            <StatusConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2018/StatusConfiguration">
+              <StatusEnabled>On</StatusEnabled>
+            </StatusConfiguration>
+            ]]>
+          </Data>
+        </Item>
+      </Replace>
+      <Final />
+    </SyncBody>
+  </SyncML>
+  ```
+
+</details>
+<!-- Device-StatusConfiguration-Examples-End -->
+
+<!-- Device-StatusConfiguration-End -->
+
+<!-- AssignedAccess-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## AssignedAccessConfiguration XSD
+
+<br>
+<details>
+  <summary>Schema for AssignedAccessConfiguration.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    >
+
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2021/config"/>
+
+    <xs:complexType name="profile_list_t">
+        <xs:sequence minOccurs="1" >
+            <xs:element name="Profile" type="profile_t" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="kioskmodeapp_t">
+        <xs:attribute name="AppUserModelId" type="xs:string"/>
+        <xs:attributeGroup ref="ClassicApp_attributeGroup"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="ClassicApp_attributeGroup">
+        <xs:attribute ref="v4:ClassicAppPath"/>
+        <xs:attribute ref="v4:ClassicAppArguments" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="profile_t">
+        <xs:choice>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="rs5:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="StartLayout" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1">
+                    <xs:key name="mutualExclusionAumidOrClassicAppPath">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppPath"/>
+                    </xs:key>
+                    <xs:unique name="mutualExclusionAumidOrClassicAppArgumentsOptional">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppArguments"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element ref="v4:BreakoutSequence" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:choice>
+        <xs:attribute name="Id" type="guid_t" use="required"/>
+        <xs:attribute name="Name" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="allappslist_t">
+        <xs:sequence minOccurs="1" >
+            <xs:element name="AllowedApps" type="allowedapps_t" minOccurs="1" maxOccurs="1">
+                <xs:unique name="ForbidDupApps">
+                    <xs:selector xpath="default:App"/>
+                    <xs:field xpath="@AppUserModelId|@DesktopAppPath"/>
+                </xs:unique>
+                <xs:unique name="OnlyOneAppCanHaveAutoLaunch">
+                    <xs:selector xpath="default:App"/>
+                    <xs:field xpath="@rs5:AutoLaunch"/>
+                </xs:unique>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="allowedapps_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="App" type="app_t" minOccurs="1" maxOccurs="unbounded">
+                <xs:key name="mutexAumidOrDesktopApp">
+                    <xs:selector xpath="."/>
+                    <xs:field xpath="@AppUserModelId|@DesktopAppPath"/>
+                </xs:key>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="app_t">
+        <xs:attribute name="AppUserModelId" type="xs:string"/>
+        <xs:attribute name="DesktopAppPath" type="xs:string"/>
+        <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="autoLaunch_attributeGroup">
+        <xs:attribute ref="rs5:AutoLaunch"/>
+        <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="taskbar_t">
+        <xs:attribute name="ShowTaskbar" type="xs:boolean" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="profileId_t">
+        <xs:attribute name="Id" type="guid_t" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="guid_t">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="config_list_t">
+        <xs:sequence minOccurs="1" >
+            <xs:element ref="v3:GlobalProfile" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="Config" type="config_t" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="config_t">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:choice>
+                <xs:element name="Account" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="AutoLogonAccount" type="autologon_account_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="UserGroup" type="group_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="SpecialGroup" type="specialGroup_t" minOccurs="1" maxOccurs="1" />
+            </xs:choice>
+            <xs:element name="DefaultProfile" type="profileId_t" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="autologon_account_t">
+        <xs:attribute name="HiddenId" type="guid_t" fixed="{74331115-F68A-4DF9-8D2C-52BA2CE2ADB1}"/>
+        <xs:attribute ref="rs5:DisplayName" use="optional" />
+    </xs:complexType>
+
+    <xs:complexType name="group_t">
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="Type" type="groupType_t" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="specialGroup_t">
+        <xs:attribute name="Name" type="specialGroupType_t" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="groupType_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LocalGroup"/>
+            <xs:enumeration value="ActiveDirectoryGroup"/>
+            <xs:enumeration value="AzureActiveDirectoryGroup"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="specialGroupType_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Visitor"/>
+            <xs:enumeration value="DeviceOwner"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="fileExplorerNamespaceRestrictions_t">
+        <xs:sequence minOccurs="1">
+            <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="allowedFileExplorerNamespace_t">
+        <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t"/>
+    </xs:complexType>
+
+    <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Downloads"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--below is the definition of the config xml content-->
+    <xs:element name="AssignedAccessConfiguration">
+        <xs:complexType>
+            <xs:all minOccurs="1">
+                <xs:element name="Profiles" type="profile_list_t">
+                    <xs:unique name="duplicateRolesForbidden">
+                        <xs:selector xpath="default:Profile"/>
+                        <xs:field xpath="@Id"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element name="Configs" type="config_list_t">
+                    <xs:unique name="duplicateAutoLogonAccountForbidden">
+                        <xs:selector xpath=".//default:AutoLogonAccount"/>
+                        <xs:field xpath="@HiddenId"/>
+                    </xs:unique>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>);
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Schema for features introduced in Windows 10, version 1909 which added support for Microsoft Edge kiosk mode and breakout key sequence customization.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    >
+
+    <xs:attribute name="ClassicAppPath" type="xs:string"/>
+    <xs:attribute name="ClassicAppArguments" type="xs:string"/>
+
+    <xs:element name="BreakoutSequence" type="BreakoutSequence_t" />
+
+    <xs:complexType name="BreakoutSequence_t">
+        <xs:attribute name="Key" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Schema for new features introduced in Windows 10 1809 release.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    >
+
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+
+    <xs:complexType name="fileExplorerNamespaceRestrictions_t">
+        <xs:choice>
+            <xs:sequence minOccurs="0">
+                <xs:element name="AllowedNamespace" type="allowedFileExplorerNamespace_t" minOccurs="0"/>
+                <xs:element ref="v3:AllowRemovableDrives" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:element ref="v3:NoRestriction" minOccurs="0" maxOccurs="1" />
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="allowedFileExplorerNamespace_t">
+        <xs:attribute name="Name" type="allowedFileExplorerNamespaceValues_t" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="allowedFileExplorerNamespaceValues_t">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Downloads"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="FileExplorerNamespaceRestrictions" type="fileExplorerNamespaceRestrictions_t" />
+
+    <xs:attribute name="AutoLaunch" type="xs:boolean"/>
+
+    <xs:attribute name="AutoLaunchArguments" type="xs:string"/>
+
+    <xs:attribute name="DisplayName" type="xs:string"/>
+
+</xs:schema>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Schema for Windows 10 prerelease.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    >
+
+    <xs:simpleType name="guid_t">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\{[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}\}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="globalProfile_t">
+        <xs:attribute name="Id" type="guid_t" />
+    </xs:complexType>
+
+    <xs:element name="AllowRemovableDrives"/>
+    <xs:element name="NoRestriction" />
+    <xs:element name="GlobalProfile" type="globalProfile_t" />
+
+</xs:schema>
+```
+
+</details>
+
+## AssignedAccessConfiguration examples
+
+> [!NOTE]
+> To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature that was added in the 1809 release, use the below sample. Notice an alias `r1809` is given to the 201810 namespace for the 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+>
+> ```xml
+> <AssignedAccessConfiguration
+>     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+>     xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+> >
+>     <Profiles>
+>         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+>             <AllAppsList>
+>                 <AllowedApps>
+>                   <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" r1809:AutoLaunch="true" r1809:AutoLaunchArguments="1.txt"/>
+>     ...
+> </AssignedAccessConfiguration>
+> ```
+
+<br>
+<details>
+  <summary>Example XML configuration for a multi-app kiosk for Windows 10.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Group1">
+                              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+                              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+                              <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+                            </start:Group>
+                            <start:Group Name="Group2">
+                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe" />
+                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+      </StartLayout>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>MultiAppKioskUser</Account>
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Example XML configuration for a Microsoft Edge kiosk. This Microsoft Edge kiosk is configured to launch www.bing.com on startup in a public browsing mode.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+  >
+  <Profiles>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
+                                  v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>EdgeKioskUser</Account>
+      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Example XML configuration for setting a breakout sequence to be Ctrl+A on a Microsoft Edge kiosk.</summary>
+
+> [!NOTE]
+> **BreakoutSequence** can be applied to any kiosk type, not just an Edge kiosk.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+  >
+  <Profiles>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">
+      <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
+                                  v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com"/>
+      <v4:BreakoutSequence Key="Ctrl+A"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>EdgeKioskUser</Account>
+      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
+</details>
+
 ## Windows Holographic for Business edition example
 
-This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](https://docs.microsoft.com/hololens/hololens-provisioning).
+This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](/hololens/hololens-provisioning).
+
+<br>
+<details>
+  <summary>Expand this section to see the example.</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1460,3 +1622,172 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
     </Configs>
 </AssignedAccessConfiguration>
 ```
+
+</details>
+
+## Handling XML in Configuration
+
+XML encoding (escaped) and CDATA of the XML in the Data node will both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
+
+Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you'll have nested CDATA, so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
+
+Escape and CDATA are mechanisms used when handling xml in xml. Consider that it's a transportation channel to send the configuration xml as payload from server to client. It's transparent to both, the end user who configures the CSP and to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
+
+<br>
+<details>
+  <summary>This example shows escaped XML of the Data node.</summary>
+
+```xml
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+    <SyncBody>
+        <Add>
+            <CmdID>2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data>
+                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
+    &lt;Profiles&gt;
+        &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
+            &lt;AllAppsList&gt;
+                &lt;AllowedApps&gt;
+                    &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
+                    &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
+                    &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
+                    &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
+                    &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
+                    &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
+                    &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
+                &lt;/AllowedApps&gt;
+            &lt;/AllAppsList&gt;
+            &lt;StartLayout&gt;
+                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
+                      &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
+                      &lt;DefaultLayoutOverride&gt;
+                        &lt;StartLayoutCollection&gt;
+                          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
+                            &lt;start:Group Name=&quot;Group1&quot;&gt;
+                              &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
+                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
+                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
+                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
+                              &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
+                            &lt;/start:Group&gt;
+                            &lt;start:Group Name=&quot;Group2&quot;&gt;
+                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe&quot; /&gt;
+                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe&quot; /&gt;
+                            &lt;/start:Group&gt;
+                          &lt;/defaultlayout:StartLayout&gt;
+                        &lt;/StartLayoutCollection&gt;
+                      &lt;/DefaultLayoutOverride&gt;
+                    &lt;/LayoutModificationTemplate&gt;
+                ]]&gt;
+            &lt;/StartLayout&gt;
+            &lt;Taskbar ShowTaskbar=&quot;true&quot;/&gt;
+        &lt;/Profile&gt;
+    &lt;/Profiles&gt;
+    &lt;Configs&gt;
+        &lt;Config&gt;
+            &lt;Account&gt;MultiAppKioskUser&lt;/Account&gt;
+            &lt;DefaultProfile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;/&gt;
+        &lt;/Config&gt;
+    &lt;/Configs&gt;
+&lt;/AssignedAccessConfiguration&gt;
+
+                </Data>
+            </Item>
+        </Add>
+        <Final />
+    </SyncBody>
+</SyncML>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>This example shows CData for the XML.</summary>
+
+```xml
+<SyncML xmlns='SYNCML:SYNCML1.2'>
+    <SyncBody>
+        <Add>
+            <CmdID>2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data>
+                    <![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <App DesktopAppPath="%windir%\system32\mspaint.exe" />
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions StartTileGroupCellWidth="6" />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                            <start:Group Name="Group1">
+                              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+                              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+                              <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+                            </start:Group>
+                            <start:Group Name="Group2">
+                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe" />
+                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe" />
+                            </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                  ]]]]><![CDATA[>
+      </StartLayout>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>MultiAppKioskUser</Account>
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+]]>
+                </Data>
+            </Item>
+        </Add>
+        <Final />
+    </SyncBody>
+</SyncML>
+```
+
+</details>
+<!-- AssignedAccess-CspMoreInfo-End -->
+
+<!-- AssignedAccess-End -->
+
+## Related articles
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

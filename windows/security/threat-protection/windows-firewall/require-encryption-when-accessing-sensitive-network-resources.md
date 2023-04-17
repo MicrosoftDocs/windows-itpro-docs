@@ -1,40 +1,28 @@
 ---
-title: Require Encryption When Accessing Sensitive Network Resources (Windows 10)
+title: Require Encryption When Accessing Sensitive Network Resources (Windows)
 description: Windows Defender Firewall with Advanced Security allows you to require that all network traffic in an isolated domain be encrypted.
-ms.assetid: da980d30-a68b-4e2a-ba63-94726355ce6f
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Require Encryption When Accessing Sensitive Network Resources
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-The use of authentication in the previously described goal ([Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)) enables a device in the isolated domain to block traffic from untrusted devices. However, it does not prevent an untrusted device from eavesdropping on the network traffic shared between two trusted devices, because by default network packets are not encrypted.
+The use of authentication in the previously described goal ([Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)) enables a device in the isolated domain to block traffic from untrusted devices. However, it doesn't prevent an untrusted device from eavesdropping on the network traffic shared between two trusted devices, because by default network packets aren't encrypted.
 
 For devices that share sensitive information over the network, Windows Defender Firewall with Advanced Security allows you to require that all such network traffic be encrypted. Using encryption can help you comply with regulatory and legislative requirements such as those found in the Federal Information Security Management Act of 2002 (FISMA), the Sarbanes-Oxley Act of 2002, the Health Insurance Portability and Accountability Act of 1996 (HIPAA), and other government and industry regulations. By creating connection security rules that apply to devices that host and exchange sensitive data, you can help protect the confidentiality of that data by encrypting it.
 
 The following illustration shows an encryption zone in an isolated domain. The rules that implement both the isolated domain and the different zones are deployed by using Group Policy and Active Directory.
 
-![encryption zone in an isolated domain](images/wfas-domainisoencrypt.gif)
+![encryption zone in an isolated domain.](images/wfas-domainisoencrypt.gif)
 
 This goal provides the following benefits:
 
--   Devices in the encryption zone require authentication to communicate with other devices. This works no differently from the domain isolation goal and design. For more info, see [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md).
+-   Devices in the encryption zone require authentication to communicate with other devices. This rule works no differently from the domain isolation goal and design. For more information, see [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md).
 
 -   Devices in the encryption zone require that all inbound and outbound network traffic be encrypted.
 

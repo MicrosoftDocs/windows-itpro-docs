@@ -1,124 +1,154 @@
 ---
 title: WindowsAdvancedThreatProtection CSP
 description: The Windows Defender Advanced Threat Protection (WDATP) CSP allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
-ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 11/01/2017
 ---
 
 # WindowsAdvancedThreatProtection CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 
-The following diagram shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
+The following example shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
 
-![windowsadvancedthreatprotection csp diagram](images/provisioning-csp-watp.png)
+```console
+./Device/Vendor/MSFT
+WindowsAdvancedThreatProtection
+----Onboarding
+----HealthState
+--------LastConnected
+--------SenseIsRunning
+--------OnboardingState
+--------OrgId
+----Configuration
+--------SampleSharing
+--------TelemetryReportingFrequency
+--------AadDdeviceId
+----Offboarding
+----DeviceTagging
+--------Group
+--------Criticality
+```
 
 The following list describes the characteristics and parameters.
 
-<a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**  
-<p style="margin-left: 20px">The root node for the Windows Defender Advanced Threat Protection configuration service provider.
+**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**
+The root node for the Windows Defender Advanced Threat Protection configuration service provider.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
-<a href="" id="onboarding"></a>**Onboarding**  
-<p style="margin-left: 20px">Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
+**Onboarding**
+Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
 
-<p style="margin-left: 20px">The data type is a string.
+The data type is a string.
 
-<p style="margin-left: 20px">Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
-<a href="" id="healthstate"></a>**HealthState**  
-<p style="margin-left: 20px">Node that represents the Windows Defender Advanced Threat Protection health state.
+**HealthState**
+Node that represents the Windows Defender Advanced Threat Protection health state.
 
-<a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**  
-<p style="margin-left: 20px">Contains the timestamp of the last successful connection.
+**HealthState/LastConnected**
+Contains the timestamp of the last successful connection.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
-<a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**  
-<p style="margin-left: 20px">Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
+**HealthState/SenseIsRunning**
+Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
 
-<p style="margin-left: 20px">The default value is false.
+The default value is false.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
-<a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**  
-<p style="margin-left: 20px">Represents the onboarding state.
+**HealthState/OnboardingState**
+Represents the onboarding state.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
--   0 (default) – Not onboarded.
--   1 – Onboarded
+- 0 (default) – Not onboarded
+- 1 – Onboarded
 
-<a href="" id="healthstate-orgid"></a>**HealthState/OrgId**  
-<p style="margin-left: 20px">String that represents the OrgID.
+**HealthState/OrgId**
+String that represents the OrgID.
 
-<p style="margin-left: 20px">Supported operation is Get.
+Supported operation is Get.
 
-<a href="" id="configuration"></a>**Configuration**  
-<p style="margin-left: 20px">Represents Windows Defender Advanced Threat Protection configuration.
+**Configuration**
+Represents Windows Defender Advanced Threat Protection configuration.
 
-<a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**  
-<p style="margin-left: 20px">Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
+**Configuration/SampleSharing**
+Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – None
 -   1 (default)– All
 
-<p style="margin-left: 20px">Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
-<a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency. 
+**Configuration/TelemetryReportingFrequency**
+Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+The following list shows the supported values:
 
--   1 (default) – Normal
--   2 - Expedite
+- 1 (default) – Normal
+- 2 - Expedite
 
-<p style="margin-left: 20px">Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
-<a href="" id="offboarding"></a>**Offboarding**  
-<p style="margin-left: 20px">Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
+**Configuration/AadDeviceId**
+Returns or sets the Intune's reported known AadDeviceId for the machine
 
-<p style="margin-left: 20px">The data type is a string.
+Supported operations are Get and Replace.
 
-<p style="margin-left: 20px">Supported operations are Get and Replace.
+**Offboarding**
+Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
 
-<a href="" id="devicetagging"></a>**DeviceTagging**  
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
+The data type is a string.
 
-<p style="margin-left: 20px">Supported operations is Get.
+Supported operations are Get and Replace.
 
-<a href="" id="group"></a>**DeviceTagging/Group**  
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Device group identifiers.
+**DeviceTagging**
+Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
 
-<p style="margin-left: 20px">The data type is a string.
+Supported operation is Get.
 
-<p style="margin-left: 20px">Supported operations are Get and Replace.
+**DeviceTagging/Group**
+Added in Windows 10, version 1709. Device group identifiers.
 
-<a href="" id="criticality"></a>**DeviceTagging/Criticality**  
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Asset criticality value. Supported values:  
+The data type is a string.
+
+Supported operations are Get and Replace.
+
+**DeviceTagging/Criticality**
+Added in Windows 10, version 1709. Asset criticality value. Supported values:
 
 - 0 - Normal
 - 1 - Critical
 
-<p style="margin-left: 20px">The data type is an integer.
+The data type is an integer.
 
-<p style="margin-left: 20px">Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 ## Examples
-
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -194,6 +224,16 @@ The following list describes the characteristics and parameters.
       </Item>
     </Get>
     <Get>
+      <CmdID>7</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/AadDeviceId
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
       <CmdID>11</CmdID>
       <Item>
         <Target>
@@ -223,22 +263,11 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
 
 ## Related topics
 
-
-[Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
+[Configuration service provider reference](index.yml)

@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to use Site List Manager to review neutral sites for IE mode
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
 ms.reviewer: 
 audience: itpro
@@ -32,7 +32,7 @@ ms.date: 04/02/2020
 
 ## Overview
 
-While converting your site from v.1 schema to v.2 schema using the latest version of the Enterprise Mode Site List Manager, sites with the *doNotTransition=true* in v.1 convert to *open-in=None* in the v.2 schema, which is characterized as a "neutral site". This is the expected behavior for conversion unless you are using Internet Explorer mode (IE mode). When IE mode is enabled, only authentication servers that are used for modern and legacy sites should be set as neutral sites. For more information, see [Configure neutral sites](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist#configure-neutral-sites). Otherwise, a site meant to open in Edge might potentially be tagged as neutral, which results in inconsistent experiences for users.
+While converting your site from v.1 schema to v.2 schema using the latest version of the Enterprise Mode Site List Manager, sites with the *doNotTransition=true* in v.1 convert to *open-in=None* in the v.2 schema, which is characterized as a "neutral site". This is the expected behavior for conversion unless you are using Internet Explorer mode (IE mode). When IE mode is enabled, only authentication servers that are used for modern and legacy sites should be set as neutral sites. For more information, see [Configure neutral sites](/deployedge/edge-ie-mode-sitelist#configure-neutral-sites). Otherwise, a site meant to open in Edge might potentially be tagged as neutral, which results in inconsistent experiences for users.
 
 The Enterprise Mode Site List Manager provides the ability to flag sites that are listed as neutral sites, but might have been added in error. This check is automatically performed when you are converting from v.1 to v.2 through the tool. This check might flag sites even if there was no prior schema conversion.
 
@@ -46,5 +46,5 @@ To identify neutral sites to review:
 
 ## Related topics
 
-- [About IE Mode](https://docs.microsoft.com/deployedge/edge-ie-mode)
-- [Configure neutral sites](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist#configure-neutral-sites)
+- [About IE Mode](/deployedge/edge-ie-mode)
+- [Configure neutral sites](/deployedge/edge-ie-mode-sitelist#configure-neutral-sites)

@@ -1,29 +1,18 @@
 ---
-title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows 10)
+title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows)
 description: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.reviewer: 
-ms.author: dansimp
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It is designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
+The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It's designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
 
 You can use Windows PowerShell to manage your firewall and IPsec deployments. This object-oriented scripting environment will make it easier for you to manage policies and monitor network conditions than was possible in netsh. Windows PowerShell allows network settings to be self-discoverable through the syntax and parameters in each of the cmdlets. This guide demonstrates how common tasks were performed in netsh and how you can use Windows PowerShell to accomplish them.
 
@@ -31,15 +20,15 @@ In future versions of Windows, Microsoft might remove the netsh functionality fo
 
 Windows PowerShell and netsh command references are at the following locations.
 
--   [Netsh Commands for Windows Defender Firewall](https://technet.microsoft.com/library/cc771920)
+-   [Netsh Commands for Windows Defender Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771920(v=ws.10))
 
 ## Scope
 
-This guide does not teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Defender Firewall](windows-firewall-with-advanced-security.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#additional-resources) section of this guide.
+This guide doesn't teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Defender Firewall](windows-firewall-with-advanced-security.md). It doesn't teach the fundamentals of Windows PowerShell, and it assumes that you're familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#other-resources) section of this guide.
 
 ## Audience and user requirements
 
-This guide is intended for IT pros, system administrators, and IT managers, and it assumes that you are familiar with Windows Defender Firewall, the Windows PowerShell language, and the basic concepts of Windows PowerShell.
+This guide is intended for IT pros, system administrators, and IT managers, and it assumes that you're familiar with Windows Defender Firewall, the Windows PowerShell language, and the basic concepts of Windows PowerShell.
 
 ## In this topic
 
@@ -50,7 +39,7 @@ This guide is intended for IT pros, system administrators, and IT managers, and 
 | [Manage Remotely](#manage-remotely) | Remote management by using `-CimSession`|
 | [Deploy basic IPsec rule settings](#deploy-basic-ipsec-rule-settings) | IPsec rules and associated parameters|
 | [Deploy secure firewall rules with IPsec](#deploy-secure-firewall-rules-with-ipsec) | Domain and server isolation|
-| [Additional resources](#additional-resources) | More information about Windows PowerShell|
+| [Other resources](#other-resources) | More information about Windows PowerShell|
 
 ## <a href="" id="bkmk-profileglobaldefaults"></a>Set profile global defaults
 
@@ -58,7 +47,7 @@ Global defaults set the device behavior in a per-profile basis. Windows Defender
 
 ### Enable Windows Defender Firewall with Advanced Security
 
-Windows Defender Firewall drops traffic that does not correspond to allowed unsolicited traffic, or traffic that is sent in response to a request by the  device. If you find that the rules you create are not being enforced, you may need to enable Windows Defender Firewall. Here is how to do this on a local domain  device:
+Windows Defender Firewall drops traffic that doesn't correspond to allowed unsolicited traffic, or traffic that is sent in response to a request by the  device. If you find that the rules you create aren't being enforced, you may need to enable Windows Defender Firewall. Here's how to enable Windows Defender Firewall on a local domain  device:
 
 **Netsh**
 
@@ -95,7 +84,7 @@ Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow 
 
 ### Disable Windows Defender Firewall with Advanced Security
 
-Microsoft recommends that you do not disable Windows Defender Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](https://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/).
+Microsoft recommends that you don't disable Windows Defender Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](https://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/).
 
 Disabling Windows Defender Firewall with Advanced Security can also cause problems, including:
 
@@ -106,15 +95,15 @@ Disabling Windows Defender Firewall with Advanced Security can also cause proble
 
 Microsoft recommends disabling Windows Defender Firewall only when installing a third-party firewall, and resetting Windows Defender Firewall back to defaults when the third-party software is disabled or removed.
 
-If disabling Windows Defender Firewall is required, do not disable it by stopping the Windows Defender Firewall service (in the **Services** snap-in, the display name is Windows Defender Firewall and the service name is MpsSvc).
-Stopping the Windows Defender Firewall service is not supported by Microsoft.
+If disabling Windows Defender Firewall is required, don't disable it by stopping the Windows Defender Firewall service (in the **Services** snap-in, the display name is Windows Defender Firewall and the service name is MpsSvc).
+Stopping the Windows Defender Firewall service isn't supported by Microsoft.
 
 Non-Microsoft firewall software can programmatically disable only the parts of Windows Defender Firewall that need to be disabled for compatibility.
-You should not disable the firewall yourself for this purpose.
+You shouldn't disable the firewall yourself for this purpose.
 
 The proper method to disable the Windows Defender Firewall is to disable the Windows Defender Firewall Profiles and leave the service running.
 
-Use the following procedure to turn the firewall off, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Defender Firewall|Domain Prolfile|Windows Defender Firewall:Protect all network connections**.
+Use the following procedure to turn off the firewall, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Defender Firewall|Domain Prolfile|Windows Defender Firewall:Protect all network connections**.
 For more information, see [Windows Defender Firewall with Advanced Security deployment guide](windows-firewall-with-advanced-security-deployment-guide.md).
 
 The following example disables Windows Defender Firewall for all profiles.
@@ -131,7 +120,7 @@ This section provides scriptlet examples for creating, modifying, and deleting f
 
 Adding a firewall rule in Windows PowerShell looks a lot like it did in Netsh, but the parameters and values are specified differently.
 
-Here is an example of how to allow the Telnet application to listen on the network. This firewall rule is scoped to the local subnet by using a keyword instead of an IP address. Just like in Netsh, the rule is created on the local  device, and it becomes effective immediately.
+Here's an example of how to allow the Telnet application to listen on the network. This firewall rule is scoped to the local subnet by using a keyword instead of an IP address. Just like in Netsh, the rule is created on the local  device, and it becomes effective immediately.
 
 **Netsh**
 
@@ -145,7 +134,7 @@ Windows PowerShell
 New-NetFirewallRule -DisplayName “Allow Inbound Telnet” -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow
 ```
 
-The following scriptlet shows how to add a basic firewall rule that blocks outbound traffic from a specific application and local port to a Group Policy Object (GPO) in Active Directory. In Windows PowerShell, the policy store is specified as a parameter within the **New-NetFirewall** cmdlet. In Netsh, you must first specify the GPO that the commands in a Netsh session should modify. The commands you enter are run against the contents of the GPO, and this remains in effect until the Netsh session is ended or until another set store command is executed.
+The following scriptlet shows how to add a basic firewall rule that blocks outbound traffic from a specific application and local port to a Group Policy Object (GPO) in Active Directory. In Windows PowerShell, the policy store is specified as a parameter within the **New-NetFirewall** cmdlet. In Netsh, you must first specify the GPO that the commands in a Netsh session should modify. The commands you enter are run against the contents of the GPO, and the execution remains in effect until the Netsh session is ended or until another set store command is executed.
 
 Here, **domain.contoso.com** is the name of your Active Directory Domain Services (AD DS), and **gpo\_name** is the name of the GPO that you want to modify. Quotation marks are required if there are any spaces in the GPO name.
 
@@ -166,7 +155,7 @@ New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound
 
 To reduce the burden on busy domain controllers, Windows PowerShell allows you to load a GPO to your local session, make all your changes in that session, and then save it back at all once.
 
-The following performs the same actions as the previous example (by adding a Telnet rule to a GPO), but we do so leveraging GPO caching in PowerShell. Changing the GPO by loading it onto your local session and using the *-GPOSession* parameter are not supported in Netsh
+The following command performs the same actions as the previous example (by adding a Telnet rule to a GPO), but we do so by applying GPO caching in PowerShell. Changing the GPO by loading it onto your local session and using the *-GPOSession* parameter aren't supported in Netsh
 
 Windows PowerShell
 
@@ -176,11 +165,11 @@ New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound
 Save-NetGPO –GPOSession $gpo
 ```
 
-Note that this does not batch your individual changes, it loads and saves the entire GPO at once. So if any other changes are made by other administrators, or in a different Windows PowerShell window, saving the GPO overwrites those changes.
+This command doesn't batch your individual changes, it loads and saves the entire GPO at once. So if any other changes are made by other administrators, or in a different Windows PowerShell window, saving the GPO overwrites those changes.
 
 ### Modify an existing firewall rule
 
-When a rule is created, Netsh and Windows PowerShell allow you to change rule properties and influence, but the rule maintains its unique identifier (in Windows PowerShell this is specified with the *-Name* parameter).
+When a rule is created, Netsh and Windows PowerShell allow you to change rule properties and influence, but the rule maintains its unique identifier (in Windows PowerShell, this identifier is specified with the *-Name* parameter).
 
 For example, you could have a rule **Allow Web 80** that enables TCP port 80 for inbound unsolicited traffic. You can change the rule to match a different remote IP address of a Web server whose traffic will be allowed by specifying the human-readable, localized name of the rule.
 
@@ -196,11 +185,11 @@ Windows PowerShell
 Set-NetFirewallRule –DisplayName “Allow Web 80” -RemoteAddress 192.168.0.2
 ```
 
-Netsh requires you to provide the name of the rule for it to be changed and we do not have an alternate way of getting the firewall rule. In Windows PowerShell, you can query for the rule using its known properties.
+Netsh requires you to provide the name of the rule for it to be changed and we don't have an alternate way of getting the firewall rule. In Windows PowerShell, you can query for the rule using its known properties.
 
-When you run `Get-NetFirewallRule`, you may notice that common conditions like addresses and ports do not appear. These conditions are represented in separate objects called Filters. As shown before, you can set all the conditions in New-NetFirewallRule and Set-NetFirewallRule. If you want to query for firewall rules based on these fields (ports, addresses, security, interfaces, services), you will need to get the filter objects themselves.
+When you run `Get-NetFirewallRule`, you may notice that common conditions like addresses and ports don't appear. These conditions are represented in separate objects called Filters. As shown before, you can set all the conditions in New-NetFirewallRule and Set-NetFirewallRule. If you want to query for firewall rules based on these fields (ports, addresses, security, interfaces, services), you'll need to get the filter objects themselves.
 
-You can change the remote endpoint of the **Allow Web 80** rule (as done previously) using filter objects. Using Windows PowerShell you query by port using the port filter, then assuming additional rules exist affecting the local port, you build with further queries until your desired rule is retrieved.
+You can change the remote endpoint of the **Allow Web 80** rule (as done previously) using filter objects. Using Windows PowerShell, you query by port using the port filter, then assuming other rules exist affecting the local port, you build with further queries until your desired rule is retrieved.
 
 In the following example, we assume the query returns a single firewall rule, which is then piped to the `Set-NetFirewallRule` cmdlet utilizing Windows PowerShell’s ability to pipeline inputs.
 
@@ -220,7 +209,7 @@ Get-NetFirewallApplicationFilter -Program "*svchost*" | Get-NetFirewallRule
 
 Multiple rules in a group can be simultaneously modified when the associated group name is specified in a Set command. You can add firewall rules to specified management groups in order to manage multiple rules that share the same influences.
 
-In the following example, we add both inbound and outbound Telnet firewall rules to the group **Telnet Management**. In Windows PowerShell, group membership is specified when the rules are first created so we re-create the previous example rules. Adding rules to a custom rule group is not possible in Netsh.
+In the following example, we add both inbound and outbound Telnet firewall rules to the group **Telnet Management**. In Windows PowerShell, group membership is specified when the rules are first created so we re-create the previous example rules. Adding rules to a custom rule group isn't possible in Netsh.
 
 Windows PowerShell
 
@@ -229,7 +218,7 @@ New-NetFirewallRule -DisplayName “Allow Inbound Telnet” -Direction Inbound -
 New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow –Group “Telnet Management”
 ```
 
-If the group is not specified at rule creation time, the rule can be added to the rule group using dot notation in Windows PowerShell. You cannot specify the group using `Set-NetFirewallRule` since the command allows querying by rule group.
+If the group isn't specified at rule creation time, the rule can be added to the rule group using dot notation in Windows PowerShell. You can't specify the group using `Set-NetFirewallRule` since the command allows querying by rule group.
 
 Windows PowerShell
 
@@ -239,7 +228,7 @@ $rule.Group = “Telnet Management”
 $rule | Set-NetFirewallRule
 ```
 
-Using the `Set` command, if the rule group name is specified, the group membership is not modified but rather all rules of the group receive the same modifications indicated by the given parameters.
+With the help of the `Set` command, if the rule group name is specified, the group membership isn't modified but rather all rules of the group receive the same modifications indicated by the given parameters.
 
 The following scriptlet enables all rules in a predefined group containing remote management influencing firewall rules.
 
@@ -255,7 +244,7 @@ Windows PowerShell
 Set-NetFirewallRule -DisplayGroup “Windows Defender Firewall Remote Management” –Enabled True
 ```
 
-There is also a separate `Enable-NetFirewallRule` cmdlet for enabling rules by group or by other properties of the rule.
+There's also a separate `Enable-NetFirewallRule` cmdlet for enabling rules by group or by other properties of the rule.
 
 Windows PowerShell
 
@@ -265,7 +254,7 @@ Enable-NetFirewallRule -DisplayGroup “Windows Defender Firewall Remote Managem
 
 ### Delete a firewall rule
 
-Rule objects can be disabled so that they are no longer active. In Windows PowerShell, the **Disable-NetFirewallRule** cmdlet will leave the rule on the system, but put it in a disabled state so the rule no longer is applied and impacts traffic. A disabled firewall rule can be re-enabled by **Enable-NetFirewallRule**. This is different from the **Remove-NetFirewallRule**, which permanently removes the rule definition from the device.
+Rule objects can be disabled so that they're no longer active. In Windows PowerShell, the **Disable-NetFirewallRule** cmdlet will leave the rule on the system, but put it in a disabled state so the rule no longer is applied and impacts traffic. A disabled firewall rule can be re-enabled by **Enable-NetFirewallRule**. This cmdlet is different from the **Remove-NetFirewallRule**, which permanently removes the rule definition from the device.
 
 The following cmdlet deletes the specified existing firewall rule from the local policy store.
 
@@ -289,7 +278,7 @@ Windows PowerShell
 Remove-NetFirewallRule –Action Block
 ```
 
-Note that it may be safer to query the rules with the **Get** command and save it in a variable, observe the rules to be affected, then pipe them to the **Remove** command, just as we did for the **Set** commands. The following example shows how you can view all the blocking firewall rules, and then delete the first four rules.
+It may be safer to query the rules with the **Get** command and save it in a variable, observe the rules to be affected, then pipe them to the **Remove** command, just as we did for the **Set** commands. The following example shows how you can view all the blocking firewall rules, and then delete the first four rules.
 
 Windows PowerShell
 
@@ -311,7 +300,7 @@ Windows PowerShell
 Get-NetFirewallRule –CimSession RemoteDevice
 ```
 
-We can perform any modifications or view rules on remote  devices by simply using the *–CimSession* parameter. Here we remove a specific firewall rule from a remote device.
+We can perform any modifications or view rules on remote  devices by using the *–CimSession* parameter. Here we remove a specific firewall rule from a remote device.
 
 Windows PowerShell
 
@@ -328,7 +317,7 @@ Windows PowerShell can create powerful, complex IPsec policies like in Netsh and
 
 In Netsh, the authentication and cryptographic sets were specified as a list of comma-separated tokens in a specific format. In Windows PowerShell, rather than using default settings, you first create your desired authentication or cryptographic proposal objects and bundle them into lists in your preferred order. Then, you create one or more IPsec rules that reference these sets. The benefit of this model is that programmatic access to the information in the rules is much easier. See the following sections for clarifying examples.
 
-![object model for creating a single ipsec rule](images/createipsecrule.gif)
+![object model for creating a single ipsec rule.](images/createipsecrule.gif)
 
 ### Create IPsec rules
 
@@ -349,11 +338,11 @@ New-NetIPsecRule -DisplayName “Require Inbound Authentication” -PolicyStore 
 
 ### Add custom authentication methods to an IPsec rule
 
-If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](https://technet.microsoft.com/library/cc757847(WS.10).aspx) .
+If you want to create a custom set of quick-mode proposals that includes both AH and ESP in an IPsec rule object, you create the associated objects separately and link their associations. For more information about authentication methods, see [Choosing the IPsec Protocol](/previous-versions/windows/it-pro/windows-server-2003/cc757847(v=ws.10)) .
 
 You can then use the newly created custom quick-mode policies when you create IPsec rules. The cryptography set object is linked to an IPsec rule object.
 
-![crypto set object](images/qmcryptoset.gif)
+![crypto set object.](images/qmcryptoset.gif)
 
 In this example, we build on the previously created IPsec rule by specifying a custom quick-mode crypto set. The final IPsec rule requires outbound traffic to be authenticated by the specified cryptography method.
 
@@ -376,7 +365,7 @@ New-NetIPsecRule -DisplayName “Require Inbound Authentication” -InboundSecur
 
 A corporate network may need to secure communications with another agency. But, you discover the agency runs non-Windows operating systems and requires the use of the Internet Key Exchange Version 2 (IKEv2) standard.
 
-You can leverage IKEv2 capabilities in Windows Server 2012 by simply specifying IKEv2 as the key module in an IPsec rule. This can only be done using computer certificate authentication and cannot be used with phase 2 authentication.
+You can apply IKEv2 capabilities in Windows Server 2012 by specifying IKEv2 as the key module in an IPsec rule. This capability specification can only be done using computer certificate authentication and can't be used with phase-2 authentication.
 
 Windows PowerShell
 
@@ -390,9 +379,9 @@ For more info about IKEv2, including scenarios, see [Securing End-to-End IPsec C
 
 Firewall and IPsec rules with the same rule properties can be duplicated to simplify the task of re-creating them within different policy stores.
 
-To copy the previously created rule from one policy store to another, the associated objects must be also be copied separately. Note that there is no need to copy associated firewall filters. You can query rules to be copied in the same way as other cmdlets.
+To copy the previously created rule from one policy store to another, the associated objects must also be copied separately. There's no need to copy associated firewall filters. You can query rules to be copied in the same way as other cmdlets.
 
-Copying individual rules is a task that is not possible through the Netsh interface. Here is how you can accomplish it with Windows PowerShell.
+Copying individual rules is a task that isn't possible through the Netsh interface. Here's how you can accomplish it with Windows PowerShell.
 
 Windows PowerShell
 
@@ -404,7 +393,7 @@ $Rule | Copy-NetPhase1AuthSet –NewPolicyStore domain.costoso.com\new_gpo_name
 
 ### Handling Windows PowerShell errors
 
-To handle errors in your Windows PowerShell scripts, you can use the *–ErrorAction* parameter. This is especially useful with the **Remove** cmdlets. If you want to remove a particular rule, you will notice that it fails if the rule is not found. When removing rules, if the rule isn’t already there, it is generally acceptable to ignore that error. In this case, you can do the following to suppress any “rule not found” errors during the remove operation.
+To handle errors in your Windows PowerShell scripts, you can use the *–ErrorAction* parameter. This parameter is especially useful with the **Remove** cmdlets. If you want to remove a particular rule, you'll notice that it fails if the rule isn't found. When rules are being removed, if the rule isn’t already there, it's acceptable to ignore that error. In this case, you can do the following to suppress any “rule not found” errors during the remove operation.
 
 Windows PowerShell
 
@@ -412,7 +401,7 @@ Windows PowerShell
 Remove-NetFirewallRule –DisplayName “Contoso Messenger 98” –ErrorAction SilentlyContinue
 ```
 
-Note that the use of wildcards can also suppress errors, but they could potentially match rules that you did not intend to remove. This can be a useful shortcut, but should only be used if you know there aren’t any extra rules that will be accidentally deleted. So the following cmdlet will also remove the rule, suppressing any “not found” errors.
+The use of wildcards can also suppress errors, but they could potentially match rules that you didn't intend to remove. These wildcards can be a useful shortcut, but should only be used if you know there aren’t any extra rules that will be accidentally deleted. So the following cmdlet will also remove the rule, suppressing any “not found” errors.
 
 Windows PowerShell
 
@@ -448,7 +437,7 @@ Remove-NetFirewallRule –DisplayName “Contoso Messenger 98*” –Verbose
 
 The following Windows PowerShell commands are useful in the update cycle of a deployment phase.
 
-To allow you to view all the IPsec rules in a particular store, you can use the following commands. In Netsh, this command does not show rules where profile=domain,public or profile=domain,private. It only shows rules that have the single entry domain that is included in the rule. The following command examples will show the IPsec rules in all profiles.
+To allow you to view all the IPsec rules in a particular store, you can use the following commands. In Netsh, this command doesn't show rules where profile=domain,public or profile=domain,private. It only shows rules that have the single entry domain that is included in the rule. The following command examples will show the IPsec rules in all profiles.
 
 **Netsh**
 
@@ -480,7 +469,7 @@ Get-NetIPsecMainModeSA
 
 ### Find the source GPO of a rule
 
-To view the properties of a particular rule or group of rules, you query for the rule. When a query returns fields that are specified as **NotConfigured**, you can to determine which policy store a rule originates from.
+To view the properties of a particular rule or group of rules, you query for the rule. When a query returns fields that are specified as **NotConfigured**, you can determine which policy store a rule originates from.
 
 For objects that come from a GPO (the *–PolicyStoreSourceType* parameter is specified as **GroupPolicy** in the **Show** command), if *–TracePolicyStore* is passed, the name of the GPO is found and returned in the **PolicyStoreSource** field.
 
@@ -490,13 +479,13 @@ Windows PowerShell
 Get-NetIPsecRule –DisplayName “Require Inbound Authentication” –TracePolicyStore
 ```
 
-It is important to note that the revealed sources do not contain a domain name.
+It's important to note that the revealed sources don't contain a domain name.
 
 ### Deploy a basic domain isolation policy
 
 IPsec can be used to isolate domain members from non-domain members. Domain isolation uses IPsec authentication to require that the domain-joined devices positively establish the identities of the communicating devices to improve security of an organization. One or more features of IPsec can be used to secure traffic with an IPsec rule object.
 
-To implement domain isolation on your network, the devices in the domain receive IPsec rules that block unsolicited inbound network traffic that is not protected by IPsec. Here we create an IPsec rule that requires authentication by domain members. Through this, you can isolate domain-joined devices from devices that are not joined to a domain. In the following examples, Kerberos authentication is required for inbound traffic and requested for outbound traffic.
+To implement domain isolation on your network, the devices in the domain receive IPsec rules that block unsolicited inbound network traffic that isn't protected by IPsec. Here we create an IPsec rule that requires authentication by domain members. Through this authentication, you can isolate domain-joined devices from devices that aren't joined to a domain. In the following examples, Kerberos authentication is required for inbound traffic and requested for outbound traffic.
 
 **Netsh**
 
@@ -515,7 +504,7 @@ New-NetIPsecRule –DisplayName “Basic Domain Isolation Policy” –Profile D
 
 ### Configure IPsec tunnel mode
 
-The following command creates an IPsec tunnel that routes traffic from a private network (192.168.0.0/16) through an interface on the local device (1.1.1.1) attached to a public network to a second device through its public interface (2.2.2.2) to another private network (192.157.0.0/16). All traffic through the tunnel is checked for integrity by using ESP/SHA1, and it is encrypted by using ESP/DES3.
+The following command creates an IPsec tunnel that routes traffic from a private network (192.168.0.0/16) through an interface on the local device (1.1.1.1) attached to a public network to a second device through its public interface (2.2.2.2) to another private network (192.157.0.0/16). All traffic through the tunnel is checked for integrity by using ESP/SHA1, and it's encrypted by using ESP/DES3.
 
 **Netsh**
 
@@ -537,7 +526,7 @@ In situations where only secure traffic can be allowed through the Windows Defen
 
 ### Create a secure firewall rule (allow if secure)
 
-Configuring firewalls rule to allow connections if they are secure requires the corresponding traffic to be authenticated and integrity protected, and then optionally encrypted by IPsec.
+Configuring firewalls rule to allow connections if they're secure requires the corresponding traffic to be authenticated and integrity protected, and then optionally encrypted by IPsec.
 
 The following example creates a firewall rule that requires traffic to be authenticated. The command permits inbound Telnet network traffic only if the connection from the remote device is authenticated by using a separate IPsec rule.
 
@@ -578,7 +567,7 @@ New-NetIPSecRule -DisplayName “Authenticate Both Computer and User” -Inbound
 
 To improve the security of the  devices in an organization, you can deploy domain isolation in which domain-members are restricted. They require authentication when communicating among each other and reject non-authenticated inbound connections. To improve the security of servers with sensitive data, this data must be protected by allowing access only to a subset of devices within the enterprise domain.
 
-IPsec can provide this additional layer of protection by isolating the server. In server isolation, sensitive data access is restricted to users and devices with legitimate business need, and the data is additionally encrypted to prevent eavesdropping.
+IPsec can provide this extra layer of protection by isolating the server. In server isolation, sensitive data access is restricted to users and devices with legitimate business need, and the data is additionally encrypted to prevent eavesdropping.
 
 ### Create a firewall rule that requires group membership and encryption
 
@@ -586,7 +575,7 @@ To deploy server isolation, we layer a firewall rule that restricts traffic to a
 
 The following firewall rule allows Telnet traffic from user accounts that are members of a custom group called “Authorized to Access Server.” This access can additionally be restricted based on the  device, user, or both by specifying the restriction parameters.
 
-A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](https://technet.microsoft.com/library/cc753463(WS.10).aspx#bkmk_FINDSID).
+A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)#bkmk_FINDSID).
 
 Restricting access to a group allows administrations to extend strong authentication support through Windows Defender Firewall and/or IPsec policies.
 
@@ -608,9 +597,9 @@ Windows PowerShell
 $secureMachineGroup = "D:(A;;CC;;;$SIDofSecureMachineGroup)"
 ```
 
-For more information about how to create security groups or how to determine the SDDL string, see [Working with SIDs](https://technet.microsoft.com/library/ff730940.aspx).
+For more information about how to create security groups or how to determine the SDDL string, see [Working with SIDs](/previous-versions/windows/it-pro/windows-powershell-1.0/ff730940(v=technet.10)).
 
-Telnet is an application that does not provide encryption. This application can send data, such as names and passwords, over the network. This data can be intercepted by malicious users. If an administrator would like to allow the use of Telnet, but protect the traffic, a firewall rule that requires IPsec encryption can be created. This is necessary so that the administrator can be certain that when this application is used, all of the traffic sent or received by this port is encrypted. If IPsec fails to authorize the connection, no traffic is allowed from this application.
+Telnet is an application that doesn't provide encryption. This application can send data, such as names and passwords, over the network. This data can be intercepted by malicious users. If an administrator would like to allow the use of Telnet, but protect the traffic, a firewall rule that requires IPsec encryption can be created. This firewall rule is necessary so that the administrator can be certain that when this application is used, all of the traffic sent or received by this port is encrypted. If IPsec fails to authorize the connection, no traffic is allowed from this application.
 
 In this example, we allow only authenticated and encrypted inbound Telnet traffic from a specified secure user group through the creation of the following firewall rule.
 
@@ -641,7 +630,7 @@ Set-NetFirewallSetting -RemoteMachineTransportAuthorizationList $secureMachineGr
 
 ### Create firewall rules that allow IPsec-protected network traffic (authenticated bypass)
 
-Authenticated bypass allows traffic from a specified trusted  device or user to override firewall block rules. This is helpful when an administrator wants to use scanning servers to monitor and update  devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](https://technet.microsoft.com/library/cc753463(WS.10).aspx).
+Authenticated bypass allows traffic from a specified trusted device or user to override firewall block rules. This override is helpful when an administrator wants to use scanning servers to monitor and update devices without the need to use port-level exceptions. For more information, see [How to enable authenticated firewall bypass](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753463(v=ws.10)).
 
 In this example, we assume that a blocking firewall rule exists. This example permits any network traffic on any port from any IP address to override the block rule, if the traffic is authenticated as originating from a  device or user account that is a member of the specified  device or user security group.
 
@@ -658,48 +647,43 @@ Windows PowerShell
 New-NetFirewallRule –DisplayName “Inbound Secure Bypass Rule" –Direction Inbound –Authentication Required –OverrideBlockRules $true -RemoteMachine $secureMachineGroup –RemoteUser $secureUserGroup –PolicyStore domain.contoso.com\domain_isolation
 ```
 
-## Additional resources
+## Other resources
 
 
 For more information about Windows PowerShell concepts, see the following topics.
 
--   [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?linkid=113440)
+-   [Windows PowerShell Getting Started Guide](/powershell/scripting/overview)
 
--   [Windows PowerShell User Guide](https://go.microsoft.com/fwlink/p/?linkid=113441)
+-   [Windows PowerShell User Guide](/powershell/scripting/overview)
 
 -   [Windows PowerShell About Help Topics](https://go.microsoft.com/fwlink/p/?linkid=113206)
 
--   [about\_Functions](https://go.microsoft.com/fwlink/p/?linkid=113231)
+-   [about\_Functions](/powershell/module/microsoft.powershell.core/about/about_functions)
 
--   [about\_Functions\_Advanced](https://go.microsoft.com/fwlink/p/?linkid=144511)
+-   [about\_Functions\_Advanced](/powershell/module/microsoft.powershell.core/about/about_functions_advanced)
 
--   [about\_Execution\_Policies](https://go.microsoft.com/fwlink/p/?linkid=135170)
+-   [about\_Execution\_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies)
 
--   [about\_Foreach](https://go.microsoft.com/fwlink/p/?linkid=113229)
+-   [about\_Foreach](/powershell/module/microsoft.powershell.core/about/about_foreach)
 
--   [about\_Objects](https://go.microsoft.com/fwlink/p/?linkid=113241)
+-   [about\_Objects](/powershell/module/microsoft.powershell.core/about/about_objects)
 
--   [about\_Properties](https://go.microsoft.com/fwlink/p/?linkid=113249)
+-   [about\_Properties](/powershell/module/microsoft.powershell.core/about/about_properties)
 
--   [about\_While](https://go.microsoft.com/fwlink/p/?linkid=113275)
+-   [about\_While](/powershell/module/microsoft.powershell.core/about/about_while)
 
--   [about\_Scripts](https://go.microsoft.com/fwlink/p/?linkid=144310)
+-   [about\_Scripts](/powershell/module/microsoft.powershell.core/about/about_scripts)
 
--   [about\_Signing](https://go.microsoft.com/fwlink/p/?linkid=113268)
+-   [about\_Signing](/powershell/module/microsoft.powershell.core/about/about_signing)
 
--   [about\_Throw](https://go.microsoft.com/fwlink/p/?linkid=145153)
+-   [about\_Throw](/powershell/module/microsoft.powershell.core/about/about_throw)
 
--   [about\_PSSessions](https://go.microsoft.com/fwlink/p/?linkid=135181)
+-   [about\_PSSessions](/powershell/module/microsoft.powershell.core/about/about_pssessions)
 
--   [about\_Modules](https://go.microsoft.com/fwlink/p/?linkid=144311)
+-   [about\_Modules](/powershell/module/microsoft.powershell.core/about/about_modules)
 
--   [about\_Command\_Precedence](https://go.microsoft.com/fwlink/p/?linkid=113214)
-
- 
+-   [about\_Command\_Precedence](/powershell/module/microsoft.powershell.core/about/about_command_precedence)
 
  
 
-
-
-
-
+ 

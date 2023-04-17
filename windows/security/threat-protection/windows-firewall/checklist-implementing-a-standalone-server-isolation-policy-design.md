@@ -1,30 +1,18 @@
 ---
-title: Checklist Implementing a Standalone Server Isolation Policy Design (Windows 10)
-description: Use these tasks to create a server isolation policy design that is not part of an isolated domain. See references to concepts and links to other checklists.
-ms.assetid: 50a997d8-f079-408c-8ac6-ecd02078ade3
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+title: Checklist Implementing a Standalone Server Isolation Policy Design (Windows)
+description: Use these tasks to create a server isolation policy design that isn't part of an isolated domain. See references to concepts and links to other checklists.
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Implementing a Standalone Server Isolation Policy Design
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-This checklist contains procedures for creating a server isolation policy design that is not part of an isolated domain. For the steps required to create an isolated server zone within an isolated domain, see [Checklist: Configuring Rules for an Isolated Server Zone](checklist-configuring-rules-for-an-isolated-server-zone.md).
+This checklist contains procedures for creating a server isolation policy design that isn't part of an isolated domain. For information on the steps required to create an isolated server zone within an isolated domain, see [Checklist: Configuring Rules for an Isolated Server Zone](checklist-configuring-rules-for-an-isolated-server-zone.md).
 
 This parent checklist includes cross-reference links to important concepts about the domain isolation policy design. It also contains links to subordinate checklists that will help you complete the tasks that are required to implement this design.
 

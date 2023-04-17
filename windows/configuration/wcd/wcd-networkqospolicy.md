@@ -1,15 +1,15 @@
 ---
 title: NetworkQoSPolicy (Windows 10)
 description: This section describes the NetworkQoSPolicy settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # NetworkQoSPolicy (Windows Configuration Designer reference)
@@ -18,11 +18,11 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   |  | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |   | ✔️ |  |  |
 
-1. In **Available customizations**, select **NetworkQ0SPolicy**, enter a friendly name for the account, and then click **Add**.
+1. In **Available customizations**, select **NetworkQoSPolicy**, enter a friendly name for the account, and then click **Add**.
 2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure. 
 
 | Setting | Description |
@@ -36,4 +36,4 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 
 ## Related topics
 
-- [NetworkQoSPolicy configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp)
+- [NetworkQoSPolicy configuration service provider (CSP)](/windows/client-management/mdm/networkqospolicy-csp)

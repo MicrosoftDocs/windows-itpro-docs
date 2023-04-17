@@ -1,16 +1,15 @@
 ---
 title: AccountManagement (Windows 10)
 description: This section describes the account management settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # AccountManagement (Windows Configuration Designer reference)
@@ -19,13 +18,13 @@ Use these settings to configure the Account Manager service.
 
 ## Applies to
 
-| Settings | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [DeletionPolicy](#deletionpolicy) |  |  |  | X |  |
-| [EnableProfileManager](#enableprofilemanager) |  |  |  | X |  |
-| [ProfileInactivityThreshold](#profileinactivitythreshold) |  |  |  | X |  |
-| [StorageCapacityStartDeletion](#storagecapacitystartdeletion) |  |  |  | X |  |
-| [StorageCapacityStopDeletion](#storagecapacitystopdeletion) |  |  |  | X |  |
+| Settings | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [DeletionPolicy](#deletionpolicy) |  |  | ✔️ |  |
+| [EnableProfileManager](#enableprofilemanager) |  |  | ✔️ |  |
+| [ProfileInactivityThreshold](#profileinactivitythreshold) |  |  | ✔️ |  |
+| [StorageCapacityStartDeletion](#storagecapacitystartdeletion) |  |  | ✔️ |  |
+| [StorageCapacityStopDeletion](#storagecapacitystopdeletion) |  |  | ✔️ |  |
 
 >[!NOTE]
 >Although the AccountManagement settings are available in advanced provisioning for other editions, you should only use them for HoloLens devices.

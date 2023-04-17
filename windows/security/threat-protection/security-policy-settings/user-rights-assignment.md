@@ -3,25 +3,28 @@ title: User Rights Assignment (Windows 10)
 description: Provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in Windows.
 ms.assetid: 99340252-60be-4c79-b0a5-56fbe1a9b0c5
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 12/16/2021
+ms.technology: itpro-security
 ---
 
 # User Rights Assignment
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 
 Provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in Windows.
 User rights govern the methods by which a user can log on to a system. User rights are applied at the local device level, and they allow users to perform tasks on a device or in a domain. User rights include logon rights and permissions. Logon rights control who is authorized to log on to a device and how they can log on. User rights permissions control access to computer and domain resources, and they can override permissions that have been set on specific objects. User rights are managed in Group Policy under the **User Rights Assignment** item.

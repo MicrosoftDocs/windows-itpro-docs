@@ -1,110 +1,80 @@
 ---
-title: Policy CSP - Bitlocker
-description: Use the Policy configuration service provider (CSP) - Bitlocker to manage encryption of PCs and devices.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Bitlocker Policy CSP
+description: Learn more about the Bitlocker Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Bitlocker-Begin -->
 # Policy CSP - Bitlocker
 
-
-
+<!-- Bitlocker-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
+> To manage encryption of PCs and devices, use [BitLocker CSP](./bitlocker-csp.md).
+<!-- Bitlocker-Editable-End -->
 
-<hr/>
+<!-- EncryptionMethod-Begin -->
+## EncryptionMethod
 
-<!--Policies-->
-## Bitlocker policies  
+<!-- EncryptionMethod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- EncryptionMethod-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
-  </dd>
-</dl>
+<!-- EncryptionMethod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Bitlocker/EncryptionMethod
+```
+<!-- EncryptionMethod-OmaUri-End -->
 
+<!-- EncryptionMethod-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy specifies the BitLocker Drive Encryption method and cipher strength.
+<!-- EncryptionMethod-Description-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies the BitLocker Drive Encryption method and cipher strength.
-
-> [!NOTE]
-> XTS-AES 128-bit and XTS-AES 256-bit values are supported only on Windows 10 for desktop.
-
-<!--/Description-->
-<!--SupportedValues-->
+<!-- EncryptionMethod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The following list shows the supported values:
 
--   3 - AES-CBC 128-bit
--   4 - AES-CBC 256-bit
--   6 - XTS-AES 128-bit (Desktop only)
--   7 - XTS-AES 256-bit (Desktop only)
+- 3 - AES-CBC 128-bit
+- 4 - AES-CBC 256-bit
+- 6 - XTS-AES 128-bit
+- 7 - XTS-AES 256-bit
+<!-- EncryptionMethod-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- EncryptionMethod-DFProperties-Begin -->
+**Description framework properties**:
 
-Footnotes:
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 6 |
+<!-- EncryptionMethod-DFProperties-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- EncryptionMethod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EncryptionMethod-Examples-End -->
 
-<!--/Policies-->
+<!-- EncryptionMethod-End -->
 
+<!-- Bitlocker-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Bitlocker-CspMoreInfo-End -->
+
+<!-- Bitlocker-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

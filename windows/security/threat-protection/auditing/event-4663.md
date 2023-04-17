@@ -2,23 +2,20 @@
 title: 4663(S) An attempt was made to access an object. (Windows 10)
 description: Describes security event 4663(S) An attempt was made to access an object.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4663(S): An attempt was made to access an object.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4663.png" alt="Event 4663 illustration" width="530" height="589" hspace="10" align="left" />
@@ -29,7 +26,7 @@ ms.technology: mde
 
 This event indicates that a specific operation was performed on an object. The object could be a file system, kernel, or registry object, or a file system object on removable storage or a device.
 
-This event generates only if object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) has required ACE to handle specific access right use.
+This event generates only if object’s [SACL](/windows/win32/secauthz/access-control-lists) has required ACE to handle specific access right use.
 
 The main difference with “[4656](event-4656.md): A handle to an object was requested.” event is that 4663 shows that access right was used instead of just requested and 4663 doesn’t have Failure events.
 
@@ -105,7 +102,7 @@ The main difference with “[4656](event-4656.md): A handle to an object was req
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -166,7 +163,7 @@ The main difference with “[4656](event-4656.md): A handle to an object was req
 | AppendData (or AddSubdirectory or CreatePipeInstance)                                  | 0x4,<br>%%4418              | **AppendData -** For a file object, the right to append data to the file. (For local files, write operations will not overwrite existing data if this flag is specified without **FILE\_WRITE\_DATA**.) For a directory object, the right to create a subdirectory (**FILE\_ADD\_SUBDIRECTORY**). <br>**AddSubdirectory -** For a directory, the right to create a subdirectory.<br>**CreatePipeInstance -** For a named pipe, the right to create a pipe.                                                                                                                                                                                                                                                              |
 | ReadEA<br>(For registry objects, this is “Enumerate sub-keys.”)                        | 0x8,<br>%%4419               | The right to read extended file attributes.                                                                                                                             |
 | WriteEA                                                                                | 0x10,<br>%%4420              | The right to write extended file attributes.                                                                                                                                                                                                                                               |
-| Execute/Traverse                                                                       | 0x20,<br>%%4421               | **Execute** - For a native code file, the right to execute the file. This access right given to scripts may cause the script to be executable, depending on the script interpreter.<br>**Traverse -** For a directory, the right to traverse the directory. By default, users are assigned the **BYPASS\_TRAVERSE\_CHECKING**&thinsp; [privilege](https://msdn.microsoft.com/library/windows/desktop/aa379306(v=vs.85).aspx), which ignores the **FILE\_TRAVERSE**&thinsp; [access right](https://msdn.microsoft.com/library/windows/desktop/aa374902(v=vs.85).aspx). See the remarks in [File Security and Access Rights](https://msdn.microsoft.com/library/windows/desktop/aa364399(v=vs.85).aspx) for more information.                                                       |
+| Execute/Traverse                                                                       | 0x20,<br>%%4421               | **Execute** - For a native code file, the right to execute the file. This access right given to scripts may cause the script to be executable, depending on the script interpreter.<br>**Traverse -** For a directory, the right to traverse the directory. By default, users are assigned the **BYPASS\_TRAVERSE\_CHECKING**&thinsp; [privilege](/windows/win32/secauthz/privileges), which ignores the **FILE\_TRAVERSE**&thinsp; [access right](/windows/win32/secauthz/access-rights-and-access-masks). See the remarks in [File Security and Access Rights](/windows/win32/fileio/file-security-and-access-rights) for more information.                                                       |
 | DeleteChild                                                                            | 0x40,<br>%%4422               | For a directory, the right to delete a directory and all the files it contains, including read-only files.                                                                                                                                                                                                                               |
 | ReadAttributes                                                                         | 0x80,<br>%%4423               | The right to read file attributes.                                                                                                                                                                              |
 | WriteAttributes                                                                        | 0x100,<br>%%4424              | The right to write file attributes.                                                                                                                                     |
@@ -226,4 +223,3 @@ For other types of objects, the following recommendations apply.
     -   WRITE\_DAC
 
     -   WRITE\_OWNER
-

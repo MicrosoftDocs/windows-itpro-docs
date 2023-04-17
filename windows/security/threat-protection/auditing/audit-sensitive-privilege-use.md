@@ -3,23 +3,20 @@ title: Audit Sensitive Privilege Use (Windows 10)
 description: The policy setting, Audit Sensitive Privilege Use, determines if the operating system generates audit events when sensitive privileges (user rights) are used.
 ms.assetid: 915abf50-42d2-45f6-9fd1-e7bd201b193d
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Sensitive Privilege Use
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Sensitive Privilege Use contains events that show the usage of sensitive privileges. This is the list of sensitive privileges:
@@ -50,7 +47,7 @@ Audit Sensitive Privilege Use contains events that show the usage of sensitive p
 
 -   Take ownership of files or other objects
 
-The use of two privileges, “Back up files and directories” and “Restore files and directories,” generate events only if the “[Audit: Audit the use of Backup and Restore privilege](https://technet.microsoft.com/library/jj852206.aspx)” Group Policy setting is enabled on the computer or device. We do not recommend enabling this Group Policy setting because of the high number of events recorded.
+The use of two privileges, “Back up files and directories” and “Restore files and directories,” generate events only if the “[Audit: Audit the use of Backup and Restore privilege](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852206(v=ws.11))” Group Policy setting is enabled on the computer or device. We do not recommend enabling this Group Policy setting because of the high number of events recorded.
 
 This subcategory also contains informational events from the file system Transaction Manager.
 
@@ -74,5 +71,3 @@ If you configure this policy setting, an audit event is generated when sensitive
 
 >[!NOTE] 
 > The event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](audit-file-system.md) subcategory also generates in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](audit-file-system.md) subcategory.
-
-

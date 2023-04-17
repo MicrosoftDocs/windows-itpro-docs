@@ -2,26 +2,24 @@
 title: 4621(S) Administrator recovered system from CrashOnAuditFail. (Windows 10)
 description: Describes security event 4621(S) Administrator recovered system from CrashOnAuditFail.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4621(S): Administrator recovered system from CrashOnAuditFail.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
-This event is logged after a system reboots following [CrashOnAuditFail](https://technet.microsoft.com/library/cc963220.aspx?f=255&MSPPError=-2147217396). It generates when CrashOnAuditFail = 2.
+This event is logged after a system reboots following [CrashOnAuditFail](/previous-versions/windows/it-pro/windows-2000-server/cc963220(v=technet.10)?f=255&MSPPError=-2147217396). It generates when CrashOnAuditFail = 2.
 
 There is no example of this event in this document.
 
@@ -43,7 +41,6 @@ There is no example of this event in this document.
 
 ## Security Monitoring Recommendations
 
--   We recommend triggering an alert for any occurrence of this event. The event shows that the system halted because it could not record an auditable event in the Security Log, as described in [CrashOnAuditFail](https://technet.microsoft.com/library/cc963220.aspx?f=255&MSPPError=-2147217396).
+-   We recommend triggering an alert for any occurrence of this event. The event shows that the system halted because it could not record an auditable event in the Security Log, as described in [CrashOnAuditFail](/previous-versions/windows/it-pro/windows-2000-server/cc963220(v=technet.10)?f=255&MSPPError=-2147217396).
 
--   If your computers don’t have the [CrashOnAuditFail](https://technet.microsoft.com/library/cc963220.aspx?f=255&MSPPError=-2147217396) flag enabled, then this event will be a sign that some settings are not set to baseline settings or were changed.
-
+-   If your computers don’t have the [CrashOnAuditFail](/previous-versions/windows/it-pro/windows-2000-server/cc963220(v=technet.10)?f=255&MSPPError=-2147217396) flag enabled, then this event will be a sign that some settings are not set to baseline settings or were changed.

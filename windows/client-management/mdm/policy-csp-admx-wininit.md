@@ -1,258 +1,215 @@
 ---
-title: Policy CSP - ADMX_WinInit
-description: Policy CSP - ADMX_WinInit
-ms.author: dansimp
+title: ADMX_WinInit Policy CSP
+description: Learn more about the ADMX_WinInit Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 09/29/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_WinInit-Begin -->
 # Policy CSP - ADMX_WinInit
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_WinInit policies  
-
-<dl>
-  <dd>
-    <a href="#admx-wininit-disablenamedpipeshutdownpolicydescription">ADMX_WinInit/DisableNamedPipeShutdownPolicyDescription</a>
-  </dd>
-  <dd>
-    <a href="#admx-wininit-hiberboot">ADMX_WinInit/Hiberboot</a>
-  </dd>
-  <dd>
-    <a href="#admx-wininit-shutdowntimeouthungsessionsdescription">ADMX_WinInit/ShutdownTimeoutHungSessionsDescription</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-wininit-disablenamedpipeshutdownpolicydescription"></a>**ADMX_WinInit/DisableNamedPipeShutdownPolicyDescription**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shutdown this system from a remote Windows XP or Windows Server 2003 system.
-
-If you enable this policy setting, the system does not create the named pipe remote shutdown interface.
-
-If you disable or do not configure this policy setting, the system creates the named pipe remote shutdown interface.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off legacy remote shutdown interface*
--   GP name: *DisableNamedPipeShutdownPolicyDescription*
--   GP path: *Windows Components\Shutdown Options*
--   GP ADMX file name: *WinInit.admx*
+<!-- ADMX_WinInit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WinInit-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableNamedPipeShutdownPolicyDescription-Begin -->
+## DisableNamedPipeShutdownPolicyDescription
 
-<!--Policy-->
-<a href="" id="admx-wininit-hiberboot"></a>**ADMX_WinInit/Hiberboot**  
+<!-- DisableNamedPipeShutdownPolicyDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableNamedPipeShutdownPolicyDescription-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableNamedPipeShutdownPolicyDescription-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WinInit/DisableNamedPipeShutdownPolicyDescription
+```
+<!-- DisableNamedPipeShutdownPolicyDescription-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableNamedPipeShutdownPolicyDescription-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shutdown this system from a remote Windows XP or Windows Server 2003 system.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, the system does not create the named pipe remote shutdown interface.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable or do not configure this policy setting, the system creates the named pipe remote shutdown interface.
+<!-- DisableNamedPipeShutdownPolicyDescription-Description-End -->
 
-<hr/>
+<!-- DisableNamedPipeShutdownPolicyDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableNamedPipeShutdownPolicyDescription-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls the use of fast startup.  
+<!-- DisableNamedPipeShutdownPolicyDescription-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, the system requires hibernate to be enabled.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableNamedPipeShutdownPolicyDescription-DFProperties-End -->
 
-If you disable or do not configure this policy setting, the local setting is used.
-
-<!--/Description-->
+<!-- DisableNamedPipeShutdownPolicyDescription-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Require use of fast startup*
--   GP name: *Hiberboot*
--   GP path: *System\Shutdown*
--   GP ADMX file name: *WinInit.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableNamedPipeShutdownPolicyDescription |
+| Friendly Name | Turn off legacy remote shutdown interface |
+| Location | Computer Configuration |
+| Path | Windows Components > Shutdown Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DisableShutdownNamedPipe |
+| ADMX File Name | WinInit.admx |
+<!-- DisableNamedPipeShutdownPolicyDescription-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-wininit-shutdowntimeouthungsessionsdescription"></a>**ADMX_WinInit/ShutdownTimeoutHungSessionsDescription**  
+<!-- DisableNamedPipeShutdownPolicyDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableNamedPipeShutdownPolicyDescription-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableNamedPipeShutdownPolicyDescription-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Hiberboot-Begin -->
+## Hiberboot
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Hiberboot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Hiberboot-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Hiberboot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WinInit/Hiberboot
+```
+<!-- Hiberboot-OmaUri-End -->
 
-<hr/>
+<!-- Hiberboot-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls the use of fast startup.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the number of minutes the system waits for the hung logon sessions before proceeding with the system shutdown.
+- If you enable this policy setting, the system requires hibernate to be enabled.
 
-If you enable this policy setting, the system waits for the hung logon sessions for the number of minutes specified.
+- If you disable or do not configure this policy setting, the local setting is used.
+<!-- Hiberboot-Description-End -->
 
-If you disable or do not configure this policy setting, the default timeout value is 3 minutes for workstations and 15 minutes for servers.
+<!-- Hiberboot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Hiberboot-Editable-End -->
 
-<!--/Description-->
+<!-- Hiberboot-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Hiberboot-DFProperties-End -->
+
+<!-- Hiberboot-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Timeout for hung logon sessions during shutdown*
--   GP name: *ShutdownTimeoutHungSessionsDescription*
--   GP path: *Windows Components\Shutdown Options*
--   GP ADMX file name: *WinInit.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Hiberboot |
+| Friendly Name | Require use of fast startup |
+| Location | Computer Configuration |
+| Path | System > Shutdown |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | HiberbootEnabled |
+| ADMX File Name | WinInit.admx |
+<!-- Hiberboot-AdmxBacked-End -->
 
-Footnotes:
+<!-- Hiberboot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Hiberboot-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- Hiberboot-End -->
 
-<!--/Policies-->
+<!-- ShutdownTimeoutHungSessionsDescription-Begin -->
+## ShutdownTimeoutHungSessionsDescription
 
+<!-- ShutdownTimeoutHungSessionsDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShutdownTimeoutHungSessionsDescription-Applicability-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WinInit/ShutdownTimeoutHungSessionsDescription
+```
+<!-- ShutdownTimeoutHungSessionsDescription-OmaUri-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the number of minutes the system waits for the hung logon sessions before proceeding with the system shutdown.
+
+- If you enable this policy setting, the system waits for the hung logon sessions for the number of minutes specified.
+
+- If you disable or do not configure this policy setting, the default timeout value is 3 minutes for workstations and 15 minutes for servers.
+<!-- ShutdownTimeoutHungSessionsDescription-Description-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShutdownTimeoutHungSessionsDescription-Editable-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShutdownTimeoutHungSessionsDescription-DFProperties-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ShutdownTimeoutHungSessionsDescription |
+| Friendly Name | Timeout for hung logon sessions during shutdown |
+| Location | Computer Configuration |
+| Path | Windows Components > Shutdown Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | WinInit.admx |
+<!-- ShutdownTimeoutHungSessionsDescription-AdmxBacked-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShutdownTimeoutHungSessionsDescription-Examples-End -->
+
+<!-- ShutdownTimeoutHungSessionsDescription-End -->
+
+<!-- ADMX_WinInit-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WinInit-CspMoreInfo-End -->
+
+<!-- ADMX_WinInit-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -2,23 +2,20 @@
 title: 4714(S) Encrypted data recovery policy was changed. (Windows 10)
 description: Describes security event 4714(S) Encrypted data recovery policy was changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4714(S): Encrypted data recovery policy was changed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4714.png" alt="Event 4714 illustration" width="449" height="317" hspace="10" align="left" />
@@ -27,11 +24,11 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates when a Data Recovery Agent group policy for Encrypting File System ([EFS](https://technet.microsoft.com/library/cc700811.aspx)) has changed.
+This event generates when a Data Recovery Agent group policy for Encrypting File System ([EFS](/previous-versions/tn-archive/cc700811(v=technet.10))) has changed.
 
-This event generates when a Data Recovery Agent certificate or [Data Recovery Agent policy](https://technet.microsoft.com/library/cc778208(v=ws.10).aspx) was changed for the computer or device.
+This event generates when a Data Recovery Agent certificate or [Data Recovery Agent policy](/previous-versions/windows/it-pro/windows-server-2003/cc778208(v=ws.10)) was changed for the computer or device.
 
-In the background, this event generates when the [\\HKLM\\Software\\Policies\\Microsoft\\SystemCertificates\\EFS\\EfsBlob](https://msdn.microsoft.com/library/cc232284.aspx) registry value is changed during a Group Policy update.
+In the background, this event generates when the [\\HKLM\\Software\\Policies\\Microsoft\\SystemCertificates\\EFS\\EfsBlob](/openspecs/windows_protocols/ms-gpef/34fd0504-84fc-4ad9-97ac-ee74b84419ac) registry value is changed during a Group Policy update.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -76,4 +73,3 @@ In the background, this event generates when the [\\HKLM\\Software\\Policies\\Mi
 For 4714(S): Encrypted data recovery policy was changed.
 
 -   We recommend monitoring this event and if the change was not planned, investigate the reason for the change.
-

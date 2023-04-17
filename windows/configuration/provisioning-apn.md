@@ -1,17 +1,15 @@
 ---
 title: Configure cellular settings for tablets and PCs (Windows 10)
 description: Enterprises can provision cellular settings for tablets and PC with built-in cellular modems or plug-in USB modem dongles.
-ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
 ms.reviewer: 
-manager: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/13/2018
+ms.technology: itpro-configure
 ---
 
 # Configure cellular settings for tablets and PCs
@@ -53,11 +51,11 @@ For users who work in different locations, you can configure one APN to connect 
 
 5. Enter a name for the connection, and then click **Add**.
 
-    ![Example of APN connection name](images/apn-add.png)
+    ![Example of APN connection name.](images/apn-add.png)
     
 6. The connection appears in the **Available customizations** pane. Select it to view the settings that you can configure for the connection.
 
-    ![settings for new connection](images/apn-add-details.png)
+    ![settings for new connection.](images/apn-add-details.png)
     
 7. The following table describes the settings available for the connection.
 

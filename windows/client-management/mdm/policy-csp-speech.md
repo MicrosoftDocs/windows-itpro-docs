@@ -1,110 +1,98 @@
 ---
-title: Policy CSP - Speech
-description: Learn how the Policy CSP - Speech setting specifies whether the device will receive updates to the speech recognition and speech synthesis models.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Speech Policy CSP
+description: Learn more about the Speech Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Speech-Begin -->
 # Policy CSP - Speech
 
+<!-- Speech-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Speech-Editable-End -->
 
+<!-- AllowSpeechModelUpdate-Begin -->
+## AllowSpeechModelUpdate
 
-<hr/>
+<!-- AllowSpeechModelUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSpeechModelUpdate-Applicability-End -->
 
-<!--Policies-->
-## Speech policies  
+<!-- AllowSpeechModelUpdate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Speech/AllowSpeechModelUpdate
+```
+<!-- AllowSpeechModelUpdate-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a>
-  </dd>
-</dl>
+<!-- AllowSpeechModelUpdate-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether the device will receive updates to the speech recognition and speech synthesis models.
 
+A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files.
 
-<hr/>
+If enabled (default), the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
+<!-- AllowSpeechModelUpdate-Description-End -->
 
-<!--Policy-->
-<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
+<!-- AllowSpeechModelUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSpeechModelUpdate-Editable-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+<!-- AllowSpeechModelUpdate-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSpeechModelUpdate-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSpeechModelUpdate-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSpeechModelUpdate-AllowedValues-End -->
 
-<hr/>
+<!-- AllowSpeechModelUpdate-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
+| Name | Value |
+|:--|:--|
+| Name | AllowSpeechModelUpdate |
+| Friendly Name | Allow Automatic Update of Speech Data |
+| Location | Computer Configuration |
+| Path | Windows Components > Speech |
+| Registry Key Name | Software\Policies\Microsoft\Speech |
+| Registry Value Name | AllowSpeechModelUpdate |
+| ADMX File Name | Speech.admx |
+<!-- AllowSpeechModelUpdate-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow Automatic Update of Speech Data*
--   GP name: *AllowSpeechModelUpdate*
--   GP path: *Windows Components/Speech*
--   GP ADMX file name: *Speech.admx*
+<!-- AllowSpeechModelUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSpeechModelUpdate-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowSpeechModelUpdate-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- Speech-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Speech-CspMoreInfo-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- Speech-End -->
 
-Footnotes:
+## Related articles
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

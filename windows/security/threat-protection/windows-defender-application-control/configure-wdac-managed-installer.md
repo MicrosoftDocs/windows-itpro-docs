@@ -1,161 +1,119 @@
 ---
-title: Configure a WDAC managed installer (Windows 10)
+title: Managed installer and ISG technical reference and troubleshooting guide (Windows)
 description: Explains how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 08/14/2020
-ms.technology: mde
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/11/2022
+ms.technology: itpro-security
+ms.topic: article
 ---
 
-# Configuring a managed installer with AppLocker and Windows Defender Application Control
+# Managed installer and ISG technical reference and troubleshooting guide
 
 **Applies to:**
 
 - Windows 10
-- Windows Server 2019
+- Windows 11
+- Windows Server 2019 and above
 
-Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled.
-There are three primary steps to keep in mind:
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](feature-availability.md).
 
-- Specify managed installers by using the Managed Installer rule collection in AppLocker policy.
-- Enable service enforcement in AppLocker policy.
-- Enable the managed installer option in a WDAC policy.
+## Enabling managed installer and Intelligent Security Graph (ISG) logging events
 
-## Specify managed installers using the Managed Installer rule collection in AppLocker policy
+Refer to [Understanding Application Control Events](event-id-explanations.md#diagnostic-events-for-intelligent-security-graph-isg-and-managed-installer-mi) for information on enabling optional managed installer diagnostic events.
 
-The identity of the managed installer executable(s) is specified in an AppLocker policy in a Managed Installer rule collection.
+## Using fsutil to query extended attributes for Managed Installer (MI)
 
-### Create Managed Installer rule collection
+Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) enabled can use fsutil.exe to determine whether a file was created by a managed installer process. This verification is done by querying the Extended Attributes (EAs) on a file using fsutil.exe and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. Then, you can use the data from the first row of output to identify if the file was created by a managed installer. For example, let's look at the fsutil.exe output for a file called application.exe:
 
-Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
+**Example:**
 
-1. Use [New-AppLockerPolicy](https://docs.microsoft.com/powershell/module/applocker/new-applockerpolicy?view=win10-ps) to make an EXE rule for the file you are designating as a managed installer. Note that only EXE file types can be designated as managed installers. Below is an example using the rule type Publisher with a hash fallback, but other rule types can be used as well. You may need to reformat the output for readability.
+```powershell
+fsutil.exe file queryEA C:\Users\Temp\Downloads\application.exe
 
-    ```powershell
-    Get-ChildItem <exe filepath> | Get-AppLockerFileInformation | New-AppLockerPolicy -RuleType Publisher, Hash -User Everyone -Xml > AppLocker_MI_PS_ISE.xml
-    ```
+Extended Attributes (EA) information for file C:\Users\Temp\Downloads\application.exe:
 
-2. Manually rename the rule collection to ManagedInstaller
-
-    Change
-
-    ```powershell
-    <RuleCollection Type="Exe" EnforcementMode="NotConfigured">
-    ```
-
-    to
-
-    ```powershell
-    <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
-    ```
-
-An example of a valid Managed Installer rule collection using Microsoft Endpoint Config Manager (MEMCM) is shown below.
-
-```xml
-<RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
-    <FilePublisherRule Id="6cc9a840-b0fd-4f86-aca7-8424a22b4b93" Name="MEMCM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMEXEC.EXE">
-          <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="780ae2d3-5047-4240-8a57-767c251cbb12" Name="MEMCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMSETUP.EXE">
-          <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-</RuleCollection>
+Ea Buffer Offset: 410
+Ea Name: $KERNEL.SMARTLOCKER.ORIGINCLAIM
+Ea Value Length: 7e
+0000: 01 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 ................
+0010: b2 ff 10 66 bc a8 47 c7 00 d9 56 9d 3d d4 20 2a ...f..G...V.=. *
+0020: 63 a3 80 e2 d8 33 8e 77 e9 5c 8d b0 d5 a7 a3 11 c....3.w.\......
+0030: 83 00 00 00 00 00 00 00 5c 00 00 00 43 00 3a 00 ........\...C.:.
+0040: 5c 00 55 00 73 00 65 00 72 00 73 00 5c 00 6a 00 \.U.s.e.r.s.\.T.
+0050: 6f 00 67 00 65 00 75 00 72 00 74 00 65 00 2e 00 e.m.p..\D.o.w.n...
+0060: 52 00 45 00 44 00 4d 00 4f 00 4e 00 44 00 5c 00 l.o.a.d.\a.p.p.l.
+0070: 44 00 6f 00 77 00 6e 00 6c 00 6f 00 61 00 64 i.c.a.t.i.o.n..e.x.e
 ```
 
-### Enable service enforcement in AppLocker policy
+From the output shown above, find the first row of data labeled "0000:", which is then followed by 16 two-character sets. Every four sets form a group known as a ULONG. The two-character set at the front of the first ULONG will always be "01" as shown here:
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services.
-Correct tracking of services requires the presence of at least one rule in the rule collection, so a simple audit only rule will suffice. This can be added to the policy created above which specifies your managed installer rule collection.
+0000: **`01` 00 00 00** 00 00 00 00 00 00 00 00 01 00 00 00
 
-For example:
+If there is "00" in the fifth position of the output (the start of the second ULONG), that indicates the EA is related to managed installer:
 
-```xml
-<RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-    <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-    <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-```
+0000: 01 00 00 00 **`00` 00 00 00** 00 00 00 00 01 00 00 00
 
-## Enable the managed installer option in WDAC policy
+Finally, the two-character set in the ninth position of the output (the start of the third ULONG) indicates whether the file was created by a process running as managed installer. A value of "00" means the file was directly written by a managed installer process and will run if your WDAC policy trusts managed installers.
 
-In order to enable trust for the binaries laid down by managed installers, the Enabled: Managed Installer option must be specified in your WDAC policy.
-This can be done by using the [Set-RuleOption cmdlet](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) with Option 13.
+0000: 01 00 00 00 00 00 00 00 **`00` 00 00 00** 01 00 00 00
 
-Below are steps to create a WDAC policy which allows Windows to boot and enables the managed installer option.
+If instead the starting value for the third ULONG is "02", then that indicates a "child of child". "Child of child" is set on any files created by something that was installed by a managed installer. But, the file was created **after** the managed installer completed its work. So this file **wouldn't** be allowed to run unless there's some other rule in your policy to allow it.
 
-1. Copy the DefaultWindows_Audit policy into your working folder from C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml
+In rarer cases, you may see other values in this position, but that will also run if your policy trusts managed installer.
 
-2. Reset the policy ID to ensure it is in multiple policy format and give it a different GUID from the example policies. Also give it a friendly name to help with identification.
+## Using fsutil to query extended attributes for Intelligent Security Graph (ISG)
 
-    Ex.
+When an installer runs that has good reputation according to the ISG, the files that the installer writes to disk will inherit the reputation from the installer. These files with ISG inherited trust will also have the KERNEL.SMARTLOCKER.ORIGINCLAIM EA set as described above for managed installers. You can identify that the EA was created by the ISG by looking for the value "01" in the fifth position of the output (the start of the second ULONG) from fsutil:
+
+0000: 01 00 00 00 **`01` 00 00 00** 00 00 00 00 01 00 00 00
+
+## More troubleshooting steps for Managed Installer and ISG
+
+Both managed installer and the ISG depend on AppLocker to provide some functionality. Use the following steps to confirm that AppLocker is configured and running correctly.
+
+1. Check that AppLocker services are running. From an elevated PowerShell window, run the following and confirm the STATE shows as RUNNING for both appidsvc and AppLockerFltr:
 
     ```powershell
-    Set-CIPolicyIdInfo -FilePath <XML filepath> -PolicyName "<friendly name>" -ResetPolicyID
-    ```
+    sc.exe query appidsvc
+        SERVICE_NAME: appidsvc
+        TYPE               : 30  WIN32
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+    sc.exe query AppLockerFltr
+        SERVICE_NAME: applockerfltr
+        TYPE               : 1  KERNEL_DRIVER
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+   ```
 
-3. Set Option 13 (Enabled:Managed Installer)
+    If not, run *appidtel start* from the elevated PowerShell window and check again.
 
-    ```powershell
-    Set-RuleOption -FilePath <XML filepath> -Option 13
-    ```
+2. For managed installer, check for AppCache.dat and other *.AppLocker files created under %windir%\System32\AppLocker. There should minimally be a ".AppLocker" file created for each of EXE, DLL, and MANAGEDINSTALLER rule collections. If you don't see these files created, proceed to the next step to confirm the AppLocker policy has been correctly applied.
 
-## Set the AppLocker filter driver to autostart
+3. For managed installer troubleshooting, check that the AppLocker effective policy is correct. From an elevated PowerShell window:
 
-To enable the managed installer, you need to set the AppLocker filter driver to autostart and start it.
+   ```powershell
+   Get-AppLockerPolicy -Effective -XML > $env:USERPROFILE\Desktop\AppLocker.xml
+   ```
 
-To do so, run the following command as an Administrator:
-
-```console
-appidtel.exe start [-mionly]
-```
-
-Specify `-mionly` if you will not use the Intelligent Security Graph (ISG).
-
-## Enabling managed installer logging events
-
-Refer to [Understanding Application Control Events](event-id-explanations.md#optional-intelligent-security-graph-isg-or-managed-installer-mi-diagnostic-events) for information on enabling optional managed installer diagnostic events.
+   Then open the XML file created and confirm it contains the rules you expect. In particular, the policy should include at least one rule for each of the EXE, DLL, and MANAGEDINSTALLER RuleCollections. The RuleCollections can either be set to AuditOnly or Enabled. Additionally, the EXE and DLL RuleCollections must include the RuleCollectionExtensions configuration as shown in [Automatically allow apps deployed by a managed installer with Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer#create-and-deploy-an-applocker-policy-that-defines-your-managed-installer-rules-and-enables-services-enforcement-for-executables-and-dlls).

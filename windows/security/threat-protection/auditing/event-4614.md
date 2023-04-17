@@ -2,23 +2,20 @@
 title: 4614(S) A notification package has been loaded by the Security Account Manager. (Windows 10)
 description: Describes security event 4614(S) A notification package has been loaded by the Security Account Manager.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4614(S): A notification package has been loaded by the Security Account Manager.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4614.png" alt="Event 4614 illustration" width="449" height="317" hspace="10" align="left" />
@@ -27,9 +24,9 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time a Notification Package has been loaded by the [Security Account Manager](https://technet.microsoft.com/library/cc756748(v=ws.10).aspx).
+This event generates every time a Notification Package has been loaded by the [Security Account Manager](/previous-versions/windows/it-pro/windows-server-2003/cc756748(v=ws.10)).
 
-In reality, starting with Windows Vista, a notification package should be interpreted as afs [Password Filter](https://msdn.microsoft.com/library/windows/desktop/ms721882(v=vs.85).aspx).
+In reality, starting with Windows Vista, a notification package should be interpreted as afs [Password Filter](/windows/win32/secmgmt/password-filters).
 
 Password Filters are DLLs that are loaded or called when passwords are set or changed.
 
@@ -80,4 +77,3 @@ Each time a system starts, it loads the notification package DLLs from **HKEY\_L
 For 4614(S): A notification package has been loaded by the Security Account Manager.
 
 -   Typically this event has an informational purpose. If you defined the list of allowed Notification Packages in the system, then you can check is “**Notification Package Name”** field value in the allow list or not.
-

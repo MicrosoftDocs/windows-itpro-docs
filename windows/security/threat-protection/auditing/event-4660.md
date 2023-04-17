@@ -2,23 +2,20 @@
 title: 4660(S) An object was deleted. (Windows 10)
 description: Describes security event 4660(S) An object was deleted. This event is generated when an object is deleted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4660(S): An object was deleted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4660.png" alt="Event 4660 illustration" width="449" height="477" hspace="10" align="left" />
@@ -29,7 +26,7 @@ ms.technology: mde
 
 This event generates when an object was deleted. The object could be a file system, kernel, or registry object.
 
-This event generates only if “Delete" auditing is set in object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
+This event generates only if “Delete" auditing is set in object’s [SACL](/windows/win32/secauthz/access-control-lists).
 
 This event doesn’t contain the name of the deleted object (only the **Handle ID**). It is better to use “[4663](event-4663.md)(S): An attempt was made to access an object” with DELETE access to track object deletion.
 
@@ -97,7 +94,7 @@ The advantage of this event is that it’s generated only during real delete ope
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -136,4 +133,3 @@ For 4660(S): An object was deleted.
 -   This event doesn’t contains the name of deleted object (only **Handle ID**). It is better to use “[4663](event-4663.md)(S): An attempt was made to access an object.” events with DELETE access to track object deletion actions.
 
 -   For kernel objects, this event and other auditing events have little to no security relevance and are hard to parse or analyze. There is no recommendation for auditing them, unless you know exactly what you need to monitor at the Kernel objects level.
-

@@ -1,131 +1,107 @@
 ---
-title: Policy CSP - Multitasking
-description: Policy CSP - Multitasking
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Multitasking Policy CSP
+description: Learn more about the Multitasking Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 10/30/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Multitasking-Begin -->
 # Policy CSP - Multitasking
 
+<!-- Multitasking-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Multitasking-Editable-End -->
+
+<!-- BrowserAltTabBlowout-Begin -->
+## BrowserAltTabBlowout
+
+<!-- BrowserAltTabBlowout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- BrowserAltTabBlowout-Applicability-End -->
+
+<!-- BrowserAltTabBlowout-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Multitasking/BrowserAltTabBlowout
+```
+<!-- BrowserAltTabBlowout-OmaUri-End -->
+
+<!-- BrowserAltTabBlowout-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting controls the inclusion of Microsoft Edge tabs into Alt+Tab.
+
+This can be set to show all tabs, the most recent 3 or 5 tabs, or no tabs from Microsoft Edge.
+
+If this is set to show "Open windows only", the whole feature will be disabled.
+<!-- BrowserAltTabBlowout-Description-End -->
+
+<!-- BrowserAltTabBlowout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
 > [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> This policy is currently in preview mode only. It may be used for testing purposes, but shouldn't be used in a production environment at this time.
 
-<hr/>
+Enabling this policy restricts the number of Microsoft Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Microsoft Edge tabs, only the five most recent tabs, only the three most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior.
 
-<!--Policies-->
-## Multitasking policies  
+This policy only applies to the Alt+Tab switcher. When the policy isn't enabled, the feature respects the user's setting in the Settings app.
+<!-- BrowserAltTabBlowout-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#multitasking-browseralttabblowout">Multitasking/BrowserAltTabBlowout</a>
-  </dd>
- </dl>
+<!-- BrowserAltTabBlowout-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- BrowserAltTabBlowout-DFProperties-End -->
 
-<hr/>
+<!-- BrowserAltTabBlowout-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="multitasking-browseralttabblowout"></a>**Multitasking/BrowserAltTabBlowout**  
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Open windows and all tabs in Microsoft Edge. |
+| 2 | Open windows and 5 most recent tabs in Microsoft Edge. |
+| 3 | Open windows and 3 most recent tabs in Microsoft Edge. |
+| 4 | Open windows only. |
+<!-- BrowserAltTabBlowout-AllowedValues-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
+<!-- BrowserAltTabBlowout-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | BrowserAltTabBlowout |
+| Friendly Name | Configure the inclusion of Microsoft Edge tabs into Alt-Tab |
+| Element Name | Pressing Alt + Tab shows. |
+| Location | User Configuration |
+| Path | Windows Components > Multitasking |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| ADMX File Name | Multitasking.admx |
+<!-- BrowserAltTabBlowout-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- BrowserAltTabBlowout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BrowserAltTabBlowout-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- BrowserAltTabBlowout-End -->
 
-<hr/>
+<!-- Multitasking-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Multitasking-CspMoreInfo-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Multitasking-End -->
 
-> [!Warning]
-> This policy is currently in preview mode only and will be supported in future releases. It may be used for testing purposes, but should not be used in a production environment at this time.
+## Related articles
 
-This policy controls the inclusion of Edge tabs into Alt+Tab.
-
-Enabling this policy restricts the number of Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Edge tabs, only the 5 most recent tabs, only the 3 most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior. 
-
-This policy only applies to the Alt+Tab switcher. When the policy is not enabled, the feature respects the user's setting in the Settings app.
-<!--/Description-->
-
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure the inclusion of Edge tabs into Alt-Tab*
--   GP name: *BrowserAltTabBlowout*
--   GP path: *Windows Components/Multitasking*
--   GP ADMX file name: *Multitasking.admx*
-
-<!--/ADMXBacked-->
-
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 1 - Open windows and all tabs in Edge.
-- 2 - Open windows and 5 most recent tabs in Edge.
-- 3 - Open windows and 3 most recent tabs in Edge.
-- 4 - Open windows only.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-- 9 - Available in Windows 10, version 20H2.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

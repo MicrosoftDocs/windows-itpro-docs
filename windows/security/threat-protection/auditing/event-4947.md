@@ -2,23 +2,20 @@
 title: 4947(S) A change has been made to Windows Firewall exception list. A rule was modified. (Windows 10)
 description: Describes security event 4947(S) A change has been made to Windows Firewall exception list. A rule was modified.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4947(S): A change has been made to Windows Firewall exception list. A rule was modified.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4947.png" alt="Event 4947 illustration" width="449" height="361" hspace="10" align="left" />

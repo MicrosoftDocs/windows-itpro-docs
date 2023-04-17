@@ -2,23 +2,20 @@
 title: 5061(S, F) Cryptographic operation. (Windows 10)
 description: Describes security event 5061(S, F) Cryptographic operation. This event is generated when a cryptographic operation is performed using a Key Storage Provider.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5061(S, F): Cryptographic operation.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5061.png" alt="Event 5061 illustration" width="486" height="489" hspace="10" align="left" />
@@ -27,7 +24,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates when a cryptographic operation (open key, create key, create key, and so on) was performed using a [Key Storage Provider](https://msdn.microsoft.com/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
+This event generates when a cryptographic operation (open key, create key, create key, and so on) was performed using a [Key Storage Provider](/windows/win32/seccertenroll/cng-key-storage-providers) (KSP). This event generates only if one of the following KSPs was used:
 
 -   Microsoft Software Key Storage Provider
 
@@ -82,13 +79,13 @@ This event generates when a cryptographic operation (open key, create key, creat
 
 **Subject:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that requested specific cryptographic operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that requested specific cryptographic operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
 > **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested specific cryptographic operation.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following ones:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -96,7 +93,7 @@ This event generates when a cryptographic operation (open key, create key, creat
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -110,7 +107,7 @@ This event generates when a cryptographic operation (open key, create key, creat
 
     -   Microsoft Smart Card Key Storage Provider
 
--   **Algorithm Name** \[Type = UnicodeString\]: the name of cryptographic algorithm through which the key was used or accessed. For “Read persisted key from file” operation, this typically has “**UNKNOWN**” value. Can also have one of the following values:
+-   **Algorithm Name** \[Type = UnicodeString\]: the name of cryptographic algorithm through which the key was used or accessed. For “Read persisted key from file” operation, this algorithm has “**UNKNOWN**” value. Can also have one of the following values:
 
     -   RSA – algorithm created by Ron Rivest, Adi Shamir, and Leonard Adleman.
 
@@ -130,7 +127,7 @@ This event generates when a cryptographic operation (open key, create key, creat
 
     -   ECDSA\_P521 – Elliptic Curve Digital Signature Algorithm with 521-bit key length.
 
--   **Key Name** \[Type = UnicodeString\]: the name of the key (key container) with which operation was performed. For example, to get the list of **Key Names** for certificates for logged in user you can use “**certutil -store -user my**” command and check **Key Container** parameter in the output. Here is an output example:
+-   **Key Name** \[Type = UnicodeString\]: the name of the key (key container) with which operation was performed. For example, to get the list of **Key Names** for certificates for logged in user you can use “**certutil -store -user my**” command and check **Key Container** parameter in the output. Here's an output example:
 
 <img src="images/certutil-command.png" alt="Certutil command illustration" width="588" height="665" />
 
@@ -169,4 +166,3 @@ For 5061(S, F): Cryptographic operation.
 -   Typically this event is required for detailed monitoring of KSP-related actions with cryptographic keys. If you need to monitor actions related to specific cryptographic keys (**“Key Name”)** or a specific **“Operation”**, such as **“Delete Key”**, create monitoring rules and use this event as an information source.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
-

@@ -2,23 +2,20 @@
 title: 4673(S, F) A privileged service was called. (Windows 10)
 description: Describes security event 4673(S, F) A privileged service was called. This event is generated for an attempt to perform privileged system service operations.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4673(S, F): A privileged service was called.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4673.png" alt="Event 4673 illustration" width="449" height="503" hspace="10" align="left" />
@@ -94,7 +91,7 @@ Failure event generates when service call attempt fails.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -160,7 +157,7 @@ Failure event generates when service call attempt fails.
 
 |   **Subcategory of event**    |                               **Privilege Name: <br>User Right Group Policy Name**                               |                                                                                                                                                                                                                                                                                                        **Description**                                                                                                                                                                                                                                                                                                         |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Audit Sensitive Privilege Use |                <b>SeAssignPrimaryTokenPrivilege: <br></b>Replace a process-level token                 |                                                                                                                                                                     Required to assign the [*primary token*](https://msdn.microsoft.com/library/windows/desktop/ms721603(v=vs.85).aspx#_security_primary_token_gly) of a process. With this privilege, the user can initiate a process to replace the default token associated with a started subprocess.                                                                                                                                                                      |
+| Audit Sensitive Privilege Use |                <b>SeAssignPrimaryTokenPrivilege: <br></b>Replace a process-level token                 |                                                                                                                                                                     Required to assign the [*primary token*](/windows/win32/secgloss/p-gly#_security_primary_token_gly) of a process. With this privilege, the user can initiate a process to replace the default token associated with a started subprocess.                                                                                                                                                                      |
 | Audit Sensitive Privilege Use |                         <b>SeAuditPrivilege: <br></b>Generate security audits                          |                                                                                                                                                                                                                                                                               With this privilege, the user can add entries to the security log.                                                                                                                                                                                                                                                                               |
 | Audit Sensitive Privilege Use |                        <b>SeCreateTokenPrivilege: <br></b>Create a token object                        |                                                                                                                         Allows a process to create a token which it can then use to get access to any local resources when the process uses NtCreateToken() or other token-creation APIs. When a process requires this privilege, we recommend using the LocalSystem account (which already includes the privilege), rather than creating a separate user account and assigning this privilege to it.                                                                                                                          |
 | Audit Sensitive Privilege Use |                              <b>SeDebugPrivilege: <br></b>Debug programs                               |                                                                                                 Required to debug and adjust the memory of a process owned by another account. With this privilege, the user can attach a debugger to any process or to the kernel. Developers who are debugging their own applications do not need this user right. Developers who are debugging new system components need this user right. This user right provides complete access to sensitive and critical operating system components.                                                                                                  |
@@ -177,7 +174,7 @@ For 4673(S, F): A privileged service was called.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   Monitor for this event where “**Subject\\Security ID**” is *not* one of these well-known security principals: LOCAL SYSTEM, NETWORK SERVICE, LOCAL SERVICE, and where “**Subject\\Security ID**” is not an administrative account that is expected to have the listed **Privileges**. Especially monitor Failure events.
+-   Monitor for this event where “**Subject\\Security ID**” is *not* one of these well-known security principals: LOCAL SYSTEM, NETWORK SERVICE, LOCAL SERVICE, and where “**Subject\\Security ID**” is not an administrative account that is expected to have the listed **Privileges**. See subcategories [Audit Sensitive Privilege Use](/windows/security/threat-protection/auditing/audit-sensitive-privilege-use) and [Audit Non Sensitive Privilege Use](/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use) for more details.
 
 -   If you need to monitor events related to specific Windows subsystems (“**Service\\Server**”), for example **NT Local Security Authority / Authentication Service** or **Security Account Manager**, monitor this event for the corresponding “**Service\\Server**.”
 
@@ -198,4 +195,3 @@ For 4673(S, F): A privileged service was called.
 -   If you have a list of specific user rights which should never be used, or used only by a few accounts (for example, SeDebugPrivilege), trigger an alert for those “**Privileges**.”
 
 -   If you have a list of specific user rights for which every use must be reported or monitored (for example, SeRemoteShutdownPrivilege), trigger an alert for those “**Privileges**.”
-

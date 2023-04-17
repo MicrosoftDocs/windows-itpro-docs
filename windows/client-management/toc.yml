@@ -1,0 +1,89 @@
+items:
+  - name: Windows client management
+    href: index.yml
+    items:
+      - name: Mobile device management (MDM)
+        expanded: true
+        items:
+          - name: Overview
+            items:
+              - name: MDM overview
+                href: mdm-overview.md
+              - name: What's new in MDM enrollment and management
+                href: new-in-windows-mdm-enrollment-management.md
+          - name: Azure Active Directory integration with MDM
+            href: azure-active-directory-integration-with-mdm.md
+            items:
+              - name: Add an Azure AD tenant and Azure AD subscription
+                href: add-an-azure-ad-tenant-and-azure-ad-subscription.md
+              - name: Register your free Azure Active Directory subscription
+                href: register-your-free-azure-active-directory-subscription.md
+          - name: Device enrollment
+            href: mobile-device-enrollment.md
+            items:
+              - name: MDM enrollment of Windows devices
+                href: mdm-enrollment-of-windows-devices.md
+              - name: "Azure AD and Microsoft Intune: Automatic MDM enrollment"
+                href: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
+              - name: Enroll a Windows 10 device automatically using Group Policy
+                href: enroll-a-windows-10-device-automatically-using-group-policy.md
+              - name: Bulk enrollment
+                href: bulk-enrollment-using-windows-provisioning-tool.md
+              - name: Federated authentication device enrollment
+                href: federated-authentication-device-enrollment.md
+              - name: Certificate authentication device enrollment
+                href: certificate-authentication-device-enrollment.md
+              - name: On-premises authentication device enrollment
+                href: on-premise-authentication-device-enrollment.md
+              - name: Disconnecting a device from MDM (unenrollment)
+                href: disconnecting-from-mdm-unenrollment.md
+          - name: Enterprise settings, policies, and app management
+            href: windows-mdm-enterprise-settings.md
+            items:
+              - name: Enterprise app management
+                href: enterprise-app-management.md
+              - name: Deploy and configure App-V apps using MDM
+                href: appv-deploy-and-config.md
+              - name: Mobile device management (MDM) for device updates
+                href: device-update-management.md
+              - name: Secured-Core PC Configuration Lock
+                href: config-lock.md
+              - name: Certificate renewal
+                href: certificate-renewal-windows-mdm.md
+          - name: Diagnose MDM failures in Windows 10
+            href: diagnose-mdm-failures-in-windows-10.md
+          - name: Push notification support for device management
+            href: push-notification-windows-mdm.md
+          - name: MAM support for device management
+            href: implement-server-side-mobile-application-management.md
+          - name: Configuration service provider reference
+            href: mdm/index.yml
+      - name: Client management tools and settings
+        items:
+          - name: Windows Tools/Administrative Tools
+            href: administrative-tools-in-windows-10.md
+          - name: Use Quick Assist to help users
+            href: quick-assist.md
+          - name: Connect to remote Azure Active Directory-joined PC
+            href: connect-to-remote-aadj-pc.md
+          - name: Create mandatory user profiles
+            href: mandatory-user-profile.md
+          - name: New policies for Windows 10
+            href: new-policies-for-windows-10.md
+          - name: Windows 10 default media removal policy
+            href: change-default-removal-policy-external-storage-media.md
+          - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
+            href: group-policies-for-enterprise-and-education-editions.md
+          - name: Manage Device Installation with Group Policy
+            href: manage-device-installation-with-group-policy.md
+          - name: Manage the Settings app with Group Policy
+            href: manage-settings-app-with-group-policy.md
+          - name: What version of Windows am I running
+            href: windows-version-search.md
+          - name: Transitioning to modern management
+            href: manage-windows-10-in-your-organization-modern-management.md
+          - name: Windows libraries
+            href: windows-libraries.md
+      - name: Troubleshoot Windows clients
+        href: /troubleshoot/windows-client/welcome-windows-client
+

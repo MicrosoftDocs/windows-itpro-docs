@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 ms.reviewer: 
 audience: itpro
@@ -28,7 +28,7 @@ ms.date: 07/27/2017
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
 >**Upgrade Readiness and Windows upgrades**<br>
->You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+>You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 
 ## Before you begin
@@ -36,13 +36,13 @@ Before you start, you need to make sure you have the following:
 
 -   Latest cumulative security update (for all supported versions of Internet Explorer):
 
-    1.  Go to the [Microsoft Security Bulletin](https://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
+    1.  Go to the [Microsoft Security Bulletin](/security-updates/) page, and change the filter to **Windows Internet Explorer 11**.
 
-        ![microsoft security bulletin techcenter](images/securitybulletin-filter.png)
+        ![microsoft security bulletin techcenter.](images/securitybulletin-filter.png)
 
     2.  Click the title of the latest cumulative security update, and then scroll down to the **Affected software** table.
 
-        ![affected software section](images/affectedsoftware.png)
+        ![affected software section.](images/affectedsoftware.png)
 
     3.  Click the link that represents both your operating system version and Internet Explorer 11, and then follow the instructions in the **How to get this update** section.
 
@@ -63,17 +63,17 @@ Data is collected on the configuration characteristics of IE and the sites it br
 
 |Data point              |IE11 |IE10 |IE9  |IE8  |Description                                                             |
 |------------------------|-----|-----|-----|-----|------------------------------------------------------------------------|
-|URL                     |  X  |  X  |  X  |  X  |URL of the browsed site, including any parameters included in the URL.  |
-|Domain                  |  X  |  X  |  X  |  X  |Top-level domain of the browsed site.                                   |
-|ActiveX GUID            |  X  |  X  |  X  |  X  |GUID of the ActiveX controls loaded by the site.                        |
-|Document mode           |  X  |  X  |  X  |  X  |Document mode used by IE for a site, based on page characteristics.     |
-|Document mode reason    |  X  |  X  |     |     |The reason why a document mode was set by IE.                           |
-|Browser state reason    |  X  |  X  |     |     |Additional information about why the browser is in its current state. Also called, browser mode.           |
-|Hang count              |  X  |  X  |  X  |  X  |Number of visits to the URL when the browser hung.                      |
-|Crash count             |  X  |  X  |  X  |  X  |Number of visits to the URL when the browser crashed.                   |
-|Most recent navigation failure (and count) |  X  |  X  |  X  |  X  |Description of the most recent navigation failure (like, a 404 bad request or 500 internal server error) and the number of times it happened.  |
-|Number of visits        |  X  |  X  |  X  |  X  |Number of times a site has been visited.                                |
-|Zone                    |  X  |  X  |  X  |  X  |Zone used by IE to browse sites, based on browser settings.             |
+|URL                     |  ✔️  |  ✔️  |  ✔️  |  ✔️  |URL of the browsed site, including any parameters included in the URL.  |
+|Domain                  |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Top-level domain of the browsed site.                                   |
+|ActiveX GUID            |  ✔️  |  ✔️  |  ✔️  |  ✔️  |GUID of the ActiveX controls loaded by the site.                        |
+|Document mode           |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Document mode used by IE for a site, based on page characteristics.     |
+|Document mode reason    |  ✔️  |  ✔️  |     |     |The reason why a document mode was set by IE.                           |
+|Browser state reason    |  ✔️  |  ✔️  |     |     |Additional information about why the browser is in its current state. Also called, browser mode.           |
+|Hang count              |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Number of visits to the URL when the browser hung.                      |
+|Crash count             |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Number of visits to the URL when the browser crashed.                   |
+|Most recent navigation failure (and count) |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Description of the most recent navigation failure (like, a 404 bad request or 500 internal server error) and the number of times it happened.  |
+|Number of visits        |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Number of times a site has been visited.                                |
+|Zone                    |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Zone used by IE to browse sites, based on browser settings.             |
 
 
 >**Important**<br>By default, IE doesn’t collect this data; you have to turn this feature on if you want to use it. After you turn on this feature, data is collected on all sites visited by IE, except during InPrivate sessions. Additionally, the data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
@@ -142,7 +142,7 @@ Before you can start to collect your data, you must run the provided PowerShell 
 -OR-
 - Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
 -OR-
-- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+- Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
 
 ### WMI only: Running the PowerShell script to compile the .MOF file and to update security privileges
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
@@ -151,7 +151,7 @@ You need to set up your computers for data collection by running the provided Po
 
 **To set up Enterprise Site Discovery**
 
-- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
@@ -205,68 +205,32 @@ You can use Group Policy to finish setting up Enterprise Site Discovery. If you 
 You can use both the WMI and XML settings individually or together:
 
 **To turn off Enterprise Site Discovery**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>Off</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>Blank</td>
-    </tr>
-</table>
+
+|Setting name|Option|
+|--- |--- |
+|Turn on Site Discovery WMI output|Off|
+|Turn on Site Discovery XML output|Blank|
 
 **Turn on WMI recording only**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>On</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>Blank</td>
-    </tr>
-</table>
+
+|Setting name|Option|
+|--- |--- |
+|Turn on Site Discovery WMI output|On|
+|Turn on Site Discovery XML output|Blank|
 
 **To turn on XML recording only**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>Off</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>XML file path</td>
-    </tr>
-</table>
+
+|Setting name|Option|
+|--- |--- |
+|Turn on Site Discovery WMI output|Off|
+|Turn on Site Discovery XML output|XML file path|
  
-<strong>To turn on both WMI and XML recording</strong>
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>On</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>XML file path</td>
-    </tr>
-</table>
+**To turn on both WMI and XML recording**
+
+|Setting name|Option|
+|--- |--- |
+|Turn on Site Discovery WMI output|On|
+|Turn on Site Discovery XML output|XML file path|
 
 ## Use Configuration Manager to collect your data
 After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, using one of these options:
@@ -275,7 +239,7 @@ After you’ve collected your data, you’ll need to get the local files off of 
 -OR-
 - Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
 -OR-
-- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+- Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
 
 ### Collect your hardware inventory using the MOF Editor while connected to a client device
 You can collect your hardware inventory using the MOF Editor, while you’re connected to your client devices.
@@ -284,13 +248,13 @@ You can collect your hardware inventory using the MOF Editor, while you’re con
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
-    ![Configuration Manager, showing the hardware inventory settings for client computers](images/configmgrhardwareinventory.png)
+    ![Configuration Manager, showing the hardware inventory settings for client computers.](images/configmgrhardwareinventory.png)
 
 2.  Click **Add**, click **Connect**, and connect to a computer that has completed the setup process and has already existing classes.
 
 3.  Change the **WMI Namespace** to `root\cimv2\IETelemetry`, and click **Connect**.
 
-    ![Configuration Manager, with the Connect to Windows Management Instrumentation (WMI) box](images/ie11-inventory-addclassconnectscreen.png)
+    ![Configuration Manager, with the Connect to Windows Management Instrumentation (WMI) box.](images/ie11-inventory-addclassconnectscreen.png)
 
 4.  Select the check boxes next to the following classes, and then click **OK**:
 
@@ -317,8 +281,8 @@ You can collect your hardware inventory using the MOF Editor and a .MOF import f
 4.  Click **OK** to close the default windows.<br>
 Your environment is now ready to collect your hardware inventory and review the sample reports.
 
-### Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
-You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for System Center Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
+### Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
+You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
 
 **To collect your inventory**
 
@@ -392,17 +356,17 @@ You can collect your hardware inventory using the using the Systems Management S
     Your environment is now ready to collect your hardware inventory and review the sample reports.
 
 ## View the sample reports with your collected data
-The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
+The sample reports, **Configuration Manager Report Sample – ActiveX.rdl** and **Configuration Manager Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
 
-### SCCM Report Sample – ActiveX.rdl
+### Configuration Manager Report Sample – ActiveX.rdl
 Gives you a list of all of the ActiveX-related sites visited by the client computer.
 
-![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer](images/configmgractivexreport.png)
+![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer.](images/configmgractivexreport.png)
 
-### SCCM Report Sample – Site Discovery.rdl
+### Configuration Manager Report Sample – Site Discovery.rdl
 Gives you a list of all of the sites visited by the client computer.
 
-![Site Discovery.rdl report, lists all websites visited by the client computer](images/ie-site-discovery-sample-report.png)
+![Site Discovery.rdl report, lists all websites visited by the client computer.](images/ie-site-discovery-sample-report.png)
 
 ## View the collected XML data
 After the XML files are created, you can use your own solutions to extract and parse the data. The data will look like:
@@ -440,7 +404,7 @@ You can import this XML data into the correct version of the Enterprise Mode Sit
 
 1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
 
-    ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
+    ![Enterprise Mode Site List Manager with Bulk add from file option.](images/bulkadd-emiesitelistmgr.png)
 
 2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 
@@ -480,7 +444,3 @@ You can completely remove the data stored on your employee’s computers.
 ## Related topics
 * [Enterprise Mode Site List Manager (schema v.2) download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
- 
-
-
-

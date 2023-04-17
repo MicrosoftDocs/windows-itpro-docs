@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to remove sites from a local compatibility view list.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: f6ecaa75-ebcb-4f8d-8721-4cd6e73c0ac9
 ms.reviewer: 
 audience: itpro

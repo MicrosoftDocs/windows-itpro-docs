@@ -1,32 +1,20 @@
 ---
-title: Planning Group Policy Deployment for Your Isolation Zones (Windows 10)
+title: Planning Group Policy Deployment for Your Isolation Zones (Windows)
 description: Learn how to plan a group policy deployment for your isolation zones after you determine the best logical design for your isolation environment.
-ms.assetid: ea7c0acd-af28-4347-9d4a-4801b470557c
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning Group Policy Deployment for Your Isolation Zones
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-After you have decided on the best logical design of your isolation environment for the network and device security requirements, you can start the implementation plan.
+After you've decided on the best logical design of your isolation environment for the network and device security requirements, you can start the implementation plan.
 
-You have a list of isolation zones with the security requirements of each. For implementation, you must plan the groups that will hold the device accounts in each zone, the network access groups that will be used to determine who can access an isolated server, and the GPOs with the connection security and firewall rules to apply to corresponding groups. Finally you must determine how you will ensure that the policies will only apply to the correct devices within each group.
+You have a list of isolation zones with the security requirements of each. For implementation, you must plan the groups that will hold the device accounts in each zone, the network access groups that will be used to determine who can access an isolated server, and the GPOs with the connection security and firewall rules to apply to corresponding groups. Finally you must determine how you'll ensure that the policies will only apply to the correct devices within each group.
 
 -   [Planning Isolation Groups for the Zones](planning-isolation-groups-for-the-zones.md)
 

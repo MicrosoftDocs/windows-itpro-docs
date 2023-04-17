@@ -2,23 +2,20 @@
 title: 5136(S) A directory service object was modified. (Windows 10)
 description: Describes security event 5136(S) A directory service object was modified.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5136(S): A directory service object was modified.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5136.png" alt="Event 5136 illustration" width="449" height="611" hspace="10" align="left" />
@@ -29,9 +26,9 @@ ms.technology: mde
 
 This event generates every time an Active Directory object is modified.
 
-To generate this event, the modified object must have an appropriate entry in [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Write”** action auditing for specific attributes.
+To generate this event, the modified object must have an appropriate entry in [SACL](/windows/win32/secauthz/access-control-lists): the “**Write”** action auditing for specific attributes.
 
-For a change operation you will typically see two 5136 events for one action, with different **Operation\\Type** fields: “Value Deleted” and then “Value Added”. “Value Deleted” event typically contains previous value and “Value Added” event contains new value.
+For a change operation, you'll typically see two 5136 events for one action, with different **Operation\\Type** fields: “Value Deleted” and then “Value Added”. “Value Deleted” event typically contains previous value and “Value Added” event contains new value.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -86,13 +83,13 @@ For a change operation you will typically see two 5136 events for one action, wi
 
 **Subject:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that requested the “modify object” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that requested the “modify object” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
 > **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the “modify object” operation.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following ones:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -100,7 +97,7 @@ For a change operation you will typically see two 5136 events for one action, wi
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -146,13 +143,13 @@ For a change operation you will typically see two 5136 events for one action, wi
 
                 -   We have this GUID to search for: a6b34ab5-551b-4626-b8ee-2b36b3ee6672
 
-                -   Take first 3 sections a6b34ab5-551b-4626.
+                -   Take first three sections a6b34ab5-551b-4626.
 
-                -   For each of these 3 sections you need to change (Invert) the order of bytes, like this b54ab3a6-1b55-2646
+                -   For each of these three sections, you need to change (Invert) the order of bytes, like this b54ab3a6-1b55-2646
 
-                -   Add the last 2 sections without transformation: b54ab3a6-1b55-2646-b8ee-2b36b3ee6672
+                -   Add the last two sections without transformation: b54ab3a6-1b55-2646-b8ee-2b36b3ee6672
 
-                -   Delete - : b54ab3a61b552646b8ee2b36b3ee6672
+                -   Delete: b54ab3a61b552646b8ee2b36b3ee6672
 
                 -   Divide bytes with backslashes: \\b5\\4a\\b3\\a6\\1b\\55\\26\\46\\b8\\ee\\2b\\36\\b3\\ee\\66\\72
 
@@ -182,9 +179,9 @@ For a change operation you will typically see two 5136 events for one action, wi
 
 -   **LDAP Display Name** \[Type = UnicodeString\]**:** the object attribute that was modified.
 
-> **Note**&nbsp;&nbsp;[LDAP Display Name](https://msdn.microsoft.com/library/ms676828(v=vs.85).aspx) is the name used by LDAP clients, such as the ADSI LDAP provider, to read and write the attribute by using the LDAP protocol.
+> **Note**&nbsp;&nbsp;[LDAP Display Name](/windows/win32/adschema/a-ldapdisplayname) is the name used by LDAP clients, such as the ADSI LDAP provider, to read and write the attribute by using the LDAP protocol.
 
--   **Syntax (OID)** \[Type = UnicodeString\]**:** The syntax for an attribute defines the storage representation, byte ordering, and matching rules for comparisons of property types. Whether the attribute value must be a string, a number, or a unit of time is also defined. Every attribute of every object is associated with exactly one syntax. The syntaxes are not represented as objects in the schema, but they are programmed to be understood by Active Directory. The allowable syntaxes in Active Directory are predefined.
+-   **Syntax (OID)** \[Type = UnicodeString\]**:** The syntax for an attribute defines the storage representation, byte ordering, and matching rules for comparisons of property types. Whether the attribute value must be a string, a number, or a unit of time is also defined. Every attribute of every object is associated with exactly one syntax. The syntaxes aren't represented as objects in the schema, but they're programmed to be understood by Active Directory. The allowable syntaxes in Active Directory are predefined.
 
 | OID      | Syntax Name                                | Description                                              |
 |----------|--------------------------------------------|----------------------------------------------------------|
@@ -193,7 +190,7 @@ For a change operation you will typically see two 5136 events for one action, wi
 | 2.5.5.2  | String(Object-Identifier)                  | The object identifier.                                   |
 | 2.5.5.3  | Case-Sensitive String                      | General String.                                          |
 | 2.5.5.4  | CaseIgnoreString(Teletex)                  | Differentiates uppercase and lowercase.                  |
-| 2.5.5.5  | String(Printable), String(IA5)             | Teletex. Does not differentiate uppercase and lowercase. |
+| 2.5.5.5  | String(Printable), String(IA5)             | Teletex. Doesn't differentiate uppercase and lowercase. |
 | 2.5.5.6  | String(Numeric)                            | Printable string or IA5-String.                          |
 | 2.5.5.7  | Object(DN-Binary)                          | Both character sets are case-sensitive.                  |
 | 2.5.5.8  | Boolean                                    | A sequence of digits.                                    |
@@ -209,15 +206,15 @@ For a change operation you will typically see two 5136 events for one action, wi
 
 > Table 10. LDAP Attribute Syntax OIDs.
 
--   **Value** \[Type = UnicodeString\]: the value which was added or deleted, depending on the **Operation\\Type** field.
+-   **Value** \[Type = UnicodeString\]: the value that was added or deleted, depending on the **Operation\\Type** field.
 
 **Operation:**
 
 -   **Type** \[Type = UnicodeString\]**:** type of performed operation.
 
-    -   **Value Added** – new value added.
+    -   **Value Added** – new value added ('%%14674')
 
-    -   **Value Deleted** – value deleted (typically “Value Deleted” is a part of change operation).
+    -   **Value Deleted** – value deleted ('%%14675', typically “Value Deleted” is a part of change operation).
 
 <!-- -->
 
@@ -239,5 +236,5 @@ For 5136(S): A directory service object was modified.
 
 -   If you need to monitor modifications to specific Active Directory attributes, monitor for **LDAP Display Name** field with specific attribute name.
 
--   It is better to monitor **Operation\\Type = Value Added** events, because you will see the new value of attribute. At the same time you can correlate to previous **Operation\\Type = Value Deleted** event with the same **Correlation ID** to see the previous value.
-
+-   It's better to monitor **Operation\\Type = Value Added** events, because you'll see the new value of attribute. At the same time, you can correlate to previous **Operation\\Type = Value Deleted** event with the same **Correlation ID** to see the previous value.
+   

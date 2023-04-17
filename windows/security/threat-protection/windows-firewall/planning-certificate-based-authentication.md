@@ -1,30 +1,18 @@
 ---
-title: Planning Certificate-based Authentication (Windows 10)
+title: Planning Certificate-based Authentication (Windows)
 description: Learn how a device unable to join an Active Directory domain can still participate in an isolated domain by using certificate-based authentication.
-ms.assetid: a55344e6-d0df-4ad5-a6f5-67ccb6397dec
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning Certificate-based Authentication
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-Sometimes a device cannot join an Active Directory domain, and therefore cannot use Kerberos V5 authentication with domain credentials. However, the device can still participate in the isolated domain by using certificate-based authentication.
+Sometimes a device can't join an Active Directory domain, and therefore can't use Kerberos V5 authentication with domain credentials. However, the device can still participate in the isolated domain by using certificate-based authentication.
 
 The non-domain member server, and the clients that must be able to communicate with it, must be configured to use cryptographic certificates based on the X.509 standard. These certificates can be used as an alternate set of credentials. During IKE negotiation, each device sends a copy of its certificate to the other device. Each device examines the received certificate, and then validates its authenticity. To be considered authentic, the received certificate must be validated by a certification authority certificate in the recipient's Trusted Root Certification Authorities store on the local device.
 
@@ -52,12 +40,12 @@ You must also import the purchased certificate into a GPO that deploys it to the
 
 ### Using a commercially purchased certificate for devices running a non-Windows operating system
 
-If you are installing the certificates on an operating system other than Windows, see the documentation for that operating system.
+If you're installing the certificates on an operating system other than Windows, see the documentation for that operating system.
 
 ## Configuring IPsec to use the certificates
 
 When the clients and servers have the certificates available, you can configure the IPsec and connection security rules to include those certificates as a valid authentication method. The authentication method requires the subject name of the certificate, for example: **DC=com,DC=woodgrovebank,CN=CorporateCertServer**. Optionally, select **Enable certificate to account mapping** to support using these credentials for restricting access to users or devices that are members of authorized groups in a server isolation solution.
 
-Starting in Windows Server 2012,you can configure certificate selection criteria so the desired certificate is selected and/or validated. Enhanced Key Usage (EKU) criteria can be configured, as well as name restrictions and certificate thumbprints. This is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
+Starting in Windows Server 2012, you can configure certificate selection criteria so the desired certificate is selected and/or validated. extended key usage (EKU) criteria can be configured, and name restrictions and certificate thumbprints. This EKU is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
 
 **Next:** [Documenting the Zones](documenting-the-zones.md)

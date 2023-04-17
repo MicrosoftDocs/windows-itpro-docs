@@ -31,32 +31,27 @@ ms.date: 07/27/2017
 
 Remove websites that were added to a local Enterprise Mode site list by mistake or because the sites no longer have compatibility problems.
 
-**Note**<br>The changes described in this topic only impact sites added to a local Enterprise Mode site list and not the list of sites deployed to all employees by an administrator. Employees can't delete sites added to the list by an administrator.
+> [!NOTE]
+> The changes described in this topic only impact sites added to a local Enterprise Mode site list and not the list of sites deployed to all employees by an administrator. Employees can't delete sites added to the list by an administrator.
 
-  **To remove single sites from a local Enterprise Mode site list**
+**To remove single sites from a local Enterprise Mode site list**
 
 1.  Open Internet Explorer 11 and go to the site you want to remove.
 
-2.  Click **Tools**, and then click **Enterprise Mode**.<p>
-The checkmark disappears from next to Enterprise Mode and the site is removed from the list.
+2.  Click **Tools**, and then click **Enterprise Mode**.
 
-**Note**<br>If the site is removed by mistake, it can be added back by clicking **Enterprise Mode** again.
+    The checkmark disappears from next to Enterprise Mode and the site is removed from the list.
 
- **To remove all sites from a local Enterprise Mode site list**
+    > [!NOTE]
+    > If the site is removed by mistake, it can be added back by clicking **Enterprise Mode** again.
 
-1.  Open IE11, click **Tools**, and then click **Internet options**.
+**To remove all sites from a local Enterprise Mode site list**
+
+1.  Open Internet Explorer 11, click **Tools**, and then click **Internet options**.
 
 2.  Click the **Delete** button from the **Browsing history** area.
 
 3.  Click the box next to **Cookies and website data**, and then click **Delete**.
 
-**Note**<br>This removes all of the sites from a local Enterprise Mode site list.
-
-     
-
- 
-
- 
-
-
-
+    > [!NOTE]
+    > This removes all of the sites from a local Enterprise Mode site list.

@@ -1,21 +1,24 @@
 ---
 title: Update Baseline
 description: Use an update baseline to optimize user experience and meet monthly update goals
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, tools, group policy
-ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Update Baseline
 
 **Applies to:** Windows 10
 
-With the large number of different policies offered for Windows 10, Update Baseline provides a clear list of recommended Windows Update policy settings for IT administrators who want the best user experience while also meeting their monthly update compliance goals. See [Policies included in the Update Baseline](#policies-included-in-the-update-baseline) for the full list of policy configurations. 
+> [!NOTE]
+> Update Baseline is not currently available for Windows 11.
+
+With the large number of different policies offered for Windows client, Update Baseline provides a clear list of recommended Windows Update policy settings for IT administrators who want the best user experience while also meeting their monthly update compliance goals. See [Policies included in the Update Baseline](#policies-included-in-the-update-baseline) for the full list of policy configurations. 
 
 ## Why is Update Baseline needed? 
 
@@ -40,8 +43,7 @@ For the complete detailed list of all settings and their values, see the MSFT Wi
 
 ## How do I get started? 
 
-The Update Baseline toolkit makes it easy by providing a single command for IT Admins to load the baseline settings into Group Policy Management Console. You can get the [Update Baseline toolkit](https://www.microsoft.com/download/details.aspx?id=101056) from the Download Center. 
+The Update Baseline toolkit makes it easy by providing a single command for IT Admins to load the baseline settings into Group Policy Management Console. You can get the [Update Baseline toolkit](https://www.microsoft.com/download/details.aspx?id=55319) (included as a part of the Security Compliance Toolkit) from the Download Center. 
 
 Today, the Update Baseline toolkit is currently only available for use with Group Policy. 
-
 

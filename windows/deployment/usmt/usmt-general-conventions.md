@@ -1,66 +1,52 @@
 ---
 title: General Conventions (Windows 10)
 description: Learn about general XML guidelines and how to use XML helper functions in the XML Elements library to change migration behavior.
-ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
-# General Conventions
-
+# General conventions
 
 This topic describes the XML helper functions.
 
-## In This Topic
-
-
-[General XML Guidelines](#bkmk-general)
-
-[Helper Functions](#bkmk-helperfunctions)
-
-## <a href="" id="bkmk-general"></a>General XML Guidelines
-
+## General XML guidelines
 
 Before you modify the .xml files, become familiar with the following guidelines:
 
--   **XML schema**
+- **XML schema**
 
-    You can use the User State Migration Tool (USMT) 10.0 XML schema, MigXML.xsd, to write and validate migration .xml files.
+    You can use the User State Migration Tool (USMT) 10.0 XML schema, MigXML.xsd, to write and validate migration .xml files.
 
--   **Conflicts**
+- **Conflicts**
 
-    In general, when there are conflicts within the XML schema, the most specific pattern takes precedence. For more information, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
+    In general, when there are conflicts within the XML schema, the most specific pattern takes precedence. For more information, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
 
--   **Required elements**
+- **Required elements**
 
     The required elements for a migration .xml file are **&lt;migration&gt;**, **&lt;component&gt;**, **&lt;role&gt;**, and **&lt;rules&gt;**.
 
--   **Required child elements**
+- **Required child elements**
 
-    -   USMT does not fail with an error if you do not specify the required child elements. However, you must specify the required child elements for the parent element to affect the migration.
+  - USMT doesn't fail with an error if you don't specify the required child elements. However, you must specify the required child elements for the parent element to affect the migration.
 
-    -   The required child elements apply only to the first definition of the element. If these elements are defined and then referred to using their name, the required child elements do not apply. For example, if you define `<detects name="Example">` in **&lt;namedElements&gt;**, and you specify `<detects name="Example"/>` in **&lt;component&gt;** to refer to this element, the definition inside **&lt;namedElements&gt;** must have the required child elements, but the **&lt;component&gt;** element does not need to have the required child elements.
+  - The required child elements apply only to the first definition of the element. If these elements are defined and then referred to using their name, the required child elements don't apply. For example, if you define `<detects name="Example">` in **&lt;namedElements&gt;**, and you specify `<detects name="Example"/>` in **&lt;component&gt;** to refer to this element, the definition inside **&lt;namedElements&gt;** must have the required child elements, but the **&lt;component&gt;** element doesn't need to have the required child elements.
 
--   **File names with brackets**
+- **File names with brackets**
 
-    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named **file].txt**, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
+    If you're migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there's a file named **file].txt**, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
 
--   **Using quotation marks**
+- **Using quotation marks**
 
     When you surround code in quotation marks, you can use either double ("") or single (') quotation marks.
 
-## <a href="" id="bkmk-helperfunctions"></a> Helper Functions
+## Helper functions
 
-
-You can use the XML helper functions in the [XML Elements Library](usmt-xml-elements-library.md) to change migration behavior. Before you use these functions in an .xml file, note the following:
+You can use the XML helper functions in the [XML elements library](usmt-xml-elements-library.md) to change migration behavior. Before you use these functions in an .xml file, note the following items:
 
 - **All of the parameters are strings**
 
@@ -68,40 +54,30 @@ You can use the XML helper functions in the [XML Elements Library](usmt-xml-elem
 
   As with parameters with a default value convention, if you have a NULL parameter at the end of a list, you can leave it out. For example, the following function:
 
-  ``` syntax
+  ```cmd
   SomeFunction("My String argument",NULL,NULL)
   ```
 
   is equivalent to:
 
-  ``` syntax
+  ```cmd
   SomeFunction("My String argument")
   ```
 
 - **The encoded location used in all the helper functions is an unambiguous string representation for the name of an object**
 
-  It is composed of the node part, optionally followed by the leaf enclosed in square brackets. This makes a clear distinction between nodes and leaves.
+  It's composed of the node part, optionally followed by the leaf enclosed in square brackets. This format makes a clear distinction between nodes and leaves.
 
-  For example, specify the file C:\\Windows\\Notepad.exe: **c:\\Windows\[Notepad.exe\]**. Similarly, specify the directory C:\\Windows\\System32 like this: **c:\\Windows\\System32**; note the absence of the \[\] characters.
+  For example, specify the file `C:\Windows\Notepad.exe`: **c:\\Windows\[Notepad.exe\]**. Similarly, specify the directory `C:\Windows\System32` like this: **c:\\Windows\\System32**; note the absence of the **\[\]** characters.
 
-  The registry is represented in a similar way. The default value of a registry key is represented as an empty \[\] construct. For example, the default value for the HKLM\\SOFTWARE\\MyKey registry key is **HKLM\\SOFTWARE\\MyKey\[\]**.
+  The registry is represented in a similar way. The default value of a registry key is represented as an empty **\[\]** construct. For example, the default value for the `HKLM\SOFTWARE\MyKey` registry key is **HKLM\\SOFTWARE\\MyKey\[\]**.
 
 - **You specify a location pattern in a way that is similar to how you specify an actual location**
 
-  The exception is that both the node and leaf part accept patterns. However, a pattern from the node does not extend to the leaf.
+  The exception is that both the node and leaf part accept patterns. However, a pattern from the node doesn't extend to the leaf.
 
-  For example, the pattern **c:\\Windows\\\\*** will match the \\Windows directory and all subdirectories, but it will not match any of the files in those directories. To match the files as well, you must specify **c:\\Windows\\\*\[\*\]**.
+  For example, the pattern **c:\\Windows\\\\\*** will match the `\Windows` directory and all subdirectories, but it will not match any of the files in those directories. To match the files as well, you must specify **c:\\Windows\\\*\[\*\]**.
 
-## Related topics
+## Related articles
 
-
-[USMT XML Reference](usmt-xml-reference.md)
-
- 
-
- 
-
-
-
-
-
+[USMT XML reference](usmt-xml-reference.md)

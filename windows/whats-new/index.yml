@@ -1,0 +1,66 @@
+### YamlMime:Landing
+
+title: What's new in Windows
+summary: Find out about new features and capabilities in the latest release of Windows client for IT professionals.
+
+metadata:
+  title: What's new in Windows
+  description: Find out about new features and capabilities in the latest release of Windows client for IT professionals.
+  ms.prod: windows-client
+  ms.technology: itpro-fundamentals
+  ms.topic: landing-page
+  ms.collection:
+    - highpri
+    - tier1
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
+  ms.date: 11/14/2022
+  localization_priority: medium
+
+landingContent:
+
+  - title: Windows 11
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 11 overview
+            url: windows-11-overview.md
+          - text: Windows 11 requirements
+            url: windows-11-requirements.md
+          - text: Plan for Windows 11
+            url: windows-11-plan.md
+          - text: Prepare for Windows 11
+            url: windows-11-prepare.md
+
+  - title: Windows 10
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What's new in Windows 10, version 22H2
+            url: whats-new-windows-10-version-22h2.md
+          - text: What's new in Windows 10, version 21H2
+            url: whats-new-windows-10-version-21h2.md
+          - text: What's new in Windows 10, version 21H1
+            url: whats-new-windows-10-version-21h1.md
+
+  - title: Learn more
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 11 release information
+            url: /windows/release-health/windows11-release-information
+          - text: Windows release health dashboard
+            url: /windows/release-health/
+          - text: Windows 11 update history
+            url: https://support.microsoft.com/topic/windows-11-version-22h2-update-history-ec4229c3-9c5f-4e75-9d6d-9025ab70fcce
+          - text: Windows 10 update history
+            url: https://support.microsoft.com/topic/windows-10-update-history-857b8ccb-71e4-49e5-b3f6-7073197d98fb
+          - text: Windows features we're no longer developing
+            url: deprecated-features.md
+          - text: Features and functionality removed in Windows
+            url: removed-features.md
+          - text: Compare Windows 11 Editions
+            url: https://www.microsoft.com/windows/business/compare-windows-11
+          - text: Windows 10 Enterprise LTSC
+            url: ltsc/index.md

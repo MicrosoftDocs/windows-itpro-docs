@@ -1,191 +1,161 @@
 ---
-title: Policy CSP - ADMX_msched
-description: Policy CSP - ADMX_msched
-ms.author: dansimp
+title: ADMX_msched Policy CSP
+description: Learn more about the ADMX_msched Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 12/08/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_msched-Begin -->
 # Policy CSP - ADMX_msched
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_msched policies  
-
-<dl>
-  <dd>
-    <a href="#admx-msched-activationboundarypolicy">ADMX_msched/ActivationBoundaryPolicy</a>
-  </dd>
-  <dd>
-    <a href="#admx-msched-randomdelaypolicy">ADMX_msched/RandomDelayPolicy</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-msched-activationboundarypolicy"></a>**ADMX_msched/ActivationBoundaryPolicy**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure Automatic Maintenance activation boundary. The maintenance activation boundary is the daily scheduled time at which Automatic Maintenance starts.
-
-If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
-
-If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Automatic Maintenance Activation Boundary*
--   GP name: *ActivationBoundaryPolicy*
--   GP path: *Windows Components\Maintenance Scheduler*
--   GP ADMX file name: *msched.admx*
+<!-- ADMX_msched-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_msched-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ActivationBoundaryPolicy-Begin -->
+## ActivationBoundaryPolicy
 
-<!--Policy-->
-<a href="" id="admx-msched-randomdelaypolicy"></a>**ADMX_msched/RandomDelayPolicy**  
+<!-- ActivationBoundaryPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ActivationBoundaryPolicy-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ActivationBoundaryPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_msched/ActivationBoundaryPolicy
+```
+<!-- ActivationBoundaryPolicy-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ActivationBoundaryPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure Automatic Maintenance activation boundary.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+The maintenance activation boundary is the daily schduled time at which Automatic Maintenance starts
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 
-<hr/>
+- If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+<!-- ActivationBoundaryPolicy-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure Automatic Maintenance activation random delay.
+<!-- ActivationBoundaryPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ActivationBoundaryPolicy-Editable-End -->
+
+<!-- ActivationBoundaryPolicy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ActivationBoundaryPolicy-DFProperties-End -->
+
+<!-- ActivationBoundaryPolicy-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ActivationBoundaryPolicy |
+| Friendly Name | Automatic Maintenance Activation Boundary |
+| Location | Computer Configuration |
+| Path | Windows Components > Maintenance Scheduler |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Task Scheduler\Maintenance |
+| ADMX File Name | msched.admx |
+<!-- ActivationBoundaryPolicy-AdmxBacked-End -->
+
+<!-- ActivationBoundaryPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ActivationBoundaryPolicy-Examples-End -->
+
+<!-- ActivationBoundaryPolicy-End -->
+
+<!-- RandomDelayPolicy-Begin -->
+## RandomDelayPolicy
+
+<!-- RandomDelayPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RandomDelayPolicy-Applicability-End -->
+
+<!-- RandomDelayPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_msched/RandomDelayPolicy
+```
+<!-- RandomDelayPolicy-OmaUri-End -->
+
+<!-- RandomDelayPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure Automatic Maintenance activation random delay.
 
 The maintenance random delay is the amount of time up to which Automatic Maintenance will delay starting from its Activation Boundary.
 
-If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by up to this time.
+- If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by upto this time.
 
-If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
+- If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
 
-If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
+- If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
+<!-- RandomDelayPolicy-Description-End -->
 
-<!--/Description-->
+<!-- RandomDelayPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RandomDelayPolicy-Editable-End -->
+
+<!-- RandomDelayPolicy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RandomDelayPolicy-DFProperties-End -->
+
+<!-- RandomDelayPolicy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Automatic Maintenance Random Delay*
--   GP name: *RandomDelayPolicy*
--   GP path: *Windows Components\Maintenance Scheduler*
--   GP ADMX file name: *msched.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RandomDelayPolicy |
+| Friendly Name | Automatic Maintenance Random Delay |
+| Location | Computer Configuration |
+| Path | Windows Components > Maintenance Scheduler |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Task Scheduler\Maintenance |
+| Registry Value Name | Randomized |
+| ADMX File Name | msched.admx |
+<!-- RandomDelayPolicy-AdmxBacked-End -->
 
+<!-- RandomDelayPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RandomDelayPolicy-Examples-End -->
 
-Footnotes:
+<!-- RandomDelayPolicy-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- ADMX_msched-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_msched-CspMoreInfo-End -->
 
-<!--/Policies-->
+<!-- ADMX_msched-End -->
 
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

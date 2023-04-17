@@ -1,38 +1,26 @@
 ---
-title: Add Production Devices to the Membership Group for a Zone (Windows 10)
+title: Add Production Devices to the Membership Group for a Zone (Windows)
 description: Learn how to add production devices to the membership group for a zone and refresh the group policy on the devices in the membership group.
-ms.assetid: 7141de15-5840-4beb-aabe-21c1dd89eb23
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/07/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Add Production Devices to the Membership Group for a Zone
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 After you test the GPOs for your design on a small set of devices, you can deploy them to the production devices.
 
 **Caution**  
-For GPOs that contain connection security rules that prevent unauthenticated connections, be sure to set the rules to request, not require, authentication during testing. After you deploy the GPO and confirm that all of your devices are successfully communicating by using authenticated IPsec, then you can modify the GPO to require authentication. Do not change the boundary zone GPO to require mode.
+For GPOs that contain connection security rules that prevent unauthenticated connections, ensure you set the rules to request, not require, authentication during testing. After you deploy the GPO and confirm that all of your devices are successfully communicating by using authenticated IPsec, then you can modify the GPO to require authentication. Don't change the boundary zone GPO to require mode.
 
  
 
-The method discussed in this guide uses the **Domain Computers** built-in group. The advantage of this method is that all new devices that are joined to the domain automatically receive the isolated domain GPO. To do this successfully, you must make sure that the WMI filters and security group filters exclude devices that must not receive the GPOs. Use device groups that deny both read and apply Group Policy permissions to the GPOs, such as a group used in the CG\_DOMISO\_NOIPSEC example design. Devices that are members of some zones must also be excluded from applying the GPOs for the main isolated domain. For more information, see the "Prevent members of a group from applying a GPO" section in [Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md).
+The method discussed in this guide uses the **Domain Computers** built-in group. The advantage of this method is that all new devices that are joined to the domain automatically receive the isolated domain GPO. To define this setting successfully, you must make sure that the WMI filters and security group filters exclude devices that must not receive the GPOs. Use device groups that deny both read and apply Group Policy permissions to the GPOs, such as a group used in the CG\_DOMISO\_NOIPSEC example design. Devices that are members of some zones must also be excluded from applying the GPOs for the main isolated domain. For more information, see the "Prevent members of a group from applying a GPO" section in [Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md).
 
 Without such a group (or groups), you must either add devices individually or use the groups containing device accounts that are available to you.
 
@@ -66,7 +54,7 @@ After a computer is a member of the group, you can force a Group Policy refresh 
 
 ## To refresh Group Policy on a device
 
-From an elevated command prompt, type the following:
+From an elevated command prompt, type the following command:
 
 ``` syntax
 gpupdate /target:computer /force
@@ -76,7 +64,7 @@ After Group Policy is refreshed, you can see which GPOs are currently applied to
 
 ## To see which GPOs are applied to a device
 
-From an elevated command prompt, type the following:
+From an elevated command prompt, type the following command:
 
 ``` syntax
 gpresult /r /scope:computer

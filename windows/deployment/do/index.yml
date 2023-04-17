@@ -1,0 +1,105 @@
+### YamlMime:Landing
+
+title: Delivery Optimization # < 60 chars
+summary: Set up peer to peer downloads for Microsoft content supported by Delivery Optimization and learn about Microsoft Connected Cache.  # < 160 chars
+
+metadata:
+  title: Delivery Optimization # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about using peer to peer downloads on Windows clients and learn about Microsoft Connected Cache. # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.technology: itpro-updates
+  ms.collection:
+    - highpri
+    - tier3
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
+  ms.date: 03/07/2022 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Delivery Optimization
+            url: waas-delivery-optimization.md
+          - text: What's new in Delivery Optimization
+            url: whats-new-do.md
+          - text: Microsoft Connected Cache (MCC) overview
+            url: waas-microsoft-connected-cache.md
+
+
+  # Card (optional)
+  - title: Configure Delivery Optimization on Windows
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Delivery Optimization settings
+            url: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
+          - text: Windows PowerShell for Delivery Optimization
+            url: waas-delivery-optimization-setup.md#windows-powershell-cmdlets
+          - text: Troubleshoot Delivery Optimization
+            url: waas-delivery-optimization-setup.md#troubleshooting
+          - text: Delivery Optimization Frequently Asked Questions
+            url: ../do/waas-delivery-optimization-faq.yml
+          - text: Submit feedback
+            url: https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332
+
+  # Card (optional)
+  - title: Configure Delivery Optimization on Microsoft Intune or Configuration Manager
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Optimize Windows 10 or later update delivery with Configuration Manager
+            url: /mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization
+          - text: Delivery Optimization settings in Microsoft Intune
+            url: /mem/intune/configuration/delivery-optimization-windows           
+ 
+  # Card
+  - title: Microsoft Connected Cache (MCC) for Enterprise and Education
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: MCC for Enterprise and Education (early preview)
+            url: waas-microsoft-connected-cache.md
+          - text: Sign up
+            url: https://aka.ms/MSConnectedCacheSignup 
+
+  # Card
+  - title: Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs)
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: MCC for ISPs (public preview)
+            url: mcc-isp-signup.md
+          - text: Sign up
+            url: https://aka.ms/MCCForISPSurvey
+          - text: MCC for ISPs (early preview)
+            url: mcc-isp.md
+          
+
+  # Card (optional)
+  - title: Resources
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Introducing Microsoft Connected Cache
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
+          - text: Delivery Optimization reference
+            url: waas-delivery-optimization-reference.md
+          - text: Delivery Optimization client-service communication
+            url: delivery-optimization-workflow.md
+          - text: Using a proxy with Delivery Optimization
+            url: delivery-optimization-proxy.md
+          - text: Content endpoints for Delivery Optimization and Microsoft Connected Cache
+            url: delivery-optimization-endpoints.md
+          - text: Testing Delivery Optimization
+            url: delivery-optimization-test.md
+

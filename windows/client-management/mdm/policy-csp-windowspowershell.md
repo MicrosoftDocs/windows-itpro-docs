@@ -1,119 +1,107 @@
 ---
-title: Policy CSP - WindowsPowerShell
-description: Use the Policy CSP - WindowsPowerShell setting to enable logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: WindowsPowerShell Policy CSP
+description: Learn more about the WindowsPowerShell Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsPowerShell-Begin -->
 # Policy CSP - WindowsPowerShell
 
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+<!-- WindowsPowerShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsPowerShell-Editable-End -->
 
-<hr/>
+<!-- TurnOnPowerShellScriptBlockLogging-Begin -->
+## TurnOnPowerShellScriptBlockLogging
 
-<!--Policies-->
-## WindowsPowerShell policies  
+<!-- TurnOnPowerShellScriptBlockLogging-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- TurnOnPowerShellScriptBlockLogging-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#windowspowershell-turnonpowershellscriptblocklogging">WindowsPowerShell/TurnOnPowerShellScriptBlockLogging</a>
-  </dd>
-</dl>
+<!-- TurnOnPowerShellScriptBlockLogging-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging
+```
+<!-- TurnOnPowerShellScriptBlockLogging-OmaUri-End -->
 
-<hr/>
+<!-- TurnOnPowerShellScriptBlockLogging-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
 
-<!--Policy-->
-<a href="" id="windowspowershell-turnonpowershellscriptblocklogging"></a>**WindowsPowerShell/TurnOnPowerShellScriptBlockLogging**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log. If you enable this policy setting,
+- If you enable this policy setting,
 Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation.
 
-If you disable this policy setting, logging of PowerShell script input is disabled.
+- If you disable this policy setting, logging of PowerShell script input is disabled.
 
 If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script
 starts or stops. Enabling Invocation Logging generates a high volume of event logs.
 
-Note: This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+> [!NOTE]
+> This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.
+<!-- TurnOnPowerShellScriptBlockLogging-Description-End -->
 
-<!--/Description-->
+<!-- TurnOnPowerShellScriptBlockLogging-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOnPowerShellScriptBlockLogging-Editable-End -->
+
+<!-- TurnOnPowerShellScriptBlockLogging-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOnPowerShellScriptBlockLogging-DFProperties-End -->
+
+<!-- TurnOnPowerShellScriptBlockLogging-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on PowerShell Script Block Logging*
--   GP name: *EnableScriptBlockLogging*
--   GP path: *Windows Components/Windows PowerShell*
--   GP ADMX file name: *PowerShellExecutionPolicy.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EnableScriptBlockLogging |
+| Friendly Name | Turn on PowerShell Script Block Logging |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Windows PowerShell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging |
+| Registry Value Name | EnableScriptBlockLogging |
+| ADMX File Name | PowerShellExecutionPolicy.admx |
+<!-- TurnOnPowerShellScriptBlockLogging-AdmxBacked-End -->
 
-Footnotes:
+<!-- TurnOnPowerShellScriptBlockLogging-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOnPowerShellScriptBlockLogging-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- TurnOnPowerShellScriptBlockLogging-End -->
 
-<!--/Policies-->
+<!-- WindowsPowerShell-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsPowerShell-CspMoreInfo-End -->
 
+<!-- WindowsPowerShell-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

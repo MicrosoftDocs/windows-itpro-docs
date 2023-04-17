@@ -1,493 +1,330 @@
 ---
-title: Policy CSP - AppVirtualization
-description: Learn how the Policy CSP - AppVirtualization setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: AppVirtualization Policy CSP
+description: Learn more about the AppVirtualization Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- AppVirtualization-Begin -->
 # Policy CSP - AppVirtualization
 
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+<!-- AppVirtualization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppVirtualization-Editable-End -->
 
-<hr/>
+<!-- AllowAppVClient-Begin -->
+## AllowAppVClient
 
-<!--Policies-->
-## AppVirtualization policies  
+<!-- AllowAppVClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowAppVClient-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#appvirtualization-allowappvclient">AppVirtualization/AllowAppVClient</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowdynamicvirtualization">AppVirtualization/AllowDynamicVirtualization</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowpackagecleanup">AppVirtualization/AllowPackageCleanup</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowpackagescripts">AppVirtualization/AllowPackageScripts</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowpublishingrefreshux">AppVirtualization/AllowPublishingRefreshUX</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowreportingserver">AppVirtualization/AllowReportingServer</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowroamingfileexclusions">AppVirtualization/AllowRoamingFileExclusions</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowroamingregistryexclusions">AppVirtualization/AllowRoamingRegistryExclusions</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowstreamingautoload">AppVirtualization/AllowStreamingAutoload</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-clientcoexistenceallowmigrationmode">AppVirtualization/ClientCoexistenceAllowMigrationmode</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-integrationallowrootglobal">AppVirtualization/IntegrationAllowRootGlobal</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-integrationallowrootuser">AppVirtualization/IntegrationAllowRootUser</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver1">AppVirtualization/PublishingAllowServer1</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver2">AppVirtualization/PublishingAllowServer2</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver3">AppVirtualization/PublishingAllowServer3</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver4">AppVirtualization/PublishingAllowServer4</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver5">AppVirtualization/PublishingAllowServer5</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowcertificatefilterforclient-ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowlocationprovider">AppVirtualization/StreamingAllowLocationProvider</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowpackageinstallationroot">AppVirtualization/StreamingAllowPackageInstallationRoot</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowpackagesourceroot">AppVirtualization/StreamingAllowPackageSourceRoot</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowreestablishmentinterval">AppVirtualization/StreamingAllowReestablishmentInterval</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowreestablishmentretries">AppVirtualization/StreamingAllowReestablishmentRetries</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingsharedcontentstoremode">AppVirtualization/StreamingSharedContentStoreMode</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingsupportbranchcache">AppVirtualization/StreamingSupportBranchCache</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingverifycertificaterevocationlist">AppVirtualization/StreamingVerifyCertificateRevocationList</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-virtualcomponentsallowlist">AppVirtualization/VirtualComponentsAllowList</a>
-  </dd>
-</dl>
+<!-- AllowAppVClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowAppVClient
+```
+<!-- AllowAppVClient-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowAppVClient-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
+<!-- AllowAppVClient-Description-End -->
 
-<!--/Description-->
+<!-- AllowAppVClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAppVClient-Editable-End -->
+
+<!-- AllowAppVClient-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowAppVClient-DFProperties-End -->
+
+<!-- AllowAppVClient-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable App-V Client*
--   GP name: *EnableAppV*
--   GP path: *System/App-V*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | EnableAppV |
+| Friendly Name | Enable App-V Client |
+| Location | Computer Configuration |
+| Path | System > App-V |
+| Registry Key Name | Software\Policies\Microsoft\AppV\Client |
+| Registry Value Name | Enabled |
+| ADMX File Name | appv.admx |
+<!-- AllowAppVClient-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowAppVClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAppVClient-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**  
+<!-- AllowAppVClient-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowDynamicVirtualization-Begin -->
+## AllowDynamicVirtualization
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDynamicVirtualization-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowDynamicVirtualization-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowDynamicVirtualization-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowDynamicVirtualization
+```
+<!-- AllowDynamicVirtualization-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowDynamicVirtualization-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
+<!-- AllowDynamicVirtualization-Description-End -->
 
-<!--/Description-->
+<!-- AllowDynamicVirtualization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDynamicVirtualization-Editable-End -->
+
+<!-- AllowDynamicVirtualization-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowDynamicVirtualization-DFProperties-End -->
+
+<!-- AllowDynamicVirtualization-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable Dynamic Virtualization*
--   GP name: *Virtualization_JITVEnable*
--   GP path: *System/App-V/Virtualization*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Virtualization_JITVEnable |
+| Friendly Name | Enable Dynamic Virtualization |
+| Location | Computer Configuration |
+| Path | System > App-V > Virtualization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization |
+| Registry Value Name | EnableDynamicVirtualization |
+| ADMX File Name | appv.admx |
+<!-- AllowDynamicVirtualization-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowDynamicVirtualization-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDynamicVirtualization-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowpackagecleanup"></a>**AppVirtualization/AllowPackageCleanup**  
+<!-- AllowDynamicVirtualization-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowPackageCleanup-Begin -->
+## AllowPackageCleanup
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowPackageCleanup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowPackageCleanup-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowPackageCleanup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageCleanup
+```
+<!-- AllowPackageCleanup-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPackageCleanup-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
+<!-- AllowPackageCleanup-Description-End -->
 
-<!--/Description-->
+<!-- AllowPackageCleanup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPackageCleanup-Editable-End -->
+
+<!-- AllowPackageCleanup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowPackageCleanup-DFProperties-End -->
+
+<!-- AllowPackageCleanup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable automatic cleanup of unused appv packages*
--   GP name: *PackageManagement_AutoCleanupEnable*
--   GP path: *System/App-V/PackageManagement*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | PackageManagement_AutoCleanupEnable |
+| Friendly Name | Enable automatic cleanup of unused appv packages |
+| Location | Computer Configuration |
+| Path | System > App-V > PackageManagement |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\PackageManagement |
+| Registry Value Name | AutoCleanupEnabled |
+| ADMX File Name | appv.admx |
+<!-- AllowPackageCleanup-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowPackageCleanup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPackageCleanup-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**  
+<!-- AllowPackageCleanup-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowPackageScripts-Begin -->
+## AllowPackageScripts
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowPackageScripts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowPackageScripts-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowPackageScripts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageScripts
+```
+<!-- AllowPackageScripts-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPackageScripts-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables scripts defined in the package manifest of configuration files that should run.
+<!-- AllowPackageScripts-Description-End -->
 
-<!--/Description-->
+<!-- AllowPackageScripts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPackageScripts-Editable-End -->
+
+<!-- AllowPackageScripts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowPackageScripts-DFProperties-End -->
+
+<!-- AllowPackageScripts-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable Package Scripts*
--   GP name: *Scripting_Enable_Package_Scripts*
--   GP path: *System/App-V/Scripting*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Scripting_Enable_Package_Scripts |
+| Friendly Name | Enable Package Scripts |
+| Location | Computer Configuration |
+| Path | System > App-V > Scripting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Scripting |
+| Registry Value Name | EnablePackageScripts |
+| ADMX File Name | appv.admx |
+<!-- AllowPackageScripts-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowPackageScripts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPackageScripts-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**  
+<!-- AllowPackageScripts-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowPublishingRefreshUX-Begin -->
+## AllowPublishingRefreshUX
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowPublishingRefreshUX-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowPublishingRefreshUX-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowPublishingRefreshUX-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPublishingRefreshUX
+```
+<!-- AllowPublishingRefreshUX-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPublishingRefreshUX-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables a UX to display to the user when a publishing refresh is performed on the client.
+<!-- AllowPublishingRefreshUX-Description-End -->
 
-<!--/Description-->
+<!-- AllowPublishingRefreshUX-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPublishingRefreshUX-Editable-End -->
+
+<!-- AllowPublishingRefreshUX-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowPublishingRefreshUX-DFProperties-End -->
+
+<!-- AllowPublishingRefreshUX-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable Publishing Refresh UX*
--   GP name: *Enable_Publishing_Refresh_UX*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Enable_Publishing_Refresh_UX |
+| Friendly Name | Enable Publishing Refresh UX |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing |
+| Registry Value Name | EnablePublishingRefreshUI |
+| ADMX File Name | appv.admx |
+<!-- AllowPublishingRefreshUX-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowPublishingRefreshUX-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPublishingRefreshUX-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**  
+<!-- AllowPublishingRefreshUX-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowReportingServer-Begin -->
+## AllowReportingServer
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowReportingServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowReportingServer-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowReportingServer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowReportingServer
+```
+<!-- AllowReportingServer-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowReportingServer-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Reporting Server URL: Displays the URL of reporting server.
 
-Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9AM.
+Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9. AM.
 
 Delay reporting for the random minutes: The maximum minutes of random delay on top of the reporting time. For a busy system, the random delay will help reduce the server load.
 
@@ -495,468 +332,393 @@ Repeat reporting for every (days): The periodical interval in days for sending t
 
 Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and will not be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
 
-Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
+Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
+<!-- AllowReportingServer-Description-End -->
 
-<!--/Description-->
+<!-- AllowReportingServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowReportingServer-Editable-End -->
+
+<!-- AllowReportingServer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowReportingServer-DFProperties-End -->
+
+<!-- AllowReportingServer-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Reporting Server*
--   GP name: *Reporting_Server_Policy*
--   GP path: *System/App-V/Reporting*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Reporting_Server_Policy |
+| Friendly Name | Reporting Server |
+| Location | Computer Configuration |
+| Path | System > App-V > Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Reporting |
+| Registry Value Name | ReportingEnabled |
+| ADMX File Name | appv.admx |
+<!-- AllowReportingServer-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowReportingServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowReportingServer-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**  
+<!-- AllowReportingServer-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowRoamingFileExclusions-Begin -->
+## AllowRoamingFileExclusions
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRoamingFileExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowRoamingFileExclusions-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRoamingFileExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowRoamingFileExclusions
+```
+<!-- AllowRoamingFileExclusions-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowRoamingFileExclusions-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
+<!-- AllowRoamingFileExclusions-Description-End -->
 
-<!--/Description-->
+<!-- AllowRoamingFileExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRoamingFileExclusions-Editable-End -->
+
+<!-- AllowRoamingFileExclusions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowRoamingFileExclusions-DFProperties-End -->
+
+<!-- AllowRoamingFileExclusions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Roaming File Exclusions*
--   GP name: *Integration_Roaming_File_Exclusions*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Integration_Roaming_File_Exclusions |
+| Friendly Name | Roaming File Exclusions |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- AllowRoamingFileExclusions-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowRoamingFileExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRoamingFileExclusions-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowroamingregistryexclusions"></a>**AppVirtualization/AllowRoamingRegistryExclusions**  
+<!-- AllowRoamingFileExclusions-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowRoamingRegistryExclusions-Begin -->
+## AllowRoamingRegistryExclusions
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRoamingRegistryExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowRoamingRegistryExclusions-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRoamingRegistryExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowRoamingRegistryExclusions
+```
+<!-- AllowRoamingRegistryExclusions-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowRoamingRegistryExclusions-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
+<!-- AllowRoamingRegistryExclusions-Description-End -->
 
-<!--/Description-->
+<!-- AllowRoamingRegistryExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRoamingRegistryExclusions-Editable-End -->
+
+<!-- AllowRoamingRegistryExclusions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowRoamingRegistryExclusions-DFProperties-End -->
+
+<!-- AllowRoamingRegistryExclusions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Roaming Registry Exclusions*
--   GP name: *Integration_Roaming_Registry_Exclusions*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Integration_Roaming_Registry_Exclusions |
+| Friendly Name | Roaming Registry Exclusions |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- AllowRoamingRegistryExclusions-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowRoamingRegistryExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRoamingRegistryExclusions-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**  
+<!-- AllowRoamingRegistryExclusions-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- AllowStreamingAutoload-Begin -->
+## AllowStreamingAutoload
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStreamingAutoload-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowStreamingAutoload-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowStreamingAutoload-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowStreamingAutoload
+```
+<!-- AllowStreamingAutoload-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowStreamingAutoload-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies how new packages should be loaded automatically by App-V on a specific computer.
+<!-- AllowStreamingAutoload-Description-End -->
 
-<!--/Description-->
+<!-- AllowStreamingAutoload-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStreamingAutoload-Editable-End -->
+
+<!-- AllowStreamingAutoload-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowStreamingAutoload-DFProperties-End -->
+
+<!-- AllowStreamingAutoload-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify what to load in background (aka AutoLoad)*
--   GP name: *Steaming_Autoload*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Steaming_Autoload |
+| Friendly Name | Specify what to load in background (aka AutoLoad) |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- AllowStreamingAutoload-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowStreamingAutoload-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStreamingAutoload-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**  
+<!-- AllowStreamingAutoload-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- ClientCoexistenceAllowMigrationmode-Begin -->
+## ClientCoexistenceAllowMigrationmode
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClientCoexistenceAllowMigrationmode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- ClientCoexistenceAllowMigrationmode-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClientCoexistenceAllowMigrationmode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/ClientCoexistenceAllowMigrationmode
+```
+<!-- ClientCoexistenceAllowMigrationmode-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ClientCoexistenceAllowMigrationmode-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.
+<!-- ClientCoexistenceAllowMigrationmode-Description-End -->
 
-<!--/Description-->
+<!-- ClientCoexistenceAllowMigrationmode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClientCoexistenceAllowMigrationmode-Editable-End -->
+
+<!-- ClientCoexistenceAllowMigrationmode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClientCoexistenceAllowMigrationmode-DFProperties-End -->
+
+<!-- ClientCoexistenceAllowMigrationmode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable Migration Mode*
--   GP name: *Client_Coexistence_Enable_Migration_mode*
--   GP path: *System/App-V/Client Coexistence*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Client_Coexistence_Enable_Migration_mode |
+| Friendly Name | Enable Migration Mode |
+| Location | Computer Configuration |
+| Path | System > App-V > Client Coexistence |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Coexistence |
+| Registry Value Name | MigrationMode |
+| ADMX File Name | appv.admx |
+<!-- ClientCoexistenceAllowMigrationmode-AdmxBacked-End -->
 
-<hr/>
+<!-- ClientCoexistenceAllowMigrationmode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClientCoexistenceAllowMigrationmode-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**  
+<!-- ClientCoexistenceAllowMigrationmode-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- IntegrationAllowRootGlobal-Begin -->
+## IntegrationAllowRootGlobal
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IntegrationAllowRootGlobal-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- IntegrationAllowRootGlobal-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IntegrationAllowRootGlobal-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/IntegrationAllowRootGlobal
+```
+<!-- IntegrationAllowRootGlobal-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- IntegrationAllowRootGlobal-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+<!-- IntegrationAllowRootGlobal-Description-End -->
 
-<!--/Description-->
+<!-- IntegrationAllowRootGlobal-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntegrationAllowRootGlobal-Editable-End -->
+
+<!-- IntegrationAllowRootGlobal-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntegrationAllowRootGlobal-DFProperties-End -->
+
+<!-- IntegrationAllowRootGlobal-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Integration Root User*
--   GP name: *Integration_Root_User*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Integration_Root_User |
+| Friendly Name | Integration Root User |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- IntegrationAllowRootGlobal-AdmxBacked-End -->
 
-<hr/>
+<!-- IntegrationAllowRootGlobal-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntegrationAllowRootGlobal-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**  
+<!-- IntegrationAllowRootGlobal-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- IntegrationAllowRootUser-Begin -->
+## IntegrationAllowRootUser
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IntegrationAllowRootUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- IntegrationAllowRootUser-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IntegrationAllowRootUser-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/IntegrationAllowRootUser
+```
+<!-- IntegrationAllowRootUser-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- IntegrationAllowRootUser-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
+<!-- IntegrationAllowRootUser-Description-End -->
 
-<!--/Description-->
+<!-- IntegrationAllowRootUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntegrationAllowRootUser-Editable-End -->
+
+<!-- IntegrationAllowRootUser-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntegrationAllowRootUser-DFProperties-End -->
+
+<!-- IntegrationAllowRootUser-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Integration Root Global*
--   GP name: *Integration_Root_Global*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Integration_Root_Global |
+| Friendly Name | Integration Root Global |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- IntegrationAllowRootUser-AdmxBacked-End -->
 
-<hr/>
+<!-- IntegrationAllowRootUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntegrationAllowRootUser-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**  
+<!-- IntegrationAllowRootUser-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PublishingAllowServer1-Begin -->
+## PublishingAllowServer1
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer1-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer1-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer1
+```
+<!-- PublishingAllowServer1-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -976,71 +738,60 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer1-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer1-Editable-End -->
+
+<!-- PublishingAllowServer1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer1-DFProperties-End -->
+
+<!-- PublishingAllowServer1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publishing Server 1 Settings*
--   GP name: *Publishing_Server1_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server1_Policy |
+| Friendly Name | Publishing Server 1 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\1 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer1-AdmxBacked-End -->
 
-<hr/>
+<!-- PublishingAllowServer1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer1-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver2"></a>**AppVirtualization/PublishingAllowServer2**  
+<!-- PublishingAllowServer1-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PublishingAllowServer2-Begin -->
+## PublishingAllowServer2
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer2-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2
+```
+<!-- PublishingAllowServer2-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -1060,71 +811,60 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer2-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer2-Editable-End -->
+
+<!-- PublishingAllowServer2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer2-DFProperties-End -->
+
+<!-- PublishingAllowServer2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publishing Server 2 Settings*
--   GP name: *Publishing_Server2_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server2_Policy |
+| Friendly Name | Publishing Server 2 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\2 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer2-AdmxBacked-End -->
 
-<hr/>
+<!-- PublishingAllowServer2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer2-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver3"></a>**AppVirtualization/PublishingAllowServer3**  
+<!-- PublishingAllowServer2-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PublishingAllowServer3-Begin -->
+## PublishingAllowServer3
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer3-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer3-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer3-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer3
+```
+<!-- PublishingAllowServer3-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer3-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -1144,71 +884,60 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer3-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer3-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer3-Editable-End -->
+
+<!-- PublishingAllowServer3-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer3-DFProperties-End -->
+
+<!-- PublishingAllowServer3-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publishing Server 3 Settings*
--   GP name: *Publishing_Server3_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server3_Policy |
+| Friendly Name | Publishing Server 3 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\3 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer3-AdmxBacked-End -->
 
-<hr/>
+<!-- PublishingAllowServer3-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer3-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver4"></a>**AppVirtualization/PublishingAllowServer4**  
+<!-- PublishingAllowServer3-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PublishingAllowServer4-Begin -->
+## PublishingAllowServer4
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer4-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer4-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer4-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer4
+```
+<!-- PublishingAllowServer4-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer4-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -1228,71 +957,60 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer4-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer4-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer4-Editable-End -->
+
+<!-- PublishingAllowServer4-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer4-DFProperties-End -->
+
+<!-- PublishingAllowServer4-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publishing Server 4 Settings*
--   GP name: *Publishing_Server4_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server4_Policy |
+| Friendly Name | Publishing Server 4 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\4 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer4-AdmxBacked-End -->
 
-<hr/>
+<!-- PublishingAllowServer4-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer4-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver5"></a>**AppVirtualization/PublishingAllowServer5**  
+<!-- PublishingAllowServer4-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PublishingAllowServer5-Begin -->
+## PublishingAllowServer5
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer5-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer5-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer5-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer5
+```
+<!-- PublishingAllowServer5-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer5-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -1312,762 +1030,659 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer5-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer5-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer5-Editable-End -->
+
+<!-- PublishingAllowServer5-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer5-DFProperties-End -->
+
+<!-- PublishingAllowServer5-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publishing Server 5 Settings*
--   GP name: *Publishing_Server5_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server5_Policy |
+| Friendly Name | Publishing Server 5 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\5 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer5-AdmxBacked-End -->
 
-<hr/>
+<!-- PublishingAllowServer5-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer5-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
+<!-- PublishingAllowServer5-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowCertificateFilterForClient_SSL-Begin -->
+## StreamingAllowCertificateFilterForClient_SSL
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowCertificateFilterForClient_SSL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowCertificateFilterForClient_SSL-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowCertificateFilterForClient_SSL-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowCertificateFilterForClient_SSL
+```
+<!-- StreamingAllowCertificateFilterForClient_SSL-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the path to a valid certificate in the certificate store.
+<!-- StreamingAllowCertificateFilterForClient_SSL-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Editable-End -->
+
+<!-- StreamingAllowCertificateFilterForClient_SSL-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowCertificateFilterForClient_SSL-DFProperties-End -->
+
+<!-- StreamingAllowCertificateFilterForClient_SSL-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Certificate Filter For Client SSL*
--   GP name: *Streaming_Certificate_Filter_For_Client_SSL*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Certificate_Filter_For_Client_SSL |
+| Friendly Name | Certificate Filter For Client SSL |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowCertificateFilterForClient_SSL-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowCertificateFilterForClient_SSL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**  
+<!-- StreamingAllowCertificateFilterForClient_SSL-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowHighCostLaunch-Begin -->
+## StreamingAllowHighCostLaunch
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowHighCostLaunch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowHighCostLaunch-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowHighCostLaunch-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowHighCostLaunch
+```
+<!-- StreamingAllowHighCostLaunch-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowHighCostLaunch-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).
+<!-- StreamingAllowHighCostLaunch-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowHighCostLaunch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowHighCostLaunch-Editable-End -->
+
+<!-- StreamingAllowHighCostLaunch-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowHighCostLaunch-DFProperties-End -->
+
+<!-- StreamingAllowHighCostLaunch-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
--   GP name: *Streaming_Allow_High_Cost_Launch*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Allow_High_Cost_Launch |
+| Friendly Name | Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | AllowHighCostLaunch |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowHighCostLaunch-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowHighCostLaunch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowHighCostLaunch-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**  
+<!-- StreamingAllowHighCostLaunch-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowLocationProvider-Begin -->
+## StreamingAllowLocationProvider
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowLocationProvider-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowLocationProvider-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowLocationProvider-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowLocationProvider
+```
+<!-- StreamingAllowLocationProvider-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowLocationProvider-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the CLSID for a compatible implementation of the IAppvPackageLocationProvider interface.
+<!-- StreamingAllowLocationProvider-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowLocationProvider-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowLocationProvider-Editable-End -->
+
+<!-- StreamingAllowLocationProvider-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowLocationProvider-DFProperties-End -->
+
+<!-- StreamingAllowLocationProvider-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Location Provider*
--   GP name: *Streaming_Location_Provider*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Location_Provider |
+| Friendly Name | Location Provider |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowLocationProvider-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowLocationProvider-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowLocationProvider-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowpackageinstallationroot"></a>**AppVirtualization/StreamingAllowPackageInstallationRoot**  
+<!-- StreamingAllowLocationProvider-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowPackageInstallationRoot-Begin -->
+## StreamingAllowPackageInstallationRoot
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowPackageInstallationRoot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowPackageInstallationRoot-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowPackageInstallationRoot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowPackageInstallationRoot
+```
+<!-- StreamingAllowPackageInstallationRoot-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowPackageInstallationRoot-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies directory where all new applications and updates will be installed.
+<!-- StreamingAllowPackageInstallationRoot-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowPackageInstallationRoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowPackageInstallationRoot-Editable-End -->
+
+<!-- StreamingAllowPackageInstallationRoot-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowPackageInstallationRoot-DFProperties-End -->
+
+<!-- StreamingAllowPackageInstallationRoot-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Package Installation Root*
--   GP name: *Streaming_Package_Installation_Root*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Package_Installation_Root |
+| Friendly Name | Package Installation Root |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowPackageInstallationRoot-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowPackageInstallationRoot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowPackageInstallationRoot-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowpackagesourceroot"></a>**AppVirtualization/StreamingAllowPackageSourceRoot**  
+<!-- StreamingAllowPackageInstallationRoot-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowPackageSourceRoot-Begin -->
+## StreamingAllowPackageSourceRoot
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowPackageSourceRoot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowPackageSourceRoot-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowPackageSourceRoot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowPackageSourceRoot
+```
+<!-- StreamingAllowPackageSourceRoot-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowPackageSourceRoot-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Overrides source location for downloading package content.
+<!-- StreamingAllowPackageSourceRoot-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowPackageSourceRoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowPackageSourceRoot-Editable-End -->
+
+<!-- StreamingAllowPackageSourceRoot-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowPackageSourceRoot-DFProperties-End -->
+
+<!-- StreamingAllowPackageSourceRoot-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Package Source Root*
--   GP name: *Streaming_Package_Source_Root*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Package_Source_Root |
+| Friendly Name | Package Source Root |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowPackageSourceRoot-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowPackageSourceRoot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowPackageSourceRoot-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowreestablishmentinterval"></a>**AppVirtualization/StreamingAllowReestablishmentInterval**  
+<!-- StreamingAllowPackageSourceRoot-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowReestablishmentInterval-Begin -->
+## StreamingAllowReestablishmentInterval
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowReestablishmentInterval-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowReestablishmentInterval-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowReestablishmentInterval-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowReestablishmentInterval
+```
+<!-- StreamingAllowReestablishmentInterval-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowReestablishmentInterval-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the number of seconds between attempts to reestablish a dropped session.
+<!-- StreamingAllowReestablishmentInterval-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowReestablishmentInterval-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentInterval-Editable-End -->
+
+<!-- StreamingAllowReestablishmentInterval-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowReestablishmentInterval-DFProperties-End -->
+
+<!-- StreamingAllowReestablishmentInterval-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Reestablishment Interval*
--   GP name: *Streaming_Reestablishment_Interval*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Reestablishment_Interval |
+| Friendly Name | Reestablishment Interval |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowReestablishmentInterval-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowReestablishmentInterval-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentInterval-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowreestablishmentretries"></a>**AppVirtualization/StreamingAllowReestablishmentRetries**  
+<!-- StreamingAllowReestablishmentInterval-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingAllowReestablishmentRetries-Begin -->
+## StreamingAllowReestablishmentRetries
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowReestablishmentRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowReestablishmentRetries-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowReestablishmentRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowReestablishmentRetries
+```
+<!-- StreamingAllowReestablishmentRetries-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowReestablishmentRetries-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the number of times to retry a dropped session.
+<!-- StreamingAllowReestablishmentRetries-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowReestablishmentRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentRetries-Editable-End -->
+
+<!-- StreamingAllowReestablishmentRetries-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowReestablishmentRetries-DFProperties-End -->
+
+<!-- StreamingAllowReestablishmentRetries-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Reestablishment Retries*
--   GP name: *Streaming_Reestablishment_Retries*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Reestablishment_Retries |
+| Friendly Name | Reestablishment Retries |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowReestablishmentRetries-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingAllowReestablishmentRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentRetries-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingsharedcontentstoremode"></a>**AppVirtualization/StreamingSharedContentStoreMode**  
+<!-- StreamingAllowReestablishmentRetries-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingSharedContentStoreMode-Begin -->
+## StreamingSharedContentStoreMode
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingSharedContentStoreMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingSharedContentStoreMode-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingSharedContentStoreMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingSharedContentStoreMode
+```
+<!-- StreamingSharedContentStoreMode-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingSharedContentStoreMode-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies that streamed package contents will be not be saved to the local hard disk.
+<!-- StreamingSharedContentStoreMode-Description-End -->
 
-<!--/Description-->
+<!-- StreamingSharedContentStoreMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingSharedContentStoreMode-Editable-End -->
+
+<!-- StreamingSharedContentStoreMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingSharedContentStoreMode-DFProperties-End -->
+
+<!-- StreamingSharedContentStoreMode-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Shared Content Store (SCS) mode*
--   GP name: *Streaming_Shared_Content_Store_Mode*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Shared_Content_Store_Mode |
+| Friendly Name | Shared Content Store (SCS) mode |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | SharedContentStoreMode |
+| ADMX File Name | appv.admx |
+<!-- StreamingSharedContentStoreMode-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingSharedContentStoreMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingSharedContentStoreMode-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**  
+<!-- StreamingSharedContentStoreMode-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingSupportBranchCache-Begin -->
+## StreamingSupportBranchCache
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingSupportBranchCache-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingSupportBranchCache-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingSupportBranchCache-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingSupportBranchCache
+```
+<!-- StreamingSupportBranchCache-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingSupportBranchCache-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache.
+<!-- StreamingSupportBranchCache-Description-End -->
 
-<hr/>
+<!-- StreamingSupportBranchCache-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingSupportBranchCache-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
+<!-- StreamingSupportBranchCache-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingSupportBranchCache-DFProperties-End -->
+
+<!-- StreamingSupportBranchCache-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable Support for BranchCache*
--   GP name: *Streaming_Support_Branch_Cache*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Support_Branch_Cache |
+| Friendly Name | Enable Support for BranchCache |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | SupportBranchCache |
+| ADMX File Name | appv.admx |
+<!-- StreamingSupportBranchCache-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingSupportBranchCache-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingSupportBranchCache-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**  
+<!-- StreamingSupportBranchCache-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- StreamingVerifyCertificateRevocationList-Begin -->
+## StreamingVerifyCertificateRevocationList
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingVerifyCertificateRevocationList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingVerifyCertificateRevocationList-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingVerifyCertificateRevocationList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingVerifyCertificateRevocationList
+```
+<!-- StreamingVerifyCertificateRevocationList-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingVerifyCertificateRevocationList-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Verifies Server certificate revocation status before streaming using HTTPS.
+<!-- StreamingVerifyCertificateRevocationList-Description-End -->
 
-<!--/Description-->
+<!-- StreamingVerifyCertificateRevocationList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingVerifyCertificateRevocationList-Editable-End -->
+
+<!-- StreamingVerifyCertificateRevocationList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingVerifyCertificateRevocationList-DFProperties-End -->
+
+<!-- StreamingVerifyCertificateRevocationList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Verify certificate revocation list*
--   GP name: *Streaming_Verify_Certificate_Revocation_List*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Verify_Certificate_Revocation_List |
+| Friendly Name | Verify certificate revocation list |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | VerifyCertificateRevocationList |
+| ADMX File Name | appv.admx |
+<!-- StreamingVerifyCertificateRevocationList-AdmxBacked-End -->
 
-<hr/>
+<!-- StreamingVerifyCertificateRevocationList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingVerifyCertificateRevocationList-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**  
+<!-- StreamingVerifyCertificateRevocationList-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- VirtualComponentsAllowList-Begin -->
+## VirtualComponentsAllowList
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- VirtualComponentsAllowList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- VirtualComponentsAllowList-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- VirtualComponentsAllowList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/VirtualComponentsAllowList
+```
+<!-- VirtualComponentsAllowList-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- VirtualComponentsAllowList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.
+<!-- VirtualComponentsAllowList-Description-End -->
 
-<hr/>
+<!-- VirtualComponentsAllowList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- VirtualComponentsAllowList-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc.). Only processes whose full path matches one of these items can use virtual components.
+<!-- VirtualComponentsAllowList-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- VirtualComponentsAllowList-DFProperties-End -->
+
+<!-- VirtualComponentsAllowList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Virtual Component Process Allow List*
--   GP name: *Virtualization_JITVAllowList*
--   GP path: *System/App-V/Virtualization*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Virtualization_JITVAllowList |
+| Friendly Name | Virtual Component Process Allow List |
+| Location | Computer Configuration |
+| Path | System > App-V > Virtualization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization |
+| Registry Value Name | ProcessesUsingVirtualComponents |
+| ADMX File Name | appv.admx |
+<!-- VirtualComponentsAllowList-AdmxBacked-End -->
 
-Footnotes:
+<!-- VirtualComponentsAllowList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- VirtualComponentsAllowList-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- VirtualComponentsAllowList-End -->
 
-<!--/Policies-->
+<!-- AppVirtualization-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- AppVirtualization-CspMoreInfo-End -->
 
+<!-- AppVirtualization-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

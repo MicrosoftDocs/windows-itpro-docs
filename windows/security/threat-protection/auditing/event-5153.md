@@ -2,23 +2,20 @@
 title: 5153(S) A more restrictive Windows Filtering Platform filter has blocked a packet. (Windows 10)
 description: Describes security event 5153(S) A more restrictive Windows Filtering Platform filter has blocked a packet.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5153(S): A more restrictive Windows Filtering Platform filter has blocked a packet.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event is logged if a more restrictive Windows Filtering Platform filter has blocked a packet.

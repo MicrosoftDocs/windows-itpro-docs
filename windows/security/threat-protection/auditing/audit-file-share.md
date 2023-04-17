@@ -3,23 +3,20 @@ title: Audit File Share (Windows 10)
 description: The Advanced Security Audit policy setting, Audit File Share, determines if the operating system generates audit events when a file share is accessed.
 ms.assetid: 9ea985f8-8936-4b79-abdb-35cbb7138f78
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit File Share
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit File Share allows you to audit events related to file shares: creation, deletion, modification, and access attempts. Also, it shows failed SMB SPN checks.

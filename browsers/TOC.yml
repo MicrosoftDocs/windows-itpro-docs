@@ -1,0 +1,6 @@
+- name: Table of Contents
+  items: 
+    - name: Microsoft Edge
+      href: edge/index.md
+    - name: Internet Explorer 11
+      href: internet-explorer/index.md

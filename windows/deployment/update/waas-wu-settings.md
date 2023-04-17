@@ -1,42 +1,40 @@
 ---
-title: Manage additional Windows Update settings (Windows 10)
-description: In this article, learn about additional settings to control the behavior of Windows Update in Windows 10.
-ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
+title: Manage additional Windows Update settings
+description: In this article, learn about additional settings to control the behavior of Windows Update.
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.audience: itpro
-author: jaimeo
-ms.reviewer:
-manager: laurawi
-ms.topic: article
-ms.custom: seo-marvel-apr2020
+author: mestew
+ms.author: mstewart
+manager: aaroncz
+ms.topic: how-to
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-updates
+ms.date: 03/09/2023
 ---
 
 # Manage additional Windows Update settings
 
-
-**Applies to**
-
-- Windows 10
-
+***(Applies to: Windows 11 & Windows 10)***
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequency, select when updates are received, specify the update service location and more.
+You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update on your Windows 10 devices. You can configure the update detection frequency, select when updates are received, specify the update service location and more.
 
 ## Summary of Windows Update settings
 
 | Group Policy setting | MDM setting | Supported from version |
 | --- | --- | --- |
-| [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
-| [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
-| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess)| All |
+| [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
+| [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](/windows/client-management/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
+| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess)| All |
 | [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) | | All |
 | [Enable client-side targeting](#enable-client-side-targeting) | | All |
-| [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
-| [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
-| [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
+| [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
+| [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
+| [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
+| |  [Windows Update notifications display organization name](#display-organization-name-in-windows-update-notifications) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -45,9 +43,9 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 
 ## Scanning for updates
 
-With Windows 10, admins have a lot of flexibility in configuring how their devices scan and receive updates.
+Admins have a lot of flexibility in configuring how their devices scan and receive updates.
 
-[Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) allows admins to point devices to an internal Microsoft update service location, while [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) gives them to option to restrict devices to just that internal update service. [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) controls how frequently devices scan for updates.
+[Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) allows admins to point devices to an internal Microsoft update service location, while [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) gives them the option to restrict devices to just that internal update service. [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) controls how frequently devices scan for updates.
 
 You can make custom device groups that'll work with your internal Microsoft update service by using [Enable client-side targeting](#enable-client-side-targeting). You can also make sure your devices receive updates that were not signed by Microsoft from your internal Microsoft update service, through [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location).
 
@@ -55,7 +53,7 @@ Finally, to make sure the updating experience is fully controlled by the admins,
 
 For additional settings that configure when Feature and Quality updates are received, see [Configure Windows Update for Business](waas-configure-wufb.md).
 
-### Specify Intranet Microsoft update service location
+### Specify intranet Microsoft update service location
 
 Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
@@ -75,7 +73,7 @@ The option to download files with missing Urls allows content to be downloaded f
 >
 >The option to "Download files with no Url..." is only used if the "Alternate Download Server" is set.
 
-To configure this policy with MDM, use [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate).
+To configure this policy with MDM, use [UpdateServiceUrl](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurlalternate).
 
 ### Automatic Updates detection frequency
 
@@ -91,7 +89,7 @@ If the setting is set to **Disabled** or **Not Configured**, Windows will check 
 >
 >If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
 
-To configure this policy with MDM, use [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency).
+To configure this policy with MDM, use [DetectionFrequency](/windows/client-management/mdm/policy-configuration-service-provider#update-detectionfrequency).
 
 ### Remove access to use all Windows Update features
 
@@ -99,9 +97,9 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 
 ### Do not connect to any Windows Update Internet locations
 
-Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store.
+Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update, the Microsoft Store, or the Microsoft Store for Business.
 
-Use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations** to enable this policy. When enabled, this policy will disable the functionality described above, and may cause connection to public services such as the Microsoft Store, Windows Update for Business and Delivery Optimization to stop working.
+Use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations** to enable this policy. When enabled, this policy will disable the functionality described above, and may cause connection to public services such as the Microsoft Store, Microsoft Store for Business, Windows Update for Business, and Delivery Optimization to stop working.
 
 >[!NOTE]
 >This policy applies only when the device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
@@ -131,18 +129,18 @@ If you disable or do not configure this policy setting, updates from an intranet
 >[!NOTE]
 >Updates from a service other than an intranet Microsoft update service must always be signed by Microsoft and are not affected by this policy setting.
 
-To configure this policy with MDM, use [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate).
+To configure this policy with MDM, use [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate).
 
 
 ## Installing updates
 
 To add more flexibility to the update process, settings are available to control update installation.
 
-[Configure Automatic Updates](#configure-automatic-updates) offers 4 different options for automatic update installation, while [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) makes sure drivers are not installed with the rest of the received updates.
+[Configure Automatic Updates](#configure-automatic-updates) offers four different options for automatic update installation, while [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) makes sure drivers are not installed with the rest of the received updates.
 
 ### Do not include drivers with Windows Updates
 
-Allows admins to exclude Windows Update (WU) drivers during updates.
+Allows admins to exclude Windows Update drivers during updates.
 
 To configure this setting in Group Policy, use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not include drivers with Windows Updates**.
 Enable this policy to not include drivers with Windows quality updates.
@@ -154,7 +152,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 #### Configuring Automatic Updates by using Group Policy
 
-Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
+Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the following options:
 
 **2 - Notify for download and auto install** -  When Windows finds updates that apply to this device, users will be notified that updates are ready to be downloaded. After going to **Settings > Update & security > Windows Update**, users can download and install any available updates.
 
@@ -162,11 +160,13 @@ Under **Computer Configuration\Administrative Templates\Windows Components\Windo
 
 **4 - Auto download and schedule the install** - Specify the schedule using the options in the Group Policy Setting. For more information about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
 
-**5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+**5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates. This option is not available in any Windows 10 or later versions. 
 
-If this setting is set to *Disabled*, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
+**7 - Notify for install and notify for restart** (Windows Server 2016 and later only) - With this option, when Windows finds updates that apply to this device, they will be downloaded, then users will be notified that updates are ready to be installed. Once updates are installed, a notification will be displayed to users to restart the device. 
 
-If this setting is set to *Not Configured*, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
+If this setting is set to **Disabled**, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
+
+If this setting is set to **Not Configured**, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
 
 #### Configuring Automatic Updates by editing the registry
 
@@ -203,6 +203,10 @@ To do this, follow these steps:
 
      * **4**: Automatically download and scheduled installation.
 
+     * **5**: Allow local admin to select the configuration mode. This option is not available for Windows 10 or later versions.
+
+     * **7**:  Notify for install and notify for restart. (Windows Server 2016 and later only)
+
    * ScheduledInstallDay (REG_DWORD):
 
      * **0**: Every day.
@@ -231,7 +235,7 @@ To do this, follow these steps:
      > [!NOTE]
      > This setting affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
 
-To use Automatic Updates with a server that is running Software Update Services, see the Deploying Microsoft Windows Server Update Services 2.0 guidance.
+To use Automatic Updates with a server that is running Windows Software Update Services (WSUS), see the [Deploying Microsoft Windows Server Update Services](/windows-server/administration/windows-server-update-services/deploy/deploy-windows-server-update-services) guidance.
 
 When you configure Automatic Updates directly by using the policy registry keys, the policy overrides the preferences that are set by the local administrative user to configure the client. If an administrator removes the registry keys at a later date, the preferences that were set by the local administrative user are used again.
 
@@ -248,12 +252,31 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
    This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
 
-## Related topics
+## Display organization name in Windows Update notifications
+<!--6286260-->
+When Windows 11 clients are associated with an Azure AD tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
+  
+The organization name appears automatically for Windows 11 clients that are associated with Azure AD in any of the following ways:
+- [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) 
+- [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register)
+- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 
-- [Update Windows 10 in the enterprise](index.md)
-- [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Configure Windows Update for Business](waas-configure-wufb.md)
-- [Manage device restarts after updates](waas-restart.md)
+To disable displaying the organization name in Windows Update notifications, add or modify the following in the registry:
+
+   - **Registry key**: `HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations`
+  -   **DWORD value name**: UsoDisableAADJAttribution
+  - **Value data:** 1
+
+The following PowerShell script is provided as an example to you: 
+```powershell
+$registryPath = "HKLM:\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations"
+$Name = "UsoDisableAADJAttribution"
+$value = "1" 
+
+if (!(Test-Path $registryPath)) 
+{
+  New-Item -Path $registryPath -Force | Out-Null
+}
+
+New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
+```

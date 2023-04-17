@@ -1,22 +1,18 @@
 ---
-title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console (Windows 10)
+title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console (Windows 10/11)
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
+ms.technology: itpro-apps
 ---
-
 
 # How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 
-**Applies to**
--   Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following procedure to view and configure default package extensions.
 
@@ -38,6 +34,6 @@ Use the following procedure to view and configure default package extensions.
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 [Operations for App-V](appv-operations.md)

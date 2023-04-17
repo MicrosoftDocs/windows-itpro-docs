@@ -1,13 +1,12 @@
 ---
 title: Manage Windows device deployment with Windows Autopilot Deployment
 description: Add an Autopilot profile to devices. Autopilot profiles control what is included in Windows set up experience for your employees.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 2/9/2018
+ms.date: 07/21/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: conceptual
@@ -19,7 +18,10 @@ ms.localizationpriority: medium
 **Applies to**
 -   Windows 10
 
-Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+> [!IMPORTANT]
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+
+Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 Watch this video to learn more about Windows Autopilot in Microsoft Store for Business. </br>
 
@@ -54,7 +56,7 @@ Autopilot profile settings are supported beginning with the version of Windows t
 | Deployment default features| Windows 10, version 1703 or later |
 | Skip privacy settings | Windows 10, version 1703 or later |
 | Disable local admin account creation on the device | Windows 10, version 1703 or later |
-| Skip End User License Agreement (EULA) | Windows 10, version 1709 or later. </br> [Learn about Windows Autopilot EULA dismissal](https://docs.microsoft.com/windows/deployment/Windows-Autopilot-EULA-note) |
+| Skip End User License Agreement (EULA) | Windows 10, version 1709 or later. </br> [Learn about Windows Autopilot EULA dismissal](/windows/deployment/Windows-Autopilot-EULA-note) |
 
 
 ## Windows Autopilot deployment profiles in Microsoft Store for Business and Education
@@ -133,11 +135,11 @@ Here's info on some of the errors you might see while working with Autopilot dep
 | ---------- | ------------------- |
 | wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. |
 | wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. |
-| wadp003    | Looks like you need more than one .csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multiple .csv files. |
+| wadp003    | Looks like you need more than one .csv file for your devices. The maximum allowed is 1,000 items. You're over the limit! Divide this device data into multiple .csv files. |
 | wadp004    | Try that again. Something happened on our end. Waiting a bit might help. |
 | wadp005    | Check your .csv file with your device provider. One of the devices on your list has been claimed by another organization. |
 | wadp006    | Try that again. Something happened on our end. Waiting a bit might help. |
 | wadp007    | Check the info for this device in your .csv file. The device is already registered in your organization. |
 | wadp008    | The device does not meet Autopilot Deployment requirements. |
-| wadp009    | Check with your device provider for an update .csv file. The current file doesn’t work |
+| wadp009    | Check with your device provider for an update .csv file. The current file doesn't work |
 | wadp010    | Try that again. Something happened on our end. Waiting a bit might help. |

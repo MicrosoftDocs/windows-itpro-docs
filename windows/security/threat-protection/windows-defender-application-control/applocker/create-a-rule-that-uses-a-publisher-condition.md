@@ -1,28 +1,32 @@
 ---
-title: Create a rule that uses a publisher condition (Windows 10)
+title: Create a rule that uses a publisher condition (Windows)
 description: This topic for IT professionals shows how to create an AppLocker rule with a publisher condition.
 ms.assetid: 345ad45f-2bc1-4c4c-946f-17804e29f55b
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Create a rule that uses a publisher condition
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals shows how to create an AppLocker rule with a publisher condition.
 

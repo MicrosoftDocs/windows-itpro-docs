@@ -1,28 +1,16 @@
 ---
-title: Open the Group Policy Management Console to IP Security Policies (Windows 10)
+title: Open the Group Policy Management Console to IP Security Policies (Windows)
 description: Learn how to open the Group Policy Management Console to IP Security Policies to configure GPOs for earlier versions of the Windows operating system.
-ms.assetid: 235f73e4-37b7-40f4-a35e-3e7238bbef43
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Open the Group Policy Management Console to IP Security Policies
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Procedures in this guide that refer to GPOs for earlier versions of the Windows operating system instruct you to work with the IP Security Policy section in the Group Policy Management Console (GPMC).
 

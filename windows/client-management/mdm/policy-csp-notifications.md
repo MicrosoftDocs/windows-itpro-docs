@@ -1,277 +1,374 @@
 ---
-title: Policy CSP - Notifications
-description: Block applications from using the network to send tile, badge, toast, and raw notifications for Policy CSP - Notifications.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Notifications Policy CSP
+description: Learn more about the Notifications Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Notifications-Begin -->
 # Policy CSP - Notifications
 
+<!-- Notifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Notifications-Editable-End -->
 
+<!-- DisallowCloudNotification-Begin -->
+## DisallowCloudNotification
 
-<hr/>
+<!-- DisallowCloudNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- DisallowCloudNotification-Applicability-End -->
 
-<!--Policies-->
-## Notifications policies  
+<!-- DisallowCloudNotification-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Notifications/DisallowCloudNotification
+```
+<!-- DisallowCloudNotification-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#notifications-disallowcloudnotification">Notifications/DisallowCloudNotification</a>
-  </dd>
-  <dd>
-    <a href="#notifications-disallownotificationmirroring">Notifications/DisallowNotificationMirroring</a>
-  </dd>
-  <dd>
-    <a href="#notifications-disallowtilenotification">Notifications/DisallowTileNotification</a>
-  </dd>
-</dl>
+<!-- DisallowCloudNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting blocks applications from using the network to send notifications to update tiles, tile badges, toast, or raw notifications. This policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to poll application services to update tiles.
 
+- If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
 
-<hr/>
+- If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
 
-<!--Policy-->
-<a href="" id="notifications-disallowcloudnotification"></a>**Notifications/DisallowCloudNotification**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
-
-If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
-
-If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
-
-If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to use periodic (polling) notifications.
+- If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to poll for tile notification updates in the background.
 
 No reboots or service restarts are required for this policy setting to take effect.
+<!-- DisallowCloudNotification-Description-End -->
+
+<!-- DisallowCloudNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+For more information on application services to update tiles, see [Periodic notification overview](/windows/apps/design/shell/tiles-and-notifications/periodic-notification-overview).
 
 > [!WARNING]
-> This policy is designed for zero exhaust. This policy may cause some MDM processes to break because WNS notification is used by the MDM server to send real time tasks to the device, such as remote wipe, unenroll, remote find, and mandatory app installation. When this policy is set to disallow WNS, those real time processes will no longer work and some time-sensitive actions such as remote wipe when the device is stolen or unenrollment when the device is compromised will not work.
+> This policy is designed for zero exhaust. This policy may cause some MDM processes to break. The MDM server uses WNS notifications to send real time tasks to the device. Some example tasks include remote wipe, unenroll, remote find, and mandatory app installation. When this policy is set to disallow WNS, those real time processes will no longer work. Some time-sensitive actions also won't work, such as remote wipe or unenrollment. You would use these time-sensitive actions when the device is stolen or compromised.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off notifications network usage*
--   GP name: *NoCloudNotification*
--   GP path: *Start Menu and Taskbar/Notifications*
--   GP ADMX file name: *WPN.admx*
+To validate the configuration:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-This setting supports a range of values between 0 and 1.
+1. Enable this policy.
+1. Restart the computer.
+1. Make sure that you can't receive a notification from an app like Facebook when the app isn't running.
+<!-- DisallowCloudNotification-Editable-End -->
 
-<!--/SupportedValues-->
-<!--Validation-->
-Validation:  
-1. Enable policy
-2. Reboot machine
-3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
+<!-- DisallowCloudNotification-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisallowCloudNotification-DFProperties-End -->
 
-<hr/>
+<!-- DisallowCloudNotification-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="notifications-disallownotificationmirroring"></a>**Notifications/DisallowNotificationMirroring**  
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Enable cloud notification. |
+| 1 | Disable cloud notification. |
+<!-- DisallowCloudNotification-AllowedValues-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+<!-- DisallowCloudNotification-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoCloudNotification |
+| Friendly Name | Turn off notifications network usage |
+| Location | Computer Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | NoCloudApplicationNotification |
+| ADMX File Name | WPN.admx |
+<!-- DisallowCloudNotification-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowCloudNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowCloudNotification-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisallowCloudNotification-End -->
 
-<hr/>
+<!-- DisallowNotificationMirroring-Begin -->
+## DisallowNotificationMirroring
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1607. Boolean value that turns off notification mirroring.
+<!-- DisallowNotificationMirroring-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- DisallowNotificationMirroring-Applicability-End -->
 
-For each user logged into the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device will not get mirrored to other devices of the same logged in user. If you disable or do not configure this policy (set value to 0) the notifications received by this user on this device will be mirrored to other devices of the same logged in user. This feature can be turned off by apps that do not want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
+<!-- DisallowNotificationMirroring-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/DisallowNotificationMirroring
+```
+<!-- DisallowNotificationMirroring-OmaUri-End -->
 
-No reboot or service restart is required for this policy to take effect.
+<!-- DisallowNotificationMirroring-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off notification mirroring.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off notification mirroring*
--   GP name: *NoNotificationMirroring*
--   GP path: *Start Menu and Taskbar/Notifications*
--   GP ADMX file name: *WPN.admx*
+- If you enable this policy setting, notifications from applications and system will not be mirrored to your other devices.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) – enable notification mirroring.
--   1 - disable notification mirroring.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="notifications-disallowtilenotification"></a>**Notifications/DisallowTileNotification**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1803. This policy setting turns off tile notifications.
-
-If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
-
-If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
+- If you disable or do not configure this policy setting, notifications will be mirrored, and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
+<!-- DisallowNotificationMirroring-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off tile notifications*
--   GP name: *NoTileNotification*
--   GP path: *Start Menu and Taskbar/Notifications*
--   GP ADMX file name: *WPN.admx*
+<!-- DisallowNotificationMirroring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-This setting supports a range of values between 0 and 1.
+This feature can be turned off by apps that don't want to participate in notification mirroring. This feature can also be turned off by the user in the Cortana settings page.
+<!-- DisallowNotificationMirroring-Editable-End -->
 
-<!--/SupportedValues-->
-<!--Validation-->
-Validation:  
-1. Enable policy
-2. Reboot machine
-3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile)
+<!-- DisallowNotificationMirroring-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisallowNotificationMirroring-DFProperties-End -->
 
-Footnotes:
+<!-- DisallowNotificationMirroring-AllowedValues-Begin -->
+**Allowed values**:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Enable notification mirroring. |
+| 1 | Disable notification mirroring. |
+<!-- DisallowNotificationMirroring-AllowedValues-End -->
 
-<!--/Policies-->
+<!-- DisallowNotificationMirroring-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | NoNotificationMirroring |
+| Friendly Name | Turn off notification mirroring |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | DisallowNotificationMirroring |
+| ADMX File Name | WPN.admx |
+<!-- DisallowNotificationMirroring-GpMapping-End -->
+
+<!-- DisallowNotificationMirroring-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowNotificationMirroring-Examples-End -->
+
+<!-- DisallowNotificationMirroring-End -->
+
+<!-- DisallowTileNotification-Begin -->
+## DisallowTileNotification
+
+<!-- DisallowTileNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- DisallowTileNotification-Applicability-End -->
+
+<!-- DisallowTileNotification-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/DisallowTileNotification
+```
+<!-- DisallowTileNotification-OmaUri-End -->
+
+<!-- DisallowTileNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off tile notifications.
+
+- If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
+
+- If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
+
+No reboots or service restarts are required for this policy setting to take effect.
+<!-- DisallowTileNotification-Description-End -->
+
+<!-- DisallowTileNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowTileNotification-Editable-End -->
+
+<!-- DisallowTileNotification-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisallowTileNotification-DFProperties-End -->
+
+<!-- DisallowTileNotification-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisallowTileNotification-AllowedValues-End -->
+
+<!-- DisallowTileNotification-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoTileNotification |
+| Friendly Name | Turn off tile notifications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | NoTileApplicationNotification |
+| ADMX File Name | WPN.admx |
+<!-- DisallowTileNotification-GpMapping-End -->
+
+<!-- DisallowTileNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowTileNotification-Examples-End -->
+
+<!-- DisallowTileNotification-End -->
+
+<!-- EnableExpandedToastNotifications-Begin -->
+## EnableExpandedToastNotifications
+
+<!-- EnableExpandedToastNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1620] and later |
+<!-- EnableExpandedToastNotifications-Applicability-End -->
+
+<!-- EnableExpandedToastNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/EnableExpandedToastNotifications
+```
+<!-- EnableExpandedToastNotifications-OmaUri-End -->
+
+<!-- EnableExpandedToastNotifications-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting turns on multiple expanded toast notifications in action center.
+
+- If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
+- If you disable or do not configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
+<!-- EnableExpandedToastNotifications-Description-End -->
+
+<!-- EnableExpandedToastNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableExpandedToastNotifications-Editable-End -->
+
+<!-- EnableExpandedToastNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableExpandedToastNotifications-DFProperties-End -->
+
+<!-- EnableExpandedToastNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable multiple expanded toasts in action center. |
+| 1 | Enable multiple expanded toasts in action center. |
+<!-- EnableExpandedToastNotifications-AllowedValues-End -->
+
+<!-- EnableExpandedToastNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ExpandedToastNotifications |
+| Path | WPN > AT > StartMenu > NotificationsCategory |
+<!-- EnableExpandedToastNotifications-GpMapping-End -->
+
+<!-- EnableExpandedToastNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableExpandedToastNotifications-Examples-End -->
+
+<!-- EnableExpandedToastNotifications-End -->
+
+<!-- WnsEndpoint-Begin -->
+## WnsEndpoint
+
+<!-- WnsEndpoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WnsEndpoint-Applicability-End -->
+
+<!-- WnsEndpoint-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Notifications/WnsEndpoint
+```
+<!-- WnsEndpoint-OmaUri-End -->
+
+<!-- WnsEndpoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy sets a special WNS FQDN for specific environments.
+<!-- WnsEndpoint-Description-End -->
+
+<!-- WnsEndpoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+This policy setting determines which Windows Notification Service (WNS) endpoint will be used to connect for Windows push notifications.
+
+If you disable or don't configure this setting, the push notifications will connect to the default endpoint of `client.wns.windows.com`.
+
+> [!NOTE]
+> Make sure the proper WNS FQDNs, VIPs, IPs and ports are also allowed through the firewall.
+<!-- WnsEndpoint-Editable-End -->
+
+<!-- WnsEndpoint-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WnsEndpoint-DFProperties-End -->
+
+<!-- WnsEndpoint-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | WnsEndpoint_Policy |
+| Friendly Name | Enables group policy for the WNS FQDN |
+| Element Name | FQDN for WNS. |
+| Location | Computer Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| ADMX File Name | WPN.admx |
+<!-- WnsEndpoint-GpMapping-End -->
+
+<!-- WnsEndpoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WnsEndpoint-Examples-End -->
+
+<!-- WnsEndpoint-End -->
+
+<!-- Notifications-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Notifications-CspMoreInfo-End -->
+
+<!-- Notifications-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

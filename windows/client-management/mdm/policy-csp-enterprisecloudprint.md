@@ -1,389 +1,307 @@
 ---
-title: Policy CSP - EnterpriseCloudPrint
-description: Use the Policy CSP - EnterpriseCloudPrint setting to define the maximum number of printers that should be queried from a discovery end point.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: EnterpriseCloudPrint Policy CSP
+description: Learn more about the EnterpriseCloudPrint Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- EnterpriseCloudPrint-Begin -->
 # Policy CSP - EnterpriseCloudPrint
 
+<!-- EnterpriseCloudPrint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnterpriseCloudPrint-Editable-End -->
 
+<!-- CloudPrinterDiscoveryEndPoint-Begin -->
+## CloudPrinterDiscoveryEndPoint
+
+<!-- CloudPrinterDiscoveryEndPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- CloudPrinterDiscoveryEndPoint-Applicability-End -->
+
+<!-- CloudPrinterDiscoveryEndPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint
+```
+<!-- CloudPrinterDiscoveryEndPoint-OmaUri-End -->
+
+<!-- CloudPrinterDiscoveryEndPoint-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy provisions per-user discovery end point to discover cloud printers.
+<!-- CloudPrinterDiscoveryEndPoint-Description-End -->
+
+<!-- CloudPrinterDiscoveryEndPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Specifies the per-user end point for discovering cloud printers. This policy must target ./User, otherwise it fails.
 
-<hr/>
-
-<!--Policies-->
-## EnterpriseCloudPrint policies  
-
-<dl>
-  <dd>
-    <a href="#enterprisecloudprint-cloudprintoauthauthority">EnterpriseCloudPrint/CloudPrintOAuthAuthority</a>
-  </dd>
-  <dd>
-    <a href="#enterprisecloudprint-cloudprintoauthclientid">EnterpriseCloudPrint/CloudPrintOAuthClientId</a>
-  </dd>
-  <dd>
-    <a href="#enterprisecloudprint-cloudprintresourceid">EnterpriseCloudPrint/CloudPrintResourceId</a>
-  </dd>
-  <dd>
-    <a href="#enterprisecloudprint-cloudprinterdiscoveryendpoint">EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint</a>
-  </dd>
-  <dd>
-    <a href="#enterprisecloudprint-discoverymaxprinterlimit">EnterpriseCloudPrint/DiscoveryMaxPrinterLimit</a>
-  </dd>
-  <dd>
-    <a href="#enterprisecloudprint-mopriadiscoveryresourceid">EnterpriseCloudPrint/MopriaDiscoveryResourceId</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.  This policy must target ./User, otherwise it fails.
-
-The datatype is a string.
-
-The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//azuretenant.contoso.com/adfs".
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority. This policy must target ./User, otherwise it fails.
-
-The datatype is a string.
-
-The default value is an empty string. Otherwise, the value should contain a GUID. For example, "E1CF1107-FF90-4228-93BF-26052DD2C714".
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
-
-The datatype is a string. 
-
-The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers. This policy must target ./User, otherwise it fails.
-
-The datatype is a string.
-
-The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//cloudprinterdiscovery.contoso.com".
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
-
-The datatype is an integer. 
-
-For Windows Mobile, the default value is 20.
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication. This policy must target ./User, otherwise it fails.
-
-The datatype is a string.
-
-The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MopriaDiscoveryService/CloudPrint".
-
-<!--/Description-->
-<!--/Policy-->
-<hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
+Supported datatype is string.
+
+The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. 
+**Example**:
 
+```https://cloudprinterdiscovery.contoso.com```.
+<!-- CloudPrinterDiscoveryEndPoint-Editable-End -->
+
+<!-- CloudPrinterDiscoveryEndPoint-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CloudPrinterDiscoveryEndPoint-DFProperties-End -->
+
+<!-- CloudPrinterDiscoveryEndPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudPrinterDiscoveryEndPoint-Examples-End -->
+
+<!-- CloudPrinterDiscoveryEndPoint-End -->
+
+<!-- CloudPrintOAuthAuthority-Begin -->
+## CloudPrintOAuthAuthority
+
+<!-- CloudPrintOAuthAuthority-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- CloudPrintOAuthAuthority-Applicability-End -->
+
+<!-- CloudPrintOAuthAuthority-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
+```
+<!-- CloudPrintOAuthAuthority-OmaUri-End -->
+
+<!-- CloudPrintOAuthAuthority-Description-Begin -->
+<!-- Description-Source-DDF -->
+Authentication endpoint for acquiring OAuth tokens.
+<!-- CloudPrintOAuthAuthority-Description-End -->
+
+<!-- CloudPrintOAuthAuthority-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Specifies the authentication endpoint for acquiring OAuth tokens. This policy must target ./User, otherwise it fails.
+
+Supported datatype is string.
+
+The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. 
+**Example**:
+
+```https://azuretenant.contoso.com/adfs```.
+<!-- CloudPrintOAuthAuthority-Editable-End -->
+
+<!-- CloudPrintOAuthAuthority-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CloudPrintOAuthAuthority-DFProperties-End -->
+
+<!-- CloudPrintOAuthAuthority-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudPrintOAuthAuthority-Examples-End -->
+
+<!-- CloudPrintOAuthAuthority-End -->
+
+<!-- CloudPrintOAuthClientId-Begin -->
+## CloudPrintOAuthClientId
+
+<!-- CloudPrintOAuthClientId-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- CloudPrintOAuthClientId-Applicability-End -->
+
+<!-- CloudPrintOAuthClientId-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/EnterpriseCloudPrint/CloudPrintOAuthClientId
+```
+<!-- CloudPrintOAuthClientId-OmaUri-End -->
+
+<!-- CloudPrintOAuthClientId-Description-Begin -->
+<!-- Description-Source-DDF -->
+A GUID identifying the client application authorized to retrieve OAuth tokens from the OAuthAuthority.
+<!-- CloudPrintOAuthClientId-Description-End -->
+
+<!-- CloudPrintOAuthClientId-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority. This policy must target ./User, otherwise it fails.
+
+Supported datatype is string.
+
+The default value is an empty string. Otherwise, the value should contain a GUID. 
+**Example**:
+
+"E1CF1107-FF90-4228-93BF-26052DD2C714".
+<!-- CloudPrintOAuthClientId-Editable-End -->
+
+<!-- CloudPrintOAuthClientId-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CloudPrintOAuthClientId-DFProperties-End -->
+
+<!-- CloudPrintOAuthClientId-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudPrintOAuthClientId-Examples-End -->
+
+<!-- CloudPrintOAuthClientId-End -->
+
+<!-- CloudPrintResourceId-Begin -->
+## CloudPrintResourceId
+
+<!-- CloudPrintResourceId-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- CloudPrintResourceId-Applicability-End -->
+
+<!-- CloudPrintResourceId-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/EnterpriseCloudPrint/CloudPrintResourceId
+```
+<!-- CloudPrintResourceId-OmaUri-End -->
+
+<!-- CloudPrintResourceId-Description-Begin -->
+<!-- Description-Source-DDF -->
+Resource URI for which access is being requested by the Enterprise Cloud Print client during OAuth authentication.
+<!-- CloudPrintResourceId-Description-End -->
+
+<!-- CloudPrintResourceId-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
+
+Supported datatype is string.
+
+The default value is an empty string. Otherwise, the value should contain a URL. 
+**Example**:
+
+"http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
+<!-- CloudPrintResourceId-Editable-End -->
+
+<!-- CloudPrintResourceId-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CloudPrintResourceId-DFProperties-End -->
+
+<!-- CloudPrintResourceId-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudPrintResourceId-Examples-End -->
+
+<!-- CloudPrintResourceId-End -->
+
+<!-- DiscoveryMaxPrinterLimit-Begin -->
+## DiscoveryMaxPrinterLimit
+
+<!-- DiscoveryMaxPrinterLimit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DiscoveryMaxPrinterLimit-Applicability-End -->
+
+<!-- DiscoveryMaxPrinterLimit-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/EnterpriseCloudPrint/DiscoveryMaxPrinterLimit
+```
+<!-- DiscoveryMaxPrinterLimit-OmaUri-End -->
+
+<!-- DiscoveryMaxPrinterLimit-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines the maximum number of printers that should be queried from discovery end point.
+<!-- DiscoveryMaxPrinterLimit-Description-End -->
+
+<!-- DiscoveryMaxPrinterLimit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy must target ./User, otherwise it fails.
+<!-- DiscoveryMaxPrinterLimit-Editable-End -->
+
+<!-- DiscoveryMaxPrinterLimit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-65535]` |
+| Default Value  | 20 |
+<!-- DiscoveryMaxPrinterLimit-DFProperties-End -->
+
+<!-- DiscoveryMaxPrinterLimit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DiscoveryMaxPrinterLimit-Examples-End -->
+
+<!-- DiscoveryMaxPrinterLimit-End -->
+
+<!-- MopriaDiscoveryResourceId-Begin -->
+## MopriaDiscoveryResourceId
+
+<!-- MopriaDiscoveryResourceId-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- MopriaDiscoveryResourceId-Applicability-End -->
+
+<!-- MopriaDiscoveryResourceId-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/EnterpriseCloudPrint/MopriaDiscoveryResourceId
+```
+<!-- MopriaDiscoveryResourceId-OmaUri-End -->
+
+<!-- MopriaDiscoveryResourceId-Description-Begin -->
+<!-- Description-Source-DDF -->
+Resource URI for which access is being requested by the Mopria discovery client during OAuth authentication.
+<!-- MopriaDiscoveryResourceId-Description-End -->
+
+<!-- MopriaDiscoveryResourceId-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy must target ./User, otherwise it fails.
+
+The default value is an empty string. Otherwise, the value should contain a URL. 
+
+**Example**:
+
+```http://MopriaDiscoveryService/CloudPrint```.
+<!-- MopriaDiscoveryResourceId-Editable-End -->
+
+<!-- MopriaDiscoveryResourceId-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MopriaDiscoveryResourceId-DFProperties-End -->
+
+<!-- MopriaDiscoveryResourceId-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MopriaDiscoveryResourceId-Examples-End -->
+
+<!-- MopriaDiscoveryResourceId-End -->
+
+<!-- EnterpriseCloudPrint-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- EnterpriseCloudPrint-CspMoreInfo-End -->
+
+<!-- EnterpriseCloudPrint-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

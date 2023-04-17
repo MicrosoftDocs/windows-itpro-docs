@@ -3,29 +3,26 @@ title: Audit Application Group Management (Windows 10)
 description: The policy setting, Audit Application Group Management, determines if audit events are generated when application group management tasks are performed.
 ms.assetid: 1bcaa41e-5027-4a86-96b7-f04eaf1c0606
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Application Group Management
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
+Audit Application Group Management generates events for actions related to [application groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771579(v=ws.11)), such as group creation, modification, addition or removal of group member and some other actions.
 
-Audit Application Group Management generates events for actions related to [application groups](https://technet.microsoft.com/library/cc771579.aspx), such as group creation, modification, addition or removal of group member and some other actions.
+[Application groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771579(v=ws.11)) are used by [Authorization Manager](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726036(v=ws.11)).
 
-[Application groups](https://technet.microsoft.com/library/cc771579.aspx) are used by [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx).
-
-Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
+Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726036(v=ws.11)) is very rarely in use and it is deprecated starting from Windows Server 2012.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                |
 |-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------|

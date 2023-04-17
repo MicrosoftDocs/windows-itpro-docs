@@ -1,46 +1,34 @@
 ---
-title: Exemption List (Windows 10)
+title: Exemption List (Windows)
 description: Learn about reasons to add devices to an exemption list in Windows Defender Firewall with Advanced Security and the trade-offs of having too many exemptions.
-ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Exemption List
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-When you implement a server and domain isolation security model in your organization, you are likely to find some additional challenges. Key infrastructure servers such as DNS servers and DHCP servers typically must be available to all devices on the internal network, yet secured from network attacks. However, if they must remain available to all devices on the network, not just to isolated domain members, then these servers cannot require IPsec for inbound access, nor can they use IPsec transport mode for outbound traffic.
+When you implement a server and domain isolation security model in your organization, you're likely to find more challenges. Key infrastructure servers such as DNS servers and DHCP servers typically must be available to all devices on the internal network, yet secured from network attacks. However, if they must remain available to all devices on the network, not just to isolated domain members, then these servers can't require IPsec for inbound access, nor can they use IPsec transport mode for outbound traffic.
 
-In addition to the infrastructure servers mentioned earlier, there might also be other servers on the network that trusted devices cannot use IPsec to access, which would be added to the exemption list.
+In addition to the infrastructure servers mentioned earlier, there might also be other servers on the network that trusted devices can't use IPsec to access, which would be added to the exemption list.
 
 Generally, the following conditions are reasons to consider adding a device to the exemption list:
 
--   If the device must be accessed by trusted devices but it does not have a compatible IPsec implementation.
+-   If the device must be accessed by trusted devices but it doesn't have a compatible IPsec implementation.
 
--   If the device must provide services to both trusted and untrusted devices, but does not meet the criteria for membership in the boundary zone.
+-   If the device must provide services to both trusted and untrusted devices, but doesn't meet the criteria for membership in the boundary zone.
 
--   If the device must be accessed by trusted devices from different isolated domains that do not have an Active Directory trust relationship established with each other.
+-   If the device must be accessed by trusted devices from different isolated domains that don't have an Active Directory trust relationship established with each other.
 
 -   If the device is a domain controller running version of Windows earlier than Windows Server 2008, or if any of its clients are running a version of Windows earlier than Windows Vista.
 
--   If the device must support trusted and untrusted devices, but cannot use IPsec to help secure communications to trusted devices.
+-   If the device must support trusted and untrusted devices, but can't use IPsec to help secure communications to trusted devices.
 
-For large organizations, the list of exemptions might grow very large if all the exemptions are implemented by one connection security rule for the whole domain or for all trusted forests. If you can require all devices in your isolated domain to run at least Windows Vista or Windows Server 2008, you can greatly reduce the size of this list. A large exemption list has several unwanted effects on every device that receives the GPO, including the following:
+For large organizations, the list of exemptions might grow large if all the exemptions are implemented by one connection security rule for the whole domain or for all trusted forests. If you can require all devices in your isolated domain to run at least Windows Vista or Windows Server 2008, you can greatly reduce the size of this list. A large exemption list has several unwanted effects on every device that receives the GPO, including the following effects:
 
 -   Reduces the overall effectiveness of isolation.
 

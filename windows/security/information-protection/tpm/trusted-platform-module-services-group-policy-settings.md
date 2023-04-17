@@ -1,26 +1,20 @@
 ---
-title: TPM Group Policy settings (Windows 10)
+title: TPM Group Policy settings (Windows)
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
-ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
-ms.reviewer: 
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 02/02/2023
+ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # TPM Group Policy settings
 
-**Applies to**
--   Windows 10
--   Windows Server 2016 and later
 
 This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
@@ -28,12 +22,12 @@ The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-The following Group Policy settings were introduced in Windows 10.
+The following Group Policy settings were introduced in Windows.
 
 ## Configure the level of TPM owner authorization information available to the operating system
 
->[!IMPORTANT]
->Beginning with Windows 10 version 1607 and Windows Server 2016, this policy setting is no longer used by Windows, but it continues to appear in GPEdit.msc for compatibility with previous versions. Beginning with Windows 10 version 1703, the default value is 5. This value is implemented during provisioning so that another Windows component can either delete it or take ownership of it, depending on the system configuration. For TPM 2.0, a value of 5 means keep the lockout authorization. For TPM 1.2, it means discard the Full TPM owner authorization and retain only the Delegated authorization.
+> [!IMPORTANT]
+> Beginning with Windows 10 version 1703, the default value is 5. This value is implemented during provisioning so that another Windows component can either delete it or take ownership of it, depending on the system configuration. For TPM 2.0, a value of 5 means keep the lockout authorization. For TPM 1.2, it means discard the Full TPM owner authorization and retain only the Delegated authorization.
 
 This policy setting configured which TPM authorization values are stored in the registry of the local computer. Certain authorization values are required in order to allow Windows to perform certain actions.
 
@@ -71,8 +65,7 @@ The following table shows the TPM owner authorization values in the registry.
 
 If you enable this policy setting, the Windows operating system will store the TPM owner authorization in the registry of the local computer according to the TPM authentication setting you choose.
 
-On Windows 10 prior to version 1607, if you disable or do not configure this policy setting, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is also disabled or not configured, the default setting is to store the full TPM authorization value in the local registry. If this policy is disabled or not
-configured, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is enabled, only the administrative delegation and the user delegation blobs are stored in the local registry.
+On Windows 10 prior to version 1607, if you disable or do not configure this policy setting, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is also disabled or not configured, the default setting is to store the full TPM authorization value in the local registry. If this policy is disabled or not configured, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is enabled, only the administrative delegation and the user delegation blobs are stored in the local registry.
 
 ## Standard User Lockout Duration
 
@@ -146,5 +139,5 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) 
-- [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
+- [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)

@@ -3,24 +3,24 @@ title: Increase scheduling priority (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase scheduling priority security policy setting.
 ms.assetid: fbec5973-d35e-4797-9626-d0d56061527f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 2/6/2020
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Increase scheduling priority
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Increase scheduling priority** security policy setting.
@@ -90,4 +90,4 @@ None. Restricting the **Increase scheduling priority** user right to members of 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
-- [Increase scheduling priority for Windows Server 2012 and earlier](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))
+- [Increase scheduling priority for Windows Server 2012 and earlier](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))

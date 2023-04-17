@@ -1,351 +1,113 @@
 ---
-title: Policy CSP - ADMX_StartMenu
-description: Policy CSP - ADMX_StartMenu
-ms.author: dansimp
+title: ADMX_StartMenu Policy CSP
+description: Learn more about the ADMX_StartMenu Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 10/20/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_StartMenu-Begin -->
 # Policy CSP - ADMX_StartMenu
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_StartMenu policies  
-
-<dl>
-  <dd>
-    <a href="#admx-startmenu-addsearchinternetlinkinstartmenu">ADMX_StartMenu/AddSearchInternetLinkInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-clearrecentdocsonexit">ADMX_StartMenu/ClearRecentDocsOnExit</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-clearrecentprogfornewuserinstartmenu">ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-cleartilesonexit">ADMX_StartMenu/ClearTilesOnExit</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-desktopappsfirstinappsview">ADMX_StartMenu/DesktopAppsFirstInAppsView</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-disableglobalsearchonappsview">ADMX_StartMenu/DisableGlobalSearchOnAppsView</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-forcestartmenulogoff">ADMX_StartMenu/ForceStartMenuLogOff</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-gotodesktoponsignin">ADMX_StartMenu/GoToDesktopOnSignIn</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-greymsiads">ADMX_StartMenu/GreyMSIAds</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-hidepoweroptions">ADMX_StartMenu/HidePowerOptions</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-intellimenus">ADMX_StartMenu/Intellimenus</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-locktaskbar">ADMX_StartMenu/LockTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-memcheckboxinrundlg">ADMX_StartMenu/MemCheckBoxInRunDlg</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-noautotraynotify">ADMX_StartMenu/NoAutoTrayNotify</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-noballoontip">ADMX_StartMenu/NoBalloonTip</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nochangestartmenu">ADMX_StartMenu/NoChangeStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-noclose">ADMX_StartMenu/NoClose</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nocommongroups">ADMX_StartMenu/NoCommonGroups</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nofavoritesmenu">ADMX_StartMenu/NoFavoritesMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nofind">ADMX_StartMenu/NoFind</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nogamesfolderonstartmenu">ADMX_StartMenu/NoGamesFolderOnStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nohelp">ADMX_StartMenu/NoHelp</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-noinstrumentation">ADMX_StartMenu/NoInstrumentation</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nomoreprogramslist">ADMX_StartMenu/NoMoreProgramsList</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nonetanddialupconnect">ADMX_StartMenu/NoNetAndDialupConnect</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nopinnedprograms">ADMX_StartMenu/NoPinnedPrograms</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-norecentdocsmenu">ADMX_StartMenu/NoRecentDocsMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-noresolvesearch">ADMX_StartMenu/NoResolveSearch</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-noresolvetrack">ADMX_StartMenu/NoResolveTrack</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-norun">ADMX_StartMenu/NoRun</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosmconfigureprograms">ADMX_StartMenu/NoSMConfigurePrograms</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosmmydocuments">ADMX_StartMenu/NoSMMyDocuments</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosmmymusic">ADMX_StartMenu/NoSMMyMusic</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosmmynetworkplaces">ADMX_StartMenu/NoSMMyNetworkPlaces</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosmmypictures">ADMX_StartMenu/NoSMMyPictures</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosearchcomminstartmenu">ADMX_StartMenu/NoSearchCommInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosearchcomputerlinkinstartmenu">ADMX_StartMenu/NoSearchComputerLinkInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosearcheverywherelinkinstartmenu">ADMX_StartMenu/NoSearchEverywhereLinkInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosearchfilesinstartmenu">ADMX_StartMenu/NoSearchFilesInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosearchinternetinstartmenu">ADMX_StartMenu/NoSearchInternetInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosearchprogramsinstartmenu">ADMX_StartMenu/NoSearchProgramsInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosetfolders">ADMX_StartMenu/NoSetFolders</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nosettaskbar">ADMX_StartMenu/NoSetTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nostartmenudownload">ADMX_StartMenu/NoStartMenuDownload</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nostartmenuhomegroup">ADMX_StartMenu/NoStartMenuHomegroup</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nostartmenurecordedtv">ADMX_StartMenu/NoStartMenuRecordedTV</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nostartmenusubfolders">ADMX_StartMenu/NoStartMenuSubFolders</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nostartmenuvideos">ADMX_StartMenu/NoStartMenuVideos</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nostartpage">ADMX_StartMenu/NoStartPage</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-notaskbarclock">ADMX_StartMenu/NoTaskBarClock</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-notaskgrouping">ADMX_StartMenu/NoTaskGrouping</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-notoolbarsontaskbar">ADMX_StartMenu/NoToolbarsOnTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-notraycontextmenu">ADMX_StartMenu/NoTrayContextMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-notrayitemsdisplay">ADMX_StartMenu/NoTrayItemsDisplay</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nouninstallfromstart">ADMX_StartMenu/NoUninstallFromStart</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nouserfolderonstartmenu">ADMX_StartMenu/NoUserFolderOnStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nousernameonstartmenu">ADMX_StartMenu/NoUserNameOnStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-nowindowsupdate">ADMX_StartMenu/NoWindowsUpdate</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-powerbuttonaction">ADMX_StartMenu/PowerButtonAction</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-quicklaunchenabled">ADMX_StartMenu/QuickLaunchEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-removeundockpcbutton">ADMX_StartMenu/RemoveUnDockPCButton</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-showappsviewonstart">ADMX_StartMenu/ShowAppsViewOnStart</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-showrunasdifferentuserinstart">ADMX_StartMenu/ShowRunAsDifferentUserInStart</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-showruninstartmenu">ADMX_StartMenu/ShowRunInStartMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-showstartondisplaywithforegroundonwinkey">ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-startmenulogoff">ADMX_StartMenu/StartMenuLogOff</a>
-  </dd>
-  <dd>
-    <a href="#admx-startmenu-startpinappswheninstalled">ADMX_StartMenu/StartPinAppsWhenInstalled</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-addsearchinternetlinkinstartmenu"></a>**ADMX_StartMenu/AddSearchInternetLinkInStartMenu**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy, a "Search the Internet" link is shown when the user performs a search in the start menu search box. This button launches the default browser with the search terms.
-
-If you disable this policy, there will not be a "Search the Internet" link when the user performs a search in the start menu search box.
-
-If you do not configure this policy (default), there will not be a "Search the Internet" link on the start menu.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Add Search Internet link to Start Menu*
--   GP name: *AddSearchInternetLinkInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+<!-- ADMX_StartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_StartMenu-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AddSearchInternetLinkInStartMenu-Begin -->
+## AddSearchInternetLinkInStartMenu
 
-<!--Policy-->
-<a href="" id="admx-startmenu-clearrecentdocsonexit"></a>**ADMX_StartMenu/ClearRecentDocsOnExit**  
+<!-- AddSearchInternetLinkInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AddSearchInternetLinkInStartMenu-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AddSearchInternetLinkInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/AddSearchInternetLinkInStartMenu
+```
+<!-- AddSearchInternetLinkInStartMenu-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AddSearchInternetLinkInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy, a "Search the Internet" link is shown when the user performs a search in the start menu search box. This button launches the default browser with the search terms.
 
-> [!div class = "checklist"]
-> * User
+- If you disable this policy, there will not be a "Search the Internet" link when the user performs a search in the start menu search box.
 
-<hr/>
+- If you do not configure this policy (default), there will not be a "Search the Internet" link on the start menu.
+<!-- AddSearchInternetLinkInStartMenu-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Clear history of recently opened documents on exit.
+<!-- AddSearchInternetLinkInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AddSearchInternetLinkInStartMenu-Editable-End -->
 
-If you enable this setting, the system deletes shortcuts to recently used document files when the user logs off. As a result, the Recent Items menu on the Start menu is always empty when the user logs on. In addition, recently and frequently used items in the Jump Lists off of programs in the Start Menu and Taskbar will be cleared when the user logs off.
+<!-- AddSearchInternetLinkInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable or do not configure this setting, the system retains document shortcuts, and when a user logs on, the Recent Items menu and the Jump Lists appear just as it did when the user logged off.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AddSearchInternetLinkInStartMenu-DFProperties-End -->
+
+<!-- AddSearchInternetLinkInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AddSearchInternetLinkInStartMenu |
+| Friendly Name | Add Search Internet link to Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | AddSearchInternetLinkInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- AddSearchInternetLinkInStartMenu-AdmxBacked-End -->
+
+<!-- AddSearchInternetLinkInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AddSearchInternetLinkInStartMenu-Examples-End -->
+
+<!-- AddSearchInternetLinkInStartMenu-End -->
+
+<!-- ClearRecentDocsOnExit-Begin -->
+## ClearRecentDocsOnExit
+
+<!-- ClearRecentDocsOnExit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ClearRecentDocsOnExit-Applicability-End -->
+
+<!-- ClearRecentDocsOnExit-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ClearRecentDocsOnExit
+```
+<!-- ClearRecentDocsOnExit-OmaUri-End -->
+
+<!-- ClearRecentDocsOnExit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Clear history of recently opened documents on exit.
+
+- If you enable this setting, the system deletes shortcuts to recently used document files when the user logs off. As a result, the Recent Items menu on the Start menu is always empty when the user logs on. In addition, recently and frequently used items in the Jump Lists off of programs in the Start Menu and Taskbar will be cleared when the user logs off.
+
+- If you disable or do not configure this setting, the system retains document shortcuts, and when a user logs on, the Recent Items menu and the Jump Lists appear just as it did when the user logged off.
 
 > [!NOTE]
 > The system saves document shortcuts in the user profile in the System-drive\Users\User-name\Recent folder.
@@ -357,495 +119,435 @@ This setting does not clear the list of recent files that Windows programs displ
 This policy setting also does not hide document shortcuts displayed in the Open dialog box. See the "Hide the dropdown list of recent files" setting.
 
 This policy also does not clear items that the user may have pinned to the Jump Lists, or Tasks that the application has provided for their menu. See the "Do not allow pinning items in Jump Lists" setting.
+<!-- ClearRecentDocsOnExit-Description-End -->
 
-<!--/Description-->
+<!-- ClearRecentDocsOnExit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClearRecentDocsOnExit-Editable-End -->
+
+<!-- ClearRecentDocsOnExit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClearRecentDocsOnExit-DFProperties-End -->
+
+<!-- ClearRecentDocsOnExit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Clear history of recently opened documents on exit*
--   GP name: *ClearRecentDocsOnExit*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ClearRecentDocsOnExit |
+| Friendly Name | Clear history of recently opened documents on exit |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ClearRecentDocsOnExit |
+| ADMX File Name | StartMenu.admx |
+<!-- ClearRecentDocsOnExit-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-clearrecentprogfornewuserinstartmenu"></a>**ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu**  
+<!-- ClearRecentDocsOnExit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClearRecentDocsOnExit-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ClearRecentDocsOnExit-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClearRecentProgForNewUserInStartMenu-Begin -->
+## ClearRecentProgForNewUserInStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClearRecentProgForNewUserInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ClearRecentProgForNewUserInStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ClearRecentProgForNewUserInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu
+```
+<!-- ClearRecentProgForNewUserInStartMenu-OmaUri-End -->
 
-<hr/>
+<!-- ClearRecentProgForNewUserInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy setting, the recent programs list in the start menu will be blank for each new user.
+- If you enable this policy setting, the recent programs list in the start menu will be blank for each new user.
 
-If you disable or do not configure this policy, the start menu recent programs list will be pre-populated with programs for each new user.
+- If you disable or do not configure this policy, the start menu recent programs list will be pre-populated with programs for each new user.
+<!-- ClearRecentProgForNewUserInStartMenu-Description-End -->
 
-<!--/Description-->
+<!-- ClearRecentProgForNewUserInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClearRecentProgForNewUserInStartMenu-Editable-End -->
+
+<!-- ClearRecentProgForNewUserInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClearRecentProgForNewUserInStartMenu-DFProperties-End -->
+
+<!-- ClearRecentProgForNewUserInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Clear the recent programs list for new users*
--   GP name: *ClearRecentProgForNewUserInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ClearRecentProgForNewUserInStartMenu |
+| Friendly Name | Clear the recent programs list for new users |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ClearRecentProgForNewUserInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- ClearRecentProgForNewUserInStartMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-cleartilesonexit"></a>**ADMX_StartMenu/ClearTilesOnExit**  
+<!-- ClearRecentProgForNewUserInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClearRecentProgForNewUserInStartMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ClearRecentProgForNewUserInStartMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClearTilesOnExit-Begin -->
+## ClearTilesOnExit
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClearTilesOnExit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ClearTilesOnExit-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ClearTilesOnExit-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ClearTilesOnExit
+```
+<!-- ClearTilesOnExit-OmaUri-End -->
 
-<hr/>
+<!-- ClearTilesOnExit-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this setting, the system deletes tile notifications when the user logs on. As a result, the Tiles in the start view will always show their default content when the user logs on. In addition, any cached versions of these notifications will be cleared when the user logs on.
+- If you enable this setting, the system deletes tile notifications when the user logs on. As a result, the Tiles in the start view will always show their default content when the user logs on. In addition, any cached versions of these notifications will be cleared when the user logs on.
 
-If you disable or do not configure this setting, the system retains notifications, and when a user logs on, the tiles appear just as they did when the user logged off, including the history of previous notifications for each tile.
+- If you disable or do not configure this setting, the system retains notifications, and when a user logs on, the tiles appear just as they did when the user logged off, including the history of previous notifications for each tile.
 
 This setting does not prevent new notifications from appearing. See the "Turn off Application Notifications" setting to prevent new notifications.
+<!-- ClearTilesOnExit-Description-End -->
 
-<!--/Description-->
+<!-- ClearTilesOnExit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClearTilesOnExit-Editable-End -->
+
+<!-- ClearTilesOnExit-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClearTilesOnExit-DFProperties-End -->
+
+<!-- ClearTilesOnExit-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Clear tile notifications during log on*
--   GP name: *ClearTilesOnExit*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ClearTilesOnExit |
+| Friendly Name | Clear tile notifications during log on |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ClearTilesOnExit |
+| ADMX File Name | StartMenu.admx |
+<!-- ClearTilesOnExit-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-desktopappsfirstinappsview"></a>**ADMX_StartMenu/DesktopAppsFirstInAppsView**  
+<!-- ClearTilesOnExit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClearTilesOnExit-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ClearTilesOnExit-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DesktopAppsFirstInAppsView-Begin -->
+## DesktopAppsFirstInAppsView
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DesktopAppsFirstInAppsView-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DesktopAppsFirstInAppsView-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DesktopAppsFirstInAppsView-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/DesktopAppsFirstInAppsView
+```
+<!-- DesktopAppsFirstInAppsView-OmaUri-End -->
 
-<hr/>
+<!-- DesktopAppsFirstInAppsView-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows desktop apps to be listed first in the Apps view in Start.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows desktop apps to be listed first in the Apps view in Start.
+- If you enable this policy setting, desktop apps would be listed first when the apps are sorted by category in the Apps view. The other sorting options would continue to be available and the user could choose to change their default sorting options.
 
-If you enable this policy setting, desktop apps would be listed first when the apps are sorted by category in the Apps view. The other sorting options would continue to be available and the user could choose to change their default sorting options.
+- If you disable or don't configure this policy setting, the desktop apps won't be listed first when the apps are sorted by category, and the user can configure this setting.
+<!-- DesktopAppsFirstInAppsView-Description-End -->
 
-If you disable or don't configure this policy setting, the desktop apps won't be listed first when the apps are sorted by category, and the user can configure this setting.
+<!-- DesktopAppsFirstInAppsView-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DesktopAppsFirstInAppsView-Editable-End -->
 
-<!--/Description-->
+<!-- DesktopAppsFirstInAppsView-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DesktopAppsFirstInAppsView-DFProperties-End -->
+
+<!-- DesktopAppsFirstInAppsView-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *List desktop apps first in the Apps view*
--   GP name: *DesktopAppsFirstInAppsView*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DesktopAppsFirstInAppsView |
+| Friendly Name | List desktop apps first in the Apps view |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DesktopAppsFirstInAppsView |
+| ADMX File Name | StartMenu.admx |
+<!-- DesktopAppsFirstInAppsView-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-disableglobalsearchonappsview"></a>**ADMX_StartMenu/DisableGlobalSearchOnAppsView**  
+<!-- DesktopAppsFirstInAppsView-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DesktopAppsFirstInAppsView-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DesktopAppsFirstInAppsView-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableGlobalSearchOnAppsView-Begin -->
+## DisableGlobalSearchOnAppsView
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableGlobalSearchOnAppsView-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableGlobalSearchOnAppsView-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableGlobalSearchOnAppsView-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/DisableGlobalSearchOnAppsView
+```
+<!-- DisableGlobalSearchOnAppsView-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the user from searching apps, files, settings (and the web if enabled) when the user searches from the Apps view.
+<!-- DisableGlobalSearchOnAppsView-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents the user from searching apps, files, settings (and the web if enabled) when the user searches from the Apps view.
 
 This policy setting is only applied when the Apps view is set as the default view for Start.
 
-If you enable this policy setting, searching from the Apps view will only search the list of installed apps.
+- If you enable this policy setting, searching from the Apps view will only search the list of installed apps.
 
-If you disable or don’t configure this policy setting, the user can configure this setting.
+- If you disable or don't configure this policy setting, the user can configure this setting.
+<!-- DisableGlobalSearchOnAppsView-Description-End -->
 
-<!--/Description-->
+<!-- DisableGlobalSearchOnAppsView-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableGlobalSearchOnAppsView-Editable-End -->
+
+<!-- DisableGlobalSearchOnAppsView-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableGlobalSearchOnAppsView-DFProperties-End -->
+
+<!-- DisableGlobalSearchOnAppsView-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Search just apps from the Apps view*
--   GP name: *DisableGlobalSearchOnAppsView*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableGlobalSearchOnAppsView |
+| Friendly Name | Search just apps from the Apps view |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableGlobalSearchOnAppsView |
+| ADMX File Name | StartMenu.admx |
+<!-- DisableGlobalSearchOnAppsView-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-forcestartmenulogoff"></a>**ADMX_StartMenu/ForceStartMenuLogOff**  
+<!-- DisableGlobalSearchOnAppsView-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableGlobalSearchOnAppsView-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableGlobalSearchOnAppsView-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ForceStartMenuLogOff-Begin -->
+## ForceStartMenuLogOff
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ForceStartMenuLogOff-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForceStartMenuLogOff-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ForceStartMenuLogOff-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ForceStartMenuLogOff
+```
+<!-- ForceStartMenuLogOff-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy only applies to the classic version of the start menu and does not affect the new style start menu.
+<!-- ForceStartMenuLogOff-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy only applies to the classic version of the start menu and does not affect the new style start menu.
 
 Adds the "Log Off `<username>`" item to the Start menu and prevents users from removing it.
 
-If you enable this setting, the Log Off `<username>` item appears in the Start menu. This setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot remove the Log Off `<username>` item from the Start Menu.
+- If you enable this setting, the Log Off `<username>` item appears in the Start menu. This setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot remove the Log Off `<username>` item from the Start Menu.
 
-If you disable this setting or do not configure it, users can use the Display Logoff item to add and remove the Log Off item.
+- If you disable this setting or do not configure it, users can use the Display Logoff item to add and remove the Log Off item.
 
 This setting affects the Start menu only. It does not affect the Log Off item on the Windows Security dialog box that appears when you press Ctrl+Alt+Del.
 
-Note: To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab, and then, in the Start Menu Settings box, click Display Logoff.
+> [!NOTE]
+> To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab, and then, in the Start Menu Settings box, click Display Logoff.
 
 Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\Logon/Logoff.
+<!-- ForceStartMenuLogOff-Description-End -->
 
-<!--/Description-->
+<!-- ForceStartMenuLogOff-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForceStartMenuLogOff-Editable-End -->
+
+<!-- ForceStartMenuLogOff-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ForceStartMenuLogOff-DFProperties-End -->
+
+<!-- ForceStartMenuLogOff-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Add Logoff to the Start Menu*
--   GP name: *ForceStartMenuLogOff*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ForceStartMenuLogOff |
+| Friendly Name | Add Logoff to the Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ForceStartMenuLogOff |
+| ADMX File Name | StartMenu.admx |
+<!-- ForceStartMenuLogOff-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-gotodesktoponsignin"></a>**ADMX_StartMenu/GoToDesktopOnSignIn**  
+<!-- ForceStartMenuLogOff-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForceStartMenuLogOff-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ForceStartMenuLogOff-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- GoToDesktopOnSignIn-Begin -->
+## GoToDesktopOnSignIn
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- GoToDesktopOnSignIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- GoToDesktopOnSignIn-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- GoToDesktopOnSignIn-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/GoToDesktopOnSignIn
+```
+<!-- GoToDesktopOnSignIn-OmaUri-End -->
 
-<hr/>
+<!-- GoToDesktopOnSignIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows users to go to the desktop instead of the Start screen when they sign in.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows users to go to the desktop instead of the Start screen when they sign in.
+- If you enable this policy setting, users will always go to the desktop when they sign in.
 
-If you enable this policy setting, users will always go to the desktop when they sign in.
+- If you disable this policy setting, users will always go to the Start screen when they sign in.
 
-If you disable this policy setting, users will always go to the Start screen when they sign in.
+- If you don't configure this policy setting, the default setting for the user's device will be used, and the user can choose to change it.
+<!-- GoToDesktopOnSignIn-Description-End -->
 
-If you don’t configure this policy setting, the default setting for the user’s device will be used, and the user can choose to change it.
+<!-- GoToDesktopOnSignIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- GoToDesktopOnSignIn-Editable-End -->
 
-<!--/Description-->
+<!-- GoToDesktopOnSignIn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- GoToDesktopOnSignIn-DFProperties-End -->
+
+<!-- GoToDesktopOnSignIn-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Go to the desktop instead of Start when signing in*
--   GP name: *GoToDesktopOnSignIn*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | GoToDesktopOnSignIn |
+| Friendly Name | Go to the desktop instead of Start when signing in |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | GoToDesktopOnSignIn |
+| ADMX File Name | StartMenu.admx |
+<!-- GoToDesktopOnSignIn-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-greymsiads"></a>**ADMX_StartMenu/GreyMSIAds**  
+<!-- GoToDesktopOnSignIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- GoToDesktopOnSignIn-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- GoToDesktopOnSignIn-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- GreyMSIAds-Begin -->
+## GreyMSIAds
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- GreyMSIAds-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- GreyMSIAds-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- GreyMSIAds-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/GreyMSIAds
+```
+<!-- GreyMSIAds-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Displays Start menu shortcuts to partially installed programs in gray text.
+<!-- GreyMSIAds-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Displays Start menu shortcuts to partially installed programs in gray text.
 
 This setting makes it easier for users to distinguish between programs that are fully installed and those that are only partially installed.
 
@@ -855,140 +557,122 @@ If you disable this setting or do not configure it, all Start menu shortcuts app
 
 > [!NOTE]
 > Enabling this setting can make the Start menu slow to open.
+<!-- GreyMSIAds-Description-End -->
 
-<!--/Description-->
+<!-- GreyMSIAds-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- GreyMSIAds-Editable-End -->
+
+<!-- GreyMSIAds-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- GreyMSIAds-DFProperties-End -->
+
+<!-- GreyMSIAds-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Gray unavailable Windows Installer programs Start Menu shortcuts*
--   GP name: *GreyMSIAds*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | GreyMSIAds |
+| Friendly Name | Gray unavailable Windows Installer programs Start Menu shortcuts |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | GreyMSIAds |
+| ADMX File Name | StartMenu.admx |
+<!-- GreyMSIAds-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-hidepoweroptions"></a>**ADMX_StartMenu/HidePowerOptions**  
+<!-- GreyMSIAds-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- GreyMSIAds-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- GreyMSIAds-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HidePowerOptions-Begin -->
+## HidePowerOptions
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HidePowerOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HidePowerOptions-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HidePowerOptions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/HidePowerOptions
+```
+<!-- HidePowerOptions-OmaUri-End -->
 
-<hr/>
+<!-- HidePowerOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from performing the following commands from the Windows security screen, the logon screen, and the Start menu: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from performing the following commands from the Windows security screen, the logon screen, and the Start menu: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
+- If you enable this policy setting, the shutdown, restart, sleep, and hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE, and from the logon screen.
 
-If you enable this policy setting, the shutdown, restart, sleep, and hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE, and from the logon screen.
+- If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security and logon screens is also available.
+<!-- HidePowerOptions-Description-End -->
 
-If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security and logon screens is also available.
+<!-- HidePowerOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HidePowerOptions-Editable-End -->
 
-<!--/Description-->
+<!-- HidePowerOptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HidePowerOptions-DFProperties-End -->
+
+<!-- HidePowerOptions-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands*
--   GP name: *HidePowerOptions*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | HidePowerOptions |
+| Friendly Name | Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands |
+| Location | Computer Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HidePowerOptions |
+| ADMX File Name | StartMenu.admx |
+<!-- HidePowerOptions-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-intellimenus"></a>**ADMX_StartMenu/Intellimenus**  
+<!-- HidePowerOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HidePowerOptions-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- HidePowerOptions-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Intellimenus-Begin -->
+## Intellimenus
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Intellimenus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Intellimenus-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- Intellimenus-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/Intellimenus
+```
+<!-- Intellimenus-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Disables personalized menus.
+<!-- Intellimenus-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disables personalized menus.
 
 Windows personalizes long menus by moving recently used items to the top of the menu and hiding items that have not been used recently. Users can display the hidden items by clicking an arrow to extend the menu.
 
@@ -997,932 +681,829 @@ If you enable this setting, the system does not personalize menus. All menu item
 > [!NOTE]
 > Personalized menus require user tracking. If you enable the "Turn off user tracking" setting, the system disables user tracking and personalized menus and ignores this setting.
 
-To Turn off personalized menus without specifying a setting, click Start, click Settings, click Taskbar and Start Menu, and then, on the General tab, clear the "Use Personalized Menus" option.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> To Turn off personalized menus without specifying a setting, click Start, click Settings, click Taskbar and Start Menu, and then, on the General tab, clear the "Use Personalized Menus" option.
+<!-- Intellimenus-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off personalized menus*
--   GP name: *Intellimenus*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+<!-- Intellimenus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Intellimenus-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Intellimenus-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-startmenu-locktaskbar"></a>**ADMX_StartMenu/LockTaskbar**  
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Intellimenus-DFProperties-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Intellimenus-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | Intellimenus |
+| Friendly Name | Turn off personalized menus |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | Intellimenus |
+| ADMX File Name | StartMenu.admx |
+<!-- Intellimenus-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- Intellimenus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Intellimenus-Examples-End -->
 
-<hr/>
+<!-- Intellimenus-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting affects the taskbar, which is used to switch between running applications.
+<!-- LockTaskbar-Begin -->
+## LockTaskbar
+
+<!-- LockTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LockTaskbar-Applicability-End -->
+
+<!-- LockTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/LockTaskbar
+```
+<!-- LockTaskbar-OmaUri-End -->
+
+<!-- LockTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting affects the taskbar, which is used to switch between running applications.
 
 The taskbar includes the Start button, list of currently running tasks, and the notification area. By default, the taskbar is located at the bottom of the screen, but it can be dragged to any side of the screen. When it is locked, it cannot be moved or resized.
 
-If you enable this setting, it prevents the user from moving or resizing the taskbar. While the taskbar is locked, auto-hide and other taskbar options are still available in Taskbar properties.
+- If you enable this setting, it prevents the user from moving or resizing the taskbar. While the taskbar is locked, auto-hide and other taskbar options are still available in Taskbar properties.
 
-If you disable this setting or do not configure it, the user can configure the taskbar position.
+- If you disable this setting or do not configure it, the user can configure the taskbar position.
 
 > [!NOTE]
 > Enabling this setting also locks the QuickLaunch bar and any other toolbars that the user has on their taskbar. The toolbar's position is locked, and the user cannot show and hide various toolbars using the taskbar context menu.
+<!-- LockTaskbar-Description-End -->
 
-<!--/Description-->
+<!-- LockTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockTaskbar-Editable-End -->
+
+<!-- LockTaskbar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LockTaskbar-DFProperties-End -->
+
+<!-- LockTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Lock the Taskbar*
--   GP name: *LockTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | LockTaskbar |
+| Friendly Name | Lock the Taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | LockTaskbar |
+| ADMX File Name | StartMenu.admx |
+<!-- LockTaskbar-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-memcheckboxinrundlg"></a>**ADMX_StartMenu/MemCheckBoxInRunDlg**  
+<!-- LockTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LockTaskbar-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- LockTaskbar-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MemCheckBoxInRunDlg-Begin -->
+## MemCheckBoxInRunDlg
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MemCheckBoxInRunDlg-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MemCheckBoxInRunDlg-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- MemCheckBoxInRunDlg-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/MemCheckBoxInRunDlg
+```
+<!-- MemCheckBoxInRunDlg-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting lets users run a 16-bit program in a dedicated (not shared) Virtual DOS Machine (VDM) process.
+<!-- MemCheckBoxInRunDlg-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Lets users run a 16-bit program in a dedicated (not shared) Virtual DOS Machine (VDM) process.
 
 All DOS and 16-bit programs run on Windows 2000 Professional and Windows XP Professional in the Windows Virtual DOS Machine program. VDM simulates a 16-bit environment, complete with the DLLs required by 16-bit programs. By default, all 16-bit programs run as threads in a single, shared VDM process. As such, they share the memory space allocated to the VDM process and cannot run simultaneously.
 
 Enabling this setting adds a check box to the Run dialog box, giving users the option of running a 16-bit program in its own dedicated NTVDM process. The additional check box is enabled only when a user enters a 16-bit program in the Run dialog box.
+<!-- MemCheckBoxInRunDlg-Description-End -->
 
-<!--/Description-->
+<!-- MemCheckBoxInRunDlg-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MemCheckBoxInRunDlg-Editable-End -->
+
+<!-- MemCheckBoxInRunDlg-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MemCheckBoxInRunDlg-DFProperties-End -->
+
+<!-- MemCheckBoxInRunDlg-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Add "Run in Separate Memory Space" check box to Run dialog box*
--   GP name: *MemCheckBoxInRunDlg*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MemCheckBoxInRunDlg |
+| Friendly Name | Add "Run in Separate Memory Space" check box to Run dialog box |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | MemCheckBoxInRunDlg |
+| ADMX File Name | StartMenu.admx |
+<!-- MemCheckBoxInRunDlg-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-noautotraynotify"></a>**ADMX_StartMenu/NoAutoTrayNotify**  
+<!-- MemCheckBoxInRunDlg-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MemCheckBoxInRunDlg-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MemCheckBoxInRunDlg-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoAutoTrayNotify-Begin -->
+## NoAutoTrayNotify
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoAutoTrayNotify-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoAutoTrayNotify-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoAutoTrayNotify-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoAutoTrayNotify
+```
+<!-- NoAutoTrayNotify-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting affects the notification area, also called the "system tray."
+<!-- NoAutoTrayNotify-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting affects the notification area, also called the "system tray."
 
 The notification area is located in the task bar, generally at the bottom of the screen, and it includes the clock and current notifications. This setting determines whether the items are always expanded or always collapsed. By default, notifications are collapsed. The notification cleanup << icon can be referred to as the "notification chevron."
 
-If you enable this setting, the system notification area expands to show all of the notifications that use this area.
+- If you enable this setting, the system notification area expands to show all of the notifications that use this area.
 
-If you disable this setting, the system notification area will always collapse notifications.
+- If you disable this setting, the system notification area will always collapse notifications.
 
-If you do not configure it, the user can choose if they want notifications collapsed.
+- If you do not configure it, the user can choose if they want notifications collapsed.
+<!-- NoAutoTrayNotify-Description-End -->
 
-<!--/Description-->
+<!-- NoAutoTrayNotify-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoAutoTrayNotify-Editable-End -->
+
+<!-- NoAutoTrayNotify-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoAutoTrayNotify-DFProperties-End -->
+
+<!-- NoAutoTrayNotify-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off notification area cleanup*
--   GP name: *NoAutoTrayNotify*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoAutoTrayNotify |
+| Friendly Name | Turn off notification area cleanup |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoAutoTrayNotify |
+| ADMX File Name | StartMenu.admx |
+<!-- NoAutoTrayNotify-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-noballoontip"></a>**ADMX_StartMenu/NoBalloonTip**  
+<!-- NoAutoTrayNotify-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoAutoTrayNotify-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoAutoTrayNotify-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoBalloonTip-Begin -->
+## NoBalloonTip
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoBalloonTip-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoBalloonTip-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoBalloonTip-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoBalloonTip
+```
+<!-- NoBalloonTip-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Hides pop-up text on the Start menu and in the notification area.
+<!-- NoBalloonTip-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hides pop-up text on the Start menu and in the notification area.
 
 When you hold the cursor over an item on the Start menu or in the notification area, the system displays pop-up text providing additional information about the object.
 
-If you enable this setting, some of this pop-up text is not displayed. The pop-up text affected by this setting includes "Click here to begin" on the Start button, "Where have all my programs gone" on the Start menu, and "Where have my icons gone" in the notification area.
+- If you enable this setting, some of this pop-up text is not displayed. The pop-up text affected by this setting includes "Click here to begin" on the Start button, "Where have all my programs gone" on the Start menu, and "Where have my icons gone" in the notification area.
 
-If you disable this setting or do not configure it, all pop-up text is displayed on the Start menu and in the notification area.
+- If you disable this setting or do not configure it, all pop-up text is displayed on the Start menu and in the notification area.
+<!-- NoBalloonTip-Description-End -->
 
-<!--/Description-->
+<!-- NoBalloonTip-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoBalloonTip-Editable-End -->
+
+<!-- NoBalloonTip-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoBalloonTip-DFProperties-End -->
+
+<!-- NoBalloonTip-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Balloon Tips on Start Menu items*
--   GP name: *NoBalloonTip*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoBalloonTip |
+| Friendly Name | Remove Balloon Tips on Start Menu items |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSMBalloonTip |
+| ADMX File Name | StartMenu.admx |
+<!-- NoBalloonTip-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nochangestartmenu"></a>**ADMX_StartMenu/NoChangeStartMenu**  
+<!-- NoBalloonTip-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoBalloonTip-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoBalloonTip-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoChangeStartMenu-Begin -->
+## NoChangeStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoChangeStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoChangeStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoChangeStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoChangeStartMenu
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoChangeStartMenu
+```
+<!-- NoChangeStartMenu-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent users from changing their Start screen layout.
+<!-- NoChangeStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent users from changing their Start screen layout.
 
-If you enable this setting, you will prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.
+- If you enable this setting, you will prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.
 
-If you disable or do not configure this setting, you will allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.
+- If you disable or do not configure this setting, you will allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.
+<!-- NoChangeStartMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoChangeStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoChangeStartMenu-Editable-End -->
+
+<!-- NoChangeStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoChangeStartMenu-DFProperties-End -->
+
+<!-- NoChangeStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users from customizing their Start Screen*
--   GP name: *NoChangeStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoChangeStartMenu |
+| Friendly Name | Prevent users from customizing their Start Screen |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoChangeStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoChangeStartMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-noclose"></a>**ADMX_StartMenu/NoClose**  
+<!-- NoChangeStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoChangeStartMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoChangeStartMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoClose-Begin -->
+## NoClose
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoClose-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoClose-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoClose-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoClose
+```
+<!-- NoClose-OmaUri-End -->
 
-<hr/>
+<!-- NoClose-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents users from performing the following commands from the Start menu or Windows Security screen: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from performing the following commands from the Start menu or Windows Security screen: Shut Down, Restart, Sleep, and Hibernate. This policy setting does not prevent users from running Windows-based programs that perform these functions.
+- If you enable this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE.
 
-If you enable this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are removed from the Start menu. The Power button is also removed from the Windows Security screen, which appears when you press CTRL+ALT+DELETE.
-
-If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security screen is also available.
+- If you disable or do not configure this policy setting, the Power button and the Shut Down, Restart, Sleep, and Hibernate commands are available on the Start menu. The Power button on the Windows Security screen is also available.
 
 > [!NOTE]
 > Third-party programs certified as compatible with Microsoft Windows Vista, Windows XP SP2, Windows XP SP1, Windows XP, or Windows 2000 Professional are required to support this policy setting.
+<!-- NoClose-Description-End -->
 
-<!--/Description-->
+<!-- NoClose-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoClose-Editable-End -->
+
+<!-- NoClose-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoClose-DFProperties-End -->
+
+<!-- NoClose-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands*
--   GP name: *NoClose*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoClose |
+| Friendly Name | Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoClose |
+| ADMX File Name | StartMenu.admx |
+<!-- NoClose-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nocommongroups"></a>**ADMX_StartMenu/NoCommonGroups**  
+<!-- NoClose-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoClose-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoClose-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoCommonGroups-Begin -->
+## NoCommonGroups
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoCommonGroups-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoCommonGroups-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoCommonGroups-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoCommonGroups
+```
+<!-- NoCommonGroups-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes items in the All Users profile from the Programs menu on the Start menu.
+<!-- NoCommonGroups-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes items in the All Users profile from the Programs menu on the Start menu.
 
 By default, the Programs menu contains items from the All Users profile and items from the user's profile. If you enable this setting, only items in the user's profile appear in the Programs menu.
 
-To see the Program menu items in the All Users profile, on the system drive, go to ProgramData\Microsoft\Windows\Start Menu\Programs.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> To see the Program menu items in the All Users profile, on the system drive, go to ProgramData\Microsoft\Windows\Start Menu\Programs.
+<!-- NoCommonGroups-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove common program groups from Start Menu*
--   GP name: *NoCommonGroups*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+<!-- NoCommonGroups-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoCommonGroups-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoCommonGroups-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nofavoritesmenu"></a>**ADMX_StartMenu/NoFavoritesMenu**  
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoCommonGroups-DFProperties-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoCommonGroups-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | NoCommonGroups |
+| Friendly Name | Remove common program groups from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoCommonGroups |
+| ADMX File Name | StartMenu.admx |
+<!-- NoCommonGroups-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoCommonGroups-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoCommonGroups-Examples-End -->
 
-<hr/>
+<!-- NoCommonGroups-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from adding the Favorites menu to the Start menu or classic Start menu.
+<!-- NoFavoritesMenu-Begin -->
+## NoFavoritesMenu
 
-If you enable this setting, the Display Favorites item does not appear in the Advanced Start menu options box.
+<!-- NoFavoritesMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoFavoritesMenu-Applicability-End -->
 
-If you disable or do not configure this setting, the Display Favorite item is available.
+<!-- NoFavoritesMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoFavoritesMenu
+```
+<!-- NoFavoritesMenu-OmaUri-End -->
+
+<!-- NoFavoritesMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from adding the Favorites menu to the Start menu or classic Start menu.
+
+- If you enable this setting, the Display Favorites item does not appear in the Advanced Start menu options box.
+
+- If you disable or do not configure this setting, the Display Favorite item is available.
 
 > [!NOTE]
-> The Favorities menu does not appear on the Start menu by default. To display the Favorites menu, right-click Start, click Properties, and then click Customize.  If you are using Start menu, click the Advanced tab, and then, under Start menu items, click the Favorites menu. If you are using the classic Start menu, click Display Favorites under Advanced Start menu options.
-> 
-> The items that appear in the Favorites menu when you install Windows are preconfigured by the system to appeal to most users. However, users can add and remove items from this menu, and system administrators can create a customized Favorites menu for a user group.
->
+> The Favorites menu does not appear on the Start menu by default. To display the Favorites menu, right-click Start, click Properties, and then click Customize. If you are using Start menu, click the Advanced tab, and then, under Start menu items, click the Favorites menu. If you are using the classic Start menu, click Display Favorites under Advanced Start menu options.
+
+> [!NOTE]
+> The items that appear in the Favorites menu when you install Windows are pre-configured by the system to appeal to most users. However, users can add and remove items from this menu, and system administrators can create a customized Favorites menu for a user group.
+
+> [!NOTE]
 > This setting only affects the Start menu. The Favorites item still appears in File Explorer and in Internet Explorer.
+<!-- NoFavoritesMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoFavoritesMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoFavoritesMenu-Editable-End -->
+
+<!-- NoFavoritesMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoFavoritesMenu-DFProperties-End -->
+
+<!-- NoFavoritesMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Favorites menu from Start Menu*
--   GP name: *NoFavoritesMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoFavoritesMenu |
+| Friendly Name | Remove Favorites menu from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoFavoritesMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoFavoritesMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nofind"></a>**ADMX_StartMenu/NoFind**  
+<!-- NoFavoritesMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoFavoritesMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoFavoritesMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoFind-Begin -->
+## NoFind
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoFind-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoFind-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoFind-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoFind
+```
+<!-- NoFind-OmaUri-End -->
 
-<hr/>
+<!-- NoFind-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Search link from the Start menu, and disables some File Explorer search elements. **Note** that this does not remove the search box from the new style Start menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Search link from the Start menu, and disables some File Explorer search elements. Note that this does not remove the search box from the new style Start menu.
+- If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
 
-If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
-
-Note: Enabling this policy setting also prevents the user from using the F3 key.
+> [!NOTE]
+> Enabling this policy setting also prevents the user from using the F3 key.
 
 In File Explorer, the Search item still appears on the Standard buttons toolbar, but the system does not respond when the user presses Ctrl+F. Also, Search does not appear in the context menu when you right-click an icon representing a drive or a folder.
 
 This policy setting affects the specified user interface elements only. It does not affect Internet Explorer and does not prevent the user from using other methods to search.
 
-If you disable or do not configure this policy setting, the Search link is available from the Start menu.
+- If you disable or do not configure this policy setting, the Search link is available from the Start menu.
+<!-- NoFind-Description-End -->
 
-<!--/Description-->
+<!-- NoFind-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoFind-Editable-End -->
+
+<!-- NoFind-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoFind-DFProperties-End -->
+
+<!-- NoFind-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Search link from Start Menu*
--   GP name: *NoFind*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoFind |
+| Friendly Name | Remove Search link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoFind |
+| ADMX File Name | StartMenu.admx |
+<!-- NoFind-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nogamesfolderonstartmenu"></a>**ADMX_StartMenu/NoGamesFolderOnStartMenu**  
+<!-- NoFind-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoFind-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoFind-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoGamesFolderOnStartMenu-Begin -->
+## NoGamesFolderOnStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoGamesFolderOnStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoGamesFolderOnStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoGamesFolderOnStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoGamesFolderOnStartMenu
+```
+<!-- NoGamesFolderOnStartMenu-OmaUri-End -->
 
-<hr/>
+<!-- NoGamesFolderOnStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy the start menu will not show a link to the Games folder.
+- If you enable this policy the start menu will not show a link to the Games folder.
 
-If you disable or do not configure this policy, the start menu will show a link to the Games folder, unless the user chooses to remove it in the start menu control panel.
+- If you disable or do not configure this policy, the start menu will show a link to the Games folder, unless the user chooses to remove it in the start menu control panel.
+<!-- NoGamesFolderOnStartMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoGamesFolderOnStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoGamesFolderOnStartMenu-Editable-End -->
+
+<!-- NoGamesFolderOnStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoGamesFolderOnStartMenu-DFProperties-End -->
+
+<!-- NoGamesFolderOnStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Games link from Start Menu*
--   GP name: *NoGamesFolderOnStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoGamesFolderOnStartMenu |
+| Friendly Name | Remove Games link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStartMenuMyGames |
+| ADMX File Name | StartMenu.admx |
+<!-- NoGamesFolderOnStartMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nohelp"></a>**ADMX_StartMenu/NoHelp**  
+<!-- NoGamesFolderOnStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoGamesFolderOnStartMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoGamesFolderOnStartMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoHelp-Begin -->
+## NoHelp
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoHelp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoHelp-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoHelp-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoHelp
+```
+<!-- NoHelp-OmaUri-End -->
 
-<hr/>
+<!-- NoHelp-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Help command from the Start menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Help command from the Start menu.
+- If you enable this policy setting, the Help command is removed from the Start menu.
 
-If you enable this policy setting, the Help command is removed from the Start menu.
-
-If you disable or do not configure this policy setting, the Help command is available from the Start menu.
+- If you disable or do not configure this policy setting, the Help command is available from the Start menu.
 
 This policy setting only affects the Start menu. It does not remove the Help menu from File Explorer and does not prevent users from running Help.
+<!-- NoHelp-Description-End -->
 
-<!--/Description-->
+<!-- NoHelp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoHelp-Editable-End -->
+
+<!-- NoHelp-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoHelp-DFProperties-End -->
+
+<!-- NoHelp-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Help menu from Start Menu*
--   GP name: *NoHelp*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoHelp |
+| Friendly Name | Remove Help menu from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSMHelp |
+| ADMX File Name | StartMenu.admx |
+<!-- NoHelp-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-noinstrumentation"></a>**ADMX_StartMenu/NoInstrumentation**  
+<!-- NoHelp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoHelp-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoHelp-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoInstrumentation-Begin -->
+## NoInstrumentation
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoInstrumentation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoInstrumentation-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoInstrumentation-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoInstrumentation
+```
+<!-- NoInstrumentation-OmaUri-End -->
 
-<hr/>
+<!-- NoInstrumentation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off user tracking.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off user tracking.
+- If you enable this policy setting, the system does not track the programs that the user runs, and does not display frequently used programs in the Start Menu.
 
-If you enable this policy setting, the system does not track the programs that the user runs, and does not display frequently used programs in the Start Menu.
-
-If you disable or do not configure this policy setting, the system tracks the programs that the user runs. The system uses this information to customize Windows features, such as showing frequently used programs in the Start Menu.
+- If you disable or do not configure this policy setting, the system tracks the programs that the user runs. The system uses this information to customize Windows features, such as showing frequently used programs in the Start Menu.
 
 Also, see these related policy settings: "Remove frequent programs liist from the Start Menu" and "Turn off personalized menus".
 
-This policy  setting does not prevent users from pinning programs to the Start Menu or Taskbar. See the "Remove pinned programs list from the Start Menu" and "Do not allow pinning programs to the Taskbar" policy settings.
+This policy setting does not prevent users from pinning programs to the Start Menu or Taskbar. See the "Remove pinned programs list from the Start Menu" and "Do not allow pinning programs to the Taskbar" policy settings.
+<!-- NoInstrumentation-Description-End -->
 
-<!--/Description-->
+<!-- NoInstrumentation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoInstrumentation-Editable-End -->
+
+<!-- NoInstrumentation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoInstrumentation-DFProperties-End -->
+
+<!-- NoInstrumentation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off user tracking*
--   GP name: *NoInstrumentation*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoInstrumentation |
+| Friendly Name | Turn off user tracking |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoInstrumentation |
+| ADMX File Name | StartMenu.admx |
+<!-- NoInstrumentation-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nomoreprogramslist"></a>**ADMX_StartMenu/NoMoreProgramsList**  
+<!-- NoInstrumentation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoInstrumentation-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoInstrumentation-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoMoreProgramsList-Begin -->
+## NoMoreProgramsList
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoMoreProgramsList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoMoreProgramsList-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
-> * Device
+<!-- NoMoreProgramsList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoMoreProgramsList
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoMoreProgramsList
+```
+<!-- NoMoreProgramsList-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this setting, the Start Menu will either collapse or remove the all apps list from the Start menu.
+<!-- NoMoreProgramsList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this setting, the Start Menu will either collapse or remove the all apps list from the Start menu.
 
 Selecting "Collapse" will not display the app list next to the pinned tiles in Start. An "All apps" button will be displayed on Start to open the all apps list. This is equivalent to setting the "Show app list in Start" in Settings to Off.
 
@@ -1930,216 +1511,189 @@ Selecting "Collapse and disable setting" will do the same as the collapse option
 
 Selecting "Remove and disable setting" will remove the all apps list from Start and disable the "Show app list in Start menu" in Settings, so users cannot turn it to On. Select this option for compatibility with earlier versions of Windows.
 
-If you disable or do not configure this setting, the all apps list will be visible by default, and the user can change "Show app list in Start" in Settings.
+- If you disable or do not configure this setting, the all apps list will be visible by default, and the user can change "Show app list in Start" in Settings.
+<!-- NoMoreProgramsList-Description-End -->
 
-<!--/Description-->
+<!-- NoMoreProgramsList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoMoreProgramsList-Editable-End -->
+
+<!-- NoMoreProgramsList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoMoreProgramsList-DFProperties-End -->
+
+<!-- NoMoreProgramsList-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove All Programs list from the Start menu*
--   GP name: *NoMoreProgramsList*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoMoreProgramsList |
+| Friendly Name | Remove All Programs list from the Start menu |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | StartMenu.admx |
+<!-- NoMoreProgramsList-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nonetanddialupconnect"></a>**ADMX_StartMenu/NoNetAndDialupConnect**  
+<!-- NoMoreProgramsList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoMoreProgramsList-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoMoreProgramsList-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoNetAndDialupConnect-Begin -->
+## NoNetAndDialupConnect
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoNetAndDialupConnect-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoNetAndDialupConnect-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoNetAndDialupConnect-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoNetAndDialupConnect
+```
+<!-- NoNetAndDialupConnect-OmaUri-End -->
 
-<hr/>
+<!-- NoNetAndDialupConnect-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove Network Connections from the Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove Network Connections from the Start Menu.
-
-If you enable this policy setting, users are prevented from running Network Connections.
+- If you enable this policy setting, users are prevented from running Network Connections.
 
 Enabling this policy setting prevents the Network Connections folder from opening. This policy setting also removes Network Connections from Settings on the Start menu.
 
 Network Connections still appears in Control Panel and in File Explorer, but if users try to start it, a message appears explaining that a setting prevents the action.
 
-If you disable or do not configure this policy setting, Network Connections is available from the Start Menu.
+- If you disable or do not configure this policy setting, Network Connections is available from the Start Menu.
 
 Also, see the "Disable programs on Settings menu" and "Disable Control Panel" policy settings and the policy settings in the Network Connections folder (Computer Configuration and User Configuration\Administrative Templates\Network\Network Connections).
+<!-- NoNetAndDialupConnect-Description-End -->
 
-<!--/Description-->
+<!-- NoNetAndDialupConnect-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoNetAndDialupConnect-Editable-End -->
+
+<!-- NoNetAndDialupConnect-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoNetAndDialupConnect-DFProperties-End -->
+
+<!-- NoNetAndDialupConnect-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Network Connections from Start Menu*
--   GP name: *NoNetAndDialupConnect*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoNetAndDialupConnect |
+| Friendly Name | Remove Network Connections from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoNetworkConnections |
+| ADMX File Name | StartMenu.admx |
+<!-- NoNetAndDialupConnect-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nopinnedprograms"></a>**ADMX_StartMenu/NoPinnedPrograms**  
+<!-- NoNetAndDialupConnect-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoNetAndDialupConnect-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoNetAndDialupConnect-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinnedPrograms-Begin -->
+## NoPinnedPrograms
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPinnedPrograms-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinnedPrograms-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinnedPrograms-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoPinnedPrograms
+```
+<!-- NoPinnedPrograms-OmaUri-End -->
 
-<hr/>
+<!-- NoPinnedPrograms-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this setting, the "Pinned Programs" list is removed from the Start menu. Users cannot pin programs to the Start menu.
+- If you enable this setting, the "Pinned Programs" list is removed from the Start menu. Users cannot pin programs to the Start menu.
 
 In Windows XP and Windows Vista, the Internet and email checkboxes are removed from the 'Customize Start Menu' dialog.
 
-If you disable this setting or do not configure it, the "Pinned Programs" list remains on the Start menu. Users can pin and unpin programs in the Start Menu.
+- If you disable this setting or do not configure it, the "Pinned Programs" list remains on the Start menu. Users can pin and unpin programs in the Start Menu.
+<!-- NoPinnedPrograms-Description-End -->
 
-<!--/Description-->
+<!-- NoPinnedPrograms-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinnedPrograms-Editable-End -->
+
+<!-- NoPinnedPrograms-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinnedPrograms-DFProperties-End -->
+
+<!-- NoPinnedPrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove pinned programs list from the Start Menu*
--   GP name: *NoPinnedPrograms*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoPinnedPrograms |
+| Friendly Name | Remove pinned programs list from the Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStartMenuPinnedList |
+| ADMX File Name | StartMenu.admx |
+<!-- NoPinnedPrograms-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-norecentdocsmenu"></a>**ADMX_StartMenu/NoRecentDocsMenu**  
+<!-- NoPinnedPrograms-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinnedPrograms-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoPinnedPrograms-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRecentDocsMenu-Begin -->
+## NoRecentDocsMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRecentDocsMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRecentDocsMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRecentDocsMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRecentDocsMenu
+```
+<!-- NoRecentDocsMenu-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Removes the Recent Items menu from the Start menu.  Removes the Documents menu from the classic Start menu.
+<!-- NoRecentDocsMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Recent Items menu from the Start menu. Removes the Documents menu from the classic Start menu.
 
 The Recent Items menu contains links to the non-program files that users have most recently opened. It appears so that users can easily reopen their documents.
 
@@ -2155,2856 +1709,2542 @@ If the setting is not configured, users can turn the Recent Items menu on and of
 > This setting does not prevent Windows programs from displaying shortcuts to recently opened documents. See the "Do not keep history of recently opened documents" setting.
 
 This setting also does not hide document shortcuts displayed in the Open dialog box. See the "Hide the dropdown list of recent files" setting.
+<!-- NoRecentDocsMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoRecentDocsMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRecentDocsMenu-Editable-End -->
+
+<!-- NoRecentDocsMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRecentDocsMenu-DFProperties-End -->
+
+<!-- NoRecentDocsMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Recent Items menu from Start Menu*
--   GP name: *NoRecentDocsMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoRecentDocsMenu |
+| Friendly Name | Remove Recent Items menu from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoRecentDocsMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoRecentDocsMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-noresolvesearch"></a>**ADMX_StartMenu/NoResolveSearch**  
+<!-- NoRecentDocsMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRecentDocsMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRecentDocsMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoResolveSearch-Begin -->
+## NoResolveSearch
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoResolveSearch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoResolveSearch-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoResolveSearch-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoResolveSearch
+```
+<!-- NoResolveSearch-OmaUri-End -->
 
-<hr/>
+<!-- NoResolveSearch-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents the system from conducting a comprehensive search of the target drive to resolve a shortcut.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the system from conducting a comprehensive search of the target drive to resolve a shortcut.
+- If you enable this policy setting, the system does not conduct the final drive search. It just displays a message explaining that the file is not found.
 
-If you enable this policy setting, the system does not conduct the final drive search. It just displays a message explaining that the file is not found.
-
-If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
+- If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
 
 > [!NOTE]
 > This policy setting only applies to target files on NTFS partitions. FAT partitions do not have this ID tracking and search capability.
 
 Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use the tracking-based method when resolving shell shortcuts" policy settings.
+<!-- NoResolveSearch-Description-End -->
 
-<!--/Description-->
+<!-- NoResolveSearch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoResolveSearch-Editable-End -->
+
+<!-- NoResolveSearch-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoResolveSearch-DFProperties-End -->
+
+<!-- NoResolveSearch-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not use the search-based method when resolving shell shortcuts*
--   GP name: *NoResolveSearch*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoResolveSearch |
+| Friendly Name | Do not use the search-based method when resolving shell shortcuts |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoResolveSearch |
+| ADMX File Name | StartMenu.admx |
+<!-- NoResolveSearch-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-noresolvetrack"></a>**ADMX_StartMenu/NoResolveTrack**  
+<!-- NoResolveSearch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoResolveSearch-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoResolveSearch-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoResolveTrack-Begin -->
+## NoResolveTrack
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoResolveTrack-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoResolveTrack-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoResolveTrack-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoResolveTrack
+```
+<!-- NoResolveTrack-OmaUri-End -->
 
-<hr/>
+<!-- NoResolveTrack-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents the system from using NTFS tracking features to resolve a shortcut.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the system from using NTFS tracking features to resolve a shortcut.
+- If you enable this policy setting, the system does not try to locate the file by using its file ID. It skips this step and begins a comprehensive search of the drive specified in the target path.
 
-If you enable this policy setting, the system does not try to locate the file by using its file ID. It skips this step and begins a comprehensive search of the drive specified in the target path.
-
-If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
+- If you disable or do not configure this policy setting, by default, when the system cannot find the target file for a shortcut (.lnk), it searches all paths associated with the shortcut. If the target file is located on an NTFS partition, the system then uses the target's file ID to find a path. If the resulting path is not correct, it conducts a comprehensive search of the target drive in an attempt to find the file.
 
 > [!NOTE]
 > This policy setting only applies to target files on NTFS partitions. FAT partitions do not have this ID tracking and search capability.
 
 Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use the search-based method when resolving shell shortcuts" policy settings.
-<!--/Description-->
+<!-- NoResolveTrack-Description-End -->
+
+<!-- NoResolveTrack-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoResolveTrack-Editable-End -->
+
+<!-- NoResolveTrack-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoResolveTrack-DFProperties-End -->
+
+<!-- NoResolveTrack-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not use the tracking-based method when resolving shell shortcuts*
--   GP name: *NoResolveTrack*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoResolveTrack |
+| Friendly Name | Do not use the tracking-based method when resolving shell shortcuts |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoResolveTrack |
+| ADMX File Name | StartMenu.admx |
+<!-- NoResolveTrack-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-norun"></a>**ADMX_StartMenu/NoRun**  
+<!-- NoResolveTrack-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoResolveTrack-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoResolveTrack-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRun-Begin -->
+## NoRun
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRun-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRun-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRun-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRun
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoRun
+```
+<!-- NoRun-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Allows you to remove the Run command from the Start menu, Internet Explorer, and Task Manager.
+<!-- NoRun-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows you to remove the Run command from the Start menu, Internet Explorer, and Task Manager.
 
-If you enable this setting, the following changes occur:
+- If you enable this setting, the following changes occur:
 
-1. The Run command is removed from the Start menu.
+(1) The Run command is removed from the Start menu.
 
-2. The New Task (Run) command is removed from Task Manager.
+(2) The New Task (Run) command is removed from Task Manager.
 
-3. The user will be blocked from entering the following into the Internet Explorer Address Bar:
+(3) The user will be blocked from entering the following into the Internet Explorer Address Bar:
 
-    - A UNC path: `\\<server>\<share>`
+--- A UNC path: \\`<server>`\\`<share>`
 
-    - Accessing local drives:  e.g., C:
+---Accessing local drives: e.g., C:
 
-    - Accessing local folders: e.g., `\<temp>`
+--- Accessing local folders: e.g., \temp>
 
 Also, users with extended keyboards will no longer be able to display the Run dialog box by pressing the Application key (the key with the Windows logo) + R.
 
-If you disable or do not configure this setting, users will be able to access the Run command in the Start menu and in Task Manager and use the Internet Explorer Address Bar.
+- If you disable or do not configure this setting, users will be able to access the Run command in the Start menu and in Task Manager and use the Internet Explorer Address Bar.
 
 > [!NOTE]
 > This setting affects the specified interface only. It does not prevent users from using other methods to run programs.
->
+
+> [!NOTE]
 > It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+<!-- NoRun-Description-End -->
 
-<!--/Description-->
+<!-- NoRun-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRun-Editable-End -->
+
+<!-- NoRun-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRun-DFProperties-End -->
+
+<!-- NoRun-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Run menu from Start Menu*
--   GP name: *NoRun*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoRun |
+| Friendly Name | Remove Run menu from Start Menu |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoRun |
+| ADMX File Name | StartMenu.admx |
+<!-- NoRun-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosmconfigureprograms"></a>**ADMX_StartMenu/NoSMConfigurePrograms**  
+<!-- NoRun-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRun-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRun-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSearchCommInStartMenu-Begin -->
+## NoSearchCommInStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSearchCommInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchCommInStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSearchCommInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSearchCommInStartMenu
+```
+<!-- NoSearchCommInStartMenu-OmaUri-End -->
 
-<hr/>
+<!-- NoSearchCommInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Default Programs link from the Start menu.
+- If you enable this policy the start menu search box will not search for communications.
 
-If you enable this policy setting, the Default Programs link is removed from the Start menu.
+- If you disable or do not configure this policy, the start menu will search for communications, unless the user chooses not to in the start menu control panel.
+<!-- NoSearchCommInStartMenu-Description-End -->
+
+<!-- NoSearchCommInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchCommInStartMenu-Editable-End -->
+
+<!-- NoSearchCommInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchCommInStartMenu-DFProperties-End -->
+
+<!-- NoSearchCommInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSearchCommInStartMenu |
+| Friendly Name | Do not search communications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSearchCommInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSearchCommInStartMenu-AdmxBacked-End -->
+
+<!-- NoSearchCommInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchCommInStartMenu-Examples-End -->
+
+<!-- NoSearchCommInStartMenu-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-Begin -->
+## NoSearchComputerLinkInStartMenu
+
+<!-- NoSearchComputerLinkInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchComputerLinkInStartMenu-Applicability-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSearchComputerLinkInStartMenu
+```
+<!-- NoSearchComputerLinkInStartMenu-OmaUri-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy, the "See all results" link will not be shown when the user performs a search in the start menu search box.
+
+- If you disable or do not configure this policy, the "See all results" link will be shown when the user performs a search in the start menu search box.
+<!-- NoSearchComputerLinkInStartMenu-Description-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchComputerLinkInStartMenu-Editable-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchComputerLinkInStartMenu-DFProperties-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSearchComputerLinkInStartMenu |
+| Friendly Name | Remove Search Computer link |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSearchComputerLinkInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSearchComputerLinkInStartMenu-AdmxBacked-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchComputerLinkInStartMenu-Examples-End -->
+
+<!-- NoSearchComputerLinkInStartMenu-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-Begin -->
+## NoSearchEverywhereLinkInStartMenu
+
+<!-- NoSearchEverywhereLinkInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchEverywhereLinkInStartMenu-Applicability-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSearchEverywhereLinkInStartMenu
+```
+<!-- NoSearchEverywhereLinkInStartMenu-OmaUri-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
+
+- If you disable or do not configure this policy, a "See more results" link will be shown when the user performs a search in the start menu search box. If a 3rd party protocol handler is installed, a "Search Everywhere" link will be shown instead of the "See more results" link.
+<!-- NoSearchEverywhereLinkInStartMenu-Description-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchEverywhereLinkInStartMenu-Editable-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchEverywhereLinkInStartMenu-DFProperties-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSearchEverywhereLinkInStartMenu |
+| Friendly Name | Remove See More Results / Search Everywhere link |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoSearchEverywhereLinkInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSearchEverywhereLinkInStartMenu-AdmxBacked-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchEverywhereLinkInStartMenu-Examples-End -->
+
+<!-- NoSearchEverywhereLinkInStartMenu-End -->
+
+<!-- NoSearchFilesInStartMenu-Begin -->
+## NoSearchFilesInStartMenu
+
+<!-- NoSearchFilesInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchFilesInStartMenu-Applicability-End -->
+
+<!-- NoSearchFilesInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSearchFilesInStartMenu
+```
+<!-- NoSearchFilesInStartMenu-OmaUri-End -->
+
+<!-- NoSearchFilesInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy setting the Start menu search box will not search for files.
+
+- If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel.
+
+- If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
+<!-- NoSearchFilesInStartMenu-Description-End -->
+
+<!-- NoSearchFilesInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchFilesInStartMenu-Editable-End -->
+
+<!-- NoSearchFilesInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchFilesInStartMenu-DFProperties-End -->
+
+<!-- NoSearchFilesInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSearchFilesInStartMenu |
+| Friendly Name | Do not search for files |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSearchFilesInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSearchFilesInStartMenu-AdmxBacked-End -->
+
+<!-- NoSearchFilesInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchFilesInStartMenu-Examples-End -->
+
+<!-- NoSearchFilesInStartMenu-End -->
+
+<!-- NoSearchInternetInStartMenu-Begin -->
+## NoSearchInternetInStartMenu
+
+<!-- NoSearchInternetInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchInternetInStartMenu-Applicability-End -->
+
+<!-- NoSearchInternetInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSearchInternetInStartMenu
+```
+<!-- NoSearchInternetInStartMenu-OmaUri-End -->
+
+<!-- NoSearchInternetInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy the start menu search box will not search for internet history or favorites.
+
+- If you disable or do not configure this policy, the start menu will search for for internet history or favorites, unless the user chooses not to in the start menu control panel.
+<!-- NoSearchInternetInStartMenu-Description-End -->
+
+<!-- NoSearchInternetInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchInternetInStartMenu-Editable-End -->
+
+<!-- NoSearchInternetInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchInternetInStartMenu-DFProperties-End -->
+
+<!-- NoSearchInternetInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSearchInternetInStartMenu |
+| Friendly Name | Do not search Internet |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSearchInternetInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSearchInternetInStartMenu-AdmxBacked-End -->
+
+<!-- NoSearchInternetInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchInternetInStartMenu-Examples-End -->
+
+<!-- NoSearchInternetInStartMenu-End -->
+
+<!-- NoSearchProgramsInStartMenu-Begin -->
+## NoSearchProgramsInStartMenu
+
+<!-- NoSearchProgramsInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchProgramsInStartMenu-Applicability-End -->
+
+<!-- NoSearchProgramsInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSearchProgramsInStartMenu
+```
+<!-- NoSearchProgramsInStartMenu-OmaUri-End -->
+
+<!-- NoSearchProgramsInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy setting the Start menu search box will not search for programs or Control Panel items.
+
+- If you disable or do not configure this policy setting, the Start menu search box will search for programs and Control Panel items, unless the user chooses not to do so directly in Control Panel.
+<!-- NoSearchProgramsInStartMenu-Description-End -->
+
+<!-- NoSearchProgramsInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchProgramsInStartMenu-Editable-End -->
+
+<!-- NoSearchProgramsInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchProgramsInStartMenu-DFProperties-End -->
+
+<!-- NoSearchProgramsInStartMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSearchProgramsInStartMenu |
+| Friendly Name | Do not search programs and Control Panel items |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSearchProgramsInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSearchProgramsInStartMenu-AdmxBacked-End -->
+
+<!-- NoSearchProgramsInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchProgramsInStartMenu-Examples-End -->
+
+<!-- NoSearchProgramsInStartMenu-End -->
+
+<!-- NoSetFolders-Begin -->
+## NoSetFolders
+
+<!-- NoSetFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSetFolders-Applicability-End -->
+
+<!-- NoSetFolders-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetFolders
+```
+<!-- NoSetFolders-OmaUri-End -->
+
+<!-- NoSetFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove programs on Settings menu.
+
+- If you enable this policy setting, the Control Panel, Printers, and Network and Connection folders are removed from Settings on the Start menu, and from Computer and File Explorer. It also prevents the programs represented by these folders (such as Control.exe) from running.
+
+However, users can still start Control Panel items by using other methods, such as right-clicking the desktop to start Display or right-clicking Computer to start System.
+
+- If you disable or do not configure this policy setting, the Control Panel, Printers, and Network and Connection folders from Settings are available on the Start menu, and from Computer and File Explorer.
+
+Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "Remove Network Connections from Start Menu" policy settings.
+<!-- NoSetFolders-Description-End -->
+
+<!-- NoSetFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSetFolders-Editable-End -->
+
+<!-- NoSetFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSetFolders-DFProperties-End -->
+
+<!-- NoSetFolders-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSetFolders |
+| Friendly Name | Remove programs on Settings menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSetFolders |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSetFolders-AdmxBacked-End -->
+
+<!-- NoSetFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSetFolders-Examples-End -->
+
+<!-- NoSetFolders-End -->
+
+<!-- NoSetTaskbar-Begin -->
+## NoSetTaskbar
+
+<!-- NoSetTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSetTaskbar-Applicability-End -->
+
+<!-- NoSetTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetTaskbar
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSetTaskbar
+```
+<!-- NoSetTaskbar-OmaUri-End -->
+
+<!-- NoSetTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to prevent changes to Taskbar and Start Menu Settings.
+
+- If you enable this policy setting, The user will be prevented from opening the Taskbar Properties dialog box.
+
+If the user right-clicks the taskbar and then clicks Properties, a message appears explaining that a setting prevents the action.
+
+- If you disable or do not configure this policy setting, the Taskbar and Start Menu items are available from Settings on the Start menu.
+<!-- NoSetTaskbar-Description-End -->
+
+<!-- NoSetTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSetTaskbar-Editable-End -->
+
+<!-- NoSetTaskbar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSetTaskbar-DFProperties-End -->
+
+<!-- NoSetTaskbar-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoSetTaskbar |
+| Friendly Name | Prevent changes to Taskbar and Start Menu Settings |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSetTaskbar |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSetTaskbar-AdmxBacked-End -->
+
+<!-- NoSetTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSetTaskbar-Examples-End -->
+
+<!-- NoSetTaskbar-End -->
+
+<!-- NoSMConfigurePrograms-Begin -->
+## NoSMConfigurePrograms
+
+<!-- NoSMConfigurePrograms-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSMConfigurePrograms-Applicability-End -->
+
+<!-- NoSMConfigurePrograms-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSMConfigurePrograms
+```
+<!-- NoSMConfigurePrograms-OmaUri-End -->
+
+<!-- NoSMConfigurePrograms-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Default Programs link from the Start menu.
+
+- If you enable this policy setting, the Default Programs link is removed from the Start menu.
 
 Clicking the Default Programs link from the Start menu opens the Default Programs control panel and provides administrators the ability to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations.
 
-If you disable or do not configure this policy setting, the Default Programs link is available from the Start menu.
+- If you disable or do not configure this policy setting, the Default Programs link is available from the Start menu.
 
 > [!NOTE]
 > This policy setting does not prevent the Set Default Programs for This Computer option from appearing in the Default Programs control panel.
+<!-- NoSMConfigurePrograms-Description-End -->
 
-<!--/Description-->
+<!-- NoSMConfigurePrograms-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSMConfigurePrograms-Editable-End -->
+
+<!-- NoSMConfigurePrograms-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSMConfigurePrograms-DFProperties-End -->
+
+<!-- NoSMConfigurePrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Default Programs link from the Start menu.*
--   GP name: *NoSMConfigurePrograms*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSMConfigurePrograms |
+| Friendly Name | Remove Default Programs link from the Start menu. |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSMConfigurePrograms |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSMConfigurePrograms-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosmmydocuments"></a>**ADMX_StartMenu/NoSMMyDocuments**  
+<!-- NoSMConfigurePrograms-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSMConfigurePrograms-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSMConfigurePrograms-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSMMyDocuments-Begin -->
+## NoSMMyDocuments
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSMMyDocuments-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSMMyDocuments-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSMMyDocuments-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSMMyDocuments
+```
+<!-- NoSMMyDocuments-OmaUri-End -->
 
-<hr/>
+<!-- NoSMMyDocuments-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Documents icon from the Start menu and its submenus.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Documents icon from the Start menu and its submenus.
-
-If you enable this policy setting, the Documents icon is removed from the Start menu and its submenus. Enabling this policy setting only removes the icon. It does not prevent the user from using other methods to gain access to the contents of the Documents folder.
+- If you enable this policy setting, the Documents icon is removed from the Start menu and its submenus. Enabling this policy setting only removes the icon. It does not prevent the user from using other methods to gain access to the contents of the Documents folder.
 
 > [!NOTE]
 > To make changes to this policy setting effective, you must log off and then log on.
 
-If you disable or do not configure this policy setting, he Documents icon is available from the Start menu.
+- If you disable or do not configure this policy setting, he Documents icon is available from the Start menu.
 
 Also, see the "Remove Documents icon on the desktop" policy setting.
+<!-- NoSMMyDocuments-Description-End -->
 
-<!--/Description-->
+<!-- NoSMMyDocuments-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSMMyDocuments-Editable-End -->
+
+<!-- NoSMMyDocuments-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSMMyDocuments-DFProperties-End -->
+
+<!-- NoSMMyDocuments-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Documents icon from Start Menu*
--   GP name: *NoSMMyDocuments*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSMMyDocuments |
+| Friendly Name | Remove Documents icon from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSMMyDocs |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSMMyDocuments-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosmmymusic"></a>**ADMX_StartMenu/NoSMMyMusic**  
+<!-- NoSMMyDocuments-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSMMyDocuments-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSMMyDocuments-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSMMyMusic-Begin -->
+## NoSMMyMusic
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSMMyMusic-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSMMyMusic-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSMMyMusic-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSMMyMusic
+```
+<!-- NoSMMyMusic-OmaUri-End -->
 
-<hr/>
+<!-- NoSMMyMusic-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Music icon from Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Music icon from Start Menu.
+- If you enable this policy setting, the Music icon is no longer available from Start Menu.
 
-If you enable this policy setting, the Music icon is no longer available from Start Menu.
+- If you disable or do not configure this policy setting, the Music icon is available from Start Menu.
+<!-- NoSMMyMusic-Description-End -->
 
-If you disable or do not configure this policy setting, the Music icon is available from Start Menu.
+<!-- NoSMMyMusic-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSMMyMusic-Editable-End -->
 
-<!--/Description-->
+<!-- NoSMMyMusic-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSMMyMusic-DFProperties-End -->
+
+<!-- NoSMMyMusic-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Music icon from Start Menu*
--   GP name: *NoSMMyMusic*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSMMyMusic |
+| Friendly Name | Remove Music icon from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStartMenuMyMusic |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSMMyMusic-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosmmynetworkplaces"></a>**ADMX_StartMenu/NoSMMyNetworkPlaces**  
+<!-- NoSMMyMusic-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSMMyMusic-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSMMyMusic-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSMMyNetworkPlaces-Begin -->
+## NoSMMyNetworkPlaces
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSMMyNetworkPlaces-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSMMyNetworkPlaces-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSMMyNetworkPlaces-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSMMyNetworkPlaces
+```
+<!-- NoSMMyNetworkPlaces-OmaUri-End -->
 
-<hr/>
+<!-- NoSMMyNetworkPlaces-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Network icon from Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build.This policy setting allows you to remove the Network icon from Start Menu.
+- If you enable this policy setting, the Network icon is no longer available from Start Menu.
 
-If you enable this policy setting, the Network icon is no longer available from Start Menu.
+- If you disable or do not configure this policy setting, the Network icon is available from Start Menu.
+<!-- NoSMMyNetworkPlaces-Description-End -->
 
-If you disable or do not configure this policy setting, the Network icon is available from Start Menu.
+<!-- NoSMMyNetworkPlaces-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSMMyNetworkPlaces-Editable-End -->
 
-<!--/Description-->
+<!-- NoSMMyNetworkPlaces-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSMMyNetworkPlaces-DFProperties-End -->
+
+<!-- NoSMMyNetworkPlaces-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Network icon from Start Menu*
--   GP name: *NoSMMyNetworkPlaces*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSMMyNetworkPlaces |
+| Friendly Name | Remove Network icon from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStartMenuNetworkPlaces |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSMMyNetworkPlaces-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosmmypictures"></a>**ADMX_StartMenu/NoSMMyPictures**  
+<!-- NoSMMyNetworkPlaces-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSMMyNetworkPlaces-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSMMyNetworkPlaces-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSMMyPictures-Begin -->
+## NoSMMyPictures
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSMMyPictures-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSMMyPictures-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSMMyPictures-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoSMMyPictures
+```
+<!-- NoSMMyPictures-OmaUri-End -->
 
-<hr/>
+<!-- NoSMMyPictures-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Pictures icon from Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Pictures icon from Start Menu.
+- If you enable this policy setting, the Pictures icon is no longer available from Start Menu.
 
-If you enable this policy setting, the Pictures icon is no longer available from Start Menu.
+- If you disable or do not configure this policy setting, the Pictures icon is available from Start Menu.
+<!-- NoSMMyPictures-Description-End -->
 
-If you disable or do not configure this policy setting, the Pictures icon is available from Start Menu.
+<!-- NoSMMyPictures-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSMMyPictures-Editable-End -->
 
-<!--/Description-->
+<!-- NoSMMyPictures-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSMMyPictures-DFProperties-End -->
+
+<!-- NoSMMyPictures-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Pictures icon from Start Menu*
--   GP name: *NoSMMyPictures*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSMMyPictures |
+| Friendly Name | Remove Pictures icon from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSMMyPictures |
+| ADMX File Name | StartMenu.admx |
+<!-- NoSMMyPictures-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosearchcomminstartmenu"></a>**ADMX_StartMenu/NoSearchCommInStartMenu**  
+<!-- NoSMMyPictures-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSMMyPictures-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSMMyPictures-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoStartMenuDownload-Begin -->
+## NoStartMenuDownload
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoStartMenuDownload-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStartMenuDownload-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoStartMenuDownload-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoStartMenuDownload
+```
+<!-- NoStartMenuDownload-OmaUri-End -->
 
-<hr/>
+<!-- NoStartMenuDownload-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Downloads link from the Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy the start menu search box will not search for communications.
+- If you enable this policy setting, the Start Menu does not show a link to the Downloads folder.
 
-If you disable or do not configure this policy, the start menu will search for communications, unless the user chooses not to in the start menu control panel.
+- If you disable or do not configure this policy setting, the Downloads link is available from the Start Menu.
+<!-- NoStartMenuDownload-Description-End -->
 
-<!--/Description-->
+<!-- NoStartMenuDownload-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStartMenuDownload-Editable-End -->
+
+<!-- NoStartMenuDownload-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStartMenuDownload-DFProperties-End -->
+
+<!-- NoStartMenuDownload-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not search communications*
--   GP name: *NoSearchCommInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoStartMenuDownload |
+| Friendly Name | Remove Downloads link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoStartMenuDownloads |
+| ADMX File Name | StartMenu.admx |
+<!-- NoStartMenuDownload-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosearchcomputerlinkinstartmenu"></a>**ADMX_StartMenu/NoSearchComputerLinkInStartMenu**  
+<!-- NoStartMenuDownload-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStartMenuDownload-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoStartMenuDownload-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoStartMenuHomegroup-Begin -->
+## NoStartMenuHomegroup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoStartMenuHomegroup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStartMenuHomegroup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoStartMenuHomegroup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoStartMenuHomegroup
+```
+<!-- NoStartMenuHomegroup-OmaUri-End -->
 
-<hr/>
+<!-- NoStartMenuHomegroup-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy, the "See all results" link will not be shown when the user performs a search in the start menu search box.
+- If you enable this policy the Start menu will not show a link to Homegroup. It also removes the homegroup item from the Start Menu options. As a result, users cannot add the homegroup link to the Start Menu.
 
-If you disable or do not configure this policy, the "See all results" link will be shown when the user performs a search in the start menu search box.
+- If you disable or do not configure this policy, users can use the Start Menu options to add or remove the homegroup link from the Start Menu.
+<!-- NoStartMenuHomegroup-Description-End -->
 
-<!--/Description-->
+<!-- NoStartMenuHomegroup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStartMenuHomegroup-Editable-End -->
+
+<!-- NoStartMenuHomegroup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStartMenuHomegroup-DFProperties-End -->
+
+<!-- NoStartMenuHomegroup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Search Computer link*
--   GP name: *NoSearchComputerLinkInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoStartMenuHomegroup |
+| Friendly Name | Remove Homegroup link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoStartMenuHomegroup |
+| ADMX File Name | StartMenu.admx |
+<!-- NoStartMenuHomegroup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nosearcheverywherelinkinstartmenu"></a>**ADMX_StartMenu/NoSearchEverywhereLinkInStartMenu**  
+<!-- NoStartMenuHomegroup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStartMenuHomegroup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoStartMenuHomegroup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoStartMenuRecordedTV-Begin -->
+## NoStartMenuRecordedTV
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoStartMenuRecordedTV-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStartMenuRecordedTV-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoStartMenuRecordedTV-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoStartMenuRecordedTV
+```
+<!-- NoStartMenuRecordedTV-OmaUri-End -->
 
-<hr/>
+<!-- NoStartMenuRecordedTV-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Recorded TV link from the Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
+- If you enable this policy setting, the Start Menu does not show a link to the Recorded TV library.
 
-If you disable or do not configure this policy, a "See more results" link will be shown when the user performs a search in the start menu search box.  If a 3rd party protocol handler is installed, a "Search Everywhere" link will be shown instead of the "See more results" link.
+- If you disable or do not configure this policy setting, the Recorded TV link is available from the Start Menu.
+<!-- NoStartMenuRecordedTV-Description-End -->
 
-<!--/Description-->
+<!-- NoStartMenuRecordedTV-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStartMenuRecordedTV-Editable-End -->
+
+<!-- NoStartMenuRecordedTV-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStartMenuRecordedTV-DFProperties-End -->
+
+<!-- NoStartMenuRecordedTV-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove See More Results / Search Everywhere link*
--   GP name: *NoSearchEverywhereLinkInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nosearchfilesinstartmenu"></a>**ADMX_StartMenu/NoSearchFilesInStartMenu**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy setting the Start menu search box will not search for files.
-
-If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel. If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not search for files*
--   GP name: *NoSearchFilesInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nosearchinternetinstartmenu"></a>**ADMX_StartMenu/NoSearchInternetInStartMenu**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy the start menu search box will not search for internet history or favorites.
-
-If you disable or do not configure this policy, the start menu will search for for internet history or favorites, unless the user chooses not to in the start menu control panel.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not search Internet*
--   GP name: *NoSearchInternetInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nosearchprogramsinstartmenu"></a>**ADMX_StartMenu/NoSearchProgramsInStartMenu**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy setting the Start menu search box will not search for programs or Control Panel items.
-
-If you disable or do not configure this policy setting, the Start menu search box will search for programs and Control Panel items, unless the user chooses not to do so directly in Control Panel.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not search programs and Control Panel items*
--   GP name: *NoSearchProgramsInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nosetfolders"></a>**ADMX_StartMenu/NoSetFolders**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove programs on Settings menu.
-
-If you enable this policy setting, the Control Panel, Printers, and Network and Connection folders are removed from Settings on the Start menu, and from Computer and File Explorer. It also prevents the programs represented by these folders (such as Control.exe) from running.
-
-However, users can still start Control Panel items by using other methods, such as right-clicking the desktop to start Display or right-clicking Computer to start System.
-
-If you disable or do not configure this policy setting, the Control Panel, Printers, and Network and Connection folders from Settings are available on the Start menu, and from Computer and File Explorer.
-
-Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "Remove Network Connections from Start Menu" policy settings.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove programs on Settings menu*
--   GP name: *NoSetFolders*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nosettaskbar"></a>**ADMX_StartMenu/NoSetTaskbar**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent changes to Taskbar and Start Menu Settings.
-
-If you enable this policy setting, The user will be prevented from opening the Taskbar Properties dialog box.
-
-If the user right-clicks the taskbar and then clicks Properties, a message appears explaining that a setting prevents the action.
-
-If you disable or do not configure this policy setting, the Taskbar and Start Menu items are available from Settings on the Start menu.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent changes to Taskbar and Start Menu Settings*
--   GP name: *NoSetTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nostartmenudownload"></a>**ADMX_StartMenu/NoStartMenuDownload**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Downloads link from the Start Menu.
-
-If you enable this policy setting, the Start Menu does not show a link to the Downloads folder.
-
-If you disable or do not configure this policy setting, the Downloads link is available from the Start Menu.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Downloads link from Start Menu*
--   GP name: *NoStartMenuDownload*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nostartmenuhomegroup"></a>**ADMX_StartMenu/NoStartMenuHomegroup**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy the Start menu will not show a link to Homegroup. It also removes the homegroup item from the Start Menu options. As a result, users cannot add the homegroup link to the Start Menu.
-
-If you disable or do not configure this policy, users can use the Start Menu options to add or remove the homegroup link from the Start Menu.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Homegroup link from Start Menu*
--   GP name: *NoStartMenuHomegroup*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nostartmenurecordedtv"></a>**ADMX_StartMenu/NoStartMenuRecordedTV**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Recorded TV link from the Start Menu.
-
-If you enable this policy setting, the Start Menu does not show a link to the Recorded TV library.
-
-If you disable or do not configure this policy setting, the Recorded TV link is available from the Start Menu.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Recorded TV link from Start Menu*
--   GP name: *NoStartMenuRecordedTV*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-startmenu-nostartmenusubfolders"></a>**ADMX_StartMenu/NoStartMenuSubFolders**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Hides all folders on the user-specific (top) section of the Start menu. Other items appear, but folders are hidden.
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoStartMenuRecordedTV |
+| Friendly Name | Remove Recorded TV link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoStartMenuRecordedTV |
+| ADMX File Name | StartMenu.admx |
+<!-- NoStartMenuRecordedTV-AdmxBacked-End -->
+
+<!-- NoStartMenuRecordedTV-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStartMenuRecordedTV-Examples-End -->
+
+<!-- NoStartMenuRecordedTV-End -->
+
+<!-- NoStartMenuSubFolders-Begin -->
+## NoStartMenuSubFolders
+
+<!-- NoStartMenuSubFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStartMenuSubFolders-Applicability-End -->
+
+<!-- NoStartMenuSubFolders-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoStartMenuSubFolders
+```
+<!-- NoStartMenuSubFolders-OmaUri-End -->
+
+<!-- NoStartMenuSubFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hides all folders on the user-specific (top) section of the Start menu. Other items appear, but folders are hidden.
 
 This setting is designed for use with redirected folders. Redirected folders appear on the main (bottom) section of the Start menu. However, the original, user-specific version of the folder still appears on the top section of the Start menu. Because the appearance of two folders with the same name might confuse users, you can use this setting to hide user-specific folders.
 
-Note that this setting hides all user-specific folders, not just those associated with redirected folders.
+**Note** that this setting hides all user-specific folders, not just those associated with redirected folders.
 
-If you enable this setting, no folders appear on the top section of the Start menu. If users add folders to the Start Menu directory in their user profiles, the folders appear in the directory but not on the Start menu.
+- If you enable this setting, no folders appear on the top section of the Start menu. If users add folders to the Start Menu directory in their user profiles, the folders appear in the directory but not on the Start menu.
 
-If you disable this setting or do not configured it, Windows 2000 Professional and Windows XP Professional display folders on both sections of the Start menu.
+- If you disable this setting or do not configured it, Windows 2000 Professional and Windows XP Professional display folders on both sections of the Start menu.
+<!-- NoStartMenuSubFolders-Description-End -->
 
-<!--/Description-->
+<!-- NoStartMenuSubFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStartMenuSubFolders-Editable-End -->
+
+<!-- NoStartMenuSubFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStartMenuSubFolders-DFProperties-End -->
+
+<!-- NoStartMenuSubFolders-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove user's folders from the Start Menu*
--   GP name: *NoStartMenuSubFolders*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoStartMenuSubFolders |
+| Friendly Name | Remove user's folders from the Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStartMenuSubFolders |
+| ADMX File Name | StartMenu.admx |
+<!-- NoStartMenuSubFolders-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nostartmenuvideos"></a>**ADMX_StartMenu/NoStartMenuVideos**  
+<!-- NoStartMenuSubFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStartMenuSubFolders-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoStartMenuSubFolders-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoStartMenuVideos-Begin -->
+## NoStartMenuVideos
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoStartMenuVideos-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStartMenuVideos-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoStartMenuVideos-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoStartMenuVideos
+```
+<!-- NoStartMenuVideos-OmaUri-End -->
 
-<hr/>
+<!-- NoStartMenuVideos-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Videos link from the Start Menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the Videos link from the Start Menu.
+- If you enable this policy setting, the Start Menu does not show a link to the Videos library.
 
-If you enable this policy setting, the Start Menu does not show a link to the Videos library.
+- If you disable or do not configure this policy setting, the Videos link is available from the Start Menu.
+<!-- NoStartMenuVideos-Description-End -->
 
-If you disable or do not configure this policy setting, the Videos link is available from the Start Menu.
+<!-- NoStartMenuVideos-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStartMenuVideos-Editable-End -->
 
-<!--/Description-->
+<!-- NoStartMenuVideos-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStartMenuVideos-DFProperties-End -->
+
+<!-- NoStartMenuVideos-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Videos link from Start Menu*
--   GP name: *NoStartMenuVideos*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoStartMenuVideos |
+| Friendly Name | Remove Videos link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoStartMenuVideos |
+| ADMX File Name | StartMenu.admx |
+<!-- NoStartMenuVideos-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nostartpage"></a>**ADMX_StartMenu/NoStartPage**  
+<!-- NoStartMenuVideos-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStartMenuVideos-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoStartMenuVideos-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoStartPage-Begin -->
+## NoStartPage
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoStartPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStartPage-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoStartPage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoStartPage
+```
+<!-- NoStartPage-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting affects the presentation of the Start menu.
+<!-- NoStartPage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting affects the presentation of the Start menu.
 
 The classic Start menu in Windows 2000 Professional allows users to begin common tasks, while the new Start menu consolidates common items onto one menu. When the classic Start menu is used, the following icons are placed on the desktop: Documents, Pictures, Music, Computer, and Network. The new Start menu starts them directly.
 
-If you enable this setting, the Start menu displays the classic Start menu in the Windows 2000 style and displays the standard desktop icons.
+- If you enable this setting, the Start menu displays the classic Start menu in the Windows 2000 style and displays the standard desktop icons.
 
-If you disable this setting, the Start menu only displays in the new style, meaning the desktop icons are now on the Start page.
+- If you disable this setting, the Start menu only displays in the new style, meaning the desktop icons are now on the Start page.
 
-If you do not configure this setting, the default is the new style, and the user can change the view.
+- If you do not configure this setting, the default is the new style, and the user can change the view.
+<!-- NoStartPage-Description-End -->
 
-<!--/Description-->
+<!-- NoStartPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStartPage-Editable-End -->
+
+<!-- NoStartPage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStartPage-DFProperties-End -->
+
+<!-- NoStartPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Force classic Start Menu*
--   GP name: *NoStartPage*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoStartPage |
+| Friendly Name | Force classic Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSimpleStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoStartPage-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-notaskbarclock"></a>**ADMX_StartMenu/NoTaskBarClock**  
+<!-- NoStartPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStartPage-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoStartPage-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoTaskBarClock-Begin -->
+## NoTaskBarClock
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoTaskBarClock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoTaskBarClock-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoTaskBarClock-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTaskBarClock
+```
+<!-- NoTaskBarClock-OmaUri-End -->
 
-<hr/>
+<!-- NoTaskBarClock-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents the clock in the system notification area from being displayed.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents the clock in the system notification area from being displayed.
+- If you enable this setting, the clock will not be displayed in the system notification area.
 
-If you enable this setting, the clock will not be displayed in the system notification area.
+- If you disable or do not configure this setting, the default behavior of the clock appearing in the notification area will occur.
+<!-- NoTaskBarClock-Description-End -->
 
-If you disable or do not configure this setting, the default behavior of the clock appearing in the notification area will occur.
+<!-- NoTaskBarClock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoTaskBarClock-Editable-End -->
 
-<!--/Description-->
+<!-- NoTaskBarClock-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoTaskBarClock-DFProperties-End -->
+
+<!-- NoTaskBarClock-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Clock from the system notification area*
--   GP name: *NoTaskBarClock*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoTaskBarClock |
+| Friendly Name | Remove Clock from the system notification area |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideClock |
+| ADMX File Name | StartMenu.admx |
+<!-- NoTaskBarClock-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-notaskgrouping"></a>**ADMX_StartMenu/NoTaskGrouping**  
+<!-- NoTaskBarClock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoTaskBarClock-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoTaskBarClock-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoTaskGrouping-Begin -->
+## NoTaskGrouping
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoTaskGrouping-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoTaskGrouping-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoTaskGrouping-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTaskGrouping
+```
+<!-- NoTaskGrouping-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting affects the taskbar buttons used to switch between running programs.
+<!-- NoTaskGrouping-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting affects the taskbar buttons used to switch between running programs.
 
 Taskbar grouping consolidates similar applications when there is no room on the taskbar. It kicks in when the user's taskbar is full.
 
-If you enable this setting, it prevents the taskbar from grouping items that share the same program name. By default, this setting is always enabled.
+- If you enable this setting, it prevents the taskbar from grouping items that share the same program name. By default, this setting is always enabled.
 
-If you disable or do not configure it, items on the taskbar that share the same program are grouped together. The users have the option to disable grouping if they choose.
+- If you disable or do not configure it, items on the taskbar that share the same program are grouped together. The users have the option to disable grouping if they choose.
+<!-- NoTaskGrouping-Description-End -->
 
-<!--/Description-->
+<!-- NoTaskGrouping-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoTaskGrouping-Editable-End -->
+
+<!-- NoTaskGrouping-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoTaskGrouping-DFProperties-End -->
+
+<!-- NoTaskGrouping-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent grouping of taskbar items*
--   GP name: *NoTaskGrouping*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoTaskGrouping |
+| Friendly Name | Prevent grouping of taskbar items |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoTaskGrouping |
+| ADMX File Name | StartMenu.admx |
+<!-- NoTaskGrouping-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-notoolbarsontaskbar"></a>**ADMX_StartMenu/NoToolbarsOnTaskbar**  
+<!-- NoTaskGrouping-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoTaskGrouping-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoTaskGrouping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoToolbarsOnTaskbar-Begin -->
+## NoToolbarsOnTaskbar
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoToolbarsOnTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoToolbarsOnTaskbar-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoToolbarsOnTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoToolbarsOnTaskbar
+```
+<!-- NoToolbarsOnTaskbar-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting affects the taskbar.
+<!-- NoToolbarsOnTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting affects the taskbar.
 
 The taskbar includes the Start button, buttons for currently running tasks, custom toolbars, the notification area, and the system clock. Toolbars include Quick Launch, Address, Links, Desktop, and other custom toolbars created by the user or by an application.
 
-If this setting is enabled, the taskbar does not display any custom toolbars, and the user cannot add any custom toolbars to the taskbar. Moreover, the "Toolbars" menu command and submenu are removed from the context menu. The taskbar displays only the Start button, taskbar buttons, the notification area, and the system clock.
+- If this setting is enabled, the taskbar does not display any custom toolbars, and the user cannot add any custom toolbars to the taskbar. Moreover, the "Toolbars" menu command and submenu are removed from the context menu. The taskbar displays only the Start button, taskbar buttons, the notification area, and the system clock.
 
-If this setting is disabled or is not configured, the taskbar displays all toolbars. Users can add or remove custom toolbars, and the "Toolbars" command appears in the context menu.
+- If this setting is disabled or is not configured, the taskbar displays all toolbars. Users can add or remove custom toolbars, and the "Toolbars" command appears in the context menu.
+<!-- NoToolbarsOnTaskbar-Description-End -->
 
-<!--/Description-->
+<!-- NoToolbarsOnTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoToolbarsOnTaskbar-Editable-End -->
+
+<!-- NoToolbarsOnTaskbar-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoToolbarsOnTaskbar-DFProperties-End -->
+
+<!-- NoToolbarsOnTaskbar-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not display any custom toolbars in the taskbar*
--   GP name: *NoToolbarsOnTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoToolbarsOnTaskbar |
+| Friendly Name | Do not display any custom toolbars in the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoToolbarsOnTaskbar |
+| ADMX File Name | StartMenu.admx |
+<!-- NoToolbarsOnTaskbar-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-notraycontextmenu"></a>**ADMX_StartMenu/NoTrayContextMenu**  
+<!-- NoToolbarsOnTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoToolbarsOnTaskbar-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoToolbarsOnTaskbar-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoTrayContextMenu-Begin -->
+## NoTrayContextMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoTrayContextMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoTrayContextMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoTrayContextMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayContextMenu
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayContextMenu
+```
+<!-- NoTrayContextMenu-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove access to the context menus for the taskbar.
+<!-- NoTrayContextMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove access to the context menus for the taskbar.
 
-If you enable this policy setting, the menus that appear when you right-click the taskbar and items on the taskbar are hidden, such as the Start button, the clock, and the taskbar buttons.
+- If you enable this policy setting, the menus that appear when you right-click the taskbar and items on the taskbar are hidden, such as the Start button, the clock, and the taskbar buttons.
 
-If you disable or do not configure this policy setting, the context menus for the taskbar are available.
+- If you disable or do not configure this policy setting, the context menus for the taskbar are available.
 
 This policy setting does not prevent users from using other methods to issue the commands that appear on these menus.
+<!-- NoTrayContextMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoTrayContextMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoTrayContextMenu-Editable-End -->
+
+<!-- NoTrayContextMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoTrayContextMenu-DFProperties-End -->
+
+<!-- NoTrayContextMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove access to the context menus for the taskbar*
--   GP name: *NoTrayContextMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoTrayContextMenu |
+| Friendly Name | Remove access to the context menus for the taskbar |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoTrayContextMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoTrayContextMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-notrayitemsdisplay"></a>**ADMX_StartMenu/NoTrayItemsDisplay**  
+<!-- NoTrayContextMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoTrayContextMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoTrayContextMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoTrayItemsDisplay-Begin -->
+## NoTrayItemsDisplay
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoTrayItemsDisplay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoTrayItemsDisplay-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoTrayItemsDisplay-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoTrayItemsDisplay
+```
+<!-- NoTrayItemsDisplay-OmaUri-End -->
 
-<hr/>
+<!-- NoTrayItemsDisplay-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting affects the notification area (previously called the "system tray") on the taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This setting affects the notification area (previously called the "system tray") on the taskbar.
+Description: The notification area is located at the far right end of the task bar and includes the icons for current notifications and the system clock.
 
-The notification area is located at the far right end of the task bar and includes the icons for current notifications and the system clock.
+- If this setting is enabled, the user's entire notification area, including the notification icons, is hidden. The taskbar displays only the Start button, taskbar buttons, custom toolbars (if any), and the system clock.
 
-If this setting is enabled, the user’s entire notification area, including the notification icons, is hidden. The taskbar displays only the Start button, taskbar buttons, custom toolbars (if any), and the system clock.
-
-If this setting is disabled or is not configured, the notification area is shown in the user's taskbar.
+- If this setting is disabled or is not configured, the notification area is shown in the user's taskbar.
 
 > [!NOTE]
 > Enabling this setting overrides the "Turn off notification area cleanup" setting, because if the notification area is hidden, there is no need to clean up the icons.
+<!-- NoTrayItemsDisplay-Description-End -->
 
-<!--/Description-->
+<!-- NoTrayItemsDisplay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoTrayItemsDisplay-Editable-End -->
+
+<!-- NoTrayItemsDisplay-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoTrayItemsDisplay-DFProperties-End -->
+
+<!-- NoTrayItemsDisplay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hide the notification area*
--   GP name: *NoTrayItemsDisplay*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoTrayItemsDisplay |
+| Friendly Name | Hide the notification area |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoTrayItemsDisplay |
+| ADMX File Name | StartMenu.admx |
+<!-- NoTrayItemsDisplay-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nouninstallfromstart"></a>**ADMX_StartMenu/NoUninstallFromStart**  
+<!-- NoTrayItemsDisplay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoTrayItemsDisplay-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoTrayItemsDisplay-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoUninstallFromStart-Begin -->
+## NoUninstallFromStart
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoUninstallFromStart-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoUninstallFromStart-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoUninstallFromStart-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUninstallFromStart
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUninstallFromStart
+```
+<!-- NoUninstallFromStart-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this setting, users cannot uninstall apps from Start.
+<!-- NoUninstallFromStart-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-If you disable this setting or do not configure it, users can access the uninstall command from Start.
+- If you enable this setting, users cannot uninstall apps from Start.
 
-<!--/Description-->
+- If you disable this setting or do not configure it, users can access the uninstall command from Start.
+<!-- NoUninstallFromStart-Description-End -->
+
+<!-- NoUninstallFromStart-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoUninstallFromStart-Editable-End -->
+
+<!-- NoUninstallFromStart-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoUninstallFromStart-DFProperties-End -->
+
+<!-- NoUninstallFromStart-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent users from uninstalling applications from Start*
--   GP name: *NoUninstallFromStart*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoUninstallFromStart |
+| Friendly Name | Prevent users from uninstalling applications from Start |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoUninstallFromStart |
+| ADMX File Name | StartMenu.admx |
+<!-- NoUninstallFromStart-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nouserfolderonstartmenu"></a>**ADMX_StartMenu/NoUserFolderOnStartMenu**  
+<!-- NoUninstallFromStart-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoUninstallFromStart-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoUninstallFromStart-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoUserFolderOnStartMenu-Begin -->
+## NoUserFolderOnStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoUserFolderOnStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoUserFolderOnStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoUserFolderOnStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUserFolderOnStartMenu
+```
+<!-- NoUserFolderOnStartMenu-OmaUri-End -->
 
-<hr/>
+<!-- NoUserFolderOnStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this policy the start menu will not show a link to the user's storage folder.
+- If you enable this policy the start menu will not show a link to the user's storage folder.
 
-If you disable or do not configure this policy, the start menu will display a link, unless the user chooses to remove it in the start menu control panel.
+- If you disable or do not configure this policy, the start menu will display a link, unless the user chooses to remove it in the start menu control panel.
+<!-- NoUserFolderOnStartMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoUserFolderOnStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoUserFolderOnStartMenu-Editable-End -->
+
+<!-- NoUserFolderOnStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoUserFolderOnStartMenu-DFProperties-End -->
+
+<!-- NoUserFolderOnStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove user folder link from Start Menu*
--   GP name: *NoUserFolderOnStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoUserFolderOnStartMenu |
+| Friendly Name | Remove user folder link from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoUserFolderInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoUserFolderOnStartMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nousernameonstartmenu"></a>**ADMX_StartMenu/NoUserNameOnStartMenu**  
+<!-- NoUserFolderOnStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoUserFolderOnStartMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoUserFolderOnStartMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoUserNameOnStartMenu-Begin -->
+## NoUserNameOnStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoUserNameOnStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoUserNameOnStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoUserNameOnStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoUserNameOnStartMenu
+```
+<!-- NoUserNameOnStartMenu-OmaUri-End -->
 
-<hr/>
+<!-- NoUserNameOnStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the user name label from the Start Menu in Windows XP and Windows Server 2003.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove the user name label from the Start Menu in Windows XP and Windows Server 2003.
-
-If you enable this policy setting, the user name label is removed from the Start Menu in Windows XP and Windows Server 2003.
+- If you enable this policy setting, the user name label is removed from the Start Menu in Windows XP and Windows Server 2003.
 
 To remove the user name folder on Windows Vista, set the "Remove user folder link from Start Menu" policy setting.
 
-If you disable or do not configure this policy setting, the user name label appears on the Start Menu in Windows XP and Windows Server 2003.
+- If you disable or do not configure this policy setting, the user name label appears on the Start Menu in Windows XP and Windows Server 2003.
+<!-- NoUserNameOnStartMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoUserNameOnStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoUserNameOnStartMenu-Editable-End -->
+
+<!-- NoUserNameOnStartMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoUserNameOnStartMenu-DFProperties-End -->
+
+<!-- NoUserNameOnStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove user name from Start Menu*
--   GP name: *NoUserNameOnStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoUserNameOnStartMenu |
+| Friendly Name | Remove user name from Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoUserNameInStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- NoUserNameOnStartMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-nowindowsupdate"></a>**ADMX_StartMenu/NoWindowsUpdate**  
+<!-- NoUserNameOnStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoUserNameOnStartMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoUserNameOnStartMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoWindowsUpdate-Begin -->
+## NoWindowsUpdate
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoWindowsUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWindowsUpdate-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoWindowsUpdate-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/NoWindowsUpdate
+```
+<!-- NoWindowsUpdate-OmaUri-End -->
 
-<hr/>
+<!-- NoWindowsUpdate-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove links and access to Windows Update.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to remove links and access to Windows Update.
+- If you enable this policy setting, users are prevented from connecting to the Windows Update Web site.
 
-If you enable this policy setting, users are prevented from connecting to the Windows Update Web site.
+Enabling this policy setting blocks user access to the Windows Update Web site at< https://windowsupdate.microsoft.com>. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
 
-Enabling this policy setting blocks user access to the Windows Update Web site at https://windowsupdate.microsoft.com. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
+Windows Update, the online extension of Windows, offers software updates to keep a user's system up-to-date. The Windows Update Product Catalog determines any system files, security fixes, and Microsoft updates that users need and shows the newest versions available for download.
 
-Windows Update, the online extension of Windows, offers software updates to keep a user’s system up-to-date. The Windows Update Product Catalog determines any system files, security fixes, and Microsoft updates that users need and shows the newest versions available for download.
-
-If you disable or do not configure this policy setting, the Windows Update hyperlink is available from the Start menu and from the Tools menu in Internet Explorer.
+- If you disable or do not configure this policy setting, the Windows Update hyperlink is available from the Start menu and from the Tools menu in Internet Explorer.
 
 Also, see the "Hide the "Add programs from Microsoft" option" policy setting.
+<!-- NoWindowsUpdate-Description-End -->
 
-<!--/Description-->
+<!-- NoWindowsUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWindowsUpdate-Editable-End -->
+
+<!-- NoWindowsUpdate-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWindowsUpdate-DFProperties-End -->
+
+<!-- NoWindowsUpdate-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove links and access to Windows Update*
--   GP name: *NoWindowsUpdate*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoWindowsUpdate |
+| Friendly Name | Remove links and access to Windows Update |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoWindowsUpdate |
+| ADMX File Name | StartMenu.admx |
+<!-- NoWindowsUpdate-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-powerbuttonaction"></a>**ADMX_StartMenu/PowerButtonAction**  
+<!-- NoWindowsUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWindowsUpdate-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoWindowsUpdate-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PowerButtonAction-Begin -->
+## PowerButtonAction
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PowerButtonAction-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PowerButtonAction-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PowerButtonAction-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/PowerButtonAction
+```
+<!-- PowerButtonAction-OmaUri-End -->
 
-<hr/>
+<!-- PowerButtonAction-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Set the default action of the power button on the Start menu.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Set the default action of the power button on the Start menu.
-
-If you enable this setting, the Start Menu will set the power button to the chosen action, and not let the user change this action.
+- If you enable this setting, the Start Menu will set the power button to the chosen action, and not let the user change this action.
 
 If you set the button to either Sleep or Hibernate, and that state is not supported on a computer, then the button will fall back to Shut Down.
 
-If you disable or do not configure this setting, the Start Menu power button will be set to Shut Down by default, and the user can change this setting to another action.
+- If you disable or do not configure this setting, the Start Menu power button will be set to Shut Down by default, and the user can change this setting to another action.
+<!-- PowerButtonAction-Description-End -->
 
-<!--/Description-->
+<!-- PowerButtonAction-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PowerButtonAction-Editable-End -->
+
+<!-- PowerButtonAction-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PowerButtonAction-DFProperties-End -->
+
+<!-- PowerButtonAction-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Change Start Menu power button*
--   GP name: *PowerButtonAction*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PowerButtonAction |
+| Friendly Name | Change Start Menu power button |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| ADMX File Name | StartMenu.admx |
+<!-- PowerButtonAction-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-quicklaunchenabled"></a>**ADMX_StartMenu/QuickLaunchEnabled**  
+<!-- PowerButtonAction-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PowerButtonAction-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PowerButtonAction-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- QuickLaunchEnabled-Begin -->
+## QuickLaunchEnabled
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- QuickLaunchEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- QuickLaunchEnabled-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- QuickLaunchEnabled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/QuickLaunchEnabled
+```
+<!-- QuickLaunchEnabled-OmaUri-End -->
 
-<hr/>
+<!-- QuickLaunchEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether the QuickLaunch bar is displayed in the Taskbar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether the QuickLaunch bar is displayed in the Taskbar.
+- If you enable this policy setting, the QuickLaunch bar will be visible and cannot be turned off.
 
-If you enable this policy setting, the QuickLaunch bar will be visible and cannot be turned off.
+- If you disable this policy setting, the QuickLaunch bar will be hidden and cannot be turned on.
 
-If you disable this policy setting, the QuickLaunch bar will be hidden and cannot be turned on.
+- If you do not configure this policy setting, then users will be able to turn the QuickLaunch bar on and off.
+<!-- QuickLaunchEnabled-Description-End -->
 
-If you do not configure this policy setting, then users will be able to turn the QuickLaunch bar on and off.
+<!-- QuickLaunchEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- QuickLaunchEnabled-Editable-End -->
 
-<!--/Description-->
+<!-- QuickLaunchEnabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- QuickLaunchEnabled-DFProperties-End -->
+
+<!-- QuickLaunchEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Show QuickLaunch on Taskbar*
--   GP name: *QuickLaunchEnabled*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | QuickLaunchEnabled |
+| Friendly Name | Show QuickLaunch on Taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | QuickLaunchEnabled |
+| ADMX File Name | StartMenu.admx |
+<!-- QuickLaunchEnabled-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-removeundockpcbutton"></a>**ADMX_StartMenu/RemoveUnDockPCButton**  
+<!-- QuickLaunchEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- QuickLaunchEnabled-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- QuickLaunchEnabled-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemoveUnDockPCButton-Begin -->
+## RemoveUnDockPCButton
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemoveUnDockPCButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RemoveUnDockPCButton-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- RemoveUnDockPCButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/RemoveUnDockPCButton
+```
+<!-- RemoveUnDockPCButton-OmaUri-End -->
 
-<hr/>
+<!-- RemoveUnDockPCButton-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this setting, the "Undock PC" button is removed from the simple Start Menu, and your PC cannot be undocked.
+- If you enable this setting, the "Undock PC" button is removed from the simple Start Menu, and your PC cannot be undocked.
 
-If you disable this setting or do not configure it, the "Undock PC" button remains on the simple Start menu, and your PC can be undocked.
+- If you disable this setting or do not configure it, the "Undock PC" button remains on the simple Start menu, and your PC can be undocked.
+<!-- RemoveUnDockPCButton-Description-End -->
 
-<!--/Description-->
+<!-- RemoveUnDockPCButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemoveUnDockPCButton-Editable-End -->
+
+<!-- RemoveUnDockPCButton-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemoveUnDockPCButton-DFProperties-End -->
+
+<!-- RemoveUnDockPCButton-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove the "Undock PC" button from the Start Menu*
--   GP name: *RemoveUnDockPCButton*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RemoveUnDockPCButton |
+| Friendly Name | Remove the "Undock PC" button from the Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStartMenuEjectPC |
+| ADMX File Name | StartMenu.admx |
+<!-- RemoveUnDockPCButton-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-showappsviewonstart"></a>**ADMX_StartMenu/ShowAppsViewOnStart**  
+<!-- RemoveUnDockPCButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemoveUnDockPCButton-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- RemoveUnDockPCButton-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowAppsViewOnStart-Begin -->
+## ShowAppsViewOnStart
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowAppsViewOnStart-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowAppsViewOnStart-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ShowAppsViewOnStart-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ShowAppsViewOnStart
+```
+<!-- ShowAppsViewOnStart-OmaUri-End -->
 
-<hr/>
+<!-- ShowAppsViewOnStart-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows the Apps view to be opened by default when the user goes to Start.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows the Apps view to be opened by default when the user goes to Start.
+- If you enable this policy setting, the Apps view will appear whenever the user goes to Start. Users will still be able to switch between the Apps view and the Start screen.
 
-If you enable this policy setting, the Apps view will appear whenever the user goes to Start. Users will still be able to switch between the Apps view and the Start screen.
+- If you disable or don't configure this policy setting, the Start screen will appear by default whenever the user goes to Start, and the user will be able to switch between the Apps view and the Start screen. Also, the user will be able to configure this setting.
+<!-- ShowAppsViewOnStart-Description-End -->
 
-If you disable or don’t configure this policy setting, the Start screen will appear by default whenever the user goes to Start, and the user will be able to switch between the Apps view and the Start screen. Also, the user will be able to configure this setting.
+<!-- ShowAppsViewOnStart-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowAppsViewOnStart-Editable-End -->
 
-<!--/Description-->
+<!-- ShowAppsViewOnStart-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowAppsViewOnStart-DFProperties-End -->
+
+<!-- ShowAppsViewOnStart-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Show the Apps view automatically when the user goes to Start*
--   GP name: *ShowAppsViewOnStart*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShowAppsViewOnStart |
+| Friendly Name | Show the Apps view automatically when the user goes to Start |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowAppsViewOnStart |
+| ADMX File Name | StartMenu.admx |
+<!-- ShowAppsViewOnStart-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-showrunasdifferentuserinstart"></a>**ADMX_StartMenu/ShowRunAsDifferentUserInStart**  
+<!-- ShowAppsViewOnStart-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowAppsViewOnStart-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ShowAppsViewOnStart-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowRunAsDifferentUserInStart-Begin -->
+## ShowRunAsDifferentUserInStart
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowRunAsDifferentUserInStart-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowRunAsDifferentUserInStart-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ShowRunAsDifferentUserInStart-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ShowRunAsDifferentUserInStart
+```
+<!-- ShowRunAsDifferentUserInStart-OmaUri-End -->
 
-<hr/>
+<!-- ShowRunAsDifferentUserInStart-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting shows or hides the "Run as different user" command on the Start application bar.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting shows or hides the "Run as different user" command on the Start application bar.
+- If you enable this setting, users can access the "Run as different user" command from Start for applications which support this functionality.
 
-If you enable this setting, users can access the "Run as different user" command from Start for applications which support this functionality.
-
-If you disable this setting or do not configure it, users cannot access the "Run as different user" command from Start for any applications.
+- If you disable this setting or do not configure it, users cannot access the "Run as different user" command from Start for any applications.
 
 > [!NOTE]
 > This setting does not prevent users from using other methods, such as the shift right-click menu on application's jumplists in the taskbar to issue the "Run as different user" command.
+<!-- ShowRunAsDifferentUserInStart-Description-End -->
 
-<!--/Description-->
+<!-- ShowRunAsDifferentUserInStart-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowRunAsDifferentUserInStart-Editable-End -->
+
+<!-- ShowRunAsDifferentUserInStart-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowRunAsDifferentUserInStart-DFProperties-End -->
+
+<!-- ShowRunAsDifferentUserInStart-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Show "Run as different user" command on Start*
--   GP name: *ShowRunAsDifferentUserInStart*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShowRunAsDifferentUserInStart |
+| Friendly Name | Show "Run as different user" command on Start |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowRunAsDifferentUserInStart |
+| ADMX File Name | StartMenu.admx |
+<!-- ShowRunAsDifferentUserInStart-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-showruninstartmenu"></a>**ADMX_StartMenu/ShowRunInStartMenu**  
+<!-- ShowRunAsDifferentUserInStart-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowRunAsDifferentUserInStart-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ShowRunAsDifferentUserInStart-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowRunInStartMenu-Begin -->
+## ShowRunInStartMenu
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowRunInStartMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowRunInStartMenu-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ShowRunInStartMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ShowRunInStartMenu
+```
+<!-- ShowRunInStartMenu-OmaUri-End -->
 
-<hr/>
+<!-- ShowRunInStartMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you enable this setting, the Run command is added to the Start menu.
+- If you enable this setting, the Run command is added to the Start menu.
+- If you disable or do not configure this setting, the Run command is not visible on the Start menu by default, but it can be added from the Taskbar and Start menu properties. If the Remove Run link from Start Menu policy is set, the Add the Run command to the Start menu policy has no effect.
+<!-- ShowRunInStartMenu-Description-End -->
 
-If you disable or do not configure this setting, the Run command is not visible on the Start menu by default, but it can be added from the Taskbar and Start menu properties.
+<!-- ShowRunInStartMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowRunInStartMenu-Editable-End -->
 
-If the Remove Run link from Start Menu policy is set, the Add the Run command to the Start menu policy has no effect.
+<!-- ShowRunInStartMenu-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowRunInStartMenu-DFProperties-End -->
+
+<!-- ShowRunInStartMenu-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Add the Run command to the Start Menu*
--   GP name: *ShowRunInStartMenu*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShowRunInStartMenu |
+| Friendly Name | Add the Run command to the Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ForceRunOnStartMenu |
+| ADMX File Name | StartMenu.admx |
+<!-- ShowRunInStartMenu-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-showstartondisplaywithforegroundonwinkey"></a>**ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey**  
+<!-- ShowRunInStartMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowRunInStartMenu-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ShowRunInStartMenu-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Begin -->
+## ShowStartOnDisplayWithForegroundOnWinKey
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey
+```
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-OmaUri-End -->
 
-<hr/>
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows the Start screen to appear on the display the user is using when they press the Windows logo key. This setting only applies to users who are using multiple displays.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows the Start screen to appear on the display the user is using when they press the Windows logo key. This setting only applies to users who are using multiple displays.
+- If you enable this policy setting, the Start screen will appear on the display the user is using when they press the Windows logo key.
 
-If you enable this policy setting, the Start screen will appear on the display the user is using when they press the Windows logo key.
+- If you disable or don't configure this policy setting, the Start screen will always appear on the main display when the user presses the Windows logo key. Users will still be able to open Start on other displays by pressing the Start button on that display. Also, the user will be able to configure this setting.
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Description-End -->
 
-If you disable or don't configure this policy setting, the Start screen will always appear on the main display when the user presses the Windows logo key. Users will still be able to open Start on other displays by pressing the Start button on that display. Also, the user will be able to configure this setting.
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Editable-End -->
 
-<!--/Description-->
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-DFProperties-End -->
+
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Show Start on the display the user is using when they press the Windows logo key*
--   GP name: *ShowStartOnDisplayWithForegroundOnWinKey*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShowStartOnDisplayWithForegroundOnWinKey |
+| Friendly Name | Show Start on the display the user is using when they press the Windows logo key |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowStartOnDisplayWithForegroundOnWinKey |
+| ADMX File Name | StartMenu.admx |
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-startmenulogoff"></a>**ADMX_StartMenu/StartMenuLogOff**  
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ShowStartOnDisplayWithForegroundOnWinKey-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StartMenuLogOff-Begin -->
+## StartMenuLogOff
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StartMenuLogOff-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- StartMenuLogOff-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- StartMenuLogOff-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartMenuLogOff
+```
+<!-- StartMenuLogOff-OmaUri-End -->
 
-<hr/>
+<!-- StartMenuLogOff-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to removes the "Log Off `<username>`" item from the Start menu and prevents users from restoring it.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to removes the "Log Off `<username>`" item from the Start menu and prevents users from restoring it.
+- If you enable this policy setting, the Log Off `<username>` item does not appear in the Start menu. This policy setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot restore the Log Off `<username>` item to the Start Menu.
 
-If you enable this policy setting, the Log Off `<username>` item does not appear in the Start menu. This policy setting also removes the Display Logoff item from Start Menu Options. As a result, users cannot restore the Log Off `<username>` item to the Start Menu.
-
-If you disable or do not configure this policy setting, users can use the Display Logoff item to add and remove the Log Off item.
+- If you disable or do not configure this policy setting, users can use the Display Logoff item to add and remove the Log Off item.
 
 This policy setting affects the Start menu only. It does not affect the Log Off item on the Windows Security dialog box that appears when you press Ctrl+Alt+Del, and it does not prevent users from using other methods to log off.
 
-Tip: To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab and, in the Start Menu Settings box, click Display Logoff.
+> [!TIP]
+> To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab and, in the Start Menu Settings box, click Display Logoff.
 
 See also: "Remove Logoff" policy setting in User Configuration\Administrative Templates\System\Logon/Logoff.
+<!-- StartMenuLogOff-Description-End -->
 
-<!--/Description-->
+<!-- StartMenuLogOff-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StartMenuLogOff-Editable-End -->
+
+<!-- StartMenuLogOff-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StartMenuLogOff-DFProperties-End -->
+
+<!-- StartMenuLogOff-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Remove Logoff on the Start Menu*
--   GP name: *StartMenuLogOff*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | StartMenuLogOff |
+| Friendly Name | Remove Logoff on the Start Menu |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | StartMenuLogOff |
+| ADMX File Name | StartMenu.admx |
+<!-- StartMenuLogOff-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-startmenu-startpinappswheninstalled"></a>**ADMX_StartMenu/StartPinAppsWhenInstalled**  
+<!-- StartMenuLogOff-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StartMenuLogOff-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- StartMenuLogOff-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StartPinAppsWhenInstalled-Begin -->
+## StartPinAppsWhenInstalled
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StartPinAppsWhenInstalled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- StartPinAppsWhenInstalled-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
-> * Device
+<!-- StartPinAppsWhenInstalled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartPinAppsWhenInstalled
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_StartMenu/StartPinAppsWhenInstalled
+```
+<!-- StartPinAppsWhenInstalled-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows pinning apps to Start by default, when they are included by AppID on the list.
+<!-- StartPinAppsWhenInstalled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows pinning apps to Start by default, when they are included by AppID on the list.
+<!-- StartPinAppsWhenInstalled-Description-End -->
 
-<!--/Description-->
+<!-- StartPinAppsWhenInstalled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StartPinAppsWhenInstalled-Editable-End -->
+
+<!-- StartPinAppsWhenInstalled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StartPinAppsWhenInstalled-DFProperties-End -->
+
+<!-- StartPinAppsWhenInstalled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Pin Apps to Start when installed*
--   GP name: *StartPinAppsWhenInstalled*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *StartMenu.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | StartPinAppsWhenInstalled |
+| Friendly Name | Pin Apps to Start when installed |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | StartPinAppsWhenInstalled |
+| ADMX File Name | StartMenu.admx |
+<!-- StartPinAppsWhenInstalled-AdmxBacked-End -->
 
-Footnotes:
+<!-- StartPinAppsWhenInstalled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StartPinAppsWhenInstalled-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- StartPinAppsWhenInstalled-End -->
 
-<!--/Policies-->
+<!-- ADMX_StartMenu-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_StartMenu-CspMoreInfo-End -->
+
+<!-- ADMX_StartMenu-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,36 +1,24 @@
 ---
-title: Planning GPO Deployment (Windows 10)
+title: Planning GPO Deployment (Windows)
 description: Learn how to use security group filtering and WMI filtering to provide the most flexible options for applying GPOs to devices in Active Directory.
-ms.assetid: b38adfb1-1371-4227-a887-e6d118809de1
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning GPO Deployment
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 You can control which GPOs are applied to devices in Active Directory in a combination of three ways:
 
--   **Active Directory organizational unit hierarchy**. This involves linking the GPO to a specific OU in the Active Directory OU hierarchy. All devices in the OU and its subordinate containers receive and apply the GPO.
+-   **Active Directory organizational unit hierarchy**. This method involves linking the GPO to a specific OU in the Active Directory OU hierarchy. All devices in the OU and its subordinate containers receive and apply the GPO.
 
     Controlling GPO application through linking to OUs is typically used when you can organize the OU hierarchy according to your domain isolation zone requirements. GPOs can apply settings to devices based on their location within Active Directory. If a device is moved from one OU to another, the policy linked to the second OU will eventually take effect when Group Policy detects the change during polling.
 
--   **Security group filtering**. This involves linking the GPOs to the domain level (or other parent OU) in the OU hierarchy, and then selecting which devices receive the GPO by using permissions that only allow correct group members to apply the GPO.
+-   **Security group filtering**. This method involves linking the GPOs to the domain level (or other parent OU) in the OU hierarchy, and then selecting which devices receive the GPO by using permissions that only allow correct group members to apply the GPO.
 
     The security group filters are attached to the GPOs themselves. A group is added to the security group filter of the GPO in Active Directory, and then assigned Read and Apply Group Policy permissions. Other groups can be explicitly denied Read and Apply Group Policy permissions. Only those devices whose group membership are granted Read and Apply Group Policy permissions without any explicit deny permissions can apply the GPO.
 
@@ -46,7 +34,7 @@ This guide uses a combination of security group filtering and WMI filtering to p
 
 ## Test your deployed groups and GPOs
 
-After you have deployed your GPOs and added some test devices to the groups, confirm the following before you continue with more group members:
+After you've deployed your GPOs and added some test devices to the groups, confirm the following before you continue with more group members:
 
 -   Examine the GPOs that are both assigned to and filtered from the device. Run the **gpresult** tool at a command prompt.
 
@@ -58,17 +46,17 @@ After you have deployed your GPOs and added some test devices to the groups, con
 
 -   Verify that your programs are unaffected. Run them and confirm that they still work as expected.
 
-After you have confirmed that the GPOs have been correctly applied, and that the devices are now communicating by using IPsec network traffic in request mode, you can begin to add more devices to the group accounts, in manageable numbers at a time. Continue to monitor and confirm the correct application of the GPOs to the devices.
+After you've confirmed that the GPOs have been correctly applied, and that the devices are now communicating by using IPsec network traffic in request mode, you can begin to add more devices to the group accounts, in manageable numbers at a time. Continue to monitor and confirm the correct application of the GPOs to the devices.
 
-## Do not enable require mode until deployment is complete
+## Don't enable require mode until deployment is complete
 
 If you deploy a GPO that requires authentication to a device before the other devices have a GPO deployed, communication between them might not be possible. Wait until you have all the zones and their GPOs deployed in request mode and confirm (as described in the previous section) that the devices are successfully communicating by using IPsec.
 
 If there are problems with GPO deployment, or errors in configuration of one or more of the IPsec GPOs, devices can continue to operate, because request mode enables any device to fall back to clear communications.
 
-Only after you have added all of the devices to their zones, and you have confirmed that communications are working as expected, you can start changing the request mode rules to require mode rules where it is required in the zones. We recommend that you enable require mode in the zones one zone at a time, pausing to confirm that they are functioning properly before you continue. Turn the required mode setting on for the server isolation zones first, then the encryption zone, and then the isolated domain.
+Only after you've added all of the devices to their zones, and you've confirmed that communications are working as expected, you can start changing the request mode rules to require mode rules where it's required in the zones. We recommend that you enable require mode in the zones one zone at a time, pausing to confirm that they're functioning properly before you continue. Turn the required mode setting on for the server isolation zones first, then the encryption zone, and then the isolated domain.
 
-Do not change the boundary zone GPO, because it must stay in request mode for both inbound and outbound connections.
+Don't change the boundary zone GPO, because it must stay in request mode for both inbound and outbound connections.
 
 If you create other zones that require either inbound or outbound require mode, make the setting change in a manner that applies the setting in stages from the smaller groups of devices to the larger groups.
 

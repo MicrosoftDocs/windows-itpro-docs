@@ -2,26 +2,23 @@
 title: 5150(-) The Windows Filtering Platform blocked a packet. (Windows 10)
 description: Describes security event 5150(-) The Windows Filtering Platform blocked a packet.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5150(-): The Windows Filtering Platform blocked a packet.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-This event is logged if the Windows Filtering Platform [MAC filter](https://msdn.microsoft.com/library/windows/hardware/hh440262(v=vs.85).aspx) blocked a packet.
+This event is logged if the Windows Filtering Platform [MAC filter](/windows-hardware/drivers/network/using-layer-2-filtering) blocked a packet.
 
 There is no example of this event in this document.
 
@@ -64,4 +61,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

@@ -1,338 +1,289 @@
 ---
-title: Policy CSP - ADMX_AppXRuntime
-description: Policy CSP - ADMX_AppXRuntime
-ms.author: dansimp
+title: ADMX_AppXRuntime Policy CSP
+description: Learn more about the ADMX_AppXRuntime Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/12/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 11/10/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_AppXRuntime-Begin -->
 # Policy CSP - ADMX_AppXRuntime
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_AppXRuntime policies  
-
-<dl>
-  <dd>
-    <a href="#admx-appxruntime-appxruntimeapplicationcontenturirules">ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules</a>
-  </dd>
-  <dd>
-    <a href="#admx-appxruntime-appxruntimeblockfileelevation">ADMX_AppXRuntime/AppxRuntimeBlockFileElevation</a>
-  </dd>
-  <dd>
-    <a href="#admx-appxruntime-appxruntimeblockhostedappaccesswinrt">ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT</a>
-  </dd>
-  <dd>
-    <a href="#admx-appxruntime-appxruntimeblockprotocolelevation">ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeapplicationcontenturirules"></a>**ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting lets you turn on Content URI Rules to supplement the static Content URI Rules that were defined as part of the app manifest and apply to all Windows Store apps that use the enterpriseAuthentication capability on a computer.
-
-If you enable this policy setting, you can define additional Content URI Rules that all Windows Store apps that use the enterpriseAuthentication capability on a computer can use.
-
-If you disable or don't set this policy setting, Windows Store apps will only use the static Content URI Rules.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on dynamic Content URI Rules for Windows store apps*
--   GP name: *AppxRuntimeApplicationContentUriRules*
--   GP path: *Windows Components\App runtime*
--   GP ADMX file name: *AppXRuntime.admx*
+<!-- ADMX_AppXRuntime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_AppXRuntime-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AppxRuntimeApplicationContentUriRules-Begin -->
+## AppxRuntimeApplicationContentUriRules
 
-<!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeblockfileelevation"></a>**ADMX_AppXRuntime/AppxRuntimeBlockFileElevation**  
+<!-- AppxRuntimeApplicationContentUriRules-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AppxRuntimeApplicationContentUriRules-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AppxRuntimeApplicationContentUriRules-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules
+```
+<!-- AppxRuntimeApplicationContentUriRules-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AppxRuntimeApplicationContentUriRules-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you turn on Content URI Rules to supplement the static Content URI Rules that were defined as part of the app manifest and apply to all Windows Store apps that use the enterpriseAuthentication capability on a computer.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, you can define additional Content URI Rules that all Windows Store apps that use the enterpriseAuthentication capability on a computer can use.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you disable or don't set this policy setting, Windows Store apps will only use the static Content URI Rules.
+<!-- AppxRuntimeApplicationContentUriRules-Description-End -->
 
-<hr/>
+<!-- AppxRuntimeApplicationContentUriRules-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppxRuntimeApplicationContentUriRules-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting lets you control whether Windows Store apps can open files using the default desktop app for a file type. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a Windows Store app might compromise the system by opening a file in the default desktop app for a file type.
+<!-- AppxRuntimeApplicationContentUriRules-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Windows Store apps cannot open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AppxRuntimeApplicationContentUriRules-DFProperties-End -->
 
-If you disable or do not configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
-
-<!--/Description-->
+<!-- AppxRuntimeApplicationContentUriRules-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Block launching desktop apps associated with a file.*
--   GP name: *AppxRuntimeBlockFileElevation*
--   GP path: *Windows Components\App runtime*
--   GP ADMX file name: *AppXRuntime.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AppxRuntimeApplicationContentUriRules |
+| Friendly Name | Turn on dynamic Content URI Rules for Windows store apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App runtime |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Packages\Applications |
+| Registry Value Name | EnableDynamicContentUriRules |
+| ADMX File Name | AppXRuntime.admx |
+<!-- AppxRuntimeApplicationContentUriRules-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeblockhostedappaccesswinrt"></a>**ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT**  
+<!-- AppxRuntimeApplicationContentUriRules-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AppxRuntimeApplicationContentUriRules-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AppxRuntimeApplicationContentUriRules-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AppxRuntimeBlockFileElevation-Begin -->
+## AppxRuntimeBlockFileElevation
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AppxRuntimeBlockFileElevation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AppxRuntimeBlockFileElevation-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AppxRuntimeBlockFileElevation-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AppXRuntime/AppxRuntimeBlockFileElevation
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_AppXRuntime/AppxRuntimeBlockFileElevation
+```
+<!-- AppxRuntimeBlockFileElevation-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether Universal Windows apps with Windows Runtime API access directly from web content can be launched.
+<!-- AppxRuntimeBlockFileElevation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you control whether Windows Store apps can open files using the default desktop app for a file type. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a Windows Store app might compromise the system by opening a file in the default desktop app for a file type.
 
-If you enable this policy setting, Universal Windows apps which declare Windows Runtime API access in ApplicationContentUriRules section of the manifest cannot be launched; Universal Windows apps which have not declared Windows Runtime API access in the manifest are not affected.
+- If you enable this policy setting, Windows Store apps cannot open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
 
-If you disable or do not configure this policy setting, all Universal Windows apps can be launched.
+- If you disable or do not configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
+<!-- AppxRuntimeBlockFileElevation-Description-End -->
 
-> [!WARNING]
-> This policy should not be enabled unless recommended by Microsoft as a security response because it can cause severe app compatibility issues.
+<!-- AppxRuntimeBlockFileElevation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppxRuntimeBlockFileElevation-Editable-End -->
 
-<!--/Description-->
+<!-- AppxRuntimeBlockFileElevation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AppxRuntimeBlockFileElevation-DFProperties-End -->
+
+<!-- AppxRuntimeBlockFileElevation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Block launching Universal Windows apps with Windows Runtime API access from hosted content.*
--   GP name: *AppxRuntimeBlockHostedAppAccessWinRT*
--   GP path: *Windows Components\App runtime*
--   GP ADMX file name: *AppXRuntime.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AppxRuntimeBlockFileElevation |
+| Friendly Name | Block launching desktop apps associated with a file. |
+| Location | Computer and User Configuration |
+| Path | Windows Components > App runtime |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Associations |
+| Registry Value Name | BlockFileElevation |
+| ADMX File Name | AppXRuntime.admx |
+<!-- AppxRuntimeBlockFileElevation-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeblockprotocolelevation"></a>**ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation**  
+<!-- AppxRuntimeBlockFileElevation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AppxRuntimeBlockFileElevation-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AppxRuntimeBlockFileElevation-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Begin -->
+## AppxRuntimeBlockHostedAppAccessWinRT
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT
+```
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-OmaUri-End -->
 
-<hr/>
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether Universal Windows apps with Windows Runtime API access directly from web content can be launched.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.  
+- If you enable this policy setting, Universal Windows apps which declare Windows Runtime API access in ApplicationContentUriRules section of the manifest cannot be launched; Universal Windows apps which have not declared Windows Runtime API access in the manifest are not affected.
 
-If you enable this policy setting, Windows Store apps cannot open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
+- If you disable or do not configure this policy setting, all Universal Windows apps can be launched.
 
-If you disable or do not configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
+This policy should not be enabled unless recommended by Microsoft as a security response because it can cause severe app compatibility issues.
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Description-End -->
+
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Editable-End -->
+
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-DFProperties-End -->
+
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AppxRuntimeBlockHostedAppAccessWinRT |
+| Friendly Name | Block launching Universal Windows apps with Windows Runtime API access from hosted content. |
+| Location | Computer Configuration |
+| Path | Windows Components > App runtime |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | BlockHostedAppAccessWinRT |
+| ADMX File Name | AppXRuntime.admx |
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-AdmxBacked-End -->
+
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-Examples-End -->
+
+<!-- AppxRuntimeBlockHostedAppAccessWinRT-End -->
+
+<!-- AppxRuntimeBlockProtocolElevation-Begin -->
+## AppxRuntimeBlockProtocolElevation
+
+<!-- AppxRuntimeBlockProtocolElevation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AppxRuntimeBlockProtocolElevation-Applicability-End -->
+
+<!-- AppxRuntimeBlockProtocolElevation-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation
+```
+<!-- AppxRuntimeBlockProtocolElevation-OmaUri-End -->
+
+<!-- AppxRuntimeBlockProtocolElevation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.
+
+- If you enable this policy setting, Windows Store apps cannot open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
+
+- If you disable or do not configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
 
 > [!NOTE]
 > Enabling this policy setting does not block Windows Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
+<!-- AppxRuntimeBlockProtocolElevation-Description-End -->
 
-<!--/Description-->
+<!-- AppxRuntimeBlockProtocolElevation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppxRuntimeBlockProtocolElevation-Editable-End -->
+
+<!-- AppxRuntimeBlockProtocolElevation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AppxRuntimeBlockProtocolElevation-DFProperties-End -->
+
+<!-- AppxRuntimeBlockProtocolElevation-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Block launching desktop apps associated with a URI scheme*
--   GP name: *AppxRuntimeBlockProtocolElevation*
--   GP path: *Windows Components\App runtime*
--   GP ADMX file name: *AppXRuntime.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AppxRuntimeBlockProtocolElevation |
+| Friendly Name | Block launching desktop apps associated with a URI scheme |
+| Location | Computer and User Configuration |
+| Path | Windows Components > App runtime |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Associations |
+| Registry Value Name | BlockProtocolElevation |
+| ADMX File Name | AppXRuntime.admx |
+<!-- AppxRuntimeBlockProtocolElevation-AdmxBacked-End -->
 
-Footnotes:
+<!-- AppxRuntimeBlockProtocolElevation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AppxRuntimeBlockProtocolElevation-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- AppxRuntimeBlockProtocolElevation-End -->
 
-<!--/Policies-->
+<!-- ADMX_AppXRuntime-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_AppXRuntime-CspMoreInfo-End -->
 
+<!-- ADMX_AppXRuntime-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

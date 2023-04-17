@@ -2,23 +2,20 @@
 title: 4773(F) A Kerberos service ticket request failed. (Windows 10)
 description: Describes security event 4773(F) A Kerberos service ticket request failed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4773(F): A Kerberos service ticket request failed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Currently this event doesn’t generate. It is a defined event, but it is never invoked by the operating system. [4769](event-4769.md) failure event is generated instead.

@@ -1,15 +1,15 @@
 ---
 title: Maps (Windows 10)
 description: This section describes the Maps settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Maps (Windows Configuration Designer reference)
@@ -18,11 +18,11 @@ Use for settings related to Maps.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChinaVariantWin10](#chinavariantwin10) | X  | X | X |  |  |
-| [UseExternalStorage](#useexternalstorage) | X  | X | X |  |  |
-| [UseSmallerCache](#usesmallercache) | X  | X | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChinaVariantWin10](#chinavariantwin10) | ✔️  | ✔️ |  |  |
+| [UseExternalStorage](#useexternalstorage) | ✔️  | ✔️ |  |  |
+| [UseSmallerCache](#usesmallercache) | ✔️  | ✔️ |  |  |
 
 
 ## ChinaVariantWin10

@@ -3,32 +3,29 @@ title: Audit Kernel Object (Windows 10)
 description: The policy setting, Audit Kernel Object, decides if user attempts to access the system kernel (which includes mutexes and semaphores) generate audit events.
 ms.assetid: 75619d8b-b1eb-445b-afc9-0f9053be97fb
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Kernel Object
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
 
 Audit Kernel Object determines whether the operating system generates audit events when users attempt to access the system kernel, which includes mutexes and semaphores.
 
-Only kernel objects with a matching system access control list ([SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx)) generate security audit events. The audits generated are usually useful only to developers.
+Only kernel objects with a matching system access control list ([SACL](/windows/win32/secauthz/access-control-lists)) generate security audit events. The audits generated are usually useful only to developers.
 
 Typically, kernel objects are given SACLs only if the AuditBaseObjects or AuditBaseDirectories auditing options are enabled.
 
-The “[Audit: Audit the access of global system objects](https://technet.microsoft.com/library/jj852233.aspx)” policy setting controls the default SACL of kernel objects.
+The “[Audit: Audit the access of global system objects](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852233(v=ws.11))” policy setting controls the default SACL of kernel objects.
 
 **Event volume**: High.
 
@@ -47,6 +44,3 @@ The “[Audit: Audit the access of global system objects](https://technet.micros
 -   [4660](event-4660.md)(S): An object was deleted.
 
 -   [4663](event-4663.md)(S): An attempt was made to access an object.
-
-
-

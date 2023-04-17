@@ -62,11 +62,11 @@ ISVs install IEAK using External mode (for Internet Explorer 10 or newer) or Int
 
 ## Additional resources
 
-- [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.md)
+- [IEAK 11 - Frequently Asked Questions](../ie11-faq/faq-ieak11.yml)
 - [Download IEAK 11](ieak-information-and-downloads.md) 
 - [IEAK 11 overview](index.md)
-- [IEAK 11 administrators guide](https://docs.microsoft.com/internet-explorer/ie11-ieak/index)
+- [IEAK 11 administrators guide](./index.md)
 - [IEAK 11 licensing guidelines](licensing-version-and-features-ieak11.md)
-- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
+- [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.yml)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
-- [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Microsoft Edge - Deployment Guide for IT Pros](/microsoft-edge/deploy/)

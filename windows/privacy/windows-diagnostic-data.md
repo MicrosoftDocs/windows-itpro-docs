@@ -1,23 +1,25 @@
 ---
-title: Windows 10, version 1709 and newer optional diagnostic data (Windows 10)
+title: Windows 10, version 1709 and Windows 11 and later optional diagnostic data (Windows 10)
 description: Use this article to learn about the types of optional diagnostic data that is collected.
-keywords: privacy,Windows 10
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.reviewer: 
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 03/31/2017
+ms.collection: highpri
+ms.topic: reference
 ---
 
-# Windows 10, version 1709 and newer optional diagnostic data
+# Windows 10, version 1709 and later and Windows 11 optional diagnostic data
 
 Applies to:
+- Windows 11, version 22H2
+- Windows 11, version 21H2
+- Windows 10, version 22H2
+- Windows 10, version 21H2
+- Windows 10, version 21H1
 - Windows 10, version 20H2
 - Windows 10, version 2004
 - Windows 10, version 1909
@@ -26,9 +28,9 @@ Applies to:
 - Windows 10, version 1803
 - Windows 10, version 1709
 
-Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of diagnostic data collected by Windows at the Full level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 20H2 required diagnostic events and fields](https://docs.microsoft.com/windows/configuration/basic-level-windows-diagnostic-events-and-fields).
+Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of optional diagnostic data collected by Windows, with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 11 required diagnostic events and fields](/windows/privacy/required-windows-11-diagnostic-events-and-fields).
 
-In addition, this article provides references to equivalent definitions for the data types and examples from [ISO/IEC 19944:2017 Information technology - Cloud computing - Cloud services and devices: Data flow, data categories, and data use](https://www.iso.org/standard/66674.html). Each data type also has a Data Use statement, for diagnostics and for Tailored experiences on the device, using the terms as defined by the standard. These Data Use statements define the purposes for which Microsoft processes each type of Windows diagnostic data, using a uniform set of definitions referenced at the end of this document and based on the ISO standard. Reference to the ISO standard provides additional clarity about the information collected, and allows easy comparison with other services or guidance that also references the standard.
+In addition, this article provides references to equivalent definitions for the data types and examples from [ISO/IEC 19944-1:2020 Information technology - Cloud computing - Cloud services and devices: Data flow, data categories, and data use](https://www.iso.org/standard/79573.html). Each data type also has a Data Use statement, for diagnostics and for Tailored experiences on the device, using the terms as defined by the standard. These Data Use statements define the purposes for which Microsoft processes each type of Windows diagnostic data, using a uniform set of definitions referenced at the end of this document and based on the ISO standard. Reference to the ISO standard provides additional clarity about the information collected, and allows easy comparison with other services or guidance that also references the standard.
 
 The data covered in this article is grouped into the following types:
 
@@ -41,10 +43,10 @@ The data covered in this article is grouped into the following types:
 - Inking, Typing, and Speech Utterance data
 
 ## Common data extensions
-Most diagnostic events contain a header of common data. In each example, the info in parentheses provides the equivalent definition for ISO/IEC 19944:2017.
+Most diagnostic events contain a header of common data. In each example, the info in parentheses provides the equivalent definition for ISO/IEC 19944-1:2020.
 
 **Data Use for Common data extensions**
-Header data supports the use of data associated with all diagnostic events. Therefore, Common data is used to [provide](#provide) Windows 10, and may be used to [improve](#improve), [personalize](#personalize), [recommend](#recommend), [offer](#offer), or [promote](#promote) Microsoft and third-party products and services, depending on the uses described in the **Data Use** statements for each data category.
+Header data supports the use of data associated with all diagnostic events. Therefore, Common data is used to [provide](#provide) Windows 10 and Windows 11, and may be used to [improve](#improve), [personalize](#personalize), [recommend](#recommend), [offer](#offer), or [promote](#promote) Microsoft and third-party products and services, depending on the uses described in the **Data Use** statements for each data category.
 
 ### Data Description for Common data extensions type
 
@@ -52,7 +54,7 @@ Header data supports the use of data associated with all diagnostic events. Ther
 
 Information that is added to most diagnostic events, if relevant and available:
 
-- Diagnostic level - Basic or Full, Sample level - for sampled data, what sample level is this device opted into (8.2.3.2.4 Observed Usage of the Service Capability)
+- Diagnostic level - Required or Optional, Sample level - for sampled data, what sample level is this device opted into (8.2.3.2.4 Observed Usage of the Service Capability)
 - Operating system name, version, build, and locale (8.2.3.2.2 Telemetry data)
 - Event collection time (8.2.3.2.2 Telemetry data)
 - User ID - a unique identifier associated with the user's Microsoft Account (if one is used) or local account. The user's Microsoft Account identifier is not collected from devices configured to send Basic - diagnostic data (8.2.5 Account data)
@@ -66,12 +68,12 @@ Information that is added to most diagnostic events, if relevant and available:
 
 
 ## Device, Connectivity, and Configuration data
-This type of data includes details about the device, its configuration and connectivity capabilities, and status. Device, Connectivity, and Configuration data is equivalent to ISO/IEC 19944:2017, 8.2.3.2.3 Connectivity data.
+This type of data includes details about the device, its configuration and connectivity capabilities, and status. Device, Connectivity, and Configuration data is equivalent to ISO/IEC 19944-1:2020, 8.2.3.2.3 Connectivity data.
 
 ### Data Use for Device, Connectivity, and Configuration data 
 
 **For Diagnostics:**<br>
-[Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft products and services. For example:
+[Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 and Windows 11 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and Windows 11 and related Microsoft products and services. For example:
 
 - Device, Connectivity, and Configuration data is used to understand the unique device characteristics that can contribute to an error experienced on the device, to identify patterns, and to more quickly resolve problems that impact devices with unique hardware, capabilities, or settings. For example:
 
@@ -81,10 +83,10 @@ This type of data includes details about the device, its configuration and conne
 
 - Data about device properties, such as the operating system version and available memory, is used to determine whether the device is due to, and able to, receive a Windows update.
 - Data about device peripherals is used to determine whether a device has installed drivers that might be negatively impacted by a Windows update.
-- Data about which devices, peripherals, and settings are most-used by customers, is used to prioritize Windows 10 improvements to determine the greatest positive impact to the most Windows 10 users.  
+- Data about which devices, peripherals, and settings are most-used by customers, is used to prioritize Windows 10  and Windows 11 improvements to determine the greatest positive impact to the most Windows 10 and Windows 11 users.  
 
 **With (optional) Tailored experiences:**<br>
-If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 users. Also, if a user has enabled Tailored experiences on the device, [Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 users. For example:
+If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10  and Windows 11users. For example:
 
 - Data about device properties and capabilities is used to provide tips about how to use or configure the device to get the best performance and user experience.
 
@@ -141,7 +143,7 @@ If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseud
 - Peripheral name, device model, class, manufacturer, and description
 - Peripheral device state, install state, and checksum
 - Driver name, package name, version, and manufacturer
-- HWID - A hardware vendor-defined ID to match a device to a driver [INF file](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids)
+- HWID - A hardware vendor-defined ID to match a device to a driver [INF file](/windows-hardware/drivers/install/hardware-ids)
 - Driver state, problem code, and checksum
 - Whether driver is kernel mode, signed, and image size
 
@@ -178,22 +180,22 @@ If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseud
 - Hashed IP address
 
 ## Product and Service Usage data
-This type of data includes details about the usage of the device, operating system, applications, and services. Product and Service Usage data is equivalent to ISO/IEC 19944:2017, 8.2.3.2.4 Observed Usage of the Service Capability.
+This type of data includes details about the usage of the device, operating system, applications, and services. Product and Service Usage data is equivalent to ISO/IEC 19944-1:2020, 8.2.3.2.4 Observed Usage of the Service Capability.
 
 ### Data Use for Product and Service Usage data
 
 **For Diagnostics:**<br>
-[Pseudonymized](#pseudo) Product and Service Usage data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
+[Pseudonymized](#pseudo) Product and Service Usage data from Windows 10 and Windows 11 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and Windows 11 and related Microsoft product and services. For example:
 
-- Data about the specific apps that are in-use when an error occurs is used to troubleshoot and repair issues with Windows features and Microsoft apps. 
-- Data about the specific apps that are most-used by customers, is used to prioritize Windows 10 improvements to determine the greatest positive impact to the most Windows 10 users.
+- Data about the specific apps that are in-use when an error occurs is used to troubleshoot and repair issues with Windows features and Microsoft apps.
+- Data about the specific apps that are most-used by customers, is used to prioritize Windows 10 and Windows 11 improvements to determine the greatest positive impact to the most Windows 10 and Windows 11 users.
 - Data about whether devices have Suggestions turned off from the **Settings Phone** screen is to improve the Suggestions feature.
 - Data about whether a user canceled the authentication process in their browser is used to help troubleshoot issues with and improve the authentication process.
 - Data about when and what feature invoked Cortana is used to prioritize efforts for improvement and innovation in Cortana.
 - Data about when a context menu in the photo app is closed is used to troubleshoot and improve the photo app.
 
 **With (optional) Tailored experiences:**<br>
-If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Usage data from Windows 10 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Usage data from Windows 10 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 users. For example:
+If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Usage data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Usage data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 and Windows 11 users. For example:
 
 - If data shows that a user has not used a particular feature of Windows, we might recommend that the user try that feature.
 - Data about which apps are most-used on a device is used to provide recommendations for similar or complementary (Microsoft or third-party) apps. These apps might be free or paid.
@@ -242,20 +244,20 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - Login sessions and state
 
 ## Product and Service Performance data
-This type of data includes details about the health of the device, operating system, apps, and drivers. Product and Service Performance data is equivalent to ISO/IEC 19944:2017 8.2.3.2.2 EUII Telemetry data.
+This type of data includes details about the health of the device, operating system, apps, and drivers. Product and Service Performance data is equivalent to ISO/IEC 19944-1:2020 8.2.3.2.2 EUII Telemetry data.
 
 ### Data Use for Product and Service Performance data
 
 **For Diagnostics:**<br>
-[Pseudonymized](#pseudo) Product and Service Performance data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
+[Pseudonymized](#pseudo) Product and Service Performance data from Windows 10 and Windows 11 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and Windows 11 and related Microsoft product and services. For example:
 
-- Data about the reliability of content that appears in the [Windows Spotlight](https://docs.microsoft.com/windows/configuration/windows-spotlight) (rotating lock screen images) is used for Windows Spotlight reliability investigations.
+- Data about the reliability of content that appears in the [Windows Spotlight](/windows/configuration/windows-spotlight) (rotating lock screen images) is used for Windows Spotlight reliability investigations.
 - Timing data about how quickly Cortana responds to voice commands is used to improve Cortana listening performance.
 - Timing data about how quickly the facial recognition feature starts up and finishes is used to improve facial recognition performance.
-- Data about when an Application Window fails to appear is used to investigate issues with Application Window reliability and performance.
+- Data about when an application window fails to appear is used to investigate issues with application window reliability and performance.
 
 **With (optional) Tailored experiences:**<br>
-If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Performance data from Windows 10 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Performance data from Windows 10 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 users.
+If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Performance data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Performance data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 and Windows 11 users.
 
 - Data about battery performance on a device may be used to recommend settings changes that can improve battery performance.
 - If data shows a device is running low on file storage, we may recommend Windows-compatible cloud storage solutions to free up space.
@@ -355,12 +357,12 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - License usage session
 
 ## Software Setup and Inventory data
-This type of data includes software installation and update information on the device. Software Setup and Inventory Data is a subtype of ISO/IEC 19944:2017 8.2.3.2.4 Observed Usage of the Service Capability.
+This type of data includes software installation and update information on the device. Software Setup and Inventory Data is a subtype of ISO/IEC 19944-1:2020 8.2.3.2.4 Observed Usage of the Service Capability.
 
 ### Data Use for Software Setup and Inventory data
 
 **For Diagnostics:**<br>
-[Pseudonymized](#pseudo) Software Setup and Inventory data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
+[Pseudonymized](#pseudo) Software Setup and Inventory data from Windows 10 and Windows 11 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and Windows 11 and related Microsoft product and services. For example:
 
 - Data about the specific drivers that are installed on a device is used to understand whether there are any hardware or driver compatibility issues that should block or delay a Windows update.
 - Data about when a download starts and finishes on a device is used to understand and address download problems.
@@ -368,7 +370,7 @@ This type of data includes software installation and update information on the d
 - Data about the antimalware installed on a device is used to understand malware transmissions vectors.
 
 **With (optional) Tailored experiences:**<br>
-If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Software Setup and Inventory data from Windows 10 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Software Setup and Inventory data from Windows 10 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 users. For example:
+If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Software Setup and Inventory data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Software Setup and Inventory data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 and Windows 11 users. For example:
 
 - Data about the specific apps that are installed on a device is used to provide recommendations for similar or complementary apps in the Microsoft Store.
 
@@ -397,12 +399,12 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - Windows Insider build details
 
 ## Browsing History data
-This type of data includes details about web browsing in the Microsoft browsers. Browsing History data is equivalent to ISO/IEC 19944:2017 8.2.3.2.8 Client-side browsing history.
+This type of data includes details about web browsing in the Microsoft browsers. Browsing History data is equivalent to ISO/IEC 19944-1:2020 8.2.3.2.8 Client-side browsing history.
 
 ### Data Use for Browsing History data
 
 **For Diagnostics:**<br>
-[Pseudonymized](#pseudo) Browsing History data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
+[Pseudonymized](#pseudo) Browsing History data from Windows 10 and Windows 11 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and Windows 11 and related Microsoft product and services. For example:
 
 - Data about when the **Block Content** dialog box has been shown is used for investigations of blocked content.
 - Data about potentially abusive or malicious domains is used to make updates to Microsoft Edge and Windows Defender SmartScreen to warn users about the domain.
@@ -411,7 +413,7 @@ This type of data includes details about web browsing in the Microsoft browsers.
 - Data about when a default **Home** page is changed by a user is used to measure which default **Home** pages are the most popular and how often users change the default **Home** page.
 
 **With (optional) Tailored experiences:**<br> 
-If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Browsing History data from Windows 10 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Browsing History data from Windows 10 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 users. For example:
+If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Browsing History data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Browsing History data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 and Windows 11 users. For example:
 
 - We might recommend that a user download a compatible app from the Microsoft Store if they have browsed to the related website. For example, if a user uses the Facebook website, we may recommend the Facebook app.
 
@@ -429,18 +431,18 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - Page title
 
 ## Inking Typing and Speech Utterance data
-This type of data gathers details about the voice, inking, and typing input features on the device. Inking, Typing, and Speech Utterance data is a subtype of ISO/IEC 19944:2017 8.2.3.2.1 End User Identifiable information.
+This type of data gathers details about the voice, inking, and typing input features on the device. Inking, Typing, and Speech Utterance data is a subtype of ISO/IEC 19944-1:2020 8.2.3.2.1 End User Identifiable information.
 
 ### Data Use for Inking, Typing, and Speech Utterance data
 
 **For Diagnostics:**<br>
-[Anonymized](#anon) Inking, Typing, and Speech Utterance data from Windows 10 is used by Microsoft to [improve](#improve) natural language capabilities in Microsoft products and services. For example:
+[Anonymized](#anon) Inking, Typing, and Speech Utterance data from Windows 10 and Windows 11 is used by Microsoft to [improve](#improve) natural language capabilities in Microsoft products and services. For example:
 
 - Data about words marked as spelling mistakes and replaced with another word from the context menu is used to improve the spelling feature.
 - Data about alternate words shown and selected by the user after right-clicking is used to improve the word recommendation feature.
 - Data about autocorrected words that were restored back to the original word by the user is used to improve the autocorrect feature.
 - Data about whether Narrator detected and recognized a touch gesture is used to improve touch gesture recognition.
-- Data about handwriting samples sent from the Handwriting Panel is used to help Microsoft improve handwriting recognition. 
+- Data about handwriting samples sent from the Handwriting Panel is used to help Microsoft improve handwriting recognition.
 
 **With (optional) Tailored experiences:**
 
@@ -455,38 +457,37 @@ This type of data gathers details about the voice, inking, and typing input feat
 - Palm Touch x,y coordinates
 - Input latency, missed pen signals, number of frames, strokes, first frame commit time, and sample rate
 - Ink strokes written, text before and after the ink insertion point, recognized text entered, input language - processed to remove identifiers, sequencing information, and other data (such as email addresses and - numeric values), which could be used to reconstruct the original content or associate the input to the user
-- Text input from Windows 10 Mobile on-screen keyboards, except from password fields and private sessions - processed to remove identifiers, sequencing information, and other data (such as email addresses and numeric values), which could be used to reconstruct the original content or associate the input to the user
 - Text of speech recognition results - result codes and recognized text
 - Language and model of the recognizer and the System Speech language
 - App ID using speech features
 - Whether user is known to be a child
 - Confidence and success or failure of speech recognition
 
-## ISO/IEC 19944:2017-specific terminology
+## ISO/IEC 19944-1:2020-specific terminology
 
-This section provides the ISO/IEC 19944:2017-specific definitions for use and de-identification qualifiers used in this article.
+This section provides the ISO/IEC 19944-1:2020-specific definitions for use and de-identification qualifiers used in this article.
 
 ### Provide
 
-ISO/IEC 19944:2017 Reference: **9.3.2 Provide**
+ISO/IEC 19944-1:2020 Reference: **9.3.2 Provide**
 
 Use of a specified data category by a Microsoft product or service to protect and provide the described service, including, (i) troubleshoot and fix issues with the product or service or (ii) provide product or service updates.
 
 ### Improve
 
-ISO/IEC 19944:2017 Reference: **9.3.3 Improve**
+ISO/IEC 19944-1:2020 Reference: **9.3.3 Improve**
 
 Use of a specified data category to improve or increase the quality of a Microsoft product or service. Those improvements may be available to end users.
 
 ### Personalize
 
-ISO/IEC 19944:2017 Reference: **9.3.4 Personalize**
+ISO/IEC 19944-1:2020 Reference: **9.3.4 Personalize**
 
 Use of the specified data categories to create a customized experience for the end user in any Microsoft product or service.
 
 ### Recommend
 
-ISO/IEC 19944:2017 Reference: **9.3.4 Personalize**
+ISO/IEC 19944-1:2020 Reference: **9.3.4 Personalize**
 
 “Recommend” means use of the specified data categories to Personalize (9.3.4) the end user’s experience by recommending Microsoft products or services that can be accessed without the need to make a purchase or pay money.
 
@@ -494,7 +495,7 @@ Use of the specified data categories give recommendations about Microsoft produc
 
 ### Offer
 
-ISO/IEC 19944:2017 Reference: **9.3.5 Offer upgrades or upsell**
+ISO/IEC 19944-1:2020 Reference: **9.3.5 Offer upgrades or upsell**
 
 Implies that the source of the data is Microsoft products and services, and the upgrades offered come from Microsoft products and services that are relevant to the context of the current capability. The target audience for the offer is Microsoft customers.
 
@@ -502,13 +503,13 @@ Specifically, use of the specified data categories to make an offer or upsell ne
 
 ### Promote
 
-ISO/IEC 19944:2017 Reference: **9.3.6 Market/advertise/promote**
+ISO/IEC 19944-1:2020 Reference: **9.3.6 Market/advertise/promote**
 
 Use of the specified data categories to promote a product or service in or on a first-party Microsoft product or service.
 
 ### Data identification qualifiers
 
-Here are the data identification qualifiers and the ISO/IEC 19944:2017 reference:
+Here are the data identification qualifiers and the ISO/IEC 19944-1:2020 reference:
 
 - **<a name="pseudo">Pseudonymized Data</a>** 8.3.3 Pseudonymized data. Microsoft usage notes are as defined.
 - **<a name="anon">Anonymized Data</a>** 8.3.5 Anonymized data. Microsoft usage notes are as defined.

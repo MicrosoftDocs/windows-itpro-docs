@@ -1,401 +1,336 @@
 ---
-title: Policy CSP - ADMX_Sensors
-description: Policy CSP - ADMX_Sensors
-ms.author: dansimp
+title: ADMX_Sensors Policy CSP
+description: Learn more about the ADMX_Sensors Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 10/22/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Sensors-Begin -->
 # Policy CSP - ADMX_Sensors
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_Sensors policies  
-
-<dl>
-  <dd>
-    <a href="#admx-sensors-disablelocationscripting-1">ADMX_Sensors/DisableLocationScripting_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablelocationscripting-2">ADMX_Sensors/DisableLocationScripting_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablelocation-1">ADMX_Sensors/DisableLocation_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablesensors-1">ADMX_Sensors/DisableSensors_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablesensors-2">ADMX_Sensors/DisableSensors_2</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-sensors-disablelocationscripting-1"></a>**ADMX_Sensors/DisableLocationScripting_1**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off scripting for the location feature.
-
-If you enable this policy setting, scripts for the location feature will not run.
-
-If you disable or do not configure this policy setting, all location scripts will run.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off location scripting*
--   GP name: *DisableLocationScripting_1*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+<!-- ADMX_Sensors-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Sensors-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableLocation_1-Begin -->
+## DisableLocation_1
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablelocationscripting-2"></a>**ADMX_Sensors/DisableLocationScripting_2**  
+<!-- DisableLocation_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLocation_1-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableLocation_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableLocation_1
+```
+<!-- DisableLocation_1-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableLocation_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the location feature for this computer.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, the location feature is turned off, and all programs on this computer are prevented from using location information from the location feature.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable or do not configure this policy setting, all programs on this computer will not be prevented from using location information from the location feature.
+<!-- DisableLocation_1-Description-End -->
 
-<hr/>
+<!-- DisableLocation_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLocation_1-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off scripting for the location feature.
+<!-- DisableLocation_1-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, scripts for the location feature will not run.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLocation_1-DFProperties-End -->
 
-If you disable or do not configure this policy setting, all location scripts will run.
-
-<!--/Description-->
+<!-- DisableLocation_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off location scripting*
--   GP name: *DisableLocationScripting_2*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableLocation_1 |
+| Friendly Name | Turn off location |
+| Location | User Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableLocation |
+| ADMX File Name | Sensors.admx |
+<!-- DisableLocation_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablelocation-1"></a>**ADMX_Sensors/DisableLocation_1**  
+<!-- DisableLocation_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLocation_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableLocation_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableLocationScripting_1-Begin -->
+## DisableLocationScripting_1
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableLocationScripting_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLocationScripting_1-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableLocationScripting_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableLocationScripting_1
+```
+<!-- DisableLocationScripting_1-OmaUri-End -->
 
-<hr/>
+<!-- DisableLocationScripting_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off scripting for the location feature.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the location feature for this computer.
+- If you enable this policy setting, scripts for the location feature will not run.
 
-If you enable this policy setting, the location feature is turned off, and all programs on this computer are prevented from using location information from the location feature.
+- If you disable or do not configure this policy setting, all location scripts will run.
+<!-- DisableLocationScripting_1-Description-End -->
 
-If you disable or do not configure this policy setting, all programs on this computer will not be prevented from using location information from the location feature.
+<!-- DisableLocationScripting_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLocationScripting_1-Editable-End -->
 
-<!--/Description-->
+<!-- DisableLocationScripting_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLocationScripting_1-DFProperties-End -->
+
+<!-- DisableLocationScripting_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off location*
--   GP name: *DisableLocation_1*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableLocationScripting_1 |
+| Friendly Name | Turn off location scripting |
+| Location | User Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableLocationScripting |
+| ADMX File Name | Sensors.admx |
+<!-- DisableLocationScripting_1-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablesensors-1"></a>**ADMX_Sensors/DisableSensors_1**  
+<!-- DisableLocationScripting_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLocationScripting_1-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableLocationScripting_1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableLocationScripting_2-Begin -->
+## DisableLocationScripting_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableLocationScripting_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLocationScripting_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableLocationScripting_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableLocationScripting_2
+```
+<!-- DisableLocationScripting_2-OmaUri-End -->
 
-<hr/>
+<!-- DisableLocationScripting_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off scripting for the location feature.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the sensor feature for this computer.
+- If you enable this policy setting, scripts for the location feature will not run.
 
-If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+- If you disable or do not configure this policy setting, all location scripts will run.
+<!-- DisableLocationScripting_2-Description-End -->
 
-If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+<!-- DisableLocationScripting_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLocationScripting_2-Editable-End -->
 
-<!--/Description-->
+<!-- DisableLocationScripting_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLocationScripting_2-DFProperties-End -->
+
+<!-- DisableLocationScripting_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off sensors*
--   GP name: *DisableSensors_1*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableLocationScripting_2 |
+| Friendly Name | Turn off location scripting |
+| Location | Computer Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableLocationScripting |
+| ADMX File Name | Sensors.admx |
+<!-- DisableLocationScripting_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablesensors-2"></a>**ADMX_Sensors/DisableSensors_2**  
+<!-- DisableLocationScripting_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLocationScripting_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableLocationScripting_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableSensors_1-Begin -->
+## DisableSensors_1
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableSensors_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSensors_1-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableSensors_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableSensors_1
+```
+<!-- DisableSensors_1-OmaUri-End -->
 
-<hr/>
+<!-- DisableSensors_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the sensor feature for this computer.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the sensor feature for this computer.
+- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
 
-If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+- If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+<!-- DisableSensors_1-Description-End -->
 
-If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+<!-- DisableSensors_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSensors_1-Editable-End -->
 
-<!--/Description-->
+<!-- DisableSensors_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSensors_1-DFProperties-End -->
+
+<!-- DisableSensors_1-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off sensors*
--   GP name: *DisableSensors_2*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableSensors_1 |
+| Friendly Name | Turn off sensors |
+| Location | User Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableSensors |
+| ADMX File Name | Sensors.admx |
+<!-- DisableSensors_1-AdmxBacked-End -->
 
-Footnotes:
+<!-- DisableSensors_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSensors_1-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- DisableSensors_1-End -->
 
-<!--/Policies-->
+<!-- DisableSensors_2-Begin -->
+## DisableSensors_2
+
+<!-- DisableSensors_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSensors_2-Applicability-End -->
+
+<!-- DisableSensors_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableSensors_2
+```
+<!-- DisableSensors_2-OmaUri-End -->
+
+<!-- DisableSensors_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the sensor feature for this computer.
+
+- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+
+- If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+<!-- DisableSensors_2-Description-End -->
+
+<!-- DisableSensors_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSensors_2-Editable-End -->
+
+<!-- DisableSensors_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSensors_2-DFProperties-End -->
+
+<!-- DisableSensors_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableSensors_2 |
+| Friendly Name | Turn off sensors |
+| Location | Computer Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableSensors |
+| ADMX File Name | Sensors.admx |
+<!-- DisableSensors_2-AdmxBacked-End -->
+
+<!-- DisableSensors_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSensors_2-Examples-End -->
+
+<!-- DisableSensors_2-End -->
+
+<!-- ADMX_Sensors-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Sensors-CspMoreInfo-End -->
+
+<!-- ADMX_Sensors-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

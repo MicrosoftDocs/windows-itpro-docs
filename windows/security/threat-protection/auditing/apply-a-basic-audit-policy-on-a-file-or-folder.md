@@ -3,25 +3,24 @@ title: Apply a basic audit policy on a file or folder (Windows 10)
 description: Apply audit policies to individual files and folders on your computer by setting the permission type to record access attempts in the security log.
 ms.assetid: 565E7249-5CD0-4B2E-B2C0-B3A0793A51E2
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
-ms.date: 07/25/2018
-ms.technology: mde
+ms.date: 09/06/2021
+ms.technology: itpro-security
 ---
 
 # Apply a basic audit policy on a file or folder
-
-**Applies to**
--   Windows 10
 
 You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful access attempts or failed access attempts in the security log.
 
@@ -32,7 +31,7 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
 1.  Select and hold (or right-click) the file or folder that you want to audit, select **Properties**, and then select the **Security** tab.
 2.  Select **Advanced**.
 3.  In the **Advanced Security Settings** dialog box, select the **Auditing** tab, and then select **Continue**.
-4.  Do one of the following:
+4.  Do one of the following tasks:
     -   To set up auditing for a new user or group, select **Add**. Select **Select a principal**, type the name of the user or group that you want, and then select **OK**.
     -   To remove auditing for an existing group or user, select the group or user name, select **Remove**, select **OK**, and then skip the rest of this procedure.
     -   To view or change auditing for an existing group or user, select its name, and then select **Edit.**
@@ -43,7 +42,7 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
 
  
 
-6.  In the **Applies to** box, select the object(s) to which the audit of events will apply. These include:
+6.  In the **Applies to** box, select the object(s) to which the audit of events will apply. These objects include:
  
     -   **This folder only**
     -   **This folder, subfolders and files**
@@ -65,7 +64,7 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
 > [!IMPORTANT]    
 > Before you set up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md). To do this, define auditing policy settings for the object access event category. If you don't enable object access auditing, you'll receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
  
-## Additional considerations
+## More considerations
 
 -   After you turn on object access auditing, view the security log in Event Viewer to review the results of your changes.
 -   You can set up file and folder auditing only on NTFS drives.

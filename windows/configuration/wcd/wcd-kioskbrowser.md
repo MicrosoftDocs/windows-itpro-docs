@@ -1,16 +1,15 @@
 ---
 title: KioskBrowser (Windows 10)
 description: This section describes the KioskBrowser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # KioskBrowser (Windows Configuration Designer reference)
@@ -19,12 +18,12 @@ Use KioskBrowser settings to configure Internet sharing.
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |    |  |  | X |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |  |  |  | ✔️ |
 
 >[!NOTE]
->To configure Kiosk Browser settings for desktop editions, go to [Policies > KioskBrowser](wcd-policies.md#kioskbrowser).
+>To configure Kiosk Browser settings for Windows client, go to [Policies > KioskBrowser](wcd-policies.md#kioskbrowser).
 
 Kiosk Browser settings | Use this setting to
 --- | ---

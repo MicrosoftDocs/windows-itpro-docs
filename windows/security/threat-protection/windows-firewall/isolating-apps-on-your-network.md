@@ -1,27 +1,16 @@
 ---
-title: Isolating Microsoft Store Apps on Your Network (Windows 10)
+title: Isolating Microsoft Store Apps on Your Network (Windows)
 description: Learn how to customize your firewall configuration to isolate the network access of the new Microsoft Store apps that run on devices added to your network.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.reviewer: 
-ms.author: dansimp
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Isolating Microsoft Store Apps on Your Network
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 When you add new devices to your network, you may want to customize your Windows Defender Firewall with Advanced Security configuration to isolate the network access of the new Microsoft Store apps that run on them. Developers who build Microsoft Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
 
@@ -65,7 +54,7 @@ To isolate Microsoft Store apps on your network, you need to use Group Policy to
 
 -   The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Microsoft Store app when you create Windows Defender Firewall rules.
 
-    >**Note:**  You can install the RSAT on your device running Windows 10 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
+    >**Note:**  You can install the RSAT on your device running Windows from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 
      
 ## Step 1: Define your network

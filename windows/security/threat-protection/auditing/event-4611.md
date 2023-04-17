@@ -2,23 +2,20 @@
 title: 4611(S) A trusted logon process has been registered with the Local Security Authority. (Windows 10)
 description: Describes security event 4611(S) A trusted logon process has been registered with the Local Security Authority.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4611(S): A trusted logon process has been registered with the Local Security Authority.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4611.png" alt="Event 4611 illustration" width="449" height="393" hspace="10" align="left" />
@@ -27,7 +24,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event indicates that a logon process has registered with the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)). Also, logon requests will now be accepted from this source.
+This event indicates that a logon process has registered with the Local Security Authority ([LSA](/windows/win32/secauthn/lsa-authentication)). Also, logon requests will now be accepted from this source.
 
 At the technical level, the event does not come from the registration of a trusted logon process, but from a confirmation that the process is a trusted logon process. If it is a trusted logon process, the event generates.
 
@@ -93,7 +90,7 @@ You typically see these events during operating system startup or user logon and
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -111,5 +108,4 @@ For 4611(S): A trusted logon process has been registered with the Local Security
 
 -   Typically this event has an informational purpose. If you defined the list of allowed Logon Processes in the system, then you can check is “**Logon Process Name”** field value in the allow list or not.
 
--   
-
+-

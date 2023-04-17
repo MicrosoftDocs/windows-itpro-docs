@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -20,6 +21,7 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
+          "**/*.svg",
           "**/*.gif"
         ],
         "exclude": [
@@ -31,22 +33,43 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
+      "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
-      "audience": "ITPro",
+      "ms.technology": "itpro-configure",
       "ms.topic": "article",
-      "feedback_system": "None",
-      "hideEdit": true,
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-configuration",
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Configure Windows"
+      "titleSuffix": "Configure Windows",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric",
+        "beccarobins"
+      ],
+      "searchScope": ["Windows 10"]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "feedback_system": {
+        "ue-v/**/*.*": "None",
+        "cortana-at-work/**/*.*": "None"
+      }
+    },
     "template": [],
     "dest": "win-configuration",
     "markdownEngineName": "markdig"

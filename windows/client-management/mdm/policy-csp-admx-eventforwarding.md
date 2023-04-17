@@ -1,200 +1,159 @@
 ---
-title: Policy CSP - ADMX_EventForwarding
-description: Policy CSP - ADMX_EventForwarding
-ms.author: dansimp
+title: ADMX_EventForwarding Policy CSP
+description: Learn more about the ADMX_EventForwarding Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 08/17/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_EventForwarding-Begin -->
 # Policy CSP - ADMX_EventForwarding
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_EventForwarding-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EventForwarding-Editable-End -->
 
-<!--Policies-->
-## ADMX_EventForwarding policies  
+<!-- ForwarderResourceUsage-Begin -->
+## ForwarderResourceUsage
 
-<dl>
-  <dd>
-    <a href="#admx_eventforwarding-forwarderresourceusage">ADMX_EventForwarding/ForwarderResourceUsage</a>
-  </dd>
-  <dd>
-    <a href="#admx_eventforwarding-subscriptionmanager">ADMX_EventForwarding/SubscriptionManager</a>
-  </dd>
-</dl>
+<!-- ForwarderResourceUsage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ForwarderResourceUsage-Applicability-End -->
 
+<!-- ForwarderResourceUsage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EventForwarding/ForwarderResourceUsage
+```
+<!-- ForwarderResourceUsage-OmaUri-End -->
 
-<hr/>
+<!-- ForwarderResourceUsage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
 
-<!--Policy-->
-<a href="" id="admx_eventforwarding-forwarderresourceusage"></a>**ADMX_EventForwarding/ForwarderResourceUsage**  
+- If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
-
-If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
-
-If you disable or do not configure this policy setting, forwarder resource usage is not specified.
+- If you disable or do not configure this policy setting, forwarder resource usage is not specified.
 
 This setting applies across all subscriptions for the forwarder (source computer).
+<!-- ForwarderResourceUsage-Description-End -->
 
-<!--/Description-->
+<!-- ForwarderResourceUsage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ForwarderResourceUsage-Editable-End -->
+
+<!-- ForwarderResourceUsage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ForwarderResourceUsage-DFProperties-End -->
+
+<!-- ForwarderResourceUsage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure forwarder resource usage*
--   GP name: *ForwarderResourceUsage*
--   GP path: *Windows Components/Event Forwarding*
--   GP ADMX file name: *EventForwarding.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ForwarderResourceUsage |
+| Friendly Name | Configure forwarder resource usage |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Forwarding |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\EventForwarding |
+| ADMX File Name | EventForwarding.admx |
+<!-- ForwarderResourceUsage-AdmxBacked-End -->
 
-<hr/>
+<!-- ForwarderResourceUsage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ForwarderResourceUsage-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx_eventforwarding-subscriptionmanager"></a>**ADMX_EventForwarding/SubscriptionManager**  
+<!-- ForwarderResourceUsage-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SubscriptionManager-Begin -->
+## SubscriptionManager
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SubscriptionManager-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SubscriptionManager-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the server address, refresh interval, and issuer certificate authority (CA) of a target Subscription Manager.
-
-If you enable this policy setting, you can configure the Source Computer to contact a specific FQDN (Fully Qualified Domain Name) or IP Address and request subscription specifics.
-
-Use the following syntax when using the HTTPS protocol:  
-
-``` syntax
-
-Server=https://<FQDN of the collector>:5986/wsman/SubscriptionManager/WEC,Refresh=<Refresh interval in seconds>,IssuerCA=<Thumb print of the client authentication certificate>.
+<!-- SubscriptionManager-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EventForwarding/SubscriptionManager
 ```
+<!-- SubscriptionManager-OmaUri-End -->
 
-When using the HTTP protocol, use port 5985.
+<!-- SubscriptionManager-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the server address, refresh interval, and issuer certificate authority (CA) of a target Subscription Manager.
 
-If you disable or do not configure this policy setting, the Event Collector computer will not be specified.
+- If you enable this policy setting, you can configure the Source Computer to contact a specific FQDN (Fully Qualified Domain Name) or IP Address and request subscription specifics.
 
-<!--/Description-->
+Use the following syntax when using the HTTPS protocol:
+Server=https://`<FQDN of the collector>`:5986/wsman/SubscriptionManager/WEC,Refresh=`<Refresh interval in seconds>`,IssuerCA=`<Thumb print of the client authentication certificate>`. When using the HTTP protocol, use port 5985.
+
+- If you disable or do not configure this policy setting, the Event Collector computer will not be specified.
+<!-- SubscriptionManager-Description-End -->
+
+<!-- SubscriptionManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SubscriptionManager-Editable-End -->
+
+<!-- SubscriptionManager-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SubscriptionManager-DFProperties-End -->
+
+<!-- SubscriptionManager-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure target Subscription Manager*
--   GP name: *SubscriptionManager*
--   GP path: *Windows Components/Event Forwarding*
--   GP ADMX file name: *EventForwarding.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SubscriptionManager |
+| Friendly Name | Configure target Subscription Manager |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Forwarding |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\EventForwarding |
+| ADMX File Name | EventForwarding.admx |
+<!-- SubscriptionManager-AdmxBacked-End -->
 
-Footnotes:
+<!-- SubscriptionManager-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SubscriptionManager-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- SubscriptionManager-End -->
 
-<!--/Policies-->
+<!-- ADMX_EventForwarding-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EventForwarding-CspMoreInfo-End -->
 
+<!-- ADMX_EventForwarding-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

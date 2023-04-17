@@ -3,23 +3,20 @@ title: Audit Audit Policy Change (Windows 10)
 description: The Advanced Security Audit policy setting, Audit Audit Policy Change, determines if audit events are generated when changes are made to audit policy.
 ms.assetid: 7153bf75-6978-4d7e-a821-59a699efb8a9
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Audit Policy Change
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Audit Policy Change determines whether the operating system generates audit events when changes are made to audit policy.
@@ -44,21 +41,21 @@ Changes to audit policy that are audited include:
 
 -   Changing the value of CrashOnAuditFail.
 
--   Changing audit settings on an object (for example, modifying the system access control list ([SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx)) for a file or registry key).
+-   Changing audit settings on an object (for example, modifying the system access control list ([SACL](/windows/win32/secauthz/access-control-lists)) for a file or registry key).
 
-> **Note**&nbsp;&nbsp;[SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) change auditing is performed when a SACL for an object has changed and the Policy Change category is configured. Discretionary access control list (DACL) and owner change auditing are performed when Object Access auditing is configured and the object's SACL is set for auditing of the DACL or owner change.
+> **Note**&nbsp;&nbsp;[SACL](/windows/win32/secauthz/access-control-lists) change auditing is performed when a SACL for an object has changed and the Policy Change category is configured. Discretionary access control list (DACL) and owner change auditing are performed when Object Access auditing is configured and the object's SACL is set for auditing of the DACL or owner change.
 
 -   Changing anything in the Special Groups list.
 
 The following events will be enabled with Success auditing in this subcategory:
 
--   4902(S): The Per-user audit policy table was created.
+-   [4902](event-4902.md)(S): The Per-user audit policy table was created.
 
--   4907(S): Auditing settings on object were changed.
+-   [4907](event-4907.md)(S): Auditing settings on object were changed.
 
--   4904(S): An attempt was made to register a security event source.
+-   [4904](event-4904.md)(S): An attempt was made to register a security event source.
 
--   4905(S): An attempt was made to unregister a security event source.
+-   [4905](event-4905.md)(S): An attempt was made to unregister a security event source.
 
 All other events in this subcategory will be logged regardless of the "Audit Policy Change" setting.
 
@@ -83,4 +80,3 @@ All other events in this subcategory will be logged regardless of the "Audit Pol
 -   [4904](event-4904.md)(S): An attempt was made to register a security event source.
 
 -   [4905](event-4905.md)(S): An attempt was made to unregister a security event source.
-

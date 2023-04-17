@@ -1,1882 +1,1555 @@
 ---
-title: Policy CSP - ADMX_Power
-description: Policy CSP - ADMX_Power
-ms.author: dansimp
+title: ADMX_Power Policy CSP
+description: Learn more about the ADMX_Power Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 12/22/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Power-Begin -->
 # Policy CSP - ADMX_Power
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_Power policies  
-
-<dl>
-  <dd>
-    <a href="#admx-power-acconnectivityinstandby-2">ADMX_Power/ACConnectivityInStandby_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-accriticalsleeptransitionsdisable-2">ADMX_Power/ACCriticalSleepTransitionsDisable_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-acstartmenubuttonaction-2">ADMX_Power/ACStartMenuButtonAction_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-allowsystempowerrequestac">ADMX_Power/AllowSystemPowerRequestAC</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-allowsystempowerrequestdc">ADMX_Power/AllowSystemPowerRequestDC</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-allowsystemsleepwithremotefilesopenac">ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-allowsystemsleepwithremotefilesopendc">ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-customactiveschemeoverride-2">ADMX_Power/CustomActiveSchemeOverride_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcbatterydischargeaction0-2">ADMX_Power/DCBatteryDischargeAction0_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcbatterydischargeaction1-2">ADMX_Power/DCBatteryDischargeAction1_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcbatterydischargelevel0-2">ADMX_Power/DCBatteryDischargeLevel0_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcbatterydischargelevel1uinotification-2">ADMX_Power/DCBatteryDischargeLevel1UINotification_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcbatterydischargelevel1-2">ADMX_Power/DCBatteryDischargeLevel1_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcconnectivityinstandby-2">ADMX_Power/DCConnectivityInStandby_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dccriticalsleeptransitionsdisable-2">ADMX_Power/DCCriticalSleepTransitionsDisable_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dcstartmenubuttonaction-2">ADMX_Power/DCStartMenuButtonAction_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-diskacpowerdowntimeout-2">ADMX_Power/DiskACPowerDownTimeOut_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-diskdcpowerdowntimeout-2">ADMX_Power/DiskDCPowerDownTimeOut_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-dont-poweroff-aftershutdown">ADMX_Power/Dont_PowerOff_AfterShutdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-enabledesktopslideshowac">ADMX_Power/EnableDesktopSlideShowAC</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-enabledesktopslideshowdc">ADMX_Power/EnableDesktopSlideShowDC</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-inboxactiveschemeoverride-2">ADMX_Power/InboxActiveSchemeOverride_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-pw-promptpasswordonresume">ADMX_Power/PW_PromptPasswordOnResume</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-powerthrottlingturnoff">ADMX_Power/PowerThrottlingTurnOff</a>
-  </dd>
-  <dd>
-    <a href="#admx-power-reservebatterynotificationlevel">ADMX_Power/ReserveBatteryNotificationLevel</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-power-acconnectivityinstandby-2"></a>**ADMX_Power/ACConnectivityInStandby_2**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control the network connectivity state in standby on modern standby-capable systems.
-
-If you enable this policy setting, network connectivity will be maintained in standby.
-
-If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
-
-If you do not configure this policy setting, users control this setting.
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow network connectivity during connected-standby (plugged in)*
--   GP name: *ACConnectivityInStandby_2*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+<!-- ADMX_Power-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Power-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ACConnectivityInStandby_2-Begin -->
+## ACConnectivityInStandby_2
 
-<!--Policy-->
-<a href="" id="admx-power-accriticalsleeptransitionsdisable-2"></a>**ADMX_Power/ACCriticalSleepTransitionsDisable_2**  
+<!-- ACConnectivityInStandby_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ACConnectivityInStandby_2-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ACConnectivityInStandby_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/ACConnectivityInStandby_2
+```
+<!-- ACConnectivityInStandby_2-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ACConnectivityInStandby_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control the network connectivity state in standby on modern standby-capable systems.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, network connectivity will be maintained in standby.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-<hr/>
+- If you do not configure this policy setting, users control this setting.
+<!-- ACConnectivityInStandby_2-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn on the ability for applications and services to prevent the system from sleeping.
+<!-- ACConnectivityInStandby_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ACConnectivityInStandby_2-Editable-End -->
 
-If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
+<!-- ACConnectivityInStandby_2-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable or do not configure this policy setting, users control this setting.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ACConnectivityInStandby_2-DFProperties-End -->
 
-<!--/Description-->
+<!-- ACConnectivityInStandby_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on the ability for applications to prevent sleep transitions (plugged in)*
--   GP name: *ACCriticalSleepTransitionsDisable_2*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ACConnectivityInStandby_2 |
+| Friendly Name | Allow network connectivity during connected-standby (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\f15576e8-98b7-4186-b944-eafa664402d9 |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- ACConnectivityInStandby_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-acstartmenubuttonaction-2"></a>**ADMX_Power/ACStartMenuButtonAction_2**  
+<!-- ACConnectivityInStandby_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ACConnectivityInStandby_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ACConnectivityInStandby_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ACCriticalSleepTransitionsDisable_2-Begin -->
+## ACCriticalSleepTransitionsDisable_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ACCriticalSleepTransitionsDisable_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ACCriticalSleepTransitionsDisable_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ACCriticalSleepTransitionsDisable_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/ACCriticalSleepTransitionsDisable_2
+```
+<!-- ACCriticalSleepTransitionsDisable_2-OmaUri-End -->
 
-<hr/>
+<!-- ACCriticalSleepTransitionsDisable_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn on the ability for applications and services to prevent the system from sleeping.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the action that Windows takes when a user presses the Start menu Power button.
+- If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-If you enable this policy setting, select one of the following actions:
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- ACCriticalSleepTransitionsDisable_2-Description-End -->
 
-- Sleep
-- Hibernate
-- Shut down
+<!-- ACCriticalSleepTransitionsDisable_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ACCriticalSleepTransitionsDisable_2-Editable-End -->
 
-If you disable this policy or do not configure this policy setting, users control this setting.
+<!-- ACCriticalSleepTransitionsDisable_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ACCriticalSleepTransitionsDisable_2-DFProperties-End -->
+
+<!-- ACCriticalSleepTransitionsDisable_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Select the Start menu Power button action (plugged in)*
--   GP name: *ACStartMenuButtonAction_2*
--   GP path: *System\Power Management\Button Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ACCriticalSleepTransitionsDisable_2 |
+| Friendly Name | Turn on the ability for applications to prevent sleep transitions (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\B7A27025-E569-46c2-A504-2B96CAD225A1 |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- ACCriticalSleepTransitionsDisable_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-allowsystempowerrequestac"></a>**ADMX_Power/AllowSystemPowerRequestAC**  
+<!-- ACCriticalSleepTransitionsDisable_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ACCriticalSleepTransitionsDisable_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ACCriticalSleepTransitionsDisable_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ACStartMenuButtonAction_2-Begin -->
+## ACStartMenuButtonAction_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ACStartMenuButtonAction_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ACStartMenuButtonAction_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ACStartMenuButtonAction_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/ACStartMenuButtonAction_2
+```
+<!-- ACStartMenuButtonAction_2-OmaUri-End -->
 
-<hr/>
+<!-- ACStartMenuButtonAction_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the Start menu Power button.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows applications and services to prevent automatic sleep.
+- If you enable this policy setting, select one of the following actions:
+-Sleep
+-Hibernate
+-Shut down
 
-If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
+- If you disable this policy or do not configure this policy setting, users control this setting.
+<!-- ACStartMenuButtonAction_2-Description-End -->
 
-If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+<!-- ACStartMenuButtonAction_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ACStartMenuButtonAction_2-Editable-End -->
 
-<!--/Description-->
+<!-- ACStartMenuButtonAction_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ACStartMenuButtonAction_2-DFProperties-End -->
+
+<!-- ACStartMenuButtonAction_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow applications to prevent automatic sleep (plugged in)*
--   GP name: *AllowSystemPowerRequestAC*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ACStartMenuButtonAction_2 |
+| Friendly Name | Select the Start menu Power button action (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\A7066653-8D6C-40A8-910E-A1F54B84C7E5 |
+| ADMX File Name | Power.admx |
+<!-- ACStartMenuButtonAction_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-allowsystempowerrequestdc"></a>**ADMX_Power/AllowSystemPowerRequestDC**  
+<!-- ACStartMenuButtonAction_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ACStartMenuButtonAction_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ACStartMenuButtonAction_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSystemPowerRequestAC-Begin -->
+## AllowSystemPowerRequestAC
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSystemPowerRequestAC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSystemPowerRequestAC-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSystemPowerRequestAC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/AllowSystemPowerRequestAC
+```
+<!-- AllowSystemPowerRequestAC-OmaUri-End -->
 
-<hr/>
+<!-- AllowSystemPowerRequestAC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows applications and services to prevent automatic sleep.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows applications and services to prevent automatic sleep.
+- If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
+- If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+<!-- AllowSystemPowerRequestAC-Description-End -->
 
-If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+<!-- AllowSystemPowerRequestAC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSystemPowerRequestAC-Editable-End -->
 
-<!--/Description-->
+<!-- AllowSystemPowerRequestAC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowSystemPowerRequestAC-DFProperties-End -->
+
+<!-- AllowSystemPowerRequestAC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow applications to prevent automatic sleep (on battery)*
--   GP name: *AllowSystemPowerRequestDC*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowSystemPowerRequestAC |
+| Friendly Name | Allow applications to prevent automatic sleep (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\A4B195F5-8225-47D8-8012-9D41369786E2 |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- AllowSystemPowerRequestAC-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-allowsystemsleepwithremotefilesopenac"></a>**ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC**  
+<!-- AllowSystemPowerRequestAC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSystemPowerRequestAC-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowSystemPowerRequestAC-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSystemPowerRequestDC-Begin -->
+## AllowSystemPowerRequestDC
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSystemPowerRequestDC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSystemPowerRequestDC-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSystemPowerRequestDC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/AllowSystemPowerRequestDC
+```
+<!-- AllowSystemPowerRequestDC-OmaUri-End -->
 
-<hr/>
+<!-- AllowSystemPowerRequestDC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows applications and services to prevent automatic sleep.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage automatic sleep with open network files.
+- If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-If you enable this policy setting, the computer automatically sleeps when network files are open.
+- If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+<!-- AllowSystemPowerRequestDC-Description-End -->
 
-If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+<!-- AllowSystemPowerRequestDC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSystemPowerRequestDC-Editable-End -->
 
-<!--/Description-->
+<!-- AllowSystemPowerRequestDC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowSystemPowerRequestDC-DFProperties-End -->
+
+<!-- AllowSystemPowerRequestDC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow automatic sleep with Open Network Files (plugged in)*
--   GP name: *AllowSystemSleepWithRemoteFilesOpenAC*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowSystemPowerRequestDC |
+| Friendly Name | Allow applications to prevent automatic sleep (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\A4B195F5-8225-47D8-8012-9D41369786E2 |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- AllowSystemPowerRequestDC-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-allowsystemsleepwithremotefilesopendc"></a>**ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC**  
+<!-- AllowSystemPowerRequestDC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSystemPowerRequestDC-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowSystemPowerRequestDC-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Begin -->
+## AllowSystemSleepWithRemoteFilesOpenAC
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC
+```
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-OmaUri-End -->
 
-<hr/>
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage automatic sleep with open network files.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage automatic sleep with open network files.
+- If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-If you enable this policy setting, the computer automatically sleeps when network files are open.
+- If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Description-End -->
 
-If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Editable-End -->
 
-<!--/Description-->
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-DFProperties-End -->
+
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow automatic sleep with Open Network Files (on battery)*
--   GP name: *AllowSystemSleepWithRemoteFilesOpenDC*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowSystemSleepWithRemoteFilesOpenAC |
+| Friendly Name | Allow automatic sleep with Open Network Files (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\d4c1d4c8-d5cc-43d3-b83e-fc51215cb04d |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-customactiveschemeoverride-2"></a>**ADMX_Power/CustomActiveSchemeOverride_2**  
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowSystemSleepWithRemoteFilesOpenAC-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Begin -->
+## AllowSystemSleepWithRemoteFilesOpenDC
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC
+```
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-OmaUri-End -->
 
-<hr/>
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage automatic sleep with open network files.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the active power plan from a specified power plan’s GUID. The GUID for a custom power plan GUID can be retrieved by using powercfg, the power configuration command line tool.
+- If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-If you enable this policy setting, you must specify a power plan, specified as a GUID using the following format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (For example, 103eea6e-9fcd-4544-a713-c282d8e50083), indicating the power plan to be active.
+- If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Description-End -->
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Editable-End -->
 
-<!--/Description-->
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-DFProperties-End -->
+
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify a custom active power plan*
--   GP name: *CustomActiveSchemeOverride_2*
--   GP path: *System\Power Management*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowSystemSleepWithRemoteFilesOpenDC |
+| Friendly Name | Allow automatic sleep with Open Network Files (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\d4c1d4c8-d5cc-43d3-b83e-fc51215cb04d |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dcbatterydischargeaction0-2"></a>**ADMX_Power/DCBatteryDischargeAction0_2**  
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowSystemSleepWithRemoteFilesOpenDC-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomActiveSchemeOverride_2-Begin -->
+## CustomActiveSchemeOverride_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomActiveSchemeOverride_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomActiveSchemeOverride_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CustomActiveSchemeOverride_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/CustomActiveSchemeOverride_2
+```
+<!-- CustomActiveSchemeOverride_2-OmaUri-End -->
 
-<hr/>
+<!-- CustomActiveSchemeOverride_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the active power plan from a specified power plan's GUID. The GUID for a custom power plan GUID can be retrieved by using powercfg, the power configuration command line tool.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the action that Windows takes when battery capacity reaches the critical battery notification level.  
+- If you enable this policy setting, you must specify a power plan, specified as a GUID using the following format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (For example, 103eea6e-9fcd-4544-a713-c282d8e50083), indicating the power plan to be active.
 
-If you enable this policy setting, select one of the following actions:
+- If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- CustomActiveSchemeOverride_2-Description-End -->
 
-- Take no action
-- Sleep
-- Hibernate
-- Shut down
+<!-- CustomActiveSchemeOverride_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomActiveSchemeOverride_2-Editable-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- CustomActiveSchemeOverride_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomActiveSchemeOverride_2-DFProperties-End -->
+
+<!-- CustomActiveSchemeOverride_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Critical battery notification action*
--   GP name: *DCBatteryDischargeAction0_2*
--   GP path: *System\Power Management\Notification Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | CustomActiveSchemeOverride_2 |
+| Friendly Name | Specify a custom active power plan |
+| Location | Computer Configuration |
+| Path | System > Power Management |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings |
+| ADMX File Name | Power.admx |
+<!-- CustomActiveSchemeOverride_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dcbatterydischargeaction1-2"></a>**ADMX_Power/DCBatteryDischargeAction1_2**  
+<!-- CustomActiveSchemeOverride_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomActiveSchemeOverride_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- CustomActiveSchemeOverride_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCBatteryDischargeAction0_2-Begin -->
+## DCBatteryDischargeAction0_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCBatteryDischargeAction0_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCBatteryDischargeAction0_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCBatteryDischargeAction0_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCBatteryDischargeAction0_2
+```
+<!-- DCBatteryDischargeAction0_2-OmaUri-End -->
 
-<hr/>
+<!-- DCBatteryDischargeAction0_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when battery capacity reaches the critical battery notification level.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the action that Windows takes when battery capacity reaches the low battery notification level.
+- If you enable this policy setting, select one of the following actions:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
 
-If you enable this policy setting, select one of the following actions:
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- DCBatteryDischargeAction0_2-Description-End -->
 
-- Take no action
-- Sleep
-- Hibernate
-- Shut down
+<!-- DCBatteryDischargeAction0_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCBatteryDischargeAction0_2-Editable-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- DCBatteryDischargeAction0_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCBatteryDischargeAction0_2-DFProperties-End -->
+
+<!-- DCBatteryDischargeAction0_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Low battery notification action*
--   GP name: *DCBatteryDischargeAction1_2*
--   GP path: *System\Power Management\Notification Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCBatteryDischargeAction0_2 |
+| Friendly Name | Critical battery notification action |
+| Location | Computer Configuration |
+| Path | System > Power Management > Notification Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\637EA02F-BBCB-4015-8E2C-A1C7B9C0B546 |
+| ADMX File Name | Power.admx |
+<!-- DCBatteryDischargeAction0_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dcbatterydischargelevel0-2"></a>**ADMX_Power/DCBatteryDischargeLevel0_2**  
+<!-- DCBatteryDischargeAction0_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCBatteryDischargeAction0_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCBatteryDischargeAction0_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCBatteryDischargeAction1_2-Begin -->
+## DCBatteryDischargeAction1_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCBatteryDischargeAction1_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCBatteryDischargeAction1_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCBatteryDischargeAction1_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCBatteryDischargeAction1_2
+```
+<!-- DCBatteryDischargeAction1_2-OmaUri-End -->
 
-<hr/>
+<!-- DCBatteryDischargeAction1_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when battery capacity reaches the low battery notification level.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the percentage of battery capacity remaining that triggers the critical battery notification action.
+- If you enable this policy setting, select one of the following actions:
+-Take no action
+-Sleep
+-Hibernate
+-Shut down
 
-If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the critical notification.
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- DCBatteryDischargeAction1_2-Description-End -->
+
+<!-- DCBatteryDischargeAction1_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCBatteryDischargeAction1_2-Editable-End -->
+
+<!-- DCBatteryDischargeAction1_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCBatteryDischargeAction1_2-DFProperties-End -->
+
+<!-- DCBatteryDischargeAction1_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DCBatteryDischargeAction1_2 |
+| Friendly Name | Low battery notification action |
+| Location | Computer Configuration |
+| Path | System > Power Management > Notification Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\d8742dcb-3e6a-4b3c-b3fe-374623cdcf06 |
+| ADMX File Name | Power.admx |
+<!-- DCBatteryDischargeAction1_2-AdmxBacked-End -->
+
+<!-- DCBatteryDischargeAction1_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCBatteryDischargeAction1_2-Examples-End -->
+
+<!-- DCBatteryDischargeAction1_2-End -->
+
+<!-- DCBatteryDischargeLevel0_2-Begin -->
+## DCBatteryDischargeLevel0_2
+
+<!-- DCBatteryDischargeLevel0_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCBatteryDischargeLevel0_2-Applicability-End -->
+
+<!-- DCBatteryDischargeLevel0_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCBatteryDischargeLevel0_2
+```
+<!-- DCBatteryDischargeLevel0_2-OmaUri-End -->
+
+<!-- DCBatteryDischargeLevel0_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the percentage of battery capacity remaining that triggers the critical battery notification action.
+
+- If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the critical notification.
 
 To set the action that is triggered, see the "Critical Battery Notification Action" policy setting.
 
-If you disable this policy setting or do not configure it, users control this setting.
+- If you disable this policy setting or do not configure it, users control this setting.
+<!-- DCBatteryDischargeLevel0_2-Description-End -->
 
-<!--/Description-->
+<!-- DCBatteryDischargeLevel0_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCBatteryDischargeLevel0_2-Editable-End -->
+
+<!-- DCBatteryDischargeLevel0_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCBatteryDischargeLevel0_2-DFProperties-End -->
+
+<!-- DCBatteryDischargeLevel0_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Critical battery notification level*
--   GP name: *DCBatteryDischargeLevel0_2*
--   GP path: *System\Power Management\Notification Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCBatteryDischargeLevel0_2 |
+| Friendly Name | Critical battery notification level |
+| Location | Computer Configuration |
+| Path | System > Power Management > Notification Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\9A66D8D7-4FF7-4EF9-B5A2-5A326CA2A469 |
+| ADMX File Name | Power.admx |
+<!-- DCBatteryDischargeLevel0_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dcbatterydischargelevel1uinotification-2"></a>**ADMX_Power/DCBatteryDischargeLevel1UINotification_2**  
+<!-- DCBatteryDischargeLevel0_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCBatteryDischargeLevel0_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCBatteryDischargeLevel0_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCBatteryDischargeLevel1_2-Begin -->
+## DCBatteryDischargeLevel1_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCBatteryDischargeLevel1_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCBatteryDischargeLevel1_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCBatteryDischargeLevel1_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCBatteryDischargeLevel1_2
+```
+<!-- DCBatteryDischargeLevel1_2-OmaUri-End -->
 
-<hr/>
+<!-- DCBatteryDischargeLevel1_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the percentage of battery capacity remaining that triggers the low battery notification action.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the user notification when the battery capacity remaining equals the low battery notification level.
-
-If you enable this policy setting, Windows shows a notification when the battery capacity remaining equals the low battery notification level.
-
-To configure the low battery notification level, see the "Low Battery Notification Level" policy setting.
-
-The notification will only be shown if the "Low Battery Notification Action" policy setting is configured to "No Action".
-
-If you disable or do not configure this policy setting, users can control this setting.
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off low battery user notification*
--   GP name: *DCBatteryDischargeLevel1UINotification_2*
--   GP path: *System\Power Management\Notification Settings*
--   GP ADMX file name: *Power.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-power-dcbatterydischargelevel1-2"></a>**ADMX_Power/DCBatteryDischargeLevel1_2**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the percentage of battery capacity remaining that triggers the low battery notification action.
-
-If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the low notification.
+- If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the low notification.
 
 To set the action that is triggered, see the "Low Battery Notification Action" policy setting.
 
-If you disable this policy setting or do not configure it, users control this setting.
+- If you disable this policy setting or do not configure it, users control this setting.
+<!-- DCBatteryDischargeLevel1_2-Description-End -->
 
-<!--/Description-->
+<!-- DCBatteryDischargeLevel1_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCBatteryDischargeLevel1_2-Editable-End -->
+
+<!-- DCBatteryDischargeLevel1_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCBatteryDischargeLevel1_2-DFProperties-End -->
+
+<!-- DCBatteryDischargeLevel1_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Low battery notification level*
--   GP name: *DCBatteryDischargeLevel1_2*
--   GP path: *System\Power Management\Notification Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCBatteryDischargeLevel1_2 |
+| Friendly Name | Low battery notification level |
+| Location | Computer Configuration |
+| Path | System > Power Management > Notification Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\8183ba9a-e910-48da-8769-14ae6dc1170a |
+| ADMX File Name | Power.admx |
+<!-- DCBatteryDischargeLevel1_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dcconnectivityinstandby-2"></a>**ADMX_Power/DCConnectivityInStandby_2**  
+<!-- DCBatteryDischargeLevel1_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCBatteryDischargeLevel1_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCBatteryDischargeLevel1_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCBatteryDischargeLevel1UINotification_2-Begin -->
+## DCBatteryDischargeLevel1UINotification_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCBatteryDischargeLevel1UINotification_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCBatteryDischargeLevel1UINotification_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCBatteryDischargeLevel1UINotification_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCBatteryDischargeLevel1UINotification_2
+```
+<!-- DCBatteryDischargeLevel1UINotification_2-OmaUri-End -->
 
-<hr/>
+<!-- DCBatteryDischargeLevel1UINotification_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the user notification when the battery capacity remaining equals the low battery notification level.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to control the network connectivity state in standby on modern standby-capable systems.
+- If you enable this policy setting, Windows shows a notification when the battery capacity remaining equals the low battery notification level. To configure the low battery notification level, see the "Low Battery Notification Level" policy setting.
 
-If you enable this policy setting, network connectivity will be maintained in standby.
+The notification will only be shown if the "Low Battery Notification Action" policy setting is configured to "No Action".
 
-If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+- If you disable or do not configure this policy setting, users can control this setting.
+<!-- DCBatteryDischargeLevel1UINotification_2-Description-End -->
 
-If you do not configure this policy setting, users control this setting.
+<!-- DCBatteryDischargeLevel1UINotification_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCBatteryDischargeLevel1UINotification_2-Editable-End -->
 
-<!--/Description-->
+<!-- DCBatteryDischargeLevel1UINotification_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCBatteryDischargeLevel1UINotification_2-DFProperties-End -->
+
+<!-- DCBatteryDischargeLevel1UINotification_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow network connectivity during connected-standby (on battery)*
--   GP name: *DCConnectivityInStandby_2*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCBatteryDischargeLevel1UINotification_2 |
+| Friendly Name | Turn off low battery user notification |
+| Location | Computer Configuration |
+| Path | System > Power Management > Notification Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\bcded951-187b-4d05-bccc-f7e51960c258 |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- DCBatteryDischargeLevel1UINotification_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dccriticalsleeptransitionsdisable-2"></a>**ADMX_Power/DCCriticalSleepTransitionsDisable_2**  
+<!-- DCBatteryDischargeLevel1UINotification_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCBatteryDischargeLevel1UINotification_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCBatteryDischargeLevel1UINotification_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCConnectivityInStandby_2-Begin -->
+## DCConnectivityInStandby_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCConnectivityInStandby_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCConnectivityInStandby_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCConnectivityInStandby_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCConnectivityInStandby_2
+```
+<!-- DCConnectivityInStandby_2-OmaUri-End -->
 
-<hr/>
+<!-- DCConnectivityInStandby_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control the network connectivity state in standby on modern standby-capable systems.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn on the ability for applications and services to prevent the system from sleeping.
+- If you enable this policy setting, network connectivity will be maintained in standby.
 
-If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
+- If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you do not configure this policy setting, users control this setting.
+<!-- DCConnectivityInStandby_2-Description-End -->
 
-<!--/Description-->
+<!-- DCConnectivityInStandby_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCConnectivityInStandby_2-Editable-End -->
+
+<!-- DCConnectivityInStandby_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCConnectivityInStandby_2-DFProperties-End -->
+
+<!-- DCConnectivityInStandby_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on the ability for applications to prevent sleep transitions (on battery)*
--   GP name: *DCCriticalSleepTransitionsDisable_2*
--   GP path: *System\Power Management\Sleep Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCConnectivityInStandby_2 |
+| Friendly Name | Allow network connectivity during connected-standby (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\f15576e8-98b7-4186-b944-eafa664402d9 |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- DCConnectivityInStandby_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dcstartmenubuttonaction-2"></a>**ADMX_Power/DCStartMenuButtonAction_2**  
+<!-- DCConnectivityInStandby_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCConnectivityInStandby_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCConnectivityInStandby_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCCriticalSleepTransitionsDisable_2-Begin -->
+## DCCriticalSleepTransitionsDisable_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCCriticalSleepTransitionsDisable_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCCriticalSleepTransitionsDisable_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCCriticalSleepTransitionsDisable_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCCriticalSleepTransitionsDisable_2
+```
+<!-- DCCriticalSleepTransitionsDisable_2-OmaUri-End -->
 
-<hr/>
+<!-- DCCriticalSleepTransitionsDisable_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn on the ability for applications and services to prevent the system from sleeping.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the action that Windows takes when a user presses the Start menu Power button.
+- If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-If you enable this policy setting, select one of the following actions:
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- DCCriticalSleepTransitionsDisable_2-Description-End -->
 
-- Sleep
-- Hibernate
-- Shut down
+<!-- DCCriticalSleepTransitionsDisable_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCCriticalSleepTransitionsDisable_2-Editable-End -->
 
-If you disable this policy or do not configure this policy setting, users control this setting.
+<!-- DCCriticalSleepTransitionsDisable_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCCriticalSleepTransitionsDisable_2-DFProperties-End -->
+
+<!-- DCCriticalSleepTransitionsDisable_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Select the Start menu Power button action (on battery)*
--   GP name: *DCStartMenuButtonAction_2*
--   GP path: *System\Power Management\Button Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCCriticalSleepTransitionsDisable_2 |
+| Friendly Name | Turn on the ability for applications to prevent sleep transitions (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\B7A27025-E569-46c2-A504-2B96CAD225A1 |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- DCCriticalSleepTransitionsDisable_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-diskacpowerdowntimeout-2"></a>**ADMX_Power/DiskACPowerDownTimeOut_2**  
+<!-- DCCriticalSleepTransitionsDisable_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCCriticalSleepTransitionsDisable_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCCriticalSleepTransitionsDisable_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCStartMenuButtonAction_2-Begin -->
+## DCStartMenuButtonAction_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCStartMenuButtonAction_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCStartMenuButtonAction_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DCStartMenuButtonAction_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DCStartMenuButtonAction_2
+```
+<!-- DCStartMenuButtonAction_2-OmaUri-End -->
 
-<hr/>
+<!-- DCStartMenuButtonAction_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the Start menu Power button.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the period of inactivity before Windows turns off the hard disk.
+- If you enable this policy setting, select one of the following actions:
+-Sleep
+-Hibernate
+-Shut down
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
+- If you disable this policy or do not configure this policy setting, users control this setting.
+<!-- DCStartMenuButtonAction_2-Description-End -->
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- DCStartMenuButtonAction_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DCStartMenuButtonAction_2-Editable-End -->
 
-<!--/Description-->
+<!-- DCStartMenuButtonAction_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCStartMenuButtonAction_2-DFProperties-End -->
+
+<!-- DCStartMenuButtonAction_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn Off the hard disk (plugged in)*
--   GP name: *DiskACPowerDownTimeOut_2*
--   GP path: *System\Power Management\Hard Disk Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCStartMenuButtonAction_2 |
+| Friendly Name | Select the Start menu Power button action (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\A7066653-8D6C-40A8-910E-A1F54B84C7E5 |
+| ADMX File Name | Power.admx |
+<!-- DCStartMenuButtonAction_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-diskdcpowerdowntimeout-2"></a>**ADMX_Power/DiskDCPowerDownTimeOut_2**  
+<!-- DCStartMenuButtonAction_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCStartMenuButtonAction_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DCStartMenuButtonAction_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DiskACPowerDownTimeOut_2-Begin -->
+## DiskACPowerDownTimeOut_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DiskACPowerDownTimeOut_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DiskACPowerDownTimeOut_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DiskACPowerDownTimeOut_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DiskACPowerDownTimeOut_2
+```
+<!-- DiskACPowerDownTimeOut_2-OmaUri-End -->
 
-<hr/>
+<!-- DiskACPowerDownTimeOut_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the period of inactivity before Windows turns off the hard disk.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the period of inactivity before Windows turns off the hard disk.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
+- If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- DiskACPowerDownTimeOut_2-Description-End -->
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- DiskACPowerDownTimeOut_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DiskACPowerDownTimeOut_2-Editable-End -->
 
-<!--/Description-->
+<!-- DiskACPowerDownTimeOut_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DiskACPowerDownTimeOut_2-DFProperties-End -->
+
+<!-- DiskACPowerDownTimeOut_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn Off the hard disk (on battery)*
--   GP name: *DiskDCPowerDownTimeOut_2*
--   GP path: *System\Power Management\Hard Disk Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DiskACPowerDownTimeOut_2 |
+| Friendly Name | Turn Off the hard disk (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Hard Disk Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\6738E2C4-E8A5-4A42-B16A-E040E769756E |
+| ADMX File Name | Power.admx |
+<!-- DiskACPowerDownTimeOut_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-dont-poweroff-aftershutdown"></a>**ADMX_Power/Dont_PowerOff_AfterShutdown**  
+<!-- DiskACPowerDownTimeOut_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DiskACPowerDownTimeOut_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DiskACPowerDownTimeOut_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DiskDCPowerDownTimeOut_2-Begin -->
+## DiskDCPowerDownTimeOut_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DiskDCPowerDownTimeOut_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DiskDCPowerDownTimeOut_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DiskDCPowerDownTimeOut_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/DiskDCPowerDownTimeOut_2
+```
+<!-- DiskDCPowerDownTimeOut_2-OmaUri-End -->
 
-<hr/>
+<!-- DiskDCPowerDownTimeOut_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the period of inactivity before Windows turns off the hard disk.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-This setting does not affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces.
+- If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- DiskDCPowerDownTimeOut_2-Description-End -->
 
-Applications such as UPS software may rely on Windows shutdown behavior.
+<!-- DiskDCPowerDownTimeOut_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DiskDCPowerDownTimeOut_2-Editable-End -->
+
+<!-- DiskDCPowerDownTimeOut_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DiskDCPowerDownTimeOut_2-DFProperties-End -->
+
+<!-- DiskDCPowerDownTimeOut_2-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DiskDCPowerDownTimeOut_2 |
+| Friendly Name | Turn Off the hard disk (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Hard Disk Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\6738E2C4-E8A5-4A42-B16A-E040E769756E |
+| ADMX File Name | Power.admx |
+<!-- DiskDCPowerDownTimeOut_2-AdmxBacked-End -->
+
+<!-- DiskDCPowerDownTimeOut_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DiskDCPowerDownTimeOut_2-Examples-End -->
+
+<!-- DiskDCPowerDownTimeOut_2-End -->
+
+<!-- Dont_PowerOff_AfterShutdown-Begin -->
+## Dont_PowerOff_AfterShutdown
+
+<!-- Dont_PowerOff_AfterShutdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Dont_PowerOff_AfterShutdown-Applicability-End -->
+
+<!-- Dont_PowerOff_AfterShutdown-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/Dont_PowerOff_AfterShutdown
+```
+<!-- Dont_PowerOff_AfterShutdown-OmaUri-End -->
+
+<!-- Dont_PowerOff_AfterShutdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes. This setting does not affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces. Applications such as UPS software may rely on Windows shutdown behavior.
 
 This setting is only applicable when Windows shutdown is initiated by software programs invoking the Windows programming interfaces ExitWindowsEx() or InitiateSystemShutdown().
 
-If you enable this policy setting, the computer system safely shuts down and remains in a powered state, ready for power to be safely removed.
+- If you enable this policy setting, the computer system safely shuts down and remains in a powered state, ready for power to be safely removed.
 
-If you disable or do not configure this policy setting, the computer system safely shuts down to a fully powered-off state.
+- If you disable or do not configure this policy setting, the computer system safely shuts down to a fully powered-off state.
+<!-- Dont_PowerOff_AfterShutdown-Description-End -->
 
-<!--/Description-->
+<!-- Dont_PowerOff_AfterShutdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Dont_PowerOff_AfterShutdown-Editable-End -->
+
+<!-- Dont_PowerOff_AfterShutdown-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Dont_PowerOff_AfterShutdown-DFProperties-End -->
+
+<!-- Dont_PowerOff_AfterShutdown-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not turn off system power after a Windows system shutdown has occurred.*
--   GP name: *Dont_PowerOff_AfterShutdown*
--   GP path: *System*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Dont_PowerOff_AfterShutdown |
+| Friendly Name | Do not turn off system power after a Windows system shutdown has occurred. |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT |
+| Registry Value Name | DontPowerOffAfterShutdown |
+| ADMX File Name | Power.admx |
+<!-- Dont_PowerOff_AfterShutdown-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-enabledesktopslideshowac"></a>**ADMX_Power/EnableDesktopSlideShowAC**  
+<!-- Dont_PowerOff_AfterShutdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Dont_PowerOff_AfterShutdown-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Dont_PowerOff_AfterShutdown-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableDesktopSlideShowAC-Begin -->
+## EnableDesktopSlideShowAC
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableDesktopSlideShowAC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableDesktopSlideShowAC-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableDesktopSlideShowAC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/EnableDesktopSlideShowAC
+```
+<!-- EnableDesktopSlideShowAC-OmaUri-End -->
 
-<hr/>
+<!-- EnableDesktopSlideShowAC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify if Windows should enable the desktop background slideshow.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify if Windows should enable the desktop background slideshow.
+- If you enable this policy setting, desktop background slideshow is enabled.
 
-If you enable this policy setting, desktop background slideshow is enabled.
+- If you disable this policy setting, the desktop background slideshow is disabled.
 
-If you disable this policy setting, the desktop background slideshow is disabled.
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- EnableDesktopSlideShowAC-Description-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- EnableDesktopSlideShowAC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableDesktopSlideShowAC-Editable-End -->
 
-<!--/Description-->
+<!-- EnableDesktopSlideShowAC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableDesktopSlideShowAC-DFProperties-End -->
+
+<!-- EnableDesktopSlideShowAC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on desktop background slideshow (plugged in)*
--   GP name: *EnableDesktopSlideShowAC*
--   GP path: *System\Power Management\Video and Display Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EnableDesktopSlideShowAC |
+| Friendly Name | Turn on desktop background slideshow (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Video and Display Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\309dce9b-bef4-4119-9921-a851fb12f0f4 |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- EnableDesktopSlideShowAC-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-enabledesktopslideshowdc"></a>**ADMX_Power/EnableDesktopSlideShowDC**  
+<!-- EnableDesktopSlideShowAC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableDesktopSlideShowAC-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- EnableDesktopSlideShowAC-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableDesktopSlideShowDC-Begin -->
+## EnableDesktopSlideShowDC
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableDesktopSlideShowDC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableDesktopSlideShowDC-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableDesktopSlideShowDC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/EnableDesktopSlideShowDC
+```
+<!-- EnableDesktopSlideShowDC-OmaUri-End -->
 
-<hr/>
+<!-- EnableDesktopSlideShowDC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify if Windows should enable the desktop background slideshow.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify if Windows should enable the desktop background slideshow.
+- If you enable this policy setting, desktop background slideshow is enabled.
 
-If you enable this policy setting, desktop background slideshow is enabled.
+- If you disable this policy setting, the desktop background slideshow is disabled.
 
-If you disable this policy setting, the desktop background slideshow is disabled.
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- EnableDesktopSlideShowDC-Description-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- EnableDesktopSlideShowDC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableDesktopSlideShowDC-Editable-End -->
 
-<!--/Description-->
+<!-- EnableDesktopSlideShowDC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableDesktopSlideShowDC-DFProperties-End -->
+
+<!-- EnableDesktopSlideShowDC-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn on desktop background slideshow (on battery)*
--   GP name: *EnableDesktopSlideShowDC*
--   GP path: *System\Power Management\Video and Display Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EnableDesktopSlideShowDC |
+| Friendly Name | Turn on desktop background slideshow (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Video and Display Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\309dce9b-bef4-4119-9921-a851fb12f0f4 |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- EnableDesktopSlideShowDC-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-inboxactiveschemeoverride-2"></a>**ADMX_Power/InboxActiveSchemeOverride_2**  
+<!-- EnableDesktopSlideShowDC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableDesktopSlideShowDC-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- EnableDesktopSlideShowDC-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InboxActiveSchemeOverride_2-Begin -->
+## InboxActiveSchemeOverride_2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InboxActiveSchemeOverride_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InboxActiveSchemeOverride_2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- InboxActiveSchemeOverride_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/InboxActiveSchemeOverride_2
+```
+<!-- InboxActiveSchemeOverride_2-OmaUri-End -->
 
-<hr/>
+<!-- InboxActiveSchemeOverride_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the active power plan from a list of default Windows power plans. To specify a custom power plan, use the Custom Active Power Plan setting.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the active power plan from a list of default Windows power plans. To specify a custom power plan, use the Custom Active Power Plan setting.
+- If you enable this policy setting, specify a power plan from the Active Power Plan list.
 
-If you enable this policy setting, specify a power plan from the Active Power Plan list.
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- InboxActiveSchemeOverride_2-Description-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- InboxActiveSchemeOverride_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InboxActiveSchemeOverride_2-Editable-End -->
 
-<!--/Description-->
+<!-- InboxActiveSchemeOverride_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InboxActiveSchemeOverride_2-DFProperties-End -->
+
+<!-- InboxActiveSchemeOverride_2-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Select an active power plan*
--   GP name: *InboxActiveSchemeOverride_2*
--   GP path: *System\Power Management*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | InboxActiveSchemeOverride_2 |
+| Friendly Name | Select an active power plan |
+| Location | Computer Configuration |
+| Path | System > Power Management |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings |
+| ADMX File Name | Power.admx |
+<!-- InboxActiveSchemeOverride_2-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-pw-promptpasswordonresume"></a>**ADMX_Power/PW_PromptPasswordOnResume**  
+<!-- InboxActiveSchemeOverride_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InboxActiveSchemeOverride_2-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- InboxActiveSchemeOverride_2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PowerThrottlingTurnOff-Begin -->
+## PowerThrottlingTurnOff
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PowerThrottlingTurnOff-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PowerThrottlingTurnOff-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PowerThrottlingTurnOff-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/PowerThrottlingTurnOff
+```
+<!-- PowerThrottlingTurnOff-OmaUri-End -->
 
-<hr/>
+<!-- PowerThrottlingTurnOff-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off Power Throttling.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure client computers to lock and prompt for a password when resuming from a hibernate or suspend state.
+- If you enable this policy setting, Power Throttling will be turned off.
 
-If you enable this policy setting, the client computer is locked and prompted for a password when it is resumed from a suspend or hibernate state.
+- If you disable or do not configure this policy setting, users control this setting.
+<!-- PowerThrottlingTurnOff-Description-End -->
 
-If you disable or do not configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
+<!-- PowerThrottlingTurnOff-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PowerThrottlingTurnOff-Editable-End -->
 
-<!--/Description-->
+<!-- PowerThrottlingTurnOff-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PowerThrottlingTurnOff-DFProperties-End -->
+
+<!-- PowerThrottlingTurnOff-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prompt for password on resume from hibernate/suspend*
--   GP name: *PW_PromptPasswordOnResume*
--   GP path: *System\Power Management*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PowerThrottlingTurnOff |
+| Friendly Name | Turn off Power Throttling |
+| Location | Computer Configuration |
+| Path | System > Power Management > Power Throttling Settings |
+| Registry Key Name | System\CurrentControlSet\Control\Power\PowerThrottling |
+| Registry Value Name | PowerThrottlingOff |
+| ADMX File Name | Power.admx |
+<!-- PowerThrottlingTurnOff-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-powerthrottlingturnoff"></a>**ADMX_Power/PowerThrottlingTurnOff**  
+<!-- PowerThrottlingTurnOff-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PowerThrottlingTurnOff-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PowerThrottlingTurnOff-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PW_PromptPasswordOnResume-Begin -->
+## PW_PromptPasswordOnResume
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PW_PromptPasswordOnResume-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PW_PromptPasswordOnResume-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PW_PromptPasswordOnResume-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Power/PW_PromptPasswordOnResume
+```
+<!-- PW_PromptPasswordOnResume-OmaUri-End -->
 
-<hr/>
+<!-- PW_PromptPasswordOnResume-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure client computers to lock and prompt for a password when resuming from a hibernate or suspend state.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off Power Throttling.
+- If you enable this policy setting, the client computer is locked and prompted for a password when it is resumed from a suspend or hibernate state.
 
-If you enable this policy setting, Power Throttling will be turned off.
+- If you disable or do not configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
+<!-- PW_PromptPasswordOnResume-Description-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- PW_PromptPasswordOnResume-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PW_PromptPasswordOnResume-Editable-End -->
 
-<!--/Description-->
+<!-- PW_PromptPasswordOnResume-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PW_PromptPasswordOnResume-DFProperties-End -->
+
+<!-- PW_PromptPasswordOnResume-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off Power Throttling*
--   GP name: *PowerThrottlingTurnOff*
--   GP path: *System\Power Management\Power Throttling Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PW_PromptPasswordOnResume |
+| Friendly Name | Prompt for password on resume from hibernate/suspend |
+| Location | User Configuration |
+| Path | System > Power Management |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System\Power |
+| Registry Value Name | PromptPasswordOnResume |
+| ADMX File Name | Power.admx |
+<!-- PW_PromptPasswordOnResume-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-power-reservebatterynotificationlevel"></a>**ADMX_Power/ReserveBatteryNotificationLevel**  
+<!-- PW_PromptPasswordOnResume-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PW_PromptPasswordOnResume-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- PW_PromptPasswordOnResume-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ReserveBatteryNotificationLevel-Begin -->
+## ReserveBatteryNotificationLevel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ReserveBatteryNotificationLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ReserveBatteryNotificationLevel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ReserveBatteryNotificationLevel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Power/ReserveBatteryNotificationLevel
+```
+<!-- ReserveBatteryNotificationLevel-OmaUri-End -->
 
-<hr/>
+<!-- ReserveBatteryNotificationLevel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the percentage of battery capacity remaining that triggers the reserve power mode.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the percentage of battery capacity remaining that triggers the reserve power mode.
+- If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the reserve power notification.
 
-If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the reserve power notification.
+- If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- ReserveBatteryNotificationLevel-Description-End -->
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+<!-- ReserveBatteryNotificationLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ReserveBatteryNotificationLevel-Editable-End -->
 
-<!--/Description-->
+<!-- ReserveBatteryNotificationLevel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ReserveBatteryNotificationLevel-DFProperties-End -->
+
+<!-- ReserveBatteryNotificationLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Reserve battery notification level*
--   GP name: *ReserveBatteryNotificationLevel*
--   GP path: *System\Power Management\Notification Settings*
--   GP ADMX file name: *Power.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ReserveBatteryNotificationLevel |
+| Friendly Name | Reserve battery notification level |
+| Location | Computer Configuration |
+| Path | System > Power Management > Notification Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\F3C5027D-CD16-4930-AA6B-90DB844A8F00 |
+| ADMX File Name | Power.admx |
+<!-- ReserveBatteryNotificationLevel-AdmxBacked-End -->
 
-Footnotes:
+<!-- ReserveBatteryNotificationLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ReserveBatteryNotificationLevel-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- ReserveBatteryNotificationLevel-End -->
 
-<!--/Policies-->
+<!-- ADMX_Power-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Power-CspMoreInfo-End -->
 
+<!-- ADMX_Power-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,28 +1,16 @@
 ---
-title: Planning Network Access Groups (Windows 10)
+title: Planning Network Access Groups (Windows)
 description: Learn how to implement a network access group for users and devices that can access an isolated server in Windows Defender Firewall with Advanced Security.
-ms.assetid: 56ea1717-1731-4a5d-b277-5a73eb86feb0
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning Network Access Groups
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 A network access group (NAG) is used to identify users and devices that have permission to access an isolated server. The server is configured with firewall rules that allow only network connections that are authenticated as originating from a device, and optionally a user, whose accounts are members of its NAG. A member of the isolated domain can belong to as many NAGs as required.
 
@@ -30,7 +18,7 @@ Minimize the number of NAGs to limit the complexity of the solution. You need on
 
 The NAGs that you create and populate become active by referencing them in the **Users and Computers** tab of the firewall rules in the GPO assigned to the isolated servers. The GPO must also contain connection security rules that require authentication to supply the credentials checked for NAG membership.
 
-For the Woodgrove Bank scenario, access to the devices running SQL Server that support the WGBank application are restricted to the WGBank front-end servers and to approved administrative users logged on to specific authorized administrative devices. They are also only accessed by the approved admin users and the service account that is used to the run the WGBank front end service.
+For the Woodgrove Bank scenario, access to the devices running SQL Server which support the WGBank application are restricted to the WGBank front-end servers and to approved administrative users logged on to specific authorized administrative devices. They're also only accessed by the approved admin users and the service account that is used to the run the WGBank front end service.
 
 | NAG Name | NAG Member Users, Computers, or Groups | Description |
 | - | - | - |

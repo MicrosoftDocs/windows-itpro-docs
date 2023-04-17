@@ -1,28 +1,15 @@
 ---
-title: Smart Card and Remote Desktop Services (Windows 10)
+ms.date: 09/24/2021
+title: Smart Card and Remote Desktop Services (Windows)
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer: ardenw
 ---
-
 # Smart Card and Remote Desktop Services
-
-Applies To: Windows 10, Windows Server 2016
 
 This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 
-The content in this topic applies to the versions of Windows that are designated in the **Applies To** list at the beginning of this topic. In these versions, smart card redirection logic and **WinSCard** API are combined to support multiple redirected sessions into a single process.
+Smart card redirection logic and **WinSCard** API are combined to support multiple redirected sessions into a single process.
 
 Smart card support is required to enable many Remote Desktop Services scenarios. These include:
 
@@ -34,7 +21,7 @@ Smart card support is required to enable many Remote Desktop Services scenarios.
 
 In a Remote Desktop scenario, a user is using a remote server for running services, and the smart card is local to the computer that the user is using. In a smart card sign-in scenario, the smart card service on the remote server redirects to the smart card reader that is connected to the local computer where the user is trying to sign in.
 
-![Smart card service redirects to smart card reader](images/sc-image101.png)
+![Smart card service redirects to smart card reader.](images/sc-image101.png)
 
 **Remote Desktop redirection**
 
@@ -64,7 +51,7 @@ When smart card-enabled single sign-in (SSO) is used for Remote Desktop Services
 
 ### Remote Desktop Services and smart card sign-in
 
-Remote Desktop Services enable users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
+Remote Desktop Services enables users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
 
 In addition, Group Policy settings that are specific to Remote Desktop Services need to be enabled for smart card-based sign-in.
 
@@ -78,7 +65,7 @@ Example:
 
 **certutil -dspublish NTAuthCA** &lt;*CertFile*&gt; **"CN=NTAuthCertificates,CN=Public Key Services,CN=Services,CN=Configuration,DC=engineering,DC=contoso,DC=com"**
 
-For information about this option for the command-line tool, see [-dsPublish](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_dsPublish).
+For information about this option for the command-line tool, see [-dsPublish](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_dsPublish).
 
 ### Remote Desktop Services and smart card sign-in across domains
 
@@ -86,7 +73,7 @@ To enable remote access to resources in an enterprise, the root certificate for 
 
 **certutil -scroots update**
 
-For information about this option for the command-line tool, see [-SCRoots](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_SCRoots).
+For information about this option for the command-line tool, see [-SCRoots](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_SCRoots).
 
 For Remote Desktop Services across domains, the KDC certificate of the RD Session Host server must also be present in the client computer's NTAUTH store. To add the store, run the following command at the command line:
 
@@ -94,9 +81,10 @@ For Remote Desktop Services across domains, the KDC certificate of the RD Sessio
 
 Where &lt;*CertFile*&gt; is the root certificate of the KDC certificate issuer.
 
-For information about this option for the command-line tool, see [-addstore](https://technet.microsoft.com/library/cc732443(v=ws.11).aspx#BKMK_addstore).
+For information about this option for the command-line tool, see [-addstore](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_addstore).
 
-> **Note**&nbsp;&nbsp;If you use the credential SSP on computers running the supported versions of the operating system that are designated in the **Applies To** list at the beginning of this topic: To sign in with a smart card from a computer that is not joined to a domain, the smart card must contain the root certification of the domain controller. A public key infrastructure (PKI) secure channel cannot be established without the root certification of the domain controller.
+> [!NOTE]
+> To sign in with a smart card from a computer that is not joined to a domain, the smart card must contain the root certification of the domain controller. A public key infrastructure (PKI) secure channel cannot be established without the root certification of the domain controller.
 
 Sign-in to Remote Desktop Services across a domain works only if the UPN in the certificate uses the following form: <*ClientName*>@<*DomainDNSName*>
 

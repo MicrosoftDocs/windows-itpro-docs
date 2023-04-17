@@ -1,27 +1,22 @@
 ---
 title: Diagnostic Data Viewer for PowerShell Overview (Windows 10)
 description: Use this article to use the Diagnostic Data Viewer for PowerShell to review the diagnostic data sent to Microsoft by your device.
-keywords: privacy
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 01/17/2018
-ms.reviewer: 
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 12/13/2018
+ms.topic: how-to
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview
 
 **Applies to**
 
--   Windows 10, version 1803 and newer
+-   Windows 11, version 21H2 and later
+-   Windows 10, version 1803 and later
 -   Windows Server, version 1803
 -   Windows Server 2019
 
@@ -45,7 +40,7 @@ Using the Diagnostic Data Viewer for PowerShell requires administrative (elevate
 ### Install the Diagnostic Data Viewer for PowerShell
 
    >[!IMPORTANT]
-   >It is recommended to visit the documentation on [Getting Started](https://docs.microsoft.com/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
+   >It is recommended to visit the documentation on [Getting Started](/powershell/gallery/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
 
 To install the newest version of the Diagnostic Data Viewer PowerShell module, run the following command within an elevated PowerShell session: 
 ```powershell
@@ -64,7 +59,7 @@ Note that this setting does not control whether your device sends diagnostic dat
 
 2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can see your diagnostics data** option.
 
-    ![Location to turn on data viewing](images/ddv-data-viewing.png)
+    ![Location to turn on data viewing.](images/ddv-data-viewing.png)
 
 **To turn on data viewing through PowerShell**
 
@@ -105,9 +100,9 @@ The Diagnostic Data Viewer for PowerShell provides you with the following featur
 
 - **View your diagnostic events.** Running `PS C:\> Get-DiagnosticData`, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
 
-    Each event is displayed as a PowerShell Object. By default each event shows the event name, the time when it was seen by your Windows device, whether the event is [Basic](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization), its [diagnostic event category](#view-diagnostic-event-categories), and a detailed JSON view of the information it contains, which shows the event exactly as it was when sent to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
+    Each event is displayed as a PowerShell Object. By default each event shows the event name, the time when it was seen by your Windows device, whether the event is [Basic](./configure-windows-diagnostic-data-in-your-organization.md), its [diagnostic event category](#view-diagnostic-event-categories), and a detailed JSON view of the information it contains, which shows the event exactly as it was when sent to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
 
-- <a id="view-diagnostic-event-categories" />**View diagnostic event categories.** Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data).  
+- <a id="view-diagnostic-event-categories" />**View diagnostic event categories.** Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](./windows-diagnostic-data.md).  
     
     To view the diagnostic category represented by each numeric identifier and what the category means, you can run the command:
 
@@ -134,7 +129,7 @@ When you're done reviewing your diagnostic data, we recommend turning off data v
 
 2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can see your diagnostics data** option.
 
-    ![Location to turn off data viewing](images/ddv-settings-off.png)
+    ![Location to turn off data viewing.](images/ddv-settings-off.png)
 
 **To turn off data viewing through PowerShell** 
 
@@ -185,4 +180,4 @@ When resetting the size of your data history to a lower value, be sure to turn o
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)
-- [Documentation for Diagnostic Data Viewer for PowerShell](https://docs.microsoft.com/powershell/module/microsoft.diagnosticdataviewer/?view=win10-ps)
+- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer)

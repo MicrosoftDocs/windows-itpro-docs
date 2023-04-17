@@ -1,9476 +1,8079 @@
 ---
-title: Policy CSP - ADMX_UserExperienceVirtualization
-description: Policy CSP - ADMX_UserExperienceVirtualization
-ms.author: dansimp
+title: ADMX_UserExperienceVirtualization Policy CSP
+description: Learn more about the ADMX_UserExperienceVirtualization Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 09/30/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_UserExperienceVirtualization-Begin -->
 # Policy CSP - ADMX_UserExperienceVirtualization
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## ADMX_UserExperienceVirtualization policies  
+<!-- ADMX_UserExperienceVirtualization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_UserExperienceVirtualization-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-calculator">ADMX_UserExperienceVirtualization/Calculator</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-configuresyncmethod">ADMX_UserExperienceVirtualization/ConfigureSyncMethod</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-configurevdi">ADMX_UserExperienceVirtualization/ConfigureVdi</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-contactitdescription">ADMX_UserExperienceVirtualization/ContactITDescription</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-contactiturl">ADMX_UserExperienceVirtualization/ContactITUrl</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-disablewin8sync">ADMX_UserExperienceVirtualization/DisableWin8Sync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-disablewindowsossettings">ADMX_UserExperienceVirtualization/DisableWindowsOSSettings</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-enableuev">ADMX_UserExperienceVirtualization/EnableUEV</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-finance">ADMX_UserExperienceVirtualization/Finance</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-firstusenotificationenabled">ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-games">ADMX_UserExperienceVirtualization/Games</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer8">ADMX_UserExperienceVirtualization/InternetExplorer8</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer9">ADMX_UserExperienceVirtualization/InternetExplorer9</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer10">ADMX_UserExperienceVirtualization/InternetExplorer10</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer11">ADMX_UserExperienceVirtualization/InternetExplorer11</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorercommon">ADMX_UserExperienceVirtualization/InternetExplorerCommon</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-maps">ADMX_UserExperienceVirtualization/Maps</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-maxpackagesizeinbytes">ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010access">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010common">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010infopath">ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010project">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010sharepointdesigner">ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace">ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010word">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013access">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013accessbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013common">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013commonbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013excelbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013infopath">ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013infopathbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013lyncbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013onedriveforbusiness">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013onenotebackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013outlookbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013powerpointbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013project">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013projectbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013publisherbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013sharepointdesigner">ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013uploadcenter">ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013visiobackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013word">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013wordbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016access">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016accessbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016common">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016commonbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016excelbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016lyncbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016onedriveforbusiness">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016onenotebackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016outlookbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016powerpointbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016project">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016projectbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016publisherbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016uploadcenter">ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016visiobackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016word">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016wordbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365access2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365access2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365common2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365common2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365excel2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365excel2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365infopath2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365lync2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365lync2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365onenote2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365onenote2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365outlook2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365outlook2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365powerpoint2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365powerpoint2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365project2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365project2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365publisher2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365publisher2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365visio2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365visio2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365word2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365word2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-music">ADMX_UserExperienceVirtualization/Music</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-news">ADMX_UserExperienceVirtualization/News</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-notepad">ADMX_UserExperienceVirtualization/Notepad</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-reader">ADMX_UserExperienceVirtualization/Reader</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-repositorytimeout">ADMX_UserExperienceVirtualization/RepositoryTimeout</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-settingsstoragepath">ADMX_UserExperienceVirtualization/SettingsStoragePath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-settingstemplatecatalogpath">ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-sports">ADMX_UserExperienceVirtualization/Sports</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncenabled">ADMX_UserExperienceVirtualization/SyncEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncovermeterednetwork">ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming">ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncproviderpingenabled">ADMX_UserExperienceVirtualization/SyncProviderPingEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncunlistedwindows8apps">ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-travel">ADMX_UserExperienceVirtualization/Travel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-trayiconenabled">ADMX_UserExperienceVirtualization/TrayIconEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-video">ADMX_UserExperienceVirtualization/Video</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-weather">ADMX_UserExperienceVirtualization/Weather</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-wordpad">ADMX_UserExperienceVirtualization/Wordpad</a>
-  </dd>
-</dl>
+<!-- Calculator-Begin -->
+## Calculator
 
+<!-- Calculator-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Calculator-Applicability-End -->
 
-<hr/>
+<!-- Calculator-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Calculator
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-calculator"></a>**ADMX_UserExperienceVirtualization/Calculator**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Calculator
+```
+<!-- Calculator-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings of Calculator.
-
+<!-- Calculator-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Calculator.
 By default, the user settings of Calculator synchronize between computers. Use the policy setting to prevent the user settings of Calculator from synchronization between computers.
 
-If you enable this policy setting, the Calculator user settings continue to synchronize. 
+- If you enable this policy setting, the Calculator user settings continue to synchronize.
+- If you disable this policy setting, Calculator user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Calculator-Description-End -->
 
-If you disable this policy setting, Calculator user settings are excluded from the synchronization settings.
+<!-- Calculator-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Calculator-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Calculator-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Calculator-DFProperties-End -->
+
+<!-- Calculator-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Calculator*
--   GP name: *Calculator*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Calculator |
+| Friendly Name | Calculator |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftCalculator6 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Calculator-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-configuresyncmethod"></a>**ADMX_UserExperienceVirtualization/ConfigureSyncMethod**  
+<!-- Calculator-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Calculator-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Calculator-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureSyncMethod-Begin -->
+## ConfigureSyncMethod
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureSyncMethod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigureSyncMethod-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- ConfigureSyncMethod-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureSyncMethod
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureSyncMethod
+```
+<!-- ConfigureSyncMethod-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the sync provider used by User Experience Virtualization (UE-V) to sync settings between users’ computers. 
-
-With Sync Method set to ”SyncProvider,” the UE-V Agent uses a built-in sync provider to keep user settings synchronized between the computer and the settings storage location. This is the default value. You can disable the sync provider on computers that never go offline and are always connected to the settings storage location.
-
-When SyncMethod is set to “None,” the UE-V Agent uses no sync provider. Settings are written directly to the settings storage location rather than being cached to sync later. 
-
-Set SyncMethod to “External” when an external synchronization engine is being deployed for settings sync. This could use OneDrive, Work Folders, SharePoint or any other engine that uses a local folder to synchronize data between users’ computers. In this mode, UE-V writes settings data to the local folder specified in the settings storage path. 
-
-These settings are then synchronized to other computers by an external synchronization engine. UE-V has no control over this synchronization. It only reads and writes the settings data when the normal UE-V triggers take place.
+<!-- ConfigureSyncMethod-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the sync provider used by User Experience Virtualization (UE-V) to sync settings between users' computers. With Sync Method set to "SyncProvider," the UE-V Agent uses a built-in sync provider to keep user settings synchronized between the computer and the settings storage location. This is the default value. You can disable the sync provider on computers that never go offline and are always connected to the settings storage location.
+When SyncMethod is set to "None," the UE-V Agent uses no sync provider. Settings are written directly to the settings storage location rather than being cached to sync later.
+Set SyncMethod to "External" when an external synchronization engine is being deployed for settings sync. This could use OneDrive, Work Folders, SharePoint or any other engine that uses a local folder to synchronize data between users' computers. In this mode, UE-V writes settings data to the local folder specified in the settings storage path. These settings are then synchronized to other computers by an external synchronization engine. UE-V has no control over this synchronization. It only reads and writes the settings data when the normal UE-V triggers take place.
 With notifications enabled, UE-V users receive a message when the settings sync is delayed. The notification delay policy setting defines the delay before a notification appears.
+- If you disable this policy setting, the sync provider is used to synchronize settings between computers and the settings storage location.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- ConfigureSyncMethod-Description-End -->
 
-If you disable this policy setting, the sync provider is used to synchronize settings  between computers and the settings storage location.
+<!-- ConfigureSyncMethod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSyncMethod-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- ConfigureSyncMethod-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureSyncMethod-DFProperties-End -->
+
+<!-- ConfigureSyncMethod-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Configure Sync Method*
--   GP name: *ConfigureSyncMethod*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ConfigureSyncMethod |
+| Friendly Name | Configure Sync Method |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ConfigureSyncMethod-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-configurevdi"></a>**ADMX_UserExperienceVirtualization/ConfigureVdi**  
+<!-- ConfigureSyncMethod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSyncMethod-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ConfigureSyncMethod-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureVdi-Begin -->
+## ConfigureVdi
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureVdi-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigureVdi-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- ConfigureVdi-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureVdi
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureVdi
+```
+<!-- ConfigureVdi-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of User Experience Virtualization (UE-V) rollback information for computers running in a non-persistent, pooled VDI environment. 
+<!-- ConfigureVdi-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of User Experience Virtualization (UE-V) rollback information for computers running in a non-persistent, pooled VDI environment. UE-V settings rollback data and checkpoints are normally stored only on the local computer. With this policy setting enabled, the rollback information is copied to the settings storage location when the user logs off or shuts down their VDI session. Enable this setting to register a VDI-specific settings location template and restore data on computers in pooled VDI environments that reset to a clean state on logout. With this policy enabled you can roll settings back to the state when UE-V was installed or to "last-known-good" configurations. Only enable this policy setting on computers running in a non-persistent VDI environment. The VDI Collection Name defines the name of the virtual desktop collection containing the virtual computers.
 
-UE-V settings rollback data and checkpoints are normally stored only on the local computer. With this policy setting enabled, the rollback information is copied to the settings storage location when the user logs off or shuts down their VDI session. 
+- If you enable this policy setting, the UE-V rollback state is copied to the settings storage location on logout and restored on login.
+- If you disable this policy setting, no UE-V rollback state is copied to the settings storage location.
+- If you do not configure this policy, no UE-V rollback state is copied to the settings storage location.
+<!-- ConfigureVdi-Description-End -->
 
-Enable this setting to register a VDI-specific settings location template and restore data on computers in pooled VDI environments that reset to a clean state on logout. With this policy enabled you can roll settings back to the state when UE-V was installed or to “last-known-good” configurations. Only enable this policy setting on computers running in a non-persistent VDI environment. The VDI Collection Name defines the name of the virtual desktop collection containing the virtual computers. 
+<!-- ConfigureVdi-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureVdi-Editable-End -->
 
-If you enable this policy setting, the UE-V rollback state is copied to the settings storage location on logout and restored on login.
+<!-- ConfigureVdi-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this policy setting, no UE-V rollback state is copied to the settings storage location.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureVdi-DFProperties-End -->
 
-If you do not configure this policy, no UE-V rollback state is copied to the settings storage location.
-<!--/Description-->
+<!-- ConfigureVdi-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *VDI Configuration*
--   GP name: *ConfigureVdi*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ConfigureVdi |
+| Friendly Name | VDI Configuration |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\WindowsSettings |
+| Registry Value Name | VdiState |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ConfigureVdi-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-contactitdescription"></a>**ADMX_UserExperienceVirtualization/ContactITDescription**  
+<!-- ConfigureVdi-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureVdi-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ConfigureVdi-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ContactITDescription-Begin -->
+## ContactITDescription
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ContactITDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ContactITDescription-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ContactITDescription-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ContactITDescription
+```
+<!-- ContactITDescription-OmaUri-End -->
 
-<hr/>
+<!-- ContactITDescription-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the text of the Contact IT URL hyperlink in the Company Settings Center.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the text of the Contact IT URL hyperlink in the Company Settings Center.
+- If you enable this policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.
+- If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- ContactITDescription-Description-End -->
 
-If you enable this policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.
+<!-- ContactITDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ContactITDescription-Editable-End -->
 
-If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
+<!-- ContactITDescription-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ContactITDescription-DFProperties-End -->
 
-<!--/Description-->
+<!-- ContactITDescription-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Contact IT Link Text*
--   GP name: *ContactITDescription*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ContactITDescription |
+| Friendly Name | Contact IT Link Text |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ContactITDescription-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-contactiturl"></a>**ADMX_UserExperienceVirtualization/ContactITUrl**  
+<!-- ContactITDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ContactITDescription-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ContactITDescription-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ContactITUrl-Begin -->
+## ContactITUrl
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ContactITUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ContactITUrl-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ContactITUrl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ContactITUrl
+```
+<!-- ContactITUrl-OmaUri-End -->
 
-<hr/>
+<!-- ContactITUrl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the URL for the Contact IT link in the Company Settings Center.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the URL for the Contact IT link in the Company Settings Center.
+- If you enable this policy setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol such as http or mailto.
+- If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- ContactITUrl-Description-End -->
 
-If you enable this policy setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol such as http or mailto. 
+<!-- ContactITUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ContactITUrl-Editable-End -->
 
-If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
+<!-- ContactITUrl-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ContactITUrl-DFProperties-End -->
+
+<!-- ContactITUrl-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Contact IT URL*
--   GP name: *ContactITUrl*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ContactITUrl |
+| Friendly Name | Contact IT URL |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ContactITUrl-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-disablewin8sync"></a>**ADMX_UserExperienceVirtualization/DisableWin8Sync**  
+<!-- ContactITUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ContactITUrl-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- ContactITUrl-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableWin8Sync-Begin -->
+## DisableWin8Sync
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWin8Sync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWin8Sync-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- DisableWin8Sync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWin8Sync
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWin8Sync
+```
+<!-- DisableWin8Sync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings for Windows apps.
+<!-- DisableWin8Sync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings for Windows apps.
+By default, the UE-V Agent synchronizes settings for Windows apps between the computer and the settings storage location.
 
-By default, the UE-V Agent synchronizes settings for Windows apps between the computer and the settings storage location.  
-
-If you enable this policy setting, the UE-V Agent will not synchronize settings for Windows apps.
-
-If you disable this policy setting, the UE-V Agent will synchronize settings for Windows apps. 
-
-If you do not configure this policy setting, any defined values are deleted.
+- If you enable this policy setting, the UE-V Agent will not synchronize settings for Windows apps.
+- If you disable this policy setting, the UE-V Agent will synchronize settings for Windows apps.
+- If you do not configure this policy setting, any defined values are deleted.
 
 > [!NOTE]
 > If the user connects their Microsoft account for their computer then the UE-V Agent will not synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
+<!-- DisableWin8Sync-Description-End -->
 
-<!--/Description-->
+<!-- DisableWin8Sync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWin8Sync-Editable-End -->
+
+<!-- DisableWin8Sync-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWin8Sync-DFProperties-End -->
+
+<!-- DisableWin8Sync-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not synchronize Windows Apps*
--   GP name: *DisableWin8Sync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableWin8Sync |
+| Friendly Name | Do not synchronize Windows Apps |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | DontSyncWindows8AppSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- DisableWin8Sync-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-disablewindowsossettings"></a>**ADMX_UserExperienceVirtualization/DisableWindowsOSSettings**  
+<!-- DisableWin8Sync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWin8Sync-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableWin8Sync-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableWindowsOSSettings-Begin -->
+## DisableWindowsOSSettings
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWindowsOSSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWindowsOSSettings-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- DisableWindowsOSSettings-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWindowsOSSettings
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWindowsOSSettings
+```
+<!-- DisableWindowsOSSettings-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of Windows settings between computers. Certain Windows settings will synchronize between computers by default. These settings include Windows themes, Windows desktop settings, Ease of Access settings, and network printers. Use this policy setting to specify which Windows settings synchronize between computers. You can also use these settings to enable synchronization of users' sign-in information for certain apps, networks, and certificates.
+<!-- DisableWindowsOSSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of Windows settings between computers.
+Certain Windows settings will synchronize between computers by default. These settings include Windows themes, Windows desktop settings, Ease of Access settings, and network printers. Use this policy setting to specify which Windows settings synchronize between computers. You can also use these settings to enable synchronization of users' sign-in information for certain apps, networks, and certificates.
 
-If you enable this policy setting, only the selected Windows settings synchronize. Unselected Windows settings are excluded from settings synchronization.
+- If you enable this policy setting, only the selected Windows settings synchronize. Unselected Windows settings are excluded from settings synchronization.
+- If you disable this policy setting, all Windows Settings are excluded from the settings synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- DisableWindowsOSSettings-Description-End -->
 
-If you disable this policy setting, all Windows Settings are excluded from the settings synchronization.
+<!-- DisableWindowsOSSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWindowsOSSettings-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- DisableWindowsOSSettings-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWindowsOSSettings-DFProperties-End -->
+
+<!-- DisableWindowsOSSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Synchronize Windows settings*
--   GP name: *DisableWindowsOSSettings*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsOSSettings |
+| Friendly Name | Synchronize Windows settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\WindowsSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- DisableWindowsOSSettings-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-enableuev"></a>**ADMX_UserExperienceVirtualization/EnableUEV**  
+<!-- DisableWindowsOSSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWindowsOSSettings-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DisableWindowsOSSettings-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableUEV-Begin -->
+## EnableUEV
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableUEV-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableUEV-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableUEV-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/EnableUEV
+```
+<!-- EnableUEV-OmaUri-End -->
 
-<hr/>
+<!-- EnableUEV-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to enable or disable User Experience Virtualization (UE-V) feature. Reboot is needed for enable to take effect. With Auto-register inbox templates enabled, the UE-V inbox templates such as Office 2016 will be automatically registered when the UE-V Service is enabled. If this option is changed, it will only take effect when UE-V service is re-enabled.
+<!-- EnableUEV-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to enable or disable User Experience Virtualization (UE-V) feature. 
+<!-- EnableUEV-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableUEV-Editable-End -->
 
-Reboot is needed for enable to take effect. With Auto-register inbox templates enabled, the UE-V inbox templates such as Office 2016 will be automatically registered when the UE-V Service is enabled. If this option is changed, it will only take effect when UE-V service is re-enabled.
+<!-- EnableUEV-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableUEV-DFProperties-End -->
+
+<!-- EnableUEV-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Enable UEV*
--   GP name: *EnableUEV*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EnableUEV |
+| Friendly Name | Enable UEV |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent |
+| Registry Value Name | Enabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- EnableUEV-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-finance"></a>**ADMX_UserExperienceVirtualization/Finance**  
+<!-- EnableUEV-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableUEV-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- EnableUEV-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Finance-Begin -->
+## Finance
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Finance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Finance-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Finance-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Finance
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Finance
+```
+<!-- Finance-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Finance app. By default, the user settings of Finance sync between computers. Use the policy setting to prevent the user settings of Finance from synchronizing between computers.
+<!-- Finance-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Finance app.
+By default, the user settings of Finance sync between computers. Use the policy setting to prevent the user settings of Finance from synchronizing between computers.
 
-If you enable this policy setting, Finance user settings continue to sync.
+- If you enable this policy setting, Finance user settings continue to sync.
+- If you disable this policy setting, Finance user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Finance-Description-End -->
 
-If you disable this policy setting, Finance user settings are excluded from synchronization.
+<!-- Finance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Finance-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Finance-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Finance-DFProperties-End -->
+
+<!-- Finance-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Finance*
--   GP name: *Finance*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Finance |
+| Friendly Name | Finance |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingFinance_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Finance-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-firstusenotificationenabled"></a>**ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled**  
+<!-- Finance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Finance-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Finance-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FirstUseNotificationEnabled-Begin -->
+## FirstUseNotificationEnabled
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FirstUseNotificationEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FirstUseNotificationEnabled-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- FirstUseNotificationEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled
+```
+<!-- FirstUseNotificationEnabled-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting enables a notification in the system tray that appears when the User Experience Virtualization (UE-V) Agent runs for the first time. By default, a notification informs users that Company Settings Center, the user-facing name for the UE-V Agent, now helps to synchronize settings between their work computers.
-
+<!-- FirstUseNotificationEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables a notification in the system tray that appears when the User Experience Virtualization (UE-V) Agent runs for the first time.
+By default, a notification informs users that Company Settings Center, the user-facing name for the UE-V Agent, now helps to synchronize settings between their work computers.
 With this setting enabled, the notification appears the first time that the UE-V Agent runs.
-
 With this setting disabled, no notification appears.
-
 If you do not configure this policy setting, any defined values are deleted.
+<!-- FirstUseNotificationEnabled-Description-End -->
 
-<!--/Description-->
+<!-- FirstUseNotificationEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FirstUseNotificationEnabled-Editable-End -->
+
+<!-- FirstUseNotificationEnabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FirstUseNotificationEnabled-DFProperties-End -->
+
+<!-- FirstUseNotificationEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *First Use Notification*
--   GP name: *FirstUseNotificationEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | FirstUseNotificationEnabled |
+| Friendly Name | First Use Notification |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | FirstUseNotificationEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- FirstUseNotificationEnabled-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-games"></a>**ADMX_UserExperienceVirtualization/Games**  
+<!-- FirstUseNotificationEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FirstUseNotificationEnabled-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- FirstUseNotificationEnabled-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Games-Begin -->
+## Games
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Games-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Games-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Games-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Games
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Games
+```
+<!-- Games-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Games app. By default, the user settings of Games sync between computers. Use the policy setting to prevent the user settings of Games from synchronizing between computers.
+<!-- Games-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Games app.
+By default, the user settings of Games sync between computers. Use the policy setting to prevent the user settings of Games from synchronizing between computers.
 
-If you enable this policy setting, Games user settings continue to sync.
+- If you enable this policy setting, Games user settings continue to sync.
+- If you disable this policy setting, Games user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Games-Description-End -->
 
-If you disable this policy setting, Games user settings are excluded from synchronization.
+<!-- Games-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Games-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Games-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Games-DFProperties-End -->
+
+<!-- Games-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Games*
--   GP name: *Games*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Games |
+| Friendly Name | Games |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.XboxLIVEGames_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Games-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer8"></a>**ADMX_UserExperienceVirtualization/InternetExplorer8**  
+<!-- Games-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Games-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Games-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorer10-Begin -->
+## InternetExplorer10
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InternetExplorer10-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer10-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- InternetExplorer10-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer10
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer10
+```
+<!-- InternetExplorer10-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Internet Explorer 8.
+<!-- InternetExplorer10-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Internet Explorer 10.
+By default, the user settings of Internet Explorer 10 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 10 from synchronization between computers.
 
-By default, the user settings of Internet Explorer 8 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 8 from synchronization between computers. 
+- If you enable this policy setting, the Internet Explorer 10 user settings continue to synchronize.
+- If you disable this policy setting, Internet Explorer 10 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer10-Description-End -->
 
-If you enable this policy setting, the Internet Explorer 8 user settings continue to synchronize. 
+<!-- InternetExplorer10-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer10-Editable-End -->
 
-If you disable this policy setting, Internet Explorer 8 user settings are excluded from the synchronization settings.
+<!-- InternetExplorer10-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer10-DFProperties-End -->
 
-<!--/Description-->
+<!-- InternetExplorer10-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Internet Explorer 8*
--   GP name: *InternetExplorer8*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer10 |
+| Friendly Name | Internet Explorer 10 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version10 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer10-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer9"></a>**ADMX_UserExperienceVirtualization/InternetExplorer9**  
+<!-- InternetExplorer10-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer10-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- InternetExplorer10-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorer11-Begin -->
+## InternetExplorer11
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InternetExplorer11-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer11-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- InternetExplorer11-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer11
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer11
+```
+<!-- InternetExplorer11-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Internet Explorer 9. By default, the user settings of Internet Explorer 9 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 9 from synchronization between computers.
- 
-If you enable this policy setting, the Internet Explorer 9 user settings continue to synchronize. 
+<!-- InternetExplorer11-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Internet Explorer 11.
+By default, the user settings of Internet Explorer 11 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 11 from synchronization between computers.
 
-If you disable this policy setting, Internet Explorer 9 user settings are excluded from the synchronization settings.
+- If you enable this policy setting, the Internet Explorer 11 user settings continue to synchronize.
+- If you disable this policy setting, Internet Explorer 11 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer11-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer11-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer11-Editable-End -->
 
-<!--/Description-->
+<!-- InternetExplorer11-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer11-DFProperties-End -->
+
+<!-- InternetExplorer11-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Internet Explorer 9*
--   GP name: *InternetExplorer9*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer11 |
+| Friendly Name | Internet Explorer 11 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version11 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer11-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer10"></a>**ADMX_UserExperienceVirtualization/InternetExplorer10**  
+<!-- InternetExplorer11-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer11-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- InternetExplorer11-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorer8-Begin -->
+## InternetExplorer8
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InternetExplorer8-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer8-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- InternetExplorer8-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer8
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer8
+```
+<!-- InternetExplorer8-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings of Internet Explorer 10. By default, the user settings of Internet Explorer 10 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 10 from synchronization between computers.
+<!-- InternetExplorer8-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Internet Explorer 8.
+By default, the user settings of Internet Explorer 8 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 8 from synchronization between computers.
 
-If you enable this policy setting, the Internet Explorer 10 user settings continue to synchronize. 
+- If you enable this policy setting, the Internet Explorer 8 user settings continue to synchronize.
+- If you disable this policy setting, Internet Explorer 8 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer8-Description-End -->
 
-If you disable this policy setting, Internet Explorer 10 user settings are excluded from the synchronization settings.
+<!-- InternetExplorer8-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer8-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer8-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer8-DFProperties-End -->
+
+<!-- InternetExplorer8-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Internet Explorer 10*
--   GP name: *InternetExplorer10*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer8 |
+| Friendly Name | Internet Explorer 8 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version8 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer8-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer11"></a>**ADMX_UserExperienceVirtualization/InternetExplorer11**  
+<!-- InternetExplorer8-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer8-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- InternetExplorer8-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorer9-Begin -->
+## InternetExplorer9
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InternetExplorer9-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer9-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- InternetExplorer9-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer9
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer9
+```
+<!-- InternetExplorer9-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings of Internet Explorer 11. By default, the user settings of Internet Explorer 11 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 11 from synchronization between computers.
+<!-- InternetExplorer9-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Internet Explorer 9.
+By default, the user settings of Internet Explorer 9 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 9 from synchronization between computers.
 
-If you enable this policy setting, the Internet Explorer 11 user settings continue to synchronize.
+- If you enable this policy setting, the Internet Explorer 9 user settings continue to synchronize.
+- If you disable this policy setting, Internet Explorer 9 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer9-Description-End -->
 
-If you disable this policy setting, Internet Explorer 11 user settings are excluded from the synchronization settings.
+<!-- InternetExplorer9-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer9-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer9-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer9-DFProperties-End -->
+
+<!-- InternetExplorer9-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Internet Explorer 11*
--   GP name: *InternetExplorer11*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer9 |
+| Friendly Name | Internet Explorer 9 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version9 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer9-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorercommon"></a>**ADMX_UserExperienceVirtualization/InternetExplorerCommon**  
+<!-- InternetExplorer9-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer9-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- InternetExplorer9-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorerCommon-Begin -->
+## InternetExplorerCommon
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InternetExplorerCommon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorerCommon-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- InternetExplorerCommon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorerCommon
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorerCommon
+```
+<!-- InternetExplorerCommon-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings which are common between the versions of Internet Explorer.
+<!-- InternetExplorerCommon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the versions of Internet Explorer.
 By default, the user settings which are common between the versions of Internet Explorer synchronize between computers. Use the policy setting to prevent the user settings of Internet Explorer from synchronization between computers.
 
-If you enable this policy setting, the user settings which are common between the versions of Internet Explorer continue to synchronize.
+- If you enable this policy setting, the user settings which are common between the versions of Internet Explorer continue to synchronize.
+- If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting should not be disabled.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorerCommon-Description-End -->
 
-If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting should not be disabled.
+<!-- InternetExplorerCommon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorerCommon-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorerCommon-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorerCommon-DFProperties-End -->
+
+<!-- InternetExplorerCommon-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Internet Explorer Common Settings*
--   GP name: *InternetExplorerCommon*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorerCommon |
+| Friendly Name | Internet Explorer Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorerCommon-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-maps"></a>**ADMX_UserExperienceVirtualization/Maps**  
+<!-- InternetExplorerCommon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorerCommon-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- InternetExplorerCommon-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Maps-Begin -->
+## Maps
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Maps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Maps-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Maps-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Maps
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Maps
+```
+<!-- Maps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Maps app. By default, the user settings of Maps sync between computers. Use the policy setting to prevent the user settings of Maps from synchronizing between computers.
+<!-- Maps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Maps app.
+By default, the user settings of Maps sync between computers. Use the policy setting to prevent the user settings of Maps from synchronizing between computers.
 
-If you enable this policy setting, Maps user settings continue to sync.
+- If you enable this policy setting, Maps user settings continue to sync.
+- If you disable this policy setting, Maps user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Maps-Description-End -->
 
-If you disable this policy setting, Maps user settings are excluded from synchronization.
+<!-- Maps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Maps-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Maps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Maps-DFProperties-End -->
+
+<!-- Maps-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Maps*
--   GP name: *Maps*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Maps |
+| Friendly Name | Maps |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingMaps_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Maps-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-maxpackagesizeinbytes"></a>**ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes**  
+<!-- Maps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Maps-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Maps-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MaxPackageSizeInBytes-Begin -->
+## MaxPackageSizeInBytes
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MaxPackageSizeInBytes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MaxPackageSizeInBytes-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MaxPackageSizeInBytes-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes
+```
+<!-- MaxPackageSizeInBytes-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent does not report information about package file size. 
+<!-- MaxPackageSizeInBytes-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent does not report information about package file size.
 
-If you enable this policy setting, specify the threshold file size in bytes. When the settings package file exceeds this threshold the UE-V Agent will write a warning event to the event log.
+- If you enable this policy setting, specify the threshold file size in bytes. When the settings package file exceeds this threshold the UE-V Agent will write a warning event to the event log.
+- If you disable or do not configure this policy setting, no event is written to the event log to report settings package size.
+<!-- MaxPackageSizeInBytes-Description-End -->
 
-If you disable or do not configure this policy setting, no event is written to the event log to report settings package size.
+<!-- MaxPackageSizeInBytes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MaxPackageSizeInBytes-Editable-End -->
 
-<!--/Description-->
+<!-- MaxPackageSizeInBytes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MaxPackageSizeInBytes-DFProperties-End -->
+
+<!-- MaxPackageSizeInBytes-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Settings package size warning threshold*
--   GP name: *MaxPackageSizeInBytes*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MaxPackageSizeInBytes |
+| Friendly Name | Settings package size warning threshold |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MaxPackageSizeInBytes-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010access"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access**  
+<!-- MaxPackageSizeInBytes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MaxPackageSizeInBytes-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MaxPackageSizeInBytes-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Access-Begin -->
+## MicrosoftOffice2010Access
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Access-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Access-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access
+```
+<!-- MicrosoftOffice2010Access-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Access 2010. By default, the user settings of Microsoft Access 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2010 from synchronization between computers. 
+<!-- MicrosoftOffice2010Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Access 2010.
+By default, the user settings of Microsoft Access 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Access 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Access 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Access 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Access-Description-End -->
 
-If you disable this policy setting, Microsoft Access 2010 user settings are excluded from the synchronization settings. 
+<!-- MicrosoftOffice2010Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Access-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Access-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Access-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Access-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Access 2010*
--   GP name: *MicrosoftOffice2010Access*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Access |
+| Friendly Name | Microsoft Access 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Access-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010common"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common**  
+<!-- MicrosoftOffice2010Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Access-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Access-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Common-Begin -->
+## MicrosoftOffice2010Common
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Common-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Common-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Common-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common
+```
+<!-- MicrosoftOffice2010Common-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2010 applications. By default, the user settings which are common between the Microsoft Office Suite 2010 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2010 applications from synchronization between computers. 
+<!-- MicrosoftOffice2010Common-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2010 applications.
+By default, the user settings which are common between the Microsoft Office Suite 2010 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2010 applications from synchronization between computers.
 
-If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications continue to synchronize.
+- If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications continue to synchronize.
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting should not be disabled
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Common-Description-End -->
 
-If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting should not be disabled 
+<!-- MicrosoftOffice2010Common-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Common-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Common-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Common-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Common-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 2010 Common Settings*
--   GP name: *MicrosoftOffice2010Common*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Common |
+| Friendly Name | Microsoft Office 2010 Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Common-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010excel"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel**  
+<!-- MicrosoftOffice2010Common-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Common-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Common-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Excel-Begin -->
+## MicrosoftOffice2010Excel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Excel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Excel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Excel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel
+```
+<!-- MicrosoftOffice2010Excel-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Excel 2010. By default, the user settings of Microsoft Excel 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2010 from synchronization between computers. 
+<!-- MicrosoftOffice2010Excel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Excel 2010.
+By default, the user settings of Microsoft Excel 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Excel 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Excel 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Excel 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Excel-Description-End -->
 
-If you disable this policy setting, Microsoft Excel 2010 user settings are excluded from the synchronization settings. 
+<!-- MicrosoftOffice2010Excel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Excel-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010Excel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Excel-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Excel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Excel 2010*
--   GP name: *MicrosoftOffice2010Excel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Excel |
+| Friendly Name | Microsoft Excel 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Excel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010infopath"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath**  
+<!-- MicrosoftOffice2010Excel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Excel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Excel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010InfoPath-Begin -->
+## MicrosoftOffice2010InfoPath
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010InfoPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010InfoPath-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010InfoPath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath
+```
+<!-- MicrosoftOffice2010InfoPath-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft InfoPath 2010. By default, the user settings of Microsoft InfoPath 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010InfoPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft InfoPath 2010.
+By default, the user settings of Microsoft InfoPath 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft InfoPath 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft InfoPath 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft InfoPath 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010InfoPath-Description-End -->
 
-If you disable this policy setting, Microsoft InfoPath 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010InfoPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010InfoPath-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010InfoPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010InfoPath-DFProperties-End -->
+
+<!-- MicrosoftOffice2010InfoPath-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft InfoPath 2010*
--   GP name: *MicrosoftOffice2010InfoPath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010InfoPath |
+| Friendly Name | Microsoft InfoPath 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010InfoPath-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010lync"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync**  
+<!-- MicrosoftOffice2010InfoPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010InfoPath-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010InfoPath-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Lync-Begin -->
+## MicrosoftOffice2010Lync
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Lync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Lync-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Lync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync
+```
+<!-- MicrosoftOffice2010Lync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Lync 2010. By default, the user settings of Microsoft Lync 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2010 from synchronization between computers. 
+<!-- MicrosoftOffice2010Lync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Lync 2010.
+By default, the user settings of Microsoft Lync 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Lync 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Lync 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Lync 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Lync-Description-End -->
 
-If you disable this policy setting, Microsoft Lync 2010 user settings are excluded from the synchronization settings. 
+<!-- MicrosoftOffice2010Lync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Lync-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Lync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Lync-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Lync-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Lync 2010*
--   GP name: *MicrosoftOffice2010Lync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Lync |
+| Friendly Name | Microsoft Lync 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftLync2010 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Lync-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010onenote"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote**  
+<!-- MicrosoftOffice2010Lync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Lync-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Lync-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010OneNote-Begin -->
+## MicrosoftOffice2010OneNote
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010OneNote-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010OneNote-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010OneNote-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote
+```
+<!-- MicrosoftOffice2010OneNote-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft OneNote 2010. By default, the user settings of Microsoft OneNote 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010OneNote-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft OneNote 2010.
+By default, the user settings of Microsoft OneNote 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft OneNote 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft OneNote 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft OneNote 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010OneNote-Description-End -->
 
-If you disable this policy setting, Microsoft OneNote 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010OneNote-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010OneNote-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010OneNote-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010OneNote-DFProperties-End -->
+
+<!-- MicrosoftOffice2010OneNote-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft OneNote 2010*
--   GP name: *MicrosoftOffice2010OneNote*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010OneNote |
+| Friendly Name | Microsoft OneNote 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010OneNote-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010outlook"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook**  
+<!-- MicrosoftOffice2010OneNote-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010OneNote-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010OneNote-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Outlook-Begin -->
+## MicrosoftOffice2010Outlook
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Outlook-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Outlook-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Outlook-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook
+```
+<!-- MicrosoftOffice2010Outlook-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Outlook 2010. By default, the user settings of Microsoft Outlook 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Outlook-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Outlook 2010.
+By default, the user settings of Microsoft Outlook 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Outlook 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Outlook 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Outlook 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Outlook-Description-End -->
 
-If you disable this policy setting, Microsoft Outlook 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Outlook-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Outlook-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Outlook-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Outlook-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Outlook-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Outlook 2010*
--   GP name: *MicrosoftOffice2010Outlook*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Outlook |
+| Friendly Name | Microsoft Outlook 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Outlook-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010powerpoint"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint**  
+<!-- MicrosoftOffice2010Outlook-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Outlook-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Outlook-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010PowerPoint-Begin -->
+## MicrosoftOffice2010PowerPoint
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010PowerPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010PowerPoint-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010PowerPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint
+```
+<!-- MicrosoftOffice2010PowerPoint-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2010. By default, the user settings of Microsoft PowerPoint 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010PowerPoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2010.
+By default, the user settings of Microsoft PowerPoint 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft PowerPoint 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft PowerPoint 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft PowerPoint 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010PowerPoint-Description-End -->
 
-If you disable this policy setting, Microsoft PowerPoint 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010PowerPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010PowerPoint-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010PowerPoint-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010PowerPoint-DFProperties-End -->
+
+<!-- MicrosoftOffice2010PowerPoint-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft PowerPoint 2010*
--   GP name: *MicrosoftOffice2010PowerPoint*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010PowerPoint |
+| Friendly Name | Microsoft PowerPoint 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010PowerPoint-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010project"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project**  
+<!-- MicrosoftOffice2010PowerPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010PowerPoint-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010PowerPoint-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Project-Begin -->
+## MicrosoftOffice2010Project
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Project-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Project-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Project-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project
+```
+<!-- MicrosoftOffice2010Project-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Project 2010. By default, the user settings of Microsoft Project 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Project-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Project 2010.
+By default, the user settings of Microsoft Project 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Project 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Project 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Project 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Project-Description-End -->
 
-If you disable this policy setting, Microsoft Project 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Project-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Project-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010Project-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Project-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Project-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Project 2010*
--   GP name: *MicrosoftOffice2010Project*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Project |
+| Friendly Name | Microsoft Project 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Project-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010publisher"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher**  
+<!-- MicrosoftOffice2010Project-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Project-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Project-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Publisher-Begin -->
+## MicrosoftOffice2010Publisher
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Publisher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Publisher-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Publisher-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher
+```
+<!-- MicrosoftOffice2010Publisher-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Publisher 2010. By default, the user settings of Microsoft Publisher 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Publisher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Publisher 2010.
+By default, the user settings of Microsoft Publisher 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Publisher 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Publisher 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Publisher 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Publisher-Description-End -->
 
-If you disable this policy setting, Microsoft Publisher 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Publisher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Publisher-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Publisher-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Publisher-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Publisher-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Publisher 2010*
--   GP name: *MicrosoftOffice2010Publisher*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Publisher |
+| Friendly Name | Microsoft Publisher 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Publisher-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointdesigner"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner**  
+<!-- MicrosoftOffice2010Publisher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Publisher-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Publisher-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010SharePointDesigner-Begin -->
+## MicrosoftOffice2010SharePointDesigner
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010SharePointDesigner-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010SharePointDesigner-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010SharePointDesigner-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner
+```
+<!-- MicrosoftOffice2010SharePointDesigner-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2010. By default, the user settings of Microsoft SharePoint Designer 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010SharePointDesigner-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2010.
+By default, the user settings of Microsoft SharePoint Designer 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft SharePoint Designer 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft SharePoint Designer 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft SharePoint Designer 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointDesigner-Description-End -->
 
-If you disable this policy setting, Microsoft SharePoint Designer 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010SharePointDesigner-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointDesigner-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointDesigner-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010SharePointDesigner-DFProperties-End -->
+
+<!-- MicrosoftOffice2010SharePointDesigner-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft SharePoint Designer 2010*
--   GP name: *MicrosoftOffice2010SharePointDesigner*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010SharePointDesigner |
+| Friendly Name | Microsoft SharePoint Designer 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010SharePointDesigner-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace**  
+<!-- MicrosoftOffice2010SharePointDesigner-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointDesigner-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010SharePointDesigner-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010SharePointWorkspace-Begin -->
+## MicrosoftOffice2010SharePointWorkspace
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010SharePointWorkspace-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010SharePointWorkspace-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010SharePointWorkspace-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace
+```
+<!-- MicrosoftOffice2010SharePointWorkspace-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft SharePoint Workspace 2010. By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Workspace 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010SharePointWorkspace-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft SharePoint Workspace 2010.
+By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Workspace 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft SharePoint Workspace 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft SharePoint Workspace 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft SharePoint Workspace 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointWorkspace-Description-End -->
 
-If you disable this policy setting, Microsoft SharePoint Workspace 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010SharePointWorkspace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointWorkspace-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointWorkspace-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010SharePointWorkspace-DFProperties-End -->
+
+<!-- MicrosoftOffice2010SharePointWorkspace-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft SharePoint Workspace 2010*
--   GP name: *MicrosoftOffice2010SharePointWorkspace*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010SharePointWorkspace |
+| Friendly Name | Microsoft SharePoint Workspace 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010SharePointWorkspace-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010visio"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio**  
+<!-- MicrosoftOffice2010SharePointWorkspace-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointWorkspace-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010SharePointWorkspace-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Visio-Begin -->
+## MicrosoftOffice2010Visio
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Visio-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Visio-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Visio-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio
+```
+<!-- MicrosoftOffice2010Visio-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Visio 2010. By default, the user settings of Microsoft Visio 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Visio-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Visio 2010.
+By default, the user settings of Microsoft Visio 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Visio 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Visio 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Visio 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Visio-Description-End -->
 
-If you disable this policy setting, Microsoft Visio 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Visio-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Visio-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Visio-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Visio-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Visio-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Visio 2010*
--   GP name: *MicrosoftOffice2010Visio*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Visio |
+| Friendly Name | Microsoft Visio 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Visio-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010word"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word**  
+<!-- MicrosoftOffice2010Visio-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Visio-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Visio-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Word-Begin -->
+## MicrosoftOffice2010Word
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Word-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Word-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Word-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word
+```
+<!-- MicrosoftOffice2010Word-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Word 2010. By default, the user settings of Microsoft Word 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Word-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Word 2010.
+By default, the user settings of Microsoft Word 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2010 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Word 2010 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Word 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Word 2010 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Word-Description-End -->
 
-If you disable this policy setting, Microsoft Word 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Word-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Word-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Word-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Word-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Word-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Word 2010*
--   GP name: *MicrosoftOffice2010Word*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Word |
+| Friendly Name | Microsoft Word 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Word-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013access"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access**  
+<!-- MicrosoftOffice2010Word-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Word-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2010Word-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Access-Begin -->
+## MicrosoftOffice2013Access
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Access-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Access-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access
+```
+<!-- MicrosoftOffice2013Access-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Access 2013. By default, the user settings of Microsoft Access 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Access 2013.
+By default, the user settings of Microsoft Access 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Access 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Access 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Access 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Access-Description-End -->
 
-If you disable this policy setting, Microsoft Access 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Access-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013Access-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Access-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Access-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Access 2013*
--   GP name: *MicrosoftOffice2013Access*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Access |
+| Friendly Name | Microsoft Access 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Access-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013accessbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup**  
+<!-- MicrosoftOffice2013Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Access-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Access-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013AccessBackup-Begin -->
+## MicrosoftOffice2013AccessBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013AccessBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013AccessBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013AccessBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup
+```
+<!-- MicrosoftOffice2013AccessBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Access 2013. Microsoft Access 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2013 settings.
+<!-- MicrosoftOffice2013AccessBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Access 2013.
+Microsoft Access 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Access 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Access 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Access 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013AccessBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Access 2013 will not be backed up.
+<!-- MicrosoftOffice2013AccessBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013AccessBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013AccessBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013AccessBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Access 2013 backup only*
--   GP name: *MicrosoftOffice2013AccessBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013AccessBackup |
+| Friendly Name | Access 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013AccessBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013common"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common**  
+<!-- MicrosoftOffice2013AccessBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013AccessBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013AccessBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Common-Begin -->
+## MicrosoftOffice2013Common
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Common-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Common-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Common-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common
+```
+<!-- MicrosoftOffice2013Common-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications. By default, the user settings which are common between the Microsoft Office Suite 2013 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers.
+<!-- MicrosoftOffice2013Common-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications.
+By default, the user settings which are common between the Microsoft Office Suite 2013 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers.
 
-If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize.
+- If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize.
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting should not be disabled.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Common-Description-End -->
 
-If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting should not be disabled.
+<!-- MicrosoftOffice2013Common-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Common-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Common-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Common-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Common-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 2013 Common Settings*
--   GP name: *MicrosoftOffice2013Common*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Common |
+| Friendly Name | Microsoft Office 2013 Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Common-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013commonbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup**  
+<!-- MicrosoftOffice2013Common-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Common-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Common-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013CommonBackup-Begin -->
+## MicrosoftOffice2013CommonBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013CommonBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013CommonBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013CommonBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup
+```
+<!-- MicrosoftOffice2013CommonBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2013 applications.
+<!-- MicrosoftOffice2013CommonBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2013 applications.
 Microsoft Office Suite 2013 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2013 applications.
 
-If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will continue to be backed up.
+- If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will continue to be backed up.
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013CommonBackup-Description-End -->
 
-If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will not be backed up. 
+<!-- MicrosoftOffice2013CommonBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013CommonBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013CommonBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013CommonBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013CommonBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Common 2013 backup only*
--   GP name: *MicrosoftOffice2013CommonBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013CommonBackup |
+| Friendly Name | Common 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013CommonBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013excel"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel**  
+<!-- MicrosoftOffice2013CommonBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013CommonBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013CommonBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Excel-Begin -->
+## MicrosoftOffice2013Excel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Excel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Excel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Excel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel
+```
+<!-- MicrosoftOffice2013Excel-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Excel 2013.
-
+<!-- MicrosoftOffice2013Excel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Excel 2013.
 By default, the user settings of Microsoft Excel 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Excel 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Excel 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Excel 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Excel-Description-End -->
 
-If you disable this policy setting, Microsoft Excel 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Excel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Excel-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013Excel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Excel-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Excel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Excel 2013*
--   GP name: *MicrosoftOffice2013Excel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Excel |
+| Friendly Name | Microsoft Excel 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Excel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013excelbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup**  
+<!-- MicrosoftOffice2013Excel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Excel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Excel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013ExcelBackup-Begin -->
+## MicrosoftOffice2013ExcelBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013ExcelBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013ExcelBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013ExcelBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup
+```
+<!-- MicrosoftOffice2013ExcelBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Excel 2013. Microsoft Excel 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2013 settings.
+<!-- MicrosoftOffice2013ExcelBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Excel 2013.
+Microsoft Excel 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Excel 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Excel 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Excel 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013ExcelBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Excel 2013 will not be backed up.
+<!-- MicrosoftOffice2013ExcelBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ExcelBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013ExcelBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013ExcelBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013ExcelBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Excel 2013 backup only*
--   GP name: *MicrosoftOffice2013ExcelBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013ExcelBackup |
+| Friendly Name | Excel 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013ExcelBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013infopath"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath**  
+<!-- MicrosoftOffice2013ExcelBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ExcelBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013ExcelBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013InfoPath-Begin -->
+## MicrosoftOffice2013InfoPath
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013InfoPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013InfoPath-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013InfoPath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath
+```
+<!-- MicrosoftOffice2013InfoPath-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft InfoPath 2013. By default, the user settings of Microsoft InfoPath 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013InfoPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft InfoPath 2013.
+By default, the user settings of Microsoft InfoPath 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft InfoPath 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft InfoPath 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft InfoPath 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPath-Description-End -->
 
-If you disable this policy setting, Microsoft InfoPath 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013InfoPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPath-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013InfoPath-DFProperties-End -->
+
+<!-- MicrosoftOffice2013InfoPath-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft InfoPath 2013*
--   GP name: *MicrosoftOffice2013InfoPath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013InfoPath |
+| Friendly Name | Microsoft InfoPath 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013InfoPath-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013infopathbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup**  
+<!-- MicrosoftOffice2013InfoPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPath-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013InfoPath-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013InfoPathBackup-Begin -->
+## MicrosoftOffice2013InfoPathBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013InfoPathBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013InfoPathBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013InfoPathBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup
+```
+<!-- MicrosoftOffice2013InfoPathBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft InfoPath 2013. Microsoft InfoPath 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft InfoPath 2013 settings.
+<!-- MicrosoftOffice2013InfoPathBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft InfoPath 2013.
+Microsoft InfoPath 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft InfoPath 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft InfoPath 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft InfoPath 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPathBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 will not be backed up.
+<!-- MicrosoftOffice2013InfoPathBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPathBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPathBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013InfoPathBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013InfoPathBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *InfoPath 2013 backup only*
--   GP name: *MicrosoftOffice2013InfoPathBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013InfoPathBackup |
+| Friendly Name | InfoPath 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013InfoPathBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013lync"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync**  
+<!-- MicrosoftOffice2013InfoPathBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPathBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013InfoPathBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Lync-Begin -->
+## MicrosoftOffice2013Lync
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Lync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Lync-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Lync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync
+```
+<!-- MicrosoftOffice2013Lync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Lync 2013. By default, the user settings of Microsoft Lync 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Lync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Lync 2013.
+By default, the user settings of Microsoft Lync 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Lync 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Lync 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Lync 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Lync-Description-End -->
 
-If you disable this policy setting, Microsoft Lync 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Lync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Lync-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013Lync-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Lync-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Lync-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Lync 2013*
--   GP name: *MicrosoftOffice2013Lync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Lync |
+| Friendly Name | Microsoft Lync 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Lync-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013lyncbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup**  
+<!-- MicrosoftOffice2013Lync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Lync-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Lync-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013LyncBackup-Begin -->
+## MicrosoftOffice2013LyncBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013LyncBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013LyncBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013LyncBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup
+```
+<!-- MicrosoftOffice2013LyncBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Lync 2013. Microsoft Lync 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2013 settings.
+<!-- MicrosoftOffice2013LyncBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Lync 2013.
+Microsoft Lync 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Lync 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Lync 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Lync 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013LyncBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Lync 2013 will not be backed up.
+<!-- MicrosoftOffice2013LyncBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013LyncBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013LyncBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013LyncBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013LyncBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Lync 2013 backup only*
--   GP name: *MicrosoftOffice2013LyncBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013LyncBackup |
+| Friendly Name | Lync 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013LyncBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013onedriveforbusiness"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness**  
+<!-- MicrosoftOffice2013LyncBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013LyncBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013LyncBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013OneDriveForBusiness-Begin -->
+## MicrosoftOffice2013OneDriveForBusiness
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OneDriveForBusiness-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OneDriveForBusiness-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013OneDriveForBusiness-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness
+```
+<!-- MicrosoftOffice2013OneDriveForBusiness-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for OneDrive for Business 2013. By default, the user settings of OneDrive for Business 2013 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013OneDriveForBusiness-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for OneDrive for Business 2013.
+By default, the user settings of OneDrive for Business 2013 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2013 from synchronization between computers.
 
-If you enable this policy setting, OneDrive for Business 2013 user settings continue to synchronize.
+- If you enable this policy setting, OneDrive for Business 2013 user settings continue to synchronize.
+- If you disable this policy setting, OneDrive for Business 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneDriveForBusiness-Description-End -->
 
-If you disable this policy setting, OneDrive for Business 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013OneDriveForBusiness-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneDriveForBusiness-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneDriveForBusiness-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OneDriveForBusiness-DFProperties-End -->
+
+<!-- MicrosoftOffice2013OneDriveForBusiness-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft OneDrive for Business 2013*
--   GP name: *MicrosoftOffice2013OneDriveForBusiness*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OneDriveForBusiness |
+| Friendly Name | Microsoft OneDrive for Business 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OneDriveForBusiness-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013onenote"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote**  
+<!-- MicrosoftOffice2013OneDriveForBusiness-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneDriveForBusiness-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013OneDriveForBusiness-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013OneNote-Begin -->
+## MicrosoftOffice2013OneNote
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OneNote-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OneNote-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013OneNote-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote
+```
+<!-- MicrosoftOffice2013OneNote-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft OneNote 2013. By default, the user settings of Microsoft OneNote 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013OneNote-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft OneNote 2013.
+By default, the user settings of Microsoft OneNote 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft OneNote 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft OneNote 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft OneNote 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNote-Description-End -->
 
-If you disable this policy setting, Microsoft OneNote 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013OneNote-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNote-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNote-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OneNote-DFProperties-End -->
+
+<!-- MicrosoftOffice2013OneNote-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft OneNote 2013*
--   GP name: *MicrosoftOffice2013OneNote*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OneNote |
+| Friendly Name | Microsoft OneNote 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OneNote-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013onenotebackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup**  
+<!-- MicrosoftOffice2013OneNote-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNote-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013OneNote-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013OneNoteBackup-Begin -->
+## MicrosoftOffice2013OneNoteBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OneNoteBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OneNoteBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013OneNoteBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup
+```
+<!-- MicrosoftOffice2013OneNoteBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft OneNote 2013. Microsoft OneNote 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2013 settings.
+<!-- MicrosoftOffice2013OneNoteBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft OneNote 2013.
+Microsoft OneNote 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft OneNote 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft OneNote 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNoteBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft OneNote 2013 will not be backed up.
+<!-- MicrosoftOffice2013OneNoteBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNoteBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNoteBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OneNoteBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013OneNoteBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *OneNote 2013 backup only*
--   GP name: *MicrosoftOffice2013OneNoteBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OneNoteBackup |
+| Friendly Name | OneNote 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OneNoteBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013outlook"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook**  
+<!-- MicrosoftOffice2013OneNoteBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNoteBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013OneNoteBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Outlook-Begin -->
+## MicrosoftOffice2013Outlook
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Outlook-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Outlook-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Outlook-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook
+```
+<!-- MicrosoftOffice2013Outlook-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Outlook 2013. By default, the user settings of Microsoft Outlook 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Outlook-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Outlook 2013.
+By default, the user settings of Microsoft Outlook 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Outlook 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Outlook 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Outlook 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Outlook-Description-End -->
 
-If you disable this policy setting, Microsoft Outlook 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Outlook-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Outlook-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013Outlook-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Outlook-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Outlook-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Outlook 2013*
--   GP name: *MicrosoftOffice2013Outlook*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Outlook |
+| Friendly Name | Microsoft Outlook 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Outlook-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013outlookbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup**  
+<!-- MicrosoftOffice2013Outlook-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Outlook-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Outlook-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013OutlookBackup-Begin -->
+## MicrosoftOffice2013OutlookBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OutlookBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OutlookBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013OutlookBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup
+```
+<!-- MicrosoftOffice2013OutlookBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Outlook 2013. Microsoft Outlook 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2013 settings.
+<!-- MicrosoftOffice2013OutlookBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Outlook 2013.
+Microsoft Outlook 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Outlook 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Outlook 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OutlookBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Outlook 2013 will not be backed up.
+<!-- MicrosoftOffice2013OutlookBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OutlookBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OutlookBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OutlookBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013OutlookBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Outlook 2013 backup only*
--   GP name: *MicrosoftOffice2013OutlookBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OutlookBackup |
+| Friendly Name | Outlook 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OutlookBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013powerpoint"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint**  
+<!-- MicrosoftOffice2013OutlookBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OutlookBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013OutlookBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013PowerPoint-Begin -->
+## MicrosoftOffice2013PowerPoint
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013PowerPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013PowerPoint-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013PowerPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint
+```
+<!-- MicrosoftOffice2013PowerPoint-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2013. By default, the user settings of Microsoft PowerPoint 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013PowerPoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2013.
+By default, the user settings of Microsoft PowerPoint 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft PowerPoint 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft PowerPoint 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft PowerPoint 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PowerPoint-Description-End -->
 
-If you disable this policy setting, Microsoft PowerPoint 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013PowerPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPoint-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PowerPoint-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013PowerPoint-DFProperties-End -->
+
+<!-- MicrosoftOffice2013PowerPoint-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft PowerPoint 2013*
--   GP name: *MicrosoftOffice2013PowerPoint*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013PowerPoint |
+| Friendly Name | Microsoft PowerPoint 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013PowerPoint-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013powerpointbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup**  
+<!-- MicrosoftOffice2013PowerPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPoint-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013PowerPoint-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013PowerPointBackup-Begin -->
+## MicrosoftOffice2013PowerPointBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013PowerPointBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013PowerPointBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013PowerPointBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup
+```
+<!-- MicrosoftOffice2013PowerPointBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2013. Microsoft PowerPoint 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2013 settings.
+<!-- MicrosoftOffice2013PowerPointBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2013.
+Microsoft PowerPoint 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft PowerPoint 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft PowerPoint 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PowerPointBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 will not be backed up.
+<!-- MicrosoftOffice2013PowerPointBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPointBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PowerPointBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013PowerPointBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013PowerPointBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *PowerPoint 2013 backup only*
--   GP name: *MicrosoftOffice2013PowerPointBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013PowerPointBackup |
+| Friendly Name | PowerPoint 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013PowerPointBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013project"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project**  
+<!-- MicrosoftOffice2013PowerPointBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPointBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013PowerPointBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Project-Begin -->
+## MicrosoftOffice2013Project
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Project-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Project-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Project-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project
+```
+<!-- MicrosoftOffice2013Project-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Project 2013. By default, the user settings of Microsoft Project 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Project-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Project 2013.
+By default, the user settings of Microsoft Project 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Project 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Project 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Project 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Project-Description-End -->
 
-If you disable this policy setting, Microsoft Project 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Project-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Project-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013Project-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Project-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Project-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Project 2013*
--   GP name: *MicrosoftOffice2013Project*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Project |
+| Friendly Name | Microsoft Project 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Project-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013projectbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup**  
+<!-- MicrosoftOffice2013Project-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Project-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Project-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013ProjectBackup-Begin -->
+## MicrosoftOffice2013ProjectBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013ProjectBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013ProjectBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013ProjectBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup
+```
+<!-- MicrosoftOffice2013ProjectBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Project 2013. Microsoft Project 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2013 settings.
+<!-- MicrosoftOffice2013ProjectBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Project 2013.
+Microsoft Project 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Project 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Project 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Project 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013ProjectBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Project 2013 will not be backed up.
+<!-- MicrosoftOffice2013ProjectBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ProjectBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013ProjectBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013ProjectBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013ProjectBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Project 2013 backup only*
--   GP name: *MicrosoftOffice2013ProjectBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013ProjectBackup |
+| Friendly Name | Project 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013ProjectBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013publisher"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher**  
+<!-- MicrosoftOffice2013ProjectBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ProjectBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013ProjectBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Publisher-Begin -->
+## MicrosoftOffice2013Publisher
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Publisher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Publisher-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Publisher-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher
+```
+<!-- MicrosoftOffice2013Publisher-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Publisher 2013. By default, the user settings of Microsoft Publisher 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Publisher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Publisher 2013.
+By default, the user settings of Microsoft Publisher 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Publisher 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Publisher 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Publisher 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Publisher-Description-End -->
 
-If you disable this policy setting, Microsoft Publisher 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Publisher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Publisher-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Publisher-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Publisher-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Publisher-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Publisher 2013*
--   GP name: *MicrosoftOffice2013Publisher*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Publisher |
+| Friendly Name | Microsoft Publisher 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Publisher-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013publisherbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup**  
+<!-- MicrosoftOffice2013Publisher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Publisher-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Publisher-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013PublisherBackup-Begin -->
+## MicrosoftOffice2013PublisherBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013PublisherBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013PublisherBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013PublisherBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup
+```
+<!-- MicrosoftOffice2013PublisherBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Publisher 2013. Microsoft Publisher 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2013 settings.
+<!-- MicrosoftOffice2013PublisherBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Publisher 2013.
+Microsoft Publisher 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Publisher 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Publisher 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PublisherBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Publisher 2013 will not be backed up.
+<!-- MicrosoftOffice2013PublisherBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PublisherBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PublisherBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013PublisherBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013PublisherBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publisher 2013 backup only*
--   GP name: *MicrosoftOffice2013PublisherBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013PublisherBackup |
+| Friendly Name | Publisher 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013PublisherBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesigner"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner**  
+<!-- MicrosoftOffice2013PublisherBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PublisherBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013PublisherBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesigner-Begin -->
+## MicrosoftOffice2013SharePointDesigner
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013SharePointDesigner-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013SharePointDesigner-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013SharePointDesigner-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner
+```
+<!-- MicrosoftOffice2013SharePointDesigner-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2013. By default, the user settings of Microsoft SharePoint Designer 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013SharePointDesigner-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2013.
+By default, the user settings of Microsoft SharePoint Designer 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft SharePoint Designer 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft SharePoint Designer 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft SharePoint Designer 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesigner-Description-End -->
 
-If you disable this policy setting, Microsoft SharePoint Designer 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013SharePointDesigner-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesigner-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesigner-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013SharePointDesigner-DFProperties-End -->
+
+<!-- MicrosoftOffice2013SharePointDesigner-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft SharePoint Designer 2013*
--   GP name: *MicrosoftOffice2013SharePointDesigner*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013SharePointDesigner |
+| Friendly Name | Microsoft SharePoint Designer 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013SharePointDesigner-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013SharePointDesigner-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesigner-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesigner-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Begin -->
+## MicrosoftOffice2013SharePointDesignerBackup
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft SharePoint Designer 2013. Microsoft SharePoint Designer 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft SharePoint Designer 2013 settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup
+```
+<!-- MicrosoftOffice2013SharePointDesignerBackup-OmaUri-End -->
 
-If you enable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will continue to be backed up.
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft SharePoint Designer 2013.
+Microsoft SharePoint Designer 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft SharePoint Designer 2013 settings.
 
-If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will not be backed up.
+- If you enable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013SharePointDesignerBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013SharePointDesignerBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013SharePointDesignerBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *SharePoint Designer 2013 backup only*
--   GP name: *MicrosoftOffice2013SharePointDesignerBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013SharePointDesignerBackup |
+| Friendly Name | SharePoint Designer 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013SharePointDesignerBackup-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013UploadCenter-Begin -->
+## MicrosoftOffice2013UploadCenter
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013UploadCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013UploadCenter-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013UploadCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 2013 Upload Center. By default, the user settings of Microsoft Office 2013 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2013 Upload Center from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter
+```
+<!-- MicrosoftOffice2013UploadCenter-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Office 2013 Upload Center user settings continue to synchronize.
+<!-- MicrosoftOffice2013UploadCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 2013 Upload Center.
+By default, the user settings of Microsoft Office 2013 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2013 Upload Center from synchronization between computers.
 
-If you disable this policy setting, Microsoft Office 2013 Upload Center user settings are excluded from the synchronization settings.
+- If you enable this policy setting, Microsoft Office 2013 Upload Center user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Office 2013 Upload Center user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013UploadCenter-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013UploadCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013UploadCenter-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013UploadCenter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013UploadCenter-DFProperties-End -->
+
+<!-- MicrosoftOffice2013UploadCenter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 2013 Upload Center*
--   GP name: *MicrosoftOffice2013UploadCenter*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013UploadCenter |
+| Friendly Name | Microsoft Office 2013 Upload Center |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013UploadCenter-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013visio"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio**  
+<!-- MicrosoftOffice2013UploadCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013UploadCenter-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013UploadCenter-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Visio-Begin -->
+## MicrosoftOffice2013Visio
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Visio-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Visio-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Visio-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio
+```
+<!-- MicrosoftOffice2013Visio-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Visio 2013. By default, the user settings of Microsoft Visio 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Visio-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Visio 2013.
+By default, the user settings of Microsoft Visio 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Visio 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Visio 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Visio 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Visio-Description-End -->
 
-If you disable this policy setting, Microsoft Visio 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Visio-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Visio-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Visio-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Visio-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Visio-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Visio 2013*
--   GP name: *MicrosoftOffice2013Visio*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Visio |
+| Friendly Name | Microsoft Visio 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Visio-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013visiobackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup**  
+<!-- MicrosoftOffice2013Visio-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Visio-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Visio-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013VisioBackup-Begin -->
+## MicrosoftOffice2013VisioBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013VisioBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013VisioBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013VisioBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup
+```
+<!-- MicrosoftOffice2013VisioBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Visio 2013. Microsoft Visio 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2013 settings.
+<!-- MicrosoftOffice2013VisioBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Visio 2013.
+Microsoft Visio 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Visio 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Visio 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Visio 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013VisioBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Visio 2013 will not be backed up.
+<!-- MicrosoftOffice2013VisioBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013VisioBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013VisioBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013VisioBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013VisioBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Visio 2013 backup only*
--   GP name: *MicrosoftOffice2013VisioBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013VisioBackup |
+| Friendly Name | Visio 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013VisioBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013word"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word**  
+<!-- MicrosoftOffice2013VisioBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013VisioBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013VisioBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Word-Begin -->
+## MicrosoftOffice2013Word
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Word-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Word-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Word-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word
+```
+<!-- MicrosoftOffice2013Word-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Word 2013. By default, the user settings of Microsoft Word 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Word-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Word 2013.
+By default, the user settings of Microsoft Word 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Word 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Word 2013 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Word 2013 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Word-Description-End -->
 
-If you disable this policy setting, Microsoft Word 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Word-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Word-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Word-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Word-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Word-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Word 2013*
--   GP name: *MicrosoftOffice2013Word*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Word |
+| Friendly Name | Microsoft Word 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Word-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013wordbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup**  
+<!-- MicrosoftOffice2013Word-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Word-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013Word-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013WordBackup-Begin -->
+## MicrosoftOffice2013WordBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013WordBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013WordBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013WordBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup
+```
+<!-- MicrosoftOffice2013WordBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Word 2013. Microsoft Word 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2013 settings.
+<!-- MicrosoftOffice2013WordBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Word 2013.
+Microsoft Word 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Word 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Word 2013 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Word 2013 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013WordBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Word 2013 will not be backed up.
+<!-- MicrosoftOffice2013WordBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013WordBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013WordBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013WordBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013WordBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Word 2013 backup only*
--   GP name: *MicrosoftOffice2013WordBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013WordBackup |
+| Friendly Name | Word 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013WordBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016access"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access**  
+<!-- MicrosoftOffice2013WordBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013WordBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2013WordBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Access-Begin -->
+## MicrosoftOffice2016Access
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Access-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Access-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access
+```
+<!-- MicrosoftOffice2016Access-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Access 2016. By default, the user settings of Microsoft Access 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Access 2016.
+By default, the user settings of Microsoft Access 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Access 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Access 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Access 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Access-Description-End -->
 
-If you disable this policy setting, Microsoft Access 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Access-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Access-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Access-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Access-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Access 2016*
--   GP name: *MicrosoftOffice2016Access*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Access |
+| Friendly Name | Microsoft Access 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Access-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016accessbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup**  
+<!-- MicrosoftOffice2016Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Access-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Access-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016AccessBackup-Begin -->
+## MicrosoftOffice2016AccessBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016AccessBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016AccessBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016AccessBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup
+```
+<!-- MicrosoftOffice2016AccessBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Access 2016. Microsoft Access 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2016 settings.
+<!-- MicrosoftOffice2016AccessBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Access 2016.
+Microsoft Access 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Access 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Access 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Access 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016AccessBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Access 2016 will not be backed up.
+<!-- MicrosoftOffice2016AccessBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016AccessBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016AccessBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016AccessBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Access 2016 backup only*
--   GP name: *MicrosoftOffice2016AccessBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016AccessBackup |
+| Friendly Name | Access 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016AccessBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016common"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common**  
+<!-- MicrosoftOffice2016AccessBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016AccessBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016AccessBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Common-Begin -->
+## MicrosoftOffice2016Common
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Common-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Common-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Common-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common
+```
+<!-- MicrosoftOffice2016Common-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications. By default, the user settings which are common between the Microsoft Office Suite 2016 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers.
+<!-- MicrosoftOffice2016Common-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications.
+By default, the user settings which are common between the Microsoft Office Suite 2016 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers.
 
-If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize.
+- If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize.
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting should not be disabled.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Common-Description-End -->
 
-If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting should not be disabled.
+<!-- MicrosoftOffice2016Common-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Common-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Common-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Common-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Common-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 2016 Common Settings*
--   GP name: *MicrosoftOffice2016Common*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Common |
+| Friendly Name | Microsoft Office 2016 Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Common-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016commonbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup**  
+<!-- MicrosoftOffice2016Common-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Common-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Common-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016CommonBackup-Begin -->
+## MicrosoftOffice2016CommonBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016CommonBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016CommonBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016CommonBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup
+```
+<!-- MicrosoftOffice2016CommonBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2016 applications.
+<!-- MicrosoftOffice2016CommonBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2016 applications.
 Microsoft Office Suite 2016 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2016 applications.
 
-If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will continue to be backed up.
+- If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will continue to be backed up.
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016CommonBackup-Description-End -->
 
-If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will not be backed up. 
+<!-- MicrosoftOffice2016CommonBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016CommonBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016CommonBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016CommonBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016CommonBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Common 2016 backup only*
--   GP name: *MicrosoftOffice2016CommonBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016CommonBackup |
+| Friendly Name | Common 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016CommonBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016excel"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel**  
+<!-- MicrosoftOffice2016CommonBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016CommonBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016CommonBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Excel-Begin -->
+## MicrosoftOffice2016Excel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Excel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Excel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Excel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel
+```
+<!-- MicrosoftOffice2016Excel-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Excel 2016. By default, the user settings of Microsoft Excel 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Excel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Excel 2016.
+By default, the user settings of Microsoft Excel 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Excel 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Excel 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Excel 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Excel-Description-End -->
 
-If you disable this policy setting, Microsoft Excel 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Excel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Excel-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Excel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Excel-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Excel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Excel 2016*
--   GP name: *MicrosoftOffice2016Excel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Excel |
+| Friendly Name | Microsoft Excel 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Excel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016excelbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup**  
+<!-- MicrosoftOffice2016Excel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Excel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Excel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016ExcelBackup-Begin -->
+## MicrosoftOffice2016ExcelBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016ExcelBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016ExcelBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016ExcelBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup
+```
+<!-- MicrosoftOffice2016ExcelBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Excel 2016. Microsoft Excel 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2016 settings.
+<!-- MicrosoftOffice2016ExcelBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Excel 2016.
+Microsoft Excel 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Excel 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Excel 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Excel 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016ExcelBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Excel 2016 will not be backed up.
+<!-- MicrosoftOffice2016ExcelBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ExcelBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016ExcelBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016ExcelBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016ExcelBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Excel 2016 backup only*
--   GP name: *MicrosoftOffice2016ExcelBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016ExcelBackup |
+| Friendly Name | Excel 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016ExcelBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016lync"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync**  
+<!-- MicrosoftOffice2016ExcelBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ExcelBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016ExcelBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Lync-Begin -->
+## MicrosoftOffice2016Lync
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Lync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Lync-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Lync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync
+```
+<!-- MicrosoftOffice2016Lync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Lync 2016. By default, the user settings of Microsoft Lync 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Lync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Lync 2016.
+By default, the user settings of Microsoft Lync 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Lync 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Lync 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Lync 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Lync-Description-End -->
 
-If you disable this policy setting, Microsoft Lync 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Lync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Lync-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Lync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Lync-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Lync-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Lync 2016*
--   GP name: *MicrosoftOffice2016Lync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Lync |
+| Friendly Name | Microsoft Lync 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Lync-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016lyncbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup**  
+<!-- MicrosoftOffice2016Lync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Lync-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Lync-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016LyncBackup-Begin -->
+## MicrosoftOffice2016LyncBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016LyncBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016LyncBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016LyncBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup
+```
+<!-- MicrosoftOffice2016LyncBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Lync 2016. Microsoft Lync 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2016 settings.
+<!-- MicrosoftOffice2016LyncBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Lync 2016.
+Microsoft Lync 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Lync 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Lync 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Lync 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016LyncBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Lync 2016 will not be backed up.
+<!-- MicrosoftOffice2016LyncBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016LyncBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016LyncBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016LyncBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016LyncBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Lync 2016 backup only*
--   GP name: *MicrosoftOffice2016LyncBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016LyncBackup |
+| Friendly Name | Lync 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016LyncBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016onedriveforbusiness"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness**  
+<!-- MicrosoftOffice2016LyncBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016LyncBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016LyncBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OneDriveForBusiness-Begin -->
+## MicrosoftOffice2016OneDriveForBusiness
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OneDriveForBusiness-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OneDriveForBusiness-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016OneDriveForBusiness-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness
+```
+<!-- MicrosoftOffice2016OneDriveForBusiness-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for OneDrive for Business 2016. By default, the user settings of OneDrive for Business 2016 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016OneDriveForBusiness-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for OneDrive for Business 2016.
+By default, the user settings of OneDrive for Business 2016 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2016 from synchronization between computers.
 
-If you enable this policy setting, OneDrive for Business 2016 user settings continue to synchronize.
+- If you enable this policy setting, OneDrive for Business 2016 user settings continue to synchronize.
+- If you disable this policy setting, OneDrive for Business 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneDriveForBusiness-Description-End -->
 
-If you disable this policy setting, OneDrive for Business 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016OneDriveForBusiness-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneDriveForBusiness-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneDriveForBusiness-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OneDriveForBusiness-DFProperties-End -->
+
+<!-- MicrosoftOffice2016OneDriveForBusiness-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft OneDrive for Business 2016*
--   GP name: *MicrosoftOffice2016OneDriveForBusiness*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OneDriveForBusiness |
+| Friendly Name | Microsoft OneDrive for Business 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OneDriveForBusiness-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016onenote"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote**  
+<!-- MicrosoftOffice2016OneDriveForBusiness-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneDriveForBusiness-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016OneDriveForBusiness-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OneNote-Begin -->
+## MicrosoftOffice2016OneNote
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OneNote-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OneNote-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016OneNote-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote
+```
+<!-- MicrosoftOffice2016OneNote-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft OneNote 2016. By default, the user settings of Microsoft OneNote 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016OneNote-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft OneNote 2016.
+By default, the user settings of Microsoft OneNote 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft OneNote 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft OneNote 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft OneNote 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNote-Description-End -->
 
-If you disable this policy setting, Microsoft OneNote 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016OneNote-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNote-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNote-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OneNote-DFProperties-End -->
+
+<!-- MicrosoftOffice2016OneNote-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft OneNote 2016*
--   GP name: *MicrosoftOffice2016OneNote*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OneNote |
+| Friendly Name | Microsoft OneNote 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OneNote-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016onenotebackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup**  
+<!-- MicrosoftOffice2016OneNote-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNote-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016OneNote-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OneNoteBackup-Begin -->
+## MicrosoftOffice2016OneNoteBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OneNoteBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OneNoteBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016OneNoteBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup
+```
+<!-- MicrosoftOffice2016OneNoteBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft OneNote 2016. Microsoft OneNote 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2016 settings.
+<!-- MicrosoftOffice2016OneNoteBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft OneNote 2016.
+Microsoft OneNote 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft OneNote 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft OneNote 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNoteBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft OneNote 2016 will not be backed up.
+<!-- MicrosoftOffice2016OneNoteBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNoteBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNoteBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OneNoteBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016OneNoteBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *OneNote 2016 backup only*
--   GP name: *MicrosoftOffice2016OneNoteBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OneNoteBackup |
+| Friendly Name | OneNote 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OneNoteBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016outlook"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook**  
+<!-- MicrosoftOffice2016OneNoteBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNoteBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016OneNoteBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Outlook-Begin -->
+## MicrosoftOffice2016Outlook
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Outlook-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Outlook-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Outlook-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook
+```
+<!-- MicrosoftOffice2016Outlook-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Outlook 2016. By default, the user settings of Microsoft Outlook 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Outlook-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Outlook 2016.
+By default, the user settings of Microsoft Outlook 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Outlook 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Outlook 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Outlook 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Outlook-Description-End -->
 
-If you disable this policy setting, Microsoft Outlook 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Outlook-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Outlook-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Outlook-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Outlook-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Outlook-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Outlook 2016*
--   GP name: *MicrosoftOffice2016Outlook*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Outlook |
+| Friendly Name | Microsoft Outlook 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Outlook-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016outlookbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup**  
+<!-- MicrosoftOffice2016Outlook-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Outlook-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Outlook-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OutlookBackup-Begin -->
+## MicrosoftOffice2016OutlookBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OutlookBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OutlookBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016OutlookBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup
+```
+<!-- MicrosoftOffice2016OutlookBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Outlook 2016. Microsoft Outlook 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2016 settings.
+<!-- MicrosoftOffice2016OutlookBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Outlook 2016.
+Microsoft Outlook 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Outlook 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Outlook 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OutlookBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Outlook 2016 will not be backed up.
+<!-- MicrosoftOffice2016OutlookBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OutlookBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OutlookBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OutlookBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016OutlookBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Outlook 2016 backup only*
--   GP name: *MicrosoftOffice2016OutlookBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OutlookBackup |
+| Friendly Name | Outlook 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OutlookBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016powerpoint"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint**  
+<!-- MicrosoftOffice2016OutlookBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OutlookBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016OutlookBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016PowerPoint-Begin -->
+## MicrosoftOffice2016PowerPoint
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016PowerPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016PowerPoint-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016PowerPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint
+```
+<!-- MicrosoftOffice2016PowerPoint-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2016. By default, the user settings of Microsoft PowerPoint 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016PowerPoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2016.
+By default, the user settings of Microsoft PowerPoint 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft PowerPoint 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft PowerPoint 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft PowerPoint 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPoint-Description-End -->
 
-If you disable this policy setting, Microsoft PowerPoint 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016PowerPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPoint-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPoint-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016PowerPoint-DFProperties-End -->
+
+<!-- MicrosoftOffice2016PowerPoint-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft PowerPoint 2016*
--   GP name: *MicrosoftOffice2016PowerPoint*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016PowerPoint |
+| Friendly Name | Microsoft PowerPoint 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016PowerPoint-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016powerpointbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup**  
+<!-- MicrosoftOffice2016PowerPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPoint-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016PowerPoint-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016PowerPointBackup-Begin -->
+## MicrosoftOffice2016PowerPointBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016PowerPointBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016PowerPointBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016PowerPointBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup
+```
+<!-- MicrosoftOffice2016PowerPointBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2016. Microsoft PowerPoint 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2016 settings.
+<!-- MicrosoftOffice2016PowerPointBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2016.
+Microsoft PowerPoint 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft PowerPoint 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft PowerPoint 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPointBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 will not be backed up.
+<!-- MicrosoftOffice2016PowerPointBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPointBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPointBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016PowerPointBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *PowerPoint 2016 backup only*
--   GP name: *MicrosoftOffice2016PowerPointBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016PowerPointBackup |
+| Friendly Name | PowerPoint 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016PowerPointBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016project"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project**  
+<!-- MicrosoftOffice2016PowerPointBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPointBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016PowerPointBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Project-Begin -->
+## MicrosoftOffice2016Project
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Project-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Project-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Project-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project
+```
+<!-- MicrosoftOffice2016Project-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Project 2016.
+<!-- MicrosoftOffice2016Project-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Project 2016.
 By default, the user settings of Microsoft Project 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Project 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Project 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Project 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Project-Description-End -->
 
-If you disable this policy setting, Microsoft Project 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Project-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Project-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Project-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Project-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Project-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Project 2016*
--   GP name: *MicrosoftOffice2016Project*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Project |
+| Friendly Name | Microsoft Project 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Project-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016projectbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup**  
+<!-- MicrosoftOffice2016Project-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Project-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Project-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016ProjectBackup-Begin -->
+## MicrosoftOffice2016ProjectBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016ProjectBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016ProjectBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016ProjectBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup
+```
+<!-- MicrosoftOffice2016ProjectBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Project 2016. Microsoft Project 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2016 settings.
+<!-- MicrosoftOffice2016ProjectBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Project 2016.
+Microsoft Project 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Project 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Project 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Project 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016ProjectBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Project 2016 will not be backed up.
+<!-- MicrosoftOffice2016ProjectBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ProjectBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2016ProjectBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016ProjectBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016ProjectBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Project 2016 backup only*
--   GP name: *MicrosoftOffice2016ProjectBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016ProjectBackup |
+| Friendly Name | Project 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016ProjectBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016publisher"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher**  
+<!-- MicrosoftOffice2016ProjectBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ProjectBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016ProjectBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Publisher-Begin -->
+## MicrosoftOffice2016Publisher
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Publisher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Publisher-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Publisher-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher
+```
+<!-- MicrosoftOffice2016Publisher-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Publisher 2016. By default, the user settings of Microsoft Publisher 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Publisher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Publisher 2016.
+By default, the user settings of Microsoft Publisher 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Publisher 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Publisher 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Publisher 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Publisher-Description-End -->
 
-If you disable this policy setting, Microsoft Publisher 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Publisher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Publisher-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Publisher-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Publisher-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Publisher-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Publisher 2016*
--   GP name: *MicrosoftOffice2016Publisher*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Publisher |
+| Friendly Name | Microsoft Publisher 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Publisher-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016publisherbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup**  
+<!-- MicrosoftOffice2016Publisher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Publisher-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Publisher-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016PublisherBackup-Begin -->
+## MicrosoftOffice2016PublisherBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016PublisherBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016PublisherBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016PublisherBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup
+```
+<!-- MicrosoftOffice2016PublisherBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Publisher 2016. Microsoft Publisher 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2016 settings.
+<!-- MicrosoftOffice2016PublisherBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Publisher 2016.
+Microsoft Publisher 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Publisher 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Publisher 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PublisherBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Publisher 2016 will not be backed up.
+<!-- MicrosoftOffice2016PublisherBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PublisherBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PublisherBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016PublisherBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016PublisherBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Publisher 2016 backup only*
--   GP name: *MicrosoftOffice2016PublisherBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016PublisherBackup |
+| Friendly Name | Publisher 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016PublisherBackup-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016PublisherBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PublisherBackup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016PublisherBackup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016UploadCenter-Begin -->
+## MicrosoftOffice2016UploadCenter
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016UploadCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016UploadCenter-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016UploadCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 2016 Upload Center. By default, the user settings of Microsoft Office 2016 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2016 Upload Center from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter
+```
+<!-- MicrosoftOffice2016UploadCenter-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Office 2016 Upload Center user settings continue to synchronize.
+<!-- MicrosoftOffice2016UploadCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 2016 Upload Center.
+By default, the user settings of Microsoft Office 2016 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2016 Upload Center from synchronization between computers.
 
-If you disable this policy setting, Microsoft Office 2016 Upload Center user settings are excluded from the synchronization settings.
+- If you enable this policy setting, Microsoft Office 2016 Upload Center user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Office 2016 Upload Center user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016UploadCenter-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016UploadCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016UploadCenter-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016UploadCenter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016UploadCenter-DFProperties-End -->
+
+<!-- MicrosoftOffice2016UploadCenter-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 2016 Upload Center*
--   GP name: *MicrosoftOffice2016UploadCenter*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016UploadCenter |
+| Friendly Name | Microsoft Office 2016 Upload Center |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016UploadCenter-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016visio"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio**  
+<!-- MicrosoftOffice2016UploadCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016UploadCenter-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016UploadCenter-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Visio-Begin -->
+## MicrosoftOffice2016Visio
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Visio-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Visio-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Visio-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio
+```
+<!-- MicrosoftOffice2016Visio-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Visio 2016. By default, the user settings of Microsoft Visio 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Visio-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Visio 2016.
+By default, the user settings of Microsoft Visio 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Visio 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Visio 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Visio 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Visio-Description-End -->
 
-If you disable this policy setting, Microsoft Visio 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Visio-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Visio-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Visio-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Visio-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Visio-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Visio 2016*
--   GP name: *MicrosoftOffice2016Visio*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Visio |
+| Friendly Name | Microsoft Visio 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Visio-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016visiobackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup**  
+<!-- MicrosoftOffice2016Visio-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Visio-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Visio-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016VisioBackup-Begin -->
+## MicrosoftOffice2016VisioBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016VisioBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016VisioBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016VisioBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup
+```
+<!-- MicrosoftOffice2016VisioBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Visio 2016. Microsoft Visio 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2016 settings.
+<!-- MicrosoftOffice2016VisioBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Visio 2016.
+Microsoft Visio 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Visio 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Visio 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Visio 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016VisioBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Visio 2016 will not be backed up.
+<!-- MicrosoftOffice2016VisioBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016VisioBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016VisioBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016VisioBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016VisioBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Visio 2016 backup only*
--   GP name: *MicrosoftOffice2016VisioBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016VisioBackup |
+| Friendly Name | Visio 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016VisioBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016word"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word**  
+<!-- MicrosoftOffice2016VisioBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016VisioBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016VisioBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Word-Begin -->
+## MicrosoftOffice2016Word
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Word-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Word-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Word-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word
+```
+<!-- MicrosoftOffice2016Word-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Word 2016. By default, the user settings of Microsoft Word 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Word-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Word 2016.
+By default, the user settings of Microsoft Word 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Word 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Word 2016 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Word 2016 user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Word-Description-End -->
 
-If you disable this policy setting, Microsoft Word 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Word-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Word-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Word-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Word-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Word-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Word 2016*
--   GP name: *MicrosoftOffice2016Word*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Word |
+| Friendly Name | Microsoft Word 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Word-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016wordbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup**  
+<!-- MicrosoftOffice2016Word-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Word-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016Word-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016WordBackup-Begin -->
+## MicrosoftOffice2016WordBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016WordBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016WordBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016WordBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup
+```
+<!-- MicrosoftOffice2016WordBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the backup of certain user settings for Microsoft Word 2016. Microsoft Word 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2016 settings.
+<!-- MicrosoftOffice2016WordBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Word 2016.
+Microsoft Word 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2016 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Word 2016 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft Word 2016 will continue to be backed up.
+- If you disable this policy setting, certain user settings of Microsoft Word 2016 will not be backed up.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016WordBackup-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Word 2016 will not be backed up.
+<!-- MicrosoftOffice2016WordBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016WordBackup-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016WordBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016WordBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016WordBackup-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Word 2016 backup only*
--   GP name: *MicrosoftOffice2016WordBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016WordBackup |
+| Friendly Name | Word 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016WordBackup-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365access2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013**  
+<!-- MicrosoftOffice2016WordBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016WordBackup-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice2016WordBackup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Access2013-Begin -->
+## MicrosoftOffice365Access2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Access2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Access2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Access2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013
+```
+<!-- MicrosoftOffice365Access2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Access2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Access 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Access 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Access 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Access 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Access2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Access2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Access2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Access 2013*
--   GP name: *MicrosoftOffice365Access2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Access2013 |
+| Friendly Name | Microsoft Office 365 Access 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Access2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365access2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016**  
+<!-- MicrosoftOffice365Access2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Access2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Access2016-Begin -->
+## MicrosoftOffice365Access2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Access2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Access2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Access2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016
+```
+<!-- MicrosoftOffice365Access2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Access2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Access 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Access 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Access 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Access 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Access2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Access2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Access2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Access 2016*
--   GP name: *MicrosoftOffice365Access2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Access2016 |
+| Friendly Name | Microsoft Office 365 Access 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Access2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365common2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013**  
+<!-- MicrosoftOffice365Access2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Access2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Common2013-Begin -->
+## MicrosoftOffice365Common2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Common2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Common2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Common2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013
+```
+<!-- MicrosoftOffice365Common2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2013 applications will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Common2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2013 applications will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers with UE-V.
 
-If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize with UE-V.
+- If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize with UE-V.
+- If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Common2013-Description-End -->
 
-If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Common2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Common2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Common2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Common2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Common 2013*
--   GP name: *MicrosoftOffice365Common2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365common2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Common2013 |
+| Friendly Name | Microsoft Office 365 Common 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Common2013-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Common2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2013-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Common2013-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Common2016-Begin -->
+## MicrosoftOffice365Common2016
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Common2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Common2016-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Common2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2016 applications will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016
+```
+<!-- MicrosoftOffice365Common2016-OmaUri-End -->
 
-If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize with UE-V.
+<!-- MicrosoftOffice365Common2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2016 applications will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers with UE-V.
 
-If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications are excluded from synchronization with UE-V.
+- If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize with UE-V.
+- If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Common2016-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Common2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2016-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Common2016-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Common2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Common2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Common 2016*
--   GP name: *MicrosoftOffice365Common2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Common2016 |
+| Friendly Name | Microsoft Office 365 Common 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Common2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365excel2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013**  
+<!-- MicrosoftOffice365Common2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Common2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Excel2013-Begin -->
+## MicrosoftOffice365Excel2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Excel2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Excel2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Excel2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013
+```
+<!-- MicrosoftOffice365Excel2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Excel2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Excel 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Excel 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Excel 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Excel2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Excel 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Excel2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Excel2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Excel2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Excel2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Excel 2013*
--   GP name: *MicrosoftOffice365Excel2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Excel2013 |
+| Friendly Name | Microsoft Office 365 Excel 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Excel2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365excel2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016**  
+<!-- MicrosoftOffice365Excel2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Excel2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Excel2016-Begin -->
+## MicrosoftOffice365Excel2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Excel2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Excel2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Excel2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016
+```
+<!-- MicrosoftOffice365Excel2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Excel2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Excel 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Excel 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Excel 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Excel2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Excel 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Excel2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Excel2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Excel2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Excel2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Excel 2016*
--   GP name: *MicrosoftOffice365Excel2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Excel2016 |
+| Friendly Name | Microsoft Office 365 Excel 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Excel2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365infopath2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013**  
+<!-- MicrosoftOffice365Excel2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Excel2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365InfoPath2013-Begin -->
+## MicrosoftOffice365InfoPath2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365InfoPath2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365InfoPath2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365InfoPath2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013
+```
+<!-- MicrosoftOffice365InfoPath2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 InfoPath 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 InfoPath 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 InfoPath 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365InfoPath2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 InfoPath 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 InfoPath 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 InfoPath 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 InfoPath 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 InfoPath 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 InfoPath 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365InfoPath2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 InfoPath 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365InfoPath2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365InfoPath2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice365InfoPath2013-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365InfoPath2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365InfoPath2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 InfoPath 2013*
--   GP name: *MicrosoftOffice365InfoPath2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365InfoPath2013 |
+| Friendly Name | Microsoft Office 365 InfoPath 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365InfoPath2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365lync2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013**  
+<!-- MicrosoftOffice365InfoPath2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365InfoPath2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365InfoPath2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Lync2013-Begin -->
+## MicrosoftOffice365Lync2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Lync2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Lync2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Lync2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013
+```
+<!-- MicrosoftOffice365Lync2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Lync2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Lync 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Lync 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Lync 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Lync 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Lync2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Lync2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Lync2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Lync 2013*
--   GP name: *MicrosoftOffice365Lync2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Lync2013 |
+| Friendly Name | Microsoft Office 365 Lync 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Lync2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365lync2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016**  
+<!-- MicrosoftOffice365Lync2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Lync2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Lync2016-Begin -->
+## MicrosoftOffice365Lync2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Lync2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Lync2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Lync2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016
+```
+<!-- MicrosoftOffice365Lync2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Lync2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Lync 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Lync 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Lync 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Lync 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Lync2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Lync2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Lync2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Lync 2016*
--   GP name: *MicrosoftOffice365Lync2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Lync2016 |
+| Friendly Name | Microsoft Office 365 Lync 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Lync2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365onenote2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013**  
+<!-- MicrosoftOffice365Lync2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Lync2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365OneNote2013-Begin -->
+## MicrosoftOffice365OneNote2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365OneNote2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365OneNote2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365OneNote2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013
+```
+<!-- MicrosoftOffice365OneNote2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365OneNote2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 OneNote 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 OneNote 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 OneNote 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365OneNote2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 OneNote 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365OneNote2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365OneNote2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365OneNote2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365OneNote2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 OneNote 2013*
--   GP name: *MicrosoftOffice365OneNote2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365OneNote2013 |
+| Friendly Name | Microsoft Office 365 OneNote 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365OneNote2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365onenote2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016**  
+<!-- MicrosoftOffice365OneNote2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365OneNote2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365OneNote2016-Begin -->
+## MicrosoftOffice365OneNote2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365OneNote2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365OneNote2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365OneNote2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016
+```
+<!-- MicrosoftOffice365OneNote2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365OneNote2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365OneNote2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365OneNote2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365OneNote2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365OneNote2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365OneNote2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 OneNote 2016*
--   GP name: *MicrosoftOffice365OneNote2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365OneNote2016 |
+| Friendly Name | Microsoft Office 365 OneNote 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365OneNote2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365outlook2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013**  
+<!-- MicrosoftOffice365OneNote2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365OneNote2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Outlook2013-Begin -->
+## MicrosoftOffice365Outlook2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Outlook2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Outlook2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Outlook2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013
+```
+<!-- MicrosoftOffice365Outlook2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Outlook2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Outlook2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Outlook2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Outlook2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Outlook 2013*
--   GP name: *MicrosoftOffice365Outlook2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Outlook2013 |
+| Friendly Name | Microsoft Office 365 Outlook 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Outlook2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365outlook2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016**  
+<!-- MicrosoftOffice365Outlook2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Outlook2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Outlook2016-Begin -->
+## MicrosoftOffice365Outlook2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Outlook2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Outlook2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Outlook2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016
+```
+<!-- MicrosoftOffice365Outlook2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Outlook2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Outlook2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Outlook2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Outlook2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Outlook 2016*
--   GP name: *MicrosoftOffice365Outlook2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Outlook2016 |
+| Friendly Name | Microsoft Office 365 Outlook 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Outlook2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013**  
+<!-- MicrosoftOffice365Outlook2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Outlook2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365PowerPoint2013-Begin -->
+## MicrosoftOffice365PowerPoint2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365PowerPoint2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365PowerPoint2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365PowerPoint2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013
+```
+<!-- MicrosoftOffice365PowerPoint2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365PowerPoint2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365PowerPoint2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365PowerPoint2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365PowerPoint2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365PowerPoint2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365PowerPoint2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 PowerPoint 2013*
--   GP name: *MicrosoftOffice365PowerPoint2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365PowerPoint2013 |
+| Friendly Name | Microsoft Office 365 PowerPoint 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365PowerPoint2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016**  
+<!-- MicrosoftOffice365PowerPoint2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365PowerPoint2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365PowerPoint2016-Begin -->
+## MicrosoftOffice365PowerPoint2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365PowerPoint2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365PowerPoint2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365PowerPoint2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016
+```
+<!-- MicrosoftOffice365PowerPoint2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365PowerPoint2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365PowerPoint2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365PowerPoint2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365PowerPoint2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 PowerPoint 2016*
--   GP name: *MicrosoftOffice365PowerPoint2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365PowerPoint2016 |
+| Friendly Name | Microsoft Office 365 PowerPoint 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365PowerPoint2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013**  
+<!-- MicrosoftOffice365PowerPoint2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365PowerPoint2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Project2013-Begin -->
+## MicrosoftOffice365Project2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Project2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Project2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Project2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013
+```
+<!-- MicrosoftOffice365Project2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Project2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Project2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Project2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Project2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Project 2013*
--   GP name: *MicrosoftOffice365Project2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Project2013 |
+| Friendly Name | Microsoft Office 365 Project 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Project2013-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Project2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2013-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Project2013-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Project2016-Begin -->
+## MicrosoftOffice365Project2016
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Project2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Project2016-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Project2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2016 from synchronization between computers with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016
+```
+<!-- MicrosoftOffice365Project2016-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365Project2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2016 from synchronization between computers with UE-V.
 
-If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2016-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2016-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Project2016-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Project2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Project2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Project 2016*
--   GP name: *MicrosoftOffice365Project2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Project2016 |
+| Friendly Name | Microsoft Office 365 Project 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Project2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365publisher2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013**  
+<!-- MicrosoftOffice365Project2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Project2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Publisher2013-Begin -->
+## MicrosoftOffice365Publisher2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Publisher2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Publisher2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Publisher2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013
+```
+<!-- MicrosoftOffice365Publisher2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Publisher2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Publisher2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Publisher2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Publisher2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Publisher 2013*
--   GP name: *MicrosoftOffice365Publisher2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Publisher2013 |
+| Friendly Name | Microsoft Office 365 Publisher 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Publisher2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365publisher2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016**  
+<!-- MicrosoftOffice365Publisher2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Publisher2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Publisher2016-Begin -->
+## MicrosoftOffice365Publisher2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Publisher2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Publisher2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Publisher2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016
+```
+<!-- MicrosoftOffice365Publisher2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Publisher2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Publisher2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Publisher2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Publisher2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Publisher 2016*
--   GP name: *MicrosoftOffice365Publisher2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Publisher2016 |
+| Friendly Name | Microsoft Office 365 Publisher 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Publisher2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013**  
+<!-- MicrosoftOffice365Publisher2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Publisher2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365SharePointDesigner2013-Begin -->
+## MicrosoftOffice365SharePointDesigner2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365SharePointDesigner2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365SharePointDesigner2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365SharePointDesigner2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013
+```
+<!-- MicrosoftOffice365SharePointDesigner2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 SharePoint Designer 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 SharePoint Designer 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 SharePoint Designer 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365SharePointDesigner2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 SharePoint Designer 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 SharePoint Designer 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 SharePoint Designer 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365SharePointDesigner2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365SharePointDesigner2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365SharePointDesigner2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365SharePointDesigner2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365SharePointDesigner2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365SharePointDesigner2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 SharePoint Designer 2013*
--   GP name: *MicrosoftOffice365SharePointDesigner2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365SharePointDesigner2013 |
+| Friendly Name | Microsoft Office 365 SharePoint Designer 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365SharePointDesigner2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365visio2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013**  
+<!-- MicrosoftOffice365SharePointDesigner2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365SharePointDesigner2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365SharePointDesigner2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Visio2013-Begin -->
+## MicrosoftOffice365Visio2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Visio2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Visio2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Visio2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013
+```
+<!-- MicrosoftOffice365Visio2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Visio2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Visio2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Visio2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Visio2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Visio 2013*
--   GP name: *MicrosoftOffice365Visio2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Visio2013 |
+| Friendly Name | Microsoft Office 365 Visio 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Visio2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365visio2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016**  
+<!-- MicrosoftOffice365Visio2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Visio2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Visio2016-Begin -->
+## MicrosoftOffice365Visio2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Visio2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Visio2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Visio2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016
+```
+<!-- MicrosoftOffice365Visio2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Visio2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Visio2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Visio2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Visio2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Visio 2016*
--   GP name: *MicrosoftOffice365Visio2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Visio2016 |
+| Friendly Name | Microsoft Office 365 Visio 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Visio2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365word2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013**  
+<!-- MicrosoftOffice365Visio2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Visio2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Word2013-Begin -->
+## MicrosoftOffice365Word2013
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Word2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Word2013-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Word2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013
+```
+<!-- MicrosoftOffice365Word2013-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Word2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2013.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2013 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Word2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Word2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Word2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Word2013-DFProperties-End -->
+
+<!-- MicrosoftOffice365Word2013-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Word 2013*
--   GP name: *MicrosoftOffice365Word2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Word2013 |
+| Friendly Name | Microsoft Office 365 Word 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Word2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365word2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016**  
+<!-- MicrosoftOffice365Word2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2013-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Word2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Word2016-Begin -->
+## MicrosoftOffice365Word2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Word2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Word2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Word2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016
+```
+<!-- MicrosoftOffice365Word2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Word2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2016.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Word2016-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Word2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2016-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Word2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Word2016-DFProperties-End -->
+
+<!-- MicrosoftOffice365Word2016-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Microsoft Office 365 Word 2016*
--   GP name: *MicrosoftOffice365Word2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Word2016 |
+| Friendly Name | Microsoft Office 365 Word 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Word2016-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-music"></a>**ADMX_UserExperienceVirtualization/Music**  
+<!-- MicrosoftOffice365Word2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2016-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- MicrosoftOffice365Word2016-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Music-Begin -->
+## Music
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Music-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Music-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Music-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Music
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Music
+```
+<!-- Music-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Music app. By default, the user settings of Music sync between computers. Use the policy setting to prevent the user settings of Music from synchronizing between computers.
+<!-- Music-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Music app.
+By default, the user settings of Music sync between computers. Use the policy setting to prevent the user settings of Music from synchronizing between computers.
 
-If you enable this policy setting, Music user settings continue to sync.
+- If you enable this policy setting, Music user settings continue to sync.
+- If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Music-Description-End -->
 
-If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
+<!-- Music-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Music-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- Music-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Music-DFProperties-End -->
+
+<!-- Music-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Music*
--   GP name: *Music*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Music |
+| Friendly Name | Music |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.ZuneMusic_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Music-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-news"></a>**ADMX_UserExperienceVirtualization/News**  
+<!-- Music-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Music-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Music-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- News-Begin -->
+## News
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- News-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- News-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- News-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/News
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/News
+```
+<!-- News-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the News app. By default, the user settings of News sync between computers. Use the policy setting to prevent the user settings of News from synchronizing between computers.
+<!-- News-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the News app.
+By default, the user settings of News sync between computers. Use the policy setting to prevent the user settings of News from synchronizing between computers.
 
-If you enable this policy setting, News user settings continue to sync.
+- If you enable this policy setting, News user settings continue to sync.
+- If you disable this policy setting, News user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- News-Description-End -->
 
-If you disable this policy setting, News user settings are excluded from synchronization.
+<!-- News-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- News-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- News-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- News-DFProperties-End -->
+
+<!-- News-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *News*
--   GP name: *News*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | News |
+| Friendly Name | News |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingNews_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- News-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-notepad"></a>**ADMX_UserExperienceVirtualization/Notepad**  
+<!-- News-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- News-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- News-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Notepad-Begin -->
+## Notepad
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Notepad-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Notepad-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Notepad-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Notepad
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Notepad
+```
+<!-- Notepad-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings of Notepad. By default, the user settings of Notepad synchronize between computers. Use the policy setting to prevent the user settings of Notepad from synchronization between computers.
+<!-- Notepad-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Notepad.
+By default, the user settings of Notepad synchronize between computers. Use the policy setting to prevent the user settings of Notepad from synchronization between computers.
 
-If you enable this policy setting, the Notepad user settings continue to synchronize. 
+- If you enable this policy setting, the Notepad user settings continue to synchronize.
+- If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Notepad-Description-End -->
 
-If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
+<!-- Notepad-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Notepad-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Notepad-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Notepad-DFProperties-End -->
+
+<!-- Notepad-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Notepad*
--   GP name: *Notepad*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Notepad |
+| Friendly Name | Notepad |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftNotepad6 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Notepad-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-reader"></a>**ADMX_UserExperienceVirtualization/Reader**  
+<!-- Notepad-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Notepad-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Notepad-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Reader-Begin -->
+## Reader
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Reader-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Reader-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Reader-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Reader
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Reader
+```
+<!-- Reader-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Reader app. By default, the user settings of Reader sync between computers. Use the policy setting to prevent the user settings of Reader from synchronizing between computers.
+<!-- Reader-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Reader app.
+By default, the user settings of Reader sync between computers. Use the policy setting to prevent the user settings of Reader from synchronizing between computers.
 
-If you enable this policy setting, Reader user settings continue to sync.
+- If you enable this policy setting, Reader user settings continue to sync.
+- If you disable this policy setting, Reader user settings are excluded from the synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Reader-Description-End -->
 
-If you disable this policy setting, Reader user settings are excluded from the synchronization.
+<!-- Reader-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Reader-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-      
+<!-- Reader-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Reader-DFProperties-End -->
+
+<!-- Reader-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Reader*
--   GP name: *Reader*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Reader |
+| Friendly Name | Reader |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.Reader_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Reader-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-repositorytimeout"></a>**ADMX_UserExperienceVirtualization/RepositoryTimeout**  
+<!-- Reader-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Reader-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Reader-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RepositoryTimeout-Begin -->
+## RepositoryTimeout
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RepositoryTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RepositoryTimeout-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- RepositoryTimeout-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/RepositoryTimeout
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/RepositoryTimeout
+```
+<!-- RepositoryTimeout-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the number of milliseconds that the computer waits when retrieving user settings from the settings storage location. You can use this setting to override the default value of 2000 milliseconds. 
+<!-- RepositoryTimeout-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the number of milliseconds that the computer waits when retrieving user settings from the settings storage location.
+You can use this setting to override the default value of 2000 milliseconds.
 
-If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings. 
+- If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings.
+- If you disable or do not configure this policy setting, the default value of 2000 milliseconds is used.
+<!-- RepositoryTimeout-Description-End -->
 
-If you disable or do not configure this policy setting, the default value of 2000 milliseconds is used.
+<!-- RepositoryTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RepositoryTimeout-Editable-End -->
 
-<!--/Description-->
+<!-- RepositoryTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RepositoryTimeout-DFProperties-End -->
+
+<!-- RepositoryTimeout-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Synchronization timeout*
--   GP name: *RepositoryTimeout*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RepositoryTimeout |
+| Friendly Name | Synchronization timeout |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- RepositoryTimeout-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-settingsstoragepath"></a>**ADMX_UserExperienceVirtualization/SettingsStoragePath**  
+<!-- RepositoryTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RepositoryTimeout-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- RepositoryTimeout-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SettingsStoragePath-Begin -->
+## SettingsStoragePath
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SettingsStoragePath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SettingsStoragePath-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SettingsStoragePath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SettingsStoragePath
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SettingsStoragePath
+```
+<!-- SettingsStoragePath-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures where the settings package files that contain user settings are stored.
+<!-- SettingsStoragePath-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures where the settings package files that contain user settings are stored.
 
-If you enable this policy setting, the user settings are stored in the specified location. 
+- If you enable this policy setting, the user settings are stored in the specified location.
+- If you disable or do not configure this policy setting, the user settings are stored in the user's home directory if configured for your environment.
+<!-- SettingsStoragePath-Description-End -->
 
-If you disable or do not configure this policy setting, the user settings are stored in the user’s home directory if configured for your environment. 
+<!-- SettingsStoragePath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SettingsStoragePath-Editable-End -->
 
-<!--/Description-->
+<!-- SettingsStoragePath-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SettingsStoragePath-DFProperties-End -->
+
+<!-- SettingsStoragePath-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Settings storage path*
--   GP name: *SettingsStoragePath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SettingsStoragePath |
+| Friendly Name | Settings storage path |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SettingsStoragePath-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-settingstemplatecatalogpath"></a>**ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath**  
+<!-- SettingsStoragePath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SettingsStoragePath-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SettingsStoragePath-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SettingsTemplateCatalogPath-Begin -->
+## SettingsTemplateCatalogPath
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SettingsTemplateCatalogPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SettingsTemplateCatalogPath-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SettingsTemplateCatalogPath-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath
+```
+<!-- SettingsTemplateCatalogPath-OmaUri-End -->
 
-<hr/>
+<!-- SettingsTemplateCatalogPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures where custom settings location templates are stored and if the catalog will be used to replace the default Microsoft templates installed with the UE-V Agent.
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures where custom settings location templates are stored and if the catalog will be used to replace the default Microsoft templates installed with the UE-V Agent.
-
-If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
-
+- If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
 If you specify a UNC path and leave the option to replace the default Microsoft templates unchecked, the UE-V Agent will use the default Microsoft templates installed by the UE-V Agent and custom templates in the settings template catalog. If there are custom templates in the settings template catalog which use the same ID as the default Microsoft templates, they will be ignored.
-
 If you specify a UNC path and check the option to replace the default Microsoft templates, all of the default Microsoft templates installed by the UE-V Agent will be deleted from the computer and only the templates located in the settings template catalog will be used.
+- If you disable this policy setting, the UE-V Agent will not use the custom settings location templates.
+- If you disable this policy setting after it has been enabled, the UE-V Agent will not restore the default Microsoft templates.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- SettingsTemplateCatalogPath-Description-End -->
 
-If you disable this policy setting, the UE-V Agent will not use the custom settings location templates. If you disable this policy setting after it has been enabled, the UE-V Agent will not restore the default Microsoft templates. 
+<!-- SettingsTemplateCatalogPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SettingsTemplateCatalogPath-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- SettingsTemplateCatalogPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SettingsTemplateCatalogPath-DFProperties-End -->
+
+<!-- SettingsTemplateCatalogPath-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Settings template catalog path*
--   GP name: *SettingsTemplateCatalogPath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SettingsTemplateCatalogPath |
+| Friendly Name | Settings template catalog path |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SettingsTemplateCatalogPath-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-sports"></a>**ADMX_UserExperienceVirtualization/Sports**  
+<!-- SettingsTemplateCatalogPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SettingsTemplateCatalogPath-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SettingsTemplateCatalogPath-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Sports-Begin -->
+## Sports
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Sports-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Sports-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Sports-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Sports
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Sports
+```
+<!-- Sports-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Sports app. By default, the user settings of Sports sync between computers. Use the policy setting to prevent the user settings of Sports from synchronizing between computers.
+<!-- Sports-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Sports app.
+By default, the user settings of Sports sync between computers. Use the policy setting to prevent the user settings of Sports from synchronizing between computers.
 
-If you enable this policy setting, Sports user settings continue to sync.
+- If you enable this policy setting, Sports user settings continue to sync.
+- If you disable this policy setting, Sports user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Sports-Description-End -->
 
-If you disable this policy setting, Sports user settings are excluded from synchronization.
+<!-- Sports-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Sports-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Sports-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Sports-DFProperties-End -->
+
+<!-- Sports-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Sports*
--   GP name: *Sports*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Sports |
+| Friendly Name | Sports |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingSports_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Sports-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncenabled"></a>**ADMX_UserExperienceVirtualization/SyncEnabled**  
+<!-- Sports-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Sports-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Sports-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncEnabled-Begin -->
+## SyncEnabled
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncEnabled-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncEnabled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncEnabled
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncEnabled
+```
+<!-- SyncEnabled-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to enable or disable User Experience Virtualization (UE-V). Only applies to Windows 10 or earlier.
+<!-- SyncEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to enable or disable User Experience Virtualization (UE-V). Only applies to Windows 10 or earlier.
+<!-- SyncEnabled-Description-End -->
 
-<!--/Description-->
+<!-- SyncEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncEnabled-Editable-End -->
+
+<!-- SyncEnabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncEnabled-DFProperties-End -->
+
+<!-- SyncEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Use User Experience Virtualization (UE-V)*
--   GP name: *SyncEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncovermeterednetwork"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork**  
+| Name | Value |
+|:--|:--|
+| Name | SyncEnabled |
+| Friendly Name | Use User Experience Virtualization (UE-V) |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncEnabled-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SyncEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncEnabled-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncEnabled-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncOverMeteredNetwork-Begin -->
+## SyncOverMeteredNetwork
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncOverMeteredNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncOverMeteredNetwork-Applicability-End -->
 
-<hr/>
+<!-- SyncOverMeteredNetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections. By default, the UE-V Agent does not synchronize settings over a metered connection.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork
+```
+<!-- SyncOverMeteredNetwork-OmaUri-End -->
 
+<!-- SyncOverMeteredNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections.
+By default, the UE-V Agent does not synchronize settings over a metered connection.
 With this setting enabled, the UE-V Agent synchronizes settings over a metered connection.
-
 With this setting disabled, the UE-V Agent does not synchronize settings over a metered connection.
-
 If you do not configure this policy setting, any defined values are deleted.
+<!-- SyncOverMeteredNetwork-Description-End -->
 
-<!--/Description-->
+<!-- SyncOverMeteredNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetwork-Editable-End -->
+
+<!-- SyncOverMeteredNetwork-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncOverMeteredNetwork-DFProperties-End -->
+
+<!-- SyncOverMeteredNetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Sync settings over metered connections*
--   GP name: *SyncOverMeteredNetwork*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SyncOverMeteredNetwork |
+| Friendly Name | Sync settings over metered connections |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncOverMeteredNetwork |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncOverMeteredNetwork-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming**  
+<!-- SyncOverMeteredNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetwork-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SyncOverMeteredNetwork-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncOverMeteredNetworkWhenRoaming-Begin -->
+## SyncOverMeteredNetworkWhenRoaming
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncOverMeteredNetworkWhenRoaming-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncOverMeteredNetworkWhenRoaming-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncOverMeteredNetworkWhenRoaming-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming
+```
+<!-- SyncOverMeteredNetworkWhenRoaming-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection. By default, the UE-V Agent does not synchronize settings over a metered connection that is roaming.
-
+<!-- SyncOverMeteredNetworkWhenRoaming-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection.
+By default, the UE-V Agent does not synchronize settings over a metered connection that is roaming.
 With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that is roaming.
-
 With this setting disabled, the UE-V Agent will not synchronize settings over a metered connection that is roaming.
-
 If you do not configure this policy setting, any defined values are deleted.
+<!-- SyncOverMeteredNetworkWhenRoaming-Description-End -->
 
-<!--/Description-->
+<!-- SyncOverMeteredNetworkWhenRoaming-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetworkWhenRoaming-Editable-End -->
+
+<!-- SyncOverMeteredNetworkWhenRoaming-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncOverMeteredNetworkWhenRoaming-DFProperties-End -->
+
+<!-- SyncOverMeteredNetworkWhenRoaming-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Sync settings over metered connections even when roaming*
--   GP name: *SyncOverMeteredNetworkWhenRoaming*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SyncOverMeteredNetworkWhenRoaming |
+| Friendly Name | Sync settings over metered connections even when roaming |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncOverMeteredNetworkWhenRoaming |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncOverMeteredNetworkWhenRoaming-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncproviderpingenabled"></a>**ADMX_UserExperienceVirtualization/SyncProviderPingEnabled**  
+<!-- SyncOverMeteredNetworkWhenRoaming-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetworkWhenRoaming-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SyncOverMeteredNetworkWhenRoaming-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncProviderPingEnabled-Begin -->
+## SyncProviderPingEnabled
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncProviderPingEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncProviderPingEnabled-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncProviderPingEnabled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncProviderPingEnabled
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncProviderPingEnabled
+```
+<!-- SyncProviderPingEnabled-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the User Experience Virtualization (UE-V) sync provider to ping the settings storage path before attempting to sync settings. If the ping is successful then the sync provider attempts to synchronize the settings packages. If the ping is unsuccessful then the sync provider doesn’t attempt the synchronization.
+<!-- SyncProviderPingEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the User Experience Virtualization (UE-V) sync provider to ping the settings storage path before attempting to sync settings. If the ping is successful then the sync provider attempts to synchronize the settings packages. If the ping is unsuccessful then the sync provider doesn't attempt the synchronization.
 
-If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
+- If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
+- If you disable this policy setting, the sync provider doesn't ping the settings storage location before synchronizing settings packages.
+- If you do not configure this policy, any defined values will be deleted.
+<!-- SyncProviderPingEnabled-Description-End -->
 
-If you disable this policy setting, the sync provider doesn’t ping the settings storage location before synchronizing settings packages. 
+<!-- SyncProviderPingEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncProviderPingEnabled-Editable-End -->
 
-If you do not configure this policy, any defined values will be deleted.    
+<!-- SyncProviderPingEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncProviderPingEnabled-DFProperties-End -->
+
+<!-- SyncProviderPingEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Ping the settings storage location before sync*
--   GP name: *SyncProviderPingEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SyncProviderPingEnabled |
+| Friendly Name | Ping the settings storage location before sync |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncProviderPingEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncProviderPingEnabled-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncunlistedwindows8apps"></a>**ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps**  
+<!-- SyncProviderPingEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncProviderPingEnabled-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SyncProviderPingEnabled-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncUnlistedWindows8Apps-Begin -->
+## SyncUnlistedWindows8Apps
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncUnlistedWindows8Apps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncUnlistedWindows8Apps-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SyncUnlistedWindows8Apps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps
+```
+<!-- SyncUnlistedWindows8Apps-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that are not explicitly listed in Windows App List. By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
-
+<!-- SyncUnlistedWindows8Apps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that are not explicitly listed in Windows App List.
+By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
 With this setting enabled, the settings of all Windows apps not expressly disable in the Windows App List are synchronized.
-
 With this setting disabled, only the settings of the Windows apps set to synchronize in the Windows App List are synchronized.
-
 If you do not configure this policy setting, any defined values are deleted.
+<!-- SyncUnlistedWindows8Apps-Description-End -->
 
-<!--/Description-->
+<!-- SyncUnlistedWindows8Apps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncUnlistedWindows8Apps-Editable-End -->
+
+<!-- SyncUnlistedWindows8Apps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncUnlistedWindows8Apps-DFProperties-End -->
+
+<!-- SyncUnlistedWindows8Apps-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Sync Unlisted Windows Apps*
--   GP name: *SyncUnlistedWindows8Apps*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SyncUnlistedWindows8Apps |
+| Friendly Name | Sync Unlisted Windows Apps |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncUnlistedWindows8Apps |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncUnlistedWindows8Apps-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-travel"></a>**ADMX_UserExperienceVirtualization/Travel**  
+<!-- SyncUnlistedWindows8Apps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncUnlistedWindows8Apps-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- SyncUnlistedWindows8Apps-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Travel-Begin -->
+## Travel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Travel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Travel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Travel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Travel
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Travel
+```
+<!-- Travel-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Travel app. By default, the user settings of Travel sync between computers. Use the policy setting to prevent the user settings of Travel from synchronizing between computers.
+<!-- Travel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Travel app.
+By default, the user settings of Travel sync between computers. Use the policy setting to prevent the user settings of Travel from synchronizing between computers.
 
-If you enable this policy setting, Travel user settings continue to sync.
+- If you enable this policy setting, Travel user settings continue to sync.
+- If you disable this policy setting, Travel user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Travel-Description-End -->
 
-If you disable this policy setting, Travel user settings are excluded from synchronization.
+<!-- Travel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Travel-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Travel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Travel-DFProperties-End -->
+
+<!-- Travel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Travel*
--   GP name: *Travel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Travel |
+| Friendly Name | Travel |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingTravel_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Travel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-trayiconenabled"></a>**ADMX_UserExperienceVirtualization/TrayIconEnabled**  
+<!-- Travel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Travel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Travel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TrayIconEnabled-Begin -->
+## TrayIconEnabled
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TrayIconEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TrayIconEnabled-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- TrayIconEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/TrayIconEnabled
+```
+<!-- TrayIconEnabled-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting enables the User Experience Virtualization (UE-V) tray icon. By default, an icon appears in the system tray that displays notifications for UE-V. This icon also provides a link to the UE-V Agent application, Company Settings Center. Users can open the Company Settings Center by right-clicking the icon and selecting Open or by double-clicking the icon. When this group policy setting is enabled, the UE-V tray icon is visible, the UE-V notifications display, and the Company Settings Center is accessible from the tray icon.
-
+<!-- TrayIconEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables the User Experience Virtualization (UE-V) tray icon. By default, an icon appears in the system tray that displays notifications for UE-V. This icon also provides a link to the UE-V Agent application, Company Settings Center. Users can open the Company Settings Center by right-clicking the icon and selecting Open or by double-clicking the icon. When this group policy setting is enabled, the UE-V tray icon is visible, the UE-V notifications display, and the Company Settings Center is accessible from the tray icon.
 With this setting disabled, the tray icon does not appear in the system tray, UE-V never displays notifications, and the user cannot access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
-
 If you do not configure this policy setting, any defined values are deleted.
+<!-- TrayIconEnabled-Description-End -->
 
-<!--/Description-->
+<!-- TrayIconEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TrayIconEnabled-Editable-End -->
+
+<!-- TrayIconEnabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TrayIconEnabled-DFProperties-End -->
+
+<!-- TrayIconEnabled-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Tray Icon*
--   GP name: *TrayIconEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | TrayIconEnabled |
+| Friendly Name | Tray Icon |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | TrayIconEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- TrayIconEnabled-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-video"></a>**ADMX_UserExperienceVirtualization/Video**  
+<!-- TrayIconEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TrayIconEnabled-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- TrayIconEnabled-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Video-Begin -->
+## Video
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Video-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Video-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Video-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Video
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Video
+```
+<!-- Video-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Video app. By default, the user settings of Video sync between computers. Use the policy setting to prevent the user settings of Video from synchronizing between computers.
+<!-- Video-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Video app.
+By default, the user settings of Video sync between computers. Use the policy setting to prevent the user settings of Video from synchronizing between computers.
 
-If you enable this policy setting, Video user settings continue to sync.
+- If you enable this policy setting, Video user settings continue to sync.
+- If you disable this policy setting, Video user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Video-Description-End -->
 
-If you disable this policy setting, Video user settings are excluded from synchronization.
+<!-- Video-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Video-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Video-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Video-DFProperties-End -->
+
+<!-- Video-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Video*
--   GP name: *Video*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Video |
+| Friendly Name | Video |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.ZuneVideo_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Video-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-weather"></a>**ADMX_UserExperienceVirtualization/Weather**  
+<!-- Video-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Video-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Video-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Weather-Begin -->
+## Weather
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Weather-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Weather-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Weather-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Weather
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Weather
+```
+<!-- Weather-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings for the Weather app. By default, the user settings of Weather sync between computers. Use the policy setting to prevent the user settings of Weather from synchronizing between computers.
+<!-- Weather-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Weather app.
+By default, the user settings of Weather sync between computers. Use the policy setting to prevent the user settings of Weather from synchronizing between computers.
 
-If you enable this policy setting, Weather user settings continue to sync.
+- If you enable this policy setting, Weather user settings continue to sync.
+- If you disable this policy setting, Weather user settings are excluded from synchronization.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Weather-Description-End -->
 
-If you disable this policy setting, Weather user settings are excluded from synchronization.
+<!-- Weather-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Weather-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Weather-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Weather-DFProperties-End -->
+
+<!-- Weather-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Weather*
--   GP name: *Weather*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-wordpad"></a>**ADMX_UserExperienceVirtualization/Wordpad**  
+| Name | Value |
+|:--|:--|
+| Name | Weather |
+| Friendly Name | Weather |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingWeather_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Weather-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- Weather-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Weather-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Weather-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Wordpad-Begin -->
+## Wordpad
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Wordpad-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Wordpad-Applicability-End -->
 
-<hr/>
+<!-- Wordpad-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Wordpad
+```
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures the synchronization of user settings of WordPad. By default, the user settings of WordPad synchronize between computers. Use the policy setting to prevent the user settings of WordPad from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Wordpad
+```
+<!-- Wordpad-OmaUri-End -->
 
-If you enable this policy setting, the WordPad user settings continue to synchronize. 
+<!-- Wordpad-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of WordPad.
+By default, the user settings of WordPad synchronize between computers. Use the policy setting to prevent the user settings of WordPad from synchronization between computers.
 
-If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
+- If you enable this policy setting, the WordPad user settings continue to synchronize.
+- If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
+- If you do not configure this policy setting, any defined values will be deleted.
+<!-- Wordpad-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Wordpad-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Wordpad-Editable-End -->
 
-<!--/Description-->
+<!-- Wordpad-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Wordpad-DFProperties-End -->
+
+<!-- Wordpad-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *WordPad*
--   GP name: *Wordpad*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-Footnotes:
+| Name | Value |
+|:--|:--|
+| Name | Wordpad |
+| Friendly Name | WordPad |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftWordpad6 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Wordpad-AdmxBacked-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- Wordpad-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Wordpad-Examples-End -->
 
-<!--/Policies-->
+<!-- Wordpad-End -->
 
+<!-- ADMX_UserExperienceVirtualization-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_UserExperienceVirtualization-CspMoreInfo-End -->
+
+<!-- ADMX_UserExperienceVirtualization-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

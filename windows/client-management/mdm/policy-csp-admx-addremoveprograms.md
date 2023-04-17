@@ -1,954 +1,743 @@
 ---
-title: Policy CSP - ADMX_AddRemovePrograms
-description: Policy CSP - ADMX_AddRemovePrograms 
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: ADMX_AddRemovePrograms Policy CSP
+description: Learn more about the ADMX_AddRemovePrograms Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 08/13/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_AddRemovePrograms-Begin -->
 # Policy CSP - ADMX_AddRemovePrograms
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_AddRemovePrograms-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_AddRemovePrograms-Editable-End -->
 
-<!--Policies-->
-## Policy CSP - ADMX_AddRemovePrograms  
+<!-- DefaultCategory-Begin -->
+## DefaultCategory
 
-<dl>
-  <dd>
-    <a href="#admx-addremoveprograms-defaultcategory">ADMX_AddRemovePrograms/DefaultCategory</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noaddfromcdorfloppy">ADMX_AddRemovePrograms/NoAddFromCDorFloppy</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noaddfrominternet">ADMX_AddRemovePrograms/NoAddFromInternet</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noaddfromnetwork">ADMX_AddRemovePrograms/NoAddFromNetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noaddpage">ADMX_AddRemovePrograms/NoAddPage</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noaddremoveprograms">ADMX_AddRemovePrograms/NoAddRemovePrograms</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-nochooseprogramspage">ADMX_AddRemovePrograms/NoChooseProgramsPage</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noremovepage">ADMX_AddRemovePrograms/NoRemovePage</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-noservices">ADMX_AddRemovePrograms/NoServices</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-nosupportinfo">ADMX_AddRemovePrograms/NoSupportInfo</a>
-  </dd>
-  <dd>
-    <a href="#admx-addremoveprograms-nowindowssetuppage">ADMX_AddRemovePrograms/NoWindowsSetupPage</a>
-  </dd>
-</dl>
+<!-- DefaultCategory-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DefaultCategory-Applicability-End -->
 
+<!-- DefaultCategory-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/DefaultCategory
+```
+<!-- DefaultCategory-OmaUri-End -->
 
-<hr/>
+<!-- DefaultCategory-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the category of programs that appears when users open the "Add New Programs" page.
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-defaultcategory"></a>**ADMX_AddRemovePrograms/DefaultCategory**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Available in the latest Windows 10 Insider Preview Build. The policy setting specifies the category of programs that appears when users open the "Add New Programs" page. If you enable this setting, only the programs in the category you specify are displayed when the "Add New Programs" page opens. You can use the Category box on the "Add New Programs" page to display programs in other categories. 
+- If you enable this setting, only the programs in the category you specify are displayed when the "Add New Programs" page opens. Users can use the Category box on the "Add New Programs" page to display programs in other categories.
 
 To use this setting, type the name of a category in the Category box for this setting. You must enter a category that is already defined in Add or Remove Programs. To define a category, use Software Installation.
 
-If you disable this setting or do not configure it, all programs (Category: All) are displayed when the "Add New Programs" page opens. You can use this setting to direct users to the programs they are most likely to need. 
+- If you disable this setting or do not configure it, all programs (Category: All) are displayed when the "Add New Programs" page opens.
+
+You can use this setting to direct users to the programs they are most likely to need.
 
 > [!NOTE]
 > This setting is ignored if either the "Remove Add or Remove Programs" setting or the "Hide Add New Programs page" setting is enabled.
+<!-- DefaultCategory-Description-End -->
 
-<!--/Description-->
+<!-- DefaultCategory-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DefaultCategory-Editable-End -->
+
+<!-- DefaultCategory-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DefaultCategory-DFProperties-End -->
+
+<!-- DefaultCategory-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Specify default category for Add New Programs*
-- GP name: *DefaultCategory*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DefaultCategory |
+| Friendly Name | Specify default category for Add New Programs |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- DefaultCategory-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DefaultCategory-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DefaultCategory-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- DefaultCategory-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoAddFromCDorFloppy-Begin -->
+## NoAddFromCDorFloppy
 
-<hr/>
+<!-- NoAddFromCDorFloppy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoAddFromCDorFloppy-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noaddfromcdorfloppy"></a>**ADMX_AddRemovePrograms/NoAddFromCDorFloppy**  
+<!-- NoAddFromCDorFloppy-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoAddFromCDorFloppy
+```
+<!-- NoAddFromCDorFloppy-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoAddFromCDorFloppy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
-
-If you disable this setting or do not configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users. This setting does not prevent users from using other tools and methods to add or remove program components.
+This setting does not prevent users from using other tools and methods to add or remove program components.
 
 > [!NOTE]
 > If the "Hide Add New Programs page" setting is enabled, this setting is ignored. Also, if the "Prevent removable media source for any install" setting (located in User Configuration\Administrative Templates\Windows Components\Windows Installer) is enabled, users cannot add programs from removable media, regardless of this setting.
+<!-- NoAddFromCDorFloppy-Description-End -->
 
-<!--/Description-->
+<!-- NoAddFromCDorFloppy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoAddFromCDorFloppy-Editable-End -->
+
+<!-- NoAddFromCDorFloppy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoAddFromCDorFloppy-DFProperties-End -->
+
+<!-- NoAddFromCDorFloppy-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide the "Add a program from CD-ROM or floppy disk" option*
-- GP name: *NoAddFromCDorFloppy*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoAddFromCDorFloppy |
+| Friendly Name | Hide the "Add a program from CD-ROM or floppy disk" option |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoAddFromCDorFloppy |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoAddFromCDorFloppy-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoAddFromCDorFloppy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoAddFromCDorFloppy-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoAddFromCDorFloppy-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoAddFromInternet-Begin -->
+## NoAddFromInternet
 
-<hr/>
+<!-- NoAddFromInternet-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoAddFromInternet-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noaddfrominternet"></a>**ADMX_AddRemovePrograms/NoAddFromInternet**  
+<!-- NoAddFromInternet-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoAddFromInternet
+```
+<!-- NoAddFromInternet-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoAddFromInternet-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the "Add programs from Microsoft" section from the Add New Programs page. This setting prevents users from using Add or Remove Programs to connect to Windows Update.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the "Add programs from Microsoft" section from the Add New Programs page. This setting prevents users from using Add or Remove Programs to connect to Windows Update.
-
-If you disable this setting or do not configure it, "Add programs from Microsoft" is available to all users. This setting does not prevent users from using other tools and methods to connect to Windows Update.
+This setting does not prevent users from using other tools and methods to connect to Windows Update.
 
 > [!NOTE]
 > If the "Hide Add New Programs page" setting is enabled, this setting is ignored.
+<!-- NoAddFromInternet-Description-End -->
 
-<!--/Description-->
+<!-- NoAddFromInternet-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoAddFromInternet-Editable-End -->
+
+<!-- NoAddFromInternet-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoAddFromInternet-DFProperties-End -->
+
+<!-- NoAddFromInternet-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide the "Add programs from Microsoft" option*
-- GP name: *NoAddFromInternet*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoAddFromInternet |
+| Friendly Name | Hide the "Add programs from Microsoft" option |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoAddFromInternet |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoAddFromInternet-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoAddFromInternet-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoAddFromInternet-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoAddFromInternet-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoAddFromNetwork-Begin -->
+## NoAddFromNetwork
 
-<hr/>
+<!-- NoAddFromNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoAddFromNetwork-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noaddfromnetwork"></a>**ADMX_AddRemovePrograms/NoAddFromNetwork**  
+<!-- NoAddFromNetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoAddFromNetwork
+```
+<!-- NoAddFromNetwork-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoAddFromNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from viewing or installing published programs.
 
-<!--/SupportedSKUs-->
-<hr/>
+This setting removes the "Add programs from your network" section from the Add New Programs page. The "Add programs from your network" section lists published programs and provides an easy way to install them.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users that the programs are available, to recommend their use, or to enable users to install them without having to search for installation files.
 
-> [!div class = "checklist"]
-> * User
+- If you enable this setting, users cannot tell which programs have been published by the system administrator, and they cannot use Add or Remove Programs to install published programs. However, they can still install programs by using other methods, and they can view and install assigned (partially installed) programs that are offered on the desktop or on the Start menu.
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from viewing or installing published programs. This setting removes the "Add programs from your network" section from the Add New Programs page. The "Add programs from your network" section lists published programs and provides an easy way to install them. Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users that the programs are available, to recommend their use, or to enable users to install them without having to search for installation files. 
-
-If you enable this setting, users cannot tell which programs have been published by the system administrator, and they cannot use Add or Remove Programs to install published programs. However, they can still install programs by using other methods, and they can view and install assigned (partially installed) programs that are offered on the desktop or on the Start menu. 
-
-If you disable this setting or do not configure it, "Add programs from your network" is available to all users.
+- If you disable this setting or do not configure it, "Add programs from your network" is available to all users.
 
 > [!NOTE]
 > If the "Hide Add New Programs page" setting is enabled, this setting is ignored.
+<!-- NoAddFromNetwork-Description-End -->
 
-<!--/Description-->
+<!-- NoAddFromNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoAddFromNetwork-Editable-End -->
+
+<!-- NoAddFromNetwork-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoAddFromNetwork-DFProperties-End -->
+
+<!-- NoAddFromNetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide the "Add programs from your network" option*
-- GP name: *NoAddFromNetwork*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoAddFromNetwork |
+| Friendly Name | Hide the "Add programs from your network" option |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoAddFromNetwork |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoAddFromNetwork-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoAddFromNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoAddFromNetwork-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoAddFromNetwork-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- NoAddPage-Begin -->
+## NoAddPage
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noaddpage"></a>**ADMX_AddRemovePrograms/NoAddPage**  
+<!-- NoAddPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoAddPage-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoAddPage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoAddPage
+```
+<!-- NoAddPage-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoAddPage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Add New Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+The Add New Programs button lets users install programs published or assigned by a system administrator.
 
-> [!div class = "checklist"]
-> * User
+If you disable this setting or do not configure it, the Add New Programs button is available to all users.
 
-<hr/>
+This setting does not prevent users from using other tools and methods to install programs.
+<!-- NoAddPage-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoAddPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoAddPage-Editable-End -->
 
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Add New Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page. The Add New Programs button lets users install programs published or assigned by a system administrator.
+<!-- NoAddPage-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this setting or do not configure it, the Add New Programs button is available to all users. This setting does not prevent users from using other tools and methods to install programs.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoAddPage-DFProperties-End -->
 
-<!--/Description-->
+<!-- NoAddPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide Add New Programs page*
-- GP name: *NoAddPage*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoAddPage |
+| Friendly Name | Hide Add New Programs page |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoAddPage |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoAddPage-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoAddPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoAddPage-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoAddPage-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoAddRemovePrograms-Begin -->
+## NoAddRemovePrograms
 
-<hr/>
+<!-- NoAddRemovePrograms-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoAddRemovePrograms-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noaddremoveprograms"></a>**ADMX_AddRemovePrograms/NoAddRemovePrograms**  
+<!-- NoAddRemovePrograms-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoAddRemovePrograms
+```
+<!-- NoAddRemovePrograms-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoAddRemovePrograms-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from using Add or Remove Programs.
 
-<!--/SupportedSKUs-->
-<hr/>
+This setting removes Add or Remove Programs from Control Panel and removes the Add or Remove Programs item from menus.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Add or Remove Programs lets users install, uninstall, repair, add, and remove features and components of Windows 2000 Professional and a wide variety of Windows programs. Programs published or assigned to the user appear in Add or Remove Programs.
 
-> [!div class = "checklist"]
-> * User
+If you disable this setting or do not configure it, Add or Remove Programs is available to all users.
 
-<hr/>
+When enabled, this setting takes precedence over the other settings in this folder.
 
-<!--/Scope-->
-<!--Description-->
+This setting does not prevent users from using other tools and methods to install or uninstall programs.
+<!-- NoAddRemovePrograms-Description-End -->
 
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from using Add or Remove Programs. This setting removes Add or Remove Programs from Control Panel and removes the Add or Remove Programs item from menus. Add or Remove Programs lets users install, uninstall, repair, add, and remove features and components of Windows 2000 Professional and a wide variety of Windows programs. Programs published or assigned to the user appear in Add or Remove Programs. 
+<!-- NoAddRemovePrograms-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoAddRemovePrograms-Editable-End -->
 
-If you disable this setting or do not configure it, Add or Remove Programs is available to all users. When enabled, this setting takes precedence over the other settings in this folder. This setting does not prevent users from using other tools and methods to install or uninstall programs.
+<!-- NoAddRemovePrograms-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoAddRemovePrograms-DFProperties-End -->
+
+<!-- NoAddRemovePrograms-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Remove Add or Remove Programs*
-- GP name: *NoAddRemovePrograms*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoAddRemovePrograms |
+| Friendly Name | Remove Add or Remove Programs |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoAddRemovePrograms |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoAddRemovePrograms-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoAddRemovePrograms-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoAddRemovePrograms-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoAddRemovePrograms-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoChooseProgramsPage-Begin -->
+## NoChooseProgramsPage
 
-<hr/>
+<!-- NoChooseProgramsPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoChooseProgramsPage-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-nochooseprogramspage"></a>**ADMX_AddRemovePrograms/NoChooseProgramsPage**  
+<!-- NoChooseProgramsPage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoChooseProgramsPage
+```
+<!-- NoChooseProgramsPage-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoChooseProgramsPage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Set Program Access and Defaults button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page.
 
-<!--/SupportedSKUs-->
-<hr/>
+The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users.
 
-> [!div class = "checklist"]
-> * User
+This setting does not prevent users from using other tools and methods to change program access or defaults.
 
-<hr/>
+This setting does not prevent the Set Program Access and Defaults icon from appearing on the Start menu. See the "Remove Set Program Access and Defaults from Start menu" setting.
+<!-- NoChooseProgramsPage-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoChooseProgramsPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoChooseProgramsPage-Editable-End -->
 
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Set Program Access and Defaults button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page. The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations. 
+<!-- NoChooseProgramsPage-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this setting or do not configure it, the Set Program Access and Defaults button is available to all users. This setting does not prevent users from using other tools and methods to change program access or defaults. This setting does not prevent the Set Program Access and Defaults icon from appearing on the Start menu. See the "Remove Set Program Access and Defaults from Start menu" setting.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoChooseProgramsPage-DFProperties-End -->
 
-
-<!--/Description-->
+<!-- NoChooseProgramsPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide the Set Program Access and Defaults page*
-- GP name: *NoChooseProgramsPage*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoChooseProgramsPage |
+| Friendly Name | Hide the Set Program Access and Defaults page |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoChooseProgramsPage |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoChooseProgramsPage-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoChooseProgramsPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoChooseProgramsPage-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoChooseProgramsPage-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoRemovePage-Begin -->
+## NoRemovePage
 
-<hr/>
+<!-- NoRemovePage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRemovePage-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noremovepage"></a>**ADMX_AddRemovePrograms/NoRemovePage**  
+<!-- NoRemovePage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoRemovePage
+```
+<!-- NoRemovePage-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoRemovePage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Change or Remove Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page.
 
-<!--/SupportedSKUs-->
-<hr/>
+The Change or Remove Programs button lets users uninstall, repair, add, or remove features of installed programs.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users.
 
-> [!div class = "checklist"]
-> * User
+This setting does not prevent users from using other tools and methods to delete or uninstall programs.
+<!-- NoRemovePage-Description-End -->
 
-<hr/>
+<!-- NoRemovePage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRemovePage-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoRemovePage-DFProperties-Begin -->
+**Description framework properties**:
 
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Change or Remove Programs button from the Add or Remove Programs bar. As a result, users cannot view or change the attached page. The Change or Remove Programs button lets users uninstall, repair, add, or remove features of installed programs.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRemovePage-DFProperties-End -->
 
-If you disable this setting or do not configure it, the Change or Remove Programs page is available to all users. This setting does not prevent users from using other tools and methods to delete or uninstall programs.
-
-<!--/Description-->
+<!-- NoRemovePage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide Change or Remove Programs page*
-- GP name: *NoRemovePage*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoRemovePage |
+| Friendly Name | Hide Change or Remove Programs page |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoRemovePage |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoRemovePage-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoRemovePage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRemovePage-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoRemovePage-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoServices-Begin -->
+## NoServices
 
-<hr/>
+<!-- NoServices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoServices-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-noservices"></a>**ADMX_AddRemovePrograms/NoServices**  
+<!-- NoServices-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoServices
+```
+<!-- NoServices-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoServices-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from using Add or Remove Programs to configure installed services.
 
-<!--/SupportedSKUs-->
-<hr/>
+This setting removes the "Set up services" section of the Add/Remove Windows Components page. The "Set up services" section lists system services that have not been configured and offers users easy access to the configuration tools.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this setting or do not configure it, "Set up services" appears only when there are unconfigured system services.
 
-> [!div class = "checklist"]
-> * User
+- If you enable this setting, "Set up services" never appears.
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from using Add or Remove Programs to configure installed services. This setting removes the "Set up services" section of the Add/Remove Windows Components page. The "Set up services" section lists system services that have not been configured and offers users easy access to the configuration tools.
-
-If you disable this setting or do not configure it, "Set up services" appears only when there are unconfigured system services. If you enable this setting, "Set up services" never appears. This setting does not prevent users from using other methods to configure services.
+This setting does not prevent users from using other methods to configure services.
 
 > [!NOTE]
-> When "Set up services" does not appear, clicking the Add/Remove Windows Components button starts the Windows Component Wizard immediately. Because the only remaining option on the Add/Remove Windows Components page starts the wizard, that option is selected automatically, and the page is bypassed. To remove "Set up services" and prevent the Windows Component Wizard from starting, enable the "Hide Add/Remove Windows Components page" setting. If the "Hide Add/Remove Windows Components page" setting is enabled, this setting is ignored.
+> When "Set up services" does not appear, clicking the Add/Remove Windows Components button starts the Windows Component Wizard immediately. Because the only remaining option on the Add/Remove Windows Components page starts the wizard, that option is selected automatically, and the page is bypassed.
 
-<!--/Description-->
+To remove "Set up services" and prevent the Windows Component Wizard from starting, enable the "Hide Add/Remove Windows Components page" setting. If the "Hide Add/Remove Windows Components page" setting is enabled, this setting is ignored.
+<!-- NoServices-Description-End -->
+
+<!-- NoServices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoServices-Editable-End -->
+
+<!-- NoServices-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoServices-DFProperties-End -->
+
+<!-- NoServices-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Go directly to Components Wizard*
-- GP name: *NoServices*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoServices |
+| Friendly Name | Go directly to Components Wizard |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoServices |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoServices-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoServices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoServices-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoServices-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoSupportInfo-Begin -->
+## NoSupportInfo
 
-<hr/>
+<!-- NoSupportInfo-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSupportInfo-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-nosupportinfo"></a>**ADMX_AddRemovePrograms/NoSupportInfo**  
+<!-- NoSupportInfo-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoSupportInfo
+```
+<!-- NoSupportInfo-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoSupportInfo-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes links to the Support Info dialog box from programs on the Change or Remove Programs page.
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes links to the Support Info dialog box from programs on the Change or Remove Programs page. Programs listed on the Change or Remove Programs page can include a "Click here for support information" hyperlink. When clicked, the hyperlink opens a dialog box that displays troubleshooting information, including a link to the installation files and data that users need to obtain product support, such as the Product ID and version number of the program. The dialog box also includes a hyperlink to support information on the Internet, such as the Microsoft Product Support Services Web page.
+Programs listed on the Change or Remove Programs page can include a "Click here for support information" hyperlink. When clicked, the hyperlink opens a dialog box that displays troubleshooting information, including a link to the installation files and data that users need to obtain product support, such as the Product ID and version number of the program. The dialog box also includes a hyperlink to support information on the Internet, such as the Microsoft Product Support Services Web page.
 
 If you disable this setting or do not configure it, the Support Info hyperlink appears.
 
 > [!NOTE]
 > Not all programs provide a support information hyperlink.
+<!-- NoSupportInfo-Description-End -->
 
-<!--/Description-->
+<!-- NoSupportInfo-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSupportInfo-Editable-End -->
+
+<!-- NoSupportInfo-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSupportInfo-DFProperties-End -->
+
+<!-- NoSupportInfo-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Remove Support Information*
-- GP name: *NoSupportInfo*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoSupportInfo |
+| Friendly Name | Remove Support Information |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoSupportInfo |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoSupportInfo-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoSupportInfo-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSupportInfo-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoSupportInfo-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- NoWindowsSetupPage-Begin -->
+## NoWindowsSetupPage
 
-<hr/>
+<!-- NoWindowsSetupPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWindowsSetupPage-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-addremoveprograms-nowindowssetuppage"></a>**ADMX_AddRemovePrograms/NoWindowsSetupPage**  
+<!-- NoWindowsSetupPage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AddRemovePrograms/NoWindowsSetupPage
+```
+<!-- NoWindowsSetupPage-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- NoWindowsSetupPage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Add/Remove Windows Components button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page.
 
-<!--/SupportedSKUs-->
-<hr/>
+The Add/Remove Windows Components button lets users configure installed services and use the Windows Component Wizard to add, remove, and configure components of Windows from the installation files.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users.
 
-> [!div class = "checklist"]
-> * User
+This setting does not prevent users from using other tools and methods to configure services or add or remove program components. However, this setting blocks user access to the Windows Component Wizard.
+<!-- NoWindowsSetupPage-Description-End -->
 
-<hr/>
+<!-- NoWindowsSetupPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWindowsSetupPage-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoWindowsSetupPage-DFProperties-Begin -->
+**Description framework properties**:
 
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Add/Remove Windows Components button from the Add or Remove Programs bar. As a result, users cannot view or change the associated page. The Add/Remove Windows Components button lets users configure installed services and use the Windows Component Wizard to add, remove, and configure components of Windows from the installation files.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWindowsSetupPage-DFProperties-End -->
 
-If you disable this setting or do not configure it, the Add/Remove Windows Components button is available to all users. This setting does not prevent users from using other tools and methods to configure services or add or remove program components. However, this setting blocks user access to the Windows Component Wizard.
-
-<!--/Description-->
+<!-- NoWindowsSetupPage-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
-- GP English name: *Hide Add/Remove Windows Components page*
-- GP name: *NoWindowsSetupPage*
-- GP path: *Control Panel/Add or Remove Programs*
-- GP ADMX file name: *addremoveprograms.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | NoWindowsSetupPage |
+| Friendly Name | Hide Add/Remove Windows Components page |
+| Location | User Configuration |
+| Path | Control Panel > Add or Remove Programs |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Uninstall |
+| Registry Value Name | NoWindowsSetupPage |
+| ADMX File Name | AddRemovePrograms.admx |
+<!-- NoWindowsSetupPage-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- NoWindowsSetupPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWindowsSetupPage-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- NoWindowsSetupPage-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ADMX_AddRemovePrograms-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_AddRemovePrograms-CspMoreInfo-End -->
 
-Footnotes:
+<!-- ADMX_AddRemovePrograms-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+## Related articles
 
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

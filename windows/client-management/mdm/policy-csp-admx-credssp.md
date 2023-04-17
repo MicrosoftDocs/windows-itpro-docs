@@ -1,969 +1,824 @@
 ---
-title: Policy CSP - ADMX_CredSsp
-description: Policy CSP - ADMX_CredSsp
-ms.author: dansimp
+title: ADMX_CredSsp Policy CSP
+description: Learn more about the ADMX_CredSsp Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 11/12/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_CredSsp-Begin -->
 # Policy CSP - ADMX_CredSsp
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
-
-<!--Policies-->
-## ADMX_CredSsp policies  
-
-<dl>
-  <dd>
-    <a href="#admx-credssp-allowdefcredentialswhenntlmonly">ADMX_CredSsp/AllowDefCredentialsWhenNTLMOnly</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-allowdefaultcredentials">ADMX_CredSsp/AllowDefaultCredentials</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-allowencryptionoracle">ADMX_CredSsp/AllowEncryptionOracle</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-allowfreshcredentials">ADMX_CredSsp/AllowFreshCredentials</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-allowfreshcredentialswhenntlmonly">ADMX_CredSsp/AllowFreshCredentialsWhenNTLMOnly</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-allowsavedcredentials">ADMX_CredSsp/AllowSavedCredentials</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-allowsavedcredentialswhenntlmonly">ADMX_CredSsp/AllowSavedCredentialsWhenNTLMOnly</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-denydefaultcredentials">ADMX_CredSsp/DenyDefaultCredentials</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-denyfreshcredentials">ADMX_CredSsp/DenyFreshCredentials</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-denysavedcredentials">ADMX_CredSsp/DenySavedCredentials</a>
-  </dd>
-  <dd>
-    <a href="#admx-credssp-restrictedremoteadministration">ADMX_CredSsp/RestrictedRemoteAdministration</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-credssp-allowdefcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowDefCredentialsWhenNTLMOnly**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
-
-This policy setting applies when server authentication was achieved via NTLM.
-
-If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
-
-If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any machine.
-
-> [!NOTE]
-> The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated.  The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
-
-<!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow delegating default credentials with NTLM-only server authentication*
--   GP name: *AllowDefCredentialsWhenNTLMOnly*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+<!-- ADMX_CredSsp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_CredSsp-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AllowDefaultCredentials-Begin -->
+## AllowDefaultCredentials
 
-<!--Policy-->
-<a href="" id="admx-credssp-allowdefaultcredentials"></a>**ADMX_CredSsp/AllowDefaultCredentials**  
+<!-- AllowDefaultCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowDefaultCredentials-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowDefaultCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowDefaultCredentials
+```
+<!-- AllowDefaultCredentials-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+<!-- AllowDefaultCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
 This policy setting applies when server authentication was achieved by using a trusted X509 certificate or Kerberos.
 
-If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
 
 The policy becomes effective the next time the user signs on to a computer running Windows.
 
-If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
+- If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
 
 FWlink for KB:
-https://go.microsoft.com/fwlink/?LinkId=301508
+<https://go.microsoft.com/fwlink/?LinkId=301508>
 
 > [!NOTE]
 > The "Allow delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
 
-<!--/Description-->
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
+<!-- AllowDefaultCredentials-Description-End -->
+
+<!-- AllowDefaultCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDefaultCredentials-Editable-End -->
+
+<!-- AllowDefaultCredentials-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowDefaultCredentials-DFProperties-End -->
+
+<!-- AllowDefaultCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow delegating default credentials*
--   GP name: *AllowDefaultCredentials*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowDefaultCredentials |
+| Friendly Name | Allow delegating default credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowDefaultCredentials |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowDefaultCredentials-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-allowencryptionoracle"></a>**ADMX_CredSsp/AllowEncryptionOracle**  
+<!-- AllowDefaultCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDefaultCredentials-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowDefaultCredentials-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDefCredentialsWhenNTLMOnly-Begin -->
+## AllowDefCredentialsWhenNTLMOnly
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowDefCredentialsWhenNTLMOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowDefCredentialsWhenNTLMOnly-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowDefCredentialsWhenNTLMOnly-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowDefCredentialsWhenNTLMOnly
+```
+<!-- AllowDefCredentialsWhenNTLMOnly-OmaUri-End -->
 
-<hr/>
+<!-- AllowDefCredentialsWhenNTLMOnly-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the CredSSP component (for example: Remote Desktop Connection).
+This policy setting applies when server authentication was achieved via NTLM.
 
-Some versions of the CredSSP protocol are vulnerable to an encryption oracle attack against the client.  This policy controls compatibility with vulnerable clients and servers.  This policy allows you to set the level of protection desired for the encryption oracle vulnerability.
+- If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
+
+- If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any machine.
+
+> [!NOTE]
+> The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
+<!-- AllowDefCredentialsWhenNTLMOnly-Description-End -->
+
+<!-- AllowDefCredentialsWhenNTLMOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDefCredentialsWhenNTLMOnly-Editable-End -->
+
+<!-- AllowDefCredentialsWhenNTLMOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowDefCredentialsWhenNTLMOnly-DFProperties-End -->
+
+<!-- AllowDefCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowDefCredentialsWhenNTLMOnly |
+| Friendly Name | Allow delegating default credentials with NTLM-only server authentication |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowDefCredentialsWhenNTLMOnly |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowDefCredentialsWhenNTLMOnly-AdmxBacked-End -->
+
+<!-- AllowDefCredentialsWhenNTLMOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDefCredentialsWhenNTLMOnly-Examples-End -->
+
+<!-- AllowDefCredentialsWhenNTLMOnly-End -->
+
+<!-- AllowEncryptionOracle-Begin -->
+## AllowEncryptionOracle
+
+<!-- AllowEncryptionOracle-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowEncryptionOracle-Applicability-End -->
+
+<!-- AllowEncryptionOracle-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowEncryptionOracle
+```
+<!-- AllowEncryptionOracle-OmaUri-End -->
+
+<!-- AllowEncryptionOracle-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Encryption Oracle Remediation
+
+This policy setting applies to applications using the CredSSP component (for example: Remote Desktop Connection).
+
+Some versions of the CredSSP protocol are vulnerable to an encryption oracle attack against the client. This policy controls compatibility with vulnerable clients and servers. This policy allows you to set the level of protection desired for the encryption oracle vulnerability.
 
 If you enable this policy setting, CredSSP version support will be selected based on the following options:
 
-- Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. 
+Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. **Note** this setting should not be deployed until all remote hosts support the newest version.
 
-    > [!NOTE]
-    > This setting should not be deployed until all remote hosts support the newest version.
+Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
 
-- Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
+Vulnerable: Client applications which use CredSSP will expose the remote servers to attacks by supporting fall back to the insecure versions and services using CredSSP will accept unpatched clients.
 
-- Vulnerable: Client applications which use CredSSP will expose the remote servers to attacks by supporting fall back to the insecure versions and services using CredSSP will accept unpatched clients.
+For more information about the vulnerability and servicing requirements for protection, see <https://go.microsoft.com/fwlink/?linkid=866660>
+<!-- AllowEncryptionOracle-Description-End -->
 
-For more information about the vulnerability and servicing requirements for protection, see https://go.microsoft.com/fwlink/?linkid=866660
+<!-- AllowEncryptionOracle-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEncryptionOracle-Editable-End -->
 
-<!--/Description-->
+<!-- AllowEncryptionOracle-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowEncryptionOracle-DFProperties-End -->
+
+<!-- AllowEncryptionOracle-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Encryption Oracle Remediation*
--   GP name: *AllowEncryptionOracle*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowEncryptionOracle |
+| Friendly Name | Encryption Oracle Remediation |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowEncryptionOracle-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-allowfreshcredentials"></a>**ADMX_CredSsp/AllowFreshCredentials**  
+<!-- AllowEncryptionOracle-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEncryptionOracle-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowEncryptionOracle-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowFreshCredentials-Begin -->
+## AllowFreshCredentials
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowFreshCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowFreshCredentials-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowFreshCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowFreshCredentials
+```
+<!-- AllowFreshCredentials-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+<!-- AllowFreshCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
 This policy setting applies when server authentication was achieved via a trusted X509 certificate or Kerberos.
 
-If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
 
-<!--/Description-->
+For Example:
+TERMSRV/host.humanresources.fabrikam.com
+Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
+<!-- AllowFreshCredentials-Description-End -->
+
+<!-- AllowFreshCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFreshCredentials-Editable-End -->
+
+<!-- AllowFreshCredentials-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowFreshCredentials-DFProperties-End -->
+
+<!-- AllowFreshCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow delegating fresh credentials*
--   GP name: *AllowFreshCredentials*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowFreshCredentials |
+| Friendly Name | Allow delegating fresh credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowFreshCredentials |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowFreshCredentials-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-allowfreshcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowFreshCredentialsWhenNTLMOnly**  
+<!-- AllowFreshCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFreshCredentials-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowFreshCredentials-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowFreshCredentialsWhenNTLMOnly-Begin -->
+## AllowFreshCredentialsWhenNTLMOnly
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowFreshCredentialsWhenNTLMOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowFreshCredentialsWhenNTLMOnly-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowFreshCredentialsWhenNTLMOnly-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowFreshCredentialsWhenNTLMOnly
+```
+<!-- AllowFreshCredentialsWhenNTLMOnly-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+<!-- AllowFreshCredentialsWhenNTLMOnly-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
 This policy setting applies when server authentication was achieved via NTLM.
 
-If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating fresh credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com
 
-<!--/Description-->
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
+<!-- AllowFreshCredentialsWhenNTLMOnly-Description-End -->
+
+<!-- AllowFreshCredentialsWhenNTLMOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFreshCredentialsWhenNTLMOnly-Editable-End -->
+
+<!-- AllowFreshCredentialsWhenNTLMOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowFreshCredentialsWhenNTLMOnly-DFProperties-End -->
+
+<!-- AllowFreshCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow delegating fresh credentials with NTLM-only server authentication*
--   GP name: *AllowFreshCredentialsWhenNTLMOnly*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowFreshCredentialsWhenNTLMOnly |
+| Friendly Name | Allow delegating fresh credentials with NTLM-only server authentication |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowFreshCredentialsWhenNTLMOnly |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowFreshCredentialsWhenNTLMOnly-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-allowsavedcredentials"></a>**ADMX_CredSsp/AllowSavedCredentials**  
+<!-- AllowFreshCredentialsWhenNTLMOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFreshCredentialsWhenNTLMOnly-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowFreshCredentialsWhenNTLMOnly-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSavedCredentials-Begin -->
+## AllowSavedCredentials
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSavedCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSavedCredentials-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSavedCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowSavedCredentials
+```
+<!-- AllowSavedCredentials-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+<!-- AllowSavedCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
 This policy setting applies when server authentication was achieved via a trusted X509 certificate or Kerberos.
 
-If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com
 
-<!--/Description-->
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
+<!-- AllowSavedCredentials-Description-End -->
+
+<!-- AllowSavedCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSavedCredentials-Editable-End -->
+
+<!-- AllowSavedCredentials-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowSavedCredentials-DFProperties-End -->
+
+<!-- AllowSavedCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow delegating saved credentials*
--   GP name: *AllowSavedCredentials*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowSavedCredentials |
+| Friendly Name | Allow delegating saved credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowSavedCredentials |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowSavedCredentials-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-allowsavedcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowSavedCredentialsWhenNTLMOnly**  
+<!-- AllowSavedCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSavedCredentials-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowSavedCredentials-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSavedCredentialsWhenNTLMOnly-Begin -->
+## AllowSavedCredentialsWhenNTLMOnly
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSavedCredentialsWhenNTLMOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSavedCredentialsWhenNTLMOnly-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSavedCredentialsWhenNTLMOnly-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/AllowSavedCredentialsWhenNTLMOnly
+```
+<!-- AllowSavedCredentialsWhenNTLMOnly-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+<!-- AllowSavedCredentialsWhenNTLMOnly-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
 This policy setting applies when server authentication was achieved via NTLM.
 
-If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine is not a member of any domain. If the client is domain-joined, by default the delegation of saved credentials is not permitted to any machine.
+- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine is not a member of any domain. If the client is domain-joined, by default the delegation of saved credentials is not permitted to any machine.
 
-If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating saved credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com
 
-<!--/Description-->
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
+<!-- AllowSavedCredentialsWhenNTLMOnly-Description-End -->
+
+<!-- AllowSavedCredentialsWhenNTLMOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSavedCredentialsWhenNTLMOnly-Editable-End -->
+
+<!-- AllowSavedCredentialsWhenNTLMOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowSavedCredentialsWhenNTLMOnly-DFProperties-End -->
+
+<!-- AllowSavedCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow delegating saved credentials with NTLM-only server authentication*
--   GP name: *AllowSavedCredentialsWhenNTLMOnly*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowSavedCredentialsWhenNTLMOnly |
+| Friendly Name | Allow delegating saved credentials with NTLM-only server authentication |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowSavedCredentialsWhenNTLMOnly |
+| ADMX File Name | CredSsp.admx |
+<!-- AllowSavedCredentialsWhenNTLMOnly-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-denydefaultcredentials"></a>**ADMX_CredSsp/DenyDefaultCredentials**  
+<!-- AllowSavedCredentialsWhenNTLMOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSavedCredentialsWhenNTLMOnly-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AllowSavedCredentialsWhenNTLMOnly-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DenyDefaultCredentials-Begin -->
+## DenyDefaultCredentials
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenyDefaultCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DenyDefaultCredentials-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenyDefaultCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/DenyDefaultCredentials
+```
+<!-- DenyDefaultCredentials-OmaUri-End -->
 
-<hr/>
+<!-- DenyDefaultCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials cannot be delegated (default credentials are those that you use when first logging on to Windows).
 
-If you enable this policy setting, you can specify the servers to which the user's default credentials cannot be delegated (default credentials are those that you use when first logging on to Windows).
-
-If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
 
 > [!NOTE]
 > The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
 
 This policy setting can be used in combination with the "Allow delegating default credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating default credentials" server list.
+<!-- DenyDefaultCredentials-Description-End -->
 
-<!--/Description-->
+<!-- DenyDefaultCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyDefaultCredentials-Editable-End -->
+
+<!-- DenyDefaultCredentials-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DenyDefaultCredentials-DFProperties-End -->
+
+<!-- DenyDefaultCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Deny delegating default credentials*
--   GP name: *DenyDefaultCredentials*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DenyDefaultCredentials |
+| Friendly Name | Deny delegating default credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | DenyDefaultCredentials |
+| ADMX File Name | CredSsp.admx |
+<!-- DenyDefaultCredentials-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-denyfreshcredentials"></a>**ADMX_CredSsp/DenyFreshCredentials**  
+<!-- DenyDefaultCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyDefaultCredentials-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DenyDefaultCredentials-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DenyFreshCredentials-Begin -->
+## DenyFreshCredentials
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenyFreshCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DenyFreshCredentials-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenyFreshCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/DenyFreshCredentials
+```
+<!-- DenyFreshCredentials-OmaUri-End -->
 
-<hr/>
+<!-- DenyFreshCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials cannot be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-If you enable this policy setting, you can specify the servers to which the user's fresh credentials cannot be delegated (fresh credentials are those that you are prompted for when executing the application).
-
-If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
 
 > [!NOTE]
 > The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
 
 This policy setting can be used in combination with the "Allow delegating fresh credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating fresh credentials" server list.
+<!-- DenyFreshCredentials-Description-End -->
 
-<!--/Description-->
+<!-- DenyFreshCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyFreshCredentials-Editable-End -->
+
+<!-- DenyFreshCredentials-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DenyFreshCredentials-DFProperties-End -->
+
+<!-- DenyFreshCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Deny delegating fresh credentials*
--   GP name: *DenyFreshCredentials*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DenyFreshCredentials |
+| Friendly Name | Deny delegating fresh credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | DenyFreshCredentials |
+| ADMX File Name | CredSsp.admx |
+<!-- DenyFreshCredentials-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-denysavedcredentials"></a>**ADMX_CredSsp/DenySavedCredentials**  
+<!-- DenyFreshCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyFreshCredentials-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DenyFreshCredentials-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DenySavedCredentials-Begin -->
+## DenySavedCredentials
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DenySavedCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DenySavedCredentials-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DenySavedCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/DenySavedCredentials
+```
+<!-- DenySavedCredentials-OmaUri-End -->
 
-<hr/>
+<!-- DenySavedCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials cannot be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-If you enable this policy setting, you can specify the servers to which the user's saved credentials cannot be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
-
-If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
 
 > [!NOTE]
 > The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
->
-> For Example:
->
-> - TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
-> - TERMSRV/* Remote Desktop Session Host running on all machines.
-> - TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+For Example:
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+TERMSRV/* Remote Desktop Session Host running on all machines.
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
 
 This policy setting can be used in combination with the "Allow delegating saved credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating saved credentials" server list.
+<!-- DenySavedCredentials-Description-End -->
 
-<!--/Description-->
+<!-- DenySavedCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenySavedCredentials-Editable-End -->
+
+<!-- DenySavedCredentials-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DenySavedCredentials-DFProperties-End -->
+
+<!-- DenySavedCredentials-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Deny delegating saved credentials*
--   GP name: *DenySavedCredentials*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DenySavedCredentials |
+| Friendly Name | Deny delegating saved credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | DenySavedCredentials |
+| ADMX File Name | CredSsp.admx |
+<!-- DenySavedCredentials-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-credssp-restrictedremoteadministration"></a>**ADMX_CredSsp/RestrictedRemoteAdministration**  
+<!-- DenySavedCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenySavedCredentials-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- DenySavedCredentials-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RestrictedRemoteAdministration-Begin -->
+## RestrictedRemoteAdministration
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RestrictedRemoteAdministration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RestrictedRemoteAdministration-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RestrictedRemoteAdministration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration
+```
+<!-- RestrictedRemoteAdministration-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. When running in Restricted Admin or Remote Credential Guard mode, participating apps do not expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials are not delegated. Remote Credential Guard does not limit access to resources because it redirects all requests back to the client device.
+<!-- RestrictedRemoteAdministration-Description-Begin -->
+<!-- Description-Source-ADMX -->
+When running in Restricted Admin or Remote Credential Guard mode, participating apps do not expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials are not delegated. Remote Credential Guard does not limit access to resources because it redirects all requests back to the client device.
 
 Participating apps:
 Remote Desktop Client
 
-If you enable this policy setting, the following options are supported:
+- If you enable this policy setting, the following options are supported:
 
-- Restrict credential delegation: Participating applications must use Restricted Admin or Remote Credential Guard to connect to remote hosts.
-- Require Remote Credential Guard: Participating applications must use Remote Credential Guard to connect to remote hosts.
-- Require Restricted Admin: Participating applications must use Restricted Admin to connect to remote hosts.
+Restrict credential delegation: Participating applications must use Restricted Admin or Remote Credential Guard to connect to remote hosts.
 
-If you disable or do not configure this policy setting, Restricted Admin and Remote Credential Guard mode are not enforced and participating apps can delegate credentials to remote devices.
+Require Remote Credential Guard: Participating applications must use Remote Credential Guard to connect to remote hosts.
+
+Require Restricted Admin: Participating applications must use Restricted Admin to connect to remote hosts.
+
+- If you disable or do not configure this policy setting, Restricted Admin and Remote Credential Guard mode are not enforced and participating apps can delegate credentials to remote devices.
 
 > [!NOTE]
 > To disable most credential delegation, it may be sufficient to deny delegation in Credential Security Support Provider (CredSSP) by modifying Administrative template settings (located at Computer Configuration\Administrative Templates\System\Credentials Delegation).
->
+
+> [!NOTE]
 > On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions do not support Remote Credential Guard.
+<!-- RestrictedRemoteAdministration-Description-End -->
 
-<!--/Description-->
+<!-- RestrictedRemoteAdministration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RestrictedRemoteAdministration-Editable-End -->
+
+<!-- RestrictedRemoteAdministration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RestrictedRemoteAdministration-DFProperties-End -->
+
+<!-- RestrictedRemoteAdministration-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Restrict delegation of credentials to remote servers*
--   GP name: *RestrictedRemoteAdministration*
--   GP path: *System\Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | RestrictedRemoteAdministration |
+| Friendly Name | Restrict delegation of credentials to remote servers |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | RestrictedRemoteAdministration |
+| ADMX File Name | CredSsp.admx |
+<!-- RestrictedRemoteAdministration-AdmxBacked-End -->
 
-Footnotes:
+<!-- RestrictedRemoteAdministration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RestrictedRemoteAdministration-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- RestrictedRemoteAdministration-End -->
 
-<!--/Policies-->
+<!-- ADMX_CredSsp-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_CredSsp-CspMoreInfo-End -->
 
+<!-- ADMX_CredSsp-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -27,12 +27,18 @@
       }
     ],
     "globalMetadata": {
-      "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-MSEdge",
+      "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier3"
+      ],
+      "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",
       "audience": "ITPro",
       "ms.topic": "article",
-      "manager": "laurawi",
+      "manager": "dansimp",
       "ms.prod": "edge",
       "feedback_system": "None",
       "hideEdit": true,
@@ -42,9 +48,19 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Edge"
+      "titleSuffix": "Edge",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric",
+        "beccarobins"
+      ]
     },
-    "externalReference": [],
+    "fileMetadata": {},
     "template": "op.html",
     "dest": "browsers/edge",
     "markdownEngineName": "markdig"

@@ -40,7 +40,7 @@ Automatic detection works even if the browser wasn't originally set up or instal
 
 **To set up automatic detection for DHCP servers**
 
--   Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
+-   Open the [DHCP Administrative Tool](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd145324(v=ws.10)), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](/previous-versions/tn-archive/bb794881(v=technet.10)).
 
     **Examples:**<br>
     `https://www.microsoft.com/webproxy.pac`<br>
@@ -57,10 +57,9 @@ Automatic detection works even if the browser wasn't originally set up or instal
    `mailserver1 IN A 192.55.200.51`
    <p><strong>-OR-</strong><p>
    Create a canonical name (CNAME) alias record, named <strong>WPAD</strong>. This record lets you use more than one name to point to a single host, letting you host both an FTP server and a web server on the same computer. It also includes the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>
-   <strong>Note</strong><br>For more info about creating a <strong>WPAD</strong> entry, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=294651" data-raw-source="[Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651)">Creating a WPAD entry in DNS</a>. 
+   <strong>Note</strong><br>For more info about creating a <strong>WPAD</strong> entry, see <a href="/previous-versions/tn-archive/cc995062(v=technet.10)" data-raw-source="[Creating a WPAD entry in DNS](/previous-versions/tn-archive/cc995062(v=technet.10))">Creating a WPAD entry in DNS</a>. 
 
 2. After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.
 
 **Note**<br>
 IE11 creates a default URL template based on the host name,**wpad**. For example, `https://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
-

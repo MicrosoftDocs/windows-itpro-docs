@@ -1,1367 +1,1803 @@
 ---
-title: Policy CSP - Experience
-description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: Experience Policy CSP
+description: Learn more about the Experience Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 11/02/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Experience-Begin -->
 # Policy CSP - Experience
 
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
+<!-- Experience-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Experience-Editable-End -->
 
-<hr/>
+<!-- AllowClipboardHistory-Begin -->
+## AllowClipboardHistory
 
-<!--Policies-->
-## Experience policies  
+<!-- AllowClipboardHistory-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- AllowClipboardHistory-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#experience-allowclipboardhistory">Experience/AllowClipboardHistory</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowcortana">Experience/AllowCortana</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowdevicediscovery">Experience/AllowDeviceDiscovery</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowfindmydevice">Experience/AllowFindMyDevice</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowmanualmdmunenrollment">Experience/AllowManualMDMUnenrollment</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowsaveasofofficefiles">Experience/AllowSaveAsOfOfficeFiles</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowsharingofofficefiles">Experience/AllowSharingOfOfficeFiles</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowtailoredexperienceswithdiagnosticdata">Experience/AllowTailoredExperiencesWithDiagnosticData</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowthirdpartysuggestionsinwindowsspotlight">Experience/AllowThirdPartySuggestionsInWindowsSpotlight</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowwindowsconsumerfeatures">Experience/AllowWindowsConsumerFeatures</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowwindowsspotlight">Experience/AllowWindowsSpotlight</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowwindowsspotlightonactioncenter">Experience/AllowWindowsSpotlightOnActionCenter</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowwindowsspotlightonsettings">Experience/AllowWindowsSpotlightOnSettings</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowwindowsspotlightwindowswelcomeexperience">Experience/AllowWindowsSpotlightWindowsWelcomeExperience</a>
-  </dd>
-  <dd>
-    <a href="#experience-allowwindowstips">Experience/AllowWindowsTips</a>
-  </dd>
-  <dd>
-    <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
-  </dd>
-  <dd>
-    <a href="#experience-disablecloudoptimizedcontent">Experience/DisableCloudOptimizedContent</a>
-  </dd>
-  <dd>
-    <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
-  </dd>
-  <dd>
-    <a href="#experience-donotsyncbrowsersetting">Experience/DoNotSyncBrowserSettings</a>
-  </dd>
-  <dd>
-    <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
-  </dd>
-  <dd>
-    <a href="#experience-showlockonusertile">Experience/ShowLockOnUserTile</a>
-  </dd>
-</dl>
+<!-- AllowClipboardHistory-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowClipboardHistory
+```
+<!-- AllowClipboardHistory-OmaUri-End -->
 
+<!-- AllowClipboardHistory-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether history of Clipboard contents can be stored in memory.
 
-<hr/>
+- If you enable this policy setting, history of Clipboard contents are allowed to be stored.
+- If you disable this policy setting, history of Clipboard contents are not allowed to be stored.
+Policy change takes effect immediately.
+<!-- AllowClipboardHistory-Description-End -->
 
-<!--Policy-->
-<a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**  
+<!-- AllowClipboardHistory-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowClipboardHistory-Editable-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+<!-- AllowClipboardHistory-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowClipboardHistory-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowClipboardHistory-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowClipboardHistory-AllowedValues-End -->
 
-<hr/>
+<!-- AllowClipboardHistory-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Allows history of clipboard items to be stored in memory.
+| Name | Value |
+|:--|:--|
+| Name | AllowClipboardHistory |
+| Friendly Name | Allow Clipboard History |
+| Location | Computer Configuration |
+| Path | System > OS Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | AllowClipboardHistory |
+| ADMX File Name | OSPolicy.admx |
+<!-- AllowClipboardHistory-GpMapping-End -->
 
-Value type is integer. Supported values:
--  0 - Not allowed
--  1 - Allowed (default)
+<!-- AllowClipboardHistory-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Validate**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow Clipboard History*
--   GP name: *AllowClipboardHistory*
--   GP path: *System/OS Policies*
--   GP ADMX file name: *OSPolicy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-**Validation procedure**
-
-1. Configure Experiences/AllowClipboardHistory to 0.
+1. Configure Experience/AllowClipboardHistory to 0.
 1. Open Notepad (or any editor app), select a text, and copy it to the clipboard.
 1. Press Win+V to open the clipboard history UI.
-1. You should not see any clipboard item including current item you copied.
-1. The setting under Settings App->System->Clipboard should be grayed out with policy warning.
+1. You shouldn't see any clipboard item including current item you copied.
+1. The setting under Settings App -> System -> Clipboard should be grayed out with policy warning.
+<!-- AllowClipboardHistory-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowClipboardHistory-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether Cortana is allowed on the device. If you enable or don’t configure this setting, Cortana is allowed on the device. If you disable this setting, Cortana is turned off. When Cortana is off, users will still be able to use search to find items on the device.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow Cortana*
--   GP name: *AllowCortana*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows users to turn on/off device discovery UX.
-
-When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1703. This policy turns on Find My Device.
-
-When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. In Windows 10, version 1709 devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
-
-When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. In Windows 10, version 1709 the user will not be able to view the location of the last use of their active digitizer on their device.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn On/Off Find My Device*
--   GP name: *FindMy_AllowFindMyDeviceConfig*
--   GP path: *Windows Components/Find My Device*
--   GP ADMX file name: *FindMy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g., auto-enrolled), then disabling the MDM unenrollment has no effect.
+<!-- AllowCopyPaste-Begin -->
+## AllowCopyPaste
 
 > [!NOTE]
-> The MDM server can always remotely delete the account.
+> This policy is deprecated and may be removed in a future release.
 
+<!-- AllowCopyPaste-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowCopyPaste-Applicability-End -->
 
-Most restricted value is 0.
+<!-- AllowCopyPaste-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste
+```
+<!-- AllowCopyPaste-OmaUri-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- AllowCopyPaste-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowCopyPaste-Description-End -->
+
+<!-- AllowCopyPaste-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCopyPaste-Editable-End -->
+
+<!-- AllowCopyPaste-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCopyPaste-DFProperties-End -->
+
+<!-- AllowCopyPaste-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowCopyPaste-AllowedValues-End -->
+
+<!-- AllowCopyPaste-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCopyPaste-Examples-End -->
+
+<!-- AllowCopyPaste-End -->
+
+<!-- AllowCortana-Begin -->
+## AllowCortana
+
+<!-- AllowCortana-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowCortana-Applicability-End -->
+
+<!-- AllowCortana-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowCortana
+```
+<!-- AllowCortana-OmaUri-End -->
+
+<!-- AllowCortana-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether Cortana is allowed on the device.
+
+- If you enable or don't configure this setting, Cortana will be allowed on the device.
+- If you disable this setting, Cortana will be turned off.
+
+When Cortana is off, users will still be able to use search to find things on the device.
+<!-- AllowCortana-Description-End -->
+
+<!-- AllowCortana-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCortana-Editable-End -->
+
+<!-- AllowCortana-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCortana-DFProperties-End -->
+
+<!-- AllowCortana-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowCortana-AllowedValues-End -->
+
+<!-- AllowCortana-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowCortana |
+| Friendly Name | Allow Cortana |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AllowCortana |
+| ADMX File Name | Search.admx |
+<!-- AllowCortana-GpMapping-End -->
+
+<!-- AllowCortana-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCortana-Examples-End -->
+
+<!-- AllowCortana-End -->
+
+<!-- AllowDeviceDiscovery-Begin -->
+## AllowDeviceDiscovery
+
+<!-- AllowDeviceDiscovery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowDeviceDiscovery-Applicability-End -->
+
+<!-- AllowDeviceDiscovery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowDeviceDiscovery
+```
+<!-- AllowDeviceDiscovery-OmaUri-End -->
+
+<!-- AllowDeviceDiscovery-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows users to turn on/off device discovery UX. When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on. Most restricted value is 0.
+<!-- AllowDeviceDiscovery-Description-End -->
+
+<!-- AllowDeviceDiscovery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDeviceDiscovery-Editable-End -->
+
+<!-- AllowDeviceDiscovery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowDeviceDiscovery-DFProperties-End -->
+
+<!-- AllowDeviceDiscovery-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AllowDeviceDiscovery-AllowedValues-End -->
+
+<!-- AllowDeviceDiscovery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDeviceDiscovery-Examples-End -->
+
+<!-- AllowDeviceDiscovery-End -->
+
+<!-- AllowFindMyDevice-Begin -->
+## AllowFindMyDevice
+
+<!-- AllowFindMyDevice-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowFindMyDevice-Applicability-End -->
+
+<!-- AllowFindMyDevice-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowFindMyDevice
+```
+<!-- AllowFindMyDevice-OmaUri-End -->
+
+<!-- AllowFindMyDevice-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy turns on Find My Device.
+
+When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. On devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
+
+When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. The user will also not be able to view the location of the last use of their active digitizer on their device.
+<!-- AllowFindMyDevice-Description-End -->
+
+<!-- AllowFindMyDevice-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFindMyDevice-Editable-End -->
+
+<!-- AllowFindMyDevice-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowFindMyDevice-DFProperties-End -->
+
+<!-- AllowFindMyDevice-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowFindMyDevice-AllowedValues-End -->
+
+<!-- AllowFindMyDevice-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | FindMy_AllowFindMyDeviceConfig |
+| Friendly Name | Turn On/Off Find My Device |
+| Location | Computer Configuration |
+| Path | Windows Components > Find My Device |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\FindMyDevice |
+| Registry Value Name | AllowFindMyDevice |
+| ADMX File Name | FindMy.admx |
+<!-- AllowFindMyDevice-GpMapping-End -->
+
+<!-- AllowFindMyDevice-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFindMyDevice-Examples-End -->
+
+<!-- AllowFindMyDevice-End -->
+
+<!-- AllowManualMDMUnenrollment-Begin -->
+## AllowManualMDMUnenrollment
+
+<!-- AllowManualMDMUnenrollment-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowManualMDMUnenrollment-Applicability-End -->
+
+<!-- AllowManualMDMUnenrollment-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowManualMDMUnenrollment
+```
+<!-- AllowManualMDMUnenrollment-OmaUri-End -->
+
+<!-- AllowManualMDMUnenrollment-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e. g. auto-enrolled), then disabling the MDM unenrollment has no effect.
+
+> [!NOTE]
+> The MDM server can always remotely delete the account. Most restricted value is 0.
+<!-- AllowManualMDMUnenrollment-Description-End -->
+
+<!-- AllowManualMDMUnenrollment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowManualMDMUnenrollment-Editable-End -->
+
+<!-- AllowManualMDMUnenrollment-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowManualMDMUnenrollment-DFProperties-End -->
+
+<!-- AllowManualMDMUnenrollment-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowManualMDMUnenrollment-AllowedValues-End -->
+
+<!-- AllowManualMDMUnenrollment-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowManualMDMUnenrollment-Examples-End -->
+
+<!-- AllowManualMDMUnenrollment-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-Begin -->
+## AllowSaveAsOfOfficeFiles
+
+<!-- AllowSaveAsOfOfficeFiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSaveAsOfOfficeFiles-Applicability-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowSaveAsOfOfficeFiles
+```
+<!-- AllowSaveAsOfOfficeFiles-OmaUri-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowSaveAsOfOfficeFiles-Description-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSaveAsOfOfficeFiles-Editable-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSaveAsOfOfficeFiles-DFProperties-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSaveAsOfOfficeFiles-AllowedValues-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSaveAsOfOfficeFiles-Examples-End -->
+
+<!-- AllowSaveAsOfOfficeFiles-End -->
+
+<!-- AllowScreenCapture-Begin -->
+## AllowScreenCapture
+
+<!-- AllowScreenCapture-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowScreenCapture-Applicability-End -->
+
+<!-- AllowScreenCapture-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowScreenCapture
+```
+<!-- AllowScreenCapture-OmaUri-End -->
+
+<!-- AllowScreenCapture-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow screen capture.
+<!-- AllowScreenCapture-Description-End -->
+
+<!-- AllowScreenCapture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowScreenCapture-Editable-End -->
+
+<!-- AllowScreenCapture-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowScreenCapture-DFProperties-End -->
+
+<!-- AllowScreenCapture-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowScreenCapture-AllowedValues-End -->
+
+<!-- AllowScreenCapture-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowScreenCapture-Examples-End -->
+
+<!-- AllowScreenCapture-End -->
+
+<!-- AllowSharingOfOfficeFiles-Begin -->
+## AllowSharingOfOfficeFiles
+
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
+<!-- AllowSharingOfOfficeFiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSharingOfOfficeFiles-Applicability-End -->
+
+<!-- AllowSharingOfOfficeFiles-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowSharingOfOfficeFiles
+```
+<!-- AllowSharingOfOfficeFiles-OmaUri-End -->
+
+<!-- AllowSharingOfOfficeFiles-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowSharingOfOfficeFiles-Description-End -->
+
+<!-- AllowSharingOfOfficeFiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSharingOfOfficeFiles-Editable-End -->
+
+<!-- AllowSharingOfOfficeFiles-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSharingOfOfficeFiles-DFProperties-End -->
+
+<!-- AllowSharingOfOfficeFiles-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSharingOfOfficeFiles-AllowedValues-End -->
+
+<!-- AllowSharingOfOfficeFiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSharingOfOfficeFiles-Examples-End -->
+
+<!-- AllowSharingOfOfficeFiles-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Begin -->
+## AllowSIMErrorDialogPromptWhenNoSIM
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowSIMErrorDialogPromptWhenNoSIM
+```
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-OmaUri-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow SIM error dialog prompts when no SIM is inserted.
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Description-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Editable-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-DFProperties-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-AllowedValues-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-Examples-End -->
+
+<!-- AllowSIMErrorDialogPromptWhenNoSIM-End -->
+
+<!-- AllowSpotlightCollection-Begin -->
+## AllowSpotlightCollection
+
+<!-- AllowSpotlightCollection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowSpotlightCollection-Applicability-End -->
+
+<!-- AllowSpotlightCollection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowSpotlightCollection
+```
+<!-- AllowSpotlightCollection-OmaUri-End -->
+
+<!-- AllowSpotlightCollection-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether Spotlight collection is allowed as a Personalization->Background Setting.
+
+- If you enable this policy setting, Spotlight collection will show as an option in the user's Personalization Settings, and the user will be able to get daily images from Microsoft displayed on their desktop.
+- If you disable this policy setting, Spotlight collection will not show as an option in Personalization Settings, and the user will not have the choice of getting Microsoft daily images shown on their desktop.
+<!-- AllowSpotlightCollection-Description-End -->
+
+<!-- AllowSpotlightCollection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- When set to 0, Spotlight collection will not show as an option in Personalization Settings and therefore be unavailable on Desktop.
+- When set to 1 (default), Spotlight collection will show as an option in Personalization Settings and therefore be available on Desktop, allowing Desktop to refresh for daily images from Microsoft.
+<!-- AllowSpotlightCollection-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowSpotlightCollection-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowSpotlightCollection-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
+<!-- AllowSpotlightCollection-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableSpotlightCollectionOnDesktop |
+| Friendly Name | Turn off Spotlight collection on Desktop |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableSpotlightCollectionOnDesktop |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowSpotlightCollection-GpMapping-End -->
 
-<!--Description-->
-This policy is deprecated.
+<!-- AllowSpotlightCollection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSpotlightCollection-Examples-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- AllowSpotlightCollection-End -->
 
-<hr/>
+<!-- AllowSyncMySettings-Begin -->
+## AllowSyncMySettings
 
-<!--Policy-->
-<a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**  
+<!-- AllowSyncMySettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowSyncMySettings-Applicability-End -->
 
-<!--Description-->
-This policy is deprecated.
+<!-- AllowSyncMySettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings
+```
+<!-- AllowSyncMySettings-OmaUri-End -->
 
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowSyncMySettings-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows or disallows all Windows sync settings on the device. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](https://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
+<!-- AllowSyncMySettings-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowSyncMySettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSyncMySettings-Editable-End -->
 
--   0 – Sync settings are not allowed.
--   1 (default) – Sync settings allowed.
+<!-- AllowSyncMySettings-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSyncMySettings-DFProperties-End -->
 
-<hr/>
+<!-- AllowSyncMySettings-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
+| Value | Description |
+|:--|:--|
+| 0 | Sync settings are not allowed. |
+| 1 (Default) | Sync settings allowed. |
+<!-- AllowSyncMySettings-AllowedValues-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+<!-- AllowSyncMySettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSyncMySettings-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSyncMySettings-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowTailoredExperiencesWithDiagnosticData-Begin -->
+## AllowTailoredExperiencesWithDiagnosticData
 
-> [!div class = "checklist"]
-> * User
+<!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-End -->
 
-<hr/>
+<!-- AllowTailoredExperiencesWithDiagnosticData-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowTailoredExperiencesWithDiagnosticData
+```
+<!-- AllowTailoredExperiencesWithDiagnosticData-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+<!-- AllowTailoredExperiencesWithDiagnosticData-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user.
 
-Added in Windows 10, version 1703. This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
-
-Diagnostic data can include browser, app and feature usage, depending on the "Diagnostic and usage data" setting value.
+- If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
+- If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
 
 > [!NOTE]
-> This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
+> This setting does not control Cortana cutomized experiences because there are separate policies to configure it. Most restricted value is 0.
+<!-- AllowTailoredExperiencesWithDiagnosticData-Description-End -->
 
-Most restricted value is 0.
+<!-- AllowTailoredExperiencesWithDiagnosticData-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowTailoredExperiencesWithDiagnosticData-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not use diagnostic data for tailored experiences*
--   GP name: *DisableTailoredExperiencesWithDiagnosticData*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+<!-- AllowTailoredExperiencesWithDiagnosticData-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_AllowTailoredExperiencesWithDiagnosticData_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowTailoredExperiencesWithDiagnosticData-DFProperties-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowTailoredExperiencesWithDiagnosticData-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowTailoredExperiencesWithDiagnosticData-AllowedValues-End -->
 
-<hr/>
+<!-- AllowTailoredExperiencesWithDiagnosticData-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
+| Name | Value |
+|:--|:--|
+| Name | DisableTailoredExperiencesWithDiagnosticData |
+| Friendly Name | Do not use diagnostic data for tailored experiences |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableTailoredExperiencesWithDiagnosticData |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowTailoredExperiencesWithDiagnosticData-GpMapping-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+<!-- AllowTailoredExperiencesWithDiagnosticData-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowTailoredExperiencesWithDiagnosticData-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowTailoredExperiencesWithDiagnosticData-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowTaskSwitcher-Begin -->
+## AllowTaskSwitcher
 
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+> This policy is deprecated and may be removed in a future release.
 
+<!-- AllowTaskSwitcher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowTaskSwitcher-Applicability-End -->
 
+<!-- AllowTaskSwitcher-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowTaskSwitcher
+```
+<!-- AllowTaskSwitcher-OmaUri-End -->
+
+<!-- AllowTaskSwitcher-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowTaskSwitcher-Description-End -->
+
+<!-- AllowTaskSwitcher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowTaskSwitcher-Editable-End -->
+
+<!-- AllowTaskSwitcher-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowTaskSwitcher-DFProperties-End -->
+
+<!-- AllowTaskSwitcher-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowTaskSwitcher-AllowedValues-End -->
+
+<!-- AllowTaskSwitcher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowTaskSwitcher-Examples-End -->
+
+<!-- AllowTaskSwitcher-End -->
+
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Begin -->
+## AllowThirdPartySuggestionsInWindowsSpotlight
+
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-End -->
+
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowThirdPartySuggestionsInWindowsSpotlight
+```
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-OmaUri-End -->
+
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not suggest third-party content in Windows spotlight*
--   GP name: *DisableThirdPartySuggestions*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 – Third-party suggestions not allowed.
--   1 (default) – Third-party suggestions allowed.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_AllowThirdPartySuggestionsInWindowsSpotlight_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Third-party suggestions not allowed. |
+| 1 (Default) | Third-party suggestions allowed. |
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+| Name | Value |
+|:--|:--|
+| Name | DisableThirdPartySuggestions |
+| Friendly Name | Do not suggest third-party content in Windows spotlight |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableThirdPartySuggestions |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowThirdPartySuggestionsInWindowsSpotlight-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowVoiceRecording-Begin -->
+## AllowVoiceRecording
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-> Prior to Windows 10, version 1803, this policy had User scope.
-
-
-This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off Microsoft consumer experiences*
--   GP name: *DisableWindowsConsumerFeatures*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
-
-
-Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off all Windows spotlight features*
--   GP name: *DisableWindowsSpotlightFeatures*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
-Added in Windows 10, version 1703. This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center. If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off Windows Spotlight on Action Center*
--   GP name: *DisableWindowsSpotlightOnActionCenter*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1803. This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make their experience productive.
-
--  User setting is under Settings -> Privacy -> General -> Show me suggested content in Settings app.
--  User Setting is changeable on a per user basis.
--  If the Group policy is set to off, no suggestions will be shown to the user in Settings app.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off Windows Spotlight on Settings*
--   GP name: *DisableWindowsSpotlightOnSettings*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - Not allowed.
--   1 - Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
-Added in Windows 10, version 1703. This policy setting lets you turn off the Windows spotlight Windows welcome experience feature.
-The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off the Windows Welcome Experience*
--   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+> This policy is deprecated and may be removed in a future release.
+
+<!-- AllowVoiceRecording-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowVoiceRecording-Applicability-End -->
+
+<!-- AllowVoiceRecording-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowVoiceRecording
+```
+<!-- AllowVoiceRecording-OmaUri-End -->
+
+<!-- AllowVoiceRecording-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowVoiceRecording-Description-End -->
+
+<!-- AllowVoiceRecording-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowVoiceRecording-Editable-End -->
+
+<!-- AllowVoiceRecording-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowVoiceRecording-DFProperties-End -->
+
+<!-- AllowVoiceRecording-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowVoiceRecording-AllowedValues-End -->
+
+<!-- AllowVoiceRecording-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowVoiceRecording-Examples-End -->
+
+<!-- AllowVoiceRecording-End -->
+
+<!-- AllowWindowsConsumerFeatures-Begin -->
+## AllowWindowsConsumerFeatures
+
+<!-- AllowWindowsConsumerFeatures-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowWindowsConsumerFeatures-Applicability-End -->
+
+<!-- AllowWindowsConsumerFeatures-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures
+```
+<!-- AllowWindowsConsumerFeatures-OmaUri-End -->
+
+<!-- AllowWindowsConsumerFeatures-Description-Begin -->
+<!-- Description-Source-DDF -->
+Prior to Windows 10, version 1803, this policy had User scope. This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles. Most restricted value is 0.
+<!-- AllowWindowsConsumerFeatures-Description-End -->
+
+<!-- AllowWindowsConsumerFeatures-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsConsumerFeatures-Editable-End -->
+
+<!-- AllowWindowsConsumerFeatures-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_AllowWindowsConsumerFeatures_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowWindowsConsumerFeatures-DFProperties-End -->
+
+<!-- AllowWindowsConsumerFeatures-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWindowsConsumerFeatures-AllowedValues-End -->
+
+<!-- AllowWindowsConsumerFeatures-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsConsumerFeatures |
+| Friendly Name | Turn off Microsoft consumer experiences |
+| Location | Computer Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableWindowsConsumerFeatures |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowWindowsConsumerFeatures-GpMapping-End -->
+
+<!-- AllowWindowsConsumerFeatures-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsConsumerFeatures-Examples-End -->
+
+<!-- AllowWindowsConsumerFeatures-End -->
+
+<!-- AllowWindowsSpotlight-Begin -->
+## AllowWindowsSpotlight
+
+<!-- AllowWindowsSpotlight-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowWindowsSpotlight-Applicability-End -->
+
+<!-- AllowWindowsSpotlight-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight
+```
+<!-- AllowWindowsSpotlight-OmaUri-End -->
+
+<!-- AllowWindowsSpotlight-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether to turn off all Windows spotlight features at once.
+
+- If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices.
+- If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
+<!-- AllowWindowsSpotlight-Description-End -->
+
+<!-- AllowWindowsSpotlight-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlight-Editable-End -->
+
+<!-- AllowWindowsSpotlight-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWindowsSpotlight-DFProperties-End -->
+
+<!-- AllowWindowsSpotlight-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWindowsSpotlight-AllowedValues-End -->
+
+<!-- AllowWindowsSpotlight-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsSpotlightFeatures |
+| Friendly Name | Turn off all Windows spotlight features |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableWindowsSpotlightFeatures |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowWindowsSpotlight-GpMapping-End -->
+
+<!-- AllowWindowsSpotlight-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlight-Examples-End -->
+
+<!-- AllowWindowsSpotlight-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-Begin -->
+## AllowWindowsSpotlightOnActionCenter
+
+<!-- AllowWindowsSpotlightOnActionCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowWindowsSpotlightOnActionCenter-Applicability-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlightOnActionCenter
+```
+<!-- AllowWindowsSpotlightOnActionCenter-OmaUri-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center.
+
+- If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center.
+- If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
+<!-- AllowWindowsSpotlightOnActionCenter-Description-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlightOnActionCenter-Editable-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_AllowWindowsSpotlightOnActionCenter_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowWindowsSpotlightOnActionCenter-DFProperties-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWindowsSpotlightOnActionCenter-AllowedValues-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsSpotlightOnActionCenter |
+| Friendly Name | Turn off Windows Spotlight on Action Center |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableWindowsSpotlightOnActionCenter |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowWindowsSpotlightOnActionCenter-GpMapping-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlightOnActionCenter-Examples-End -->
+
+<!-- AllowWindowsSpotlightOnActionCenter-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-Begin -->
+## AllowWindowsSpotlightOnSettings
+
+<!-- AllowWindowsSpotlightOnSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowWindowsSpotlightOnSettings-Applicability-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlightOnSettings
+```
+<!-- AllowWindowsSpotlightOnSettings-OmaUri-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make their experience productive. User setting is under Settings -> Privacy -> General -> Show me suggested content in Settings app. User Setting is changeable on a per user basis. If the Group policy is set to off, no suggestions will be shown to the user in Settings app.
+<!-- AllowWindowsSpotlightOnSettings-Description-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlightOnSettings-Editable-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWindowsSpotlightOnSettings-DFProperties-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWindowsSpotlightOnSettings-AllowedValues-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsSpotlightOnSettings |
+| Friendly Name | Turn off Windows Spotlight on Settings |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableWindowsSpotlightOnSettings |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowWindowsSpotlightOnSettings-GpMapping-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlightOnSettings-Examples-End -->
+
+<!-- AllowWindowsSpotlightOnSettings-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Begin -->
+## AllowWindowsSpotlightWindowsWelcomeExperience
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlightWindowsWelcomeExperience
+```
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-OmaUri-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features.
+
+- If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps.
+- If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Editable-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_AllowWindowsSpotlightWindowsWelcomeExperience_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-DFProperties-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-AllowedValues-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsSpotlightWindowsWelcomeExperience |
+| Friendly Name | Turn off the Windows Welcome Experience |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableWindowsSpotlightWindowsWelcomeExperience |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-GpMapping-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-Examples-End -->
+
+<!-- AllowWindowsSpotlightWindowsWelcomeExperience-End -->
+
+<!-- AllowWindowsTips-Begin -->
+## AllowWindowsTips
+
+<!-- AllowWindowsTips-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowWindowsTips-Applicability-End -->
+
+<!-- AllowWindowsTips-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/AllowWindowsTips
+```
+<!-- AllowWindowsTips-OmaUri-End -->
+
+<!-- AllowWindowsTips-Description-Begin -->
+<!-- Description-Source-DDF -->
 Enables or disables Windows Tips / soft landing.
+<!-- AllowWindowsTips-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not show Windows tips*
--   GP name: *DisableSoftLanding*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+<!-- AllowWindowsTips-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsTips-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowWindowsTips-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 – Disabled.
--   1 (default) – Enabled.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_AllowWindowsTips_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowWindowsTips-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowWindowsTips-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AllowWindowsTips-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
+<!-- AllowWindowsTips-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+| Name | Value |
+|:--|:--|
+| Name | DisableSoftLanding |
+| Friendly Name | Do not show Windows tips |
+| Location | Computer Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableSoftLanding |
+| ADMX File Name | CloudContent.admx |
+<!-- AllowWindowsTips-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowWindowsTips-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsTips-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowWindowsTips-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ConfigureChatIcon-Begin -->
+## ConfigureChatIcon
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> This policy is deprecated and may be removed in a future release.
 
+<!-- ConfigureChatIcon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigureChatIcon-Applicability-End -->
 
-Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
+<!-- ConfigureChatIcon-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/ConfigureChatIcon
+```
+<!-- ConfigureChatIcon-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Configure Windows spotlight on lock screen*
--   GP name: *ConfigureWindowsSpotlight*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+<!-- ConfigureChatIcon-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the Chat icon on the taskbar.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+- If you enable this policy setting and set it to Show, the Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
 
--   0 – None.
--   1 (default) – Windows spotlight enabled.
--   2 – placeholder only for future extension. Using this value has no effect.
+- If you enable this policy setting and set it to Hide, the Chat icon will be hidden by default. Users can show or hide it in Settings.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+- If you enable this policy setting and set it to Disabled, the Chat icon will not be displayed, and users cannot show or hide it in Settings.
 
-<!--Policy-->
-<a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
+- If you disable or do not configure this policy setting, the Chat icon will be configured according to the defaults for your Windows edition.
+<!-- ConfigureChatIcon-Description-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
+<!-- ConfigureChatIcon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Option 1 (Show) and Option 2 (Hide) only work on the first sign-in attempt. Option 3 (Disabled) works on all attempts.
+<!-- ConfigureChatIcon-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureChatIcon-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureChatIcon-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureChatIcon-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not Configured. |
+| 1 | Show. |
+| 2 | Hide. |
+| 3 | Disabled. |
+<!-- ConfigureChatIcon-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureChatIcon-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureChatIcon |
+| Friendly Name | Configures the Chat icon on the taskbar |
+| Element Name | State. |
+| Location | Computer Configuration |
+| Path | Windows Components > Chat |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Windows Chat |
+| ADMX File Name | Taskbar.admx |
+<!-- ConfigureChatIcon-GpMapping-End -->
+
+<!-- ConfigureChatIcon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureChatIcon-Examples-End -->
+
+<!-- ConfigureChatIcon-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-Begin -->
+## ConfigureWindowsSpotlightOnLockScreen
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/ConfigureWindowsSpotlightOnLockScreen
+```
+<!-- ConfigureWindowsSpotlightOnLockScreen-OmaUri-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you configure Windows spotlight on the lock screen.
+
+- If you enable this policy setting, "Windows spotlight" will be set as the lock screen provider and users will not be able to modify their lock screen. "Windows spotlight" will display daily images from Microsoft on the lock screen.
+
+Additionally, if you check the "Include content from Enterprise spotlight" checkbox and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, the checkbox will have no effect.
+
+- If you disable this policy setting, Windows spotlight will be turned off and users will no longer be able to select it as their lock screen. Users will see the default lock screen image and will be able to select another image, unless you have enabled the "Prevent changing lock screen image" policy.
+
+- If you do not configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen and logon image" policy.
+
+> [!NOTE]
+> This policy is only available for Enterprise SKUs.
+<!-- ConfigureWindowsSpotlightOnLockScreen-Description-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureWindowsSpotlightOnLockScreen-Editable-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [Experience_ConfigureWindowsSpotlightOnLockScreen_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- ConfigureWindowsSpotlightOnLockScreen-DFProperties-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Windows spotlight disabled. |
+| 1 (Default) | Windows spotlight enabled. |
+| 2 | Windows spotlight is always enabled, the user cannot disable it. |
+| 3 | Windows spotlight is always enabled, the user cannot disable it. For special configurations only. |
+<!-- ConfigureWindowsSpotlightOnLockScreen-AllowedValues-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureWindowsSpotlight |
+| Friendly Name | Configure Windows spotlight on lock screen |
+| Location | User Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | ConfigureWindowsSpotlight |
+| ADMX File Name | CloudContent.admx |
+<!-- ConfigureWindowsSpotlightOnLockScreen-GpMapping-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureWindowsSpotlightOnLockScreen-Examples-End -->
+
+<!-- ConfigureWindowsSpotlightOnLockScreen-End -->
+
+<!-- DisableCloudOptimizedContent-Begin -->
+## DisableCloudOptimizedContent
+
+<!-- DisableCloudOptimizedContent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableCloudOptimizedContent-Applicability-End -->
+
+<!-- DisableCloudOptimizedContent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/DisableCloudOptimizedContent
+```
+<!-- DisableCloudOptimizedContent-OmaUri-End -->
+
+<!-- DisableCloudOptimizedContent-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting lets you turn off cloud optimized content in all Windows experiences.
 
-If you enable this policy setting, Windows experiences that use the cloud optimized content client component will present the default fallback content.
+- If you enable this policy, Windows experiences that use the cloud optimized content client component, will instead present the default fallback content.
 
-If you disable or do not configure this policy setting, Windows experiences will be able to use cloud optimized content.
+- If you disable or do not configure this policy, Windows experiences will be able to use cloud optimized content.
+<!-- DisableCloudOptimizedContent-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off cloud optimized content*
--   GP name: *DisableCloudOptimizedContent*
--   GP path: *Windows Components/Cloud Content*
--   GP ADMX file name: *CloudContent.admx*
+<!-- DisableCloudOptimizedContent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCloudOptimizedContent-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DisableCloudOptimizedContent-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 (default) – Disabled.
--   1 – Enabled.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCloudOptimizedContent-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- DisableCloudOptimizedContent-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisableCloudOptimizedContent-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
+<!-- DisableCloudOptimizedContent-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+| Name | Value |
+|:--|:--|
+| Name | DisableCloudOptimizedContent |
+| Friendly Name | Turn off cloud optimized content |
+| Location | Computer Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableCloudOptimizedContent |
+| ADMX File Name | CloudContent.admx |
+<!-- DisableCloudOptimizedContent-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableCloudOptimizedContent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCloudOptimizedContent-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableCloudOptimizedContent-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableConsumerAccountStateContent-Begin -->
+## DisableConsumerAccountStateContent
 
-<hr/>
+<!-- DisableConsumerAccountStateContent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableConsumerAccountStateContent-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Prevents devices from showing feedback questions from Microsoft.
+<!-- DisableConsumerAccountStateContent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/DisableConsumerAccountStateContent
+```
+<!-- DisableConsumerAccountStateContent-OmaUri-End -->
 
-If you enable this policy setting, users will no longer see feedback notifications through the Feedback hub app. If you disable or do not configure this policy setting, users may see notifications through the Feedback hub app asking users for feedback.
+<!-- DisableConsumerAccountStateContent-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you turn off cloud consumer account state content in all Windows experiences.
 
-If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
+- If you enable this policy, Windows experiences that use the cloud consumer account state content client component, will instead present the default fallback content.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not show feedback notifications*
--   GP name: *DoNotShowFeedbackNotifications*
--   GP path: *Data Collection and Preview Builds*
--   GP ADMX file name: *FeedbackNotifications.admx*
+- If you disable or do not configure this policy, Windows experiences will be able to use cloud consumer account state content.
+<!-- DisableConsumerAccountStateContent-Description-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DisableConsumerAccountStateContent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableConsumerAccountStateContent-Editable-End -->
 
--   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
--   1 – Feedback notifications are disabled.
+<!-- DisableConsumerAccountStateContent-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableConsumerAccountStateContent-DFProperties-End -->
 
-<hr/>
+<!-- DisableConsumerAccountStateContent-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**  
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisableConsumerAccountStateContent-AllowedValues-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+<!-- DisableConsumerAccountStateContent-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableConsumerAccountStateContent |
+| Friendly Name | Turn off cloud consumer account state content |
+| Location | Computer Configuration |
+| Path | Windows Components > Cloud Content |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CloudContent |
+| Registry Value Name | DisableConsumerAccountStateContent |
+| ADMX File Name | CloudContent.admx |
+<!-- DisableConsumerAccountStateContent-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableConsumerAccountStateContent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableConsumerAccountStateContent-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableConsumerAccountStateContent-End -->
 
-<hr/>
+<!-- DisableTextTranslation-Begin -->
+## DisableTextTranslation
 
-<!--/Scope-->
-<!--Description-->
-[!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
+<!-- DisableTextTranslation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- DisableTextTranslation-Applicability-End -->
 
-Related policy:
-   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
+<!-- DisableTextTranslation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/DisableTextTranslation
+```
+<!-- DisableTextTranslation-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Do not sync browser settings*
--   GP name: *DisableWebBrowserSettingSync*
--   GP path: *Windows Components/Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+<!-- DisableTextTranslation-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows Text Translation feature to be enabled/disabled.
+<!-- DisableTextTranslation-Description-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported values:
+<!-- DisableTextTranslation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableTextTranslation-Editable-End -->
 
--  0 (default) - Allowed/turned on. The "browser" group synchronizes automatically between users' devices and lets users make changes.
--  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
+<!-- DisableTextTranslation-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableTextTranslation-DFProperties-End -->
 
+<!-- DisableTextTranslation-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Enable Text Translation. |
+| 1 | Disable Text Translation. |
+<!-- DisableTextTranslation-AllowedValues-End -->
+
+<!-- DisableTextTranslation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableTextTranslation-Examples-End -->
+
+<!-- DisableTextTranslation-End -->
+
+<!-- DoNotShowFeedbackNotifications-Begin -->
+## DoNotShowFeedbackNotifications
+
+<!-- DoNotShowFeedbackNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- DoNotShowFeedbackNotifications-Applicability-End -->
+
+<!-- DoNotShowFeedbackNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/DoNotShowFeedbackNotifications
+```
+<!-- DoNotShowFeedbackNotifications-OmaUri-End -->
+
+<!-- DoNotShowFeedbackNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows an organization to prevent its devices from showing feedback questions from Microsoft.
+
+- If you enable this policy setting, users will no longer see feedback notifications through the Windows Feedback app.
+
+- If you disable or do not configure this policy setting, users may see notifications through the Windows Feedback app asking users for feedback.
+
+> [!NOTE]
+> If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
+<!-- DoNotShowFeedbackNotifications-Description-End -->
+
+<!-- DoNotShowFeedbackNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DoNotShowFeedbackNotifications-Editable-End -->
+
+<!-- DoNotShowFeedbackNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DoNotShowFeedbackNotifications-DFProperties-End -->
+
+<!-- DoNotShowFeedbackNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally. |
+| 1 | Feedback notifications are disabled. |
+<!-- DoNotShowFeedbackNotifications-AllowedValues-End -->
+
+<!-- DoNotShowFeedbackNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DoNotShowFeedbackNotifications |
+| Friendly Name | Do not show feedback notifications |
+| Location | Computer Configuration |
+| Path | WindowsComponents > Data Collection and Preview Builds |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DataCollection |
+| Registry Value Name | DoNotShowFeedbackNotifications |
+| ADMX File Name | FeedbackNotifications.admx |
+<!-- DoNotShowFeedbackNotifications-GpMapping-End -->
+
+<!-- DoNotShowFeedbackNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DoNotShowFeedbackNotifications-Examples-End -->
+
+<!-- DoNotShowFeedbackNotifications-End -->
+
+<!-- DoNotSyncBrowserSettings-Begin -->
+## DoNotSyncBrowserSettings
+
+<!-- DoNotSyncBrowserSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- DoNotSyncBrowserSettings-Applicability-End -->
+
+<!-- DoNotSyncBrowserSettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/DoNotSyncBrowserSettings
+```
+<!-- DoNotSyncBrowserSettings-OmaUri-End -->
+
+<!-- DoNotSyncBrowserSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent the "browser" group from syncing to and from this PC. This turns off and disables the "browser" group on the "sync your settings" page in PC settings. The "browser" group contains settings and info like history and favorites.
+
+If you enable this policy setting, the "browser" group, including info like history and favorites, will not be synced.
+
+Use the option "Allow users to turn browser syncing on" so that syncing is turned off by default but not disabled.
+
+If you do not set or disable this setting, syncing of the "browser" group is on by default and configurable by the user.
+<!-- DoNotSyncBrowserSettings-Description-End -->
+
+<!-- DoNotSyncBrowserSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Related policy: [PreventUsersFromTurningOnBrowserSyncing](#preventusersfromturningonbrowsersyncing)
+<!-- DoNotSyncBrowserSettings-Editable-End -->
+
+<!-- DoNotSyncBrowserSettings-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DoNotSyncBrowserSettings-DFProperties-End -->
+
+<!-- DoNotSyncBrowserSettings-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 2 | Disable Syncing. |
+| 0 (Default) | Allow syncing. |
+<!-- DoNotSyncBrowserSettings-AllowedValues-End -->
+
+<!-- DoNotSyncBrowserSettings-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWebBrowserSettingSync |
+| Friendly Name | Do not sync browser settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableWebBrowserSettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- DoNotSyncBrowserSettings-GpMapping-End -->
+
+<!-- DoNotSyncBrowserSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 _**Sync the browser settings automatically**_
 
    Set both **DoNotSyncBrowserSettings** and **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
@@ -1379,83 +1815,119 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 _**Turn syncing off by default but don’t disable**_
 
    Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off) and select the _Allow users to turn “browser” syncing_ option.
+<!-- DoNotSyncBrowserSettings-Examples-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DoNotSyncBrowserSettings-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- EnableOrganizationalMessages-Begin -->
+## EnableOrganizationalMessages
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- EnableOrganizationalMessages-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- EnableOrganizationalMessages-Applicability-End -->
 
-<hr/>
+<!-- EnableOrganizationalMessages-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/EnableOrganizationalMessages
+```
+<!-- EnableOrganizationalMessages-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**  
+<!-- EnableOrganizationalMessages-Description-Begin -->
+<!-- Description-Source-DDF -->
+Organizational messages allow Administrators to deliver messages to their end users on selected Windows 11 experiences. Organizational messages are available to Administrators via services like Microsoft Endpoint Manager. By default, this policy is disabled. If you enable this policy, these experiences will show content booked by Administrators. Enabling this policy will have no impact on existing MDM policy settings governing delivery of content from Microsoft on Windows experiences.
+<!-- EnableOrganizationalMessages-Description-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+<!-- EnableOrganizationalMessages-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableOrganizationalMessages-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableOrganizationalMessages-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableOrganizationalMessages-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableOrganizationalMessages-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableOrganizationalMessages-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+<!-- EnableOrganizationalMessages-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableOrganizationalMessages-Examples-End -->
 
-Related policy:
-   [DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
+<!-- EnableOrganizationalMessages-End -->
 
+<!-- PreventUsersFromTurningOnBrowserSyncing-Begin -->
+## PreventUsersFromTurningOnBrowserSyncing
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Prevent users from turning on browser syncing*
--   GP name: *PreventUsersFromTurningOnBrowserSyncing*
--   GP path: *Windows Components/Sync your settings*
--   GP ADMX file name: *SettingSync.admx*
+<!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported values:
+<!-- PreventUsersFromTurningOnBrowserSyncing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/PreventUsersFromTurningOnBrowserSyncing
+```
+<!-- PreventUsersFromTurningOnBrowserSyncing-OmaUri-End -->
 
--  0 - Allowed/turned on. Users can sync the browser settings.
--  1 (default) - Prevented/turned off.
+<!-- PreventUsersFromTurningOnBrowserSyncing-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- PreventUsersFromTurningOnBrowserSyncing-Description-End -->
 
+<!-- PreventUsersFromTurningOnBrowserSyncing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+By default, the "browser" group syncs automatically between the user's devices, letting users make changes. With this policy though, you can prevent the "browser" group from syncing and prevent users from turning on the **Sync your Settings** toggle in Settings. If you want syncing turned off by default but not disabled, select the **Allow syncing** option in the [DoNotSyncBrowserSettings](#donotsyncbrowsersettings). For this policy to work correctly, you must enable the DoNotSyncBrowserSettings policy.
+<!-- PreventUsersFromTurningOnBrowserSyncing-Editable-End -->
+
+<!-- PreventUsersFromTurningOnBrowserSyncing-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- PreventUsersFromTurningOnBrowserSyncing-DFProperties-End -->
+
+<!-- PreventUsersFromTurningOnBrowserSyncing-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Allowed/turned on. Users can sync the browser settings. |
+| 1 (Default) | Prevented/turned off. |
+<!-- PreventUsersFromTurningOnBrowserSyncing-AllowedValues-End -->
+
+<!-- PreventUsersFromTurningOnBrowserSyncing-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWebBrowserSettingSync |
+| Friendly Name | Do not sync browser settings |
+| Element Name | Allow users to turn "browser" syncing on. |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| ADMX File Name | SettingSync.admx |
+<!-- PreventUsersFromTurningOnBrowserSyncing-GpMapping-End -->
+
+<!-- PreventUsersFromTurningOnBrowserSyncing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Examples**:
 
 _**Sync the browser settings automatically**_
 
@@ -1471,108 +1943,89 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
 2. Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-Validation procedure:
+**Validate**:
 
 1. Select **More > Settings**.
-1. See if the setting is enabled or disabled based on your selection.
+1. See, if the setting is enabled or disabled based on your selection.
+<!-- PreventUsersFromTurningOnBrowserSyncing-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PreventUsersFromTurningOnBrowserSyncing-End -->
 
-<hr/>
+<!-- ShowLockOnUserTile-Begin -->
+## ShowLockOnUserTile
 
-<!--Policy-->
-<a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**  
+<!-- ShowLockOnUserTile-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- ShowLockOnUserTile-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+<!-- ShowLockOnUserTile-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Experience/ShowLockOnUserTile
+```
+<!-- ShowLockOnUserTile-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ShowLockOnUserTile-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Shows or hides lock from the user tile menu.
 
-If you enable this policy setting, the lock option is shown in the User Tile menu.
+- If you enable this policy setting, the lock option will be shown in the User Tile menu.
 
-If you disable this policy setting, the lock option is never shown in the User Tile menu.
+- If you disable this policy setting, the lock option will never be shown in the User Tile menu.
 
-If you do not configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
+- If you do not configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.
+<!-- ShowLockOnUserTile-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Show lock in the user tile menu*
--   GP name: *ShowLockOption*
--   GP path: *File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- ShowLockOnUserTile-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowLockOnUserTile-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported values:  
-- false - The lock option is not displayed in the User Tile menu.
-- true (default) - The lock option is displayed in the User Tile menu.
+<!-- ShowLockOnUserTile-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- ShowLockOnUserTile-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ShowLockOnUserTile-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | The lock option is not displayed in the User Tile menu. |
+| 1 (Default) | The lock option is displayed in the User Tile menu. |
+<!-- ShowLockOnUserTile-AllowedValues-End -->
 
-Footnotes:
+<!-- ShowLockOnUserTile-GpMapping-Begin -->
+**Group policy mapping**:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-- 9 - Available in Windows 10, version 20H2.
+| Name | Value |
+|:--|:--|
+| Name | ShowLockOption |
+| Friendly Name | Show lock in the user tile menu |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowLockOption |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ShowLockOnUserTile-GpMapping-End -->
 
-<!--/Policies-->
+<!-- ShowLockOnUserTile-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowLockOnUserTile-Examples-End -->
 
+<!-- ShowLockOnUserTile-End -->
+
+<!-- Experience-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Experience-CspMoreInfo-End -->
+
+<!-- Experience-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

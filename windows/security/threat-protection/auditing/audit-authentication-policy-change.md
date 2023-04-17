@@ -3,24 +3,20 @@ title: Audit Authentication Policy Change (Windows 10)
 description: The Advanced Security Audit policy setting, Audit Authentication Policy Change, determines if audit events are generated when authentication policy is changed.
 ms.assetid: aa9cea7a-aadf-47b7-b704-ac253b8e79be
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+author: vinaypamnani-msft
+ms.date: 09/06/2021
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Authentication Policy Change
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
 
 Audit Authentication Policy Change determines whether the operating system generates audit events when changes are made to authentication policy.
 

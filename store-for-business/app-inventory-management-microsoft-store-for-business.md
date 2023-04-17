@@ -3,15 +3,14 @@ title: App inventory management for Microsoft Store for Business and Microsoft S
 description: You can manage all apps that you've acquired on your Apps & Software page.
 ms.assetid: 44211937-801B-4B85-8810-9CA055CDB1B2
 ms.reviewer: 
-manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 07/21/2021
 ---
 
 # App inventory management for Microsoft Store for Business and Education
@@ -19,7 +18,9 @@ ms.date: 10/23/2018
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+
+> [!IMPORTANT]
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 You can manage all apps that you've acquired on your **Apps & software** page. This page shows all of the content you've acquired, including apps that from Microsoft Store, and line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Apps & software** page. On the **New LOB apps** tab, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role. 
 
@@ -61,12 +62,12 @@ Each app in the Store for Business has an online, or an offline license. For mor
 
 | Action | Online-licensed app | Offline-licensed app |
 | ------ | ------------------- | -------------------- |
-| Assign to employees | X |  |
-| Add to private store | X |  |
-| Remove from private store | X |  |
-| View license details | X |  |
-| View product details | X | X |
-| Download for offline use | | X |
+| Assign to employees | ✔️ |  |
+| Add to private store | ✔️ |  |
+| Remove from private store | ✔️ |  |
+| View license details | ✔️ |  |
+| View product details | ✔️ | ✔️ |
+| Download for offline use | | ✔️ |
 
 The actions in the table are how you distribute apps, and manage app licenses. We'll cover those in the next sections. Working with offline-licensed apps has different steps. For more information on distributing offline-licensed apps, see [Distribute offline apps](distribute-offline-apps.md).
 
@@ -192,7 +193,7 @@ For more information about downloading offline-licensed apps, see [Download offl
 
 ## Manage products programmatically
 
-Microsoft Store for Business and Education provides a set of Admin management APIs. If you organization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
+Microsoft Store for Business and Education provides a set of Admin management APIs. If you organization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
 
 You can download a preview PowerShell script that uses REST APIs. The script is available from PowerShell Gallery. You can use to the script to:
 - View items in inventory (**Apps & software**)

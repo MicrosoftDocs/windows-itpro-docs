@@ -19,7 +19,7 @@ ms.date: 07/27/2017
 
 [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
 
-IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](https://go.microsoft.com/fwlink/p/?LinkId=327959).
+IEAK 11 uses Setup information (.inf) files to provide uninstallation instructions. Uninstallation instructions let your employees remove components, like files, registry entries, or shortcuts, through the **Uninstall or change a program** box. For details about .inf files, see [INF File Sections and Directives](/windows-hardware/drivers/install/).
 
  **To add uninstallation instructions to the .inf files**
 
@@ -37,13 +37,9 @@ IEAK 11 uses Setup information (.inf) files to provide uninstallation instructi
 
 -   You can't delete directories.
 
--   You can't use **RenFiles** to move a file to a different location, it only lets you rename a file in its existing location. For detailed information, see [INF RenFiles Directive](https://go.microsoft.com/fwlink/p/?LinkId=298508).
+-   You can't use **RenFiles** to move a file to a different location, it only lets you rename a file in its existing location. For detailed information, see [INF RenFiles Directive](/windows-hardware/drivers/install/inf-renfiles-directive).
 
--   You can't use **CopyFiles** to copy a file to another place on your hard drive, it can only copy files from the source disk to the destination directory. For information, see [INF CopyFiles Directive](https://go.microsoft.com/fwlink/p/?LinkId=298510).
-
- 
+-   You can't use **CopyFiles** to copy a file to another place on your hard drive, it can only copy files from the source disk to the destination directory. For information, see [INF CopyFiles Directive](/windows-hardware/drivers/install/inf-copyfiles-directive).
 
  
-
-
 

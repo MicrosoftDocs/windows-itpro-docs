@@ -3,25 +3,22 @@ title: Registry (Global Object Access Auditing) (Windows 10)
 description: The Advanced Security Audit policy setting, Registry (Global Object Access Auditing), enables you to configure a global system access control list (SACL).
 ms.assetid: 953bb1c1-3f76-43be-ba17-4aed2304f578
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/09/2021
+ms.technology: itpro-security
 ---
 
 # Registry (Global Object Access Auditing)
 
-**Applies to**
--   Windows 10
 
 This topic for the IT professional describes the Advanced Security Audit policy setting, **Registry (Global Object Access Auditing)**, which enables you to configure a global system access control list (SACL) on the registry of a computer.
 

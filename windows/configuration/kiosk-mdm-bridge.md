@@ -1,32 +1,30 @@
 ---
-title: Use MDM Bridge WMI Provider to create a Windows 10 kiosk (Windows 10)
+title: Use MDM Bridge WMI Provider to create a Windows 10/11 kiosk (Windows 10/11)
 description: Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
-ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: dansimp
+ms.reviewer: sybruckm
+manager: aaroncz
+ms.author: lizlong
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
-ms.date: 11/07/2018
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
-# Use MDM Bridge WMI Provider to create a Windows 10 kiosk
+# Use MDM Bridge WMI Provider to create a Windows client kiosk
 
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
+- Windows 11
 
-Environments that use [Windows Management Instrumentation (WMI)](https://msdn.microsoft.com/library/aa394582.aspx) can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the MDM_AssignedAccess class. For more information about using a PowerShell script to configure AssignedAccess, see [PowerShell Scripting with WMI Bridge Provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). 
+Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class. For more information about using a PowerShell script to configure AssignedAccess, see [PowerShell Scripting with WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). 
 
 Here's an example to set AssignedAccess configuration:
 
-1. Download the [psexec tool](https://technet.microsoft.com/sysinternals/bb897553.aspx).  
+1. Download the [psexec tool](/sysinternals/downloads/psexec).  
 2. Run `psexec.exe -i -s cmd.exe`.
 3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
 4. Execute the following script:

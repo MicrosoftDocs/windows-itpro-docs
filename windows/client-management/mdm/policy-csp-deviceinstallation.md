@@ -1,133 +1,100 @@
 ---
-title: Policy CSP - DeviceInstallation
-ms.reviewer: 
-manager: dansimp
-description: Use the Policy CSP - DeviceInstallation setting to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install.
-ms.author: dansimp
-ms.date: 09/27/2019
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: DeviceInstallation Policy CSP
+description: Learn more about the DeviceInstallation Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- DeviceInstallation-Begin -->
 # Policy CSP - DeviceInstallation
 
-
-<hr/>
-
-<!--Policies-->
-## DeviceInstallation policies  
-
-<dl>
-  <dd>
-    <a href="#deviceinstallation-allowinstallationofmatchingdeviceids">DeviceInstallation/AllowInstallationOfMatchingDeviceIDs</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-allowinstallationofmatchingdeviceinstanceids">DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-allowinstallationofmatchingdevicesetupclasses">DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-preventdevicemetadatafromnetwork">DeviceInstallation/PreventDeviceMetadataFromNetwork</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings">DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-preventinstallationofmatchingdeviceinstanceids">DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs</a>
-  </dd>
-  <dd>
-    <a href="#deviceinstallation-preventinstallationofmatchingdevicesetupclasses">DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceIDs**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install. 
-
 > [!TIP]
-> Use this policy setting only when the "Prevent installation of devices not described by other policy settings" policy setting is enabled. Other policy settings that prevent device installation take precedence over this one.
-
-If you enable this policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, or the "Prevent installation of removable devices" policy setting). If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
-
-If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
-
-Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
-
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow installation of devices that match any of these device IDs*
--   GP name: *DeviceInstall_IDs_Allow*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
+<!-- DeviceInstallation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DeviceInstallation-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+<!-- AllowInstallationOfMatchingDeviceIDs-Begin -->
+## AllowInstallationOfMatchingDeviceIDs
 
-<!--/SupportedValues-->
-<!--Example-->
-To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter. 
+<!-- AllowInstallationOfMatchingDeviceIDs-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- AllowInstallationOfMatchingDeviceIDs-Applicability-End -->
 
+<!-- AllowInstallationOfMatchingDeviceIDs-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceIDs
+```
+<!-- AllowInstallationOfMatchingDeviceIDs-OmaUri-End -->
+
+<!-- AllowInstallationOfMatchingDeviceIDs-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
+
+When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
+  - Prevent installation of devices that match these device IDs
+  - Prevent installation of devices that match any of these device instance IDs
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+
+> [!NOTE]
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+
+Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
+
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+
+- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+<!-- AllowInstallationOfMatchingDeviceIDs-Description-End -->
+
+<!-- AllowInstallationOfMatchingDeviceIDs-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Peripherals can be specified by their [hardware identity](/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- AllowInstallationOfMatchingDeviceIDs-Editable-End -->
+
+<!-- AllowInstallationOfMatchingDeviceIDs-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowInstallationOfMatchingDeviceIDs-DFProperties-End -->
+
+<!-- AllowInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_IDs_Allow |
+| Friendly Name | Allow installation of devices that match any of these device IDs |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | AllowDeviceIDs |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- AllowInstallationOfMatchingDeviceIDs-AdmxBacked-End -->
+
+<!-- AllowInstallationOfMatchingDeviceIDs-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
+To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter.
 
 ```xml
 <SyncML>
@@ -148,7 +115,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 </SyncML>
 ```
 
-To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -156,87 +123,79 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
-<!--/Example-->
-<!--Validation-->
+<!-- AllowInstallationOfMatchingDeviceIDs-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowInstallationOfMatchingDeviceIDs-End -->
 
-<hr/>
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Begin -->
+## AllowInstallationOfMatchingDeviceInstanceIDs
 
-<!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs**  
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs
+```
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of Plug and Play device instance IDs for devices that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
+  - Prevent installation of devices that match any of these device instance IDs
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
-> [!div class = "checklist"]
-> * Device
+> [!NOTE]
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
-<hr/>
+Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1903. Also available in Windows 10, version 1809. This policy setting allows you to specify a list of Plug and Play device instance IDs for devices that Windows is allowed to install. Use this policy setting only when the "Prevent installation of devices not described by other policy settings" policy setting is enabled. Other policy settings that prevent device installation take precedence over this one.
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-If you enable this policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting). If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Description-End -->
 
-If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Peripherals can be specified by their [device instance ID](/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Editable-End -->
 
-Peripherals can be specified by their [device instance ID](https://docs.microsoft.com/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-DFProperties-End -->
+
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow installation of devices that match any of these device instance IDs*
--   GP name: *DeviceInstall_Instance_IDs_Allow*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_Instance_IDs_Allow |
+| Friendly Name | Allow installation of devices that match any of these device instance IDs |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | AllowInstanceIDs |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
-To enable this policy, use the following SyncML. 
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
+To enable this policy, use the following SyncML.
 
 ``` xml
 <SyncML>
@@ -256,107 +215,98 @@ To enable this policy, use the following SyncML.
     </SyncBody>
 </SyncML>
 ```
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+
+**Verify**:
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
+
 ``` txt
 >>>  [Device Installation Restrictions Policy Check]
 >>>  Section start 2018/11/15 12:26:41.659
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
-<!--/Example-->
-<!--Validation-->
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowInstallationOfMatchingDeviceInstanceIDs-End -->
 
-<hr/>
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Begin -->
+## AllowInstallationOfMatchingDeviceSetupClasses
 
-<!--Policy-->
-<a href="" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses**  
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses
+```
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for driver packages that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
+  - Prevent installation of devices for these device classes
+  - Prevent installation of devices that match these device IDs
+  - Prevent installation of devices that match any of these device instance IDs
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
-> [!div class = "checklist"]
-> * Device
+> [!NOTE]
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
-<hr/>
+Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting specifically prevents installation (for example, the "Prevent installation of devices that match these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is allowed to install. 
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
+- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Description-End -->
+
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Peripherals can be specified by their [hardware identity](/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Editable-End -->
+
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-DFProperties-End -->
+
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
 > [!TIP]
-> Use this policy setting only when the "Prevent installation of devices not described by other policy settings" policy setting is enabled. Other policy settings that prevent device installation take precedence over this one.
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-If you enable this policy setting, Windows is allowed to install or update device drivers whose device setup class GUIDs appear in the list you create, unless another policy setting specifically prevents installation (for example, the "Prevent installation of devices that match these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, or the "Prevent installation of removable devices" policy setting). If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+**ADMX mapping**:
 
-This setting allows device installation based on the serial number of a removable device if that number is in the hardware ID.
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_Classes_Allow |
+| Friendly Name | Allow installation of devices using drivers that match these device setup classes |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | AllowDeviceClasses |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-AdmxBacked-End -->
 
-If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
-Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
-
-
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow installation of devices using drivers that match these device setup classes*
--   GP name: *DeviceInstall_Classes_Allow*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
-
-<!--/ADMXBacked-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
 To enable this policy, use the following SyncML. This example allows Windows to install:
 
 - Floppy Disks, ClassGUID = {4d36e980-e325-11ce-bfc1-08002be10318}
 - CD ROMs, ClassGUID = {4d36e965-e325-11ce-bfc1-08002be10318}
 - Modems, ClassGUID = {4d36e96d-e325-11ce-bfc1-08002be10318}
 
-Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. 
-
+Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter.
 
 ```xml
 <SyncML>
@@ -377,8 +327,9 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+**Verify**:
 
+To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -386,165 +337,249 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
-<!--/Example-->
-<!--Validation-->
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowInstallationOfMatchingDeviceSetupClasses-End -->
 
-<hr/>
+<!-- EnableInstallationPolicyLayering-Begin -->
+## EnableInstallationPolicyLayering
 
-<!--Policy-->
-<a href="" id="deviceinstallation-preventdevicemetadatafromnetwork"></a>**DeviceInstallation/PreventDeviceMetadataFromNetwork**  
+<!-- EnableInstallationPolicyLayering-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.256] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.2145] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1714] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1151] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableInstallationPolicyLayering-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+<!-- EnableInstallationPolicyLayering-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/EnableInstallationPolicyLayering
+```
+<!-- EnableInstallationPolicyLayering-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableInstallationPolicyLayering-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Device instance IDs > Device IDs > Device setup class > Removable devices
 
-> [!div class = "checklist"]
-> * Device
+Device instance IDs
 
-<hr/>
+1. Prevent installation of devices using drivers that match these device instance IDs
+2. Allow installation of devices using drivers that match these device instance IDs
 
-<!--/Scope-->
-<!--Description-->
+Device IDs
+
+3. Prevent installation of devices using drivers that match these device IDs
+4. Allow installation of devices using drivers that match these device IDs
+
+Device setup class
+
+5. Prevent installation of devices using drivers that match these device setup classes
+6. Allow installation of devices using drivers that match these device setup classes
+
+Removable devices
+
+7. Prevent installation of removable devices
+
+> [!NOTE]
+> This policy setting provides more granular control than the "Prevent installation of devices not described by other policy settings" policy setting. If these conflicting policy settings are enabled at the same time, the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting will be enabled and the other policy setting will be ignored.
+
+If you disable or do not configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
+<!-- EnableInstallationPolicyLayering-Description-End -->
+
+<!-- EnableInstallationPolicyLayering-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableInstallationPolicyLayering-Editable-End -->
+
+<!-- EnableInstallationPolicyLayering-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableInstallationPolicyLayering-DFProperties-End -->
+
+<!-- EnableInstallationPolicyLayering-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_Allow_Deny_Layered |
+| Friendly Name | Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | AllowDenyLayered |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- EnableInstallationPolicyLayering-AdmxBacked-End -->
+
+<!-- EnableInstallationPolicyLayering-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
+```xml
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/EnableInstallationPolicyLayering</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">string</Format>
+                </Meta>
+                <Data><enabled/><Data id="AllowDenyLayered" value="1"/></Data>;
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+
+**Verify**:
+
+To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
+
+```txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
+
+You can also change the evaluation order of device installation policy settings by using a custom profile in Intune.
+
+:::image type="content" source="images/edit-row.png" alt-text="This image is an edit row image.":::
+<!-- EnableInstallationPolicyLayering-Examples-End -->
+
+<!-- EnableInstallationPolicyLayering-End -->
+
+<!-- PreventDeviceMetadataFromNetwork-Begin -->
+## PreventDeviceMetadataFromNetwork
+
+<!-- PreventDeviceMetadataFromNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- PreventDeviceMetadataFromNetwork-Applicability-End -->
+
+<!-- PreventDeviceMetadataFromNetwork-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventDeviceMetadataFromNetwork
+```
+<!-- PreventDeviceMetadataFromNetwork-OmaUri-End -->
+
+<!-- PreventDeviceMetadataFromNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent Windows from retrieving device metadata from the Internet.
 
-If you enable this policy setting, Windows does not retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).
+- If you enable this policy setting, Windows does not retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).
 
-If you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
+- If you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
+<!-- PreventDeviceMetadataFromNetwork-Description-End -->
 
-<!--/Description-->
+<!-- PreventDeviceMetadataFromNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventDeviceMetadataFromNetwork-Editable-End -->
+
+<!-- PreventDeviceMetadataFromNetwork-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventDeviceMetadataFromNetwork-DFProperties-End -->
+
+<!-- PreventDeviceMetadataFromNetwork-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent device metadata retrieval from the Internet*
--   GP name: *DeviceMetadata_PreventDeviceMetadataFromNetwork*
--   GP path: *System/Device Installation*
--   GP ADMX file name: *DeviceSetup.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceMetadata_PreventDeviceMetadataFromNetwork |
+| Friendly Name | Prevent device metadata retrieval from the Internet |
+| Location | Computer Configuration |
+| Path | System > Device Installation |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Device Metadata |
+| Registry Value Name | PreventDeviceMetadataFromNetwork |
+| ADMX File Name | DeviceSetup.admx |
+<!-- PreventDeviceMetadataFromNetwork-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- PreventDeviceMetadataFromNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventDeviceMetadataFromNetwork-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PreventDeviceMetadataFromNetwork-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Begin -->
+## PreventInstallationOfDevicesNotDescribedByOtherPolicySettings
 
-<hr/>
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings"></a>**DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings**  
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings
+```
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-OmaUri-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent the installation of devices that are not specifically described by any other policy setting.
 
-If you enable this policy setting, Windows is prevented from installing or updating the device driver for any device that is not described by either the "Allow installation of devices that match any of these device IDs" or the "Allow installation of devices for these device classes" policy setting.
+> [!NOTE]
+> This policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting to provide more granular control. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting instead of this policy setting.
 
-If you disable or do not configure this policy setting, Windows is allowed to install or update the device driver for any device that is not described by the "Prevent installation of devices that match any of these device IDs," "Prevent installation of devices for these device classes," or "Prevent installation of removable devices" policy setting.
+- If you enable this policy setting, Windows is prevented from installing or updating the driver package for any device that is not described by either the "Allow installation of devices that match any of these device IDs", the "Allow installation of devices for these device classes", or the "Allow installation of devices that match any of these device instance IDs" policy setting.
 
-<!--/Description-->
+- If you disable or do not configure this policy setting, Windows is allowed to install or update the driver package for any device that is not described by the "Prevent installation of devices that match any of these device IDs", "Prevent installation of devices for these device classes" policy setting, "Prevent installation of devices that match any of these device instance IDs", or "Prevent installation of removable devices" policy setting.
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Description-End -->
+
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Editable-End -->
+
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-DFProperties-End -->
+
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent installation of devices not described by other policy settings*
--   GP name: *DeviceInstall_Unspecified_Deny*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_Unspecified_Deny |
+| Friendly Name | Prevent installation of devices not described by other policy settings |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | DenyUnspecified |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
-To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting. 
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
+To enable this policy, use the following SyncML. This example prevents Windows from installing devices that aren't described by any other policy setting.
 
 ```xml
 <SyncML>
@@ -565,7 +600,9 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+**Verify**:
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -574,92 +611,78 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  [Exit status: SUCCESS]
 ```
 
-You can also block installation by using a custom profile in Intune. 
+You can also block installation by using a custom profile in Intune.
 
-![Custom profile](images/custom-profile-prevent-other-devices.png)
-<!--/Example-->
-<!--Validation-->
+![Custom profile prevent devices.](images/custom-profile-prevent-other-devices.png)
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-End -->
 
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceIDs-Begin -->
+## PreventInstallationOfMatchingDeviceIDs
 
-<!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceIDs**  
+<!-- PreventInstallationOfMatchingDeviceIDs-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PreventInstallationOfMatchingDeviceIDs-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PreventInstallationOfMatchingDeviceIDs-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
+```
+<!-- PreventInstallationOfMatchingDeviceIDs-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceIDs-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+> [!NOTE]
+> To enable the "Allow installation of devices that match any of these device instance IDs" policy setting to supersede this policy setting for applicable devices, enable the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create.
 
-<hr/>
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device.
+- If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+<!-- PreventInstallationOfMatchingDeviceIDs-Description-End -->
 
-If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+<!-- PreventInstallationOfMatchingDeviceIDs-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Peripherals can be specified by their [hardware identity](/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- PreventInstallationOfMatchingDeviceIDs-Editable-End -->
 
-If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+<!-- PreventInstallationOfMatchingDeviceIDs-DFProperties-Begin -->
+**Description framework properties**:
 
-Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventInstallationOfMatchingDeviceIDs-DFProperties-End -->
 
-<!--/Description-->
+<!-- PreventInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent installation of devices that match any of these device IDs*
--   GP name: *DeviceInstall_IDs_Deny*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_IDs_Deny |
+| Friendly Name | Prevent installation of devices that match any of these device IDs |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | DenyDeviceIDs |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- PreventInstallationOfMatchingDeviceIDs-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
-<hr/>
-To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use <code>&amp;#xF000;</code> as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
+<!-- PreventInstallationOfMatchingDeviceIDs-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
+To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&amp;#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true.
 
 ```xml
 <SyncML>
@@ -680,7 +703,9 @@ To enable this policy, use the following SyncML. This example prevents Windows f
 </SyncML>
 ```
 
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+**Verify**:
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -689,91 +714,76 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  [Exit status: SUCCESS]
 ```
 
-You can also block installation and usage of prohibited peripherals by using a custom profile in Intune. 
+You can also block installation and usage of prohibited peripherals by using a custom profile in Intune.
 
 For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
 
-![Custom profile](images/custom-profile-prevent-device-ids.png)
-<!--/Example-->
-<!--Validation-->
+![Custom profile prevent device ids.](images/custom-profile-prevent-device-ids.png)
+<!-- PreventInstallationOfMatchingDeviceIDs-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PreventInstallationOfMatchingDeviceIDs-End -->
 
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Begin -->
+## PreventInstallationOfMatchingDeviceInstanceIDs
 
-<!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs**  
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Applicability-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs
+```
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of Plug and Play device instance IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, Windows is prevented from installing a device whose device instance ID appears in the list you create.
 
-> [!div class = "checklist"]
-> * Device
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-<hr/>
+- If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1903. Also available in Windows 10, version 1809. This policy setting allows you to specify a list of Plug and Play device instance IDs for devices that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device.
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Peripherals can be specified by their [device instance ID](/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Editable-End -->
 
-If you enable this policy setting, Windows is prevented from installing a device whose device instance ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-DFProperties-End -->
 
-Peripherals can be specified by their [device instance ID](https://docs.microsoft.com/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
-
-<!--/Description-->
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent installation of devices that match any of these device instance IDs*
--   GP name: *DeviceInstall_Instance_IDs_Deny*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_Instance_IDs_Deny |
+| Friendly Name | Prevent installation of devices that match any of these device instance IDs |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | DenyInstanceIDs |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
 To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with device instance IDs of USB\VID_1F75 and USB\VID_0781. To configure multiple classes, use `&#xF000;` as a delimiter.
 
 ``` xml
@@ -794,7 +804,10 @@ To enable this policy, use the following SyncML. This example prevents Windows f
     </SyncBody>
 </SyncML>
 ```
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:  
+
+**Verify**:
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
 ``` txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -803,111 +816,96 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  [Exit status: SUCCESS]
 ```
 
-You can also block installation and usage of prohibited peripherals by using a custom profile in Intune. 
+You can also block installation and usage of prohibited peripherals by using a custom profile in Intune.
 
 For example, this custom profile prevents installation of devices with matching device instance IDs.
 
-![Custom profile](images/custom-profile-prevent-device-instance-ids.png)
+![Custom profile.](images/custom-profile-prevent-device-instance-ids.png)
 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
+
 1. Locate the device instance ID.
-2. Replace `&` in the device instance IDs with `&amp;`.  
-For example:  
-Replace  
-```USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0```  
-with  
-```USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0```
-    > [!Note]
-    > Do not use spaces in the value.
-3. Replace the device instance IDs with `&amp;` into the sample SyncML. Add the SyncML into the Intune custom device configuration profile.
+1. Replace `&` in the device instance IDs with `&amp;`. For example: Replace `USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0` with `USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0`.
 
-<!--/Example-->
-<!--Validation-->
+    > [!NOTE]
+    > Don't use spaces in the value.
 
-<!--/Validation-->
-<!--/Policy-->
+1. Replace the device instance IDs with `&amp;` into the sample SyncML. Add the SyncML into the Intune custom device configuration profile.
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-Examples-End -->
 
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceInstanceIDs-End -->
 
-<!--Policy-->
-<a href="" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses**  
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Begin -->
+## PreventInstallationOfMatchingDeviceSetupClasses
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
+```
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for driver packages that Windows is prevented from installing. By default, this policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
-> [!div class = "checklist"]
-> * Device
+> [!NOTE]
+> To enable the "Allow installation of devices that match any of these device IDs" and "Allow installation of devices that match any of these device instance IDs" policy settings to supersede this policy setting for applicable devices, enable the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting.
 
-<hr/>
+- If you enable this policy setting, Windows is prevented from installing or updating driver packages whose device setup class GUIDs appear in the list you create.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device.
+- If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
+- If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Description-End -->
 
-If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Peripherals can be specified by their [hardware identity](/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Editable-End -->
 
-Peripherals can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-DFProperties-End -->
+
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent installation of devices using drivers that match these device setup classes*
--   GP name: *DeviceInstall_Classes_Deny*
--   GP path: *System/Device Installation/Device Installation Restrictions*
--   GP ADMX file name: *deviceinstallation.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Name | Value |
+|:--|:--|
+| Name | DeviceInstall_Classes_Deny |
+| Friendly Name | Prevent installation of devices using drivers that match these device setup classes |
+| Location | Computer Configuration |
+| Path | System > Device Installation > Device Installation Restrictions |
+| Registry Key Name | Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions |
+| Registry Value Name | DenyDeviceClasses |
+| ADMX File Name | DeviceInstallation.admx |
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-AdmxBacked-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
 To enable this policy, use the following SyncML. This example prevents Windows from installing:
 
 - Floppy Disks, ClassGUID = {4d36e980-e325-11ce-bfc1-08002be10318}
 - CD ROMs, ClassGUID = {4d36e965-e325-11ce-bfc1-08002be10318}
 - Modems, ClassGUID = {4d36e96d-e325-11ce-bfc1-08002be10318}
 
-Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true. 
+Enclose the class GUID within curly brackets {}. To configure multiple classes, use `&#xF000;` as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_Classes_Deny_Retroactive to true.
 
 
 ```xml
@@ -929,7 +927,9 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+**Verify**:
+
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -937,23 +937,16 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
-<!--/Example-->
-<!--Validation-->
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- PreventInstallationOfMatchingDeviceSetupClasses-End -->
 
-Footnotes:
+<!-- DeviceInstallation-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- DeviceInstallation-CspMoreInfo-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- DeviceInstallation-End -->
 
-<!--/Policies-->
+## Related articles
 
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,25 +1,23 @@
 ---
-title: Configuring UE-V with Microsoft Endpoint Configuration Manager
-description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Endpoint Configuration Manager. 
-author: dansimp
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+title: Configuring UE-V with Microsoft Configuration Manager
+description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Configuration Manager.
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
-
-# Configuring UE-V with Microsoft Endpoint Manager 
+# Configuring UE-V with Microsoft Configuration Manager 
 
 **Applies to**
 -   Windows 10, version 1607
 
-After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of Microsoft Endpoint Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+After you deploy User Experience Virtualization (UE-V) and its required features, you can start to configure it to meet your organization's need. The UE-V Configuration Pack provides a way for administrators to use the Compliance Settings feature of Microsoft Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 ## UE-V Configuration Pack supported features
 
@@ -35,52 +33,15 @@ The UE-V Configuration Pack includes tools to:
 
 -   Create or update a UE-V Agent policy configuration item to set or clear these settings
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Max package size</p></td>
-    <td align="left"><p>Enable/disable Windows app sync</p></td>
-    <td align="left"><p>Wait for sync on application start</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Setting import delay</p></td>
-    <td align="left"><p>Sync unlisted Windows apps</p></td>
-    <td align="left"><p>Wait for sync on logon</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Settings import notification</p></td>
-    <td align="left"><p>IT contact URL</p></td>
-    <td align="left"><p>Wait for sync timeout</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Settings storage path</p></td>
-    <td align="left"><p>IT contact descriptive text</p></td>
-    <td align="left"><p>Settings template catalog path</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Sync enablement</p></td>
-    <td align="left"><p>Tray icon enabled</p></td>
-    <td align="left"><p>Start/Stop UE-V agent service</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Sync method</p></td>
-    <td align="left"><p>First use notification</p></td>
-    <td align="left"><p>Define which Windows apps will roam settings</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Sync timeout</p></td>
-    <td align="left"><p></p></td>
-    <td align="left"><p></p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+     |Configuration|Setting|Description|
+     |--- |--- |--- |
+     |Max package size|Enable/disable Windows app sync|Wait for sync on application start|
+     |Setting import delay|Sync unlisted Windows apps|Wait for sync on sign in|
+     |Settings import notification|IT contact URL|Wait for sync timeout|
+     |Settings storage path|IT contact descriptive text|Settings template catalog path|
+     |Sync enablement|Tray icon enabled|Start/Stop UE-V agent service|
+     |Sync method|First use notification|Define which Windows apps will roam settings|
+     |Sync timeout|||
 
 -   Verify compliance by confirming that UE-V is running.
 
@@ -101,8 +62,8 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
 
 -   ConfigurationFile &lt;full path to agent configuration XML file&gt;
 
-**Note**  
-It might be necessary to change the PowerShell execution policy to allow these scripts to run in your environment. Perform these steps in the Configuration Manager console:
+> [!NOTE]
+> It might be necessary to change the PowerShell execution policy to allow these scripts to run in your environment. Perform these steps in the Configuration Manager console:
 
 1.  Select **Administration &gt; Client Settings &gt; Properties**
 
@@ -113,7 +74,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
-    ``` syntax
+    ```cmd
     C:\Program Files (x86)\Windows Kits\10\Microsoft User Experience Virtualization\Management\AgentConfiguration.xml 
     ```
 
@@ -128,7 +89,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
     -   **Unmanaged** to have the configuration item left at its current state
 
-    Do not remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you do not want Configuration Manager to alter current or default values.
+    Don't remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you don't want Configuration Manager to alter current or default values.
 
     <a href="" id="currentcomputeruserpolicy"></a>**CurrentComputerUserPolicy**  
     All UE-V user level settings. These entries override the machine settings for a user. The DesiredState attribute can be
@@ -139,7 +100,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
     -   **Unmanaged** to have the configuration item left at its current state
 
-    Do not remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you do not want Configuration Manager to alter current or default values.
+    Don't remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you don't want Configuration Manager to alter current or default values.
 
     <a href="" id="services"></a>**Services**  
     Entries in this section control service operation. The default configuration file contains a single entry for the UevAgentService. The DesiredState attribute can be set to **Running** or **Stopped**.
@@ -153,7 +114,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
     -   **Cleared** to have the entry removed from UE-V control
 
-    Additional lines can be added to this section based on the list of installed Windows apps that can be viewed using the PowerShell cmdlet GetAppxPackage.
+    More lines can be added to this section based on the list of installed Windows apps that can be viewed using the PowerShell cmdlet GetAppxPackage.
 
     <a href="" id="windows8appscurrentcomputeruserpolicy"></a>**Windows8AppsCurrentComputerUserPolicy**  
     Identical to the Windows8AppsComputerPolicy with settings that override machine settings for an individual user.
@@ -162,7 +123,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 3.  Run this command on a machine running the ConfigMgr Admin Console:
 
-    ``` syntax
+    ```cmd
     C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevAgentPolicyGenerator.exe -Site ABC -CabFilePath "C:\MyCabFiles\UevPolicyItem.cab" -ConfigurationFile "c:\AgentConfiguration.xml"
     ```
 
@@ -200,13 +161,13 @@ The result is a baseline CAB file that is ready for import into Configuration Ma
 
 ### <a href="" id="create2"></a>Create the First UE-V Template Baseline
 
-1.  Create a “master” set of UE-V templates in a stable folder location visible to the machine running your ConfigMgr Admin Console. As templates are added or updated, this folder is where they are pulled for distribution. The initial list of templates can be copied from a machine with UE-V installed. The default template location is C:\\Program Files\\Microsoft User Experience Virtualization\\Templates.
+1.  Create a “master” set of UE-V templates in a stable folder location visible to the machine running your ConfigMgr Admin Console. As templates are added or updated, this folder is where they're pulled for distribution. The initial list of templates can be copied from a machine with UE-V installed. The default template location is C:\\Program Files\\Microsoft User Experience Virtualization\\Templates.
 
-2.  Create a text.bat file where you can add the template generator command. This is optional, but will make regeneration simpler if you save the command parameters.
+2.  Create a text.bat file where you can add the template generator command. This step is optional, but will make regeneration simpler if you save the command parameters.
 
 3.  Add the command and parameters to the .bat file that will generate the baseline. The following example creates a baseline that distributes Notepad and Calculator:
 
-    ``` syntax
+    ```cmd
     C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevTemplateBaselineGenerator.exe -Site "ABC" -TemplateFolder "C:\ProductionUevTemplates" -Register "MicrosoftNotepad.xml, MicrosoftCalculator.xml" -CabFilePath "C:\MyCabFiles\UevTemplateBaseline.cab"
     ```
 
@@ -226,25 +187,7 @@ To distribute a new Notepad template, you would perform these steps:
 
 4.  Import the generated CAB file into ConfigMgr using the console or PowerShell Import-CMBaseline.
 
-## Get the UE-V Configuration Pack
-
-You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/download/details.aspx?id=40913) from the Microsoft Download Center.
-
-
-
-
-
-
-## Related topics
+## Related articles
 
 
 [Manage Configurations for UE-V](uev-manage-configurations.md)
-
- 
-
- 
-
-
-
-
-

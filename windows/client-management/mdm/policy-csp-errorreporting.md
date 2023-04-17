@@ -1,94 +1,50 @@
 ---
-title: Policy CSP - ErrorReporting
-description: Learn how to use the Policy CSP - ErrorReporting setting to determine the consent behavior of Windows Error Reporting for specific event types.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: ErrorReporting Policy CSP
+description: Learn more about the ErrorReporting Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ErrorReporting-Begin -->
 # Policy CSP - ErrorReporting
 
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+<!-- ErrorReporting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ErrorReporting-Editable-End -->
 
-<hr/>
+<!-- CustomizeConsentSettings-Begin -->
+## CustomizeConsentSettings
 
-<!--Policies-->
-## ErrorReporting policies  
+<!-- CustomizeConsentSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- CustomizeConsentSettings-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-disablewindowserrorreporting">ErrorReporting/DisableWindowsErrorReporting</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-displayerrornotification">ErrorReporting/DisplayErrorNotification</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-donotsendadditionaldata">ErrorReporting/DoNotSendAdditionalData</a>
-  </dd>
-  <dd>
-    <a href="#errorreporting-preventcriticalerrordisplay">ErrorReporting/PreventCriticalErrorDisplay</a>
-  </dd>
-</dl>
+<!-- CustomizeConsentSettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/CustomizeConsentSettings
+```
+<!-- CustomizeConsentSettings-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- CustomizeConsentSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines the consent behavior of Windows Error Reporting for specific event types.
 
-If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.
+- If you enable this policy setting, you can add specific event types to a list by clicking Show, and typing event types in the Value Name column of the Show Contents dialog box. Event types are those for generic, non-fatal errors: crash, no response, and kernel fault errors. For each specified event type, you can set a consent level of 0, 1, 2, 3, or 4.
 
 - 0 (Disable): Windows Error Reporting sends no data to Microsoft for this event type.
 
@@ -100,321 +56,294 @@ If you enable this policy setting, you can add specific event types to a list by
 
 - 4 (Send all data): Any data requested by Microsoft is sent automatically.
 
-If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
+- If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
+<!-- CustomizeConsentSettings-Description-End -->
 
-<!--/Description-->
+<!-- CustomizeConsentSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomizeConsentSettings-Editable-End -->
+
+<!-- CustomizeConsentSettings-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomizeConsentSettings-DFProperties-End -->
+
+<!-- CustomizeConsentSettings-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Customize consent settings*
--   GP name: *WerConsentCustomize_2*
--   GP path: *Windows Components/Windows Error Reporting/Consent*
--   GP ADMX file name: *ErrorReporting.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | WerConsentCustomize_2 |
+| Friendly Name | Customize consent settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting > Consent |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent |
+| ADMX File Name | ErrorReporting.admx |
+<!-- CustomizeConsentSettings-AdmxBacked-End -->
 
-<hr/>
+<!-- CustomizeConsentSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomizeConsentSettings-Examples-End -->
 
-<!--Policy-->
-<a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**  
+<!-- CustomizeConsentSettings-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- DisableWindowsErrorReporting-Begin -->
+## DisableWindowsErrorReporting
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableWindowsErrorReporting-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisableWindowsErrorReporting-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWindowsErrorReporting-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting
+```
+<!-- DisableWindowsErrorReporting-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableWindowsErrorReporting-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off Windows Error Reporting, so that reports are not collected or sent to either Microsoft or internal servers within your organization when software unexpectedly stops working or fails.
 
-If you enable this policy setting, Windows Error Reporting does not send any problem information to Microsoft. Additionally, solution information is not available in Security and Maintenance in Control Panel.
+- If you enable this policy setting, Windows Error Reporting does not send any problem information to Microsoft. Additionally, solution information is not available in Security and Maintenance in Control Panel.
 
-If you disable or do not configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
+- If you disable or do not configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
+<!-- DisableWindowsErrorReporting-Description-End -->
 
-<!--/Description-->
+<!-- DisableWindowsErrorReporting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWindowsErrorReporting-Editable-End -->
+
+<!-- DisableWindowsErrorReporting-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWindowsErrorReporting-DFProperties-End -->
+
+<!-- DisableWindowsErrorReporting-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Disable Windows Error Reporting*
--   GP name: *WerDisable_2*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | WerDisable_2 |
+| Friendly Name | Disable Windows Error Reporting |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting |
+| Registry Value Name | Disabled |
+| ADMX File Name | ErrorReporting.admx |
+<!-- DisableWindowsErrorReporting-AdmxBacked-End -->
 
-<hr/>
+<!-- DisableWindowsErrorReporting-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWindowsErrorReporting-Examples-End -->
 
-<!--Policy-->
-<a href="" id="errorreporting-displayerrornotification"></a>**ErrorReporting/DisplayErrorNotification**  
+<!-- DisableWindowsErrorReporting-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- DisplayErrorNotification-Begin -->
+## DisplayErrorNotification
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisplayErrorNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisplayErrorNotification-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisplayErrorNotification-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisplayErrorNotification
+```
+<!-- DisplayErrorNotification-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisplayErrorNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting controls whether users are shown an error dialog box that lets them report an error.
 
-If you enable this policy setting, users are notified in a dialog box that an error has occurred, and can display more details about the error. If the Configure Error Reporting policy setting is also enabled, the user can also report the error.
+- If you enable this policy setting, users are notified in a dialog box that an error has occurred, and can display more details about the error. If the Configure Error Reporting policy setting is also enabled, the user can also report the error.
 
-If you disable this policy setting, users are not notified that errors have occurred. If the Configure Error Reporting policy setting is also enabled, errors are reported, but users receive no notification. Disabling this policy setting is useful for servers that do not have interactive users.
+- If you disable this policy setting, users are not notified that errors have occurred. If the Configure Error Reporting policy setting is also enabled, errors are reported, but users receive no notification. Disabling this policy setting is useful for servers that do not have interactive users.
 
-If you do not configure this policy setting, users can change this setting in Control Panel, which is set to enable notification by default on computers that are running Windows XP Personal Edition and Windows XP Professional Edition, and disable notification by default on computers that are running Windows Server.
+- If you do not configure this policy setting, users can change this setting in Control Panel, which is set to enable notification by default on computers that are running Windows XP Personal Edition and Windows XP Professional Edition, and disable notification by default on computers that are running Windows Server.
 
 See also the Configure Error Reporting policy setting.
+<!-- DisplayErrorNotification-Description-End -->
 
-<!--/Description-->
+<!-- DisplayErrorNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisplayErrorNotification-Editable-End -->
+
+<!-- DisplayErrorNotification-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisplayErrorNotification-DFProperties-End -->
+
+<!-- DisplayErrorNotification-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Display Error Notification*
--   GP name: *PCH_ShowUI*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | PCH_ShowUI |
+| Friendly Name | Display Error Notification |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | Software\Policies\Microsoft\PCHealth\ErrorReporting |
+| Registry Value Name | ShowUI |
+| ADMX File Name | ErrorReporting.admx |
+<!-- DisplayErrorNotification-AdmxBacked-End -->
 
-<hr/>
+<!-- DisplayErrorNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisplayErrorNotification-Examples-End -->
 
-<!--Policy-->
-<a href="" id="errorreporting-donotsendadditionaldata"></a>**ErrorReporting/DoNotSendAdditionalData**  
+<!-- DisplayErrorNotification-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- DoNotSendAdditionalData-Begin -->
+## DoNotSendAdditionalData
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DoNotSendAdditionalData-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DoNotSendAdditionalData-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DoNotSendAdditionalData-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DoNotSendAdditionalData
+```
+<!-- DoNotSendAdditionalData-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DoNotSendAdditionalData-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting controls whether additional data in support of error reports can be sent to Microsoft automatically.
 
-If you enable this policy setting, any additional data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
+- If you enable this policy setting, any additional data requests from Microsoft in response to a Windows Error Reporting report are automatically declined, without notification to the user.
 
-If you disable or do not configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
+- If you disable or do not configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
+<!-- DoNotSendAdditionalData-Description-End -->
 
-<!--/Description-->
+<!-- DoNotSendAdditionalData-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DoNotSendAdditionalData-Editable-End -->
+
+<!-- DoNotSendAdditionalData-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DoNotSendAdditionalData-DFProperties-End -->
+
+<!-- DoNotSendAdditionalData-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Do not send additional data*
--   GP name: *WerNoSecondLevelData_2*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | WerNoSecondLevelData_2 |
+| Friendly Name | Do not send additional data |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting |
+| Registry Value Name | DontSendAdditionalData |
+| ADMX File Name | ErrorReporting.admx |
+<!-- DoNotSendAdditionalData-AdmxBacked-End -->
 
-<hr/>
+<!-- DoNotSendAdditionalData-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DoNotSendAdditionalData-Examples-End -->
 
-<!--Policy-->
-<a href="" id="errorreporting-preventcriticalerrordisplay"></a>**ErrorReporting/PreventCriticalErrorDisplay**  
+<!-- DoNotSendAdditionalData-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- PreventCriticalErrorDisplay-Begin -->
+## PreventCriticalErrorDisplay
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventCriticalErrorDisplay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- PreventCriticalErrorDisplay-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventCriticalErrorDisplay-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ErrorReporting/PreventCriticalErrorDisplay
+```
+<!-- PreventCriticalErrorDisplay-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PreventCriticalErrorDisplay-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting prevents the display of the user interface for critical errors.
 
-If you enable this policy setting, Windows Error Reporting does not display any GUI-based error messages or dialog boxes for critical errors.
+- If you enable or do not configure this policy setting, Windows Error Reporting does not display any GUI-based error messages or dialog boxes for critical errors.
 
-If you disable or do not configure this policy setting, Windows Error Reporting displays the user interface for critical errors.
+- If you disable this policy setting, Windows Error Reporting displays the GUI-based error messages or dialog boxes for critical errors.
+<!-- PreventCriticalErrorDisplay-Description-End -->
 
-<!--/Description-->
+<!-- PreventCriticalErrorDisplay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventCriticalErrorDisplay-Editable-End -->
+
+<!-- PreventCriticalErrorDisplay-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventCriticalErrorDisplay-DFProperties-End -->
+
+<!-- PreventCriticalErrorDisplay-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prevent display of the user interface for critical errors*
--   GP name: *WerDoNotShowUI*
--   GP path: *Windows Components/Windows Error Reporting*
--   GP ADMX file name: *ErrorReporting.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | WerDoNotShowUI |
+| Friendly Name | Prevent display of the user interface for critical errors |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Error Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting |
+| Registry Value Name | DontShowUI |
+| ADMX File Name | ErrorReporting.admx |
+<!-- PreventCriticalErrorDisplay-AdmxBacked-End -->
 
-Footnotes:
+<!-- PreventCriticalErrorDisplay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventCriticalErrorDisplay-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- PreventCriticalErrorDisplay-End -->
 
-<!--/Policies-->
+<!-- ErrorReporting-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ErrorReporting-CspMoreInfo-End -->
 
+<!-- ErrorReporting-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

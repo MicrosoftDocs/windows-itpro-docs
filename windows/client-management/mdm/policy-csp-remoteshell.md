@@ -1,556 +1,454 @@
 ---
-title: Policy CSP - RemoteShell
-description: Learn details about the Policy CSP - RemoteShell setting so that you can configure access to remote shells.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: RemoteShell Policy CSP
+description: Learn more about the RemoteShell Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- RemoteShell-Begin -->
 # Policy CSP - RemoteShell
 
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+<!-- RemoteShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemoteShell-Editable-End -->
 
-<hr/>
+<!-- AllowRemoteShellAccess-Begin -->
+## AllowRemoteShellAccess
 
-<!--Policies-->
-## RemoteShell policies  
+<!-- AllowRemoteShellAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowRemoteShellAccess-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#remoteshell-allowremoteshellaccess">RemoteShell/AllowRemoteShellAccess</a>
-  </dd>
-  <dd>
-    <a href="#remoteshell-maxconcurrentusers">RemoteShell/MaxConcurrentUsers</a>
-  </dd>
-  <dd>
-    <a href="#remoteshell-specifyidletimeout">RemoteShell/SpecifyIdleTimeout</a>
-  </dd>
-  <dd>
-    <a href="#remoteshell-specifymaxmemory">RemoteShell/SpecifyMaxMemory</a>
-  </dd>
-  <dd>
-    <a href="#remoteshell-specifymaxprocesses">RemoteShell/SpecifyMaxProcesses</a>
-  </dd>
-  <dd>
-    <a href="#remoteshell-specifymaxremoteshells">RemoteShell/SpecifyMaxRemoteShells</a>
-  </dd>
-  <dd>
-    <a href="#remoteshell-specifyshelltimeout">RemoteShell/SpecifyShellTimeout</a>
-  </dd>
-</dl>
+<!-- AllowRemoteShellAccess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/AllowRemoteShellAccess
+```
+<!-- AllowRemoteShellAccess-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="remoteshell-allowremoteshellaccess"></a>**RemoteShell/AllowRemoteShellAccess**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowRemoteShellAccess-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures access to remote shells.
 
 If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
 
-If you set this policy to ‘disabled’, new remote shell connections are rejected by the server.
+If you set this policy to 'disabled', new remote shell connections are rejected by the server.
+<!-- AllowRemoteShellAccess-Description-End -->
 
-<!--/Description-->
+<!-- AllowRemoteShellAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRemoteShellAccess-Editable-End -->
+
+<!-- AllowRemoteShellAccess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowRemoteShellAccess-DFProperties-End -->
+
+<!-- AllowRemoteShellAccess-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Allow Remote Shell Access*
--   GP name: *AllowRemoteShellAccess*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | AllowRemoteShellAccess |
+| Friendly Name | Allow Remote Shell Access |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| Registry Value Name | AllowRemoteShellAccess |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- AllowRemoteShellAccess-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowRemoteShellAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRemoteShellAccess-Examples-End -->
 
-<!--Policy-->
-<a href="" id="remoteshell-maxconcurrentusers"></a>**RemoteShell/MaxConcurrentUsers**  
+<!-- AllowRemoteShellAccess-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- MaxConcurrentUsers-Begin -->
+## MaxConcurrentUsers
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MaxConcurrentUsers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- MaxConcurrentUsers-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MaxConcurrentUsers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/MaxConcurrentUsers
+```
+<!-- MaxConcurrentUsers-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- MaxConcurrentUsers-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the maximum number of users able to concurrently perform remote shell operations on the system.
 
-The value can be any  number from 1 to 100.
+The value can be any number from 1 to 100.
 
-If you enable this policy setting, the new shell connections are rejected if they exceed the specified limit.
+- If you enable this policy setting, the new shell connections are rejected if they exceed the specified limit.
 
-If you disable or do not configure this policy setting, the default number is five users.
+- If you disable or do not configure this policy setting, the default number is five users.
+<!-- MaxConcurrentUsers-Description-End -->
 
-<!--/Description-->
+<!-- MaxConcurrentUsers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MaxConcurrentUsers-Editable-End -->
+
+<!-- MaxConcurrentUsers-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MaxConcurrentUsers-DFProperties-End -->
+
+<!-- MaxConcurrentUsers-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *MaxConcurrentUsers*
--   GP name: *MaxConcurrentUsers*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | MaxConcurrentUsers |
+| Friendly Name | MaxConcurrentUsers |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- MaxConcurrentUsers-AdmxBacked-End -->
 
-<hr/>
+<!-- MaxConcurrentUsers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MaxConcurrentUsers-Examples-End -->
 
-<!--Policy-->
-<a href="" id="remoteshell-specifyidletimeout"></a>**RemoteShell/SpecifyIdleTimeout**  
+<!-- MaxConcurrentUsers-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- SpecifyIdleTimeout-Begin -->
+## SpecifyIdleTimeout
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyIdleTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- SpecifyIdleTimeout-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyIdleTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/SpecifyIdleTimeout
+```
+<!-- SpecifyIdleTimeout-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyIdleTimeout-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it is automatically deleted.
 
 Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 minute) is used for smaller values.
 
-If you enable this policy setting, the server will wait for the specified amount of time since the last received message from the client before terminating the open shell.
+- If you enable this policy setting, the server will wait for the specified amount of time since the last received message from the client before terminating the open shell.
 
-If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
+- If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
+<!-- SpecifyIdleTimeout-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyIdleTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyIdleTimeout-Editable-End -->
+
+<!-- SpecifyIdleTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyIdleTimeout-DFProperties-End -->
+
+<!-- SpecifyIdleTimeout-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify idle Timeout*
--   GP name: *IdleTimeout*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | IdleTimeout |
+| Friendly Name | Specify idle Timeout |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- SpecifyIdleTimeout-AdmxBacked-End -->
 
-<hr/>
+<!-- SpecifyIdleTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyIdleTimeout-Examples-End -->
 
-<!--Policy-->
-<a href="" id="remoteshell-specifymaxmemory"></a>**RemoteShell/SpecifyMaxMemory**  
+<!-- SpecifyIdleTimeout-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- SpecifyMaxMemory-Begin -->
+## SpecifyMaxMemory
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyMaxMemory-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- SpecifyMaxMemory-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyMaxMemory-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/SpecifyMaxMemory
+```
+<!-- SpecifyMaxMemory-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyMaxMemory-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the maximum total amount of memory in megabytes that can be allocated by any active remote shell and all its child processes.
 
 Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, which means the ability of remote operations to allocate memory is only limited by the available virtual memory.
 
-If you enable this policy setting, the remote operation is terminated when a new allocation exceeds the specified quota.
+- If you enable this policy setting, the remote operation is terminated when a new allocation exceeds the specified quota.
 
-If you disable or do not configure this policy setting, the value 150 is used by default.
+- If you disable or do not configure this policy setting, the value 150 is used by default.
+<!-- SpecifyMaxMemory-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyMaxMemory-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyMaxMemory-Editable-End -->
+
+<!-- SpecifyMaxMemory-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyMaxMemory-DFProperties-End -->
+
+<!-- SpecifyMaxMemory-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify maximum amount of memory in MB per Shell*
--   GP name: *MaxMemoryPerShellMB*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | MaxMemoryPerShellMB |
+| Friendly Name | Specify maximum amount of memory in MB per Shell |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- SpecifyMaxMemory-AdmxBacked-End -->
 
-<hr/>
+<!-- SpecifyMaxMemory-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyMaxMemory-Examples-End -->
 
-<!--Policy-->
-<a href="" id="remoteshell-specifymaxprocesses"></a>**RemoteShell/SpecifyMaxProcesses**  
+<!-- SpecifyMaxMemory-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- SpecifyMaxProcesses-Begin -->
+## SpecifyMaxProcesses
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyMaxProcesses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- SpecifyMaxProcesses-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyMaxProcesses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/SpecifyMaxProcesses
+```
+<!-- SpecifyMaxProcesses-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyMaxProcesses-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the maximum number of processes a remote shell is allowed to launch.
 
-If you enable this policy setting, you can specify any number from 0 to 0x7FFFFFFF to set the maximum number of process per shell. Zero (0) means unlimited number of processes.
+- If you enable this policy setting, you can specify any number from 0 to 0x7FFFFFFF to set the maximum number of process per shell. Zero (0) means unlimited number of processes.
 
-If you disable or do not configure this policy setting,  the limit is five processes per shell.
+- If you disable or do not configure this policy setting, the limit is five processes per shell.
+<!-- SpecifyMaxProcesses-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyMaxProcesses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyMaxProcesses-Editable-End -->
+
+<!-- SpecifyMaxProcesses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyMaxProcesses-DFProperties-End -->
+
+<!-- SpecifyMaxProcesses-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify maximum number of processes per Shell*
--   GP name: *MaxProcessesPerShell*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | MaxProcessesPerShell |
+| Friendly Name | Specify maximum number of processes per Shell |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- SpecifyMaxProcesses-AdmxBacked-End -->
 
-<hr/>
+<!-- SpecifyMaxProcesses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyMaxProcesses-Examples-End -->
 
-<!--Policy-->
-<a href="" id="remoteshell-specifymaxremoteshells"></a>**RemoteShell/SpecifyMaxRemoteShells**  
+<!-- SpecifyMaxProcesses-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- SpecifyMaxRemoteShells-Begin -->
+## SpecifyMaxRemoteShells
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyMaxRemoteShells-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- SpecifyMaxRemoteShells-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyMaxRemoteShells-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/SpecifyMaxRemoteShells
+```
+<!-- SpecifyMaxRemoteShells-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyMaxRemoteShells-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the maximum number of concurrent shells any user can remotely open on the same system.
 
-Any number from 0 to 0x7FFFFFFF can be set, where 0 means unlimited number of shells.
+Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of shells.
 
-If you enable this policy setting, the user cannot open new remote shells if the count exceeds the specified limit.
+- If you enable this policy setting, the user cannot open new remote shells if the count exceeds the specified limit.
 
-If you disable or do not configure this policy setting, by default the limit is set to two remote shells per user.
+- If you disable or do not configure this policy setting, by default the limit is set to two remote shells per user.
+<!-- SpecifyMaxRemoteShells-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyMaxRemoteShells-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyMaxRemoteShells-Editable-End -->
+
+<!-- SpecifyMaxRemoteShells-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyMaxRemoteShells-DFProperties-End -->
+
+<!-- SpecifyMaxRemoteShells-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify maximum number of remote shells per user*
--   GP name: *MaxShellsPerUser*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | MaxShellsPerUser |
+| Friendly Name | Specify maximum number of remote shells per user |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- SpecifyMaxRemoteShells-AdmxBacked-End -->
 
-<hr/>
+<!-- SpecifyMaxRemoteShells-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyMaxRemoteShells-Examples-End -->
 
-<!--Policy-->
-<a href="" id="remoteshell-specifyshelltimeout"></a>**RemoteShell/SpecifyShellTimeout**  
+<!-- SpecifyMaxRemoteShells-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+<!-- SpecifyShellTimeout-Begin -->
+## SpecifyShellTimeout
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyShellTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- SpecifyShellTimeout-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyShellTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteShell/SpecifyShellTimeout
+```
+<!-- SpecifyShellTimeout-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyShellTimeout-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting is deprecated and has no effect when set to any state: Enabled, Disabled, or Not Configured.
+<!-- SpecifyShellTimeout-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyShellTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyShellTimeout-Editable-End -->
+
+<!-- SpecifyShellTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyShellTimeout-DFProperties-End -->
+
+<!-- SpecifyShellTimeout-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Specify Shell Timeout*
--   GP name: *ShellTimeOut*
--   GP path: *Windows Components/Windows Remote Shell*
--   GP ADMX file name: *WindowsRemoteShell.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShellTimeOut |
+| Friendly Name | Specify Shell Timeout |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Shell |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service\WinRS |
+| ADMX File Name | WindowsRemoteShell.admx |
+<!-- SpecifyShellTimeout-AdmxBacked-End -->
 
-Footnotes:
+<!-- SpecifyShellTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyShellTimeout-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- SpecifyShellTimeout-End -->
 
-<!--/Policies-->
+<!-- RemoteShell-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- RemoteShell-CspMoreInfo-End -->
 
+<!-- RemoteShell-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

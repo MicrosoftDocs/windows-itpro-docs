@@ -2,23 +2,20 @@
 title: 5378(F) The requested credentials delegation was disallowed by policy. (Windows 10)
 description: Describes security event 5378(F) The requested credentials delegation was disallowed by policy.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5378(F): The requested credentials delegation was disallowed by policy.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5378.png" alt="Event 5378 illustration" width="449" height="438" hspace="10" align="left" />
@@ -27,9 +24,9 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates requested [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) credentials delegation was disallowed by [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation policy.
+This event generates requested [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30) credentials delegation was disallowed by [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30) delegation policy.
 
-It typically occurs when [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation for [WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx) [double-hop](https://msdn.microsoft.com/library/ee309365(v=vs.85).aspx) session was not set properly.
+It typically occurs when [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30) delegation for [WinRM](/windows/win32/winrm/portal) [double-hop](/windows/win32/winrm/multi-hop-support) session was not set properly.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -92,7 +89,7 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/library/cc226764.a
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -100,9 +97,9 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/library/cc226764.a
 
 **Credential Delegation Information:**
 
--   **Security Package** \[Type = UnicodeString\]: the name of [Security Package](https://msdn.microsoft.com/library/windows/desktop/aa380501(v=vs.85).aspx) which was used. Always **CREDSSP** for this event.
+-   **Security Package** \[Type = UnicodeString\]: the name of [Security Package](/windows/win32/secauthn/ssp-aps-versus-ssps) which was used. Always **CREDSSP** for this event.
 
--   **User's UPN** \[Type = UnicodeString\]: [UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) of the account for which delegation was requested.
+-   **User's UPN** \[Type = UnicodeString\]: [UPN](/windows/win32/secauthn/user-name-formats) of the account for which delegation was requested.
 
 -   **Target Server** \[Type = UnicodeString\]: SPN of the target service for which delegation was requested.
 
@@ -114,7 +111,7 @@ It typically occurs when [CredSSP](https://msdn.microsoft.com/library/cc226764.a
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | Default credentials | The credentials obtained when the user first logs on to Windows.                                                                            |
 | Fresh credentials   | The credentials that the user is prompted for when executing an application.                                                                |
-| Saved credentials   | The credentials that are saved using [Credential Manager](https://msdn.microsoft.com/library/windows/desktop/aa374792(v=vs.85).aspx). |
+| Saved credentials   | The credentials that are saved using [Credential Manager](/windows/win32/secauthn/credential-manager). |
 
 ## Security Monitoring Recommendations
 
@@ -125,4 +122,3 @@ For 5378(F): The requested credentials delegation was disallowed by policy.
 -   If you have defined CredSSP delegation policy, then this event will show you policy violations. We recommend collecting these events and investigating every policy violation.
 
 -   This event also can be used for CredSSP delegation troubleshooting.
-

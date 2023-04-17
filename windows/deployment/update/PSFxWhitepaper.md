@@ -1,18 +1,14 @@
 ---
 title: Windows Updates using forward and reverse differentials
 description: A technique to produce compact software updates optimized for any origin and destination revision pair
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
-ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows Updates using forward and reverse differentials
@@ -45,17 +41,17 @@ its reverse differential back to the base version. Both forward and reverse
 differentials are then packaged as an update and distributed to the endpoints
 running the software to be updated. The update package contents can be symbolized as follows:
 
-![Symbolic representation of update package contents. A box containing two expressions: delta sub zero transform to sub N, followed delta sub N transform to sub zero](images/PSF1.png)
+![Symbolic representation of update package contents. A box containing two expressions: delta sub zero transform to sub N, followed delta sub N transform to sub zero.](images/PSF1.png)
 
 The endpoints that have the base version of the file (V<sub>0</sub>) hydrate the target
 revision (V<sub>N</sub>) by applying a simple transformation:
 
-![Equation: V sub zero + delta sub zero transform to sub N = V sub n](images/PSF2.png)
+![Equation: V sub zero + delta sub zero transform to sub N = V sub n.](images/PSF2.png)
 
 The endpoints that have revision N of the file (V<sub>N</sub>), hydrate the target revision
 (V<sub>R</sub>) by applying the following set of transformations:
 
-![Equation 1: V sub n + delta sub n transform to 0 = V sun 0; Equation 2: V sub zero + delta sub 0 transform to R = V sub R](images/PSF3.png)
+![Equation 1: V sub n + delta sub n transform to 0 = V sun 0; Equation 2: V sub zero + delta sub 0 transform to R = V sub R.](images/PSF3.png)
 
 The endpoints retain the reverse differentials for the software revision they
 are on, so that it can be used for hydrating and applying next revision update.
@@ -71,7 +67,7 @@ numerous advantages:
 
 Historically, download sizes of Windows 10 quality updates (Windows 10, version 1803 and older supported versions of Windows 10) are optimized by using express download. Express download is optimized such that updating Windows 10 systems will download the minimum number of bytes. This is achieved by generating differentials for every updated file based on selected historical base revisions of the same file + its base or RTM version.
 
-For example, if the October monthly quality update has updated Notepad.exe, differentials for Notepad.exe file changes from September to October, August to October, July to October, June to October, and from the original feature release to October are generated. All these differentials are stored in a Patch Storage File (PSF, also referred to as “express download files”) and hosted or cached on Windows Update or other update management or distribution servers (for example, Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or a non-Microsoft update management or distribution server that supports express updates). A device leveraging express updates uses network protocol to determine optimal differentials, then downloads only what is needed from the update distribution endpoints.
+For example, if the October monthly quality update has updated Notepad.exe, differentials for Notepad.exe file changes from September to October, August to October, July to October, June to October, and from the original feature release to October are generated. All these differentials are stored in a Patch Storage File (PSF, also referred to as “express download files”) and hosted or cached on Windows Update or other update management or distribution servers (for example, Windows Server Update Services (WSUS), Microsoft Configuration Manager, or a non-Microsoft update management or distribution server that supports express updates). A device leveraging express updates uses network protocol to determine optimal differentials, then downloads only what is needed from the update distribution endpoints.
 
 The flip side of express download is that the size of PSF files can be very large depending on the number of historical baselines against which differentials were calculated. Downloading and caching large PSF files to on-premises or remote update distribution servers is problematic for most organizations, hence they are unable to leverage express updates to keep their fleet of devices running Windows 10 up to date. Secondly, due to the complexity of generating differentials and size of the express files that need to be cached on update distribution servers, it is only feasible to generate express download files for the most common baselines, thus express updates are only applicable to selected baselines. Finally, calculation of optimal differentials is expensive in terms of system memory utilization, especially for low-cost systems, impacting their ability to download and apply an update seamlessly.
 
@@ -85,7 +81,7 @@ Windows 10 quality update packages will contain forward differentials from quali
 
 There can be cases where new files are added to the system during servicing. These files will not have RTM baselines, thus forward and reverse differentials cannot be used. In these scenarios, null differentials will be used to handle servicing. Null differentials are the slightly compressed and optimized version of the full binaries. Update packages can have either forward or reverse differentials, or null differential of any given binary in them. The following image symbolizes the content of a Windows 10 quality update installer:
 
-![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.)](images/PSF4.png)
+![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.).](images/PSF4.png)
 
 ### Hydration and installation 
 

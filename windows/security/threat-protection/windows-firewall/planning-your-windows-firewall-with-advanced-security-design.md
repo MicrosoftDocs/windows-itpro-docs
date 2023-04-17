@@ -1,40 +1,28 @@
 ---
-title: Planning Your Windows Defender Firewall with Advanced Security Design (Windows 10)
+title: Planning Your Windows Defender Firewall with Advanced Security Design (Windows)
 description: After you gather the relevant information, select the design or combination of designs for Windows Defender Firewall with Advanced Security in your environment.
-ms.assetid: f3ac3d49-ef4c-4f3c-a16c-e107284e169f
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning Your Windows Defender Firewall with Advanced Security Design
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-After you have gathered the relevant information in the previous sections, and understand the basics of the designs as described earlier in this guide, you can select the design (or combination of designs) that meet your needs.
+After you've gathered the relevant information in the previous sections, and understood the basics of the designs as described earlier in this guide, you can select the design (or combination of designs) that meet your needs.
 
 ## Basic firewall design
 
 We recommend that you deploy at least the basic firewall design. As discussed in the [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md) section, host-based firewalls are an important element in a defense-in-depth strategy and complement most other security measures you put in place in your organization.
 
-When you are ready to examine the options for firewall policy settings, see the [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md) section.
+When you're ready to examine the options for firewall policy settings, see the [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md) section.
 
 ## Algorithm and method support and selection
 
-To create a domain isolation or server isolation design, you must understand the algorithms available in each version of Windows, as well as their relative strengths.
+To create a domain isolation or server isolation design, you must understand the algorithms available in each version of Windows, and their relative strengths.
 
 ## IPsec performance considerations
 
@@ -49,11 +37,11 @@ Include this design in your plans:
 
 -   If you have an Active Directory domain of which most of the devices are members.
 
--   If you want to prevent the devices in your organization from accepting any unsolicited network traffic from devices that are not part of the domain.
+-   If you want to prevent the devices in your organization from accepting any unsolicited network traffic from devices that aren't part of the domain.
 
-If you plan on including the basic firewall design as part of your deployment, we recommend that you deploy the firewall policies first to confirm that they work properly. Also plan to enable your connection security rules in request mode at first, instead of the more restrictive require mode, until you are sure that the devices are all correctly protecting network traffic with IPsec. If something is wrong, request mode still allows communications to continue while you are troubleshooting.
+If you plan on including the basic firewall design as part of your deployment, we recommend that you deploy the firewall policies first to confirm that they work properly. Also plan to enable your connection security rules in request mode at first, instead of the more restrictive require mode, until you're sure that the devices are all correctly protecting network traffic with IPsec. If something is wrong, request mode still allows communications to continue while you're troubleshooting.
 
-When you are ready to examine the options for creating an isolated domain, see the [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) section.
+When you're ready to examine the options for creating an isolated domain, see the [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) section.
 
 ## Server isolation design
 
@@ -62,38 +50,38 @@ Include this design in your plans:
 
 -   If you have an isolated domain and you want to additionally restrict access to specific servers to only authorized users and devices.
 
--   You are not deploying an isolated domain, but want to take advantage of similar benefits for a few specific servers. You can restrict access to the isolated servers to only authorized users and devices.
+-   You aren't deploying an isolated domain, but want to take advantage of similar benefits for a few specific servers. You can restrict access to the isolated servers to only authorized users and devices.
 
-If you plan to include domain isolation in your deployment, we recommend that you complete that layer and confirm its correct operation before you implement the additional server isolation elements.
+If you plan to include domain isolation in your deployment, we recommend that you complete that layer and confirm its correct operation before you implement the other server isolation elements.
 
-When you are ready to examine the options for isolating servers, see the [Planning Server Isolation Zones](planning-server-isolation-zones.md) section.
+When you're ready to examine the options for isolating servers, see the [Planning Server Isolation Zones](planning-server-isolation-zones.md) section.
 
 ## Certificate-based authentication design
 
 
 Include this design in your plans:
 
--   If you want to implement some of the elements of domain or server isolation on devices that are not joined to an Active Directory domain, or do not want to use domain membership as an authentication mechanism.
+-   If you want to implement some of the elements of domain or server isolation on devices that aren't joined to an Active Directory domain, or don't want to use domain membership as an authentication mechanism.
 
--   You have an isolated domain and want to include a server that is not a member of the Active Directory domain because the device is not running Windows, or for any other reason.
+-   You have an isolated domain and want to include a server that isn't a member of the Active Directory domain because the device isn't running Windows, or for any other reason.
 
--   You must enable external devices that are not managed by your organization to access information on one of your servers, and want to do this in a secure way.
+-   You must enable external devices that aren't managed by your organization to access information on one of your servers in a secure way.
 
 If you plan to include domain or server isolation in your deployment, we recommend that you complete those elements and confirm their correct operation before you add certificate-based authentication to the devices that require it.
 
-When you are ready to examine the options for using certificate-based authentication, see the [Planning Certificate-based Authentication](planning-certificate-based-authentication.md) section.
+When you're ready to examine the options for using certificate-based authentication, see the [Planning Certificate-based Authentication](planning-certificate-based-authentication.md) section.
 
 ## Documenting your design
 
-After you finish selecting the designs that you will use, you must assign each of your devices to the appropriate isolation zone and document the assignment for use by the deployment team.
+After you finish selecting the designs that you'll use, you must assign each of your devices to the appropriate isolation zone and document the assignment for use by the deployment team.
 
 -   [Documenting the Zones](documenting-the-zones.md)
 
 ## Designing groups and GPOs
 
 
-After you have selected a design and assigned your devices to zones, you can begin laying out the isolation groups for each zone, the network access groups for isolated server access, and the GPOs that you will use to apply the settings and rules to your devices.
+After you've selected a design and assigned your devices to zones, you can begin laying out the isolation groups for each zone, the network access groups for isolated server access, and the GPOs that you'll use to apply the settings and rules to your devices.
 
-When you are ready to examine the options for the groups, filters, and GPOs, see the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
+When you're ready to examine the options for the groups, filters, and GPOs, see the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
 **Next:** [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)

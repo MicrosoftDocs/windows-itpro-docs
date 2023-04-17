@@ -1,167 +1,115 @@
 ---
-title: Policy CSP - ADMX_AttachmentManager
-description: Policy CSP - ADMX_AttachmentManager
-ms.author: dansimp
+title: ADMX_AttachmentManager Policy CSP
+description: Learn more about the ADMX_AttachmentManager Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
-ms.date: 11/10/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_AttachmentManager-Begin -->
 # Policy CSP - ADMX_AttachmentManager
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
-<hr/>
+> [!TIP]
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## ADMX_AttachmentManager policies  
+<!-- ADMX_AttachmentManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_AttachmentManager-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-attachmentmanager-am-estimatefilehandlerrisk">ADMX_AttachmentManager/AM_EstimateFileHandlerRisk</a>
-  </dd>
-  <dd>
-    <a href="#admx-attachmentmanager-am-setfilerisklevel">ADMX_AttachmentManager/AM_SetFileRiskLevel</a>
-  </dd>
-  <dd>
-    <a href="#admx-attachmentmanager-am-sethighriskinclusion">ADMX_AttachmentManager/AM_SetHighRiskInclusion</a>
-  </dd>
-  <dd>
-    <a href="#admx-attachmentmanager-am-setlowriskinclusion">ADMX_AttachmentManager/AM_SetLowRiskInclusion</a>
-  </dd>
-  <dd>
-    <a href="#admx-attachmentmanager-am-setmodriskinclusion">ADMX_AttachmentManager/AM_SetModRiskInclusion</a>
-  </dd>
-</dl>
+<!-- AM_EstimateFileHandlerRisk-Begin -->
+## AM_EstimateFileHandlerRisk
 
+<!-- AM_EstimateFileHandlerRisk-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AM_EstimateFileHandlerRisk-Applicability-End -->
 
-<hr/>
+<!-- AM_EstimateFileHandlerRisk-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AttachmentManager/AM_EstimateFileHandlerRisk
+```
+<!-- AM_EstimateFileHandlerRisk-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-attachmentmanager-am-estimatefilehandlerrisk"></a>**ADMX_AttachmentManager/AM_EstimateFileHandlerRisk**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the logic that Windows uses to determine the risk for file attachments.
+<!-- AM_EstimateFileHandlerRisk-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the logic that Windows uses to determine the risk for file attachments.
 
 Preferring the file handler instructs Windows to use the file handler data over the file type data. For example, trust notepad.exe, but don't trust .txt files.
 
-Preferring the file type instructs Windows to use the file type data over the file handler data. For example, trust .txt files, regardless of the file handler.  Using both the file handler and type data is the most restrictive option. Windows chooses the more restrictive recommendation which will cause users to see more trust prompts than choosing the other options.
+Preferring the file type instructs Windows to use the file type data over the file handler data. For example, trust .txt files, regardless of the file handler.
 
-If you enable this policy setting, you can choose the order in which Windows processes risk assessment data.
+Using both the file handler and type data is the most restrictive option. Windows chooses the more restrictive recommendation which will cause users to see more trust prompts than choosing the other options.
 
-If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+- If you enable this policy setting, you can choose the order in which Windows processes risk assessment data.
 
-If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+- If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 
-<!--/Description-->
+- If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+<!-- AM_EstimateFileHandlerRisk-Description-End -->
+
+<!-- AM_EstimateFileHandlerRisk-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AM_EstimateFileHandlerRisk-Editable-End -->
+
+<!-- AM_EstimateFileHandlerRisk-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AM_EstimateFileHandlerRisk-DFProperties-End -->
+
+<!-- AM_EstimateFileHandlerRisk-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Trust logic for file attachments*
--   GP name: *AM_EstimateFileHandlerRisk*
--   GP path: *Windows Components\Attachment Manager*
--   GP ADMX file name: *AttachmentManager.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AM_EstimateFileHandlerRisk |
+| Friendly Name | Trust logic for file attachments |
+| Location | User Configuration |
+| Path | Windows Components > Attachment Manager |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Attachments |
+| ADMX File Name | AttachmentManager.admx |
+<!-- AM_EstimateFileHandlerRisk-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-attachmentmanager-am-setfilerisklevel"></a>**ADMX_AttachmentManager/AM_SetFileRiskLevel**  
+<!-- AM_EstimateFileHandlerRisk-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AM_EstimateFileHandlerRisk-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AM_EstimateFileHandlerRisk-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AM_SetFileRiskLevel-Begin -->
+## AM_SetFileRiskLevel
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AM_SetFileRiskLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AM_SetFileRiskLevel-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- AM_SetFileRiskLevel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AttachmentManager/AM_SetFileRiskLevel
+```
+<!-- AM_SetFileRiskLevel-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to manage the default risk level for file types. To fully customize the risk level for file attachments, you may also need to configure the trust logic for file attachments.
+<!-- AM_SetFileRiskLevel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage the default risk level for file types. To fully customize the risk level for file attachments, you may also need to configure the trust logic for file attachments.
 
 High Risk: If the attachment is in the list of high-risk file types and is from the restricted zone, Windows blocks the user from accessing the file. If the file is from the Internet zone, Windows prompts the user before accessing the file.
 
@@ -169,254 +117,237 @@ Moderate Risk: If the attachment is in the list of moderate-risk file types and 
 
 Low Risk: If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information.
 
-If you enable this policy setting, you can specify the default risk level for file types.
+- If you enable this policy setting, you can specify the default risk level for file types.
 
-If you disable this policy setting, Windows sets the default risk level to moderate.
+- If you disable this policy setting, Windows sets the default risk level to moderate.
 
-If you do not configure this policy setting, Windows sets the default risk level to moderate.
+- If you do not configure this policy setting, Windows sets the default risk level to moderate.
+<!-- AM_SetFileRiskLevel-Description-End -->
 
-<!--/Description-->
+<!-- AM_SetFileRiskLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AM_SetFileRiskLevel-Editable-End -->
+
+<!-- AM_SetFileRiskLevel-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AM_SetFileRiskLevel-DFProperties-End -->
+
+<!-- AM_SetFileRiskLevel-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Default risk level for file attachments*
--   GP name: *AM_SetFileRiskLevel*
--   GP path: *Windows Components\Attachment Manager*
--   GP ADMX file name: *AttachmentManager.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AM_SetFileRiskLevel |
+| Friendly Name | Default risk level for file attachments |
+| Location | User Configuration |
+| Path | Windows Components > Attachment Manager |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Associations |
+| ADMX File Name | AttachmentManager.admx |
+<!-- AM_SetFileRiskLevel-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-attachmentmanager-am-sethighriskinclusion"></a>**ADMX_AttachmentManager/AM_SetHighRiskInclusion**  
+<!-- AM_SetFileRiskLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AM_SetFileRiskLevel-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AM_SetFileRiskLevel-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AM_SetHighRiskInclusion-Begin -->
+## AM_SetHighRiskInclusion
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AM_SetHighRiskInclusion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AM_SetHighRiskInclusion-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- AM_SetHighRiskInclusion-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AttachmentManager/AM_SetHighRiskInclusion
+```
+<!-- AM_SetHighRiskInclusion-OmaUri-End -->
 
-<hr/>
+<!-- AM_SetHighRiskInclusion-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the list of high-risk file types. If the file attachment is in the list of high-risk file types and is from the restricted zone, Windows blocks the user from accessing the file. If the file is from the Internet zone, Windows prompts the user before accessing the file. This inclusion list takes precedence over the medium-risk and low-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the list of high-risk file types. If the file attachment is in the list of high-risk file types and is from the restricted zone, Windows blocks the user from accessing the file. If the file is from the Internet zone, Windows prompts the user before accessing the file. This inclusion list takes precedence over the medium-risk and low-risk inclusion lists (where an extension is listed in more than one inclusion list).
+- If you enable this policy setting, you can create a custom list of high-risk file types.
 
-If you enable this policy setting, you can create a custom list of high-risk file types.
+- If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
 
-If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
+- If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
+<!-- AM_SetHighRiskInclusion-Description-End -->
 
-If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
+<!-- AM_SetHighRiskInclusion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AM_SetHighRiskInclusion-Editable-End -->
 
-<!--/Description-->
+<!-- AM_SetHighRiskInclusion-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AM_SetHighRiskInclusion-DFProperties-End -->
+
+<!-- AM_SetHighRiskInclusion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Inclusion list for high risk file types*
--   GP name: *AM_SetHighRiskInclusion*
--   GP path: *Windows Components\Attachment Manager*
--   GP ADMX file name: *AttachmentManager.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AM_SetHighRiskInclusion |
+| Friendly Name | Inclusion list for high risk file types |
+| Location | User Configuration |
+| Path | Windows Components > Attachment Manager |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Associations |
+| ADMX File Name | AttachmentManager.admx |
+<!-- AM_SetHighRiskInclusion-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-attachmentmanager-am-setlowriskinclusion"></a>**ADMX_AttachmentManager/AM_SetLowRiskInclusion**  
+<!-- AM_SetHighRiskInclusion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AM_SetHighRiskInclusion-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AM_SetHighRiskInclusion-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AM_SetLowRiskInclusion-Begin -->
+## AM_SetLowRiskInclusion
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AM_SetLowRiskInclusion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AM_SetLowRiskInclusion-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- AM_SetLowRiskInclusion-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AttachmentManager/AM_SetLowRiskInclusion
+```
+<!-- AM_SetLowRiskInclusion-OmaUri-End -->
 
-<hr/>
+<!-- AM_SetLowRiskInclusion-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
+- If you enable this policy setting, you can specify file types that pose a low risk.
 
-If you enable this policy setting, you can specify file types that pose a low risk.
+- If you disable this policy setting, Windows uses its default trust logic.
 
-If you disable this policy setting, Windows uses its default trust logic.
+- If you do not configure this policy setting, Windows uses its default trust logic.
+<!-- AM_SetLowRiskInclusion-Description-End -->
 
-If you do not configure this policy setting, Windows uses its default trust logic.
+<!-- AM_SetLowRiskInclusion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AM_SetLowRiskInclusion-Editable-End -->
 
-<!--/Description-->
+<!-- AM_SetLowRiskInclusion-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AM_SetLowRiskInclusion-DFProperties-End -->
+
+<!-- AM_SetLowRiskInclusion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Inclusion list for low file types*
--   GP name: *AM_SetLowRiskInclusion*
--   GP path: *Windows Components\Attachment Manager*
--   GP ADMX file name: *AttachmentManager.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AM_SetLowRiskInclusion |
+| Friendly Name | Inclusion list for low file types |
+| Location | User Configuration |
+| Path | Windows Components > Attachment Manager |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Associations |
+| ADMX File Name | AttachmentManager.admx |
+<!-- AM_SetLowRiskInclusion-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-attachmentmanager-am-setmodriskinclusion"></a>**ADMX_AttachmentManager/AM_SetModRiskInclusion**  
+<!-- AM_SetLowRiskInclusion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AM_SetLowRiskInclusion-Examples-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+<!-- AM_SetLowRiskInclusion-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AM_SetModRiskInclusion-Begin -->
+## AM_SetModRiskInclusion
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AM_SetModRiskInclusion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AM_SetModRiskInclusion-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- AM_SetModRiskInclusion-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_AttachmentManager/AM_SetModRiskInclusion
+```
+<!-- AM_SetModRiskInclusion-OmaUri-End -->
 
-<hr/>
+<!-- AM_SetModRiskInclusion-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the list of moderate-risk file types. If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file. This inclusion list overrides the list of potentially high-risk file types built into Windows and it takes precedence over the low-risk inclusion list but has a lower precedence than the high-risk inclusion list (where an extension is listed in more than one inclusion list).
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure the list of moderate-risk file types. If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file. This inclusion list overrides the list of potentially high-risk file types built into Windows and it takes precedence over the low-risk inclusion list but has a lower precedence than the high-risk inclusion list (where an extension is listed in more than one inclusion list).
+- If you enable this policy setting, you can specify file types which pose a moderate risk.
 
-If you enable this policy setting, you can specify file types which pose a moderate risk.
+- If you disable this policy setting, Windows uses its default trust logic.
 
-If you disable this policy setting, Windows uses its default trust logic.
+- If you do not configure this policy setting, Windows uses its default trust logic.
+<!-- AM_SetModRiskInclusion-Description-End -->
 
-If you do not configure this policy setting, Windows uses its default trust logic.
+<!-- AM_SetModRiskInclusion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AM_SetModRiskInclusion-Editable-End -->
 
-<!--/Description-->
+<!-- AM_SetModRiskInclusion-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AM_SetModRiskInclusion-DFProperties-End -->
+
+<!-- AM_SetModRiskInclusion-AdmxBacked-Begin -->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Inclusion list for moderate risk file types*
--   GP name: *AM_SetModRiskInclusion*
--   GP path: *Windows Components\Attachment Manager*
--   GP ADMX file name: *AttachmentManager.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AM_SetModRiskInclusion |
+| Friendly Name | Inclusion list for moderate risk file types |
+| Location | User Configuration |
+| Path | Windows Components > Attachment Manager |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Associations |
+| ADMX File Name | AttachmentManager.admx |
+<!-- AM_SetModRiskInclusion-AdmxBacked-End -->
 
-Footnotes:
+<!-- AM_SetModRiskInclusion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AM_SetModRiskInclusion-Examples-End -->
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+<!-- AM_SetModRiskInclusion-End -->
 
-<!--/Policies-->
+<!-- ADMX_AttachmentManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_AttachmentManager-CspMoreInfo-End -->
 
+<!-- ADMX_AttachmentManager-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

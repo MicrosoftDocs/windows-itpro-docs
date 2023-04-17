@@ -1,28 +1,16 @@
 ---
-title: GPO\_DOMISO\_Firewall (Windows 10)
+title: GPO\_DOMISO\_Firewall (Windows)
 description: Learn about the settings and rules in this example GPO, which is authored by using the Group Policy editing tools.
-ms.assetid: 318467d2-5698-4c5d-8000-7f56f5314c42
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # GPO\_DOMISO\_Firewall
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 This GPO is authored by using the Windows Defender Firewall 
 with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to devices that are running at least Windows 7 or Windows Server 2008.

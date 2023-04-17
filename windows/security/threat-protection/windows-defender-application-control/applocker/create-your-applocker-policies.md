@@ -1,28 +1,32 @@
 ---
-title: Create Your AppLocker policies (Windows 10)
+title: Create Your AppLocker policies (Windows)
 description: This overview topic for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment.
 ms.assetid: d339dee2-4da2-4d4a-b46e-f1dfb7cb4bf0
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Create Your AppLocker policies
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This overview topic for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment.
 
@@ -30,7 +34,7 @@ Creating effective application control policies with AppLocker starts by creatin
 
 ## Step 1: Use your plan
 
-You can develop an application control policy plan to guide you in making successful deployment decisions. For more info about how to do this and what you should consider, see the [AppLocker Design Guide](applocker-policies-design-guide.md). This guide is intended for security architects, security administrators, and system administrators. It contains the following topics to help you create an AppLocker policy deployment plan for your organization that will address your specific application control requirements by department, organizational unit, or business group:
+You can develop an application control policy plan to guide you in making successful deployment decisions. For more information about how to develop this policy and what you should consider, see the [AppLocker Design Guide](applocker-policies-design-guide.md). This guide is intended for security architects, security administrators, and system administrators. It contains the following topics to help you create an AppLocker policy deployment plan for your organization that will address your specific application control requirements by department, organizational unit, or business group:
 
 1.  [Understand the AppLocker policy deployment process](understand-the-applocker-policy-deployment-process.md)
 2.  [Understand AppLocker policy design decisions](understand-applocker-policy-design-decisions.md)
@@ -47,12 +51,12 @@ Each rule applies to one or more apps, and it imposes a specific rule condition 
 
 ## Step 3: Configure the enforcement setting
 
-An AppLocker policy is a set of rule collections that are configured with a rule enforcement setting. The enforcement setting can be **Enforce rules**, **Audit only**, or **Not configured**. If an AppLocker policy has at least one rule, and it is set to **Not configured**, all the rules in that 
+An AppLocker policy is a set of rule collections that are configured with a rule enforcement setting. The enforcement setting can be **Enforce rules**, **Audit only**, or **Not configured**. If an AppLocker policy has at least one rule, and it's set to **Not configured**, all the rules in that 
 policy will be enforced. For info about configuring the rule enforcement setting, see [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md) and [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md).
 
 ## Step 4: Update the GPO
 
-AppLocker policies can be defined locally on a device or applied through Group Policy. To use Group Policy to apply AppLocker policies, you must create a new Group Policy Object (GPO) or you must update an existing GPO. You can create or modify AppLocker policies by using the Group Policy Management Console (GPMC), or you can import an AppLocker policy into a GPO. For the procedure to do this, see [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
+AppLocker policies can be defined locally on a device or applied through Group Policy. To use Group Policy to apply AppLocker policies, you must create a new Group Policy Object (GPO), or you must update an existing GPO. You can create or modify AppLocker policies by using the Group Policy Management Console (GPMC), or you can import an AppLocker policy into a GPO. For the procedure to import this policy into a GPO, see [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
 
 ## Step 5: Test the effect of the policy
 
@@ -63,7 +67,7 @@ In a test environment or with the enforcement setting set at **Audit only**, ver
 Depending on your deployment method, import the AppLocker policy to the GPO in your production environment, or if the policy is already deployed, change the enforcement setting to your production environment value—**Enforce rules** or **Audit only**.
 
 ## Step 7: Test the effect of the policy and adjust
-Validate the effect of the policy by analyzing the AppLocker logs for application usage, and then modify the policy as necessary. To do this, see [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md).
+Validate the effect of the policy by analyzing the AppLocker logs for application usage, and then modify the policy as necessary. For information on how to do these tasks, see [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md).
 
 ## Next steps
 

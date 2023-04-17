@@ -1,330 +1,287 @@
 ---
-title: Policy CSP - DeviceGuard
-description: Learn how to use the Policy CSP - DeviceGuard setting to allow the IT admin to configure the launch of System Guard.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: DeviceGuard Policy CSP
+description: Learn more about the DeviceGuard Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- DeviceGuard-Begin -->
 # Policy CSP - DeviceGuard
 
+<!-- DeviceGuard-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DeviceGuard-Editable-End -->
 
-<hr/>
+<!-- ConfigureSystemGuardLaunch-Begin -->
+## ConfigureSystemGuardLaunch
 
-<!--Policies-->
-## DeviceGuard policies  
+<!-- ConfigureSystemGuardLaunch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- ConfigureSystemGuardLaunch-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#deviceguard-configuresystemguardlaunch">DeviceGuard/ConfigureSystemGuardLaunch</a>
-  </dd>
-  <dd>
-    <a href="#deviceguard-enablevirtualizationbasedsecurity">DeviceGuard/EnableVirtualizationBasedSecurity</a>
-  </dd>
-  <dd>
-    <a href="#deviceguard-lsacfgflags">DeviceGuard/LsaCfgFlags</a>
-  </dd>
-  <dd>
-    <a href="#deviceguard-requireplatformsecurityfeatures">DeviceGuard/RequirePlatformSecurityFeatures</a>
-  </dd>
-</dl>
+<!-- ConfigureSystemGuardLaunch-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceGuard/ConfigureSystemGuardLaunch
+```
+<!-- ConfigureSystemGuardLaunch-OmaUri-End -->
 
+<!-- ConfigureSystemGuardLaunch-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Secure Launch configuration: 0 - Unmanaged, configurable by Administrative user, 1 - Enables Secure Launch if supported by hardware, 2 - Disables Secure Launch.
+<!-- ConfigureSystemGuardLaunch-Description-End -->
 
-<hr/>
+<!-- ConfigureSystemGuardLaunch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation) and [How a hardware-based root of trust helps protect Windows 10](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows).
+<!-- ConfigureSystemGuardLaunch-Editable-End -->
 
-<!--Policy-->
-<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**  
+<!-- ConfigureSystemGuardLaunch-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureSystemGuardLaunch-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureSystemGuardLaunch-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Unmanaged Configurable by Administrative user. |
+| 1 | Unmanaged Enables Secure Launch if supported by hardware. |
+| 2 | Unmanaged Disables Secure Launch. |
+<!-- ConfigureSystemGuardLaunch-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureSystemGuardLaunch-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Element Name | Secure Launch Configuration. |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| ADMX File Name | DeviceGuard.admx |
+<!-- ConfigureSystemGuardLaunch-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy allows the IT admin to configure the launch of System Guard.
+<!-- ConfigureSystemGuardLaunch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSystemGuardLaunch-Examples-End -->
 
-Secure Launch configuration:
+<!-- ConfigureSystemGuardLaunch-End -->
 
-- 0 - Unmanaged, configurable by Administrative user
-- 1 - Enables Secure Launch if supported by hardware
-- 2 - Disables Secure Launch.
+<!-- EnableVirtualizationBasedSecurity-Begin -->
+## EnableVirtualizationBasedSecurity
 
-For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How a hardware-based root of trust helps protect Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows).
+<!-- EnableVirtualizationBasedSecurity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- EnableVirtualizationBasedSecurity-Applicability-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
--   GP name: *VirtualizationBasedSecurity*
--   GP element: *SystemGuardDrop*
--   GP path: *System/Device Guard*
--   GP ADMX file name: *DeviceGuard.admx*
+<!-- EnableVirtualizationBasedSecurity-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity
+```
+<!-- EnableVirtualizationBasedSecurity-OmaUri-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- EnableVirtualizationBasedSecurity-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Turns On Virtualization Based Security(VBS)
+<!-- EnableVirtualizationBasedSecurity-Description-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- EnableVirtualizationBasedSecurity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableVirtualizationBasedSecurity-Editable-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- EnableVirtualizationBasedSecurity-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableVirtualizationBasedSecurity-DFProperties-End -->
 
-<hr/>
+<!-- EnableVirtualizationBasedSecurity-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable virtualization based security. |
+| 1 | Enable virtualization based security. |
+<!-- EnableVirtualizationBasedSecurity-AllowedValues-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+<!-- EnableVirtualizationBasedSecurity-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| Registry Value Name | EnableVirtualizationBasedSecurity |
+| ADMX File Name | DeviceGuard.admx |
+<!-- EnableVirtualizationBasedSecurity-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableVirtualizationBasedSecurity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableVirtualizationBasedSecurity-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableVirtualizationBasedSecurity-End -->
 
-<hr/>
+<!-- LsaCfgFlags-Begin -->
+## LsaCfgFlags
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1709. Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
+<!-- LsaCfgFlags-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- LsaCfgFlags-Applicability-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
--   GP name: *VirtualizationBasedSecurity*
--   GP path: *System/Device Guard*
--   GP ADMX file name: *DeviceGuard.admx*
+<!-- LsaCfgFlags-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags
+```
+<!-- LsaCfgFlags-OmaUri-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LsaCfgFlags-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if configured previously without UEFI Lock, 1 - Turns on CredentialGuard with UEFI lock. 2 - Turns on CredentialGuard without UEFI lock.
+<!-- LsaCfgFlags-Description-End -->
 
--   0 (default) - disable virtualization based security.
--   1 - enable virtualization based security.
+<!-- LsaCfgFlags-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LsaCfgFlags-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- LsaCfgFlags-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LsaCfgFlags-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
+<!-- LsaCfgFlags-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disabled) Turns off Credential Guard remotely if configured previously without UEFI Lock. |
+| 1 | (Enabled with UEFI lock) Turns on Credential Guard with UEFI lock. |
+| 2 | (Enabled without lock) Turns on Credential Guard without UEFI lock. |
+<!-- LsaCfgFlags-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LsaCfgFlags-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Element Name | Credential Guard Configuration. |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| ADMX File Name | DeviceGuard.admx |
+<!-- LsaCfgFlags-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LsaCfgFlags-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LsaCfgFlags-Examples-End -->
 
-<hr/>
+<!-- LsaCfgFlags-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1709. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
+<!-- RequirePlatformSecurityFeatures-Begin -->
+## RequirePlatformSecurityFeatures
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
--   GP name: *VirtualizationBasedSecurity*
--   GP element: *CredentialIsolationDrop*
--   GP path: *System/Device Guard*
--   GP ADMX file name: *DeviceGuard.admx*
+<!-- RequirePlatformSecurityFeatures-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- RequirePlatformSecurityFeatures-Applicability-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- RequirePlatformSecurityFeatures-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceGuard/RequirePlatformSecurityFeatures
+```
+<!-- RequirePlatformSecurityFeatures-OmaUri-End -->
 
--   0 (default) - (Disabled) Turns off Credential Guard remotely if configured previously without UEFI Lock.
--   1 - (Enabled with UEFI lock) Turns on Credential Guard with UEFI lock.
--   2 - (Enabled without lock) Turns on Credential Guard without UEFI lock.
+<!-- RequirePlatformSecurityFeatures-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Select Platform Security Level: 1 - Turns on VBS with Secure Boot, 3 - Turns on VBS with Secure Boot and DMA. DMA requires hardware support.
+<!-- RequirePlatformSecurityFeatures-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- RequirePlatformSecurityFeatures-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
+<!-- RequirePlatformSecurityFeatures-Editable-End -->
 
-<hr/>
+<!-- RequirePlatformSecurityFeatures-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- RequirePlatformSecurityFeatures-DFProperties-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+<!-- RequirePlatformSecurityFeatures-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Turns on VBS with Secure Boot. |
+| 3 | Turns on VBS with Secure Boot and direct memory access (DMA). DMA requires hardware support. |
+<!-- RequirePlatformSecurityFeatures-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequirePlatformSecurityFeatures-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Element Name | Select Platform Security Level. |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| ADMX File Name | DeviceGuard.admx |
+<!-- RequirePlatformSecurityFeatures-GpMapping-End -->
 
-<hr/>
+<!-- RequirePlatformSecurityFeatures-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequirePlatformSecurityFeatures-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1709. Specifies the platform security level at the next reboot. Value type is integer.
+<!-- RequirePlatformSecurityFeatures-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
--   GP name: *VirtualizationBasedSecurity*
--   GP element: *RequirePlatformSecurityFeaturesDrop*
--   GP path: *System/Device Guard*
--   GP ADMX file name: *DeviceGuard.admx*
+<!-- DeviceGuard-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- DeviceGuard-CspMoreInfo-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DeviceGuard-End -->
 
--   1 (default) - Turns on VBS with Secure Boot.
--   3 - Turns on VBS with Secure Boot and direct memory access (DMA). DMA requires hardware support.
+## Related articles
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

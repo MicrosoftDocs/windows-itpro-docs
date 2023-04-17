@@ -3,16 +3,15 @@ title: Apps in Microsoft Store for Business and Education (Windows 10)
 description: Microsoft Store for Business has thousands of apps from many different categories.
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.reviewer: 
-manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 07/21/2021
 ---
 
 # Apps in Microsoft Store for Business and Education
@@ -21,7 +20,9 @@ ms.date: 10/17/2017
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+
+> [!IMPORTANT]
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Microsoft Store for Business and Education has thousands of apps from many different categories.
 
@@ -45,7 +46,7 @@ Apps that you acquire from Microsoft Store only work on Windows 10-based device
 
 Some apps are free, and some apps charge a price. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time.
 
-Some apps which are available to consumers in Microsoft Store might not be available to organizations in Microsoft Store for Business and Education. App developers can opt-out their apps, and they also need to meet eligibility requirements for Microsoft Store for Business and Education. For more information, see [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
+Some apps which are available to consumers in Microsoft Store might not be available to organizations in Microsoft Store for Business and Education. App developers can opt-out their apps, and they also need to meet eligibility requirements for Microsoft Store for Business and Education. For more information, see [Organizational licensing options](/windows/uwp/publish/organizational-licensing). 
 
 Line-of-business (LOB) apps are also supported using Microsoft Store. Admins can invite IT devs and ISVs to be LOB publishers. Apps developed by your LOB publishers that are submitted to Microsoft Store are only available to your organization. Once an administrator accepts an app submitted by one of their LOB publishers, the app can be distributed just like any other app. For more information, see [Working with Line-of-Business apps](working-with-line-of-business-apps.md).
 
@@ -53,14 +54,14 @@ Line-of-business (LOB) apps are also supported using Microsoft Store. Admins can
 
 Some apps offer you the option to make in-app purchases. In-app purchases are not currently supported for apps that are acquired through Microsoft Store and distributed to employees.
 
-If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization’s inventory.
+If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization's inventory.
 
 ## <a href="" id="licensing-model"></a>Licensing model: online and offline licenses
 
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
-Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
+Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user's Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 
@@ -69,7 +70,7 @@ Distribution options for online-licensed apps include the ability to:
 - Distribute through a management tool.
 
 ### Offline licensing
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsoft Store. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsoft Store. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. 
 
 You have the following distribution options for offline-licensed apps:
 

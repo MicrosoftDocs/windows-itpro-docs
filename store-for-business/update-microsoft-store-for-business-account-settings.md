@@ -2,24 +2,26 @@
 title: Update your Billing account settings
 description: The billing account page in Microsoft Store for Business and Microsoft Store for Education, and M365 admin center shows information about your organization that you can update, including country or region, organization contact info, agreements with Microsoft and admin approvals.
 keywords: billing accounts, organization info
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/18/2019
-ms.reviewer: 
-manager: dansimp
+ms.date: 07/21/2021
 ---
 
 # Update Billing account settings
+
+> [!IMPORTANT]
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+
 A billing account contains defining information about your organization. 
 
 >[!NOTE]
->Billing accounts are available in Microsoft Store for Business, and M365 admin center preview. For more information, see [aka.ms/aboutM365preview](https://aka.ms/aboutM365preview).
+>Billing accounts are available in Microsoft Store for Business, and M365 admin center preview. For more information, see [aka.ms/aboutM365preview](/microsoft-365/admin/microsoft-365-admin-center-preview).
 
 The **Billing account** page allows you to manage organization information, purchasing agreements that you have with Microsoft, and admin approvals. The organization information and payment options are required before you can shop for products that have a price.
 
@@ -31,9 +33,9 @@ We need your business address, email contact, and tax-exemption certificates tha
 
 Before purchasing apps that have a fee, you need to add or update your organization's business address, contact email address, and contact name.
 
-We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase.
+We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we'll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don't have an address, we'll ask you to enter it during your first purchase.
 
-We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization’s Office 365 or Azure AD tenant that is used with Microsoft Store.
+We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization's Office 365 or Azure AD tenant that is used with Microsoft Store.
 
 **To update billing account information**
 1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com)
@@ -96,7 +98,7 @@ If you qualify for tax-exempt status in your market, start a service request to 
 1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com).
 2. Select **Manage**, click **Support**, and then under **Store settings & configuration** select **Create technical support ticket**.
 
-You’ll need this documentation:
+You'll need this documentation:
 
 |Country or locale | Documentation |
 |------------------|----------------|
@@ -126,7 +128,7 @@ Each billing account includes access to the purchasing agreements your organizat
 If you there is an updated version of the Microsoft customer agreement for you to sign, you'll be prompted to on **Agreements**, or during a purchase. 
 <!--- ## Offline licensing
 
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on Microsoft Store for Business licensing model, see [licensing model](https://docs.microsoft.com/microsoft-store/apps-in-microsoft-store-for-business#licensing-model).
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on Microsoft Store for Business licensing model, see [licensing model](./apps-in-microsoft-store-for-business.md#licensing-model).
 
 Admins can decide whether or not offline licenses are shown for apps in Microsoft Store.
 

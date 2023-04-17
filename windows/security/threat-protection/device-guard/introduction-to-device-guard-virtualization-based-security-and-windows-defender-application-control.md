@@ -1,52 +1,49 @@
 ---
-title: Windows Defender Application Control and virtualization-based code integrity (Windows 10)
+title: Windows Defender Application Control and virtualization-based code integrity
 description: Hardware and software system integrity-hardening capabilities that can be deployed separately or in combination with Windows Defender Application Control (WDAC).
-keywords: virtualization, security, malware, device guard
-ms.prod: m365-security
-ms.mktglfcycl: deploy
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.custom: asr
-ms.technology: mde
+ms.technology: itpro-security
+ms.date: 03/16/2023
+ms.topic: article
 ---
 
 # Windows Defender Application Control and virtualization-based protection of code integrity
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
 
-Windows 10 includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows 10 systems so they operate with many of the properties of mobile devices. In this configuration, specific technologies work together to restrict devices to only run authorized apps by using a feature called configurable code integrity, while simultaneously hardening the OS against kernel memory attacks by using virtualization-based protection of code integrity (more specifically, HVCI). 
+- Windows 10
+- Windows 11
+- Windows Server 2016 and higher
 
-Configurable code integrity policies and HVCI are powerful protections that can be used separately. However, when these two technologies are configured to work together, they present a strong protection capability for Windows 10 devices.  
+Windows includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows systems so they behave more like mobile devices. In this configuration, [**Windows Defender Application Control (WDAC)**](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) is used to restrict devices to run only approved apps, while the OS is hardened against kernel memory attacks using [**memory integrity**](enable-virtualization-based-protection-of-code-integrity.md).
 
-Using configurable code integrity to restrict devices to only authorized apps has these advantages over other solutions:
+> [!NOTE]
+> Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
 
-1. Configurable code integrity policy is enforced by the Windows kernel itself. As such, the policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run. 
-2. Configurable code integrity allows customers to set application control policy not only over code running in user mode, but also kernel mode hardware and software drivers and even code that runs as part of Windows. 
-3. Customers can protect the configurable code integrity policy even from local administrator tampering by digitally signing the policy. This would mean that changing the policy would require both administrative privilege and access to the organization’s digital signing process, making it difficult for an attacker with administrative privilege, or malicious software that managed to gain administrative privilege, to alter the application control policy. 
-4. The entire configurable code integrity enforcement mechanism can be protected by HVCI, where even if a vulnerability exists in kernel mode code, the likelihood that an attacker could successfully exploit it is diminished. Why is this relevant? That’s because an attacker that compromises the kernel would otherwise have enough privilege to disable most system defenses and override the application control policies enforced by configurable code integrity or any other application control solution.
+WDAC policies and memory integrity are powerful protections that can be used separately. However, when these two technologies are configured to work together, they present a strong protection capability for Windows devices.  
 
-## Windows Defender Application Control
+Using WDAC to restrict devices to only authorized apps has these advantages over other solutions:
 
-When we originally designed this configuration state, we did so with a specific security promise in mind. Although there were no direct dependencies between configurable code integrity and HVCI, we intentionally focused our discussion around the lockdown state you achieve when deploying them together. However, given that HVCI relies on Windows virtualization-based security, it comes with more hardware, firmware, and kernel driver compatibility requirements that some older systems can’t meet. As a result, many IT Professionals assumed that because some systems couldn't use HVCI, they couldn’t use configurable code integrity either. 
+1. The Windows kernel handles enforcement of WDAC policy and requires no other services or agents.
+2. The WDAC policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run.
+3. WDAC lets you set application control policy for any code that runs on Windows, including kernel mode drivers and even code that runs as part of Windows.
+4. Customers can protect the WDAC policy even from local administrator tampering by digitally signing the policy. Changing signed policy requires both administrative privilege and access to the organization's digital signing process. Using signed policies makes it difficult for an attacker, including one who has managed to gain administrative privilege, to tamper with WDAC policy.
+5. You can protect the entire WDAC enforcement mechanism with memory integrity. Even if a vulnerability exists in kernel mode code, memory integrity greatly reduces the likelihood that an attacker could successfully exploit it. Without memory integrity, an attacker who compromises the kernel could normally disable most system defenses, including application control policies enforced by WDAC or any other application control solution.
 
-Configurable code integrity carries no specific hardware or software requirements other than running Windows 10, which means many IT professionals were wrongly denied the benefits of this powerful application control capability.
+There are no direct dependencies between WDAC and memory integrity. You can deploy them individually or together and there's no order in which they must be deployed.
 
-Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we are discussing and documenting configurable code integrity as an independent technology within our security stack and giving it a name of its own: [Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control). 
-We hope this change will help us better communicate options for adopting application control within an organization.
+Memory integrity relies on Windows virtualization-based security, and has hardware, firmware, and kernel driver compatibility requirements that some older systems can't meet.
+
+WDAC has no specific hardware or software requirements.
 
 ## Related articles
 
-[Windows Defender Application Control](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control)
-
-[Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
-
-[Driver compatibility with Windows Defender in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
-
-[Code integrity](https://technet.microsoft.com/library/dd348642.aspx)
-
-
+- [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
+- [Memory integrity](enable-virtualization-based-protection-of-code-integrity.md)
+- [Driver compatibility with memory integrity](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)

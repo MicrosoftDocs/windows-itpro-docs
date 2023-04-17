@@ -1,21 +1,24 @@
 ---
 title: Prepare to deploy Windows
 description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
-ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.collection: m365initiative-coredeploy
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Prepare to deploy Windows
 
-Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows 10. The planning phase will have left you with these useful items:
+**Applies to**
+
+-   Windows 10
+-   Windows 11
+
+Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows client. The planning phase will have left you with these useful items:
 
 - A clear understanding of necessary personnel and their roles and criteria for [rating app readiness](plan-define-readiness.md)
 - A plan for [testing and validating](plan-determine-app-readiness.md) apps
@@ -89,12 +92,12 @@ Enable update services on devices. Ensure that every device is running all the s
 - Windows Management Service
 - Windows Module Installer
 - Windows Push Notification
-- Windows Security Center Service
+- Windows Security Service
 - Windows Time Service
 - Windows Update
 - Windows Update Medic Service
 
-You can check these services manually by using Services.msc, or by using PowerShell scripts, Desktop Analytics, or other methods.
+You can check these services manually by using Services.msc, or by using PowerShell scripts, or other methods.
 
 ### Network configuration
 
@@ -114,17 +117,17 @@ Ensure that devices can reach necessary Windows Update endpoints through the fir
 > [!NOTE]
 > Be sure not to use HTTPS for those endpoints that specify HTTP, and vice versa. The connection will fail.
 
-The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
+The specific endpoints can vary between Windows versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows client versions are available in the table of contents nearby.
 
 
 ### Optimize download bandwidth
-Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
+Set up [Delivery Optimization](../do/waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
 
 ### Address unhealthy devices
 
-In the course of surveying your device population, either with Desktop Analytics or by some other means, you might find devices that have systemic problems that could interfere with update installation. Now is the time to fix those problems.
+In the course of surveying your device population, you might find devices that have systemic problems that could interfere with update installation. Now is the time to fix those problems.
 
-- **Low disk space:** Quality updates require a minimum of 2 GB to successfully install. Feature updates require between 8 GB and 15 GB depending upon the configuration. On Windows 10, version 1903 and later you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve the problem by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
+- **Low disk space:** Quality updates require a minimum of 2 GB to successfully install. Feature updates require between 8 GB and 15 GB depending upon the configuration. On Windows 10, version 1903 and later (and Windows 11) you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve the problem by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
 
   - C:\Windows\temp
   - C:\Windows\cbstemp (though this file might be necessary to investigate update failures)
@@ -139,9 +142,9 @@ You can also create and run scripts to perform additional cleanup actions on dev
 
 - Compact the operating system by running **Compact.exe /CompactOS:always**.
 
-- Remove Windows Features on Demand that the user doesn't need. See [Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) for more guidance.
+- Remove Windows Features on Demand that the user doesn't need. See [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) for more guidance.
 
-- Move Windows Known Folders to OneDrive. See [Use Group Policy to control OneDrive sync settings](https://docs.microsoft.com/onedrive/use-group-policy) for more information.
+- Move Windows Known Folders to OneDrive. See [Use Group Policy to control OneDrive sync settings](/onedrive/use-group-policy) for more information.
 
 - Clean up the Software Distribution folder. Try deploying these commands as a batch file to run on devices to reset the download state of Windows Updates:
 
@@ -157,7 +160,7 @@ You can also create and run scripts to perform additional cleanup actions on dev
   net start msiserver
   ```
 
-- **Application and driver updates:** Out-of-date app or driver software can prevent devices from updating successfully. Desktop Analytics will help you identify drivers and applications that need attention. You can also check for known issues in order to take any appropriate action. Deploy any updates from the vendor(s) for any problematic application or driver versions to resolve issues.
+- **Application and driver updates:** Out-of-date app or driver software can prevent devices from updating successfully. Deploy any updates from the vendor(s) for any problematic application or driver versions to resolve issues.
 
 - **Corruption:** In rare circumstances, a device that has repeated installation errors might be corrupted in a way that prevents the system from applying a new update. You might have to repair the Component-Based Store from another source. You can fix the problem with the [System File Checker](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
@@ -183,5 +186,3 @@ You can employ a variety of measures to achieve this goal, for example:
 - Set an opt-out deadline for employees that need to remain on the current version for a bit longer, due to a business need.
 - Provide the ability to voluntarily update at users’ convenience.
 - Inform users of a mandatory installation date when the update will be installed on all devices.
-
-

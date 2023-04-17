@@ -1,110 +1,80 @@
 ---
-title: Policy CSP - TaskManager
-description: Learn how to use the Policy CSP - TaskManager setting to determine whether non-administrators can use Task Manager to end tasks.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: TaskManager Policy CSP
+description: Learn more about the TaskManager Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- TaskManager-Begin -->
 # Policy CSP - TaskManager
 
+<!-- TaskManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskManager-Editable-End -->
 
-<hr/>
+<!-- AllowEndTask-Begin -->
+## AllowEndTask
 
-<!--Policies-->
-## TaskManager policies  
+<!-- AllowEndTask-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- AllowEndTask-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#taskmanager-allowendtask">TaskManager/AllowEndTask</a>
-  </dd>
-</dl>
+<!-- AllowEndTask-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/TaskManager/AllowEndTask
+```
+<!-- AllowEndTask-OmaUri-End -->
 
+<!-- AllowEndTask-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting determines whether non-administrators can use Task Manager to end tasks - enabled (1) or disabled (0). Default: enabled.
+<!-- AllowEndTask-Description-End -->
 
-<hr/>
+<!-- AllowEndTask-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEndTask-Editable-End -->
 
-<!--Policy-->
-<a href="" id="taskmanager-allowendtask"></a>**TaskManager/AllowEndTask**  
+<!-- AllowEndTask-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowEndTask-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowEndTask-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. EndTask functionality is blocked in TaskManager. |
+| 1 (Default) | Enabled. Users can perform EndTask in TaskManager. |
+<!-- AllowEndTask-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowEndTask-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEndTask-Examples-End -->
 
-<hr/>
+<!-- AllowEndTask-End -->
 
-<!--/Scope-->
-<!--Description-->
-This setting determines whether non-administrators can use Task Manager to end tasks.
+<!-- TaskManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- TaskManager-CspMoreInfo-End -->
 
-Value type is integer. Supported values:  
--  0 - Disabled. EndTask functionality is blocked in TaskManager.
--  1 - Enabled (default).  Users can perform EndTask in TaskManager.
+<!-- TaskManager-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+## Related articles
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-**Validation procedure:**  
-When this policy is set to 1 - users CAN execute 'End task' on processes in TaskManager 
-When the policy is set to 0 - users CANNOT execute 'End task' on processes in TaskManager
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

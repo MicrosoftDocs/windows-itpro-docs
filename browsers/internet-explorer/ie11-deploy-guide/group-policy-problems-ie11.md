@@ -20,7 +20,7 @@ ms.date: 07/27/2017
 
 [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
 
-If you're having problems with Group Policy and Internet Explorer 11, or if you're looking for high-level information about the concepts and techniques used to troubleshoot Group Policy, as well as links to detailed reference topics, procedures, and troubleshooting scenario guides, see [Group Policy Analysis and Troubleshooting Overview](https://go.microsoft.com/fwlink/p/?LinkId=279872).
+If you're having problems with Group Policy and Internet Explorer 11, or if you're looking for high-level information about the concepts and techniques used to troubleshoot Group Policy, as well as links to detailed reference topics, procedures, and troubleshooting scenario guides, see [Group Policy Analysis and Troubleshooting Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134223(v=ws.11)).
 
 ## Group Policy Object-related Log Files
 You can use the Event Viewer to review Group Policy-related messages in the **Windows Logs**, **System** file. All of the Group Policy-related events are shown with a source of **GroupPolicy**
@@ -28,6 +28,3 @@ You can use the Event Viewer to review Group Policy-related messages in the **Wi
  
 
  
-
-
-

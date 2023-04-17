@@ -1,112 +1,98 @@
 ---
-title: Policy CSP - LockDown
-description: Use the Policy CSP - LockDown setting to allow the user to invoke any system user interface by swiping in from any screen edge using touch.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: LockDown Policy CSP
+description: Learn more about the LockDown Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- LockDown-Begin -->
 # Policy CSP - LockDown
 
+<!-- LockDown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockDown-Editable-End -->
 
+<!-- AllowEdgeSwipe-Begin -->
+## AllowEdgeSwipe
 
-<hr/>
+<!-- AllowEdgeSwipe-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowEdgeSwipe-Applicability-End -->
 
-<!--Policies-->
-## LockDown policies  
+<!-- AllowEdgeSwipe-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LockDown/AllowEdgeSwipe
+```
+<!-- AllowEdgeSwipe-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#lockdown-allowedgeswipe">LockDown/AllowEdgeSwipe</a>
-  </dd>
-</dl>
+<!-- AllowEdgeSwipe-Description-Begin -->
+<!-- Description-Source-ADMX -->
+- If you disable this policy setting, users will not be able to invoke any system UI by swiping in from any screen edge.
 
+- If you enable or do not configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
+<!-- AllowEdgeSwipe-Description-End -->
 
-<hr/>
+<!-- AllowEdgeSwipe-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Policy-->
-<a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**  
+The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied, and then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange, that will also be disabled.
+<!-- AllowEdgeSwipe-Editable-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+<!-- AllowEdgeSwipe-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowEdgeSwipe-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowEdgeSwipe-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Disallow edge swipe. |
+| 1 (Default) | Allow edge swipe. |
+<!-- AllowEdgeSwipe-AllowedValues-End -->
 
-<hr/>
+<!-- AllowEdgeSwipe-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
+| Name | Value |
+|:--|:--|
+| Name | AllowEdgeSwipe |
+| Friendly Name | Allow edge swipe |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Edge UI |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EdgeUI |
+| Registry Value Name | AllowEdgeSwipe |
+| ADMX File Name | EdgeUI.admx |
+<!-- AllowEdgeSwipe-GpMapping-End -->
 
-The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied. And then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange. That will also be disabled.
+<!-- AllowEdgeSwipe-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEdgeSwipe-Examples-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Allow edge swipe*
--   GP name: *AllowEdgeSwipe*
--   GP path: *Windows Components/Edge UI*
--   GP ADMX file name: *EdgeUI.admx*
+<!-- AllowEdgeSwipe-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LockDown-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- LockDown-CspMoreInfo-End -->
 
--   0 - disallow edge swipe.
--   1 (default, not configured) - allow edge swipe.
+<!-- LockDown-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+## Related articles
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

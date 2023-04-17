@@ -2,23 +2,20 @@
 title: 4610(S) An authentication package has been loaded by the Local Security Authority. (Windows 10)
 description: Describes security event 4610(S) An authentication package has been loaded by the Local Security Authority.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4610(S): An authentication package has been loaded by the Local Security Authority.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4610.png" alt="Event 4610 illustration" width="656" height="317" hspace="10" align="left" />
@@ -27,7 +24,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time [Authentication Package](https://msdn.microsoft.com/library/windows/desktop/aa374733(v=vs.85).aspx) has been loaded by the Local Security Authority ([LSA](https://msdn.microsoft.com/library/windows/desktop/aa378326(v=vs.85).aspx)).
+This event generates every time [Authentication Package](/windows/win32/secauthn/authentication-packages) has been loaded by the Local Security Authority ([LSA](/windows/win32/secauthn/lsa-authentication)).
 
 Each time the system starts, the LSA loads the Authentication Package DLLs from **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Authentication Packages** registry value and performs the initialization sequence for every package located in these DLLs.
 
@@ -69,9 +66,9 @@ Each time the system starts, the LSA loads the Authentication Package DLLs from 
 
 ***Field Descriptions:***
 
-**Authentication Package Name** \[Type = UnicodeString\]**:** the name of loaded [Authentication Package](https://msdn.microsoft.com/library/windows/desktop/aa374733(v=vs.85).aspx). The format is: DLL\_PATH\_AND\_NAME: AUTHENTICATION\_PACKAGE\_NAME.
+**Authentication Package Name** \[Type = UnicodeString\]**:** the name of loaded [Authentication Package](/windows/win32/secauthn/authentication-packages). The format is: DLL\_PATH\_AND\_NAME: AUTHENTICATION\_PACKAGE\_NAME.
 
-By default the only one Authentication Package loaded by Windows 10 is “[MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0](https://msdn.microsoft.com/library/windows/desktop/aa378753(v=vs.85).aspx)”.
+By default the only one Authentication Package loaded by Windows 10 is “[MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0](/windows/win32/secauthn/msv1-0-authentication-package)”.
 
 ## Security Monitoring Recommendations
 
@@ -80,4 +77,3 @@ For 4610(S): An authentication package has been loaded by the Local Security Aut
 -   Report all “**Authentication Package Name**” not equals “C:\\Windows\\system32\\msv1\_0.DLL : MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0”, because by default this is the only Authentication Package loaded by Windows 10.
 
 -   Typically this event has an informational purpose. If you have a pre-defined list of allowed Authentication Packages in the system, then you can check whether “**Authentication Package Name”** is in your defined list.
-

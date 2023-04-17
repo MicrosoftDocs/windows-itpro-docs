@@ -2,23 +2,20 @@
 title: 4674(S, F) An operation was attempted on a privileged object. (Windows 10)
 description: Describes security event 4674(S, F) An operation was attempted on a privileged object.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
-ms.date: 04/19/2017
+author: vinaypamnani-msft
+ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: mde
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4674(S, F): An operation was attempted on a privileged object.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4674.png" alt="Event 4674 illustration" width="449" height="543" hspace="10" align="left" />
@@ -97,7 +94,7 @@ Failure event generates when operation attempt fails.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -182,9 +179,9 @@ Failure event generates when operation attempt fails.
 
 |   **Subcategory of event**    |                  **Privilege Name: <br>User Right Group Policy Name**                   |                                                                                                                                                                                                                                                                                                                                                                                                    **Description**                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Audit Sensitive Privilege Use |    <b>SeAssignPrimaryTokenPrivilege: <br></b>Replace a process-level token    |                                                                                                                                                                                                                                                               Required to assign the [*primary token*](https://msdn.microsoft.com/library/windows/desktop/ms721603(v=vs.85).aspx#_security_primary_token_gly) of a process. <br>With this privilege, the user can initiate a process to replace the default token associated with a started subprocess.                                                                                                                                                                                                                                                               |
+| Audit Sensitive Privilege Use |    <b>SeAssignPrimaryTokenPrivilege: <br></b>Replace a process-level token    |                                                                                                                                                                                                                                                               Required to assign the [*primary token*](/windows/win32/secgloss/p-gly#_security_primary_token_gly) of a process. <br>With this privilege, the user can initiate a process to replace the default token associated with a started subprocess.                                                                                                                                                                                                                                                               |
 | Audit Sensitive Privilege Use |             <b>SeAuditPrivilege: <br></b>Generate security audits             |                                                                                                                                                                                                                                                                                                                                                                          With this privilege, the user can add entries to the security log.                                                                                                                                                                                                                                                                                                                                                                           |
-| Audit Sensitive Privilege Use |          <b>SeBackupPrivilege: <br></b>Back up files and directories          |                                                     -   Required to perform backup operations. <br>With this privilege, the user can bypass file and directory, registry, and other persistent object permissions for the purposes of backing up the system. This privilege causes the system to grant all read access control to any file, regardless of the [*access control list*](https://msdn.microsoft.com/library/windows/desktop/ms721532(v=vs.85).aspx#_security_access_control_list_gly) (ACL) specified for the file. Any access request other than read is still evaluated with the ACL. <br>The following access rights are granted if this privilege is held:<br>READ\_CONTROL<br>ACCESS\_SYSTEM\_SECURITY<br>FILE\_GENERIC\_READ<br>FILE\_TRAVERSE                                                     |
+| Audit Sensitive Privilege Use |          <b>SeBackupPrivilege: <br></b>Back up files and directories          |                                                     -   Required to perform backup operations. <br>With this privilege, the user can bypass file and directory, registry, and other persistent object permissions for the purposes of backing up the system. This privilege causes the system to grant all read access control to any file, regardless of the [*access control list*](/windows/win32/secgloss/a-gly#_security_access_control_list_gly) (ACL) specified for the file. Any access request other than read is still evaluated with the ACL. <br>The following access rights are granted if this privilege is held:<br>READ\_CONTROL<br>ACCESS\_SYSTEM\_SECURITY<br>FILE\_GENERIC\_READ<br>FILE\_TRAVERSE                                                     |
 | Audit Sensitive Privilege Use |           <b>SeCreateTokenPrivilege: <br></b>Create a token object            |                                                                                                                                                                                                                   Allows a process to create a token which it can then use to get access to any local resources when the process uses NtCreateToken() or other token-creation APIs. <br>When a process requires this privilege, we recommend using the LocalSystem account (which already includes the privilege), rather than creating a separate user account and assigning this privilege to it.                                                                                                                                                                                                                   |
 | Audit Sensitive Privilege Use |                  <b>SeDebugPrivilege: <br></b>Debug programs                  |                                                                                                                                                                                         Required to debug and adjust the memory of a process owned by another account. <br>With this privilege, the user can attach a debugger to any process or to the kernel. Developers who are debugging their own applications do not need this user right. Developers who are debugging new system components need this user right. <br>This user right provides complete access to sensitive and critical operating system components.                                                                                                                                                                                         |
 | Audit Sensitive Privilege Use | <b>SeImpersonatePrivilege: <br></b>Impersonate a client after authentication  |                                                                                                                                                                                                                                                                                                                                                                             With this privilege, the user can impersonate other accounts.                                                                                                                                                                                                                                                                                                                                                                             |
@@ -226,4 +223,3 @@ For 4674(S, F): An operation was attempted on a privileged object.
 -   If you have a list of specific user rights which should never be used, or used only by a few accounts (for example, SeDebugPrivilege), trigger an alert for those “**Privileges**.”
 
 -   If you have a list of specific user rights for which every use must be reported or monitored (for example, SeRemoteShutdownPrivilege), trigger an alert for those “**Privileges**.”
-

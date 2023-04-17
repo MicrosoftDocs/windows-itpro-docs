@@ -36,11 +36,4 @@ Use the topics in this section to learn about how to auto detect your settings, 
 |------|------------|
 |[Auto detect settings Internet Explorer 11](auto-detect-settings-for-ie11.md) |Guidance about how to update your automatic detection of DHCP and DNS servers. |
 |[Auto configuration settings for Internet Explorer 11](auto-configuration-settings-for-ie11.md) |Guidance about how to add, update and lock your auto configuration settings. |
-|[Auto proxy configuration settings for Internet Explorer 11](auto-proxy-configuration-settings-for-ie11.md) |Guidance about how to add, update, and lock your auto-proxy settings. | 
-
- 
-
- 
-
-
-
+|[Auto proxy configuration settings for Internet Explorer 11](auto-proxy-configuration-settings-for-ie11.md) |Guidance about how to add, update, and lock your auto-proxy settings. |

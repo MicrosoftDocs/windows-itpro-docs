@@ -1,126 +1,99 @@
 ---
-title: Policy CSP - DmaGuard
-description: Learn how to use the Policy CSP - DmaGuard setting to provide additional security against external DMA capable devices.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: manikadhiman
+title: DmaGuard Policy CSP
+description: Learn more about the DmaGuard Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- DmaGuard-Begin -->
 # Policy CSP - DmaGuard
 
+<!-- DmaGuard-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DmaGuard-Editable-End -->
 
-<hr/>
+<!-- DeviceEnumerationPolicy-Begin -->
+## DeviceEnumerationPolicy
 
-<!--Policies-->
-## DmaGuard policies  
+<!-- DeviceEnumerationPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- DeviceEnumerationPolicy-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#dmaguard-deviceenumerationpolicy">DmaGuard/DeviceEnumerationPolicy</a>
-  </dd>
-</dl>
+<!-- DeviceEnumerationPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DmaGuard/DeviceEnumerationPolicy
+```
+<!-- DeviceEnumerationPolicy-OmaUri-End -->
 
+<!-- DeviceEnumerationPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. **Note** this policy does not apply to 1394, PCMCIA or ExpressCard devices.
+<!-- DeviceEnumerationPolicy-Description-End -->
 
-<hr/>
+<!-- DeviceEnumerationPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy is intended to provide more security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices that are incompatible with [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), device memory isolation and sandboxing.
 
-<!--Policy-->
-<a href="" id="dmaguard-deviceenumerationpolicy"></a>**DmaGuard/DeviceEnumerationPolicy**  
+Device memory sandboxing allows the OS to use the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access by the peripheral. In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that can't be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.
+<!-- DeviceEnumerationPolicy-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DeviceEnumerationPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- DeviceEnumerationPolicy-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DeviceEnumerationPolicy-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Block all (Most restrictive). |
+| 1 (Default) | Only after log in/screen unlock. |
+| 2 | Allow all (Least restrictive). |
+<!-- DeviceEnumerationPolicy-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with [DMA Remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)/device memory isolation and sandboxing. 
+<!-- DeviceEnumerationPolicy-GpMapping-Begin -->
+**Group policy mapping**:
 
-Device memory sandboxing allows the OS to leverage the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access, by the peripheral. In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
+| Name | Value |
+|:--|:--|
+| Name | DmaGuardEnumerationPolicy |
+| Friendly Name | Enumeration policy for external devices incompatible with Kernel DMA Protection |
+| Location | Computer Configuration |
+| Path | System > Kernel DMA Protection |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Kernel DMA Protection |
+| ADMX File Name | DmaGuard.admx |
+<!-- DeviceEnumerationPolicy-GpMapping-End -->
 
-This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.
+<!-- DeviceEnumerationPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DeviceEnumerationPolicy-Examples-End -->
 
-> [!NOTE]
-> This policy does not apply to 1394/Firewire, PCMCIA, CardBus, or ExpressCard devices.
+<!-- DeviceEnumerationPolicy-End -->
 
-Supported values:
+<!-- DmaGuard-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- DmaGuard-CspMoreInfo-End -->
 
-0 - Block all (Most restrictive): Devices with DMA remapping compatible drivers will be allowed to enumerate at any time. Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.
+<!-- DmaGuard-End -->
 
-1 - Only after log in/screen unlock (Default): Devices with DMA remapping compatible drivers will be allowed to enumerate at any time. Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen
+## Related articles
 
-2 -  Allow all (Least restrictive): All external DMA capable PCIe devices will be enumerated at any time
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Enumeration policy for external devices incompatible with Kernel DMA Protection*
--   GP name: *DmaGuardEnumerationPolicy*
--   GP path: *System/Kernel DMA Protection*
--   GP ADMX file name: *dmaguard.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)
