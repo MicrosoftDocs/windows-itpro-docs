@@ -101,7 +101,7 @@ sections:
 
       - question: How are downloads initiated by Delivery Optimization?
         answer: |
-         Delivery Optimization only starts when an application/service that has been integrated with Delivery Optimizationdownload initiates a download (for example, Edge browser). [Learn more](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) about the complete list of Delivery Optimization callers.
+         Delivery Optimization only starts when an application/service that has been integrated with Delivery Optimization initiates a download (for example, Edge browser). [Learn more](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) about the complete list of Delivery Optimization callers.
             
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
