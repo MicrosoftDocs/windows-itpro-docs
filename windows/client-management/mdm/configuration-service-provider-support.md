@@ -4,7 +4,7 @@ description: Learn more about configuration service provider (CSP) supported sce
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft

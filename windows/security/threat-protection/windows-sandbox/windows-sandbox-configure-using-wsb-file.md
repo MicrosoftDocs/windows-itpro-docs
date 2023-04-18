@@ -30,6 +30,9 @@ A configuration file enables the user to control the following aspects of Window
 - **Clipboard redirection**: Shares the host clipboard with the sandbox so that text and files can be pasted back and forth.
 - **Memory in MB**: The amount of memory, in megabytes, to assign to the sandbox.
 
+> [!NOTE]
+> The size of the sandbox window currently isn't configurable. <!-- windows-itpro-docs #10689 -->
+
 ## Creating a configuration file
 
 To create a configuration file:
