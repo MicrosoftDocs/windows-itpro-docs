@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Delivery Optimization Frequently Asked Questions
-  description: The following is a list of frequently asked questions for Delivery Optimization.
+  description: List of frequently asked questions for Delivery Optimization.
   ms.reviewer: mstewart
   ms.prod: windows-client
   author: cmknox
@@ -12,7 +12,7 @@ metadata:
     - highpri
     - tier3
   ms.topic: faq
-  ms.date: 08/04/2022
+  ms.date: 04/17/2023
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   **Applies to**
@@ -29,7 +29,7 @@ sections:
         answer: | 
           Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
 
-          Delivery Optimization will use Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+          Delivery Optimization will use Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). To enable this scenario, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
           Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
@@ -70,7 +70,7 @@ sections:
 
           If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 
-          If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
+          If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there will be no peer-to-peer activity over the VPN. When the device isn't connected using a VPN, it can still use peer-to-peer with the default of LAN.
 
           With split tunneling, make sure to allow direct access to these endpoints:
 
@@ -99,3 +99,11 @@ sections:
           > [!NOTE]
           > If you use public IP addresses instead of private in LAN mode, the bytes downloaded from or uploaded to LAN peers with public IP addresses might be reported as coming from Internet peers.
 
+      - question: How are downloads initiated by Delivery Optimization?
+        answer: |
+         Delivery Optimization only starts when an application or service that's integrated with Delivery Optimization starts a download. For example, the Microsoft Edge browser. For more information about Delivery Optimization callers, see [Types of download content supported by Delivery Optimization](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization).
+            
+      - question: How does Delivery Optimization determine which content is available for peering?
+        answer: |
+          Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
+          
