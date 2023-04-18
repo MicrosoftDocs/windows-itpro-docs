@@ -159,6 +159,16 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
+**To gray out the memory integrity UI and display the message "This setting is managed by your administrator"**
+```console
+reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /f
+```
+
+**To let memory integrity UI behave normally (Not grayed out)**
+```console
+reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /t REG_DWORD /d 2 /f
+```
+
 #### For Windows 10 version 1511 and earlier
 
 Recommended settings (to enable memory integrity, without UEFI Lock):
