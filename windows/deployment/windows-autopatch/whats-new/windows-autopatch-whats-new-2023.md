@@ -24,6 +24,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC542842](https://admin.microsoft.com/adminportal/home#/MessageCenter) | April 2023 Windows Autopatch baseline configuration update |
 | [MC538728](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Update: Windows Autopatch quality updates release communication |
 | [MC536881](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Take action: Review Windows Autopatch Tenant management blade for potential action required to prevent inactive status |
 
