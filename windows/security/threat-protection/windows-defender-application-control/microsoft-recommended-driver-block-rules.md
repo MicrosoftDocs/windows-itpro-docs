@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
 author: jgeurten
@@ -61,14 +61,39 @@ Customers who always want the most up-to-date driver blocklist can also use Wind
 
 ## Blocking vulnerable drivers using WDAC
 
-Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking [this list of drivers](#vulnerable-driver-blocklist-xml) within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
 
 > [!IMPORTANT]
 > Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from loading, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy will prevent the existing driver from loading.
 
-<br>
-<details>
-  <summary>Expand this section to see the blocklist WDAC policy XML</summary>
+## Steps to download and apply the vulnerable driver blocklist binary
+
+If you prefer to apply the [vulnerable driver blocklist](#vulnerable-driver-blocklist-xml) exactly as shown, follow these steps:
+
+1. Download the [WDAC policy refresh tool](https://aka.ms/refreshpolicy)
+2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
+3. Select either the audit only version or the enforced version and rename the file to SiPolicy.p7b
+4. Copy SiPolicy.p7b to %windir%\system32\CodeIntegrity
+5. Run the WDAC policy refresh tool you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
+
+To check that the policy was successfully applied on your computer:
+
+1. Open Event Viewer
+2. Browse to **Applications and Services Logs - Microsoft - Windows - CodeIntegrity - Operational**
+3. Select **Filter Current Log...**
+4. Replace "&lt;All Event IDs&gt;" with "3099" and select OK.
+5. Look for a 3099 event where the PolicyNameBuffer and PolicyIdBuffer match the Name and Id PolicyInfo settings found at the bottom of the blocklist WDAC Policy XML in this article. NOTE: Your computer may have more than one 3099 event if other WDAC policies are also present.
+
+> [!NOTE]
+> If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new WDAC policy without reboot.
+
+## Vulnerable driver blocklist XML
+
+> [!IMPORTANT]
+> The policy listed below contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
+
+> [!NOTE]
+> To use this policy with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -642,11 +667,11 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_MHYPROTECT_5" FriendlyName="mhyprotect.sys\edeb35e4341034b2de389017c4884b081a821f34349a620897a2a845c84cb09e Hash Sha1" Hash="195171715AAD9D8F79C147CB045AC278115475E5" />
     <Deny ID="ID_DENY_MHYPROTECT_6" FriendlyName="mhyprotect.sys\edeb35e4341034b2de389017c4884b081a821f34349a620897a2a845c84cb09e Hash Sha256" Hash="14BD76F66FE5749D1812F7CF47CC5F9A8A830C53A7EDE5E42A14A4140A70F5D2" />
     <Deny ID="ID_DENY_MHYPROTECT_7" FriendlyName="mhyprotect.sys\edeb35e4341034b2de389017c4884b081a821f34349a620897a2a845c84cb09e Hash Page Sha1" Hash="F6B882E5D2965A8B98AB3AEC5D33AD839CFD49AA" />
-    <Deny ID="ID_DENY_MHYPROTECT_8" FriendlyName="mhyprotect.sys\edeb35e4341034b2de389017c4884b081a821f34349a620897a2a845c84cb09e Hash Page Sha256" Hash="E6D48C1F7F92451556BA0A3F54B5F41027654FCDA6BC617B15B80F51B969B12F" />    
+    <Deny ID="ID_DENY_MHYPROTECT_8" FriendlyName="mhyprotect.sys\edeb35e4341034b2de389017c4884b081a821f34349a620897a2a845c84cb09e Hash Page Sha256" Hash="E6D48C1F7F92451556BA0A3F54B5F41027654FCDA6BC617B15B80F51B969B12F" />
     <Deny ID="ID_DENY_MHYPROTNAP_1" FriendlyName="mhyprotnap.sys\40263b08b3c3659529ab605d1daa3033db0fdc4b19c26aa375be0c19686807e6 Hash Sha1" Hash="05B36EFE08674891C40DB96CBB5E69ABEA6F4DAF" />
     <Deny ID="ID_DENY_MHYPROTNAP_2" FriendlyName="mhyprotnap.sys\40263b08b3c3659529ab605d1daa3033db0fdc4b19c26aa375be0c19686807e6 Hash Sha256" Hash="9E428C1D1CD7358E2C2F25EDE45E718B22CB5D04634A4D1EC08A87E71248685B" />
     <Deny ID="ID_DENY_MHYPROTNAP_3" FriendlyName="mhyprotnap.sys\40263b08b3c3659529ab605d1daa3033db0fdc4b19c26aa375be0c19686807e6 Hash Page Sha1" Hash="1DB8A9105F9079B3E5BE5AF50D012AA0C6D138AF" />
-    <Deny ID="ID_DENY_MHYPROTNAP_4" FriendlyName="mhyprotnap.sys\40263b08b3c3659529ab605d1daa3033db0fdc4b19c26aa375be0c19686807e6 Hash Page Sha256" Hash="EE07EAF68F2A77CFEF8D0F5F56E9818ADE95884CF1470A161CFB9403C5B34377" />    
+    <Deny ID="ID_DENY_MHYPROTNAP_4" FriendlyName="mhyprotnap.sys\40263b08b3c3659529ab605d1daa3033db0fdc4b19c26aa375be0c19686807e6 Hash Page Sha256" Hash="EE07EAF68F2A77CFEF8D0F5F56E9818ADE95884CF1470A161CFB9403C5B34377" />
     <Deny ID="ID_DENY_MHYPROTRG_1" FriendlyName="mhyprotrpg.sys\8bf84bed9b5fa4576182c84d2f31679dc472acd0f83c9813498e9f71ed9fef3e Hash Sha1" Hash="F631F67D11F2B06C0B3B0C7286997F2F7F538231" />
     <Deny ID="ID_DENY_MHYPROTRG_2" FriendlyName="mhyprotrpg.sys\8bf84bed9b5fa4576182c84d2f31679dc472acd0f83c9813498e9f71ed9fef3e Hash Sha256" Hash="8ECD15521B2C37D2FF02A138700007F2AFF28A0ACCFA6FB3480A4421194EF7D2" />
     <Deny ID="ID_DENY_MHYPROTRG_3" FriendlyName="mhyprotrpg.sys\8bf84bed9b5fa4576182c84d2f31679dc472acd0f83c9813498e9f71ed9fef3e Hash Page Sha1" Hash="754AA7D1F2B30E2023F30D98709EA369E185FA36" />
@@ -1079,7 +1104,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_RZPNK" FriendlyName="Razer rzpnk.sys FileAttribute" FileName="Rzpnk.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />    
+    <FileAttrib ID="ID_FILEATTRIB_RZPNK" FriendlyName="Razer rzpnk.sys FileAttribute" FileName="Rzpnk.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_SANDBOX" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
@@ -1213,7 +1238,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_HWRWDRV" />      
+      <FileAttribRef RuleID="ID_FILEATTRIB_HWRWDRV" />
       <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
@@ -1228,7 +1253,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_HWMIO64" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />  
+      <FileAttribRef RuleID="ID_FILEATTRIB_BS_MEM" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_RCIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HAXM" />
@@ -1238,7 +1263,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <FileAttribRef RuleID="ID_FILEATTRIB_IOBITUNLOCKER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_MYDRIVERS" />      
+      <FileAttribRef RuleID="ID_FILEATTRIB_MYDRIVERS" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NVFLASH" />
@@ -1402,7 +1427,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
       <CertPublisher Value="Agnitum Ltd." />
       <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX" />
-    </Signer>    
+    </Signer>
     <Signer ID="ID_SIGNER_PHYMEM" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
       <CertPublisher Value="Super Micro Computer, Inc." />
@@ -1811,8 +1836,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_BEIJING_CHUNBAI" />
           <DeniedSigner SignerId="ID_SIGNER_BEIJING_VSK" />
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
-          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" /> 
-          <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" /> 
+          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
+          <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_1" />
@@ -1837,7 +1862,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_HAXM_2" />
           <DeniedSigner SignerId="ID_SIGNER_HAXM_3" />
           <DeniedSigner SignerId="ID_SIGNER_HYPERTECH" />
-          <DeniedSigner SignerId="ID_SIGNER_HP" /> 
+          <DeniedSigner SignerId="ID_SIGNER_HP" />
           <DeniedSigner SignerId="ID_SIGNER_HW_A" />
           <DeniedSigner SignerId="ID_SIGNER_HW_B" />
           <DeniedSigner SignerId="ID_SIGNER_HW_C" />
@@ -1849,7 +1874,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_HWINFO_5" />
           <DeniedSigner SignerId="ID_SIGNER_HWINFO_6" />
           <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_1" />
-          <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_2" />          
+          <DeniedSigner SignerId="ID_SIGNER_HWRWDRV_2" />
           <DeniedSigner SignerId="ID_SIGNER_INTEL_IQVW" />
           <DeniedSigner SignerId="ID_SIGNER_JCOS_1" />
           <DeniedSigner SignerId="ID_SIGNER_JCOS_2" />
@@ -1894,7 +1919,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004_ASUS_BS_DEF" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_BIOSTAR" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_REALTEK" /> 
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_REALTEK" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010_2" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010_BIOSTAR" />
@@ -2878,35 +2903,6 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
 </SiPolicy>
 ```
-
-</details>
-
-> [!NOTE]
-> The policy listed above contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
-
-> [!NOTE]
-> To use the policy above with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
-
-## Steps to download and apply the vulnerable driver blocklist binary
-
-If you prefer to apply the vulnerable driver blocklist exactly as shown above, follow these steps:
-
-1. Download the [WDAC policy refresh tool](https://aka.ms/refreshpolicy)
-2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
-3. Select either the audit only version or the enforced version and rename the file to SiPolicy.p7b
-4. Copy SiPolicy.p7b to %windir%\system32\CodeIntegrity
-5. Run the WDAC policy refresh tool you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
-
-To check that the policy was successfully applied on your computer:
-
-1. Open Event Viewer
-2. Browse to **Applications and Services Logs - Microsoft - Windows - CodeIntegrity - Operational**
-3. Select **Filter Current Log...**
-4. Replace "&lt;All Event IDs&gt;" with "3099" and select OK.
-5. Look for a 3099 event where the PolicyNameBuffer and PolicyIdBuffer match the Name and Id PolicyInfo settings found at the bottom of the blocklist WDAC Policy XML in this article. NOTE: Your computer may have more than one 3099 event if other WDAC policies are also present.
-
-> [!NOTE]
-> If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new WDAC policy without reboot.
 
 ## More information
 

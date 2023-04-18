@@ -40,7 +40,7 @@ There may come a time when you want to remove one or more WDAC policies, or remo
 >
 > The replacement policy must have the same PolicyId as the one it's replacing and a version that's equal to or greater than the existing policy. The replacement policy must also include \<UpdatePolicySigners\>.
 >
-> To take effect, this policy must be signed with a certificate included in the \<UpdatePolicySigners\> section of the original policy you want to replace. 
+> To take effect, this policy must be signed with a certificate included in the \<UpdatePolicySigners\> section of the original policy you want to replace.
 >
 > You must then restart the computer so that the UEFI protection of the policy is deactivated. ***Failing to do so will result in a boot start failure.***
 
@@ -107,58 +107,53 @@ For **single policy format WDAC policies**, in addition to the two locations abo
 
 Then restart the computer.
 
-#### Sample script
-
-<details>
-  <summary>Expand this section to see a sample script to delete a single WDAC policy</summary>
+#### Sample script to delete a single WDAC policy
 
 ```powershell
-    # Set PolicyId GUID to the PolicyId from your WDAC policy XML
-    $PolicyId = "{PolicyId GUID}"
+# Set PolicyId GUID to the PolicyId from your WDAC policy XML
+$PolicyId = "{PolicyId GUID}"
 
-    # Initialize variables
-    $SinglePolicyFormatPolicyId = "{A244370E-44C9-4C06-B551-F6016E563076}"
-    $SinglePolicyFormatFileName = "\SiPolicy.p7b"
-    $MountPoint =  $env:SystemDrive+"\EFIMount"
-    $SystemCodeIntegrityFolderRoot = $env:windir+"\System32\CodeIntegrity"
-    $EFICodeIntegrityFolderRoot = $MountPoint+"\EFI\Microsoft\Boot"
-    $MultiplePolicyFilePath = "\CiPolicies\Active\"+$PolicyId+".cip"
+# Initialize variables
+$SinglePolicyFormatPolicyId = "{A244370E-44C9-4C06-B551-F6016E563076}"
+$SinglePolicyFormatFileName = "\SiPolicy.p7b"
+$MountPoint =  $env:SystemDrive+"\EFIMount"
+$SystemCodeIntegrityFolderRoot = $env:windir+"\System32\CodeIntegrity"
+$EFICodeIntegrityFolderRoot = $MountPoint+"\EFI\Microsoft\Boot"
+$MultiplePolicyFilePath = "\CiPolicies\Active\"+$PolicyId+".cip"
 
-    # Mount the EFI partition
-    $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
-    if (-Not (Test-Path $MountPoint)) { New-Item -Path $MountPoint -Type Directory -Force }
-    mountvol $MountPoint $EFIPartition
+# Mount the EFI partition
+$EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
+if (-Not (Test-Path $MountPoint)) { New-Item -Path $MountPoint -Type Directory -Force }
+mountvol $MountPoint $EFIPartition
 
-    # Check if the PolicyId to be removed is the system reserved GUID for single policy format.
-    # If so, the policy may exist as both SiPolicy.p7b in the policy path root as well as
-    # {GUID}.cip in the CiPolicies\Active subdirectory
-    if ($PolicyId -eq $SinglePolicyFormatPolicyId) {$NumFilesToDelete = 4} else {$NumFilesToDelete = 2}
-    
-    $Count = 1
-    while ($Count -le $NumFilesToDelete) 
+# Check if the PolicyId to be removed is the system reserved GUID for single policy format.
+# If so, the policy may exist as both SiPolicy.p7b in the policy path root as well as
+# {GUID}.cip in the CiPolicies\Active subdirectory
+if ($PolicyId -eq $SinglePolicyFormatPolicyId) {$NumFilesToDelete = 4} else {$NumFilesToDelete = 2}
+
+$Count = 1
+while ($Count -le $NumFilesToDelete)
+{
+
+    # Set the $PolicyPath to the file to be deleted, if exists
+    Switch ($Count)
     {
-           
-        # Set the $PolicyPath to the file to be deleted, if exists
-        Switch ($Count)
-        {
-            1 {$PolicyPath = $SystemCodeIntegrityFolderRoot+$MultiplePolicyFilePath}
-            2 {$PolicyPath = $EFICodeIntegrityFolderRoot+$MultiplePolicyFilePath}
-            3 {$PolicyPath = $SystemCodeIntegrityFolderRoot+$SinglePolicyFormatFileName}
-            4 {$PolicyPath = $EFICodeIntegrityFolderRoot+$SinglePolicyFormatFileName}
-        }
-
-        # Delete the policy file from the current $PolicyPath
-        Write-Host "Attempting to remove $PolicyPath..." -ForegroundColor Cyan
-        if (Test-Path $PolicyPath) {Remove-Item -Path $PolicyPath -Force -ErrorAction Continue}
-
-        $Count = $Count + 1
+        1 {$PolicyPath = $SystemCodeIntegrityFolderRoot+$MultiplePolicyFilePath}
+        2 {$PolicyPath = $EFICodeIntegrityFolderRoot+$MultiplePolicyFilePath}
+        3 {$PolicyPath = $SystemCodeIntegrityFolderRoot+$SinglePolicyFormatFileName}
+        4 {$PolicyPath = $EFICodeIntegrityFolderRoot+$SinglePolicyFormatFileName}
     }
 
-    # Dismount the EFI partition
-   mountvol $MountPoint /D
-```
+    # Delete the policy file from the current $PolicyPath
+    Write-Host "Attempting to remove $PolicyPath..." -ForegroundColor Cyan
+    if (Test-Path $PolicyPath) {Remove-Item -Path $PolicyPath -Force -ErrorAction Continue}
 
-</Details>
+    $Count = $Count + 1
+}
+
+# Dismount the EFI partition
+mountvol $MountPoint /D
+```
 
 > [!NOTE]
 > You must run the script as administrator to remove WDAC policies on your computer.
