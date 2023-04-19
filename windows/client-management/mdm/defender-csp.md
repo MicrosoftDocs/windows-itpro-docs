@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,6 +18,8 @@ ms.topic: reference
 
 <!-- Defender-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> [ControlPolicyConflict (MDMWinsOverGP)](policy-csp-controlpolicyconflict.md) is not applicable to the Defender CSP. If using MDM, remove your current Defender group policy settings to avoid conflicts with your MDM settings.
 <!-- Defender-Editable-End -->
 
 <!-- Defender-Tree-Begin -->
@@ -58,6 +60,7 @@ The following list shows the Defender configuration service provider nodes:
     - [EnableFileHashComputation](#configurationenablefilehashcomputation)
     - [EngineUpdatesChannel](#configurationengineupdateschannel)
     - [HideExclusionsFromLocalAdmins](#configurationhideexclusionsfromlocaladmins)
+    - [HideExclusionsFromLocalUsers](#configurationhideexclusionsfromlocalusers)
     - [IntelTDTEnabled](#configurationinteltdtenabled)
     - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
     - [PassiveRemediation](#configurationpassiveremediation)
@@ -65,6 +68,7 @@ The following list shows the Defender configuration service provider nodes:
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
     - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
     - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
+    - [SecuredDevicesConfiguration](#configurationsecureddevicesconfiguration)
     - [SecurityIntelligenceUpdatesChannel](#configurationsecurityintelligenceupdateschannel)
     - [SupportLogLocation](#configurationsupportloglocation)
     - [TamperProtection](#configurationtamperprotection)
@@ -1622,7 +1626,7 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting controls whether or not exclusions are visible to local admins. For end users (that are not local admins) exclusions are not visible, whether or not this setting is enabled.
+This policy setting controls whether or not exclusions are visible to local admins. To control local users exclusions visibility use HideExclusionsFromLocalUsers. If HideExclusionsFromLocalAdmins is set then HideExclusionsFromLocalUsers will be implicitly set.
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Description-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Editable-Begin -->
@@ -1655,6 +1659,55 @@ This policy setting controls whether or not exclusions are visible to local admi
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Examples-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Begin -->
+### Configuration/HideExclusionsFromLocalUsers
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Applicability-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/HideExclusionsFromLocalUsers
+```
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-OmaUri-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls whether or not exclusions are visible to local users. If HideExclusionsFromLocalAdmins is set then this policy will be implicitly set.
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Description-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Editable-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-DFProperties-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | If you enable this setting, local users will no longer be able to see the exclusion list in Windows Security App or via PowerShell. |
+| 0 (Default) | If you disable or do not configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell. |
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-AllowedValues-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-Examples-End -->
+
+<!-- Device-Configuration-HideExclusionsFromLocalUsers-End -->
 
 <!-- Device-Configuration-IntelTDTEnabled-Begin -->
 ### Configuration/IntelTDTEnabled
@@ -1696,6 +1749,7 @@ This policy setting configures the Intel TDT integration level for Intel TDT-cap
 | Value | Description |
 |:--|:--|
 | 0 (Default) | If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat. |
+| 1 | If you configure this setting to enabled, Intel TDT integration will turn on. |
 | 2 | If you configure this setting to disabled, Intel TDT integration will turn off. |
 <!-- Device-Configuration-IntelTDTEnabled-AllowedValues-End -->
 
@@ -1995,6 +2049,45 @@ This setting allows you to configure the scheduler randomization in hours. The r
 <!-- Device-Configuration-SchedulerRandomizationTime-Examples-End -->
 
 <!-- Device-Configuration-SchedulerRandomizationTime-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-Begin -->
+### Configuration/SecuredDevicesConfiguration
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-SecuredDevicesConfiguration-Applicability-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/SecuredDevicesConfiguration
+```
+<!-- Device-Configuration-SecuredDevicesConfiguration-OmaUri-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all of the supported devices will be secured.
+<!-- Device-Configuration-SecuredDevicesConfiguration-Description-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-SecuredDevicesConfiguration-Editable-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-SecuredDevicesConfiguration-DFProperties-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-SecuredDevicesConfiguration-Examples-End -->
+
+<!-- Device-Configuration-SecuredDevicesConfiguration-End -->
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Begin -->
 ### Configuration/SecurityIntelligenceUpdatesChannel
@@ -2388,7 +2481,7 @@ Information about the current status of the threat. The following list shows the
 | 7 | Removed |
 | 8 | Cleaned |
 | 9 | Allowed |
-| 10 | No Status ( Cleared) |
+| 10 | No Status (Cleared) |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Description-End -->
 
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Editable-Begin -->
@@ -3583,7 +3676,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 
 <!-- Device-RollbackEngine-Description-Begin -->
 <!-- Description-Source-DDF -->
-RollbackEngine action rolls back Microsoft Defender engine to it's last known good saved version on the computer where you run the command.
+RollbackEngine action rolls back Microsoft Defender engine to its last known good saved version on the computer where you run the command.
 <!-- Device-RollbackEngine-Description-End -->
 
 <!-- Device-RollbackEngine-Editable-Begin -->

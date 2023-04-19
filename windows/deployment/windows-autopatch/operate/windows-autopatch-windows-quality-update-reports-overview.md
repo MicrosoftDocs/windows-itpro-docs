@@ -39,7 +39,7 @@ Users with the following permissions can access the reports:
 
 ## About data latency
 
-The data source for these reports is the [Windows diagnostic data](../references/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data). The data typically uploads from enrolled devices once per day. Then, the data is processed in batches before being made available in Windows Autopatch. The maximum end-to-end latency is approximately 24 hours.
+The data source for these reports is the [Windows diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data). The data typically uploads from enrolled devices once per day. Then, the data is processed in batches before being made available in Windows Autopatch. The maximum end-to-end latency is approximately 24 hours.
 
 ## Windows quality update statuses
 

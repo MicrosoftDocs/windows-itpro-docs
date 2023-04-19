@@ -67,8 +67,12 @@ The procedures in this guide are summarized in the following table. An estimate 
     > [!NOTE]
     > If the request to add features fails, retry the installation by typing the command again.
 
-2. Download [SQL Server 2014 SP2](https://www.microsoft.com/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
-3. When you've downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, enter the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+2. Download [SQL Server](https://www.microsoft.com/evalcenter/evaluate-sql-server-2022) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
+
+    > [!NOTE]
+    > The rest of this article describes the installation of SQL Server 2014. If you download a different version of SQL Server, you may need to modify the installation steps.
+
+1. When you've downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, enter the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```powershell
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\SQLServer2014SP2-FullSlipstream-x64-ENU.iso

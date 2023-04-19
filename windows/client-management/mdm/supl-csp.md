@@ -4,7 +4,7 @@ description: Learn more about the SUPL CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -336,7 +336,7 @@ Optional. Determines the full version (X. Y. Z where X, Y and Z are major versio
 
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-HighAccPositioningMethod-Editable-Begin -->
@@ -540,7 +540,7 @@ Optional. Time in seconds that the network-initiated location request is display
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specifies the root certificate for the H-SLP server. Windows Phone does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.
+Required. Specifies the root certificate for the H-SLP server. Windows does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Editable-Begin -->
@@ -1568,7 +1568,7 @@ Optional. The address of the Position Determination Entity (PDE), in the format 
 
 <!-- Device-V2UPL1-PositioningMethod_MR-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 <!-- Device-V2UPL1-PositioningMethod_MR-Description-End -->
 
 <!-- Device-V2UPL1-PositioningMethod_MR-Editable-Begin -->

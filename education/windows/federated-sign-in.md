@@ -1,10 +1,11 @@
 ---
 title: Configure federated sign-in for Windows devices
 description: Description of federated sign-in feature for the Education SKUs of Windows 11 and how to configure it via Intune or provisioning packages.
-ms.date: 02/24/2023
+ms.date: 04/11/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
   - highpri
   - tier1
@@ -145,11 +146,16 @@ In a scenario where a user is federated and you want to change the ImmutableId, 
 Here's a PowerShell example to update the ImmutableId for a federated user:
 
 ```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+Install-Module Microsoft.Graph -Scope CurrentUser
+Import-Module Microsoft.Graph
+Connect-MgGraph -Scopes 'User.Read.All', 'User.ReadWrite.All'
+
 #1. Convert the user from federated to cloud-only
-Get-AzureADUser -SearchString alton@example.com | Set-AzureADUser -UserPrincipalName alton@example.onmicrosoft.com
+Update-MgUser -UserId alton@example.com -UserPrincipalName alton@example.onmicrosoft.com
 
 #2. Convert the user back to federated, while setting the immutableId
-Get-AzureADUser -SearchString alton@example.onmicrosoft.com | Set-AzureADUser -UserPrincipalName alton@example.com -ImmutableId '260051'
+Update-MgUser -UserId alton@example.onmicrosoft.com -UserPrincipalName alton@example.com -OnPremisesImmutableId '260051'
 ```
 
 ## Troubleshooting

@@ -4,7 +4,7 @@ description: Learn more about the PDE CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 04/14/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage

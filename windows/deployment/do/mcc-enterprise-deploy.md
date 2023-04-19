@@ -158,13 +158,11 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    >
    > Don't use PowerShell ISE, PowerShell 6.x, or PowerShell 7.x. Only Windows PowerShell version 5.x is supported.
 
-#### If you're installing MCC on a local virtual machine
-
-1. Turn the virtual machine **off** while you enable nested virtualization and MAC spoofing.
+1. **If you're installing MCC on a local virtual machine**, turn the virtual machine **off** while you enable nested virtualization and MAC spoofing.
    1. Enable nested virtualization:
 
       ```powershell
-      Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
+      Set-VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
       ```
 
    1. Enable MAC spoofing:
@@ -230,7 +228,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 1. Your MCC deployment is now complete.
 
-    1. If you don't see any errors, continue to the next section to validate your MCC deployment.
+    1. If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
     1. After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
     1. If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 

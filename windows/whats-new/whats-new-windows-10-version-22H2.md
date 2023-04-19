@@ -7,9 +7,11 @@ ms.author: mstewart
 author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/18/2022
-ms.collection: highpri, tier1
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # What's new in Windows 10, version 22H2
@@ -31,7 +33,7 @@ To learn more about the status of the Windows 10, version 22H2 rollout, known is
 
 For more information about updated tools to support this release, see [IT tools to support Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-22h2/ba-p/3655750).
 
-The Windows 10, version 22H2 feature update is installed as part of the general availability channel. Quality updates are still installed monthly on patch Tuesday.
+The Windows 10, version 22H2 feature update is installed as part of the general availability channel. Quality updates are still installed monthly on the second Tuesday of the month.
 
 For more information, see:
 

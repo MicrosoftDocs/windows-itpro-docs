@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 02/14/2023
+ms.date: 03/15/2023
 ms.technology: itpro-updates
 ---
 
@@ -29,11 +29,6 @@ Before you begin the process of adding Windows Update for Business reports to yo
 ## Permissions
 
 [!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
-
-**Log Analytics permissions**:
-
-- [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role can be used to edit and write queries
-- [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role can be used to read data
 
 ## Operating systems and editions
 

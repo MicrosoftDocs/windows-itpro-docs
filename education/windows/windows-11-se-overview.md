@@ -2,7 +2,7 @@
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: article
-ms.date: 09/12/2022
+ms.date: 03/09/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
@@ -90,19 +90,22 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Bulb Digital Portfolio`                  | 0.0.7.0           | `Store`  | `Bulb`                                    |
 | `CA Secure Browser`                       | 14.0.0            | Win32    | `Cambium Development`                     |
 | `Cisco Umbrella`                          | 3.0.110.0         | Win32    | `Cisco`                                   |
-| `CKAuthenticator`                         | 3.6+              | Win32    | `Content Keeper`                          |
-| `Class Policy`                            | 114.0.0           | Win32    | `Class Policy`                            |
+| `CKAuthenticator`                         | 3.6+              | Win32    | `ContentKeeper`                           |
+| `Class Policy`                            | 116.0.0           | Win32    | `Class Policy`                            |
 | `Classroom.cloud`                         | 1.40.0004         | Win32    | `NetSupport`                              |
 | `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
 | `ColorVeil`                               | 4.0.0.175         | Win32    | `East-Tec`                                | 
 | `ContentKeeper Cloud`                     | 9.01.45           | Win32    | `ContentKeeper Technologies`              |
+| `DigiExam`                                | 14.0.6            | Win32    | `Digiexam`                                |
 | `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
-| `DRC INSIGHT Online Assessments`          | 12.0.0.0          | `Store`  | `Data recognition Corporation`            |
+| `DRC INSIGHT Online Assessments`          | 13.0.0.0          | `Store`  | `Data recognition Corporation`            |
 | `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.8           | Win32    | `e-speaking`                              |
 | `EasyReader`                              | 10.0.3.481        | Win32    | `Dolphin Computer Access`                 |
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
 | `eTests`                                  | 4.0.25            | Win32    | `CASAS`                                   |
+| `Exam Writepad`                           | 22.10.14.1834     | Win32    | `Sheldnet`                                |
+| `FirstVoices Keyboard`                    | 15.0.270          | Win32    | `SIL International`                       |
 | `FortiClient`                             | 7.2.0.4034+       | Win32    | `Fortinet`                                |
 | `Free NaturalReader`                      | 16.1.2            | Win32    | `Natural Soft`                            |
 | `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
@@ -116,6 +119,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Inspiration 10`                          | 10.11             | Win32    | `TechEdology Ltd`                         |
 | `JAWS for Windows`                        | 2022.2112.24      | Win32    | `Freedom Scientific`                      |
 | `Kite Student Portal`                     | 9.0.0.0           | Win32    | `Dynamic Learning Maps`                   |
+| `Keyman`                                  | 16.0.138          | Win32    | `SIL International`
 | `Kortext`                                 | 2.3.433.0         | `Store`  | `Kortext`                                 |
 | `Kurzweil 3000 Assistive Learning`        | 20.13.0000        | Win32    | `Kurzweil Educational Systems`            |
 | `LanSchool Classic`                       | 9.1.0.46          | Win32    | `Stoneware, Inc.`                         |
@@ -125,7 +129,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Microsoft Connect`                       | 10.0.22000.1      | `Store`  | `Microsoft`                               |
 | `Mozilla Firefox`                         | 105.0.0           | Win32    | `Mozilla`                                 |
 | `NAPLAN`                                  | 5.2.2             | Win32    | `NAP`                                     |
-| `Netref Student`                          | 22.2.0            | Win32    | `NetRef`                                  |
+| `Netref Student`                          | 23.1.0            | Win32    | `NetRef`                                  |
 | `NetSupport Manager`                      | 12.01.0014        | Win32    | `NetSupport`                              |
 | `NetSupport Notify`                       | 5.10.1.215        | Win32    | `NetSupport`                              |
 | `NetSupport School`                       | 14.00.0012        | Win32    | `NetSupport`                              |
@@ -143,11 +147,11 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Senso.Cloud`                             | 2021.11.15.0      | Win32    | `Senso.Cloud`                             |
 | `Smoothwall Monitor`                      | 2.9.2             | Win32    | `Smoothwall Ltd`                          |
 | `SuperNova Magnifier & Screen Reader`     | 21.02             | Win32    | `Dolphin Computer Access`                 |
-| `SuperNova Magnifier & Speech`            | 21.02             | Win32    | `Dolphin Computer Access`                 |
+| `SuperNova Magnifier & Speech`            | 21.03             | Win32    | `Dolphin Computer Access`                 |
 |`TX Secure Browser`                        | 15.0.0            | Win32    | `Cambium Development`                     |
 | `VitalSourceBookShelf`                    | 10.2.26.0         | Win32    | `VitalSource Technologies Inc`            |
 | `Winbird`                                 | 19                | Win32    | `Winbird Co., Ltd.`                       |
-| `WordQ`                                   | 5.4.23            | Win32    | `Mathetmots`                              |
+| `WordQ`                                   | 5.4.29            | Win32    | `WordQ`                                   |
 | `Zoom`                                    | 5.12.8 (10232)    | Win32    | `Zoom`                                    |
 | `ZoomText Fusion`                         | 2022.2109.10      | Win32    | `Freedom Scientific`                      |
 | `ZoomText Magnifier/Reader`               | 2022.2109.25      | Win32    | `Freedom Scientific`                      |

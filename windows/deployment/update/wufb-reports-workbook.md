@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 04/12/2023
 ms.technology: itpro-updates
 ---
 
@@ -173,7 +173,7 @@ The **Device status** group for driver updates contains the following items:
 
 ## <a name="bkmk_do"></a> Delivery Optimization
 
-The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache) information.
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache) information. For more information, see [Delivery Optimization data in Windows Update for Business reports](/windows/deployment/update/waas-delivery-optimization).
 
 At the top of the report, tiles display the following information:
 

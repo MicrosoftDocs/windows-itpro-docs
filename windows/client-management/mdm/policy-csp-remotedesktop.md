@@ -4,7 +4,7 @@ description: Learn more about the RemoteDesktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AutoSubscription-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Controls the list of URLs that the user should be auto-subscribed to
+Controls the list of URLs that the user should be auto-subscribed to.
 <!-- AutoSubscription-Description-End -->
 
 <!-- AutoSubscription-Editable-Begin -->

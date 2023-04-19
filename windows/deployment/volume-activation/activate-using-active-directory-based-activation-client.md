@@ -10,7 +10,9 @@ ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ms.topic: how-to
-ms.collection: highpri, tier2
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # Activate using Active Directory-based activation

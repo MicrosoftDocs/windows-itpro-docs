@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -239,7 +239,8 @@ This policy setting allows you to specify whether users can run Remote Desktop P
 - If you disable this policy setting, users cannot run .rdp files that are signed with a valid certificate. Additionally, users cannot start an RDP session by directly opening the RDC client and specifying the remote computer name. When a user tries to start an RDP session, the user receives a message that the publisher has been blocked.
 
 > [!NOTE]
-> You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
+> You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+- If you configure this policy setting for the computer, all users on the computer are affected.
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Description-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Editable-Begin -->
@@ -302,7 +303,8 @@ This policy setting allows you to specify whether users can run Remote Desktop P
 - If you disable this policy setting, users cannot run .rdp files that are signed with a valid certificate. Additionally, users cannot start an RDP session by directly opening the RDC client and specifying the remote computer name. When a user tries to start an RDP session, the user receives a message that the publisher has been blocked.
 
 > [!NOTE]
-> You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
+> You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+- If you configure this policy setting for the computer, all users on the computer are affected.
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Description-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Editable-Begin -->
@@ -863,8 +865,7 @@ By default, Remote Desktop Services automatically designates the client default 
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether the Remote Desktop Connection can use hardware acceleration if supported hardware is available. If you use this setting, the Remote Desktop Client will use only software decoding. For example, if you have a problem that you suspect may be related to hardware acceleration, use this setting to disable the acceleration; then, if the problem still occurs, you will know that there are additional issues to investigate.
-- If you disable this setting or leave it not configured, the Remote Desktop client will use hardware accelerated decoding if supported hardware is available.
+This policy setting specifies whether the Remote Desktop Connection can use hardware acceleration if supported hardware is available. If you use this setting, the Remote Desktop Client will use only software decoding. For example, if you have a problem that you suspect may be related to hardware acceleration, use this setting to disable the acceleration; then, if the problem still occurs, you will know that there are additional issues to investigate. If you disable this setting or leave it not configured, the Remote Desktop client will use hardware accelerated decoding if supported hardware is available.
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Description-End -->
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Editable-Begin -->
@@ -924,7 +925,7 @@ Controls whether a user can save passwords using Remote Desktop Connection.
 
 - If you enable this setting the credential saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
 
-- If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection
+- If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.
 <!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Description-End -->
 
 <!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-Editable-Begin -->
@@ -1182,7 +1183,8 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 
 **Note**:
 
-You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
+You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+- If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
 This policy setting overrides the behavior of the "Allow .rdp files from valid publishers and user's default .rdp settings" policy setting.
 
@@ -1249,7 +1251,8 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 
 **Note**:
 
-You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
+You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+- If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
 This policy setting overrides the behavior of the "Allow .rdp files from valid publishers and user's default .rdp settings" policy setting.
 
@@ -1579,7 +1582,8 @@ This policy setting enables system administrators to change the graphics renderi
 
 - If you do not configure this policy setting, Remote Desktop Services sessions on the RD Session Host server use the Microsoft Basic Render Driver as the default adapter. In all other cases, Remote Desktop Services sessions use the hardware graphics renderer by default.
 
-NOTE: The policy setting enables load-balancing of graphics processing units (GPU) on a computer with more than one GPU installed. The GPU configuration of the local session is not affected by this policy setting.
+> [!NOTE]
+> The policy setting enables load-balancing of graphics processing units (GPU) on a computer with more than one GPU installed. The GPU configuration of the local session is not affected by this policy setting.
 <!-- TS_DX_USE_FULL_HWGPU-Description-End -->
 
 <!-- TS_DX_USE_FULL_HWGPU-Editable-Begin -->
@@ -1971,7 +1975,7 @@ Specifies the authentication method that clients must use when attempting to con
 
 To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box. When you do this, users can specify an alternate authentication method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify an alternate authentication method, the authentication method that you specify in this policy setting is used by default.
 
-- If you disable or do not configure this policy setting, the authentication method that is specified by the user is used, if one is specified. If an authentication method is not specified, the Negotiate protocol that is enabled on the client or a smart card can be used for authentication.
+If you disable or do not configure this policy setting, the authentication method that is specified by the user is used, if one is specified. If an authentication method is not specified, the Negotiate protocol that is enabled on the client or a smart card can be used for authentication.
 <!-- TS_GATEWAY_POLICY_AUTH_METHOD-Description-End -->
 
 <!-- TS_GATEWAY_POLICY_AUTH_METHOD-Editable-Begin -->
@@ -2026,6 +2030,7 @@ To allow users to overwrite this policy setting, select the "Allow users to chan
 
 <!-- TS_GATEWAY_POLICY_ENABLE-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting, when Remote Desktop Connection cannot connect directly to a remote computer (an RD Session Host server or a computer with Remote Desktop enabled), the clients will attempt to connect to the remote computer through an RD Gateway server. In this case, the clients will attempt to connect to the RD Gateway server that is specified in the "Set RD Gateway server address" policy setting.
 
 You can enforce this policy setting or you can allow users to overwrite this setting. By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.
@@ -2165,6 +2170,7 @@ If the policy setting is not configured, the policy setting is not specified at 
 **Note**:
 
 1.
+
 - If you enable this policy setting, you must also enable the Configure RD Connection Broker farm name and Configure RD Connection Broker server name policy settings.
 
 2. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
@@ -2982,7 +2988,7 @@ This policy setting determines whether a user will be prompted on the client com
 <!-- Description-Source-ADMX -->
 This policy setting specifies the default connection URL for RemoteApp and Desktop Connections. The default connection URL is a specific connection that can only be configured by using Group Policy. In addition to the capabilities that are common to all connections, the default connection URL allows document file types to be associated with RemoteApp programs.
 
-The default connection URL must be configured in the form of <https://contoso.com/rdweb/Feed/webfeed.aspx>.
+The default connection URL must be configured in the form of< https://contoso.com/rdweb/Feed/webfeed.aspx>.
 
 - If you enable this policy setting, the specified URL is configured as the default connection URL for the user and replaces any existing connection URL. The user cannot change the default connection URL. The user's default logon credentials are used when setting up the default connection URL.
 
@@ -3106,6 +3112,7 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 
 <!-- TS_RemoteControl_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting, administrators can interact with a user's Remote Desktop Services session based on the option selected. Select the desired level of control and permission from the options list:
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
@@ -3171,6 +3178,7 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 
 <!-- TS_RemoteControl_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting, administrators can interact with a user's Remote Desktop Services session based on the option selected. Select the desired level of control and permission from the options list:
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
@@ -3242,8 +3250,7 @@ Depending on the requirements of your users, you can reduce network bandwidth us
 
 If you have a higher than average bandwidth network, you can maximize the utilization of bandwidth by selecting the highest setting for screen capture rate and the highest setting for image quality.
 
-By default, Remote Desktop Connection sessions that use RemoteFX are optimized for a balanced experience over LAN conditions.
-- If you disable or do not configure this policy setting, Remote Desktop Connection sessions that use RemoteFX will be the same as if the medium screen capture rate and the medium image compression settings were selected (the default behavior).
+By default, Remote Desktop Connection sessions that use RemoteFX are optimized for a balanced experience over LAN conditions. If you disable or do not configure this policy setting, Remote Desktop Connection sessions that use RemoteFX will be the same as if the medium screen capture rate and the medium image compression settings were selected (the default behavior).
 <!-- TS_RemoteDesktopVirtualGraphics-Description-End -->
 
 <!-- TS_RemoteDesktopVirtualGraphics-Editable-Begin -->
@@ -3573,7 +3580,7 @@ If you disable Continuous Network Detect, Remote Desktop Protocol will not try t
 
 If you disable Connect Time Detect and Continuous Network Detect, Remote Desktop Protocol will not try to determine the network quality at the connect time; instead it will assume that all traffic to this server originates from a low-speed connection, and it will not try to adapt the user experience to varying network quality.
 
-- If you disable or do not configure this policy setting, Remote Desktop Protocol will spend up to a few seconds trying to determine the network quality prior to the connection, and it will continuously try to adapt the user experience to varying network quality.
+If you disable or do not configure this policy setting, Remote Desktop Protocol will spend up to a few seconds trying to determine the network quality prior to the connection, and it will continuously try to adapt the user experience to varying network quality.
 <!-- TS_SELECT_NETWORK_DETECT-Description-End -->
 
 <!-- TS_SELECT_NETWORK_DETECT-Editable-Begin -->
@@ -3818,8 +3825,7 @@ Do not connect if authentication fails: The client establishes a connection to t
 
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you enable H.264/AVC hardware encoding support for Remote Desktop Connections. When you enable hardware encoding, if an error occurs, we will attempt to use software encoding.
-- If you disable or do not configure this policy, we will always use software encoding.
+This policy setting lets you enable H.264/AVC hardware encoding support for Remote Desktop Connections. When you enable hardware encoding, if an error occurs, we will attempt to use software encoding. If you disable or do not configure this policy, we will always use software encoding.
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-Description-End -->
 
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-Editable-Begin -->
@@ -3995,9 +4001,13 @@ You can also choose not to use an RDP compression algorithm. Choosing not to use
 <!-- TS_SERVER_IMAGE_QUALITY-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the visual quality for remote users when connecting to this computer by using Remote Desktop Connection. You can use this policy setting to balance the network bandwidth usage with the visual quality that is delivered.
+
 - If you enable this policy setting and set quality to Low, RemoteFX Adaptive Graphics uses an encoding mechanism that results in low quality images. This mode consumes the lowest amount of network bandwidth of the quality modes.
+
 - If you enable this policy setting and set quality to Medium, RemoteFX Adaptive Graphics uses an encoding mechanism that results in medium quality images. This mode provides better graphics quality than low quality and uses less bandwidth than high quality.
+
 - If you enable this policy setting and set quality to High, RemoteFX Adaptive Graphics uses an encoding mechanism that results in high quality images and consumes moderate network bandwidth.
+
 - If you enable this policy setting and set quality to Lossless, RemoteFX Adaptive Graphics uses lossless encoding. In this mode, the color integrity of the graphics data is not impacted. However, this setting results in a significant increase in network bandwidth consumption. We recommend that you set this for very specific cases only.
 - If you disable or do not configure this policy setting, RemoteFX Adaptive Graphics uses an encoding mechanism that results in medium quality images.
 <!-- TS_SERVER_IMAGE_QUALITY-Description-End -->
@@ -4055,6 +4065,7 @@ This policy setting allows you to specify the visual quality for remote users wh
 <!-- TS_SERVER_LEGACY_RFX-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure graphics encoding to use the RemoteFX Codec on the Remote Desktop Session Host server so that the sessions are compatible with non-Windows thin client devices designed for Windows Server 2008 R2 SP1. These clients only support the Windows Server 2008 R2 SP1 RemoteFX Codec.
+
 - If you enable this policy setting, users' sessions on this server will only use the Windows Server 2008 R2 SP1 RemoteFX Codec for encoding. This mode is compatible with thin client devices that only support the Windows Server 2008 R2 SP1 RemoteFX Codec.
 - If you disable or do not configure this policy setting, non-Windows thin clients that only support the Windows Server 2008 R2 SP1 RemoteFX Codec will not be able to connect to this server. This policy setting applies only to clients that are using Remote Desktop Protocol (RDP) 7.1, and does not affect clients that are using other RDP versions.
 <!-- TS_SERVER_LEGACY_RFX-Description-End -->

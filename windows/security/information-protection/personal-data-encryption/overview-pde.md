@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.date: 12/13/2022
+ms.date: 03/13/2023
 ---
 
 <!-- Max 5963468 OS 32516487 -->
@@ -35,7 +35,7 @@ ms.date: 12/13/2022
 
 - [FIDO/security key authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
-  - For information on disabling ARSO via Intune, see [Disable Winlogon automatic restart sign-on (ARSO)](configure-pde-in-intune.md#disable-winlogon-automatic-restart-sign-on-arso)).
+  - For information on disabling ARSO via Intune, see [Disable Winlogon automatic restart sign-on (ARSO)](pde-in-intune/intune-disable-arso.md).
 - [Windows Information Protection (WIP)](../windows-information-protection/protect-enterprise-data-using-wip.md)
 - [Hybrid Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - Remote Desktop connections
@@ -44,19 +44,19 @@ ms.date: 12/13/2022
 
 - [Kernel-mode crash dumps  and live dumps disabled](/windows/client-management/mdm/policy-csp-memorydump#memorydump-policies)
 
-   Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps. For information on disabling crash dumps and live dumps via Intune, see [Disable kernel-mode crash dumps and live dumps](configure-pde-in-intune.md#disable-kernel-mode-crash-dumps-and-live-dumps).
+   Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps. For information on disabling crash dumps and live dumps via Intune, see [Disable kernel-mode crash dumps and live dumps](pde-in-intune/intune-disable-memory-dumps.md).
 
 - [Windows Error Reporting (WER) disabled/User-mode crash dumps disabled](/windows/client-management/mdm/policy-csp-errorreporting#errorreporting-disablewindowserrorreporting)
 
-   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For more information on disabling crash dumps via Intune, see [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](configure-pde-in-intune.md#disable-windows-error-reporting-werdisable-user-mode-crash-dumps).
+   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For more information on disabling crash dumps via Intune, see [Disable Windows Error Reporting (WER)/user-mode crash dumps](pde-in-intune/intune-disable-wer.md).
 
 - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
 
-   Hibernation files can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable hibernation. For more information on disabling crash dumps via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+   Hibernation files can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable hibernation. For more information on disabling crash dumps via Intune, see [Disable hibernation](pde-in-intune/intune-disable-hibernation.md).
 
 - [Allowing users to select when a password is required when resuming from connected standby disabled](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
 
-    When this policy isn't configured, the outcome between on-premises Active Directory joined devices and workgroup devices, including native Azure Active Directory joined devices, is different:
+    When this policy isn't configured, the outcome between on-premises Active Directory joined devices and workgroup devices, including Azure Active Directory joined devices, is different:
 
   - On-premises Active Directory joined devices:
 
@@ -66,15 +66,15 @@ ms.date: 12/13/2022
 
     The above is the desired outcome, but PDE isn't supported with on-premises Active Directory joined devices.
 
-  - Workgroup devices, including native Azure AD joined devices:
+  - Workgroup devices, including Azure AD joined devices:
 
     - A user on a Connected Standby device can change the amount of time after the device´s screen turns off before a password is required to wake the device.
 
     - During the time when the screen turns off but a password isn't required, the keys used by PDE to protect content could potentially be exposed. This outcome isn't a desired outcome.
 
-    Because of this undesired outcome, it's recommended to explicitly disable this policy on native Azure AD joined devices instead of leaving it at the default of not configured.
+    Because of this undesired outcome, it's recommended to explicitly disable this policy on Azure AD joined devices instead of leaving it at the default of **Not configured**.
 
-   For information on disabling this policy via Intune, see [Disable allowing users to select when a password is required when resuming from connected standby](configure-pde-in-intune.md#disable-allowing-users-to-select-when-a-password-is-required-when-resuming-from-connected-standby).
+   For information on disabling this policy via Intune, see [Disable allowing users to select when a password is required when resuming from connected standby](pde-in-intune/intune-disable-password-connected-standby.md).
 
 ### Highly recommended
 
@@ -88,7 +88,7 @@ ms.date: 12/13/2022
 
 - [Windows Hello for Business PIN reset service](../../identity-protection/hello-for-business/hello-feature-pin-reset.md)
 
-   Destructive PIN resets will cause keys used by PDE to protect content to be lost. The destructive PIN reset will make any content protected with PDE no longer accessible after a destructive PIN reset. Content protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
+   Destructive PIN resets will cause keys used by PDE to protect content to be lost. A destructive PIN reset will make any content protected with PDE no longer accessible after the destructive PIN reset has occurred. Content protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
 
 - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
@@ -135,7 +135,7 @@ There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-c
 > [!NOTE]
 > Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
 
-For information on enabling PDE via Intune, see [Enable Personal Data Encryption (PDE)](configure-pde-in-intune.md#enable-personal-data-encryption-pde).
+For information on enabling PDE via Intune, see [Enable Personal Data Encryption (PDE)](pde-in-intune/intune-enable-pde.md).
 
 ## Differences between PDE and BitLocker
 

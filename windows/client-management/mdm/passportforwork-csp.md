@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,9 @@ ms.topic: reference
 
 <!-- PassportForWork-Begin -->
 # PassportForWork CSP
+
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- PassportForWork-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -30,6 +33,7 @@ The following list shows the PassportForWork configuration service provider node
 - ./Device/Vendor/MSFT/PassportForWork
   - [{TenantId}](#devicetenantid)
     - [Policies](#devicetenantidpolicies)
+      - [DisablePostLogonProvisioning](#devicetenantidpoliciesdisablepostlogonprovisioning)
       - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
       - [ExcludeSecurityDevices](#devicetenantidpoliciesexcludesecuritydevices)
         - [TPM12](#devicetenantidpoliciesexcludesecuritydevicestpm12)
@@ -102,7 +106,7 @@ This policy specifies the Tenant ID in the format of a Globally Unique Identifie
 
 <!-- Device-{TenantId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 <!-- Device-{TenantId}-Editable-End -->
 
 <!-- Device-{TenantId}-DFProperties-Begin -->
@@ -159,6 +163,55 @@ Root node for policies.
 <!-- Device-{TenantId}-Policies-Examples-End -->
 
 <!-- Device-{TenantId}-Policies-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Begin -->
+#### Device/{TenantId}/Policies/DisablePostLogonProvisioning
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/DisablePostLogonProvisioning
+```
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-OmaUri-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Description-Begin -->
+<!-- Description-Source-DDF -->
+Do not start Windows Hello provisioning after sign-in.
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Description-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Editable-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | bool |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | False |
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-DFProperties-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disabled. |
+| true | Enabled. |
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-AllowedValues-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Examples-End -->
+
+<!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-End -->
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Begin -->
 #### Device/{TenantId}/Policies/EnablePinRecovery
@@ -392,7 +445,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of digits in PIN. |
-| 1 | Requires the use of at least one digits in PIN. |
+| 1 | Requires the use of at least one digit in PIN. |
 | 2 | Does not allow the use of digits in PIN. |
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-AllowedValues-End -->
 
@@ -530,7 +583,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of lowercase letters in PIN. |
-| 1 | Requires the use of at least one lowercase letters in PIN. |
+| 1 | Requires the use of at least one lowercase letter in PIN. |
 | 2 | Does not allow the use of lowercase letters in PIN. |
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-AllowedValues-End -->
 
@@ -653,7 +706,7 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
+Use this policy setting to configure the use of special character in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
 
 A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
@@ -738,7 +791,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of uppercase letters in PIN. |
-| 1 | Requires the use of at least one uppercase letters in PIN. |
+| 1 | Requires the use of at least one uppercase letter in PIN. |
 | 2 | Does not allow the use of uppercase letters in PIN. |
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-AllowedValues-End -->
 
@@ -1187,8 +1240,8 @@ Enhanced Sign-in Security (ESS) isolates both biometric template data and matchi
 
 | Value | Description |
 |:--|:--|
-| 0 | Enhanced sign-in security will be disabled on all systems. If a user already has a secure Windows Hello enrollment, they will lose their enrollment and must reset PIN, and they will have the option to re-enroll in normal face and fingerprint. Peripheral usage will be enabled by disabling Enhanced sign-in security. OS will not attempt to start secure components, even if the secure hardware and software components are present. (not recommended). |
-| 1 (Default) | Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. For systems with one secure modality (face or fingerprint) and one insecure modality (fingerprint or face), only the secure sensor can be used for sign-in and the insecure sensor(s) will be blocked. This includes peripheral devices, which are unsupported and will be unusable. (default and recommended for highest security). |
+| 0 | ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of peripheral Windows Hello capable devices will be allowed, subject to current feature limitations. In addition, with this setting, ESS will be enabled on devices with a mixture of biometric devices, such as an ESS capable FPR and a non-ESS capable camera. (not recommended). |
+| 1 (Default) | ESS will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any peripheral biometric device will be blocked and not available for Windows Hello. (default and recommended for highest security). |
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-AllowedValues-End -->
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-GpMapping-Begin -->
@@ -1778,7 +1831,7 @@ This policy specifies the Tenant ID in the format of a Globally Unique Identifie
 
 <!-- User-{TenantId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+To get the GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 <!-- User-{TenantId}-Editable-End -->
 
 <!-- User-{TenantId}-DFProperties-Begin -->
@@ -1974,7 +2027,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of digits in PIN. |
-| 1 | Requires the use of at least one digits in PIN. |
+| 1 | Requires the use of at least one digit in PIN. |
 | 2 | Does not allow the use of digits in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-AllowedValues-End -->
 
@@ -2112,7 +2165,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of lowercase letters in PIN. |
-| 1 | Requires the use of at least one lowercase letters in PIN. |
+| 1 | Requires the use of at least one lowercase letter in PIN. |
 | 2 | Does not allow the use of lowercase letters in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-AllowedValues-End -->
 
@@ -2264,7 +2317,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of special characters in PIN. |
-| 1 | Requires the use of at least one special characters in PIN. |
+| 1 | Requires the use of at least one special character in PIN. |
 | 2 | Does not allow the use of special characters in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-AllowedValues-End -->
 
@@ -2320,7 +2373,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of uppercase letters in PIN. |
-| 1 | Requires the use of at least one uppercase letters in PIN. |
+| 1 | Requires the use of at least one uppercase letter in PIN. |
 | 2 | Does not allow the use of uppercase letters in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-AllowedValues-End -->
 

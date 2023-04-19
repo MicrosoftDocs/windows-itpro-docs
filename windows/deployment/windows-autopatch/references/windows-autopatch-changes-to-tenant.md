@@ -23,7 +23,7 @@ The following configuration details explain the changes made to your tenant when
 
 Enterprise applications are applications (software) that a business uses to do its work.
 
-Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
+Windows Autopatch creates an enterprise application in your tenant. This enterprise application is used to run the Windows Autopatch service.
 
 | Enterprise application name | Usage | Permissions |
 | ----- | ------ | ----- |
@@ -45,7 +45,8 @@ The following groups target Windows Autopatch configurations to devices and mana
 | ----- | ----- |
 | Modern Workplace-All | All Modern Workplace users |
 | Modern Workplace - Windows 11 Pre-Release Test Devices | Device group for Windows 11 Pre-Release testing. |
-| Modern Workplace Devices-All | All Modern Workplace devices |
+| Modern Workplace Devices-All | All Autopatch devices |
+| Modern Workplace Devices-Virtual Machine | All Autopatch virtual devices |
 | Modern Workplace Devices-Windows Autopatch-Test | Deployment ring for testing update deployments prior production rollout |
 | Modern Workplace Devices-Windows Autopatch-First | First production deployment ring for early adopters |
 | Modern Workplace Devices-Windows Autopatch-Fast | Fast deployment ring for quick rollout and adoption |

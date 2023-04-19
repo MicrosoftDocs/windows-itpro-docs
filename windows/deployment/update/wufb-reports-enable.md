@@ -69,6 +69,7 @@ Use one of the following methods to enroll into Windows Update for Business repo
    > [!Tip]
    > If a `403 Forbidden` error occurs, verify the account you're using has [permissions](wufb-reports-prerequisites.md#permissions) to enroll into Windows Update for Business reports.
 1. The initial setup can take up to 24 hours. During this time, the workbook will display that it's **Waiting for Windows Update for Business reports data**.
+   - Enrolling into Windows Update for Business reports doesn't influence the rate that required data is uploaded from devices. Device connectivity to the internet and how active the device is influences how long it will take before the device appears in reporting. Devices that are active and connected to the internet daily can expect to be fully uploaded within one week (usually less than 72 hours). Devices that are less active can take up to two weeks before data is fully available. 
 
 ##### <a name="bkmk_admin-center"></a> Enroll through the Microsoft 365 admin center
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->

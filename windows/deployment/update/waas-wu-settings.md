@@ -6,10 +6,12 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.collection: highpri, tier2
+ms.topic: how-to
+ms.collection:
+  - highpri
+  - tier2
 ms.technology: itpro-updates
-ms.date: 03/28/2023
+ms.date: 04/25/2023
 ---
 
 # Manage additional Windows Update settings
@@ -32,8 +34,8 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
-| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
-| | [Allow Windows updates to install before initial user sign-in](#allow-windows-update-before-initial-sign-in) | Windows 11 version 22H2 <!--7679187-->|
+| |  [Windows Update notifications display organization name](#display-organization-name-in-windows-update-notifications) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
+|  [Allow Windows updates to install before initial user sign-in](#allow-windows-update-before-initial-sign-in) | Windows 11 version 22H2 with 2023-04 Cumulative Update Preview, or later <!--7679187-->|
 
 
 >[!IMPORTANT]
@@ -252,7 +254,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
    This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
 
-## <a name="bkmk_display-name"> </a> Display organization name in Windows Update notifications
+## Display organization name in Windows Update notifications
 <!--6286260-->
 When Windows 11 clients are associated with an Azure AD tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
   
@@ -282,7 +284,7 @@ New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWO
 ```
 
 ## <a name="allow-windows-update-before-initial-sign-in"> </a> Allow Windows updates to install before initial user sign-in
-*(Starting in Windows 11, version 22H2)* <!--7679187-->
+*(Starting in Windows 11, version 22H2 with 2023-04 Cumulative Update Preview, or later)* <!--7679187-->
 
 On new devices, Windows Update doesn't begin installing background updates until a user has completed the Out of Box Experience (OOBE) and signs in for the first time. In many cases, the user signs in immediately after completing the OOBE. However, some VM-based solutions provision a device and automate the first user experience. These VMs may not be immediately assigned to a user so they won't see an initial sign-in until several days later.  
 

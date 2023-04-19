@@ -4,7 +4,7 @@ description: Learn more about the ADMX_StartMenu Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,6 +42,7 @@ ms.topic: reference
 
 <!-- AddSearchInternetLinkInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, a "Search the Internet" link is shown when the user performs a search in the start menu search box. This button launches the default browser with the search terms.
 
 - If you disable this policy, there will not be a "Search the Internet" link when the user performs a search in the start menu search box.
@@ -173,6 +174,7 @@ This policy also does not clear items that the user may have pinned to the Jump 
 
 <!-- ClearRecentProgForNewUserInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting, the recent programs list in the start menu will be blank for each new user.
 
 - If you disable or do not configure this policy, the start menu recent programs list will be pre-populated with programs for each new user.
@@ -231,6 +233,7 @@ This policy also does not clear items that the user may have pinned to the Jump 
 
 <!-- ClearTilesOnExit-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the system deletes tile notifications when the user logs on. As a result, the Tiles in the start view will always show their default content when the user logs on. In addition, any cached versions of these notifications will be cleared when the user logs on.
 
 - If you disable or do not configure this setting, the system retains notifications, and when a user logs on, the tiles appear just as they did when the user logged off, including the history of previous notifications for each tile.
@@ -550,7 +553,7 @@ This setting makes it easier for users to distinguish between programs that are 
 
 Partially installed programs include those that a system administrator assigns using Windows Installer and those that users have configured for full installation upon first use.
 
-- If you disable this setting or do not configure it, all Start menu shortcuts appear as black text.
+If you disable this setting or do not configure it, all Start menu shortcuts appear as black text.
 
 > [!NOTE]
 > Enabling this setting can make the Start menu slow to open.
@@ -673,7 +676,7 @@ Disables personalized menus.
 
 Windows personalizes long menus by moving recently used items to the top of the menu and hiding items that have not been used recently. Users can display the hidden items by clicking an arrow to extend the menu.
 
-- If you enable this setting, the system does not personalize menus. All menu items appear and remain in standard order. Also, this setting removes the "Use Personalized Menus" option so users do not try to change the setting while a setting is in effect.
+If you enable this setting, the system does not personalize menus. All menu items appear and remain in standard order. Also, this setting removes the "Use Personalized Menus" option so users do not try to change the setting while a setting is in effect.
 
 > [!NOTE]
 > Personalized menus require user tracking. If you enable the "Turn off user tracking" setting, the system disables user tracking and personalized menus and ignores this setting.
@@ -868,7 +871,7 @@ The notification area is located in the task bar, generally at the bottom of the
 
 - If you disable this setting, the system notification area will always collapse notifications.
 
-If you do not configure it, the user can choose if they want notifications collapsed.
+- If you do not configure it, the user can choose if they want notifications collapsed.
 <!-- NoAutoTrayNotify-Description-End -->
 
 <!-- NoAutoTrayNotify-Editable-Begin -->
@@ -1115,8 +1118,7 @@ This policy setting prevents users from performing the following commands from t
 <!-- Description-Source-ADMX -->
 Removes items in the All Users profile from the Programs menu on the Start menu.
 
-By default, the Programs menu contains items from the All Users profile and items from the user's profile.
-- If you enable this setting, only items in the user's profile appear in the Programs menu.
+By default, the Programs menu contains items from the All Users profile and items from the user's profile. If you enable this setting, only items in the user's profile appear in the Programs menu.
 
 > [!TIP]
 > To see the Program menu items in the All Users profile, on the system drive, go to ProgramData\Microsoft\Windows\Start Menu\Programs.
@@ -1311,6 +1313,7 @@ This policy setting affects the specified user interface elements only. It does 
 
 <!-- NoGamesFolderOnStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy the start menu will not show a link to the Games folder.
 
 - If you disable or do not configure this policy, the start menu will show a link to the Games folder, unless the user chooses to remove it in the start menu control panel.
@@ -1499,6 +1502,7 @@ This policy setting does not prevent users from pinning programs to the Start Me
 
 <!-- NoMoreProgramsList-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the Start Menu will either collapse or remove the all apps list from the Start menu.
 
 Selecting "Collapse" will not display the app list next to the pinned tiles in Start. An "All apps" button will be displayed on Start to open the all apps list. This is equivalent to setting the "Show app list in Start" in Settings to Off.
@@ -1628,6 +1632,7 @@ Also, see the "Disable programs on Settings menu" and "Disable Control Panel" po
 
 <!-- NoPinnedPrograms-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the "Pinned Programs" list is removed from the Start menu. Users cannot pin programs to the Start menu.
 
 In Windows XP and Windows Vista, the Internet and email checkboxes are removed from the 'Customize Start Menu' dialog.
@@ -1692,7 +1697,7 @@ Removes the Recent Items menu from the Start menu. Removes the Documents menu fr
 
 The Recent Items menu contains links to the non-program files that users have most recently opened. It appears so that users can easily reopen their documents.
 
-- If you enable this setting, the system saves document shortcuts but does not display the Recent Items menu in the Start Menu, and users cannot turn the menu on.
+If you enable this setting, the system saves document shortcuts but does not display the Recent Items menu in the Start Menu, and users cannot turn the menu on.
 
 If you later disable the setting, so that the Recent Items menu appears in the Start Menu, the document shortcuts saved before the setting was enabled and while it was in effect appear in the Recent Items menu.
 
@@ -1973,6 +1978,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 
 <!-- NoSearchCommInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy the start menu search box will not search for communications.
 
 - If you disable or do not configure this policy, the start menu will search for communications, unless the user chooses not to in the start menu control panel.
@@ -2031,6 +2037,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 
 <!-- NoSearchComputerLinkInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, the "See all results" link will not be shown when the user performs a search in the start menu search box.
 
 - If you disable or do not configure this policy, the "See all results" link will be shown when the user performs a search in the start menu search box.
@@ -2089,6 +2096,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 
 <!-- NoSearchEverywhereLinkInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
 
 - If you disable or do not configure this policy, a "See more results" link will be shown when the user performs a search in the start menu search box. If a 3rd party protocol handler is installed, a "Search Everywhere" link will be shown instead of the "See more results" link.
@@ -2147,9 +2155,11 @@ Also, users with extended keyboards will no longer be able to display the Run di
 
 <!-- NoSearchFilesInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting the Start menu search box will not search for files.
 
 - If you disable or do not configure this policy setting, the Start menu will search for files, unless the user chooses not to do so directly in Control Panel.
+
 - If you enable this policy, a "See more results" / "Search Everywhere" link will not be shown when the user performs a search in the start menu search box.
 <!-- NoSearchFilesInStartMenu-Description-End -->
 
@@ -2206,6 +2216,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 
 <!-- NoSearchInternetInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy the start menu search box will not search for internet history or favorites.
 
 - If you disable or do not configure this policy, the start menu will search for for internet history or favorites, unless the user chooses not to in the start menu control panel.
@@ -2264,6 +2275,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 
 <!-- NoSearchProgramsInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting the Start menu search box will not search for programs or Control Panel items.
 
 - If you disable or do not configure this policy setting, the Start menu search box will search for programs and Control Panel items, unless the user chooses not to do so directly in Control Panel.
@@ -2822,6 +2834,7 @@ This policy setting allows you to remove the Downloads link from the Start Menu.
 
 <!-- NoStartMenuHomegroup-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy the Start menu will not show a link to Homegroup. It also removes the homegroup item from the Start Menu options. As a result, users cannot add the homegroup link to the Start Menu.
 
 - If you disable or do not configure this policy, users can use the Start Menu options to add or remove the homegroup link from the Start Menu.
@@ -3194,7 +3207,7 @@ Taskbar grouping consolidates similar applications when there is no room on the 
 
 - If you enable this setting, it prevents the taskbar from grouping items that share the same program name. By default, this setting is always enabled.
 
-If you disable or do not configure it, items on the taskbar that share the same program are grouped together. The users have the option to disable grouping if they choose.
+- If you disable or do not configure it, items on the taskbar that share the same program are grouped together. The users have the option to disable grouping if they choose.
 <!-- NoTaskGrouping-Description-End -->
 
 <!-- NoTaskGrouping-Editable-Begin -->
@@ -3447,9 +3460,10 @@ Description: The notification area is located at the far right end of the task b
 
 <!-- NoUninstallFromStart-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, users cannot uninstall apps from Start.
 
-- If you disable this setting or do not configure it, users can access the uninstall command from Start
+- If you disable this setting or do not configure it, users can access the uninstall command from Start.
 <!-- NoUninstallFromStart-Description-End -->
 
 <!-- NoUninstallFromStart-Editable-Begin -->
@@ -3505,6 +3519,7 @@ Description: The notification area is located at the far right end of the task b
 
 <!-- NoUserFolderOnStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy the start menu will not show a link to the user's storage folder.
 
 - If you disable or do not configure this policy, the start menu will display a link, unless the user chooses to remove it in the start menu control panel.
@@ -3629,7 +3644,7 @@ This policy setting allows you to remove links and access to Windows Update.
 
 - If you enable this policy setting, users are prevented from connecting to the Windows Update Web site.
 
-Enabling this policy setting blocks user access to the Windows Update Web site at <https://windowsupdate.microsoft.com>. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
+Enabling this policy setting blocks user access to the Windows Update Web site at< https://windowsupdate.microsoft.com>. Also, the policy setting removes the Windows Update hyperlink from the Start menu and from the Tools menu in Internet Explorer.
 
 Windows Update, the online extension of Windows, offers software updates to keep a user's system up-to-date. The Windows Update Product Catalog determines any system files, security fixes, and Microsoft updates that users need and shows the newest versions available for download.
 
@@ -3814,6 +3829,7 @@ This policy setting controls whether the QuickLaunch bar is displayed in the Tas
 
 <!-- RemoveUnDockPCButton-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the "Undock PC" button is removed from the simple Start Menu, and your PC cannot be undocked.
 
 - If you disable this setting or do not configure it, the "Undock PC" button remains on the simple Start menu, and your PC can be undocked.
@@ -3995,6 +4011,7 @@ This policy setting shows or hides the "Run as different user" command on the St
 
 <!-- ShowRunInStartMenu-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the Run command is added to the Start menu.
 - If you disable or do not configure this setting, the Run command is not visible on the Start menu by default, but it can be added from the Taskbar and Start menu properties. If the Remove Run link from Start Menu policy is set, the Add the Run command to the Start menu policy has no effect.
 <!-- ShowRunInStartMenu-Description-End -->

@@ -4,7 +4,7 @@ description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 03/23/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -601,7 +601,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent users from being able to open context menus in the Start Menu.
 
-- If you enable this policy, then invocations of context menus within the Start Menu will be ignored.
+If you enable this policy, then invocations of context menus within the Start Menu will be ignored.
 <!-- DisableContextMenus-Description-End -->
 
 <!-- DisableContextMenus-Editable-Begin -->
@@ -668,7 +668,7 @@ This policy setting removes Quick Settings from the bottom right area on the tas
 
 The quick settings area is located at the left of the clock in the taskbar and includes icons for current network and volume.
 
-- If this setting is enabled, Quick Settings is not displayed in the quick settings area.
+If this setting is enabled, Quick Settings is not displayed in the quick settings area.
 
 A reboot is required for this policy setting to take effect.
 <!-- DisableControlCenter-Description-End -->
@@ -732,6 +732,7 @@ A reboot is required for this policy setting to take effect.
 
 <!-- DisableEditingQuickSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, the user will be unable to modify Quick Settings.
 
 - If you disable or don't configure this policy setting, the user will be able to edit Quick Settings, such as pinning or unpinning buttons.
@@ -801,6 +802,7 @@ A reboot is required for this policy setting to take effect.
 
 <!-- ForceStartSize-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy and set it to Start menu or full screen Start, Start will be that size and users will be unable to change the size of Start in Settings.
 
 - If you disable or don't configure this policy setting, Windows will automatically select the size based on hardware form factor and users will be able to change the size of Start in Settings.
@@ -993,6 +995,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 <!-- HideFrequentlyUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this setting, the frequently used programs list is removed from the Start menu.
 
 - If you disable this setting or do not configure it, the frequently used programs list remains on the simple Start menu.
@@ -1174,7 +1177,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 <!-- Description-Source-ADMX -->
 This policy allows you to remove the People Bar from the taskbar and disables the My People experience.
 
-- If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users will not be able to pin people to the taskbar.
+If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users will not be able to pin people to the taskbar.
 <!-- HidePeopleBar-Description-End -->
 
 <!-- HidePeopleBar-Editable-Begin -->
@@ -1363,7 +1366,7 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent the Start Menu from displaying a list of recently installed applications.
 
-- If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
+If you enable this policy, the Start Menu will no longer display the "Recently added" list. The corresponding setting will also be disabled in Settings.
 <!-- HideRecentlyAddedApps-Description-End -->
 
 <!-- HideRecentlyAddedApps-Editable-Begin -->
@@ -1444,7 +1447,7 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 This policy allows you to prevent the Start Menu from displaying a list of recommended applications and files.
 
-- If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
+If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.
 <!-- HideRecommendedSection-Description-End -->
 
 <!-- HideRecommendedSection-Editable-Begin -->
@@ -1489,6 +1492,68 @@ This policy allows you to prevent the Start Menu from displaying a list of recom
 <!-- HideRecommendedSection-Examples-End -->
 
 <!-- HideRecommendedSection-End -->
+
+<!-- HideRecoPersonalizedSites-Begin -->
+## HideRecoPersonalizedSites
+
+<!-- HideRecoPersonalizedSites-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+<!-- HideRecoPersonalizedSites-Applicability-End -->
+
+<!-- HideRecoPersonalizedSites-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Start/HideRecoPersonalizedSites
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/Start/HideRecoPersonalizedSites
+```
+<!-- HideRecoPersonalizedSites-OmaUri-End -->
+
+<!-- HideRecoPersonalizedSites-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to hide the personalized websites in the recommended section of the Start Menu. If you enable this policy setting, the Start Menu will no longer show personalized website recommendations in the recommended section of the start menu.
+<!-- HideRecoPersonalizedSites-Description-End -->
+
+<!-- HideRecoPersonalizedSites-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideRecoPersonalizedSites-Editable-End -->
+
+<!-- HideRecoPersonalizedSites-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideRecoPersonalizedSites-DFProperties-End -->
+
+<!-- HideRecoPersonalizedSites-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Personalized Website Recommendations shown. |
+| 1 | Personalized Website Recommendations hidden. |
+<!-- HideRecoPersonalizedSites-AllowedValues-End -->
+
+<!-- HideRecoPersonalizedSites-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideRecoPersonalizedSites |
+| Path | StartMenu > AT > StartMenu |
+<!-- HideRecoPersonalizedSites-GpMapping-End -->
+
+<!-- HideRecoPersonalizedSites-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideRecoPersonalizedSites-Examples-End -->
+
+<!-- HideRecoPersonalizedSites-End -->
 
 <!-- HideRestart-Begin -->
 ## HideRestart
@@ -1759,7 +1824,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 <!-- Description-Source-ADMX -->
 This policy setting allows you to hide the TaskView button.
 
-- If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
+If you enable this policy setting, the TaskView button will be hidden and the Settings toggle will be disabled.
 <!-- HideTaskViewButton-Description-End -->
 
 <!-- HideTaskViewButton-Editable-Begin -->
@@ -1931,6 +1996,7 @@ To validate this policy, do the following steps:
 <!-- NoPinningToTaskbar-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to control pinning programs to the Taskbar.
+
 - If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
 - If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
 <!-- NoPinningToTaskbar-Description-End -->
@@ -1993,6 +2059,7 @@ To validate this policy, do the following steps:
 
 <!-- ShowOrHideMostUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
 
 Selecting "Show" will force the "Most used" list to be shown, and user cannot change to hide it using the Settings app.
@@ -2064,6 +2131,7 @@ Selecting "Not Configured", or if you disable or do not configure this policy se
 
 <!-- SimplifyQuickSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
+
 - If you enable this policy, Quick Settings will be reduced to only having the WiFi, Bluetooth, Accessibility, and VPN buttons; the brightness and volume sliders; and battery indicator and link to the Settings app.
 
 - If you disable or don't configure this policy setting, the regular Quick Settings layout will appear whenever Quick Settings is invoked.
@@ -2140,7 +2208,7 @@ To use this setting, you must first manually configure a device's Start layout t
 
 Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file is not available when the user logs on, the layout won't be changed. Users cannot customize their Start screen while this setting is enabled.
 
-- If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.
+If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.
 <!-- StartLayout-Description-End -->
 
 <!-- StartLayout-Editable-Begin -->
