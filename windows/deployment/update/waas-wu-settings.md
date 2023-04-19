@@ -35,7 +35,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
 | |  [Windows Update notifications display organization name](#display-organization-name-in-windows-update-notifications) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
-| | [Allow Windows updates to install before initial user sign-in](#allow-windows-updates-to-install-before-initial-user-sign-in) | Windows 11 version 22H2 with 2023-04 Cumulative Update Preview, or a later cumulative update <!--7679187-->|
+| | [Allow Windows updates to install before initial user sign-in](#allow-windows-updates-to-install-before-initial-user-sign-in) (registry only)| Windows 11 version 22H2 with 2023-04 Cumulative Update Preview, or a later cumulative update <!--7679187-->|
 
 
 >[!IMPORTANT]
