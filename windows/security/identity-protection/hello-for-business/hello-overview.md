@@ -65,6 +65,8 @@ Imagine that someone is looking over your shoulder as you get money from an ATM 
 
 Windows Hello helps protect user identities and user credentials. Because the user doesn't enter a password (except during provisioning), it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Windows Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are protected by TPMs.
 
+[!INCLUDE [windows-hello-for-business](../../../../includes/licensing/security/windows-hello-for-business.md)]
+
 ## How Windows Hello for Business works: key points
 
 - Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
