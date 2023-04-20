@@ -152,7 +152,7 @@ Try these steps:
 4. If the number of peers is zero and **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices aren't reporting the same public IP address, configure **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[DOGroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**, to fix this.
 
 > [!NOTE]
-> Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+> Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of potential peers per file, including which peers are successfully connected and the total bytes sent or recieved from each peer.
 
 ### Clients aren't able to connect to peers offered by the cloud service
 
