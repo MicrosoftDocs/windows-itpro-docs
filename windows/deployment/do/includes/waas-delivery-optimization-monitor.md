@@ -98,7 +98,17 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download
 
-**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns  a real-time list of potential peers per file, including which peers are successfully connected and the total bytes sent or received from each peer.
+
+| Key | Value |
+| --- | --- |
+| IP | Device IP address |
+| PeerType | The type of peer used (LAN/Group/Internet/LinkLocal), determined by the Delivery Optimization Service, except for the LinkLocal option, which uses the DNS-SD protocol. |
+| ConnectionEstablished | True/False to indicate if peer is connected |
+| BytesSent | Bytes sent to/from the peer on the current connection |
+| BytesReceived | Bytes received to/from the peer on the current connection |
+| UploadRateBytes | Average value of upload rates on the current connection, over the past 20 seconds |
+| DownloadRateBytes | Average value of download rates on the current connection, over the past 20 seconds |
 
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
