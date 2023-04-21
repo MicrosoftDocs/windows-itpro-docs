@@ -3069,6 +3069,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallFirstWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- first week of the month  [ScheduledInstallFirstWeek](#scheduledinstallfirstweek)   = Days 1-7
+- second week of the month [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) = Days 8-14
+- third week of the month  [ScheduledInstallThirdWeek](#scheduledinstallthirdweek)   = Days 15-21
+- fourth week of the month [ScheduledInstallFourthWeek](#scheduledinstallfourthweek) = Days 22-31
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday) it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#ScheduledInstallSecondWeek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. **Important**, if the first day of the month is a Wednesday, the 2nd Wednesday will be 6 days before 2nd Tuesday. If the device happens to be unavailable at this scheduled time, it can postpone installation of updates until the next month if it misses the install window for a given month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallFirstWeek-Editable-End -->
@@ -3167,6 +3176,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallFourthWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- first week of the month  [ScheduledInstallFirstWeek](#scheduledinstallfirstweek)   = Days 1-7
+- second week of the month [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) = Days 8-14
+- third week of the month  [ScheduledInstallThirdWeek](#scheduledinstallthirdweek)   = Days 15-21
+- fourth week of the month [ScheduledInstallFourthWeek](#scheduledinstallfourthweek) = Days 22-31
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday) it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#ScheduledInstallSecondWeek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. **Important**, if the first day of the month is a Wednesday, the 2nd Wednesday will be 6 days before 2nd Tuesday. If the device happens to be unavailable at this scheduled time, it can postpone installation of updates until the next month if it misses the install window for a given month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallFourthWeek-Editable-End -->
@@ -3265,6 +3283,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallSecondWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- first week of the month  [ScheduledInstallFirstWeek](#scheduledinstallfirstweek)   = Days 1-7
+- second week of the month [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) = Days 8-14
+- third week of the month  [ScheduledInstallThirdWeek](#scheduledinstallthirdweek)   = Days 15-21
+- fourth week of the month [ScheduledInstallFourthWeek](#scheduledinstallfourthweek) = Days 22-31
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday) it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#ScheduledInstallSecondWeek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. **Important**, if the first day of the month is a Wednesday, the 2nd Wednesday will be 6 days before 2nd Tuesday. If the device happens to be unavailable at this scheduled time, it can postpone installation of updates until the next month if it misses the install window for a given month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallSecondWeek-Editable-End -->
@@ -3363,6 +3390,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallThirdWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- first week of the month  [ScheduledInstallFirstWeek](#scheduledinstallfirstweek)   = Days 1-7
+- second week of the month [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) = Days 8-14
+- third week of the month  [ScheduledInstallThirdWeek](#scheduledinstallthirdweek)   = Days 15-21
+- fourth week of the month [ScheduledInstallFourthWeek](#scheduledinstallfourthweek) = Days 22-31
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday) it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#ScheduledInstallSecondWeek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. **Important**, if the first day of the month is a Wednesday, the 2nd Wednesday will be 6 days before 2nd Tuesday. If the device happens to be unavailable at this scheduled time, it can postpone installation of updates until the next month if it misses the install window for a given month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallThirdWeek-Editable-End -->
