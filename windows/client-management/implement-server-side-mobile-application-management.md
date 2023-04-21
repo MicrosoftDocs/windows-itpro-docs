@@ -6,15 +6,19 @@ ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 08/03/2022
+ms.date: 04/05/2023
 ms.reviewer:
 manager: aaroncz
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
-
 
 # Support for mobile application management on Windows
 
-The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10, version 1703.
+The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP).
+
+[!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
 
 ## Integration with Azure AD
 
@@ -22,7 +26,7 @@ MAM on Windows is integrated with Azure Active Directory (Azure AD) identity ser
 
 MAM enrollment is integrated with adding a work account flow to a personal device. If both MAM and Azure AD-integrated MDM services are provided in an organization, a user's personal devices will be enrolled to MAM or MDM, depending on the user's actions. If a user adds their work or school Azure AD account as a secondary account to the machine, their device will be enrolled to MAM. If a user joins their device to Azure AD, it will be enrolled to MDM. In general, a device that has a personal account as its primary account is considered a personal device and should be enrolled to MAM. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.
 
-On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD-integrated application, such as the next update of Microsoft Office 365 or Microsoft Office Mobile. Alternatively, users can add an Azure AD account from **Settings > Accounts > Access work or school**.
+On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD-integrated application, such as the next update of Microsoft 365 apps. Alternatively, users can add an Azure AD account from **Settings > Accounts > Access work or school**.
 
 Regular non-admin users can enroll to MAM.
 
@@ -34,15 +38,15 @@ To make applications WIP-aware, app developers need to include the following dat
 
 ``` syntax
 // Mark this binary as Allowed for WIP (EDP) purpose
-    MICROSOFTEDPAUTOPROTECTIONALLOWEDAPPINFO EDPAUTOPROTECTIONALLOWEDAPPINFOID
-     BEGIN
-         0x0001
-     END
+MICROSOFTEDPAUTOPROTECTIONALLOWEDAPPINFO EDPAUTOPROTECTIONALLOWEDAPPINFOID
+  BEGIN
+      0x0001
+  END
 ```
 
 ## Configuring an Azure AD tenant for MAM enrollment
 
-MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. With Azure AD in Windows 10, version 1703, onward, the same cloud-based Management MDM app will support both MDM and MAM enrollments. If you've already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. The screenshot below illustrates the management app for an IT admin configuration.
+MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. The same cloud-based Management MDM app in Azure AD will support both MDM and MAM enrollments. If you've already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. The screenshot below illustrates the management app for an IT admin configuration.
 
 :::image type="content" alt-text="Mobile application management app." source="images/implement-server-side-mobile-application-management.png":::
 
@@ -83,12 +87,12 @@ MAM on Windows supports the following configuration service providers (CSPs). Al
 
 - [AppLocker CSP](mdm/applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
 - [ClientCertificateInstall CSP](mdm/clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.
-- [DeviceStatus CSP](mdm/devicestatus-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
+- [DeviceStatus CSP](mdm/devicestatus-csp.md) required for Conditional Access support.
 - [DevInfo CSP](mdm/devinfo-csp.md).
 - [DMAcc CSP](mdm/dmacc-csp.md).
 - [DMClient CSP](mdm/dmclient-csp.md) for polling schedules configuration and MDM discovery URL.
 - [EnterpriseDataProtection CSP](mdm/enterprisedataprotection-csp.md) has Windows Information Protection policies.
-- [Health Attestation CSP](mdm/healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
+- [Health Attestation CSP](mdm/healthattestation-csp.md) required for Conditional Access support.
 - [PassportForWork CSP](mdm/passportforwork-csp.md) for Windows Hello for Business PIN management.
 - [Policy CSP](mdm/policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas.
 - [Reporting CSP](mdm/reporting-csp.md) for retrieving Windows Information Protection logs.
@@ -127,13 +131,3 @@ In the process of changing MAM enrollment to MDM, MAM policies will be removed f
 - EDP CSP RevokeOnMDMHandoff is set to false.
 
 If the MAM device is properly configured for MDM enrollment, then the Enroll only to device management link will be displayed in **Settings > Accounts > Access work or school**. The user can select this link, provide their credentials, and the enrollment will be changed to MDM. Their Azure AD account won't be affected.
-
-## Skype for Business compliance with MAM
-
-We've updated Skype for Business to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature.
-
-|Update channel|Primary purpose|LOB Tattoo availability|Default update channel for the products|
-|--- |--- |--- |--- |
-|[Current channel](/deployoffice/overview-update-channels#BKMK_CB)|Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel.|March 9 2017|Visio Pro for Office 365<br>Project Desktop Client<br>Microsoft 365 Apps for business (the version of Office that comes with some Microsoft 365 plans, such as Business Premium.)|
-|[Deferred channel](/deployoffice/overview-update-channels#BKMK_CBB)|Provide users with new features of Office only a few times a year.|October 10 2017|Microsoft 365 Apps for enterprise|
-|[First release for deferred channel](/deployoffice/overview-update-channels#BKMK_FRCBB)|Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel.|June 13 2017||
