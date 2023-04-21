@@ -16,4 +16,4 @@ ms.technology: itpro-security
 
 # Windows security licensing requirements
 
-[!INCLUDE [_licensing-requirements](../../whats-new/licensing/includes/_licensing-requirements.md)]
+[!INCLUDE [_licensing-requirements](../../../includes/licensing/security/_licensing-requirements.md)]

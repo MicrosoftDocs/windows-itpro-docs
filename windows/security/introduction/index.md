@@ -3,6 +3,8 @@ title: Introduction to Windows security
 description: System security book.
 ms.date: 04/10/2023
 ms.topic: tutorial
+ms.author: paoloma
+author: paolomatarazzo
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -41,7 +43,7 @@ In Windows 11, hardware and software work together to protect the operating syst
 
 To help keep personal and business information protected and private, Windows 11 has multiple layers of application security that safeguard critical data and code integrity. Application isolation and controls, code integrity, privacy controls, and least-privilege principles enable developers to build in security and privacy from the ground up. This integrated security protects against breaches and malware, helps keep data private, and gives IT administrators the controls they need.
 
-In Windows 11, [Microsoft Defender Application Guard](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-app-guard) <sup>[\[2\]](#note2)</sup> uses Hyper-V virtualization technology to isolate untrusted websites and Microsoft Office files in containers, separate from and unable to access the host operating system and enterprise data. To protect privacy, Windows 11 also provides more controls over which apps and features can collect and use data such as the device's location, or access resources like camera and microphone.
+In Windows 11, [Microsoft Defender Application Guard](/windows-hardware/design/device-experiences/oem-app-guard) <sup>[\[2\]](#note2)</sup> uses Hyper-V virtualization technology to isolate untrusted websites and Microsoft Office files in containers, separate from and unable to access the host operating system and enterprise data. To protect privacy, Windows 11 also provides more controls over which apps and features can collect and use data such as the device's location, or access resources like camera and microphone.
 
 ## Secured identities
 
