@@ -4,7 +4,7 @@ description: Find out how to manage Device Installation Restrictions with Group 
 ms.prod: windows-client
 author: vinaypamnani-msft
 ms.date: 09/14/2021
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -62,7 +62,7 @@ You can ensure that users install only those devices that your technical support
 
 ## Scenario Overview
 
-The scenarios presented in this guide illustrate how you can control device installation and usage on the computers that you manage. The scenarios use Group Policy on a local machine to simplify using the procedures in a lab environment. In an environment where you manage multiple client computers, you should apply these settings using Group Policy.. With Group Policy deployed by Active Directory, you can apply settings to all computers that are members of a domain or an organizational unit in a domain. For more information about how to use Group Policy to manage your client computers, see Group Policy at the Microsoft Web site.
+The scenarios presented in this guide illustrate how you can control device installation and usage on the computers that you manage. The scenarios use Group Policy on a local machine to simplify using the procedures in a lab environment. In an environment where you manage multiple client computers, you should apply these settings using Group Policy. With Group Policy deployed by Active Directory, you can apply settings to all computers that are members of a domain or an organizational unit in a domain. For more information about how to use Group Policy to manage your client computers, see Group Policy at the Microsoft Web site.
 
 Group Policy guides:
 
@@ -83,7 +83,7 @@ In this scenario, you'll combine what you learned from both scenario #1 and scen
 
 ### Scenario #4: Prevent installation of a specific USB device
 
-This scenario, although similar to scenario #2, brings another layer of complexity - how does device connectivity work in the PnP tree. The administrator wants to prevent standard users from installing a specific USB device. By the end of the scenario, you should understand the way devices are nested in layers under the PnP device connectivity tree.
+This scenario, although similar to scenario #2, brings another layer of complexity—how does device connectivity work in the PnP tree. The administrator wants to prevent standard users from installing a specific USB device. By the end of the scenario, you should understand the way devices are nested in layers under the PnP device connectivity tree.
 
 ### Scenario #5: Prevent installation of all USB devices while allowing an installation of only an authorized USB thumb drive
 
@@ -95,7 +95,7 @@ The following sections provide a brief overview of the core technologies discuss
 
 ### Device Installation in Windows
 
-A device is a piece of hardware with which Windows interacts to perform some function, or in a more technical definition - it's a single instance of a hardware component with a unique representation in the Windows Plug and Play subsystem. Windows can communicate with a device only through a piece of software called a device-driver (also known as a _driver_). To install a driver, Windows detects the device, recognizes its type, and then finds the driver that matches that type.
+A device is a piece of hardware with which Windows interacts to perform some function, or in a more technical definition—it's a single instance of a hardware component with a unique representation in the Windows Plug and Play subsystem. Windows can communicate with a device only through a piece of software called a device-driver (also known as a _driver_). To install a driver, Windows detects the device, recognizes its type, and then finds the driver that matches that type.
 
 When Windows detects a device that has never been installed on the computer, the operating system queries the device to retrieve its list of device identification strings. A device usually has multiple device identification strings, which the device manufacturer assigns. The same device identification strings are included in the .inf file (also known as an _INF_) that is part of the driver package. Windows chooses which driver package to install by matching the device identification strings retrieved from the device to those strings included with the driver packages.
 
@@ -260,7 +260,7 @@ To find device identification strings using Device Manager
 
     !['Details' tab.](images/device-installation-dm-printer-details-screen.png)<br/>_Open the 'Details' tab to look for the device identifiers_
 
-1. From the 'Value' window, copy the most detailed Hardware ID - we'll use this value in the policies.
+1. From the 'Value' window, copy the most detailed Hardware ID—we'll use this value in the policies.
 
     ![HWID.](images/device-installation-dm-printer-hardware-ids.png)
 
@@ -351,25 +351,25 @@ Creating the policy to prevent all printers from being installed:
 
 1. In the lower left side, in the 'Options' window, click the 'Show...' box. This option will take you to a table where you can enter the class identifier to block.
 
-1. Enter the printer class GUID you found above with the curly braces (this convention is important! Otherwise, it won't work): {4d36e979-e325-11ce-bfc1-08002be10318}
+1. Enter the printer class GUID you found above with the curly braces: `{4d36e979-e325-11ce-bfc1-08002be10318}`.
 
     ![List of prevent Class GUIDs.](images/device-installation-gpo-prevent-class-list.png)<br/>_List of prevent Class GUIDs_
 
 1. Click 'OK'.
 
-1. Click 'Apply' on the bottom right of the policy's window - this option pushes the policy and blocks all future printer installations, but doesn't apply to existing installs.
+1. Click 'Apply' on the bottom right of the policy's window—this option pushes the policy and blocks all future printer installations, but doesn't apply to existing installs.
 
-1. Optional - if you would like to apply the policy to existing installs: Open the **Prevent installation of devices using drivers that match these device setup classes** policy again; in the 'Options' window mark the checkbox that says 'also apply to matching devices that are already installed'
+1. Optional—if you would like to apply the policy to existing installs: Open the **Prevent installation of devices using drivers that match these device setup classes** policy again; in the 'Options' window mark the checkbox that says 'also apply to matching devices that are already installed'
 
 > [!IMPORTANT]
 > Using a Prevent policy (like the one we used in scenario #1 above) and applying it to all previously installed devices (see step #9) could render crucial devices unusable; hence, use with caution. For example: If an IT admin wants to prevent all removable storage devices from being installed on the machine, using 'Disk Drive' class for blocking and applying it retroactive could render the internal hard-drive unusable and to break the machine.
 
 ### Testing the scenario
 
-1. If you haven't completed step #9 - follow these steps:
+1. If you haven't completed step #9, follow these steps:
 
    1. Uninstall your printer: Device Manager > Printers > right click the Canon Printer > click "Uninstall device".
-   1. For USB printer - unplug and plug back the cable; for network device - make a search for the printer in the Windows Settings app.
+   1. For USB printer—unplug and plug back the cable; for network device—make a search for the printer in the Windows Settings app.
    1. You shouldn't be able to reinstall the printer.
 
 1. If you completed step #9 above and restarted the machine, look for your printer under Device Manager or the Windows Settings app and see that it's no-longer available for you to use.
@@ -390,17 +390,17 @@ Setting up the environment for the scenario with the following steps:
 
 Getting the right device identifier to prevent it from being installed:
 
-1. Get your printer's Hardware ID - in this example we'll use the identifier we found previously
+1. Get your printer's Hardware ID. In this example we'll use the identifier we found previously.
 
     ![Printer Hardware ID identifier.](images/device-installation-dm-printer-hardware-ids.png)<br/>_Printer Hardware ID_
 
-1. Write down the device ID (in this case Hardware ID) - WSDPRINT\CanonMX920_seriesC1A0; Take the more specific identifier to make sure you block a specific printer and not a family of printers
+1. Write down the device ID (in this case Hardware ID): `WSDPRINT\CanonMX920_seriesC1A0;`. Take the more specific identifier to make sure you block a specific printer and not a family of printers
 
 Creating the policy to prevent a single printer from being installed:
 
-1. Open Group Policy Object Editor - either click the Start button, type mmc gpedit.msc in the Start Search box, and then press ENTER; or type in the Windows search "Group Policy Editor" and open the UI.
+1. Open Group Policy Object Editor.
 
-1. Navigate to the Device Installation Restriction page: 
+1. Navigate to the Device Installation Restriction page:
 
     > Computer Configuration > Administrative Templates > System > Device Installation > Device Installation Restrictions
 
@@ -408,7 +408,7 @@ Creating the policy to prevent a single printer from being installed:
 
 1. In the lower left side, in the 'Options' window, click the 'Show...' box. This option will take you to a table where you can enter the device identifier to block.
 
-1. Enter the printer device ID you found above - WSDPRINT\CanonMX920_seriesC1A0
+1. Enter the printer device ID you found above: `WSDPRINT\CanonMX920_seriesC1A0`.
 
     ![Prevent Device ID list.](images/device-installation-gpo-prevent-device-id-list-printer.png)<br/>_Prevent Device ID list_
 
@@ -416,7 +416,7 @@ Creating the policy to prevent a single printer from being installed:
 
 1. Click 'Apply' on the bottom right of the policy's window. This option pushes the policy and blocks the target printer in future installations, but doesn't apply to an existing install.
 
-1. Optional - if you would like to apply the policy to an existing install: Open the **Prevent installation of devices that match any of these device IDs** policy again; in the 'Options' window mark the checkbox that says 'also apply to matching devices that are already installed'.
+1. Optionally, if you would like to apply the policy to an existing install, open the **Prevent installation of devices that match any of these device IDs** policy again. In the 'Options' window, mark the checkbox that says 'Also apply to matching devices that are already installed'.
 
 ###	Testing the scenario
 
@@ -426,7 +426,7 @@ If you haven't completed step #8, follow these steps:
 
 1. Uninstall your printer: Device Manager > Printers > right click the Canon Printer > click "Uninstall device".
 
-1. For USB printer - unplug and plug back the cable; for network device - make a search for the printer in the Windows Settings app.
+1. For USB printer, unplug and plug back the cable; for network device, make a search for the printer in the Windows Settings app.
 
 1. You shouldn't be able to reinstall the printer.
 
@@ -457,7 +457,7 @@ First create a 'Prevent Class' policy and then create 'Allow Device' one:
 
 1. Open Group Policy Object Editor - either click the Start button, type mmc gpedit.msc in the Start Search box, and then press ENTER; or type in the Windows search "Group Policy Editor" and open the UI.
 
-1. Navigate to the Device Installation Restriction page: 
+1. Navigate to the Device Installation Restriction page:
 
     > Computer Configuration > Administrative Templates > System > Device Installation > Device Installation Restrictions
 
@@ -477,11 +477,11 @@ First create a 'Prevent Class' policy and then create 'Allow Device' one:
 
 1. To complete the coverage of all future and existing printers - Open the **Prevent installation of devices using drivers that match these device setup classes** policy again; in the 'Options' window mark the checkbox that says 'also apply to matching devices that are already installed' and click 'OK'
 
-1. Open the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy and enable it - this policy will enable you to override the wide coverage of the 'Prevent' policy with a specific device.
+1. Open the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy and enable it—this policy will enable you to override the wide coverage of the 'Prevent' policy with a specific device.
 
     ![Image of Local Group Policy Editor that shows the policies under "Device Installation Restrictions" and the policy named in this step.](images/device-installation-apply-layered_policy-1.png)
 
-    ![Image that shows the current settings of the policy named in this step, "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria.".](images/device-installation-apply-layered-policy-2.png)<br/>_Apply layered order of evaluation policy_
+    [![Image that shows the current settings of the policy named in this step, "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria.](images/device-installation-apply-layered-policy-2.png)](images/device-installation-apply-layered-policy-2.png#lightbox)<br/>_Apply layered order of evaluation policy_
 
 1. Now Open **Allow installation of devices that match any of these device IDs** policy and select the 'Enable' radio button.
 
@@ -522,7 +522,7 @@ Getting the right device identifier to prevent it from being installed and its l
 1. Open Device Manager
 
 1. Find the USB thumb-drive and select it.
- 
+
     ![Selecting the usb thumb-drive in Device Manager.](images/device-installation-dm-usb-by-device.png)<br/>_Selecting the usb thumb-drive in Device Manager_
 
 1. Change View (in the top menu) to 'Devices by connections'. This view represents the way devices are installed in the PnP tree.
@@ -531,20 +531,20 @@ Getting the right device identifier to prevent it from being installed and its l
 
     > [!NOTE]
     > When blocking\Preventing a device that sits higher in the PnP tree, all the devices that sit under it will be blocked. For example: Preventing a "Generic USB Hub" from being installed, all the devices that lay below a "Generic USB Hub" will be blocked.
- 
+
     ![Blocking nested devices from the root.](images/device-installation-dm-usb-by-connection-blocked.png)<br/>_When blocking one device, all the devices that are nested below it will be blocked as well_
 
 1. Double-click the USB thumb-drive and move to the 'Details' tab.
 
 1. From the 'Value' window, copy the most detailed Hardware ID-we'll use this value in the policies. In this case Device ID = USBSTOR\DiskGeneric_Flash_Disk______8.07
- 
+
     ![USB device hardware IDs.](images/device-installation-dm-usb-hwid.png)<br/>_USB device hardware IDs_
 
 Creating the policy to prevent a single USB thumb-drive from being installed:
 
 1. Open Group Policy Object Editor - either click the Start button, type mmc gpedit.msc in the Start Search box, and then press ENTER; or type in the Windows search "Group Policy Editor" and open the UI.
 
-1. Navigate to the Device Installation Restriction page: 
+1. Navigate to the Device Installation Restriction page:
 
     > Computer Configuration > Administrative Templates > System > Device Installation > Device Installation Restrictions
 
@@ -553,7 +553,7 @@ Creating the policy to prevent a single USB thumb-drive from being installed:
 1. In the lower left side, in the 'Options' window, click the 'Show' box. This option will take you to a table where you can enter the device identifier to block.
 
 1. Enter the USB thumb-drive device ID you found above - USBSTOR\DiskGeneric_Flash_Disk______8.07
- 
+
     ![Prevent Device IDs list.](images/device-installation-gpo-prevent-device-id-list-usb.png)<br/>_Prevent Device IDs list_
 
 1. Click 'OK'.
@@ -608,7 +608,7 @@ As mentioned in scenario #4, it's not enough to enable only a single hardware ID
 - "Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)" -> PCI\CC_0C03
 - "USB Root Hub (USB 3.0)" -> USB\ROOT_HUB30
 - "Generic USB Hub" -> USB\USB20_HUB
- 
+
 ![USB devices nested in the PnP tree.](images/device-installation-dm-usb-by-connection-layering.png)<br/>_USB devices nested under each other in the PnP tree_
 
 These devices are internal devices on the machine that define the USB port connection to the outside world. Enabling them shouldn't enable any external/peripheral device from being installed on the machine.
@@ -628,7 +628,7 @@ First create a 'Prevent Class' policy and then create 'Allow Device' one:
 
 1. Open Group Policy Object Editor - either click the Start button, type mmc gpedit.msc in the Start Search box, and then press ENTER; or type in the Windows search "Group Policy Editor" and open the UI.
 
-1. Navigate to the Device Installation Restriction page: 
+1. Navigate to the Device Installation Restriction page:
 
     > Computer Configuration > Administrative Templates > System > Device Installation > Device Installation Restrictions
 
@@ -641,7 +641,7 @@ First create a 'Prevent Class' policy and then create 'Allow Device' one:
 1. Enter both USB classes GUID you found above with the curly braces:
 
     > {36fc9e60-c465-11cf-8056-444553540000}/
-    > {88BAE032-5A81-49f0-BC3D-A4FF138216D6} 
+    > {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
 
 1. Click 'OK'.
 

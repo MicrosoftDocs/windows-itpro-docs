@@ -20,7 +20,7 @@ appliesto:
 
 You can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
 
-NOTE: Starting from the following Windows versions Replace command is supported:
+Starting from the following Windows versions `Replace` command is supported:
 
 - Windows 10, version 1903 with KB4512941 and KB4517211 installed
 - Windows 10, version 1809 with KB4512534 and KB installed

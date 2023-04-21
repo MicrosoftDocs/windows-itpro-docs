@@ -107,7 +107,7 @@ When a group policy refresh occurs on the client, a task is created and schedule
 
 If two-factor authentication is required, you'll be prompted to complete the process. Here's an example screenshot.
 
-![Two-factor authentication notification.](images/autoenrollment-2-factor-auth.png)
+:::image type="content" source="images/autoenrollment-2-factor-auth.png" alt-text="Screenshot of Two-factor authentication notification.":::
 
 > [!TIP]
 > You can avoid this behavior by using Conditional Access Policies in Azure AD. Learn more by reading [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
@@ -116,7 +116,7 @@ If two-factor authentication is required, you'll be prompted to complete the pro
 
 To verify successful enrollment to MDM, go to **Start** > **Settings** > **Accounts** > **Access work or school**, then select your domain account.Select **Info** to see the MDM enrollment information.
 
-![Work School Settings.](images/autoenrollment-settings-work-school.png)
+:::image type="content" source="images/autoenrollment-settings-work-school.png" alt-text="Screenshot of Work School Settings.":::
 
 > [!NOTE]
 > If you don't see the **Info** button or the enrollment information, enrollment might have failed. Check the status in [Task Scheduler app](#task-scheduler-app) and see [Diagnose MDM enrollment](./mdm-diagnose-enrollment.md).

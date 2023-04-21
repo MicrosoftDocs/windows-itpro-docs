@@ -67,7 +67,7 @@ To support Azure AD enrollment, MDM vendors must host and expose a **Terms of Us
 
     The following diagram illustrates the high-level flow involved in the actual enrollment process. The device is first registered with Azure AD. This process assigns a unique device identifier to the device and presents the device with the ability to authenticate itself with Azure AD (device authentication). Then, the device is enrolled for management with the MDM. This step calls the enrollment endpoint and requests enrollment for the user and device. At this point, the user has been authenticated and device has been registered and authenticated with Azure AD. This information is available to the MDM in the form of claims within an access token presented at the enrollment endpoint.
 
-    ![azure ad enrollment flow.](images/azure-ad-enrollment-flow.png)
+    [![azure ad enrollment flow](images/azure-ad-enrollment-flow.png)](images/azure-ad-enrollment-flow.png#lightbox)
 
     The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Azure AD using the [Microsoft Graph API](/azure/active-directory/develop/active-directory-graph-api). A sample for reporting device compliance is provided later in this article.
 

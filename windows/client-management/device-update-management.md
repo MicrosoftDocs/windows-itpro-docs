@@ -41,7 +41,7 @@ This article provides independent software vendors (ISV) with the information th
 
 The following diagram provides a conceptual overview of how this works:
 
-![mobile device update management.](images/mdm-update-sync.png)
+:::image type="content" source="images/mdm-update-sync.png" alt-text="mobile device update management.":::
 
 The diagram can be roughly divided into three areas:
 
@@ -69,7 +69,7 @@ Some important highlights:
 - For mobile devices, you can sync metadata for a particular update by calling GetUpdateData. Or, for a local on-premises solution, you can use Windows Server Update Services (WSUS) and manually import the mobile updates from the Microsoft Update Catalog site. For more information, see [Process flow diagram and screenshots of server sync process](#process-flow-diagram-and-screenshots-of-server-sync-process).
 
 > [!NOTE]
-> On Microsoft Update, metadata for a given update gets modified over time (updating descriptive information, fixing bugs in applicability rules, localization changes, and so on). Each time such a change is made that doesn't affect the update itself, a new update revision is created. The identity of an update revision is a compound key containing both an UpdateID (GUID) and a RevisionNumber (int). The MDM should not expose the notion of an update revision to IT. Instead, for each UpdateID (GUID) the MDM should just keep the metadata for the later revision of that update (the one with the highest revision number).
+> Over time, Microsoft Update modifies metadata for a given update, for example, by updating descriptive information, fixing bugs in applicability rules, making localization changes, and so on. Each time a change occurs that doesn't affect the update itself, a new update revision is created.  An UpdateID (GUID) and a RevisionNumber (int) compounds to comprise an identity key for an update revision. The MDM doesn't present an update revision to IT. Instead, for each UpdateID (GUID) the MDM keeps the metadata for the later revision of that update, which is the one with the highest revision number.
 
 ### Examples of update metadata XML structure and element descriptions
 
@@ -77,15 +77,15 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
 
 - **UpdateID** - The unique identifier for an update
 - **RevisionNumber** - Revision number for the update in case the update was modified.
-- **CreationDate** - the date on which this update was created.
+- **CreationDate** - The date on which this update was created.
 - **UpdateType** - The type of update, which could include the following:
-  - **Detectoid** - if this update identity represents a compatibility logic
+  - **Detectoid** - If this update identity represents a compatibility logic
   - **Category** - This element could represent either of the following:
     - A Product category the update belongs to. For example, Windows, MS office, and so on.
     - The classification the update belongs to. For example, drivers, security, and so on.
   - **Software** - If the update is a software update.
-  - **Driver** - if the update is a driver update.
-- **LocalizedProperties** - represents the language the update is available in, title and description of the update. It has the following fields:
+  - **Driver** - If the update is a driver update.
+- **LocalizedProperties** - Represents the language the update is available in, title and description of the update. It has the following fields:
   - **Language** - The language code identifier (LCID). For example, en or es.
   - **Title** - Title of the update. For example, "Windows SharePoint Services 3.0 Service Pack 3 x64 Edition (KB2526305)"
   - **Description** - Description of the update. For example, "Windows SharePoint Services 3.0 Service Pack 3 (KB2526305) provides the latest updates to Windows SharePoint Services 3.0. After you install this item, you may have to restart your computer. After you've installed this item, it can't be removed."
@@ -106,10 +106,9 @@ The following procedure describes a basic algorithm for a metadata sync service:
 1. Create an empty list of "needed update IDs to fault in". This list will get updated by the MDM service component that uses OMA DM. We recommend not adding definition updates to this list, since they're temporary. For example, Defender can release new definition updates many times per day, each of which is cumulative.
 1. Sync periodically (we recommend once every 2 hours - no more than once/hour).
    1. Implement the authorization phase of the protocol to get a cookie if you don't already have a non-expired cookie. See **Sample 1: Authorization** in [Protocol Examples](/openspecs/windows_protocols/ms-wsusss/2dedbd00-fbb7-46ee-8ee0-aec9bd1ecd2a).
-   1. Implement the metadata portion of the protocol (see **Sample 2: Metadata and Deployments Synchronization** in [Protocol Examples](/openspecs/windows_protocols/ms-wsusss/2dedbd00-fbb7-46ee-8ee0-aec9bd1ecd2a)), and:
-     - Call GetUpdateData for all updates in the "needed update IDs to fault in" list if the update metadata hasn't already been pulled into the DB.
-       - If the update is a newer revision of an existing update (same UpdateID, higher revision number), replace the previous update metadata with the new one.
-       - Remove updates from the "needed update IDs to fault in" list once they've been brought in.
+   1. Implement the metadata portion of the protocol. See **Sample 2: Metadata and Deployments Synchronization** in [Protocol Examples](/openspecs/windows_protocols/ms-wsusss/2dedbd00-fbb7-46ee-8ee0-aec9bd1ecd2a)), and call GetUpdateData for all updates in the "needed update IDs to fault in" list if the update metadata hasn't already been pulled into the DB.
+        - If the update is a newer revision of an existing update (same UpdateID, higher revision number), replace the previous update metadata with the new one.
+        - Remove updates from the "needed update IDs to fault in" list once they've been brought in.
 
 These steps get information about the set of Microsoft Updates that IT needs to manage, so the information can be used in various update management scenarios. For example, at update approval time, you can get information so IT can see what updates they're approving. Or, for compliance reports to see what updates are needed but not yet installed.
 
@@ -118,15 +117,15 @@ These steps get information about the set of Microsoft Updates that IT needs to 
 An MDM can manage updates via OMA DM. The details of how to use and integrate an MDM with the Windows OMA DM protocol, and how to enroll devices for MDM management, is documented in [Mobile device management](mobile-device-enrollment.md). This section focuses on how to extend that integration to support update management. The key aspects of update management include the following information:
 
 - Configure automatic update policies to ensure devices stay up to date.
-- Get device compliance information (the list of updates that are needed but not yet installed)
+- Get device compliance information (the list of updates that are needed but not yet installed).
 - Specify a per-device update approval list. The list makes sure devices only install updates that are approved and tested.
-- Approve EULAs for the end user so update deployment can be automated, even for updates with EULAs
+- Approve EULAs for the end user so update deployment can be automated, even for updates with EULAs.
 
 The following list describes a suggested model for applying updates.
 
 1. Have a "Test Group" and an "All Group".
-1. In the Test group, just let all updates flow.
-1. In the All Group, set up Quality Update deferral for seven days. Then, Quality Updates will be auto approved after the seven days. Definition Updates are excluded from Quality Update deferrals, and will be auto approved when they're available. This schedule can be done by setting Update/DeferQualityUpdatesPeriodInDays to seven, and just letting updates flow after seven days or pushing Pause if any issues.
+1. In the Test group, let all updates flow.
+1. In the All Group, set the Quality Update deferral for seven days, and then, Quality Updates are auto approved after seven days. Quality Update deferrals exclude Definition Updates, so Definition Updates automatically are approved when they're available. Match the schedule for Definition Updates with the Quality Update deferral schedule by setting Update/DeferQualityUpdatesPeriodInDays to seven. Let updates flow after seven days or by pausing if any issues occur.
 
 Updates are configured using the [Update Policy CSP](mdm/policy-csp-update.md).
 
@@ -134,9 +133,9 @@ Updates are configured using the [Update Policy CSP](mdm/policy-csp-update.md).
 
 The following screenshots of the administrator console show the list of update titles, approval status, and additional metadata fields.
 
-![mdm update management screenshot.](images/deviceupdatescreenshot1.png)
+:::image type="content" source="images/deviceupdatescreenshot1.png" alt-text="mdm update management screenshot.":::
 
-![mdm update management metadata screenshot.](images/deviceupdatescreenshot2.png)
+:::image type="content" source="images/deviceupdatescreenshot2.png" alt-text="mdm update management metadata screenshot.":::
 
 ### SyncML example
 
@@ -189,19 +188,19 @@ Set auto update to notify and defer.
 
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
-![mdm device update management screenshot3.](images/deviceupdatescreenshot3.png)
+:::image type="content" source="images/deviceupdatescreenshot3.png" alt-text="mdm device update management screenshot3.":::
 
-![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)
+:::image type="content" source="images/deviceupdatescreenshot4.png" alt-text="mdm device update management screenshot4":::
 
-![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)
+:::image type="content" source="images/deviceupdatescreenshot5.png" alt-text="mdm device update management screenshot5":::
 
-![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)
+:::image type="content" source="images/deviceupdatescreenshot6.png" alt-text="mdm device update management screenshot6":::
 
-![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)
+:::image type="content" source="images/deviceupdatescreenshot7.png" alt-text="mdm device update management screenshot7":::
 
-![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)
+:::image type="content" source="images/deviceupdatescreenshot8.png" alt-text="mdm device update management screenshot8":::
 
-![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
+:::image type="content" source="images/deviceupdatescreenshot9.png" alt-text="mdm device update management screenshot9":::
 
 ## Related articles
 

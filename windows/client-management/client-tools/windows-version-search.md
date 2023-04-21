@@ -26,7 +26,7 @@ To determine if your device is enrolled in the Long-Term Servicing Channel or th
 
 Select **Start** > **Settings** > **System**, then select **About**. You'll then see **Edition**, **Version**, and **OS Build** information.
 
-![screenshot of the system properties window for a device running Windows 10.](images/systemcollage.png)
+:::image type="content" source="images/systemcollage.png" alt-text="screenshot of the system properties window for a device running Windows 10.":::
 
 ## Using Keyword Search
 
@@ -34,11 +34,11 @@ You can type the following in the search bar and press **ENTER** to see version 
 
 - **"winver"**:
 
-    ![screenshot of the About Windows display text.](images/winver.png)
+    :::image type="content" source="images/winver.png" alt-text="screenshot of the About Windows display text.":::
 
 - **"msinfo"** or **"msinfo32"** to open **System Information**:
 
-    ![screenshot of the System Information display text.](images/msinfo32.png)
+    :::image type="content" source="images/msinfo32.png" alt-text="screenshot of the System Information display text.":::
 
 > [!TIP]
 > You can also use `winver` or `msinfo32` commands at the command prompt.
@@ -47,8 +47,8 @@ You can type the following in the search bar and press **ENTER** to see version 
 
 - At the PowerShell or Command Prompt, type `systeminfo | findstr /B /C:"OS Name" /B /C:"OS Version"` and then press **ENTER**
 
-    ![screenshot of system information display text.](images/refcmd.png)
+    :::image type="content" source="images/refcmd.png" alt-text="screenshot of system information display text.":::
 
 - At the PowerShell or Command Prompt, type `slmgr /dlv`, and then press ENTER. The /dlv command displays the detailed licensing information. Notice the output displays "EnterpriseS" as seen in the image below:
 
-    ![screenshot of software licensing manager.](images/slmgr_dlv.png)
+    :::image type="content" source="images/slmgr-dlv.png" alt-text="screenshot of software licensing manager.":::

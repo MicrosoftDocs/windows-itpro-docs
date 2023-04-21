@@ -32,7 +32,7 @@ Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work.
 
 The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore".
 
-![ssl settings.](images/ssl-settings.png)
+:::image type="content" source="images/ssl-settings.png" alt-text="Screenshot of SSL settings in IIS.":::
 
 ## MDM enrollment fails on the Windows device when traffic is going through proxy
 

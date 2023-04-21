@@ -28,9 +28,6 @@ Summary of steps to enable a policy:
 
 See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX policies using Microsoft Intune](/archive/blogs/senthilkumar/intune-deploying-admx-backed-policies-using-microsoft-intune) for a walk-through using Intune.
 
-<!-- >[!TIP] -->
-<!-- >Intune has added a number of ADMX administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows) -->
-
 ## Enable a policy
 
 > [!NOTE]
