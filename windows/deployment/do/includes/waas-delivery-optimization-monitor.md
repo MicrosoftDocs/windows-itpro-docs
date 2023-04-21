@@ -28,8 +28,8 @@ ms.localizationpriority: medium
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
 | BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
-| BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, which includes BytesFromCacheServer |
-| Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but is not uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
+| BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, which include BytesFromCacheServer |
+| Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but isn't uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
 | BytesFromCacheServer | Total number of bytes received from cache server (MCC) |
 | BytesFromLanPeers | Total number of bytes received from peers found on the LAN |
@@ -165,6 +165,6 @@ Using the `-ListConnections` option returns these details about peers:
 
 `Get-DeliveryOptimizationLog [-Path <etl file path, supports wildcards>] [-Flush]`
 
-If `Path` is not specified, this cmdlet reads all logs from the DoSvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops DoSvc before reading logs.
+If `Path` isn't specified, this cmdlet reads all logs from the DoSvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops DoSvc before reading logs.
 
 Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
