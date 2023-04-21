@@ -63,7 +63,7 @@ To support Azure AD enrollment, MDM vendors must host and expose a **Terms of Us
 
     The Terms of Use endpoint can implement more business logic, such as collecting a one-time PIN provided by IT to control device enrollment. However, MDM vendors must not use the Terms of Use flow to collect user credentials, which can be a degraded user experience. It's not needed, since part of the MDM integration ensures that the MDM service can understand tokens issued by Azure AD.
 
-- **MDM enrollment endpoint**: After the users accepts the Terms of Use, the device is registered in Azure AD. Automatic MDM enrollment begins.
+- **MDM enrollment endpoint**: After the users accept the Terms of Use, the device is registered in Azure AD. Automatic MDM enrollment begins.
 
     The following diagram illustrates the high-level flow involved in the actual enrollment process. The device is first registered with Azure AD. This process assigns a unique device identifier to the device and presents the device with the ability to authenticate itself with Azure AD (device authentication). Then, the device is enrolled for management with the MDM. This step calls the enrollment endpoint and requests enrollment for the user and device. At this point, the user has been authenticated and device has been registered and authenticated with Azure AD. This information is available to the MDM in the form of claims within an access token presented at the enrollment endpoint.
 
