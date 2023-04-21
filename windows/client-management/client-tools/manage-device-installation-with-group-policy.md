@@ -479,7 +479,7 @@ First create a 'Prevent Class' policy and then create 'Allow Device' one:
 
 1. Open the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy and enable it—this policy will enable you to override the wide coverage of the 'Prevent' policy with a specific device.
 
-    ![Image of Local Group Policy Editor that shows the policies under "Device Installation Restrictions" and the policy named in this step.](images/device-installation-apply-layered_policy-1.png)
+    :::image type="content" alt-text="Screenshot of Local Group Policy Editor that shows the policies under Device Installation Restrictions and the policy named in this step." source="images/device-installation-apply-layered_policy-1.png" lightbox="images/device-installation-apply-layered_policy-1.png":::
 
     [![Image that shows the current settings of the policy named in this step, "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria.](images/device-installation-apply-layered-policy-2.png)](images/device-installation-apply-layered-policy-2.png#lightbox)<br/>_Apply layered order of evaluation policy_
 
