@@ -8,7 +8,7 @@ ms.topic: include
 The following table lists the security features that are available in Windows, and the licensing requirements to use them:
 
 |Feature name|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
-|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|:---:|:---:|
 |**[Access Control (ACLs/SCALS)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|Yes|
 |**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes|Yes|Yes|Yes|Yes|
