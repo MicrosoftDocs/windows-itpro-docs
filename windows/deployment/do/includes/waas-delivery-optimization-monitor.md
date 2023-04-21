@@ -102,7 +102,7 @@ Using the `-Verbose` option returns additional information:
 
 | Key | Value |
 | --- | --- |
-| IP | Device IP address |
+| IP | Peer device IP address |
 | PeerType | The type of peer used (LAN/Group/Internet/LinkLocal), determined by the Delivery Optimization Service, except for the LinkLocal option, which uses the DNS-SD protocol. |
 | ConnectionEstablished | True/False to indicate if peer is connected |
 | BytesSent | Bytes sent to/from the peer on the current connection |
