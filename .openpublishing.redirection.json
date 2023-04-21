@@ -6636,6 +6636,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/administrative-tools-in-windows-10.md",
+      "redirect_url": "/windows/client-management/client-tools/administrative-tools-in-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/change-default-removal-policy-external-storage-media.md",
+      "redirect_url": "/windows/client-management/client-tools/change-default-removal-policy-external-storage-media",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/connect-to-remote-aadj-pc.md",
+      "redirect_url": "/windows/client-management/client-tools/connect-to-remote-aadj-pc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/group-policies-for-enterprise-and-education-editions.md",
+      "redirect_url": "https://www.microsoft.com/en-us/search/explore?q=Group+Policy+Settings+Reference+Spreadsheet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/manage-device-installation-with-group-policy.md",
+      "redirect_url": "/windows/client-management/client-tools/manage-device-installation-with-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/manage-settings-app-with-group-policy.md",
+      "redirect_url": "/windows/client-management/client-tools/manage-settings-app-with-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mandatory-user-profile.md",
+      "redirect_url": "/windows/client-management/client-tools/mandatory-user-profile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/new-policies-for-windows-10.md",
+      "redirect_url": "https://www.microsoft.com/en-us/search/explore?q=Group+Policy+Settings+Reference+Spreadsheet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/quick-assist.md",
+      "redirect_url": "/windows/client-management/client-tools/quick-assist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/windows-libraries.md",
+      "redirect_url": "/windows/client-management/client-tools/windows-libraries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/windows-version-search.md",
+      "redirect_url": "/windows/client-management/client-tools/windows-version-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/manage-corporate-devices.md",
+      "redirect_url": "/windows/client-management/manage-windows-10-in-your-organization-modern-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/add-an-azure-ad-tenant-and-azure-ad-subscription.md",
+      "redirect_url": "/azure/active-directory/fundamentals/active-directory-access-create-new-tenant",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/register-your-free-azure-active-directory-subscription.md",
+      "redirect_url": "/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/appv-deploy-and-config.md",
+      "redirect_url": "/windows/application-management/app-v/appv-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/diagnose-mdm-failures-in-windows-10.md",
+      "redirect_url": "/windows/client-management/mdm-collect-logs",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policy-admx-backed.md",
       "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
       "redirect_document_id": false
@@ -19772,7 +19852,7 @@
     },
     {
       "source_path": "windows/client-management/mdm/diagnose-mdm-failures-in-windows-10.md",
-      "redirect_url": "/windows/client-management/diagnose-mdm-failures-in-windows-10",
+      "redirect_url": "/windows/client-management/mdm-collect-logs",
       "redirect_document_id": false
     },
     {
@@ -20734,7 +20814,7 @@
       "source_path": "windows/deployment/update/quality-updates.md",
       "redirect_url": "/windows/deployment/update/release-cycle",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
       "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
