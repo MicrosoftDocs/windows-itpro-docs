@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: reference
-ms.date: 06/06/2022
+ms.date: 04/24/2023
 ms.technology: itpro-updates
 ---
 
@@ -37,7 +37,7 @@ Update Event that combines the latest client-based data with the latest service-
 | **SourceSystem** | [string](/azure/kusto/query/scalar-data-types/string)|  `Azure`| |
 | **TargetBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this value would correspond to the full build (10.0.14393.385). |
 | **TargetBuildNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `18363` | Integer of the Major portion of Build. |
-| **TargetKBNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `4524570` | KB Article. |
+| **TargetKBNumber** |  [string](/azure/kusto/query/scalar-data-types/string)  | `KB4524570` | KB Article. |
 | **TargetRevisionNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `836` | Integer or the minor (or revision) portion of the build. |
 | **TargetVersion** |  [int](/azure/kusto/query/scalar-data-types/int)  | `1909` | The target operating system version, such as 1909. |
 | **TimeGenerated** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
