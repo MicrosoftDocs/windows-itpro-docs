@@ -1,39 +1,37 @@
 ---
-title: Windows 11 commercial licensing overview
-description: Learn about licensing requirements to use the features included in the Windows operating system.
+title: Windows commercial licensing overview
+description: Learn about products and use rights available through Windows commercial licensing.
 ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.collection:
-- tier3
+- tier2
 ms.topic: conceptual
-ms.date: 03/12/2023
+ms.date: 04/24/2023
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.technology: itpro-security
 ---
 
-# Windows 11 commercial licensing overview
+# Windows commercial licensing overview
 
-Microsoft Commercial Licensing solutions provide the most flexible and cost-effective way to give your organization access to the latest Windows Desktop technologies. Whether you want to upgrade your devices to Windows 11, gain access to exclusive offerings such as Windows 11 Enterprise edition, or use Windows with greater flexibility, there's a Commercial Licensing option that's right for your organization. 
-
-This document provides an overview of the products and use rights available through Commercial Licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
+This document provides an overview of the products and use rights available through commercial licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
 
 > [!NOTE]
-> This content is not meant to replace or override other licensing documentation, such as the Windows 11 End User License Agreement or Commercial Licensing Product Terms.
+> This content is not meant to replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](http://www.microsoft.com/licensing/product-licensing/products.aspx).
 
-## Windows 11 editions 
+## Windows 11 editions
 
-There's an edition of Windows software designed to meet the needs of every organization, from a small, growing business to a multinational enterprise. The following table lists the editions of Windows 11 available through each Microsoft distribution channel.
+The following table lists the editions of Windows 11 available through each Microsoft distribution channel.
 
 | Full Packaged Product (Retail) | Preinstalled on device (OEM)|Commercial Licensing|
 |-|-|-|
-|Windows 11 Pro <br>Windows 11 Home|Windows 11 Pro<br>Windows 11 Home|Windows 11 Pro<br>Windows 11 Enterprise <br>Windows 11 Enterprise LTSC|
+|Windows 11 Home<br>Windows 11 Pro|Windows 11 Home<br>Windows 11 Pro|Windows 11 Pro<br>Windows 11 Enterprise <br>Windows 11 Enterprise LTSC|
 
 ## Windows desktop offerings available through Commercial Licensing
 
-The following offerings are available for purchase through Microsoft Commercial Licensing:
+The following offerings are available for purchase through [Microsoft Commercial Licensing](https://www.microsoft.com/licensing):
 
 |Product|Description|
 |-|-|
@@ -43,29 +41,38 @@ The following offerings are available for purchase through Microsoft Commercial 
 |Windows 10 Enterprise LTSC |Windows 10 Enterprise LTSC is designed for PC systems that have strict change-management policies with only security and critical bug fixes. By using a Long-Term Servicing Channel edition, you can apply monthly Windows 10 security updates for specialized devices while holding back new-feature updates for an extended period of time, up to 5 years. Windows Enterprise LTSC is available in the per user or per device model depending on the Volume Licensing program through witch it is acquired|
 |Windows Virtual Desktop Access (VDA) Subscription License|The Windows VDA subscription license provides the right to access virtual Windows desktop environments from devices that aren't covered by a Commercial Licensing offer that includes VDA rights, such as thin clients. Windows VDA is available on a per device or per user basis|
 
+## Windows 11 Pro Upgrade license
+
+Windows 11 Pro is designed for small and medium businesses. Windows 11 Pro enables you to manage your devices and apps, protect your business data, facilitate remote and mobile scenarios, and take advantage of the cloud technologies for your organization.
+
+The Windows 11 Pro Upgrade license is recommended if you want to:
+
+- Upgrade a Windows 10 Pro device to Windows 11 Pro
+- Upgrade Windows 7/8/8.1 Pro devices to Windows 10 Pro  
+
 ## Windows 11 Enterprise
 
-There are two core Windows 11 Enterprise offers: **Windows 11 Enterprise E3** and **Windows 11 Enterprise E5**. Each of these can be purchased on a **per-user basis**, and are available only through **Commercial Licensing**, including the **Cloud Solution Provider** program. For more details about Windows Enterprise, see [per device check out this section of this guide](*TO ADD*)
+There are two core Windows 11 Enterprise offers: **Windows 11 Enterprise E3** and **Windows 11 Enterprise E5**. Each of these can be purchased on a **per-user basis**, and are available only through **Commercial Licensing**, including the **Cloud Solution Provider** program. For details about Windows Enterprise per device, see [per device check out this section of this guide](*TO ADD*)
 
 ### Windows 11 Enterprise E3
 
-Windows 11 Enterprise E3 is a per-user subscription, intended for organizations. It includes **Windows Enterprise edition** with cloud-powered capabilities and subscription use rights.
-Windows 11 Enterprise E3 builds on Windows 11 Pro by adding more advanced features designed to address the needs of large and mid-size organizations. Examples include advanced protection against modern security threats, the broadest range of options for operating system deployment and update, and comprehensive device and app management. Organizations with devices running Windows 11 Enterprise will can take advantage of the latest security and feature updates on an ongoing basis, while having the ability to choose the pace at which they adopt new technology.
+Windows 11 Enterprise E3 builds on Windows 11 Pro by adding more advanced features designed to address the needs of large and mid-size organizations. Examples include advanced protection against modern security threats, the broadest range of options for operating system deployment and update, and comprehensive device and app management.
 
 Windows 11 Enterprise E3 is usually licensed through Volume Licensing programs and is an upgrade from Windows Pro.
 
 ### Windows 11 Enterprise E3 OS features
 
-With Windows 11 Enterprise E3, you can take advantage of the following OS features:
+Here's an overview of the unique Windows Enterprise edition features, cloud powered capabilities, and use rights.
 
-| OS feature | Description |
+| Windows Enterprise edition OS based functionality | Description |
 |-|-|
-|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-requirements)**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks, enabled by default|
-|**Managed Microsoft Defender Application Guard for Microsoft Edge**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your company while employees browse the Internet|
-|**Personal Data Encryption**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials|
-|**Direct Access & Always-On VPN device tunnel**|Connect remote users to the organization network without the need for traditional VPN connections with DirectAccess or benefit from advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection with Always-On VPN (device tunnel)|
-|**Application Management GPOs**|Prevents unverified apps from executing and endangering your safe zone|
-|**Windows UI customization (CSP)**|Locks down the user experience of frontline workers devices or public kiosks|
+|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-requirements)**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
+|**[Managed Microsoft Defender Application Guard for Microsoft Edge](https://learn.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard)**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
+|**[Modern BitLocker Management](https://learn.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
+|**[Personal Data Encryption](https://learn.microsoft.com/windows/security/information-protection/personal-data-encryption/overview-pde)**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
+|**[Direct Access](https://learn.microsoft.com/windows-server/remote/remote-access/directaccess/directaccess)**|Connect remote users to the organization network without the need for traditional VPN connections.|
+|**[Always-On VPN device tunnel](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Benefit from advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection with Always-On VPN device tunnel.|
+|**[Windows UI customization (CSP)](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience)**|Locks down the user experience of frontline workers devices or public kiosks.|
 
 ### Windows 11 Enterprise E3 cloud services
 
@@ -73,7 +80,7 @@ With Windows 11 Enterprise E3, you can take advantage of the following cloud ser
 
 |Cloud-based service | Description |
 |-|-|
-|**Cloud-based BitLocker Management**|Allows you to eliminate on-premises tools to trigger, monitor and support recovery scenarios|
+|**Cloud-based BitLocker Management**|Allows you to eliminate on-premises tools to monitor and support recovery scenarios|
 |**[Windows subscription activation](/windows/deployment/windows-10-subscription-activation)**|Enables you to *step-up* from **Windows Pro edition** to **Enterprise edition** in an instant. You can eliminate license key management or deployment of Enterprise edition images|
 |**[Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)**|Cloud service that puts Microsoft in control of automating updates to Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams|
 |**[Windows Update For Business deployment service](/windows/deployment/update/deployment-service-overview)**|This cloud service gives you the control over the approval, scheduling, and safeguarding of quality, feature upgrades, and driver updates delivered from Windows Update|
