@@ -8,7 +8,7 @@ ms.topic: include
 The following table lists the security features that are available in Windows, and the Windows editions that support them:
 
 | Feature name | Windows Pro | Windows Enterprise | Windows Pro Education/SE | Windows Education |
-|:---:|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|:---:|
 |**[Access Control (ACLs/SCALS)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|
 |**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes|Yes|Yes|Yes|

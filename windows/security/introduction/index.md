@@ -1,7 +1,7 @@
 ---
 title: Introduction to Windows security
 description: System security book.
-ms.date: 04/10/2023
+ms.date: 04/24/2023
 ms.topic: tutorial
 ms.author: paoloma
 author: paolomatarazzo
@@ -12,8 +12,6 @@ appliesto:
 # Introduction to Windows security
 
 The acceleration of digital transformation and the expansion of both remote and hybrid workplaces brings new opportunities to organizations, communities, and individuals. Our work styles have transformed. And now more than ever, employees need simple, intuitive user experiences to collaborate and stay productive, wherever work happens. But the expansion of access and ability to work anywhere has also introduced new threats and risks. According to data from the Microsoft commissioned Security Signals report, 75% of security decision-makers at the vice-president level and above feel the move to hybrid work leaves their organization more vulnerable to security threats. And [Microsoft's 2022 Work Trend Index](https://www.microsoft.com/security/blog/2022/04/05/new-security-features-for-windows-11-will-help-protect-hybrid-work/) shows "cybersecurity issues and risks" are top concerns for business decisions makers, who worry about issues like malware, stolen credentials, devices that lack security updates, and physical attacks on lost or stolen devices.
-
-:::image type="content" source="chip-to-cloud.svg" lightbox="chip-to-cloud.svg" alt-text="chip to cloud diagram":::
 
 ## How Windows 11 enables zero-trust protection
 

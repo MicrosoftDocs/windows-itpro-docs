@@ -19,7 +19,7 @@ ms.technology: itpro-security
 This document provides an overview of the products and use rights available through commercial licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
 
 > [!NOTE]
-> This content is not meant to replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](http://www.microsoft.com/licensing/product-licensing/products.aspx).
+> This content is not meant to replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](https://www.microsoft.com/licensing/product-licensing/products.aspx).
 
 ## Windows 11 editions
 
@@ -67,12 +67,12 @@ Here's an overview of the unique Windows Enterprise edition features, cloud powe
 | Windows Enterprise edition OS based functionality | Description |
 |-|-|
 |**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-requirements)**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
-|**[Managed Microsoft Defender Application Guard for Microsoft Edge](https://learn.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard)**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
-|**[Modern BitLocker Management](https://learn.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
-|**[Personal Data Encryption](https://learn.microsoft.com/windows/security/information-protection/personal-data-encryption/overview-pde)**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
-|**[Direct Access](https://learn.microsoft.com/windows-server/remote/remote-access/directaccess/directaccess)**|Connect remote users to the organization network without the need for traditional VPN connections.|
-|**[Always-On VPN device tunnel](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Benefit from advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection with Always-On VPN device tunnel.|
-|**[Windows UI customization (CSP)](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience)**|Locks down the user experience of frontline workers devices or public kiosks.|
+|**[Managed Microsoft Defender Application Guard for Microsoft Edge](/deployedge/microsoft-edge-security-windows-defender-application-guard)**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
+|**[Modern BitLocker Management](h/windows/security/information-protection/bitlocker/bitlocker-overview)** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
+|**[Personal Data Encryption](/windows/security/information-protection/personal-data-encryption/overview-pde)**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
+|**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|Connect remote users to the organization network without the need for traditional VPN connections.|
+|**[Always-On VPN device tunnel](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Benefit from advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection with Always-On VPN device tunnel.|
+|**[Windows UI customization (CSP)](/windows/client-management/mdm/policy-csp-experience)**|Locks down the user experience of frontline workers devices or public kiosks.|
 
 ### Windows 11 Enterprise E3 cloud services
 
