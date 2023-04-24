@@ -19,4 +19,4 @@ Windows Autopatch license entitlements are granted by the following licenses:
 |:---:|:---:|:---:|:---:|:---:|
 |No|Yes|Yes|No|No|
 
-For more information about Windows licensing, see [Windows licensing overview](https://learn.microsoft.com/windows/whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

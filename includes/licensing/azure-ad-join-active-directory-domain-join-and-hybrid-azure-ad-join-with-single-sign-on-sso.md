@@ -19,4 +19,4 @@ Azure AD join, Active Directory domain join, and Hybrid Azure AD join with singl
 |:---:|:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|Yes|
 
-For more information about Windows licensing, see [Windows licensing overview](https://learn.microsoft.com/windows/whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

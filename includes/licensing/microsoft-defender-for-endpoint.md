@@ -19,4 +19,4 @@ Microsoft Defender for Endpoint license entitlements are granted by the followin
 |:---:|:---:|:---:|:---:|:---:|
 |Yes|No|Yes|No|Yes|
 
-For more information about Windows licensing, see [Windows licensing overview](https://learn.microsoft.com/windows/whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

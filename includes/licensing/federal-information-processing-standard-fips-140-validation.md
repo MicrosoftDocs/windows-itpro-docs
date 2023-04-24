@@ -19,4 +19,4 @@ Federal Information Processing Standard (FIPS) 140 validation license entitlemen
 |:---:|:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|Yes|
 
-For more information about Windows licensing, see [Windows licensing overview](https://learn.microsoft.com/windows/whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

@@ -1,9 +1,17 @@
 
 - name: Windows security
   href: index.yml
-- name: Zero Trust and Windows
-  href: zero-trust-windows-device-health.md
   expanded: true
+- name: Introduction
+  items:
+  - name: Zero Trust and Windows
+    href: zero-trust-windows-device-health.md
+  - name: Windows security overview
+    href: introduction/index.md
+  - name: Security features edition requirements
+    href: introduction/security-features-edition-requirements.md
+  - name: Security features licensing requirements
+    href: introduction/security-features-licensing-requirements.md
 - name: Hardware security
   items:
     - name: Overview

@@ -16,4 +16,4 @@ ms.technology: itpro-security
 
 # Security features Windows edition requirements
 
-[!INCLUDE [_edition-requirements](../../../includes/licensing/security/_edition-requirements.md)]
+[!INCLUDE [_edition-requirements](../../../includes/licensing/_edition-requirements.md)]

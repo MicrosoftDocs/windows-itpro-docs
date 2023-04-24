@@ -1,11 +1,11 @@
 ---
-title: Windows Hello for Business Overview (Windows)
-description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
+title: Windows Hello for Business Overview
+description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on Windows devices.
 ms.collection: 
   - highpri
   - tier1
 ms.topic: conceptual
-ms.date: 12/31/2017
+ms.date: 04/24/2023
 ---
 # Windows Hello for Business Overview
 
@@ -65,7 +65,7 @@ Imagine that someone is looking over your shoulder as you get money from an ATM 
 
 Windows Hello helps protect user identities and user credentials. Because the user doesn't enter a password (except during provisioning), it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Windows Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are protected by TPMs.
 
-[!INCLUDE [windows-hello-for-business](../../../../includes/licensing/security/windows-hello-for-business.md)]
+[!INCLUDE [windows-hello-for-business](../../../../includes/licensing/windows-hello-for-business.md)]
 
 ## How Windows Hello for Business works: key points
 

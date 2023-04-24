@@ -19,4 +19,4 @@ Microsoft Defender Application Guard (MDAG) for Microsoft Office license entitle
 |:---:|:---:|:---:|:---:|:---:|
 |No|No|No|No|No|
 
-For more information about Windows licensing, see [Windows licensing overview](https://learn.microsoft.com/windows/whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

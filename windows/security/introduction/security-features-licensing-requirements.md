@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
 - tier3
 ms.topic: conceptual
-ms.date: 03/12/2023
+ms.date: 04/24/2023
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.technology: itpro-security
@@ -16,4 +16,4 @@ ms.technology: itpro-security
 
 # Windows security licensing requirements
 
-[!INCLUDE [_licensing-requirements](../../../includes/licensing/security/_licensing-requirements.md)]
+[!INCLUDE [_licensing-requirements](../../../includes/licensing/_licensing-requirements.md)]
