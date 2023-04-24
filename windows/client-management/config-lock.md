@@ -8,13 +8,11 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 05/24/2022
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Secured-core PC configuration lock
-
-**Applies to**
-
-- Windows 11
 
 In an enterprise organization, IT administrators enforce policies on their corporate devices to keep the devices in a compliant state and protect the OS by preventing users from changing configurations and creating config drift. Config drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync and configuration reset with the MDM. Windows 11 with config lock enables IT administrators to prevent config drift and keep the OS configuration in the desired state. With config lock, the OS monitors the registry keys that configure each feature and when it detects a drift, reverts to the IT-desired state in seconds.
 
@@ -77,7 +75,7 @@ Config lock is designed to ensure that a secured-core PC isn't unintentionally m
 
 - Can I disable config lock? Yes. You can use MDM to turn off config lock completely or put it in temporary unlock mode for helpdesk activities.
 
-### List of locked policies
+## List of locked policies
 
 |**CSPs**     |
 |-----|

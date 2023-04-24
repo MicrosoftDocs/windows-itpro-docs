@@ -43,7 +43,7 @@
       "ms.technology": "itpro-manage",
       "audience": "ITPro",
       "ms.topic": "article",
-      "manager": "dansimp",
+      "manager": "aaroncz",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
@@ -55,16 +55,22 @@
       },
       "titleSuffix": "Windows Client Management",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
         "garycentric",
-        "beccarobins"
+        "beccarobins",
+        "american-dipper",
+        "angelamotherofdragons",
+        "v-stsavell",
+        "stacyrch140"
       ],
-      "searchScope": ["Windows 10"]
+      "searchScope": [
+        "Windows 10"
+      ]
     },
     "fileMetadata": {},
     "template": [],
