@@ -50,3 +50,4 @@ Update Event that combines the latest client-based data with the latest service-
 | **UpdateManufacturer** | [string](/azure/kusto/query/scalar-data-types/string) | `Microsoft` | Manufacturer of update. Microsoft for feature or quality updates, for drivers the name of driver manufacturer. |
 | **UpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The release date of the update |
 | **UpdateSource** |  [string](/azure/kusto/query/scalar-data-types/string) | `UUP` | The source of the update such as UUP, MUv6, Media |
+ 
