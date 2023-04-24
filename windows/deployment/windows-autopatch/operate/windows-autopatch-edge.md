@@ -1,15 +1,15 @@
 ---
 title: Microsoft Edge
-description:  This article explains how Microsoft Edge updates are managed in Windows Autopatch
+description: This article explains how Microsoft Edge updates are managed in Windows Autopatch
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+ms.reviewer: hathind
 ---
 
 # Microsoft Edge

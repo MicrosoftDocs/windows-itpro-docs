@@ -1,13 +1,14 @@
 ---
 title: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
 description: This article documents the removal of Microsoft Baseline Security Analyzer (MBSA) and provides alternative solutions.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+ms.author: paoloma
+author: paolomatarazzo
+manager: aaroncz
+ms.technology: itpro-security
+ms.date: 03/29/2023
+ms.topic: article
 ---
  
 # What is Microsoft Baseline Security Analyzer and its uses?
@@ -18,22 +19,23 @@ MBSA was largely used in situations where Microsoft Update a local WSUS or Confi
 
 > [!NOTE]
 > In accordance with our [SHA-1 deprecation initiative](https://aka.ms/sha1deprecation), the Wsusscn2.cab file is no longer dual-signed using both SHA-1 and the SHA-2 suite of hash algorithms (specifically SHA-256). This file is now signed using only SHA-256. Administrators who verify digital signatures on this file should now expect only single SHA-256 signatures. Starting with the August 2020 Wsusscn2.cab file, MBSA will return the following error "The catalog file is damaged or an invalid catalog." when attempting to scan using the offline scan file. 
- 
-## The Solution 
-A script can help you with an alternative to MBSA’s patch-compliance checking:
- 
+
+## Solution
+
+A script can help you with an alternative to MBSA's patch-compliance checking:
+
 - [Using WUA to Scan for Updates Offline](/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline), which includes a sample .vbs script. 
 For a PowerShell alternative, see [Using WUA to Scan for Updates Offline with PowerShell](https://www.powershellgallery.com/packages/Scan-UpdatesOffline/1.0).
- 
+
 For example:
- 
-[![VBS script.](images/vbs-example.png)](/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
-[![PowerShell script.](images/powershell-example.png)](https://www.powershellgallery.com/packages/Scan-UpdatesOffline/1.0) 
+
+[![Screenshot that shows the VBS script.](images/vbs-example.png)](/windows/desktop/wua_sdk/using-wua-to-scan-for-updates-offline) 
+[![Screenshot that shows the PowerShell script.](images/powershell-example.png)](https://www.powershellgallery.com/packages/Scan-UpdatesOffline/1.0) 
   
 The preceding scripts use the [WSUS offline scan file](https://support.microsoft.com/help/927745/detailed-information-for-developers-who-use-the-windows-update-offline) (wsusscn2.cab) to perform a scan and get the same information on missing updates as MBSA supplied. MBSA also relied on the wsusscn2.cab to determine which updates were missing from a given system without connecting to any online service or server. The wsusscn2.cab file is still available and there are currently no plans to remove or replace it.
 The wsusscn2.cab file contains the metadata of only security updates, update rollups and service packs available from Microsoft Update; it doesn't contain any information on non-security updates, tools or drivers.
- 
-## More Information  
+
+## More information  
 
 For security compliance and for desktop/server hardening, we recommend the Microsoft Security Baselines and the Security Compliance Toolkit.
 

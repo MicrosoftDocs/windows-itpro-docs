@@ -1,26 +1,12 @@
 ---
 title: Basic Firewall Policy Design (Windows)
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
-ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
-ms.reviewer: jekrynit
-ms.author: paoloma
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
+ms.date: 12/31/2017
 ---
 
 # Basic Firewall Policy Design
@@ -53,7 +39,7 @@ By default, in new installations, Windows Defender Firewall with Advanced Securi
 
 If you turn off the Windows Defender Firewall service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
 
-Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This approach is the recommended one for third-party firewalls to coexist with the Windows Defender Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft. 
+Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This approach is the recommended one for third-party firewalls to coexist with the Windows Defender Firewall; third-party firewalls that comply with this recommendation have the certified logo from Microsoft.
 
 An organization typically uses this design as a first step toward a more comprehensive Windows Defender Firewall design that adds server isolation and domain isolation.
 

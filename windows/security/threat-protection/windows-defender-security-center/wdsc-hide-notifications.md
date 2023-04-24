@@ -1,27 +1,19 @@
 ---
 title: Hide notifications from the Windows Security app
 description: Prevent Windows Security app notifications from appearing on user endpoints
-keywords: defender, security center, app, notifications, av, alerts
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 
-ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+ms.prod: windows-client
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.date: 12/31/2018
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Hide Windows Security app notifications
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10 and later
 
 The Windows Security app is used by many Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 
@@ -40,7 +32,7 @@ You can only use Group Policy to change these settings.
 
 ## Use Group Policy to hide non-critical notifications
 
-You can hide notifications that describe regular events related to the health and security of the machine. These notifications are the ones that don't require an action from the machine's user. It can be useful to hide these notifications if you find they're too numerous or you have other status reporting on a larger scale (such as Update Compliance or Microsoft Endpoint Configuration Manager reporting).
+You can hide notifications that describe regular events related to the health and security of the machine. These notifications are the ones that don't require an action from the machine's user. It can be useful to hide these notifications if you find they're too numerous or you have other status reporting on a larger scale (such as Windows Update for Business reports or Microsoft Configuration Manager reporting).
 
 These notifications can be hidden only by using Group Policy.
 

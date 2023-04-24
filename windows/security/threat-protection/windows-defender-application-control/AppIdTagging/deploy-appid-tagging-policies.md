@@ -1,15 +1,15 @@
 ---
 title: Deploying Windows Defender Application Control AppId tagging policies
 description: How to deploy your WDAC AppId tagging policies locally and globally within your managed environment.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 04/29/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Deploying Windows Defender Application Control AppId tagging policies
@@ -48,7 +48,7 @@ Multiple WDAC policies can be managed from an MDM server through ApplicationCont
 
 However, when policies are unenrolled from an MDM server, the CSP will attempt to remove every policy from devices, not just the policies added by the CSP. The reason for this is that the ApplicationControl CSP doesn't track enrollment sources for individual policies, even though it will query all policies on a device, regardless if they were deployed by the CSP.
 
-For more information, see [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) to deploy multiple policies, and optionally use Microsoft Endpoint Manager Intune's Custom OMA-URI capability.
+For more information, see [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) to deploy multiple policies, and optionally use Microsoft Intune's Custom OMA-URI capability.
 
 > [!NOTE]
 > WMI and GP don't currently support multiple policies. If you can't directly access the MDM stack, use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage multiple policy format Windows Defender Application Control policies.

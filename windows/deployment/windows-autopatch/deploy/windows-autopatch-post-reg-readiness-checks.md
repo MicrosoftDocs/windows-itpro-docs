@@ -1,15 +1,15 @@
 ---
 title: Post-device registration readiness checks
-description:  This article details how post-device registration readiness checks are performed in Windows Autopatch
+description: This article details how post-device registration readiness checks are performed in Windows Autopatch
 ms.date: 09/16/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: andredm7
+ms.reviewer: andredm7
 ---
 
 # Post-device registration readiness checks (public preview)
@@ -30,7 +30,7 @@ Device readiness in Windows Autopatch is divided into two different scenarios:
 | Scenario | Description |
 | ----- | ----- |
 | Prerequisite checks | Ensures devices follow software-based requirements before being registered with the service. |
-| Post-device registration readiness checks | Provides continuous monitoring of device health for registered devices.<p>IT admins can easily detect and remediate configuration mismatches in their environments or issues that prevent devices from having one or more software update workloads (Windows quality, feature updates, Microsoft Office, Microsoft Teams, or Microsoft Edge) fully managed by the Windows Autopatch service. Configuration mismatches can leave devices in a vulnerable state, out of compliance and exposed to security threats.</p>|
+| Post-device registration readiness checks | Provides continuous monitoring of device health for registered devices.<br><p>IT admins can easily detect and remediate configuration mismatches in their environments or issues that prevent devices from having one or more software update workloads fully managed by the Windows Autopatch service. Software workloads include:<ul><li>Windows quality updates</li><li>Feature updates</li><li>Microsoft Office</li><li>Microsoft Teams</li><li> Microsoft Edge</li></ul><p>Configuration mismatches can leave devices in a vulnerable state, out of compliance and exposed to security threats.</p></p>|
 
 ### Device readiness checks available for each scenario
 
@@ -42,14 +42,19 @@ The status of each post-device registration readiness check is shown in the Wind
 
 ## About the three tabs in the Devices blade
 
-You deploy software updates to secure your environment, but these deployments only reach healthy and active devices. Unhealthy or not ready devices affect the overall software update compliance. Figuring out device health can be challenging and disruptive to the end user when IT can’t obtain proactive data sent by the device to the service for IT admins to proactively detect, troubleshoot, and fix issues.
+You deploy software updates to secure your environment, but these deployments only reach healthy and active devices. Unhealthy or not ready devices affect the overall software update compliance.
 
-Windows Autopatch has three tabs within its Devices blade. Each tab is designed to provide a different set of device readiness statuses so IT admins know where to go to monitor, and troubleshoot potential device health issues:
+Figuring out device health can be challenging and disruptive to the end user when IT admins can't:
+
+- Obtain proactive data sent by the device to the service, or
+- Proactively detect and remediate issues
+
+Windows Autopatch has three tabs within its Devices blade. Each tab is designed to provide a different set of device readiness statuses so IT admins know where to go to monitor, and remediate potential device health issues:
 
 | Tab | Description |
 | ----- | ----- |
 | Ready | This tab only lists devices with the **Active** status. Devices with the **Active** status successfully:<ul><li>Passed the prerequisite checks.</li><li>Registered with Windows Autopatch.</li></ul>This tab also lists devices that have passed all postdevice registration readiness checks. |
-| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven’t communicated with the Microsoft Endpoint Manager-Intune service in the last 28 days.</li></ul> |
+| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven't communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
 | Not registered | Only lists devices with the **Prerequisite failed** status in it. Devices with the **Prerequisite failed** status didn’t pass one or more prerequisite checks during the device registration process. |
 
 ## Details about the post-device registration readiness checks
@@ -60,16 +65,16 @@ A healthy or active device in Windows Autopatch is:
 - Actively sending data
 - Passes all post-device registration readiness checks
 
-The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** is a subcomponent of the overall Windows Autopatch service.
+The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** is a sub-component of the overall Windows Autopatch service.
 
 The following list of post-device registration readiness checks is performed in Windows Autopatch:
 
 | Check | Description |
 | ----- | ----- |
 | **Windows OS build, architecture, and edition** | Checks to see if devices support Windows 1809+ build (10.0.17763), 64-bit architecture and either Pro or Enterprise SKUs. |
-| **Windows update policies managed via Microsoft Endpoint Manager-Intune** | Checks to see if devices have Windows Updates policies managed via Microsoft Endpoint Manager-Intune (MDM). |
-| **Windows update policies managed via Group Policy Object (GPO)** | Checks to see if devices have Windows update policies managed via GPO. Windows Autopatch doesn’t support Windows update policies managed via GPOs. Windows update must be managed via Microsoft Endpoint Manager-Intune. |
-| **Microsoft Office update policy managed via Group Policy Object (GPO)** | Checks to see if devices have Microsoft Office updates policies managed via GPO. Windows Autopatch doesn’t support Microsoft Office update policies managed via GPOs. Office updates must be managed via Microsoft Endpoint Manager-Intune or another Microsoft Office policy management method where Office update bits are downloaded directly from the Office Content Delivery Network (CDN). |
+| **Windows update policies managed via Microsoft Intune** | Checks to see if devices have Windows Updates policies managed via Microsoft Intune (MDM). |
+| **Windows update policies managed via Group Policy Object (GPO)** | Checks to see if devices have Windows update policies managed via GPO. Windows Autopatch doesn’t support Windows update policies managed via GPOs. Windows update must be managed via Microsoft Intune. |
+| **Microsoft Office update policy managed via Group Policy Object (GPO)** | Checks to see if devices have Microsoft Office updates policies managed via GPO. Windows Autopatch doesn’t support Microsoft Office update policies managed via GPOs. Office updates must be managed via Microsoft Intune or another Microsoft Office policy management method where Office update bits are downloaded directly from the Office Content Delivery Network (CDN). |
 | **Windows Autopatch network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that Windows Autopatch services must be able to reach for the various aspects of the Windows Autopatch service. |
 | **Microsoft Teams network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Teams must be able to reach for software updates management. |
 | **Microsoft Edge network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Edge must be able to reach for software updates management. |

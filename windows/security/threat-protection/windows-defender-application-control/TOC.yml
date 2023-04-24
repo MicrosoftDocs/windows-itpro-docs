@@ -30,6 +30,8 @@
               href: allow-com-object-registration-in-windows-defender-application-control-policy.md
             - name: Use WDAC with .NET hardening
               href: use-windows-defender-application-control-with-dynamic-code-security.md
+            - name: Script enforcement with Windows Defender Application Control
+              href: design/script-enforcement.md
             - name: Manage packaged apps with WDAC
               href: manage-packaged-apps-with-windows-defender-application-control.md
             - name: Use WDAC to control specific plug-ins, add-ins, and modules
@@ -66,6 +68,8 @@
               href: wdac-wizard-create-supplemental-policy.md
             - name: Editing a WDAC policy with the Wizard
               href: wdac-wizard-editing-policy.md
+            - name: Creating WDAC Policy Rules from WDAC Events
+              href: wdac-wizard-parsing-event-logs.md
             - name: Merging multiple WDAC policies with the Wizard
               href: wdac-wizard-merging-policies.md
 - name: WDAC deployment guide
@@ -85,17 +89,15 @@
       href: merge-windows-defender-application-control-policies.md
     - name: Enforce WDAC policies
       href: enforce-windows-defender-application-control-policies.md
-    - name: Use code signing to simplify application control for classic Windows applications
+    - name: Use code signing for added control and protection with WDAC
       href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
       items:
-        - name: "Optional: Use the WDAC Signing Portal in the Microsoft Store for Business"
-          href: use-device-guard-signing-portal-in-microsoft-store-for-business.md
-        - name: "Optional: Create a code signing cert for WDAC"
-          href: create-code-signing-cert-for-windows-defender-application-control.md
         - name: Deploy catalog files to support WDAC
           href: deploy-catalog-files-to-support-windows-defender-application-control.md
-    - name: Use signed policies to protect Windows Defender Application Control against tampering
-      href: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
+        - name: Use signed policies to protect Windows Defender Application Control against tampering
+          href: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
+        - name: "Optional: Create a code signing cert for WDAC"
+          href: create-code-signing-cert-for-windows-defender-application-control.md
     - name: Disable WDAC policies
       href: disable-windows-defender-application-control-policies.md
     - name: LOB Win32 Apps on S Mode
@@ -103,16 +105,22 @@
 - name: WDAC operational guide
   href: windows-defender-application-control-operational-guide.md
   items:
-    - name: Understanding Application Control event tags
-      href: event-tag-explanations.md
+    - name: WDAC debugging and troubleshooting
+      href: operations/wdac-debugging-and-troubleshooting.md
     - name: Understanding Application Control event IDs
       href: event-id-explanations.md
+    - name: Understanding Application Control event tags
+      href: event-tag-explanations.md
     - name: Query WDAC events with Advanced hunting
       href: querying-application-control-events-centrally-using-advanced-hunting.md
     - name: Known Issues
       href: operations/known-issues.md
     - name: Managed installer and ISG technical reference and troubleshooting guide
       href: configure-wdac-managed-installer.md
+    - name: CITool.exe technical reference
+      href: operations/citool-commands.md
+    - name: Inbox WDAC policies
+      href: operations/inbox-wdac-policies.md
 - name: WDAC AppId Tagging guide
   href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
   items:

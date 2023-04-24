@@ -3,19 +3,19 @@ title: Use multiple Windows Defender Application Control Policies (Windows)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 07/19/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Use multiple Windows Defender Application Control Policies
@@ -88,7 +88,7 @@ When you're merging policies, the policy type and ID of the leftmost/first polic
 
 ## Deploying multiple policies
 
-In order to deploy multiple Windows Defender Application Control policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by Microsoft Endpoint Manager Intune's Custom OMA-URI feature.
+In order to deploy multiple Windows Defender Application Control policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by Microsoft Intune's custom OMA-URI feature.
 
 ### Deploying multiple policies locally
 
@@ -106,7 +106,7 @@ Multiple Windows Defender Application Control policies can be managed from an MD
 
 However, when policies are unenrolled from an MDM server, the CSP will attempt to remove every policy from devices, not just the policies added by the CSP. The reason for this is that the ApplicationControl CSP doesn't track enrollment sources for individual policies, even though it will query all policies on a device, regardless if they were deployed by the CSP.
 
-For more information on deploying multiple policies, optionally using Microsoft Endpoint Manager Intune's Custom OMA-URI capability, see [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp).
+For more information on deploying multiple policies, optionally using Microsoft Intune's custom OMA-URI capability, see [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp).
 
 > [!NOTE]
 > WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format Windows Defender Application Control policies.

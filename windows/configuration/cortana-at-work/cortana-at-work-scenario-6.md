@@ -1,13 +1,15 @@
 ---
 title: Review a reminder suggested by Cortana (Windows)
 description: A test scenario on how to use Cortana with the Suggested reminders feature.
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Test scenario 6 – Change your language and perform a quick search with Cortana

@@ -1,13 +1,14 @@
 ---
 title: Define readiness criteria
 description: Identify important roles and figure out how to classify apps
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: m365initiative-coredeploy
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Define readiness criteria

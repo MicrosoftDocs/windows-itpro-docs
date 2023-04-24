@@ -1,12 +1,12 @@
 ---
 title: DeviceLock CSP
 description: Learn how the DeviceLock configuration service provider (CSP) is used by the enterprise management server to configure device lock related policies.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -61,10 +61,10 @@ DeviceLock
 -------------MinDevicePasswordComplexCharacters
 ```
 
-<a href="" id="provider"></a>**Provider**  
+<a href="" id="provider"></a>**Provider**
 Required. An interior node to group all policy providers. Scope is permanent. Supported operation is Get.
 
-<a href="" id="---------------providerid"></a> ***ProviderID***  
+<a href="" id="---------------providerid"></a> ***ProviderID***
 Optional. The node that contains the configured management server's ProviderID. Exchange ActiveSync policies set by Exchange are saved by the Sync client separately. Scope is dynamic. The following operations are supported:
 
 -   **Add** - Add the management account to the configuration service provider tree.
@@ -76,7 +76,7 @@ Optional. The node that contains the configured management server's ProviderID. 
 
  
 
-<a href="" id="providerid-devicepasswordenabled"></a>***ProviderID*/DevicePasswordEnabled**  
+<a href="" id="providerid-devicepasswordenabled"></a>***ProviderID*/DevicePasswordEnabled**
 Optional. An integer value that specifies whether device lock is enabled. Possible values include:
 
 -   0 - Device lock is enabled.
@@ -86,7 +86,7 @@ The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-allowsimpledevicepassword"></a>***ProviderID*/AllowSimpleDevicePassword**  
+<a href="" id="providerid-allowsimpledevicepassword"></a>***ProviderID*/AllowSimpleDevicePassword**
 Optional. An integer value that specifies whether simple passwords, such as "1111" or "1234", are allowed. Possible values include:
 
 -   0 - Not allowed.
@@ -96,12 +96,12 @@ Invalid values are treated as a configuration failure. The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-mindevicepasswordlength"></a>***ProviderID*/MinDevicePasswordLength**  
+<a href="" id="providerid-mindevicepasswordlength"></a>***ProviderID*/MinDevicePasswordLength**
 Optional. An integer value that specifies the minimum number of characters required in the PIN. Valid values are 4 to 18 inclusive. The default value is 4. Invalid values are treated as a configuration failure. The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-alphanumericdevicepasswordrequired"></a>***ProviderID*/AlphanumericDevicePasswordRequired**  
+<a href="" id="providerid-alphanumericdevicepasswordrequired"></a>***ProviderID*/AlphanumericDevicePasswordRequired**
 Optional. An integer value that specifies the complexity of the password or PIN allowed.
 
 Possible values include:
@@ -114,39 +114,39 @@ Invalid values are treated as a configuration failure. The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-devicepasswordexpiration"></a>***ProviderID*/DevicePasswordExpiration**  
+<a href="" id="providerid-devicepasswordexpiration"></a>***ProviderID*/DevicePasswordExpiration**
 Deprecated in Windows 10.
 
-<a href="" id="providerid-devicepasswordhistory"></a>***ProviderID*/DevicePasswordHistory**  
+<a href="" id="providerid-devicepasswordhistory"></a>***ProviderID*/DevicePasswordHistory**
 Deprecated in Windows 10.
 
-<a href="" id="providerid-maxdevicepasswordfailedattempts"></a>***ProviderID*/MaxDevicePasswordFailedAttempts**  
+<a href="" id="providerid-maxdevicepasswordfailedattempts"></a>***ProviderID*/MaxDevicePasswordFailedAttempts**
 Optional. An integer value that specifies the number of authentication failures allowed before the device will be wiped. Valid values are 0 to 999. The default value is 0, which indicates the device won't be wiped, whatever the number of authentication failures.
 
 Invalid values are treated as a configuration failure. The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-maxinactivitytimedevicelock"></a>***ProviderID*/MaxInactivityTimeDeviceLock**  
+<a href="" id="providerid-maxinactivitytimedevicelock"></a>***ProviderID*/MaxInactivityTimeDeviceLock**
 Optional. An integer value that specifies the amount of time (in minutes) that the device can remain idle before it's password locked. Valid values are 0 to 999. A value of 0 indicates no time-out is specified. In this case, the maximum screen time-out allowed by the UI applies.
 
 Invalid values are treated as a configuration failure. The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-mindevicepasswordcomplexcharacters"></a>***ProviderID*/MinDevicePasswordComplexCharacters**  
+<a href="" id="providerid-mindevicepasswordcomplexcharacters"></a>***ProviderID*/MinDevicePasswordComplexCharacters**
 Optional. An integer value that specifies the number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong password. Valid values are 1 to 3 for Windows client. The default value is 1.
 
 Invalid values are treated as a configuration failure. The scope is dynamic.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="devicevalue"></a>**DeviceValue**  
+<a href="" id="devicevalue"></a>**DeviceValue**
 Required. A permanent node that groups the policy values applied to the device. The server can query this node to discover what policy values are applied to the device. The scope is permanent.
 
 Supported operation is Get.
 
-<a href="" id="devicevalue-devicepasswordenable-----mindevicepasswordcomplexcharacters"></a>**DeviceValue/DevicePasswordEnable, …, MinDevicePasswordComplexCharacters**  
+<a href="" id="devicevalue-devicepasswordenable-----mindevicepasswordcomplexcharacters"></a>**DeviceValue/DevicePasswordEnable, …, MinDevicePasswordComplexCharacters**
 Required. This node has the same set of policy nodes as the **ProviderID** node. All nodes under **DeviceValue** are read-only permanent nodes. Each node represents the current device lock policy. For detailed descriptions of each policy, see the ***ProviderID*** subnode descriptions.
 
 ## OMA DM examples
@@ -312,4 +312,4 @@ The value applied to the device can be queried via the nodes under the **DeviceV
 
 [Policy CSP](policy-configuration-service-provider.md)
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

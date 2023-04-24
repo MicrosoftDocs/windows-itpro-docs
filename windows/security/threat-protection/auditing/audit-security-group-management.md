@@ -3,16 +3,17 @@ title: Audit Security Group Management (Windows 10)
 description: The policy setting, Audit Security Group Management, determines if audit events are generated when specific security group management tasks are performed.
 ms.assetid: ac2ee101-557b-4c84-b9fa-4fb23331f1aa
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Security Group Management

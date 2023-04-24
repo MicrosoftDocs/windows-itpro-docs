@@ -1,18 +1,15 @@
 ---
 title: Manage connections from Windows 10 and Windows 11 Server/Enterprise editions operating system components to Microsoft services
 description: Learn how to minimize connections from Windows to Microsoft services, and configure particular privacy settings related to these connections.
-ms.reviewer:
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection:
-  - M365-security-compliance
-  - highpri
-ms.topic: article
-ms.date: 12/14/2021
-ms.technology: privacy
+ms.date: 03/07/2016
+ms.collection: highpri
+ms.topic: conceptual
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services

@@ -1,18 +1,11 @@
 ---
 title: Firewall and network protection in the Windows Security app
 description: Use the Firewall & network protection section to see the status of and make changes to firewalls and network connections for the machine.
-keywords: wdsc, firewall, windows defender firewall, network, connections, domain, private network, publish network, allow firewall, firewall rule, block firewall
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date:
-ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.date: 12/31/2018
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 

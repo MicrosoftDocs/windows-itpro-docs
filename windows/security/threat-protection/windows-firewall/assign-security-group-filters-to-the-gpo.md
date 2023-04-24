@@ -1,27 +1,15 @@
 ---
 title: Assign Security Group Filters to the GPO (Windows)
 description: Learn how to use Group Policy Management MMC to assign security group filters to a GPO to make sure that the GPO is applied to the correct computers.
-ms.assetid: bcbe3299-8d87-4ec1-9e86-8e4a680fd7c8
-ms.reviewer: jekrynit
-ms.author: paoloma
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Assign Security Group Filters to the GPO

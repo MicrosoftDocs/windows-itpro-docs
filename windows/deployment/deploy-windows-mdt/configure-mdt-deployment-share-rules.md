@@ -1,37 +1,39 @@
 ---
 title: Configure MDT deployment share rules (Windows 10)
 description: Learn how to configure the MDT rules engine to reach out to other resources for additional information instead of storing settings directly in the rules engine.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.date: 11/28/2022
 ---
 
 # Configure MDT deployment share rules
 
-In this topic, you'll learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
+In this article, you'll learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
 
-## <a href="" id="sec01"></a>Assign settings
+## Assign settings
 
 When using MDT, you can assign setting in three distinct ways:
--   You can pre-stage the information before deployment.
--   You can prompt the user or technician for information.
--   You can have MDT generate the settings automatically.
+
+- You can pre-stage the information before deployment.
+- You can prompt the user or technician for information.
+- You can have MDT generate the settings automatically.
 
 In order to illustrate these three options, let's look at some sample configurations.
 
-## <a href="" id="sec02"></a>Sample configurations
+## Sample configurations
 
 Before adding the more advanced components like scripts, databases, and web services, consider the commonly used configurations below; they demonstrate the power of the rules engine.
 
 ### Set computer name by MAC Address
 
-If you have a small test environment, or simply want to assign settings to a limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. If you have many machines, it makes sense to use the database instead.
+If you have a small test environment, or simply want to assign settings to a limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. When you have many machines, it makes sense to use the database instead.
 
-``` 
+```ini
 [Settings]
 Priority=MacAddress, Default
 [Default]
@@ -46,7 +48,7 @@ In the preceding sample, you set the PC00075 computer name for a machine with a 
 
 Another way to assign a computer name is to identify the machine via its serial number.
 
-``` 
+```ini
 [Settings]
 Priority=SerialNumber, Default
 [Default]
@@ -61,7 +63,7 @@ In this sample, you set the PC00075 computer name for a machine with a serial nu
 
 You also can configure the rules engine to use a known property, like a serial number, to generate a computer name on the fly.
 
-``` 
+```ini
 [Settings]
 Priority=Default
 [Default]
@@ -70,15 +72,15 @@ OSDComputerName=PC-%SerialNumber%
 ```
 
 In this sample, you configure the rules to set the computer name to a prefix (PC-) and then the serial number. If the serial number of the machine is CND0370RJ7, the preceding configuration sets the computer name to PC-CND0370RJ7.
-**Note**  
 
-Be careful when using the serial number to assign computer names. A serial number can contain more than 15 characters, but the Windows setup limits a computer name to 15 characters.
- 
+> [!NOTE]
+> Be careful when using the serial number to assign computer names. A serial number can contain more than 15 characters, but the Windows setup limits a computer name to 15 characters.
+
 ### Generate a limited computer name based on a serial number
 
 To avoid assigning a computer name longer than 15 characters, you can configure the rules in more detail by adding VBScript functions, as follows:
 
-``` 
+```ini
 [Settings]
 Priority=Default
 [Default]
@@ -92,7 +94,7 @@ In the preceding sample, you still configure the rules to set the computer name 
 
 In the rules, you find built-in properties that use a Windows Management Instrumentation (WMI) query to determine whether the machine you're deploying is a laptop, desktop, or server. In this sample, we assume you want to add laptops to different OUs in Active Directory. Note that ByLaptopType isn't a reserved word; rather, it's the name of the section to read.
 
-``` 
+```ini
 [Settings]
 Priority=ByLaptopType, Default
 [Default]
@@ -103,18 +105,12 @@ Subsection=Laptop-%IsLaptop%
 MachineObjectOU=OU=Laptops,OU=Contoso,DC=contoso,DC=com
 ```
 
-## Related topics
+## Related articles
 
-[Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)
-
-[Configure MDT for UserExit scripts](configure-mdt-for-userexit-scripts.md)
-
-[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
-
-[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
-
-[Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
-
-[Use web services in MDT](use-web-services-in-mdt.md)
-
-[Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
+- [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)
+- [Configure MDT for UserExit scripts](configure-mdt-for-userexit-scripts.md)
+- [Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
+- [Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
+- [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
+- [Use web services in MDT](use-web-services-in-mdt.md)
+- [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)

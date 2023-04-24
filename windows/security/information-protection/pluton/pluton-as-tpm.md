@@ -1,18 +1,17 @@
 ---
 title: Microsoft Pluton as Trusted Platform Module (TPM 2.0)
 description: Learn more about Microsoft Pluton security processor as Trusted Platform Module (TPM 2.0)
-ms.reviewer:
-ms.prod: m365-security
+ms.reviewer: 
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.localizationpriority: medium
-ms.collection:
-  - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/15/2022
-appliesto:
-- ✅ <b>Windows 11, version 22H2</b>
+appliesto: 
+  - ✅ <b>Windows 11, version 22H2</b>
+ms.technology: itpro-security
 ---
 
 # Microsoft Pluton as Trusted Platform Module

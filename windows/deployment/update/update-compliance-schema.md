@@ -1,16 +1,20 @@
 ---
 title: Update Compliance Data Schema
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: an overview of Update Compliance data schema
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 04/01/2023
 ---
 
 # Update Compliance Schema
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 
 When the visualizations provided in the default experience don't fulfill your reporting needs, or if you need to troubleshoot issues with devices, it's valuable to understand the schema for Update Compliance and have a high-level understanding of the capabilities of [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language) to power additional dashboards, integration with external data analysis tools, automated alerting, and more.
 

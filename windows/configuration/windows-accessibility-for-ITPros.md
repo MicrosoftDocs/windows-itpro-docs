@@ -8,11 +8,11 @@ author: lizgt2000
 ms.reviewer: 
 manager: aaroncz
 ms.localizationpriority: medium
-ms.date: 09/20/2022
-ms.topic: reference
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.topic: conceptual
+ms.collection: tier1
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Accessibility information for IT professionals
@@ -59,7 +59,9 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 - [Keep notifications around longer](https://support.microsoft.com/windows/make-windows-easier-to-hear-9c18cfdc-63be-2d47-0f4f-5b00facfd2e1). If notifications aren't staying visible long enough for you to notice them, you can increase the time a notification will be displayed up to five minutes.
 
-- [Read in Braille](https://support.microsoft.com/windows/chapter-8-using-narrator-with-braille-3e5f065b-1c9d-6eb2-ec6d-1d07c9e94b20). Narrator supports braille displays from more than 35 manufacturers using more than 40 languages and multiple braille variants.
+- [Read in braille](https://support.microsoft.com/windows/chapter-8-using-narrator-with-braille-3e5f065b-1c9d-6eb2-ec6d-1d07c9e94b20). Narrator supports braille displays from more than 35 manufacturers using more than 40 languages and multiple braille variants.
+
+- Starting in Windows 11, version 22H2 with [KB5022913](https://support.microsoft.com/kb/5022913), the compatibility of braille displays has been expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience.
 
 ## Hearing
 

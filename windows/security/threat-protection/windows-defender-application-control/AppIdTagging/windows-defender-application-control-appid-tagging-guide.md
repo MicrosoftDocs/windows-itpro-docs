@@ -3,19 +3,19 @@ title: Designing, creating, managing and troubleshooting Windows Defender Applic
 description: How to design, create, manage and troubleshoot your WDAC AppId Tagging policies
 keywords: security, malware, firewall
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 04/27/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # WDAC Application ID (AppId) Tagging guide

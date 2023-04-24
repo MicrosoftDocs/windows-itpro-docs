@@ -3,28 +3,28 @@ title: Plan for WDAC policy management (Windows)
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 02/21/2018
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/02/2022
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
@@ -38,11 +38,11 @@ The first step in implementing application control is to consider how your polic
 Most Windows Defender Application Control policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
 1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML. In audit mode, block events are generated but files aren't prevented from executing.
-2. Deploy the audit mode policy to intended devices.
-3. Monitor audit block events from the intended devices and add/edit/delete rules as needed to address unexpected/unwanted blocks.
+2. [Deploy the audit mode policy](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) to intended devices.
+3. [Monitor audit block events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations) from the intended devices and add/edit/delete rules as needed to address unexpected/unwanted blocks.
 4. Repeat steps 2-3 until the remaining block events meet expectations.
-5. Generate the enforced mode version of the policy. In enforced mode, files that aren't allowed by the policy are prevented from executing and corresponding block events are generated.
-6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
+5. [Generate the enforced mode version](/windows/security/threat-protection/windows-defender-application-control/enforce-windows-defender-application-control-policies) of the policy. In enforced mode, files that aren't allowed by the policy are prevented from executing and corresponding block events are generated.
+6. [Deploy the enforced mode policy](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide) to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
 
 ![Recommended WDAC policy deployment process.](images/policyflow.png)

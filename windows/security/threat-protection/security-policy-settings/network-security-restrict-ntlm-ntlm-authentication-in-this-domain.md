@@ -1,26 +1,21 @@
 ---
-title: Network security Restrict NTLM in this domain (Windows 10)
+title: Network security Restrict NTLM in this domain
 description: Learn about best practices, security considerations and more for the security policy setting, Network Security Restrict NTLM NTLM authentication in this domain.
-ms.assetid: 4c7884e9-cc11-4402-96b6-89c77dc908f8
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Network security: Restrict NTLM: NTLM authentication in this domain
 
 **Applies to**
--   Windows 10
+- Windows Server
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: NTLM authentication in this domain** security policy setting.
 

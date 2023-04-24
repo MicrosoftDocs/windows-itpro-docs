@@ -3,24 +3,24 @@ title: Account Lockout Policy (Windows 10)
 description: Describes the Account Lockout Policy settings and links to information about each policy setting.
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/11/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Account Lockout Policy
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the Account Lockout Policy settings and links to information about each policy setting.

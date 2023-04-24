@@ -1,22 +1,15 @@
 ---
-title: Identity and access management (Windows 10)
+title: Identity and access management
 description: Learn more about identity and access protection technologies in Windows.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 02/05/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
 ---
 
 # Identity and access management
 
-Learn more about identity and access management technologies in Windows 10 and Windows 11.
+Learn more about identity and access management technologies in Windows.
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../includes/virtual-smart-card-deprecation-notice.md)]
 
 | Section | Description |
 |-|-|

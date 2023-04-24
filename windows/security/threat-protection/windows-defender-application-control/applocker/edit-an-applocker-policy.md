@@ -3,19 +3,18 @@ title: Edit an AppLocker policy (Windows)
 description: This topic for IT professionals describes the steps required to modify an AppLocker policy.
 ms.assetid: dbc72d1f-3fe0-46c2-aeeb-96621fce7637
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Edit an AppLocker policy

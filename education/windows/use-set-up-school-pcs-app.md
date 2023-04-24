@@ -1,20 +1,10 @@
 ---
 title: Use Set up School PCs app
 description: Learn how to use the Set up School PCs app and apply the provisioning package.
-keywords: shared PC, school, Set up School PCs, overview, how to use
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 # Use the Set up School PCs app  
 
@@ -23,7 +13,7 @@ IT administrators and technical teachers can use the **Set up School PCs** app t
 Set up School PCs also:  
 * Joins each student PC to your organization's Office 365 and Azure Active Directory tenant.  
 * Enables the optional Autopilot Reset feature, to return devices to a fully configured or known IT-approved state.  
-* Utilizes Windows Update and maintenance hours to keeps student PCs up-to-date, without interfering with class time.
+* Utilizes Windows Update and maintenance hours to keep student PCs up-to-date, without interfering with class time.
 * Locks down the student PC to prevent activity that isn't beneficial to their education.  
 
 This article describes how to fill out your school's information in the Set up School PCs app. To learn more about the app's functionality, start with the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).  
@@ -33,8 +23,6 @@ Before you begin, make sure that you, your computer, and your school's network a
 
 * Office 365 and Azure Active Directory
 * [Latest Set up School PCs app](https://www.microsoft.com/store/apps/9nblggh4ls40)  
-* Permission to buy apps in Microsoft Store for Education
-* Set up School PCs app has permission to access the Microsoft Store for Education
 * A NTFS-formatted USB drive that is at least 1 GB, if not installing Office; and at least 8 GB, if installing Office
 * Student PCs must either: 
     * Be within range of the Wi-Fi network that you configured in the app.
@@ -180,9 +168,9 @@ The following table describes each setting and lists the applicable Windows 10 v
 |---------|---------|---------|---------|---------|---------|---------|
 |Remove apps pre-installed by the device manufacturer |X|X|X|X| Uninstalls apps that came loaded on the computer by the device's manufacturer. |Adds about 30 minutes to the provisioning process.|
 |Allow local storage (not recommended for shared devices)    |X|X|X|X| Lets students save files to the Desktop and Documents folder on the Student PC.         |Not recommended if the device will be shared between different students.|
-|Optimize device for a single student, instead of a shared cart or lab    |X|X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended if the device will be shared between different students. Single-optimized accounts are set to expire, and require a signin, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
+|Optimize device for a single student, instead of a shared cart or lab    |X|X|X|X|Optimizes the device for use by a single student, rather than many students.       |Recommended if the device will be shared between different students. Single-optimized accounts are set to expire, and require a sign-in, 180 days after setup. This setting increases the maximum PC storage to 100% of the available disk space. In this case, student accounts aren't deleted unless the account has been inactive for 180 days. |
 |Let guests sign in to these PCs     |X|X|X|X|Allows guests to use student PCs without a school account. |Common to use within a public, shared space, such as a library. Also used when a student loses their password. Adds a **Guest** account to the PC sign-in screen that anyone can sign in to.|
-|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student’s PC from the lock screen, apply the device’s original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
+|Enable Autopilot Reset  |Not available|X|X|X|Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Azure AD and MDM).  |Requires Windows 10, version 1709 and WinRE must be enabled on the PC. Setup will fail if both requirements aren't met.|
 |Lock screen background|X|X|X|X|Change the default screen lock background to a custom image.|Click **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.|   
 
 After you've made your selections, click **Next**.

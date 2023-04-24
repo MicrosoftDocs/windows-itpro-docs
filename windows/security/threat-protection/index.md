@@ -1,15 +1,13 @@
 ---
 title: Windows threat protection
 description: Describes the security capabilities in Windows client focused on threat protection
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
-ms.author: dansimp
-author: dansimp
-ms.localizationpriority: medium
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Windows threat protection

@@ -1,20 +1,8 @@
 ---
 title: Enrollment in Intune with Windows Autopilot
-description: how to join Azure AD and enroll in Intune using Windows Autopilot
+description: Learn how to join Azure AD and enroll in Intune using Windows Autopilot.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
 ---
 
 # Windows Autopilot
@@ -64,7 +52,7 @@ Here are the steps for creating a dynamic group for the devices that have an ass
 1. Select **Create group**
     :::image type="content" source="./images/intune-education-autopilot-group.png" alt-text="Intune for Education - creation of a dynamic group for Autopilot devices" border="true":::
 
-More advanced dynamic membership rules can be created from Microsoft Endpoint Manager admin center. For more information, see [Create an Autopilot device group using Intune][MEM-3].
+More advanced dynamic membership rules can be created from Microsoft Intune admin center. For more information, see [Create an Autopilot device group using Intune][MEM-3].
 
 > [!TIP]
 > You can use these dynamic groups not only to assign Autopilot profiles, but also to target applications and settings.
@@ -86,7 +74,7 @@ To create an Autopilot deployment profile:
 1. Ensure that **User account type** is configured as **Standard**
 1. Select **Save**
 
-While Intune for Education offers simple options for Autopilot configurations, more advanced deployment profiles can be created from Microsoft Endpoint Manager admin center. For more information, see [Windows Autopilot deployment profiles][MEM-4].
+While Intune for Education offers simple options for Autopilot configurations, more advanced deployment profiles can be created from Microsoft Intune admin center. For more information, see [Windows Autopilot deployment profiles][MEM-4].
 
 ### Configure an Enrollment Status Page
 
@@ -97,7 +85,7 @@ An Enrollment Status Page (ESP) is a greeting page displayed to users while enro
 > [!NOTE]
 > Some Windows Autopilot deployment profiles **require** the ESP to be configured.
 
-To deploy the ESP to devices, you need to create an ESP profile in Microsoft Endpoint Manager.
+To deploy the ESP to devices, you need to create an ESP profile in Microsoft Intune.
 
 > [!TIP]
 > While testing the deployment process, you can configure the ESP to:

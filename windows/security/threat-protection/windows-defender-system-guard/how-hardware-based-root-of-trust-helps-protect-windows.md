@@ -1,19 +1,16 @@
 ---
 title: How a Windows Defender System Guard helps protect Windows 10
 description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 search.appverid: met150
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/01/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10
@@ -82,11 +79,19 @@ As Windows 10 boots, a series of integrity measurements are taken by Windows Def
 
 ![Boot time integrity.](images/windows-defender-system-guard-boot-time-integrity.png)
 
-After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Endpoint Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
+After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
 ## System requirements for System Guard
 
-|For Intel&reg; vPro&trade; processors starting with Intel&reg; Coffeelake, Whiskeylake, or later silicon|Description|
+This feature is available for the following processors:
+
+- Intel&reg; vPro&trade; processors starting with Intel&reg; Coffeelake, Whiskeylake, or later silicon
+- AMD&reg; processors starting with Zen2 or later silicon
+- Qualcomm&reg; processors with SD850 or later chipsets
+
+### Requirements for Intel&reg; vPro&trade; processors starting with Intel&reg; Coffeelake, Whiskeylake, or later silicon
+
+|Name|Description|
 |--------|-----------|
 |64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more information about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more information about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
 |Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0. Integrated/firmware TPMs aren't supported, except Intel chips that support Platform Trust Technology (PTT), which is a type of integrated hardware TPM that meets the TPM 2.0 spec.|
@@ -100,7 +105,9 @@ After the system boots, Windows Defender System Guard signs and seals these meas
 |Platform firmware|Platform firmware must carry all code required to execute an Intel&reg; Trusted Execution Technology secure launch: <ul><li>Intel&reg; SINIT ACM must be carried in the OEM BIOS</li><li>Platforms must ship with a production ACM signed by the correct production Intel&reg; ACM signer for the platform</li></ul>|
 |Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
 
-|For AMD&reg; processors starting with Zen2 or later silicon|Description|
+### Requirements for AMD&reg; processors starting with Zen2 or later silicon
+
+|Name|Description|
 |--------|-----------|
 |64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more information about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more information about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
 |Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0 OR Microsoft Pluton TPM.|
@@ -112,7 +119,9 @@ After the system boots, Windows Defender System Guard signs and seals these meas
 |Platform firmware|Platform firmware must carry all code required to execute Secure Launch: <ul><li>AMD&reg; Secure Launch platforms must ship with AMD&reg; DRTM driver devnode exposed and the AMD&reg; DRTM driver installed</li></ul><br/>Platform must have AMD&reg; Secure Processor Firmware Anti-Rollback protection enabled <br/> Platform must have AMD&reg; Memory Guard enabled.|
 |Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
 
-|For Qualcomm&reg; processors with SD850 or later chipsets|Description|
+### Requirements for Qualcomm&reg; processors with SD850 or later chipsets
+
+|Name|Description|
 |--------|-----------|
 |Monitor Mode Communication|All Monitor Mode communication buffers must be implemented in either EfiRuntimeServicesData (recommended), data sections of EfiRuntimeServicesCode as described by the Memory Attributes Table, EfiACPIMemoryNVS, or EfiReservedMemoryType memory types|
 |Monitor Mode Page Tables|All Monitor Mode page tables must: <ul><li>NOT contain any mappings to EfiConventionalMemory (for example no OS/VMM owned memory) </li><li>They must NOT have execute and write permissions for the same page </li><li>Platforms must only allow Monitor Mode pages marked as executable </li><li>The memory map must report Monitor Mode as EfiReservedMemoryType</li><li>Platforms must provide mechanism to protect the Monitor Mode page tables from modification</li></ul> |

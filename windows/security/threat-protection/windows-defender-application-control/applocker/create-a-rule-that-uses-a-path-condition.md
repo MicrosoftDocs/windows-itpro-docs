@@ -3,19 +3,18 @@ title: Create a rule that uses a path condition (Windows)
 description: This topic for IT professionals shows how to create an AppLocker rule with a path condition.
 ms.assetid: 9b2093f5-5976-45fa-90c3-da1e0e845d95
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a rule that uses a path condition

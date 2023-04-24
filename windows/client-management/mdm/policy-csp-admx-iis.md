@@ -1,92 +1,95 @@
 ---
-title: Policy CSP - ADMX_IIS
-description: Learn about the Policy CSP - ADMX_IIS.
-ms.author: vinpa
-ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: ADMX_IIS Policy CSP
+description: Learn more about the ADMX_IIS Area in Policy CSP.
 author: vinaypamnani-msft
-ms.date: 09/17/2021
-ms.reviewer: 
 manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_IIS-Begin -->
 # Policy CSP - ADMX_IIS
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_IIS-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_IIS-Editable-End -->
 
-<!--Policies-->
-## ADMX_IIS policies  
+<!-- PreventIISInstall-Begin -->
+## PreventIISInstall
 
-<dl>
-  <dd>
-    <a href="#admx-iis-preventiisinstall">ADMX_IIS/PreventIISInstall</a>
-  </dd>
-</dl>
+<!-- PreventIISInstall-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PreventIISInstall-Applicability-End -->
 
-<hr/>
+<!-- PreventIISInstall-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_IIS/PreventIISInstall
+```
+<!-- PreventIISInstall-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-iis-preventiisinstall"></a>**ADMX_IIS/PreventIISInstall**  
+<!-- PreventIISInstall-Description-Begin -->
+<!-- Description-Source-ADMX -->
+"This policy setting prevents installation of Internet Information Services (IIS) on this computer.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Internet Information Services (IIS) cannot be installed, and you will not be able to install Windows components or applications that require IIS. Users installing Windows components or applications that require IIS might not receive a warning that IIS cannot be installed because of this Group Policy setting. Enabling this setting will not have any effect on IIS if IIS is already installed on the computer.
+- If you disable or do not configure this policy setting, IIS can be installed, as well as all the programs and applications that require IIS to run."
+<!-- PreventIISInstall-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PreventIISInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventIISInstall-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventIISInstall-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventIISInstall-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Machine
+<!-- PreventIISInstall-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents installation of Internet Information Services (IIS) on this computer. 
+| Name | Value |
+|:--|:--|
+| Name | PreventIISInstall |
+| Friendly Name | Prevent IIS installation |
+| Location | Computer Configuration |
+| Path | Windows Components > Internet Information Services |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\IIS |
+| Registry Value Name | PreventIISInstall |
+| ADMX File Name | IIS.admx |
+<!-- PreventIISInstall-AdmxBacked-End -->
 
-If you enable this policy setting, Internet Information Services (IIS) can't be installed, and you'll not be able to install Windows components or applications that require IIS. Users installing Windows components or applications that require IIS might not receive a warning that IIS can't be installed because of this Group Policy setting. 
+<!-- PreventIISInstall-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventIISInstall-Examples-End -->
 
-Enabling this setting won't have any effect on IIS, if IIS is already installed on the computer. 
+<!-- PreventIISInstall-End -->
 
-If you disable or don't configure this policy setting, IIS can be installed, and all the programs and applications that require IIS to run."
+<!-- ADMX_IIS-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_IIS-CspMoreInfo-End -->
 
-<!--/Description-->
+<!-- ADMX_IIS-End -->
 
+## Related articles
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent IIS installation*
--   GP name: *PreventIISInstall*
--   GP path: *Windows Components\Internet Information Services*
--   GP ADMX file name: *IIS.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-
-<hr/>
-
-
-<!--/Policies-->
-
-## Related topics
-
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)

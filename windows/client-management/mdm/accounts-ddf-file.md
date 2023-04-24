@@ -2,12 +2,12 @@
 title: Accounts DDF file
 description: View the XML file containing the device description framework (DDF) for the Accounts configuration service provider.
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 04/17/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -42,7 +42,7 @@ The XML below is for Windows 10, version 1803 and later.
           </Scope>
           <DFType>
             <DDFName></DDFName>
-            <MIME>com.microsoft/1.0/MDM/Accounts</MIME> 
+            <MIME>com.microsoft/1.0/MDM/Accounts</MIME>
           </DFType>
         </DFProperties>
         <Node>

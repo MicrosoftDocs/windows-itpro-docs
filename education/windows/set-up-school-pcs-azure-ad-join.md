@@ -1,20 +1,10 @@
 ---
 title: Azure AD Join with Set up School PCs app
-description: Describes how Azure AD Join is configured in the Set up School PCs app.
-keywords: shared PC, school, set up school pcs
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how Azure AD Join is configured in the Set up School PCs app.
+ms.topic: article
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---  
 
 # Azure AD Join for school PCs  
@@ -86,13 +76,7 @@ Automated Azure AD tokens expire after 180 days. The expiration date for each to
 ## Next steps    
 Learn more about setting up devices with the Set up School PCs app.  
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-
