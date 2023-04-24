@@ -68,7 +68,7 @@ Here's an overview of the unique Windows Enterprise edition features, cloud powe
 |-|-|
 |**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-requirements)**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
 |**[Managed Microsoft Defender Application Guard for Microsoft Edge](/deployedge/microsoft-edge-security-windows-defender-application-guard)**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
-|**[Modern BitLocker Management](h/windows/security/information-protection/bitlocker/bitlocker-overview)** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
+|**[Modern BitLocker Management](/windows/security/information-protection/bitlocker/bitlocker-overview)** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
 |**[Personal Data Encryption](/windows/security/information-protection/personal-data-encryption/overview-pde)**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
 |**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|Connect remote users to the organization network without the need for traditional VPN connections.|
 |**[Always-On VPN device tunnel](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Benefit from advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection with Always-On VPN device tunnel.|

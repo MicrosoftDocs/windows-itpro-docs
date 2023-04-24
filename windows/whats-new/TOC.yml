@@ -1,5 +1,7 @@
 - name: What's new in Windows
   href: index.yml
+- name: Windows commercial licensing overview
+  href: windows-licensing.md
 - name: Windows 11
   expanded: true
   items:
