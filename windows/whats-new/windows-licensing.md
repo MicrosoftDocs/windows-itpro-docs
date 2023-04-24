@@ -16,15 +16,15 @@ ms.technology: itpro-security
 
 # Windows commercial licensing overview
 
-This document provides an overview of the products and use rights available through commercial licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
+This document provides an overview of the products and use rights available through Microsoft commercial licensing. Information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization are also included.
 
 > [!NOTE]
-> This content is not meant to replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](https://www.microsoft.com/licensing/product-licensing/products.aspx).
+> The content of this article doesn't replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](https://www.microsoft.com/licensing/product-licensing/products.aspx).
 
 ## Windows 11 editions
 
-The following table lists the editions of Windows 11 available through each Microsoft distribution channel.
-
+The following table lists the editions of Windows 11 available through each Microsoft distribution channel:
+ 
 | Full Packaged Product (Retail) | Preinstalled on device (OEM)|Commercial Licensing|
 |-|-|-|
 |Windows 11 Home<br>Windows 11 Pro|Windows 11 Home<br>Windows 11 Pro|Windows 11 Pro<br>Windows 11 Enterprise <br>Windows 11 Enterprise LTSC|
@@ -33,13 +33,13 @@ The following table lists the editions of Windows 11 available through each Micr
 
 The following offerings are available for purchase through [Microsoft Commercial Licensing](https://www.microsoft.com/licensing):
 
-|Product|Description|
-|-|-|
-|Windows 11 Pro Upgrade |Windows 11 Pro is designed for small and medium businesses and enables organizations to manage their devices and apps, protect their business data, facilitate remote and mobile scenarios, and take advantage of the cloud technologies for their organizations. Windows 11 Pro devices are a good choice for organizations that support *choose your own device (CYOD)* programs and *prosumer* customers. The Windows 11 Pro Upgrade in Commercial Licensing upgrades a device from a previous version of Windows Pro|
-|Windows 11 Enterprise E3|Windows 11 Enterprise E3 is a per user subscription available in Commercial Licensing programs, and is intended for large and medium sized organizations. It includes Windows Enterprise edition with cloud-powered capabilities and subscription use rights. Examples include advanced identity protection, the broadest range of options for operating system deployment, update control, and device management. Windows Enterprise E3 is licensed through Commercial Licensing programs and requires Windows Pro as qualifying operating systems.
-|Windows 11 Enterprise E5|Windows 11 Enterprise E5 is for organizations that want to take advantage of everything in Windows 11 Enterprise E3 with the addition of **Microsoft Defender for Endpoint Plan 2**, a service that helps enterprises detect, investigate, and respond to advanced cybersecurity attacks on their endpoints and networks. Windows 11 Enterprise E5 is available per user in Commercial Licensing programs|
-|Windows 10 Enterprise LTSC |Windows 10 Enterprise LTSC is designed for PC systems that have strict change-management policies with only security and critical bug fixes. By using a Long-Term Servicing Channel edition, you can apply monthly Windows 10 security updates for specialized devices while holding back new-feature updates for an extended period of time, up to 5 years. Windows Enterprise LTSC is available in the per user or per device model depending on the Volume Licensing program through witch it is acquired|
-|Windows Virtual Desktop Access (VDA) Subscription License|The Windows VDA subscription license provides the right to access virtual Windows desktop environments from devices that aren't covered by a Commercial Licensing offer that includes VDA rights, such as thin clients. Windows VDA is available on a per device or per user basis|
+|Product|Description|Availability|
+|-|-|-|
+|Windows 11 Pro Upgrade |Windows 11 Pro is designed for small and medium businesses. Windows 11 Pro enables organizations to manage devices and apps, protect their data, facilitate remote and mobile scenarios, while taking advantage of the cloud technologies that support their business. Windows 11 Pro devices are a good choice for organizations that support *choose your own device (CYOD)* programs and *prosumer* customers. | The Windows 11 Pro Upgrade in Commercial Licensing upgrades a device from a previous version of Windows Pro.|
+|Windows 11 Enterprise E3|Windows 11 Enterprise E3 is intended for large and medium-sized organizations. It includes Windows Enterprise edition with cloud-powered capabilities and subscription use rights. Examples include advanced identity protection, the broadest range of options for operating system deployment, update control, and device management. |Windows 11 Enterprise E3 is available **per-user** in Commercial Licensing programs. It requires Windows Pro as qualifying operating systems.|
+|Windows 11 Enterprise E5|Windows 11 Enterprise E5 is for organizations that want to take advantage of everything in Windows 11 Enterprise E3 with the addition of **Microsoft Defender for Endpoint Plan 2**, a service that helps enterprises detect, investigate, and respond to advanced cybersecurity attacks on their endpoints and networks.| Windows 11 Enterprise E5 is available **per-user** in Commercial Licensing programs. It requires Windows Pro as qualifying operating systems.|
+|Windows 10 Enterprise LTSC |Windows 10 Enterprise LTSC is designed for devices that have strict change-management policies with only security and critical bug fixes. By using a Long-Term Servicing Channel edition, you can apply monthly Windows 10 security updates for specialized devices while holding back new-feature updates for an extended period of time, up to five years. | Windows Enterprise LTSC is available in the **per-user** and **per-device** model, depending on the Volume Licensing program through which it's acquired.|
+|Windows Virtual Desktop Access (VDA) Subscription License|The Windows VDA subscription license provides the right to access virtual Windows desktop environments from devices that aren't covered by a Commercial Licensing offer that includes VDA rights, such as thin clients. |Windows VDA is available on a **per-device** and **per-user** basis.|
 
 ## Windows 11 Pro Upgrade license
 
@@ -52,7 +52,7 @@ The Windows 11 Pro Upgrade license is recommended if you want to:
 
 ## Windows 11 Enterprise
 
-There are two core Windows 11 Enterprise offers: **Windows 11 Enterprise E3** and **Windows 11 Enterprise E5**. Each of these can be purchased on a **per-user basis**, and are available only through **Commercial Licensing**, including the **Cloud Solution Provider** program. For details about Windows Enterprise per device, see [per device check out this section of this guide](*TO ADD*)
+There are two core Windows 11 Enterprise offers: **Windows 11 Enterprise E3** and **Windows 11 Enterprise E5**. These offers can be purchased on a **per-user basis**, and are only available through **Commercial Licensing**, including the **Cloud Solution Provider** program. For details about Windows Enterprise per-device, see [per device check out this section of this guide](*TO ADD*)
 
 ### Windows 11 Enterprise E3
 
@@ -60,7 +60,7 @@ Windows 11 Enterprise E3 builds on Windows 11 Pro by adding more advanced featur
 
 Windows 11 Enterprise E3 is usually licensed through Volume Licensing programs and is an upgrade from Windows Pro.
 
-### Windows 11 Enterprise E3 OS features
+### Windows 11 Enterprise E3 features
 
 Here's an overview of the unique Windows Enterprise edition features, cloud powered capabilities, and use rights.
 
@@ -100,7 +100,7 @@ With Windows 11 Enterprise E3, you can take advantage of the following licensing
 |-|-|
 |**Five Windows Instances per licensed user**|Allows your employees to simultaneously use a Windows laptop, a cloud PC and a specialized device with Windows LTSC, and more|
 |**36 months (3 years) support on annual feature releases**|Get extra time to deploy feature releases|
-|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|Empower flexible workstyles and smarter work with the included best-in-class virtualization access rights|
+|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|Empower flexible work styles and smarter work with the included best-in-class virtualization access rights|
 |**Windows LTSC Enterprise**|Intended for highly specialized devices that require limited changes due to regulations and certification|
 |**[Microsoft Desktop Optimization Pack (MDOP) ](/microsoft-desktop-optimization-pack)**|Help improve compatibility and management, reduce support costs, improve asset management, and improve policy control|
 
@@ -136,27 +136,26 @@ The following table lists the Windows 11 Enterprise E3 features, services and us
 
 |Feature, service or use right|Windows Pro|Windows Enterprise|
 |-|-|-|
-|**Windows Defender Credential Guard**||Yes|
-|**Managed Microsoft Defender Application Guard for Microsoft Edge**|Yes|Yes|
-|**Cloud-based BitLocker Management**|Yes|Yes|
-|**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**||Yes|
-|**Direct Access**|Yes|Yes|
+|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|No|Yes|
+|**[Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management](/deployedge/microsoft-edge-security-windows-defender-application-guard)**|Yes|Yes|
+|**[Cloud-based BitLocker Management](/windows/security/information-protection/bitlocker/bitlocker-overview)**|Yes|Yes|
+|**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|No|Yes|
+|**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|Yes|Yes|
 |**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes <sup>[\[1\]](#Note1)</sup>|Yes|
-|**Application Management GPOs**||Yes|
-|**Windows UI customization (CSP to manage)**||Yes|
+|**Windows UI customization (CSP to manage)**|No|Yes|
 |**Windows Subscription Activation**|Yes|Yes|
-|**Windows Autopatch**|Yes|Yes|
+|**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|Yes|Yes|
 |**[Windows Update For Business deployment service](/windows/deployment/update/deployment-service-overview)**|Yes|Yes|
 |**[Universal Print](/universal-print/)**|Yes|Yes|
 |**[Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache)**|Yes|Yes|
-|**Endpoint analytics proactive remediation**|Yes|Yes|
-|**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**||Yes|
+|**[Endpoint analytics proactive remediation](/mem/analytics/overview)**|Yes|Yes|
+|**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**|No|Yes|
 |**Feature release support period**| 24 months | 36 months|
 |**Windows feature update device readiness report** <sup>[\[2\]](#Note2)</sup>|Yes|Yes|
 |**Windows feature update compatibility risk report** <sup>[\[2\]](#Note2)</sup>|Yes|Yes|
 |**Microsoft Desktop Optimization Pack (MDOP)**|Yes|Yes|
 
-<sup><a name="Note1"></a>[1]</sup> Device Tunnel requires Enterprise edition.
+<sup><a name="Note1"></a>[1]</sup> Device Tunnel requires Enterprise edition.\
 <sup><a name="Note2"></a>[2]</sup> Intune license required.
 
 ## Next steps
