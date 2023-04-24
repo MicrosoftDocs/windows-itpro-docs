@@ -1,14 +1,17 @@
 ---
 title: What's new in Windows 11, version 22H2 for IT pros
 description: Learn more about what's new in Windows 11 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
-manager: dougeby
-ms.prod: w10
+manager: aaroncz
+ms.prod: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri
-ms.custom: intro-overview
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 11, version 22H2
@@ -19,7 +22,7 @@ Windows 11, version 22H2 is a feature update for Windows 11. It includes all fea
 
 Windows 11, version 22H2 follows the [Windows 11 servicing timeline](/lifecycle/faq/windows#windows-11):
 
-- **Windows 11 Professional**: Serviced for 24 months from the release date.
+- **Windows 11 Pro**: Serviced for 24 months from the release date.
 - **Windows 11 Enterprise**: Serviced for 36 months from the release date.
 
 Windows 11, version 22H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 22H2 update](https://aka.ms/W11/how-to-get-22H2). Review the [Windows 11, version 22H2 Windows IT Pro blog post](https://aka.ms/new-in-22H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
@@ -43,7 +46,7 @@ For more information, see [Enhanced Phishing Protection in Microsoft Defender Sm
 <!-- 6286281-->
 **Smart App Control** adds significant protection from malware, including new and emerging threats, by blocking apps that are malicious or untrusted. **Smart App Control** also helps to block potentially unwanted apps, which are apps that may cause your device to run slowly, display unexpected ads, offer extra software you didn't want, or do other things you don't expect.
 
-For more information, see [Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control.md#wdac-and-smart-app-control).
+For more information, see [Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control#wdac-and-smart-app-control).
 
 ## Credential Guard
 <!--6289166-->
@@ -118,3 +121,8 @@ For more information, see [Supported configuration service provider (CSP) polici
 Windows 11, version 22H2, includes additional improvements for people with disabilities: system-wide live captions, Focus sessions, voice access, and more natural voices for Narrator. For more information, see [New accessibility features coming to Windows 11](https://blogs.windows.com/windowsexperience/2022/05/10/new-accessibility-features-coming-to-windows-11/) and [How inclusion drives innovation in Windows 11](https://blogs.windows.com/windowsexperience/?p=177554).
 
 For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-10-accessibility-for-itpros).
+
+## High Efficiency Video Coding (HEVC) support
+<!--7475101-->
+Starting in Windows 11, version 22H2, support for High Efficiency Video Coding (HEVC) is now available. You can play HEVC videos in any video app on your Windows 11 device. HEVC is designed to take advantage of hardware capabilities on some newer devices to support 4K and Ultra HD content.
+For devices that don't have hardware support for HEVC videos, software support is provided, but the playback experience might vary based on the video resolution and your devices performance.

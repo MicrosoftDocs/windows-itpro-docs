@@ -1,26 +1,25 @@
 ---
 title: Searching for Fixed Applications in Compatibility Administrator (Windows 10)
 description: Compatibility Administrator can locate specific executable (.exe) files with previously applied compatibility fixes, compatibility modes, or AppHelp messages.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Searching for Fixed Applications in Compatibility Administrator
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 With the search functionality in Compatibility Administrator, you can locate specific executable (.exe) files with previously applied compatibility fixes, compatibility modes, or AppHelp messages. This is particularly useful if you are trying to identify applications with a specific compatibility fix or identifying which fixes are applied to a specific application.
 
@@ -30,8 +29,6 @@ The **Query Compatibility Databases** tool provides additional search options. F
 
 > [!IMPORTANT]
 > You must perform your search with the correct version of the Compatibility Administrator tool. If you are searching for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. If you are searching for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
-
- 
 
 **To search for previous fixes**
 
@@ -47,11 +44,9 @@ The **Query Compatibility Databases** tool provides additional search options. F
 
 ## Viewing Your Query Results
 
-
 Your query results display the affected files, the application location, the application name, the type of compatibility fix, and the custom database that provided the fix.
 
 ## Exporting Your Query Results
-
 
 You can export your search results to a text (.txt) file for later review or archival.
 
@@ -63,12 +58,3 @@ You can export your search results to a text (.txt) file for later review or arc
 
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-

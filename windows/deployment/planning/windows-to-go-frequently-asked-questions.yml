@@ -4,21 +4,23 @@ metadata:
   description: Though Windows To Go is no longer being developed, these frequently asked questions (FAQ) can provide answers about the feature.
   ms.assetid: bfdfb824-4a19-4401-b369-22c5e6ca9d6e
   ms.reviewer: 
-  author: aczechowski
-  ms.author: aaroncz
-  manager: dougeby
+  author: frankroj
+  ms.author: frankroj
+  manager: aaroncz
   keywords: FAQ, mobile, device, USB
-  ms.prod: w10
+  ms.prod: windows-client
+  ms.technology: itpro-deploy
   ms.mktglfcycl: deploy
   ms.pagetype: mobility
   ms.sitesec: library
   audience: itpro
   ms.topic: faq
+  ms.date: 10/28/2022
 title: 'Windows To Go: frequently asked questions'
 summary: |
   **Applies to**
   
-  -   Windows 10
+  -   Windows 10
   
   > [!IMPORTANT]
   > Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature doesn't support feature updates and therefore doesn't enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
@@ -114,12 +116,12 @@ sections:
       - question: |
           What is Windows To Go?
         answer: |
-          Windows To Go is a feature for users of Windows 10 Enterprise and Windows 10 Education that enables users to boot a full version of Windows from external USB drives on host PCs.
+          Windows To Go is a feature for users of Windows 10 Enterprise and Windows 10 Education that enables users to boot a full version of Windows from external USB drives on host PCs.
 
       - question: |
           Does Windows To Go rely on virtualization?
         answer: |
-          No. Windows To Go is a native instance of Windows 10 that runs from a USB device. It's just like a laptop hard drive with Windows 8 that has been put into a USB enclosure.
+          No. Windows To Go is a native instance of Windows 10 that runs from a USB device. It's just like a laptop hard drive with Windows 8 that has been put into a USB enclosure.
 
       - question: |
           Who should use Windows To Go?
@@ -133,9 +135,9 @@ sections:
           
           -   A Windows To Go recommended USB drive to provision; See the list of currently available USB drives at [Hardware considerations for Windows To Go](windows-to-go-overview.md#wtg-hardware)
           
-          -   A Windows 10 Enterprise or Windows 10 Education image
+          -   A Windows 10 Enterprise or Windows 10 Education image
           
-          -   A Windows 10 Enterprise, Windows 10 Education or Windows 10 Professional host PC that can be used to provision new USB keys
+          -   A Windows 10 Enterprise, Windows 10 Education or Windows 10 Professional host PC that can be used to provision new USB keys
           
           You can use a Windows PowerShell script to target several drives and scale your deployment for a large number of Windows To Go drives. You can also use a USB duplicator to duplicate a Windows To Go drive after it has been provisioned if you're creating a large number of drives. See the [Windows To Go Step by Step](https://go.microsoft.com/fwlink/p/?LinkId=618950) article on the TechNet wiki for a walkthrough of the drive creation process.
           
@@ -147,7 +149,7 @@ sections:
       - question: |
           Is Windows To Go supported on USB 2.0 and USB 3.0 ports?
         answer: |
-          Yes. Windows To Go is fully supported on either USB 2.0 ports or USB 3.0 ports on PCs certified for Windows 7 or later.
+          Yes. Windows To Go is fully supported on either USB 2.0 ports or USB 3.0 ports on PCs certified for Windows 7 or later.
 
       - question: |
           How do I identify a USB 3.0 port?
@@ -162,22 +164,22 @@ sections:
       - question: |
           Can the user self-provision Windows To Go?
         answer: |
-          Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise, Windows 10 Education and Windows 10 Professional. Additionally, Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives. Configuration Manager can be downloaded for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkID=618746).
+          Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise, Windows 10 Education and Windows 10 Professional. Additionally, Configuration Manager SP1 and later releases include support for user self-provisioning of Windows To Go drives.
           
       - question: |
           How can Windows To Go be managed in an organization?
         answer: |
-          Windows To Go can be deployed and managed like a traditional desktop PC using standard Windows enterprise software distribution tools like Microsoft Endpoint Configuration Manager. Computer and user settings for Windows To Go workspaces can be managed using Group Policy setting also in the same manner that you manage Group Policy settings for other PCs in your organization. Windows To Go workspaces can be configured to connect to the organizational resources remotely using DirectAccess or a virtual private network connection so that they can connect securely to your network.
+          Windows To Go can be deployed and managed like a traditional desktop PC using standard Windows enterprise software distribution tools like Microsoft Configuration Manager. Computer and user settings for Windows To Go workspaces can be managed using Group Policy setting also in the same manner that you manage Group Policy settings for other PCs in your organization. Windows To Go workspaces can be configured to connect to the organizational resources remotely using DirectAccess or a virtual private network connection so that they can connect securely to your network.
 
       - question: |
           How do I make my computer boot from USB?
         answer: |
-          For host computers running Windows 10
+          For host computers running Windows 10
           
           -   Using Cortana, search for **Windows To Go startup options**, and then press Enter.
           -   In the **Windows To Go Startup Options** dialog box, select **Yes**, and then click **Save Changes** to configure the computer to boot from USB.
           
-          For host computers running Windows 8 or Windows 8.1:
+          For host computers running Windows 8 or Windows 8.1:
           
           Press **Windows logo key+W** and then search for **Windows To Go startup options** and then press Enter.
           
@@ -198,7 +200,7 @@ sections:
           
           For more detailed instructions, see the wiki article, [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkID=618951).
           
-          **Warning**  
+          **Warning**  
           Configuring a computer to boot from USB will cause your computer to attempt to boot from any bootable USB device connected to your computer. This potentially includes malicious devices. Users should be informed of this risk and instructed to not have any bootable USB storage devices plugged in to their computers except for their Windows To Go drive.
           
            
@@ -206,7 +208,7 @@ sections:
       - question: |
           Why isn't my computer booting from USB?
         answer: |
-          Computers certified for Windows 7 and later are required to have support for USB boot. Check to see if any of the following items apply to your situation:
+          Computers certified for Windows 7 and later are required to have support for USB boot. Check to see if any of the following items apply to your situation:
           
           1.  Ensure that your computer has the latest BIOS installed and the BIOS is configured to boot from a USB device.
           
@@ -221,7 +223,7 @@ sections:
         answer: |
           If the Windows To Go drive is removed, the computer will freeze and the user will have 60 seconds to reinsert the Windows To Go drive. If the Windows To Go drive is reinserted into the same port it was removed from, Windows will resume at the point where the drive was removed. If the USB drive isn't reinserted, or is reinserted into a different port, the host computer will turn off after 60 seconds.
           
-          **Warning**  
+          **Warning**  
           You should never remove your Windows To Go drive when your workspace is running. The computer freeze is a safety measure to help mitigate the risk of accidental removal. Removing the Windows To Go drive without shutting down the Windows To Go workspace could result in corruption of the Windows To Go drive.
           
            
@@ -229,7 +231,7 @@ sections:
       - question: |
           Can I use BitLocker to protect my Windows To Go drive?
         answer: |
-          Yes. In Windows 8 and later, BitLocker has added support for using a password to protect operating system drives. This means that you can use a password to secure your Windows To Go workspace and you'll be prompted to enter this password every time you use the Windows To Go workspace.
+          Yes. In Windows 8 and later, BitLocker has added support for using a password to protect operating system drives. This means that you can use a password to secure your Windows To Go workspace and you'll be prompted to enter this password every time you use the Windows To Go workspace.
 
       - question: |
           Why can't I enable BitLocker from Windows To Go Creator?
@@ -265,12 +267,12 @@ sections:
       - question: |
           Does Windows To Go support crash dump analysis?
         answer: |
-          Yes. Windows 8 and later support crash dump stack analysis for both USB 2.0 and 3.0.
+          Yes. Windows 8 and later support crash dump stack analysis for both USB 2.0 and 3.0.
 
       - question: |
           Do "Windows To Go Startup Options" work with dual boot computers?
         answer: |
-          Yes, if both operating systems are running the Windows 8 operating system. Enabling "Windows To Go Startup Options" should cause the computer to boot from the Windows To Go workspace when the drive is plugged in before the computer is turned on.
+          Yes, if both operating systems are running the Windows 8 operating system. Enabling "Windows To Go Startup Options" should cause the computer to boot from the Windows To Go workspace when the drive is plugged in before the computer is turned on.
           
           If you have configured a dual boot computer with a Windows operating system and another operating system, it might work occasionally and fail occasionally. Using this configuration is unsupported.
           
@@ -279,7 +281,7 @@ sections:
         answer: |
           Windows To Go Creator and the recommended deployment steps for Windows To Go set the NO\_DEFAULT\_DRIVE\_LETTER flag on the Windows To Go drive. This flag prevents Windows from automatically assigning drive letters to the partitions on the Windows To Go drive. That's why you can't see the partitions on the drive when you plug your Windows To Go drive into a running computer. This helps prevent accidental data leakage between the Windows To Go drive and the host computer. If you really need to access the files on the Windows To Go drive from a running computer, you can use diskmgmt.msc or diskpart to assign a drive letter.
           
-          **Warning**  
+          **Warning**  
           It's strongly recommended that you don't plug your Windows To Go drive into a running computer. If the computer is compromised, your Windows To Go workspace can also be compromised.
           
            
@@ -289,8 +291,8 @@ sections:
         answer: |
           Windows To Go Creator and the recommended deployment steps for Windows To Go set SAN Policy 4 on Windows To Go drive. This policy prevents Windows from automatically mounting internal disk drives. That's why you can't see the internal hard drives of the host computer when you're booted into Windows To Go. This is done to prevent accidental data leakage between Windows To Go and the host system. This policy also prevents potential corruption on the host drives or data loss if the host operating system is in a hibernation state. If you really need to access the files on the internal hard drive, you can use diskmgmt.msc to mount the internal drive.
           
-          **Warning**  
-          It is strongly recommended that you do not mount internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 or later operating system, mounting the drive will lead to loss of hibernation state and therefor user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
+          **Warning**  
+          It is strongly recommended that you do not mount internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 or later operating system, mounting the drive will lead to loss of hibernation state and therefore user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
           
            
           
@@ -307,7 +309,7 @@ sections:
       - question: |
           Does Windows To Go work with ARM processors?
         answer: |
-          No. Windows RT is a specialized version of Windows designed for ARM processors. Windows To Go is currently only supported on PCs with x86 or x64-based processors.
+          No. Windows RT is a specialized version of Windows designed for ARM processors. Windows To Go is currently only supported on PCs with x86 or x64-based processors.
 
       - question: |
           Can I synchronize data from Windows To Go with my other computer?
@@ -322,7 +324,7 @@ sections:
       - question: |
           Do I need to activate Windows To Go every time I roam?
         answer: |
-          No, Windows To Go requires volume activation; either using the [Key Management Service](/previous-versions/tn-archive/ff793434(v=technet.10)) (KMS) server in your organization or using [Active Directory](/previous-versions/windows/hh852637(v=win.10)) based volume activation. The Windows To Go workspace won't need to be reactivated every time you roam. KMS activates Windows on a local network, eliminating the need for individual computers to connect to Microsoft. To remain activated, KMS client computers must renew their activation by connecting to the KMS host on periodic basis. This typically occurs as soon as the user has access to the corporate network (either through a direct connection on-premises or a through remote connection using DirectAccess or a virtual private network connection), once activated the machine won't need to be activated again until the activation validity interval has passed. In a KMS configuration, the activation validity interval is 180 days.
+          No, Windows To Go requires volume activation; either using the [Key Management Service](/previous-versions/tn-archive/ff793434(v=technet.10)) (KMS) server in your organization or using [Active Directory](/previous-versions/windows/hh852637(v=win.10)) based volume activation. The Windows To Go workspace won't need to be reactivated every time you roam. KMS activates Windows on a local network, eliminating the need for individual computers to connect to Microsoft. To remain activated, KMS client computers must renew their activation by connecting to the KMS host on periodic basis. This typically occurs as soon as the user has access to the corporate network (either through a direct connection on-premises or through a remote connection using DirectAccess or a virtual private network connection), once activated the machine won't need to be activated again until the activation validity interval has passed. In a KMS configuration, the activation validity interval is 180 days.
           
       - question: |
           Can I use all Windows features on Windows To Go?
@@ -332,7 +334,7 @@ sections:
       - question: |
           Can I use all my applications on Windows To Go?
         answer: |
-          Yes. Because your Windows To Go workspace is a full Windows 10 environment, all applications that work with Windows 10 should work in your Windows To Go workspace. However, any applications that use hardware binding (usually for licensing and/or digital rights management reasons) may not run when you roam your Windows To Go drive between different host computers, and you may have to use those applications on the same host computer every time.
+          Yes. Because your Windows To Go workspace is a full Windows 10 environment, all applications that work with Windows 10 should work in your Windows To Go workspace. However, any applications that use hardware binding (usually for licensing and/or digital rights management reasons) may not run when you roam your Windows To Go drive between different host computers, and you may have to use those applications on the same host computer every time.
 
       - question: |
           Does Windows To Go work slower than standard Windows?
@@ -347,14 +349,14 @@ sections:
       - question: |
           Can I boot Windows To Go on a Mac?
         answer: |
-          We're committed to give customers a consistent and quality Windows 10 experience with Windows To Go. Windows To Go supports host devices certified for use with Windows 7 or later. Because Mac computers aren't certified for use with Windows 7 or later, using Windows To Go isn't supported on a Mac.
+          We're committed to give customers a consistent and quality Windows 10 experience with Windows To Go. Windows To Go supports host devices certified for use with Windows 7 or later. Because Mac computers aren't certified for use with Windows 7 or later, using Windows To Go isn't supported on a Mac.
 
       - question: |
           Are there any APIs that allow applications to identify a Windows To Go workspace?
         answer: |
           Yes. You can use a combination of identifiers to determine if the currently running operating system is a Windows To Go workspace. First, check if the **PortableOperatingSystem** property is true. When that value is true, it means that the operating system was booted from an external USB device.
           
-          Next, check if the **OperatingSystemSKU** property is equal to **4** (for Windows 10 Enterprise) or **121** (for Windows 10 Education). The combination of those two properties represents a Windows To Go workspace environment.
+          Next, check if the **OperatingSystemSKU** property is equal to **4** (for Windows 10 Enterprise) or **121** (for Windows 10 Education). The combination of those two properties represents a Windows To Go workspace environment.
           
           For more information, see the MSDN article on the [Win32\_OperatingSystem class](/windows/win32/cimwin32prov/win32-operatingsystem).
           
@@ -371,17 +373,17 @@ sections:
       - question: |
           Why won't Windows To Go work on a computer running Windows XP or Windows Vista?
         answer: |
-          Actually it might. If you've purchased a computer certified for Windows 7 or later and then installed an older operating system, Windows To Go will boot and run as expected as long as you've configured the firmware to boot from USB. However, if the computer was certified for Windows XP or Windows Vista, it might not meet the hardware requirements for Windows To Go to run. Typically computers certified for Windows Vista and earlier operating systems have less memory, less processing power, reduced video rendering, and slower USB ports.
+          Actually it might. If you've purchased a computer certified for Windows 7 or later and then installed an older operating system, Windows To Go will boot and run as expected as long as you've configured the firmware to boot from USB. However, if the computer was certified for Windows XP or Windows Vista, it might not meet the hardware requirements for Windows To Go to run. Typically computers certified for Windows Vista and earlier operating systems have less memory, less processing power, reduced video rendering, and slower USB ports.
 
       - question: |
           Why does the operating system on the host computer matter?
         answer: |
-          It doesn't other than to help visually identify if the PC has compatible hardware. For a PC to be certified for Windows 7 or later it had to support booting from USB. If a computer can't boot from USB there's no way that it can be used with Windows To Go. The Windows To Go workspace is a full Windows 10 environment, so all of the hardware requirements of Windows 10 with respect to processing speed, memory usage, and graphics rendering need to be supported to be assured that it will work as expected.
+          It doesn't other than to help visually identify if the PC has compatible hardware. For a PC to be certified for Windows 7 or later it had to support booting from USB. If a computer can't boot from USB there's no way that it can be used with Windows To Go. The Windows To Go workspace is a full Windows 10 environment, so all of the hardware requirements of Windows 10 with respect to processing speed, memory usage, and graphics rendering need to be supported to be assured that it will work as expected.
 
       - question: |
-          My host computer running Windows 7 is protected by BitLocker Drive Encryption. Why did I need to use the recovery key to unlock and reboot my host computer after using Windows To Go?
+          My host computer running Windows 7 is protected by BitLocker Drive Encryption. Why did I need to use the recovery key to unlock and reboot my host computer after using Windows To Go?
         answer: |
-          The default BitLocker protection profile in Windows 7 monitors the host computer for changes to the boot order as part of protecting the computer from tampering. When you change the boot order of the host computer to enable it to boot from the Windows To Go drive, the BitLocker system measurements will reflect that change and boot into recovery mode so that the computer can be inspected if necessary.
+          The default BitLocker protection profile in Windows 7 monitors the host computer for changes to the boot order as part of protecting the computer from tampering. When you change the boot order of the host computer to enable it to boot from the Windows To Go drive, the BitLocker system measurements will reflect that change and boot into recovery mode so that the computer can be inspected if necessary.
           
           You can reset the BitLocker system measurements to incorporate the new boot order using the following steps:
           
@@ -404,7 +406,7 @@ sections:
           The host computer will now be able to be booted from a USB drive without triggering recovery mode.
           
           > [!NOTE]
-          > The default BitLocker protection profile in Windows 8 or later doesn't monitor the boot order.
+          > The default BitLocker protection profile in Windows 8 or later doesn't monitor the boot order.
           
            
           
@@ -429,9 +431,9 @@ sections:
       - question: |
           Why do I keep on getting the message "Installing devices…" when I boot Windows To Go?
         answer: |
-          One of the challenges involved in moving the Windows To Go drive between PCs while seamlessly booting Windows with access to all of their applications and data is that for Windows to be fully functional, specific drivers need to be installed for the hardware in each machine that runs Windows. Windows 8 or later has a process called respecialize which will identify new drivers that need to be loaded for the new PC and disable drivers that aren't present on the new configuration. In general, this feature is reliable and efficient when roaming between PCs of widely varying hardware configurations.
+          One of the challenges involved in moving the Windows To Go drive between PCs while seamlessly booting Windows with access to all of their applications and data is that for Windows to be fully functional, specific drivers need to be installed for the hardware in each machine that runs Windows. Windows 8 or later has a process called respecialize which will identify new drivers that need to be loaded for the new PC and disable drivers that aren't present on the new configuration. In general, this feature is reliable and efficient when roaming between PCs of widely varying hardware configurations.
           
-          In certain cases, third-party drivers for different hardware models or versions can reuse device ID's, driver file names, registry keys (or any other operating system constructs that don't  support side-by-side storage) for similar hardware. For example, Touchpad drivers on different laptops often reuse the same device ID's, and video cards from the same manufacturer may often reuse service names. Windows handles these situations by marking the non-present device node with a flag that indicates the existing driver needs to be reinstalled before continuing to install the new driver.
+          In certain cases, third-party drivers for different hardware models or versions can reuse device IDs, driver file names, registry keys (or any other operating system constructs that don't  support side-by-side storage) for similar hardware. For example, Touchpad drivers on different laptops often reuse the same device ID's, and video cards from the same manufacturer may often reuse service names. Windows handles these situations by marking the non-present device node with a flag that indicates the existing driver needs to be reinstalled before continuing to install the new driver.
           
           This process will occur on any boot that a new driver is found and a driver conflict is detected. In some cases that will result in a respecialize progress message "Installing devices…" displaying every time that a Windows to Go drive is roamed between two PCs that require conflicting drivers.
           

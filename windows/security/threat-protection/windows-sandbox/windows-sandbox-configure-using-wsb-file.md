@@ -1,16 +1,16 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+ms.prod: windows-client
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: aaroncz
 ms.collection: 
+  - highpri
+  - tier2
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 
-ms.reviewer: 
-ms.technology: windows-sec
+ms.date: 6/30/2022
+ms.technology: itpro-security
 ---
 
 # Windows Sandbox configuration
@@ -29,6 +29,9 @@ A configuration file enables the user to control the following aspects of Window
 - **Printer redirection**: Shares printers from the host into the sandbox.
 - **Clipboard redirection**: Shares the host clipboard with the sandbox so that text and files can be pasted back and forth.
 - **Memory in MB**: The amount of memory, in megabytes, to assign to the sandbox.
+
+> [!NOTE]
+> The size of the sandbox window currently isn't configurable. <!-- windows-itpro-docs #10689 -->
 
 ## Creating a configuration file
 
@@ -77,6 +80,7 @@ Enables or disables networking in the sandbox. You can disable network access to
 `<Networking>value</Networking>`
 
 Supported values:
+- *Enable*: Enables networking in the sandbox.
 - *Disable*: Disables networking in the sandbox.
 - *Default*: This value is the default value for networking support. This value enables networking by creating a virtual switch on the host and connects the sandbox to it via a virtual NIC.
 
@@ -185,6 +189,7 @@ Enables or disables sharing of the host clipboard with the sandbox.
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
 Supported values:
+- *Enable*: Enables sharing of the host clipboard with the sandbox.
 - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
@@ -228,12 +233,14 @@ With the Visual Studio Code installer script already mapped into the sandbox, th
 
 ### VSCodeInstall.cmd
 
+Download vscode to `downloads` folder and run from `downloads` folder
+
 ```batch
 REM Download Visual Studio Code
-curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
+curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Downloads\vscode.exe
 
 REM Install and run Visual Studio Code
-C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
+C:\users\WDAGUtilityAccount\Downloads\vscode.exe /verysilent /suppressmsgboxes
 ```
 
 ### VSCode.wsb
@@ -243,15 +250,17 @@ C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
   <MappedFolders>
     <MappedFolder>
       <HostFolder>C:\SandboxScripts</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads\sandbox</SandboxFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
     <MappedFolder>
       <HostFolder>C:\CodingProjects</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Documents\Projects</SandboxFolder>
       <ReadOnly>false</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
-    <Command>C:\Users\WDAGUtilityAccount\Desktop\SandboxScripts\VSCodeInstall.cmd</Command>
+    <Command>C:\Users\WDAGUtilityAccount\Downloads\sandbox\VSCodeInstall.cmd</Command>
   </LogonCommand>
 </Configuration>
 ```

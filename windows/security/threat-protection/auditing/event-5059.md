@@ -2,16 +2,17 @@
 title: 5059(S, F) Key migration operation. (Windows 10)
 description: Describes security event 5059(S, F) Key migration operation. This event is generated when a cryptographic key is exported/imported using a Key Storage Provider.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5059(S, F): Key migration operation.

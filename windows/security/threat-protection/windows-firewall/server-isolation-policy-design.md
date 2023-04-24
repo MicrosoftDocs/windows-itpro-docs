@@ -1,22 +1,12 @@
 ---
 title: Server Isolation Policy Design (Windows)
 description: Learn about server isolation policy design, where you assign servers to a zone that allows access only to members of an approved network access group.
-ms.reviewer: jekrynit
-ms.author: paoloma
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Server Isolation Policy Design

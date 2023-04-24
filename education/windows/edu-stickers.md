@@ -1,25 +1,21 @@
 ---
 title: Configure Stickers for Windows 11 SE
-description: Description of the Stickers feature and how to configure it via Intune and provisioning package.
+description: Learn about the Stickers feature and how to configure it via Intune and provisioning package.
 ms.date: 09/15/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: how-to
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
-manager: aaroncz
-ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
+  - highpri
+  - education
+  - tier2
 ---
 
 # Configure Stickers for Windows 11 SE
 
 Starting in **Windows 11 SE, version 22H2**, *Stickers* is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background changes.
 
-Similar to the [education theme packs](edu-themes.md), Stickers is a personalization feature that helps the device feel like it was designed for students.
+Similar to the [education theme packs](edu-themes.md "my tooltip example that opens in a new tab"), Stickers is a personalization feature that helps the device feel like it was designed for students.
 
 :::image type="content" source="./images/win-11-se-stickers.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
 
@@ -37,23 +33,36 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To enable Stickers using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-Assign the policy to a security group that contains as members the devices or users that you want to enable Stickers on.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+
+> [!TIP]
+> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+Content-Type: application/json
+
+{"id":"00-0000-0000-0000-000000000000","displayName":"_MSLearn_Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
+```
+
+<sup><a name="footnote1"></a>1</sup> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure Stickers using a provisioning package, use the following settings:
+To configure devices using a provisioning package, [create a provisioning package][WIN-1] using Windows Configuration Designer (WCD) with the following settings:
 
 | Setting |
 |--------|
 | <li> Path: **`Education/AllowStickers`** </li><li>Value: **True**</li>|
 
-Apply the provisioning package to the devices that you want to enable Stickers on.
+Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
 ---
 
@@ -72,6 +81,7 @@ Multiple stickers can be added from the picker by selecting them. The stickers c
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
 
------------
-
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+
+[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
+[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package

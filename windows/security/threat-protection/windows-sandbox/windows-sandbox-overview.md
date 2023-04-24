@@ -1,19 +1,19 @@
 ---
 title: Windows Sandbox
 description: Windows Sandbox overview
-ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+ms.prod: windows-client
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: aaroncz
 ms.collection: 
+  - highpri
+  - tier2
 ms.topic: article
-ms.localizationpriority: 
-ms.date: 
-ms.reviewer: 
-ms.technology: windows-sec
+ms.date: 6/30/2022
+ms.technology: itpro-security
 ---
 
-# Windows Sandbox 
+# Windows Sandbox
 
 Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software installed inside the Windows Sandbox environment remains "sandboxed" and runs separately from the host machine.
 
@@ -50,7 +50,7 @@ Windows Sandbox has the following properties:
    - If you're using a virtual machine, run the following PowerShell command to enable nested virtualization:
 
      ```powershell
-     Set-VMProcessor -VMName \<VMName> -ExposeVirtualizationExtensions $true
+     Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
      ```
 
 3. Use the search bar on the task bar and type **Turn Windows Features on or off** to access the Windows Optional Features tool. Select **Windows Sandbox** and then **OK**. Restart the computer if you're prompted.
@@ -58,7 +58,11 @@ Windows Sandbox has the following properties:
    If the **Windows Sandbox** option is unavailable, your computer doesn't meet the requirements to run Windows Sandbox. If you think this analysis is incorrect, review the prerequisite list and steps 1 and 2.
 
    > [!NOTE]
-   > To enable Sandbox using PowerShell, open PowerShell as Administrator and run **Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online**.
+   > To enable Sandbox using PowerShell, open PowerShell as Administrator and run the following command:
+   > 
+   > ```powershell
+   > Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
+   > ```
 
 4. Locate and select **Windows Sandbox** on the Start menu to run it for the first time.
 

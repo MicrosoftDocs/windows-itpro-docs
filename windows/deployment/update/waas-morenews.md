@@ -1,14 +1,14 @@
 ---
 title: Windows as a service news & resources
 description: The latest news for Windows as a service with resources to help you learn more about them.
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
-ms.manager: elizapo
-author: aczechowski
-ms.author: aaroncz
-ms.reviewer: 
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 # Windows as a service - More news
 

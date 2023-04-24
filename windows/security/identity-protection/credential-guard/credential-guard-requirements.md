@@ -1,26 +1,11 @@
 ---
-title: Windows Defender Credential Guard Requirements (Windows)
+title: Windows Defender Credential Guard requirements
 description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security.
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: zwhittington
-manager: aaroncz
-ms.collection:
-  - M365-identity-device-management
-  - highpri
-ms.topic: article
 ms.date: 12/27/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+ms.topic: article
 ---
 
-# Windows Defender Credential Guard: Requirements
+# Windows Defender Credential Guard requirements
 
 For Windows Defender Credential Guard to provide protection, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements, which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Windows Defender Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to these requirements as [Application requirements](#application-requirements). Beyond these requirements, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
 
@@ -101,7 +86,7 @@ The following tables describe baseline protections, plus protections for improve
 |Hardware: **Trusted Platform Module (TPM)**|**Requirement**: </br> - TPM 1.2 or TPM 2.0, either discrete or firmware. [TPM recommendations](../../information-protection/tpm/tpm-recommendations.md)|A TPM provides protection for VBS encryption keys that are stored in the firmware. TPM helps protect against attacks involving a physically present user with BIOS access.|
 |Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot**|**Requirements**: </br> - See the following Windows Hardware Compatibility Program requirement: System.Fundamentals.Firmware.UEFISecureBoot|UEFI Secure Boot helps ensure that the device boots only authorized code, and can prevent boot kits and root kits from installing and persisting across reboots.|
 |Firmware: **Secure firmware update process**|**Requirements**: </br> - UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: System.Fundamentals.Firmware.UEFISecureBoot.|UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed.|
-|Software: Qualified **Windows operating system**|**Requirement**: </br> - At least Windows 10 Enterprise or Windows Server 2016.|Support for VBS and for management features that simplify configuration of Windows Defender Credential Guard.|
+|Software: Qualified **Windows operating system**|**Requirement**: </br> - At least Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016.|Support for VBS and for management features that simplify configuration of Windows Defender Credential Guard.|
 
 > [!IMPORTANT]
 > The following tables list additional qualifications for improved security. We strongly recommend meeting the additional qualifications to significantly strengthen the level of security that Windows Defender Credential Guard can provide.

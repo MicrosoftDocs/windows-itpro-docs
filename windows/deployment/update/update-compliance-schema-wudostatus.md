@@ -1,16 +1,19 @@
 ---
 title: Update Compliance Schema - WUDOStatus
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: WUDOStatus schema
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-ms.collection: M365-analytics
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 04/01/2023
 ---
 
 # WUDOStatus
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 > [!NOTE]
 > Currently all location-based fields are not working properly. This is a known issue.

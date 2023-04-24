@@ -3,19 +3,18 @@ title: AppLocker policy use scenarios (Windows)
 description: This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # AppLocker policy use scenarios

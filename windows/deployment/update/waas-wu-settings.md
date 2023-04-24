@@ -1,24 +1,22 @@
 ---
 title: Manage additional Windows Update settings
 description: In this article, learn about additional settings to control the behavior of Windows Update.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.collection: highpri
-date: 09/22/2022
+ms.topic: how-to
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-updates
+ms.date: 03/09/2023
 ---
 
 # Manage additional Windows Update settings
 
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
+***(Applies to: Windows 11 & Windows 10)***
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -36,7 +34,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
-| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->| 
+| |  [Windows Update notifications display organization name](#display-organization-name-in-windows-update-notifications) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->|
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -154,7 +152,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 #### Configuring Automatic Updates by using Group Policy
 
-Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
+Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the following options:
 
 **2 - Notify for download and auto install** -  When Windows finds updates that apply to this device, users will be notified that updates are ready to be downloaded. After going to **Settings > Update & security > Windows Update**, users can download and install any available updates.
 
@@ -162,11 +160,13 @@ Under **Computer Configuration\Administrative Templates\Windows Components\Windo
 
 **4 - Auto download and schedule the install** - Specify the schedule using the options in the Group Policy Setting. For more information about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
 
-**5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+**5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates. This option is not available in any Windows 10 or later versions. 
 
-If this setting is set to *Disabled*, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
+**7 - Notify for install and notify for restart** (Windows Server 2016 and later only) - With this option, when Windows finds updates that apply to this device, they will be downloaded, then users will be notified that updates are ready to be installed. Once updates are installed, a notification will be displayed to users to restart the device. 
 
-If this setting is set to *Not Configured*, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
+If this setting is set to **Disabled**, any updates that are available on Windows Update must be downloaded and installed manually. To do this, users must go to **Settings > Update & security > Windows Update**.
+
+If this setting is set to **Not Configured**, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
 
 #### Configuring Automatic Updates by editing the registry
 
@@ -202,6 +202,10 @@ To do this, follow these steps:
      * **3**: Automatically download and notify of installation.
 
      * **4**: Automatically download and scheduled installation.
+
+     * **5**: Allow local admin to select the configuration mode. This option is not available for Windows 10 or later versions.
+
+     * **7**:  Notify for install and notify for restart. (Windows Server 2016 and later only)
 
    * ScheduledInstallDay (REG_DWORD):
 
@@ -248,7 +252,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
    This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
 
-## <a name="bkmk_display-name"> </a> Display organization name in Windows Update notifications
+## Display organization name in Windows Update notifications
 <!--6286260-->
 When Windows 11 clients are associated with an Azure AD tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
   

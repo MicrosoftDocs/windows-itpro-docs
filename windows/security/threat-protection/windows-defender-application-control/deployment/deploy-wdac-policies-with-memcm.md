@@ -1,19 +1,18 @@
 ---
 title: Deploy Windows Defender Application Control policies with Configuration Manager
-description: You can use Microsoft Endpoint Configuration Manager to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
-ms.prod: m365-security
-ms.technology: windows-sec
-ms.collection: M365-security-compliance
+description: You can use Microsoft Configuration Manager to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
+ms.prod: windows-client
+ms.technology: itpro-security
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
-manager: jsuther
+manager: aaroncz
 ms.date: 06/27/2022
 ms.topic: how-to
 ms.localizationpriority: medium
 ---
 
-# Deploy WDAC policies by using Microsoft Endpoint Configuration Manager
+# Deploy WDAC policies by using Microsoft Configuration Manager
 
 **Applies to:**
 
@@ -24,7 +23,7 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](../feature-availability.md).
 
-You can use Microsoft Endpoint Configuration Manager to configure Windows Defender Application Control (WDAC) on client machines.
+You can use Microsoft Configuration Manager to configure Windows Defender Application Control (WDAC) on client machines.
 
 ## Use Configuration Manager's built-in policies
 

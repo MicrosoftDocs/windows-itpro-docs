@@ -1,20 +1,8 @@
 ---
 title: Configure and secure devices with Microsoft Intune
-description: Configure policies with Microsoft Intune in preparation to device deployment
+description: Learn how to configure policies with Microsoft Intune in preparation for device deployment.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
 ---
 
 # Configure and secure devices with Microsoft Intune
@@ -62,7 +50,7 @@ Settings that are commonly configured for student devices include:
 
 - Wallpaper and lock screen background. See: [Lock screen and desktop][INT-7]
 - Wi-Fi connections. See: [Add Wi-Fi profiles][INT-8]
-- Enablement of the integrated testing and assessment solution *Take a test*. See: [Add Take a Test profile][INT-9]
+- Enablement of the integrated testing and assessment solution *Take a Test*. See: [Add Take a Test profile][INT-9]
 
 For more information, see [Windows device settings in Intune for Education][INT-3].
 
@@ -80,7 +68,7 @@ To create a Windows Update policy:
 For more information, see [Updates and upgrade][INT-6].
 
 > [!NOTE]
-> If you require a more complex Windows Update policy, you can create it in Microsoft Endpoint Manager. For more information:
+> If you require a more complex Windows Update policy, you can create it in Microsoft Intune. For more information:
 > - [<u>What is Windows Update for Business?</u>][WIN-1]
 > - [<u>Manage Windows software updates in Intune</u>][MEM-1]
 
@@ -102,7 +90,7 @@ To create a security policy:
 For more information, see [Security][INT-4].
  
 > [!NOTE]
-> If you require more sophisticated security policies, you can create them in Microsoft Endpoint Manager. For more information:
+> If you require more sophisticated security policies, you can create them in Microsoft Intune. For more information:
 > - [<u>Antivirus</u>][MEM-2]
 > - [<u>Disk encryption</u>][MEM-3]
 > - [<u>Firewall</u>][MEM-4]

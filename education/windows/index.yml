@@ -7,19 +7,16 @@ metadata:
   title: Windows for Education documentation
   description: Learn about how to plan, deploy and manage Windows devices in an education environment with Microsoft Intune
   ms.topic: landing-page
-  ms.prod: windows
-  ms.collection: education
+  ms.prod: windows-client
+  ms.technology: itpro-edu
+  ms.collection:
+  - education
+  - highpri
+  - tier1
   author: paolomatarazzo
   ms.author: paoloma
-  ms.date: 08/10/2022
-  ms.reviewer: 
+  ms.date: 03/09/2023
   manager: aaroncz
-  ms.localizationpriority: medium
-
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
 
 landingContent: 
 
@@ -38,7 +35,6 @@ landingContent:
         - text: Management functionalities for Surface devices
           url: tutorial-school-deployment/manage-surface-devices.md     
 
-
   - title: Learn about Windows 11 SE
     linkLists:
       - linkListType: concept
@@ -49,6 +45,8 @@ landingContent:
           url: windows-11-se-settings-list.md
       - linkListType: whats-new
         links:
+        - text: Configure federated sign-in
+          url: federated-sign-in.md
         - text: Configure education themes
           url: edu-themes.md
         - text: Configure Stickers
@@ -57,7 +55,6 @@ landingContent:
         links:
         - text: Deploy Windows 11 SE using Set up School PCs
           url: https://www.youtube.com/watch?v=Ql2fbiOop7c
-
 
   - title: Deploy devices with Set up School PCs
     linkLists:
@@ -78,14 +75,21 @@ landingContent:
         - text: Use the Set up School PCs App
           url: https://www.youtube.com/watch?v=2ZLup_-PhkA
 
-
   - title: Configure devices
     linkLists:
       - linkListType: concept
         links:
-        - text: Take tests and assessments
-          url: take-tests-in-windows-10.md
+        - text: Take tests and assessments in Windows
+          url: take-tests-in-windows.md
+        - text: Considerations for shared and guest devices
+          url: /windows/configuration/shared-devices-concepts?context=/education/context/context
         - text: Change Windows editions
           url: change-home-to-edu.md
-        - text: "Deploy Minecraft: Education Edition"
+      - linkListType: how-to-guide
+        links:
+        - text: Configure Take a Test in kiosk mode
+          url: edu-take-a-test-kiosk-mode.md
+        - text: Configure Shared PC
+          url: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
+        - text: Get and deploy Minecraft Education
           url: get-minecraft-for-education.md

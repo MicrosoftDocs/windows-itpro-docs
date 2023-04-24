@@ -1,16 +1,19 @@
 ---
 title: Update Compliance Schema - WaaSDeploymentStatus
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: WaaSDeploymentStatus schema
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-ms.collection: M365-analytics
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 04/01/2023
 ---
 
 # WaaSDeploymentStatus
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 
 WaaSDeploymentStatus records track a specific update's installation progress on a specific device. Multiple WaaSDeploymentStatus records can exist simultaneously for a given device, as each record is specific to a given update and its type. For example, a device can have both a WaaSDeploymentStatus tracking a Windows Feature Update, and one tracking a Windows Quality Update, at the same time.

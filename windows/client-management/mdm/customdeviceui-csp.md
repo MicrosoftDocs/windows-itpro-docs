@@ -1,12 +1,12 @@
 ---
 title: CustomDeviceUI CSP
 description: Learn how the CustomDeviceUI configuration service provider (CSP) allows OEMs to implement their custom foreground application.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -27,16 +27,16 @@ CustomDeviceUI
 --------BackgroundTaskPackageName
 ```
 
-<a href="" id="./Vendor/MSFT/CustomDeviceUI"></a>**./Vendor/MSFT/CustomDeviceUI**  
+<a href="" id="./Vendor/MSFT/CustomDeviceUI"></a>**./Vendor/MSFT/CustomDeviceUI**
 The root node for the CustomDeviceUI configuration service provider. The supported operation is Get.
 
-<a href="" id="StartupAppID"></a>**StartupAppID**  
+<a href="" id="StartupAppID"></a>**StartupAppID**
 AppID string value is the default appid/AUMID to launch during startup. The supported operations are Get and Replace.
 
-<a href="" id="BackgroundTasksToLaunch"></a>**BackgroundTasksToLaunch**  
+<a href="" id="BackgroundTasksToLaunch"></a>**BackgroundTasksToLaunch**
 List of package names of background tasks that need to be launched on device startup. The supported operation is Get.
 
-<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/**<strong>*BackgroundTaskPackageName*</strong>  
+<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/**<strong>*BackgroundTaskPackageName*</strong>
 Package Full Name of the application that needs to be launched in the background. This application can contain no entry points, a single entry point, or multiple entry points. The supported operations are Add, Delete, Get, and Replace.
 
 ## SyncML examples
@@ -45,19 +45,19 @@ Package Full Name of the application that needs to be launched in the background
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>      
+  <SyncBody>
         <Replace>
           <CmdID>1</CmdID>
           <Item>
             <Target>
               <LocURI>./Vendor/MSFT/CustomDeviceUI/StartupAppID</LocURI>
-            </Target>       
+            </Target>
              <Meta>
                 <Format xmlns="syncml:metinf">chr</Format>
             </Meta>
             <Data>DefaultApp_cw5n1h2txyewy!App</Data>
         </Item>
-        </Replace>        
+        </Replace>
      <Final/>
   </SyncBody>
 </SyncML>
@@ -67,7 +67,7 @@ Package Full Name of the application that needs to be launched in the background
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>      
+  <SyncBody>
         <Get>
           <CmdID>1</CmdID>
           <Item>
@@ -75,7 +75,7 @@ Package Full Name of the application that needs to be launched in the background
                 <LocURI>./Vendor/MSFT/CustomDeviceUI/BackgroundTaskstoLaunch?list=Struct</LocURI>
             </Target>
           </Item>
-        </Get>        
+        </Get>
      <Final/>
   </SyncBody>
 </SyncML>
@@ -85,7 +85,7 @@ Package Full Name of the application that needs to be launched in the background
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
-  <SyncBody>      
+  <SyncBody>
         <Add>
           <CmdID>1</CmdID>
           <Item>
@@ -97,15 +97,15 @@ Package Full Name of the application that needs to be launched in the background
             </Meta>
             <Data>0</Data>
           </Item>
-        </Add>        
+        </Add>
      <Final/>
   </SyncBody>
 </SyncML>
 ```
 
- 
 
- 
+
+
 
 
 

@@ -1,12 +1,12 @@
 ---
 title: Storage CSP
 description: Learn how the Storage enterprise configuration service provider (CSP) is used to configure the storage card settings.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -29,7 +29,7 @@ The following shows the Storage configuration service provider in tree format.
 Storage
 ----Disable
 ```
-<a href="" id="disable"></a>**Disable**  
+<a href="" id="disable"></a>**Disable**
 Required. A Boolean value that specifies whether to enable or disable a storage card. A value of **True** disables the storage card. A value of **False** enables the storage card. The default value is **False**. The value is case sensitive.
 
 The supported operations are Get and Replace.
@@ -42,4 +42,4 @@ The supported operations are Get and Replace.
 
 System/AllowStorageCard in [Policy CSP](policy-configuration-service-provider.md)
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

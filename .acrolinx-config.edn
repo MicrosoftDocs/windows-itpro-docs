@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["main"]
+{:allowed-branchname-matches ["main" "release-.*"]
  :allowed-filename-matches ["windows/"]
  
   :targets 

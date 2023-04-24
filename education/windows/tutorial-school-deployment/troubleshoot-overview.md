@@ -1,25 +1,13 @@
 ---
 title: Troubleshoot Windows devices
-description: How to troubleshoot Windows devices from Intune and contact Microsoft Support for issues related to Intune and other Endpoint Manager services
+description: Learn how to troubleshoot Windows devices from Intune and contact Microsoft Support for issues related to Intune and other services.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+ms.topic: tutorial
 ---
 
 # Troubleshoot Windows devices
 
-Microsoft Endpoint Manager provides many tools that can help you troubleshoot Windows devices.
+Microsoft Intune provides many tools that can help you troubleshoot Windows devices.
 Here's a collection of resources to help you troubleshoot Windows devices managed by Intune:
 
 - [Troubleshooting device enrollment in Intune][MEM-2]
@@ -37,11 +25,12 @@ Here's a collection of resources to help you troubleshoot Windows devices manage
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for cloud-based device management services. This support includes Microsoft Intune, Configuration Manager, Windows 365, and Microsoft Managed Desktop.
 
-Follow these steps to obtain support in Microsoft Endpoint Manager:
+Follow these steps to obtain support in Microsoft Intune provides many tools that can help you troubleshoot Windows devices.
+:
 
-- Sign in to the <a href="https://endpoint.microsoft.com" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+- Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 - Select **Troubleshooting + support** > **Help and support**
-    :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Endpoint Manager." lightbox="images/advanced-support.png":::
+    :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Intune." lightbox="images/advanced-support.png":::
 - Select the required support scenario: Configuration Manager, Intune, Co-management, or Windows 365
 - Above **How can we help?**, select one of three icons to open different panes: *Find solutions*, *Contact support*, or *Service requests*
 - In the **Find solutions** pane, use the text box to specify a few details about your issue. The console may offer suggestions based on what you've entered. Depending on the presence of specific keywords, the console provides help like:
@@ -53,7 +42,7 @@ Follow these steps to obtain support in Microsoft Endpoint Manager:
   > When opening a case, be sure to include as many details as possible in the *Description* field. Such information includes: timestamp and date, device ID, device model, serial number, OS version, and any other details relevant to the issue.
 - To review your case history, select the **Service requests** pane. Active cases are at the top of the list, with closed issues also available for review
 
-For more information, see [Microsoft Endpoint Manager support page][MEM-1]
+For more information, see [Microsoft Intune support page][MEM-1]
 
 <!-- Reference links in article -->
 [MEM-1]: /mem/get-support

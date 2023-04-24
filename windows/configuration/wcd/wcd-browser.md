@@ -1,7 +1,7 @@
 ---
 title: Browser (Windows 10)
 description: This section describes the Browser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -9,6 +9,7 @@ ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Browser (Windows Configuration Designer reference)
@@ -55,7 +56,7 @@ To add a new item under the browser's **Favorites** list:
 
 2. In the **Available customizations** pane, select the friendly name that you created, and in the text field, enter the URL for the item.
 
-For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "<http://www.contoso.com>" for the URL. 
+For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and `http://www.contoso.com` for the URL. 
 
 
 ## PartnerSearchCode

@@ -1,12 +1,12 @@
 ---
 title: SecurityPolicy CSP
 description: The SecurityPolicy CSP is used to configure security policy settings for WAP push, OMA DM, Service Indication (SI), Service Loading (SL), and MMS.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -39,7 +39,7 @@ SecurityPolicy
 ----PolicyID
 ```
 
-<a href="" id="policyid"></a>***PolicyID***  
+<a href="" id="policyid"></a>***PolicyID***
 Defines the security policy identifier as a decimal value.
 
 The following security policies are supported.
@@ -80,7 +80,7 @@ The following security policies are supported.
   - **Policy name**: WSP Push Policy
   - **Policy description**: This setting indicates whether Wireless Session Protocol (WSP) notifications from the WAP stack are routed.
     - Default value: 1
-    - Supported values: 
+    - Supported values:
       - 0: Routing of WSP notifications isn't allowed.
       - 1: Routing of WSP notifications is allowed.
 
@@ -88,7 +88,7 @@ The following security policies are supported.
   - **Policy name**: Network PIN signed OTA Provision Message User Prompt Policy
   - **Policy description**: This policy specifies whether the device will prompt a UI to get the user confirmation before processing a pure network pin signed OTA Provisioning message. If prompt, the user has the ability to discard the OTA provisioning message.
     - Default value: 0
-    - Supported values: 
+    - Supported values:
       - 0: The device prompts a UI to get user confirmation when the OTA WAP provisioning message is signed purely with network pin.
       - 1: There's no user prompt.
 
@@ -166,7 +166,7 @@ Setting a security policy:
             <Item>
                 <Target><LocURI>./Vendor/MSFT/SecurityPolicy/4141</LocURI></Target>
                 <Meta>
-                    <Format xmlns="syncml:metinf">int</Format> 
+                    <Format xmlns="syncml:metinf">int</Format>
                 </Meta>
                 <Data>0</Data>
             </Item>
@@ -187,7 +187,7 @@ Querying a security policy:
         <Get>
             <CmdID>1</CmdID>
             <Item>
-            <Target><LocURI>./Vendor/MSFT/SecurityPolicy/4141</LocURI></Target> 
+            <Target><LocURI>./Vendor/MSFT/SecurityPolicy/4141</LocURI></Target>
             </Item>
         </Get>
         <Final/>
@@ -206,4 +206,4 @@ The following table shows the Microsoft custom elements that this Configuration 
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

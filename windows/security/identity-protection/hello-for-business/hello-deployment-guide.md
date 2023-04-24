@@ -1,24 +1,10 @@
 ---
 title: Windows Hello for Business Deployment Overview
-description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection:
-  - M365-identity-device-management
-  - highpri
-ms.topic: article
-localizationpriority: medium
+description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment.
 ms.date: 02/15/2022
+ms.topic: article
 ---
 # Windows Hello for Business Deployment Overview
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
@@ -67,7 +53,7 @@ Following are the various deployment guides and models included in this topic:
 - [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
 - [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 
-For Windows Hello for Business hybrid [certificate trust prerequisites](hello-hybrid-cert-trust-prereqs.md#directory-synchronization) and [key trust prerequisites](hello-hybrid-key-trust-prereqs.md#directory-synchronization) deployments, you will need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](hello-cert-trust-validate-deploy-mfa.md) deployments.
+For Windows Hello for Business hybrid [certificate trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust#directory-synchronization) and [key trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust#directory-synchronization) deployments, you will need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](hello-cert-trust-validate-deploy-mfa.md) deployments.
 
 ## Provisioning
 

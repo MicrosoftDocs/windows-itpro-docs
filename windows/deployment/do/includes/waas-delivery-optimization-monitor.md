@@ -1,9 +1,9 @@
 ---
 author: mestew
 ms.author: mstewart
-manager: dougeby
-ms.prod: w10
-ms.collection: M365-modern-desktop
+manager: aaroncz
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.topic: include
 ms.date: 04/06/2022
 ms.localizationpriority: medium
@@ -28,15 +28,15 @@ ms.localizationpriority: medium
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
 | BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
-| BytesfromHTTP | Total number of bytes received over HTTP |
+| BytesfromHTTP | Total number of bytes received over HTTP. This represents all HTTP sources, which includes BytesFromCacheServer |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but is not uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
-| BytesFromCacheServer | Total number of bytes received from cache server |
+| BytesFromCacheServer | Total number of bytes received from cache server (MCC) |
 | BytesFromLanPeers | Total number of bytes received from peers found on the LAN |
-| BytesFromGroupPeers | Total number of bytes received from peers found in the group |
+| BytesFromGroupPeers | Total number of bytes received from peers found in the group. (Note: Group mode is LAN + Group. If peers are found on the LAN, those bytes will be registered in 'BytesFromLANPeers'.)  |
 | BytesFromInternetPeers | Total number of bytes received from internet peers |
 | BytesToLanPeers | Total number of bytes delivered from peers found on the LAN |
-| BytesToGroupPeers | Total number of bytes delivered from peers found in the group  |
+| BytesToGroupPeers | Total number of bytes delivered from peers found in the group |
 | BytesToInternetPeers | Total number of bytes delivered from peers found on the LAN  |
 | DownloadDuration | Total download time in seconds |
 | HttpConnectionCount |  |

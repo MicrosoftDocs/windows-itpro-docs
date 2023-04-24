@@ -1,13 +1,15 @@
 ---
 title: What's new in Windows 10, version 1903
 description: New and updated features in Windows 10, version 1903 (also known as the Windows 10 May 2019 Update).
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1903 for IT Pros
@@ -42,7 +44,7 @@ This article lists new and updated features and content that are of interest to 
 
 ## Servicing
 
-- [**Delivery Optimization**](/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). These new policies now support Microsoft 365 Apps for enterprise updates, and Intune content, with Microsoft Endpoint Manager content coming soon! 
+- [**Delivery Optimization**](/windows/deployment/update/waas-delivery-optimization): Improved Peer Efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). These new policies now support Microsoft 365 Apps for enterprise updates and Intune content.
 - [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows will automatically sign in as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.  
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period. 
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device backed up and run normally.

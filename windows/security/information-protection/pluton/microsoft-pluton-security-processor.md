@@ -1,25 +1,24 @@
 ---
 title: Microsoft Pluton security processor
 description: Learn more about Microsoft Pluton security processor
-ms.reviewer:
-ms.prod: m365-security
+ms.reviewer: 
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.localizationpriority: medium
-ms.collection:
-  - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/15/2022
-appliesto:
-- ✅ <b>Windows 11, version 22H2</b>
+appliesto: 
+  - ✅ <b>Windows 11, version 22H2</b>
+ms.technology: itpro-security
 ---
 
 # Microsoft Pluton security processor
 
 Microsoft Pluton security processor is a chip-to-cloud security technology built with [Zero Trust](/security/zero-trust/zero-trust-overview) principles at the core. Microsoft Pluton provides hardware-based root of trust, secure identity, secure attestation, and cryptographic services. Pluton technology is a combination of a secure subsystem which is part of the System on Chip (SoC) and Microsoft authored software that runs on this integrated secure subsystem.
 
-Microsoft Pluton is currently available on devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors. Microsoft Pluton can be enabled on devices with Pluton capable processors running Windows 11, version 22H2.
+Microsoft Pluton is currently available on devices with Ryzen 6000 and Qualcomm Snapdragon® 8cx Gen 3 series processors. Microsoft Pluton can be enabled on devices with Pluton capable processors running Windows 11, version 22H2.
 
 ## What is Microsoft Pluton?
 

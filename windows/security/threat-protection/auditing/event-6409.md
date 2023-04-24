@@ -2,16 +2,17 @@
 title: 6409(-) BranchCache A service connection point object could not be parsed. (Windows 10)
 description: Describes security event 6409(-) BranchCache A service connection point object could not be parsed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/09/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6409(-): BranchCache: A service connection point object could not be parsed.

@@ -1,29 +1,20 @@
 ---
 title: What's in Set up School PCs provisioning package
-description: Lists the provisioning package settings that are configured in the Set up School PCs app.
-keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: List of the provisioning package settings that are configured in the Set up School PCs app.
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---  
 
 # What's in my provisioning package?
-The Set up School PCs app builds a specialized provisioning package with school-optimized settings. 
 
-A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp) article. 
+The Set up School PCs app builds a specialized provisioning package with school-optimized settings.
+
+A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc-technical) article.
 
 ## Shared PC Mode policies
-This table outlines the policies applied to devices in shared PC mode. If you [selected to optimize a device for use by a single student](set-up-school-pcs-shared-pc-mode.md#optimize-device-for-use-by-a-single-student), the table notes the differences. Specifically, you'll see differences in the following policies:
+This table outlines the policies applied to devices in shared PC mode. If you select to optimize a device for use by a single student, you'll see differences in the following policies:
 * Disk level deletion
 * Inactive threshold
 * Restrict local storage
@@ -128,7 +119,6 @@ Review the table below to estimate your expected provisioning time. A package th
 ## Next steps  
 Learn more about setting up devices with the Set up School PCs app.  
 * [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 

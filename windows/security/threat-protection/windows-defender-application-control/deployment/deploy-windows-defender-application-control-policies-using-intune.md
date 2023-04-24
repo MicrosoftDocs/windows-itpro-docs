@@ -4,12 +4,11 @@ description: You can use an MDM like Microsoft Intune to configure Windows Defen
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 06/27/2022
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 
@@ -24,7 +23,12 @@ ms.topic: how-to
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
+You can use a Mobile Device Management (MDM) solution, like Microsoft Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
+
+> [!IMPORTANT]
+> Due to a known issue, you should always activate new **signed** WDAC Base policies *with a reboot* on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. Instead of Mobile Device Management (MDM), deploy new signed WDAC Base policies [via script](deploy-wdac-policies-with-script.md) and activate the policy with a system restart.
+>
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 
 ## Use Intune's built-in policies
 
@@ -48,22 +52,20 @@ To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windo
 > [!NOTE]
 > Policies deployed through Intune custom OMA-URI are subject to a 350,000 byte limit. Customers should create Windows Defender Application Control policies that use signature-based rules, the Intelligent Security Graph, and managed installers where practical. Customers whose devices are running 1903+ builds of Windows are also encouraged to use [multiple policies](../deploy-multiple-windows-defender-application-control-policies.md) which allow more granular policy.
 
+You should now have one or more WDAC policies converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+
 ### Deploy custom WDAC policies on Windows 10 1903+
 
 Beginning with Windows 10 1903, custom OMA-URI policy deployment can use the [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp), which has support for multiple policies and rebootless policies.
 
 The steps to use Intune's custom OMA-URI functionality are:
 
-1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>`
+1. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
 
-2. Convert the policy XML to binary format using the [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) cmdlet in order to be deployed. The binary policy may be signed or unsigned.
-
-3. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
-
-4. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
+2. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
     - **OMA-URI**: `./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy`
     - **Data type**: Base64 (file)
-    - **Certificate file**: upload your binary format policy file. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
+    - **Certificate file**: Upload your binary format policy file. To do this, change your {GUID}.cip file to {GUID}.bin. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf. 
 
     > [!div class="mx-imgBorder"]
     > ![Configure custom WDAC.](../images/wdac-intune-custom-oma-uri.png)

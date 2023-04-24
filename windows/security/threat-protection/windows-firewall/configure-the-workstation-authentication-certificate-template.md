@@ -1,24 +1,12 @@
 ---
 title: Configure the Workstation Authentication Template (Windows)
 description: Learn how to configure a workstation authentication certificate template, which is used for device certificates that are enrolled and deployed to workstations.
-ms.assetid: c3ac9960-6efc-47c1-bd69-d9d4bf84f7a6
-ms.reviewer: jekrynit
-manager: aaroncz
-ms.author: paoloma
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
+ms.prod: windows-client
 ms.date: 09/07/2021
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
+ms.topic: conceptual
 ---
 
 # Configure the Workstation Authentication Certificate Template

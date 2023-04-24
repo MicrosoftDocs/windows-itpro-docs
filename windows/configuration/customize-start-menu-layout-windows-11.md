@@ -1,13 +1,18 @@
 ---
-title: Add or remove pinned apps on the Start menu in Windows 11 | Microsoft Docs
+title: Add or remove pinned apps on the Start menu in Windows 11
 description: Export Start layout to LayoutModification.json with pinned apps, and add or remove pinned apps. Use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
 manager: aaroncz
+author: lizgt2000
 ms.author: lizlong
 ms.reviewer: ericpapa
-ms.prod: w11
-author: lizgt2000
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier1
+ms.technology: itpro-configure
+ms.date: 01/10/2023
+ms.topic: article
 ---
 
 # Customize the Start menu layout on Windows 11
@@ -24,17 +29,19 @@ For example, you can override the default set of apps with your own a set of pin
 
 To add apps you want pinned to the Start menu, you use a JSON file. In previous Windows versions, IT administrators used an XML file to customize the Start menu. The XML file isn't available on Windows 11 and later ***unless*** [you're an OEM](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-This article shows you how to export an existing Start menu layout, and use the JSON in a Microsoft Endpoint Manager policy.
+This article shows you how to export an existing Start menu layout, and use the JSON in a Microsoft Intune policy.
 
 ## Before you begin
 
-- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. You can't prevent users from changing the layout.
+- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. When a user signs in or Explorer restarts, Windows reapplies the MDM policy. This action restores the specified layout and doesn't retain any user changes.
 
-- It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
+  To prevent users from making any changes to the Start menu layout, see the [NoChangeStartMenu](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-nochangestartmenu) policy.
+
+- It's recommended to use a mobile device management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
   In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-  - [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+  - [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
   - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
   - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
@@ -54,23 +61,16 @@ Start has the following areas:
 
   The [Start/HideFrequentlyUsedApps CSP](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) exposes settings that configure the "Most used" section, which is at the top of the all apps list.
 
-  In **Endpoint Manager**, you can configure this Start menu layout feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
+  In **Intune**, you can configure this Start menu layout feature, and more. For more information on the Start menu settings you can configure in an Intune policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
 
   In **Group Policy**, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
 
   - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
   - `User Configuration\Administrative Templates\Start Menu and Taskbar`
 
-- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file.
+- **Recommended**: Shows recently opened files and recently installed apps. This section can only be customized in Windows 11 SE using the following policy.
 
-  The  [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) exposes settings that prevent files from showing in this section. This CSP also hides recent files that show from the taskbar.
-
-  In **Endpoint Manager**, you can configure this feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
-
-  In **Group Policy**, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
-
-  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
-  - `User Configuration\Administrative Templates\Start Menu and Taskbar`
+  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove Recommended section from Start Menu`
 
 ## Create the JSON file
 
@@ -124,15 +124,15 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 Now that you have the JSON syntax, you're ready to deploy your customized Start layout to devices in your organization.
 
-MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Endpoint Manager, you can deploy a policy that configures the pinned list.
+MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
 
-This section shows you how to create a pinned list policy in Endpoint Manager. There isn't a Group Policy to create a pinned list.
+This section shows you how to create a pinned list policy in Intune. There isn't a Group Policy to create a pinned list.
 
-### Create a pinned list using an Endpoint Manager policy
+### Create a pinned list using an Intune policy
 
 To deploy this policy, the devices must be enrolled, and managed by your organization. For more information, see [What is device enrollment?](/mem/intune/enrollment/device-enrollment).
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
@@ -174,7 +174,7 @@ To deploy this policy, the devices must be enrolled, and managed by your organiz
 
 The Windows OS exposes many CSPs that apply to the Start menu. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
 
-### Deploy the policy using Endpoint Manager
+### Deploy the policy using Intune
 
 When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized Start layout, the policy can be deployed anytime, including before users sign in the first time.
 

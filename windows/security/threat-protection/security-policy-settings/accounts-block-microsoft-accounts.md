@@ -3,31 +3,31 @@ title: Accounts Block Microsoft accounts (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Accounts Block Microsoft accounts security policy setting.
 ms.assetid: 94c76f45-057c-4d80-8d01-033cf28ef2f7
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Accounts: Block Microsoft accounts
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Accounts: Block Microsoft accounts** security policy setting.
 
 ## Reference
 
-This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. For more information, see [Microsoft Accounts](../../identity-protection/access-control/microsoft-accounts.md).
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. For more information, see [Microsoft Accounts](/windows-server/identity/ad-ds/manage/understand-microsoft-accounts).
 
 There are two options if this setting is enabled:
 

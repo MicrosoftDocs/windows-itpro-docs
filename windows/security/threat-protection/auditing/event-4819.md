@@ -2,16 +2,17 @@
 title: 4819(S) Central Access Policies on the machine have been changed. (Windows 10)
 description: Describes security event 4819(S) Central Access Policies on the machine have been changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4819(S): Central Access Policies on the machine have been changed.

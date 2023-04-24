@@ -1,27 +1,21 @@
 ---
-title: Domain controller LDAP server signing requirements (Windows 10)
+title: Domain controller LDAP server signing requirements
 description: Describes the best practices, location, values, and security considerations for the Domain controller LDAP server signing requirements security policy setting.
-ms.assetid: fe122179-7571-465b-98d0-b8ce0f224390
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Domain controller: LDAP server signing requirements
 
 **Applies to**
--   Windows 10
+- Windows Server
 
 This article describes the best practices, location, values, and security considerations for the **Domain controller: LDAP server signing requirements** security policy setting.
 

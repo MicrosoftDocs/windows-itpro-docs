@@ -4,11 +4,12 @@ description: Shell Launcher lets you change the default shell that launches when
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Use Shell Launcher to create a Windows client kiosk

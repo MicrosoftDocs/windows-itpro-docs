@@ -1,12 +1,14 @@
 ---
 title: Update Baseline
 description: Use an update baseline to optimize user experience and meet monthly update goals
-ms.prod: w10
-author: aczechowski
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Update Baseline

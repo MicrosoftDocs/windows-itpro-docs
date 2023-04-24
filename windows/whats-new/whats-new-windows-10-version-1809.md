@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows 10, version 1809
-ms.reviewer: 
 description: Learn about features for Windows 10, version 1809, including features and fixes included in previous cumulative updates to Windows 10, version 1803.
-ms.prod: w10
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 01/31/2023
 ---
 
 # What's new in Windows 10, version 1809 for IT Pros
@@ -17,11 +18,13 @@ ROBOTS: NOINDEX
 
 In this article, we describe new and updated features of interest to IT Pros for Windows 10, version 1809. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1803. 
 
+<!---
+
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
-&nbsp;
-
 > [!video https://www.youtube.com/embed/hAva4B-wsVA]
+
+--->
 
 ## Deployment
 
@@ -66,7 +69,7 @@ This new functionality is an update to the [BitLocker CSP](/windows/client-manag
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-#### Delivering BitLocker policy to AutoPilot devices during OOBE 
+#### Delivering BitLocker policy to Autopilot devices during OOBE 
 
 You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This option allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
@@ -284,9 +287,12 @@ One of the things we’ve heard from you is that it’s hard to know when you’
 
 ## Remote Desktop with Biometrics
 
-Azure Active Directory and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
+Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.
+Users using earlier versions of Windows 10 could authenticate to a remote desktop using Windows Hello for Business but were limited to using their PIN as their authentication gesture. Windows 10, version 1809 introduces the ability for users to authenticate to a remote desktop session using their Windows Hello for Business biometric gesture.
 
-To get started, sign into your device using Windows Hello for Business. Bring up **Remote Desktop Connection** (mstsc.exe), type the name of the computer you want to connect to, and click **Connect**. Windows remembers that you signed using Windows Hello for Business, and automatically selects Windows Hello for Business to authenticate you to your RDP session. You can also click **More choices** to choose alternate credentials. Windows uses facial recognition to authenticate the RDP session to the Windows Server 2016 Hyper-V server. You can continue to use Windows Hello for Business in the remote session, but you must use your PIN.
+Azure Active Directory and Active Directory users using Windows Hello for Business in a certificate trust model, can use biometrics to authenticate to a remote desktop session.
+
+To get started, sign into your device using Windows Hello for Business. Bring up **Remote Desktop Connection** (mstsc.exe), type the name of the device you want to connect to, and select **Connect**. Windows remembers that you signed using Windows Hello for Business, and automatically selects Windows Hello for Business to authenticate you to your RDP session. You can also select **More choices** to choose alternate credentials. Windows uses biometrics to authenticate the RDP session to the Windows device. You can continue to use Windows Hello for Business in the remote session, but in the remote session you must use the PIN.
 
 See the following example:
 

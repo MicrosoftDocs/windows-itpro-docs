@@ -1,5 +1,5 @@
 ---
-title: System requirements for Microsoft Defender Application Guard 
+title: System requirements for Microsoft Defender Application Guard
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.prod: windows-client
 ms.technology: itpro-security
@@ -47,4 +47,4 @@ Your environment must have the following hardware to run Microsoft Defender Appl
 |--------|-----------|
 | Operating system | Windows 10 Enterprise edition, version 1809 or later <br/> Windows 10 Professional edition, version 1809 or later <br/> Windows 10 Professional for Workstations edition, version 1809 or later <br/> Windows 10 Professional Education edition, version 1809 or later <br/> Windows 10 Education edition, version 1809 or later <br/> Windows 11 Education, Enterprise, and Professional editions |
 | Browser | Microsoft Edge |
-| Management system <br> (only for managed devices)| [Microsoft Intune](/intune/) <p> **OR** <p> [Microsoft Endpoint Configuration Manager](/configmgr/) <p> **OR** <p> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <p> **OR** <p>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Mirosoft MDM solutions, see the documentation that came with your product. |
+| Management system <br> (only for managed devices)| [Microsoft Intune](/intune/) <p> **OR** <p> [Microsoft Configuration Manager](/configmgr/) <p> **OR** <p> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <p> **OR** <p>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Microsoft MDM solutions, see the documentation that came with your product. |
