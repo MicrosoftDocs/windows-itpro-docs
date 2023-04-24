@@ -628,7 +628,7 @@ For more details, expand each product section.
 
 </details>
 
-## Cryprtographic algorithms
+## Cryptographic algorithms
 
 The following tables are organized by cryptographic algorithms with their modes, states, and key sizes. For each algorithm implementation (operating system / platform), there is a link to the Cryptographic Algorithm Validation Program (CAVP) issued certificate.\
 For more details, expand each algorithm section.

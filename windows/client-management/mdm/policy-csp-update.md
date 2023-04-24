@@ -4062,7 +4062,7 @@ If you disable or do not configure this policy, the default method will be used.
 <!-- DeferUpdatePeriod-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 Allows IT Admins to specify update delays for up to four weeks. Supported values are 0-4, which refers to the number of weeks to defer updates.
 
@@ -4154,7 +4154,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 - If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 <!-- DeferUpgradePeriod-Editable-End -->
 
 <!-- DeferUpgradePeriod-DFProperties-Begin -->
@@ -4813,7 +4813,7 @@ To validate this policy:
 <!-- Description-Source-DDF -->
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 <!-- PauseDeferrals-Description-End -->
 
 <!-- PauseDeferrals-Editable-Begin -->
@@ -4915,7 +4915,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- Description-Source-DDF -->
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
 <!-- RequireDeferUpgrade-Description-End -->
 
 <!-- RequireDeferUpgrade-Editable-Begin -->
@@ -5218,6 +5218,27 @@ If you disable or do not configure this policy, the default notification behavio
 
 <!-- Update-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Changes in Windows 10, version 1607
+
+Here are the new policies added in Windows 10, version 1607. Use these policies for Windows 10, version 1607 devices instead of the older policies
+
+- ActiveHoursEnd
+- ActiveHoursStart
+- AllowMUUpdateService
+- BranchReadinessLevel
+- DeferFeatureUpdatePeriodInDays
+- DeferQualityUpdatePeriodInDays
+- ExcludeWUDriversInQualityUpdate
+- PauseFeatureUpdates
+- PauseQualityUpdates
+
+Here's the list of older policies that are still supported for backward compatibility. You can use these older policies for Windows 10, version 1511 devices.
+
+- RequireDeferUpgrade
+- DeferUpgradePeriod
+- DeferUpdatePeriod
+- PauseDeferrals
+
 <!-- Update-CspMoreInfo-End -->
 
 <!-- Update-End -->
