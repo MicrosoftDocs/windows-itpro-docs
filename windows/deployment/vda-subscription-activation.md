@@ -31,30 +31,24 @@ Deployment instructions are provided for the following scenarios:
 
 - VMs must be running a supported version of Windows Pro edition.
 - VMs must be joined to Active Directory or Azure Active Directory (Azure AD).
-- VMs must be hosted by a Qualified Multitenant Hoster (QMTH). For more information, download the PDF that describes the [Qualified Multitenant Hoster Program](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf).
 
 ## Activation
 
 ### Scenario 1
 
 - The VM is running a supported version of Windows.
-- The VM is hosted in Azure, an authorized outsourcer, or another Qualified Multitenant Hoster (QMTH).
+- The VM is hosted in Azure, an Authorized Outsourcer, or your own server.
 
     When a user with VDA rights signs in to the VM using their Azure AD credentials, the VM is automatically stepped-up to Enterprise and activated. There's no need to do Windows Pro activation. This functionality eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
 ### Scenario 2
 
-- The Hyper-V host and the VM are both running a supported version of Windows.
+- The Hyper-V host is activated and running a supported version of Windows.
+- The VM is running a supported version of Windows.
 
     [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure AD account.
 
-### Scenario 3
-
-- The hoster isn't an authorized QMTH partner.
-
-    In this scenario, the underlying Windows Pro license must be activated prior to using subscription activation Windows Enterprise. Activation is accomplished using a generic volume license key (GVLK) and a volume license KMS activation server provided by the hoster. Alternatively, a KMS activation server can be used. KMS activation is provided for Azure VMs. For more information, see [Troubleshoot Azure Windows virtual machine activation problems](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
-
-For examples of activation issues, see [Troubleshoot the user experience](./deploy-enterprise-licenses.md#troubleshoot-the-user-experience).
+For examples of activation issues, see [Troubleshoot the user experience](./deploy-enterprise-licenses.md#troubleshoot-the-user-experience) and see [Troubleshoot Azure Windows virtual machine activation problems](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
 
 ## Active Directory-joined VMs
 
