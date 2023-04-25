@@ -48,7 +48,8 @@ Deployment instructions are provided for the following scenarios:
 
     [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure AD account.
 
-For examples of activation issues, see [Troubleshoot the user experience](./deploy-enterprise-licenses.md#troubleshoot-the-user-experience) and see [Troubleshoot Azure Windows virtual machine activation problems](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
+For examples of activation issues, see [Troubleshoot the user experience](./deploy-enterprise-licenses.md#troubleshoot-the-user-experience) and [Troubleshoot Azure Windows virtual machine activation problems](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
+
 
 ## Active Directory-joined VMs
 
