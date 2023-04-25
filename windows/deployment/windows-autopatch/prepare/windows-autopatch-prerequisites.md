@@ -44,14 +44,14 @@ Windows Autopatch is included with Windows 10/11 Enterprise E3 or higher (user-b
 | [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
 | [Windows 10/11 Enterprise VDA](/windows/deployment/deploy-enterprise-licenses#virtual-desktop-access-vda) | E3_VDA_only | d13ef257-988a-46f3-8fce-f47484dd4550 |
 
-The following Windows 10 editions, build version and architecture are supported to be [registered](windows-autopatch-register-devices) with Windows Autopatch:
+The following Windows 10 editions, build version and architecture are supported to be [registered](../deploy/windows-autopatch-register-devices.md) with Windows Autopatch:
 
 - Windows 10 (1809+)/11 Pro
 - Windows 10 (1809+)/11 Enterprise
 - Windows 10 (1809+)/11 Pro for Workstations
 
 > [!IMPORTANT]
-> While Windows Autopatch supports registering devices below the [minimum Windows OS version enforced by the service](windows-autopatch-windows-feature-update-overview#enforcing-a-minimum-windows-os-version), once registered, devices are automatically offered with the [minimum windows OS version](windows-autopatch-windows-feature-update-overview#enforcing-a-minimum-windows-os-version) as these devices must be on a [minimum Windows OS currently serviced](https://learn.microsoft.com/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) by the Windows servicing channels to keep receiving monthly quality updates that are critical to security and the health of the Windows ecosystem.
+> While Windows Autopatch supports registering devices below the [minimum Windows OS version enforced by the service](../operate/windows-autopatch-windows-feature-update-overview.md#enforcing-a-minimum-windows-os-version), once registered, devices are automatically offered with the [minimum windows OS version](../operate/windows-autopatch-windows-feature-update-overview.md#enforcing-a-minimum-windows-os-version). The devices must be on a [minimum Windows OS currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) by the [Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) to keep receiving monthly security updates that are critical to security and the health Windows.
 
 > [!NOTE]
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
