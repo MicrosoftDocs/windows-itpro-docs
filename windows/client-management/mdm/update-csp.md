@@ -1,10 +1,10 @@
 ---
 title: Update CSP
 description: Learn how the Update configuration service provider (CSP) enables IT administrators to manage and control the rollout of new updates.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
