@@ -11,12 +11,12 @@ The following table lists the Windows editions that support Windows Autopatch:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
-|No|Yes|No|Yes|
+|❌|Yes|❌|Yes|
 
 Windows Autopatch license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-|No|Yes|Yes|No|No|
+|❌|Yes|Yes|❌|No|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).
