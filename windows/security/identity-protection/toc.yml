@@ -2,18 +2,26 @@ items:
   - name: Overview
     href: ../identity.md
   - name: Windows credential theft mitigation guide
-    href: ../windows-credential-theft-mitigation-guide-abstract.md
-  - name: Passwordless
+    href: windows-credential-theft-mitigation-guide-abstract.md
+  - name: Passwordless sign-in
     items:
-    - name: Windows Hello for Business ⇒
-      href: hello-for-business/index.yml
-    - name: FIDO 2 security keys ⇒
-      href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
+    - name: Windows Hello for Business
+      items:
+        - name: Windows edition and licensing requirements
+          href: ../licensing/windows-hello-for-business.md
+        - name: Windows Hello for Business overview ⇒
+          href: hello-for-business/index.yml
+    - name: FIDO 2 security keys
+      items:
+        - name: Windows edition and licensing requirements
+          href: ../licensing/fast-identity-online-fido2-security-key.md
+        - name: FIDO 2 security keys overview ⇒
+          href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
   - name: Local Administrator Password Solution (LAPS)
     items:
-      - name: Windows LAPS licensing and requirements
-        href: ../../../includes/licensing/windows-defender-credential-guard.md
-      - name: Windows LAPS overview
+      - name: Windows edition and licensing requirements
+        href: ../licensing/local-administrator-password-solution.md
+      - name: Windows LAPS overview ⇒
         href: /windows-server/identity/laps/laps-overview
   - name: Enterprise Certificate Pinning
     href: enterprise-certificate-pinning.md
