@@ -63,7 +63,7 @@ Windows 11 Enterprise E3 builds on Windows 11 Pro by adding more advanced featur
 
 #### Windows 11 Enterprise features
 
-Here's an overview of the unique Windows Enterprise edition features:
+The following table describes the unique Windows Enterprise edition features:
 
 | OS-based feature | Description |
 |-|-|
@@ -77,7 +77,7 @@ Here's an overview of the unique Windows Enterprise edition features:
 
 #### Windows 11 Enterprise cloud-based capabilities
 
-Here's an overview of the unique Windows Enterprise edition cloud-based features:
+The following table describes the unique Windows Enterprise cloud-based features:
 
 |Cloud-based feature | Description |
 |-|-|
@@ -91,7 +91,7 @@ Here's an overview of the unique Windows Enterprise edition cloud-based features
 
 #### Windows 11 Enterprise licensing use rights
 
-Here's a list of the Windows Enterprise licensing use rights:
+The following table describes the Windows Enterprise licensing use rights:
 
 |Licensing use rights|Description|
 |-|-|
@@ -134,7 +134,7 @@ In most cases, the Windows Pro edition comes pre-installed on a business-class d
 
 In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscriptions does not block these scenarios.
 
-The following table lists the Windows 11 Enterprise E3 features, services and use rights and their applicability to Windows Pro and Enterprise editions:
+The following table lists the Windows 11 Enterprise features and their applicability to Windows Pro and Enterprise editions:
 
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
@@ -146,6 +146,8 @@ The following table lists the Windows 11 Enterprise E3 features, services and us
 |**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes|Yes|
 |**[Windows Experience customization](/windows/client-management/mdm/policy-csp-experience)**|No|Yes|
 
+The following table lists the Windows 11 Enterprise cloud-based features and their applicability to Windows Pro and Enterprise editions:
+
 | Cloud-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
 |**[Windows subscription activation](/windows/deployment/windows-10-subscription-activation)**|Yes|Yes|
@@ -155,6 +157,8 @@ The following table lists the Windows 11 Enterprise E3 features, services and us
 |**[Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache)**|Yes|Yes|
 |**[Endpoint analytics proactive remediation](/mem/analytics/overview)**|Yes|Yes|
 |**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**|No|Yes|
+
+The following table lists the Windows 11 Enterprise E3 licensing use rights and their applicability to Windows Pro and Enterprise editions:
 
 |Licensing use rights|Windows Pro|Windows Enterprise|
 |-|-|-|
@@ -177,4 +181,3 @@ To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Win
 - Windows 11 downgrade rights
 - Volume license activation methods
 - How to acquire licenses through Commercial Licensing
-
