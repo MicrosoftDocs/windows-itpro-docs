@@ -14,9 +14,9 @@ appliesto:
 ms.technology: itpro-security
 ---
 
-# Windows commercial licensing overview
+# Windows Commercial Licensing overview
 
-This document provides an overview of the products and use rights available through Microsoft commercial licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
+This document provides an overview of the products and use rights available through Microsoft Commercial Licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
 
 > [!NOTE]
 > The content of this article doesn't replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](https://www.microsoft.com/licensing/product-licensing/products.aspx).
@@ -176,3 +176,5 @@ To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Win
 - Deciding between per-device and per-user licensing
 - Windows 11 downgrade rights
 - Volume license activation methods
+- How to acquire licenses through Commercial Licensing
+
