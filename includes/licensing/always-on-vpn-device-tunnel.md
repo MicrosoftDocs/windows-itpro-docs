@@ -1,22 +1,22 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/24/2023
+ms.date: 04/25/2023
 ms.topic: include
 ---
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Always On VPN:
+The following table lists the Windows editions that support Always On VPN (device tunnel):
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|
+|No|Yes|No|Yes|
 
-Always On VPN license entitlements are granted by the following licenses:
+Always On VPN (device tunnel) license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|Yes|
+|No|Yes|Yes|Yes|Yes|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

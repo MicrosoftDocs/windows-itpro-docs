@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/24/2023
+ms.date: 04/25/2023
 ms.topic: include
 ---
 
@@ -11,8 +11,7 @@ The following table lists the security features that are available in Windows, a
 |:---|:---:|:---:|:---:|:---:|:---:|
 |**[Access Control (ACLs/SCALS)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|Yes|
-|**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes|Yes|Yes|Yes|Yes|
-|**[AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)**|Yes|Yes|Yes|Yes|Yes|
+|**[Always On VPN (device tunnel)](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|No|Yes|Yes|Yes|Yes|
 |**[Assigned Access (kiosk mode)](/windows/configuration/kiosk-methods)**|Yes|Yes|Yes|Yes|Yes|
 |**[Attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)**|Yes|Yes|Yes|Yes|Yes|
 |**[Azure AD join, Active Directory domain join, and Hybrid Azure AD join with single sign-on (SSO)](/azure/active-directory/devices/concept-azure-ad-join)**|Yes|Yes|Yes|Yes|Yes|
@@ -24,7 +23,6 @@ The following table lists the security features that are available in Windows, a
 |**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|No|Yes|Yes|Yes|Yes|
 |**[Email Encryption (S/MIME)](/windows/security/identity-protection/configure-s-mime)**|Yes|Yes|Yes|Yes|Yes|
 |**[Encrypted hard drive](/windows/security/information-protection/encrypted-hard-drive)**|Yes|Yes|Yes|Yes|Yes|
-|**[Endpoint Analytics](/mem/analytics/overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Enhanced phishing protection with SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen)**|Yes|Yes|Yes|Yes|Yes|
 |**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Fast Identity Online (FIDO2) security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=%2Fwindows%2Fsecurity%2Fcontext%2Fcontext)**|Yes|Yes|Yes|Yes|Yes|
@@ -72,14 +70,12 @@ The following table lists the security features that are available in Windows, a
 |**[Windows Autopilot](/windows/deployment/windows-autopilot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|Yes|Yes|Yes|Yes|Yes|
+|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|No|Yes|Yes|Yes|Yes|
 |**[Windows Defender Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows feature and expedite updates with Intune](/mem/intune/protect/windows-10-feature-updates)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Security policy settings and auditing](/windows/security/threat-protection/security-policy-settings/security-policy-settings)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb)**|Yes|Yes|Yes|Yes|Yes|
