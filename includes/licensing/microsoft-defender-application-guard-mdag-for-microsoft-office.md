@@ -17,6 +17,6 @@ Microsoft Defender Application Guard (MDAG) for Microsoft Office license entitle
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-|❌|No|❌|No|❌|
+|❌|❌|❌|❌|❌|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).
