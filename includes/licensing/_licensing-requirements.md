@@ -27,7 +27,7 @@ The following table lists the security features that are available in Windows, a
 |**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Fast Identity Online (FIDO2) security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=%2Fwindows%2Fsecurity%2Fcontext%2Fcontext)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/threat-protection/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
-|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|❌|Yes|Yes|
+|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|No|❌|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|Yes|
 |**[Hypervisor-protected Code Integrity (HVCI)](/windows-hardware/design/device-experiences/oem-hvci-enablement)**|Yes|Yes|Yes|Yes|Yes|
 |**[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**|Yes|Yes|Yes|Yes|Yes|
@@ -39,7 +39,7 @@ The following table lists the security features that are available in Windows, a
 |**[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management](/deployedge/microsoft-edge-security-windows-defender-application-guard)**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge standalone mode](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)**|Yes|Yes|Yes|Yes|Yes|
-|**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)**|❌|❌|❌|❌|❌|
+|**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)**|❌|No|❌|No|❌|
 |**Microsoft Defender Application Guard (MDAG) public APIs**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|Yes|❌|Yes|❌|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)**|Yes|Yes|Yes|Yes|Yes|
@@ -66,7 +66,7 @@ The following table lists the security features that are available in Windows, a
 |**[Virtual Private Network (VPN)](/windows/security/identity-protection/vpn/vpn-guide)**|Yes|Yes|Yes|Yes|Yes|
 |**[Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)**|Yes|Yes|Yes|Yes|Yes|
 |**WiFi Security**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|❌|Yes|Yes|❌|❌|
+|**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|❌|Yes|Yes|❌|No|
 |**[Windows Autopilot](/windows/deployment/windows-autopilot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
