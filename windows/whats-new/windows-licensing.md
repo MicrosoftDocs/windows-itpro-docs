@@ -101,7 +101,7 @@ Here's a list of the Windows Enterprise licensing use rights:
 |**[Windows release health in the Microsoft 365 admin center](https://aka.ms/WindowsReleaseHealthinM365)**|Gives you essential information about monthly quality and feature updates in the Microsoft 365 admin center.|
 |**[Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports)**|Provides per-device information about compatibility risks that are associated with an upgrade or update to a chosen version of Windows.|
 |**[Windows feature update compatibility risks reports](/mem/intune/protect/windows-update-compatibility-reports)**|Provides a summary view of the top compatibility risks, so you understand which compatibility risks impact the greatest number of devices in your organization.|
-|**[Windows LTSC Enterprise](windows/whats-new/ltsc/)**|Intended for highly specialized devices that require limited changes due to regulations and certification|
+|**[Windows LTSC Enterprise](/windows/whats-new/ltsc/)**|Intended for highly specialized devices that require limited changes due to regulations and certification|
 |**[Microsoft Desktop Optimization Pack (MDOP) ](/microsoft-desktop-optimization-pack)**|Help improve compatibility and management, reduce support costs, improve asset management, and improve policy control.|
 
 Learn more about [Windows 11 Enterprise E3](https://windows.com/enterprise).
@@ -164,7 +164,7 @@ The following table lists the Windows 11 Enterprise E3 features, services and us
 |**[Windows release health in the Microsoft 365 admin center](https://aka.ms/WindowsReleaseHealthinM365)**|n/a|n/a|
 |**[Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports)**|Yes|Yes|
 |**[Windows feature update compatibility risks reports](/mem/intune/protect/windows-update-compatibility-reports)**|Yes|Yes|
-|**[Windows LTSC Enterprise](windows/whats-new/ltsc/)**|n/a|n/a|
+|**[Windows LTSC Enterprise](/windows/whats-new/ltsc/)**|n/a|n/a|
 |**[Microsoft Desktop Optimization Pack (MDOP) ](/microsoft-desktop-optimization-pack)**|Yes|Yes|
 
 ## Next steps
