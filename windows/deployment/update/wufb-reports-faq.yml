@@ -31,7 +31,7 @@ summary: |
   - [Why is the device name null(#)?](#why-is-the-device-name-null---)
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
-  - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient-versus-the-ucclientupdatestatus-table)
+  - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
   - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
@@ -112,15 +112,15 @@ sections:
           These tables can be used for the following information:
 
           - **UCClient**: Represents an individual device's record. It contains data such as the device's name, currently installed build, and the OS Edition. Each device has one record in this table. Use this table to get the overall compliance status of your devices.
-            - To display information for a specific device by Azure AD device ID:
+            - To display information for a specific device by Azure AD device ID: </br>
               `UCClient where AzureADDeviceId contains "01234567-89ab-cdef-0123-456789abcdef"`
-            - To display all device records for devices running any Windows 11 OS version:
+            - To display all device records for devices running any Windows 11 OS version:</br>
               `UCClient | where OSVersion contains "Windows 11"`
 
           - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments.     
-            - To find device records for devices that determined the March 14,2023 update was applicable:
+            - To find device records for devices that determined the March 14,2023 update was applicable:</br>
               `UCClientUpdateStatus | where UpdateCategory =="WindowsQualityUpdate" and UpdateReleaseTime == "3/14/2023"`  
-            - To display devices that are in the restart required substate:
+            - To display devices that are in the restart required substate:</br>
               `UCClientUpdateStatus |where ClientSubstate =="RestartRequired"`
           
           - **UCUpdateAlert**: Use this table to understand update failures and act on devices through alert recommendations. This table contains information that needs attention, relative to one device, one update and one deployment (if relevant).  
