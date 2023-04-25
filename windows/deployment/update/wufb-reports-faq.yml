@@ -118,7 +118,7 @@ sections:
               `UCClient | where OSVersion contains "Windows 11"`
 
           - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments.     
-            - To find device records for devices that determined the March 14,2023 update was applicable:</br>
+            - To find device records for devices that determined the March 14, 2023 update was applicable:</br>
               `UCClientUpdateStatus | where UpdateCategory =="WindowsQualityUpdate" and UpdateReleaseTime == "3/14/2023"`  
             - To display devices that are in the restart required substate:</br>
               `UCClientUpdateStatus |where ClientSubstate =="RestartRequired"`
