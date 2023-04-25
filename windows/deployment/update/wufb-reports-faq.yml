@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Update for Business reports.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 04/06/2023
+  ms.date: 04/26/2023
   manager: aaroncz
   author: mestew
   ms.author: mstewart
@@ -31,7 +31,7 @@ summary: |
   - [Why is the device name null(#)?](#why-is-the-device-name-null---)
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
-  - [When should I use the UCClient versus the UCClientUpdateStatus table?](#when-should-i-use-the-ucclient-versus-the-ucclientupdatestatus-table)
+  - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient-versus-the-ucclientupdatestatus-table)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
   - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
@@ -103,16 +103,31 @@ sections:
           - **The device isn't enrolled with Azure Active Directory**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
           - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
-          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 250. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
+          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
-      - question: When should I use the UCClient versus the UCClientUpdateStatus table?
+      - question: When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?
         answer: |
           These tables can be used for the following information:
 
           - **UCClient**: Represents an individual device's record. It contains data such as the device's name, currently installed build, and the OS Edition. Each device has one record in this table. Use this table to get the overall compliance status of your devices.
-          - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments.       
+            - To display information for a specific device by Azure AD device ID:
+              `UCClient where AzureADDeviceId contains "01234567-89ab-cdef-0123-456789abcdef"`
+            - To display all device records for devices running any Windows 11 OS version:
+              `UCClient | where OSVersion contains "Windows 11"`
+
+          - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments.     
+            - To find device records for devices that determined the March 14,2023 update was applicable:
+              `UCClientUpdateStatus | where UpdateCategory =="WindowsQualityUpdate" and UpdateReleaseTime == "3/14/2023"`  
+            - To display devices that are in the restart required substate:
+              `UCClientUpdateStatus |where ClientSubstate =="RestartRequired"`
+          
+          - **UCUpdateAlert**: Use this table to understand update failures and act on devices through alert recommendations. This table contains information that needs attention, relative to one device, one update and one deployment (if relevant).  
+            - To display information about an error code: 
+              `UCUpdateAlert|where ErrorCode =="0X8024000b"`
+            - To display a count of devices with active alerts by subtype:
+              `UCUpdateAlert |where AlertStatus =="Active"|summarize Devices=count() by AlertSubtype`
       - question: What is the difference between quality and security updates?
         answer: |
           Windows quality updates are monthly updates that are [released on the second or fourth Tuesday of the month](release-cycle.md). The cumulative updates released on the second Tuesday of the month can contain both security updates and non-security updates. Cumulative updates released on the fourth Tuesday of the month are optional non-security preview releases. Use the fields within the [UCClient table](wufb-reports-schema-ucclient.md) for additional information, such as:
