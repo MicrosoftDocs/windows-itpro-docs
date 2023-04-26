@@ -6,8 +6,8 @@ ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.date: 05/28/2020
+manager: laurawi
+ms.date: 05/23/2023
 ms.collection: highpri
 ms.topic: reference
 ---
@@ -9713,92 +9713,6 @@ This event signals the completion of the setup process. It happens only once dur
 
 
 ## XBOX events
-
-### Microsoft.Gaming.Xbox.Update.UpdateSummary
-
-No content is currently available.
-
-The following fields are available:
-
-- **Args**  No content is currently available.
-- **BeginUpdateFlags**  No content is currently available.
-- **ConsoleHr**  No content is currently available.
-- **ConsoleId**  No content is currently available.
-- **ContentId**  No content is currently available.
-- **ElapsedTime**  No content is currently available.
-- **Exe**  No content is currently available.
-- **InstallId**  No content is currently available.
-- **InternalState**  No content is currently available.
-- **PercentCompleted**  No content is currently available.
-- **SourceVersion**  No content is currently available.
-- **State**  No content is currently available.
-- **TargetVersion**  No content is currently available.
-- **ToolHr**  No content is currently available.
-- **UpdateType**  No content is currently available.
-
-
-### Microsoft.Gaming.Xbox.VisualStudio.AttachStart
-
-No content is currently available.
-
-The following fields are available:
-
-- **ClientVersion**  No content is currently available.
-- **ConsoleId**  No content is currently available.
-- **hResult**  No content is currently available.
-- **Source**  No content is currently available.
-
-
-### Microsoft.Gaming.Xbox.VisualStudio.DebugEnd
-
-Generated when an input device connects
-
-The following fields are available:
-
-- **ClientVersion**  No content is currently available.
-- **ConsoleId**  No content is currently available.
-- **hResult**  No content is currently available.
-- **Source**  No content is currently available.
-
-
-### Microsoft.Gaming.Xbox.VisualStudio.DebugStart
-
-Generated when an input device connects.
-
-The following fields are available:
-
-- **ClientVersion**  No content is currently available.
-- **ConsoleId**  No content is currently available.
-- **hResult**  No content is currently available.
-- **Mode**  No content is currently available.
-- **Source**  No content is currently available.
-
-
-### Microsoft.Gaming.Xbox.VisualStudio.Deploy
-
-No content is currently available.
-
-The following fields are available:
-
-- **ClientVersion**  No content is currently available.
-- **ConsoleId**  No content is currently available.
-- **hResult**  No content is currently available.
-- **Mode**  No content is currently available.
-- **Source**  No content is currently available.
-
-
-### Microsoft.Gaming.Xbox.VisualStudio.Launch
-
-Generated when an input device connects.
-
-The following fields are available:
-
-- **ClientVersion**  No content is currently available.
-- **ConsoleId**  No content is currently available.
-- **hResult**  No content is currently available.
-- **Mode**  No content is currently available.
-- **Source**  No content is currently available.
-
 
 ### Microsoft.Xbox.EraControl.EraVmTerminationReason
 
