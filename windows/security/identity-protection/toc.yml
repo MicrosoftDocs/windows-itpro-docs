@@ -7,8 +7,53 @@ items:
     items:
     - name: Windows Hello for Business ⇒
       href: hello-for-business/index.yml
+    - name: Windows presence sensing
+      href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb
     - name: FIDO 2 security keys ⇒
       href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
+    - name: Smart Cards
+      href: smart-cards/smart-card-windows-smart-card-technical-reference.md
+      items:
+        - name: How Smart Card Sign-in Works in Windows
+          href: smart-cards/smart-card-how-smart-card-sign-in-works-in-windows.md
+          items:
+            - name: Smart Card Architecture
+              href: smart-cards/smart-card-architecture.md
+            - name: Certificate Requirements and Enumeration
+              href: smart-cards/smart-card-certificate-requirements-and-enumeration.md
+            - name: Smart Card and Remote Desktop Services
+              href: smart-cards/smart-card-and-remote-desktop-services.md
+            - name: Smart Cards for Windows Service
+              href: smart-cards/smart-card-smart-cards-for-windows-service.md
+            - name: Certificate Propagation Service
+              href: smart-cards/smart-card-certificate-propagation-service.md
+            - name: Smart Card Removal Policy Service
+              href: smart-cards/smart-card-removal-policy-service.md
+        - name: Smart Card Tools and Settings
+          href: smart-cards/smart-card-tools-and-settings.md
+          items:
+            - name: Smart Cards Debugging Information
+              href: smart-cards/smart-card-debugging-information.md
+            - name: Smart Card Group Policy and Registry Settings
+              href: smart-cards/smart-card-group-policy-and-registry-settings.md
+            - name: Smart Card Events
+              href: smart-cards/smart-card-events.md
+        - name: Virtual smart cards
+          href: virtual-smart-cards/virtual-smart-card-overview.md
+          items:
+            - name: Understand and evaluate virtual smart cards
+              href: virtual-smart-cards/virtual-smart-card-understanding-and-evaluating.md
+              items:
+                - name: Get started with virtual smart cards
+                  href: virtual-smart-cards/virtual-smart-card-get-started.md
+                - name: Use virtual smart cards
+                  href: virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards.md
+                - name: Deploy virtual smart cards
+                  href: virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards.md
+                - name: Evaluate virtual smart card security
+                  href: virtual-smart-cards/virtual-smart-card-evaluate-security.md
+            - name: Tpmvscmgr
+              href: virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
   - name: Windows LAPS (Local Administrator Password Solution) ⇒
     href: /windows-server/identity/laps/laps-overview
   - name: Enterprise Certificate Pinning
@@ -53,46 +98,3 @@ items:
         href: user-account-control/user-account-control-security-policy-settings.md
       - name: User Account Control Group Policy and registry key settings
         href: user-account-control/user-account-control-group-policy-and-registry-key-settings.md
-  - name: Smart Cards
-    href: smart-cards/smart-card-windows-smart-card-technical-reference.md
-    items:
-      - name: How Smart Card Sign-in Works in Windows
-        href: smart-cards/smart-card-how-smart-card-sign-in-works-in-windows.md
-        items:
-          - name: Smart Card Architecture
-            href: smart-cards/smart-card-architecture.md
-          - name: Certificate Requirements and Enumeration
-            href: smart-cards/smart-card-certificate-requirements-and-enumeration.md
-          - name: Smart Card and Remote Desktop Services
-            href: smart-cards/smart-card-and-remote-desktop-services.md
-          - name: Smart Cards for Windows Service
-            href: smart-cards/smart-card-smart-cards-for-windows-service.md
-          - name: Certificate Propagation Service
-            href: smart-cards/smart-card-certificate-propagation-service.md
-          - name: Smart Card Removal Policy Service
-            href: smart-cards/smart-card-removal-policy-service.md
-      - name: Smart Card Tools and Settings
-        href: smart-cards/smart-card-tools-and-settings.md
-        items:
-          - name: Smart Cards Debugging Information
-            href: smart-cards/smart-card-debugging-information.md
-          - name: Smart Card Group Policy and Registry Settings
-            href: smart-cards/smart-card-group-policy-and-registry-settings.md
-          - name: Smart Card Events
-            href: smart-cards/smart-card-events.md
-      - name: Virtual smart cards
-        href: virtual-smart-cards/virtual-smart-card-overview.md
-        items:
-          - name: Understand and evaluate virtual smart cards
-            href: virtual-smart-cards/virtual-smart-card-understanding-and-evaluating.md
-            items:
-              - name: Get started with virtual smart cards
-                href: virtual-smart-cards/virtual-smart-card-get-started.md
-              - name: Use virtual smart cards
-                href: virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards.md
-              - name: Deploy virtual smart cards
-                href: virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards.md
-              - name: Evaluate virtual smart card security
-                href: virtual-smart-cards/virtual-smart-card-evaluate-security.md
-          - name: Tpmvscmgr
-            href: virtual-smart-cards/virtual-smart-card-tpmvscmgr.md

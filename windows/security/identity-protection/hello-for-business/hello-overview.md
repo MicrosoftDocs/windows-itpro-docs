@@ -48,8 +48,6 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 - *Windows Hello for Business*, which is configured by group policy or mobile device management (MDM) policy, always uses key-based or certificate-based authentication. This behavior makes it more secure than *Windows Hello convenience PIN*.
 
-[!INCLUDE [windows-hello-for-business](../../../../includes/licensing/windows-hello-for-business.md)]
-
 ## Benefits of Windows Hello
 
 Reports of identity theft and large-scale hacking are frequent headlines. Nobody wants to be notified that their user name and password have been exposed.
