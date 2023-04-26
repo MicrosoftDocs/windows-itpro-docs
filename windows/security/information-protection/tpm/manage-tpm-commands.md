@@ -32,35 +32,35 @@ The following procedures describe how to manage the TPM command lists. You must 
     >
     > Administrators with appropriate rights in a domain can configure a Group Policy Object (GPO) that can be applied through Active Directory Domain Services (AD DS).
 
-2. In the console tree, under **Computer Configuration**, expand **Administrative Templates**, and then expand **System**.
+1. In the console tree, under **Computer Configuration**, expand **Administrative Templates**, and then expand **System**.
 
-3. Under **System**, select **Trusted Platform Module Services**.
+1. Under **System**, select **Trusted Platform Module Services**.
 
-4. In the details pane, double-click **Configure the list of blocked TPM commands**.
+1. In the details pane, double-click **Configure the list of blocked TPM commands**.
 
-5. Select **Enabled**, and then select **Show**.
+1. Select **Enabled**, and then select **Show**.
 
-6. For each command that you want to block, select **Add**, enter the command number, and then select **OK**.
+1. For each command that you want to block, select **Add**, enter the command number, and then select **OK**.
 
     > [!NOTE]
     >
     > For a list of commands, see links in the [TPM Specification](https://www.trustedcomputinggroup.org/tpm-main-specification/).
 
-7. After you have added numbers for each command that you want to block, select **OK** twice.
+1. After you have added numbers for each command that you want to block, select **OK** twice.
 
-8. Close the Local Group Policy Editor.
+1. Close the Local Group Policy Editor.
 
 ## Block or allow TPM commands by using the TPM MMC
 
 1. Open the TPM MMC (tpm.msc)
 
-2. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
+1. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
-3. In the console tree, select **Command Management**. A list of TPM commands is displayed.
+1. In the console tree, select **Command Management**. A list of TPM commands is displayed.
 
-4. In the list, select a command that you want to block or allow.
+1. In the list, select a command that you want to block or allow.
 
-5. Under **Actions**, select **Block Selected Command** or **Allow Selected Command** as needed. If **Allow Selected Command** is unavailable, that command is currently blocked by Group Policy.
+1. Under **Actions**, select **Block Selected Command** or **Allow Selected Command** as needed. If **Allow Selected Command** is unavailable, that command is currently blocked by Group Policy.
 
 ## Block new commands
 
@@ -68,11 +68,11 @@ The following procedures describe how to manage the TPM command lists. You must 
 
     If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
-2. In the console tree, select **Command Management**. A list of TPM commands is displayed.
+1. In the console tree, select **Command Management**. A list of TPM commands is displayed.
 
-3. In the **Action** pane, select **Block New Command**. The **Block New Command** dialog box is displayed.
+1. In the **Action** pane, select **Block New Command**. The **Block New Command** dialog box is displayed.
 
-4. In the **Command Number** text box, type the number of the new command that you want to block, and then select **OK**. The command number you entered is added to the blocked list.
+1. In the **Command Number** text box, type the number of the new command that you want to block, and then select **OK**. The command number you entered is added to the blocked list.
 
 ## Use the TPM cmdlets
 
