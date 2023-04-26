@@ -1,7 +1,7 @@
 ---
 title: Customize Windows Update settings
 description: This article explains how to customize Windows Updates in Windows Autopatch
-ms.date: 03/08/2023
+ms.date: 04/26/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -29,6 +29,9 @@ For each tenant, at the deployment ring level, there are two cadence types to co
 
 - [Deadline-driven](#deadline-driven)
 - [Scheduled install](#scheduled-install)
+
+> [!NOTE]
+> Windows Autopatch leverages the [Update rings policy for Windows 10 and later in Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/windows-10-update-rings) to apply either **Deadline-driven** or **Scheduled install** cadence types. Microsoft Intune implements [Update rings policy for Windows 10 and later](https://learn.microsoft.com/mem/intune/protect/windows-10-update-rings) leveraging the settings available in the [Update policy CSP](https://learn.microsoft.com/windows/client-management/mdm/policy-csp-update) behind the scenes.
 
 #### Deadline-driven
 
@@ -91,6 +94,9 @@ In addition to the cadence type, you can also manage the end user notification s
 For more information, see [Windows Update settings you can manage with Intune update ring policies for Windows 10/11 devices](/mem/intune/protect/windows-update-settings).
 
 ## Customize the Windows Update deployment cadence
+
+> [!IMPORTANT]
+> The Windows update setting customizations can take up to eight hours to be applied to devices. Windows Autopatch uses Microsoft Intune as its device management solution and that's the average frequency Windows devices take to communicate back to Microsoft Intune with new instructions to apply new software update settings.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
 
 **To customize the Windows Update deployment cadence:**
 
