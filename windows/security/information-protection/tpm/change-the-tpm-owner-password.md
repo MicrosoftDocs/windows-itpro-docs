@@ -30,7 +30,14 @@ Starting with Windows 10, version 1607, Windows doesn't retain the TPM owner pas
 >
 > `HKLM\Software\Policies\Microsoft\TPM`
 >
-> create a `REG_DWORD` value of `OSManagedAuthLevel` and set it to `4`. For Windows versions newer than Windows 10 1703, the default value for this key is 5. For TPM 2.0, a value of 5 means keep the lockout authorization. For TPM 1.2, a value of 5 means discard the Full TPM owner authorization and retain only the Delegated authorization. Unless it's changed to 4 before the TPM is provisioned, the owner password isn't be saved.
+> create a `REG_DWORD` value of `OSManagedAuthLevel` and set it to `4`.
+>
+> For Windows versions newer than Windows 10 1703, the default value for this key is 5. A value of 5 means:
+>
+> - **TPM 2.0**: Keep the lockout authorization.
+> - **TPM 1.2**: Discard the Full TPM owner authorization and retain only the Delegated authorization.
+>
+> Unless it's changed to 4 before the TPM is provisioned, the owner password isn't be saved.
 
 Only one owner password exists for each TPM. The TPM owner password allows the ability to enable, disable, or clear the TPM without having physical access to the computer, for example, by using the command-line tools remotely. The TPM owner password also allows manipulation of the TPM dictionary attack logic. Windows takes ownership of the TPM as part of the provisioning process on each boot. Ownership can change when you share the password or clear your ownership of the TPM so someone else can initialize it.
 
