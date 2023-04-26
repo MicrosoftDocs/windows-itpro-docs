@@ -5,7 +5,7 @@ ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
   - tier2
 ms.topic: article
@@ -22,6 +22,7 @@ A sandbox is temporary. When it's closed, all the software and files and the sta
 Software and applications installed on the host aren't directly available in the sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
 
 Windows Sandbox has the following properties:
+
 - **Part of Windows**: Everything required for this feature is included in Windows 10 Pro and Enterprise. There's no need to download a VHD.
 - **Pristine**: Every time Windows Sandbox runs, it's as clean as a brand-new installation of Windows.
 - **Disposable**: Nothing persists on the device. Everything is discarded when the user closes the application.
@@ -32,7 +33,7 @@ Windows Sandbox has the following properties:
 > Windows Sandbox enables network connection by default. It can be disabled using the [Windows Sandbox configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
 
 ## Prerequisites
- 
+
 - Windows 10 Pro, Enterprise or Education build 18305 or Windows 11 (*Windows Sandbox is currently not supported on Windows Home edition*)
 - AMD64 or (as of [Windows 11 Build 22483](https://blogs.windows.com/windows-insider/2021/10/20/announcing-windows-11-insider-preview-build-22483/)) ARM64 architecture
 - Virtualization capabilities enabled in BIOS
@@ -59,7 +60,7 @@ Windows Sandbox has the following properties:
 
    > [!NOTE]
    > To enable Sandbox using PowerShell, open PowerShell as Administrator and run the following command:
-   > 
+   >
    > ```powershell
    > Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
    > ```
@@ -67,9 +68,10 @@ Windows Sandbox has the following properties:
 4. Locate and select **Windows Sandbox** on the Start menu to run it for the first time.
 
    > [!NOTE]
-   > Windows Sandbox does not adhere to the mouse settings of the host system, so if the host system is set to use a right-handed mouse, you should apply these settings in Windows Sandbox manually.  
+   > Windows Sandbox does not adhere to the mouse settings of the host system, so if the host system is set to use a left-handed mouse, you must apply these settings in Windows Sandbox manually when Windows Sandbox starts. Alternatively, you can use a sandbox configuration file to run a logon command to swap the mouse setting. For an example, see [Example 3](windows-sandbox-configure-using-wsb-file.md#example-3).
 
-## Usage 
+## Usage
+
 1. Copy an executable file (and any other files needed to run the application) from the host and paste them into the **Windows Sandbox** window.
 
 2. Run the executable file or installer inside the sandbox.
