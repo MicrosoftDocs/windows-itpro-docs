@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 04/04/2023
+ms.date: 04/18/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -24,6 +24,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC542842](https://admin.microsoft.com/adminportal/home#/MessageCenter) | April 2023 Windows Autopatch baseline configuration update |
+| [MC538728](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Update: Windows Autopatch quality updates release communication |
 | [MC536881](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Take action: Review Windows Autopatch Tenant management blade for potential action required to prevent inactive status |
 
 ## March 2023

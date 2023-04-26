@@ -2,7 +2,7 @@
 title: UniversalPrint DDF file
 description: UniversalPrint DDF file
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft

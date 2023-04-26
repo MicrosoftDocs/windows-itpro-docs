@@ -69,10 +69,11 @@ Now that the app is configured, you must enable it for the users in Google Works
 ## Configure Azure AD as a Service Provider (SP) for Google Workspace
 
 The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use the credentials of an account with the *Global Administrator* role.
+Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in a PowerShell session. When prompted to authenticate to Azure AD, use the credentials of an account with the *Global Administrator* role.
 
 ```powershell
-Install-Module Microsoft.Graph
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+Install-Module Microsoft.Graph -Scope CurrentUser
 Import-Module Microsoft.Graph
 
 $domainId = "<your domain name>"
