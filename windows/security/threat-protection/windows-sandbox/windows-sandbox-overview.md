@@ -34,9 +34,9 @@ Windows Sandbox has the following properties:
 
 ## Prerequisites
 
-- Windows 10, version 1903 or later, or Windows 11
+- Windows 10, version 1903 and later, or Windows 11
 - Windows Pro, Enterprise or Education edition
-- ARM64 (as of Windows 11, version 22H2) or AMD64 architecture
+- ARM64 (for Windows 11, version 22H2 and later) or AMD64 architecture
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)
 - At least 1 GB of free disk space (SSD recommended)
