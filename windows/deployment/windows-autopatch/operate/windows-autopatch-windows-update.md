@@ -31,7 +31,7 @@ For each tenant, at the deployment ring level, there are two cadence types to co
 - [Scheduled install](#scheduled-install)
 
 > [!NOTE]
-> Windows Autopatch leverages the [Update rings policy for Windows 10 and later in Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/windows-10-update-rings) to apply either **Deadline-driven** or **Scheduled install** cadence types. Microsoft Intune implements [Update rings policy for Windows 10 and later](https://learn.microsoft.com/mem/intune/protect/windows-10-update-rings) leveraging the settings available in the [Update policy CSP](https://learn.microsoft.com/windows/client-management/mdm/policy-csp-update) behind the scenes.
+> Windows Autopatch uses the [Update rings policy for Windows 10 and later in Microsoft Intune](/mem/intune/protect/windows-10-update-rings) to apply either **Deadline-driven** or **Scheduled install** cadence types. Microsoft Intune implements [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) using the settings available in the [Update policy CSP](/windows/client-management/mdm/policy-csp-update).
 
 #### Deadline-driven
 
