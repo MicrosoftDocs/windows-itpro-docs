@@ -151,25 +151,25 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileBackupAdd
 
-No content is currently available.
+This event sends true/false compatibility decision data about a file to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
-- **SdbEntries**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary generating the events.
+- **SdbEntries**  Indicates if any matching compat Sdb entries are associated with this application
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileBackupStartSync
 
-No content is currently available.
+This event indicates that a full set of DataSourceMatchingInfoBlockStAdd events has completed being sent. This event is used to make compatibility decisions about files to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
