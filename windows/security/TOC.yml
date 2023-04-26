@@ -29,6 +29,12 @@
             href: information-protection/tpm/tpm-fundamentals.md
           - name: How Windows uses the TPM
             href: information-protection/tpm/how-windows-uses-the-tpm.md
+          - name: Manage TPM commands
+            href: information-protection/tpm/manage-tpm-commands.md
+          - name: Manager TPM Lockout
+            href: information-protection/tpm/manage-tpm-lockout.md
+          - name: Change the TPM password
+            href: information-protection/tpm/change-the-tpm-owner-password.md
           - name: TPM Group Policy settings
             href: information-protection/tpm/trusted-platform-module-services-group-policy-settings.md
           - name: Back up the TPM recovery information to AD DS
