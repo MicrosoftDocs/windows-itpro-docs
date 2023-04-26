@@ -2143,9 +2143,9 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 | Value | Description |
 |:--|:--|
-| 0 | Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel. |
-| 1 | Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that do not shutdown properly on restart. |
-| 2 (Default) | Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shutdown properly on restart. |
+| 0 | Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option, users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel. |
+| 1 | Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that do not shut down properly on restart. |
+| 2 (Default) | Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shut down properly on restart. |
 | 3 | Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart. |
 | 4 | Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only. |
 | 5 | Turn off automatic updates. |
@@ -3069,6 +3069,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallFirstWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallFirstWeek-Editable-End -->
@@ -3167,6 +3176,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallFourthWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallFourthWeek-Editable-End -->
@@ -3265,6 +3283,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallSecondWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallSecondWeek-Editable-End -->
@@ -3363,6 +3390,15 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- ScheduledInstallThirdWeek-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The ScheduledInstall*week policies operate on numeric days.
+
+- [ScheduledInstallFirstWeek](#scheduledinstallfirstweek): First week of the month (Days 1-7).
+- [ScheduledInstallSecondWeek](#scheduledinstallsecondweek): Second week of the month (Days 8-14).
+- [ScheduledInstallThirdWeek](#scheduledinstallthirdweek): Third week of the month (Days 15-21).
+- [ScheduledInstallFourthWeek](#scheduledinstallfourthweek): Fourth week of the month (Days 22-31).
+
+These policies are not exclusive and can be used in any combination. Together with [ScheduledInstallDay](#scheduledinstallday), it defines the ordinal number of a weekday in a month. E.g. [ScheduledInstallSecondWeek](#scheduledinstallsecondweek) + [ScheduledInstallDay](#scheduledinstallday) = 3 is 2nd Tuesday of the month. If the device is unavailable at the scheduled time, it can postpone installation of updates until the next month.
+
 > [!NOTE]
 > This policy will only take effect if [Update/AllowAutoUpdate](#allowautoupdate) has been configured to option 3 or 4 for scheduled installation.
 <!-- ScheduledInstallThirdWeek-Editable-End -->
@@ -3515,7 +3551,7 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 
 <!-- SetDisablePauseUXAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting allows to remove access to "Pause updates" feature.
+This setting allows removal access to "Pause updates" feature.
 
 Once enabled user access to pause updates is removed.
 <!-- SetDisablePauseUXAccess-Description-End -->
@@ -3657,7 +3693,7 @@ The following rules are followed regarding battery power:
 - Above 40% - allowed to reboot;
 - Above 20% - allowed to continue work.
 
-This setting overrides the install deferral behaviour of [AllowAutoUpdate](#allowautoupdate).
+This setting overrides the install deferral behavior of [AllowAutoUpdate](#allowautoupdate).
 
 These settings are designed for education devices that remain in carts overnight that are left in sleep mode. It is not designed for 1:1 devices.
 <!-- SetEDURestart-Editable-End -->
@@ -4062,7 +4098,7 @@ If you disable or do not configure this policy, the default method will be used.
 <!-- DeferUpdatePeriod-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 Allows IT Admins to specify update delays for up to four weeks. Supported values are 0-4, which refers to the number of weeks to defer updates.
 
@@ -4154,7 +4190,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 - If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 <!-- DeferUpgradePeriod-Editable-End -->
 
 <!-- DeferUpgradePeriod-DFProperties-Begin -->
@@ -4275,7 +4311,7 @@ Enable this policy to control the timing before transitioning from Auto restarts
 
 You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
 
-You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed, within the specified period.
 
 If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
@@ -4345,7 +4381,7 @@ Enable this policy to control the timing before transitioning from Auto restarts
 
 You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
 
-You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed, within the specified period.
 
 If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
@@ -4415,7 +4451,7 @@ Enable this policy to control the timing before transitioning from Auto restarts
 
 You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
 
-You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed, within the specified period.
 
 If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
@@ -4485,7 +4521,7 @@ Enable this policy to control the timing before transitioning from Auto restarts
 
 You can specify the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
 
-You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed, within the specified period.
 
 If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
@@ -4813,7 +4849,7 @@ To validate this policy:
 <!-- Description-Source-DDF -->
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.
 <!-- PauseDeferrals-Description-End -->
 
 <!-- PauseDeferrals-Editable-Begin -->
@@ -4915,7 +4951,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- Description-Source-DDF -->
 
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](#changes-in-windows-10-version-1607). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.
 <!-- RequireDeferUpgrade-Description-End -->
 
 <!-- RequireDeferUpgrade-Editable-Begin -->
@@ -5218,6 +5254,27 @@ If you disable or do not configure this policy, the default notification behavio
 
 <!-- Update-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Changes in Windows 10, version 1607
+
+Here are the new policies added in Windows 10, version 1607. Use these policies for Windows 10, version 1607 devices instead of the older policies
+
+- ActiveHoursEnd
+- ActiveHoursStart
+- AllowMUUpdateService
+- BranchReadinessLevel
+- DeferFeatureUpdatePeriodInDays
+- DeferQualityUpdatePeriodInDays
+- ExcludeWUDriversInQualityUpdate
+- PauseFeatureUpdates
+- PauseQualityUpdates
+
+Here's the list of older policies that are still supported for backward compatibility. You can use these older policies for Windows 10, version 1511 devices.
+
+- RequireDeferUpgrade
+- DeferUpgradePeriod
+- DeferUpdatePeriod
+- PauseDeferrals
+
 <!-- Update-CspMoreInfo-End -->
 
 <!-- Update-End -->

@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 03/15/2023
+ms.date: 04/26/2023
 ms.technology: itpro-updates
 ---
 
@@ -24,7 +24,6 @@ Before you begin the process of adding Windows Update for Business reports to yo
 - Devices that are [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business reports.
 - The Log Analytics workspace must be in a [supported region](#log-analytics-regions)
 - Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from the [Windows Update for Business deployment service](deployment-service-overview.md)
-
 
 ## Permissions
 
