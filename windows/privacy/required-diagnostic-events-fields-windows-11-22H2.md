@@ -108,6 +108,29 @@ The following fields are available:
 - **SdbEntries**  An array of fields that indicates the SDB entries that apply to this file.
 
 
+### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileBackupAdd
+
+No content is currently available.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  No content is currently available.
+- **SdbEntries**  No content is currently available.
+
+
+### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileBackupStartSync
+
+No content is currently available.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  No content is currently available.
+
+
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
 
 This event indicates that the DatasourceApplicationFile object is no longer present. The data collected with this event is used to help keep Windows up to date.
@@ -1269,7 +1292,6 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -1283,6 +1305,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
@@ -2230,6 +2253,151 @@ The following fields are available:
 - **windowInstanceId**  Unique value for each window instance.
 
 
+### SFR.DeviceSerialNumber
+
+No content is currently available.
+
+The following fields are available:
+
+- **EventSequence**  No content is currently available.
+- **MainDeviceId**  No content is currently available.
+- **OriginalSize**  No content is currently available.
+- **PID**  No content is currently available.
+- **SerialNumber**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **Truncated**  No content is currently available.
+- **VID**  No content is currently available.
+
+
+### SFR.HardwareInfo
+
+No content is currently available.
+
+The following fields are available:
+
+- **IsNoOddSku**  No content is currently available.
+- **IsServerSku**  No content is currently available.
+- **SmcFirmwareId**  No content is currently available.
+- **SocConfigId**  No content is currently available.
+- **SocFamily**  No content is currently available.
+- **SocModel**  No content is currently available.
+- **SystemType**  No content is currently available.
+
+
+### SFR.HardwareTelemetry
+
+No content is currently available.
+
+The following fields are available:
+
+- **FanSpeed**  No content is currently available.
+- **FanTach**  No content is currently available.
+- **MemIoPower**  No content is currently available.
+- **MemPhyPower**  No content is currently available.
+- **NbCorePower**  No content is currently available.
+- **PStateCPU**  No content is currently available.
+- **PStateGPU**  No content is currently available.
+- **PStateNB**  No content is currently available.
+- **SbRawTemp**  No content is currently available.
+- **SraCurrentAppId**  No content is currently available.
+- **Temperature00**  No content is currently available.
+- **Temperature01**  No content is currently available.
+- **Temperature02**  No content is currently available.
+- **Temperature03**  No content is currently available.
+- **Temperature04**  No content is currently available.
+- **Temperature05**  No content is currently available.
+- **Temperature06**  No content is currently available.
+- **Temperature07**  No content is currently available.
+- **Temperature08**  No content is currently available.
+- **Temperature09**  No content is currently available.
+- **Temperature10**  No content is currently available.
+- **Temperature11**  No content is currently available.
+- **Temperature12**  No content is currently available.
+- **Temperature13**  No content is currently available.
+- **Temperature14**  No content is currently available.
+- **Temperature15**  No content is currently available.
+- **Temperature16**  No content is currently available.
+- **Temperature17**  No content is currently available.
+- **Temperature18**  No content is currently available.
+- **Temperature19**  No content is currently available.
+- **Temperature20**  No content is currently available.
+- **Temperature21**  No content is currently available.
+- **Temperature22**  No content is currently available.
+- **Temperature23**  No content is currently available.
+- **Temperature24**  No content is currently available.
+- **Temperature25**  No content is currently available.
+- **Temperature26**  No content is currently available.
+- **Temperature27**  No content is currently available.
+- **Temperature28**  No content is currently available.
+- **Temperature29**  No content is currently available.
+- **Temperature30**  No content is currently available.
+- **Temperature31**  No content is currently available.
+- **TitleConstrained**  No content is currently available.
+- **TitleId**  No content is currently available.
+- **TitleRunning**  No content is currently available.
+- **VCpuCorePower**  No content is currently available.
+- **VCpuGfxTemp**  No content is currently available.
+- **VGfxCorePower**  No content is currently available.
+- **VMemIoPhyTemp**  No content is currently available.
+
+
+### SFR.SmcPersistStats
+
+No content is currently available.
+
+The following fields are available:
+
+- **BootRetries**  No content is currently available.
+- **ErrorCountCecRxAckCollision**  No content is currently available.
+- **ErrorCountCecRxMaxCycErr**  No content is currently available.
+- **ErrorCountCecRxMinCycErr**  No content is currently available.
+- **ErrorCountCecRxOverrun**  No content is currently available.
+- **ErrorCountCecRxWaveForm**  No content is currently available.
+- **ErrorCountCecTxAckErr**  No content is currently available.
+- **ErrorCountCecTxArbLost**  No content is currently available.
+- **ErrorCountCecTxUnderrun**  No content is currently available.
+- **ErrorCountFatal**  No content is currently available.
+- **ErrorCountOsTherm**  No content is currently available.
+- **ErrorCountPspFatal**  No content is currently available.
+- **ErrorCountPspFatalThermal**  No content is currently available.
+- **ErrorCountPspUnexpectedBootAck**  No content is currently available.
+- **ErrorCountSmcBoot**  No content is currently available.
+- **ErrorCountSmcRuntime**  No content is currently available.
+- **ErrorCountSmcThermActive**  No content is currently available.
+- **ErrorCountSmcThermQuiet**  No content is currently available.
+- **ErrorCountSmcThermVreg**  No content is currently available.
+- **ErrorCountSocThermTrip**  No content is currently available.
+- **ErrorCountSyncFlood**  No content is currently available.
+- **ErrorCountThermal**  No content is currently available.
+- **HspTdr0**  No content is currently available.
+- **HspTdr1**  No content is currently available.
+- **HspTdr2**  No content is currently available.
+- **InitialBootEntries**  No content is currently available.
+- **InitialBootRetries**  No content is currently available.
+- **NormalBootTerminate**  No content is currently available.
+- **PsdSleep**  No content is currently available.
+- **PsdStandby**  No content is currently available.
+- **PsdUiActive**  No content is currently available.
+- **PsdUiInactive**  No content is currently available.
+- **PstResetCold**  No content is currently available.
+- **PstSmcPowerOnReset**  No content is currently available.
+- **PstSmcReload**  No content is currently available.
+- **PstSmcWatchdogTimer**  No content is currently available.
+- **PstUiActiveEntries**  No content is currently available.
+- **SmcReloadsSkipped**  No content is currently available.
+
+
+### SFR.SpatialAudioAutoLicense
+
+No content is currently available.
+
+The following fields are available:
+
+- **MainDeviceId**  No content is currently available.
+- **SessionId**  No content is currently available.
+- **SpatialAudioAutoLicenseKey**  No content is currently available.
+
+
 ## Privacy consent logging events
 
 ### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
@@ -2245,6 +2413,18 @@ The following fields are available:
 
 
 ## Setup events
+
+### Microsoft.Windows.Setup.WinSetupMon.ProtectionViolation
+
+This event provides information about move or deletion of a file or a directory which is being monitored for data safety during feature updates. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **Path**  Path to the file or the directory which is being moved or deleted.
+- **Process**  Path to the process which is requesting the move or the deletion.
+- **SessionId**  No content is currently available.
+- **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
+
 
 ### SetupPlatformTel.SetupPlatformTelEvent
 
@@ -3373,7 +3553,6 @@ The following fields are available:
 This event is derived event results for the LaunchPageDuration scenario.
 
 
-
 ### Microsoft.Windows.Update.WUClient.DownloadPaused
 
 This event is fired when the Download stage is paused.
@@ -3449,3 +3628,6 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
+
+
+
