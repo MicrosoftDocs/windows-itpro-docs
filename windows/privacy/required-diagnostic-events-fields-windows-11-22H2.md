@@ -2277,7 +2277,7 @@ The following fields are available:
 
 - **Path**  Path to the file or the directory which is being moved or deleted.
 - **Process**  Path to the process which is requesting the move or the deletion.
-- **SessionId**  No content is currently available.
+- **SessionId**  Identifier to correlate this component's telemetry with that of others.
 - **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
 
 
