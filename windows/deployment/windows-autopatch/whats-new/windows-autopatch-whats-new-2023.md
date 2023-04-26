@@ -20,6 +20,12 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## April 2023
 
+### April feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the [Deployment rings for Windows 10 and later](../references/windows-autopatch-changes-to-tenant.md#deployment-rings-for-windows-10-and-later) section |
+
 ### April 2023 service release
 
 | Message center post number | Description |
