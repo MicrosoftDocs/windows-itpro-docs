@@ -87,7 +87,7 @@ When running an expedited release, the regular goal of 95% of devices in 21 days
 | Expedited release | All devices | 0 | 1 | 1 |
 
 > [!IMPORTANT]
-> Expedited updates do not work with devices under the [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/). See [expedite Windows quality updates in Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/windows-10-expedite-updates) for more information.
+> Expedited updates **don't** work with devices under the [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/). For more information, see [expedite Windows quality updates in Microsoft Intune](/mem/intune/protect/windows-10-expedite-updates).
 
 #### Turn off service-driven expedited quality update releases
 
