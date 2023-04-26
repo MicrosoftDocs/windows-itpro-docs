@@ -34,12 +34,16 @@ Windows Sandbox has the following properties:
 
 ## Prerequisites
 
-- Windows 10 Pro, Enterprise or Education build 18305 or Windows 11 (*Windows Sandbox is currently not supported on Windows Home edition*)
-- AMD64 or (as of [Windows 11 Build 22483](https://blogs.windows.com/windows-insider/2021/10/20/announcing-windows-11-insider-preview-build-22483/)) ARM64 architecture
+- Windows 10, version 1903 or later, or Windows 11
+- Windows Pro, Enterprise or Education edition
+- ARM64 (as of Windows 11, version 22H2) or AMD64 architecture
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)
 - At least 1 GB of free disk space (SSD recommended)
-- At least two CPU cores (four cores with hyperthreading recommended)
+- At least two CPU cores (four cores with hyper-threading recommended)
+
+> [!NOTE]
+> Windows Sandbox is currently not supported on Windows Home edition
 
 ## Installation
 
