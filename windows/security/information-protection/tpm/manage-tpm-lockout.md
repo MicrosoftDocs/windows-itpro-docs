@@ -49,9 +49,9 @@ The following procedure explains the steps to reset the TPM lockout by using the
 
 1. Open the TPM MMC (tpm.msc).
 
-2. In the **Action** pane, select **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
+1 In the **Action** pane, select **Reset TPM Lockout** to start the Reset TPM Lockout Wizard.
 
-3. Choose one of the following methods to enter the TPM owner password:
+1. Choose one of the following methods to enter the TPM owner password:
 
    - If you saved your TPM owner password to a `.tpm` file, select **I have the owner password file**, and then type the path to the file, or select **Browse** to navigate to the file location.
 
