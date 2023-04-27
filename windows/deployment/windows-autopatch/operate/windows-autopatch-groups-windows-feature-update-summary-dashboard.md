@@ -1,5 +1,5 @@
 ---
-title: Summary dashboard for feature updates
+title: Windows feature update summary dashboard
 description: Provides a broader view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
 ms.date: 05/01/2023
 ms.prod: windows-client
@@ -29,7 +29,7 @@ The first part of the summary dashboard provides you with an all-devices trend r
 
 ## Report information
 
-The following information is available in the Summary dashboard:
+The following information is available in the summary dashboard:
 
 | Column name | Description |
 | ----- | ----- |
@@ -48,5 +48,5 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Refresh | The option to **Refresh** the Summary dashboard is available at the top of the page. This process will ensure that the Summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
+| Refresh | The option to **Refresh** the summary dashboard is available at the top of the page. This process will ensure that the summary dashboard view is updated to the latest available dataset from within the last 24-hour period. |
 | Summary links | Each column represents the summary of included devices. Select the hyperlinked number to produce a filtered report in a new browser tab. |
