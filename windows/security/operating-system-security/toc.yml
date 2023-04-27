@@ -10,4 +10,4 @@ items:
   - name: Data protection
     href: data-protection/toc.yml
   - name: Modern device management
-    href: modern-device-management/toc.yml
+    href: device-management/toc.yml
