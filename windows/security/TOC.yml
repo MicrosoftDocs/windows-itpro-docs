@@ -31,24 +31,24 @@
       - name: BitLocker frequently asked questions (FAQ)
         href: information-protection/bitlocker/bitlocker-frequently-asked-questions.yml
         items:
-          - name: Overview and requirements
-            href: information-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml
-          - name: Upgrading
-            href: information-protection/bitlocker/bitlocker-upgrading-faq.yml
-          - name: Deployment and administration
-            href: information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml
-          - name: Key management
-            href: information-protection/bitlocker/bitlocker-key-management-faq.yml
-          - name: BitLocker To Go
-            href: information-protection/bitlocker/bitlocker-to-go-faq.yml
-          - name: Active Directory Domain Services
-            href: information-protection/bitlocker/bitlocker-and-adds-faq.yml
-          - name: Security
-            href: information-protection/bitlocker/bitlocker-security-faq.yml
-          - name: BitLocker Network Unlock
-            href: information-protection/bitlocker/bitlocker-network-unlock-faq.yml
-          - name: General
-            href: information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml
+        - name: Overview and requirements
+          href: information-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml
+        - name: Upgrading
+          href: information-protection/bitlocker/bitlocker-upgrading-faq.yml
+        - name: Deployment and administration
+          href: information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml
+        - name: Key management
+          href: information-protection/bitlocker/bitlocker-key-management-faq.yml
+        - name: BitLocker To Go
+          href: information-protection/bitlocker/bitlocker-to-go-faq.yml
+        - name: Active Directory Domain Services
+          href: information-protection/bitlocker/bitlocker-and-adds-faq.yml
+        - name: Security
+          href: information-protection/bitlocker/bitlocker-security-faq.yml
+        - name: BitLocker Network Unlock
+          href: information-protection/bitlocker/bitlocker-network-unlock-faq.yml
+        - name: General
+          href: information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml
       - name: "Prepare your organization for BitLocker: Planning and policies"
         href: information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md
       - name: BitLocker deployment comparison
