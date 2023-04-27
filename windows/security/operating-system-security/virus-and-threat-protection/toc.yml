@@ -3,6 +3,8 @@ items:
   href: ../../threat-protection/index.md
 - name: Microsoft Defender Antivirus
   href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+- name: Configuring LSA Protection
+  href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
 - name: Attack surface reduction (ASR)
   href: /microsoft-365/security/defender-endpoint/attack-surface-reduction
 - name: Tamper protection for MDE

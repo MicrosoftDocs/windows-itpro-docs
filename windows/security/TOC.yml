@@ -17,49 +17,14 @@
 - name: Operating system security
   href: operating-system-security/toc.yml
 - name: Application security
-  items:
-    - name: Overview
-      href: apps.md
-    - name: Windows Defender Application Control and virtualization-based protection of code integrity
-      href: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
-    - name: Windows Defender Application Control
-      href: threat-protection\windows-defender-application-control\windows-defender-application-control.md
-    - name: Microsoft Defender Application Guard
-      href: threat-protection\microsoft-defender-application-guard\md-app-guard-overview.md
-    - name: Windows Sandbox
-      href: threat-protection/windows-sandbox/windows-sandbox-overview.md
-      items:
-        - name: Windows Sandbox architecture
-          href: threat-protection/windows-sandbox/windows-sandbox-architecture.md
-        - name: Windows Sandbox configuration
-          href: threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md
-    - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
-      href: threat-protection\microsoft-defender-smartscreen\phishing-protection-microsoft-defender-smartscreen.md
-    - name: Configure S/MIME for Windows
-      href: identity-protection\configure-s-mime.md
-    - name: Windows Credential Theft Mitigation Guide Abstract
-      href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md
-- name: User security and secured identity
+  href: application-security/toc.yml
+- name: Identity protection
   href: identity-protection/toc.yml
-- name: Cloud services
-  items:
-    - name: Overview
-      href: cloud.md
-    - name: Mobile device management
-      href: /windows/client-management/mdm/
-    - name: Windows 365 Cloud PCs
-      href: /windows-365/overview
-    - name: Azure Virtual Desktop
-      href: /azure/virtual-desktop/
-- name: Security foundations
-  items:
-    - name: Overview
-      href: security-foundations.md
-    - name: Microsoft Security Development Lifecycle
-      href: threat-protection/msft-security-dev-lifecycle.md
-    - name: FIPS 140-2 Validation
-      href: threat-protection/fips-140-validation.md
-    - name: Common Criteria Certifications
-      href: threat-protection/windows-platform-common-criteria.md
 - name: Windows Privacy
   href: /windows/privacy/windows-10-and-privacy-compliance
+- name: Security foundations
+  href: security-foundations/toc.yml
+- name: Cloud services
+  href: cloud-services/toc.yml
+- name: Security policy settings
+  href: /windows/security/threat-protection/security-policy-settings

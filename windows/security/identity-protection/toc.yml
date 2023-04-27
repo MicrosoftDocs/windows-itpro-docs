@@ -7,10 +7,14 @@ items:
     items:
     - name: Windows Hello for Business ⇒
       href: hello-for-business/index.yml
-    - name: Windows presence sensing
+    - name: Windows presence sensing ⇒
       href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb
-    - name: FIDO 2 security keys ⇒
+    - name: Windows Hello for Business Enhanced Security Sign-in (ESS) ⇒
+      href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
+    - name: FIDO 2 security key ⇒
       href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
+    - name: Federated sign-in ⇒
+      href: /education/windows/federated-sign-in
     - name: Smart Cards
       href: smart-cards/smart-card-windows-smart-card-technical-reference.md
       items:
@@ -54,12 +58,26 @@ items:
                   href: virtual-smart-cards/virtual-smart-card-evaluate-security.md
             - name: Tpmvscmgr
               href: virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
-  - name: Windows LAPS (Local Administrator Password Solution) ⇒
-    href: /windows-server/identity/laps/laps-overview
-  - name: Enterprise Certificate Pinning
-    href: enterprise-certificate-pinning.md
-  - name: Credential Guard
+    - name: Windows LAPS (Local Administrator Password Solution) ⇒
+      href: /windows-server/identity/laps/laps-overview
+    - name: Enterprise Certificate Pinning
+      href: enterprise-certificate-pinning.md
+  - name: Advanced credential protection
     items:
+    - name: Account Lockout Policy
+      href: ../threat-protection/security-policy-settings/account-lockout-policy.md
+    - name: Technical support policy for lost or forgotten passwords
+      href: password-support-policy.md
+    - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
+      href: ../threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen.md
+    - name: Access Control
+      items:
+      - name: Overview
+        href: access-control/access-control.md
+      - name: Local Accounts
+        href: access-control/local-accounts.md
+    - name: Windows Defender Credential Guard
+      items:
       - name: Protect derived domain credentials with Credential Guard
         href: credential-guard/credential-guard.md
       - name: How Credential Guard works
@@ -76,25 +94,5 @@ items:
         href: credential-guard/additional-mitigations.md
       - name: Known issues
         href: credential-guard/credential-guard-known-issues.md
-  - name: Remote Credential Guard
+  - name: Windows Defender Remote Credential Guard
     href: remote-credential-guard.md
-  - name: Configuring LSA Protection
-    href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
-  - name: Technical support policy for lost or forgotten passwords
-    href: password-support-policy.md
-  - name: Access Control
-    items:
-      - name: Overview
-        href: access-control/access-control.md
-      - name: Local Accounts
-        href: access-control/local-accounts.md
-  - name: User Account Control (UAC)
-    items:
-      - name: Overview
-        href: user-account-control/user-account-control-overview.md
-      - name: How User Account Control works
-        href: user-account-control/how-user-account-control-works.md
-      - name: User Account Control security policy settings
-        href: user-account-control/user-account-control-security-policy-settings.md
-      - name: User Account Control Group Policy and registry key settings
-        href: user-account-control/user-account-control-group-policy-and-registry-key-settings.md
