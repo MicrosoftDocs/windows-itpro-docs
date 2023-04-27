@@ -1,6 +1,6 @@
 ---
 title: Summary dashboard for quality updates
-description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch.
+description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch with Autopatch groups
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates

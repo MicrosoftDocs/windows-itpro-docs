@@ -98,7 +98,7 @@ In the software-based deployment ring set, each deployment ring has a different 
 > [!IMPORTANT]
 > Windows Autopatch device registration doesn't assign devices to the Test deployment rings of either the service-based (**Modern Workplace Devices-Windows Autopatch-Test**), or software updates-based (**Windows Autopatch – Test and Windows Autopatch – Last**) in the Default Autopatch group. This is intended to prevent devices that are essential to a business from being affected or devices that are used by executives from receiving early software update deployments.
 
-During the device registration process, Windows Autopatch assigns each device to a [service-based and software-update based deployment ring](../deploy/windows-autopatch-groups-overview.md#sevice-based-versus-software-update-based-deployment-rings) so that the service has the proper representation of device diversity across your organization.
+During the device registration process, Windows Autopatch assigns each device to a [service-based and software-update based deployment ring](../deploy/windows-autopatch-groups-overview.md#service-based-versus-software-update-based-deployment-rings) so that the service has the proper representation of device diversity across your organization.
 
 The deployment ring distribution is designed to release software update deployments to as few devices as possible to get the signals needed to make a quality evaluation of a given update deployment.
 
@@ -107,7 +107,7 @@ The deployment ring distribution is designed to release software update deployme
 
 ## Default deployment ring calculation logic
 
-The Windows Autopatch deployment ring calculation occurs during the device registration process and it applies to both the [service-based and the software update-based deployment ring sets](../deploy/windows-autopatch-groups-overview.md#sevice-based-versus-software-update-based-deployment-rings):
+The Windows Autopatch deployment ring calculation occurs during the device registration process and it applies to both the [service-based and the software update-based deployment ring sets](../deploy/windows-autopatch-groups-overview.md#service-based-versus-software-update-based-deployment-rings):
 
 - If the Windows Autopatch tenant’s existing managed device size is **≤ 200**, the deployment ring assignment is First **(5%)**, Fast **(15%)**, remaining devices go to the Broad ring **(80%)**.
 - If the Windows Autopatch tenant’s existing managed device size is **>200**, the deployment ring assignment will be First **(1%)**, Fast **(9%)**, remaining devices go to the Broad ring **(90%)**.

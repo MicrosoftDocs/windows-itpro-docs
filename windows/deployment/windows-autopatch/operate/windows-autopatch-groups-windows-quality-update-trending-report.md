@@ -1,6 +1,6 @@
 ---
 title: Quality update trending report
-description: Provides a visual representation of the update status trend for all devices over the last 90 days.
+description: Provides a visual representation of the update status trend for all devices over the last 90 days with Autopatch groups.
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
