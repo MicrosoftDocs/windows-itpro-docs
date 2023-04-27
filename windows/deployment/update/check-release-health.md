@@ -63,7 +63,7 @@ You have the option to sign up for email notifications about Windows known issue
 1. Specify the following information: 
 - Up to two email addresses. Each admin can set their Preferences. The limit of two email addresses is per admin account. 
     - Windows versions to be notified about
-Lastly, don’t forget to click on **Save**. It might take up to 8 hours for these changes to take effect. 
+1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect. 
 
 **Note:** If one known issue affects more than one version of Windows, you will receive only one email, even if you sign up for multiple Windows versions. We won’t send duplicate emails. 
 
