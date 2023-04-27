@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/25/2023
+ms.date: 04/27/2023
 ms.topic: include
 ---
 
@@ -25,14 +25,13 @@ The following table lists the security features that are available in Windows, a
 |**[Encrypted hard drive](/windows/security/information-protection/encrypted-hard-drive)**|Yes|Yes|Yes|Yes|
 |**[Enhanced phishing protection with SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen)**|Yes|Yes|Yes|Yes|
 |**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|
-|**[Fast Identity Online (FIDO2) security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=%2Fwindows%2Fsecurity%2Fcontext%2Fcontext)**|Yes|Yes|Yes|Yes|
+|**[Fast Identity Online (FIDO2) security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)**|Yes|Yes|Yes|Yes|
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/threat-protection/fips-140-validation)**|Yes|Yes|Yes|Yes|
-|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|No|Yes|Yes|
+|**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|
 |**[Hypervisor-protected Code Integrity (HVCI)](/windows-hardware/design/device-experiences/oem-hvci-enablement)**|Yes|Yes|Yes|Yes|
 |**[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**|Yes|Yes|Yes|Yes|
-|**Local Administrator Password Solution**|Yes|Yes|Yes|Yes|
-|**[Local Security Authority (LSA) Protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=%2Fwindows%2Fsecurity%2Ftoc.json&bc=%2Fwindows%2Fsecurity%2Fbreadcrumb%2Ftoc.json)**|Yes|Yes|Yes|Yes|
+|**Local Security Authority (LSA) Protection**|Yes|Yes|Yes|Yes|
 |**[Manage by Mobile Device Management (MDM) and group policy](/windows/client-management/mdm/mdm-overview)**|Yes|Yes|Yes|Yes|
 |**[Measured boot](/windows/compatibility/measured-boot)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)**|Yes|Yes|Yes|Yes|
@@ -62,10 +61,10 @@ The following table lists the security features that are available in Windows, a
 |**[Transport layer security (TLS)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)**|Yes|Yes|Yes|Yes|
 |**[Trusted Platform Module (TPM) 2.0](/windows/security/information-protection/tpm/trusted-platform-module-overview)**|Yes|Yes|Yes|Yes|
 |**[Universal Print](/universal-print/)**|Yes|Yes|Yes|Yes|
-|**[User Account Control (UAC)](/indows/security/identity-protection/user-account-control/user-account-control-overview)**|Yes|Yes|Yes|Yes|
+|**[User Account Control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview)**|Yes|Yes|Yes|Yes|
 |**[Virtual Private Network (VPN)](/windows/security/identity-protection/vpn/vpn-guide)**|Yes|Yes|Yes|Yes|
 |**[Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)**|Yes|Yes|Yes|Yes|
-|**WiFi Security**|Yes|Yes|Yes|Yes|
+|**[WiFi Security](https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09)**|Yes|Yes|Yes|Yes|
 |**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|❌|Yes|❌|Yes|
 |**[Windows Autopilot](/windows/deployment/windows-autopilot)**|Yes|Yes|Yes|Yes|
 |**[Windows containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|
@@ -76,6 +75,7 @@ The following table lists the security features that are available in Windows, a
 |**[Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business)**|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|
+|**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|
 |**[Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)**|Yes|Yes|Yes|Yes|
 |**[Windows Security policy settings and auditing](/windows/security/threat-protection/security-policy-settings/security-policy-settings)**|Yes|Yes|Yes|Yes|
