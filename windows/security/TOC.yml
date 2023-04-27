@@ -15,6 +15,8 @@
 - name: Hardware security
   href: hardware-security/toc.yml
 - name: Operating system security
+  href: operating-system-security/toc.yml
+- name: Operating system security (OLD)
   items:
     - name: Overview
       href: operating-system.md
@@ -49,6 +51,53 @@
           href: threat-protection\windows-defender-security-center\wdsc-family-options.md
     - name: Virus and threat protection
       items:
+      - name: Overview
+        href: threat-protection/index.md
+      - name: Microsoft Defender Antivirus
+        href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+      - name: Attack surface reduction (ASR)
+        href: /microsoft-365/security/defender-endpoint/attack-surface-reduction
+      - name: Tamper protection for MDE
+        href: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+      - name: Microsoft Vulnerable Driver Blocklist
+        href: threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules.md
+      - name: Controlled folder access
+        href: /microsoft-365/security/defender-endpoint/controlled-folders
+      - name: Exploit protection
+        href: /microsoft-365/security/defender-endpoint/exploit-protection
+      - name: Microsoft Defender SmartScreen
+        href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
+      - name: Microsoft Defender for Endpoint
+        href: /microsoft-365/security/defender-endpoint
+    - name: Network security
+      items:
+      - name: VPN technical guide
+        href: identity-protection/vpn/vpn-guide.md
+        items:
+        - name: VPN connection types
+          href: identity-protection/vpn/vpn-connection-type.md
+        - name: VPN routing decisions
+          href: identity-protection/vpn/vpn-routing.md
+        - name: VPN authentication options
+          href: identity-protection/vpn/vpn-authentication.md
+        - name: VPN and conditional access
+          href: identity-protection/vpn/vpn-conditional-access.md
+        - name: VPN name resolution
+          href: identity-protection/vpn/vpn-name-resolution.md
+        - name: VPN auto-triggered profile options
+          href: identity-protection/vpn/vpn-auto-trigger-profile.md
+        - name: VPN security features
+          href: identity-protection/vpn/vpn-security-features.md
+        - name: VPN profile options
+          href: identity-protection/vpn/vpn-profile-options.md
+        - name: How to configure Diffie Hellman protocol over IKEv2 VPN connections
+          href: identity-protection/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
+        - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
+          href: identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
+        - name: Optimizing Office 365 traffic with the Windows VPN client
+          href: identity-protection/vpn/vpn-office-365-optimization.md
+      - name: Windows Defender Firewall
+        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
     - name: Encryption and data protection
       href: encryption-data-protection.md
       items:
@@ -158,35 +207,6 @@
         href: threat-protection/security-policy-settings/security-policy-settings.md
       - name: Security auditing
         href: threat-protection/auditing/security-auditing-overview.md
-    - name: Network security
-      items:
-      - name: VPN technical guide
-        href: identity-protection/vpn/vpn-guide.md
-        items:
-        - name: VPN connection types
-          href: identity-protection/vpn/vpn-connection-type.md
-        - name: VPN routing decisions
-          href: identity-protection/vpn/vpn-routing.md
-        - name: VPN authentication options
-          href: identity-protection/vpn/vpn-authentication.md
-        - name: VPN and conditional access
-          href: identity-protection/vpn/vpn-conditional-access.md
-        - name: VPN name resolution
-          href: identity-protection/vpn/vpn-name-resolution.md
-        - name: VPN auto-triggered profile options
-          href: identity-protection/vpn/vpn-auto-trigger-profile.md
-        - name: VPN security features
-          href: identity-protection/vpn/vpn-security-features.md
-        - name: VPN profile options
-          href: identity-protection/vpn/vpn-profile-options.md
-        - name: How to configure Diffie Hellman protocol over IKEv2 VPN connections
-          href: identity-protection/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
-        - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
-          href: identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
-        - name: Optimizing Office 365 traffic with the Windows VPN client
-          href: identity-protection/vpn/vpn-office-365-optimization.md
-      - name: Windows Defender Firewall
-        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
     - name: Windows security baselines
       href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
       items:
@@ -196,24 +216,6 @@
         href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md
       - name: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
         href: threat-protection/mbsa-removal-and-guidance.md
-    - name: Virus & threat protection
-      items:
-      - name: Overview
-        href: threat-protection/index.md
-      - name: Microsoft Defender Antivirus
-        href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
-      - name: Attack surface reduction rules
-        href: /microsoft-365/security/defender-endpoint/attack-surface-reduction
-      - name: Tamper protection
-        href: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
-      - name: Network protection
-        href: /microsoft-365/security/defender-endpoint/network-protection
-      - name: Controlled folder access
-        href: /microsoft-365/security/defender-endpoint/controlled-folders
-      - name: Exploit protection
-        href: /microsoft-365/security/defender-endpoint/exploit-protection
-      - name: Microsoft Defender for Endpoint
-        href: /microsoft-365/security/defender-endpoint
     - name: More Windows security
       items:
       - name: Override Process Mitigation Options to help enforce app-related security policies
@@ -288,11 +290,8 @@
           href: threat-protection/windows-sandbox/windows-sandbox-architecture.md
         - name: Windows Sandbox configuration
           href: threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md
-    - name: Microsoft Defender SmartScreen overview
-      href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
-      items:
-        - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
-          href: threat-protection\microsoft-defender-smartscreen\phishing-protection-microsoft-defender-smartscreen.md
+    - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
+      href: threat-protection\microsoft-defender-smartscreen\phishing-protection-microsoft-defender-smartscreen.md
     - name: Configure S/MIME for Windows
       href: identity-protection\configure-s-mime.md
     - name: Windows Credential Theft Mitigation Guide Abstract
