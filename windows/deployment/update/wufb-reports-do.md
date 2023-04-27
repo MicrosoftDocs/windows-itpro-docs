@@ -89,7 +89,7 @@ There are several calculated values that appear on the Delivery Optimization rep
 
 ## Mapping GroupID
 
-In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of decoded to encoded GroupIDs using the following PowerShell example:
+In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
 $text = "<myEncodedGroupID>" ;
@@ -164,3 +164,6 @@ A row in UCDOStatus represents data downloaded by a combination of a single devi
 
 - **What does the data in UCDOAggregatedStatus table represent?**
 A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
+
+- **How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?**
+If there is an Connected Cache server at the ISP level, BytesFromCache will filter out any bytes coming the the ISP's Connected Cache.
