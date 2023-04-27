@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2481,7 +2481,7 @@ Information about the current status of the threat. The following list shows the
 | 7 | Removed |
 | 8 | Cleaned |
 | 9 | Allowed |
-| 10 | No Status (Cleared) |
+| 10 | No Status ( Cleared) |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Description-End -->
 
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Editable-Begin -->
@@ -3676,7 +3676,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 
 <!-- Device-RollbackEngine-Description-Begin -->
 <!-- Description-Source-DDF -->
-RollbackEngine action rolls back Microsoft Defender engine to its last known good saved version on the computer where you run the command.
+RollbackEngine action rolls back Microsoft Defender engine to it's last known good saved version on the computer where you run the command.
 <!-- Device-RollbackEngine-Description-End -->
 
 <!-- Device-RollbackEngine-Editable-Begin -->
