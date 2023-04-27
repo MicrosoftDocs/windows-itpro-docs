@@ -62,7 +62,7 @@ You have the option to sign up for email notifications about Windows known issue
 1. Select **Preferences** > **Email** then select **Send me email notifications about Windows release health**.
 1. Specify the following information: 
 - Up to two email addresses. Each admin can set their Preferences. The limit of two email addresses is per admin account. 
-- Which Windows versions you want to be notified about. If your organization has multiple versions of Windows, we recommend selecting all that apply. 
+    - Windows versions to be notified about
 Lastly, don’t forget to click on **Save**. It might take up to 8 hours for these changes to take effect. 
 
 **Note:** If one known issue affects more than one version of Windows, you will receive only one email, even if you sign up for multiple Windows versions. We won’t send duplicate emails. 
