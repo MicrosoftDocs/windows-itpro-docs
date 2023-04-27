@@ -9,5 +9,5 @@ items:
   href: network-security/toc.yml
 - name: Data protection
   href: data-protection/toc.yml
-- name: Modern device management
+- name: Device management
   href: device-management/toc.yml

@@ -24,7 +24,7 @@
   href: /windows/privacy/windows-10-and-privacy-compliance
 - name: Security foundations
   href: security-foundations/toc.yml
-- name: Cloud services
-  href: cloud-services/toc.yml
+- name: Cloud security
+  href: cloud-security/toc.yml
 - name: Security policy settings
   href: /windows/security/threat-protection/security-policy-settings
