@@ -12,7 +12,7 @@ manager: dougeby
 ms.reviewer: rekhanr
 ---
 
-# Customize Windows Update settings: Autopatch groups experience (public preview)
+# Customize Windows Update settings: Autopatch groups experience (public preview) 
 
 > [!IMPORTANT]
 > This feature is in **public preview**. The feature is being actively developed, and may not be complete. You can test and use these features in production environments and provide feedback.
