@@ -61,7 +61,8 @@ You have the option to sign up for email notifications about Windows known issue
 1. Go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth).
 1. Select **Preferences** > **Email** then select **Send me email notifications about Windows release health**.
 1. Specify the following information: 
-- Up to two email addresses. Each admin can set their Preferences. The limit of two email addresses is per admin account. 
+    - Email address for the notifications
+        -Each admin account can specify up to two email addresses under their email preferences
     - Windows versions to be notified about
 1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect. 
 
