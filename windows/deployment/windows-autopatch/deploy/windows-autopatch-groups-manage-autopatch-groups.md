@@ -1,6 +1,6 @@
 ---
 title: Manage Windows Autopatch groups
-description: This article explains what Autopatch groups are
+description: This article explains how to manage Autopatch groups
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -19,13 +19,13 @@ ms.reviewer: andredm7
 
 Autopatch groups help Microsoft Cloud-Managed services meet organizations where they are in their update management journey.
 
-Autopatch groups is a logical container or unit that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates policy for Windows 10 and later policies](https://learn.microsoft.com/mem/intune/protect/windows-10-feature-updates).
+Autopatch groups is a logical container or unit that groups several [Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates policy for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates).
 
 ## Autopatch groups prerequisites
 
 Before you start managing Autopatch groups, ensure you’ve met the following prerequisites:
 
-- Review [Windows Autopatch groups overview documentation](../deploy/windows-autopatch-groups-overview.md) to understand [key benefits](../deploy/windows-autopatch-groups-overview.md#key-benefits), [concepts](../deploy/windows-autopatch-groups-overview.md#key-concepts) and [common ways to use Autopatch groups](../deploy/windows-autopatch-groups-overview.md#common-ways-to-use-windows-autopatch-groups) within your organization.
+- Review [Windows Autopatch groups overview documentation](../deploy/windows-autopatch-groups-overview.md) to understand [key benefits](../deploy/windows-autopatch-groups-overview.md#key-benefits), [concepts](../deploy/windows-autopatch-groups-overview.md#key-concepts) and [common ways to use Autopatch groups](../deploy/windows-autopatch-groups-overview.md#common-ways-to-use-autopatch-groups) within your organization.
 - Ensure the following Azure AD assigned groups are in your tenant before using Autopatch groups. **Don’t** modify the Azure AD group membership types (Assigned or Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups and causes the Autopatch groups feature and other service-related operations to not work properly.
     - Modern Workplace Devices-Windows Autopatch-Test
     - Modern Workplace Devices-Windows Autopatch-First
@@ -36,7 +36,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Windows Autopatch – Ring2
     - Windows Autopatch – Ring3
     - Windows Autopatch – Last
-- Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
+- Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
     - Read device attributes to successfully register devices.
     - Manage all configurations related to the operation of the service.
 - Make sure that all device-based Azure AD groups you intend to use with Autopatch groups are created prior to using the feature.

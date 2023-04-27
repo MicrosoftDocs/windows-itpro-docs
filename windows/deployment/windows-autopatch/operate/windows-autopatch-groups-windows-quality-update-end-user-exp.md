@@ -1,6 +1,6 @@
 ---
-title: Windows quality update end user experience
-description: This article explains the Windows quality update end user experience
+title: Windows quality update end user experience for Autopatch groups
+description: This article explains the Windows quality update end user experience using the Autopatch groups exp
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates

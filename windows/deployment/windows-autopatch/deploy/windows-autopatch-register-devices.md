@@ -215,7 +215,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 For more information, see [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy).
 
 > [!IMPORTANT]
-> Starting in May 2023, Windows 365 Cloud PC devices are assigned to two deployment ring sets, the service-based and the software-based deployment rings. Additionally, once registered with Windows Autopatch, Windows 365 Cloud PC devices are automatically added to the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group). For more information, see [service-based versus software update-based deployment ring sets](../deploy/windows-autopatch-groups-overview.md#service-based-versus-software-update-based-deployment-ring-sets).
+> Starting in May 2023, Windows 365 Cloud PC devices are assigned to two deployment ring sets, the service-based and the software-based deployment rings. Additionally, once registered with Windows Autopatch, Windows 365 Cloud PC devices are automatically added to the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group). For more information, see [service-based versus software update-based deployment ring sets](../deploy/windows-autopatch-groups-overview.md#service-based-versus-software-update-based-deployment-rings).
 
 ### Windows Autopatch on Azure Virtual Desktop workloads
 

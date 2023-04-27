@@ -1,6 +1,6 @@
 ---
 title: Manage Windows feature update releases
-description: This article explains how Windows feature updates are managed in Autopatch
+description: This article explains how you can manage Windows feature updates with Autopatch groups
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates

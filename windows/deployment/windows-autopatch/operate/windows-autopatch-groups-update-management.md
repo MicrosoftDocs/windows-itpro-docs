@@ -1,6 +1,6 @@
 ---
-title: Software update management
-description: This article provides an overview of how updates are handled in Autopatch
+title: Software update management for Autopatch groups
+description: This article provides an overview of how updates are handled with Autopatch groups
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates

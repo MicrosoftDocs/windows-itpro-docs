@@ -1,6 +1,6 @@
 ---
 title: Feature update trending report
-description: Provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
+description: Provides a visual representation of Windows OS upgrade trends for all devices over the last 90 days.
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates

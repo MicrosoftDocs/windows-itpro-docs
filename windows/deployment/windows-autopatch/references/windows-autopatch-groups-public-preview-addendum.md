@@ -1,6 +1,6 @@
 ---
 title: Autopatch groups Public Preview Addendum
-description: Provide notifications and information about the necessary steps to keep your devices up to date. 
+description: Addendum for Windows Autopatch groups public preview
 ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
