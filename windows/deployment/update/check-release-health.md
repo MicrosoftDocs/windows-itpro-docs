@@ -56,7 +56,11 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
 ## Sign up for email notifications 
 
-You have the option to sign up for email notifications about Windows known issues and  information updates, such as a change in status, new workarounds, and resolutions released. To subscribe, go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth), select **Preferences > Email**, click **Send me email notifications about Windows release health**, and then specify: 
+You have the option to sign up for email notifications about Windows known issues and informational updates. Notifications include changes in issue status, new workarounds, and issue resolutions. To subscribe to notifications:
+
+1. Go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth).
+1. Select **Preferences** > **Email** then select **Send me email notifications about Windows release health**.
+1. Specify the following information: 
 - Up to two email addresses. Each admin can set their Preferences. The limit of two email addresses is per admin account. 
 - Which Windows versions you want to be notified about. If your organization has multiple versions of Windows, we recommend selecting all that apply. 
 Lastly, don’t forget to click on **Save**. It might take up to 8 hours for these changes to take effect. 
