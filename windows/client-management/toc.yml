@@ -52,6 +52,8 @@ items:
                 href: config-lock.md
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
+              - name: eSIM management
+                href: esim-enterprise-management.md
           - name: Diagnose MDM failures
             expanded: false
             items:
