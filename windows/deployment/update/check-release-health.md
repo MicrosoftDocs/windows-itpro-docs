@@ -65,7 +65,8 @@ You have the option to sign up for email notifications about Windows known issue
     - Windows versions to be notified about
 1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect. 
 
-**Note:** If one known issue affects more than one version of Windows, you will receive only one email, even if you sign up for multiple Windows versions. We won’t send duplicate emails. 
+> [!Note]
+> When a single known issue affects multiple versions of Windows, you'll only receive one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
 
 ## Status definitions
 
