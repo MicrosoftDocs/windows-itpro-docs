@@ -64,7 +64,7 @@ items:
       href: enterprise-certificate-pinning.md
   - name: Advanced credential protection
     items:
-    - name: Account Lockout Policy
+    - name: Account Lockout Policy ⇒
       href: ../threat-protection/security-policy-settings/account-lockout-policy.md
     - name: Technical support policy for lost or forgotten passwords
       href: password-support-policy.md
@@ -76,6 +76,8 @@ items:
         href: access-control/access-control.md
       - name: Local Accounts
         href: access-control/local-accounts.md
+    - name: Security policy settings ⇒
+      href: ../threat-protection/security-policy-settings/security-policy-settings.md
     - name: Windows Defender Credential Guard
       items:
       - name: Protect derived domain credentials with Credential Guard
