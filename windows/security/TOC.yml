@@ -51,16 +51,28 @@
             href: information-protection/pluton/microsoft-pluton-security-processor.md
           - name: Microsoft Pluton as TPM
             href: information-protection/pluton/pluton-as-tpm.md
-      - name: Silicon assisted security
-        items:
-          - name: System Guard Secure Launch and SMM protection
-            href: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
-          - name: Enable virtualization-based protection of code integrity
-            href: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
-          - name: Kernel DMA Protection
-            href: information-protection/kernel-dma-protection-for-thunderbolt.md
-          - name: Windows secured-core devices
-            href: /windows-hardware/design/device-experiences/oem-highly-secure
+  - name: Silicon assisted security
+    items:
+      - name: Virtualization-based security (VBS)
+        href: /windows-hardware/design/device-experiences/oem-vbs
+      - name: Memory integrity (HVCI)
+        href: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
+      - name: Memory integrity and VBS enablement
+        href: /windows-hardware/design/device-experiences/oem-hvci-enablement
+      - name: Hardware-enforced stack protection
+        href: https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815
+      - name: Secured-core PC
+        href: /windows-hardware/design/device-experiences/oem-highly-secure-11
+      - name: Kernel Direct Memory Access (DMA) protection
+        href: information-protection/kernel-dma-protection-for-thunderbolt.md
+      - name: Secure Boot and Trusted Boot
+        href: trusted-boot.md
+      - name: Measured Boot
+        href: /windows/compatibility/measured-boot
+      - name: Device health attestation service
+        href: threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md
+      - name: System Guard Secure Launch
+        href: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
 - name: Operating system security
   items:
     - name: Overview
@@ -69,8 +81,6 @@
       items:
       - name: Secure the Windows boot process
         href: information-protection/secure-the-windows-10-boot-process.md
-      - name: Trusted Boot
-        href: trusted-boot.md
       - name: Cryptography and certificate management
         href: cryptography-certificate-mgmt.md
       - name: The Windows Security app
