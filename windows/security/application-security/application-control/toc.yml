@@ -9,17 +9,9 @@ items:
     href: ../../identity-protection/user-account-control/user-account-control-security-policy-settings.md
   - name: User Account Control Group Policy and registry key settings
     href: ../../identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md
-  - name: Windows Defender Application Control and virtualization-based protection of code integrity
-    href: ../../threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
-  - name: Windows Defender Application Control
-    href: ../../threat-protection/windows-defender-application-control/windows-defender-application-control.md
-  - name: Smart App Control
-    href: ../../threat-protection/windows-defender-application-control/windows-defender-application-control.md
-  - name: Microsoft Defender Application Guard (MDAG) for Edge standalone mode
-    href: ../../threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md
-  - name: Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management
-    href: /deployedge/microsoft-edge-security-windows-defender-application-guard
-  - name: Microsoft Defender Application Guard (MDAG) for Microsoft Office
-    href: https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46
-  - name: Microsoft Defender Application Guard (MDAG) configure via MDM
-    href: /windows/client-management/mdm/windowsdefenderapplicationguard-csp
+- name: Windows Defender Application Control and virtualization-based protection of code integrity
+  href: ../../threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+- name: Windows Defender Application Control
+  href: ../../threat-protection/windows-defender-application-control/windows-defender-application-control.md
+- name: Smart App Control
+  href: ../../threat-protection/windows-defender-application-control/windows-defender-application-control.md

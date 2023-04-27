@@ -20,8 +20,8 @@
   href: application-security/toc.yml
 - name: Identity protection
   href: identity-protection/toc.yml
-- name: Windows Privacy
-  href: /windows/privacy/windows-10-and-privacy-compliance
+- name: Windows Privacy ⇒
+  href: /windows/privacy
 - name: Security foundations
   href: security-foundations/toc.yml
 - name: Cloud security
