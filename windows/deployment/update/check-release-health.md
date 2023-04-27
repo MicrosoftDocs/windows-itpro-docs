@@ -1,7 +1,7 @@
 ---
 title: How to check Windows release health
 description: Check the release health status of Microsoft 365 services before you call support to see if there's an active service interruption.
-ms.date: 08/16/2022
+ms.date: 05/03/2023
 ms.author: mstewart
 author: mestew
 manager: aaroncz
@@ -13,7 +13,7 @@ ms.technology: itpro-updates
 
 # How to check Windows release health
 
-The Windows release health page in the Microsoft 365 admin center enables you to view the latest information on known issues for Windows monthly and feature updates. A known issue is an issue that has been identified in a Windows monthly update or feature update that impacts Windows devices. The Windows release health page is designed to inform you about known issues. You can use this information to troubleshoot issues your users may be experiencing. You can also determine when, and at what scale, to deploy an update in your organization.
+The Windows release health page in the Microsoft 365 admin center enables you to view the latest information on known issues for Windows monthly and feature updates. A known issue is an issue that impacts Windows devices and that has been identified in a Windows monthly update or feature update. The Windows release health page is designed to inform you about known issues. You can use this information to troubleshoot issues your users may be experiencing. You can also determine when, and at what scale, to deploy an update in your organization.
 
 If you're unable to sign in to the Microsoft 365 admin portal, check the [Microsoft 365 service health](https://status.office365.com) status page to check for known issues preventing you from signing into your tenant.
 
@@ -21,7 +21,7 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
 ## How to review Windows release health information
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), and sign in with an administrator account.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an administrator account.
 
     > [!NOTE]
     > By default, the Windows release health page is available to individuals who have been assigned the global admin or service administrator role for their tenant. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
@@ -67,7 +67,7 @@ You have the option to sign up for email notifications about Windows known issue
 1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect. 
 
 > [!Note]
-> When a single known issue affects multiple versions of Windows, you'll only receive one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
+> When a single known issue affects multiple versions of Windows, you'll receive only one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
 
 ## Status definitions
 
