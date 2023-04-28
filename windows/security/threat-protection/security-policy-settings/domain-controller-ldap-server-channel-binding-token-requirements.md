@@ -33,9 +33,9 @@ CBT or EPA is used with TLS sessions when a SASL authentication method is used t
 
 ### Possible values
 
-- Never: No channel binding validation is performed. This is the behavior of all servers that haven't been updated.
-- When Supported: Clients that advertise support for Channel Binding Tokens must provide the correct token when authenticating over TLS/SSL connections; clients that don't advertise such support and/or don't use TLS/SSL connections aren't impacted. This is an intermediate option that allows for application compatibility.
-- Always: All clients must provide channel binding information over LDAPS. The server rejects LDAPS authentication requests from clients that don't do so.
+- **Never**: No channel binding validation is performed. This is the behavior of all servers that haven't been updated.
+- **When Supported**: Clients that advertise support for Channel Binding Tokens must provide the correct token when authenticating over TLS/SSL connections; clients that don't advertise such support and/or don't use TLS/SSL connections aren't impacted. This is an intermediate option that allows for application compatibility.
+- **Always**: All clients must provide channel binding information over LDAPS. The server rejects LDAPS authentication requests from clients that don't do so.
 
 ### Best practices
 
