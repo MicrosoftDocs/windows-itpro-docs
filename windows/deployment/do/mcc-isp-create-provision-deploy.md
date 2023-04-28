@@ -53,6 +53,19 @@ You can manually upload a list of your CIDR blocks in Azure portal to enable man
 
 BGP (Border Gateway Protocol) routing is another method offered for client routing. BGP dynamically retrieves CIDR ranges by exchanging information with routers to understand reachable networks. For an automatic method of routing traffic, you can choose to configure BGP routing in Azure portal.
 
+Microsoft Connected Cache includes Bird BGP which enables the cache node to 1) establish iBGP peering sessions with routers, route servers, or route collectors within operator networks and 2)  act as a route collector. The operator will start the iBGP peering session from the Microsoft Connected Cache side using the Azure management portal and then start the session with the Microsoft Connected Cache node from the router.
+
+In the example configuration below:
+- The operator ASN is 65100
+- The ASN of the Microsoft Connected Cache cache node is 65100 and the IP address is 192.168.8.99
+- iBGP peering sessions are established from the portal for ASNs 65100, 65200, and 65300.
+
+    :::image type="content" source="images/mcc-isp-bgp-route.png" alt-text="Screenshot of a table entitled BGP route information showing how each ASN corresponds to a specific IP address." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
+
+    :::image type="content" source="images/mcc-isp-bgp-diagram.png" alt-text="A diagram that shows the relationship between the cache node and other ASNs/routers when using BGP. BGP routing allows the cache node to route to other network providers with different ASNs." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
+
+To set up and enable BGP routing for your cache node, follow these steps below:
+
 1. Navigate to **Settings** > **Cache nodes**. Select the cache node you wish to provision.
 
     :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
