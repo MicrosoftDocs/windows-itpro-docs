@@ -1,12 +1,12 @@
 ---
 title: Domain controller LDAP server channel binding token requirements
 description: Describes the best practices, location, values, and security considerations for the Domain controller LDAP server channel binding token requirements security policy setting.
-ms.reviewer:
+ms.reviewer: waynmc
 ms.author: waynmc
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: waynmc-msft
-manager: rizhang
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 04/26/2023
 ms.technology: itpro-security
