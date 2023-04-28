@@ -29,7 +29,7 @@ Unsigned/Unprotected network traffic is susceptible to man-in-the-middle attacks
 - If channel binding is set to Always, LDAP clients who don't support channel bindings will be rejected.
 - If channel binding is set to when supported, only incorrect channel bindings will be blocked, and clients who don't support channel binding can continue to connect via LDAP over TLS.
 
-CBT or EPA is used with TLS sessions when a SASL authentication method is used to authenticate the user. SASL means you use NTLM or Kerberos for user authentication. Ldap Simple Bind over TLS doesn't offer channel binding token protection and is therefore not recommended.
+CBT or EPA is used with TLS sessions when a SASL authentication method is used to authenticate the user. SASL means you use NTLM or Kerberos for user authentication. LDAP Simple Bind over TLS doesn't offer channel binding token protection and is therefore not recommended.
 
 ### Possible values
 
