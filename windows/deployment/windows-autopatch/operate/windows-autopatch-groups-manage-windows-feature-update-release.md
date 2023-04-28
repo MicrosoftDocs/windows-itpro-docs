@@ -67,7 +67,7 @@ Use the Windows feature update blade to check in the overall status of the [defa
 1. Select **Devices** from the left navigation menu.
 1. Under the **Windows Autopatch** section, select **Release management**.
 1. In the **Release management** blade, under the **Release schedule** tab, select **Windows feature updates**.
-1. In the **Windows feature updates** blade, you can see all the information about the releases. The columns are described the in the following table:
+1. In the **Windows feature updates** blade, you can see all the information about the releases. The columns are described in the following table:
 
 | Status | Description |
 | ----- | ----- |
