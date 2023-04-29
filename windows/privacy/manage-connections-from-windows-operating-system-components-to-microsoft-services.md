@@ -1916,9 +1916,13 @@ Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACH
 
 Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
 
-You can turn off Widgets by setting the following registry entries:
+You can turn off Widgets by:
 
-Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Widgets** and set the value to **0**.
+ - **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Widgets > Allow Widgets**
+
+-or-
+
+ - Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Widgets** and set the value to **0**.
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
