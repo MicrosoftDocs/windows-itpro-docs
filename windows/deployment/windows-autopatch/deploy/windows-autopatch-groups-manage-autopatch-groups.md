@@ -37,7 +37,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Windows Autopatch – Ring3
     - Windows Autopatch – Last
 - Additionally, **don't** modify the Azure AD group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups.
-	- See [assign an owner of member of a group in Azure AD](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) for more details on how to remediate Azure Azure AD group ownership.
+	- For more information, see [assign an owner of member of a group in Azure AD](https://learn.microsoft.com/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) on how to remediate Azure Azure AD group ownership.
 - Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
     - Read device attributes to successfully register devices.
     - Manage all configurations related to the operation of the service.
@@ -45,8 +45,8 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Review your existing Azure AD group dynamic queries and direct device memberships to avoid having device membership overlaps in between device-based Azure AD groups that are going to be used with Autopatch groups. This can help prevent device conflicts within an Autopatch group or across several Autopatch groups. **Autopatch groups doesn't support user-based Azure AD groups**.
 - Ensure devices used with your existing Azure AD groups meet [device registration prerequisite checks](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) when being registered with the service. Autopatch groups register devices on your behalf, and devices can be moved to **Registered** or **Not registered** tabs in the Devices blade accordingly.
 
-> [!TIP]
-> During the public preview, Autopatch groups opt-in page will show a banner to let you know when one or more pre-requisites are failing. Once you remediate the issue to meet the pre-requisites, it can take up to an hour for your tenant to have the "Use preview" button active.
+> [!NOTE]
+> During the public preview, Autopatch groups opt-in page will show a banner to let you know when one or more prerequisites are failing. Once you remediate the issue to meet the prerequisites, it can take up to an hour for your tenant to have the "Use preview" button available.
 
 ## Create a Custom Autopatch group
 
