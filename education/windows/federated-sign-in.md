@@ -161,11 +161,21 @@ As the end users enter their username, they'll be redirected to the identity pro
 
 ## Important considerations
 
+### Known issues affecting single user devices
+
 Federated sign-in for single user devices doesn't work when have the following settings enabled:
 
 - **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**, which are part of the [SharedPC CSP][WIN-1]
 - **Interactive logon: do not display last signed in**, which is a security policy part of the [Policy CSP][WIN-2]
 - **Take a Test**, since it uses the security policy above
+
+### Known issues affecting shared user devices
+
+The following issues are known to affect shared user devices:
+
+- Non-federated users cannot sign-in to the devices, including local accounts
+- Take a test feature does not work
+- If multiple users are using the same device without signing out, it will degrade the device performance. It is recommended to instruct the users to sign-out when they are done using the device
 
 ### Preferred Azure AD tenant name
 
