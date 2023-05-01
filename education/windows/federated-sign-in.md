@@ -50,7 +50,7 @@ To use federated sign-in, the devices must have Internet access. This feature wo
 
 > [!IMPORTANT]
 > WS-Fed is the only supported federated protocol to join a device to Azure AD. If you have a SAML 2.0 IdP, it's recommended to complete the Azure AD join process using one of the following methods:
-> - provisioning packages (PPKG)
+> - Provisioning packages (PPKG)
 > - Windows Autopilot self-deploying mode
 
 ### System requirements
@@ -152,7 +152,7 @@ Apply the provisioning package to the shared devices that require federated sign
 
 Once the devices are configured, a new sign-in experience becomes available.
 
-As the end users enter their username, they'll be redirected to the identity provider sign-in page. Once users are authenticated by the IdP, they'll be signed-in. In the following animation, you can see how the first sign-in process works:
+As the end users enter their username, they'll be redirected to the identity provider sign-in page. Once the Idp authenticates the users, they'll be signed-in. In the following animation, you can see how the first sign-in process works:
 
 :::image type="content" source="./images/win-11-se-federated-sign-in.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="false":::
 
@@ -163,7 +163,7 @@ As the end users enter their username, they'll be redirected to the identity pro
 
 ### Known issues affecting single user devices
 
-Federated sign-in for single user devices doesn't work when have the following settings enabled:
+Federated sign-in for single user devices doesn't work with the following settings enabled:
 
 - **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**, which are part of the [SharedPC CSP][WIN-1]
 - **Interactive logon: do not display last signed in**, which is a security policy part of the [Policy CSP][WIN-2]
@@ -173,13 +173,13 @@ Federated sign-in for single user devices doesn't work when have the following s
 
 The following issues are known to affect shared user devices:
 
-- Non-federated users cannot sign-in to the devices, including local accounts
-- Take a test feature does not work
-- If multiple users are using the same device without signing out, it will degrade the device performance. It is recommended to instruct the users to sign-out when they are done using the device
+- Non-federated users can't sign-in to the devices, including local accounts
+- The **Take a test** feature doesn't work
+- If multiple users are using the same device without signing out, it will degrade the device performance. It's recommended to instruct the users to sign out when they're done using the device
 
 ### Preferred Azure AD tenant name
 
-To improve the user experience, you can use configure your devices to use *preferred Azure AD tenant name*.\
+To improve the user experience, you can configure the *preferred Azure AD tenant name* feature.\
 When using preferred AAD tenant name, the users will bypass the disambiguation page and will be redirected to the identity provider sign-in page.
 
 For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-3].
