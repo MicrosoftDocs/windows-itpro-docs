@@ -59,7 +59,7 @@ There are two core Windows 11 Enterprise offers: **Windows 11 Enterprise E3** an
 Windows 11 Enterprise E3 builds on Windows 11 Pro by adding more advanced features designed to address the needs of large and mid-size organizations. Examples include advanced protection against modern security threats, the broadest range of options for operating system deployment and update, and comprehensive device and app management.
 
 > [!NOTE]
-> Windows 11 Enterprise E3 is usually licensed through Volume Licensing programs and is an upgrade from Windows Pro.
+> Windows Enterprise E3 is a **per user subscription**, intended for organizations. It includes **Windows Enterprise edition** with cloud-powered capabilities and **subscription use rights**. Windows Enterprise E3 is usually licensed through Volume Licensing programs and is an upgrade from Windows Pro.
 
 #### Windows 11 Enterprise features
 
@@ -97,7 +97,8 @@ The following table describes the Windows Enterprise licensing use rights:
 |-|-|
 |**[Five Windows instances per licensed user](https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/EAEAS)**|Allows your employees to simultaneously use a Windows laptop, a cloud PC and a specialized device with Windows LTSC, and more.|
 |**[36 months (3 years) support on annual feature releases](/windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions)**|Get extra time to deploy feature releases.|
-|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|Empower flexible work styles and smarter work with the included virtualization access rights.|
+|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|Empower flexible work styles and smarter work with the included virtualization access rights. Includes FSLogix for a consistent experience of
+Windows user profiles in virtual desktop environments.|
 |**[Windows release health in the Microsoft 365 admin center](https://aka.ms/WindowsReleaseHealthinM365)**|Gives you essential information about monthly quality and feature updates in the Microsoft 365 admin center.|
 |**[Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports)**|Provides per-device information about compatibility risks that are associated with an upgrade or update to a chosen version of Windows.|
 |**[Windows feature update compatibility risks reports](/mem/intune/protect/windows-update-compatibility-reports)**|Provides a summary view of the top compatibility risks, so you understand which compatibility risks impact the greatest number of devices in your organization.|
@@ -130,7 +131,9 @@ In most cases, the Windows Pro edition comes pre-installed on a business-class d
 
 - Devices not properly provisioned that don't automatically upgrade to Windows Enterprise edition
 - Devices may have been acquired for a business process that was not under control of a central IT department or outside of the IT department's knowledge
+- Devices may be used temporarily for a project by vendors and added to the IT infrastructure, but not upgraded to Enterprise edition
 - A developer that is developing applications that must be tested and certified on Pro, as that is how it will be delivered to customers
+- A Windows Pro device that was pre-configured for a specific purpose and is certified on Pro only
 
 In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscriptions does not block these scenarios.
 
