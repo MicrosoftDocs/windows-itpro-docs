@@ -55,7 +55,7 @@ To use federated sign-in, the devices must have Internet access. This feature wo
 
 ### System requirements
 
-Federated sign-in for single user devices is supported on the following Windows editions and versions:
+Federated sign-in for student assigned (1:1) devices is supported on the following Windows editions and versions:
 
 - Windows 11 SE, version 22H2 and later
 - Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1]
@@ -64,9 +64,14 @@ Federated sign-in for shared devices is supported starting in Windows 11 SE/Pro 
 
 ## Configure federated sign-in
 
-You can configure federated sign-in for single user devices or shared devices. The configuration is different for each scenario, and is described in the following sections.
+You can configure federated sign-in for student assigned (1:1) devices or student shared devices:
 
-### Configure federated sign-in for single user devices
+- When federated sign-in is configured for **student assigned (1:1) devices**, the first user who signs in to the device with a federated identity becomes the *primary user*. The primary user is always displayed in the bottom left corner of the sign-in screen
+- When federated sign-in is configured for **student shared devices**, there's no primary user. The sign-in screen displays, by default, the last user who signed in to the device
+
+The configuration is different for each scenario, and is described in the following sections.
+
+### Configure federated sign-in for student assigned (1:1) devices
 
 To use web sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
@@ -108,7 +113,7 @@ Apply the provisioning package to the single-user devices that require federated
 
 ---
 
-### Configure federated sign-in for shared devices
+### Configure federated sign-in for student shared devices
 
 To use web sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your shared devices using either Microsoft Intune or a provisioning package (PPKG).
 
@@ -161,21 +166,21 @@ As the end users enter their username, they'll be redirected to the identity pro
 
 ## Important considerations
 
-### Known issues affecting single user devices
+### Known issues affecting student assigned (1:1) devices
 
-Federated sign-in for single user devices doesn't work with the following settings enabled:
+Federated sign-in for student assigned (1:1) devices doesn't work with the following settings enabled:
 
 - **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**, which are part of the [SharedPC CSP][WIN-1]
 - **Interactive logon: do not display last signed in**, which is a security policy part of the [Policy CSP][WIN-2]
 - **Take a Test**, since it uses the security policy above
 
-### Known issues affecting shared user devices
+### Known issues affecting student shared devices
 
-The following issues are known to affect shared user devices:
+The following issues are known to affect student shared devices:
 
 - Non-federated users can't sign-in to the devices, including local accounts
-- The **Take a test** feature doesn't work
-- If multiple users are using the same device without signing out, it will degrade the device performance. It's recommended to instruct the users to sign out when they're done using the device
+- **Interactive logon: do not display last signed in**, which is a security policy part of the [Policy CSP][WIN-2]
+- **Take a Test**, since it uses the security policy above
 
 ### Preferred Azure AD tenant name
 
