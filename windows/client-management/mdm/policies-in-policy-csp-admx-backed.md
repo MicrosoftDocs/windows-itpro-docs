@@ -4,7 +4,7 @@ description: Learn about the ADMX-backed policies in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2349,6 +2349,11 @@ This article lists the ADMX-backed policies in Policy CSP.
 
 - [TurnOffDataExecutionPreventionForExplorer](policy-csp-fileexplorer.md)
 - [TurnOffHeapTerminationOnCorruption](policy-csp-fileexplorer.md)
+
+## FileSystem
+
+- [EnableDevDrive](policy-csp-filesystem.md)
+- [DevDriveAttachPolicy](policy-csp-filesystem.md)
 
 ## InternetExplorer
 

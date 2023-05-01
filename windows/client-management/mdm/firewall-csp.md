@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,9 +15,6 @@ ms.topic: reference
 
 <!-- Firewall-Begin -->
 # Firewall CSP
-
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- Firewall-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -99,11 +96,11 @@ The following list shows the Firewall configuration service provider nodes:
     - [HyperVFirewallRules](#mdmstorehypervfirewallrules)
       - [{FirewallRuleName}](#mdmstorehypervfirewallrulesfirewallrulename)
         - [Action](#mdmstorehypervfirewallrulesfirewallrulenameaction)
-          - [Type](#mdmstorehypervfirewallrulesfirewallrulenameactiontype)
         - [Direction](#mdmstorehypervfirewallrulesfirewallrulenamedirection)
         - [Enabled](#mdmstorehypervfirewallrulesfirewallrulenameenabled)
         - [LocalAddressRanges](#mdmstorehypervfirewallrulesfirewallrulenamelocaladdressranges)
         - [LocalPortRanges](#mdmstorehypervfirewallrulesfirewallrulenamelocalportranges)
+        - [Name](#mdmstorehypervfirewallrulesfirewallrulenamename)
         - [Priority](#mdmstorehypervfirewallrulesfirewallrulenamepriority)
         - [Profiles](#mdmstorehypervfirewallrulesfirewallrulenameprofiles)
         - [Protocol](#mdmstorehypervfirewallrulesfirewallrulenameprotocol)
@@ -111,12 +108,6 @@ The following list shows the Firewall configuration service provider nodes:
         - [RemotePortRanges](#mdmstorehypervfirewallrulesfirewallrulenameremoteportranges)
         - [Status](#mdmstorehypervfirewallrulesfirewallrulenamestatus)
         - [VMCreatorId](#mdmstorehypervfirewallrulesfirewallrulenamevmcreatorid)
-    - [HyperVLoopbackRules](#mdmstorehypervloopbackrules)
-      - [{RuleName}](#mdmstorehypervloopbackrulesrulename)
-        - [DestinationVMCreatorId](#mdmstorehypervloopbackrulesrulenamedestinationvmcreatorid)
-        - [Enabled](#mdmstorehypervloopbackrulesrulenameenabled)
-        - [PortRanges](#mdmstorehypervloopbackrulesrulenameportranges)
-        - [SourceVMCreatorId](#mdmstorehypervloopbackrulesrulenamesourcevmcreatorid)
     - [HyperVVMSettings](#mdmstorehypervvmsettings)
       - [{VMCreatorId}](#mdmstorehypervvmsettingsvmcreatorid)
         - [AllowHostPolicyMerge](#mdmstorehypervvmsettingsvmcreatoridallowhostpolicymerge)
@@ -1791,7 +1782,7 @@ Specifies the description of the rule.
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Direction-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma separated list. The rule is enabled based on the traffic direction as following.
+The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
 OUT - the rule applies to outbound traffic.
@@ -1935,7 +1926,7 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 21H1 [10.0.19043] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-OmaUri-Begin -->
@@ -2087,6 +2078,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
+When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Editable-Begin -->
@@ -2166,7 +2158,8 @@ This is a string in Security Descriptor Definition Language (SDDL) format..
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-OmaUri-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Specifies the friendly name of the firewall rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Name-Editable-Begin -->
@@ -2194,7 +2187,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 22H2 [10.0.19045.2913] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1880] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621.1635] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-OmaUri-Begin -->
@@ -2205,7 +2198,7 @@ This is a string in Security Descriptor Definition Language (SDDL) format..
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_".
+Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". A PolicyAppId and ServiceName cannot be specified in the same rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Editable-Begin -->
@@ -2431,6 +2424,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
+When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Editable-Begin -->
@@ -3122,7 +3116,9 @@ Unique alpha numeric identifier for the rule. The rule name must not include a f
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the action for the rule.
+Specifies the action the rule enforces:
+0 - Block
+1 - Allow.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Description-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Editable-Begin -->
@@ -3134,66 +3130,25 @@ Specifies the action for the rule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
-| Access Type | Get |
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Examples-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Begin -->
-###### MdmStore/HyperVFirewallRules/{FirewallRuleName}/Action/Type
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/{FirewallRuleName}/Action/Type
-```
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Description-Begin -->
-<!-- Description-Source-DDF -->
-Specifies the action the rule enforces:
-0 - Block
-1 - Allow.
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Description-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Editable-End -->
-
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
 | Format | int |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-DFProperties-End -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-DFProperties-End -->
 
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-AllowedValues-Begin -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | 0 | Block. |
 | 1 (Default) | Allow. |
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-AllowedValues-End -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-AllowedValues-End -->
 
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Examples-Begin -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-Examples-End -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Examples-End -->
 
-<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Type-End -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Begin -->
 ##### MdmStore/HyperVFirewallRules/{FirewallRuleName}/Direction
@@ -3212,7 +3167,7 @@ Specifies the action the rule enforces:
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma separated list. The rule is enabled based on the traffic direction as following.
+The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
 OUT - the rule applies to outbound traffic.
@@ -3385,6 +3340,45 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-End -->
 
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Begin -->
+##### MdmStore/HyperVFirewallRules/{FirewallRuleName}/Name
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-End -->
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/Firewall/MdmStore/HyperVFirewallRules/{FirewallRuleName}/Name
+```
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-OmaUri-End -->
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the friendly name of the Hyper-V Firewall rule.
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Description-End -->
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Editable-End -->
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-DFProperties-End -->
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Examples-End -->
+
+<!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-End -->
+
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Begin -->
 ##### MdmStore/HyperVFirewallRules/{FirewallRuleName}/Priority
 
@@ -3402,7 +3396,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Description-Begin -->
 <!-- Description-Source-DDF -->
-0-255 number representing the IANA Internet Protocol (TCP = 6, UDP = 17). If not specified the default is All.
+This value represents the order of rule enforcement. A lower priority rule is evaluated first. If not specified, block rules are evaluated before allow rules. If priority is configured, it is highly recommended to configure the value for ALL rules to ensure expected evaluation of rules.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Description-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Editable-Begin -->
@@ -3416,7 +3410,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-255]` |
+| Allowed Values | Range: `[0-65535]` |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-DFProperties-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Examples-Begin -->
@@ -3679,255 +3673,6 @@ This field specifies the VM Creator ID that this rule is applicable to. A NULL G
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-End -->
 
-<!-- Device-MdmStore-HyperVLoopbackRules-Begin -->
-### MdmStore/HyperVLoopbackRules
-
-<!-- Device-MdmStore-HyperVLoopbackRules-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVLoopbackRules-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVLoopbackRules
-```
-<!-- Device-MdmStore-HyperVLoopbackRules-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-Description-Begin -->
-<!-- Description-Source-DDF -->
-A list of rules controlling loopback traffic through the Windows Firewall. This enforcement is only for traffic from one container to another or to the host device. These rules are all allow rules.
-<!-- Device-MdmStore-HyperVLoopbackRules-Description-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-Editable-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | node |
-| Access Type | Get |
-<!-- Device-MdmStore-HyperVLoopbackRules-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-Examples-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Begin -->
-#### MdmStore/HyperVLoopbackRules/{RuleName}
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVLoopbackRules/{RuleName}
-```
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Description-Begin -->
-<!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the rule. The rule name must not include a forward slash (/).
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Description-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Editable-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | node |
-| Access Type | Add, Delete, Get, Replace |
-| Atomic Required | True |
-| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
-| Allowed Values | Regular Expression: `^[^|/]*$` |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Examples-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Begin -->
-##### MdmStore/HyperVLoopbackRules/{RuleName}/DestinationVMCreatorId
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVLoopbackRules/{RuleName}/DestinationVMCreatorId
-```
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Description-Begin -->
-<!-- Description-Source-DDF -->
-This field specifies the VM Creator ID of the destination of traffic that this rule applies to. If not specified, this applies to All.
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Description-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Editable-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-Examples-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-DestinationVMCreatorId-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Begin -->
-##### MdmStore/HyperVLoopbackRules/{RuleName}/Enabled
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVLoopbackRules/{RuleName}/Enabled
-```
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Description-Begin -->
-<!-- Description-Source-DDF -->
-Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true. If not specified - a new rule is disabled by default.
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Description-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Editable-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | bool |
-| Access Type | Get, Replace |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 | Disabled. |
-| 1 | Enabled. |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-AllowedValues-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-Examples-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-Enabled-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Begin -->
-##### MdmStore/HyperVLoopbackRules/{RuleName}/PortRanges
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVLoopbackRules/{RuleName}/PortRanges
-```
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Description-Begin -->
-<!-- Description-Source-DDF -->
-Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Description-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Editable-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Regular Expression: `^[0-9,-]+$` |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-Examples-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-PortRanges-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Begin -->
-##### MdmStore/HyperVLoopbackRules/{RuleName}/SourceVMCreatorId
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Applicability-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/Firewall/MdmStore/HyperVLoopbackRules/{RuleName}/SourceVMCreatorId
-```
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-OmaUri-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Description-Begin -->
-<!-- Description-Source-DDF -->
-This field specifies the VM Creator ID of the source of the traffic that this rule applies to. If not specified, this applies to All.
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Description-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Editable-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-DFProperties-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-Examples-End -->
-
-<!-- Device-MdmStore-HyperVLoopbackRules-{RuleName}-SourceVMCreatorId-End -->
-
 <!-- Device-MdmStore-HyperVVMSettings-Begin -->
 ### MdmStore/HyperVVMSettings
 
@@ -4026,7 +3771,7 @@ VM Creator ID that these settings apply to. Valid format is a GUID.
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is true, applicable host firewall rules and settings will be applied to Hyper-V firewall.
+This value is used as an on/off switch. If this value is true, applicable host firewall rules and settings will be applied to Hyper-V Firewall.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Editable-Begin -->
@@ -4075,7 +3820,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Editable-Begin -->
@@ -4125,7 +3870,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Editable-Begin -->
@@ -4213,7 +3958,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, firewall rules from the local store are ignored and not enforced. The merge law for this option is to always use the value of the GroupPolicyRSoPStore. This value is valid for all schema versions.
+This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Editable-Begin -->
@@ -4263,7 +4008,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Editable-Begin -->
@@ -4313,7 +4058,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Editable-Begin -->
@@ -4363,7 +4108,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement.
+This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Editable-Begin -->
@@ -4412,7 +4157,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Editable-Begin -->
@@ -4434,8 +4179,8 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 | Value | Description |
 |:--|:--|
-| false | Disable Firewall. |
-| true (Default) | Enable Firewall. |
+| false | Disable Hyper-V Firewall. |
+| true (Default) | Enable Hyper-V Firewall. |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-AllowedValues-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Examples-Begin -->
@@ -4548,7 +4293,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, firewall rules from the local store are ignored and not enforced. The merge law for this option is to always use the value of the GroupPolicyRSoPStore. This value is valid for all schema versions.
+This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Editable-Begin -->
@@ -4598,7 +4343,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Editable-Begin -->
@@ -4648,7 +4393,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Editable-Begin -->
@@ -4698,7 +4443,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement.
+This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Editable-Begin -->
@@ -4785,7 +4530,7 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, firewall rules from the local store are ignored and not enforced. The merge law for this option is to always use the value of the GroupPolicyRSoPStore. This value is valid for all schema versions.
+This value is used as an on/off switch. If this value is false, Hyper-V Firewall rules from the local store are ignored and not enforced.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Editable-Begin -->
@@ -4835,7 +4580,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block].
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Editable-Begin -->
@@ -4885,7 +4630,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow].
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Editable-Begin -->
@@ -4935,7 +4680,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement.
+This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Editable-Begin -->
@@ -4957,8 +4702,8 @@ This value is an on/off switch for the firewall and advanced security enforcemen
 
 | Value | Description |
 |:--|:--|
-| false | Disable Firewall. |
-| true (Default) | Enable Firewall. |
+| false | Disable Hyper-V Firewall. |
+| true (Default) | Enable Hyper-V Firewall. |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-AllowedValues-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Examples-Begin -->

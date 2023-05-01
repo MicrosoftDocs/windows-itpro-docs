@@ -4,7 +4,7 @@ description: Learn more about the Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1120,6 +1120,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ExploitGuard](policy-csp-exploitguard.md)
 - [FederatedAuthentication](policy-csp-federatedauthentication.md)
 - [FileExplorer](policy-csp-fileexplorer.md)
+- [FileSystem](policy-csp-filesystem.md)
 - [Games](policy-csp-games.md)
 - [Handwriting](policy-csp-handwriting.md)
 - [HumanPresence](policy-csp-humanpresence.md)

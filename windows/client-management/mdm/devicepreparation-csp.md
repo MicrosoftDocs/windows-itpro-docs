@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,6 +31,7 @@ The following list shows the DevicePreparation configuration service provider no
     - [ClassID](#bootstrapperagentclassid)
     - [ExecutionContext](#bootstrapperagentexecutioncontext)
     - [InstallationStatusUri](#bootstrapperagentinstallationstatusuri)
+  - [MdmAgentInstalled](#mdmagentinstalled)
   - [MDMProvider](#mdmprovider)
     - [Progress](#mdmproviderprogress)
   - [PageEnabled](#pageenabled)
@@ -193,6 +194,46 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Examples-End -->
 
 <!-- Device-BootstrapperAgent-InstallationStatusUri-End -->
+
+<!-- Device-MdmAgentInstalled-Begin -->
+## MdmAgentInstalled
+
+<!-- Device-MdmAgentInstalled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-MdmAgentInstalled-Applicability-End -->
+
+<!-- Device-MdmAgentInstalled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DevicePreparation/MdmAgentInstalled
+```
+<!-- Device-MdmAgentInstalled-OmaUri-End -->
+
+<!-- Device-MdmAgentInstalled-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node indicates whether the MDM agent was installed or not. When set to true sets the AUTOPILOT_MDM_AGENT_REGISTERED WNF event.
+<!-- Device-MdmAgentInstalled-Description-End -->
+
+<!-- Device-MdmAgentInstalled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MdmAgentInstalled-Editable-End -->
+
+<!-- Device-MdmAgentInstalled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | bool |
+| Access Type | Get, Replace |
+| Default Value  | false |
+<!-- Device-MdmAgentInstalled-DFProperties-End -->
+
+<!-- Device-MdmAgentInstalled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MdmAgentInstalled-Examples-End -->
+
+<!-- Device-MdmAgentInstalled-End -->
 
 <!-- Device-MDMProvider-Begin -->
 ## MDMProvider
