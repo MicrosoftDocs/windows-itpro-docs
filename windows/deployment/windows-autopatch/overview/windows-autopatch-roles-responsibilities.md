@@ -45,8 +45,8 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Turn on or off expedited Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases) | :heavy_check_mark: | :x: |
 | [Allow or block Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#allow-or-block-microsoft-365-app-updates) | :heavy_check_mark: | :x: |
 | [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) |  :heavy_check_mark: | :x: |
-| [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md#steps-to-register-devices) | :heavy_check_mark: | :x: |
-| [Run the pre-registration device readiness checks](../deploy/windows-autopatch-register-devices.md#about-the-ready-not-ready-and-not-registered-tabs) | :x: | :heavy_check_mark: |
+| [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md#steps-to-register-devices-using-the-classic-method) | :heavy_check_mark: | :x: |
+| [Run the pre-registration device readiness checks](../deploy/windows-autopatch-register-devices.md#about-the-registered-not-ready-and-not-registered-tabs) | :x: | :heavy_check_mark: |
 | [Automatically assign devices to First, Fast & Broad deployment rings at device registration](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :x: | :heavy_check_mark: |
 | [Manually override device assignments to First, Fast & Broad deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings) | :heavy_check_mark: | :x: |
 | [Remediate devices displayed in the **Not ready** tab](../deploy/windows-autopatch-post-reg-readiness-checks.md#about-the-three-tabs-in-the-devices-blade) | :heavy_check_mark: | :x: |
