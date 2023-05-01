@@ -77,6 +77,7 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Safe OS Dynamic Update     | 6        |        |       |
 |Add Setup Dynamic Update     |         |         |         | 26
 |Add setup.exe from WinPE     |         |         |         | 27
+|Add boot manager from WinPE     |         |         |         | 28
 |Add latest cumulative update     |         | 15        | 21        |
 |Clean up the image     |  7       | 16        | 22        |
 |Add Optional Components     |         |         |  23       |
@@ -416,9 +417,15 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Write-Output "$(Get-TS): Performing image cleanup on WinPE"
     DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
-    # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
     if ($IMAGE.ImageIndex -eq "2") {
-        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -ErrorAction stop | Out-Null
+
+        # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
+        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
+        
+        # Simiarly, save serviced boot manager files later copy to the root media.
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgfw.efi" -Destination $WORKING_PATH"\bootmgfw.efi" -Force -Recurse -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgr.efi" -Destination $WORKING_PATH"\bootmgr.efi" -Force -Recurse -ErrorAction stop | Out-Null
+    
     }
         
     # Dismount
@@ -532,7 +539,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe using the previously saved version from WinPE.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe and boot manager files using the previously saved versions from WinPE.
 
 ```powershell
 #
@@ -544,7 +551,28 @@ Write-Output "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
 
 # Copy setup.exe from boot.wim, saved earlier.
+Write-Output "$(Get-TS): Copying $WORKING_PATH\setup.exe to $MEDIA_NEW_PATH\sources\setup.exe"
 Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -ErrorAction stop | Out-Null
+
+
+# Copy bootmgr files from boot.wim, saved earlier.
+$MEDIA_NEW_FILES = Get-ChildItem $MEDIA_NEW_PATH -Force -Recurse -Filter b*.efi
+
+Foreach ($File in $MEDIA_NEW_FILES){
+    if (($File.Name -ieq "bootmgfw.efi") -or `
+        ($File.Name -ieq "bootx64.efi") -or `
+        ($File.Name -ieq "bootia32.efi") -or `
+        ($File.Name -ieq "bootaa64.efi")) 
+    {
+        Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgfw.efi to $($File.FullName)"
+        Copy-Item -Path $WORKING_PATH"\bootmgfw.efi" -Destination $File.FullName -Force -Recurse -ErrorAction stop | Out-Null
+    }
+    elseif ($File.Name -ieq "bootmgr.efi") 
+    {
+        Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgr.efi to $($File.FullName)"
+        Copy-Item -Path $WORKING_PATH"\bootmgr.efi" -Destination $File.FullName -Force -Recurse -ErrorAction stop | Out-Null
+    }
+}
 
 ```
 
