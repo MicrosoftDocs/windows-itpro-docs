@@ -20,6 +20,8 @@ To enable Autopilot Reset you must:
 1. [Enable the policy for the feature](#enable-autopilot-reset)
 2. [Trigger a reset for each device](#trigger-autopilot-reset)
 
+[!INCLUDE [remote-wipe-autopilot-reset](../../includes/licensing/remote-wipe-autopilot-reset.md)]
+
 ## Enable Autopilot Reset
 
 To use Autopilot Reset, [Windows Recovery Environment (WinRE) must be enabled on the device](#winre).

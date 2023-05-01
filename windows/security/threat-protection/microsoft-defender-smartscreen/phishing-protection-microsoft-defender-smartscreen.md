@@ -39,6 +39,8 @@ Enhanced Phishing Protection provides robust phishing protections for work or sc
 
 - **Easy management through Group Policy and Microsoft Intune:** Enhanced Phishing Protection works with Group Policy and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Enhanced Phishing Protection, you can customize which phishing protection scenarios will show users warning dialogs. For example, the Service Enabled setting determines whether the Enhanced Phishing Protection service is on or off. The feature will be in audit mode if the other settings, which correspond to notification policies, aren't enabled.
 
+[!INCLUDE [enhanced-phishing-protection-with-smartscreen](../../../../includes/licensing/enhanced-phishing-protection-with-smartscreen.md)]
+
 ## Configure Enhanced Phishing Protection for your organization
 
 Enhanced Phishing Protection can be configured via Microsoft Intune, Group Policy Objects (GPO) or Configuration Service Providers (CSP) with an MDM service. Follow the instructions below to configure your devices using either Microsoft Intune, GPO or CSP.
