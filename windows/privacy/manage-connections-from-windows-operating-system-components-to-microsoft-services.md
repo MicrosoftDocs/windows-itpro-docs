@@ -1916,7 +1916,7 @@ Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACH
 
 Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
 
-You can turn off Widgets by:
+To turn off Widgets:
 
  - **Disable** the Group Policy: **Computer Configuration > Administrative Templates > Windows Components > Widgets > Allow Widgets**
 
