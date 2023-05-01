@@ -21,6 +21,8 @@ By enabling Windows Defender Credential Guard, the following features and soluti
 > [!NOTE]
 > As of Windows 11, version 22H2, Windows Defender Credential Guard has been enabled by default on all devices which meet the minimum requirements as specified in the [Default Enablement](credential-guard-manage.md#default-enablement) section. For information about known issues related to default enablement, see [Credential Guard: Known Issues](credential-guard-known-issues.md#known-issue-single-sign-on-sso-for-network-services-breaks-after-upgrading-to-windows-11-version-22h2).
 
+[!INCLUDE [windows-defender-credential-guard](../../../../includes/licensing/windows-defender-credential-guard.md)]
+
 ## Related topics
 
 - [Protecting network passwords with Windows Defender Credential Guard](https://www.microsoft.com/itshowcase/Article/Content/831/Protecting-network-passwords-with-Windows-10-Credential-Guard)
