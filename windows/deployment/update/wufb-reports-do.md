@@ -40,9 +40,9 @@ Windows Update for Business reports uses the following Delivery Optimization ter
    - If bandwidth savings are <= 60%, a *Warning* icon is displayed
    - When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
-- **P2P Device Count**: The device count is determined by the number of devices configured to use peering.
+- **P2P Device Count**: The device count is the number of devices configured to use peering.
 - **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
-- **MCC Device Count**: The device count is determined by the number of devices that have received bytes from the cache server, for supported content types.
+- **MCC Device Count**: The device count is the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
 - **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they'll be calculated in 'LAN Bytes'.
@@ -89,7 +89,7 @@ There are several calculated values that appear on the Delivery Optimization rep
 
 ## Mapping GroupID
 
-In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of decoded to encoded GroupIDs using the following PowerShell example:
+In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
 $text = "<myEncodedGroupID>" ;
@@ -164,3 +164,6 @@ A row in UCDOStatus represents data downloaded by a combination of a single devi
 
 - **What does the data in UCDOAggregatedStatus table represent?**
 A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
+
+- **How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?**
+If there's a Connected Cache server at the ISP level, BytesFromCache will filter out any bytes coming the ISP's Connected Cache.
