@@ -1120,7 +1120,6 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ExploitGuard](policy-csp-exploitguard.md)
 - [FederatedAuthentication](policy-csp-federatedauthentication.md)
 - [FileExplorer](policy-csp-fileexplorer.md)
-- [FileSystem](policy-csp-filesystem.md)
 - [Games](policy-csp-games.md)
 - [Handwriting](policy-csp-handwriting.md)
 - [HumanPresence](policy-csp-humanpresence.md)
