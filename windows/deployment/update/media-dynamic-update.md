@@ -301,7 +301,7 @@ Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries are not identical, Windows Setup will fail during installation. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries are not identical, Windows Setup will fail during installation. We'll also save serviced boot manager files for later use in the script. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -419,10 +419,10 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     if ($IMAGE.ImageIndex -eq "2") {
 
-        # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
+        # Save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
         Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
         
-        # Simiarly, save serviced boot manager files later copy to the root media.
+        # Save serviced boot manager files later copy to the root media.
         Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgfw.efi" -Destination $WORKING_PATH"\bootmgfw.efi" -Force -Recurse -ErrorAction stop | Out-Null
         Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgr.efi" -Destination $WORKING_PATH"\bootmgr.efi" -Force -Recurse -ErrorAction stop | Out-Null
     
