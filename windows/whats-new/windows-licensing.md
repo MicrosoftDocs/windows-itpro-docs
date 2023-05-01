@@ -137,19 +137,19 @@ In most cases, the Windows Pro edition comes pre-installed on a business-class d
 
 In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscriptions does not block these scenarios.
 
-The following table lists the Windows 11 Enterprise features and their applicability to Windows Pro and Enterprise editions:
+The following table lists the Windows 11 Enterprise features and their Windows edition requirements:
 
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|No|Yes|
+|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge](/deployedge/microsoft-edge-security-windows-defender-application-guard)**|Yes|Yes|
 |**[Modern BitLocker Management](/windows/security/information-protection/bitlocker/bitlocker-overview)**|Yes|Yes|
-|**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|No|Yes|
+|**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|
 |**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|Yes|Yes|
 |**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes|Yes|
-|**[Windows Experience customization](/windows/client-management/mdm/policy-csp-experience)**|No|Yes|
+|**[Windows Experience customization](/windows/client-management/mdm/policy-csp-experience)**|❌|Yes|
 
-The following table lists the Windows 11 Enterprise cloud-based features and their applicability to Windows Pro and Enterprise editions:
+The following table lists the Windows 11 Enterprise cloud-based features and their Windows edition requirements:
 
 | Cloud-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
@@ -159,14 +159,14 @@ The following table lists the Windows 11 Enterprise cloud-based features and the
 |**[Universal Print](/universal-print/)**|Yes|Yes|
 |**[Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache)**|Yes|Yes|
 |**[Endpoint analytics proactive remediation](/mem/analytics/overview)**|Yes|Yes|
-|**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**|No|Yes|
+|**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**|❌|Yes|
 
-The following table lists the Windows 11 Enterprise E3 licensing use rights and their applicability to Windows Pro and Enterprise editions:
+The following table lists the Windows 11 Enterprise E3 licensing use rights and their Windows edition requirements:
 
 |Licensing use rights|Windows Pro|Windows Enterprise|
 |-|-|-|
 |**[Five Windows instances per licensed user](https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/EAEAS)**|n/a|n/a|
-|**[36 months (3 years) support on annual feature releases](/windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions)**|No|Yes|
+|**[36 months (3 years) support on annual feature releases](/windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions)**|❌|Yes|
 |**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|n/a|n/a|
 |**[Windows release health in the Microsoft 365 admin center](https://aka.ms/WindowsReleaseHealthinM365)**|n/a|n/a|
 |**[Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports)**|Yes|Yes|
