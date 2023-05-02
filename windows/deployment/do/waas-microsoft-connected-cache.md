@@ -12,7 +12,7 @@ ms.date: 12/31/2017
 ms.collection: tier3
 ---
 
-# Microsoft Connected Cache overview
+# What is Microsoft Connected Cache?
 
 **Applies to**
 
