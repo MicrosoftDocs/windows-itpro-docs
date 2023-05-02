@@ -40,7 +40,7 @@ The following table lists the security features that are available in Windows, a
 |**[Microsoft Defender Application Guard (MDAG) for Edge standalone mode](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)**|❌|❌|❌|❌|❌|
 |**Microsoft Defender Application Guard (MDAG) public APIs**|❌|Yes|Yes|Yes|Yes|
-|**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|Yes|❌|Yes|❌|Yes|
+|**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|❌|❌|Yes|❌|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Pluton security processor](/windows/security/information-protection/pluton/microsoft-pluton-security-processor)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Vulnerable Driver Blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)**|Yes|Yes|Yes|Yes|Yes|
@@ -60,7 +60,7 @@ The following table lists the security features that are available in Windows, a
 |**[Tamper protection settings for MDE](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Transport layer security (TLS)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Trusted Platform Module (TPM) 2.0](/windows/security/information-protection/tpm/trusted-platform-module-overview)**|Yes|Yes|Yes|Yes|Yes|
-|**[Universal Print](/universal-print/)**|Yes|Yes|Yes|Yes|Yes|
+|**[Universal Print](/universal-print/)**|❌|Yes|Yes|Yes|Yes|
 |**[User Account Control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Virtual Private Network (VPN)](/windows/security/identity-protection/vpn/vpn-guide)**|Yes|Yes|Yes|Yes|Yes|
 |**[Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)**|Yes|Yes|Yes|Yes|Yes|
