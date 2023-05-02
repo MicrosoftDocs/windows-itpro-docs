@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 04/26/2023
+ms.date: 05/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
