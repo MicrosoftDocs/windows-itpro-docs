@@ -1,19 +1,19 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/25/2023
+ms.date: 05/02/2023
 ms.topic: include
 ---
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Local Administrator Password Solution:
+The following table lists the Windows editions that support Remote wipe:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Local Administrator Password Solution license entitlements are granted by the following licenses:
+Remote wipe license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|

@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/27/2023
+ms.date: 05/02/2023
 ms.topic: include
 ---
 
@@ -29,7 +29,7 @@ The following table lists the security features that are available in Windows, a
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/threat-protection/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|❌|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|Yes|
-|**[Hypervisor-protected Code Integrity (HVCI)](/windows-hardware/design/device-experiences/oem-hvci-enablement)**|Yes|Yes|Yes|Yes|Yes|
+|**[Hypervisor-protected Code Integrity (HVCI)](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)**|Yes|Yes|Yes|Yes|Yes|
 |**[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**|Yes|Yes|Yes|Yes|Yes|
 |**Local Security Authority (LSA) Protection**|Yes|Yes|Yes|Yes|Yes|
 |**[Manage by Mobile Device Management (MDM) and group policy](/windows/client-management/mdm/mdm-overview)**|Yes|Yes|Yes|Yes|Yes|
@@ -43,16 +43,16 @@ The following table lists the security features that are available in Windows, a
 |**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|Yes|❌|Yes|❌|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Pluton security processor](/windows/security/information-protection/pluton/microsoft-pluton-security-processor)**|Yes|Yes|Yes|Yes|Yes|
-|**[Microsoft Vulnerable Driver Blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules%23microsoft-vulnerable-driver-blocklist)**|Yes|Yes|Yes|Yes|Yes|
+|**[Microsoft Vulnerable Driver Blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)**|Yes|Yes|Yes|Yes|Yes|
 |**Opportunistic Wireless Encryption (OWE)**|Yes|Yes|Yes|Yes|Yes|
 |**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|Yes|Yes|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|Yes|
 |**Privacy Transparency and Controls**|Yes|Yes|Yes|Yes|Yes|
-|**[Remote wipe (Autopilot reset)](/windows/client-management/mdm/remotewipe-csp)**|Yes|Yes|Yes|Yes|Yes|
+|**[Remote wipe](/windows/client-management/mdm/remotewipe-csp)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secure Boot and Trusted Boot](/windows/security/trusted-boot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secured-core configuration lock](/windows/client-management/config-lock)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure-11)**|Yes|Yes|Yes|Yes|Yes|
-|**[Security baselines with Intune](/mem/intune/protect/security-baselines)**|Yes|Yes|Yes|Yes|Yes|
+|**[Security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)**|Yes|Yes|Yes|Yes|Yes|
 |**[Server Message Block (SMB) file service](/windows-server/storage/file-server/file-server-smb-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Server Message Block Direct (SMB Direct)](/windows-server/storage/file-server/smb-direct)**|Yes|Yes|Yes|Yes|Yes|
 |**[Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
