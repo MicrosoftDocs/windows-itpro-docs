@@ -30,22 +30,13 @@ The following diagram helps you to understand how a standard Remote Desktop sess
 
 ![RDP connection to a server without Windows Defender Remote Credential Guard.png.](images/rdp-to-a-server-without-windows-defender-remote-credential-guard.png)
 
-<br />
-
 The following diagram helps you to understand how Windows Defender Remote Credential Guard works, what it helps to protect against, and compares it with the [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) option:
 
 ![Windows Defender Remote Credential Guard.](images/windows-defender-remote-credential-guard-with-remote-admin-mode.png)
 
-<br />
 As illustrated, Windows Defender Remote Credential Guard blocks NTLM (allowing only Kerberos), prevents Pass-the-Hash (PtH) attacks, and also prevents use of credentials after disconnection.
 
-<br />
-<br />
 Use the following table to compare different Remote Desktop connection security options:
-
-<br />
-<br />
-
 
 | Feature | Remote Desktop | Windows Defender Remote Credential Guard | Restricted Admin mode |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -58,12 +49,10 @@ Use the following table to compare different Remote Desktop connection security 
 |                                                      **Multi-hop**                                                       |                        From the remote desktop, **you can connect through Remote Desktop to another computer**                         |                From the remote desktop, you **can connect through Remote Desktop to another computer**.                |                                                                                                                      Not allowed for user as the session is running as a local host account                                                                                                                       |
 |                                               **Supported authentication**                                               |                                                        Any negotiable protocol.                                                        |                                                     Kerberos only.                                                     |                                                                                                                                              Any negotiable protocol                                                                                                                                              |
 
-<br />
 
 For further technical information, see [Remote Desktop Protocol](/windows/win32/termserv/remote-desktop-protocol)
 and [How Kerberos works](/previous-versions/windows/it-pro/windows-2000-server/cc961963(v=technet.10)).
 
-<br />
 
 <a id="helpdesk"></a>
 
@@ -79,6 +68,8 @@ For further information on LAPS, see [Microsoft Security Advisory 3062591](https
 
 
 <a id="reqs"></a>
+
+[!INCLUDE [windows-defender-remote-credential-guard](../../../includes/licensing/windows-defender-remote-credential-guard.md)]
 
 ## Remote Credential Guard requirements
 
