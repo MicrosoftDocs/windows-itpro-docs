@@ -72,7 +72,7 @@ In **Windows 10, version 1803** the Configuration node introduces single app kio
 
 In **Windows 10, version 1909**, Microsoft Edge kiosk mode support was added. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like `shift+alt+a`, where `shift` and `alt` are the modifiers and `a` is the key.
 
-In **Windows 11, version 22H2**, AssignedAccessConfiguration schema was updated to add StartPins and TaskbarLayout nodes to support pinning apps to the Start Menu and Taskbar respectively.
+In **Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/5026446)**, AssignedAccessConfiguration schema was updated to add StartPins and TaskbarLayout nodes to support pinning apps to the Start Menu and Taskbar respectively.
 
 - For more information about setting up a multi-app kiosk, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
 - For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd).
@@ -1355,7 +1355,7 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
 > </AssignedAccessConfiguration>
 > ```
 
-- Example XML configuration for a multi-app kiosk for Windows 11.
+- Example XML configuration for a multi-app kiosk for Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/5026446).
 
     > [!NOTE]
     > This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
