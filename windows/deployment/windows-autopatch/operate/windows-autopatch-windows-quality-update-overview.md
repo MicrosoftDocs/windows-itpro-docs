@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 04/24/2023
+ms.date: 05/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -85,6 +85,9 @@ When running an expedited release, the regular goal of 95% of devices in 21 days
 | ----- | ----- | ----- | ----- | ----- |
 | Standard release | Test<p>First<p>Fast<p>Broad | 0<p>1<p>6<p>9 | 0<p>2<p>2<p>5 | 0<p>2<p>2<p>2 |
 | Expedited release | All devices | 0 | 1 | 1 |
+
+> [!IMPORTANT]
+> Expedited updates **don't** work with devices under the [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/). For more information, see [expedite Windows quality updates in Microsoft Intune](/mem/intune/protect/windows-10-expedite-updates).
 
 #### Turn off service-driven expedited quality update releases
 
