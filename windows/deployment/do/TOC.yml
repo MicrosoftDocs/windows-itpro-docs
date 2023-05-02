@@ -31,7 +31,7 @@
       href: waas-microsoft-connected-cache.md
     - name: MCC for Enterprise and Education
       items:
-      - name: What is MCC for Enterprise and Education?
+      - name: MCC for Enterprise and Education Overview
         href: mcc-ent-edu-overview.md
       - name: Requirements
         href: mcc-enterprise-prerequisites.md
@@ -43,7 +43,7 @@
         href: mcc-enterprise-appendix.md
     - name: MCC for ISPs
       items:
-      - name: What is MCC for ISPs?
+      - name: MCC for ISPs Overview
         href: mcc-isp-overview.md
       - name: How-to guides
         items:  
