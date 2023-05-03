@@ -1,7 +1,7 @@
 ---
 title: Manage Windows Autopatch groups
 description: This article explains how to manage Autopatch groups
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -26,6 +26,16 @@ Autopatch groups is a logical container or unit that groups several [Azure AD gr
 Before you start managing Autopatch groups, ensure you’ve met the following prerequisites:
 
 - Review [Windows Autopatch groups overview documentation](../deploy/windows-autopatch-groups-overview.md) to understand [key benefits](../deploy/windows-autopatch-groups-overview.md#key-benefits), [concepts](../deploy/windows-autopatch-groups-overview.md#key-concepts) and [common ways to use Autopatch groups](../deploy/windows-autopatch-groups-overview.md#common-ways-to-use-autopatch-groups) within your organization.
+- Ensure the following [update rings for Windows 10 and later policy in Intune](https://learn.microsoft.com/mem/intune/protect/windows-10-update-rings) are created in your tenant:
+	- Modern Workplace Update Policy [Test]-[Windows Autopatch]
+	- Modern Workplace Update Policy [First]-[Windows Autopatch]
+	- Modern Workplace Update Policy [Fast]-[Windows Autopatch]
+	- Modern Workplace Update Policy [Broad]-[Windows Autopatch]
+- Ensure the following [feature updates for Windows 10 and later policy in Intune](https://learn.microsoft.com/mem/intune/protect/windows-10-feature-updates) are created in your tenant:
+	- Windows Autopatch – DSS Policy [Test]
+	- Windows Autopatch – DSS Policy [First]
+	- Windows Autopatch – DSS Policy [Fast]
+	- Windows Autopatch – DSS Policy [Broad]
 - Ensure the following Azure AD assigned groups are in your tenant before using Autopatch groups. **Don’t** modify the Azure AD group membership types (Assigned or Dynamic). Otherwise, the Windows Autopatch service won’t be able to read the device group membership from these groups and causes the Autopatch groups feature and other service-related operations to not work properly.
     - Modern Workplace Devices-Windows Autopatch-Test
     - Modern Workplace Devices-Windows Autopatch-First
@@ -45,8 +55,13 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Review your existing Azure AD group dynamic queries and direct device memberships to avoid having device membership overlaps in between device-based Azure AD groups that are going to be used with Autopatch groups. This can help prevent device conflicts within an Autopatch group or across several Autopatch groups. **Autopatch groups doesn't support user-based Azure AD groups**.
 - Ensure devices used with your existing Azure AD groups meet [device registration prerequisite checks](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) when being registered with the service. Autopatch groups register devices on your behalf, and devices can be moved to **Registered** or **Not registered** tabs in the Devices blade accordingly.
 
+> [!TIP]
+> [Update rings](https://learn.microsoft.com/mem/intune/protect/windows-10-update-rings) and [feature updates](https://learn.microsoft.com/mem/intune/protect/windows-10-feature-updates) for Windows 10 and later policies created and managed by the Windows Autopatch service can now be restored using the [Policy health](../operate/windows-autopatch-policy-health-and-remediation.md) feature. See [restore Windows update policies](../operate/windows-autopatch-policy-health-and-remediation.md#restore-windows-update-policies) for more information on remediation actions.
+
 > [!NOTE]
 > During the public preview, Autopatch groups opt-in page will show a banner to let you know when one or more prerequisites are failing. Once you remediate the issue to meet the prerequisites, it can take up to an hour for your tenant to have the "Use preview" button available.
+
+
 
 ## Create a Custom Autopatch group
 

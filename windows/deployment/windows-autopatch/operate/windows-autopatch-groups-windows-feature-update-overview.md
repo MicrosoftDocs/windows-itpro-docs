@@ -39,6 +39,15 @@ Windows Autopatch’s device eligibility criteria for Windows feature updates al
 
 ## Key benefits
 
+- Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
+- You’re in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
+	- Combined with custom releases, Autopatch Groups gives your organization great control and flexibility to help you plan your gradual rollout in a way that works for your organization.
+- Simplified end-user experience with rich controls for gradual rollouts, deployment cadence and speed.
+- No need to manually modify the default Windows feature update policies (default release) to be on the Windows OS version your organization is currently ready for.
+- Enables scenarios where you can deploy a single release across several Autopatch groups and its deployment rings.
+
+## Key concepts
+
 - A release is made of one or more deployment phases and contains the required OS version to be gradually rolled out throughout its deployment phases.
 - A phase (deployment phase) is made of one or more Autopatch group deployment rings. A phase:
     - Works as an additional layer of deployment cadence settings that can be defined by IT admins (only for Windows feature updates) on top of Autopatch group deployment rings (Windows update rings policies).

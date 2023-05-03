@@ -1,7 +1,7 @@
 ---
 title: Windows Autopatch groups overview
 description: This article explains what Autopatch groups are
-ms.date: 05/01/2023
+ms.date: 05/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -246,5 +246,8 @@ Autopatch groups works with the following software update workloads:
 ### Maximum number of Autopatch groups
 
 Windows Autopatch will support up to 50 Autopatch groups in your tenant. You can create up to 49 [Custom Autopatch groups](#about-custom-autopatch-groups) in addition to the [Default Autopatch group](#about-the-default-autopatch-group). Each Autopatch group supports up to 15 deployment rings.
+
+> [!TIP]
+> If you reach the maximum number of Autopatch groups supported (50), and try to create more custom Autopatch groups, the "**Create**" button in the Autopatch groups blade will be greyed out.
 
 To manage your Autopatch groups, see [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md).
