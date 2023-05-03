@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview with Autopatch groups
 description: This article explains how Windows feature updates are managed with Autopatch groups
-ms.date: 05/01/2023
+ms.date: 05/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -44,7 +44,7 @@ Windows Autopatch’s device eligibility criteria for Windows feature updates al
 	- Combined with custom releases, Autopatch Groups gives your organization great control and flexibility to help you plan your gradual rollout in a way that works for your organization.
 - Simplified end-user experience with rich controls for gradual rollouts, deployment cadence and speed.
 - No need to manually modify the default Windows feature update policies (default release) to be on the Windows OS version your organization is currently ready for.
-- Enables scenarios where you can deploy a single release across several Autopatch groups and its deployment rings.
+- Allows for scenarios where you can deploy a single release across several Autopatch groups and its deployment rings.
 
 ## Key concepts
 
