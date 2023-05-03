@@ -35,8 +35,8 @@ To implement federated sign-in, the following prerequisites must be met:
 
     - For a step-by-step guide on how to configure **Google Workspace** as an identity provider for Azure AD, see [Configure federation between Google Workspace and Azure AD](configure-aad-google-trust.md)
     - For a step-by-step guide on how to configure **Clever** as an identity provider for Azure AD, see [Setup guide for Badges into Windows and Azure AD][EXT-1]
-1. Individual IdP accounts created: each user will require an account defined in the third-party IdP platform
-1. Individual Azure AD accounts created: each user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
+1. Individual IdP accounts created: each user requires an account defined in the third-party IdP platform
+1. Individual Azure AD accounts created: each user requires a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
     - [School Data Sync (SDS)][SDS-1]
     - [Azure AD Connect sync][AZ-3] for environment with on-premises AD DS
     - PowerShell scripts that call the [Microsoft Graph API][GRAPH-1]
@@ -46,7 +46,7 @@ To implement federated sign-in, the following prerequisites must be met:
 1. Licenses assigned to the Azure AD user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Azure AD, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Azure Active Directory][AZ-2]
 1. Enable federated sign-in on the Windows devices
 
-To use federated sign-in, the devices must have Internet access. This feature won't work without it, as the authentication is done over the Internet.
+To use federated sign-in, the devices must have Internet access. This feature doesn't work without it, as the authentication is done over the Internet.
 
 > [!IMPORTANT]
 > WS-Fed is the only supported federated protocol to join a device to Azure AD. If you have a SAML 2.0 IdP, it's recommended to complete the Azure AD join process using one of the following methods:
@@ -73,7 +73,7 @@ The configuration is different for each scenario, and is described in the follow
 
 ### Configure federated sign-in for student assigned (1:1) devices
 
-To use web sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+To use web sign-in with a federated identity provider, your devices must be configured with different policies. Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -115,7 +115,7 @@ Apply the provisioning package to the single-user devices that require federated
 
 ### Configure federated sign-in for student shared devices
 
-To use web sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your shared devices using either Microsoft Intune or a provisioning package (PPKG).
+To use web sign-in with a federated identity provider, your devices must be configured with different policies. Review the following instructions to configure your shared devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -157,12 +157,13 @@ Apply the provisioning package to the shared devices that require federated sign
 
 Once the devices are configured, a new sign-in experience becomes available.
 
-As the end users enter their username, they'll be redirected to the identity provider sign-in page. Once the Idp authenticates the users, they'll be signed-in. In the following animation, you can see how the first sign-in process works:
+As users enter their username, they're redirected to the identity provider sign-in page. Once the Idp authenticates the users, they're signed-in. In the following animation, you can observe how the first sign-in process works for a student assigned (1:1) device:
 
-:::image type="content" source="./images/win-11-se-federated-sign-in.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="false":::
+:::image type="content" source="./images/win-11-se-federated-sign-in.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge, in a student assigned (1:1) device." border="false":::
 
 > [!IMPORTANT]
-> Once the policy is enabled, the first user to sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
+> For student assigned (1:1) devices, once the policy is enabled, the first user who sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
+> The behavior is different for student shared devices, where the disambiguation page is always shown, unless preferred Azure AD tenant name is configured.
 
 ## Important considerations
 
@@ -172,22 +173,25 @@ Federated sign-in for student assigned (1:1) devices doesn't work with the follo
 
 - **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**, which are part of the [SharedPC CSP][WIN-1]
 - **Interactive logon: do not display last signed in**, which is a security policy part of the [Policy CSP][WIN-2]
-- **Take a Test**, since it uses the security policy above
+- **Take a Test** in kiosk mode, since it uses the security policy above
 
 ### Known issues affecting student shared devices
 
 The following issues are known to affect student shared devices:
 
 - Non-federated users can't sign-in to the devices, including local accounts
-- **Interactive logon: do not display last signed in**, which is a security policy part of the [Policy CSP][WIN-2]
-- **Take a Test**, since it uses the security policy above
+- **Take a Test** in kiosk mode, since it uses a local guest account to sign in
+
+### Account management
+
+For student shared devices, it's recommended to configure the account management policies to automatically delete the user profiles after a certain period of inactivity or disk levels. For more information, see [Set up a shared or guest Windows device][WIN-3].
 
 ### Preferred Azure AD tenant name
 
 To improve the user experience, you can configure the *preferred Azure AD tenant name* feature.\
-When using preferred AAD tenant name, the users will bypass the disambiguation page and will be redirected to the identity provider sign-in page.
+When using preferred AAD tenant name, the users bypass the disambiguation page and are redirected to the identity provider sign-in page. This configuration can be especially useful for student shared devices, where the disambiguation page is always shown.
 
-For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-3].
+For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
 
 ### Identity matching in Azure AD
 
@@ -197,7 +201,7 @@ After the token sent by the IdP is validated, Azure AD searches for a matching u
 > [!NOTE]
 > The ImmutableId is a string value that **must be unique** for each user in the tenant, and it shouldn't change over time. For example, the ImmutableId could be the student ID or SIS ID. The ImmutableId value should be based on the federation setup and configuration with your IdP, so confirm with your IdP before setting it.
 
-If the matching object is found, the user is signed-in. If not, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
+If the matching object is found, the user is signed-in. Otherwise, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
 
 :::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Azure AD sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
 
@@ -252,4 +256,5 @@ Update-MgUser -UserId alton@example.onmicrosoft.com -UserPrincipalName alton@exa
 
 [WIN-1]: /windows/client-management/mdm/sharedpc-csp
 [WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
-[WIN-3]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname
+[WIN-3]: /windows/configuration/set-up-shared-or-guest-pc
+[WIN-4]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname
