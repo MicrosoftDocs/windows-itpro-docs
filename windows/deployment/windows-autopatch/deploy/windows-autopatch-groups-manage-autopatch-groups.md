@@ -61,8 +61,6 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 > [!NOTE]
 > During the public preview, Autopatch groups opt-in page will show a banner to let you know when one or more prerequisites are failing. Once you remediate the issue to meet the prerequisites, it can take up to an hour for your tenant to have the "Use preview" button available.
 
-
-
 ## Create a Custom Autopatch group
 
 > [!NOTE]
