@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description: This article explains how Windows quality updates are managed in Autopatch
-ms.date: 02/17/2023
+ms.date: 05/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -33,8 +33,8 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../references/windows-autopatch-windows-update-unsupported-policies.md). |
 | Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](../references/windows-autopatch-windows-update-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
-> [!NOTE]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Additionally, Windows Autopatch can only manage Windows quality updates for devices that haven't reached the LTSC's [end of servicing date](/windows/release-health/release-information#enterprise-and-iot-enterprise-ltsbltsc-editions).
+> [!IMPORTANT]
+> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Windows quality update releases
 
@@ -85,6 +85,9 @@ When running an expedited release, the regular goal of 95% of devices in 21 days
 | ----- | ----- | ----- | ----- | ----- |
 | Standard release | Test<p>First<p>Fast<p>Broad | 0<p>1<p>6<p>9 | 0<p>2<p>2<p>5 | 0<p>2<p>2<p>2 |
 | Expedited release | All devices | 0 | 1 | 1 |
+
+> [!IMPORTANT]
+> Expedited updates **don't** work with devices under the [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/). For more information, see [expedite Windows quality updates in Microsoft Intune](/mem/intune/protect/windows-10-expedite-updates).
 
 #### Turn off service-driven expedited quality update releases
 
