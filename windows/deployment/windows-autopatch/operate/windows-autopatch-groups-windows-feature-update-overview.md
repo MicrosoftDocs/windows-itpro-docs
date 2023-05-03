@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview with Autopatch groups
 description: This article explains how Windows feature updates are managed with Autopatch groups
-ms.date: 05/01/2023
+ms.date: 05/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -38,6 +38,15 @@ Windows Autopatch’s device eligibility criteria for Windows feature updates al
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Key benefits
+
+- Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
+- You’re in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
+	- Combined with custom releases, Autopatch Groups gives your organization great control and flexibility to help you plan your gradual rollout in a way that works for your organization.
+- Simplified end-user experience with rich controls for gradual rollouts, deployment cadence and speed.
+- No need to manually modify the default Windows feature update policies (default release) to be on the Windows OS version your organization is currently ready for.
+- Allows for scenarios where you can deploy a single release across several Autopatch groups and its deployment rings.
+
+## Key concepts
 
 - A release is made of one or more deployment phases and contains the required OS version to be gradually rolled out throughout its deployment phases.
 - A phase (deployment phase) is made of one or more Autopatch group deployment rings. A phase:

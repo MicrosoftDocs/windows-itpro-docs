@@ -50,7 +50,7 @@ The minimum role required to restore configurations is **Intune Service Administ
 **To initiate remediation action for device configuration alerts:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Navigate to **Tenant administration** > **Tenant management** > **Alerts**.
+1. Navigate to **Tenant administration** > **Tenant management** > **Actions**.
 1. Select **Restore missing policy** to launch the workflow.
 1. Review the message and select **Restore policy**.
 1. If the **Change modified policy alert** appears, select this alert to launch the workflow.
@@ -83,7 +83,7 @@ There will be an alert for each policy that is missing or has deviated from the 
 **To initiate remediation action for missing groups:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Navigate to **Tenant administration** > **Tenant management** > **Alerts**.
+1. Navigate to **Tenant administration** > **Tenant management** > **Actions**.
 1. Select **Restore missing group** to launch the workflow.
 1. Review the message and select **Restore group**.
 
