@@ -16,12 +16,11 @@ ms.technology: itpro-security
 
 # Windows security features and licensing requirements
 
-
 This article lists the security features that are available in Windows, and the licensing requirements to use them.
 
 > [!NOTE]
-> The **licensing requirements** listed in the following table may be different from the **Windows edition requirements**. If you're looking for Windows edition requirements, see [Windows security features and edition requirements](security-features-edition-requirements.md).
+> The **licensing** requirements listed in the following table may be different from the **Windows edition** requirements. If you're looking for Windows edition requirements, see [Windows security features and edition requirements](security-features-edition-requirements.md).
 
 [!INCLUDE [_licensing-requirements](../../../includes/licensing/_licensing-requirements.md)]
 
-For more information about Windows licensing, see [Windows Commercial Licensing overview](/windows/whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows Commercial Licensing overview](/windows/whats-new/windows-licensing).
