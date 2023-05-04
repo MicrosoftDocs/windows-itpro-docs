@@ -10,12 +10,12 @@ manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 10/07/2022
 adobe-target: true
-appliesto: 
-  - ✅ <b>Windows 11, version 22H2</b>
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ms.topic: conceptual
 ---
 
-# Enhanced Phishing Protection in Microsoft Defender SmartScreen  
+# Enhanced Phishing Protection in Microsoft Defender SmartScreen
 
 Starting in Windows 11, version 22H2, Enhanced Phishing Protection in Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
 
@@ -83,7 +83,7 @@ Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][
 
 ### Recommended settings for your organization
 
-By default, Enhanced Phishing Protection is deployed in audit mode, preventing notifications to the users for any protection scenarios. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender. Users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in applications. Because of this possibility, it's recommended that you configure Enhanced Phishing Protection to warn users during all protection scenarios.  
+By default, Enhanced Phishing Protection is deployed in audit mode, preventing notifications to the users for any protection scenarios. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender. Users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in applications. Because of this possibility, it's recommended that you configure Enhanced Phishing Protection to warn users during all protection scenarios.
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen settings.
 
@@ -106,7 +106,7 @@ To better help you protect your organization, we recommend turning on and using 
 |Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Notify Unsafe App|**Enable**: Enhanced Phishing Protection warns users if they store their password in Notepad and Microsoft 365 Office Apps.|
 
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
-  
+
 |MDM setting|Recommendation|
 |---------|---------|
 |ServiceEnabled|**1**: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends diagnostic data but doesn't show any notifications to your users.|
@@ -118,10 +118,8 @@ To better help you protect your organization, we recommend turning on and using 
 
 ## Related articles
 
-- [Microsoft Defender SmartScreen](microsoft-defender-smartscreen-overview.md)
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
-- [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md)
 - [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference)
 
 ------------

@@ -14,15 +14,13 @@ ms.collection:
   - highpri
 ms.date: 03/20/2023
 ms.topic: article
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+- ✅ <a href="https://learn.microsoft.com/deployedge/microsoft-edge-support-lifecycle" target="_blank">Microsoft Edge</a>
 ---
 
 # Microsoft Defender SmartScreen
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Microsoft Edge
 
 Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
 

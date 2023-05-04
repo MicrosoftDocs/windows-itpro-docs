@@ -1,31 +1,27 @@
 ---
-title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows)
+title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
 ms.prod: windows-client
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/28/2020
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
 ms.topic: reference
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 # Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 Microsoft Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Microsoft Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
 
-See [Windows 10 (and Windows 11) settings to protect devices using Intune](/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
-
+See [Windows 10 and Windows 11 settings to protect devices using Intune](/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
 
 ## Group Policy settings
+
 SmartScreen uses registry-based Administrative Template policy settings.
 
 Setting|Supported on|Description|
@@ -39,21 +35,22 @@ Setting|Supported on|Description|
 |Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings|Internet Explorer 8 or later|This policy setting determines whether an employee can bypass warnings from Microsoft Defender SmartScreen.<br/><br/>If you enable this policy setting, Microsoft Defender SmartScreen warnings block the employee.<br/><br/>If you disable or don't configure this policy setting, the employee can bypass Microsoft Defender SmartScreen warnings.|
 |Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet|Internet Explorer 9 or later|This policy setting determines whether the employee can bypass warnings from Microsoft Defender SmartScreen. Microsoft Defender SmartScreen warns the employee about executable files that Internet Explorer users do not commonly download from the Internet.<br/><br/>If you enable this policy setting, Microsoft Defender SmartScreen warnings block the employee.<br/><br/>If you disable or don't configure this policy setting, the employee can bypass Microsoft Defender SmartScreen warnings.|
 
-
 ## MDM settings
-If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support  desktop computers running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune.  <br><br> 
+
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support  desktop computers running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune.  <br><br>
 For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser](/windows/client-management/mdm/policy-csp-browser).
 
 |Setting|Supported versions|Details|
 |--- |--- |--- |
-|AllowSmartScreen|Windows 10|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<li>**Data type.**  Integer**Allowed values:**<ul><li>**0 .**  Turns off Microsoft Defender SmartScreen in Edge.<li>**1.**  Turns on Microsoft Defender SmartScreen in Edge.|
-|EnableAppInstallControl|Windows 10, version 1703|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/SmartScreen/EnableAppInstallControl<li>**Data type.**  Integer**Allowed values:**<ul><li>**0 .**  Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.<li>**1.**  Turns on Application Installation Control, allowing users to install apps from the Microsoft Store only.|
-|EnableSmartScreenInShell|Windows 10, version 1703|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell<li>**Data type.**  Integer**Allowed values:**<ul><li>**0 .**  Turns off Microsoft Defender SmartScreen in Windows for app and file execution.<li>**1.**  Turns on Microsoft Defender SmartScreen in Windows for app and file execution.|
-|PreventOverrideForFilesInShell|Windows 10, version 1703|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/SmartScreen/PreventOverrideForFilesInShell<li>**Data type.**  Integer**Allowed values:**<ul><li>**0 .**  Employees can ignore Microsoft Defender SmartScreen warnings and run malicious files.<li>**1.**  Employees can't ignore Microsoft Defender SmartScreen warnings and run malicious files.|
-|PreventSmartScreenPromptOverride|Windows 10, Version 1511 and Windows 11|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride<li>**Data type.**  Integer**Allowed values:**<ul><li>**0 .**  Employees can ignore Microsoft Defender SmartScreen warnings.<li>**1.**  Employees can't ignore Microsoft Defender SmartScreen warnings.|
-|PreventSmartScreenPromptOverrideForFiles|Windows 10, Version 1511 and Windows 11|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles<li>**Data type.**  Integer**Allowed values:**<ul><li>**0 .**  Employees can ignore Microsoft Defender SmartScreen warnings for files.<li>**1.**  Employees can't ignore Microsoft Defender SmartScreen warnings for files.|
+|AllowSmartScreen|Windows 10|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<li>**Data type.**  Integer<li>**Allowed values:**<ul><li>**0 .**  Turns off Microsoft Defender SmartScreen in Edge.<li>**1.**  Turns on Microsoft Defender SmartScreen in Edge.|
+|EnableAppInstallControl|Windows 10, version 1703|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/SmartScreen/EnableAppInstallControl<li>**Data type.**  Integer<li>**Allowed values:**<ul><li>**0 .**  Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.<li>**1.**  Turns on Application Installation Control, allowing users to install apps from the Microsoft Store only.|
+|EnableSmartScreenInShell|Windows 10, version 1703|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell<li>**Data type.**  Integer<li>**Allowed values:**<ul><li>**0 .**  Turns off Microsoft Defender SmartScreen in Windows for app and file execution.<li>**1.**  Turns on Microsoft Defender SmartScreen in Windows for app and file execution.|
+|PreventOverrideForFilesInShell|Windows 10, version 1703|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/SmartScreen/PreventOverrideForFilesInShell<li>**Data type.**  Integer<li>**Allowed values:**<ul><li>**0 .**  Employees can ignore Microsoft Defender SmartScreen warnings and run malicious files.<li>**1.**  Employees can't ignore Microsoft Defender SmartScreen warnings and run malicious files.|
+|PreventSmartScreenPromptOverride|Windows 10, Version 1511 and Windows 11|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride<li>**Data type.**  Integer<li>**Allowed values:**<ul><li>**0 .**  Employees can ignore Microsoft Defender SmartScreen warnings.<li>**1.**  Employees can't ignore Microsoft Defender SmartScreen warnings.|
+|PreventSmartScreenPromptOverrideForFiles|Windows 10, Version 1511 and Windows 11|<li>**URI full path.**  ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles<li>**Data type.**  Integer<li>**Allowed values:**<ul><li>**0 .**  Employees can ignore Microsoft Defender SmartScreen warnings for files.<li>**1.**  Employees can't ignore Microsoft Defender SmartScreen warnings for files.|
 
 ## Recommended Group Policy and MDM settings for your organization
+
 By default, Microsoft Defender SmartScreen lets employees bypass warnings. Unfortunately, this feature can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Microsoft Defender SmartScreen to block high-risk interactions instead of providing just a warning.
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen Group Policy and MDM settings.
@@ -73,10 +70,6 @@ To better help you protect your organization, we recommend turning on and using 
 |SmartScreen/EnableSmartScreenInShell|**1.**  Turns on Microsoft Defender SmartScreen in Windows.<br/><br/>Requires at least Windows 10, version 1703.|
 |SmartScreen/PreventOverrideForFilesInShell|**1.**  Stops employees from ignoring warning messages about malicious files downloaded from the Internet.<br/><br/>Requires at least Windows 10, version 1703.|
 
-## Related topics
-
-- [Threat protection](../index.md)
-
-- [Microsoft Defender SmartScreen overview](microsoft-defender-smartscreen-overview.md)
+## Related articles
 
 - [Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies)
