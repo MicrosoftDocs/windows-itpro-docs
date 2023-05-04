@@ -158,11 +158,12 @@ echo result: %ERRORLEVEL% >> %LOGFILE%
 
 ### Calling multiple scripts in the package
 
-Your provisioning package can include multiple CommandLines.
+Your provisioning package can include multiple **CommandFiles**.
 
-You are allowed one CommandLine per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the CommandLine specified in the package. 
+You are allowed one **CommandLine** per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the **CommandLine** specified in the package. 
 
 Here’s a table describing this relationship, using the PowerShell example from above:
+
 
 
 |ICD Setting | Value  | Description |
@@ -194,6 +195,7 @@ In Windows Configuration Designer, that is done by adding files under the `Provi
 When you are done, [build the package](provisioning-create-package.md#build-package). 
  
 
+
 ### Remarks
 
 1. No user interaction or console output is supported via ProvisioningCommands. All work needs to be silent. If your script attempts to do any of the following it will cause undefined behavior, and could put the device in an unrecoverable state if executed during setup or the Out of Box Experience:
@@ -217,7 +219,6 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
     >There is a timeout of 30 minutes for the provisioning process at this point. All scripts and installs need to complete within this time. 
 7. The scripts are executed in the background as the rest of provisioning continues to run. For packages added on existing systems using the double-click to install, there is no notification that provisioning or script execution has completed
 
-
 ## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)
@@ -230,3 +231,5 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
+
+
