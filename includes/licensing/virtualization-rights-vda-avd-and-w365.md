@@ -7,13 +7,13 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Common Criteria certifications:
+The following table lists the Windows editions that support Virtualization rights (VDA, AVD and W365):
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|
+|No|Yes|No|Yes|
 
-Common Criteria certifications license entitlements are granted by the following licenses:
+Virtualization rights (VDA, AVD and W365) license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|

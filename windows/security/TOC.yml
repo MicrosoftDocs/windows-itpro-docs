@@ -8,9 +8,9 @@
     href: zero-trust-windows-device-health.md
   - name: Windows security overview
     href: introduction/index.md
-  - name: Security features edition requirements
+  - name: Security features and edition requirements
     href: introduction/security-features-edition-requirements.md
-  - name: Security features licensing requirements
+  - name: Security features and licensing requirements
     href: introduction/security-features-licensing-requirements.md
 - name: Hardware security
   href: hardware-security/toc.yml

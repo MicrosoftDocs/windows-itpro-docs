@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 05/02/2023
+ms.date: 05/04/2023
 ms.topic: include
 ---
 
@@ -17,6 +17,6 @@ Azure AD join, Active Directory domain join, and Hybrid Azure AD join with singl
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|Yes|
+||Yes|Yes|Yes|Yes|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).

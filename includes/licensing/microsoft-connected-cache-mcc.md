@@ -7,16 +7,16 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Common Criteria certifications:
+The following table lists the Windows editions that support Microsoft Connected Cache (MCC):
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
-|Yes|Yes|Yes|Yes|
+|No|No|No|No|
 
-Common Criteria certifications license entitlements are granted by the following licenses:
+Microsoft Connected Cache (MCC) license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-||Yes|Yes|Yes|Yes|
+||No|No|No|No|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).
