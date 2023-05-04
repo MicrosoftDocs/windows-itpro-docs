@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
 - tier2
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 05/04/2023
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.technology: itpro-security
@@ -19,7 +19,7 @@ ms.technology: itpro-security
 This document provides an overview of the products and use rights available through Microsoft Commercial Licensing, information about the products that are eligible for upgrades, and the key choices you have for using Windows in your organization.
 
 > [!NOTE]
-> The content of this article doesn't replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms](https://www.microsoft.com/licensing/product-licensing/products.aspx).
+> The content of this article doesn't replace or override other licensing documentation, such as the Windows 11 End User License Agreement or [Commercial Licensing Product Terms][EXT-4].
 
 ## Windows 11 editions
 
@@ -31,7 +31,7 @@ The following table lists the editions of Windows 11 available through each Micr
 
 ## Windows desktop offerings available through Commercial Licensing
 
-The following offerings are available for purchase through [Microsoft Commercial Licensing](https://www.microsoft.com/licensing):
+The following offerings are available for purchase through [Microsoft Commercial Licensing][EXT-5]:
 
 |Product|Description|Availability|
 |-|-|-|
@@ -67,13 +67,13 @@ The following table describes the unique Windows Enterprise edition features:
 
 | OS-based feature | Description |
 |-|-|
-|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-requirements)**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
-|**[Managed Microsoft Defender Application Guard for Microsoft Edge](/deployedge/microsoft-edge-security-windows-defender-application-guard)**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
-|**[Modern BitLocker Management](/windows/security/information-protection/bitlocker/bitlocker-overview)** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
-|**[Personal Data Encryption](/windows/security/information-protection/personal-data-encryption/overview-pde)**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
-|**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|Connect remote users to the organization network without the need for traditional VPN connections.|
-|**[Always-On VPN device tunnel](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection.|
-|**[Windows Experience customization](/windows/client-management/mdm/policy-csp-experience)**|Settings to lock down the user experience of corporate desktops and Shell Launcher with Unified Write Filter for frontline workers devices or public kiosks.|
+|**[Windows Defender Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
+|**[Managed Microsoft Defender Application Guard for Microsoft Edge][EDGE-1]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
+|**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
+|**[Personal Data Encryption][WIN-3]**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
+|**[Direct Access][WINS-1]**|Connect remote users to the organization network without the need for traditional VPN connections.|
+|**[Always-On VPN device tunnel][WINS-2]**|Advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection.|
+|**[Windows Experience customization][WIN-4]**|Settings to lock down the user experience of corporate desktops and Shell Launcher with Unified Write Filter for frontline workers devices or public kiosks.|
 
 #### Windows 11 Enterprise cloud-based capabilities
 
@@ -81,13 +81,13 @@ The following table describes the unique Windows Enterprise cloud-based features
 
 |Cloud-based feature | Description |
 |-|-|
-|**[Windows subscription activation](/windows/deployment/windows-10-subscription-activation)**|Enables you to *step-up* from **Windows Pro edition** to **Enterprise edition**. You can eliminate license key management and the deployment of Enterprise edition images.|
-|**[Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)**|Cloud service that puts Microsoft in control of automating updates to Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams.|
-|**[Windows Update For Business deployment service](/windows/deployment/update/deployment-service-overview)**|This cloud service gives you the control over the approval, scheduling, and safeguarding of quality, feature upgrades, and driver updates delivered from Windows Update.|
-|**[Universal Print](/universal-print/)**|Removes the need for on-premises print servers and enables any endpoint to print to cloud registered printers.|
-|**[Microsoft Connected Cache](/windows/deployment/do/waas-delivery-optimization)**|A software solution that caches app and OS updates on the local network to save Internet bandwidth in locations with limited connectivity.|
-|**[Endpoint analytics proactive remediation](/mem/analytics/proactive-remediations)**|Helps you fix common support issues before end-users notice them.|
-|**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**|Keeps employees informed with organizational messages directly inserted in Windows UI surfaces.|
+|**[Windows subscription activation][WIN-5]**|Enables you to *step-up* from **Windows Pro edition** to **Enterprise edition**. You can eliminate license key management and the deployment of Enterprise edition images.|
+|**[Windows Autopatch][WIN-6]**|Cloud service that puts Microsoft in control of automating updates to Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams.|
+|**[Windows Update For Business deployment service][WIN-7]**|This cloud service gives you the control over the approval, scheduling, and safeguarding of quality, feature upgrades, and driver updates delivered from Windows Update.|
+|**[Universal Print][UP-1]**|Removes the need for on-premises print servers and enables any endpoint to print to cloud registered printers.|
+|**[Microsoft Connected Cache][WIN-8]**|A software solution that caches app and OS updates on the local network to save Internet bandwidth in locations with limited connectivity.|
+|**[Endpoint analytics proactive remediation][MEM-1]**|Helps you fix common support issues before end-users notice them.|
+|**[Organizational messages][MEM-2]**|Keeps employees informed with organizational messages directly inserted in Windows UI surfaces.|
 
 #### Windows 11 Enterprise licensing use rights
 
@@ -95,17 +95,17 @@ The following table describes the Windows Enterprise licensing use rights:
 
 |Licensing use rights|Description|
 |-|-|
-|**[Five Windows instances per licensed user](https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/EAEAS)**|Allows your employees to simultaneously use a Windows laptop, a cloud PC and a specialized device with Windows LTSC, and more.|
-|**[36 months (3 years) support on annual feature releases](/windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions)**|Get extra time to deploy feature releases.|
-|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|Empower flexible work styles and smarter work with the included virtualization access rights. Includes FSLogix for a consistent experience of
+|**[Five Windows instances per licensed user][EXT-1]**|Allows your employees to simultaneously use a Windows laptop, a cloud PC and a specialized device with Windows LTSC, and more.|
+|**[36 months (3 years) support on annual feature releases][WIN-9]**|Get extra time to deploy feature releases.|
+|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access][AZ-1]**|Empower flexible work styles and smarter work with the included virtualization access rights. Includes FSLogix for a consistent experience of
 Windows user profiles in virtual desktop environments.|
-|**[Windows release health in the Microsoft 365 admin center](https://aka.ms/WindowsReleaseHealthinM365)**|Gives you essential information about monthly quality and feature updates in the Microsoft 365 admin center.|
-|**[Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports)**|Provides per-device information about compatibility risks that are associated with an upgrade or update to a chosen version of Windows.|
-|**[Windows feature update compatibility risks reports](/mem/intune/protect/windows-update-compatibility-reports)**|Provides a summary view of the top compatibility risks, so you understand which compatibility risks impact the greatest number of devices in your organization.|
-|**[Windows LTSC Enterprise](/windows/whats-new/ltsc/)**|Intended for highly specialized devices that require limited changes due to regulations and certification|
-|**[Microsoft Desktop Optimization Pack (MDOP) ](/microsoft-desktop-optimization-pack)**|Help improve compatibility and management, reduce support costs, improve asset management, and improve policy control.|
+|**[Windows release health in the Microsoft 365 admin center][EXT-2]**|Gives you essential information about monthly quality and feature updates in the Microsoft 365 admin center.|
+|**[Windows feature update device readiness report][MEM-3]**|Provides per-device information about compatibility risks that are associated with an upgrade or update to a chosen version of Windows.|
+|**[Windows feature update compatibility risks reports][MEM-3]**|Provides a summary view of the top compatibility risks, so you understand which compatibility risks impact the greatest number of devices in your organization.|
+|**[Windows LTSC Enterprise][WIN-10]**|Intended for highly specialized devices that require limited changes due to regulations and certification|
+|**[Microsoft Desktop Optimization Pack (MDOP) ][MDOP-1]**|Help improve compatibility and management, reduce support costs, improve asset management, and improve policy control.|
 
-Learn more about [Windows 11 Enterprise E3](https://windows.com/enterprise).
+Learn more about [Windows 11 Enterprise E3][EXT-3].
 
 ### Windows 11 Enterprise E5
 
@@ -141,42 +141,42 @@ The following table lists the Windows 11 Enterprise features and their Windows e
 
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|❌|Yes|
-|**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge](/deployedge/microsoft-edge-security-windows-defender-application-guard)**|Yes|Yes|
-|**[Modern BitLocker Management](/windows/security/information-protection/bitlocker/bitlocker-overview)**|Yes|Yes|
-|**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|
-|**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|Yes|Yes|
-|**[Always On VPN](/windows-server/remote/remote-access/vpn/always-on-vpn/)**|Yes|Yes|
-|**[Windows Experience customization](/windows/client-management/mdm/policy-csp-experience)**|❌|Yes|
+|**[Windows Defender Credential Guard][WIN-1]**|❌|Yes|
+|**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][EDGE-1]**|Yes|Yes|
+|**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
+|**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|
+|**[Direct Access][WINS-1]**|Yes|Yes|
+|**[Always On VPN][WINS-2]**|Yes|Yes|
+|**[Windows Experience customization][WIN-4]**|❌|Yes|
 
 The following table lists the Windows 11 Enterprise cloud-based features and their Windows edition requirements:
 
 | Cloud-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Windows subscription activation](/windows/deployment/windows-10-subscription-activation)**|Yes|Yes|
-|**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|Yes|Yes|
-|**[Windows Update For Business deployment service](/windows/deployment/update/deployment-service-overview)**|Yes|Yes|
-|**[Universal Print](/universal-print/)**|Yes|Yes|
-|**[Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache)**|Yes|Yes|
-|**[Endpoint analytics proactive remediation](/mem/analytics/overview)**|Yes|Yes|
-|**[Organizational messages](/mem/intune/remote-actions/organizational-messages-overview)**|❌|Yes|
+|**[Windows subscription activation][WIN-5]**|Yes|Yes|
+|**[Windows Autopatch][WIN-6]**|Yes|Yes|
+|**[Windows Update For Business deployment service][WIN-7]**|Yes|Yes|
+|**[Universal Print][UP-1]**|Yes|Yes|
+|**[Microsoft Connected Cache][WIN-8]**|Yes|Yes|
+|**[Endpoint analytics proactive remediation][MEM-1]**|Yes|Yes|
+|**[Organizational messages][MEM-2]**|❌|Yes|
 
 The following table lists the Windows 11 Enterprise E3 licensing use rights and their Windows edition requirements:
 
 |Licensing use rights|Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Five Windows instances per licensed user](https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/EAEAS)**|n/a|n/a|
-|**[36 months (3 years) support on annual feature releases](/windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions)**|❌|Yes|
-|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses)**|n/a|n/a|
-|**[Windows release health in the Microsoft 365 admin center](https://aka.ms/WindowsReleaseHealthinM365)**|n/a|n/a|
-|**[Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports)**|Yes|Yes|
-|**[Windows feature update compatibility risks reports](/mem/intune/protect/windows-update-compatibility-reports)**|Yes|Yes|
-|**[Windows LTSC Enterprise](/windows/whats-new/ltsc/)**|n/a|n/a|
-|**[Microsoft Desktop Optimization Pack (MDOP) ](/microsoft-desktop-optimization-pack)**|Yes|Yes|
+|**[Five Windows instances per licensed user][EXT-1]**|n/a|n/a|
+|**[36 months (3 years) support on annual feature releases][WIN-9]**|❌|Yes|
+|**[Azure Virtual Desktop, Windows 365 Enterprise and Virtual Desktop Access][AZ-1]**|n/a|n/a|
+|**[Windows release health in the Microsoft 365 admin center][EXT-2]**|n/a|n/a|
+|**[Windows feature update device readiness report][MEM-3]**|Yes|Yes|
+|**[Windows feature update compatibility risks reports][MEM-3]**|Yes|Yes|
+|**[Windows LTSC Enterprise][WIN-10]**|n/a|n/a|
+|**[Microsoft Desktop Optimization Pack (MDOP)][MDOP-1]**|Yes|Yes|
 
 ## Next steps
 
-To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Windows 11 licensing guide](https://aka.ms/WindowsLicensingGuide). The guide provides additional information to complement the information in this article, including:
+To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Windows 11 licensing guide][EXT-6]. The guide provides additional information to complement the information in this article, including:
 
 - Description of qualifying operating systems
 - Availability of Windows desktop operating system products in licensing programs
@@ -184,3 +184,29 @@ To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Win
 - Windows 11 downgrade rights
 - Volume license activation methods
 - How to acquire licenses through Commercial Licensing
+
+[AZ-1]: /azure/virtual-desktop/prerequisites#operating-systems-and-licenses
+[EDGE-1]: /deployedge/microsoft-edge-security-windows-defender-application-guard
+[EXT-1]: https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/EAEAS
+[EXT-2]: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-release-health-now-available-in-the-microsoft-365-admin/ba-p/2235908
+[EXT-3]: https://windows.com/enterprise
+[EXT-4]: https://www.microsoft.com/licensing/product-licensing/products.aspx
+[EXT-5]: https://www.microsoft.com/licensing
+[EXT-6]: https://aka.ms/WindowsLicensingGuide
+[MDOP-1]: /microsoft-desktop-optimization-pack
+[MEM-1]: /mem/analytics/proactive-remediations
+[MEM-2]: /mem/intune/remote-actions/organizational-messages-overview
+[MEM-3]: /mem/intune/protect/windows-update-compatibility-reports
+[UP-1]: /universal-print/
+[WIN-1]: /windows/security/identity-protection/credential-guard/credential-guard
+[WIN-2]: /windows/security/information-protection/bitlocker/bitlocker-overview
+[WIN-3]: /windows/security/information-protection/personal-data-encryption/overview-pde
+[WIN-4]: /windows/client-management/mdm/policy-csp-experience
+[WIN-5]: /windows/deployment/windows-10-subscription-activation
+[WIN-6]: /windows/deployment/windows-autopatch
+[WIN-7]: /windows/deployment/update/deployment-service-overview
+[WIN-8]: /windows/deployment/do/waas-microsoft-connected-cache
+[WIN-9]: /windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions
+[WIN-10]: /windows/whats-new/ltsc/
+[WINS-1]: /windows-server/remote/remote-access/directaccess/directaccess
+[WINS-2]: /windows-server/remote/remote-access/vpn/always-on-vpn/
