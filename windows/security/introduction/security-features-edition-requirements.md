@@ -23,4 +23,4 @@ This article lists the security features that are available in Windows, and the 
 
 [!INCLUDE [_edition-requirements](../../../includes/licensing/_edition-requirements.md)]
 
-For more information about Windows licensing, see [Windows Commercial Licensing overview](../../whats-new/windows-licensing.md).
+For more information about Windows licensing, see [Windows Commercial Licensing overview](/windows/whats-new/windows-licensing.md).
