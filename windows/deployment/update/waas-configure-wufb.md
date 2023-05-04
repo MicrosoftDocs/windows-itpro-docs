@@ -213,9 +213,9 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 ## Enable features introduced via servicing that are off by default 
 <!--6544872-->
 
-New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
+New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. 
 
-The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them.
+The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them. This policy is also known as **temporary feature control**. 
 
 **Policy settings to enable features introduced via servicing that are off by default**
 
