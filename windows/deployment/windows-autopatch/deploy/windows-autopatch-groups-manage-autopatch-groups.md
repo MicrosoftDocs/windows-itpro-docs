@@ -211,4 +211,4 @@ The Windows Autopatch team is currently developing the Autopatch group Azure AD 
 > - Modern Workplace Devices-Windows Autopatch-Fast
 > - Modern Workplace Devices-Windows Autopatch-Broad
 > 
-> Use the [Policy health feature](../operate/windows-autopatch-policy-health-and-remediation.md) to restore these groups, if needed. See [restore Windows update policies](../operate/windows-autopatch-policy-health-and-remediation.md#restore-windows-update-policies) for more information.
+> Use the [Policy health feature](../operate/windows-autopatch-policy-health-and-remediation.md) to restore these groups, if needed. See [restore deployment groups](../operate/windows-autopatch-policy-health-and-remediation.md#restore-deployment-groups) for more information.
