@@ -13,17 +13,17 @@ appliesto:
 
 The acceleration of digital transformation and the expansion of both remote and hybrid workplaces brings new opportunities to organizations, communities, and individuals. Our work styles have transformed. And now more than ever, employees need simple, intuitive user experiences to collaborate and stay productive, wherever work happens. But the expansion of access and ability to work anywhere has also introduced new threats and risks. According to data from the Microsoft commissioned Security Signals report, 75% of security decision-makers at the vice-president level and above feel the move to hybrid work leaves their organization more vulnerable to security threats. And [Microsoft's 2022 Work Trend Index](https://www.microsoft.com/security/blog/2022/04/05/new-security-features-for-windows-11-will-help-protect-hybrid-work/) shows "cybersecurity issues and risks" are top concerns for business decisions makers, who worry about issues like malware, stolen credentials, devices that lack security updates, and physical attacks on lost or stolen devices.
 
-## How Windows 11 enables zero-trust protection
+## How Windows 11 enables Zero Trust protection
 
-A zero-trust security model gives the right people the right access at the right time. Zero-trust security is based on three principles:
+A Zero Trust security model gives the right people the right access at the right time. Zero Trust security is based on three principles:
 
 1. Reduce risk by explicitly verifying data points such as user identity, location, and device health for every access request, without exception
 2. When verified, give people and devices access to only necessary resources for the necessary amount of time
 3. Use continuous analytics to drive threat detection and improve defenses
 
-You should continue to strengthen your zero-trust posture as well. To improve threat detection and defenses, verify end-to-end encryption and use analytics to gain visibility.
+You should continue to strengthen your Zero Trust posture as well. To improve threat detection and defenses, verify end-to-end encryption and use analytics to gain visibility.
 
-For Windows 11, the zero-trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides chip-to-cloud security, enabling IT administrators to implement strong authorization and authentication processes with tools such as our premier solution Windows Hello for Business. IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. In addition, Windows 11 works out-of-the-box with Microsoft Endpoint Manager and Azure Active Directory, so access decisions and enforcement are seamless. Plus, IT administrators can easily customize Windows 11 to meet specific user and policy requirements for access, privacy, compliance, and more.
+For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides chip-to-cloud security, enabling IT administrators to implement strong authorization and authentication processes with tools such as our premier solution Windows Hello for Business. IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. In addition, Windows 11 works out-of-the-box with Microsoft Endpoint Manager and Azure Active Directory, so access decisions and enforcement are seamless. Plus, IT administrators can easily customize Windows 11 to meet specific user and policy requirements for access, privacy, compliance, and more.
 
 Individual users also benefit from powerful safeguards including new standards for hardware-based security and passwordless protection that help safeguard data and privacy.
 

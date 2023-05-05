@@ -4,10 +4,10 @@
   expanded: true
 - name: Introduction
   items:
-  - name: Zero Trust and Windows
-    href: zero-trust-windows-device-health.md
   - name: Windows security overview
     href: introduction/index.md
+  - name: Zero Trust and Windows
+    href: zero-trust-windows-device-health.md
   - name: Security features edition requirements
     href: introduction/security-features-edition-requirements.md
   - name: Security features licensing requirements

@@ -13,7 +13,7 @@ ms.date: 12/31/2017
 ---
 
 # Zero Trust and Windows device health
-Organizations need a security model that more effectively adapts to the complexity of the modern work environment. IT admins need to embrace the hybrid workplace, while protecting people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security helps address today's complex environments.
+Organizations need a security model that more effectively adapts to the complexity of the modern work environment. IT admins need to embrace the hybrid workplace, while protecting people, devices, apps, and data wherever they're located. Implementing a Zero Trust model for security helps address today's complex environments.
 
 The [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principles are:
 
@@ -27,12 +27,12 @@ The Zero Trust concept of **verify explicitly** applies to the risks introduced 
 
 [Conditional access](/azure/active-directory/conditional-access/overview) evaluates identity signals to confirm that users are who they say they are before they're granted access to corporate resources. 
 
-Windows 11 supports device health attestation, helping to confirm that devices are in a good state and haven't been tampered with. This capability helps users access corporate resources whether they’re in the office, at home, or when they’re traveling.
+Windows 11 supports device health attestation, helping to confirm that devices are in a good state and haven't been tampered with. This capability helps users access corporate resources whether they're in the office, at home, or when they're traveling.
 
 Attestation helps verify the identity and status of essential components and that the device, firmware, and boot process haven't been altered. Information about the firmware, boot process, and software, is used to validate the security state of the device. This information is cryptographically stored in the security co-processor Trusted Platform Module (TPM). Once the device is attested, it can be granted access to resources.
 
 ## Device health attestation on Windows
- Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
+ Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. The verification process uses remote attestation as the secure channel to determine and present the device's health. Remote attestation determines:
 
 - If the device can be trusted
 - If the operating system booted correctly
