@@ -539,7 +539,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe and boot manager files using the previously saved versions from WinPE.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe and boot manager files using the previously saved versions from WinPE.
 
 ```powershell
 #
