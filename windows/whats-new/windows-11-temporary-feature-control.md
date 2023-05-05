@@ -24,7 +24,7 @@ Features behind temporary control are automatically disabled for devices that ha
 
 The following features are behind temporary control in Windows 11:
 
-| Feature | KB article where the feature was introduced | Feature update that enables the feature |
+| Feature | KB article where the feature was introduced | Feature update that ends temporary control |
 |---|---|---|
 | Touch-optimized taskbar for 2-in-1 devices | [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
 
@@ -32,7 +32,7 @@ The following features are behind temporary control in Windows 11:
 
 Features that are behind temporary control will be enabled when one of the following conditions is met:
 
-- The device installs the feature update that enables the new features by default
+- The device installs the annual feature update that enables the new features by default
 - The device receives a policy that enables features behind temporary control
   - When the policy is enabled, all features on the device behind temporary control are turned on when the device next reboots.
 
