@@ -47,7 +47,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Windows Autopatch – Ring3
     - Windows Autopatch – Last
 - Additionally, **don't** modify the Azure AD group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups. If the ownership is modified, you must add the **Modern Workplace Management** Service Principal as the owner of these groups.
-	- For more information, see [assign an owner of member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) on how to remediate Azure Azure AD group ownership.
+	- For more information, see [assign an owner or member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) for steps on how to add owners to Azure Azure AD groups.
 - Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
     - Read device attributes to successfully register devices.
     - Manage all configurations related to the operation of the service.
