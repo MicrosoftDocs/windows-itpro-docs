@@ -1,11 +1,9 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 05/02/2023
+ms.date: 05/04/2023
 ms.topic: include
 ---
-
-The following table lists the security features that are available in Windows, and the licensing requirements to use them:
 
 |Feature name|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---|:---:|:---:|:---:|:---:|:---:|
@@ -32,7 +30,7 @@ The following table lists the security features that are available in Windows, a
 |**[Hypervisor-protected Code Integrity (HVCI)](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)**|Yes|Yes|Yes|Yes|Yes|
 |**[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**|Yes|Yes|Yes|Yes|Yes|
 |**Local Security Authority (LSA) Protection**|Yes|Yes|Yes|Yes|Yes|
-|**[Manage by Mobile Device Management (MDM) and group policy](/windows/client-management/mdm/mdm-overview)**|Yes|Yes|Yes|Yes|Yes|
+|**[Manage by Mobile Device Management (MDM) and group policy](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)**|Yes|Yes|Yes|Yes|Yes|
 |**[Measured boot](/windows/compatibility/measured-boot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)**|❌|Yes|Yes|Yes|Yes|

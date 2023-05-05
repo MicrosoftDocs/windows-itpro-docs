@@ -4,6 +4,7 @@ description: System security book.
 ms.date: 04/24/2023
 ms.topic: tutorial
 ms.author: paoloma
+ms.custom: ai-gen-docs
 author: paolomatarazzo
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -11,47 +12,46 @@ appliesto:
 
 # Introduction to Windows security
 
-The acceleration of digital transformation and the expansion of both remote and hybrid workplaces brings new opportunities to organizations, communities, and individuals. Our work styles have transformed. And now more than ever, employees need simple, intuitive user experiences to collaborate and stay productive, wherever work happens. But the expansion of access and ability to work anywhere has also introduced new threats and risks. According to data from the Microsoft commissioned Security Signals report, 75% of security decision-makers at the vice-president level and above feel the move to hybrid work leaves their organization more vulnerable to security threats. And [Microsoft's 2022 Work Trend Index](https://www.microsoft.com/security/blog/2022/04/05/new-security-features-for-windows-11-will-help-protect-hybrid-work/) shows "cybersecurity issues and risks" are top concerns for business decisions makers, who worry about issues like malware, stolen credentials, devices that lack security updates, and physical attacks on lost or stolen devices.
+The acceleration of digital transformation and the expansion of both remote and hybrid work brings new opportunities to organizations, communities, and individuals. This expansion introduces new threats and risks.
+
+Organizations worldwide are adopting a **Zero Trust** security model based on the premise that no person or device anywhere can have access until safety and integrity is proven. Windows 11 is built on Zero Trust principles to enable hybrid productivity and new experiences anywhere, without compromising security. Windows 11 raises the [security baselines](../threat-protection/windows-security-configuration-framework/windows-security-baselines.md) with new requirements for advanced hardware and software protection that extends from chip to cloud.
 
 ## How Windows 11 enables Zero Trust protection
 
 A Zero Trust security model gives the right people the right access at the right time. Zero Trust security is based on three principles:
 
 1. Reduce risk by explicitly verifying data points such as user identity, location, and device health for every access request, without exception
-2. When verified, give people and devices access to only necessary resources for the necessary amount of time
-3. Use continuous analytics to drive threat detection and improve defenses
+1. When verified, give people and devices access to only necessary resources for the necessary amount of time
+1. Use continuous analytics to drive threat detection and improve defenses
 
-You should continue to strengthen your Zero Trust posture as well. To improve threat detection and defenses, verify end-to-end encryption and use analytics to gain visibility.
+For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides *chip-to-cloud security*, enabling IT administrators to implement strong authorization and authentication processes with features like [Windows Hello for Business](../identity-protection/hello-for-business/hello-overview.md). IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. Windows 11 works out-of-the-box with Microsoft Intune and Azure Active Directory, which enable timely and seamless access decisions. Furthermore, IT administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
 
-For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides chip-to-cloud security, enabling IT administrators to implement strong authorization and authentication processes with tools such as our premier solution Windows Hello for Business. IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. In addition, Windows 11 works out-of-the-box with Microsoft Endpoint Manager and Azure Active Directory, so access decisions and enforcement are seamless. Plus, IT administrators can easily customize Windows 11 to meet specific user and policy requirements for access, privacy, compliance, and more.
+### Security, by default
 
-Individual users also benefit from powerful safeguards including new standards for hardware-based security and passwordless protection that help safeguard data and privacy.
+Windows 11 is a natural evolution of its predecessor, Windows 10. We have collaborated with our manufacturer and silicon partners to incorporate extra hardware security measures that address the increasingly complex security threats of today. These measures not only enable the hybrid work and learning that many organizations now embrace but also help bolster our already strong foundation and resilience against attacks.
 
-## Security, by default
+### Enhanced hardware and operating system security
 
-Nearly 90% of security decision makers surveyed say outdated hardware leaves organizations more open to attacks and using modern hardware would help protect against future threats. Building on the innovations of Windows 10, we've worked with our manufacturer and silicon partners to provide additional hardware security capabilities to meet the evolving threat landscape and enable hybrid work and learning. The new set of hardware security requirements that comes with Windows 11 supports new ways of working with a foundation that is even stronger and more resilient to attacks.
+With hardware-based isolation security that begins at the chip, Windows 11 stores sensitive data behind other barriers separated from the operating system. As a result, information including encryption keys and user credentials are protected from unauthorized access and tampering.
 
-## Enhanced hardware and operating system security
+In Windows 11, hardware and software work together to protect the operating system. For example, new devices come with [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs) and [Secure Boot](../trusted-boot.md) built-in and enabled by default to contain and limit malware exploits.
 
-With hardware-based isolation security that begins at the chip, Windows 11 stores sensitive data behind additional barriers separated from the operating system. As a result, information including encryption keys and user credentials are protected from unauthorized access and tampering.
-
-In Windows 11, hardware and software work together to protect the operating system. For example, new devices come with virtualization-based security (VBS) and Secure Boot built-in and enabled by default to contain and limit malware exploits. <sup>[\[1\]](#note1)</sup>
-
-## Robust application security and privacy controls
+### Robust application security and privacy controls
 
 To help keep personal and business information protected and private, Windows 11 has multiple layers of application security that safeguard critical data and code integrity. Application isolation and controls, code integrity, privacy controls, and least-privilege principles enable developers to build in security and privacy from the ground up. This integrated security protects against breaches and malware, helps keep data private, and gives IT administrators the controls they need.
 
-In Windows 11, [Microsoft Defender Application Guard](/windows-hardware/design/device-experiences/oem-app-guard) <sup>[\[2\]](#note2)</sup> uses Hyper-V virtualization technology to isolate untrusted websites and Microsoft Office files in containers, separate from and unable to access the host operating system and enterprise data. To protect privacy, Windows 11 also provides more controls over which apps and features can collect and use data such as the device's location, or access resources like camera and microphone.
+In Windows 11, [Microsoft Defender Application Guard](/windows-hardware/design/device-experiences/oem-app-guard) uses Hyper-V virtualization technology to isolate untrusted websites and Microsoft Office files in containers, separate from and unable to access the host operating system and enterprise data. To protect privacy, Windows 11 also provides more controls over which apps and features can collect and use data such as the device's location, or access resources like camera and microphone.
 
-## Secured identities
+### Secured identities
 
-Passwords have been an important part of digital security for a long time, and they're also a top target for cybercriminals. Windows 11 provides powerful protection against credential theft with chip-level hardware security. Credentials are protected by layers of hardware and software security such as TPM 2.0, VBS, and/or Windows Defender Credential Guard, making it harder for attackers to steal credentials from a device. And with Windows Hello, users can quickly sign in with face, fingerprint, or PIN for passwordless protection. <sup>[\[3\]](#note3)</sup>
+Passwords have been an important part of digital security for a long time, and they're also a top target for cybercriminals. Windows 11 provides powerful protection against credential theft with chip-level hardware security. Credentials are protected by layers of hardware and software security such as [TPM 2.0](../information-protection/tpm/trusted-platform-module-overview.md), [VBS](/windows-hardware/design/device-experiences/oem-vbs), and/or [Windows Defender Credential Guard](../identity-protection/credential-guard/credential-guard.md), making it harder for attackers to steal credentials from a device. With [Windows Hello for Business](../identity-protection/hello-for-business/hello-overview.md), users can quickly sign in with face, fingerprint, or PIN for passwordless protection. Windows 11 also supports [FIDO2 security keys](/azure/active-directory/authentication/howto-authentication-passwordless-security-key) for passwordless authentication.
 
-## Connecting to cloud services
+### Connecting to cloud services
 
-Microsoft offers comprehensive cloud services for identity, storage, and access management in addition to the tools needed to attest that Windows 11 devices connecting to your network are trustworthy. You can also enforce compliance and conditional access with a modern device management (MDM) service such as Microsoft Endpoint Manager, which works with Azure Active Directory and Microsoft Azure Attestation to control access to applications and data through the cloud. <sup>[\[4\]](#note4)</sup>
+Microsoft offers comprehensive cloud services for identity, storage, and access management in addition to the tools needed to attest that Windows devices connecting to your network are trustworthy. You can also enforce compliance and conditional access with a modern device management (MDM) service such as Microsoft Intune, which works with Azure Active Directory and Microsoft Azure Attestation to control access to applications and data through the cloud.
 
-<sup><a name="note1"></a>[1]</sup> Hypervisor-protected coder integrity, which activates virtualization-based security, is enabled by default on clean installations only.\
-<sup><a name="note2"></a>[2]</sup> Windows 10 Pro and above support Application Guard protection for Microsoft Edge. Microsoft Defender Application Guard for Office requires Windows 10 Enterprise, and Microsoft 365 E5 or Microsoft 365 E5 Security.\
-<sup><a name="note3"></a>[3]</sup> Windows Hello supports multi-factor authentication including facial recognition, fingerprint, and PIN. Requires specialized hardware such as fingerprint reader, illuminated IT sensor or other biometric sensors and capable devices.\
-<sup><a name="note4"></a>[4]</sup> Microsoft Endpoint Manager and Microsoft Azure Active Directory subscriptions sold separately.\
+## Next steps
+
+To learn more about the security features included in Windows 11, download the [Windows 11 Security Book: Powerful security from chip to cloud](https://aka.ms/Windows11SecurityBook).
+
+[!INCLUDE [ai-disclaimer-generic](../../../includes/ai-disclaimer-generic.md)]
