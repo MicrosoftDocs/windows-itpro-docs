@@ -15,7 +15,7 @@ ms.collection:
 ---
 
 # Temporary feature control in Windows 11
-
+<!--7790977-->
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
 
 Features behind temporary control are automatically disabled for devices that have their Windows updates managed by policy.
