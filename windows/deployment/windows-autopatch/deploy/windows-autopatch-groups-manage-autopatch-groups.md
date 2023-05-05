@@ -1,7 +1,7 @@
 ---
 title: Manage Windows Autopatch groups
 description: This article explains how to manage Autopatch groups
-ms.date: 05/03/2023
+ms.date: 05/05/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -46,7 +46,7 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
     - Windows Autopatch – Ring2
     - Windows Autopatch – Ring3
     - Windows Autopatch – Last
-- Additionally, **don't** modify the Azure AD group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups.
+- Additionally, **don't** modify the Azure AD group ownership of any of the groups above otherwise, Autopatch groups device registration process won't be able to add devices into these groups. If the ownership is modified, you must add the **Modern Workplace Management** Service Principal as the owner of these groups.
 	- For more information, see [assign an owner of member of a group in Azure AD](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group) on how to remediate Azure Azure AD group ownership.
 - Make sure you have [app-only auth turned on in your Windows Autopatch tenant](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions). Otherwise, the Autopatch groups functionality won’t work properly. Autopatch uses app-only auth to:
     - Read device attributes to successfully register devices.
@@ -123,7 +123,11 @@ You **can’t** delete the Default Autopatch group. However, you can delete a Cu
 > [!CAUTION]
 > You can’t delete a Custom Autopatch group when it’s being used as part of one or more active or paused feature update releases. However, you can delete a Custom Autopatch group when the release for either Windows quality or feature updates have either the **Scheduled** or **Paused** statuses.
 
-## Manage device conflict scenarios when Autopatch groups
+## Manage device conflict scenarios when using Autopatch groups
+
+> [!IMPORTANT]
+> The Windows Autopatch groups functionaliy is in **public preview**. This feature is being actively developed and not all device conflict detection and resolution scenarios are working as expected.
+> See Known issues for more details on what's currently available and what's coming next for this scenario.
 
 Overlap in device membership is a common scenario when working with device-based Azure AD groups since sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Azure AD groups.
 
@@ -171,3 +175,42 @@ When you create or edit the Custom or Default Autopatch group, Windows Autopatch
 #### Device conflict post device registration
 
 Autopatch groups will keep monitoring for all device conflict scenarios listed in the [Manage device conflict scenarios when using Autopatch groups](#manage-device-conflict-scenarios-when-autopatch-groups) section even after devices were successfully registered with the service.
+
+## Known issues
+This section lists recent known issues with Autopatch groups during its public preview.
+
+### Device conflict scenarios when using Autopatch groups
+- **Status: Active**
+- **Date: 05/05/2023**
+
+The Windows Autopatch team is aware that all device conflict scenarios listed below are only being currently evaluated during the device registration process to make sure devices are properly registered with the service, and not evaluated post device registration. The device conflict scenarios are:
+
+- Default to custom AG device conflict detection and resolution.
+- Device conflict detection and resolution within an Autopatch group.
+- Custom to custom Autopatch group device conflict detection.
+
+The Windows Autopatch team is currently developing detection and resolution for the device conflict scenarios above, and plan to make them available in production still during the public preview timeframe.
+
+### Autopatch group Azure AD group remediator
+- **Status: Active**
+- **Date: 05/05/2023**
+
+The Windows Autopatch team is aware that the Windows Autopatch service is not automatically restoring the Azure AD groups that get created during the Autopatch groups creation/editing process. This means that if deleted or renamed, the following Azure AD groups that belong to the default Autopatch group and other Azure AD groups that get created with custom Autopatch groups will not be automatically remediated on your behalf yet:
+
+- Windows Autopatch – Test
+- Windows Autopatch – Ring1
+- Windows Autopatch – Ring2
+- Windows Autopatch – Ring3
+- Windows Autopatch – Last
+
+The Windows Autopatch team is currently developing the Autopatch group Azure AD group remediator feature and plan to make it available in production still during the public preview timeframe.
+
+> [!NOTE]
+> The Autopatch group remediator will not cover remediation of the service-based deployment rings:
+> 
+> - Modern Workplace Devices-Windows Autopatch-Test
+> - Modern Workplace Devices-Windows Autopatch-First
+> - Modern Workplace Devices-Windows Autopatch-Fast
+> - Modern Workplace Devices-Windows Autopatch-Broad
+> 
+> Use the [Policy health feature](../operate/windows-autopatch-policy-health-and-remediation.md) to restore these groups, if needed. See [restore Windows update policies](../operate/windows-autopatch-policy-health-and-remediation.md#restore-windows-update-policies) for more information.
