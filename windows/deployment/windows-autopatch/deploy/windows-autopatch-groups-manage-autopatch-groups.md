@@ -191,7 +191,7 @@ The Windows Autopatch team is aware that all device conflict scenarios listed be
 - Custom to Cstom Autopatch group device conflict detection.
 
 > [!TIP]
-> Follow these two best practices to minimize device conflict scenarios when using Autopatch groups during the public preview:
+> Follow these two best practices to help minimize device conflict scenarios when using Autopatch groups during the public preview:
 > 
 > - Review your software update deployment requirements thoroughly, and if your deployment requirements allow, try using the default Autopatch group as much as possible, instead of start creating custom Autopatch groups. You can customize the default Autopatch to have up to 15 deployment rings, and using your existing device-based Azure AD groups with custom update deployment cadences.
 > - If creating custom Autopatch groups, try to avoid using device-based Azure AD groups that have device membership overlaps with the devices that are already registered with the Windows Autopatch service, and already belong to the default Autopatch group.
