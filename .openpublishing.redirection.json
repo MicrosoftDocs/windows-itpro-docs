@@ -20809,6 +20809,11 @@
       "source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
       "redirect_url": "/microsoft-store",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "security/information-protection/index.md",
+      "redirect_url": "/security/encryption-data-protection",
+      "redirect_document_id": false
     }
   ]
 }
