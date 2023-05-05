@@ -178,9 +178,10 @@ Autopatch groups will keep monitoring for all device conflict scenarios listed i
 
 ## Known issues
 
-This section lists recent known issues with Autopatch groups during its public preview.
+This section lists known issues with Autopatch groups during its public preview.
 
 ### Device conflict scenarios when using Autopatch groups
+
 - **Status: Active**
 
 The Windows Autopatch team is aware that all device conflict scenarios listed below are currently being evaluated during the device registration process to make sure devices are properly registered with the service, and not evaluated post-device registration. The Windows Autopatch team is currently developing detection and resolution for the followin device conflict scenarios, and plan to make them available during public preview.
@@ -190,6 +191,7 @@ The Windows Autopatch team is aware that all device conflict scenarios listed be
 - Custom to Cstom Autopatch group device conflict detection.
 
 ### Autopatch group Azure AD group remediator
+
 - **Status: Active**
 
 The Windows Autopatch team is aware that the Windows Autopatch service isn't automatically restoring the Azure AD groups that get created during the Autopatch groups creation/editing process. If the following Azure AD groups, that belong to the Default Autopatch group and other Azure AD groups that get created with Custom Autopatch groups, are deleted or renamed, they won't be automatically remediated on your behalf yet:
