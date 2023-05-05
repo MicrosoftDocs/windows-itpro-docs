@@ -46,6 +46,8 @@ This policy setting allows you to configure scans for malicious software and unw
 
 <!-- AllowArchiveScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowArchiveScanning-Editable-End -->
 
 <!-- AllowArchiveScanning-DFProperties-Begin -->
@@ -113,6 +115,8 @@ This policy setting allows you to configure behavior monitoring.
 
 <!-- AllowBehaviorMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowBehaviorMonitoring-Editable-End -->
 
 <!-- AllowBehaviorMonitoring-DFProperties-Begin -->
@@ -193,6 +197,8 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 
 <!-- AllowCloudProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowCloudProtection-Editable-End -->
 
 <!-- AllowCloudProtection-DFProperties-Begin -->
@@ -457,6 +463,8 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 
 <!-- AllowIntrusionPreventionSystem-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowIntrusionPreventionSystem-Editable-End -->
 
 <!-- AllowIntrusionPreventionSystem-DFProperties-Begin -->
@@ -510,6 +518,8 @@ This policy setting allows you to configure scanning for all downloaded files an
 
 <!-- AllowIOAVProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowIOAVProtection-Editable-End -->
 
 <!-- AllowIOAVProtection-DFProperties-Begin -->
@@ -577,6 +587,8 @@ This policy setting allows you to configure monitoring for file and program acti
 
 <!-- AllowOnAccessProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowOnAccessProtection-Editable-End -->
 
 <!-- AllowOnAccessProtection-DFProperties-Begin -->
@@ -640,6 +652,8 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!-- AllowRealtimeMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowRealtimeMonitoring-Editable-End -->
 
 <!-- AllowRealtimeMonitoring-DFProperties-Begin -->
@@ -769,6 +783,8 @@ Allows or disallows Windows Defender Script Scanning functionality.
 
 <!-- AllowScriptScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- AllowScriptScanning-Editable-End -->
 
 <!-- AllowScriptScanning-DFProperties-Begin -->
@@ -1891,6 +1907,8 @@ This policy setting allows you specify a list of file types that should be exclu
 
 <!-- ExcludedExtensions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
 <!-- ExcludedExtensions-Editable-End -->
 
 <!-- ExcludedExtensions-DFProperties-Begin -->
@@ -1945,6 +1963,8 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 
 <!-- ExcludedPaths-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
 <!-- ExcludedPaths-Editable-End -->
 
 <!-- ExcludedPaths-DFProperties-Begin -->
@@ -1999,6 +2019,8 @@ This policy setting allows you to disable real-time scanning for any file opened
 
 <!-- ExcludedProcesses-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
 <!-- ExcludedProcesses-Editable-End -->
 
 <!-- ExcludedProcesses-DFProperties-Begin -->
@@ -2790,6 +2812,8 @@ Valid remediation action values are:
 
 <!-- ThreatSeverityDefaultAction-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- ThreatSeverityDefaultAction-Editable-End -->
 
 <!-- ThreatSeverityDefaultAction-DFProperties-Begin -->

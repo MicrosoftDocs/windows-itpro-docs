@@ -2212,6 +2212,8 @@ Tamper protection helps protect important security features from unwanted change
 
 <!-- Device-Configuration-TamperProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
 <!-- Device-Configuration-TamperProtection-Editable-End -->
 
 <!-- Device-Configuration-TamperProtection-DFProperties-Begin -->
