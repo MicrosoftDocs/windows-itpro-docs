@@ -420,11 +420,11 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     if ($IMAGE.ImageIndex -eq "2") {
 
         # Save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
-        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -ErrorAction stop | Out-Null
         
         # Save serviced boot manager files later copy to the root media.
-        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgfw.efi" -Destination $WORKING_PATH"\bootmgfw.efi" -Force -Recurse -ErrorAction stop | Out-Null
-        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgr.efi" -Destination $WORKING_PATH"\bootmgr.efi" -Force -Recurse -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgfw.efi" -Destination $WORKING_PATH"\bootmgfw.efi" -Force -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgr.efi" -Destination $WORKING_PATH"\bootmgr.efi" -Force -ErrorAction stop | Out-Null
     
     }
         
@@ -565,12 +565,12 @@ Foreach ($File in $MEDIA_NEW_FILES){
         ($File.Name -ieq "bootaa64.efi")) 
     {
         Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgfw.efi to $($File.FullName)"
-        Copy-Item -Path $WORKING_PATH"\bootmgfw.efi" -Destination $File.FullName -Force -Recurse -ErrorAction stop | Out-Null
+        Copy-Item -Path $WORKING_PATH"\bootmgfw.efi" -Destination $File.FullName -Force -ErrorAction stop | Out-Null
     }
     elseif ($File.Name -ieq "bootmgr.efi") 
     {
         Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgr.efi to $($File.FullName)"
-        Copy-Item -Path $WORKING_PATH"\bootmgr.efi" -Destination $File.FullName -Force -Recurse -ErrorAction stop | Out-Null
+        Copy-Item -Path $WORKING_PATH"\bootmgr.efi" -Destination $File.FullName -Force -ErrorAction stop | Out-Null
     }
 }
 
