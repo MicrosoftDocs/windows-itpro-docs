@@ -20811,8 +20811,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "security/information-protection/index.md",
-      "redirect_url": "/security/encryption-data-protection",
+      "source_path": "windows/security/information-protection/index.md",
+      "redirect_url": "/windows/security/encryption-data-protection",
       "redirect_document_id": false
     }
   ]
