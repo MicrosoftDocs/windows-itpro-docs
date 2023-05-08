@@ -32,7 +32,7 @@ ms.date: 02/03/2023
 - [Browser/AllowSearchSuggestionsinAddressBar](policy-csp-browser.md#allowsearchsuggestionsinaddressbar) <sup>13</sup>
 - [Browser/AllowSmartScreen](policy-csp-browser.md#allowsmartscreen) <sup>13</sup>
 - [Connectivity/AllowBluetooth](policy-csp-connectivity.md#allowbluetooth)
-- [Connectivity/AllowConnectedDevices](https://https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-connectivity#allowconnecteddevices) <sup>12</sup>
+- [Connectivity/AllowConnectedDevices](policy-csp-connectivity.md#allowconnecteddevices) <sup>12</sup>
 - [Connectivity/AllowUSBConnection](policy-csp-connectivity.md#allowusbconnection)
 - [DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#docachehost) <sup>10</sup>
 - [DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#docachehostsource) <sup>10</sup>
