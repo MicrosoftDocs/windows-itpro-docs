@@ -142,7 +142,7 @@ If your Autopatch groups have more than five deployment rings, and you must move
 If you want to move devices to different deployment rings (either service or software update-based), after Windows Autopatch's deployment ring assignment, you can repeat the following steps for one or more devices from the **Registered** tab.
 
 > [!IMPORTANT]
-> It's only supported to move devices in between deployment rings within the same Autopatch group. It's not supported to move devices in between deployment rings across different Autopatch groups, if you try to select a device that belongs to one Autopatch group, and another device that belongs to a different Autopatch group, you receive the following error message on the top right corner of the Microsoft Intune portal: "**An error occurred. Please select devices within the same Autopatch group**.
+> You can only move devices in between deployment rings within the **same** Autopatch group. You can't move devices in between deployment rings across different Autopatch groups. If you try to select a device that belongs to one Autopatch group, and another device that belongs to a different Autopatch group, you receive the following error message on the top right corner of the Microsoft Intune portal: "**An error occurred. Please select devices within the same Autopatch group**.
 
 **To move devices in between deployment rings:**
 
