@@ -127,7 +127,7 @@ You **can’t** delete the Default Autopatch group. However, you can delete a Cu
 
 > [!IMPORTANT]
 > The Windows Autopatch groups functionaliy is in **public preview**. This feature is being actively developed and not all device conflict detection and resolution scenarios are working as expected.
-> Fore more information on what to expect for this scenario during public preview, see [Known issues](#known-issues).
+> For more information on what to expect for this scenario during public preview, see [Known issues](#known-issues).
 
 Overlap in device membership is a common scenario when working with device-based Azure AD groups since sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Azure AD groups.
 
@@ -189,6 +189,12 @@ The Windows Autopatch team is aware that all device conflict scenarios listed be
 - Default to Custom Autopatch device conflict detection and resolution.
 - Device conflict detection and resolution within an Autopatch group.
 - Custom to Custom Autopatch group device conflict detection.
+
+> [!TIP]
+> Use the following two best practices to help minimize device conflict scenarios when using Autopatch groups during the public preview:
+> 
+> - Review your software update deployment requirements thoroughly. If your deployment requirements allow, try using the Default Autopatch group as much as possible, instead of start creating Custom Autopatch groups. You can customize the Default Autopatch to have up to 15 deployment rings, and you can use your existing device-based Azure AD groups with custom update deployment cadences.
+> - If creating Custom Autopatch groups, try to avoid using device-based Azure AD groups that have device membership overlaps with the devices that are already registered with Windows Autopatch, and already belong to the Default Autopatch group.
 
 ### Autopatch group Azure AD group remediator
 
