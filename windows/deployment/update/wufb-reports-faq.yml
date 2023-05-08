@@ -107,7 +107,7 @@ sections:
           - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
       - question: Why are there multiple records for the same device?
         answer: |
-          Devices will have multiple records when the UCClientUpdateStatus or UCClientServiceStatus tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with with different update states, at various times over the past 28 days.   
+          Devices will have multiple records when the UCClientUpdateStatus or UCClientServiceStatus tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days.   
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
