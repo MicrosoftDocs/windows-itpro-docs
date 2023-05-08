@@ -4,7 +4,7 @@ description: Learn more about the VPNv2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2838,7 +2838,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-OmaUri-Begin -->
@@ -2876,7 +2876,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-OmaUri-Begin -->
@@ -2915,7 +2915,7 @@ List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-OmaUri-Begin -->
@@ -2953,7 +2953,7 @@ List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-OmaUri-Begin -->
@@ -3003,7 +3003,7 @@ Inbox VPN protocols type.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-OmaUri-Begin -->
@@ -7063,7 +7063,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-OmaUri-Begin -->
@@ -7101,7 +7101,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-OmaUri-Begin -->
@@ -7140,7 +7140,7 @@ List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-OmaUri-Begin -->
@@ -7178,7 +7178,7 @@ List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-OmaUri-Begin -->
@@ -7228,7 +7228,7 @@ Inbox VPN protocols type.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-OmaUri-Begin -->
@@ -7893,7 +7893,7 @@ Boolean value (true or false) for caching credentials.
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.19628] and later |
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.19628] and later |
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Applicability-End -->
 
 <!-- User-{ProfileName}-RequireVpnClientAppUI-OmaUri-Begin -->

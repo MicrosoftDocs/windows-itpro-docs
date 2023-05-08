@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,9 @@ ms.topic: reference
 
 <!-- DMClient-Begin -->
 # DMClient CSP
+
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- DMClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -37,6 +40,10 @@ The following list shows the DMClient configuration service provider nodes:
         - [Lock](#deviceproviderprovideridconfiglocklock)
         - [SecureCore](#deviceproviderprovideridconfiglocksecurecore)
         - [UnlockDuration](#deviceproviderprovideridconfiglockunlockduration)
+      - [ConfigRefresh](#deviceproviderprovideridconfigrefresh)
+        - [Cadence](#deviceproviderprovideridconfigrefreshcadence)
+        - [Enabled](#deviceproviderprovideridconfigrefreshenabled)
+        - [PausePeriod](#deviceproviderprovideridconfigrefreshpauseperiod)
       - [CustomEnrollmentCompletePage](#deviceproviderprovideridcustomenrollmentcompletepage)
         - [BodyText](#deviceproviderprovideridcustomenrollmentcompletepagebodytext)
         - [HyperlinkHref](#deviceproviderprovideridcustomenrollmentcompletepagehyperlinkhref)
@@ -623,6 +630,176 @@ This node, when it is set, tells the client to set how many minutes the device s
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Examples-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Begin -->
+#### Device/Provider/{ProviderID}/ConfigRefresh
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Description-Begin -->
+<!-- Description-Source-DDF -->
+Parent node for ConfigRefresh nodes.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | node |
+| Access Type | Add, Delete, Get |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Begin -->
+##### Device/Provider/{ProviderID}/ConfigRefresh/Cadence
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh/Cadence
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines the number of minutes between refreshes.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[30-1440]` |
+| Default Value  | 90 |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Begin -->
+##### Device/Provider/{ProviderID}/ConfigRefresh/Enabled
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh/Enabled
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines whether or not a periodic settings refresh for MDM policies will occur.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | bool |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| true | ConfigRefresh is enabled. |
+| false (Default) | ConfigRefresh is disabled. |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-AllowedValues-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Begin -->
+##### Device/Provider/{ProviderID}/ConfigRefresh/PausePeriod
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DMClient/Provider/{ProviderID}/ConfigRefresh/PausePeriod
+```
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node determines the number of minutes ConfigRefresh should be paused for.
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Description-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Editable-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1440]` |
+| Default Value  | 0 |
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-DFProperties-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Examples-End -->
+
+<!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Begin -->
 #### Device/Provider/{ProviderID}/CustomEnrollmentCompletePage
