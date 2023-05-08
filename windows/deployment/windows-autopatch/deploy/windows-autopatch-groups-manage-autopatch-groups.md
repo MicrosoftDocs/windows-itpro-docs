@@ -188,7 +188,7 @@ The Windows Autopatch team is aware that all device conflict scenarios listed be
 
 - Default to Custom Autopatch device conflict detection and resolution.
 - Device conflict detection and resolution within an Autopatch group.
-- Custom to Cstom Autopatch group device conflict detection.
+- Custom to Custom Autopatch group device conflict detection.
 
 ### Autopatch group Azure AD group remediator
 
