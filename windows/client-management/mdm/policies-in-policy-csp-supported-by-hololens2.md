@@ -163,7 +163,7 @@ Footnotes:
 - 10 - Available in [Windows Holographic, version 21H1](/hololens/hololens-release-notes#windows-holographic-version-21h1)
 - 11 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
 - 12 - Available in [Windows Holographic, version 22H2](/hololens/hololens-release-notes#windows-holographic-version-22h2)
-- 13 - Refer to [Configuring Policy Settings for the New Microsoft Edge](https://https://learn.microsoft.com/en-us/hololens/hololens-new-edge#configuring-policy-settings-for-the-new-microsoft-edge)
+- 13 - Refer to [Configuring Policy Settings for the New Microsoft Edge](/hololens/hololens-new-edge#configuring-policy-settings-for-the-new-microsoft-edge)
 - 14 - Refer to [New Power Policies for Hololens 2](https://https://learn.microsoft.com/en-us/hololens/hololens-release-notes-2004#new-power-policies-for-hololens-2)
 - Insider - Available in our current [HoloLens Insider builds](/hololens/hololens-insider).
 
