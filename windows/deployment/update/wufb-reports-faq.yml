@@ -11,7 +11,7 @@ metadata:
   ms.technology: itpro-updates
 title: Frequently Asked Questions about Windows Update for Business reports
 summary: |
-  This article answers frequently asked questions about Windows Update for Business reports.
+  This article answers frequently asked questions about Windows Update for Business reports. <!--7760853-->
 
   **General questions**:
 
@@ -31,6 +31,7 @@ summary: |
   - [Why is the device name null(#)?](#why-is-the-device-name-null---)
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
+  - [Why are there multiple records for the same device?](#why-are-there-multiple-records-for-the-same-device)
   - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
@@ -104,6 +105,9 @@ sections:
           - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
           - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
+      - question: Why are there multiple records for the same device?
+        answer: |
+          Devices will have multiple records when the UCClientUpdateStatus or UCClientServiceStatus tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with with different update states, at various times over the past 28 days.   
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
