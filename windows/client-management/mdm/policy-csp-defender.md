@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/27/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1901,8 +1901,8 @@ Same as Disabled.
 <!-- ExcludedExtensions-OmaUri-End -->
 
 <!-- ExcludedExtensions-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you specify a list of file types that should be excluded from scheduled, custom, and real-time scanning. File types should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the file type extension (such as "obj" or "lib"). The value is not used and it is recommended that this be set to 0.
+<!-- Description-Source-DDF-Forced -->
+Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a |. For example, lib|obj.
 <!-- ExcludedExtensions-Description-End -->
 
 <!-- ExcludedExtensions-Editable-Begin -->
@@ -1957,8 +1957,8 @@ This policy setting allows you specify a list of file types that should be exclu
 <!-- ExcludedPaths-OmaUri-End -->
 
 <!-- ExcludedPaths-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to disable scheduled and real-time scanning for files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe". The value is not used and it is recommended that this be set to 0.
+<!-- Description-Source-DDF-Forced -->
+Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a |. For example, C:\Example|C:\Example1.
 <!-- ExcludedPaths-Description-End -->
 
 <!-- ExcludedPaths-Editable-Begin -->
@@ -2013,8 +2013,11 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 <!-- ExcludedProcesses-OmaUri-End -->
 
 <!-- ExcludedProcesses-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy does not apply to scheduled scans. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. **Note** that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value is not used and it is recommended that this be set to 0.
+<!-- Description-Source-DDF-Forced -->
+Allows an administrator to specify a list of files opened by processes to ignore during a scan.
+
+> [!IMPORTANT]
+> The process itself is not excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example. exe|C:\Example1.exe.
 <!-- ExcludedProcesses-Description-End -->
 
 <!-- ExcludedProcesses-Editable-Begin -->
