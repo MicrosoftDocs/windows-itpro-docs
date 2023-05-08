@@ -4,7 +4,7 @@ description: Learn more about the SUPL CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,6 +17,7 @@ ms.topic: reference
 # SUPL CSP
 
 <!-- SUPL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
 - **Location Service**: Connection type
@@ -395,6 +396,7 @@ This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether t
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 | Location toggle setting | LocMasterSwitchDependencyNII setting | NI request processing allowed      |
 |-------------------------|--------------------------------------|------------------------------------|
 | On                      | 0                                    | Yes                                |

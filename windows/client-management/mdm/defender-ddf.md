@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1916,6 +1916,45 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>If you disable or do not configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>OobeEnableRtpAndSigUpdate</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting allows you to configure whether real-time protection and Security Intelligence Updates are enabled during OOBE (Out of Box experience).</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>If you either disable or do not configure this setting, real-time protection and Security Intelligence Updates during OOBE is not enabled.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
