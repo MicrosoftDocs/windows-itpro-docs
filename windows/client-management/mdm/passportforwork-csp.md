@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -445,7 +445,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of digits in PIN. |
-| 1 | Requires the use of at least one digit in PIN. |
+| 1 | Requires the use of at least one digits in PIN. |
 | 2 | Does not allow the use of digits in PIN. |
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-AllowedValues-End -->
 
@@ -583,7 +583,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of lowercase letters in PIN. |
-| 1 | Requires the use of at least one lowercase letter in PIN. |
+| 1 | Requires the use of at least one lowercase letters in PIN. |
 | 2 | Does not allow the use of lowercase letters in PIN. |
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-AllowedValues-End -->
 
@@ -706,7 +706,7 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-Begin -->
 <!-- Description-Source-DDF -->
-Use this policy setting to configure the use of special character in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
+Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
 
 A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
@@ -791,7 +791,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of uppercase letters in PIN. |
-| 1 | Requires the use of at least one uppercase letter in PIN. |
+| 1 | Requires the use of at least one uppercase letters in PIN. |
 | 2 | Does not allow the use of uppercase letters in PIN. |
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-AllowedValues-End -->
 
@@ -2027,7 +2027,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of digits in PIN. |
-| 1 | Requires the use of at least one digit in PIN. |
+| 1 | Requires the use of at least one digits in PIN. |
 | 2 | Does not allow the use of digits in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-AllowedValues-End -->
 
@@ -2165,7 +2165,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of lowercase letters in PIN. |
-| 1 | Requires the use of at least one lowercase letter in PIN. |
+| 1 | Requires the use of at least one lowercase letters in PIN. |
 | 2 | Does not allow the use of lowercase letters in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-AllowedValues-End -->
 
@@ -2317,7 +2317,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of special characters in PIN. |
-| 1 | Requires the use of at least one special character in PIN. |
+| 1 | Requires the use of at least one special characters in PIN. |
 | 2 | Does not allow the use of special characters in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-AllowedValues-End -->
 
@@ -2373,7 +2373,7 @@ A value of 2 corresponds to "Disallow." If you configure this policy setting to 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allows the use of uppercase letters in PIN. |
-| 1 | Requires the use of at least one uppercase letter in PIN. |
+| 1 | Requires the use of at least one uppercase letters in PIN. |
 | 2 | Does not allow the use of uppercase letters in PIN. |
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-AllowedValues-End -->
 

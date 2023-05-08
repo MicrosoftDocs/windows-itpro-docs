@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseModernAppManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,6 +17,7 @@ ms.topic: reference
 # EnterpriseModernAppManagement CSP
 
 <!-- EnterpriseModernAppManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](../enterprise-app-management.md).
 
 > [!NOTE]
@@ -273,6 +274,7 @@ Used to perform app installation.
 <!-- Device-AppInstallation-Description-End -->
 
 <!-- Device-AppInstallation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppInstallation-Editable-End -->
 
@@ -312,6 +314,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppInstallation-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is an optional node.
 
 > [!NOTE]
@@ -329,6 +332,7 @@ This is an optional node.
 <!-- Device-AppInstallation-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -374,6 +378,7 @@ Command to perform an install of an app package from a hosted location (this can
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. The following list shows the supported deployment options:
 
 - ForceApplicationShutdown
@@ -424,6 +429,7 @@ Last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastError-Editable-End -->
@@ -464,6 +470,7 @@ Description of last error relating to the app installation.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-End -->
@@ -504,6 +511,7 @@ An integer the indicates the progress of the app installation. For https locatio
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-End -->
@@ -544,6 +552,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-End -->
@@ -662,6 +671,7 @@ Used to manage licenses for store apps.
 <!-- Device-AppLicenses-StoreLicenses-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-Editable-End -->
 
@@ -701,6 +711,7 @@ License ID for a store installed app. The license ID is generally the PFN of the
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is an optional node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-Editable-End -->
 
@@ -741,6 +752,7 @@ Command to add license.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-End -->
 
@@ -780,6 +792,7 @@ Command to get license from the store.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-End -->
 
@@ -936,6 +949,7 @@ Used for inventory and app management (post-install).
 <!-- Device-AppManagement-Description-End -->
 
 <!-- Device-AppManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-Editable-End -->
 
@@ -975,6 +989,7 @@ Specifies the query for app inventory.
 <!-- Device-AppManagement-AppInventoryQuery-Description-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Query parameters:
 
 - Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
@@ -1016,6 +1031,7 @@ This is a required node. Query parameters:
 <!-- Device-AppManagement-AppInventoryQuery-DFProperties-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
@@ -1057,6 +1073,7 @@ Returns the results for app inventory that was created after the AppInventoryQue
 <!-- Device-AppManagement-AppInventoryResults-Description-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-AppInventoryResults-Editable-End -->
 
@@ -1070,6 +1087,7 @@ This is a required node.
 <!-- Device-AppManagement-AppInventoryResults-DFProperties-End -->
 
 <!-- Device-AppManagement-AppInventoryResults-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example of AppInventoryResults operation.
@@ -1108,6 +1126,7 @@ Here's an example of AppInventoryResults operation.
 <!-- Device-AppManagement-AppStore-Description-End -->
 
 <!-- Device-AppManagement-AppStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Used for managing apps from the Microsoft Store.
 <!-- Device-AppManagement-AppStore-Editable-End -->
 
@@ -1147,6 +1166,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Editable-End -->
@@ -1162,6 +1182,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -1247,6 +1268,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -1287,6 +1309,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -1326,6 +1349,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -1405,6 +1429,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -1484,6 +1509,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -1562,6 +1588,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -1641,6 +1668,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -1683,6 +1711,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -1723,6 +1752,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Possible values:
 
 - 0 = Not Installed
@@ -1806,6 +1836,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -1854,6 +1885,7 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -1909,6 +1941,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 NonRemovable requires admin permission. This setting can only be defined per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Editable-End -->
 
@@ -1931,6 +1964,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - Add an app to the nonremovable app policy list
@@ -2019,6 +2053,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Description-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > ReleaseManagement settings only apply to updates through the Microsoft Store.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-Editable-End -->
@@ -2294,6 +2329,7 @@ Reports the last error code returned by the update scan.
 <!-- Device-AppManagement-LastScanError-Description-End -->
 
 <!-- Device-AppManagement-LastScanError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-LastScanError-Editable-End -->
 
@@ -2332,6 +2368,7 @@ This is a required node.
 <!-- Device-AppManagement-nonStore-Description-End -->
 
 <!-- Device-AppManagement-nonStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Used to manage enterprise apps or developer apps that weren't acquired from the Microsoft Store.
 <!-- Device-AppManagement-nonStore-Editable-End -->
 
@@ -2371,6 +2408,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Editable-End -->
@@ -2386,6 +2424,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -2471,6 +2510,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -2511,6 +2551,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -2550,6 +2591,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -2629,6 +2671,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -2708,6 +2751,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -2786,6 +2830,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -2865,6 +2910,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -2907,6 +2953,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -2947,6 +2994,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Possible values:
 
 - 0 = Not Installed
@@ -3030,6 +3078,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -3078,6 +3127,7 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -3133,6 +3183,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 NonRemovable requires admin permission. This setting can only be defined per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Editable-End -->
 
@@ -3155,6 +3206,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - Add an app to the nonremovable app policy list
@@ -3555,6 +3607,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- Device-AppManagement-System-Description-End -->
 
 <!-- Device-AppManagement-System-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Reports apps installed as part of the operating system.
 <!-- Device-AppManagement-System-Editable-End -->
 
@@ -3594,6 +3647,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- Device-AppManagement-System-{PackageFamilyName}-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- Device-AppManagement-System-{PackageFamilyName}-Editable-End -->
@@ -3675,6 +3729,7 @@ Architecture of installed package. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -3715,6 +3770,7 @@ Date the app was installed. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -3754,6 +3810,7 @@ Install location of the app on the device. Value type is string.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -3833,6 +3890,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -3912,6 +3970,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -3990,6 +4049,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -4069,6 +4129,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -4111,6 +4172,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -4151,6 +4213,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 - 0 = Not Installed
@@ -4766,6 +4829,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -4814,6 +4878,7 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -4869,6 +4934,7 @@ This setting allows the IT admin to set an app to be nonremovable, or unable to 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 NonRemovable requires admin permission. This setting can only be defined per device, not per user. You can query the setting using AppInventoryQuery or AppInventoryResults.
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Editable-End -->
 
@@ -4891,6 +4957,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - Add an app to the nonremovable app policy list
@@ -5253,6 +5320,7 @@ Used to start the Windows Update scan.
 <!-- Device-AppManagement-UpdateScan-Description-End -->
 
 <!-- Device-AppManagement-UpdateScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- Device-AppManagement-UpdateScan-Editable-End -->
 
@@ -5331,6 +5399,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppInstallation-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppInstallation-{PackageFamilyName}-Editable-End -->
@@ -5346,6 +5415,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppInstallation-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -5391,6 +5461,7 @@ Command to perform an install of an app package from a hosted location (this can
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. The following list shows the supported deployment options:
 
 - ForceApplicationShutdown
@@ -5441,6 +5512,7 @@ Last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-LastError-Editable-End -->
@@ -5481,6 +5553,7 @@ Description of last error relating to the app installation.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-LastErrorDesc-Editable-End -->
@@ -5521,6 +5594,7 @@ An integer the indicates the progress of the app installation. For https locatio
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-End -->
@@ -5561,6 +5635,7 @@ Status of app installation. The following values are returned: NOT_INSTALLED (0)
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This element isn't present after the app is installed.
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-End -->
@@ -5718,6 +5793,7 @@ License ID for a store installed app. The license ID is generally the PFN of the
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is an optional node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-Editable-End -->
 
@@ -5758,6 +5834,7 @@ Command to add license.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-AddLicense-Editable-End -->
 
@@ -5797,6 +5874,7 @@ Command to get license from the store.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-GetLicenseFromStore-Editable-End -->
 
@@ -5992,6 +6070,7 @@ Specifies the query for app inventory.
 <!-- User-AppManagement-AppInventoryQuery-Description-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Query parameters:
 
 - Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
@@ -6031,6 +6110,7 @@ This is a required node. Query parameters:
 <!-- User-AppManagement-AppInventoryQuery-DFProperties-End -->
 
 <!-- User-AppManagement-AppInventoryQuery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 The following example sets the inventory query for the package names and checks the status for reinstallation for all main packages that are nonStore apps.
@@ -6072,6 +6152,7 @@ Returns the results for app inventory that was created after the AppInventoryQue
 <!-- User-AppManagement-AppInventoryResults-Description-End -->
 
 <!-- User-AppManagement-AppInventoryResults-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-AppInventoryResults-Editable-End -->
 
@@ -6085,6 +6166,7 @@ This is a required node.
 <!-- User-AppManagement-AppInventoryResults-DFProperties-End -->
 
 <!-- User-AppManagement-AppInventoryResults-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example of AppInventoryResults operation.
@@ -6123,6 +6205,7 @@ Here's an example of AppInventoryResults operation.
 <!-- User-AppManagement-AppStore-Description-End -->
 
 <!-- User-AppManagement-AppStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Used for managing apps from the Microsoft Store.
 <!-- User-AppManagement-AppStore-Editable-End -->
 
@@ -6162,6 +6245,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Editable-End -->
@@ -6177,6 +6261,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 Here's an example for uninstalling an app:
@@ -6262,6 +6347,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -6302,6 +6388,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -6341,6 +6428,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -6420,6 +6508,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -6499,6 +6588,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -6577,6 +6667,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -6656,6 +6747,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -6698,6 +6790,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -6738,6 +6831,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node. Possible values:
 
 - 0 = Not Installed
@@ -6821,6 +6915,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This node is only supported in the user context.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
@@ -6861,6 +6956,7 @@ The SettingValue and data represent a key value pair to be configured for the ap
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This setting only works for apps that support the feature and it's only supported in the user context.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-End -->
 
@@ -6875,6 +6971,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - The following example sets the value for the 'Server'
@@ -6933,6 +7030,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -6981,6 +7079,7 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 |Applicability Setting |CSP state  |Result  |
@@ -7036,6 +7135,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 <!-- User-AppManagement-AppStore-ReleaseManagement-Description-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > ReleaseManagement settings only apply to updates through the Microsoft Store.
 <!-- User-AppManagement-AppStore-ReleaseManagement-Editable-End -->
@@ -7311,6 +7411,7 @@ Reports the last error code returned by the update scan.
 <!-- User-AppManagement-LastScanError-Description-End -->
 
 <!-- User-AppManagement-LastScanError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-LastScanError-Editable-End -->
 
@@ -7349,6 +7450,7 @@ This is a required node.
 <!-- User-AppManagement-nonStore-Description-End -->
 
 <!-- User-AppManagement-nonStore-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Used to manage enterprise apps or developer apps that weren't acquired from the Microsoft Store.
 <!-- User-AppManagement-nonStore-Editable-End -->
 
@@ -7388,6 +7490,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Editable-End -->
@@ -7403,6 +7506,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -7484,6 +7588,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -7524,6 +7629,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -7563,6 +7669,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -7642,6 +7749,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -7721,6 +7829,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 
 Value type is int.
@@ -7801,6 +7910,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -7880,6 +7990,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -7922,6 +8033,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -7962,6 +8074,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Requried.
 
 - Not Installed = 0
@@ -8045,6 +8158,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This node is only supported in the user context.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
 
@@ -8084,6 +8198,7 @@ The SettingValue and data represent a key value pair to be configured for the ap
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This setting only works for apps that support the feature and it's only supported in the user context.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-End -->
 
@@ -8098,6 +8213,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 The following example sets the value for the 'Server'
 
 ```xml
@@ -8154,6 +8270,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -8202,6 +8319,7 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -8531,6 +8649,7 @@ Used to remove packages.
 <!-- User-AppManagement-RemovePackage-Description-End -->
 
 <!-- User-AppManagement-RemovePackage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Parameters:
 
 - Package
@@ -8551,6 +8670,7 @@ Parameters:
 <!-- User-AppManagement-RemovePackage-DFProperties-End -->
 
 <!-- User-AppManagement-RemovePackage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 The following example removes a package for all users:
@@ -8632,6 +8752,7 @@ Used to restore the Windows app to its initial configuration.
 <!-- User-AppManagement-System-Description-End -->
 
 <!-- User-AppManagement-System-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Reports apps installed as part of the operating system.
 <!-- User-AppManagement-System-Editable-End -->
 
@@ -8671,6 +8792,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 <!-- User-AppManagement-System-{PackageFamilyName}-Editable-End -->
@@ -8686,6 +8808,7 @@ Package family name (PFN) of the app. There is one for each PFN on the device wh
 <!-- User-AppManagement-System-{PackageFamilyName}-DFProperties-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Example**:
 
 ```xml
@@ -8769,6 +8892,7 @@ Architecture of installed package. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Architecture-Editable-End -->
@@ -8809,6 +8933,7 @@ Date the app was installed. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallDate-Editable-End -->
 
@@ -8848,6 +8973,7 @@ Install location of the app on the device. Value type is string.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-InstallLocation-Editable-End -->
@@ -8927,6 +9053,7 @@ Whether or not the app is a framework package. Value type is int. The value is 1
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsFramework-Editable-End -->
@@ -9006,6 +9133,7 @@ This node is used to identify whether the package is a stub package. A stub pack
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The value is 1 if the package is a stub package and 0 (zero) for all other cases.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-IsStub-Editable-End -->
 
@@ -9084,6 +9212,7 @@ Provides information about the status of the package. Value type is int. Valid v
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-End -->
@@ -9163,6 +9292,7 @@ Specifies whether the package state has changed and requires a reinstallation of
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-RequiresReinstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 > [!NOTE]
@@ -9205,6 +9335,7 @@ Resource ID of the app. This is null for the main app, ~ for a bundle, and conta
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Not applicable to XAP files.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-ResourceID-Editable-End -->
@@ -9245,6 +9376,7 @@ Registered users of the app and the package install state. If the query is at th
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-Users-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 
 - 0 = Not Installed
@@ -9328,6 +9460,7 @@ Interior node for all managed app setting values.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This node is only supported in the user context.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-Editable-End -->
 
@@ -9367,6 +9500,7 @@ The SettingValue and data represent a key value pair to be configured for the ap
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This setting only works for apps that support the feature and it's only supported in the user context.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-End -->
 
@@ -9381,6 +9515,7 @@ This setting only works for apps that support the feature and it's only supporte
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-DFProperties-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 **Examples**:
 
 - The following example sets the value for the 'Server'
@@ -9439,6 +9574,7 @@ Specifies whether you want to block a specific app from being updated via auto-u
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-System-{PackageFamilyName}-DoNotUpdate-Editable-End -->
 
@@ -9487,6 +9623,7 @@ Specify whether on a AMD64 device, across an app update, the architecture of the
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Expected Behavior on an AMD64 machine that has x86 flavor of an app installed (Most restrictive wins).
 
 | Applicability Setting | CSP state      | Result               |
@@ -9816,6 +9953,7 @@ Used to start the Windows Update scan.
 <!-- User-AppManagement-UpdateScan-Description-End -->
 
 <!-- User-AppManagement-UpdateScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 This is a required node.
 <!-- User-AppManagement-UpdateScan-Editable-End -->
 
