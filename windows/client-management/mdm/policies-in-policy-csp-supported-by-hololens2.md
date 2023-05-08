@@ -171,3 +171,6 @@ Footnotes:
 
 [Policy CSP](policy-configuration-service-provider.md)
 
+[Full HoloLens CSP Details](/windows/client-management/mdm/configuration-service-provider-support)
+
+
