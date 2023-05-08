@@ -4,7 +4,7 @@ description: Learn more about the Wifi Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -228,6 +228,105 @@ Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. 
 
 <!-- AllowManualWiFiConfiguration-End -->
 
+<!-- AllowWFAQosManagementDSCPToUPMapping-Begin -->
+## AllowWFAQosManagementDSCPToUPMapping
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+<!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowWFAQosManagementDSCPToUPMapping
+```
+<!-- AllowWFAQosManagementDSCPToUPMapping-OmaUri-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow or disallow the device to use the DSCP to UP Mapping feature from the Wi-Fi Alliance QOS Management Suite 2020. This policy requires a reboot to take effect.
+<!-- AllowWFAQosManagementDSCPToUPMapping-Description-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWFAQosManagementDSCPToUPMapping-Editable-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 2 |
+<!-- AllowWFAQosManagementDSCPToUPMapping-DFProperties-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | DSCP to UP Mapping will be disabled. |
+| 1 | DSCP to UP Mapping will be enabled. |
+| 2 (Default) | DSCP to UP Mapping will be enabled only if it is enabled in the network profile. |
+<!-- AllowWFAQosManagementDSCPToUPMapping-AllowedValues-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWFAQosManagementDSCPToUPMapping-Examples-End -->
+
+<!-- AllowWFAQosManagementDSCPToUPMapping-End -->
+
+<!-- AllowWFAQosManagementMSCS-Begin -->
+## AllowWFAQosManagementMSCS
+
+<!-- AllowWFAQosManagementMSCS-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+<!-- AllowWFAQosManagementMSCS-Applicability-End -->
+
+<!-- AllowWFAQosManagementMSCS-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Wifi/AllowWFAQosManagementMSCS
+```
+<!-- AllowWFAQosManagementMSCS-OmaUri-End -->
+
+<!-- AllowWFAQosManagementMSCS-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow or disallow the device to automatically request to enable Mirrored Stream Classification Service when connecting to a MSCS capable network. This is a Quality of Service feature associated with Wi-Fi Alliance QoS Management Suite 2020. This policy requires a reboot to take effect.
+<!-- AllowWFAQosManagementMSCS-Description-End -->
+
+<!-- AllowWFAQosManagementMSCS-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWFAQosManagementMSCS-Editable-End -->
+
+<!-- AllowWFAQosManagementMSCS-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWFAQosManagementMSCS-DFProperties-End -->
+
+<!-- AllowWFAQosManagementMSCS-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | The device will not automatically request to enable MSCS when connecting to a MSCS capable network. |
+| 1 (Default) | The device will automatically request to enable MSCS when connecting to a MSCS capable network. |
+<!-- AllowWFAQosManagementMSCS-AllowedValues-End -->
+
+<!-- AllowWFAQosManagementMSCS-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWFAQosManagementMSCS-Examples-End -->
+
+<!-- AllowWFAQosManagementMSCS-End -->
+
 <!-- AllowWiFi-Begin -->
 ## AllowWiFi
 
@@ -245,7 +344,7 @@ Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. 
 
 <!-- AllowWiFi-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy has been deprecated.
+Allow or disallow WiFi connection.
 <!-- AllowWiFi-Description-End -->
 
 <!-- AllowWiFi-Editable-Begin -->
