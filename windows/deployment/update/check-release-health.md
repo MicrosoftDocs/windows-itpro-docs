@@ -19,6 +19,19 @@ If you're unable to sign in to the Microsoft 365 admin portal, check the [Micros
 
 To be informed about the latest updates and releases, follow [@WindowsUpdate](https://twitter.com/windowsupdate) on Twitter.
 
+## Prerequisites
+
+To display the Windows release health page in the Microsoft 365 admin center, ensure the following requirements are met:
+
+- An admin role for Microsoft 365 admin center
+Licensing: 
+
+- Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+- Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+
+> [!NOTE]
+> Currently, Windows release health isn't available for Government Community Cloud (GCC) tenants.
+
 ## How to review Windows release health information
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an administrator account.
