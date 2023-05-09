@@ -2,12 +2,12 @@
 title: Accounts DDF file
 description: View the XML file containing the device description framework (DDF) for the Accounts configuration service provider.
 ms.author: vinpa
-ms.topic: article
+ms.topic: reference
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 04/17/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 

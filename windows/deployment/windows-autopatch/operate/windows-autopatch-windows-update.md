@@ -1,7 +1,7 @@
 ---
 title: Customize Windows Update settings
 description: This article explains how to customize Windows Updates in Windows Autopatch
-ms.date: 03/08/2023
+ms.date: 05/02/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -30,6 +30,9 @@ For each tenant, at the deployment ring level, there are two cadence types to co
 - [Deadline-driven](#deadline-driven)
 - [Scheduled install](#scheduled-install)
 
+> [!NOTE]
+> Windows Autopatch uses the [Update rings policy for Windows 10 and later in Microsoft Intune](/mem/intune/protect/windows-10-update-rings) to apply either **Deadline-driven** or **Scheduled install** cadence types. Microsoft Intune implements [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) using the settings available in the [Update policy CSP](/windows/client-management/mdm/policy-csp-update).
+
 #### Deadline-driven
 
 With the deadline-drive cadence type, you can control and customize the deferral, deadline, and grace period to meet your specific business needs and organizational requirements.
@@ -53,9 +56,11 @@ However, if an update has already started for a particular deployment ring, Wind
 #### Scheduled install
 
 > [!NOTE]
-> If you select the Schedule install cadence type, the devices in that ring won’t be counted towards the [Windows quality update service level objective](../operate/windows-autopatch-windows-quality-update-overview.md#service-level-objective).
+>If you select the Schedule install cadence type, the devices in that ring won’t be counted towards the [Windows quality update service level objective](../operate/windows-autopatch-windows-quality-update-overview.md#service-level-objective).
 
-While the Windows Autopatch default options will meet the majority of the needs for regular users with corporate devices, we understand there are devices that run critical activities and can only receive Windows Updates at specific times. The **Scheduled install** cadence type will prevent forced restarts and interruptions to critical business activities for end users, thereby minimizing disruptions. Upon selecting the **Scheduled install** cadence type, any previously set deadlines and grace periods will be removed. The expectation is that devices would only update and restart according to the time specified.
+While the Windows Autopatch default options will meet the majority of the needs for regular users with corporate devices, we understand there are devices that run critical activities and can only receive Windows Updates at specific times. The **Scheduled install** cadence type will minimize disruptions by preventing forced restarts and interruptions to critical business activities for end users. Upon selecting the **Scheduled install** cadence type, any previously set deadlines and grace periods will be removed. Devices will only update and restart according to the time specified. 
+
+If other applications force a device to restart outside of the specified time and a Windows Update is pending a restart, the Windows Update will complete its installation at this time. For this reason, ensure that you consider your update and restart scenarios for devices running business critical activities, or restart sensitive workloads before using the Scheduled Install option.
 
 > [!NOTE]
 > The compliance deadline and grace period for Windows quality updates won't be configured for the Scheduled Install cadence type.
@@ -89,6 +94,9 @@ In addition to the cadence type, you can also manage the end user notification s
 For more information, see [Windows Update settings you can manage with Intune update ring policies for Windows 10/11 devices](/mem/intune/protect/windows-update-settings).
 
 ## Customize the Windows Update deployment cadence
+
+> [!IMPORTANT]
+> The Windows update setting customizations can take up to eight hours to be applied to devices. Windows Autopatch uses Microsoft Intune as its device management solution and that's the average frequency Windows devices take to communicate back to Microsoft Intune with new instructions to apply new software update settings.<p>For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).</p>
 
 **To customize the Windows Update deployment cadence:**
 

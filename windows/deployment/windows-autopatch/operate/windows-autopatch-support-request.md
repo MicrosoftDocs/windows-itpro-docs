@@ -39,9 +39,6 @@ If you have a **Premier** or **Unified** support contract, when you submit a new
 
 Depending on your support contract, the following severity options are available:
 
-> [!NOTE]
-> Selecting either severity **A** or **Critical** issue limits you to a phone support case. This is the fastest support option.
-
 | Support contract | Severity options |
 | ----- | ----- |
 | Premier | Severity A, B or C |

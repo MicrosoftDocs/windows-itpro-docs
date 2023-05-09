@@ -28,8 +28,8 @@ ms.localizationpriority: medium
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
 | BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
-| BytesfromHTTP | Total number of bytes received over HTTP. This represents all HTTP sources, which includes BytesFromCacheServer |
-| Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but is not uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
+| BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, which includes BytesFromCacheServer |
+| Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but isn't uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
 | BytesFromCacheServer | Total number of bytes received from cache server (MCC) |
 | BytesFromLanPeers | Total number of bytes received from peers found on the LAN |
@@ -98,9 +98,19 @@ Using the `-Verbose` option returns additional information:
 - Bytes from CDN (the number of bytes received over HTTP)
 - Average number of peer connections per download
 
-**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+**Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo`, which returns  a real-time list of potential peers per file, including which peers are successfully connected and the total bytes sent or received from each peer.
 
-Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to that from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
+| Key | Value |
+| --- | --- |
+| IP | Peer device IP address |
+| PeerType | The type of peer used (LAN/Group/Internet/LinkLocal), determined by the Delivery Optimization Service, except for the LinkLocal option, which uses the DNS-SD protocol. |
+| ConnectionEstablished | True/False to indicate if peer is connected |
+| BytesSent | Bytes sent to/from the peer on the current connection |
+| BytesReceived | Bytes received to/from the peer on the current connection |
+| UploadRateBytes | Average value of upload rates on the current connection, over the past 20 seconds |
+| DownloadRateBytes | Average value of download rates on the current connection, over the past 20 seconds |
+
+Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to data from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
 #### Manage the Delivery Optimization cache
 
@@ -110,7 +120,7 @@ Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth
 
 `set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]` extends expiration for a single specific file in the cache.
 
-You can now "pin" files to keep them persistent in the cache. You can only do this with files that are downloaded in modes 1, 2, or 3.
+You can now "pin" files to keep them persistent in the cache, only with files that are downloaded in modes 1, 2, or 3.
 
 `set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
 
@@ -155,6 +165,6 @@ Using the `-ListConnections` option returns these details about peers:
 
 `Get-DeliveryOptimizationLog [-Path <etl file path, supports wildcards>] [-Flush]`
 
-If `Path` is not specified, this cmdlet reads all logs from the DoSvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops DoSvc before reading logs.
+If `Path` isn't specified, this cmdlet reads all logs from the DoSvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops DoSvc before reading logs.
 
 Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.

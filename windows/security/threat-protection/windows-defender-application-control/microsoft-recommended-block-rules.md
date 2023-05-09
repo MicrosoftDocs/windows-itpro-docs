@@ -113,9 +113,7 @@ If you wish to use this blocklist policy on Windows Server 2016, locate the deny
 
 The blocklist policy below includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone WDAC policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy below using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the sample policy below.
 
-<br>
-<details>
-  <summary>Expand this section to see the WDAC policy XML</summary>
+**WDAC policy XML**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -183,7 +181,7 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
     <Deny ID="ID_DENY_RUNSCRIPTHELPER" FriendlyName="runscripthelper.exe" FileName="runscripthelper.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_VISUALUIAVERIFY" FriendlyName="visualuiaverifynative.exe" FileName="visualuiaverifynative.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_WEBCLNT" FriendlyName="BlockWebDAV WebClnt" FileName="davsvc.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355"/> 
+    <Deny ID="ID_DENY_WEBCLNT" FriendlyName="BlockWebDAV WebClnt" FileName="davsvc.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355"/>
     <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -893,8 +891,8 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
           <FileRuleRef RuleID="ID_DENY_WSL" />
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
-          <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
-          <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+          <FileRuleRef RuleID="ID_DENY_MSXML3" />
+          <FileRuleRef RuleID="ID_DENY_MSXML6" />
           <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
@@ -1511,8 +1509,6 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
   <HvciOptions>0</HvciOptions>
 </SiPolicy>
 ```
-
-</details>
 
 ## More information
 

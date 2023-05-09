@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,6 +18,8 @@ ms.topic: reference
 
 <!-- Defender-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> [ControlPolicyConflict (MDMWinsOverGP)](policy-csp-controlpolicyconflict.md) is not applicable to the Defender CSP. If using MDM, remove your current Defender group policy settings to avoid conflicts with your MDM settings.
 <!-- Defender-Editable-End -->
 
 <!-- Defender-Tree-Begin -->
@@ -61,6 +63,7 @@ The following list shows the Defender configuration service provider nodes:
     - [HideExclusionsFromLocalUsers](#configurationhideexclusionsfromlocalusers)
     - [IntelTDTEnabled](#configurationinteltdtenabled)
     - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
+    - [OobeEnableRtpAndSigUpdate](#configurationoobeenablertpandsigupdate)
     - [PassiveRemediation](#configurationpassiveremediation)
     - [PlatformUpdatesChannel](#configurationplatformupdateschannel)
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
@@ -1805,6 +1808,55 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 <!-- Device-Configuration-MeteredConnectionUpdates-Examples-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Begin -->
+### Configuration/OobeEnableRtpAndSigUpdate
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Applicability-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/OobeEnableRtpAndSigUpdate
+```
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-OmaUri-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to configure whether real-time protection and Security Intelligence Updates are enabled during OOBE (Out of Box experience).
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Description-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Editable-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-DFProperties-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE. |
+| 0 (Default) | If you either disable or do not configure this setting, real-time protection and Security Intelligence Updates during OOBE is not enabled. |
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-AllowedValues-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Examples-End -->
+
+<!-- Device-Configuration-OobeEnableRtpAndSigUpdate-End -->
 
 <!-- Device-Configuration-PassiveRemediation-Begin -->
 ### Configuration/PassiveRemediation

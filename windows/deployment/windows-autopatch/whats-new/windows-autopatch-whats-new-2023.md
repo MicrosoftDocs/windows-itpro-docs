@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 03/30/2023
+ms.date: 05/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -18,6 +18,51 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## May 2023
+
+### May 2023 feature release
+
+| Article | Description |
+| ----- | ----- |
+| [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md) | Updated article to include Windows Autopatch groups. The Windows Autopatch groups feature is in public preview |
+| [Register your devices](../deploy/windows-autopatch-register-devices.md) | Updated article to include Windows Autopatch groups. The Windows Autopatch groups feature is in public preview |
+| [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Software update management](../operate/windows-autopatch-groups-update-management.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update overview](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update end user experience](../operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update signals](../operate/windows-autopatch-groups-windows-quality-update-signals.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update communications](../operate/windows-autopatch-groups-windows-quality-update-communications.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows feature update overview](../operate/windows-autopatch-groups-windows-feature-update-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Manage Windows feature update](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality and feature update reports overview](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update summary dashboard](../operate/windows-autopatch-groups-windows-quality-update-summary-dashboard.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update status report](../operate/windows-autopatch-groups-windows-quality-update-status-report.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update trending report](../operate/windows-autopatch-groups-windows-quality-update-trending-report.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows feature update summary dashboard](../operate/windows-autopatch-groups-windows-feature-update-summary-dashboard.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows feature update status report](../operate/windows-autopatch-groups-windows-feature-update-status-report.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows feature update trending report](../operate/windows-autopatch-groups-windows-feature-update-trending-report.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality and feature update device alerts](../operate/windows-autopatch-device-alerts.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md) | Add new Policy health and remediation feature. This feature is in public preview |
+| [Windows Autopatch groups public preview addendum](../references/windows-autopatch-groups-public-preview-addendum.md) | Added addendum for the Windows Autopatch groups public preview |
+
+## April 2023
+
+### April feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the [Deployment rings for Windows 10 and later](../references/windows-autopatch-changes-to-tenant.md#deployment-rings-for-windows-10-and-later) section |
+
+### April 2023 service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC542842](https://admin.microsoft.com/adminportal/home#/MessageCenter) | April 2023 Windows Autopatch baseline configuration update |
+| [MC538728](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Update: Windows Autopatch quality updates release communication |
+| [MC536881](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Take action: Review Windows Autopatch Tenant management blade for potential action required to prevent inactive status |
+
 ## March 2023
 
 ### March feature releases or updates
@@ -32,6 +77,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC536880](https://admin.microsoft.com/adminportal/home#/MessageCenter) | New Features in Windows Autopatch Public Preview |
+| [MC535259](https://admin.microsoft.com/adminportal/home#/MessageCenter) | March 2023 Windows Autopatch baseline configuration update |
 | [MC527439](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Prepare for Windows Autopatch Groups |
 | [MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public preview - Customize Windows Update settings |
 

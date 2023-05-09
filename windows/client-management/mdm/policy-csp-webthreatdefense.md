@@ -4,7 +4,7 @@ description: Learn more about the WebThreatDefense Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,63 +25,63 @@ ms.topic: reference
 > In Microsoft Intune, this CSP is listed under the **Enhanced Phishing Protection** category.
 <!-- WebThreatDefense-Editable-End -->
 
-<!-- CaptureThreatWindow-Begin -->
-## CaptureThreatWindow
+<!-- AutomaticDataCollection-Begin -->
+## AutomaticDataCollection
 
-<!-- CaptureThreatWindow-Applicability-Begin -->
+<!-- AutomaticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- CaptureThreatWindow-Applicability-End -->
+<!-- AutomaticDataCollection-Applicability-End -->
 
-<!-- CaptureThreatWindow-OmaUri-Begin -->
+<!-- AutomaticDataCollection-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/CaptureThreatWindow
+./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/AutomaticDataCollection
 ```
-<!-- CaptureThreatWindow-OmaUri-End -->
+<!-- AutomaticDataCollection-OmaUri-End -->
 
-<!-- CaptureThreatWindow-Description-Begin -->
+<!-- AutomaticDataCollection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Configures Enhanced Phishing Protection notifications to allow to capture the suspicious window on client machines for further threat analysis.
-<!-- CaptureThreatWindow-Description-End -->
+Automatically collect website or app content when additional analysis is needed to help identify security threats.
+<!-- AutomaticDataCollection-Description-End -->
 
-<!-- CaptureThreatWindow-Editable-Begin -->
+<!-- AutomaticDataCollection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- CaptureThreatWindow-Editable-End -->
+<!-- AutomaticDataCollection-Editable-End -->
 
-<!-- CaptureThreatWindow-DFProperties-Begin -->
+<!-- AutomaticDataCollection-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1 |
-<!-- CaptureThreatWindow-DFProperties-End -->
+| Default Value  | 0 |
+<!-- AutomaticDataCollection-DFProperties-End -->
 
-<!-- CaptureThreatWindow-AllowedValues-Begin -->
+<!-- AutomaticDataCollection-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled. |
-| 1 (Default) | Enabled. |
-<!-- CaptureThreatWindow-AllowedValues-End -->
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- AutomaticDataCollection-AllowedValues-End -->
 
-<!-- CaptureThreatWindow-GpMapping-Begin -->
+<!-- AutomaticDataCollection-GpMapping-Begin -->
 **Group policy mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | CaptureThreatWindow |
+| Name | AutomaticDataCollection |
 | Path | WebThreatDefense > AT > WindowsComponents > WebThreatDefense |
-<!-- CaptureThreatWindow-GpMapping-End -->
+<!-- AutomaticDataCollection-GpMapping-End -->
 
-<!-- CaptureThreatWindow-Examples-Begin -->
+<!-- AutomaticDataCollection-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- CaptureThreatWindow-Examples-End -->
+<!-- AutomaticDataCollection-Examples-End -->
 
-<!-- CaptureThreatWindow-End -->
+<!-- AutomaticDataCollection-End -->
 
 <!-- NotifyMalicious-Begin -->
 ## NotifyMalicious

@@ -13,7 +13,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
-ms.date: 03/03/2023
+ms.date: 05/09/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -24,30 +24,18 @@ ms.topic: article
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and above
+- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
 
-Windows Defender Application Control (WDAC) can control what runs on Windows 10 and Windows 11, by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
-
-WDAC is used to restrict devices to run only approved apps, while the operating system is hardened against kernel memory attacks using [hypervisor-protected code integrity (HVCI)](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
+Windows Defender Application Control (WDAC) can control what runs on Windows 10, Windows 11, and Windows Server 2016 and later, by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy XML, use the [WDAC Policy Wizard](/windows/security/threat-protection/windows-defender-application-control/wdac-wizard) or the [Set-RuleOption](/powershell/module/configci/set-ruleoption) PowerShell cmdlet.
 
-- To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy, by running the following command:
-
-    `Set-RuleOption -FilePath <Path to policy XML> -Option 0`
-
-    A policy created without the `-UserPEs` option has no rules for user mode code. If you enable UMCI (Option 0) for such a policy, all applications, including critical Windows user session code, are blocked. In audit mode, WDAC simply logs an event, but when enforced, all user mode code is blocked. To create a policy that includes user mode executables (applications), run `New-CIPolicy` with the `-UserPEs` option.
-
-- To disable UMCI on an existing WDAC policy, delete rule option 0 by running the following command:
-
-    `Set-RuleOption -FilePath <Path to policy XML> -Option 0 -Delete`
-
-You can set several rule options within a WDAC policy. Table 1 describes each rule option, and whether they have supplemental policies. However, option 5 isn't implemented as it's reserved for future work, and option 7 isn't supported.
+You can set several rule options within a WDAC policy. Table 1 describes each rule option, and whether supplemental policies can set them. Some rule options are reserved for future work or not supported.
 
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
@@ -58,11 +46,11 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 |------------ | ----------- | ----------- |
 | **0 Enabled:UMCI** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. | No |
 | **1 Enabled:Boot Menu Protection** | This option isn't currently supported. | No |
-| **2 Required:WHQL** | By default, legacy drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Kernel drivers built for Windows 10 should be WHQL certified. | No |
+| **2 Required:WHQL** | By default, kernel drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to run. Enabling this rule requires that every driver is WHQL signed and removes legacy driver support. Kernel drivers built for Windows 10 should be WHQL certified. | No |
 | **3 Enabled:Audit Mode (Default)** | Instructs WDAC to log information about applications, binaries, and scripts that would have been blocked, if the policy was enforced. You can use this option to identify the potential impact of your WDAC policy, and use the audit events to refine the policy before enforcement. To enforce a WDAC policy, delete this option. | No |
-| **4 Disabled:Flight Signing** | If enabled, flightroot-signed binaries aren't trusted. This option is useful for organizations that only want to run released binaries, not pre-release Windows builds. | No |
+| **4 Disabled:Flight Signing** | If enabled, binaries from Windows Insider builds aren't trusted. This option is useful for organizations that only want to run released binaries, not prerelease Windows builds. | No |
 | **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. | Yes |
-| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. | Yes |
+| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and any supplemental policies must also be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. Certificates that are trusted for supplemental policies must be identified in the SupplementalPolicySigners section. | Yes |
 | **7 Allowed:Debug Policy Augmented** | This option isn't currently supported. | Yes |
 | **8 Required:EV Signers** | This option isn't currently supported. | No |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
@@ -72,17 +60,20 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) | Yes |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft's Intelligent Security Graph (ISG). | Yes |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option causes WDAC to periodically revalidate the reputation for files previously authorized by the ISG.| No |
-| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot.<br/> NOTE: This option is only supported on Windows 10, version 1709 and above.| No |
-| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it.<br/> NOTE: This option is only supported on Windows 10, version 1903 and above. | No |
-| **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator.<br/> NOTE: This option is only supported on Windows 10, version 1903 and above. | Yes |
-| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries.<br/> NOTE: This option is only supported on Windows 10, version 1803 and above. | No |
-| **20 Enabled:Revoked Expired As Unsigned** | Use this option to treat binaries signed with expired and/or revoked certificates as "Unsigned binaries" for user-mode process/components, under enterprise signing scenarios. | No |
+| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot.<br/> NOTE: This option is only supported on Windows 10, version 1709 and later, or Windows Server 2019 and later.| No |
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it.<br/> NOTE: This option is only supported on Windows 10, version 1903 and later, or Windows Server 2022 and later. | No |
+| **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator.<br/> NOTE: This option is only supported on Windows 10, version 1903 and later, or Windows Server 2022 and later. | Yes |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries.<br/> NOTE: This option is only supported on Windows 10, version 1803 and later, or Windows Server 2019 and later. | No |
+| **20 Enabled:Revoked Expired As Unsigned** | Use this option to treat binaries signed with revoked certificates, or expired certificates with the Lifetime Signing EKU on the signature, as "Unsigned binaries" for user-mode process/components, under enterprise signing scenarios. | No |
 
 ## Windows Defender Application Control file rule levels
 
-File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as granular as the hash of each binary, or as general as a CA certificate. You specify file rule levels when using WDAC PowerShell cmdlets to create and modify policies.
+File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as granular as the hash of each binary, or as general as a CA certificate. You specify file rule levels when using the WDAC Wizard or WDAC PowerShell cmdlets to create and modify policies.
 
 Each file rule level has advantages and disadvantages. Use Table 2 to select the appropriate protection level for your available administrative resources and WDAC deployment scenario.
+
+> [!NOTE]
+> WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. Files can be allowed instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
 
 ### Table 2. Windows Defender Application Control policy - file rule levels
 
@@ -94,7 +85,7 @@ Each file rule level has advantages and disadvantages. Use Table 2 to select the
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
 | **Publisher** | This level combines the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. You can use this rule level to trust a certificate issued by a particular CA and issued to a specific company you trust (such as Intel, for device drivers). |
 | **FilePublisher** | This level combines the "FileName" attribute of the signed file, plus "Publisher" (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
-| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates typically have shorter validity periods than other certificate levels, so the WDAC policy must be updated whenever these certificates change. |
+| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates typically have shorter validity periods than other certificate levels, so the WDAC policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root because the scan doesn't resolve the complete certificate chain via the local root stores or with an online check. |
 | **RootCertificate** | Not supported. |
 | **WHQL** | Only trusts binaries that have been submitted to Microsoft and signed by the Windows Hardware Qualification Lab (WHQL). This level is primarily for kernel binaries. |
@@ -129,7 +120,7 @@ As part of normal operations, they'll eventually install software updates, or pe
 WDAC has a built-in file rule conflict logic that translates to precedence order. It first processes all explicit deny rules it finds. Then, it processes any explicit allow rules. If no deny or allow rule exists, WDAC checks for a [Managed Installer claim](deployment/deploy-wdac-policies-with-memcm.md) if allowed by the policy. Lastly, WDAC falls back to the [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md) if allowed by the policy.
 
 > [!NOTE]
-> To make it easier to reason over your WDAC policies, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
+> To make it easier to reason over your WDAC policies, we recommend maintaining separate ALLOW and DENY policies on Windows versions that support [multiple WDAC policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies).
 
 ## More information about filepath rules
 
@@ -176,9 +167,6 @@ Without a wildcard, the filepath rule allows only a specific file (ex. `C:\foo\b
 > [!NOTE]
 > When authoring WDAC policies with Configuration Manager, there is an option to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, Configuration Manager performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the Configuration Manager policy is reapplied.
 
-> [!NOTE]
-> There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.
-
 ## More information about hashes
 
 WDAC uses the [Authenticode/PE image hash algorithm](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx) when calculating the hash of a file. Unlike the more commonly known [flat file hash](/powershell/module/microsoft.powershell.utility/get-filehash), the Authenticode hash calculation omits the file's checksum, the Certificate Table, and the Attribute Certificate Table. Therefore, the Authenticode hash of a file doesn't change when the file's signatures and timestamps are altered, or when a digital signature is removed from the file. With the help of the Authenticode hash, WDAC provides added security and less management overhead so customers don't need to revise the policy hash rules when the digital signature on the file is updated.
@@ -190,7 +178,7 @@ The Authenticode/PE image hash can be calculated for digitally signed and unsign
 The PowerShell cmdlet produces an Authenticode Sha1 Hash, Sha256 Hash, Sha1 Page Hash, Sha256 Page Hash.
 During validation, WDAC selects which hashes are calculated based on how the file is signed and the scenario in which the file is used.  For example, if the file is page-hash signed, WDAC validates each page of the file and avoids loading the entire file in memory to calculate the full sha256 authenticode hash.
 
-In the cmdlets, rather than try to predict which hash will be used, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient to changes in how the file is signed since your WDAC policy has more than one hash available for the file already.
+In the cmdlets, rather than try to predict which hash will be used, we precalculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient to changes in how the file is signed since your WDAC policy has more than one hash available for the file already.
 
 ### Why does scan create eight hash rules for certain XML files?
 

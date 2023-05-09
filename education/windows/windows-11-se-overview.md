@@ -96,6 +96,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
 | `ColorVeil`                               | 4.0.0.175         | Win32    | `East-Tec`                                | 
 | `ContentKeeper Cloud`                     | 9.01.45           | Win32    | `ContentKeeper Technologies`              |
+| `DigiExam`                                | 14.0.6            | Win32    | `Digiexam`                                |
 | `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
 | `DRC INSIGHT Online Assessments`          | 13.0.0.0          | `Store`  | `Data recognition Corporation`            |
 | `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
@@ -103,6 +104,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `EasyReader`                              | 10.0.3.481        | Win32    | `Dolphin Computer Access`                 |
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
 | `eTests`                                  | 4.0.25            | Win32    | `CASAS`                                   |
+| `Exam Writepad`                           | 22.10.14.1834     | Win32    | `Sheldnet`                                |
 | `FirstVoices Keyboard`                    | 15.0.270          | Win32    | `SIL International`                       |
 | `FortiClient`                             | 7.2.0.4034+       | Win32    | `Fortinet`                                |
 | `Free NaturalReader`                      | 16.1.2            | Win32    | `Natural Soft`                            |
@@ -126,7 +128,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `MetaMoJi ClassRoom`                      | 3.12.4.0          | `Store`  | `MetaMoJi Corporation`                    |
 | `Microsoft Connect`                       | 10.0.22000.1      | `Store`  | `Microsoft`                               |
 | `Mozilla Firefox`                         | 105.0.0           | Win32    | `Mozilla`                                 |
-| `NAPLAN`                                  | 2.5.0             | Win32    | `NAP`                                     |
+| `NAPLAN`                                  | 5.2.2             | Win32    | `NAP`                                     |
 | `Netref Student`                          | 23.1.0            | Win32    | `NetRef`                                  |
 | `NetSupport Manager`                      | 12.01.0014        | Win32    | `NetSupport`                              |
 | `NetSupport Notify`                       | 5.10.1.215        | Win32    | `NetSupport`                              |
@@ -149,7 +151,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 |`TX Secure Browser`                        | 15.0.0            | Win32    | `Cambium Development`                     |
 | `VitalSourceBookShelf`                    | 10.2.26.0         | Win32    | `VitalSource Technologies Inc`            |
 | `Winbird`                                 | 19                | Win32    | `Winbird Co., Ltd.`                       |
-| `WordQ`                                   | 5.4.23            | Win32    | `WordQ`                                   |
+| `WordQ`                                   | 5.4.29            | Win32    | `WordQ`                                   |
 | `Zoom`                                    | 5.12.8 (10232)    | Win32    | `Zoom`                                    |
 | `ZoomText Fusion`                         | 2022.2109.10      | Win32    | `Freedom Scientific`                      |
 | `ZoomText Magnifier/Reader`               | 2022.2109.25      | Win32    | `Freedom Scientific`                      |
