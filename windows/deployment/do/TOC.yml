@@ -27,7 +27,7 @@
       href: delivery-optimization-test.md
 - name: Microsoft Connected Cache
   items:
-    - name: What is Microsoft Connected Cache
+    - name: What is Microsoft Connected Cache?
       href: waas-microsoft-connected-cache.md
     - name: MCC for Enterprise and Education
       items:
