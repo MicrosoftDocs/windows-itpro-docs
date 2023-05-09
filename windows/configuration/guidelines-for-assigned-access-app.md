@@ -1,17 +1,18 @@
 ---
-title: Guidelines for choosing an app for assigned access (Windows 10/11)
+title: Guidelines for choosing an app for assigned access
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
-keywords: [kiosk, lockdown, assigned access]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
 ms.reviewer: sybruckm
 manager: aaroncz
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier2
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -48,7 +49,7 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 Starting with Windows 10 version 1809+, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
-In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure more settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
+In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure more settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren't allowed to go to a competitor's website. 
 
 >[!NOTE]
 >Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser. Kiosk Browser does not support .pdfs.
@@ -153,7 +154,7 @@ You can create your own web browser Windows app by using the WebView class. Lear
 
 ## Secure your information
 
-Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
+Avoid selecting Windows apps that may expose the information you don't want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
 
 ## App configuration
 

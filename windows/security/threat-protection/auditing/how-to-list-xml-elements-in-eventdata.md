@@ -1,7 +1,7 @@
 ---
 title: How to get a list of XML data name elements in <EventData> (Windows 10)
 description: This reference article for the IT professional explains how to use PowerShell to get a list of XML data name elements that can appear in <EventData>.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,7 +11,8 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # How to get a list of XML data name elements in EventData

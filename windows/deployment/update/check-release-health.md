@@ -1,34 +1,19 @@
 ---
 title: How to check Windows release health
 description: Check the release health status of Microsoft 365 services before you call support to see if there's an active service interruption.
-ms.date: 08/16/2022
-ms.author: v-nishmi
-author: DocsPreview
-manager: jren
+ms.date: 05/03/2023
+ms.author: mstewart
+author: mestew
+manager: aaroncz
 ms.reviewer: mstewart
 ms.topic: how-to
-ms.prod: w10
-localization_priority: medium
-ms.custom: 
-- Adm_O365
-- 'O365P_ServiceHealthModern'
-- 'O365M_ServiceHealthModern'
-- 'O365E_ViewStatusServices'
-- 'O365E_ServiceHealthModern'
-- 'seo-marvel-apr2020'
-ms.collection:
-- Ent_O365
-- M365-subscription-management
-search.appverid:
-- MET150
-- MOE150
-- BCS160
-- IWA160
+ms.prod: windows-client
+ms.technology: itpro-updates
 ---
 
 # How to check Windows release health
 
-The Windows release health page in the Microsoft 365 admin center enables you to view the latest information on known issues for Windows monthly and feature updates. A known issue is an issue that has been identified in a Windows monthly update or feature update that impacts Windows devices. The Windows release health page is designed to inform you about known issues. You can use this information to troubleshoot issues your users may be experiencing. You can also determine when, and at what scale, to deploy an update in your organization.
+The Windows release health page in the Microsoft 365 admin center enables you to view the latest information on known issues for Windows monthly and feature updates. A known issue is an issue that impacts Windows devices and that has been identified in a Windows monthly update or feature update. The Windows release health page is designed to inform you about known issues. You can use this information to troubleshoot issues your users may be experiencing. You can also determine when, and at what scale, to deploy an update in your organization.
 
 If you're unable to sign in to the Microsoft 365 admin portal, check the [Microsoft 365 service health](https://status.office365.com) status page to check for known issues preventing you from signing into your tenant.
 
@@ -36,7 +21,7 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
 ## How to review Windows release health information
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), and sign in with an administrator account.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an administrator account.
 
     > [!NOTE]
     > By default, the Windows release health page is available to individuals who have been assigned the global admin or service administrator role for their tenant. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
@@ -68,6 +53,21 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
    Select the **Issue title** to access more information, including a link to the history of all status updates posted while we work on a solution. For example:
 
    ![A screenshot showing issue details.](images/WRH-known-issue-detail.png)
+
+## Sign up for email notifications 
+
+You have the option to sign up for email notifications about Windows known issues and informational updates. Notifications include changes in issue status, new workarounds, and issue resolutions. To subscribe to notifications:
+
+1. Go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth).
+1. Select **Preferences** > **Email**, then select **Send me email notifications about Windows release health**.
+1. Specify the following information: 
+    - Email address for the notifications
+        - Each admin account can specify up to two email addresses under their email preferences
+    - Windows versions to be notified about
+1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect. 
+
+> [!Note]
+> When a single known issue affects multiple versions of Windows, you'll receive only one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
 
 ## Status definitions
 

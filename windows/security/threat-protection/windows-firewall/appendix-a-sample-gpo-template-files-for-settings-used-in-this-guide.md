@@ -1,27 +1,12 @@
 ---
 title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows)
 description: Use sample template files import an XML file containing customized registry preferences into a Group Policy Object (GPO).
-ms.assetid: 75930afd-ab1b-4e53-915b-a28787814b38
-ms.reviewer: jekrynit
-ms.author: paoloma
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Appendix A: Sample GPO Template Files for Settings Used in this Guide

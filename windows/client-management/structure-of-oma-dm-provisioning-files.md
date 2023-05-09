@@ -1,14 +1,17 @@
 ---
 title: Structure of OMA DM provisioning files
 description: Learn about the structure of OMA DM provisioning files, for example how each message is composed of a header, specified by the SyncHdr element, and a message body.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Structure of OMA DM provisioning files
@@ -65,16 +68,15 @@ The following example shows the general structure of the XML document sent by th
 
 SyncHdr includes the following information:
 
--   Document Type Definition (DTD) and protocol version numbers
+- Document Type Definition (DTD) and protocol version numbers
 
--   Session and message identifiers. Each message in the same DM session must have a different MsgID.
+- Session and message identifiers. Each message in the same DM session must have a different MsgID.
 
--   Message source and destination Uniform Resource Identifiers (URIs)
+- Message source and destination Uniform Resource Identifiers (URIs)
 
--   Credentials for authentication
+- Credentials for authentication
 
 This information is used to by the client device to properly manage the DM session.
-
 
 **Code example**
 
@@ -83,7 +85,7 @@ The following example shows the header component of a DM message. In this case, 
 > [!NOTE]
 > The `<LocURI>` node value for the `<Source>` element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](mdm/devinfo-csp.md).
 
- 
+ 
 
 ```xml
 <SyncHdr>

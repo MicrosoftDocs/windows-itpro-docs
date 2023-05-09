@@ -2,12 +2,13 @@
 title: Deploying App-V packages by using electronic software distribution (ESD)
 description: Deploying App-V packages by using electronic software distribution (ESD)
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Deploying App-V packages by using electronic software distribution (ESD)

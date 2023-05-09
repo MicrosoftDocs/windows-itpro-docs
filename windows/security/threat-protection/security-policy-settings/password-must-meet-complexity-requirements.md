@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,14 +12,18 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Password must meet complexity requirements
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.
@@ -28,7 +32,7 @@ Describes the best practices, location, values, and security considerations for 
 
 The **Passwords must meet complexity requirements** policy setting determines whether passwords must meet a series of strong-password guidelines. When enabled, this setting requires passwords to meet the following requirements:
 
-1.  Passwords may not contain the user's samAccountName (Account Name) value or entire displayName (Full Name value). Both checks aren't case-sensitive.
+1.  Passwords may not contain the user's samAccountName (Account Name) value or entire displayName (Full Name value). Neither of these checks is case-sensitive.
 
     The samAccountName is checked in its entirety only to determine whether it's part of the password. If the samAccountName is fewer than three characters long, this check is skipped.
     The displayName is parsed for delimiters: commas, periods, dashes or hyphens, underscores, spaces, pound signs, and tabs. If any of these delimiters are found, the displayName is split and all parsed sections (tokens) are confirmed not to be included in the password. Tokens that are shorter than three characters are ignored, and substrings of the tokens aren't checked. For example, the name "Erin M. Hagens" is split into three tokens: "Erin", "M", and "Hagens". Because the second token is only one character long, it's ignored. So, this user couldn't have a password that included either "erin" or "hagens" as a substring anywhere in the password.
@@ -109,4 +113,4 @@ The use of ALT key character combinations may greatly enhance the complexity of 
 
 ## Related articles
 
-- [Password Policy](password-policy.md)
+- [Password Policy](/microsoft-365/admin/misc/password-policy-recommendations)

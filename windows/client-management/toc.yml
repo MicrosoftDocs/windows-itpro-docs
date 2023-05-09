@@ -5,170 +5,70 @@ items:
       - name: Mobile device management (MDM)
         expanded: true
         items:
-          - name: Overview
+          - name: MDM overview
+            expanded: true
             items:
-              - name: MDM overview
+              - name: What is MDM?
                 href: mdm-overview.md
-              - name: What's new in MDM enrollment and management
+              - name: What's new in MDM
                 href: new-in-windows-mdm-enrollment-management.md
-              - name: Change history for MDM documentation
-                href: change-history-for-mdm-documentation.md
-          - name: Azure Active Directory integration with MDM
-            href: azure-active-directory-integration-with-mdm.md
+              - name: Azure Active Directory integration
+                href: azure-active-directory-integration-with-mdm.md
+              - name: Transitioning to modern management
+                href: manage-windows-10-in-your-organization-modern-management.md
+              - name: Push notification support
+                href: push-notification-windows-mdm.md
+              - name: MAM support
+                href: implement-server-side-mobile-application-management.md
+          - name: Enroll devices
+            expanded: false
             items:
-              - name: Add an Azure AD tenant and Azure AD subscription
-                href: add-an-azure-ad-tenant-and-azure-ad-subscription.md
-              - name: Register your free Azure Active Directory subscription
-                href: register-your-free-azure-active-directory-subscription.md
-          - name: Device enrollment
-            href: mobile-device-enrollment.md
-            items:
-              - name: MDM enrollment of Windows devices
+              - name: Enrollment overview
+                href: mobile-device-enrollment.md
+              - name: Manual enrollment
                 href: mdm-enrollment-of-windows-devices.md
-              - name: "Azure AD and Microsoft Intune: Automatic MDM enrollment"
+              - name: Automatic enrollment
                 href: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
-              - name: Enroll a Windows 10 device automatically using Group Policy
+              - name: Group policy enrollment
                 href: enroll-a-windows-10-device-automatically-using-group-policy.md
               - name: Bulk enrollment
                 href: bulk-enrollment-using-windows-provisioning-tool.md
-              - name: Federated authentication device enrollment
+              - name: Federated authentication enrollment
                 href: federated-authentication-device-enrollment.md
-              - name: Certificate authentication device enrollment
+              - name: Certificate authentication enrollment
                 href: certificate-authentication-device-enrollment.md
-              - name: On-premises authentication device enrollment
+              - name: On-premises authentication enrollment
                 href: on-premise-authentication-device-enrollment.md
-              - name: Disconnecting a device from MDM (unenrollment)
-                href: disconnecting-from-mdm-unenrollment.md
-          - name: Enterprise settings, policies, and app management
-            href: windows-mdm-enterprise-settings.md
+          - name: Manage devices
+            expanded: false
             items:
-              - name: Enterprise app management
+              - name: Manage settings
+                href: windows-mdm-enterprise-settings.md
+              - name: Manage apps
                 href: enterprise-app-management.md
-                items:
-                  - name: Deploy and configure App-V apps using MDM
-                    href: appv-deploy-and-config.md
-                  - name: Management tool for the Microsoft Store for Business
-                    href: management-tool-for-windows-store-for-business.md
-                  - name: REST API reference for Microsoft Store for Business
-                    href: rest-api-reference-windows-store-for-business.md
-                    items:
-                      - name: Data structures for Microsoft Store for Business
-                        href: data-structures-windows-store-for-business.md
-                      - name: Get Inventory
-                        href: get-inventory.md
-                      - name: Get product details
-                        href: get-product-details.md
-                      - name: Get localized product details
-                        href: get-localized-product-details.md
-                      - name: Get offline license
-                        href: get-offline-license.md
-                      - name: Get product packages
-                        href: get-product-packages.md
-                      - name: Get product package
-                        href: get-product-package.md
-                      - name: Get seats
-                        href: get-seats.md
-                      - name: Get seat
-                        href: get-seat.md
-                      - name: Assign seats
-                        href: assign-seats.md
-                      - name: Reclaim seat from user
-                        href: reclaim-seat-from-user.md
-                      - name: Bulk assign and reclaim seats from users
-                        href: bulk-assign-and-reclaim-seats-from-user.md
-                      - name: Get seats assigned to a user
-                        href: get-seats-assigned-to-a-user.md
-              - name: Mobile device management (MDM) for device updates
+              - name: Manage updates
                 href: device-update-management.md
               - name: Secured-Core PC Configuration Lock
                 href: config-lock.md
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
-          - name: Diagnose MDM failures in Windows 10
-            href: diagnose-mdm-failures-in-windows-10.md
-          - name: Push notification support for device management
-            href: push-notification-windows-mdm.md
-          - name: MAM support for device management
-            href: implement-server-side-mobile-application-management.md
+              - name: eSIM management
+                href: esim-enterprise-management.md
+          - name: Diagnose MDM failures
+            expanded: false
+            items:
+              - name: Collect MDM logs
+                href: mdm-collect-logs.md
+              - name: Diagnose MDM enrollment
+                href: mdm-diagnose-enrollment.md
+              - name: Known issues
+                href: mdm-known-issues.md
+          - name: Unenroll devices
+            href: disconnecting-from-mdm-unenrollment.md
           - name: Configuration service provider reference
             href: mdm/index.yml
       - name: Client management tools and settings
-        items:
-          - name: Windows Tools/Administrative Tools
-            href: administrative-tools-in-windows-10.md
-          - name: Use Quick Assist to help users
-            href: quick-assist.md
-          - name: Create mandatory user profiles
-            href: mandatory-user-profile.md
-          - name: Connect to remote Azure Active Directory-joined PC
-            href: connect-to-remote-aadj-pc.md
-          - name: New policies for Windows 10
-            href: new-policies-for-windows-10.md
-          - name: Windows 10 default media removal policy
-            href: change-default-removal-policy-external-storage-media.md
-          - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
-            href: group-policies-for-enterprise-and-education-editions.md
-          - name: Manage Device Installation with Group Policy
-            href: manage-device-installation-with-group-policy.md
-          - name: Manage the Settings app with Group Policy
-            href: manage-settings-app-with-group-policy.md
-          - name: What version of Windows am I running
-            href: windows-version-search.md
-          - name: Transitioning to modern management
-            href: manage-windows-10-in-your-organization-modern-management.md
-          - name: Windows libraries
-            href: windows-libraries.md
+        expanded: true
+        href: client-tools/toc.yml
       - name: Troubleshoot Windows clients
-        items:
-          - name: Windows 10 support solutions
-            href: windows-10-support-solutions.md
-          - name: Advanced troubleshooting for Windows networking
-            href: troubleshoot-networking.md
-            items:
-              - name: Advanced troubleshooting Wireless network connectivity
-                href: advanced-troubleshooting-wireless-network-connectivity.md
-              - name: Advanced troubleshooting 802.1X authentication
-                href: advanced-troubleshooting-802-authentication.md
-                items:
-                  - name: Data collection for troubleshooting 802.1X authentication
-                    href: data-collection-for-802-authentication.md
-              - name: Advanced troubleshooting for TCP/IP
-                href: troubleshoot-tcpip.md
-                items:
-                  - name: Collect data using Network Monitor
-                    href: troubleshoot-tcpip-netmon.md
-                  - name: "Part 1: TCP/IP performance overview"
-                    href: /troubleshoot/windows-server/networking/overview-of-tcpip-performance
-                  - name: "Part 2: TCP/IP performance underlying network issues"
-                    href: /troubleshoot/windows-server/networking/troubleshooting-tcpip-performance-underlying-network
-                  - name: "Part 3: TCP/IP performance known issues"
-                    href: /troubleshoot/windows-server/networking/tcpip-performance-known-issues
-                  - name: Troubleshoot TCP/IP connectivity
-                    href: troubleshoot-tcpip-connectivity.md
-                  - name: Troubleshoot port exhaustion
-                    href: troubleshoot-tcpip-port-exhaust.md
-                  - name: Troubleshoot Remote Procedure Call (RPC) errors
-                    href: troubleshoot-tcpip-rpc-errors.md
-          - name: Advanced troubleshooting for Windows startup
-            href: troubleshoot-windows-startup.md
-            items:
-              - name: How to determine the appropriate page file size for 64-bit versions of Windows
-                href: determine-appropriate-page-file-size.md
-              - name: Generate a kernel or complete crash dump
-                href: generate-kernel-or-complete-crash-dump.md
-              - name: Introduction to the page file
-                href: introduction-page-file.md
-              - name: Configure system failure and recovery options in Windows
-                href: system-failure-recovery-options.md
-              - name: Advanced troubleshooting for Windows boot problems
-                href: advanced-troubleshooting-boot-problems.md
-              - name: Advanced troubleshooting for Windows-based computer freeze
-                href: troubleshoot-windows-freeze.md
-              - name: Advanced troubleshooting for stop error or blue screen error
-                href: troubleshoot-stop-errors.md
-              - name: Advanced troubleshooting for stop error 7B or Inaccessible_Boot_Device
-                href: troubleshoot-inaccessible-boot-device.md
-              - name: Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"
-                href: troubleshoot-event-id-41-restart.md
-              - name: Stop error occurs when you update the in-box Broadcom network adapter driver
-                href: troubleshoot-stop-error-on-broadcom-driver-update.md
+        href: /troubleshoot/windows-client/welcome-windows-client

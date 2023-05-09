@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 2cd23cd9-0e44-4d0b-a1f1-39fc29303826
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit: Shut down system immediately if unable to log security audits
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management practices, and security considerations for the **Audit: Shut down system immediately if unable to log security audits** security policy setting.

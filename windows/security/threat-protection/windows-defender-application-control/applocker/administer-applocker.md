@@ -4,7 +4,7 @@ description: This topic for IT professionals provides links to specific procedur
 ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Administer AppLocker

@@ -2,7 +2,7 @@
 title: 4935(F) Replication failure begins. (Windows 10)
 description: Describes security event 4935(F) Replication failure begins. This event is generated when Active Directory replication failure begins.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,8 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4935(F): Replication failure begins.

@@ -1,12 +1,8 @@
 ---
 title: Manage devices with Microsoft Intune
-description: Overview of device management capabilities in Intune for Education, including remote actions, remote assistance and inventory/reporting. 
+description: Overview of device management capabilities in Intune for Education, including remote actions, remote assistance and inventory/reporting.
 ms.date: 08/31/2022
 ms.topic: tutorial
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
 ---
 
 # Manage devices with Microsoft Intune

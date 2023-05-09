@@ -1,27 +1,12 @@
 ---
 title: Checklist Implementing a Basic Firewall Policy Design (Windows)
 description: Follow this parent checklist for implementing a basic firewall policy design to ensure successful implementation.
-ms.assetid: 6caf0c1e-ac72-4f9d-a986-978b77fbbaa3
-ms.reviewer: jekrynit
-ms.author: paoloma
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: paolomatarazzo
-manager: aaroncz
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Implementing a Basic Firewall Policy Design

@@ -1,15 +1,14 @@
 ---
 title: Update Compliance Configuration Script
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: Downloading and using the Update Compliance Configuration Script
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/16/2022
+ms.date: 04/01/2023
+ms.technology: itpro-updates
 ---
 
 # Configuring devices through the Update Compliance Configuration Script
@@ -19,6 +18,8 @@ ms.date: 06/16/2022
 - Windows 10
 - Windows 11
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](update-compliance-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured. 
 
@@ -49,9 +50,10 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 ## Script errors
 
 <!--Using include for script errors-->
-[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-script-error-codes.md)]
+[!INCLUDE [Update Compliance script error codes](./includes/wufb-reports-script-error-codes.md)]
 
 ## Verify device configuration
+
 <!--Using include for verifying device configuration-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-verify-device-configuration.md)]:
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-verify-device-configuration.md)]
 

@@ -4,14 +4,18 @@ description: Learn about the Stickers feature and how to configure it via Intune
 ms.date: 09/15/2022
 ms.topic: how-to
 appliesto:
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
+  - highpri
+  - education
+  - tier2
 ---
 
 # Configure Stickers for Windows 11 SE
 
 Starting in **Windows 11 SE, version 22H2**, *Stickers* is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background changes.
 
-Similar to the [education theme packs](edu-themes.md), Stickers is a personalization feature that helps the device feel like it was designed for students.
+Similar to the [education theme packs](edu-themes.md "my tooltip example that opens in a new tab"), Stickers is a personalization feature that helps the device feel like it was designed for students.
 
 :::image type="content" source="./images/win-11-se-stickers.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
 
@@ -29,13 +33,26 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure devices using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-Assign the policy to a security group that contains as members the devices or users that you want to configure.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+
+> [!TIP]
+> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+Content-Type: application/json
+
+{"id":"00-0000-0000-0000-000000000000","displayName":"_MSLearn_Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
+```
+
+<sup><a name="footnote1"></a>1</sup> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -63,8 +80,6 @@ Multiple stickers can be added from the picker by selecting them. The stickers c
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
-
------------
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 

@@ -2,9 +2,9 @@
 title: Win32CompatibilityAppraiser CSP
 description: Learn how the Win32CompatibilityAppraiser configuration service provider enables the IT admin to query the current status of the Appraiser and UTC telemetry health.
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/19/2018
 ms.reviewer:
@@ -109,7 +109,7 @@ Value type is integer.
 Supported operation is Get.
 
 <a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-rebootpending"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/RebootPending**
-A boolean value representing whether a reboot is pending on this computer. A newly-installed version of the Compatibility Appraiser may require a reboot before useful data is able to be sent.
+A boolean value representing whether a reboot is pending on this computer. A newly installed version of the Compatibility Appraiser may require a reboot before useful data is able to be sent.
 
 Value type is bool.
 

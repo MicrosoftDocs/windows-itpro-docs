@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Enhanced Protected Mode problems with Internet Explorer
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 15890ad1-733d-4f7e-a318-10399b389f45
 ms.reviewer: 
 audience: itpro

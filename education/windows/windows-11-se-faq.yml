@@ -2,18 +2,10 @@
 metadata:
   title: Windows 11 SE Frequently Asked Questions (FAQ)
   description: Use these frequently asked questions (FAQ) to learn important details about Windows 11 SE.   
-  ms.prod: windows
-  ms.technology: windows
-  author: paolomatarazzo
-  ms.author: paoloma
-  manager: aaroncz
-  ms.reviewer: 
-  ms.collection: education
   ms.topic: faq
-  localizationpriority: medium
-  ms.date: 09/14/2022
+  ms.date: 03/09/2023
   appliesto:
-  - ✅ <b>Windows 11 SE</b>
+    - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 
 title: Common questions about Windows 11 SE
 summary: Windows 11 SE combines the power and privacy of Windows 11 with educator feedback to create a simplified experience on devices built for education. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows 11 SE so you can get to what matters most.

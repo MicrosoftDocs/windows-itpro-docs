@@ -1,16 +1,16 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.prod: m365-security
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.collection: 
+ms.collection:
+  - highpri
+  - tier2
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 
-ms.reviewer: 
-ms.technology: windows-sec
+ms.date: 6/30/2022
+ms.technology: itpro-security
 ---
 
 # Windows Sandbox configuration
@@ -29,6 +29,9 @@ A configuration file enables the user to control the following aspects of Window
 - **Printer redirection**: Shares printers from the host into the sandbox.
 - **Clipboard redirection**: Shares the host clipboard with the sandbox so that text and files can be pasted back and forth.
 - **Memory in MB**: The amount of memory, in megabytes, to assign to the sandbox.
+
+> [!NOTE]
+> The size of the sandbox window currently isn't configurable. <!-- windows-itpro-docs #10689 -->
 
 ## Creating a configuration file
 
@@ -50,7 +53,7 @@ To create a configuration file:
 To use a configuration file, double-click it to start Windows Sandbox according to its settings. You can also invoke it via the command line as shown here:
 
 ```batch
-C:\Temp> MyConfigFile.wsb 
+C:\Temp> MyConfigFile.wsb
 ```
 
 ## Keywords, values, and limits
@@ -77,6 +80,8 @@ Enables or disables networking in the sandbox. You can disable network access to
 `<Networking>value</Networking>`
 
 Supported values:
+
+- *Enable*: Enables networking in the sandbox.
 - *Disable*: Disables networking in the sandbox.
 - *Default*: This value is the default value for networking support. This value enables networking by creating a virtual switch on the host and connects the sandbox to it via a virtual NIC.
 
@@ -89,12 +94,12 @@ An array of folders, each representing a location on the host machine that will 
 
 ```xml
 <MappedFolders>
-  <MappedFolder> 
-    <HostFolder>absolute path to the host folder</HostFolder> 
-    <SandboxFolder>absolute path to the sandbox folder</SandboxFolder> 
-    <ReadOnly>value</ReadOnly> 
+  <MappedFolder>
+    <HostFolder>absolute path to the host folder</HostFolder>
+    <SandboxFolder>absolute path to the sandbox folder</SandboxFolder>
+    <ReadOnly>value</ReadOnly>
   </MappedFolder>
-  <MappedFolder>  
+  <MappedFolder>
     ...
   </MappedFolder>
 </MappedFolders>
@@ -106,8 +111,7 @@ An array of folders, each representing a location on the host machine that will 
 
 *ReadOnly*: If *true*, enforces read-only access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
 
-
-> [!NOTE] 
+> [!NOTE]
 > Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
 
 ### Logon command
@@ -132,13 +136,14 @@ Enables or disables audio input to the sandbox.
 `<AudioInput>value</AudioInput>`
 
 Supported values:
+
 - *Enable*: Enables audio input in the sandbox. If this value is set, the sandbox will be able to receive audio input from the user. Applications that use a microphone may require this capability.
 - *Disable*: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
 - *Default*: This value is the default value for audio input support. Currently, this default value denotes that audio input is enabled.
 
 > [!NOTE]
 > There may be security implications of exposing host audio input to the container.
- 
+
 ### Video input
 
 Enables or disables video input to the sandbox.
@@ -146,7 +151,8 @@ Enables or disables video input to the sandbox.
 `<VideoInput>value</VideoInput>`
 
 Supported values:
-- *Enable*: Enables video input in the sandbox. 
+
+- *Enable*: Enables video input in the sandbox.
 - *Disable*: Disables video input in the sandbox. Applications that use video input may not function properly in the sandbox.
 - *Default*: This value is the default value for video input support. Currently, this default value denotes that video input is disabled. Applications that use video input may not function properly in the sandbox.
 
@@ -160,6 +166,7 @@ Applies more security settings to the sandbox Remote Desktop client, decreasing 
 `<ProtectedClient>value</ProtectedClient>`
 
 Supported values:
+
 - *Enable*: Runs Windows sandbox in Protected Client mode. If this value is set, the sandbox runs with extra security mitigations enabled.
 - *Disable*: Runs the sandbox in standard mode without extra security mitigations.
 - *Default*: This value is the default value for Protected Client mode. Currently, this default value denotes that the sandbox doesn't run in Protected Client mode.
@@ -174,6 +181,7 @@ Enables or disables printer sharing from the host into the sandbox.
 `<PrinterRedirection>value</PrinterRedirection>`
 
 Supported values:
+
 - *Enable*: Enables sharing of host printers into the sandbox.
 - *Disable*: Disables printer redirection in the sandbox. If this value is set, the sandbox can't view printers from the host.
 - *Default*: This value is the default value for printer redirection support. Currently, this default value denotes that printer redirection is disabled.
@@ -185,7 +193,9 @@ Enables or disables sharing of the host clipboard with the sandbox.
 `<ClipboardRedirection>value</ClipboardRedirection>`
 
 Supported values:
-- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted. 
+
+- *Enable*: Enables sharing of the host clipboard with the sandbox.
+- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted.
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
 ### Memory in MB
@@ -197,6 +207,7 @@ Specifies the amount of memory that the sandbox can use in megabytes (MB).
 If the memory value specified is insufficient to boot a sandbox, it will be automatically increased to the required minimum amount.
 
 ## Example 1
+
 The following config file can be used to easily test the downloaded files inside the sandbox. To achieve this testing, networking and vGPU are disabled, and the sandbox is allowed read-only access to the shared downloads folder. For convenience, the logon command opens the downloads folder inside the sandbox when it's started.
 
 ### Downloads.wsb
@@ -228,12 +239,14 @@ With the Visual Studio Code installer script already mapped into the sandbox, th
 
 ### VSCodeInstall.cmd
 
+Download vscode to `downloads` folder and run from `downloads` folder.
+
 ```batch
 REM Download Visual Studio Code
-curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Desktop\vscode.exe
+curl -L "https://update.code.visualstudio.com/latest/win32-x64-user/stable" --output C:\users\WDAGUtilityAccount\Downloads\vscode.exe
 
 REM Install and run Visual Studio Code
-C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
+C:\users\WDAGUtilityAccount\Downloads\vscode.exe /verysilent /suppressmsgboxes
 ```
 
 ### VSCode.wsb
@@ -243,15 +256,55 @@ C:\users\WDAGUtilityAccount\Desktop\vscode.exe /verysilent /suppressmsgboxes
   <MappedFolders>
     <MappedFolder>
       <HostFolder>C:\SandboxScripts</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads\sandbox</SandboxFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
     <MappedFolder>
       <HostFolder>C:\CodingProjects</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Documents\Projects</SandboxFolder>
       <ReadOnly>false</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
-    <Command>C:\Users\WDAGUtilityAccount\Desktop\SandboxScripts\VSCodeInstall.cmd</Command>
+    <Command>C:\Users\WDAGUtilityAccount\Downloads\sandbox\VSCodeInstall.cmd</Command>
+  </LogonCommand>
+</Configuration>
+```
+
+## Example 3
+
+The following config file runs a PowerShell script as a logon command to swap the primary mouse button for left-handed users.
+
+`C:\sandbox` folder on the host is mapped to the `C:\sandbox` folder in the sandbox, so the `SwapMouse.ps1` script can be referenced in the sandbox configuration file.
+
+### SwapMouse.ps1
+
+Create a powershell script using the following code, and save it in the `C:\sandbox` directory as `SwapMouse.ps1`.
+
+```powershell
+[Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
+
+$SwapButtons = Add-Type -MemberDefinition @'
+[DllImport("user32.dll")]
+public static extern bool SwapMouseButton(bool swap);
+'@ -Name "NativeMethods" -Namespace "PInvoke" -PassThru
+
+$SwapButtons::SwapMouseButton(!([System.Windows.Forms.SystemInformation]::MouseButtonsSwapped))
+```
+
+### SwapMouse.wsb
+
+```xml
+<Configuration>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\sandbox</HostFolder>
+      <SandboxFolder>C:\sandbox</SandboxFolder>
+      <ReadOnly>True</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>powershell.exe -ExecutionPolicy Bypass -File C:\sandbox\SwapMouse.ps1</Command>
   </LogonCommand>
 </Configuration>
 ```

@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Microsoft network server: Server SPN target name validation level
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, and values, policy management and security considerations for the **Microsoft network server: Server SPN target name validation level** security policy setting.

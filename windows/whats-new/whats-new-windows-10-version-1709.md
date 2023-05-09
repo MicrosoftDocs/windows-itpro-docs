@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows 10, version 1709
 description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
-ms.prod: w10
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1709 for IT Pros

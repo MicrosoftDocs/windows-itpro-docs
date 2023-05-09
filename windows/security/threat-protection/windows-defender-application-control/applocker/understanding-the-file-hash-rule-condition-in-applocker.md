@@ -4,7 +4,7 @@ description: This topic explains the AppLocker file hash rule condition, the adv
 ms.assetid: 4c6d9af4-2b1a-40f4-8758-1a6f9f147756
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Understanding the file hash rule condition in AppLocker

@@ -1,15 +1,14 @@
 ---
 title: Recommended URLs for Windows Information Protection (Windows 10)
 description: Recommended URLs to add to your Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: aaroncz
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.reviewer: 
+ms.technology: itpro-security
 ---
 
 # Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)
@@ -41,10 +40,10 @@ You can add other work-only apps to the Cloud Resource list, or you can create a
 
 For Office 365 endpoints, see [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges). 
 Office 365 endpoints are updated monthly. 
-Allow the domains listed in section number 46 Allow Required and add also add the apps. 
+Allow the domains listed in section number 46 "Allow Required" and add also add the apps. 
 Note that apps from officeapps.live.com can also store personal data. 
 
-When multiple files are selected from SharePoint Online or OneDrive, the files are aggregated and the URL can change. In this case, add a entry for a second-level domain and use a wildcard such as .svc.ms. 
+When multiple files are selected from SharePoint Online or OneDrive, the files are aggregated and the URL can change. In this case, add an entry for a second-level domain and use a wildcard such as .svc.ms. 
 
 
 ## Recommended Neutral Resources

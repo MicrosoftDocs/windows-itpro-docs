@@ -5,17 +5,16 @@ ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
 ms.reviewer: 
 ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 07/01/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Configure the Application Identity service

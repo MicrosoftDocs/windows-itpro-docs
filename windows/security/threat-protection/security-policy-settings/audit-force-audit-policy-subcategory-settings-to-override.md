@@ -4,7 +4,7 @@ description: Learn more about the security policy setting, Audit Force audit pol
 ms.assetid: 8ddc06bc-b6d6-4bac-9051-e0d77035bd4e
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** security policy setting.

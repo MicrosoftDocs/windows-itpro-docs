@@ -32,6 +32,10 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
       "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
       "ms.author": "trudyha",
       "audience": "ITPro",
@@ -61,7 +65,8 @@
         "dstrome",
         "v-dihans",        
         "garycentric",
-        "v-stsavell"
+        "v-stsavell",
+        "beccarobins"
       ]
     },
     "fileMetadata": {},

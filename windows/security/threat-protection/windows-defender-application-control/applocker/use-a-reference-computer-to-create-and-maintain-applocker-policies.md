@@ -3,7 +3,7 @@ title: Use a reference device to create and maintain AppLocker policies (Windows
 description: This topic for the IT professional describes the steps to create and maintain AppLocker policies by using a reference computer.
 ms.assetid: 10c3597f-f44c-4c8e-8fe5-105d4ac016a6
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,11 +11,10 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.reviewer: 
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use a reference device to create and maintain AppLocker policies

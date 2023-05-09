@@ -4,7 +4,7 @@ description: Best practices security considerations, and more for the policy set
 ms.assetid: 97618ed3-e946-47db-a212-b5e7a4fc6ffc
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Require Domain Controller authentication to unlock workstation
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Require Domain Controller authentication to unlock workstation** security policy setting.

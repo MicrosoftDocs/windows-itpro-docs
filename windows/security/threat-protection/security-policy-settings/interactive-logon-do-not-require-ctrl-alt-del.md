@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 04e2c000-2eb2-4d4b-8179-1e2cb4793e18
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 # Interactive logon: Do not require CTRL+ALT+DEL
 
 **Applies to**
+- Windows 11
 - Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Do not require CTRL+ALT+DEL** security policy setting.

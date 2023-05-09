@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps to merge AppLoc
 ms.assetid: f1c7d5c0-463e-4fe2-a410-844a404f18d0
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Merge AppLocker policies by using Set-ApplockerPolicy

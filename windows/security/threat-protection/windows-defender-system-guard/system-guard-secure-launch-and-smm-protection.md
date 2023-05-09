@@ -2,7 +2,7 @@
 title: System Guard Secure Launch and SMM protection (Windows 10)
 description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows 10 devices.
 search.appverid: met150
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,8 @@ ms.date: 11/30/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # System Guard Secure Launch and SMM protection
@@ -22,7 +23,10 @@ ms.technology: windows-sec
 - Windows 11
 - Windows 10
 
-This topic explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) to improve the startup security of Windows 10 and Windows 11 devices. The information below is presented from a client perspective.
+This topic explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows) to improve the startup security of Windows 10 and Windows 11 devices. The information below is presented from a client perspective.
+
+> [!NOTE]
+> System Guard Secure Launch feature requires a supported processor. For more information, see [System requirements for System Guard](how-hardware-based-root-of-trust-helps-protect-windows.md#system-requirements-for-system-guard).
 
 ## How to enable System Guard Secure Launch
 
@@ -72,7 +76,7 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 ![Verifying Secure Launch is running in the Windows Security app.](images/secure-launch-msinfo.png)
 
 > [!NOTE]
-> To enable System Guard Secure launch, the platform must meet all the baseline requirements for [System Guard](../windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md), [Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).
+> To enable System Guard Secure launch, the platform must meet all the baseline requirements for [System Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows), [Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).
 
 > [!NOTE]
 > For more information around AMD processors, see [Microsoft Security Blog: Force firmware code to be measured and attested by Secure Launch on Windows 10](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/).

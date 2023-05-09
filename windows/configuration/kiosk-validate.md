@@ -4,10 +4,12 @@ description: In this article, learn what to expect on a multi-app kiosk in Windo
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Validate kiosk configuration

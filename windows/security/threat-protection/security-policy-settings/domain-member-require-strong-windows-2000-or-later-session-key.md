@@ -4,7 +4,7 @@ description: Best practices, location, values, and security considerations for t
 ms.assetid: 5ab8993c-5086-4f09-bc88-1b27454526bd
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Domain member: Require strong (Windows 2000 or later) session key
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Require strong (Windows 2000 or later) session key** security policy setting.
 

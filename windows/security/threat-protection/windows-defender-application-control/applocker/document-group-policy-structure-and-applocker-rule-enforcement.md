@@ -4,18 +4,17 @@ description: This planning topic describes what you need to investigate, determi
 ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.pagetype: security
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Document the Group Policy structure and AppLocker rule enforcement

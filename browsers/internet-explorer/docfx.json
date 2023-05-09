@@ -24,6 +24,10 @@
     ],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier3"
+      ],
       "breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.topic": "article",
@@ -43,7 +47,8 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ]
     },
     "externalReference": [],

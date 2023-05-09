@@ -4,9 +4,9 @@ description: Learn the OMA DM device description framework (DDF) for the AllJoyn
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---

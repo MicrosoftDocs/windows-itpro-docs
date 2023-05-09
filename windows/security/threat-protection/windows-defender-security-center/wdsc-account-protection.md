@@ -1,19 +1,12 @@
 ---
 title: Account protection in the Windows Security app
 description: Use the Account protection section to manage security for your account and sign in to Microsoft.
-keywords: account protection, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide, Windows Defender SmartScreen, SmartScreen Filter, Windows SmartScreen
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 
-ms.reviewer: 
-manager: aaroncz
-ms.technology: windows-sec
+ms.date: 12/31/2018
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 
@@ -21,8 +14,7 @@ ms.technology: windows-sec
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10 and later
 
 The **Account protection** section contains information and settings for account protection and sign-in. You can get more information about these capabilities from the following list: 
 
@@ -31,7 +23,6 @@ The **Account protection** section contains information and settings for account
 - [Lock your Windows 10 PC automatically when you step away from it](https://support.microsoft.com/help/4028111/windows-lock-your-windows-10-pc-automatically-when-you-step-away-from)
 
 You can also choose to hide the section from users of the device. This is useful if you don't want your employees to access or view user-configured options for these features.
-
 
 ## Hide the Account protection section
 

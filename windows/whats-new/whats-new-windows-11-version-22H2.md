@@ -1,14 +1,17 @@
 ---
 title: What's new in Windows 11, version 22H2 for IT pros
 description: Learn more about what's new in Windows 11 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
-manager: dougeby
-ms.prod: w10
+manager: aaroncz
+ms.prod: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri
-ms.custom: intro-overview
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 11, version 22H2
@@ -118,3 +121,8 @@ For more information, see [Supported configuration service provider (CSP) polici
 Windows 11, version 22H2, includes additional improvements for people with disabilities: system-wide live captions, Focus sessions, voice access, and more natural voices for Narrator. For more information, see [New accessibility features coming to Windows 11](https://blogs.windows.com/windowsexperience/2022/05/10/new-accessibility-features-coming-to-windows-11/) and [How inclusion drives innovation in Windows 11](https://blogs.windows.com/windowsexperience/?p=177554).
 
 For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-10-accessibility-for-itpros).
+
+## High Efficiency Video Coding (HEVC) support
+<!--7475101-->
+Starting in Windows 11, version 22H2, support for High Efficiency Video Coding (HEVC) is now available. You can play HEVC videos in any video app on your Windows 11 device. HEVC is designed to take advantage of hardware capabilities on some newer devices to support 4K and Ultra HD content.
+For devices that don't have hardware support for HEVC videos, software support is provided, but the playback experience might vary based on the video resolution and your devices performance.

@@ -421,6 +421,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/citool-commands.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/operations/citool-commands",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "devices/hololens/hololens-whats-new.md",
       "redirect_url": "/hololens/hololens-release-notes",
       "redirect_document_id": false
@@ -701,6 +706,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "store-for-business/device-guard-signing-portal.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "store-for-business/add-unsigned-app-to-code-integrity-policy.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "store-for-business/sign-code-integrity-policy-with-device-guard-signing.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/threat-protection/device-guard/device-guard-deployment-guide.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
       "redirect_document_id": false
@@ -722,12 +742,12 @@
     },
     {
       "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
-      "redirect_url": "/windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agress.md",
-      "redirect_url": "/windows/security/threat-protectionsecurity-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -1197,7 +1217,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
-      "redirect_url": "hhttps://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
+      "redirect_url": "/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
       "redirect_document_id": false
     },
     {
@@ -3427,7 +3447,7 @@
     },
     {
       "source_path": "windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
-      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -3452,7 +3472,7 @@
     },
     {
       "source_path": "windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
-      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -6518,7 +6538,7 @@
     {
       "source_path": "windows/access-protection/access-control/dynamic-access-control.md",
       "redirect_url": "/windows-server/identity/solution-guides/dynamic-access-control-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/access-protection/access-control/local-accounts.md",
@@ -6613,6 +6633,86 @@
     {
       "source_path": "education/windows/swithc-to-pro-de.md",
       "redirect_url": "/education/windows/switch-to-pro-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/administrative-tools-in-windows-10.md",
+      "redirect_url": "/windows/client-management/client-tools/administrative-tools-in-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/change-default-removal-policy-external-storage-media.md",
+      "redirect_url": "/windows/client-management/client-tools/change-default-removal-policy-external-storage-media",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/connect-to-remote-aadj-pc.md",
+      "redirect_url": "/windows/client-management/client-tools/connect-to-remote-aadj-pc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/group-policies-for-enterprise-and-education-editions.md",
+      "redirect_url": "https://www.microsoft.com/en-us/search/explore?q=Group+Policy+Settings+Reference+Spreadsheet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/manage-device-installation-with-group-policy.md",
+      "redirect_url": "/windows/client-management/client-tools/manage-device-installation-with-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/manage-settings-app-with-group-policy.md",
+      "redirect_url": "/windows/client-management/client-tools/manage-settings-app-with-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mandatory-user-profile.md",
+      "redirect_url": "/windows/client-management/client-tools/mandatory-user-profile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/new-policies-for-windows-10.md",
+      "redirect_url": "https://www.microsoft.com/en-us/search/explore?q=Group+Policy+Settings+Reference+Spreadsheet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/quick-assist.md",
+      "redirect_url": "/windows/client-management/client-tools/quick-assist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/windows-libraries.md",
+      "redirect_url": "/windows/client-management/client-tools/windows-libraries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/windows-version-search.md",
+      "redirect_url": "/windows/client-management/client-tools/windows-version-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/manage-corporate-devices.md",
+      "redirect_url": "/windows/client-management/manage-windows-10-in-your-organization-modern-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/add-an-azure-ad-tenant-and-azure-ad-subscription.md",
+      "redirect_url": "/azure/active-directory/fundamentals/active-directory-access-create-new-tenant",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/register-your-free-azure-active-directory-subscription.md",
+      "redirect_url": "/microsoft-365/compliance/use-your-free-azure-ad-subscription-in-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/appv-deploy-and-config.md",
+      "redirect_url": "/windows/application-management/app-v/appv-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/diagnose-mdm-failures-in-windows-10.md",
+      "redirect_url": "/windows/client-management/mdm-collect-logs",
       "redirect_document_id": false
     },
     {
@@ -6827,7 +6927,7 @@
     },
     {
       "source_path": "windows/manage/waas-wufb-intune.md",
-      "redirect_url": "/windows/deployment/update/waas-wufb-intune.md",
+      "redirect_url": "/windows/deployment/update/waas-wufb-intune",
       "redirect_document_id": false
     },
     {
@@ -7277,7 +7377,7 @@
     },
     {
       "source_path": "windows/manage/application-development-for-windows-as-a-service.md",
-      "redirect_url": "https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service",
+      "redirect_url": "windows/uwp/updates-and-versions/application-development-for-windows-as-a-service",
       "redirect_document_id": false
     },
     {
@@ -7457,7 +7557,7 @@
     },
     {
       "source_path": "windows/plan/chromebook-migration-guide.md",
-      "redirect_url": "edu/windows/chromebook-migration-guide",
+      "redirect_url": "education/windows/chromebook-migration-guide",
       "redirect_document_id": false
     },
     {
@@ -12372,12 +12472,12 @@
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-client-digitally-sign-communications-always.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -12397,12 +12497,12 @@
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-server-digitally-sign-communications-always.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
-      "redirect_url": "/windows/device-security/security-policy-settings/microsoft-network-server-digitally-sign-communications-if-client-agrees",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
       "redirect_document_id": false
     },
     {
@@ -14412,12 +14512,12 @@
     },
     {
       "source_path": "windows/manage/sign-up-windows-store-for-business.md",
-      "redirect_url": "/microsoft-store/index.md",
+      "redirect_url": "/microsoft-store/index",
       "redirect_document_id": false
     },
     {
       "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-      "redirect_url": "/microsoft-store/index.md",
+      "redirect_url": "/microsoft-store/index",
       "redirect_document_id": false
     },
     {
@@ -19293,22 +19393,22 @@
     {
       "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
       "redirect_url": "/windows/deployment/deploy-whats-new",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/policy-csp-admx-windowsanytimeupgrade.md",
       "redirect_url": "/windows/client-management/mdm/policy-csp-admx-wordwheel",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/policy-csp-admx-windowsfileprotection.md",
       "redirect_url": "/windows/client-management/mdm/policy-csp-admx-mobilepcpresentationsettings",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
       "redirect_url": "/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/license-terms-windows-diagnostic-data-for-powershell.md",
@@ -19318,7 +19418,7 @@
     {
       "source_path": "windows/privacy/windows-endpoints-1709-non-enterprise-editions.md",
       "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-1803-non-enterprise-editions.md",
@@ -19328,7 +19428,7 @@
     {
       "source_path": "windows/privacy/manage-windows-1709-endpoints.md",
       "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/manage-windows-1803-endpoints.md",
@@ -19442,7 +19542,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/rootkits-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware",
       "redirect_document_id": false
     },
     {
@@ -19677,7 +19777,12 @@
     },
     {
       "source_path": "windows/client-management/mdm/change-history-for-mdm-documentation.md",
-      "redirect_url": "/windows/client-management/change-history-for-mdm-documentation",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/change-history-for-mdm-documentation.md",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
       "redirect_document_id": false
     },
     {
@@ -19747,7 +19852,7 @@
     },
     {
       "source_path": "windows/client-management/mdm/diagnose-mdm-failures-in-windows-10.md",
-      "redirect_url": "/windows/client-management/diagnose-mdm-failures-in-windows-10",
+      "redirect_url": "/windows/client-management/mdm-collect-logs",
       "redirect_document_id": false
     },
     {
@@ -19924,11 +20029,786 @@
       "source_path": "windows/client-management/mdm/wmi-providers-supported-in-windows.md",
       "redirect_url": "/windows/client-management/wmi-providers-supported-in-windows",
       "redirect_document_id": false
-     },
-     {
-       "source_path": "education/windows/set-up-school-pcs-shared-pc-mode.md",
-       "redirect_url": "/windows/configuration/set-up-shared-or-guest-pc",
-       "redirect_document_id": false
-     }
+    },
+    {
+      "source_path": "windows/deployment/do/mcc-enterprise.md",
+      "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/advanced-troubleshooting-802-authentication.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/802-1x-authentication-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/advanced-troubleshooting-boot-problems.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/advanced-troubleshooting-wireless-network-connectivity.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/wireless-network-connectivity-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/data-collection-for-802-authentication.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/data-collection-for-troubleshooting-802-1x-authentication-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/determine-appropriate-page-file-size.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/generate-kernel-or-complete-crash-dump.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/generate-a-kernel-or-complete-crash-dump",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/introduction-page-file.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/introduction-to-the-page-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/system-failure-recovery-options.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/configure-system-failure-and-recovery-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-event-id-41-restart.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/event-id-41-restart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-inaccessible-boot-device.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-7b-or-inaccessible-boot-device-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-networking.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/networking-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-stop-error-on-broadcom-driver-update.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-broadcom-network-driver-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-stop-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-connectivity.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/tcp-ip-connectivity-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-netmon.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/collect-data-using-network-monitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-port-exhaust.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/tcp-ip-port-exhaustion-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-rpc-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/rpc-errors-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/networking-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-windows-freeze.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-based-computer-freeze-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-windows-startup.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-startup-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/windows-10-support-solutions.md",
+      "redirect_url": "/troubleshoot/windows-client/welcome-windows-client",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/management-tool-for-windows-store-for-business.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/rest-api-reference-windows-store-for-business.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/data-structures-windows-store-for-business.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-inventory.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-product-details.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-localized-product-details.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-offline-license.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-product-packages.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-product-package.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-seats.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-seat.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/assign-seats.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/reclaim-seat-from-user.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/bulk-assign-and-reclaim-seats-from-user.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/get-seats-assigned-to-a-user.md",
+      "redirect_url": "https://aka.ms/windows/msfb_evolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-shared-pc-mode.md",
+      "redirect_url": "/windows/configuration/set-up-shared-or-guest-pc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-resources.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/additional-resources-for-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-troubleshooting.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/quick-fixes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/resolution-procedures.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/troubleshoot-upgrade-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-error-codes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-manual.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-manual",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-mem.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-script.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-enable.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-enable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-help.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-overview.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-prerequisites.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclient.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclient",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientreadinessstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientreadinessstatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientupdatestatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucdevicealert.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucdevicealert",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucserviceupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucserviceupdatestatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucupdatealert.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucupdatealert",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-use.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-status-admin-center.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-admin-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-workbook.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-workbook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start-layout-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/features-lifecycle.md",
+      "redirect_url": "/windows/whats-new/feature-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-deprecated-features.md",
+      "redirect_url": "/windows/whats-new/deprecated-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-removed-features.md",
+      "redirect_url": "/windows/whats-new/removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/usmt/usmt-common-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/usmt-common-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/usmt/usmt-return-codes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/usmt-return-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/troubleshoot-bitlocker.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-tpm-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-config-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-configuration-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-intune-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/enforcing-bitlocker-policies-by-using-intune-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-network-unlock-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-recovery-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-recovery-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-tpm-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/windows-security/bitlocker-and-tpm-other-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/prepare/index.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/deploy/index.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-admin-contacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/index.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-unsupported-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-preview-addendum.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key.md",
+      "redirect_url": "/azure/active-directory/authentication/howto-authentication-passwordless-security-key",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/reset-security-key.md",
+      "redirect_url": "/azure/active-directory/authentication/howto-authentication-passwordless-security-key",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-dirsync.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-ad.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-dir-sync.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-policy.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-devreg.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-provision.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-key-new-install.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-new-install.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-devreg.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-ad.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-validate-pki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-policy.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-provision",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates.md",
+      "redirect_url": "/windows/configuration/provisioning-packages/provision-pcs-with-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-crm.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-powerbi.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/manage-wifi-sense-in-enterprise.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-not-protected-scenarios.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard-protection-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-always.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-always.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md",
+      "redirect_url": "/windows/security/threat-protection/security-policy-settings/microsoft-network-server-digitally-sign-communications-always",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/retired/hello-how-it-works.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-conditional-access.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-event-300.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-all-devices-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-all-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-historical-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-eligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-eligible-devices-historical-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-ineligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-ineligible-devices-historical-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-windows-update-unsupported-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/policy-ddf-file.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-ddf",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/applocker-xsd.md",
+      "redirect_url": "/windows/client-management/mdm/applocker-csp#policy-xsd-schema",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/vpnv2-profile-xsd.md",
+      "redirect_url": "/windows/client-management/mdm/vpnv2-csp#profilexml-xsd-schema",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/enterprisedesktopappmanagement2-xsd.md",
+      "redirect_url": "/windows/client-management/mdm/enterprisedesktopappmanagement-csp#downloadinstall-xsd-schema",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/enterprisemodernappmanagement-xsd.md",
+      "redirect_url": "/windows/client-management/mdm/enterprisemodernappmanagement-csp#enterprisemodernappmanagement-xsd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/education-scenarios-store-for-business.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/teacher-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/school-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/dg-readiness-tool.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/credential-guard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/get-support-for-security-baselines.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-loop-break.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-scripts.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-set-individual-device.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-windows-10-in-s-mode.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/audit-and-enforce-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/procedures-used-in-this-guide.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/whats-new/windows-10-insider-preview.md",
+      "redirect_url": "/windows/whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/s-mode-switch-to-edu.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/change-to-pro-education.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/test-windows10s-for-edu.md",
+      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/enable-s-mode-on-surface-go-devices.md",
+      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business.md",
+      "redirect_url": "https://aka.ms/AzureCodeSigning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/quality-updates.md",
+      "redirect_url": "/windows/deployment/update/release-cycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
+      "redirect_url": "/microsoft-store",
+      "redirect_document_id": false
+    }
   ]
 }

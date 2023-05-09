@@ -4,12 +4,14 @@ description: Learn more about configuration service provider (CSP) supported sce
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/18/2020
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
 ---
 
 # Configuration service provider support

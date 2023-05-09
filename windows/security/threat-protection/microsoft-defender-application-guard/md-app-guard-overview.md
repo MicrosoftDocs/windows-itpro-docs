@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Application Guard (Windows 10 or Windows 11)
-description: Learn about Microsoft Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
-ms.prod: m365-security
+description: Learn about Microsoft Defender Application Guard and how it helps combat malicious content and malware out on the Internet.
+ms.prod: windows-client
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,11 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.custom: asr
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
+  - tier2
+ms.topic: conceptual
 ---
 
 # Microsoft Defender Application Guard overview
@@ -37,13 +41,13 @@ For Microsoft Office, Application Guard helps prevents untrusted Word, PowerPoin
 
 Application Guard has been created to target several types of devices:
 
-- **Enterprise desktops**. These desktops are domain-joined and managed by your organization. Configuration management is primarily done through Microsoft Endpoint Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wired, corporate network.
+- **Enterprise desktops**. These desktops are domain-joined and managed by your organization. Configuration management is primarily done through Microsoft Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wired, corporate network.
 
-- **Enterprise mobile laptops**. These laptops are domain-joined and managed by your organization. Configuration management is primarily done through Microsoft Endpoint Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wireless, corporate network.
+- **Enterprise mobile laptops**. These laptops are domain-joined and managed by your organization. Configuration management is primarily done through Microsoft Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wireless, corporate network.
 
-- **Bring your own device (BYOD) mobile laptops**. These personally-owned laptops are not domain-joined, but are managed by your organization through tools, such as Microsoft Intune. The employee is typically an admin on the device and uses a high-bandwidth wireless corporate network while at work and a comparable personal network while at home.
+- **Bring your own device (BYOD) mobile laptops**. These personally owned laptops aren't domain-joined, but are managed by your organization through tools, such as Microsoft Intune. The employee is typically an admin on the device and uses a high-bandwidth wireless corporate network while at work and a comparable personal network while at home.
 
-- **Personal devices**. These personally-owned desktops or mobile laptops are not domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
+- **Personal devices**. These personally owned desktops or mobile laptops aren't domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
 
 ## Related articles
 

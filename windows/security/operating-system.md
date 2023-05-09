@@ -6,9 +6,8 @@ ms.topic: article
 manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
-ms.collection: M365-security-compliance
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.date: 09/21/2021
 ---
 

@@ -2,19 +2,19 @@
 title: Set up a shared or guest Windows device
 description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
 ms.date: 10/15/2022
-ms.prod: windows
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-configure
 ms.topic: reference
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
-ms.collection: 
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+ms.collection: tier2
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows 11 SE</b>
 ---
 
 # Set up a shared or guest Windows device
@@ -25,7 +25,7 @@ appliesto:
 |---|---|
 |Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local group policy object (LGPO). For a detailed list of settings enabled by Shared PC Mode in the LGPO, see the [Shared PC technical reference](shared-pc-technical.md#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync).<ul><li>This setting controls the API: [IsEnabled][UWP-1]</li></ul>|
 | Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings define the behavior of *account manager*: <ul><li> **DeletionPolicy**</li><li>**DiskLevelDeletion** </li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li></ul>For more information, see the [Shared PC CSP documentation][WIN-3].<br><br>**AccountModel**: this option controls which types of users can sign-in to the device, and can be used to enable the Guest and Kiosk accounts. For more information, see the [Shared PC CSP documentation][WIN-3].<br><br>**KioskModeAUMID**: configures an application (referred as Application User Model ID - AUMID) to automatically execute when the kiosk account is used to sign in. A new account will be created and will use assigned access to only run the app specified by the AUMID. [Find the Application User Model ID of an installed app][WIN-7].<br><br>**KioskModeUserTileDisplayText**: sets the display text on the kiosk account if **KioskModeAUMID** has been set.|
-| Advanced customizations | **SetEduPolicies**: when enabled, specific settings designed for education devices are configured in the LGPO. For a detailed list of settings enabled by SetEduPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setedupolicy).<ul><li>This setting controls the API: [IsEducationEnvironment][UWP-2]</li></ul><br>**SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the LGPO. For a detailed list of settings enabled by SetPowerPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setpowerpolicies).<br><br>**SleepTimeout**: specifies all timeouts for when the PC should sleep.<br><br>**SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep.<br><br>**MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update or Search indexing) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For a detailed list of settings enabled by MaintenanceStartTime, see [Shared PC technical reference](shared-pc-technical.md#maintenancestarttime).<br><br>**MaxPageFileSizeMB**: adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.<br><br> **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<ul><li>This setting controls the API: [ShouldAvoidLocalStorage][UWP-3]</li></ul>|
+| Advanced customizations | **SetEduPolicies**: when enabled, specific settings designed for education devices are configured in the LGPO. For a detailed list of settings enabled by SetEduPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setedupolicy).<ul><li>This setting controls the API: [IsEducationEnvironment][UWP-2]</li></ul>**SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the LGPO. For a detailed list of settings enabled by SetPowerPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setpowerpolicies).<br><br>**SleepTimeout**: specifies all timeouts for when the PC should sleep.<br><br>**SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep.<br><br>**MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update or Search indexing) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For a detailed list of settings enabled by MaintenanceStartTime, see [Shared PC technical reference](shared-pc-technical.md#maintenancestarttime).<br><br>**MaxPageFileSizeMB**: adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.<br><br> **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<ul><li>This setting controls the API: [ShouldAvoidLocalStorage][UWP-3]</li></ul>|
 
 ## Configure Shared PC
 

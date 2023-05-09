@@ -1,15 +1,8 @@
 ---
 title: Dual Enrollment
 description: Learn how to configure Windows Hello for Business dual enrollment. Also, learn how to configure Active Directory to support Domain Administrator enrollment.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 09/09/2019
+ms.topic: article
 ---
 
 # Dual Enrollment
@@ -18,7 +11,6 @@ ms.date: 09/09/2019
 
 * Hybrid and On-premises Windows Hello for Business deployments
 * Enterprise joined or Hybrid Azure joined devices
-* Windows 10, version 1709 or later
 * Certificate trust
 
 > [!NOTE]
@@ -82,5 +74,5 @@ The computer is ready for dual enrollment.  Sign in as the privileged user first
 * [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 * [Windows Hello and password changes](hello-and-password-changes.md)
 * [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-* [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+* [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 * [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

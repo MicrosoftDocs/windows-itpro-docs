@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
 description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511)?
-ms.reviewer: 
-ms.prod: w10
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, versions 1507 and 1511 for IT Pros
@@ -277,7 +278,7 @@ Enterprises have the following identity and management choices.
 |---|---|
 | Identity   | Active Directory; Azure AD         |
 | Grouping   | Domain join; Workgroup; Azure AD join    |
-| Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
+| Device management | Group Policy; Microsoft Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
 > [!NOTE]
 > With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](/lifecycle/).
@@ -324,9 +325,9 @@ By using [Group Policy Objects](/previous-versions/cc498727(v=msdn.10)), Windows
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Intune and the [Enterprise Mobility Suite](/enterprise-mobility-security).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Endpoint Configuration Manager](/configmgr).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Configuration Manager](/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).

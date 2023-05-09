@@ -1,23 +1,15 @@
 ---
 title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 02/24/2021
+ms.topic: article
+ms.collection:
+  - tier1
 ---
 
 # Remote Desktop
 
 **Requirements**
-
-- Windows 10
-- Windows 11
 - Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 
@@ -64,5 +56,5 @@ Users appreciate convenience of biometrics and administrators value the security
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

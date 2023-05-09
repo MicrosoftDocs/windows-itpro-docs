@@ -1,15 +1,14 @@
 ---
 title: Windows as a service
-ms.prod: w10 
-ms.topic: landing-page
-ms.manager: dougeby
-author: aczechowski
-ms.author: aaroncz
-description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
-ms.reviewer: 
-manager: dougeby
+ms.prod: windows-client
+ms.topic: article
+author: mestew
+ms.author: mstewart
+description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization.
+manager: aaroncz
 ms.localizationpriority: high
-ms.collection: M365-modern-desktop
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows as a service

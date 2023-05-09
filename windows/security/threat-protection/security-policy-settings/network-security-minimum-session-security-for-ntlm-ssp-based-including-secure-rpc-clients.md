@@ -4,7 +4,7 @@ description: Best practices and more for the security policy setting, Network se
 ms.assetid: 89903de8-23d0-4e0f-9bef-c00cb7aebf00
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 07/27/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: Minimum session security for NTLM SSP based (including secure RPC) clients** security policy setting.

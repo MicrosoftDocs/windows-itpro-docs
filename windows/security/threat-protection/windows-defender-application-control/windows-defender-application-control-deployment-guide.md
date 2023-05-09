@@ -1,15 +1,14 @@
 ---
 title: Deploying Windows Defender Application Control (WDAC) policies
 description: Learn how to plan and implement a WDAC deployment.
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
 manager: jsuther
-ms.date: 10/06/2022
+ms.date: 01/23/2023
 ms.topic: overview
 ---
 
@@ -32,7 +31,7 @@ Before you deploy your WDAC policies, you must first convert the XML to its bina
 
    ```powershell
     ## Update the path to your WDAC policy XML
-    $WDACPolicyXMLFile = $env:USERPROFILE"\Desktop\MyWDACPolicy.xml"
+    $WDACPolicyXMLFile = $env:USERPROFILE + "\Desktop\MyWDACPolicy.xml"
     [xml]$WDACPolicy = Get-Content -Path $WDACPolicyXMLFile
     if (($WDACPolicy.SiPolicy.PolicyID) -ne $null) ## Multiple policy format (For Windows builds 1903+ only, including Server 2022)
     {
@@ -56,9 +55,14 @@ All Windows Defender Application Control policy changes should be deployed in au
 
 ## Choose how to deploy WDAC policies
 
+> [!IMPORTANT]
+> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. We recommend [deploying via script](deployment/deploy-wdac-policies-with-script.md) in this case.
+>
+> This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
+
 There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 
 - [Deploy using a Mobile Device Management (MDM) solution](deployment/deploy-windows-defender-application-control-policies-using-intune.md), such as Microsoft Intune
-- [Deploy using Microsoft Endpoint Configuration Manager](deployment/deploy-wdac-policies-with-memcm.md)
+- [Deploy using Microsoft Configuration Manager](deployment/deploy-wdac-policies-with-memcm.md)
 - [Deploy via script](deployment/deploy-wdac-policies-with-script.md)
 - [Deploy via group policy](deployment/deploy-windows-defender-application-control-policies-using-group-policy.md)

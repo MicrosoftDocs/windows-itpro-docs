@@ -4,9 +4,9 @@ description: Learn how the VPN configuration service provider (CSP) allows the m
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 04/02/2017
 ---

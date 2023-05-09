@@ -1,23 +1,15 @@
 ---
 title: Windows Defender Firewall with Advanced Security (Windows)
 description: Learn overview information about the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.collection: M365-security-compliance
+ms.prod: windows-client
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.reviewer: jekrynit
-ms.custom: asr
-ms.technology: windows-sec
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Windows Defender Firewall with Advanced Security
@@ -35,7 +27,7 @@ The Windows Defender Firewall with Advanced Security MMC snap-in is more flexibl
 
 ## Feature description
 
-Windows Defender Firewall with Advanced Security is an important part of a layered security model. By providing host-based, two-way network traffic filtering for a device, Windows Defender Firewall blocks unauthorized network traffic flowing into or out of the local device. Windows Defender Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected. Windows Defender Firewall and Internet Protocol Security (IPsec) configuration settings are integrated into a single Microsoft Management Console (MMC) named Windows Defender Firewall, so Windows Defender Firewall is also an important part of your network’s isolation strategy.
+Windows Defender Firewall with Advanced Security is an important part of a layered security model. By providing host-based, two-way network traffic filtering for a device, Windows Defender Firewall blocks unauthorized network traffic flowing into or out of the local device. Windows Defender Firewall also works with Network Awareness so that it can apply security settings appropriate to the types of networks to which the device is connected. Windows Defender Firewall and Internet Protocol Security (IPsec) configuration settings are integrated into a single Microsoft Management Console (MMC) named Windows Defender Firewall, so Windows Defender Firewall is also an important part of your network's isolation strategy.
 
 ## Practical applications
 

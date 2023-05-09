@@ -1,127 +1,112 @@
 ---
-title: Enable hardware-based isolation for Microsoft Edge (Windows)
+title: Enable hardware-based isolation for Microsoft Edge
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 09/09/2021
-ms.reviewer: 
+ms.date: 11/30/2022
+ms.reviewer:
 manager: aaroncz
 ms.custom: asr
-ms.technology: windows-sec
+ms.technology: itpro-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+ms.collection:
+  - highpri
+  - tier2
+ms.topic: how-to
 ---
 
 # Prepare to install Microsoft Defender Application Guard
 
-**Applies to:**
+Before you continue, review [System requirements for Microsoft Defender Application Guard](reqs-md-app-guard.md) to review the hardware and software installation requirements for Microsoft Defender Application Guard.
 
-- Windows 10
-- Windows 11
+> [!NOTE]
+> Microsoft Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
 
-## Review system requirements
- 
-See [System requirements for Microsoft Defender Application Guard](./reqs-md-app-guard.md) to review the hardware and software installation requirements for Microsoft Defender Application Guard.
->[!NOTE]
->Microsoft Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
+## Prepare for Microsoft Defender Application Guard
 
-## Prepare for Microsoft Defender Application Guard 
 Before you can install and use Microsoft Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
 
 ### Standalone mode
 
-Applies to:
-- Windows 10 Enterprise edition, version 1709 or higher
-- Windows 10 Pro edition, version 1803
-- Windows 11
+Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode, you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-md-app-guard.md) testing scenario.
 
-Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode,   you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-md-app-guard.md) testing scenario.
+Standalone mode is applicable for:
+
+- Windows 10 Enterprise edition, version 1709 and later
+- Windows 10 Pro edition, version 1803 and later
+- Windows 11 and later
 
 ## Enterprise-managed mode
 
-Applies to:
-- Windows 10 Enterprise edition, version 1709 or higher
-- Windows 11
-
 You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
 
+Enterprise-managed mode is applicable for:
+
+- Windows 10 Enterprise edition, version 1709 and later
+- Windows 11 and later
+
 The following diagram shows the flow between the host PC and the isolated container.
+
 ![Flowchart for movement between Microsoft Edge and Application Guard.](images/application-guard-container-v-host.png)
 
 ## Install Application Guard
 
 Application Guard functionality is turned off by default. However, you can quickly install it on your employee's devices through the Control Panel, PowerShell, or your mobile device management (MDM) solution.
 
-### To install by using the Control Panel
+### Install from Control Panel
 
-1. Open the **Control Panel**, click **Programs,** and then click **Turn Windows features on or off**.
+1. Open the **Control Panel**, select **Programs,** and then select **Turn Windows features on or off**.
 
     ![Windows Features, turning on Microsoft Defender Application Guard.](images/turn-windows-features-on-off.png)
 
-2. Select the check box next to **Microsoft Defender Application Guard** and then click **OK**.
+1. Select the check box next to **Microsoft Defender Application Guard** and then select **OK** to install Application Guard and its underlying dependencies.
 
-   Application Guard and its underlying dependencies are all installed.
+### Install from PowerShell
 
-### To install by using PowerShell
+> [!NOTE]
+> Ensure your devices have met all system requirements prior to this step. PowerShell will install the feature without checking system requirements. If your devices don't meet the system requirements, Application Guard may not work. This step is recommended for enterprise managed scenarios only.
 
->[!NOTE]
->Ensure your devices have met all system requirements prior to this step. PowerShell will install the feature without checking system requirements. If your devices don't meet the system requirements, Application Guard may not work. This step is recommended for enterprise managed scenarios only.
+1. Select the **Search** icon in the Windows taskbar and type **PowerShell**.
 
-1. Click the **Search** or **Cortana** icon in the Windows 10 or Windows 11 taskbar and type **PowerShell**.
-   
-2. Right-click **Windows PowerShell**, and then click **Run as administrator**.
+1. Right-click **Windows PowerShell**, and then select **Run as administrator** to open Windows PowerShell with administrator credentials.
 
-   Windows PowerShell opens with administrator credentials.
+1. Type the following command:
 
-3. Type the following command:
+   ```powershell
+   Enable-WindowsOptionalFeature -Online -FeatureName Windows-Defender-ApplicationGuard
+   ```
 
-    ```
-    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
-    ```
-4. Restart the device.
+1. Restart the device to install Application Guard and its underlying dependencies.
 
-   Application Guard and its underlying dependencies are all installed.
-
-### To install by using Intune
+### Install from Intune
 
 > [!IMPORTANT]
 > Make sure your organization's devices meet [requirements](reqs-md-app-guard.md) and are [enrolled in Intune](/mem/intune/enrollment/device-enrollment).
 
-:::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune.":::
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
+1. Select **Endpoint security** > **Attack surface reduction** > **Create Policy**, and do the following:
 
-1. Choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
+   - In the **Platform** list, select **Windows 10 and later**.
+   - In the **Profile** type, select **App and browser isolation**.
+   - Select **Create**.
 
-   1. In the **Platform** list, select **Windows 10 and later**. 
-   
-   1. In the **Profile** list, select **Endpoint protection**. 
-   
-   1. Choose **Create**.
+1. In the **Basics** tab, specify the **Name** and **Description** for the policy. Select **Next**.
 
-1. Specify the following settings for the profile:
+1. In the **Configuration settings** tab, configure the **Application Guard** settings, as desired. Select **Next**.
 
-   - **Name** and **Description**
+1. In the **Scope tags** tab, if your organization is using scope tags, choose **+ Select scope tags**, and then select the tags you want to use. Select **Next**.
 
-   - In the **Select a category to configure settings** section, choose **Microsoft Defender Application Guard**.
+   To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-   - In the **Application Guard** list, choose **Enabled for Edge**.
+1. In the **Assignments** page, select the users or groups that will receive the policy. Select **Next**.
 
-   - Choose your preferences for **Clipboard behavior**, **External content**, and the remaining settings.
+   To learn more about assigning policies, see [Assign policies in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
 
-1. Choose **OK**, and then choose **OK** again.
+1. Review your settings, and then select **Create**.
 
-1. Review your settings, and then choose **Create**.
-
-1. Choose **Assignments**, and then do the following:
-
-   1. On the **Include** tab, in the **Assign to** list, choose an option.
-
-   1. If you have any devices or users you want to exclude from this endpoint protection profile, specify those on the **Exclude** tab.
-
-   1. Click **Save**.
-
-After the profile is created, any devices to which the policy should apply will have Microsoft Defender Application Guard enabled. Users might have to restart their devices in order for protection to be in place.
+After the policy is created, any devices to which the policy should apply will have Microsoft Defender Application Guard enabled. Users might have to restart their devices in order for protection to be in place.

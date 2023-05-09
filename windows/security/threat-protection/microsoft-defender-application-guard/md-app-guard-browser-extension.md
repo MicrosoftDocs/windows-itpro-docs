@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Application Guard Extension
 description: Learn about the Microsoft Defender Application Guard browser extension, which extends Application Guard's protection to more web browsers.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
@@ -9,7 +9,8 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.custom: asr
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Microsoft Defender Application Guard Extension

@@ -1,21 +1,13 @@
 ---
 title: VPN connection types (Windows 10 and Windows 11)
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.localizationpriority: medium
 ms.date: 08/23/2021
-manager: aaroncz
-ms.author: paoloma
-ms.reviewer: pesmith
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.topic: conceptual
 ---
 
 # VPN connection types
 
-Virtual private networks (VPNs) are point-to-point connections across a private or public network, such as the Internet. A VPN client uses special TCP/IP or UDP-based protocols, called *tunneling protocols*, to make a virtual call to a virtual port on a VPN server. In a typical VPN deployment, a client initiates a virtual point-to-point connection to a remote access server over the Internet. The remote access server answers the call, authenticates the caller, and transfers data between the VPN client and the organization’s private network.
+Virtual private networks (VPNs) are point-to-point connections across a private or public network, such as the Internet. A VPN client uses special TCP/IP or UDP-based protocols, called *tunneling protocols*, to make a virtual call to a virtual port on a VPN server. In a typical VPN deployment, a client initiates a virtual point-to-point connection to a remote access server over the Internet. The remote access server answers the call, authenticates the caller, and transfers data between the VPN client and the organization's private network.
 
 There are many options for VPN clients. In Windows 10 and Windows 11, the built-in plug-in and the Universal Windows Platform (UWP) VPN plug-in platform are built on top of the Windows VPN platform. This guide focuses on the Windows VPN platform clients and the features that can be configured. 
 

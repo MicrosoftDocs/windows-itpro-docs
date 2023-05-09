@@ -2,7 +2,7 @@
 title: 4674(S, F) An operation was attempted on a privileged object. (Windows 10)
 description: Describes security event 4674(S, F) An operation was attempted on a privileged object.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,8 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4674(S, F): An operation was attempted on a privileged object.

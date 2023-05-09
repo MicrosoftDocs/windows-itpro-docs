@@ -4,17 +4,15 @@ description: A secured-core PC (SCPC) feature that prevents configuration drift 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 05/24/2022
+appliesto:
+- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Secured-core PC configuration lock
-
-**Applies to**
-
-- Windows 11
 
 In an enterprise organization, IT administrators enforce policies on their corporate devices to keep the devices in a compliant state and protect the OS by preventing users from changing configurations and creating config drift. Config drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync and configuration reset with the MDM. Windows 11 with config lock enables IT administrators to prevent config drift and keep the OS configuration in the desired state. With config lock, the OS monitors the registry keys that configure each feature and when it detects a drift, reverts to the IT-desired state in seconds.
 
@@ -38,10 +36,10 @@ Config lock will be available for all Windows Professional and Enterprise Editio
 
 Config lock isn't enabled by default, or turned on by the OS during boot. Rather, you need to turn it on.
 
-The steps to turn on config lock using Microsoft Endpoint Manager (Microsoft Intune) are as follows:
+The steps to turn on config lock using Microsoft Intune are as follows:
 
 1. Ensure that the device to turn on config lock is enrolled in Microsoft Intune.
-1. From the Microsoft Intune portal main page, select **Devices** > **Configuration Profiles** > **Create a profile**.
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Configuration Profiles** > **Create a profile**.
 1. Select the following and press **Create**:
     - **Platform**: Windows 10 and later
     - **Profile type**: Templates
@@ -77,7 +75,7 @@ Config lock is designed to ensure that a secured-core PC isn't unintentionally m
 
 - Can I disable config lock? Yes. You can use MDM to turn off config lock completely or put it in temporary unlock mode for helpdesk activities.
 
-### List of locked policies
+## List of locked policies
 
 |**CSPs**     |
 |-----|

@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: a4167bf4-27c3-4a9b-8ef0-04e3c6ec3aa4
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,19 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 08/16/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Account lockout duration
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting.
 
@@ -41,11 +44,11 @@ It's advisable to set **Account lockout duration** to approximately 15 minutes.
 
 ### Location
 
-**Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Password Policy**
+**Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Account Lockout Policy**
 
 ### Default values
 
-The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default policy values. Default values are also listed on the policy's property page.
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |

@@ -1,24 +1,15 @@
 ---
 title: Windows Hello for Business Overview (Windows)
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection:
-  - M365-identity-device-management
+ms.collection: 
   - highpri
+  - tier1
 ms.topic: conceptual
-localizationpriority: medium
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Holographic for Business</b>
+ms.date: 12/31/2017
 ---
 # Windows Hello for Business Overview
 
-In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
+Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a type of user credential that is tied to a device and uses a biometric or PIN.
 
 >[!NOTE]
 > When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
@@ -53,9 +44,9 @@ Windows stores biometric data that is used to implement Windows Hello securely o
 
 ## The difference between Windows Hello and Windows Hello for Business
 
-- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on an individual's account type. This configuration is referred to as Windows Hello convenience PIN and it's not backed by asymmetric (public/private key) or certificate-based authentication.
+- Individuals can create a PIN or biometric gesture on their personal devices for convenient sign-in. This use of Windows Hello is unique to the device on which it's set up, but can use a password hash depending on an individual's account type. This configuration is referred to as *Windows Hello convenience PIN* and it's not backed by asymmetric (public/private key) or certificate-based authentication.
 
-- **Windows Hello for Business**, which is configured by group policy or mobile device management (MDM) policy, always uses key-based or certificate-based authentication. This behavior makes it more secure than **Windows Hello convenience PIN**.
+- *Windows Hello for Business*, which is configured by group policy or mobile device management (MDM) policy, always uses key-based or certificate-based authentication. This behavior makes it more secure than *Windows Hello convenience PIN*.
 
 ## Benefits of Windows Hello
 
@@ -118,5 +109,5 @@ Windows Hello for Business with a key, including cloud Kerberos trust, doesn't s
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

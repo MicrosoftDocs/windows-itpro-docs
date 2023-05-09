@@ -1,10 +1,9 @@
 ---
 title: Windows Defender Application Control Wizard
 description: The Windows Defender Application Control policy wizard tool allows you to create, edit, and merge application control policies in a simple to use Windows application.
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: isbrahm
 ms.author: vinpa

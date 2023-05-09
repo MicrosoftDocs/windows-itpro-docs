@@ -4,7 +4,7 @@ description: Best practices and security considerations for an interactive log-o
 ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive log on: Prompt the user to change passwords before expiration
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Prompt user to change password before expiration** security policy setting.

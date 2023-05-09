@@ -3,10 +3,6 @@ title: Configure and secure devices with Microsoft Intune
 description: Learn how to configure policies with Microsoft Intune in preparation for device deployment.
 ms.date: 08/31/2022
 ms.topic: tutorial
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
 ---
 
 # Configure and secure devices with Microsoft Intune
@@ -72,7 +68,7 @@ To create a Windows Update policy:
 For more information, see [Updates and upgrade][INT-6].
 
 > [!NOTE]
-> If you require a more complex Windows Update policy, you can create it in Microsoft Endpoint Manager. For more information:
+> If you require a more complex Windows Update policy, you can create it in Microsoft Intune. For more information:
 > - [<u>What is Windows Update for Business?</u>][WIN-1]
 > - [<u>Manage Windows software updates in Intune</u>][MEM-1]
 
@@ -94,7 +90,7 @@ To create a security policy:
 For more information, see [Security][INT-4].
  
 > [!NOTE]
-> If you require more sophisticated security policies, you can create them in Microsoft Endpoint Manager. For more information:
+> If you require more sophisticated security policies, you can create them in Microsoft Intune. For more information:
 > - [<u>Antivirus</u>][MEM-2]
 > - [<u>Disk encryption</u>][MEM-3]
 > - [<u>Firewall</u>][MEM-4]

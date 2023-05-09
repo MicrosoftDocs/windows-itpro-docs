@@ -4,7 +4,7 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: fcfe8a6d-ca65-4403-b9e6-2fa017a31c2e
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Message text for users attempting to log on
 
 **Applies to:**
 
+- Windows 11
 - Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Interactive logon: Message text for users attempting to log on** security policy setting.

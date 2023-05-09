@@ -2,7 +2,7 @@
 title: 6410(F) Code integrity determined that a file doesn't meet the security requirements to load into a process. (Windows 10)
 description: Describes security event 6410(F) Code integrity determined that a file doesn't meet the security requirements to load into a process.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,8 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6410(F): Code integrity determined that a file does not meet the security requirements to load into a process.

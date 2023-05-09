@@ -1,21 +1,25 @@
 ---
 title: Privacy in Update Compliance
-ms.reviewer: 
-manager: aczechowski
+manager: aaroncz
 description: an overview of the Feature Update Status report
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 04/01/2023
 ---
 
 # Privacy in Update Compliance
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 
 Update Compliance is fully committed to privacy, centering on these tenets:
 
@@ -54,6 +58,6 @@ See related topics for additional background information on privacy and treatmen
 - [Windows 10 and the GDPR for IT Decision Makers](/windows/privacy/gdpr-it-guidance)
 - [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview)
-- [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Licensing Terms and Documentation](https://www.microsoft.com/licensing/docs/)
 - [Confidence in the trusted cloud](https://azure.microsoft.com/support/trust-center/)
 - [Trust Center](https://www.microsoft.com/trustcenter)

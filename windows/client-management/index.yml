@@ -6,17 +6,16 @@ summary: Find out how to apply custom configurations to Windows client devices. 
 metadata:
   title: Manage Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the administrative tools, tasks, and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
-  ms.topic: landing-page # Required
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.technology: itpro-manage
   ms.collection:
-    - windows-10
     - highpri
+    - tier1
   author: aczechowski
   ms.author: aaroncz
   manager: dougeby
-  ms.date: 03/28/2022 #Required; mm/dd/yyyy format.
+  ms.date: 04/13/2023
   localization_priority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -38,9 +37,9 @@ landingContent:
           - text: Enterprise settings, policies, and app management
             url: windows-mdm-enterprise-settings.md
           - text: Windows Tools/Administrative Tools
-            url: administrative-tools-in-windows-10.md
+            url: client-tools/administrative-tools-in-windows.md
           - text: Create mandatory user profiles
-            url: mandatory-user-profile.md
+            url: client-tools/mandatory-user-profile.md
 
   - title: Device enrollment
     linkLists:
@@ -89,11 +88,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot Windows 10 clients
-            url: windows-10-support-solutions.md
+          - text: Troubleshoot Windows clients
+            url: /troubleshoot/windows-client/welcome-windows-client
           - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows start-up
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-windows-startup.md
+            url: /troubleshoot/windows-client/networking/networking-overview
+          - text: Advanced troubleshooting for Windows start-up and performance
+            url: /troubleshoot/windows-client/performance/performance-overview
+          - text: Advanced troubleshooting for user profiles and logon
+            url: /troubleshoot/windows-client/user-profiles-and-logon/userprofiles-and-logon-overview

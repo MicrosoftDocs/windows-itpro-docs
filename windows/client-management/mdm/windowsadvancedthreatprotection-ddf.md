@@ -5,9 +5,9 @@ ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---

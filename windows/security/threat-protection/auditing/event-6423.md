@@ -2,7 +2,7 @@
 title: 6423(S) The installation of this device is forbidden by system policy. (Windows 10)
 description: Describes security event 6423(S) The installation of this device is forbidden by system policy.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,8 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6423(S): The installation of this device is forbidden by system policy.

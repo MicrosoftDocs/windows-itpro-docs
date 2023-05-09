@@ -1,21 +1,8 @@
 ---
 title: Windows Hello biometrics in the enterprise (Windows)
 description: Windows Hello uses biometrics to authenticate users and guard against potential spoofing, through fingerprint matching and facial recognition.
-ms.prod: m365-security
-ms.collection:
-  - M365-identity-device-management
-  - highpri
-ms.topic: article
-localizationpriority: medium
 ms.date: 01/12/2021
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: prsriva
-manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Holographic for Business</b>
+ms.topic: article
 ---
 
 # Windows Hello biometrics in the enterprise
@@ -100,4 +87,4 @@ To use Iris authentication, you’ll need a [HoloLens 2 device](/hololens/). All
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/windows/security/identity-protection/hello-for-business/hello-faq)

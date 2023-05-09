@@ -28,8 +28,12 @@
     ],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
       "ms.topic": "article",
-      "ms.collection": "education",
+      "ms.collection": [
+        "education",
+        "tier2"
+      ],
       "ms.prod": "windows-client",
       "ms.technology": "itpro-edu",
       "author": "paolomatarazzo",
@@ -52,22 +56,25 @@
         "rjagiewich", 
         "traya1", 
         "rmca14", 
-        "claydetels19", 
+        "claydetels19",
         "Kellylorenebaker",
         "jborsecnik",
         "tiburd",
         "AngelaMotherofDragons",
         "dstrome",
         "v-dihans",
-        "garycentric"
+        "garycentric",
+        "v-stsavell",
+        "beccarobins"
       ]
     },
     "fileMetadata": {
-      "ms.localizationpriority": {
-        "windows/tutorial-school-deployment/**/**.md": "medium"
-      },
-      "ms.topic": {
-        "windows/tutorial-school-deployment/**/**.md": "tutorial"
+      "appliesto":{
+        "windows/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11 SE</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ]
       }
     },
     "externalReference": [],

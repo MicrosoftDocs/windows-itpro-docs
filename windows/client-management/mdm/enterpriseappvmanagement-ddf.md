@@ -2,9 +2,9 @@
 title: EnterpriseAppVManagement DDF file
 description: Learn about the OMA DM device description framework (DDF) for the EnterpriseAppVManagement configuration service provider (CSP).
 ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/05/2017
 ms.reviewer:

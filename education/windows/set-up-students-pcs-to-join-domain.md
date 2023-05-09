@@ -4,7 +4,7 @@ description: Learn how to use Windows Configuration Designer to provision studen
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Set up student PCs to join domain

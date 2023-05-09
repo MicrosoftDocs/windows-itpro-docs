@@ -4,7 +4,7 @@ description: Best practices and more for the security policy setting, Interactiv
 ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Number of previous logons to cache (in case domain controller is not available)
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Interactive logon: Number of previous logons to cache (in case domain controller is not available)** security policy setting.
@@ -52,7 +52,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-The [Windows security baselines](../windows-security-baselines.md) don't recommend configuring this setting. 
+The [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) don't recommend configuring this setting. 
 
 ### Location
 

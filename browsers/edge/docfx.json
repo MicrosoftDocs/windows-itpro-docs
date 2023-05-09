@@ -27,8 +27,13 @@
       }
     ],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-MSEdge",
       "recommendations": true,
-      "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
+      "adobe-target": true,
+      "ms.collection": [
+        "tier3"
+      ],
+      "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",
       "audience": "ITPro",
@@ -51,7 +56,8 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ]
     },
     "fileMetadata": {},

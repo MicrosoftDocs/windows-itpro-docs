@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: e66cd708-7322-4d49-9b57-1bf8ec7a4c10
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,21 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Restrict anonymous access to Named Pipes and Shares
 
 **Applies to**
+-   Windows 11
 -   Windows 10
+-   Windows 8.1
+-   Windows Server 2022
+-   Windows Server 2019
+-   Windows Server 2016
+-   Windows Server 2012 R2
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Restrict anonymous access to Named Pipes and Shares** security policy setting.
 

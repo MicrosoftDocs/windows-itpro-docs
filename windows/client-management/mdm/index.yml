@@ -6,12 +6,12 @@ summary: Learn more about the configuration service provider (CSP) policies avai
 metadata:
   title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
-  ms.topic: landing-page # Required
-  services: windows-10
-  ms.prod: windows
+  ms.topic: landing-page
+  ms.technology: itpro-manage
+  ms.prod: windows-client
   ms.collection:
-    - windows-10
     - highpri
+    - tier1
   ms.custom: intro-hub-or-landing
   author: vinaypamnani-msft
   ms.author: vinpa
@@ -48,7 +48,7 @@ landingContent:
           - text: Policy CSP
             url: policy-configuration-service-provider.md
           - text: Policy DDF file
-            url: policy-ddf-file.md
+            url: configuration-service-provider-ddf.md
           - text: Policy CSP - Start
             url: policy-csp-start.md
           - text: Policy CSP - Update

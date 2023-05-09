@@ -3,20 +3,19 @@ title: Windows Defender Application Control Wizard Supplemental Policy Creation
 description: Creating supplemental application control policies with the WDAC Wizard.
 keywords: allowlisting, blocklisting, security, malware, supplemental policy
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Creating a new Supplemental Policy with the Wizard
@@ -62,7 +61,7 @@ There are only three policy rules that can be configured by the supplemental pol
 | Rule option | Description |
 |------------ | ----------- |
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
-| **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
+| **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
 | **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
 
 ![Rule options UI for Windows Allowed mode.](images/wdac-wizard-supplemental-policy-rule-options-UI.png)

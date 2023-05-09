@@ -34,6 +34,10 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "GitHub",
@@ -53,7 +57,8 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ],
       "searchScope": ["Windows 10"]
     },
