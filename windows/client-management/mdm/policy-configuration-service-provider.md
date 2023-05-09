@@ -25,21 +25,21 @@ The Policy configuration service provider has the following sub-categories:
 - Policy/Config/**AreaName** - Handles the policy configuration request from the server.
 - Policy/Result/**AreaName** - Provides a read-only path to policies enforced on the device.
 
-> [!IMPORTANT]
-> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user.
->
-> The allowed scope of a specific policy is represented below its table of supported Windows editions. To configure a policy under a specific scope (user vs. device), please use the following paths:
->
-> User scope:
->
-> - **./User/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
-> - **./User/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
->
-> Device scope:
->
-> - **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
-> - **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
->
+## Policy scope
+
+Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user. To configure a policy under a specific scope (user vs. device), please use the following paths:
+
+**User scope**:
+
+- **./User/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+- **./User/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+
+**Device scope**:
+
+- **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+- **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+
+> [!NOTE]
 > For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent to the paths provided above:
 >
 > - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
@@ -103,7 +103,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-Config-DFProperties-End -->
 
@@ -142,7 +142,7 @@ The area group that can be configured by a single technology for a single provid
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Config-{AreaName}-DFProperties-End -->
@@ -190,7 +190,7 @@ The following list shows some tips to help you when configuring policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Config-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -230,7 +230,7 @@ The root node for grouping different configuration operations.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-ConfigOperations-DFProperties-End -->
 
@@ -273,7 +273,7 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-ConfigOperations-ADMXInstall-DFProperties-End -->
 
@@ -312,7 +312,7 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-DFProperties-End -->
@@ -352,7 +352,7 @@ Setting Type of Win32 App. Policy Or Preference.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Setting Type of Win32 App. Policy Or Preference |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-DFProperties-End -->
@@ -392,7 +392,7 @@ Unique ID of ADMX file.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-DFProperties-End -->
@@ -432,7 +432,7 @@ Properties of Win32 App ADMX Ingestion.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-DFProperties-End -->
 
@@ -471,7 +471,7 @@ Setting Type of Win32 App. Policy Or Preference.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Setting Type of Win32 App. Policy Or Preference |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-DFProperties-End -->
@@ -511,7 +511,7 @@ Unique ID of ADMX file.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-DFProperties-End -->
@@ -551,7 +551,7 @@ Version of ADMX file. This can be set by the server to keep a record of the vers
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-DFProperties-End -->
 
@@ -590,7 +590,7 @@ Groups the evaluated policies from all providers that can be configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Result-DFProperties-End -->
 
@@ -629,7 +629,7 @@ The area group that can be configured by a single technology independent of the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Result-{AreaName}-DFProperties-End -->
@@ -669,7 +669,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Result-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -709,7 +709,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-Config-DFProperties-End -->
 
@@ -756,7 +756,7 @@ The following list shows some tips to help you when configuring policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-Config-{AreaName}-DFProperties-End -->
@@ -796,7 +796,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-Config-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -836,7 +836,7 @@ Groups the evaluated policies from all providers that can be configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-Result-DFProperties-End -->
 
@@ -875,7 +875,7 @@ The area group that can be configured by a single technology independent of the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-Result-{AreaName}-DFProperties-End -->
@@ -915,7 +915,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- User-Result-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -1118,7 +1118,6 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ExploitGuard](policy-csp-exploitguard.md)
 - [FederatedAuthentication](policy-csp-federatedauthentication.md)
 - [FileExplorer](policy-csp-fileexplorer.md)
-- [FileSystem](policy-csp-filesystem.md)
 - [Games](policy-csp-games.md)
 - [Handwriting](policy-csp-handwriting.md)
 - [HumanPresence](policy-csp-humanpresence.md)
