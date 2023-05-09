@@ -4,7 +4,7 @@ description: Learn more about the WindowsLicensing CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,12 +28,10 @@ The following list shows the WindowsLicensing configuration service provider nod
   - [ChangeProductKey](#changeproductkey)
   - [CheckApplicability](#checkapplicability)
   - [DeviceLicensingService](#devicelicensingservice)
-    - [AcquireDeviceLicense](#devicelicensingserviceacquiredevicelicense)
     - [DeviceLicensingLastError](#devicelicensingservicedevicelicensinglasterror)
     - [DeviceLicensingLastErrorDescription](#devicelicensingservicedevicelicensinglasterrordescription)
     - [DeviceLicensingStatus](#devicelicensingservicedevicelicensingstatus)
     - [LicenseType](#devicelicensingservicelicensetype)
-    - [RemoveDeviceLicense](#devicelicensingserviceremovedevicelicense)
   - [Edition](#edition)
   - [LicenseKeyType](#licensekeytype)
   - [SMode](#smode)
@@ -45,6 +43,12 @@ The following list shows the WindowsLicensing configuration service provider nod
     - [{SubscriptionId}](#subscriptionssubscriptionid)
       - [Name](#subscriptionssubscriptionidname)
       - [Status](#subscriptionssubscriptionidstatus)
+    - [DisableSubscription](#subscriptionsdisablesubscription)
+    - [RemoveSubscription](#subscriptionsremovesubscription)
+    - [SubscriptionLastError](#subscriptionssubscriptionlasterror)
+    - [SubscriptionLastErrorDescription](#subscriptionssubscriptionlasterrordescription)
+    - [SubscriptionStatus](#subscriptionssubscriptionstatus)
+    - [SubscriptionType](#subscriptionssubscriptiontype)
   - [UpgradeEditionWithLicense](#upgradeeditionwithlicense)
   - [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey)
 <!-- WindowsLicensing-Tree-End -->
@@ -167,7 +171,8 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-OmaUri-End -->
 
 <!-- Device-DeviceLicensingService-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-DDF -->
+Device Based Subscription.
 <!-- Device-DeviceLicensingService-Description-End -->
 
 <!-- Device-DeviceLicensingService-Editable-Begin -->
@@ -188,45 +193,6 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-Examples-End -->
 
 <!-- Device-DeviceLicensingService-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Begin -->
-### DeviceLicensingService/AcquireDeviceLicense
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Applicability-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/WindowsLicensing/DeviceLicensingService/AcquireDeviceLicense
-```
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-OmaUri-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Description-Begin -->
-<!-- Description-Source-DDF -->
-Acquire and Refresh Device License. Does not reboot.
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Description-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Editable-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | null |
-| Access Type | Exec |
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-DFProperties-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-Examples-End -->
-
-<!-- Device-DeviceLicensingService-AcquireDeviceLicense-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Begin -->
 ### DeviceLicensingService/DeviceLicensingLastError
@@ -375,7 +341,7 @@ License Type: User Based Subscription or Device Based Subscription.
 | Property name | Property value |
 |:--|:--|
 | Format | int |
-| Access Type | Add, Delete, Get, Replace |
+| Access Type | Get, Replace |
 <!-- Device-DeviceLicensingService-LicenseType-DFProperties-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-AllowedValues-Begin -->
@@ -392,45 +358,6 @@ License Type: User Based Subscription or Device Based Subscription.
 <!-- Device-DeviceLicensingService-LicenseType-Examples-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Begin -->
-### DeviceLicensingService/RemoveDeviceLicense
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Applicability-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/WindowsLicensing/DeviceLicensingService/RemoveDeviceLicense
-```
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-OmaUri-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Description-Begin -->
-<!-- Description-Source-DDF -->
-Remove Device License. Device would be ready for user based license after this operation. Does not reboot.
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Description-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Editable-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | null |
-| Access Type | Exec |
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-DFProperties-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-Examples-End -->
-
-<!-- Device-DeviceLicensingService-RemoveDeviceLicense-End -->
 
 <!-- Device-Edition-Begin -->
 ## Edition
@@ -1063,6 +990,258 @@ Returns the status of the subscription.
 <!-- Device-Subscriptions-{SubscriptionId}-Status-Examples-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-Status-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Begin -->
+### Subscriptions/DisableSubscription
+
+<!-- Device-Subscriptions-DisableSubscription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Subscriptions-DisableSubscription-Applicability-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/DisableSubscription
+```
+<!-- Device-Subscriptions-DisableSubscription-OmaUri-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disable or Enable subscription activation on a device.
+<!-- Device-Subscriptions-DisableSubscription-Description-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-DisableSubscription-Editable-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Replace |
+<!-- Device-Subscriptions-DisableSubscription-DFProperties-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Enable Subscription. |
+| 1 | Disable Subscription. It also removes any existing subscription on the device. |
+<!-- Device-Subscriptions-DisableSubscription-AllowedValues-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-DisableSubscription-Examples-End -->
+
+<!-- Device-Subscriptions-DisableSubscription-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Begin -->
+### Subscriptions/RemoveSubscription
+
+<!-- Device-Subscriptions-RemoveSubscription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Subscriptions-RemoveSubscription-Applicability-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/RemoveSubscription
+```
+<!-- Device-Subscriptions-RemoveSubscription-OmaUri-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Description-Begin -->
+<!-- Description-Source-DDF -->
+Remove subscription uninstall subscription license. It also reset subscription type to User Based Subscription.
+<!-- Device-Subscriptions-RemoveSubscription-Description-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-RemoveSubscription-Editable-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | null |
+| Access Type | Exec |
+<!-- Device-Subscriptions-RemoveSubscription-DFProperties-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-RemoveSubscription-Examples-End -->
+
+<!-- Device-Subscriptions-RemoveSubscription-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Begin -->
+### Subscriptions/SubscriptionLastError
+
+<!-- Device-Subscriptions-SubscriptionLastError-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Subscriptions-SubscriptionLastError-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionLastError
+```
+<!-- Device-Subscriptions-SubscriptionLastError-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Description-Begin -->
+<!-- Description-Source-DDF -->
+Error code of last subscription operation. Value would be empty(0) in absence of error.
+<!-- Device-Subscriptions-SubscriptionLastError-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastError-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Get |
+<!-- Device-Subscriptions-SubscriptionLastError-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastError-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastError-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Begin -->
+### Subscriptions/SubscriptionLastErrorDescription
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionLastErrorDescription
+```
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Description-Begin -->
+<!-- Description-Source-DDF -->
+Error description of last subscription operation. Value would be empty, if error description cannot be evaluated.
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Get |
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionLastErrorDescription-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Begin -->
+### Subscriptions/SubscriptionStatus
+
+<!-- Device-Subscriptions-SubscriptionStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Subscriptions-SubscriptionStatus-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionStatus
+```
+<!-- Device-Subscriptions-SubscriptionStatus-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+Status of last subscription operation.
+<!-- Device-Subscriptions-SubscriptionStatus-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionStatus-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Get |
+<!-- Device-Subscriptions-SubscriptionStatus-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionStatus-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionStatus-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Begin -->
+### Subscriptions/SubscriptionType
+
+<!-- Device-Subscriptions-SubscriptionType-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Subscriptions-SubscriptionType-Applicability-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/WindowsLicensing/Subscriptions/SubscriptionType
+```
+<!-- Device-Subscriptions-SubscriptionType-OmaUri-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Description-Begin -->
+<!-- Description-Source-DDF -->
+Set device to Device Based Subscription or User Based Subscription. For Device Based Subscription this action will automatically acquire the subscription on the device. For User Based Subscription the existing process of user logon will be required.
+<!-- Device-Subscriptions-SubscriptionType-Description-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionType-Editable-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Get, Replace |
+<!-- Device-Subscriptions-SubscriptionType-DFProperties-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | User Based Subscription. |
+| 1 | Device Based Subscription. |
+<!-- Device-Subscriptions-SubscriptionType-AllowedValues-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Subscriptions-SubscriptionType-Examples-End -->
+
+<!-- Device-Subscriptions-SubscriptionType-End -->
 
 <!-- Device-UpgradeEditionWithLicense-Begin -->
 ## UpgradeEditionWithLicense
