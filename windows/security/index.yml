@@ -1,22 +1,21 @@
 ### YamlMime:Landing
 
-title: Windows security # < 60 chars
-summary: Built with Zero Trust principles at the core to safeguard data and access anywhere, keeping you protected and productive.  # < 160 chars
+title: Windows security
+summary: Built with Zero Trust principles at the core to safeguard data and access anywhere, keeping you protected and productive.
 
 metadata:
-  title: Windows security # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about Windows security # Required; article description that is displayed in search results. < 160 chars.
-  ms.topic: landing-page # Required
-  ms.prod: windows
+  title: Windows security
+  description: Learn about Windows security technologies and how to use them to protect your data and devices.
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.technology: itpro-security
   ms.collection:
-    - m365-security-compliance
     - highpri
-  ms.custom: intro-hub-or-landing
-  author: dansimp #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/20/2021
-  localization_priority: Priority
-    
+    - tier1
+  author: paolomatarazzo
+  ms.author: paoloma
+  ms.date: 12/19/2022
+
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
@@ -133,13 +132,13 @@ landingContent:
       - linkListType: concept
         links:
         - text: Mobile device management
-          url: https://docs.microsoft.com/windows/client-management/mdm/
+          url: /windows/client-management/mdm/
         - text: Azure Active Directory
           url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
         - text: Your Microsoft Account
           url: identity-protection/access-control/microsoft-accounts.md
         - text: OneDrive
-          url: https://docs.microsoft.com/onedrive/onedrive
+          url: /onedrive/onedrive
         - text: Family safety
           url: threat-protection/windows-defender-security-center/wdsc-family-options.md
 # Cards and links should be based on top customer tasks or top subjects
@@ -156,7 +155,7 @@ landingContent:
           - text: Microsoft Security Development Lifecycle
             url: threat-protection/msft-security-dev-lifecycle.md
           - text: Microsoft Bug Bounty
-            url: /microsoft-365/security/intelligence/microsoft-bug-bounty-program.md
+            url: /microsoft-365/security/intelligence/microsoft-bug-bounty-program
           - text: Common Criteria Certifications
             url: threat-protection/windows-platform-common-criteria.md
           - text: Federal Information Processing Standard (FIPS) 140 Validation
@@ -170,4 +169,3 @@ landingContent:
         links:
         - text: Windows and Privacy Compliance
           url: /windows/privacy/windows-10-and-privacy-compliance
-

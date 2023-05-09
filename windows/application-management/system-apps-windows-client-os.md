@@ -1,13 +1,16 @@
 ---
 title: Get the system apps on Windows client operating system | Microsoft Docs
-ms.reviewer: 
-manager: dougeby
 description: Use the Windows PowerShell Get-AppxPackage command to get a list off the system apps installed in Windows OS. See a list of some common system apps installed a Windows Enterprise client computer or device, including Windows 10/11.
-ms.prod: w10
-ms.author: aaroncz
-author: aczechowski
-ms.localizationpriority: medium
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
+ms.date: 2/14/2023
 ms.topic: article
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier1
+ms.reviewer:
 ---
 
 # System apps installed with the Windows client OS
@@ -41,314 +44,314 @@ The following information lists the system apps on some Windows Enterprise OS ve
 - File Picker | Package name: 1527c705-839a-4832-9118-54d4Bd6a0c89
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - File Explorer | Package name: c5e2524a-ea46-4f67-841f-6a9465d9d515
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - App Resolver UX | Package name: E2A4F912-2574-4A75-9BB0-0D023378592B
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Add Suggested Folders To Library | Package name: F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - InputApp
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ |  | | ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ |  | | ✔️ |
 
   ---
 
 - Microsoft.AAD.Broker.Plugin | Package name: Microsoft.AAD.Broker.Plugin
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.AccountsControl | Package name: Microsoft.AccountsControl
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.AsyncTextService | Package name: Microsoft.AsyncTextService
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Hello setup UI | Package name: Microsoft.BioEnrollment
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.CredDialogHost
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.ECApp
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.LockApp
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft Edge | Package name: Microsoft.MicrosoftEdge
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.MicrosoftEdgeDevToolsClient
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.PPIProjection
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ |  | | ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ |  | | ✔️ |
 
   ---
 
 - Microsoft.Win32WebViewHost
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.Apprep.ChxApp
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.AssignedAccessLockApp
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.CapturePicker
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.CloudExperienceHost
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.ContentDeliveryManager
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Cortana | Package name: Microsoft.Windows.Cortana
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ |  | | ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ |  | | ✔️ |
 
   ---
 
 - Microsoft.Windows.OOBENetworkCaptivePort
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.OOBENetworkConnectionFlow
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.ParentalControls
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - People Hub | Package name: Microsoft.Windows.PeopleExperienceHost
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.PinningConfirmationDialog
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.SecHealthUI
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.Windows.SecureAssessmentBrowser
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Start | Package name: Microsoft.Windows.ShellExperienceHost
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Microsoft.XboxGameCallableUI
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Windows.CBSPreview
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Settings | Package name: Windows.immersivecontrolpanel
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---
 
 - Print 3D | Package name: Windows.Print3D
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ✔️ |  | | ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ✔️ | ✔️ |  | | ✔️ |
 
   ---
 
 - Print UI | Package name: Windows.PrintDialog
 
   ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
+  | Uninstall through UI? | 22H2 | 22H1 | 21H2 | 20H2 | 1809 |
+  | --- | --- | --- | --- | --- | --- |
+  | | ❌ | ❌ | ✔️ | ✔️| ✔️ |
 
   ---

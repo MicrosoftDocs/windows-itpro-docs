@@ -2,12 +2,13 @@
 title: Install the Publishing Server on a Remote Computer (Windows 10/11)
 description: Use the procedures in this article to install the Microsoft Application Virtualization (App-V) publishing server on a separate computer.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # How to install the publishing server on a remote computer

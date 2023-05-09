@@ -1,15 +1,14 @@
 ---
 title: Windows Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 12/01/2021
-ms.technology: privacy
+ms.date: 05/20/2019
+ms.topic: conceptual
 ---
 
 # Windows Privacy Compliance:<br />A Guide for IT and Compliance Professionals
@@ -166,7 +165,7 @@ We recommend that IT administrators who have enabled the Windows diagnostic data
 >[!Note]
 >Tenant account closure will lead to the deletion of all data associated with that tenant.
 
-Specific services that depend on Windows diagnostic data will also result in the enterprise becoming controllers of their Windows diagnostic data. These services include Update Compliance, Desktop Analytics, Windows Update for Business, and Microsoft Managed Desktop. For more information, see [Related Windows product considerations](#5-related-windows-product-considerations).
+Specific services that depend on Windows diagnostic data will also result in the enterprise becoming controllers of their Windows diagnostic data. These services include Update Compliance, Windows Update for Business reports, Windows Update for Business, and Microsoft Managed Desktop. For more information, see [Related Windows product considerations](#5-related-windows-product-considerations).
 
 For more information on how Microsoft can help you honor rights and fulfill obligations under the GDPR when using Windows diagnostic data processor configurations, see [General Data Protection Regulation Summary](/compliance/regulatory/gdpr).
 
@@ -231,17 +230,18 @@ An administrator can configure privacy-related settings, such as choosing to onl
 >[!Note]
 >The Windows diagnostic data processor configuration is not available for Surface Hub.
 
-### 5.3 Desktop Analytics
-
-[Desktop Analytics](/mem/configmgr/desktop-analytics/overview) is a set of solutions for Azure portal that provide you with extensive data about the state of devices in your deployment. Desktop Analytics is a separate offering from Windows and is dependent on enabling a minimum set of data collection on the device to function.
-
-### 5.4 Microsoft Managed Desktop
+### 5.3 Microsoft Managed Desktop
 
 [Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows Enterprise edition, Office 365 ProPlus, and Microsoft security services.
 
-### 5.5 Update Compliance
+### 5.4 Update Compliance
 
 [Update Compliance](/windows/deployment/update/update-compliance-monitor) is a service that enables organizations to monitor security, quality and feature updates for Windows Professional, Education, and Enterprise editions, and view a report of device and update issues related to compliance that need attention. Update Compliance uses Windows diagnostic data for all its reporting.
+
+### 5.5 Windows Update for Business reports
+
+[Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview) is a cloud-based solution that provides information about an organization’s Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports uses Windows diagnostic data for all its reporting.
+
 
 ## Additional Resources
 

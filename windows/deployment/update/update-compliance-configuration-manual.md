@@ -1,14 +1,14 @@
 ---
 title: Manually configuring devices for Update Compliance
-ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Manually configuring devices for Update Compliance
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 04/01/2023
 ---
 
 # Manually Configuring Devices for Update Compliance
@@ -17,6 +17,10 @@ ms.topic: article
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows client. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
@@ -42,7 +46,7 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 | Policy | Data type | Value | Function |
 |--------------------------|-|-|------------------------------------------------------------|
 |**Provider/*ProviderID*/**[**CommercialID**](/windows/client-management/mdm/dmclient-csp#provider-providerid-commercialid) |String |[Your CommercialID](update-compliance-get-started.md#get-your-commercialid) |Identifies the device as belonging to your organization. |
-|**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |Integer | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. |
+|**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |Integer | 1 - Basic |Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date. For more information, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization). |
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) |Integer |1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
 |**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) |Integer | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 | **System/**[**AllowUpdateComplianceProcessing**](/windows/client-management/mdm/policy-csp-system#system-allowUpdateComplianceProcessing) |Integer | 16 - Allowed | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
@@ -67,7 +71,7 @@ All Group policies that need to be configured for Update Compliance are under **
 To enable data sharing between devices, your network, and Microsoft's Diagnostic Data Service, configure your proxy to allow devices to contact the below endpoints.
 
 <!--Using include for endpoint access requirements-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-endpoints.md)]
 
 ## Required services
 

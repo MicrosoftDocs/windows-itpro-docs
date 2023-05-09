@@ -1,24 +1,13 @@
 ---
-title: Tpmvscmgr (Windows 10)
-description: This topic for the IT professional describes the Tpmvscmgr command-line tool, through which an administrator can create and delete TPM virtual smart cards on a computer.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-ms.localizationpriority: medium
-ms.date: 04/19/2017
-ms.reviewer: 
+title: Tpmvscmgr
+description: Learn about the Tpmvscmgr command-line tool, through which an administrator can create and delete TPM virtual smart cards on a computer.
+ms.topic: conceptual
+ms.date: 02/22/2023
 ---
 
 # Tpmvscmgr
 
-Applies To: Windows 10, Windows Server 2016
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 The Tpmvscmgr command-line tool allows users with Administrative credentials to create and delete TPM virtual smart cards on a computer. For examples of how this command can be used, see [Examples](#examples).
 
@@ -30,7 +19,7 @@ The Tpmvscmgr command-line tool allows users with Administrative credentials to 
 
 ### Parameters for Create command
 
-The Create command sets up new virtual smart cards on the user’s system. It returns the instance ID of the newly created card for later reference if deletion is required. The instance ID is in the format ROOT\\SMARTCARDREADER\\000n where n starts from 0 and is increased by 1 each time you create a new virtual smart card.
+The Create command sets up new virtual smart cards on the user's system. It returns the instance ID of the newly created card for later reference if deletion is required. The instance ID is in the format `ROOT\SMARTCARDREADER\000n` where n starts from 0 and is increased by 1 each time you create a new virtual smart card.
 
 | Parameter | Description |
 |-----------|-------------|
@@ -38,10 +27,10 @@ The Create command sets up new virtual smart cards on the user’s system. It re
 | /AdminKey | Indicates the desired administrator key that can be used to reset the PIN of the card if the user forgets the PIN.<br>**DEFAULT** Specifies the default value of 010203040506070801020304050607080102030405060708.<br>**PROMPT**&nbsp;&nbsp;Prompts the user to enter a value for the administrator key.<br>**RANDOM**&nbsp;&nbsp;Results in a random setting for the administrator key for a card that is not returned to the user. This creates a card that might not be manageable by using smart card management tools. When generated with RANDOM, the administrator key is set as 48 hexadecimal characters. |
 | /PIN | Indicates desired user PIN value.<br>**DEFAULT**&nbsp;&nbsp;Specifies the default PIN of 12345678.<br>**PROMPT**&nbsp;&nbsp;Prompts the user to enter a PIN at the command line. The PIN must be a minimum of eight characters, and it can contain numerals, characters, and special characters. |
 | /PUK | Indicates the desired PIN Unlock Key (PUK) value. The PUK value must be a minimum of eight characters, and it can contain numerals, characters, and special characters. If the parameter is omitted, the card is created without a PUK.<br>**DEFAULT**&nbsp;&nbsp;Specifies the default PUK of 12345678.<br>**PROMPT**&nbsp;&nbsp;Prompts the user to enter a PUK at the command line. |
-| /generate | Generates the files in storage that are necessary for the virtual smart card to function. If the /generate parameter is omitted, it is equivalent to creating a card without this file system. A card without a file system can be managed only by a smart card management system such as Microsoft Endpoint Configuration Manager. |
+| /generate | Generates the files in storage that are necessary for the virtual smart card to function. If the /generate parameter is omitted, it's equivalent to creating a card without this file system. A card without a file system can be managed only by a smart card management system such as Microsoft Configuration Manager. |
 | /machine | Allows you to specify the name of a remote computer on which the virtual smart card can be created. This can be used in a domain environment only, and it relies on DCOM. For the command to succeed in creating a virtual smart card on a different computer, the user running this command must be a member in the local administrators group on the remote computer. |
 | /pinpolicy | If **/pin prompt** is used, **/pinpolicy** allows you to specify the following PIN policy options:<br>**minlen** &lt;minimum PIN length&gt;<br>&nbsp;&nbsp;&nbsp;If not specified, defaults to 8. The lower bound is 4.<br>**maxlen** &lt;maximum PIN length&gt;<br>&nbsp;&nbsp;&nbsp;If not specified, defaults to 127. The upper bound is 127.<br>**uppercase**&nbsp;&nbsp;Can be **ALLOWED**, **DISALLOWED**, or **REQUIRED.** Default is **ALLOWED.**<br>**lowercase**&nbsp;&nbsp;Can be **ALLOWED**, **DISALLOWED**, or **REQUIRED.** Default is **ALLOWED.**<br>**digits**&nbsp;&nbsp;Can be **ALLOWED**, **DISALLOWED**, or **REQUIRED.** Default is **ALLOWED.**<br>**specialchars**&nbsp;&nbsp;Can be **ALLOWED**, **DISALLOWED**, or **REQUIRED.** Default is **ALLOWED.**<br><br>When using **/pinpolicy**, PIN characters must be printable ASCII characters. |
-| /attestation | Configures attestation (subject only). This attestation uses an [Attestation Identity Key (AIK) certificate](/openspecs/windows_protocols/ms-dha/a4a71926-3639-4d62-b915-760c2483f489#gt_89a2ba3c-80af-4d1f-88b3-06ec3489fd5a) as a trust anchor to vouch that the virtual smart card keys and certificates are truly hardware bound. The attestation methods are:<br>**AIK_AND_CERT**&nbsp;&nbsp;Creates an AIK and obtains an AIK certificate from the Microsoft cloud certification authority (CA). This requires the device to have a TPM with an [EK certificate](/openspecs/windows_protocols/ms-wcce/719b890d-62e6-4322-b9b1-1f34d11535b4#gt_6aaaff7f-d380-44fb-91d3-b985e458eb6d). If this option is specified and there is no network connectivity, it is possible that creation of the virtual smart card will fail.<br>**AIK_ONLY**&nbsp;&nbsp;Creates an AIK but does not obtain an AIK certificate. |
+| /attestation | Configures attestation (subject only). This attestation uses an [Attestation Identity Key (AIK) certificate](/openspecs/windows_protocols/ms-dha/a4a71926-3639-4d62-b915-760c2483f489#gt_89a2ba3c-80af-4d1f-88b3-06ec3489fd5a) as a trust anchor to vouch that the virtual smart card keys and certificates are truly hardware bound. The attestation methods are:<br>**AIK_AND_CERT**&nbsp;&nbsp;Creates an AIK and obtains an AIK certificate from the Microsoft cloud certification authority (CA). This requires the device to have a TPM with an [EK certificate](/openspecs/windows_protocols/ms-wcce/719b890d-62e6-4322-b9b1-1f34d11535b4#gt_6aaaff7f-d380-44fb-91d3-b985e458eb6d). If this option is specified and there's no network connectivity, it's possible that creation of the virtual smart card will fail.<br>**AIK_ONLY**&nbsp;&nbsp;Creates an AIK but doesn't obtain an AIK certificate. |
 | /? | Displays Help for this command. |
 
 ### Parameters for Destroy command
@@ -96,7 +85,3 @@ The following command will create a TPM virtual smart card with the default valu
 ```console
 tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /PIN PROMPT /pinpolicy minlen 4 maxlen 8 /AdminKey DEFAULT /attestation AIK_AND_CERT /generate
 ```
-
-## Additional references
-
--   [Virtual Smart Card Overview](virtual-smart-card-overview.md)

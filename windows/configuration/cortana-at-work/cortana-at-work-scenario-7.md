@@ -1,13 +1,15 @@
 ---
 title: Help protect data with Cortana and WIP (Windows)
 description: An optional test scenario about how to use Cortana at work with Windows Information Protection (WIP).
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
@@ -19,7 +21,7 @@ This optional scenario helps you to protect your organization’s data on a devi
 
 ## Use Cortana and WIP to protect your organization’s data 
 
-1. Create and deploy an WIP policy to your organization. For info about how to do this, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
+1. Create and deploy a WIP policy to your organization. For information about how to do this step, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 2. Create a new email from a non-protected or personal mailbox, including the text _I’ll send you that presentation tomorrow_.
 

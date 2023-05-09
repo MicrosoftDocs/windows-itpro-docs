@@ -1,33 +1,14 @@
 ---
 title: Windows Hello for Business Deployment Known Issues
 description: A Troubleshooting Guide for Known Windows Hello for Business Deployment Issues
-keywords: identity, PIN, biometric, Hello, passport
-params: siblings_only
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 05/03/2021
-ms.reviewer: 
+ms.topic: article
 ---
 # Windows Hello for Business Known Deployment Issues
 
 The content of this article is to help troubleshoot and workaround known deployment issues for Windows Hello for Business. Each issue below will describe the applicable deployment type Windows versions.
 
 ## PIN Reset on Azure AD Join Devices Fails with "We can't open that page right now" error
-
-Applies to:
-
-- Azure AD joined deployments
-- Windows 10, version 1803 and later
-- Windows 11
 
 PIN reset on Azure AD-joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will show a page with the error message "We can't open that page right now".
 

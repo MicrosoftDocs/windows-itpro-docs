@@ -1,24 +1,16 @@
 ---
 title: Create an Outbound Program or Service Rule (Windows)
 description: Use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create firewall rules.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Create an Outbound Program or Service Rule
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 By default, Windows Defender Firewall allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic for a specified program or service, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule prevents the program from sending any outbound network traffic on any port.
 

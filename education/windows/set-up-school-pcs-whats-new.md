@@ -1,22 +1,12 @@
 ---
 title: What's new in the Windows Set up School PCs app
 description: Find out about app updates and new features in Set up School PCs.
-keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 08/31/2020
-ms.reviewer: 
-manager: dansimp
+ms.topic: whats-new
+ms.date: 08/10/2022
 ---  
 
 # What's new in Set up School PCs
-Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.   
-
+Learn what's new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.
 
 ## Week of August 24, 2020
 
@@ -26,8 +16,7 @@ You can now give devices running Windows 10, version 2004 and later a name that'
 ## Week of September 23, 2019  
 
 ### Easier way to deploy Office 365 to your classroom devices 
- Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Microsoft 365 Apps for enterprise. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
-
+ Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Microsoft 365 Apps for enterprise. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.
 
 ## Week of June 24, 2019  
 
@@ -100,15 +89,9 @@ The Skype and Messaging apps are part of a selection of apps that are, by defaul
 
 
 ## Next steps    
-Learn how to create provisioning packages and set up devices in the app.   
+Learn how to create provisioning packages and set up devices in the app.
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
-* [Set up Windows 10 devices for education](set-up-windows-10.md) 
+* [Set up Windows 10 devices for education](set-up-windows-10.md)
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-

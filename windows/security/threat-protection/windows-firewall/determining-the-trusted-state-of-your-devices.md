@@ -1,26 +1,18 @@
 ---
 title: Determining the Trusted State of Your Devices (Windows)
 description: Learn how to define the trusted state of devices in your enterprise to help design your strategy for using Windows Defender Firewall with Advanced Security.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Determining the Trusted State of Your Devices
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
-After obtaining information about the devices that are currently part of the IT infrastructure, you must determine at what point a device is considered trusted. The term *trusted* can mean different things to different people. Therefore, you must communicate a firm definition for it to all stakeholders in the project. Failure to do this can lead to problems with the security of the trusted environment, because the overall security can't exceed the level of security set by the least secure client that achieves trusted status.
+After obtaining information about the devices that are currently part of the IT infrastructure, you must determine at what point a device is considered trusted. The term *trusted* can mean different things to different people. Therefore, you must communicate a firm definition for it to all stakeholders in the project. Failure to do this communication can lead to problems with the security of the trusted environment, because the overall security can't exceed the level of security set by the least secure client that achieves trusted status.
 
 >**Note:**  In this context, the term *trust* has nothing to do with an Active Directory trust relationship between domains. The trusted state of your devices just indicates the level of risk that you believe the device brings to the network. Trusted devices bring little risk whereas untrusted devices can potentially bring great risk.
 
@@ -47,7 +39,7 @@ When a device is considered trusted, other trusted devices can reasonably assume
 
 Spend some time defining the goals and technology requirements that your organization considers appropriate as the minimum configuration for a device to obtain trusted status.
 
-A possible list of technology requirements might include the following:
+A possible list of technology requirements might include:
 
 -   **Operating system.** A trusted client device should run at least Windows Vista. A trusted server should run at least Windows Server 2008.
 
@@ -75,7 +67,7 @@ For each device that is assigned a trustworthy status, make an accompanying conf
 
 Generally, trustworthy devices fall into one of the following two groups:
 
--   **Configuration required.** The current hardware, operating system, and software enable the device to achieve a trustworthy state. However, additional configuration changes are required. For example, if the organization requires a secure file system before a device can be considered trusted, a device that uses a FAT32-formatted hard disk doesn't meet this requirement.
+-   **Configuration required.** The current hardware, operating system, and software enable the device to achieve a trustworthy state. However, more configuration changes are required. For example, if the organization requires a secure file system before a device can be considered trusted, a device that uses a FAT32-formatted hard disk doesn't meet this requirement.
 
 -   **Upgrade required.** These devices require upgrades before they can be considered trusted. The following list provides some examples of the type of upgrade these devices might require:
 
@@ -83,9 +75,9 @@ Generally, trustworthy devices fall into one of the following two groups:
 
     -   **Software required.** A device that is missing a required security application, such as an antivirus scanner or a management client, can't be considered trusted until these applications are installed and active.
 
-    -   **Hardware upgrade required.** In some cases, a device might require a specific hardware upgrade before it can achieve trusted status. This type of device usually needs an operating system upgrade or additional software that forces the required hardware upgrade. For example, security software might require additional hard disk space on the device.
+    -   **Hardware upgrade required.** In some cases, a device might require a specific hardware upgrade before it can achieve trusted status. This type of device usually needs an operating system upgrade or another software that forces the required hardware upgrade. For example, security software might require more hard disk space on the device.
 
-    -   **Device replacement required.** This category is reserved for devices that can't support the security requirements of the solution because their hardware can't support the minimum acceptable configuration. For example, a device that can't run a secure operating system because it has an old processor (such as a 100-megahertz \[MHz\] x86-based device).
+    -   **Device replacement required.** This category is reserved for devices that can't support the security requirements of the solution because their hardware can't support the minimum acceptable configuration. For example, a device that can't run a secure operating system because it has an old processor (such as a 100 megahertz \[MHz\] x86-based device).
 
 Use these groups to assign costs for implementing the solution on the devices that require upgrades.
 
@@ -101,9 +93,9 @@ During the process of categorizing an organization's devices, you'll identify so
 
 There can be multiple functional reasons for a device to remain in the known untrusted state. The following list includes several examples of functional reasons that can lead to a classification of this state:
 
--   **Devices that run unsupported versions of Windows.** This includes Windows XP, Windows Millennium Edition, Windows 98, Windows 95, or Windows NT. Devices that run these versions of the Windows operating system can't be classified as trustworthy because these operating systems don't support the required security infrastructure. For example, although Windows NT does support a basic security infrastructure, it doesn't support “deny” ACLs on local resources, any way to ensure the confidentiality and integrity of network communications, smart cards for strong authentication, or centralized management of device configurations (although limited central management of user configurations is supported).
+-   **Devices that run unsupported versions of Windows.** These versions include Windows XP, Windows Millennium Edition, Windows 98, Windows 95, or Windows NT. Devices that run these versions of the Windows operating system can't be classified as trustworthy because these operating systems don't support the required security infrastructure. For example, although Windows NT does support a basic security infrastructure, it doesn't support “deny” ACLs on local resources, any way to ensure the confidentiality and integrity of network communications, smart cards for strong authentication, or centralized management of device configurations (although limited central management of user configurations is supported).
 
--   **Stand-alone devices.** Devices running any version of Windows that are configured as stand-alone devices or as members of a workgroup usually can't achieve a trustworthy state. Although these devices fully support the minimum required basic security infrastructure, the required security management capabilities are unlikely to be available when the device isn't a part of a trusted domain.
+-   **Stand-alone devices.** Devices running any version of Windows which are configured as stand-alone devices or as members of a workgroup usually can't achieve a trustworthy state. Although these devices fully support the minimum required basic security infrastructure, the required security management capabilities are unlikely to be available when the device isn't a part of a trusted domain.
 
 -   **Devices in an untrusted domain.** A device that is a member of a domain that isn't trusted by an organization's IT department can't be classified as trusted. An untrusted domain is a domain that can't provide the required security capabilities to its members. Although the operating systems of devices that are members of this untrusted domain might fully support the minimum required basic security infrastructure, the required security management capabilities can't be fully guaranteed when devices aren't in a trusted domain.
 
@@ -139,6 +131,6 @@ The device SERVER001 is "trustworthy" because it meets the hardware requirements
 
 With the other information that you've gathered in this section, this information will be the foundation of the efforts performed later in the [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) section.
 
-The costs identified in this section only capture the projected cost of the device upgrades. Many additional design, support, test, and training costs should be accounted for in the overall project plan.
+The costs identified in this section only capture the projected cost of the device upgrades. Many more design, support, test, and training costs should be accounted for in the overall project plan.
 
 **Next:** [Planning Your Windows Defender Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)

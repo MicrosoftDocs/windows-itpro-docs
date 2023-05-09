@@ -1,24 +1,25 @@
 ---
 title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.reviewer: 
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
 
 Below is a list of some of what's new in Information Technology (IT) pro features in Windows 10, version 1703 (also known as the Creators Update).
 
-For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](./index.yml). Also see this blog post: [What’s new for IT pros in the Windows 10 Creators Update](https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/).
+For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](./index.yml). Also see this blog post: [What’s new for IT pros in the Windows 10 Creators Update}(https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/).
 
 >[!NOTE]
->Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](/windows/deployment/planning/windows-10-removed-features).
+>Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info). For a list of removed features, see [Features that are removed in Windows 10 Creators Update](removed-features.md).
 
 ## Configuration
 
@@ -59,18 +60,15 @@ Enterprises have been able to apply customized Start and taskbar layouts to devi
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management).
 
-[Additional MDM policy settings are available for Start and taskbar layout](/windows/configuration/windows-10-start-layout-options-and-policies). New MDM policy settings include:
+[More MDM policy settings are available for Start and taskbar layout](/windows/configuration/windows-10-start-layout-options-and-policies). New MDM policy settings include:
 
 - Settings for the User tile: [**Start/HideUserTile**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideusertile), [**Start/HideSwitchAccount**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideswitchaccount), [**Start/HideSignOut**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidesignout), [**Start/HideLock**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidelock), and [**Start/HideChangeAccountSettings**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings)
 - Settings for Power: [**Start/HidePowerButton**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidesleep)
-- Additional new settings: [**Start/HideFrequentlyUsedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](/windows/client-management/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](/windows/client-management/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideapplist).
-
-
-
+- Other new settings: [**Start/HideFrequentlyUsedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](/windows/client-management/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](/windows/client-management/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideapplist).
 
 ### Cortana at work
 
-Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. Cortana has powerful configuration options, specifically optimized for your business. By signing in with an Azure Active Directory (Azure AD) account, your employees can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
+Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. Cortana has powerful configuration options, optimized for your business. When your employees sign in with an Azure Active Directory (Azure AD) account, they can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
 
 Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
@@ -83,9 +81,9 @@ For more info about Cortana at work, see [Cortana integration in your business o
 
 MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
-The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk.
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports other partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk.
 
-Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
+Other security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
@@ -106,7 +104,7 @@ New features in Microsoft Defender for Endpoint for Windows 10, version 1703 inc
    - [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
    - [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Microsoft Defender for Endpoint.
 
-- **Response**: When detecting an attack, security response teams can now take immediate action to contain a breach:
+- **Response**: When an attack is detected, security response teams can now take immediate action to contain a breach:
   - [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
   - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
@@ -145,7 +143,7 @@ You can read more about ransomware mitigations and detection capability in Micro
 
 ### Device Guard and Credential Guard
 
-Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
+More security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
 For more information, see [Device Guard Requirements](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard) and [Credential Guard Security Considerations](/windows/access-protection/credential-guard/credential-guard-requirements#security-considerations).
 
 ### Group Policy Security Options
@@ -153,7 +151,7 @@ For more information, see [Device Guard Requirements](/windows/device-security/d
 The security setting [**Interactive logon: Display user information when the session is locked**](/windows/device-security/security-policy-settings/interactive-logon-display-user-information-when-the-session-is-locked) has been updated to work in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
 
 A new security policy setting
-[**Interactive logon: Don't display username at sign-in**](/windows/device-security/security-policy-settings/interactive-logon-dont-display-username-at-sign-in) has been introduced in Windows 10 version 1703. This security policy setting determines whether the username is displayed during sign in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
+[**Interactive logon: Don't display username at sign-in**](/windows/device-security/security-policy-settings/interactive-logon-dont-display-username-at-sign-in) has been introduced in Windows 10 version 1703. This security policy setting determines whether the username is displayed during sign-in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
 
 ### Windows Hello for Business
 
@@ -172,7 +170,7 @@ You can also now collect your audit event logs by using the Reporting configurat
 
 ### Windows Update for Business
 
-The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](/windows/deployment/update/waas-configure-wufb#pause-feature-updates) and [Pause Quality Updates](/windows/deployment/update/waas-configure-wufb#pause-quality-updates).
+The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy hasn't been configured. We've also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](/windows/deployment/update/waas-configure-wufb#pause-feature-updates) and [Pause Quality Updates](/windows/deployment/update/waas-configure-wufb#pause-quality-updates).
 
 
 Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferral periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](/windows/deployment/update/waas-configure-wufb#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-quality-updates) for details.
@@ -184,12 +182,12 @@ We recently added the option to download Windows 10 Insider Preview builds using
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Configuration Manager, starting with version 1702 of Configuration Manager, and with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.
 
-Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios.
+Delivery Optimization policies now enable you to configure more restrictions to have more control in various scenarios.
 
 Added policies include:
 - [Allow uploads while the device is on battery while under set Battery level](/windows/deployment/update/waas-delivery-optimization#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)
@@ -204,7 +202,7 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 Starting with Windows 10, version 1703, in-box apps that were uninstalled by the user won't automatically reinstall as part of the feature update installation process.
 
-Additionally, apps de-provisioned by admins on Windows 10, version 1703 machines will stay de-provisioned after future feature update installations. This will not apply to the update from Windows 10, version 1607 (or earlier) to version 1703.
+Additionally, apps de-provisioned by admins on Windows 10, version 1703 machines will stay de-provisioned after future feature update installations. This condition won't apply to the update from Windows 10, version 1607 (or earlier) to version 1703.
 
 ## Management
 
@@ -214,7 +212,7 @@ Windows 10, version 1703 adds many new [configuration service providers (CSPs)](
 
 Some of the other new CSPs are:
 
-- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
+- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
 - The [CleanPC CSP](/windows/client-management/mdm/cleanpc-csp) allows removal of user-installed and pre-installed applications, with the option to persist user data.
 
@@ -237,7 +235,7 @@ For more info, see [Implement server-side support for mobile application managem
 
 ### MDM diagnostics
 
-In Windows 10, version 1703, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](/message-analyzer/microsoft-message-analyzer-operating-guide) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
+In Windows 10, version 1703, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we're introducing [Microsoft Message Analyzer](/message-analyzer/microsoft-message-analyzer-operating-guide) as an extra tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
 
 ### Application Virtualization for Windows (App-V)
 Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.
@@ -265,32 +263,31 @@ Learn about the new Group Policies that were added in Windows 10, version 1703.
 
 In the Windows 10, version 1703, Microsoft has extended the ability to send a Miracast stream over a local network rather than over a direct wireless link. This functionality is based on the [Miracast over Infrastructure Connection Establishment Protocol (MS-MICE)](/openspecs/windows_protocols/ms-mice/9598ca72-d937-466c-95f6-70401bb10bdb).
 
-Miracast over Infrastructure offers a number of benefits:
+Miracast over Infrastructure offers many benefits:
 
 - Windows automatically detects when sending the video stream over this path is applicable.
 - Windows will only choose this route if the connection is over Ethernet or a secure Wi-Fi network.
-- Users do not have to change how they connect to a Miracast receiver. They use the same UX as for standard Miracast connections.
+- Users don't have to change how they connect to a Miracast receiver. They use the same UX as for standard Miracast connections.
 - No changes to current wireless drivers or PC hardware are required.
-- It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
-- It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
-
+- It works well with older wireless hardware that isn't optimized for Miracast over Wi-Fi Direct.
+- It uses an existing connection that reduces the time to connect and provides a stable stream.
 
 ### How it works
 
-Users attempt to connect to a Miracast receiver as they did previously. When the list of Miracast receivers is populated, Windows 10 will identify that the receiver is capable of supporting a connection over the infrastructure. When the user selects a Miracast receiver, Windows 10 will attempt to resolve the device's hostname via standard DNS, as well as via multicast DNS (mDNS). If the name is not resolvable via either DNS method, Windows 10 will fall back to establishing the Miracast session using the standard Wi-Fi direct connection.
+Users attempt to connect to a Miracast receiver as they did previously. When the list of Miracast receivers is populated, Windows 10 will identify that the receiver is capable of supporting a connection over the infrastructure. When the user selects a Miracast receiver, Windows 10 will attempt to resolve the device's hostname via standard DNS, and via multicast DNS (mDNS). If the name isn't resolvable via either DNS method, Windows 10 will fall back to establishing the Miracast session using the standard Wi-Fi direct connection.
 
 ### Enabling Miracast over Infrastructure
 
-If you have a device that has been updated to Windows 10, version 1703, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
+If you have a device that has been updated to Windows 10, version 1703, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following requirements are true within your deployment:
 
 - The device (PC or Surface Hub) needs to be running Windows 10, version 1703.
 - A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows device can act as a Miracast over Infrastructure *source*.
-    - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
+    - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (for example, using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
     - As a Miracast source, the device must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
-- The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
+- The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this resolution by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
 - Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
-It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
+It's important to note that Miracast over Infrastructure isn't a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
 
 ## New features in related products
 The following new features aren't part of Windows 10, but help you make the most of it.

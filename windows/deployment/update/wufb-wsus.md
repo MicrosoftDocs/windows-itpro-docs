@@ -1,15 +1,14 @@
 ---
 title: Use Windows Update for Business and Windows Server Update Services (WSUS) together
-description:  Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
-ms.prod: w10
-author: arcarley
+description: Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: arcarley
-ms.collection:
-  - m365initiative-coredeploy
-  - highpri
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Use Windows Update for Business and WSUS together
@@ -77,3 +76,7 @@ The policy can be configured using the following two methods:
 - [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforfeature)
 - [Update/SetPolicyDrivenUpdateSourceForOtherUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforother)
 - [Update/SetPolicyDrivenUpdateSourceForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforquality)
+
+
+> [!NOTE]
+> Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too, or the scan source won't be alterred. 

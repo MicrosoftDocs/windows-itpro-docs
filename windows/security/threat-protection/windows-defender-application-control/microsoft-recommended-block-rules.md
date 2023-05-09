@@ -1,37 +1,31 @@
 ---
-title: Microsoft recommended block rules (Windows)
+title: Microsoft recommended block rules
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
-ms.technology: windows-sec
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 09/29/2021
+ms.reviewer: jgeurten
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/04/2022
+ms.topic: reference
 ---
 
 # Microsoft recommended block rules
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
 
-Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass WDAC.
 
-Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including Windows Defender Application Control:
+Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including WDAC:
 
 - addinprocess.exe
 - addinprocess32.exe
@@ -67,6 +61,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - texttransform.exe
 - visualuiaverifynative.exe
 - system.management.automation.dll
+- webclnt.dll/davsvc.dll
 - wfc.exe
 - windbg.exe
 - wmic.exe
@@ -75,9 +70,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - wslconfig.exe
 - wslhost.exe
 
-<sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+<sup>1</sup> A vulnerability in bginfo.exe was fixed in version 4.22. If you use BGInfo, for security, make sure to download and run the latest version of [BGInfo](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that isn't being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -87,42 +82,43 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |---|---|
 | `Alex Ionescu` | `@aionescu`|
 | `Brock Mammen`| |
-| `Casey Smith` | `@subTee` | 
+| `Casey Smith` | `@subTee` |
 | `James Forshaw` | `@tiraniddo` |
 | `Jimmy Bayne` | `@bohops` |
 | `Kim Oppalfens` | `@thewmiguy` |
 | `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
 | `Lee Christensen` | `@tifkin_` |
-| `Matt Graeber` | `@mattifestation` | 
-| `Matt Nelson` | `@enigma0x3` | 
+| `Matt Graeber` | `@mattifestation` |
+| `Matt Nelson` | `@enigma0x3` |
 | `Oddvar Moe` | `@Oddvarmoe` |
 | `Philip Tsukerman` | `@PhilipTsukerman` |
 | `Vladas Bulavas` | `Kaspersky Lab` |
+| `Will Dormann` | `@wdormann` |
 | `William Easton` | `@Strawgate` |
 
-<br />
+> [!NOTE]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
-> [!Note]
-> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+Certain software applications may allow other code to run by design. Such applications should be blocked by your WDAC policy. In addition, when an application version is upgraded to fix a security vulnerability or potential WDAC bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
-Certain software applications may allow other code to run by design. Such applications should be blocked by your Windows Defender Application Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
+Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass WDAC. These modules can't be blocked by name or version, and therefore must be blocked by their corresponding hashes.
 
-Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+As of October 2017, system.management.automation.dll is updated to revoke earlier versions by hash values, instead of version rules.
 
-For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
-
-Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. Beginning with the March 2019 quality update, each version of Windows requires blocking a specific version of the following files:
+If you wish to use this blocklist policy on Windows Server 2016, locate the deny rules for the following files, and change the comment block to only include the rules for that OS version. Applying the RS5+ rules to Windows Server 2016 may cause apps to malfunction:
 
 - msxml3.dll
 - msxml6.dll
 - jscript9.dll
 
-Select the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
+The blocklist policy below includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone WDAC policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy below using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the sample policy below.
+
+**WDAC policy XML**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.0.0</VersionEx>
+  <VersionEx>10.1.0.0</VersionEx>
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -146,50 +142,53 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <EKUs />
   <!-- File Rules  -->
   <FileRules>
-    <Deny ID="ID_DENY_ADDINPROCESS" FriendlyName="AddInProcess.exe" FileName="AddInProcess.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_ADDINPROCESS32" FriendlyName="AddInProcess32.exe" FileName="AddInProcess32.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_ADDINUTIL" FriendlyName="AddInUtil.exe" FileName="AddInUtil.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_ASPNET" FriendlyName="aspnet_compiler.exe" FileName="aspnet_compiler.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_BASH" FriendlyName="bash.exe" FileName="bash.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Allow ID="ID_ALLOW_A_1" FriendlyName="Allow Kernel Drivers" FileName="*" />
+    <Allow ID="ID_ALLOW_A_2" FriendlyName="Allow User mode components" FileName="*" />
+    <Deny ID="ID_DENY_ADDINPROCESS" FriendlyName="AddInProcess.exe" FileName="AddInProcess.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_ADDINPROCESS32" FriendlyName="AddInProcess32.exe" FileName="AddInProcess32.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_ADDINUTIL" FriendlyName="AddInUtil.exe" FileName="AddInUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_ASPNET" FriendlyName="aspnet_compiler.exe" FileName="aspnet_compiler.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_BASH" FriendlyName="bash.exe" FileName="bash.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0" />
-    <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion="5.812.10240.0" />
     <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0" />
     <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0" />
-    <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535" />
-	<Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0" />
-    <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_MSHTA" FriendlyName="mshta.exe" FileName="mshta.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_NTKD" FriendlyName="ntkd.exe" FileName="ntkd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_NTSD" FriendlyName="ntsd.exe" FileName="ntsd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_PWRSHLCUSTOMHOST" FriendlyName="powershellcustomhost.exe" FileName="powershellcustomhost.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_RCSI" FriendlyName="rcsi.exe" FileName="rcsi.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_RUNSCRIPTHELPER" FriendlyName="runscripthelper.exe" FileName="runscripthelper.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_VISUALUIAVERIFY" FriendlyName="visualuiaverifynative.exe" FileName="visualuiaverifynative.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MSHTA" FriendlyName="mshta.exe" FileName="mshta.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_NTKD" FriendlyName="ntkd.exe" FileName="ntkd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_NTSD" FriendlyName="ntsd.exe" FileName="ntsd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_PWRSHLCUSTOMHOST" FriendlyName="powershellcustomhost.exe" FileName="powershellcustomhost.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_RCSI" FriendlyName="rcsi.exe" FileName="rcsi.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_RUNSCRIPTHELPER" FriendlyName="runscripthelper.exe" FileName="runscripthelper.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_TEXTTRANSFORM" FriendlyName="texttransform.exe" FileName="texttransform.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_VISUALUIAVERIFY" FriendlyName="visualuiaverifynative.exe" FileName="visualuiaverifynative.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_WEBCLNT" FriendlyName="BlockWebDAV WebClnt" FileName="davsvc.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355"/>
+    <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_WSCRIPT" FriendlyName="wscript.exe" FileName="wscript.exe" MinimumFileVersion="5.812.10240.0" />
-    <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <!-- pick the correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on the release you are supporting -->
     <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
     <!-- RS1 Windows 1607
@@ -197,26 +196,11 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>
     <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.14393.2607"/>
     -->
-      <!-- RS2 Windows 1703
-    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.15063.1386"/>
-    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.15063.1386"/>
-    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.15063.1445"/>
-    -->
-      <!-- RS3 Windows 1709
-    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.16299.725"/>
-    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.16299.725"/>
-    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.16299.785"/>
-    -->
-      <!-- RS4 Windows 1803
-    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17134.344"/>
-    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17134.344"/>
-    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17134.406"/>
-    -->
-      <!-- RS5 Windows 1809
+      <!-- RS5 Windows 1809 -->
     <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17763.54"/>
     <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17763.54"/>
     <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17763.133"/>
-    -->
+    <!-- -->
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
     <Deny ID="ID_DENY_D_3" FriendlyName="Powershell 3" Hash="148972F670E18790D62D753E01ED8D22B351A57E45544D88ACE380FEDAF24A40" />
@@ -854,6 +838,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Driver Signing Scenarios">
       <ProductSigners>
         <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_1" />
           <FileRuleRef RuleID="ID_DENY_KD_KMCI" />
         </FileRulesRef>
       </ProductSigners>
@@ -861,6 +846,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Signing Scenarios">
       <ProductSigners>
         <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_2" />
           <FileRuleRef RuleID="ID_DENY_ADDINPROCESS" />
           <FileRuleRef RuleID="ID_DENY_ADDINPROCESS32" />
           <FileRuleRef RuleID="ID_DENY_ADDINUTIL" />
@@ -877,7 +863,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_FSI" />
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU" />
           <FileRuleRef RuleID="ID_DENY_INFINSTALL" />
-		  <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
+          <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
           <FileRuleRef RuleID="ID_DENY_KD" />
           <FileRuleRef RuleID="ID_DENY_KILL" />
           <FileRuleRef RuleID="ID_DENY_LXSS" />
@@ -897,6 +883,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_RUNSCRIPTHELPER" />
           <FileRuleRef RuleID="ID_DENY_TEXTTRANSFORM" />
           <FileRuleRef RuleID="ID_DENY_VISUALUIAVERIFY" />
+          <FileRuleRef RuleID="ID_DENY_WEBCLNT" />
           <FileRuleRef RuleID="ID_DENY_WFC" />
           <FileRuleRef RuleID="ID_DENY_WINDBG" />
           <FileRuleRef RuleID="ID_DENY_WMIC" />
@@ -904,11 +891,9 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_WSL" />
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
-          <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
-		  <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
-		  <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
-		  <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
-		  -->
+          <FileRuleRef RuleID="ID_DENY_MSXML3" />
+          <FileRuleRef RuleID="ID_DENY_MSXML6" />
+          <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
@@ -1524,11 +1509,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <HvciOptions>0</HvciOptions>
 </SiPolicy>
 ```
-<br />
-
-> [!Note]
-> To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
 
 ## More information
 
-- [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)
+- [Merge WDAC policies](merge-windows-defender-application-control-policies.md)

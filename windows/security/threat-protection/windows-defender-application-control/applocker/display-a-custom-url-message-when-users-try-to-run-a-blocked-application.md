@@ -3,19 +3,18 @@ title: Display a custom URL message when users try to run a blocked app (Windows
 description: This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 ms.assetid: 9a2534a5-d1fa-48a9-93c6-989d4857cf85
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Display a custom URL message when users try to run a blocked app
@@ -31,7 +30,7 @@ ms.technology: windows-sec
 
 This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 
-Using Group Policy, AppLocker can be configured to display a message with a custom URL. You can use this URL to redirect users to a support site that contains info about why the user received the error and which apps are allowed. If you do not display a custom message when an apps is blocked, the default access denied message is displayed.
+With the help of Group Policy, AppLocker can be configured to display a message with a custom URL. You can use this URL to redirect users to a support site that contains info about why the user received the error and which apps are allowed. If you don't display a custom message when an app is blocked, the default access denied message is displayed.
 
 To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
 

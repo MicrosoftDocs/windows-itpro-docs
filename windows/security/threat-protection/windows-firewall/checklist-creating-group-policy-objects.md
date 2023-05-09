@@ -1,31 +1,18 @@
 ---
 title: Checklist Creating Group Policy Objects (Windows)
 description: Learn to deploy firewall settings, IPsec settings, firewall rules, or connection security rules, by using Group Policy in AD DS.
-ms.assetid: e99bd6a4-34a7-47b5-9791-ae819977a559
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Creating Group Policy Objects
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
-To deploy firewall or IPsec settings or firewall or connection security rules, we recommend that you use Group Policy in AD DS. This section describes a tested, efficient method that requires some up-front work, but serves an administrator well in the long run by making GPO assignments as easy as dropping a device into a membership group.
+To deploy firewall or IPsec settings or firewall or connection security rules, we recommend that you use Group Policy in AD DS. This section describes a tested, efficient method that requires some up-front work, but serves an administrator well in the end by making GPO assignments as easy as dropping a device into a membership group.
 
 The checklists for firewall, domain isolation, and server isolation include a link to this checklist.
 
@@ -35,19 +22,19 @@ For most GPO deployment tasks, you must determine which devices must receive and
 
 ## About exclusion groups
 
-A Windows Defender Firewall with Advanced Security design must often take into account domain-joined devices on the network that cannot or must not apply the rules and settings in the GPOs. Because these devices are typically fewer in number than the devices that must apply the GPO, it is easier to use the Domain Members group in the GPO membership group, and then place these exception devices into an exclusion group that is denied Apply Group Policy permissions on the GPO. Because deny permissions take precedence over allow permissions, a device that is a member of both the membership group and the exception group is prevented from applying the GPO. Devices typically found in a GPO exclusion group for domain isolation include the domain controllers, DHCP servers, and DNS servers.
+A Windows Defender Firewall with Advanced Security design must often take into account domain-joined devices on the network that can't or must not apply the rules and settings in the GPOs. Because these devices are typically fewer in number than the devices that must apply the GPO, it's easier to use the Domain Members group in the GPO membership group, and then place these exception devices into an exclusion group that is denied Apply Group Policy permissions on the GPO. Because deny permissions take precedence over allow permissions, a device that is a member of both the membership group and the exception group is prevented from applying the GPO. Devices typically found in a GPO exclusion group for domain isolation include the domain controllers, DHCP servers, and DNS servers.
 
-You can also use a membership group for one zone as an exclusion group for another zone. For example, devices in the boundary and encryption zones are technically in the main domain isolation zone, but must apply only the GPO for their assigned role. To do this, the GPOs for the main isolation zone deny Apply Group Policy permissions to members of the boundary and encryption zones.
+You can also use a membership group for one zone as an exclusion group for another zone. For example, devices in the boundary and encryption zones are technically in the main domain isolation zone, but must apply only the GPO for their assigned role. To use the group as an exclusion group, the GPOs for the main isolation zone deny Apply Group Policy permissions to members of the boundary and encryption zones.
 
 **Checklist: Creating Group Policy objects**
 
 | Task | Reference |
 | - | - |
 | Review important concepts and examples for deploying GPOs in a way that best meets the needs of your organization.| [Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals](identifying-your-windows-firewall-with-advanced-security-deployment-goals.md)<br/>[Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)| 
-| Create the membership group in AD DS that will be used to contain device accounts that must receive the GPO.<br/>If some devices in the membership group are running an operating system that does not support WMI filters, such as Windows 2000, create an exclusion group to contain the device accounts for the devices that cannot be blocked by using a WMI filter.| [Create a Group Account in Active Directory](create-a-group-account-in-active-directory.md)|
+| Create the membership group in AD DS that will be used to contain device accounts that must receive the GPO.<br/>If some devices in the membership group are running an operating system that doesn't support WMI filters, such as Windows 2000, create an exclusion group to contain the device accounts for the devices that can't be blocked by using a WMI filter.| [Create a Group Account in Active Directory](create-a-group-account-in-active-directory.md)|
 | Create a GPO for each version of Windows that has different implementation requirements.| [Create a Group Policy Object](create-a-group-policy-object.md) |
 | Create security group filters to limit the GPO to only devices that are members of the membership group and to exclude devices that are members of the exclusion group.|[Assign Security Group Filters to the GPO](assign-security-group-filters-to-the-gpo.md) |
 | Create WMI filters to limit each GPO to only the devices that match the criteria in the filter.| [Create WMI Filters for the GPO](create-wmi-filters-for-the-gpo.md) |
-| If you are working on a GPO that was copied from another, modify the group memberships and WMI filters so that they are correct for the new zone or version of Windows for which this GPO is intended.|[Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md) |
+| If you're working on a GPO that was copied from another, modify the group memberships and WMI filters so that they're correct for the new zone or version of Windows for which this GPO is intended.|[Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md) |
 | Link the GPO to the domain level of the Active Directory organizational unit hierarchy.| [Link the GPO to the Domain](link-the-gpo-to-the-domain.md) |
 | Before adding any rules or configuring the GPO, add a few test devices to the membership group, and make sure that the correct GPO is received and applied to each member of the group.| [Add Test Devices to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md) |

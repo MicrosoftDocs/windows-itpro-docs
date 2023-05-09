@@ -1,22 +1,13 @@
 ---
 title: Set up student PCs to join domain
-description: Learn how to use Configuration Designer to provision student devices to join Active Directory.
-keywords: school, student PC setup, Windows Configuration Designer
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 07/27/2017
-ms.reviewer: 
-manager: dansimp
+description: Learn how to use Windows Configuration Designer to provision student devices to join Active Directory.
+ms.topic: how-to
+ms.date: 08/10/2022
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Set up student PCs to join domain
-**Applies to:**
-
--   Windows 10  
 
 If your school uses Active Directory, use the Windows Configuration Designer tool to create a provisioning package that will configure a PC for student use that is joined to the Active Directory domain. 
 
@@ -43,7 +34,7 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 
       **Figure 7** - Add the account to use for test-taking
 
-      ![Add the account to use for test-taking.](images/wcd_settings_assignedaccess.png)
+      ![Add the account to use for test-taking.](images/wcd/wcd_settings_assignedaccess.png)
 
       The account can be in one of the following formats:
       - username
@@ -64,9 +55,5 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
      > [!IMPORTANT]
      > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-
 ## Apply package
 Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
-
-
-

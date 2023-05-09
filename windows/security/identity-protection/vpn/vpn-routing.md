@@ -1,23 +1,10 @@
 ---
-title: VPN routing decisions (Windows 10 and Windows 10)
-description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+title: VPN routing decisions
+description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
+ms.topic: conceptual
 ---
-
 # VPN routing decisions
-
-**Applies to**
--   Windows 10
--   Windows 11
 
 Network routes are required for the stack to understand which interface to use for outbound traffic. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). This decision impacts the configuration and the capacity planning, as well as security expectations from the connection. 
 
@@ -41,7 +28,7 @@ Routes can also be added at connect time through the server for UWP VPN apps.
 
 In a force tunnel configuration, all traffic will go over VPN. This is the default configuration and takes effect if no routes are specified. 
 
-The only implication of this setting is the manipulation of routing entries. In the case of a force tunnel, VPN V4 and V6 default routes (for example. 0.0.0.0/0) are added to the routing table with a lower metric than ones for other interfaces. This sends traffic through the VPN as long as there isn’t a specific route on the physical interface itself. 
+The only implication of this setting is the manipulation of routing entries. In the case of a force tunnel, VPN V4 and V6 default routes (for example. 0.0.0.0/0) are added to the routing table with a lower metric than ones for other interfaces. This sends traffic through the VPN as long as there isn't a specific route on the physical interface itself. 
 
 For built-in VPN, this decision is controlled using the MDM setting **VPNv2/ProfileName/NativeProfile/RoutingPolicyType**.
 

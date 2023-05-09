@@ -3,12 +3,11 @@ title: Windows operating system security
 description: Securing the operating system includes system security, encryption, network security, and threat protection.
 ms.reviewer: 
 ms.topic: article
-manager: dansimp
-ms.author: deniseb
-author: denisebmsft
-ms.collection: M365-security-compliance
-ms.prod: m365-security
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: paoloma
+author: paolomatarazzo
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.date: 09/21/2021
 ---
 

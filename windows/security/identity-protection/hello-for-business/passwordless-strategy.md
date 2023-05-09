@@ -1,20 +1,13 @@
 ---
 title: Password-less strategy
 description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
-ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
-ms.reviewer:
-ms.collection: M365-identity-device-management
 ms.topic: conceptual
-localizationpriority: medium
 ms.date: 05/24/2022
 ---
 
 # Password-less strategy
 
-This article describes Windows' password-less strategy. Learn how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
+This article describes Windows' password-less strategy and how Windows Hello for Business implements this strategy.
 
 ## Four steps to password freedom
 
@@ -251,7 +244,7 @@ You can use Group Policy to deploy an administrative template policy setting to 
 
 :::image type="content" source="images/passwordless/gpmc-exclude-credential-providers.png" alt-text="The Group Policy Management Editor displaying the location of 'Logon' node and the policy setting 'Exclude credential providers'.":::
 
-The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `60b78e88-ead8-445c-9cfd-0b87f74ea6cd`.
+The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
 
 :::image type="content" source="images/passwordless/exclude-credential-providers-properties.png" alt-text="Properties of the policy setting 'Exclude credential providers'.":::
 
@@ -305,7 +298,7 @@ The following image shows the SCRIL setting for a user in Active Directory Users
 
 :::image type="content" source="images/passwordless/aduc-account-scril.png" alt-text="Example user properties in Active Directory that shows the SCRIL setting on Account options.":::
 
-When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account don't allow the user to sign-in interactively with a password. Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level don't expire. The users are effectively password-less because:
+When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account don't allow the user to sign-in interactively with a password. Users will no longer need to change their password when it expires, because passwords for SCRIL users don't expire. The users are effectively password-less because:
 
 - They don't know their password.
 - Their password is 128 random bits of data and is likely to include non-typable characters.
@@ -346,4 +339,4 @@ In this configuration, passwords for SCRIL-configured users expire based on Acti
 
 ## The road ahead
 
-The information presented here is just the beginning. We'll update this guide with improved tools, methods, and scenarios, like Azure AD joined and MDM managed environments. As we continue to invest in a password-less future, we would love to hear from you. Your feedback is important. Send us an email at [pwdless@microsoft.com](mailto:pwdless@microsoft.com?subject=Passwordless%20Feedback).
+The information presented here is just the beginning. We'll update this guide with improved tools, methods, and scenarios, like Azure AD joined and MDM managed environments. As we continue to invest in a password-less future, we would love to hear from you. Your feedback is important. Send us an email at [pwdlessQA@microsoft.com](mailto:pwdlessQA@microsoft.com?subject=Passwordless%20Feedback).

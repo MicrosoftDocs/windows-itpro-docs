@@ -1,29 +1,16 @@
 ---
 title: Checklist Creating Outbound Firewall Rules (Windows)
 description: Use these tasks for creating outbound firewall rules in your GPOs for Windows Defender Firewall with Advanced Security.
-ms.assetid: 611bb98f-4e97-411f-82bf-7a844a4130de
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Creating Outbound Firewall Rules
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 This checklist includes tasks for creating outbound firewall rules in your GPOs.
 

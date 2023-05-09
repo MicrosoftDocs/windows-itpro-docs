@@ -1,16 +1,14 @@
 ---
-title: How Windows Update works 
+title: How Windows Update works
 description: In this article, learn about the process Windows Update uses to download and install updates on a Windows client devices.
-ms.prod: w10
-author: aczechowski
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
-ms.collection:
-  - M365-modern-desktop
-  - highpri
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # How Windows Update works

@@ -1,26 +1,19 @@
 ---
 title: Protect Remote Desktop credentials with Windows Defender Remote Credential Guard (Windows 10)
 description: Windows Defender Remote Credential Guard helps to secure your Remote Desktop credentials by never sending them to the target device.
-ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection:
-  - M365-identity-device-management
-  - highpri
+ms.collection: 
+- highpri
+- tier2
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 01/12/2018
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ---
 # Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Introduced in Windows 10, version 1607, Windows Defender Remote Credential Guard helps you protect your credentials over a Remote Desktop connection by redirecting Kerberos requests back to the device that's requesting the connection. It also provides single sign-on experiences for Remote Desktop sessions.
 
@@ -56,12 +49,12 @@ Use the following table to compare different Remote Desktop connection security 
 
 | Feature | Remote Desktop | Windows Defender Remote Credential Guard | Restricted Admin mode |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                 **Protection benefits**                                                  |                                Credentials on the server are not protected from Pass-the-Hash attacks.                                 |  User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing   |                                                                                  User logs on to the server as local administrator, so an attacker cannot act on behalf of the “domain user”. Any attack is local to the server                                                                                   |
+|                                                 **Protection benefits**                                                  |                                Credentials on the server are not protected from Pass-the-Hash attacks.                                 |  User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing   |                                                                                  User logs on to the server as local administrator, so an attacker cannot act on behalf of the "domain user". Any attack is local to the server                                                                                   |
 |                                                   **Version support**                                                    |                                        The remote computer can run any Windows operating system                                        | Both the client and the remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**. | The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**. <br /><br />For more information about patches (software updates) related to Restricted Admin mode, see [Microsoft Security Advisory 2871997](/security-updates/SecurityAdvisories/2016/2871997). |
 | **Helps prevent**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; |                             &nbsp;&nbsp;&nbsp;&nbsp; N/A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              |                   <ul><li> Pass-the-Hash</li> <li>Use of a credential after disconnection </li></ul>                   |                                                                                                                <ul><li> Pass-the-Hash</li> <li>Use of domain identity during connection </li></ul>                                                                                                                |
 |                             **Credentials supported from the remote desktop client device**                              | <ul><li><b>Signed on</b> credentials <li> <b>Supplied</b> credentials<li> <b>Saved</b> credentials </ul> |                                  <ul><li> <b>Signed on</b> credentials only                                  |                                                                                        <ul><li><b>Signed on</b> credentials<li><b>Supplied</b> credentials<li><b>Saved</b> credentials</ul>                                                                                         |
 |                                                        **Access**                                                        |                           **Users allowed**, that is, members of Remote Desktop Users group of remote host.                            |                      **Users allowed**, that is, members of Remote Desktop Users of remote host.                       |                                                                                                              **Administrators only**, that is, only members of Administrators group of remote host.                                                                                                               |
-|                                                   **Network identity**                                                   |                               Remote Desktop session **connects to other resources as signed-in user**.                                |                       Remote Desktop session **connects to other resources as signed-in user**.                        |                                                                                                                 Remote Desktop session **connects to other resources as remote host’s identity**.                                                                                                                 |
+|                                                   **Network identity**                                                   |                               Remote Desktop session **connects to other resources as signed-in user**.                                |                       Remote Desktop session **connects to other resources as signed-in user**.                        |                                                                                                                 Remote Desktop session **connects to other resources as remote host's identity**.                                                                                                                 |
 |                                                      **Multi-hop**                                                       |                        From the remote desktop, **you can connect through Remote Desktop to another computer**                         |                From the remote desktop, you **can connect through Remote Desktop to another computer**.                |                                                                                                                      Not allowed for user as the session is running as a local host account                                                                                                                       |
 |                                               **Supported authentication**                                               |                                                        Any negotiable protocol.                                                        |                                                     Kerberos only.                                                     |                                                                                                                                              Any negotiable protocol                                                                                                                                              |
 
@@ -76,7 +69,7 @@ and [How Kerberos works](/previous-versions/windows/it-pro/windows-2000-server/c
 
 ## Remote Desktop connections and helpdesk support scenarios
 
-For helpdesk support scenarios in which personnel require administrative access to provide remote assistance to computer users via Remote Desktop sessions, Microsoft recommends that Windows Defender Remote Credential Guard should not be used in that context. This is because if an RDP session is initiated to a compromised client that an attacker already controls, the attacker could use that open channel to create sessions on the user's behalf (without compromising credentials) to access any of the user’s resources for a limited time (a few hours) after the session disconnects.
+For helpdesk support scenarios in which personnel require administrative access to provide remote assistance to computer users via Remote Desktop sessions, Microsoft recommends that Windows Defender Remote Credential Guard should not be used in that context. This is because if an RDP session is initiated to a compromised client that an attacker already controls, the attacker could use that open channel to create sessions on the user's behalf (without compromising credentials) to access any of the user's resources for a limited time (a few hours) after the session disconnects.
 
 Therefore, we recommend instead that you use the Restricted Admin mode option. For helpdesk support scenarios, RDP connections should only be initiated using the /RestrictedAdmin switch. This helps ensure that credentials and other user resources are not exposed to compromised remote hosts. For more information, see [Mitigating Pass-the-Hash and Other Credential Theft v2](https://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf).
 
@@ -95,7 +88,7 @@ The Remote Desktop client device:
 
 -  Must be running at least Windows 10, version 1703 to be able to supply credentials, which is sent to the remote device. This allows users to run as different users without having to send credentials to the remote machine.
 
--  Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user’s signed-in credentials. This requires the user’s account be able to sign in to both the client device and the remote host.
+-  Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user's signed-in credentials. This requires the user's account be able to sign in to both the client device and the remote host.
 
 -  Must be running the Remote Desktop Classic Windows application. The Remote Desktop Universal Windows Platform application doesn't support Windows Defender Remote Credential Guard.
 
@@ -105,7 +98,7 @@ The Remote Desktop remote host:
 
 -  Must be running at least Windows 10, version 1607 or Windows Server 2016.
 -  Must allow Restricted Admin connections.
--  Must allow the client’s domain user to access Remote Desktop connections.
+-  Must allow the client's domain user to access Remote Desktop connections.
 -  Must allow delegation of non-exportable credentials.
 
 There are no hardware requirements for Windows Defender Remote Credential Guard.
@@ -133,7 +126,7 @@ You must enable Restricted Admin or Windows Defender Remote Credential Guard on 
     
     - Add a new DWORD value named **DisableRestrictedAdmin**.
     
-    - To turn on Restricted Admin and Windows Defender Remote Credential Guard, set the value of this registry setting to 0 to turn on Windows Defender Remote Credential Guard.
+    - To turn on Restricted Admin and Windows Defender Remote Credential Guard, set the value of this registry setting to 0.
     
 3. Close Registry Editor.
 
@@ -161,6 +154,7 @@ Beginning with Windows 10 version 1703, you can enable Windows Defender Remote C
 
      > [!NOTE]
      > Neither Windows Defender Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
+     > When **Restrict Credential Delegation** is enabled, the /restrictedAdmin switch will be ignored. Windows will enforce the policy configuration instead and will use Windows Defender Remote Credential Guard. 
 
    - If you want to require Windows Defender Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#reqs) listed earlier in this topic.
 
@@ -186,7 +180,7 @@ mstsc.exe /remoteGuard
 
 ## Considerations when using Windows Defender Remote Credential Guard
 
-- Windows Defender Remote Credential Guard does not support compound authentication. For example, if you’re trying to access a file server from a remote host that requires a device claim, access will be denied.
+- Windows Defender Remote Credential Guard does not support compound authentication. For example, if you're trying to access a file server from a remote host that requires a device claim, access will be denied.
 
 - Windows Defender Remote Credential Guard can be used only when connecting to a device that is joined to a Windows Server Active Directory domain, including AD domain-joined servers that run as Azure virtual machines (VMs). Windows Defender Remote Credential Guard cannot be used when connecting to remote devices joined to Azure Active Directory.
 

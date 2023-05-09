@@ -3,60 +3,53 @@ title: Allow COM object registration in a WDAC policy (Windows)
 description: You can allow COM object registration in a Windows Defender Application Control policy.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
-author: dansimp
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.technology: windows-sec
+author: vinaypamnani-msft
+ms.reviewer: jsuther
+ms.author: vinpa
+manager: aaroncz
+ms.technology: itpro-security
+ms.date: 04/05/2023
+ms.topic: article
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and later
+- Windows 10
+- Windows 11
+- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](feature-availability.md).
 
 The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM specifies an object model and programming requirements that enable COM objects to interact with other objects.
 
-> [!IMPORTANT]
-> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+## COM object configurability in WDAC policy
 
-### COM object configurability in WDAC policy
-
-Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
+Windows Defender Application Control (WDAC) enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you may need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your WDAC policy as described in this article.
 
 > [!NOTE]
 > To add this functionality to other versions of Windows 10, you can install the following or later updates.
 
-- Windows 10, 1809 June 18, 2019—KB4501371 (OS Build 17763.592) (https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
-- Windows 10, 1803 June 18, 2019—KB4503288 (OS Build 17134.858) (https://support.microsoft.com/help/4503288/windows-10-update-kb4503288)
-- Windows 10, 1709 June 18, 2019—KB4503281 (OS Build 16299.1237) (https://support.microsoft.com/help/4503281/windows-10-update-kb4503281) 
-- Windows 10, 1703 June 18, 2019—KB4503289 (OS Build 15063.1897) (https://support.microsoft.com/help/4503289/windows-10-update-kb4503289
-- Windows 10, 1607 June 18, 2019—KB4503294 (OS Build 14393.3053) (https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
+- [Windows 10, 1809 June 18, 2019—KB4501371 (OS Build 17763.592)](https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
+- [Windows 10, 1607 June 18, 2019—KB4503294 (OS Build 14393.3053)](https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
 
 ### Get COM object GUID
 
-Get GUID of application to allow in one of the following ways:
-- Finding a block event in Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script), and extracting GUID
-- Creating an audit policy (using New-CIPolicy –Audit), potentially with a specific provider, and use the info from the block events to get the GUID
+You can get the COM application GUID from the 8036 COM object block events in Event Viewer located at **Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script**, and extract the GUID from the event data.
 
 ### Author policy setting to allow or deny COM object GUID
 
 Three elements:
 
-- Provider: platform on which code is running (values are  Powershell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
+- Provider: platform on which code is running (values are  PowerShell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
 - Key: GUID for the program you wish to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
 - ValueName: needs to be set to "EnterpriseDefinedClsId"
 
@@ -68,6 +61,10 @@ One attribute:
   > Deny only works in base policies, not supplemental policies
 
 - The setting needs to be placed in the order of ASCII values (first by Provider, then Key, then ValueName)
+
+### Multiple policy considerations
+
+Similar to executable files, COM objects must pass all enforced WDAC policies on the system to run. For example, if the COM object under evaluation passes most but not all of your WDAC policies, the COM object is blocked. If you're using a combination of base and supplemental policies, the COM object just needs to be allowlisted in either the base policy or one of the supplemental policies.
 
 ### Examples
 
@@ -100,9 +97,10 @@ Example 3: Allows a specific COM object to register in PowerShell
   </Value>
 </Setting>
 ```
+
 ### How to configure settings for the CLSIDs
 
-Here's an example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
+Here's an example of an error in the Event Viewer found at **Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script**:
 
 > Log Name: Microsoft-Windows-AppLocker/MSI and Script<br/>
 > Source: Microsoft-Windows-AppLocker<br/>
@@ -151,9 +149,9 @@ To add this CLSID to the existing policy, follow these steps:
     ```PowerShell
     PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
     ```
-    
-    Once the command has been run, you will find that the following section is added to the policy XML.
-    
+
+    Once the command has run, find the following section added to the policy XML.
+
     ```XML
     <Settings>
       <Setting Provider="WSH" Key="{f8d253d9-89a4-4daa-87b6-1168369f0b21}" ValueName="EnterpriseDefinedClsId">
@@ -162,9 +160,10 @@ To add this CLSID to the existing policy, follow these steps:
         </Value>
       </Setting>
     ```
-### Default COM Object Allow List
 
-The table below describes the list of COM objects that are inherently trusted in Windows Defender Application Control. Objects in this list do not need to be allowlisted in your WDAC policies. They can be denied by creating explicit deny rules in your WDAC policy.
+### Default COM Object allowlist
+
+The table that follows describes the list of COM objects that are inherently trusted in Windows Defender Application Control. Objects in this list don't need to be allowlisted in your WDAC policies. They can be denied by creating explicit deny rules in your WDAC policy.
 
 | File Name | CLSID |
 |--------|-----------|

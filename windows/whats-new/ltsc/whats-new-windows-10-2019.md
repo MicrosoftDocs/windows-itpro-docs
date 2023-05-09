@@ -1,13 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2019
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: mstewart
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
-ms.prod: w10
-author: aczechowski
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
+ms.technology: itpro-fundamentals
+ms.date: 04/05/2023
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
@@ -34,7 +35,8 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, Windows 10 update rings device profiles don't support LTSC releases. For installing software updates, use the [policy configuration service provider (CSP)](/windows/client-management/mdm/policy-csp-update), Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 with the following exception:
+- [Update rings](/mem/intune/protect/windows-10-update-rings) can't be used for feature updates since Windows 10 LTSC versions don't receive feature updates. Update rings can be used for quality updates for Windows 10 Enterprise LTSC 2019 clients.
 
 ## Security
 
@@ -71,7 +73,7 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 ### Endpoint detection and response
 
-Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal.
+Endpoint detection and response are improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal.
 
 Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint.  Other policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
 
@@ -199,7 +201,7 @@ Windows Hello for Business now supports FIDO 2.0 authentication for Azure AD Joi
 
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign-in, and will notify Dynamic lock users if Dynamic lock has stopped working because their device Bluetooth is off.
 
-- You can set up Windows Hello from lock screen for Microsoft accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
+- You can set up Windows Hello from lock screen for Microsoft accounts. We've made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync) for secondary account SSO for a particular identity provider.
 
@@ -362,11 +364,11 @@ For more information about Update Compliance, see [Monitor Windows Updates with 
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
 
 ### Privacy
 
-In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/privacy/diagnostic-data-viewer-overview) app.
+In the Feedback and Settings page under Privacy Settings, you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/privacy/diagnostic-data-viewer-overview) app.
 
 ## Configuration
 
@@ -380,7 +382,7 @@ If you wish to take advantage of [Kiosk capabilities in Microsoft Edge](/previou
 
 ### Co-management
 
-Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 

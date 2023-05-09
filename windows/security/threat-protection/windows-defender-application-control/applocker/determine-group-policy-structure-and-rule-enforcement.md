@@ -1,21 +1,20 @@
 ---
 title: Determine the Group Policy structure and rule enforcement (Windows)
-description: This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
+description: This overview topic describes the process to follow when you're planning to deploy AppLocker rules.
 ms.assetid: f435fcbe-c7ac-4ef0-9702-729aab64163f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Determine the Group Policy structure and rule enforcement
@@ -29,7 +28,7 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
+This overview topic describes the process to follow when you're planning to deploy AppLocker rules.
 
 ## In this section
 
@@ -39,10 +38,10 @@ This overview topic describes the process to follow when you are planning to dep
 | [Understand AppLocker rules and enforcement setting inheritance in Group Policy](understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md) | This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.|
 | [Document the Group Policy structure and AppLocker rule enforcement](document-group-policy-structure-and-applocker-rule-enforcement.md) | This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker. |
  
-When you are determining how many Group Policy Objects (GPOs) to create when you apply an AppLocker policy in your organization, you should consider the following:
+When you're determining how many Group Policy Objects (GPOs) to create when you apply an AppLocker policy in your organization, you should consider the following points:
 
--   Whether you are creating new GPOs or using existing GPOs
--   Whether you are implementing Software Restriction Policies (SRP) policies and AppLocker policies in the same GPO
+-   Whether you're creating new GPOs or using existing GPOs
+-   Whether you're implementing Software Restriction Policies (SRP) policies and AppLocker policies in the same GPO
 -   GPO naming conventions
 -   GPO size limits
 

@@ -1,32 +1,32 @@
 ---
 title: UniversalPrint CSP
 description: Learn how the UniversalPrint configuration service provider (CSP) is used to install printers on Windows client devices.
-ms.author: mandia
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: MandiOhlinger
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 06/02/2022
 ms.reviewer: jimwu
-manager: dougeby
+manager: aaroncz
 ---
 
 # UniversalPrint CSP
 
 The table below shows the applicability of Windows:
 
-|Edition|Windows 11|
-|--- |--- |
-|Home|No|
-|Pro|Yes|
-|Windows SE|Yes|
-|Business|Yes|
-|Enterprise|Yes|
-|Education|Yes|
+|Edition|Windows 11|Windows 10|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The UniversalPrint configuration service provider (CSP) is used to add Universal Print-compatible printers to Windows client endpoints. Universal Print is a cloud-based printing solution that runs entirely in Microsoft Azure. It doesn't require any on-premises infrastructure. For more specific information, go to [What is Universal Print](/universal-print/fundamentals/universal-print-whatis).
 
-This CSP was added in Windows 11.
+This CSP was added in Windows 11 and in Windows 10 21H2 July 2022 update [KB5015807](https://support.microsoft.com/topic/july-12-2022-kb5015807-os-builds-19042-1826-19043-1826-and-19044-1826-8c8ea8fe-ec83-467d-86fb-a2f48a85eb41).
 
 The following example shows the UniversalPrint configuration service provider in tree format.
 
@@ -42,7 +42,7 @@ PrinterProvisioning
 --------ErrorCode
 ```
 
-<a href="" id="PrinterProvisioning"></a>**./Vendor/MSFT/PrinterProvisioning**  
+<a href="" id="PrinterProvisioning"></a>**./Vendor/MSFT/PrinterProvisioning**
 The root node for the Universal Print PrinterProvisioning configuration service provider.
 
 <a href="" id="upprinterinstalls"></a>**UPPrinterInstalls**

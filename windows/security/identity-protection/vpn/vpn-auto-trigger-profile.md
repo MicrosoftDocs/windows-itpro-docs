@@ -1,25 +1,13 @@
 ---
 title: VPN auto-triggered profile options (Windows 10 and Windows 11)
 description: Learn about the types of auto-trigger rules for VPNs in Windows, which start a VPN when it is needed to access a resource.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+ms.topic: conceptual
 ---
 
 # VPN auto-triggered profile options
 
-**Applies to**
--   Windows 10
--   Windows 11
-
-In Windows 10 and Windows 11, a number of features have been added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
+In Windows 10 and Windows 11, a number of features have been added to auto-trigger VPN so users won't have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
 
 - App trigger
 - Name-based trigger
@@ -66,7 +54,7 @@ When a device has multiple profiles with Always On triggers, the user can specif
 
 ## Preserving user Always On preference
 
-Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value **AutoTriggerDisabledProfilesList**.  
+Windows has a feature to preserve a user's AlwaysOn preference.  In the event that a user manually unchecks the "Connect automatically" checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value **AutoTriggerDisabledProfilesList**.  
 
 Should a management tool remove or add the same profile name back and set **AlwaysOn** to **true**, Windows will not check the box if the profile name exists in the following registry value in order to preserve user preference.
 

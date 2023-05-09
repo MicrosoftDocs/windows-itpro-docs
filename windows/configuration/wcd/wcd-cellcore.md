@@ -1,7 +1,7 @@
 ---
 title: CellCore (Windows 10)
 description: This section describes the CellCore settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -9,16 +9,17 @@ ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # CellCore (Windows Configuration Designer reference)
 
-Setting documentation is provided for Windows 10, version 1803 and earlier. CellCore is not available in Windows 10, version 1809.
+>Setting documentation is provided for Windows 10, version 1803 and earlier. CellCore isn't available in Windows 10, version 1809.
 
 Use to configure settings for cellular data.
 
 >[!IMPORTANT]
->These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and are not intended for use by administrators in the enterprise.
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and aren't intended for use by administrators in the enterprise.
 
 ## Applies to
 |Setting groups | Windows client | Surface Hub | HoloLens | IoT Core|
@@ -47,12 +48,12 @@ Use to configure settings for cellular data.
 ### CellConfigurations
 
 1. In **CellConfiguration** > **PropertyGroups**, enter a name for the property group. 
-2. Select the **PropertyGroups** you just created in the **Available customizations** pane and then enter a **PropertyName**.
-3. Select the **PropertyName** you just created in the **Available customizations** pane, and then select one of the following data types for the property:
-   - Binary
-   - Boolean
-   - Integer
-   - String
+2. Select the **PropertyGroups** you created in the **Available customizations** pane and then enter a **PropertyName**.
+3. Select the **PropertyName** you created in the **Available customizations** pane, and then select one of the following data types for the property:
+    - Binary
+    - Boolean
+    - Integer
+    - String
 4. The data type that you selected is added in **Available customizations**. Select it to enter a value for the property.
 
 ### CellData
@@ -121,11 +122,11 @@ Use to configure settings for cellular data.
 
 ### CGDual
 
-Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone is not camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode. 
+Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone isn't camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode. 
 
-Select from the following:
+Select from the following modes:
 
-- RestrictToGlobalMode_Disabled: the phone is not restricted to global mode.
+- RestrictToGlobalMode_Disabled: the phone isn't restricted to global mode.
 - RestrictToGlobalMobe_Home: when a slot is registered at home and supports global mode, the mode selection is restricted to global mode.
 - RestrictToGlobalMode_Always: if a slot supports global mode and this value is selected, the mode selection is restricted to global mode.
 
@@ -205,7 +206,7 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 |:--|:--|
 |AckExpirySeconds |Set the value, in seconds, for how long to wait for a client ACK before trying to deliver. |
 |DefaultMCC |Set the default mobile country code (MCC).|
-|Encodings > GSM7BitEncodingPage |Enter the code page value for the 7-bit GSM default alphabet encoding. Values:</br></br>- Code page value: 55000 (Setting value: 0xD6D8)(Code page: default alphabet)</br>- Code page value: 55001 (Setting value: 0xD6D9)(Code page: GSM with single shift for Spanish)- Code page value: 55002 (Setting value: 0xD6DA)(Code page: GSM with single shift for Portuguese)- Code page value: 55003 (Setting value: 0xD6DB)(Code page: GSM with single shift for Turkish)- Code page value: 55004 (Setting value: 0xD6DC)(Code page: SMS Greek Reduction)|
+|Encodings > GSM7BitEncodingPage |Enter the code page value for the 7-bit GSM default alphabet encoding. Values:</br></br>- Code page value: 55000 (Setting value: 0xD6D8)(Code page: default alphabet)</br>- Code page value: 55001 (Setting value: 0xD6D9)(Code page: GSM with single shift for Spanish)</br>- Code page value: 55002 (Setting value: 0xD6DA)(Code page: GSM with single shift for Portuguese)</br>- Code page value: 55003 (Setting value: 0xD6DB)(Code page: GSM with single shift for Turkish)</br>- Code page value: 55004 (Setting value: 0xD6DC)(Code page: SMS Greek Reduction)|
 |Encodings > GSM8BitEncodingPage|Enter the code page value for GSM 8-bit encoding (OEM set). OEM-created code page IDs should be in the range 55050–55099. |
 |Encodings > OctetEncodingPage |Set the octet (binary) encoding.|
 |Encodings > SendUDHNLSS |Set the 7 bit GSM shift table encoding.|
@@ -229,8 +230,9 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 
 Setting | Description
 |:-|:--|
-|SIM1ToUIM1 |Used to show UIM1 as an alternate string instead of SIM1 for the first SIM on C+G dual SIM phones.|
-|SIMToSIMUIM |Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This can provide a better user experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM".|
+SIM1ToUIM1 | Used to show UIM1 as an alternate string instead of SIM1 for the first SIM on C+G dual SIM phones.
+SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This scenario can provide a better experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM".
+
 
 ### UTK
 
@@ -242,6 +244,7 @@ Setting | Description
 ## PerIMSI
 
 Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings. 
+
 ### <a name="celldata2"></a> CellData
 
 |Setting |Description|
@@ -385,7 +388,9 @@ See descriptions in Windows Configuration Designer.
 |3 (The SIM card fails authentication or one of the identity check procedures. This can also happen due to a duplication of the TMSI across different MSCs.) |Can't verify SIM MM#3 |Invalid SIM|
 |6 (The device has been put on a block list, such as when the phone has been stolen or the IMEI is restricted.) | Phone not allowed MM#6 | No service|
 
-## <a name="spn"></a> Values for MultivariantProvisionedSPN
+<span id="spn" />
+
+## Values for MultivariantProvisionedSPN
 
 Set the MultivariantProvisionedSPN value to the name of the SPN or mobile operator.
 
@@ -394,17 +399,17 @@ The following table shows the scenarios supported by this customization.
 >[!NOTE]
 >In the Default SIM name column: 
 >
->- The " " in MultivariantProvisionedSPN" "1234 means that there is a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
+>- The " " in MultivariantProvisionedSPN" "1234 means that there's a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
 >- MultivariantProvisionedSPN means the value that you set for the MultivariantProvisionedSPN setting.
 >- SIM 1 or SIM 2 is the default friendly name for the SIM in slot 1 or slot 2.
 
-|Multivariant setting set?|SPN provisioned?|MSISDN (last 4 digits: 1234, for example) provisioned?|Default SIM name|
-|:---|:---|:---|:---|
-|Yes|Yes|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234|
-|Yes|No|No|*MultivariantProvisionedSPN* (up to 16 characters)|
-|Yes|Yes|No|*MultivariantProvisionedSPN* (up to 16 characters)|
-|Yes|No|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234|
-|No|Yes|Yes|If SPN string >= 12: *SPN*1234</br></br>If SPN string < 12: *SPN*" "1234|
-|No|No|No|*SIM 1* or *SIM 2*|
-|No|Yes|No|SPN (up to 16 characters)|
-|No|No|Yes|*SIM 1* or *SIM 2*|
+Multivariant setting set?|SPN provisioned?|MSISDN (last four digits: 1234, for example) provisioned?|Default SIM name
+--- | --- | --- | ---
+Yes|Yes|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234
+Yes|No|No|*MultivariantProvisionedSPN* (up to 16 characters)
+Yes|Yes|No|*MultivariantProvisionedSPN* (up to 16 characters)
+Yes|No|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234
+No|Yes|Yes|If SPN string >= 12: *SPN*1234</br></br>If SPN string < 12: *SPN*" "1234
+No|No|No|*SIM 1* or *SIM 2*
+No|Yes|No|SPN (up to 16 characters)
+No|No|Yes|*SIM 1* or *SIM 2*

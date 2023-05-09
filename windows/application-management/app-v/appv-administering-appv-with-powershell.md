@@ -2,12 +2,13 @@
 title: Administering App-V by using Windows PowerShell (Windows 10/11)
 description: Administer App-V by using Windows PowerShell and learn where to find more information about PowerShell for App-V.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 06/08/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # Administering App-V by using Windows PowerShell
 

@@ -1,7 +1,6 @@
 ---
 title: Acquire apps in Microsoft Store for Business (Windows 10)
 description: As an admin, you can acquire apps from the Microsoft Store for Business for your employees. Some apps are free, and some have a price. For info on app types that are supported, see Apps in the Microsoft Store for Business.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
@@ -17,7 +16,7 @@ ms.date: 07/21/2021
 # Acquire apps in Microsoft Store for Business and Education
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 > [!IMPORTANT]
 > Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
@@ -38,7 +37,7 @@ Some apps are free, and some have a price. Apps can be purchased in the Microsof
 - Japan Commercial Bureau (JCB)
 
 ## Organization info
-There are a couple of things we need to know when you pay for apps. You can add this info to the **Account information** or **Payments & billing** page before you buy apps. If you haven’t provided it, we’ll ask when you make a purchase. Either way works. Here’s the info you’ll need to provide:
+There are a couple of things we need to know when you pay for apps. You can add this info to the **Account information** or **Payments & billing** page before you buy apps. If you haven't provided it, we'll ask when you make a purchase. Either way works. Here's the info you'll need to provide:
 - Legal business address
 - Payment option (credit card)
 
@@ -73,10 +72,10 @@ People in your org can request license for apps that they need, or that others n
 3. Select the app you want to purchase. 
 4. On the product description page, choose your license type - either online or offline. 
 5.  Free apps will be added to **Products & services**. For apps with a price, you can set the quantity you want to buy. Type the quantity and select **Next**.
-6. If you don’t have a payment method saved in **Billing & payments**, we will prompt you for one.
+6. If you don't have a payment method saved in **Billing & payments**, we will prompt you for one.
 7. Add your credit card or debit card info, and select **Next**. Your card info is saved as a payment option on **Billing & payments - Payment methods**.
 
-You’ll also need to have your business address saved on **My organization - Profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](./update-microsoft-store-for-business-account-settings.md#organization-tax-information). 
+You'll also need to have your business address saved on **My organization - Profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](./update-microsoft-store-for-business-account-settings.md#organization-tax-information). 
 
 Microsoft Store adds the app to your inventory. From **Products & services**, you can:
 - Distribute the app: add to private store, or assign licenses

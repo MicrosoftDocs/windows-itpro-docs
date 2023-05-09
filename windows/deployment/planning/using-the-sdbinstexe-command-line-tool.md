@@ -1,27 +1,26 @@
 ---
 title: Using the Sdbinst.exe Command-Line Tool (Windows 10)
 description: Learn how to deploy customized database (.sdb) files using the Sdbinst.exe Command-Line Tool. Review a list of command-line options.
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Using the Sdbinst.exe Command-Line Tool
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2016
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2016
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 Deploy your customized database (.sdb) files to other computers in your organization. That is, before your compatibility fixes, compatibility modes, and AppHelp messages are applied. You can deploy your customized database files in several ways. By using a logon script, by using Group Policy, or by performing file copy operations.
 

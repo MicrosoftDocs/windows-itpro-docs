@@ -1,24 +1,12 @@
 ---
 title: Smart Cards for Windows Service (Windows)
 description: This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service manages readers and application interactions.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
 ---
 
 # Smart Cards for Windows Service
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service (formerly called Smart Card Resource Manager) manages readers and application interactions.
 

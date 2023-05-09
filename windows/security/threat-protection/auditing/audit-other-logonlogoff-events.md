@@ -3,16 +3,17 @@ title: Audit Other Logon/Logoff Events (Windows 10)
 description: The Advanced Security Audit policy setting, Audit Other Logon/Logoff Events, determines if Windows generates audit events for other logon or logoff events.
 ms.assetid: 76d987cd-1917-4907-a739-dd642609a458
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Other Logon/Logoff Events

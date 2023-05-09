@@ -1,23 +1,15 @@
 ---
-title: Identity and access management (Windows 10)
+title: Identity and access management
 description: Learn more about identity and access protection technologies in Windows.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 02/05/2018
 ---
 
 # Identity and access management
 
-Learn more about identity and access management technologies in Windows 10.
+Learn more about identity and access management technologies in Windows.
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../includes/virtual-smart-card-deprecation-notice.md)]
 
 | Section | Description |
 |-|-|

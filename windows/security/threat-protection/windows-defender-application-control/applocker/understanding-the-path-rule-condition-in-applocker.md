@@ -1,21 +1,20 @@
 ---
 title: Understanding the path rule condition in AppLocker (Windows)
-description: This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it is applied.
+description: This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it's applied.
 ms.assetid: 3fa54ded-4466-4f72-bea4-2612031cad43
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Understanding the path rule condition in AppLocker
@@ -29,7 +28,7 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it is applied.
+This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it's applied.
 
 The path condition identifies an application by its location in the file system of the computer or on the network.
 
@@ -39,11 +38,11 @@ When creating a rule that uses a deny action, path conditions are less secure th
 |--- |--- |
 |<li>You can easily control many folders or a single file.<li>You can use the asterisk (*) as a wildcard character within path rules.|<li>It might be less secure if a rule that is configured to use a folder path contains subfolders that are writable by non-administrators.<li>You must specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.|
 
-AppLocker does not enforce rules that specify paths with short names. You should always specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.
+AppLocker doesn't enforce rules that specify paths with short names. You should always specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.
 
 The asterisk (\*) wildcard character can be used within **Path** field. The asterisk (\*) character used by itself represents any path. When combined with any string value, the rule is limited to the path of the file and all the files under that path. For example, %ProgramFiles%\\Internet Explorer\\\* indicates that all files and subfolders within the Internet Explorer folder will be affected by the rule.
 
-AppLocker uses path variables for well-known directories in Windows. Path variables are not environment variables. The AppLocker engine can only interpret AppLocker path variables. The following table details these path variables.
+AppLocker uses path variables for well-known directories in Windows. Path variables aren't environment variables. The AppLocker engine can only interpret AppLocker path variables. The following table details these path variables.
 
 
 |               Windows directory or drive                | AppLocker path variable |      Windows environment variable      |

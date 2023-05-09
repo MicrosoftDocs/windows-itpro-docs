@@ -1,17 +1,17 @@
 ---
 title: AccountManagement DDF file
 description: View the OMA DM device description framework (DDF) for the AccountManagement configuration service provider. This file is used to configure settings.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 03/23/2018
-ms.reviewer: 
-manager: dansimp
+ms.reviewer:
+manager: aaroncz
 ---
 
-# AccountManagement DDF file 
+# AccountManagement DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **AccountManagement** configuration service provider.
 

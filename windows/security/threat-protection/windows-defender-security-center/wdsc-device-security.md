@@ -1,42 +1,35 @@
 ---
 title: Device security in the Windows Security app
 description: Use the Device security section to manage security built into your device, including virtualization-based security.
-keywords: device security, device guard, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 
-ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+ms.prod: windows-client
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.date: 12/31/2018
+manager: aaroncz
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Device security
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10 and later
 
 The **Device security** section contains information and settings for built-in device security.
 
-You can choose to hide the section from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+You can choose to hide the section from users of the machine. This option can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
 ## Hide the Device security section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigation bar on the side of the app. You can hide the device security section by using Group Policy only.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of the Windows Security app, and its icon won't be shown on the navigation bar on the side of the app. You can hide the device security section by using Group Policy only.
 
 > [!IMPORTANT]
 > You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2.  In the **Group Policy Management Editor** go to **Computer configuration** and then select **Administrative templates**.
+2.  In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
 
 3.  Expand the tree to **Windows components** > **Windows Security** > **Device security**.
 
@@ -57,7 +50,7 @@ If you don't want users to be able to click the **Clear TPM** button in the Wind
 
 1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2.  In the **Group Policy Management Editor** go to **Computer configuration** and then select **Administrative templates**.
+2.  In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
 
 3.  Expand the tree to **Windows components** > **Windows Security** > **Device security**.
 
@@ -70,7 +63,7 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2.  In the **Group Policy Management Editor** go to **Computer configuration** and then select **Administrative templates**.
+2.  In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
 
 3.  Expand the tree to **Windows components** > **Windows Security** > **Device security**.
 

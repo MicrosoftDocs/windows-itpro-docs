@@ -1,37 +1,29 @@
 ---
 title: Encryption Zone (Windows)
-description: Learn how to create an encryption zone to contain devices that host very sensitive data and require that the sensitive network traffic be encrypted.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+description: Learn how to create an encryption zone to contain devices that host sensitive data and require that the sensitive network traffic be encrypted.
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Encryption Zone
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
-Some servers in the organization host data that's very sensitive, including medical, financial, or other personal data. Government or industry regulations might require that this sensitive information must be encrypted when it is transferred between devices.
+Some servers in the organization host data that's sensitive, including medical, financial, or other personal data. Government or industry regulations might require that this sensitive information must be encrypted when it's transferred between devices.
 
-To support the additional security requirements of these servers, we recommend that you create an encryption zone to contain the devices and that requires that the sensitive inbound and outbound network traffic is encrypted.
+To support the other security requirements of these servers, we recommend that you create an encryption zone to contain the devices and that requires that the sensitive inbound and outbound network traffic is encrypted.
 
-You must create a group in Active Directory to contain members of the encryption zone. The settings and rules for the encryption zone are typically similar to those for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. You then modify the security methods list to include only algorithm combinations that include encryption protocols.
+You must create a group in Active Directory to contain members of the encryption zone. The settings and rules for the encryption zone are typically similar to those settings and rules for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. You then modify the security methods list to include only algorithm combinations that include encryption protocols.
 
 Creation of the group and how to link it to the GPOs that apply the rules to members of the group are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
 ## GPO settings for encryption zone servers running at least Windows Server 2008
 
 
-The GPO for devices that are running at least Windows Server 2008 should include the following:
+The GPO for devices that are running at least Windows Server 2008 should include:
 
 -   IPsec default settings that specify the following options:
 
@@ -39,11 +31,11 @@ The GPO for devices that are running at least Windows Server 2008 should includ
 
     2.  Key exchange (main mode) security methods and algorithm. We recommend that you use at least DH4, AES and SHA2 in your settings. Use the strongest algorithm combinations that are common to all your supported operating systems.
 
-    3.  Data protection (quick mode) algorithm combinations. Check **Require encryption for all connection security rules that use these settings**, and then specify one or more integrity and encryption combinations. We recommend that you do not include DES or MD5 in any setting. They are included only for compatibility with previous versions of Windows. Use the strongest algorithm combinations that are common to all your supported operating systems.
+    3.  Data protection (quick mode) algorithm combinations. Check **Require encryption for all connection security rules that use these settings**, and then specify one or more integrity and encryption combinations. We recommend that you don't include DES or MD5 in any setting. They're included only for compatibility with previous versions of Windows. Use the strongest algorithm combinations that are common to all your supported operating systems.
 
         If any NAT devices are present on your networks, use ESP encapsulation..
 
-    4.  Authentication methods. Include at least device-based Kerberos V5 authentication. If you want to use user-based access to isolated servers then you must also include user-based Kerberos V5 authentication as an optional authentication method. Likewise, if any of your domain isolation members cannot use Kerberos V5 authentication, then you must include certificate-based authentication as an optional authentication method.
+    4.  Authentication methods. Include at least device-based Kerberos V5 authentication. If you want to use user-based access to isolated servers, then you must also include user-based Kerberos V5 authentication as an optional authentication method. Likewise, if any of your domain isolation members can't use Kerberos V5 authentication, then you must include certificate-based authentication as an optional authentication method.
 
 -   The following connection security rules:
 
@@ -52,7 +44,7 @@ The GPO for devices that are running at least Windows Server 2008 should includ
     -   A connection security rule, from any IP address to any, that requires inbound and requests outbound authentication using the default authentication specified earlier in this policy.
 
         **Important**  
-        Be sure to begin operations by using request in and request out behavior until you are sure that all the devices in your IPsec environment are communicating successfully by using IPsec. After confirming that IPsec is operating as expected, you can change the GPO to require in, request out.
+        Be sure to begin operations by using request in and request out behavior until you're sure that all the devices in your IPsec environment are communicating successfully by using IPsec. After confirming that IPsec is operating as expected, you can change the GPO to require in, request out.
 
          
 

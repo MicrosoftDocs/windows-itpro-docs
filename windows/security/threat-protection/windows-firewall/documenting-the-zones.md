@@ -1,26 +1,18 @@
 ---
 title: Documenting the Zones (Windows)
 description: Learn how to document the zone placement of devices in your design for Windows Defender Firewall with Advanced Security.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Documenting the Zones
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
-Generally, the task of determining zone membership is not complex, but it can be time-consuming. Use the information generated during the [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md) section of this guide to determine the zone in which to put each host. You can document this zone placement by adding a Group column to the inventory table shown in the Designing a Windows Defender Firewall with Advanced Security Strategy section. A sample is shown here:
+Generally, the task of determining zone membership isn't complex, but it can be time-consuming. Use the information generated during the [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md) section of this guide to determine the zone in which to put each host. You can document this zone placement by adding a Group column to the inventory table shown in the Designing a Windows Defender Firewall with Advanced Security Strategy section. A sample is shown here:
 
 | Host name | Hardware reqs met | Software reqs met | Configuration required | Details | Projected cost | Group |
 | - | - | - | - | - | - |

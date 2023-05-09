@@ -1,29 +1,16 @@
 ---
 title: Checklist Configuring Rules for the Isolated Domain (Windows)
 description: Use these tasks to configure connection security rules and IPsec settings in your GPOs to implement the main zone in the isolated domain.
-ms.assetid: bfd2d29e-4011-40ec-a52e-a67d4af9748e
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Checklist: Configuring Rules for the Isolated Domain
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 The following checklists include tasks for configuring connection security rules and IPsec settings in your GPOs to implement the main zone in the isolated domain.
 
@@ -31,8 +18,8 @@ The following checklists include tasks for configuring connection security rules
 
 | Task | Reference |
 | - | - |
-| Create a GPO for the computers in the isolated domain running one of the operating systems. After you have finished the tasks in this checklist and configured the GPO for that version of Windows, you can create a copy of it.| [Checklist: Creating Group Policy Objects](checklist-creating-group-policy-objects.md)<br/>[Copy a GPO to Create a New GPO](copy-a-gpo-to-create-a-new-gpo.md)| 
-| If you are working on a GPO that was copied from another GPO, modify the group memberships and WMI filters so that they are correct for the isolated domain zone and the version of Windows for which this GPO is intended. | [Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md) |
+| Create a GPO for the computers in the isolated domain running one of the operating systems. After you've finished the tasks in this checklist and configured the GPO for that version of Windows, you can create a copy of it.| [Checklist: Creating Group Policy Objects](checklist-creating-group-policy-objects.md)<br/>[Copy a GPO to Create a New GPO](copy-a-gpo-to-create-a-new-gpo.md)| 
+| If you're working on a GPO that was copied from another GPO, modify the group memberships and WMI filters so that they're correct for the isolated domain zone and the version of Windows for which this GPO is intended. | [Modify GPO Filters to Apply to a Different Zone or Version of Windows](modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md) |
 | Configure IPsec to exempt all ICMP network traffic from IPsec protection. | [Exempt ICMP from Authentication](exempt-icmp-from-authentication.md)| 
 | Create a rule that exempts all network traffic to and from computers on the exemption list from IPsec. | [Create an Authentication Exemption List Rule](create-an-authentication-exemption-list-rule.md)| 
 | Configure the key exchange (main mode) security methods and algorithms to be used. | [Configure Key Exchange (Main Mode) Settings](configure-key-exchange-main-mode-settings.md)| 
@@ -44,4 +31,4 @@ The following checklists include tasks for configuring connection security rules
 | Verify that the connection security rules are protecting network traffic to and from the test computers. | [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)| 
  
 
-Do not change the rules for any of your zones to require authentication until all of the zones have been set up and are operating correctly.
+Don't change the rules for any of your zones to require authentication until all of the zones have been set up and are operating correctly.

@@ -1,24 +1,16 @@
 ---
 title: Group Policy Management of Windows Defender Firewall (Windows)
 description: Group Policy Management of Windows Defender Firewall with Advanced Security
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Group Policy Management of Windows Defender Firewall
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 To open a GPO to Windows Defender Firewall:
 

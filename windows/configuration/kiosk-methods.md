@@ -1,14 +1,15 @@
 ---
 title: Configure kiosks and digital signs on Windows 10/11 desktop editions
 ms.reviewer: sybruckm
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: lizlong
 description: In this article, learn about the methods for configuring kiosks and digital signs on Windows 10 or Windows 11 desktop editions.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: lizgt2000
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions
@@ -25,7 +26,7 @@ Some desktop devices in an enterprise serve a special purpose. For example, a PC
 
 - **A single-app kiosk**: Runs a single Universal Windows Platform (UWP) app in full screen above the lock screen. People using the kiosk can see only that app. When the kiosk account (a local standard user account) signs in, the kiosk app will launch automatically, and you can configure the kiosk account to sign in automatically as well. If the kiosk app is closed, it will automatically restart. 
   
-  A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk does not run above the lock screen. 
+  A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk doesn't run above the lock screen. 
 
   ![Illustration of a full-screen kiosk experience that runs one app on a Windows client device.](images/kiosk-fullscreen.png)
 

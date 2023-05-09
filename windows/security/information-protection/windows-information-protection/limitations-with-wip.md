@@ -1,59 +1,59 @@
 ---
-title: Limitations while using Windows Information Protection (WIP) (Windows 10)
+title: Limitations while using Windows Information Protection (WIP)
 description: This section includes info about the common problems you might encounter while using Windows Information Protection (WIP).
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
-ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.reviewer: rafals
 ms.topic: conceptual
 ms.date: 04/05/2019
-ms.reviewer: 
 ms.localizationpriority: medium
+ms.technology: itpro-security
 ---
 
 # Limitations while using Windows Information Protection (WIP)
 
-**Applies to:**
--   Windows 10, version 1607 and later
+_Applies to:_
+
+- Windows 10
+- Windows 11
 
 This following list provides info about the most common problems you might encounter while running Windows Information Protection in your organization.
 
 - **Limitation**: Your enterprise data on USB drives might be tied to the device it was protected on, based on your Azure RMS configuration.
   - **How it appears**:
-    - If you’re using Azure RMS: Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.
-    - If you’re not using Azure RMS: Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.
+    - If you're using Azure RMS: Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.
+    - If you're not using Azure RMS: Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.
 
   - **Workaround**: Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.
 
     We strongly recommend educating employees about how to limit or eliminate the need for this decryption.
 
 - **Limitation**: Direct Access is incompatible with Windows Information Protection.
-  - **How it appears**: Direct Access might experience problems with how Windows Information Protection enforces app behavior and data movement because of how WIP determines what is and isn’t a corporate network resource.
+  - **How it appears**: Direct Access might experience problems with how Windows Information Protection enforces app behavior and data movement because of how WIP determines what is and isn't a corporate network resource.
   - **Workaround**: We recommend that you use VPN for client access to your intranet resources.
 
     > [!NOTE]
-    > VPN is optional and isn’t required by Windows Information Protection.
+    > VPN is optional and isn't required by Windows Information Protection.
 
 - **Limitation**: **NetworkIsolation** Group Policy setting takes precedence over MDM Policy settings.
   - **How it appears**: The **NetworkIsolation** Group Policy setting can configure network settings that can also be configured by using MDM. WIP relies on these policies being correctly configured.
   - **Workaround**: If you use both Group Policy and MDM to configure your **NetworkIsolation** settings, you must make sure that those same settings are deployed to your organization using both Group Policy and MDM.
 
-- **Limitation**: Cortana can potentially allow data leakage if it’s on the allowed apps list.
+- **Limitation**: Cortana can potentially allow data leakage if it's on the allowed apps list.
   - **How it appears**: If Cortana is on the allowed list, some files might become unexpectedly encrypted after an employee performs a search using Cortana. Your employees will still be able to use Cortana to search and provide results on enterprise documents and locations, but results might be sent to Microsoft.
-  - **Workaround**: We don’t recommend adding Cortana to your allowed apps list. However, if you wish to use Cortana and don't mind whether the results potentially go to Microsoft, you can make Cortana an Exempt app.
+  - **Workaround**: We don't recommend adding Cortana to your allowed apps list. However, if you wish to use Cortana and don't mind whether the results potentially go to Microsoft, you can make Cortana an Exempt app.
+
+    <a name="single-user"></a>
 
 - **Limitation**: Windows Information Protection is designed for use by a single user per device.
-  - **How it appears**: A secondary user on a device might experience app compatibility issues when unenlightened apps start to automatically encrypt for all users. Additionally, only the initial, enrolled user’s content can be revoked during the unenrollment process.
-  - **Workaround**: We recommend only having one user per managed device.
+  - **How it appears**: A secondary user on a device might experience app compatibility issues when unenlightened apps start to automatically encrypt for all users. Additionally, only the initial, enrolled user's content can be revoked during the unenrollment process.
+  - **Workaround**: Have only one user per managed device.
+  - If this scenario occurs, it may be possible to mitigate. Once protection is disabled, a second user can remove protection by changing the file ownership. Although the protection is in place, the file remains accessible to the user.
 
 - **Limitation**: Installers copied from an enterprise network file share might not work properly.
-  - **How it appears**: An app might fail to properly install because it can’t read a necessary configuration or data file, such as a .cab or .xml file needed for installation, which was protected by the copy action.
+  - **How it appears**: An app might fail to properly install because it can't read a necessary configuration or data file, such as a .cab or .xml file needed for installation, which was protected by the copy action.
   - **Workaround**: To fix this, you can:
     - Start the installer directly from the file share.
 
@@ -63,9 +63,9 @@ This following list provides info about the most common problems you might encou
 
       OR
 
-    - Mark the file share with the installation media as “personal”. To do this, you’ll need to set the Enterprise IP ranges as **Authoritative** and then exclude the IP address of the file server, or you’ll need to put the file server on the Enterprise Proxy Server list.
+    - Mark the file share with the installation media as "personal". To do this, you'll need to set the Enterprise IP ranges as **Authoritative** and then exclude the IP address of the file server, or you'll need to put the file server on the Enterprise Proxy Server list.
 
-- **Limitation**: Changing your primary Corporate Identity isn’t supported.
+- **Limitation**: Changing your primary Corporate Identity isn't supported.
   - **How it appears**: You might experience various instabilities, including but not limited to network and file access failures, and potentially granting incorrect access.
   - **Workaround**: Turn off Windows Information Protection for all devices before changing the primary Corporate Identity (first entry in the list), restarting, and finally redeploying.
 
@@ -90,7 +90,7 @@ This following list provides info about the most common problems you might encou
   - **Workaround**: Open File Explorer and change the file ownership to **Personal** before you upload.
 
 - **Limitation**: ActiveX controls should be used with caution.
-  - **How it appears**: Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using Windows Information Protection.
+  - **How it appears**: Webpages that use ActiveX controls can potentially communicate with other outside processes that aren't protected by using Windows Information Protection.
   - **Workaround**: We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.
 
     For more info, see [Out-of-date ActiveX control blocking](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).
@@ -99,7 +99,7 @@ This following list provides info about the most common problems you might encou
   - **How it appears**:Trying to save or transfer Windows Information Protection files to ReFS will fail.
   - **Workaround**: Format drive for NTFS, or use a different drive.
 
-- **Limitation**: Windows Information Protection isn’t turned on if any of the following folders have the **MakeFolderAvailableOfflineDisabled** option set to **False**:
+- **Limitation**: Windows Information Protection isn't turned on if any of the following folders have the **MakeFolderAvailableOfflineDisabled** option set to **False**:
   - AppDataRoaming
   - Desktop
   - StartMenu
@@ -116,8 +116,8 @@ This following list provides info about the most common problems you might encou
 
   <br/>
 
-  - **How it appears**: Windows Information Protection isn’t turned on for employees in your organization. Error code 0x807c0008 will result if Windows Information Protection is deployed by using Microsoft Endpoint Configuration Manager.
-  - **Workaround**: Don’t set the **MakeFolderAvailableOfflineDisabled** option to **False** for any of the specified folders.  You can configure this parameter, as described [Disable Offline Files on individual redirected folders](/windows-server/storage/folder-redirection/disable-offline-files-on-folders).
+  - **How it appears**: Windows Information Protection isn't turned on for employees in your organization. Error code 0x807c0008 will result if Windows Information Protection is deployed by using Microsoft Configuration Manager.
+  - **Workaround**: Don't set the **MakeFolderAvailableOfflineDisabled** option to **False** for any of the specified folders.  You can configure this parameter, as described [Disable Offline Files on individual redirected folders](/windows-server/storage/folder-redirection/disable-offline-files-on-folders).
 
     If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports Windows Information Protection, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after Windows Information Protection is already in place, you might be unable to open your files offline.
 
@@ -142,7 +142,7 @@ This following list provides info about the most common problems you might encou
     2. Move the notebook folder via File Explorer out of the OneDrive for Business folder to another location, such as the Desktop.
     3. Copy the notebook folder and Paste it back into the OneDrive for Business folder.
 
-    Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook, and the folder should automatically convert to an Internet Shortcut. Opening the shortcut will open the notebook in the browser, which can then be opened in the OneNote client by using the “Open in app” button.
+    Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook, and the folder should automatically convert to an Internet Shortcut. Opening the shortcut will open the notebook in the browser, which can then be opened in the OneNote client by using the "Open in app" button.
 
 - **Limitation**: Microsoft Office Outlook offline data files (PST and OST files) are not marked as **Work** files, and are therefore not protected.
   - **How it appears**: If Microsoft Office Outlook is set to work in cached mode (default setting), or if some emails are stored in a local PST file, the data is unprotected.

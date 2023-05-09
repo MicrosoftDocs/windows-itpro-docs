@@ -2,22 +2,23 @@
 title: 5070(S, F) A cryptographic function property modification was attempted. (Windows 10)
 description: Describes security event 5070(S, F) A cryptographic function property modification was attempted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5070(S, F): A cryptographic function property modification was attempted.
 
 
-This event generates in [BCryptSetContextFunctionProperty](/windows/win32/api/bcrypt/nf-bcrypt-bcryptsetcontextfunctionproperty)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptSetContextFunctionProperty](/windows/win32/api/bcrypt/nf-bcrypt-bcryptsetcontextfunctionproperty)() function. This function is a Cryptographic Next Generation (CNG) function.
 
 This event generates when named property for a cryptographic function in an existing CNG context was updated.
 
@@ -27,9 +28,9 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is used for Cryptographic Next Generation (CNG) troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other Policy Change Events](audit-other-policy-change-events.md)
 

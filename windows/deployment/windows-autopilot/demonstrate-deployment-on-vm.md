@@ -1,22 +1,22 @@
 ---
 title: Demonstrate Autopilot deployment
-manager: dougeby
 description: Step-by-step instructions on how to set up a virtual machine with a Windows Autopilot deployment.
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.collection:
-  - M365-modern-desktop
   - highpri
+  - tier2
 ms.topic: tutorial
-ms.date: 05/12/2022
+ms.date: 10/28/2022
 ---
 
 # Demonstrate Autopilot deployment
 
-*Applies to*
+**Applies to**
 
 - Windows 10
 
@@ -42,13 +42,13 @@ You'll need the following components to complete this lab:
 
 | Component | Description |
 |:---|:---|
-|**Windows 10 installation media**|Windows 10 Professional or Enterprise ISO file for a supported version of Windows 10, general availability channel. If you don't already have an ISO to use,  download an evaluation version of Windows 10 Enterprise.|
+|**Windows 10 installation media**|Windows 10 Enterprise ISO file for a supported version of Windows 10, general availability channel. If you don't already have an ISO to use, download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).|
 |**Internet access**|If you're behind a firewall, see the detailed [networking requirements](/mem/autopilot/software-requirements#networking-requirements). Otherwise, just make sure that you have a connection to the internet.|
 |**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (Azure AD) Premium license**|This guide will describe how to get a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
 
 > [!NOTE]
-> The Microsoft Evaluation Center is temporarily unavailable. To access Windows client evaluation media, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+> When using a VM for Autopilot testing, assign at least two processors and 4 GB of memory.
 
 ## Procedures
 
@@ -56,39 +56,42 @@ A summary of the sections and procedures in the lab is provided below. Follow ea
 
 If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or later.
 
-- [Verify support for Hyper-V](#verify-support-for-hyper-v)
-- [Enable Hyper-V](#enable-hyper-v)
-- [Create a demo VM](#create-a-demo-vm)
-  - [Set ISO file location](#set-iso-file-location)
-  - [Determine network adapter name](#determine-network-adapter-name)
-  - [Use Windows PowerShell to create the demo VM](#use-windows-powershell-to-create-the-demo-vm)
-  - [Install Windows 10](#install-windows-10)
-- [Capture the hardware ID](#capture-the-hardware-id)
-- [Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-oobe)
-- [Verify subscription level](#verify-subscription-level)
-- [Configure company branding](#configure-company-branding)
-- [Configure Microsoft Intune auto-enrollment](#configure-microsoft-intune-auto-enrollment)
-- [Register your VM](#register-your-vm)
-  - [Autopilot registration using Intune](#autopilot-registration-using-intune)
-  - [Autopilot registration using MSfB](#autopilot-registration-using-msfb)
-- [Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
-  - [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
-    - [Create a device group](#create-a-device-group)
-    - [Create the deployment profile](#create-the-deployment-profile)
-  - [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
-- [See Windows Autopilot in action](#see-windows-autopilot-in-action)
-- [Remove devices from Autopilot](#remove-devices-from-autopilot)
-  - [Delete (deregister) Autopilot device](#delete-deregister-autopilot-device)
-- [Appendix A: Verify support for Hyper-V](#appendix-a-verify-support-for-hyper-v)
-- [Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile)
-  - [Add a Win32 app](#add-a-win32-app)
-    - [Prepare the app for Intune](#prepare-the-app-for-intune)
-    - [Create app in Intune](#create-app-in-intune)
-    - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
-  - [Add Office 365](#add-microsoft-365-apps)
-    - [Create app in Intune](#create-app-in-intune)
-    - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
-- [Glossary](#glossary)
+- [Demonstrate Autopilot deployment](#demonstrate-autopilot-deployment)
+  - [Prerequisites](#prerequisites)
+  - [Procedures](#procedures)
+  - [Verify support for Hyper-V](#verify-support-for-hyper-v)
+  - [Enable Hyper-V](#enable-hyper-v)
+  - [Create a demo VM](#create-a-demo-vm)
+    - [Set ISO file location](#set-iso-file-location)
+    - [Determine network adapter name](#determine-network-adapter-name)
+    - [Use Windows PowerShell to create the demo VM](#use-windows-powershell-to-create-the-demo-vm)
+    - [Install Windows 10](#install-windows-10)
+  - [Capture the hardware ID](#capture-the-hardware-id)
+  - [Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-oobe)
+  - [Verify subscription level](#verify-subscription-level)
+  - [Configure company branding](#configure-company-branding)
+  - [Configure Microsoft Intune auto-enrollment](#configure-microsoft-intune-auto-enrollment)
+  - [Register your VM](#register-your-vm)
+    - [Autopilot registration using Intune](#autopilot-registration-using-intune)
+    - [Autopilot registration using MSfB](#autopilot-registration-using-msfb)
+  - [Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
+    - [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
+      - [Create a device group](#create-a-device-group)
+      - [Create the deployment profile](#create-the-deployment-profile)
+    - [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
+  - [See Windows Autopilot in action](#see-windows-autopilot-in-action)
+  - [Remove devices from Autopilot](#remove-devices-from-autopilot)
+    - [Delete (deregister) Autopilot device](#delete-deregister-autopilot-device)
+  - [Appendix A: Verify support for Hyper-V](#appendix-a-verify-support-for-hyper-v)
+  - [Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile)
+    - [Add a Win32 app](#add-a-win32-app)
+      - [Prepare the app for Intune](#prepare-the-app-for-intune)
+      - [Create app in Intune](#create-app-in-intune)
+      - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
+    - [Add Microsoft 365 Apps](#add-microsoft-365-apps)
+      - [Create app in Microsoft Intune](#create-app-in-microsoft-intune)
+      - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile-1)
+  - [Glossary](#glossary)
 
 ## Verify support for Hyper-V
 
@@ -142,10 +145,7 @@ After you determine the ISO file location and the name of the appropriate networ
 
 ### Set ISO file location
 
-Download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise. Choose a 64-bit version.
-
-> [!NOTE]
-> The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+Download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise from the [Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise). Choose a 64-bit version.
 
 After you download an ISO file, the name will be long. For example, `19042.508.200927-1902.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso`
 
@@ -180,7 +180,8 @@ All VM data will be created under the current path in your PowerShell prompt. Co
 
 ```powershell
 New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter | Where-Object {$_.Status -eq "Up" -and !$_.Virtual}).Name
-New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+New-VM -Name WindowsAutopilot -MemoryStartupBytes 4GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+Set-VMProcessor WindowsAutopilot -Count 2
 Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
 Start-VM -VMName WindowsAutopilot
 ```
@@ -252,7 +253,7 @@ After the VM restarts, during OOBE, it's fine to select **Set up for personal us
 
    ![Windows setup example 7.](images/winsetup7.png)
 
-Once the installation is complete, sign in and verify that you're at the Windows 10 desktop. Then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state.
+Once the installation is complete, sign in, and verify that you're at the Windows 10 desktop. Then create your first Hyper-V checkpoint. Checkpoints are used to restore the VM to a previous state.
 
    > [!div class="mx-imgBorder"]
    > ![Windows setup example 8.](images/winsetup8.png)
@@ -400,7 +401,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 ### Autopilot registration using Intune
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), choose **Devices** > **Device enrollment | Enroll devices** > **Windows enrollment** > **Windows Autopilot Deployment Program | Devices** and then on the **Windows Autopilot devices** page, choose **Import**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Device enrollment | Enroll devices** > **Windows enrollment** > **Windows Autopilot Deployment Program | Devices** and then on the **Windows Autopilot devices** page, choose **Import**.
 
     ![Intune device import.](images/enroll1.png)
 
@@ -424,15 +425,9 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 > [!IMPORTANT]
 > If you've already registered your VM (or device) using Intune, then skip this step.
 
-Optional: see the following video for an overview of the process.
-
-&nbsp;
-
-> [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
-
 First, you need a Microsoft Store for Business account. You can use the same one you created above for Intune, or follow [these instructions](/microsoft-store/windows-store-for-business-overview) to create a new one.
 
-Next, to sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) with your test account,  select **Sign in** on the upper-right-corner of the main page.
+Next, to sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/store) with your test account,  select **Sign in** on the upper-right-corner of the main page.
 
 Select **Manage** from the top menu, then select the **Windows Autopilot Deployment Program** link under the **Devices** card. See the following example:
 
@@ -462,7 +457,7 @@ Pick one:
 
 The Autopilot deployment profile wizard asks for a device group, so you must create one first. To create a device group:
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Groups** > **New group**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Groups** > **New group**.
 
 2. In the **Group** pane:
     1. For **Group type**, choose **Security**.
@@ -532,8 +527,6 @@ Select **OK**, and then select **Create**.
 ### Create a Windows Autopilot deployment profile using MSfB
 
 If you already created and assigned a profile via Intune with the steps immediately above, then skip this section.
-
-A [video](https://www.youtube.com/watch?v=IpLIZU_j7Z0) is available that covers the steps required to create and assign profiles in Microsoft Store for Business. These steps are also summarized below.
 
 First, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/manage/dashboard) using the Intune account you initially created for this lab.
 
@@ -613,7 +606,7 @@ To use the device (or VM) for other purposes after completion of this lab, you n
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the Microsoft Endpoint Manager admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), then go to **Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)
@@ -815,7 +808,7 @@ For more information on adding apps to Intune, see [Intune Standalone - Win32 ap
 
 ### Add Microsoft 365 Apps
 
-#### Create app in Microsoft Endpoint Manager
+#### Create app in Microsoft Intune
 
 Sign in to the Azure portal and select **Intune**.
 

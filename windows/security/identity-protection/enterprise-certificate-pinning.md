@@ -1,26 +1,11 @@
 ---
 title: Enterprise Certificate Pinning
-ms.mktglfcycl: manage
-ms.sitesec: library
 description: Enterprise certificate pinning is a Windows feature for remembering; or pinning a root issuing certificate authority, or end entity certificate to a given domain name.
-audience: ITPro
-author: dulcemontemayor
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
-ms.pagetype: security
-ms.localizationpriority: medium
+ms.topic: conceptual
 ms.date: 07/27/2017
-ms.reviewer: 
 ---
 
 # Enterprise Certificate Pinning
-
-**Applies to**
--   Windows 10
 
 Enterprise certificate pinning is a Windows feature for remembering, or pinning a root issuing certificate authority or end entity certificate to a given domain name. 
 Enterprise certificate pinning helps reduce man-in-the-middle attacks by enabling you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates.
@@ -28,7 +13,7 @@ Enterprise certificate pinning helps reduce man-in-the-middle attacks by enablin
 > [!NOTE]
 > External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning.
 
-Windows Certificate APIs (CertVerifyCertificateChainPolicy and WinVerifyTrust) are updated to check if the site’s chain that authenticates servers matches a restricted set of certificates. 
+Windows Certificate APIs (CertVerifyCertificateChainPolicy and WinVerifyTrust) are updated to check if the site's chain that authenticates servers matches a restricted set of certificates. 
 These restrictions are encapsulated in a Pin Rules Certificate Trust List (CTL) that is configured and deployed to Windows 10 computers. 
 Any site certificate that triggers a name mismatch causes Windows to write an event to the CAPI2 event log and prevents the user from navigating to the web site using Microsoft Edge or Internet Explorer.
 
@@ -103,7 +88,7 @@ The **Certificate** element can have the following attributes.
 | **File**  | Path to a file containing one or more certificates.  Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br>- sst <br> These files can also be Base64 formatted.  All **Site** elements included in the same **PinRule** element can match any of these certificates. | Yes (File, Directory, or Base64 must be present). |
 | **Directory** | Path to a directory containing one or more of the above certificate files. Skips any files not containing any certificates. | Yes (File, Directory, or Base64 must be present). | 
 | **Base64** | Base64 encoded certificate(s). Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br> - sst <br> This allows the certificates to be included in the XML file without a file directory dependency. <br> Note: <br> You can use **certutil -encode** to convert a .cer file into base64. You can then use Notepad to copy and paste the base64 encoded certificate into the pin rule.  | Yes (File, Directory, or Base64 must be present). |
-| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element’s certificates.<br> If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and exclude the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml).| No.|
+| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element's certificates.<br> If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and excludes the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml).| No.|
 
 #### Site element
 
@@ -111,7 +96,7 @@ The **Site** element can have the following attributes.
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
-| **Domain** | Contains the DNS name to be matched for this pin rule. When creating the certificate trust list, the parser normalizes the input name string value as follows: <br>- If the DNS name has a leading "*", it's removed. <br>- Non-ASCII DNS name is converted to ASCII Puny Code. <br>- Upper case ASCII characters are converted to lower case. <br>If the normalized name has a leading ".", then, wildcard left-hand label matching is enabled. For example, ".xyz.com" would match "abc.xyz.com". | Yes.|
+| **Domain** | Contains the DNS name to be matched for this pin rule. When creating the certificate trust list, the parser normalizes the input name string value as follows: <br>- If the DNS name has a leading "*", it's removed. <br>- Non-ASCII DNS name is converted to ASCII Puny Code. <br>- Upper case ASCII characters are converted to lower case. <br>If the normalized name has a leading ".", then wildcard left-hand label matching is enabled. For example, ".xyz.com" would match "abc.xyz.com". | Yes.|
 | **AllSubdomains** | By default, wildcard left-hand label matching is restricted to a single left-hand label. This attribute can be set to "true" to enable wildcard matching of all of the left-hand labels.<br>For example, setting this attribute would also match "123.abc.xyz.com" for the ".xyz.com" domain value.| No.|
 
 ### Create a Pin Rules Certificate Trust List
@@ -160,7 +145,7 @@ Use **certutil.exe** to apply your certificate pinning rules to your reference c
 The **setreg** argument takes a secondary argument that determines the location of where certutil writes the certificate pining rules. 
 This secondary argument is **chain\PinRules**. 
 The last argument you provide is the name of file that contains your certificate pinning rules in certificate trust list format (.stl). 
-You’ll pass the name of the file as the last argument; however, you need to prefix the file name with the '@' symbol as shown in the following example. 
+You'll pass the name of the file as the last argument; however, you need to prefix the file name with the '@' symbol as shown in the following example. 
 You need to perform this command from an elevated command prompt.
 
 ```code
@@ -180,7 +165,7 @@ Certutil writes the binary information to the following registration location:
 
 ### Deploying Enterprise Pin Rule Settings using Group Policy
 
-You’ve successfully created a certificate pinning rules XML file. 
+You've successfully created a certificate pinning rules XML file. 
 From the XML file you've created a certificate pinning trust list file, and you've applied the contents of that file to your reference computer from which you can run the Group Policy Management Console. 
 Now you need to configure a Group Policy object to include the applied certificate pin rule settings and deploy it to your environment.
 
@@ -188,7 +173,7 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 
 1.  Start the **Group Policy Management Console** (gpmc.msc)
 2.  In the navigation pane, expand the forest node and then expand the domain node.
-3.  Expand the node that contains your Active Directory’s domain name
+3.  Expand the node that contains your Active Directory's domain name
 4.  Select the **Group Policy objects** node.  Right-click the **Group Policy objects** node and click **New**.
 5.  In the **New GPO** dialog box, type _Enterprise Certificate Pinning Rules_ in the **Name** text box and click **OK**.
 6.  In the content pane, right-click the **Enterprise Certificate Pinning Rules** Group Policy object and click **Edit**.
@@ -233,16 +218,16 @@ icacls %PinRulesLogDir% /grant *S-1-5-12:(OI)(CI)(F)
 icacls %PinRulesLogDir% /inheritance:e /setintegritylevel (OI)(CI)L
 ```
 
-Whenever an application verifies a TLS/SSL certificate chain that contains a server name matching a DNS name in the server certificate, Windows writes a .p7b file consisting of all the certificates in the server’s chain to one of three child folders:
+Whenever an application verifies a TLS/SSL certificate chain that contains a server name matching a DNS name in the server certificate, Windows writes a .p7b file consisting of all the certificates in the server's chain to one of three child folders:
 
 - AdminPinRules
     Matched a site in the enterprise certificate pinning rules.
 - AutoUpdatePinRules
     Matched a site in the certificate pinning rules managed by Microsoft.
 - NoPinRules
-    Didn’t match any site in the certificate pin rules.
+    Didn't match any site in the certificate pin rules.
 
-The output file name consists of the leading eight ASCII hex digits of the root’s SHA1 thumbprint followed by the server name. 
+The output file name consists of the leading eight ASCII hex digits of the root's SHA1 thumbprint followed by the server name. 
 For example:
 
 - `D4DE20D0_xsi.outlook.com.p7b`
@@ -261,7 +246,7 @@ You can then copy and paste the output of the cmdlet into the XML file.
 ![Representing a date.](images/enterprise-certificate-pinning-representing-a-date.png)
 
 For simplicity, you can truncate decimal point (.) and the numbers after it. 
-However, be certain to append the uppercase “Z” to the end of the XML date string.
+However, be certain to append the uppercase "Z" to the end of the XML date string.
 
 ```code
 2015-05-11T07:00:00.2655691Z
@@ -270,7 +255,7 @@ However, be certain to append the uppercase “Z” to the end of the XML date s
 
 ## Converting an XML Date
 
-You can also use Windows PowerShell to validate and convert an XML date into a human readable date to validate it’s the correct date.
+You can also use Windows PowerShell to validate and convert an XML date into a human readable date to validate it's the correct date.
 
 ![Converting an XML date.](images/enterprise-certificate-pinning-converting-an-xml-date.png)
 

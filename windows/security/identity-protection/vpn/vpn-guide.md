@@ -1,24 +1,11 @@
 ---
 title: Windows VPN technical guide (Windows 10 and Windows 11)
 description: Learn about decisions to make for Windows 10 or Windows 11 clients in your enterprise VPN solution and how to configure your deployment.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
-ms.localizationpriority: medium
 ms.date: 02/21/2022
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+ms.topic: conceptual
 ---
 
 # Windows VPN technical guide
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 This guide will walk you through the decisions you will make for Windows 10 or Windows 11 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10 and Windows 11.
 

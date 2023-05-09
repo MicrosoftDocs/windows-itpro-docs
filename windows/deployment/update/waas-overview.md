@@ -1,13 +1,17 @@
 ---
 title: Overview of Windows as a service
 description: Windows as a service is a way to build, deploy, and service Windows. Learn how Windows as a service works.
-ms.prod: w10
-author: aczechowski
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
-manager: dougeby
-ms.topic: article
-ms.collection: highpri
+ms.author: mstewart
+manager: aaroncz
+ms.topic: overview
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Overview of Windows as a service
@@ -39,11 +43,7 @@ Deploying Windows 10 and Windows 11 is simpler than with previous versions of Wi
 
 ### Application compatibility
 
-Application compatibility testing has historically been a burden when approaching a Windows deployment or upgrade. Application compatibility from the perspective of desktop applications, websites, and apps built on the Universal Windows Platform (UWP) has improved tremendously over older versions of Windows. .
-
-
-For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. For remaining applications, consider validating them as part of a pilot deployment process to reduce the time spent on compatibility testing. Desktop Analytics is a cloud-based service that integrates with Configuration Manager. The service provides insight and intelligence for you to make more informed decisions about the update readiness of your Windows endpoints, including assessment of your existing applications. For more, see [Ready for modern desktop retirement FAQ](/mem/configmgr/desktop-analytics/ready-for-windows).
-
+Application compatibility testing has historically been a burden when approaching a Windows deployment or upgrade. Application compatibility from the perspective of desktop applications, websites, and apps built on the Universal Windows Platform (UWP) has improved tremendously over older versions of Windows. For the most important business-critical applications, organizations should still perform testing on a regular basis to validate compatibility with new builds. 
 
 ## Servicing
 
@@ -90,7 +90,7 @@ There are three servicing channels. The [Windows Insider Program](#windows-insid
 
 In the General Availability Channel, feature updates are available annually. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
 
-When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the General Availability Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
+When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the General Availability Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
 
 
 > [!NOTE]
@@ -108,7 +108,7 @@ Specialized systems—such as devices that control medical equipment, point-of-s
 >
 > The Long-term Servicing channel is not intended for deployment on most or all the devices in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the General Availability channel.
 
-Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSC. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a the product lifecycle. Always check your individual LTSC release to verify its servicing lifecycle. For more information, see [release information](/windows/release-health/release-information), or perform a search on the [product lifecycle information](/lifecycle/products/) page.
+Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSC. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over the product's lifecycle. Always check your individual LTSC release to verify its servicing lifecycle. For more information, see [release information](/windows/release-health/release-information), or perform a search on the [product's lifecycle information](/lifecycle/products/) page.
 
 > [!NOTE]
 > LTSC releases will support the currently released processors and chipsets at the time of release of the LTSC. As future CPU generations are released, support will be created through future LTSC releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](/lifecycle/faq/windows).
@@ -131,7 +131,7 @@ There are many tools you can use to service Windows as a service. Each option ha
 - **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the General Availability Channel. Organizations can target which devices defer updates by selecting the **Defer upgrades** check box in **Start\Settings\Update & Security\Advanced Options** on a Windows client device.
 - **Windows Update for Business** includes control over update deferment and provides centralized management using Group Policy or MDM. Windows Update for Business can be used to defer updates by up to 365 days, depending on the version. These deployment options are available to clients in the General Availability Channel. In addition to being able to use Group Policy to manage Windows Update for Business, either option can be configured without requiring any on-premises infrastructure by using Microsoft Intune.
 - **Windows Server Update Services (WSUS)** provides extensive control over updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. 
-- **Microsoft Endpoint Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 
+- **Microsoft Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 
 
 **Servicing tools comparison**
 

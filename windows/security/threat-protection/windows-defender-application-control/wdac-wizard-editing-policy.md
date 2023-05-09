@@ -3,20 +3,19 @@ title: Editing Windows Defender Application Control Policies with the Wizard
 description: Editing existing base and supplemental policies with the Microsoft WDAC Wizard.
 keywords: allowlisting, blocklisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Editing existing base and supplemental WDAC policies with the Wizard
@@ -39,7 +38,7 @@ The Windows Defender Application Control Wizard makes editing and viewing WDAC p
 
 ## Configuring Policy Rules
 
-The `Policy Rules` page will load with the in-edit policy rules configured per the set rules. Selecting the `+ Advanced Options` button will reveal the advanced policy rule options panel. This grouping of rules contains additional policy rule options that are less common to the majority of users. To edit any of the rules, flip the corresponding policy rule state.  For instance, to disable Audit Mode and enable Enforcement Mode in the figure below, the button beside the `Audit Mode` label needs only to be pressed. Once the policy rules are configured, select the Next button to continue the next stage of editing: [Adding File Rules](#adding-file-rules).
+The `Policy Rules` page will load with the in-edit policy rules configured per the set rules. Selecting the `+ Advanced Options` button will reveal the advanced policy rule options panel. This grouping of rules contains other policy rule options that are less common to most users. To edit any of the rules, flip the corresponding policy rule state.  For instance, to disable Audit Mode and enable Enforcement Mode in the figure below, the button beside the `Audit Mode` label needs only to be pressed. Once the policy rules are configured, select the Next button to continue the next stage of editing: [Adding File Rules](#adding-file-rules).
 
 ![Configuring the policy rules.](images/wdac-wizard-edit-policy-rules.png)
 
@@ -47,7 +46,7 @@ A description of the policy rule is shown at the bottom of the page when the cur
 
 ## Adding File Rules
 
-The Windows Defender Application Control Wizard allows users to add rules to their existing policy seamlessly. Previously, this would have involved creating a new policy with the new rules and merging it with the existing policy. 
+The Windows Defender Application Control Wizard allows users to add rules to their existing policy seamlessly. Previously, this rule-adding task would have involved creating a new policy with the new rules and merging it with the existing policy. 
 
 Selecting the `+ Custom Rules` button will open the Custom Rules panel. For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](wdac-wizard-create-base-policy.md#creating-custom-file-rules).
 

@@ -3,19 +3,18 @@ title: Configure an AppLocker policy for enforce rules (Windows)
 description: This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 ms.assetid: 5dbbb290-a5ae-4f88-82b3-21e95972e66c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Configure an AppLocker policy for enforce rules
@@ -40,7 +39,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
 **To enable the Enforce rules enforcement setting**
 
 1.  From the AppLocker console, right-click **AppLocker**, and then click **Properties**.
-2.  On the **Enforcement** tab of the **AppLocker Properties** dialog box, select the **Configured** check box for the rule collection that you are editing, and then verify that **Enforce rules** is selected.
+2.  On the **Enforcement** tab of the **AppLocker Properties** dialog box, select the **Configured** check box for the rule collection that you're editing, and then verify that **Enforce rules** is selected.
 3.  Click **OK**.
 
 For info about viewing the events generated from rules enforcement, see [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md).

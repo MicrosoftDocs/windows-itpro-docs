@@ -1,13 +1,15 @@
 ---
 title: Configuration service providers for IT pros (Windows 10/11)
-description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices. 
+description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.reviewer: gkomatsu
-manager: dougeby
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+manager: aaroncz
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Configuration service providers for IT pros
@@ -31,7 +33,7 @@ CSPs are behind many of the management tasks and policies for Windows client, bo
 
 :::image type="content" source="../images/policytocsp.png" alt-text="How intune maps to CSP":::
 
-CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Endpoint Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
+CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
 
 ### Synchronization Markup Language (SyncML)
 
@@ -55,7 +57,7 @@ You can use Windows Configuration Designer to create [provisioning packages](./p
 
 Many settings in Windows Configuration Designer will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 
-:::image type="content" source="../images/cspinicd.png" alt-text="In Windows Configuration Designer, how help content appears in icd.":::
+:::image type="content" source="../images/cspinicd.png" alt-text="In Windows Configuration Designer, how help content appears in ICD.":::
 
 [Provisioning packages in Windows client](provisioning-packages.md) explains how to use the Windows Configuration Designer tool to create a runtime provisioning package.
 
@@ -81,7 +83,7 @@ The full path to a specific configuration setting is represented by its Open Mob
 
 The following example shows the diagram for the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes, and rectangular elements are settings or policies for which a value must be supplied.
 
-:::image type="content" source="../images/provisioning-csp-assignedaccess.png" alt-text="The CSP reference shows the assigned access csp tree.":::
+:::image type="content" source="../images/provisioning-csp-assignedaccess.png" alt-text="The CSP reference shows the assigned access CSP tree.":::
 
 The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see that it uses the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
@@ -160,12 +162,12 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Maps CSP](/windows/client-management/mdm/maps-csp)
 -   [NAP CSP](/windows/client-management/mdm/filesystem-csp)
 -   [NAPDEF CSP](/windows/client-management/mdm/napdef-csp)
--   [NodeCache CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723265)
+-   [NodeCache CSP](https://go.microsoft.com/fwlink/p/?LinkId=723265)
 -   [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 -   [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider)
--   [PolicyManager CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723418)
+-   [PolicyManager CSP](https://go.microsoft.com/fwlink/p/?LinkId=723418)
 -   [Provisioning CSP](/windows/client-management/mdm/provisioning-csp)
--   [Proxy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723372)
+-   [Proxy CSP](https://go.microsoft.com/fwlink/p/?LinkId=723372)
 -   [PXLOGICAL CSP](/windows/client-management/mdm/pxlogical-csp)
 -   [Registry CSP](/windows/client-management/mdm/registry-csp)
 -   [RemoteFind CSP](/windows/client-management/mdm/remotefind-csp)
@@ -179,6 +181,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Update CSP](/windows/client-management/mdm/update-csp)
 -   [VPN CSP](/windows/client-management/mdm/vpn-csp)
 -   [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
--   [Wi-Fi CSP](/documentation/)
+-   [Wi-Fi CSP](/windows/client-management/mdm/wifi-csp)
 -   [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp)
 -   [WindowsSecurityAuditing CSP](/windows/client-management/mdm/windowssecurityauditing-csp)

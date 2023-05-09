@@ -1,25 +1,21 @@
 ---
 title: Quarantine behavior
 description: Quarantine behavior is explained in detail.
-ms.author: v-bshilpa
-author: Benny-54
-manager: dansimp
-ms.reviewer: 
-ms.prod: m365-security
-ms.localizationpriority: normal
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Quarantine behavior
 
 One of the security challenges that network admins face is configuring a machine properly after a network change. 
 
-Network changes can happen frequently. Additionally, the operations required to recategorize the network after a change and apply the correct security policies on a machine are non-trivial and may require considerable CPU time. This is especially true for machines that are part of the domain. In the past, the delay in applying security policies during network recategorization has been successfully exploited for vulnerabilities.
+Network changes can happen frequently. Additionally, the operations required to recategorize the network after a change and apply the correct security policies on a machine are non-trivial and may require considerable CPU time. This requirement by operations is especially true for machines that are part of the domain. In the past, the delay in applying security policies during network recategorization has been successfully exploited for vulnerabilities.
 
-To counter this potential exploitation, Windows Firewall will quarantine an interface until the system has successfully recategorized the network and Windows Filtering Platform (WFP) has the correct filters applied for the updated interface configuration. During quarantine, all new inbound connections without exceptions are blocked to the machine.
+To counter this potential exploitation, Windows Firewall will quarantine an interface until the system has successfully recategorized the network, and Windows Filtering Platform (WFP) has the correct filters applied for the updated interface configuration. During quarantine, all new inbound connections without exceptions are blocked to the machine.
 
 While the quarantine feature has long been a part of Windows Firewall, the feature behavior has often caused confusion for customers unaware of quarantine and its motivations.
 
@@ -50,7 +46,7 @@ For more information about WFP layers and sublayers, see [WFP Operation](/window
 
 ### Quarantine default inbound block filter
 
-The quarantine default inbound block filter effectively blocks any new non-loopback inbound connections if the packet is not explicitly permitted by another filter in the quarantine sublayer.
+The quarantine default inbound block filter effectively blocks any new non-loopback inbound connections if the packet isn't explicitly permitted by another filter in the quarantine sublayer.
 
 ### Quarantine default exception filters
 
@@ -62,9 +58,9 @@ The interface un-quarantine filters allow all non-loopback packets if the interf
 
 ## Quarantine flow
 
-The following describes the general flow of quarantine: 
+The following events describe the general flow of quarantine: 
 
-1.	There is some change on the current network interface.
+1.	There's some change on the current network interface.
 
 2.	The interface un-quarantine filters will no longer permit new inbound connections. The interface is now in quarantine state.
 
@@ -102,7 +98,7 @@ The `netEvent` will have more information about the packet that was dropped incl
 
 If the filter that dropped that packet was by the quarantine default inbound block filter, then the drop `netEvent` will have `filterOrigin` as `Quarantine Default`.
 
-The following is a sample `netEvent` with `filterOrigin` as `Quarantine Default`.
+The following code is a sample `netEvent` with `filterOrigin` as `Quarantine Default`.
 
 ```XML
 <netEvent>
@@ -202,8 +198,8 @@ Get-NetIPInterface –InterfaceIndex 5
 
 ![Quarantine Interfaceindex.](images/quarantine-interfaceindex1.png)
 
-Using the interface name, event viewer can be searched for any interface related changes. 
+With the help of the interface name, event viewer can be searched for any interface related changes. 
 
 To enable more networking audit events, see [Enable IPsec and Windows Firewall Audit Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754714(v=ws.10)).
 
-Packet drops from the quarantine default inbound block filter are often transient and do not signify anything more than a network change on the interface.
+Packet drops from the quarantine default inbound block filter are often transient and don't signify anything more than a network change on the interface.

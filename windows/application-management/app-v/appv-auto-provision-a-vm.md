@@ -2,12 +2,13 @@
 title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: How to automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
@@ -33,7 +34,7 @@ Provisioning your new VM includes creating a VHD file, setting up a user account
 
 #### Create a VHD file
 
-For this process to work, you must have a base operating system available as a VHD image file, we recommend using the [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f) command-line tool.
+For this process to work, you must have a base operating system available as a VHD image file, we recommend using the [Convert-WindowsImage.ps1](https://www.powershellgallery.com/packages/Convert-WindowsImage/10.0) command-line tool.
 
 #### Create a VHD file with the Convert-WindowsImage command-line tool
 
@@ -122,6 +123,6 @@ After you sequence your packages, you can automatically clean up any unpublished
 ### Related articles
 
 - [Download the **Convert-WindowsImage** tool](https://www.powershellgallery.com/packages/Convert-WindowsImage/10.0)
-- [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+- [Download the Windows ADK](/windows-hardware/get-started/adk-install)
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)
 - [Learn about Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/Hyper-V-on-Windows-Server)

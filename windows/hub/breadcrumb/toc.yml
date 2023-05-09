@@ -27,7 +27,7 @@ items:
             tocHref: /windows/client-management/
             topicHref: /windows/client-management/
             items:
-              - name: Mobile Device Management
+              - name: CSP reference
                 tocHref: /windows/client-management/mdm/
                 topicHref: /windows/client-management/mdm/
           - name: Privacy
@@ -45,7 +45,7 @@ items:
                 topicHref: /windows/security/threat-protection/auditing/security-auditing-overview
               - name: Microsoft Defender Application Guard
                 tocHref: /windows/security/threat-protection/microsoft-defender-application-guard/
-                topicHref: /windows/security/threat-protection/microsoft-defender-application-guard/
+                topicHref: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
               - name: Security policy settings
                 tocHref: /windows/security/threat-protection/security-policy-settings/
                 topicHref: /windows/security/threat-protection/security-policy-settings/security-policy-settings

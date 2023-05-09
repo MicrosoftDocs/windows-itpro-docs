@@ -1,17 +1,12 @@
 ---
 title: Troubleshooting UWP App Connectivity Issues in Windows Firewall
 description: Troubleshooting UWP App Connectivity Issues in Windows Firewall
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-windows-security
+ms.prod: windows-client
 ms.topic: troubleshooting
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
+ms.date: 12/31/2017
 ---
 
 # Troubleshooting UWP App Connectivity Issues
@@ -25,7 +20,7 @@ This document guides you through steps to debug  Universal Windows Platform (UWP
 
 UWP app network connectivity issues are typically caused by: 
 
-1. The UWP app was not permitted to receive loopback traffic. This must be configured. By default, UWP apps are not allowed to receive loopback traffic.
+1. The UWP applications not being permitted to receive loopback traffic. This permission must be configured. By default, UWP applications aren't allowed to receive loopback traffic.
 2. The UWP app is missing the proper capability tokens.
 3. The private range is configured incorrectly. For example, the private range is set incorrectly through GP/MDM policies, etc.
 
@@ -34,8 +29,7 @@ To understand these causes more thoroughly, there are several concepts to review
 The traffic of network packets (what's permitted and what’s not) on Windows is determined by the Windows Filtering Platform (WFP). When a UWP app
 or the private range is configured incorrectly, it affects how the UWP app’s network traffic will be processed by WFP.
 
-When a packet is processed by WFP, the characteristics of that packet must explicitly match all the conditions of a filter to either be permitted or dropped to its target address. Connectivity issues typically happen when the packet does not match any of the filter conditions, leading the packet to be dropped by a default block filter. The presence of the default block
-filters ensures network isolation for UWP applications. Specifically, it guarantees a network drop for a packet that does not have the correct capabilities for the resource it is trying to reach. This ensures the application’s granular access to each resource type and preventing the application from escaping its environment.
+When a packet is processed by WFP, the characteristics of that packet must explicitly match all the conditions of a filter to either be permitted or dropped to its target address. Connectivity issues typically happen when the packet doesn't match any of the filter conditions, leading the packet to be dropped by a default block filter. The presence of the default block filters ensures network isolation for UWP applications. Specifically, it guarantees a network drop for a packet that doesn't have the correct capabilities for the resource it's trying to reach. Such a packet drop ensures the application’s granular access to each resource type and preventing the application from escaping its environment.
 
 For more information on the filter arbitration algorithm and network isolation,
 see [Filter
@@ -53,13 +47,13 @@ traces collected on previous releases of Windows.
 
 If you need to establish a TCP/IP connection between two processes on the same host where one of them is a UWP app, you must enable loopback.
 
-To enable loopback for client outbound connections, run the following at a command prompt:
+To enable loopback for client outbound connections, run the following command at a command prompt:
 
 ```console
 CheckNetIsolation.exe LoopbackExempt -a -n=<AppContainer or Package Family>
 ```
 
-To enable loopback for server inbound connections,  run the following at a
+To enable loopback for server inbound connections,  run the following command at a
 command prompt:
 ```console
 CheckNetIsolation.exe LoopbackExempt -is -n=<AppContainer or Package Family>
@@ -77,9 +71,9 @@ Also, see [How to enable loopback and troubleshoot network isolation (Windows Ru
 
 ## Debugging Live Drops
 
-If the issue happened recently, but you find you are not able to reproduce the issue, go to Debugging Past Drops for the appropriate trace commands.
+If the issue happened recently, but you find you aren't able to reproduce the issue, go to Debugging Past Drops for the appropriate trace commands.
 
-If you can consistently reproduce the issue, then you can run the following in an admin command prompt to gather a fresh trace:
+If you can consistently reproduce the issue, then you can run the following command in an admin command prompt to gather a fresh trace:
 
 ```console
 Netsh wfp capture start keywords=19
@@ -89,7 +83,7 @@ Netsh wfp capture stop
 
 These commands generate a wfpdiag.cab. Inside the .cab exists a wfpdiag.xml, which contains any allow or drop netEvents and filters that existed during that repro. Without “keywords=19”, the trace will only collect drop netEvents.
 
-Inside the wfpdiag.xml, search for netEvents which have
+Inside the wfpdiag.xml, search for netEvents that have
 FWPM_NET_EVENT_TYPE_CLASSIFY_DROP as the netEvent type. To find the relevant drop events, search for the drop events with matching destination IP address,
 package SID, or application ID name. The characters in the application ID name
 will be separated by periods:
@@ -110,11 +104,11 @@ The netEvent will have more information about the packet that was dropped includ
 In this example, the UWP app successfully connects to bing.com
 [2620:1ec:c11::200].
 
-A packet from a UWP app needs the correct networking capability token for the resource it is trying to reach.
+A packet from a UWP app needs the correct networking capability token for the resource it's trying to reach.
 
 In this scenario, the app could successfully send a packet to the Internet target because it had an Internet capability token.
 
-The following shows the allow netEvent of the app connecting to the target IP. The netEvent contains information about the packet including its local address,
+The following code shows the allow netEvent of the app connecting to the target IP. The netEvent contains information about the packet including its local address,
 remote address, capabilities, etc.
 
 **Classify Allow netEvent, Wfpdiag-Case-1.xml**
@@ -285,7 +279,7 @@ allowed by Filter #125918, from the InternetClient Default Rule.
     </conditionValue>
 </item>
 ```
-This is the condition for checking capabilities in this filter.
+This condition enables checking capabilities in this filter.
 
 The important part of this condition is **S-1-15-3-1**, which is the capability SID
 for **INTERNET_CLIENT** privileges.
@@ -298,7 +292,7 @@ capabilities from netEvent, Wfpdiag-Case-1.xml.
     <item>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK</item>
 </capabilities>
 ```
-This shows the packet came from an app with an Internet client token (**FWP_CAPABILITIES_FLAG_INTERNET_CLIENT**) which matches the capability SID in the
+These capabilities show the packet came from an app with an Internet client token (**FWP_CAPABILITIES_FLAG_INTERNET_CLIENT**) which matches the capability SID in the
 filter. All the other conditions are also met for the filter, so the packet is
 allowed.
 
@@ -306,12 +300,12 @@ Something to note is that the only capability token required for the packet to
 reach bing.com was the Internet client token, even though this example showed
 the packet having all capabilities.
 
-## Case 2: UWP APP cannot reach Internet target address and has no capabilities
+## Case 2: UWP APP can't reach Internet target address and has no capabilities
 
 In this example, the UWP app is unable to connect to bing.com
 [2620:1ec:c11::200].
 
-The following is a drop netEvent that was captured in the trace.
+The following example is that of a drop netEvent that was captured in the trace.
 
 **Classify Drop netEvent, Wfpdiag-Case-2.xml**
 ```xml
@@ -384,7 +378,7 @@ The following is a drop netEvent that was captured in the trace.
 ```
 The first thing that you should check in the **netEvent** is the capabilities
 field. In this example, the capabilities field is empty, indicating that the
-UWP app was not configured with any capability tokens to allow it to connect to
+UWP app wasn't configured with any capability tokens to allow it to connect to
 a network.
 
 **Internal Fields from netEvent, Wfpdiag-Case-2.xml**
@@ -478,11 +472,11 @@ the same sublayer.
 
 If the packet had the correct capability token,
 **FWP_CAPABILITIES_FLAG_INTERNET_CLIENT**, it would have matched a condition for a
-non-default block filter and would have been permitted to reach bing.com.
+non-default block filter, and would have been permitted to reach bing.com.
 Without the correct capability tokens, the packet will be explicitly dropped by
 a default block outbound filter.
 
-## Case 3: UWP app cannot reach Internet target address without Internet Client capability
+## Case 3: UWP app can't reach Internet target address without Internet Client capability
 
 In this example, the app is unable to connect to bing.com [2620:1ec:c11::200].
 
@@ -562,10 +556,10 @@ only has a private network token. Therefore, the packet will be dropped.
 </netEvent>
 ```
 
-## Case 4: UWP app cannot reach Intranet target address without Private Network capability
+## Case 4: UWP app can't reach Intranet target address without Private Network capability
 
 In this example, the UWP app is unable to reach the Intranet target address,
-10.50.50.50, because it does not have a Private Network capability.
+10.50.50.50, because it doesn't have a Private Network capability.
 
 **Classify Drop netEvent, Wfpdiag-Case-4.xml**
 ```xml
@@ -639,7 +633,7 @@ In this example, the UWP app is unable to reach the Intranet target address,
 </internalFields>
 </netEvent>
 ```
-## Case 5: UWP app cannot reach “Intranet” target address with Private Network capability
+## Case 5: UWP app can't reach “Intranet” target address with Private Network capability
 
 In this example, the UWP app is unable to reach the Intranet target address,
 10.1.1.1, even though it has a Private Network capability token.
@@ -764,7 +758,7 @@ If the target was in the private range, then it should have been allowed by a
 PrivateNetwork Outbound Default Rule filter.
 
 The following PrivateNetwork Outbound Default Rule filters have conditions for matching Intranet IP addresses. Since the expected Intranet target address,
-10.1.1.1, is not included in these filters it becomes clear that the address is not in the private range. Check the policies that configure the private range
+10.1.1.1, isn't included in these filters it becomes clear that the address isn't in the private range. Check the policies that configure the private range
 on the device (MDM, Group Policy, etc.) and make sure it includes the private target address you wanted to reach.
 
 **PrivateNetwork Outbound Default Rule Filters, Wfpdiag-Case-5.xml**
@@ -1003,13 +997,13 @@ on the device (MDM, Group Policy, etc.) and make sure it includes the private ta
 ```
 ## Debugging Past Drops 
 
-If you are debugging a network drop from the past or from a remote machine, you
+If you're debugging a network drop from the past or from a remote machine, you
 may have traces already collected from Feedback Hub, such as nettrace.etl and
 wfpstate.xml. Once nettrace.etl is converted, nettrace.txt will have the
 netEvents of the reproduced event, and wfpstate.xml will contain the filters
 that were present on the machine at the time.
 
-If you do not have a live repro or traces already collected, you can still
+If you don't have a live repro or traces already collected, you can still
 collect traces after the UWP network connectivity issue has happened by running
 these commands in an admin command prompt
 
@@ -1023,27 +1017,26 @@ these commands in an admin command prompt
 net events. **Netsh wfp show state** creates wfpstate.xml, which contains
 the current filters present on the machine.
 
-Unfortunately, collecting traces after the UWP network connectivity issue is not
-always reliable.
+Unfortunately, collecting traces after the UWP network connectivity issue isn't always reliable.
 
 NetEvents on the device are stored in a buffer. Once that buffer has reached
 maximum capacity, the buffer will overwrite older net events. Due to the buffer
-overwrite, it is possible that the collected netevents.xml will not contain the
+overwrite, it's possible that the collected netevents.xml won't contain the
 net event associated with the UWP network connectivity issue. It could have been ov
 overwritten. Additionally, filters on the device can get deleted and re-added
 with different filterIds due to miscellaneous events on the device. Because of
-this, a **filterId** from **netsh wfp show netevents** may not necessarily match any
+these implications, a **filterId** from **netsh wfp show netevents** may not necessarily match any
 filter in **netsh wfp show state** because that **filterId** may be outdated.
 
 If you can reproduce the UWP network connectivity issue consistently, we 
 recommend using the commands from Debugging Live Drops instead.
 
 Additionally, you can still follow the examples from Debugging Live Drops
-section using the trace commands in this section, even if you do not have a live
+section using the trace commands in this section, even if you don't have a live
 repro. The **netEvents** and filters are stored in one file in Debugging Live Drops
 as opposed to two separate files in the following Debugging Past Drops examples.
 
-## Case 7: Debugging Past Drop - UWP app cannot reach Internet target address and has no capabilities
+## Case 7: Debugging Past Drop - UWP app can't reach Internet target address and has no capabilities
 
 In this example, the UWP app is unable to connect to bing.com.
 
@@ -1118,12 +1111,12 @@ Classify Drop Net Event, NetEvents-Case-7.xml
 </item>
 ```
 
-The Internal fields lists no active capabilities, and the packet is dropped at
+The Internal fields list no active capabilities, and the packet is dropped at
 filter 206064.
 
-This is a default block rule filter, meaning the packet passed through every
-filter that could have allowed it, but because conditions didn’t match for any
-those filters, the packet fell to the filter which blocks any packet that the
+This filter is a default block rule filter, meaning the packet passed through every
+filter that could have allowed it, but because conditions didn’t match for any of
+those filters, the packet fell to the filter that blocks any packet that the
 Security Descriptor doesn’t match.
 
 **Block Outbound Default Rule Filter \#206064, FilterState-Case-7.xml**

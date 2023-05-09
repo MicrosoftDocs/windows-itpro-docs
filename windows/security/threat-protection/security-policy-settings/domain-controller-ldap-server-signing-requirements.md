@@ -1,27 +1,21 @@
 ---
-title: Domain controller LDAP server signing requirements (Windows 10)
+title: Domain controller LDAP server signing requirements
 description: Describes the best practices, location, values, and security considerations for the Domain controller LDAP server signing requirements security policy setting.
-ms.assetid: fe122179-7571-465b-98d0-b8ce0f224390
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Domain controller: LDAP server signing requirements
 
 **Applies to**
--   Windows 10
+- Windows Server
 
 This article describes the best practices, location, values, and security considerations for the **Domain controller: LDAP server signing requirements** security policy setting.
 
@@ -29,9 +23,9 @@ This article describes the best practices, location, values, and security consid
 
 This policy setting determines whether the Lightweight Directory Access Protocol (LDAP) server requires LDAP clients to negotiate data signing.
 
-Unsigned network traffic is susceptible to man-in-the-middle attacks, where an intruder captures packets between the server and the client device and modifies them before forwarding them to the client device. In the case of an LDAP server, a malicious user can cause a client device to make decisions based on false records from the LDAP directory. You can lower this risk in a corporate network by implementing strong physical security measures to protect the network infrastructure. Furthermore, implementing Internet Protocol security (IPsec) Authentication Header mode, which provides mutual authentication and packet integrity for IP traffic, can make all types of man-in-the-middle attacks difficult.
+Unsigned network traffic is susceptible to man-in-the-middle attacks, where an intruder captures packets between the server and the client device and modifies them before forwarding them to the client device. In the example of an LDAP server, a malicious user can cause a client device to make decisions based on false records from the LDAP directory. You can lower this risk in a corporate network by implementing strong physical security measures to protect the network infrastructure. Furthermore, implementing Internet Protocol security (IPsec) Authentication Header mode, which provides mutual authentication and packet integrity for IP traffic, can make all types of man-in-the-middle attacks difficult.
 
-This setting does not have any impact on LDAP simple bind through SSL (LDAP TCP/636).
+This setting doesn't have any impact on LDAP simple bind through SSL (LDAP TCP/636).
 
 If signing is required, then LDAP simple binds not using SSL are rejected (LDAP TCP/389).
 
@@ -39,13 +33,13 @@ If signing is required, then LDAP simple binds not using SSL are rejected (LDAP 
  
 ### Possible values
 
--   None. Data signatures are not required to bind with the server. If the client computer requests data signing, the server supports it.
+-   None. Data signatures aren't required to bind with the server. If the client computer requests data signing, the server supports it.
 -   Require signature. The LDAP data-signing option must be negotiated unless Transport Layer Security/Secure Sockets Layer (TLS/SSL) is in use.
 -   Not defined.
 
 ### Best practices
 
--   We recommend that you set **Domain controller: LDAP server signing requirements** to **Require signature**. Clients that do not support LDAP signing will be unable to execute LDAP queries against the domain controllers.
+-   We recommend that you set **Domain controller: LDAP server signing requirements** to **Require signature**. Clients that don't support LDAP signing will be unable to execute LDAP queries against the domain controllers.
 
 ### Location
 
@@ -70,7 +64,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -78,7 +72,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Unsigned network traffic is susceptible to man-in-the-middle attacks. In such attacks, an intruder captures packets between the server and the client device, modifies them, and then forwards them to the client device. Where LDAP servers are concerned, an attacker could cause a client device to make decisions that are based on false records from the LDAP directory. To lower the risk of such an intrusion in an organization's network, you can implement strong physical security measures to protect the network infrastructure. You could also implement Internet Protocol security (IPsec) Authentication Header mode, which performs mutual authentication and packet integrity for IP traffic to make all types of man-in-the-middle attacks difficult.
+Unsigned network traffic is susceptible to man-in-the-middle attacks. In such attacks, an intruder captures packets between the server and the client device, modifies them, and then forwards them to the client device. Regarding LDAP servers, an attacker could cause a client device to make decisions that are based on false records from the LDAP directory. To lower the risk of such an intrusion in an organization's network, you can implement strong physical security measures to protect the network infrastructure. You could also implement Internet Protocol security (IPsec) Authentication Header mode, which performs mutual authentication and packet integrity for IP traffic to make all types of man-in-the-middle attacks difficult.
 
 ### Countermeasure
 
@@ -86,7 +80,7 @@ Configure the **Domain controller: LDAP server signing requirements** setting to
 
 ### Potential impact
 
-Client devices that do not support LDAP signing cannot run LDAP queries against the domain controllers.
+Client devices that don't support LDAP signing can't run LDAP queries against the domain controllers.
 
 ## Related topics
 

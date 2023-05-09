@@ -3,19 +3,21 @@ title: AppLocker (Windows)
 description: This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies.
 ms.assetid: 94b57864-2112-43b6-96fb-2863c985dc9a
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 10/16/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # AppLocker
@@ -51,7 +53,7 @@ AppLocker helps reduce administrative overhead and helps reduce the organization
 
 -   **Protection against unwanted software**
 
-    AppLocker has the ability to deny apps from running when you exclude them from the list of allowed apps. When AppLocker rules are enforced in the production environment, any apps that are not included in the allowed rules are blocked from running.
+    AppLocker has the ability to deny apps from running when you exclude them from the list of allowed apps. When AppLocker rules are enforced in the production environment, any apps that aren't included in the allowed rules are blocked from running.
 
 -   **Licensing conformance**
 
@@ -59,11 +61,11 @@ AppLocker helps reduce administrative overhead and helps reduce the organization
 
 -   **Software standardization**
 
-    AppLocker policies can be configured to allow only supported or approved apps to run on computers within a business group. This permits a more uniform app deployment.
+    AppLocker policies can be configured to allow only supported or approved apps to run on computers within a business group. This configuration permits a more uniform app deployment.
 
 -   **Manageability improvement**
 
-    AppLocker includes a number of improvements in manageability as compared to its predecessor Software Restriction Policies. Importing and exporting policies, automatic generation of rules from multiple files, audit-only mode deployment, and Windows PowerShell cmdlets are a few of the improvements over Software Restriction Policies.
+    AppLocker includes many improvements in manageability as compared to its predecessor Software Restriction Policies. Importing and exporting policies, automatic generation of rules from multiple files, audit-only mode deployment, and Windows PowerShell cmdlets are a few of the improvements over Software Restriction Policies.
 
 
 ## When to use AppLocker
@@ -71,7 +73,7 @@ AppLocker helps reduce administrative overhead and helps reduce the organization
 In many organizations, information is the most valuable asset, and ensuring that only approved users have access to that information is imperative. Access control technologies, such as Active Directory Rights Management Services (AD RMS) and access control lists (ACLs), help control what users are allowed to access.
 
 However, when a user runs a process, that process has the same level of access to data that the user has. As a result, sensitive information could easily be deleted or transmitted out of the organization if a user knowingly or unknowingly runs malicious software. AppLocker can help mitigate these types of security breaches by restricting the files that users or groups are allowed to run.
-Software publishers are beginning to create more apps that can be installed by non-administrative users. This could jeopardize an organization's written security policy and circumvent traditional app control solutions that rely on the inability of users to install apps. By creating an allowed list of approved files and apps, AppLocker helps prevent such per-user apps from running. Because AppLocker can control DLLs, it is also useful to control who can install and run ActiveX controls.
+Software publishers are beginning to create more apps that can be installed by non-administrative users. This privilege could jeopardize an organization's written security policy and circumvent traditional app control solutions that rely on the inability of users to install apps. AppLocker creates an allowed list of approved files and apps to help prevent such per-user apps from running. Because AppLocker can control DLLs, it's also useful to control who can install and run ActiveX controls.
 
 AppLocker is ideal for organizations that currently use Group Policy to manage their PCs.
 
@@ -80,9 +82,9 @@ The following are examples of scenarios in which AppLocker can be used:
 -   Your organization's security policy dictates the use of only licensed software, so you need to prevent users from running unlicensed software and also restrict the use of licensed software to authorized users.
 -   An app is no longer supported by your organization, so you need to prevent it from being used by everyone.
 -   The potential that unwanted software can be introduced in your environment is high, so you need to reduce this threat.
--   The license to an app has been revoked or it is expired in your organization, so you need to prevent it from being used by everyone.
+-   The license to an app has been revoked or it's expired in your organization, so you need to prevent it from being used by everyone.
 -   A new app or a new version of an app is deployed, and you need to prevent users from running the old version.
--   Specific software tools are not allowed within the organization, or only specific users should have access to those tools.
+-   Specific software tools aren't allowed within the organization, or only specific users should have access to those tools.
 -   A single user or small group of users needs to use a specific app that is denied for all others.
 -   Some computers in your organization are shared by people who have different software usage needs, and you need to protect specific apps.
 -   In addition to other measures, you need to control the access to sensitive data through app usage.
@@ -101,7 +103,7 @@ AppLocker is included with enterprise-level editions of Windows. You can author 
  
 ### Using AppLocker on Server Core
 
-AppLocker on Server Core installations is not supported.
+AppLocker on Server Core installations isn't supported.
 
 ### Virtualization considerations
 
@@ -115,9 +117,9 @@ The variety of forms that malicious software can take make it difficult for user
 
 The countermeasure is to create a sound design for your application control policies on PCs in your organization, and then thoroughly test the policies in a lab environment before you deploy them in a production environment. AppLocker can be part of your app control strategy because you can control what software is allowed to run on your computers.
 
-A flawed application control policy implementation can disable necessary applications or allow malicious or unintended software to run. Therefore, it is important that organizations dedicate sufficient resources to manage and troubleshoot the implementation of such policies.
+A flawed application control policy implementation can disable necessary applications or allow malicious or unintended software to run. Therefore, it's important that organizations dedicate sufficient resources to manage and troubleshoot the implementation of such policies.
 
-For additional information about specific security issues, see [Security considerations for AppLocker](security-considerations-for-applocker.md).
+For more information about specific security issues, see [Security considerations for AppLocker](security-considerations-for-applocker.md).
 
 When you use AppLocker to create application control policies, you should be aware of the following security considerations:
 

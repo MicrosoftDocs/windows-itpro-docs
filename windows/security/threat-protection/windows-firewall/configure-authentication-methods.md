@@ -1,29 +1,16 @@
 ---
 title: Configure Authentication Methods (Windows)
 description: Learn how to configure authentication methods for devices in an isolated domain or standalone server zone in Windows Defender Firewall with Advanced Security.
-ms.assetid: 5fcdc523-617f-4233-9213-15fe19f4cd02
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Configure Authentication Methods
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 This procedure shows you how to configure the authentication methods that can be used by computers in an isolated domain or standalone isolated server zone.
 
@@ -45,33 +32,23 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
    1.  **Default**. Selecting this option tells the computer to use the authentication method currently defined by the local administrator in Windows Defender Firewall or by Group Policy as the default.
 
-   2.  **Computer and User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of both the computer and the currently logged-on user by using their domain credentials.
+   2.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication extended key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
 
-   3.  **Computer (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works with other computers that can use IKE v1, including earlier versions of Windows.
+   3.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 
-   4.  **User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the currently logged-on user by using his or her domain credentials.
+       The first authentication method can be one of the following methods:
 
-   5.  **Computer certificate from this certification authority**. Selecting this option and entering the identification of a certification authority (CA) tells the computer to use and require authentication by using a certificate that is issued by the selected CA. If you also select **Accept only health certificates**, then only certificates that include the system health authentication enhanced key usage (EKU) typically provided in a Network Access Protection (NAP) infrastructure can be used for this rule.
-
-   6.  **Advanced**. Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
-
-       The first authentication method can be one of the following:
-
-       -   **Computer (Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works with other computers that can use IKE v1, including earlier versions of Windows.
-
-       -   **Computer (NTLMv2)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
+       -   **Computer (NTLMv2)**. Selecting this option tells the computer to use and require authentication of the computer by using its domain credentials. This option works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 isn't supported by IKE v1.
 
        -   **Computer certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the computer to use and require authentication by using a certificate that is issued by that CA. If you also select **Accept only health certificates**, then only certificates issued by a NAP server can be used.
 
-       -   **Preshared key (not recommended)**. Selecting this method and entering a preshared key tells the computer to authenticate by exchanging the preshared keys. If they match, then the authentication succeeds. This method is not recommended, and is included only for backward compatibility and testing purposes.
+       -   **Preshared key (not recommended)**. Selecting this method and entering a preshared key tells the computer to authenticate by exchanging the preshared keys. If they match, then the authentication succeeds. This method isn't recommended, and is included only for backward compatibility and testing purposes.
 
        If you select **First authentication is optional**, then the connection can succeed even if the authentication attempt specified in this column fails.
 
-       The second authentication method can be one of the following:
+       The second authentication method can be one of the following methods:
 
-       -   **User (Kerberos V5)**. Selecting this option tells the computer to use and require authentication of the currently logged-on user by using his or her domain credentials. This authentication method works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
-
-       -   **User (NTLMv2)**. Selecting this option tells the computer to use and require authentication of the currently logged-on user by using his or her domain credentials, and uses the NTLMv2 protocol instead of Kerberos V5. This authentication method works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
+       -   **User (NTLMv2)**. Selecting this option tells the computer to use and require authentication of the currently signed-in user by using their domain credentials, and uses the NTLMv2 protocol instead of Kerberos V5. This authentication method works only with other computers that can use AuthIP. User-based authentication using Kerberos V5 isn't supported by IKE v1.
 
        -   **User health certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the computer to use and require user-based authentication by using a certificate that is issued by the specified CA. If you also select **Enable certificate to account mapping**, then the certificate can be associated with a user in Active Directory for purposes of granting or denying access to specified users or user groups.
 

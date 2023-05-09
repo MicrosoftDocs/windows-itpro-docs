@@ -1,13 +1,17 @@
 ---
 title: Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
 description: Learn how to connect Cortana to Office 365 so employees are notified about regular meetings and unusual events. You can even set an alarm for early meetings.
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
+ms.mktglfcycl: manage
+ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
@@ -27,7 +31,7 @@ There are a few things to be aware of before you start using Cortana in Windows 
 
 - **Office 365 Trust Center.** Cortana in Windows 10, version 1909 and earlier, isn&#39;t a service governed by the [Online Services Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products). [Learn more about how Cortana in Windows 10, versions 1909 and earlier, treats your data](https://support.microsoft.com/en-us/help/4468233/cortana-and-privacy-microsoft-privacy).
 
-- Windows Information Protection (WIP). If you want to secure the calendar, email, and contact info provided to Cortana on a device, you can use WIP. For more info about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip). If you decide to use Windows Information Protection, you must also have a management solution. This can be Microsoft Intune, Microsoft Endpoint Manager (version 1606 or later), or your current company-wide 3rd party mobile device management (MDM) solution.
+- Windows Information Protection (WIP). If you want to secure the calendar, email, and contact info provided to Cortana on a device, you can use WIP. For more info about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip). If you decide to use WIP, you must also have a management solution. This solution can be Microsoft Intune, Configuration Manager (version 1606 or later), or your current company-wide third-party mobile device management (MDM) solution.
 
 - **Troubleshooting tips.** If you run into issues, check out these [troubleshooting tips](/office365/troubleshoot/miscellaneous/issues-in-cortana).
 

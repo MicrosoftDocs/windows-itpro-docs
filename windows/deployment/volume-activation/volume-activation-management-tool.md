@@ -1,40 +1,35 @@
 ---
-title: Volume Activation Management Tool (VAMT) Technical Reference (Windows 10)
+title: VAMT technical reference
 description: The Volume Activation Management Tool (VAMT) enables network administrators to automate and centrally manage volume activation and retail activation.
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
-ms.date: 04/25/2017
-ms.topic: article
-ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.reviewer: nganguly
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+ms.technology: itpro-fundamentals
+author: frankroj
+ms.date: 11/07/2022
+ms.topic: overview
 ---
 
-# Volume Activation Management Tool (VAMT) Technical Reference
+# Volume Activation Management Tool (VAMT) technical reference
 
-The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows&reg;, Microsoft&reg; Office, and select other Microsoft products volume and retail-activation process.
-VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0. VAMT can be installed on any computer that has one of the following Windows operating systems:
--   Windows&reg; 7 or above
--   Windows Server 2008 R2 or above
+The Volume Activation Management Tool (VAMT) lets you automate and centrally manage the Windows, Office, and select other Microsoft products volume and retail-activation process. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in. VAMT can be installed on any computer that has a supported Windows OS version.
 
-
-**Important**  
-VAMT is designed to manage volume activation for: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 (or later), Microsoft Office 2010 (or above). 
+> [!IMPORTANT]
+> VAMT is designed to manage volume activation for all currently supported versions of Windows, Windows Server, and Office.
 
 VAMT is only available in an EN-US (x86) package.
 
 ## In this section
 
-|Topic |Description |
+|Article |Description |
 |------|------------|
 |[Introduction to VAMT](introduction-vamt.md) |Provides a description of VAMT and common usages. |
-|[Active Directory-Based Activation Overview](active-directory-based-activation-overview.md) |Describes Active Directory-Based Activation scenarios. |
-|[Install and Configure VAMT](install-configure-vamt.md) |Describes how to install VAMT and use it to configure client computers on your network. |
-|[Add and Manage Products](add-manage-products-vamt.md) |Describes how to add client computers into VAMT. |
-|[Manage Product Keys](manage-product-keys-vamt.md) |Describes how to add and remove a product key from VAMT. |
-|[Manage Activations](manage-activations-vamt.md) |Describes how to activate a client computer by using a variety of activation methods. |
-|[Manage VAMT Data](manage-vamt-data.md) |Describes how to save, import, export, and merge a Computer Information List (CILX) file using VAMT. |
-|[VAMT Step-by-Step Scenarios](vamt-step-by-step.md) |Provides step-by-step instructions for using VAMT in typical environments. |
-|[VAMT Known Issues](vamt-known-issues.md) |Lists known issues in VAMT. |
- 
+|[Active Directory-based activation overview](active-directory-based-activation-overview.md) |Describes Active Directory-based activation scenarios. |
+|[Install and configure VAMT](install-configure-vamt.md) |Describes how to install VAMT and use it to configure client computers on your network. |
+|[Add and manage products](add-manage-products-vamt.md) |Describes how to add client computers into VAMT. |
+|[Manage product keys](manage-product-keys-vamt.md) |Describes how to add and remove a product key from VAMT. |
+|[Manage activations](manage-activations-vamt.md) |Describes how to activate a client computer by using various activation methods. |
+|[Manage VAMT data](manage-vamt-data.md) |Describes how to save, import, export, and merge a Computer Information List (CILX) file using VAMT. |
+|[VAMT step-by-step scenarios](vamt-step-by-step.md) |Provides step-by-step instructions for using VAMT in typical environments. |
+|[VAMT known issues](vamt-known-issues.md) |Lists known issues in VAMT. |

@@ -3,19 +3,18 @@ title: AppLocker deployment guide (Windows)
 description: This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 ms.assetid: 38632795-be13-46b0-a7af-487a4340bea1
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 
@@ -32,7 +31,7 @@ ms.technology: windows-sec
 
 This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 
-This guide provides steps based on your design and planning investigation for deploying application control policies by using AppLocker. It is intended for security architects, security administrators, and system administrators. Through a sequential and iterative deployment process, you can create application control policies, test and adjust the policies, and implement a method for maintaining those policies as the needs in your organization change.
+This guide provides steps based on your design and planning investigation for deploying application control policies by using AppLocker. It's intended for security architects, security administrators, and system administrators. Through a sequential and iterative deployment process, you can create application control policies, test and adjust the policies, and implement a method for maintaining those policies as the needs in your organization change.
 
 This guide covers the use of Software Restriction Policies (SRP) in conjunction with AppLocker policies to control application usage. For a comparison of SRP and AppLocker, see [Using Software Restriction Policies and AppLocker policies](using-software-restriction-policies-and-applocker-policies.md) in this guide. To understand if AppLocker is the correct application control solution for you, see [Understand AppLocker policy design decisions](understand-applocker-policy-design-decisions.md).
 

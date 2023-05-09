@@ -1,24 +1,16 @@
 ---
 title: Plan to Deploy Windows Defender Firewall with Advanced Security (Windows)
 description: Use the design information in this article to plan for the deployment of Windows Defender Firewall with Advanced Security in your organization.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning to Deploy Windows Defender Firewall with Advanced Security
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 After you collect information about your environment and decide on a design by following the guidance in the [Windows Defender Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Defender Firewall with Advanced Security in your organization.
 
@@ -38,11 +30,11 @@ The design team's strategy for determining how WMI and security group filters at
 
 ### Configure communication between members and devices
 
-Decide what communication is to be allowed between members of each of the zones in the isolated domain and devices that are not part of the isolated domain or members of the isolated domain's exemption list.
+Decide what communication is to be allowed between members of each of the zones in the isolated domain and devices that aren't part of the isolated domain or members of the isolated domain's exemption list.
 
 ### Exempt domain controllers from IPsec authentication requirements
 
-It is recommended that domain controllers are exempt from IPsec authentication requirements. If they are not exempt and authentication fails, then domain clients might not be able to receive Group Policy updates to the IPsec connection security rules from the domain controllers.
+It's recommended that domain controllers are exempt from IPsec authentication requirements. If they aren't exempt and authentication fails, then domain clients might not be able to receive Group Policy updates to the IPsec connection security rules from the domain controllers.
 
 ### Configure IPsec authentication rules
 
@@ -58,7 +50,7 @@ For all devices to communicate with each other, they must share a common set of:
 
 -   Quick mode data integrity algorithms
 
-If at least one set of each does not match between two devices, then the devices cannot successfully communicate.
+If at least one set of each doesn't match between two devices, then the devices can't successfully communicate.
 
 ## Deploy your Windows Firewall Design Plan
 

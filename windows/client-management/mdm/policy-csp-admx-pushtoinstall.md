@@ -1,83 +1,92 @@
 ---
-title: Policy CSP - ADMX_PushToInstall
-description: Learn about Policy CSP - ADMX_PushToInstall.
-ms.author: dansimp
+title: ADMX_PushToInstall Policy CSP
+description: Learn more about the ADMX_PushToInstall Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 12/01/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_PushToInstall-Begin -->
 # Policy CSP - ADMX_PushToInstall
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_PushToInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_PushToInstall-Editable-End -->
 
-<!--Policies-->
-## ADMX_PushToInstall policies 
+<!-- DisablePushToInstall-Begin -->
+## DisablePushToInstall
 
-<dl>
-  <dd>
-    <a href="#admx-pushtoinstall-disablepushtoinstall">ADMX_PushToInstall/DisablePushToInstall</a>
-  </dd>
-</dl>
+<!-- DisablePushToInstall-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisablePushToInstall-Applicability-End -->
 
+<!-- DisablePushToInstall-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_PushToInstall/DisablePushToInstall
+```
+<!-- DisablePushToInstall-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-pushtoinstall-disablepushtoinstall"></a>**ADMX_PushToInstall/DisablePushToInstall**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisablePushToInstall-Description-Begin -->
+<!-- Description-Source-ADMX -->
 If you enable this setting, users will not be able to push Apps to this device from the Microsoft Store running on other devices or the web.
+<!-- DisablePushToInstall-Description-End -->
 
-<!--/Description-->
+<!-- DisablePushToInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisablePushToInstall-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Push To Install service*
--   GP name: *DisablePushToInstall*
--   GP path: *Windows Components\Push To Install*
--   GP ADMX file name: *PushToInstall.admx*
+<!-- DisablePushToInstall-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisablePushToInstall-DFProperties-End -->
 
-<!--/Policies-->
+<!-- DisablePushToInstall-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-## Related topics
+**ADMX mapping**:
 
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+| Name | Value |
+|:--|:--|
+| Name | DisablePushToInstall |
+| Friendly Name | Turn off Push To Install service |
+| Location | Computer Configuration |
+| Path | Windows Components > Push To Install |
+| Registry Key Name | Software\Policies\Microsoft\PushToInstall |
+| Registry Value Name | DisablePushToInstall |
+| ADMX File Name | PushToInstall.admx |
+<!-- DisablePushToInstall-AdmxBacked-End -->
+
+<!-- DisablePushToInstall-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePushToInstall-Examples-End -->
+
+<!-- DisablePushToInstall-End -->
+
+<!-- ADMX_PushToInstall-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_PushToInstall-CspMoreInfo-End -->
+
+<!-- ADMX_PushToInstall-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

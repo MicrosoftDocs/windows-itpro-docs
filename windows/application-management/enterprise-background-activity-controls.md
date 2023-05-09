@@ -1,13 +1,16 @@
 ---
-author: aczechowski
 title: Remove background task resource restrictions
 description: Allow enterprise background tasks unrestricted access to computer resources.
-ms.author: aaroncz
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
 ms.date: 10/03/2017
-ms.reviewer: 
-manager: dougeby
 ms.topic: article
-ms.prod: w10
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier2
+ms.reviewer: 
 ---
 
 # Remove background task resource restrictions
@@ -43,7 +46,7 @@ Starting with Windows 10, version 1703, enterprises can control background activ
 `./Vendor/Microsoft/Policy/Config/Privacy/LetAppsRunInBackground_ForceDenyTheseApps` 
 `./Vendor/Microsoft/Policy/Config/Privacy/LetAppsRunInBackground_UserInControlOfTheseApps`
 
-These policies control the background activity battery settings for Universal Windows Platform (UWP) apps. They enable apps to not be managed by the Windows system policies and not be restricted when battery saver is active. Applying these policies to a device will disable the user controls for the applications specified in the policies in the **Settings** app. See [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider#privacy-letappsruninbackground) for more information about these policies.
+These policies control the background activity battery settings for Universal Windows Platform (UWP) apps. They enable apps to not be managed by the Windows system policies and not be restricted when battery saver is active. Applying these policies to a device will disable the user controls for the applications specified in the policies in the **Settings** app. For more information about these policies, visit [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider#privacy-letappsruninbackground).
 
 An app can determine which settings are in place for itself by using [BackgroundExecutionManager.RequestAccessAsync](/uwp/api/Windows.ApplicationModel.Background.BackgroundAccessStatus) before any background activity is attempted, and then examining the returned  [BackgroundAccessStatus](/uwp/api/windows.applicationmodel.background.backgroundaccessstatus) enumeration. The values of this enumeration correspond to settings in the **battery usage by App** settings page: 
   

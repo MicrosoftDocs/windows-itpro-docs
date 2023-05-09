@@ -1,20 +1,9 @@
 ---
-title: Optimizing Office 365 traffic for remote workers with the native Windows 10 or Windows 11 VPN client
-description: tbd
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-audience: ITPro
+title: Optimizing Office 365 traffic for remote workers with the native Windows VPN client
+description: Learn how to optimize Office 365 traffic for remote workers with the native Windows VPN client
 ms.topic: article
-author: kelleyvice-msft
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: jajo
 ---
-
 # Optimizing Office 365 traffic for remote workers with the native Windows 10 and Windows 11 VPN client
 
 This article describes how to configure the recommendations in the article [Optimize Office 365 connectivity for remote users using VPN split tunneling](/office365/enterprise/office-365-vpn-split-tunnel) for the *native Windows 10 and Windows 11 VPN client*. This guidance enables VPN administrators to optimize Office 365 usage while still ensuring that all other traffic goes over the VPN connection and through existing security gateways and tooling.

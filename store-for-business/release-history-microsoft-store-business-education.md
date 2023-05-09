@@ -1,22 +1,21 @@
 ---
 title: Microsoft Store for Business and Education release history
 description: Know the release history of Microsoft Store for Business and Microsoft Store for Education.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.date: 07/21/2021
 ms.reviewer: 
-manager: dansimp
 ---
 
 # Microsoft Store for Business and Education release history
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Microsoft Store for Business and Education regularly releases new and improved features. Here's a summary of new or updated features in previous releases.
 
@@ -39,13 +38,13 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **Immersive Reader app available in Microsoft Store for Education** - This app is a free tool that uses proven techniques to improve reading and writing for people regardless of their age or ability. You can add the app to your private store, so students can easily install and use it.  
 
 ## April 2018
-- **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We’ll figure out who’s in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we’ll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.
+- **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We'll figure out who's in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we'll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.
 - **Change collection order in private store** - Private store collections make it easy for groups of people to find the apps that they need. Now, you can customize the order of your private store collections. 
 - **Office 365 subscription management** -  We know that sometimes customers need to cancel a subscription. While we don't want to lose a customer, we want the process for managing subscriptions to be easy. Now, you can delete your Office 365 subscription without calling Support. From Microsoft Store for Business and Education, you can request to delete an Office 365 subscription. We'll wait three days before permanently deleting the subscription. In case of a mistake, customers are welcome to reactivate subscriptions during the three-day period.
 
 ## March 2018
 - **Performance improvements in private store** - We've made it significantly faster for you to update the private store. Many changes to the private store are available immediately after you make them. [Get more info](./manage-private-store-settings.md#private-store-performance)
-- **Private store collection updates** - We’ve made it easier to find apps when creating private store collections – now you can search and filter results. 
+- **Private store collection updates** - We've made it easier to find apps when creating private store collections – now you can search and filter results. 
  [Get more info](./manage-private-store-settings.md#private-store-collections) 
 - **Manage Skype Communication credits** - Office 365 customers that own Skype Communication Credits can now see and manage them in Microsoft Store for Business. You can view your account, add funds to your account, and manage auto-recharge settings.
 - **Upgrade Microsoft 365 trial subscription** - Customers with Office 365 can upgrade their subscription and automatically re-assign their user licenses over to a new target subscription. For example, you could upgrade your Office 365 for business subscription to a Microsoft 365 for business subscription.

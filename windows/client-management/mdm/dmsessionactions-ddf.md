@@ -1,22 +1,22 @@
 ---
 title: DMSessionActions DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DMSessionActions configuration service provider (CSP).
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
-ms.reviewer: 
-manager: dansimp
+ms.reviewer:
+manager: aaroncz
 ---
 
 # DMSessionActions DDF file
 
 
-This topic shows the OMA DM device description framework (DDF) for the **DMSessionActions** configuration service provider.  
+This topic shows the OMA DM device description framework (DDF) for the **DMSessionActions** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 

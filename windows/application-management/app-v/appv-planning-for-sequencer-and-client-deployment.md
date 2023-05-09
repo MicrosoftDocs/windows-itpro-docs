@@ -2,12 +2,13 @@
 title: Planning for the App-V Sequencer and Client Deployment (Windows 10/11)
 description: Learn what you need to do to plan for the App-V Sequencer and Client deployment, and where to find additional information about the deployment process.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Planning for the App-V Sequencer and Client Deployment

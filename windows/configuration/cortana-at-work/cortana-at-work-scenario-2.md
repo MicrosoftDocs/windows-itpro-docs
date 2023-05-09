@@ -1,13 +1,15 @@
 ---
 title: Perform a quick search with Cortana at work (Windows)
-description: This is a test scenario about how to perform a quick search with Cortana at work.
-ms.prod: w10
+description: This scenario is a test scenario about how to perform a quick search with Cortana at work.
+ms.prod: windows-client
+ms.collection: tier3
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Test scenario 2 – Perform a Bing search with Cortana

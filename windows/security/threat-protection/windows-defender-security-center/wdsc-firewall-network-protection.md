@@ -1,18 +1,11 @@
 ---
 title: Firewall and network protection in the Windows Security app
 description: Use the Firewall & network protection section to see the status of and make changes to firewalls and network connections for the machine.
-keywords: wdsc, firewall, windows defender firewall, network, connections, domain, private network, publish network, allow firewall, firewall rule, block firewall
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date:
-ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.date: 12/31/2018
+ms.technology: itpro-security
+ms.topic: article
 ---
 
 
@@ -30,9 +23,9 @@ In Windows 10, version 1709 and later, the section can be hidden from users of t
 
 ## Hide the Firewall & network protection section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of the Windows Security app, and its icon won't be shown on the navigation bar on the side of the app.
 
-This can only be done in Group Policy.
+This section can be hidden only by using Group Policy.
 
 >[!IMPORTANT]
 >### Requirements
@@ -41,7 +34,7 @@ This can only be done in Group Policy.
 
 1.  On your Group Policy management machine, open the Group Policy Management Console, right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+3.  In **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
 
 5.  Expand the tree to **Windows components > Windows Security > Firewall and network protection**.
 

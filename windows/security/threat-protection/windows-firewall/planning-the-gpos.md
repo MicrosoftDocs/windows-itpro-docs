@@ -1,24 +1,16 @@
 ---
 title: Planning the GPOs (Windows)
 description: Learn about planning Group Policy Objects for your isolation zones in Windows Defender Firewall with Advanced Security, after you design the zone layout.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning the GPOs
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 When you plan the GPOs for your different isolation zones, you must complete the layout of the required zones and their mappings to the groups that link the devices to the zones.
 
@@ -26,7 +18,7 @@ When you plan the GPOs for your different isolation zones, you must complete the
 
 A few things to consider as you plan the GPOs:
 
--   Do not allow a device to be a member of more than one isolation zone. A device in more than one zone receives multiple and possibly contradictory GPOs. This can result in unexpected, and difficult to troubleshoot behavior.
+-   Don't allow a device to be a member of more than one isolation zone. A device in more than one zone receives multiple and possibly contradictory GPOs. This receipt of multiple GPOs can result in unexpected, and difficult to troubleshoot behavior.
 
     The examples in this guide show GPOs that are designed to prevent the requirement to belong to multiple zones.
 
@@ -43,13 +35,13 @@ A few things to consider as you plan the GPOs:
    > [!NOTE]
    > Devices running Windows 7, Windows Server 2008 R2, and later support different network location types, and therefore profiles, for each network adapter at the same time. Each network adapter is assigned the network location appropriate for the network to which it is connected. Windows Defender Firewall then enforces only those rules that apply to that network type’s profile. So certain types of traffic are blocked when coming from a network adapter connected to a public network, but those same types might be permitted when coming from a private or domain network.
 
-After considering these issues, document each GPO that you require, and the details about the connection security and firewall rules that it needs.
+After you consider these issues, document each GPO that you require, and the details about the connection security and firewall rules that it needs.
 
 ## Woodgrove Bank example GPOs
 
 The Woodgrove Bank example uses the following set of GPOs to support its domain isolation requirements. This section only discusses the rules and settings for server and domain isolation. GPO settings that affect which devices receive the GPO, such as security group filtering and WMI filtering, are discussed in the [Planning GPO Deployment](planning-gpo-deployment.md) section.
 
-In this section you can find information about the following:
+In this section you can find information about:
 
 -   [Firewall GPOs](firewall-gpos.md)
 

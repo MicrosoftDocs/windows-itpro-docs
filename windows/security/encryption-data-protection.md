@@ -1,18 +1,14 @@
 ---
 title: Encryption and data protection in Windows
 description: Get an overview encryption and data protection in Windows 11 and Windows 10
-search.appverid: MET150 
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
-ms.topic: conceptual
-ms.date: 09/08/2021
-ms.prod: m365-security
-ms.technology: windows-sec
-ms.localizationpriority: medium
-ms.collection: 
-ms.custom: 
-ms.reviewer: deepakm, rafals  
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
+ms.topic: overview
+ms.date: 09/22/2022
+ms.prod: windows-client
+ms.technology: itpro-security
+ms.reviewer: rafals
 ---
 
 # Encryption and data protection in Windows client
@@ -32,8 +28,8 @@ Encrypted hard drives provide:
 
 - Better performance: Encryption hardware, integrated into the drive controller, allows the drive to operate at full data rate with no performance degradation.
 - Strong security based in hardware: Encryption is always "on" and the keys for encryption never leave the hard drive. User authentication is performed by the drive before it will unlock, independently of the operating system.
-- Ease of use: Encryption is transparent to the user, and the user does not need to enable it. Encrypted hard drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
-- Lower cost of ownership: There is no need for new infrastructure to manage encryption keys, since BitLocker uses your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
+- Ease of use: Encryption is transparent to the user, and the user doesn't need to enable it. Encrypted hard drives are easily erased using on-board encryption key; there's no need to re-encrypt data on the drive.
+- Lower cost of ownership: There's no need for new infrastructure to manage encryption keys, since BitLocker uses your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles don't need to be used for the encryption process.
 
 Encrypted hard drives are a new class of hard drives that are self-encrypted at a hardware level and allow for full disk hardware encryption. 
 
@@ -45,8 +41,14 @@ BitLocker provides encryption for the operating system, fixed data, and removabl
 
 Windows consistently improves data protection by improving existing options and providing new strategies.
 
+## Personal Data Encryption (PDE)
+<!-- Max 5963468 OS 32516487 -->
+(*Applies to: Windows 11, version 22H2 and later*)
+
+[!INCLUDE [Personal Data Encryption (PDE) description](information-protection/personal-data-encryption/includes/pde-description.md)]
 
 ## See also
 
 - [Encrypted Hard Drive](information-protection/encrypted-hard-drive.md)
 - [BitLocker](information-protection/bitlocker/bitlocker-overview.md)
+- [Personal Data Encryption (PDE)](information-protection/personal-data-encryption/overview-pde.md)

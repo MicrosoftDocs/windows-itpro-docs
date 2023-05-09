@@ -1,56 +1,36 @@
 ---
 title: Smart Card Events (Windows)
 description: This topic for the IT professional and smart card developer describes events that are related to smart card deployment and development.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
 ---
 
 # Smart Card Events
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional and smart card developer describes events that are related to smart card deployment and development.
 
 A number of events can be used to monitor smart card activities on a computer, including installation, use, and errors. The following sections describe the events and information that can be used to manage smart cards in an organization.
 
--   [Smart card reader name](#smart-card-reader-name)
-
--   [Smart card warning events](#smart-card-warning-events)
-
--   [Smart card error events](#smart-card-error-events)
-
--   [Smart card Plug and Play events](#smart-card-plug-and-play-events)
-
+- [Smart card reader name](#smart-card-reader-name)
+- [Smart card warning events](#smart-card-warning-events)
+- [Smart card error events](#smart-card-error-events)
+- [Smart card Plug and Play events](#smart-card-plug-and-play-events)
 ## Smart card reader name
 
-The Smart Card resource manager does not use the device name from Device Manager to describe a smart card reader. Instead, the name is constructed from three device attributes that are queried directly from the smart card reader driver.
+The Smart Card resource manager doesn't use the device name from Device Manager to describe a smart card reader. Instead, the name is constructed from three device attributes that are queried directly from the smart card reader driver.
 
 The following three attributes are used to construct the smart card reader name:
 
--   Vendor name
-
--   Interface device type
-
--   Device unit
+- Vendor name
+- Interface device type
+- Device unit
 
 The smart card reader device name is constructed in the form &lt;*VendorName*&gt; &lt;*Type*&gt; &lt;*DeviceUnit*&gt;. For example 'Contoso Smart Card Reader 0' is constructed from the following information:
 
--   Vendor name: Contoso
-
--   Interface device type: Smart Card Reader
-
--   Device unit: 0
+- Vendor name: Contoso
+- Interface device type: Smart Card Reader
+- Device unit: 0
 
 ## Smart card warning events
 
@@ -58,8 +38,8 @@ The smart card reader device name is constructed in the form &lt;*VendorName*&gt
 
 | **Event ID** | **Warning Message**                 | **Description**                  |
 |--------------|---------|--------------------------------------------------------------------------------------------|
-| 620          | Smart Card Resource Manager was unable to cancel IOCTL %3 for reader '%2': %1. The reader may no longer be responding. If this error persists, your smart card or reader may not be functioning correctly. %n%nCommand Header: %4 | This occurs if the resource manager attempts to cancel a command to the smart card reader when the smart card service is shutting down or after a smart card is removed from the smart card reader and the command could not to be canceled. This can leave the smart card reader in an unusable state until it is removed from the computer or the computer is restarted.<br><br>%1 = Windows error code<br>%2 = Smart card reader name<br>%3 = IOCTL being canceled<br>%4 = First 4 bytes of the command that was sent to the smart card |
-| 619          | Smart Card Reader '%2' has not responded to IOCTL %3 in %1 seconds. If this error persists, your smart card or reader may not be functioning correctly. %n%nCommand Header: %4              | This occurs when a reader has not responded to an IOCTL after an unusually long period of time. Currently, this error is sent after a reader does not respond for 150 seconds. This can leave the smart card reader in an unusable state until it is removed from the computer or the computer is restarted.<br><br>%1 = Number of seconds the IOCTL has been waiting<br>%2 = Smart card reader name<br>%3 = IOCTL sent<br>%4 = First 4 bytes of the command that was sent to the smart card         |
+| 620          | Smart Card Resource Manager was unable to cancel IOCTL %3 for reader '%2': %1. The reader may no longer be responding. If this error persists, your smart card or reader may not be functioning correctly. %n%nCommand Header: %4 | This occurs if the resource manager attempts to cancel a command to the smart card reader when the smart card service is shutting down or after a smart card is removed from the smart card reader and the command could not be canceled. This can leave the smart card reader in an unusable state until it's removed from the computer or the computer is restarted.<br><br>%1 = Windows error code<br>%2 = Smart card reader name<br>%3 = IOCTL being canceled<br>%4 = First 4 bytes of the command that was sent to the smart card |
+| 619          | Smart Card Reader '%2' hasn't responded to IOCTL %3 in %1 seconds. If this error persists, your smart card or reader may not be functioning correctly. %n%nCommand Header: %4              | This occurs when a reader hasn't responded to an IOCTL after an unusually long period of time. Currently, this error is sent after a reader doesn't respond for 150 seconds. This can leave the smart card reader in an unusable state until it's removed from the computer or the computer is restarted.<br><br>%1 = Number of seconds the IOCTL has been waiting<br>%2 = Smart card reader name<br>%3 = IOCTL sent<br>%4 = First 4 bytes of the command that was sent to the smart card         |
 
 ## Smart card error events
 
@@ -71,7 +51,7 @@ The smart card reader device name is constructed in the form &lt;*VendorName*&gt
 | 205          | Reader object has duplicate name: %1  | There are two smart card readers that have the same name. Remove the smart card reader that is causing this error message.<br>%1 = Name of the smart card reader that is duplicated               |
 | 206          | Failed to create global reader change event.             | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.    |
 | 401          | Reader shutdown exception from eject smart card command  | A smart card reader could not eject a smart card while the smart card reader was shutting down.      |
-| 406          | Reader object cannot Identify Device  | A smart card reader did not properly respond to a request for information about the device, which is required for constructing the smart card reader name. The smart card reader will not be recognized by the service until it is removed from the computer and reinserted or until the computer is restarted.       |
+| 406          | Reader object cannot Identify Device  | A smart card reader did not properly respond to a request for information about the device, which is required for constructing the smart card reader name. The smart card reader will not be recognized by the service until it's removed from the computer and reinserted or until the computer is restarted.       |
 | 502          | Initialization of Service Status Critical Section failed | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.    |
 | 504          | Resource Manager cannot create shutdown event flag:  %1  | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.<br>%1 = Windows error code             |
 | 506          | Smart Card Resource Manager failed to register service:  %1                 | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.<br>%1 = Windows error code             |
@@ -99,10 +79,10 @@ The smart card reader device name is constructed in the form &lt;*VendorName*&gt
 | 609          | Reader monitor failed to create overlapped event:  %1    | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.<br>%1 = Windows error code             |
 | 610          | Smart Card Reader '%2' rejected IOCTL %3: %1  If this error persists, your smart card or reader may not be functioning correctly.%n%nCommand Header: %4 | The reader cannot successfully transmit the indicated IOCTL to the smart card. This can indicate hardware failure, but this error can also occur if a smart card or smart card reader is removed from the system while an operation is in progress.<br>%1 = Windows error code<br>%2 = Name of the smart card reader<br>%3 = IOCTL that was sent<br>%4 = First 4 bytes of the command sent to the smart card <br> These events are caused by legacy functionality in the smart card stack. It can be ignored if there is no noticeable failure in the smart card usage scenarios. You might also see this error if your eSIM is recognized as a smartcard controller.|
 | 611          | Smart Card Reader initialization failed                  | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve this issue.   |
-| 612          | Reader insertion monitor error retry threshold reached:  %1                 | This occurs when a smart card reader fails several times to respond properly to the IOCTL, which indicates whether a smart card is present in the reader. The smart card reader is marked as defective, and it is not recognized by the service until it is removed from the computer and reinserted or until the computer is restarted.<br>%1 = Windows error code          |
-| 615          | Reader removal monitor error retry threshold reached:  %1                   | This occurs when a smart card reader fails several times to respond properly to the IOCTL, which indicates whether a smart card is present in the reader. The smart card reader is marked as defective, and it is not recognized by the service until it is removed from the computer and reinserted or until the computer is restarted.<br>%1 = Windows error code          |
-| 616          | Reader monitor '%2' received uncaught error code:  %1    | This occurs when a smart card reader fails several times to respond properly to the IOCTL, which indicates whether a smart card is present in the reader. The smart card reader is marked as defective, and it is not recognized by the service until it is removed from the computer and reinserted or until the computer is restarted.<br>%1 = Windows error code<br>%2 = Reader name       |
-| 617          | Reader monitor '%1' exception -- exiting thread          | An unknown error occurred while monitoring a smart card reader for smart card insertions and removals. The smart card reader is marked as defective, and it is not recognized by the service until it is removed from the computer and reinserted or until the computer is restarted.<br>%1 = Smart card reader name                   |
+| 612          | Reader insertion monitor error retry threshold reached:  %1                 | This occurs when a smart card reader fails several times to respond properly to the IOCTL, which indicates whether a smart card is present in the reader. The smart card reader is marked as defective, and it is not recognized by the service until it's removed from the computer and reinserted or until the computer is restarted.<br>%1 = Windows error code          |
+| 615          | Reader removal monitor error retry threshold reached:  %1                   | This occurs when a smart card reader fails several times to respond properly to the IOCTL, which indicates whether a smart card is present in the reader. The smart card reader is marked as defective, and it is not recognized by the service until it's removed from the computer and reinserted or until the computer is restarted.<br>%1 = Windows error code          |
+| 616          | Reader monitor '%2' received uncaught error code:  %1    | This occurs when a smart card reader fails several times to respond properly to the IOCTL, which indicates whether a smart card is present in the reader. The smart card reader is marked as defective, and it is not recognized by the service until it's removed from the computer and reinserted or until the computer is restarted.<br>%1 = Windows error code<br>%2 = Reader name       |
+| 617          | Reader monitor '%1' exception -- exiting thread          | An unknown error occurred while monitoring a smart card reader for smart card insertions and removals. The smart card reader is marked as defective, and it is not recognized by the service until it's removed from the computer and reinserted or until the computer is restarted.<br>%1 = Smart card reader name                   |
 | 618          | Smart Card Resource Manager encountered an unrecoverable internal error.    | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.    |
 | 621          | Server Control failed to access start event: %1          | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.<br>%1 = Windows error code      <br>These events are caused by legacy functionality in the smart card stack. It can be ignored if there is no noticeable failure in the smart card usage scenarios.       |
 | 622          | Server Control failed to access stop event: %1           | This is an internal, unrecoverable error that indicates a failure in the smart card service. The most common cause is limited computer resources. Restarting the computer may resolve the issue.<br>%1 = Windows error code             |

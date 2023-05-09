@@ -1,36 +1,20 @@
 ---
 title: How Windows Hello for Business works - Authentication
 description: Learn about the authentication flow for  Windows Hello for Business.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 02/15/2022
-ms.reviewer: 
+ms.topic: article
 ---
 # Windows Hello for Business and Authentication
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 Windows Hello for Business authentication is passwordless, two-factor authentication.  Authenticating with Windows Hello for Business provides a convenient sign-in experience that authenticates the user to both Azure Active Directory and Active Directory resources.
 
 Azure Active Directory-joined devices authenticate to Azure during sign-in and can optionally authenticate to Active Directory. Hybrid Azure Active Directory-joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.
 
 - [Azure AD join authentication to Azure Active Directory](#azure-ad-join-authentication-to-azure-active-directory)
-- [Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud trust preview)](#azure-ad-join-authentication-to-active-directory-using-azure-ad-kerberos-cloud-trust-preview)
+- [Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud Kerberos trust)](#azure-ad-join-authentication-to-active-directory-using-azure-ad-kerberos-cloud-kerberos-trust)
 - [Azure AD join authentication to Active Directory using a key](#azure-ad-join-authentication-to-active-directory-using-a-key)
 - [Azure AD join authentication to Active Directory using a certificate](#azure-ad-join-authentication-to-active-directory-using-a-certificate)
-- [Hybrid Azure AD join authentication using Azure AD Kerberos (cloud trust preview)](#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-trust-preview)
+- [Hybrid Azure AD join authentication using Azure AD Kerberos (cloud Kerberos trust)](#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-kerberos-trust)
 - [Hybrid Azure AD join authentication using a key](#hybrid-azure-ad-join-authentication-using-a-key)
 - [Hybrid Azure AD join authentication using a certificate](#hybrid-azure-ad-join-authentication-using-a-certificate)
 
@@ -49,7 +33,7 @@ Azure Active Directory-joined devices authenticate to Azure during sign-in and c
 |D | The Cloud AP provider receives the encrypted PRT with session key.  Using the device's private transport key, the Cloud AP provider decrypt the session key and protects the session key using the device's TPM.|
 |E | The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT, and informs winlogon of the success authentication.  Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.|
 
-## Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud trust preview)
+## Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud Kerberos trust)
 
 ![Azure Active Directory join authentication to Azure AD.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
 
@@ -84,13 +68,13 @@ Azure Active Directory-joined devices authenticate to Azure during sign-in and c
 > [!NOTE]
 > You may have an on-premises domain federated with Azure AD. Once you have successfully provisioned Windows Hello for Business PIN/Bio on, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Azure AD to get PRT, as well as authenticate against your DC (if LOS to DC is available) to get Kerberos as mentioned previously. AD FS federation is used only when Enterprise PRT calls are placed from the client. You need to have device write-back enabled to get "Enterprise PRT" from your federation.  
 
-## Hybrid Azure AD join authentication using Azure AD Kerberos (cloud trust preview)
+## Hybrid Azure AD join authentication using Azure AD Kerberos (cloud Kerberos trust)
 
 ![Hybrid Azure AD join authentication using Azure AD Kerberos](images/howitworks/auth-haadj-cloudtrust.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
-|A | Authentication begins when the user dismisses the lock screen, which triggers winlogon to show the Windows Hello for Business credential provider.  The user provides their Windows Hello gesture (PIN or biometrics).  The credential provider packages these credentials and returns them to winlogon.  Winlogon passes the collected credentials to lsass. Lsass queries Windows Hello for Business policy to check if cloud trust is enabled. If cloud trust is enabled, Lsass passes the collected credentials to the Cloud Authentication security support provider, or Cloud AP. Cloud AP requests a nonce from Azure Active Directory. Azure AD returns a nonce.
+|A | Authentication begins when the user dismisses the lock screen, which triggers winlogon to show the Windows Hello for Business credential provider.  The user provides their Windows Hello gesture (PIN or biometrics).  The credential provider packages these credentials and returns them to winlogon.  Winlogon passes the collected credentials to lsass. Lsass queries Windows Hello for Business policy to check if cloud Kerberos trust is enabled. If cloud Kerberos trust is enabled, Lsass passes the collected credentials to the Cloud Authentication security support provider, or Cloud AP. Cloud AP requests a nonce from Azure Active Directory. Azure AD returns a nonce.
 |B | Cloud AP signs the nonce using the user's private key and returns the signed nonce to Azure AD.
 |C | Azure AD validates the signed nonce using the user's securely registered public key against the nonce signature. After validating the signature, Azure AD then validates the returned signed nonce. After validating the nonce, Azure AD creates a PRT with session key that is encrypted to the device's transport key and creates a Partial TGT from Azure AD Kerberos and returns them to Cloud AP.
 |D | Cloud AP  receives the encrypted PRT with session key. Using the device's private transport key, Cloud AP decrypts the session key and protects the session key using the device's TPM (if available). Cloud AP returns a successful authentication response to lsass. Lsass caches the PRT and the Partial TGT.

@@ -1,365 +1,437 @@
 ---
-title: Policy CSP - ADMX_DiskQuota
-description: Learn about Policy CSP - ADMX_DiskQuota.
-ms.author: dansimp
+title: ADMX_DiskQuota Policy CSP
+description: Learn more about the ADMX_DiskQuota Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 03/23/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/12/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DiskQuota-Begin -->
 # Policy CSP - ADMX_DiskQuota
 
-
-<hr/>
-
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## ADMX_DiskQuota policies  
+<!-- ADMX_DiskQuota-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DiskQuota-Editable-End -->
 
+<!-- DQ_Enable-Begin -->
+## DQ_Enable
 
-<dl>
-  <dd>
-    <a href="#admx-diskquota-dq_removablemedia">ADMX_DiskQuota/DQ_RemovableMedia</a>
-  </dd>
-  <dd>
-    <a href="#admx-diskquota-dq_enable">ADMX_DiskQuota/DQ_Enable</a>
-  </dd>
-  <dd>
-    <a href="#admx-diskquota-dq_enforce">ADMX_DiskQuota/DQ_Enforce</a>
-  </dd>
-  <dd>
-    <a href="#admx-diskquota-dq_logeventoverlimit">ADMX_DiskQuota/DQ_LogEventOverLimit</a>
-  </dd>
-  <dd>
-    <a href="#admx-diskquota-dq_logeventoverthreshold">ADMX_DiskQuota/DQ_LogEventOverThreshold</a>
-  </dd>
-  <dd>
-    <a href="#admx-diskquota-dq_limit">ADMX_DiskQuota/DQ_Limit</a>
-  </dd>
-</dl>
+<!-- DQ_Enable-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DQ_Enable-Applicability-End -->
 
+<!-- DQ_Enable-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskQuota/DQ_Enable
+```
+<!-- DQ_Enable-OmaUri-End -->
 
-<hr/>
+<!-- DQ_Enable-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns on and turns off disk quota management on all NTFS volumes of the computer, and prevents users from changing the setting.
 
-<!--Policy-->
-<a href="" id="admx-diskquota-dq_removablemedia"></a>**ADMX_DiskQuota/DQ_RemovableMedia**  
-<!--SupportedSKUs-->
+- If you enable this policy setting, disk quota management is turned on, and users cannot turn it off.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable the policy setting, disk quota management is turned off, and users cannot turn it on.
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting extends the disk quota policies in this folder to NTFS file system volumes on the removable media.  
-
-If you disable or don't configure this policy setting, the disk quota policies established in this folder apply to fixed-media NTFS volumes only. 
-
-When this policy setting is applied, the computer will apply the disk quota to both fixed and removable media.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Apply policy to removable media*
--   GP name: *DQ_RemovableMedia*
--   GP path: *System\Disk Quotas*
--   GP ADMX file name: *DiskQuota.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-diskquota-dq_enable"></a>**ADMX_DiskQuota/DQ_Enable**  
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting turns on and turns off disk quota management on all NTFS volumes of the computer, and prevents users from changing the setting.  
-
-If you enable this policy setting, disk quota management is turned on, and users can't turn it off.
-
-If you disable the policy setting, disk quota management is turned off, and users can't turn it on. When this policy setting isn't configured then the disk quota management is turned off by default, and the administrators can turn it on. 
+- If this policy setting is not configured, disk quota management is turned off by default, but administrators can turn it on.
 
 To prevent users from changing the setting while a setting is in effect, the system disables the "Enable quota management" option on the Quota tab of NTFS volumes.
 
-This policy setting turns on disk quota management but doesn't establish or enforce a particular disk quota limit. 
+> [!NOTE]
+> This policy setting turns on disk quota management but does not establish or enforce a particular disk quota limit. To specify a disk quota limit, use the "Default quota limit and warning level" policy setting. Otherwise, the system uses the physical space on the volume as the quota limit.
+
+> [!NOTE]
+> To turn on or turn off disk quota management without specifying a setting, in My Computer, right-click the name of an NTFS volume, click Properties, click the Quota tab, and then click "Enable quota management."
+<!-- DQ_Enable-Description-End -->
+
+<!-- DQ_Enable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DQ_Enable-Editable-End -->
+
+<!-- DQ_Enable-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DQ_Enable-DFProperties-End -->
+
+<!-- DQ_Enable-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DQ_Enable |
+| Friendly Name | Enable disk quotas |
+| Location | Computer Configuration |
+| Path | System > Disk Quotas |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DiskQuota |
+| Registry Value Name | Enable |
+| ADMX File Name | DiskQuota.admx |
+<!-- DQ_Enable-AdmxBacked-End -->
+
+<!-- DQ_Enable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DQ_Enable-Examples-End -->
 
-To specify a disk quota limit, use the "Default quota limit and warning level" policy setting. Otherwise, the system uses the physical space on the volume as the quota limit. 
+<!-- DQ_Enable-End -->
 
-To turn on or turn off disk quota management without specifying a setting, in My Computer, right-click the name of an NTFS volume, click Properties, click the Quota tab, and then click "Enable quota management."
+<!-- DQ_Enforce-Begin -->
+## DQ_Enforce
 
-<!--/Description-->
+<!-- DQ_Enforce-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DQ_Enforce-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable disk quotas*
--   GP name: *DQ_Enable*
--   GP path: *System\Disk Quotas*
--   GP ADMX file name: *DiskQuota.admx*
+<!-- DQ_Enforce-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskQuota/DQ_Enforce
+```
+<!-- DQ_Enforce-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DQ_Enforce-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether disk quota limits are enforced and prevents users from changing the setting.
 
-<hr/>
+- If you enable this policy setting, disk quota limits are enforced.
+- If you disable this policy setting, disk quota limits are not enforced. When you enable or disable this policy setting, the system disables the "Deny disk space to users exceeding quota limit" option on the Quota tab so administrators cannot make changes while the setting is in effect.
 
+- If you do not configure this policy setting, the disk quota limit is not enforced by default, but administrators can change the setting.
 
-<!--Policy-->
-<a href="" id="admx-diskquota-dq_enforce"></a>**ADMX_DiskQuota/DQ_Enforce**  
-<!--SupportedSKUs-->
+Enforcement is optional. When users reach an enforced disk quota limit, the system responds as though the physical space on the volume were exhausted. When users reach an unenforced limit, their status in the Quota Entries window changes, but they can continue to write to the volume as long as physical space is available.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+> [!NOTE]
+> This policy setting overrides user settings that enable or disable quota enforcement on their volumes.
+
+> [!NOTE]
+> To specify a disk quota limit, use the "Default quota limit and warning level" policy setting. Otherwise, the system uses the physical space on the volume as the quota limit.
+<!-- DQ_Enforce-Description-End -->
+
+<!-- DQ_Enforce-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DQ_Enforce-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DQ_Enforce-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DQ_Enforce-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DQ_Enforce-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DQ_Enforce |
+| Friendly Name | Enforce disk quota limit |
+| Location | Computer Configuration |
+| Path | System > Disk Quotas |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DiskQuota |
+| Registry Value Name | Enforce |
+| ADMX File Name | DiskQuota.admx |
+<!-- DQ_Enforce-AdmxBacked-End -->
 
-<hr/>
+<!-- DQ_Enforce-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DQ_Enforce-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether disk quota limits are enforced and prevents users from changing the setting.  
+<!-- DQ_Enforce-End -->
 
-If you enable this policy setting, disk quota limits are enforced. 
+<!-- DQ_Limit-Begin -->
+## DQ_Limit
 
-If you disable this policy setting, disk quota limits aren't enforced. When you enable or disable this policy setting, the system disables the "Deny disk space to users exceed quota limit" option on the Quota tab. Therefore, the administrators can't make changes while the setting is in effect. 
+<!-- DQ_Limit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DQ_Limit-Applicability-End -->
 
-If you don't configure this policy setting, the disk quota limit isn't enforced by default, but administrators can change the setting. Enforcement is optional. When users reach an enforced disk quota limit, the system responds as though the physical space on the volume were exhausted. When users reach an unenforced limit, their status in the Quota Entries window changes. However, the users can continue to write to the volume as long as physical space is available. 
+<!-- DQ_Limit-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskQuota/DQ_Limit
+```
+<!-- DQ_Limit-OmaUri-End -->
 
-This policy setting overrides user settings that enable or disable quota enforcement on their volumes. 
+<!-- DQ_Limit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the default disk quota limit and warning level for new users of the volume.
 
-To specify a disk quota limit, use the "Default quota limit and warning level" policy setting. Otherwise, the system uses the physical space on the volume as the quota limit.
+This policy setting determines how much disk space can be used by each user on each of the NTFS file system volumes on a computer. It also specifies the warning level, the point at which the user's status in the Quota Entries window changes to indicate that the user is approaching the disk quota limit.
 
-<!--/Description-->
+This setting overrides new users' settings for the disk quota limit and warning level on their volumes, and it disables the corresponding options in the "Select the default quota limit for new users of this volume" section on the Quota tab.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enforce disk quota limit*
--   GP name: *DQ_Enforce*
--   GP path: *System\Disk Quotas*
--   GP ADMX file name: *DiskQuota.admx*
+This policy setting applies to all new users as soon as they write to the volume. It does not affect disk quota limits for current users, or affect customized limits and warning levels set for particular users (on the Quota tab in Volume Properties).
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+If you disable or do not configure this policy setting, the disk space available to users is not limited. The disk quota management feature uses the physical space on each volume as its quota limit and warning level.
 
-<hr/>
+When you select a limit, remember that the same limit applies to all users on all volumes, regardless of actual volume size. Be sure to set the limit and warning level so that it is reasonable for the range of volumes in the group.
 
-<!--Policy-->
+This policy setting is effective only when disk quota management is enabled on the volume. Also, if disk quotas are not enforced, users can exceed the quota limit you set. When users reach the quota limit, their status in the Quota Entries window changes, but users can continue to write to the volume.
+<!-- DQ_Limit-Description-End -->
 
-<a href="" id="admx-diskquota-dq_logeventoverlimit"></a>**ADMX_DiskQuota/DQ_LogEventOverLimit**  
-<!--SupportedSKUs-->
+<!-- DQ_Limit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DQ_Limit-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DQ_Limit-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DQ_Limit-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DQ_Limit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-> [!div class = "checklist"]
-> * Device
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DQ_Limit |
+| Friendly Name | Specify default quota limit and warning level |
+| Location | Computer Configuration |
+| Path | System > Disk Quotas |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DiskQuota |
+| ADMX File Name | DiskQuota.admx |
+<!-- DQ_Limit-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether the system records an event in the local Application log when users reach their disk quota limit on a volume, and prevents users from changing the logging setting.  
+<!-- DQ_Limit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DQ_Limit-Examples-End -->
 
-If you enable this policy setting, the system records an event when the user reaches their limit. 
+<!-- DQ_Limit-End -->
 
-If you disable this policy setting, no event is recorded. Also, when you enable or disable this policy setting, the system disables the "Log event when a user exceeds their quota limit" option on the Quota tab, so administrators can't change the setting while a setting is in effect. If you don't configure this policy setting, no events are recorded, but administrators can use the Quota tab option to change the setting. 
+<!-- DQ_LogEventOverLimit-Begin -->
+## DQ_LogEventOverLimit
 
-This policy setting is independent of the enforcement policy settings for disk quotas. As a result, you can direct the system to log an event, regardless of whether or not you choose to enforce the disk quota limit. Also, this policy setting doesn't affect the Quota Entries window on the Quota tab. Even without the logged event, users can detect that they've reached their limit, because their status in the Quota Entries window changes. 
+<!-- DQ_LogEventOverLimit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DQ_LogEventOverLimit-Applicability-End -->
 
-To find the logging option, in My Computer, right-click the name of an NTFS file system volume, click Properties, and then click the Quota tab.
+<!-- DQ_LogEventOverLimit-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskQuota/DQ_LogEventOverLimit
+```
+<!-- DQ_LogEventOverLimit-OmaUri-End -->
 
+<!-- DQ_LogEventOverLimit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether the system records an event in the local Application log when users reach their disk quota limit on a volume, and prevents users from changing the logging setting.
 
-<!--/Description-->
+- If you enable this policy setting, the system records an event when the user reaches their limit.
+- If you disable this policy setting, no event is recorded. Also, when you enable or disable this policy setting, the system disables the "Log event when a user exceeds their quota limit" option on the Quota tab, so administrators cannot change the setting while a setting is in effect.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Log event when quota limit is exceeded*
--   GP name: *DQ_LogEventOverLimit*
--   GP path: *System\Disk Quotas*
--   GP ADMX file name: *DiskQuota.admx*
+- If you do not configure this policy setting, no events are recorded, but administrators can use the Quota tab option to change the setting.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+This policy setting is independent of the enforcement policy settings for disk quotas. As a result, you can direct the system to log an event, regardless of whether or not you choose to enforce the disk quota limit.
 
-<!--Policy-->
+Also, this policy setting does not affect the Quota Entries window on the Quota tab. Even without the logged event, users can detect that they have reached their limit, because their status in the Quota Entries window changes.
+
+> [!NOTE]
+> To find the logging option, in My Computer, right-click the name of an NTFS file system volume, click Properties, and then click the Quota tab.
+<!-- DQ_LogEventOverLimit-Description-End -->
+
+<!-- DQ_LogEventOverLimit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DQ_LogEventOverLimit-Editable-End -->
 
-<a href="" id="admx-diskquota-dq_logeventoverthreshold"></a>**ADMX_DiskQuota/DQ_LogEventOverThreshold**  
-<!--SupportedSKUs-->
+<!-- DQ_LogEventOverLimit-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DQ_LogEventOverLimit-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DQ_LogEventOverLimit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DQ_LogEventOverLimit |
+| Friendly Name | Log event when quota limit is exceeded |
+| Location | Computer Configuration |
+| Path | System > Disk Quotas |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DiskQuota |
+| Registry Value Name | LogEventOverLimit |
+| ADMX File Name | DiskQuota.admx |
+<!-- DQ_LogEventOverLimit-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DQ_LogEventOverLimit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DQ_LogEventOverLimit-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DQ_LogEventOverLimit-End -->
 
-<hr/>
+<!-- DQ_LogEventOverThreshold-Begin -->
+## DQ_LogEventOverThreshold
+
+<!-- DQ_LogEventOverThreshold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DQ_LogEventOverThreshold-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether the system records an event in the Application log when users reach their disk quota warning level on a volume.  
+<!-- DQ_LogEventOverThreshold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskQuota/DQ_LogEventOverThreshold
+```
+<!-- DQ_LogEventOverThreshold-OmaUri-End -->
+
+<!-- DQ_LogEventOverThreshold-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether the system records an event in the Application log when users reach their disk quota warning level on a volume.
+
+- If you enable this policy setting, the system records an event.
+- If you disable this policy setting, no event is recorded. When you enable or disable this policy setting, the system disables the corresponding "Log event when a user exceeds their warning level" option on the Quota tab so that administrators cannot change logging while a policy setting is in effect.
+
+- If you do not configure this policy setting, no event is recorded, but administrators can use the Quota tab option to change the logging setting.
+
+This policy setting does not affect the Quota Entries window on the Quota tab. Even without the logged event, users can detect that they have reached their warning level because their status in the Quota Entries window changes.
+
+> [!NOTE]
+> To find the logging option, in My Computer, right-click the name of an NTFS file system volume, click Properties, and then click the Quota tab.
+<!-- DQ_LogEventOverThreshold-Description-End -->
+
+<!-- DQ_LogEventOverThreshold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DQ_LogEventOverThreshold-Editable-End -->
 
-If you enable this policy setting, the system records an event.
+<!-- DQ_LogEventOverThreshold-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this policy setting, no event is recorded. When you enable or disable this policy setting, the system disables the corresponding "Log event when a user exceeds their warning level" option on the Quota tab so that administrators can't change logging while a policy setting is in effect.  
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DQ_LogEventOverThreshold-DFProperties-End -->
 
-If you don't configure this policy setting, no event is recorded, but administrators can use the Quota tab option to change the logging setting. This policy setting doesn't affect the Quota Entries window on the Quota tab. Even without the logged event, users can detect that they've reached their warning level because their status in the Quota Entries window changes. 
+<!-- DQ_LogEventOverThreshold-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-To find the logging option, in My Computer, right-click the name of an NTFS file system volume, click Properties, and then click the Quota tab.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | DQ_LogEventOverThreshold |
+| Friendly Name | Log event when quota warning level is exceeded |
+| Location | Computer Configuration |
+| Path | System > Disk Quotas |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DiskQuota |
+| Registry Value Name | LogEventOverThreshold |
+| ADMX File Name | DiskQuota.admx |
+<!-- DQ_LogEventOverThreshold-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Log event when quota warning level is exceeded*
--   GP name: *DQ_LogEventOverThreshold*
--   GP path: *System\Disk Quotas*
--   GP ADMX file name: *DiskQuota.admx*
+<!-- DQ_LogEventOverThreshold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DQ_LogEventOverThreshold-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DQ_LogEventOverThreshold-End -->
 
-<hr/>
+<!-- DQ_RemovableMedia-Begin -->
+## DQ_RemovableMedia
 
-<!--Policy-->
+<!-- DQ_RemovableMedia-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DQ_RemovableMedia-Applicability-End -->
 
-<a href="" id="admx-diskquota-dq_limit"></a>**ADMX_DiskQuota/DQ_Limit**  
-<!--SupportedSKUs-->
+<!-- DQ_RemovableMedia-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DiskQuota/DQ_RemovableMedia
+```
+<!-- DQ_RemovableMedia-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DQ_RemovableMedia-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting extends the disk quota policies in this folder to NTFS file system volumes on removable media.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you disable or do not configure this policy setting, the disk quota policies established in this folder apply to fixed-media NTFS volumes only.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+> [!NOTE]
+> When this policy setting is applied, the computer will apply the disk quota to both fixed and removable media.
+<!-- DQ_RemovableMedia-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DQ_RemovableMedia-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DQ_RemovableMedia-Editable-End -->
 
-<hr/>
+<!-- DQ_RemovableMedia-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the default disk quota limit and warning level for new users of the volume.  
-This policy setting determines how much disk space can be used by each user on each of the NTFS file system volumes on a computer. It also specifies the warning level, the point at which the user's status in the Quota Entries window changes to indicate that the user is approaching the disk quota limit. 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DQ_RemovableMedia-DFProperties-End -->
 
-This setting overrides new users’ settings for the disk quota limit and warning level on their volumes, and it disables the corresponding options in the "Select the default quota limit for new users of this volume" section on the Quota tab. 
-This policy setting applies to all new users as soon as they write to the volume. It doesn't affect disk quota limits for current users, or affect customized limits and warning levels set for particular users (on the Quota tab in Volume Properties).  
+<!-- DQ_RemovableMedia-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 
-If you disable or don't configure this policy setting, the disk space available to users isn't limited. The disk quota management feature uses the physical space on each volume as its quota limit and warning level. When you select a limit, remember that the same limit applies to all users on all volumes, regardless of actual volume size. Be sure to set the limit and warning level so that it's reasonable for the range of volumes in the group. 
+**ADMX mapping**:
 
-This policy setting is effective only when disk quota management is enabled on the volume. Also, if disk quotas aren't enforced, users can exceed the quota limit you set. When users reach the quota limit, their status in the Quota Entries window changes, but users can continue to write to the volume.
+| Name | Value |
+|:--|:--|
+| Name | DQ_RemovableMedia |
+| Friendly Name | Apply policy to removable media |
+| Location | Computer Configuration |
+| Path | System > Disk Quotas |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DiskQuota |
+| Registry Value Name | ApplyToRemovableMedia |
+| ADMX File Name | DiskQuota.admx |
+<!-- DQ_RemovableMedia-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- DQ_RemovableMedia-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DQ_RemovableMedia-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify default quota limit and warning level*
--   GP name: *DQ_Limit*
--   GP path: *System\Disk Quotas*
--   GP ADMX file name: *DiskQuota.admx*
+<!-- DQ_RemovableMedia-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- ADMX_DiskQuota-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DiskQuota-CspMoreInfo-End -->
 
-<hr/>
+<!-- ADMX_DiskQuota-End -->
 
-<!--/Policies-->
+## Related articles
 
-## Related topics
-
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)

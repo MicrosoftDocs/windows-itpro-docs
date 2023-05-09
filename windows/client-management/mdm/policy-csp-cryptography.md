@@ -1,141 +1,129 @@
 ---
-title: Policy CSP - Cryptography
-description: Learn how to use the Policy CSP - Cryptography setting to allow or disallow the Federal Information Processing Standard (FIPS) policy.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Cryptography Policy CSP
+description: Learn more about the Cryptography Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 01/09/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Cryptography-Begin -->
 # Policy CSP - Cryptography
 
+<!-- Cryptography-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Cryptography-Editable-End -->
 
+<!-- AllowFipsAlgorithmPolicy-Begin -->
+## AllowFipsAlgorithmPolicy
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowFipsAlgorithmPolicy-Applicability-End -->
 
-<!--Policies-->
-## Cryptography policies  
+<!-- AllowFipsAlgorithmPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/AllowFipsAlgorithmPolicy
+```
+<!-- AllowFipsAlgorithmPolicy-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
-  </dd>
-  <dd>
-    <a href="#cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
-  </dd>
-</dl>
+<!-- AllowFipsAlgorithmPolicy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows or disallows the Federal Information Processing Standard (FIPS) policy.
+<!-- AllowFipsAlgorithmPolicy-Description-End -->
 
+<!-- AllowFipsAlgorithmPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFipsAlgorithmPolicy-Editable-End -->
 
-<hr/>
+<!-- AllowFipsAlgorithmPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowFipsAlgorithmPolicy-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowFipsAlgorithmPolicy-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 1 | Allow. |
+| 0 (Default) | Block. |
+<!-- AllowFipsAlgorithmPolicy-AllowedValues-End -->
 
+<!-- AllowFipsAlgorithmPolicy-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- AllowFipsAlgorithmPolicy-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowFipsAlgorithmPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFipsAlgorithmPolicy-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowFipsAlgorithmPolicy-End -->
 
-<hr/>
+<!-- TLSCipherSuites-Begin -->
+## TLSCipherSuites
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows or disallows the Federal Information Processing Standard (FIPS) policy.
+<!-- TLSCipherSuites-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- TLSCipherSuites-Applicability-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
--   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+<!-- TLSCipherSuites-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Cryptography/TLSCipherSuites
+```
+<!-- TLSCipherSuites-OmaUri-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- TLSCipherSuites-Description-Begin -->
+<!-- Description-Source-DDF -->
+Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
+<!-- TLSCipherSuites-Description-End -->
 
-0 (default) – Not allowed.
-1– Allowed.
-<!--/SupportedValues-->
-<!--Example-->
+<!-- TLSCipherSuites-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TLSCipherSuites-Editable-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- TLSCipherSuites-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- TLSCipherSuites-DFProperties-End -->
 
-<hr/>
+<!-- TLSCipherSuites-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TLSCipherSuites-Examples-End -->
 
-<!--Policy-->
-<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
+<!-- TLSCipherSuites-End -->
 
-<!--SupportedSKUs-->
+<!-- Cryptography-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Cryptography-CspMoreInfo-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Cryptography-End -->
 
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
-
-<!--/Description-->
-<!--ADMXMapped-->
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-
-
-<!--/Policies-->
-
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

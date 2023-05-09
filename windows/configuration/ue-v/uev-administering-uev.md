@@ -2,12 +2,14 @@
 title: Administering UE-V
 description: Learn how to perform administrative tasks for User Experience Virtualization (UE-V). These tasks include configuring the UE-V service and recovering lost settings.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Administering UE-V
@@ -34,7 +36,7 @@ This topic explains how to use the UE-V template generator and manage custom set
 ## Back up and restore application and Windows settings that are synchronized with UE-V
 
 
-Windows Management Instrumentation (WMI) and Windows PowerShell features of UE-V allow you to restore settings packages. By using WMI and Windows PowerShell commands, you can restore application and Windows settings to their original state and restore additional settings when a user adopts a new device.
+Windows Management Instrumentation (WMI) and Windows PowerShell features of UE-V allow you to restore settings packages. By using WMI and Windows PowerShell commands, you can restore application and Windows settings to their original state and restore other settings when a user adopts a new device.
 
 [Manage Administrative Backup and Restore in UE-V](uev-manage-administrative-backup-and-restore.md)
 

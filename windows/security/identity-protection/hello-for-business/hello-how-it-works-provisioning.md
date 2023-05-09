@@ -1,26 +1,10 @@
 ---
 title: How Windows Hello for Business works - Provisioning
 description: Explore the provisioning flows for Windows Hello for Business, from within a variety of environments.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 2/15/2022
-ms.reviewer: 
+ms.topic: article
 ---
 # Windows Hello for Business Provisioning
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 Windows Hello for Business provisioning enables a user to enroll a new, strong, two-factor credential that they can use for passwordless authentication.  Provisioning experience vary based on:
 
@@ -32,7 +16,7 @@ List of provisioning flows:
 
 - [Azure AD joined provisioning in a managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)
 - [Azure AD joined provisioning in a federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)
-- [Hybrid Azure AD joined provisioning in a cloud trust (preview) deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-trust-preview-deployment-in-a-managed-environment)
+- [Hybrid Azure AD joined provisioning in a cloud Kerberos trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-kerberos-trust-deployment-in-a-managed-environment)
 - [Hybrid Azure AD joined provisioning in a key trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
 - [Hybrid Azure AD joined provisioning in a synchronous certificate trust deployment in a federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
 - [Domain joined provisioning in an On-premises key trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
@@ -68,9 +52,9 @@ List of provisioning flows:
 
 [Return to top](#windows-hello-for-business-provisioning)
 
-## Hybrid Azure AD joined provisioning in a cloud trust (preview) deployment in a managed environment
+## Hybrid Azure AD joined provisioning in a cloud Kerberos trust deployment in a managed environment
 
-![Hybrid Azure AD joined provisioning in a cloud trust deployment in a Managed environment.](images/howitworks/prov-haadj-cloudtrust-managed.png)
+![Hybrid Azure AD joined provisioning in a cloud Kerberos trust deployment in a Managed environment.](images/howitworks/prov-haadj-cloudtrust-managed.png)
 [Full size image](images/howitworks/prov-haadj-cloudtrust-managed.png)
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -80,7 +64,7 @@ List of provisioning flows:
 |   C   | The application sends the ADRS token, ukpub, attestation data, and device information to ADRS for user key registration.  Azure DRS validates the MFA claim remains current.  On successful validation, Azure DRS locates the user's object in Azure Active Directory, writes the key information to a multi-values attribute. The key information includes a reference to the device from which it was created. Azure Active Directory returns a key ID to the application which signals the end of user provisioning and the application exits.  |
 
 > [!NOTE]
-> Windows Hello for Business Cloud Trust does not require users' keys to be synced from Azure AD to AD. Users can immediately authenticate to Azure Active Directory and AD after provisioning their credential.
+> Windows Hello for Business cloud Kerberos trust does not require users' keys to be synced from Azure AD to AD. Users can immediately authenticate to Azure Active Directory and AD after provisioning their credential.
 
 [Return to top](#windows-hello-for-business-provisioning)
 

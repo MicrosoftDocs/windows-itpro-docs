@@ -1,23 +1,11 @@
 ---
 title: VPN authentication options (Windows 10 and Windows 11)
 description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
-ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+ms.topic: conceptual
 ---
 
 # VPN authentication options
-
-**Applies to**
--   Windows 10
--   Windows 11
 
 In addition to older and less-secure password-based authentication methods (which should be avoided), the built-in VPN solution uses Extensible Authentication Protocol (EAP) to provide secure authentication using both user name and password, and certificate-based methods. You can only configure EAP-based authentication if you select a built-in VPN type (IKEv2, L2TP, PPTP or Automatic).
 
@@ -36,7 +24,7 @@ Windows supports a number of EAP authentication methods.
 
   - Certificate filtering:
     - Certificate filtering can be enabled to search for a particular certificate to use to authenticate with
-    - Filtering can be Issuer-based or Enhanced Key Usage (EKU)-based
+    - Filtering can be Issuer-based or extended key usage (EKU)-based
 
   - Server validation - with TLS, server validation can be toggled on or off:
     - Server name - specify the server to validate
@@ -90,7 +78,7 @@ See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EA
 
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
-![EAP XML configuration in Intune profile.](images/vpn-eap-xml.png)
+:::image type="content" source="images/vpn-eap-xml.png" alt-text="EAP XML configuration in Intune profile.":::
 
 ## Related topics
 

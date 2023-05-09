@@ -1,18 +1,16 @@
 ---
-title: Testing scenarios with Microsoft Defender Application Guard (Windows 10 or Windows 11)
+title: Testing scenarios with Microsoft Defender Application Guard
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
-ms.reviewer: 
-manager: dansimp
-ms.date: 03/14/2022
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.reviewer: sazankha
+manager: aaroncz
+ms.date: 09/23/2022
 ms.custom: asr
-ms.technology: windows-sec
+ms.topic: conceptual
 ---
 
 # Application Guard testing scenarios
@@ -59,7 +57,7 @@ Before you can use Application Guard in managed mode, you must install Windows 1
 
 3. Set up the Network Isolation settings in Group Policy:
 
-   a.  Click on the **Windows** icon, type `Group Policy`, and then click **Edit Group Policy**.
+   a.  Select the **Windows** icon, type `Group Policy`, and then select **Edit Group Policy**.
 
    b.  Go to the **Administrative Templates\Network\Network Isolation\Enterprise resource domains hosted in the cloud** setting.
 
@@ -75,7 +73,7 @@ Before you can use Application Guard in managed mode, you must install Windows 1
 
 4. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Turn on Microsoft Defender Application Guard in Managed Mode** setting.
 
-5. Click **Enabled**, choose Option **1**, and click **OK**.
+5. Select **Enabled**, choose Option **1**, and select **OK**.
 
    ![Group Policy editor with Turn On/Off setting.](images/appguard-gp-turn-on.png)
 
@@ -110,15 +108,14 @@ You have the option to change each of these settings to work with your enterpris
 
 **Applies to:**
 
-- Windows 10 Enterprise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
-- Windows 11
+- Windows 10 Enterprise or Pro editions, version 1803 or later
+- Windows 11 Enterprise or Pro editions
 
 #### Copy and paste options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Configure Microsoft Defender Application Guard clipboard settings**.
 
-2. Click **Enabled** and click **OK**.
+2. Select **Enabled** and select **OK**.
 
     ![Group Policy editor clipboard options.](images/appguard-gp-clipboard.png)
 
@@ -138,25 +135,25 @@ You have the option to change each of these settings to work with your enterpris
 
     - Both text and images can be copied between the host PC and the isolated container.
 
-5. Click **OK**.
+5. Select **OK**.
 
 #### Print options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Configure Microsoft Defender Application Guard print** settings.
 
-2. Click **Enabled** and click **OK**.
+2. Select **Enabled** and select **OK**.
 
     ![Group Policy editor Print options.](images/appguard-gp-print.png)
 
 3. Based on the list provided in the setting, choose the number that best represents what type of printing should be available to your employees. You can allow any combination of local, network, PDF, and XPS printing.
 
-4. Click **OK**.
+4. Select **OK**.
 
 #### Data persistence options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow data persistence for Microsoft Defender Application Guard** setting.
 
-2. Click **Enabled** and click **OK**.
+2. Select **Enabled** and select **OK**.
 
     ![Group Policy editor Data Persistence options.](images/appguard-gp-persistence.png)
 
@@ -166,32 +163,33 @@ You have the option to change each of these settings to work with your enterpris
 
 4. Add the site to your **Favorites** list and then close the isolated session.
 
-5. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
+5. Sign out and back in to your device, opening Microsoft Edge in Application Guard again.
 
     The previously added site should still appear in your **Favorites** list.
 
     > [!NOTE]
-    > If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10 and Windows 11.
+    > Starting with Windows 11, version 22H2, data persistence is disabled by default. If you don't allow or turn off data persistence, restarting a device or signing in and out of the isolated container triggers a recycle event. This action discards all generated data, such as session cookies and Favorites, and removes the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10 and Windows 11.
     >
     > If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.
     > <!--- Inline HTML is used on the next several lines so that the ordinal numbers will be rendered correctly; Markdown would otherwise try to render them as letters (a, b, c...) because they would be treated as a nested list --->
     > **To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data.
+    >
+    > _Microsoft Edge version 90 or later no longer supports `RESET_PERSISTENCE_LAYER`._
 
 **Applies to:**
 
-- Windows 10 Enterprise edition, version 1803
-- Windows 10 Professional edition, version 1803
-- Windows 11
+- Windows 10 Enterprise or Pro editions, version 1803
+- Windows 11 Enterprise or Pro editions, version 21H2. Data persistence is disabled by default in Windows 11, version 22H2 and later.
 
 #### Download options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow files to download and save to the host operating system from Microsoft Defender Application Guard** setting.
 
-2. Click **Enabled** and click **OK**.
+2. Select **Enabled** and select **OK**.
 
     ![Group Policy editor Download options.](images/appguard-gp-download.png)
 
-3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
+3. Sign out and back in to your device, opening Microsoft Edge in Application Guard again.
 
 4. Download a file from Microsoft Defender Application Guard.
 
@@ -201,7 +199,7 @@ You have the option to change each of these settings to work with your enterpris
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow hardware-accelerated rendering for Microsoft Defender Application Guard** setting.
 
-2. Click **Enabled** and click **OK**.
+2. Select **Enabled** and Select **OK**.
 
     ![Group Policy editor hardware acceleration options.](images/appguard-gp-vgpu.png)
 
@@ -209,21 +207,15 @@ You have the option to change each of these settings to work with your enterpris
 
 4. Assess the visual experience and battery performance.
 
-**Applies to:**
-
-- Windows 10 Enterprise edition, version 1809
-- Windows 10 Professional edition, version 1809
-- Windows 11
-
 #### Camera and microphone options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow camera and microphone access in Microsoft Defender Application Guard** setting.
 
-2. Click **Enabled** and click **OK**.
+2. Select **Enabled** and select **OK**.
 
     ![Group Policy editor Camera and microphone options.](images/appguard-gp-allow-camera-and-mic.png)
 
-3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
+3. Sign out and back in to your device, opening Microsoft Edge in Application Guard again.
 
 4. Open an application with video or audio capability in Edge.
 
@@ -233,11 +225,11 @@ You have the option to change each of these settings to work with your enterpris
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow Microsoft Defender Application Guard to use Root Certificate Authorities from the user's device** setting.
 
-2. Click **Enabled**, copy the thumbprint of each certificate to share, separated by a comma, and click **OK**.
+2. Select **Enabled**, copy the thumbprint of each certificate to share, separated by a comma, and select **OK**.
 
     ![Group Policy editor Root certificate options.](images/appguard-gp-allow-root-certificates.png)
 
-3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
+3. Sign out and back in to your device, opening Microsoft Edge in Application Guard again.
 
 ## Application Guard Extension for third-party web browsers
 
@@ -245,9 +237,9 @@ The [Application Guard Extension](md-app-guard-browser-extension.md) available f
 
 Once a user has the extension and its companion app installed on their enterprise device, you can run through the following scenarios.
 
-1. Open either Firefox or Chrome — whichever browser you have the extension installed on.
+1. Open either Firefox or Chrome, whichever browser you have the extension installed on.
 
-2. Navigate to an enterprise website, i.e. an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
+2. Navigate to an organizational website. In other words, an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
    ![The evaluation page displayed while the page is being loaded, explaining that the user must wait.](images/app-guard-chrome-extension-evaluation-page.png)
 
 3. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.

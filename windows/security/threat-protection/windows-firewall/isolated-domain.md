@@ -1,16 +1,12 @@
 ---
 title: Isolated Domain (Windows)
 description: Learn about the isolated domain, which is the primary zone for trusted devices, which use connection security and firewall rules to control communication.
-ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+appliesto: 
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Isolated Domain
@@ -22,9 +18,9 @@ ms.technology: windows-sec
 
 The isolated domain is the primary zone for trusted devices. The devices in this zone use connection security and firewall rules to control the communications that can be sent between devices in the zone.
 
-The term *domain* in this context means a boundary of communications trust instead of an Active Directory domain. In this solution the two constructs are very similar because Active Directory domain authentication (Kerberos V5) is required for accepting inbound connections from trusted devices. However, many Active Directory domains (or forests) can be linked with trust relationships to provide a single, logical, isolated domain. In addition, devices that authenticate by using certificates can also be included in an isolated domain without joining the Active Directory domain.
+The term *domain* in this context means a boundary of communications trust instead of an Active Directory domain. In this solution, the two constructs are similar because Active Directory domain authentication (Kerberos V5) is required for accepting inbound connections from trusted devices. However, many Active Directory domains (or forests) can be linked with trust relationships to provide a single, logical, isolated domain. In addition, devices that authenticate by using certificates can also be included in an isolated domain without joining the Active Directory domain.
 
-For most implementations, an isolated domain will contain the largest number of devices. Other isolation zones can be created for the solution if their communication requirements differ from those of the isolated domain. Examples of these differences are what result in the boundary and encryption zones described in this guide. Conceptually, the isolated domain is just the largest isolation zone, and a superset to the other zones.
+For most implementations, an isolated domain will contain the largest number of devices. Other isolation zones can be created for the solution if their communication requirements differ from those requirements of the isolated domain. Examples of these differences are what result in the boundary and encryption zones described in this guide. Conceptually, the isolated domain is just the largest isolation zone, and a superset to the other zones.
 
 You must create a group in Active Directory to contain members of the isolated domain. You then apply one of several GPOs that contain connection security and firewall rules to the group so that authentication on all inbound network connections is enforced. Creation of the group and how to link the GPOs that apply the rules to its members are discussed in the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
@@ -33,7 +29,7 @@ The GPOs for the isolated domain should contain the following connection securit
 ## GPO settings for isolated domain members running at least Windows Vista and Windows Server 2008
 
 
-GPOs for devices running at least Windows Vista and Windows Server 2008 should include the following:
+GPOs for devices running at least Windows Vista and Windows Server 2008 should include:
 
 -   IPsec default settings that specify the following options:
 
@@ -41,11 +37,11 @@ GPOs for devices running at least Windows Vista and Windows Server 2008 should
 
     2.  Key exchange (main mode) security methods and algorithm. We recommend that you use at least DH4, AES and SHA2 in your settings. Use the strongest algorithm combinations that are common to all your supported operating systems.
 
-    3.  Data protection (quick mode) algorithm combinations. We recommend that you do not include DES, or MD5 in any setting. They are included only for compatibility with previous versions of Windows. Use the strongest algorithm combinations that are common to all your supported operating systems.
+    3.  Data protection (quick mode) algorithm combinations. We recommend that you don't include DES, or MD5 in any setting. They're included only for compatibility with previous versions of Windows. Use the strongest algorithm combinations that are common to all your supported operating systems.
 
         If any NAT devices are present on your networks, use ESP encapsulation. If isolated domain members must communicate with hosts in the encryption zone, ensure that you include algorithms that are compatible with the requirements of the encryption mode policies.
 
-    4.  Authentication methods. Include at least device-based Kerberos V5 authentication. If you want to use user-based access to isolated servers, then also include user-based Kerberos V5 as an optional authentication method. Likewise, if any of your isolated domain members cannot use Kerberos V5 authentication, then include certificate-based authentication as an optional authentication method.
+    4.  Authentication methods. Include at least device-based Kerberos V5 authentication. If you want to use user-based access to isolated servers, then also include user-based Kerberos V5 as an optional authentication method. Likewise, if any of your isolated domain members can't use Kerberos V5 authentication, then include certificate-based authentication as an optional authentication method.
 
 -   The following connection security rules:
 
