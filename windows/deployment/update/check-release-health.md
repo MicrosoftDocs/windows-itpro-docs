@@ -36,7 +36,7 @@ Ensure the following prerequisites are met to display the Windows release health
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an administrator account.
 
     > [!NOTE]
-    > By default, the Windows release health page is available to individuals who have been assigned the global admin or service administrator role for their tenant. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
+    > Most roles containing the word `admin` give you access to Windows release health such as global administrator, helpdesk administrator, and service support administrator. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
   
 2. To view Windows release health in the Microsoft 365 Admin Center, go to **Health > Windows release health**.
 
