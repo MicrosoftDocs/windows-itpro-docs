@@ -4,7 +4,7 @@ description: Learn more about the Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/09/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -24,8 +24,6 @@ The Policy configuration service provider has the following sub-categories:
 
 - Policy/Config/**AreaName** - Handles the policy configuration request from the server.
 - Policy/Result/**AreaName** - Provides a read-only path to policies enforced on the device.
-
-<a href="" id="policy-scope"></a>
 
 > [!IMPORTANT]
 > Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user.
@@ -82,7 +80,7 @@ The following list shows the Policy configuration service provider nodes:
 <!-- Device-Config-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-Applicability-End -->
 
 <!-- Device-Config-OmaUri-Begin -->
@@ -121,7 +119,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- Device-Config-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-{AreaName}-Applicability-End -->
 
 <!-- Device-Config-{AreaName}-OmaUri-Begin -->
@@ -132,7 +130,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 <!-- Device-Config-{AreaName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
+The area group that can be configured by a single technology for a single provider. Once added, you can't change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- Device-Config-{AreaName}-Description-End -->
 
 <!-- Device-Config-{AreaName}-Editable-Begin -->
@@ -161,7 +159,7 @@ The area group that can be configured by a single technology for a single provid
 <!-- Device-Config-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- Device-Config-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -209,7 +207,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- Device-ConfigOperations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-ConfigOperations-Applicability-End -->
 
 <!-- Device-ConfigOperations-OmaUri-Begin -->
@@ -248,7 +246,7 @@ The root node for grouping different configuration operations.
 <!-- Device-ConfigOperations-ADMXInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-OmaUri-Begin -->
@@ -259,7 +257,7 @@ The root node for grouping different configuration operations.
 
 <!-- Device-ConfigOperations-ADMXInstall-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall. Each ADMX-backed policy or preference that is added is assigned a unique ID. ADMX files that have been installed by using ConfigOperations/ADMXInstall can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}.
+Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall. Each ADMX-backed policy or preference that's added is assigned a unique ID. ADMX files that have been installed by using ConfigOperations/ADMXInstall can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}.
 <!-- Device-ConfigOperations-ADMXInstall-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-Editable-Begin -->
@@ -291,7 +289,7 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-OmaUri-Begin -->
@@ -331,7 +329,7 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-OmaUri-Begin -->
@@ -371,7 +369,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -411,7 +409,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-OmaUri-Begin -->
@@ -450,7 +448,7 @@ Properties of Win32 App ADMX Ingestion.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-OmaUri-Begin -->
@@ -490,7 +488,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -530,7 +528,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-OmaUri-Begin -->
@@ -569,7 +567,7 @@ Version of ADMX file. This can be set by the server to keep a record of the vers
 <!-- Device-Result-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-Applicability-End -->
 
 <!-- Device-Result-OmaUri-Begin -->
@@ -608,7 +606,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- Device-Result-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-{AreaName}-Applicability-End -->
 
 <!-- Device-Result-{AreaName}-OmaUri-Begin -->
@@ -648,7 +646,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- Device-Result-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ❌ Home <br> ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- Device-Result-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -688,7 +686,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Config-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Home <br> ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Config-Applicability-End -->
 
 <!-- User-Config-OmaUri-Begin -->
@@ -727,7 +725,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- User-Config-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Home <br> ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Config-{AreaName}-Applicability-End -->
 
 <!-- User-Config-{AreaName}-OmaUri-Begin -->
@@ -738,7 +736,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 <!-- User-Config-{AreaName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
+The area group that can be configured by a single technology for a single provider. Once added, you can't change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- User-Config-{AreaName}-Description-End -->
 
 <!-- User-Config-{AreaName}-Editable-Begin -->
@@ -775,7 +773,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- User-Config-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Home <br> ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Config-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- User-Config-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -815,7 +813,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Result-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Home <br> ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Result-Applicability-End -->
 
 <!-- User-Result-OmaUri-Begin -->
@@ -854,7 +852,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- User-Result-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Home <br> ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Result-{AreaName}-Applicability-End -->
 
 <!-- User-Result-{AreaName}-OmaUri-Begin -->
@@ -894,7 +892,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- User-Result-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Home <br> ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Result-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- User-Result-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -1120,6 +1118,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ExploitGuard](policy-csp-exploitguard.md)
 - [FederatedAuthentication](policy-csp-federatedauthentication.md)
 - [FileExplorer](policy-csp-fileexplorer.md)
+- [FileSystem](policy-csp-filesystem.md)
 - [Games](policy-csp-games.md)
 - [Handwriting](policy-csp-handwriting.md)
 - [HumanPresence](policy-csp-humanpresence.md)
