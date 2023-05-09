@@ -42,6 +42,8 @@ Microsoft Connected Cache (MCC) for Internet Service Providers is currently in p
 
 Microsoft Connected Cache (MCC) for Enterprise and Education (early preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. MCC can be deployed to as many Windows servers, bare-metal servers, or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune. Learn more at [Microsoft Connected Cache for Enterprise and Education Overview](mcc-ent-edu-overview.md).
 
+Microsoft Connected Cache (MCC) for Enterprise and Education (early preview) is a standalone cache for customers moving towards modern management and away from Configuration Manager distribution points. For Microsoft Connected Cache in Configuration Manager (generally available starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache)
+
 ## Next steps
 
 - [Microsoft Connected Cache for ISPs Overview](mcc-isp-overview.md)

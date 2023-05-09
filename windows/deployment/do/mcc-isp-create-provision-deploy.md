@@ -114,6 +114,9 @@ There are five IDs that the device provisioning script takes as input in order t
 
 #### Provision your server
 
+> [!IMPORTANT]
+> Have you correctly mounted your disk? Your MCC will not be successfully installed without this important step. Before provisioning your server, ensure your disk is correctly mounted by following the instructions here: [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk).
+
 :::image type="content" source="images/mcc-isp-deploy-cache-node-numbered.png" alt-text="Screenshot of the server provisioning tab within cache node configuration in Azure portal.":::
 
 1. After completing cache node provisioning, navigate to the **Server provisioning** tab. Select **Download provisioning package** to download the installation package to your server.  

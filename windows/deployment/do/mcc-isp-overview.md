@@ -38,6 +38,3 @@ Microsoft Connected Cache uses Delivery Optimization as the backbone for Microso
 - Xbox: Xbox Game Pass (PC only)
 
 For the full list of content endpoints that Microsoft Connected Cache for ISPs supports, see [Microsoft Connected Cache content and services endpoints](delivery-optimization-endpoints.md).
-
-## How it works
-
