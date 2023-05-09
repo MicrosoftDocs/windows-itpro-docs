@@ -1,7 +1,7 @@
 ---
 title: How to check Windows release health
 description: Check the release health status of Microsoft 365 services before you call support to see if there's an active service interruption.
-ms.date: 05/03/2023
+ms.date: 05/10/2023
 ms.author: mstewart
 author: mestew
 manager: aaroncz
@@ -21,13 +21,12 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
 ## Prerequisites
 
-To display the Windows release health page in the Microsoft 365 admin center, ensure the following requirements are met:
+Ensure the following prerequisites are met to display the Windows release health page in the Microsoft 365 admin center:
 
-- An admin role for Microsoft 365 admin center
-Licensing: 
-
-- Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
-- Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+- Sign into the Microsoft 365 admin center using an [admin role](/microsoft-365/admin/add-users/about-admin-roles)
+- One of the following licenses:
+   - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+   - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 
 > [!NOTE]
 > Currently, Windows release health isn't available for Government Community Cloud (GCC) tenants.
