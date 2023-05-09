@@ -13,7 +13,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
-ms.date: 04/05/2023
+ms.date: 05/09/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -48,7 +48,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **1 Enabled:Boot Menu Protection** | This option isn't currently supported. | No |
 | **2 Required:WHQL** | By default, kernel drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to run. Enabling this rule requires that every driver is WHQL signed and removes legacy driver support. Kernel drivers built for Windows 10 should be WHQL certified. | No |
 | **3 Enabled:Audit Mode (Default)** | Instructs WDAC to log information about applications, binaries, and scripts that would have been blocked, if the policy was enforced. You can use this option to identify the potential impact of your WDAC policy, and use the audit events to refine the policy before enforcement. To enforce a WDAC policy, delete this option. | No |
-| **4 Disabled:Flight Signing** | If enabled, binaries from Windows Insider builds aren't trusted. This option is useful for organizations that only want to run released binaries, not pre-release Windows builds. | No |
+| **4 Disabled:Flight Signing** | If enabled, binaries from Windows Insider builds aren't trusted. This option is useful for organizations that only want to run released binaries, not prerelease Windows builds. | No |
 | **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. | Yes |
 | **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and any supplemental policies must also be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. Certificates that are trusted for supplemental policies must be identified in the SupplementalPolicySigners section. | Yes |
 | **7 Allowed:Debug Policy Augmented** | This option isn't currently supported. | Yes |
@@ -72,6 +72,9 @@ File rule levels allow administrators to specify the level at which they want to
 
 Each file rule level has advantages and disadvantages. Use Table 2 to select the appropriate protection level for your available administrative resources and WDAC deployment scenario.
 
+> [!NOTE]
+> WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. Files can be allowed instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
+
 ### Table 2. Windows Defender Application Control policy - file rule levels
 
 | Rule level | Description |
@@ -82,7 +85,7 @@ Each file rule level has advantages and disadvantages. Use Table 2 to select the
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
 | **Publisher** | This level combines the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. You can use this rule level to trust a certificate issued by a particular CA and issued to a specific company you trust (such as Intel, for device drivers). |
 | **FilePublisher** | This level combines the "FileName" attribute of the signed file, plus "Publisher" (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
-| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates typically have shorter validity periods than other certificate levels, so the WDAC policy must be updated whenever these certificates change. |
+| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates typically have shorter validity periods than other certificate levels, so the WDAC policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root because the scan doesn't resolve the complete certificate chain via the local root stores or with an online check. |
 | **RootCertificate** | Not supported. |
 | **WHQL** | Only trusts binaries that have been submitted to Microsoft and signed by the Windows Hardware Qualification Lab (WHQL). This level is primarily for kernel binaries. |
@@ -175,7 +178,7 @@ The Authenticode/PE image hash can be calculated for digitally signed and unsign
 The PowerShell cmdlet produces an Authenticode Sha1 Hash, Sha256 Hash, Sha1 Page Hash, Sha256 Page Hash.
 During validation, WDAC selects which hashes are calculated based on how the file is signed and the scenario in which the file is used.  For example, if the file is page-hash signed, WDAC validates each page of the file and avoids loading the entire file in memory to calculate the full sha256 authenticode hash.
 
-In the cmdlets, rather than try to predict which hash will be used, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient to changes in how the file is signed since your WDAC policy has more than one hash available for the file already.
+In the cmdlets, rather than try to predict which hash will be used, we precalculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient to changes in how the file is signed since your WDAC policy has more than one hash available for the file already.
 
 ### Why does scan create eight hash rules for certain XML files?
 
