@@ -4,7 +4,7 @@ description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -86,7 +86,7 @@ Steps to use this policy correctly:
 <!-- AllowCaptivePortalBeforeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- AllowCaptivePortalBeforeLogon-Applicability-End -->
 
 <!-- AllowCaptivePortalBeforeLogon-OmaUri-Begin -->
@@ -136,7 +136,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-OmaUri-Begin -->
@@ -188,7 +188,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 <!-- AutoLogonUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- AutoLogonUser-Applicability-End -->
 
 <!-- AutoLogonUser-OmaUri-Begin -->
@@ -335,7 +335,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 <!-- ConfigureMovingPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- ConfigureMovingPlatform-Applicability-End -->
 
 <!-- ConfigureMovingPlatform-OmaUri-Begin -->
@@ -386,7 +386,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 <!-- ConfigureNtpClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- ConfigureNtpClient-Applicability-End -->
 
 <!-- ConfigureNtpClient-OmaUri-Begin -->
@@ -491,7 +491,7 @@ The following XML string is an example of the value for this policy:
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-OmaUri-Begin -->
@@ -687,7 +687,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!-- ManualDownDirectionDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- ManualDownDirectionDisabled-Applicability-End -->
 
 <!-- ManualDownDirectionDisabled-OmaUri-Begin -->
@@ -786,7 +786,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 <!-- NtpClientEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- NtpClientEnabled-Applicability-End -->
 
 <!-- NtpClientEnabled-OmaUri-Begin -->
@@ -856,7 +856,7 @@ The following example XML string shows the value to enable this policy:
 <!-- SkipCalibrationDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- SkipCalibrationDuringSetup-Applicability-End -->
 
 <!-- SkipCalibrationDuringSetup-OmaUri-Begin -->
@@ -907,7 +907,7 @@ This policy configures whether the device will take the user through the eye tra
 <!-- SkipTrainingDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- SkipTrainingDuringSetup-Applicability-End -->
 
 <!-- SkipTrainingDuringSetup-OmaUri-Begin -->
@@ -957,7 +957,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 <!-- VisitorAutoLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
 <!-- VisitorAutoLogon-Applicability-End -->
 
 <!-- VisitorAutoLogon-OmaUri-Begin -->

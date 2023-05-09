@@ -29,6 +29,9 @@ The policy setting has three components:
 
 ## Configure unlock factors
 
+> [!CAUTION]
+> On Windows 11, when the [DontDisplayLastUserName](/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name) security policy is enabled, it is known to interfere with the ability to use multi factor unlock.
+
 The **First unlock factor credential providers** and **Second unlock factor credential providers** portion of the policy setting each contain a comma separated list of credential providers.
 
 Supported credential providers include:
@@ -40,8 +43,8 @@ Supported credential providers include:
 |Facial Recognition| `{8AF662BF-65A0-4D0A-A540-A338A999D36F}`|
 |Trusted Signal<br>(Phone proximity, Network location) | `{27FBDB57-B613-4AF2-9D7E-4FA7A66C21AD}`|
 
->[!NOTE]
->Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
+> [!NOTE]
+> Multifactor unlock does not support third-party credential providers or credential providers not listed in the above table.
 
 The default credential providers for the **First unlock factor credential provider** include:
 

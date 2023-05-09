@@ -4,7 +4,7 @@ description: Learn more about the UserRights Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -980,6 +980,58 @@ This security setting determines which accounts are prevented from being able to
 
 <!-- DenyLogOnAsBatchJob-End -->
 
+<!-- DenyLogOnAsService-Begin -->
+## DenyLogOnAsService
+
+<!-- DenyLogOnAsService-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- DenyLogOnAsService-Applicability-End -->
+
+<!-- DenyLogOnAsService-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/DenyLogOnAsService
+```
+<!-- DenyLogOnAsService-OmaUri-End -->
+
+<!-- DenyLogOnAsService-Description-Begin -->
+<!-- Description-Source-DDF -->
+Deny log on as a service -This security setting determines which service accounts are prevented from registering a process as a service. This policy setting supersedes the Log on as a service policy setting if an account is subject to both policies.
+
+> [!NOTE]
+> This security setting does not apply to the System, Local Service, or Network Service accounts. Default: None.
+<!-- DenyLogOnAsService-Description-End -->
+
+<!-- DenyLogOnAsService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DenyLogOnAsService-Editable-End -->
+
+<!-- DenyLogOnAsService-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- DenyLogOnAsService-DFProperties-End -->
+
+<!-- DenyLogOnAsService-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Deny log on as a service |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- DenyLogOnAsService-GpMapping-End -->
+
+<!-- DenyLogOnAsService-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DenyLogOnAsService-Examples-End -->
+
+<!-- DenyLogOnAsService-End -->
+
 <!-- DenyRemoteDesktopServicesLogOn-Begin -->
 ## DenyRemoteDesktopServicesLogOn
 
@@ -1028,58 +1080,6 @@ This user right determines which users and groups are prohibited from logging on
 <!-- DenyRemoteDesktopServicesLogOn-Examples-End -->
 
 <!-- DenyRemoteDesktopServicesLogOn-End -->
-
-<!-- DenyServiceLogonRight-Begin -->
-## DenyServiceLogonRight
-
-<!-- DenyServiceLogonRight-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- DenyServiceLogonRight-Applicability-End -->
-
-<!-- DenyServiceLogonRight-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/UserRights/DenyServiceLogonRight
-```
-<!-- DenyServiceLogonRight-OmaUri-End -->
-
-<!-- DenyServiceLogonRight-Description-Begin -->
-<!-- Description-Source-DDF -->
-This security setting determines which service accounts are prevented from registering a process as a service. This policy setting supersedes the Log on as a service policy setting if an account is subject to both policies.
-
-> [!NOTE]
-> This security setting does not apply to the System, Local Service, or Network Service accounts. Default: None.
-<!-- DenyServiceLogonRight-Description-End -->
-
-<!-- DenyServiceLogonRight-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- DenyServiceLogonRight-Editable-End -->
-
-<!-- DenyServiceLogonRight-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | chr (string) |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: `0xF000`) |
-<!-- DenyServiceLogonRight-DFProperties-End -->
-
-<!-- DenyServiceLogonRight-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Deny log on as a service |
-| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
-<!-- DenyServiceLogonRight-GpMapping-End -->
-
-<!-- DenyServiceLogonRight-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- DenyServiceLogonRight-Examples-End -->
-
-<!-- DenyServiceLogonRight-End -->
 
 <!-- EnableDelegation-Begin -->
 ## EnableDelegation

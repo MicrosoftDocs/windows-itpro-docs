@@ -1,7 +1,7 @@
 ---
 title: Device registration overview
 description: This article provides an overview on how to register devices in Autopatch
-ms.date: 05/01/2023
+ms.date: 05/08/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -141,6 +141,9 @@ If your Autopatch groups have more than five deployment rings, and you must move
 
 If you want to move devices to different deployment rings (either service or software update-based), after Windows Autopatch's deployment ring assignment, you can repeat the following steps for one or more devices from the **Registered** tab.
 
+> [!IMPORTANT]
+> You can only move devices in between deployment rings within the **same** Autopatch group. You can't move devices in between deployment rings across different Autopatch groups. If you try to select a device that belongs to one Autopatch group, and another device that belongs to a different Autopatch group, you'll receive the following error message on the top right corner of the Microsoft Intune portal: "**An error occurred. Please select devices within the same Autopatch group**.
+
 **To move devices in between deployment rings:**
 
 > [!NOTE]
@@ -150,7 +153,7 @@ If you want to move devices to different deployment rings (either service or sof
 1. In the **Windows Autopatch** section, select **Devices**.
 1. In the **Registered** tab, select one or more devices you want to assign. All selected devices will be assigned to the deployment ring you specify.
 1. Select **Device actions** from the menu.
-1. Select **Assign device group**. A fly-in opens.
+1. Select **Assign ring**. A fly-in opens.
 1. Use the dropdown menu to select the deployment ring to move devices to, and then select Save. The Ring assigned by column will change to Pending.
 1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
 

@@ -39,7 +39,7 @@
           href: information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md
         - name: TPM recommendations
           href: information-protection/tpm/tpm-recommendations.md
-          
+
     - name: Hardware-based root of trust
       href: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
     - name: System Guard Secure Launch and SMM protection
@@ -321,6 +321,8 @@
       items:
         - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
           href: threat-protection\microsoft-defender-smartscreen\phishing-protection-microsoft-defender-smartscreen.md
+        - name: Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
+          href: threat-protection\microsoft-defender-smartscreen\microsoft-defender-smartscreen-available-settings.md
     - name: Configure S/MIME for Windows
       href: identity-protection\configure-s-mime.md
     - name: Windows Credential Theft Mitigation Guide Abstract

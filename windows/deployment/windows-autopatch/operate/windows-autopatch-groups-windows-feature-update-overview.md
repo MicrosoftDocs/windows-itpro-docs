@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview with Autopatch groups
 description: This article explains how Windows feature updates are managed with Autopatch groups
-ms.date: 05/01/2023
+ms.date: 05/03/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -39,6 +39,15 @@ Windows Autopatch’s device eligibility criteria for Windows feature updates al
 
 ## Key benefits
 
+- Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
+- You’re in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
+	- Combined with custom releases, Autopatch Groups gives your organization great control and flexibility to help you plan your gradual rollout in a way that works for your organization.
+- Simplified end-user experience with rich controls for gradual rollouts, deployment cadence and speed.
+- No need to manually modify the default Windows feature update policies (default release) to be on the Windows OS version your organization is currently ready for.
+- Allows for scenarios where you can deploy a single release across several Autopatch groups and its deployment rings.
+
+## Key concepts
+
 - A release is made of one or more deployment phases and contains the required OS version to be gradually rolled out throughout its deployment phases.
 - A phase (deployment phase) is made of one or more Autopatch group deployment rings. A phase:
     - Works as an additional layer of deployment cadence settings that can be defined by IT admins (only for Windows feature updates) on top of Autopatch group deployment rings (Windows update rings policies).
@@ -71,12 +80,12 @@ If the device is registered with Windows Autopatch, and the device is:
 
 If your tenant is enrolled with Windows Autopatch, you can see the following default policies created by the service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
 
-| Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch – DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 10, 2024 |
-| Windows Autopatch – DSS Policy [Ring1] | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 10, 2024 |
-| Windows Autopatch – DSS Policy [Ring2] | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 10, 2024 |
-| Windows Autopatch – DSS Policy [Ring3] | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 10, 2024 |
+| Policy name | Phase mapping | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| Windows Autopatch – DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 10, 2024 |
+| Windows Autopatch – DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 10, 2024 |
+| Windows Autopatch – DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 10, 2024 |
+| Windows Autopatch – DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 10, 2024 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
