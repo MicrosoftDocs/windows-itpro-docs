@@ -9,7 +9,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 04/04/2023
+ms.date: 05/09/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -51,7 +51,7 @@ When the WDAC engine evaluates files against the active set of policies on the d
 
 1. Explicit deny rules - if any explicit deny rule exists for the file, it's blocked even if other rules are created to try to allow it. Deny rules can use any [rule level](/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#windows-defender-application-control-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
 
-2. Explicit allow rules - if any explicit allow rul exists for the file, it's allowed by the policy.
+2. Explicit allow rules - if any explicit allow rule exists for the file, the file runs.
 
 3. WDAC then checks for the [Managed Installer extended attribute (EA)](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer) or the [Intelligent Security Graph (ISG) EA](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph) on the file. If either EA exists and the policy enables the corresponding option, then the file is allowed.
 
@@ -71,7 +71,11 @@ When Managed Installer and ISG are enabled, 3091 and 3092 events are logged when
 
 ### .NET native images may generate false positive block events
 
-In some cases, the code integrity logs where Windows Defender Application Control errors and warnings are written include error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image falls back to its corresponding assembly and .NET will regenerate the native image at its next scheduled maintenance window.
+In some cases, the code integrity logs where Windows Defender Application Control errors and warnings are written include error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image falls back to its corresponding assembly and .NET regenerates the native image at its next scheduled maintenance window.
+
+### Signatures using elliptical curve cryptography (ECC) aren't supported
+
+WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. You can authorize the files instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
 
 ### MSI installers are treated as user writeable on Windows 10 when allowed by FilePath rule
 
