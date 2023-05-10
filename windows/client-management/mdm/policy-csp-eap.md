@@ -59,7 +59,7 @@ Added in Windows 10, version 21. H1. Allow or disallow use of TLS 1.3 during EAP
 
 | Value | Description |
 |:--|:--|
-| 0 | Use of TLS version 1.3 is not allowed for authentication. |
+| 0 | Use of TLS version 1.3 isn't allowed for authentication. |
 | 1 (Default) | Use of TLS version 1.3 is allowed for authentication. |
 <!-- AllowTLS1_3-AllowedValues-End -->
 

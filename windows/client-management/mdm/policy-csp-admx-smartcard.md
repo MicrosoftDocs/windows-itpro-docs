@@ -49,7 +49,7 @@ In versions of Windows prior to Windows Vista, smart card certificates that are 
   - Certificates with an All Purpose EKU
   - Certificates with a Client Authentication EKU
 
-- If you disable or do not configure this policy setting, only certificates that contain the smart card logon object identifier can be used to log on with a smart card.
+- If you disable or don't configure this policy setting, only certificates that contain the smart card logon object identifier can be used to log on with a smart card.
 <!-- AllowCertificatesWithNoEKU-Description-End -->
 
 <!-- AllowCertificatesWithNoEKU-Editable-Begin -->
@@ -110,7 +110,7 @@ In order to use the integrated unblock feature your smart card must support this
 
 - If you enable this policy setting, the integrated unblock feature will be available.
 
-- If you disable or do not configure this policy setting then the integrated unblock feature will not be available.
+- If you disable or don't configure this policy setting then the integrated unblock feature won't be available.
 <!-- AllowIntegratedUnblock-Description-End -->
 
 <!-- AllowIntegratedUnblock-Editable-Begin -->
@@ -169,7 +169,7 @@ This policy setting lets you allow signature key-based certificates to be enumer
 
 - If you enable this policy setting then any certificates available on the smart card with a signature only key will be listed on the logon screen.
 
-- If you disable or do not configure this policy setting, any available smart card signature key-based certificates will not be listed on the logon screen.
+- If you disable or don't configure this policy setting, any available smart card signature key-based certificates won't be listed on the logon screen.
 <!-- AllowSignatureOnlyKeys-Description-End -->
 
 <!-- AllowSignatureOnlyKeys-Editable-Begin -->
@@ -228,9 +228,9 @@ This policy setting permits those certificates to be displayed for logon that ar
 
 Under previous versions of Microsoft Windows, certificates were required to contain a valid time and not be expired. The certificate must still be accepted by the domain controller in order to be used. This setting only controls the displaying of the certificate on the client machine.
 
-- If you enable this policy setting certificates will be listed on the logon screen regardless of whether they have an invalid time or their time validity has expired.
+- If you enable this policy setting certificates will be listed on the logon screen regardless of whether they've an invalid time or their time validity has expired.
 
-- If you disable or do not configure this policy setting, certificates which are expired or not yet valid will not be listed on the logon screen.
+- If you disable or don't configure this policy setting, certificates which are expired or not yet valid won't be listed on the logon screen.
 <!-- AllowTimeInvalidCertificates-Description-End -->
 
 <!-- AllowTimeInvalidCertificates-Editable-Begin -->
@@ -287,9 +287,9 @@ Under previous versions of Microsoft Windows, certificates were required to cont
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the certificate propagation that occurs when a smart card is inserted.
 
-- If you enable or do not configure this policy setting then certificate propagation will occur when you insert your smart card.
+- If you enable or don't configure this policy setting then certificate propagation will occur when you insert your smart card.
 
-- If you disable this policy setting, certificate propagation will not occur and the certificates will not be made available to applications such as Outlook.
+- If you disable this policy setting, certificate propagation won't occur and the certificates won't be made available to applications such as Outlook.
 <!-- CertPropEnabledString-Description-End -->
 
 <!-- CertPropEnabledString-Editable-Begin -->
@@ -347,7 +347,7 @@ This policy setting allows you to manage the certificate propagation that occurs
 This policy setting allows you to manage the clean up behavior of root certificates.
 
 - If you enable this policy setting then root certificate cleanup will occur according to the option selected.
-- If you disable or do not configure this setting then root certificate clean up will occur on log off.
+- If you disable or don't configure this setting then root certificate clean up will occur on log off.
 <!-- CertPropRootCleanupString-Description-End -->
 
 <!-- CertPropRootCleanupString-Editable-Begin -->
@@ -403,12 +403,12 @@ This policy setting allows you to manage the clean up behavior of root certifica
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the root certificate propagation that occurs when a smart card is inserted.
 
-- If you enable or do not configure this policy setting then root certificate propagation will occur when you insert your smart card.
+- If you enable or don't configure this policy setting then root certificate propagation will occur when you insert your smart card.
 
 > [!NOTE]
 > For this policy setting to work the following policy setting must also be enabled: Turn on certificate propagation from smart card.
 
-- If you disable this policy setting then root certificates will not be propagated from the smart card.
+- If you disable this policy setting then root certificates won't be propagated from the smart card.
 <!-- CertPropRootEnabledString-Description-End -->
 
 <!-- CertPropRootEnabledString-Editable-Begin -->
@@ -465,9 +465,9 @@ This policy setting allows you to manage the root certificate propagation that o
 <!-- Description-Source-ADMX -->
 This policy setting prevents plaintext PINs from being returned by Credential Manager.
 
-- If you enable this policy setting, Credential Manager does not return a plaintext PIN.
+- If you enable this policy setting, Credential Manager doesn't return a plaintext PIN.
 
-- If you disable or do not configure this policy setting, plaintext PINs can be returned by Credential Manager.
+- If you disable or don't configure this policy setting, plaintext PINs can be returned by Credential Manager.
 
 > [!NOTE]
 > Enabling this policy setting could prevent certain smart cards from working on Windows. Please consult your smart card manufacturer to find out whether you will be affected by this policy setting.
@@ -529,13 +529,13 @@ This policy setting allows you to control whether elliptic curve cryptography (E
 
 - If you enable this policy setting, ECC certificates on a smart card can be used to log on to a domain.
 
-- If you disable or do not configure this policy setting, ECC certificates on a smart card cannot be used to log on to a domain.
+- If you disable or don't configure this policy setting, ECC certificates on a smart card can't be used to log on to a domain.
 
 > [!NOTE]
-> This policy setting only affects a user's ability to log on to a domain. ECC certificates on a smart card that are used for other applications, such as document signing, are not affected by this policy setting.
+> This policy setting only affects a user's ability to log on to a domain. ECC certificates on a smart card that are used for other applications, such as document signing, aren't affected by this policy setting.
 
 > [!NOTE]
-> If you use an ECDSA key to log on, you must also have an associated ECDH key to permit logons when you are not connected to the network.
+> If you use an ECDSA key to log on, you must also have an associated ECDH key to permit logons when you aren't connected to the network.
 <!-- EnumerateECCCerts-Description-End -->
 
 <!-- EnumerateECCCerts-Editable-Begin -->
@@ -592,14 +592,14 @@ This policy setting allows you to control whether elliptic curve cryptography (E
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure if all your valid logon certificates are displayed.
 
-During the certificate renewal period, a user can have multiple valid logon certificates issued from the same certificate template. This can cause confusion as to which certificate to select for logon. The common case for this behavior is when a certificate is renewed and the old one has not yet expired. Two certificates are determined to be the same if they are issued from the same template with the same major version and they are for the same user (determined by their UPN).
+During the certificate renewal period, a user can have multiple valid logon certificates issued from the same certificate template. This can cause confusion as to which certificate to select for logon. The common case for this behavior is when a certificate is renewed and the old one hasn't yet expired. Two certificates are determined to be the same if they're issued from the same template with the same major version and they're for the same user (determined by their UPN).
 
-If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that is used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the certificate with the expiration time furthest in the future will be shown.
+If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that's used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the certificate with the expiration time furthest in the future will be shown.
 
 > [!NOTE]
 > This setting will be applied after the following policy: "Allow time invalid certificates"
 
-- If you enable or do not configure this policy setting, filtering will take place.
+- If you enable or don't configure this policy setting, filtering will take place.
 
 - If you disable this policy setting, no filtering will take place.
 <!-- FilterDuplicateCerts-Description-End -->
@@ -662,7 +662,7 @@ During logon Windows will by default only read the default certificate from the 
 
 - If you enable this setting, then Windows will attempt to read all certificates from the smart card regardless of the feature set of the CSP.
 
-- If you disable or do not configure this setting, Windows will only attempt to read the default certificate from those cards that do not support retrieval of all certificates in a single call. Certificates other than the default will not be available for logon.
+- If you disable or don't configure this setting, Windows will only attempt to read the default certificate from those cards that don't support retrieval of all certificates in a single call. Certificates other than the default won't be available for logon.
 <!-- ForceReadingAllCertificates-Description-End -->
 
 <!-- ForceReadingAllCertificates-Editable-Begin -->
@@ -724,7 +724,7 @@ This policy setting allows you to manage the displayed message when a smart card
 > [!NOTE]
 > The following policy setting must be enabled - Allow Integrated Unblock screen to be displayed at the time of logon.
 
-- If you disable or do not configure this policy setting, the default message will be displayed to the user when the smart card is blocked, if the integrated unblock feature is enabled.
+- If you disable or don't configure this policy setting, the default message will be displayed to the user when the smart card is blocked, if the integrated unblock feature is enabled.
 <!-- IntegratedUnblockPromptString-Description-End -->
 
 <!-- IntegratedUnblockPromptString-Editable-Begin -->
@@ -778,11 +778,11 @@ This policy setting allows you to manage the displayed message when a smart card
 
 <!-- ReverseSubject-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you reverse the subject name from how it is stored in the certificate when displaying it during logon.
+This policy setting lets you reverse the subject name from how it's stored in the certificate when displaying it during logon.
 
-By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN is not present then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
+By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN isn't present then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
 
-If you enable this policy setting or do not configure this setting, then the subject name will be reversed.
+If you enable this policy setting or don't configure this setting, then the subject name will be reversed.
 
 If you disable , the subject name will be displayed as it appears in the certificate.
 <!-- ReverseSubject-Description-End -->
@@ -841,9 +841,9 @@ If you disable , the subject name will be displayed as it appears in the certifi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether Smart Card Plug and Play is enabled.
 
-- If you enable or do not configure this policy setting, Smart Card Plug and Play will be enabled and the system will attempt to install a Smart Card device driver when a card is inserted in a Smart Card Reader for the first time.
+- If you enable or don't configure this policy setting, Smart Card Plug and Play will be enabled and the system will attempt to install a Smart Card device driver when a card is inserted in a Smart Card Reader for the first time.
 
-- If you disable this policy setting, Smart Card Plug and Play will be disabled and a device driver will not be installed when a card is inserted in a Smart Card Reader.
+- If you disable this policy setting, Smart Card Plug and Play will be disabled and a device driver won't be installed when a card is inserted in a Smart Card Reader.
 
 > [!NOTE]
 > This policy setting is applied only for smart cards that have passed the Windows Hardware Quality Labs (WHQL) testing process.
@@ -903,9 +903,9 @@ This policy setting allows you to control whether Smart Card Plug and Play is en
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether a confirmation message is displayed when a smart card device driver is installed.
 
-- If you enable or do not configure this policy setting, a confirmation message will be displayed when a smart card device driver is installed.
+- If you enable or don't configure this policy setting, a confirmation message will be displayed when a smart card device driver is installed.
 
-- If you disable this policy setting, a confirmation message will not be displayed when a smart card device driver is installed.
+- If you disable this policy setting, a confirmation message won't be displayed when a smart card device driver is installed.
 
 > [!NOTE]
 > This policy setting is applied only for smart cards that have passed the Windows Hardware Quality Labs (WHQL) testing process.
@@ -967,7 +967,7 @@ This policy setting lets you determine whether an optional field will be display
 
 - If you enable this policy setting then an optional field that allows a user to enter their user name or user name and domain will be displayed.
 
-- If you disable or do not configure this policy setting, an optional field that allows users to enter their user name or user name and domain will not be displayed.
+- If you disable or don't configure this policy setting, an optional field that allows users to enter their user name or user name and domain won't be displayed.
 <!-- X509HintsNeeded-Description-End -->
 
 <!-- X509HintsNeeded-Editable-Begin -->

@@ -259,7 +259,7 @@ If enabled then new targets may not be manually configured by entering the targe
 
 <!-- iSCSIGeneral_ChangeIQNName-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled then do not allow the initiator iqn name to be changed. If disabled then the initiator iqn name may be changed.
+If enabled then don't allow the initiator iqn name to be changed. If disabled then the initiator iqn name may be changed.
 <!-- iSCSIGeneral_ChangeIQNName-Description-End -->
 
 <!-- iSCSIGeneral_ChangeIQNName-Editable-Begin -->
@@ -369,7 +369,7 @@ If enabled then only those sessions that are established via a persistent login 
 
 <!-- iSCSISecurity_ChangeCHAPSecret-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled then do not allow the initiator CHAP secret to be changed. If disabled then the initiator CHAP secret may be changed.
+If enabled then don't allow the initiator CHAP secret to be changed. If disabled then the initiator CHAP secret may be changed.
 <!-- iSCSISecurity_ChangeCHAPSecret-Description-End -->
 
 <!-- iSCSISecurity_ChangeCHAPSecret-Editable-Begin -->

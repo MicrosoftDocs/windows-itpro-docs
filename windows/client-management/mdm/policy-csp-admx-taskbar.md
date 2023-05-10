@@ -47,9 +47,9 @@ This policy setting removes Notifications and Action Center from the notificatio
 
 The notification area is located at the far right end of the taskbar and includes icons for current notifications and the system clock.
 
-- If this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won't be able to review any notifications they miss.
+- If this setting is enabled, Notifications and Action Center isn't displayed in the notification area. The user will be able to read notifications when they appear, but they won't be able to review any notifications they miss.
 
-- If you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
+- If you disable or don't configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
 
 A reboot is required for this policy setting to take effect.
 <!-- DisableNotificationCenter-Description-End -->
@@ -171,9 +171,9 @@ A reboot is required for this policy setting to take effect.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove Security and Maintenance from the system control area.
 
-- If you enable this policy setting, the Security and Maintenance icon is not displayed in the system notification area.
+- If you enable this policy setting, the Security and Maintenance icon isn't displayed in the system notification area.
 
-- If you disable or do not configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
 <!-- HideSCAHealth-Description-End -->
 
 <!-- HideSCAHealth-Editable-Begin -->
@@ -230,9 +230,9 @@ This policy setting allows you to remove Security and Maintenance from the syste
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the networking icon from the system control area.
 
-- If you enable this policy setting, the networking icon is not displayed in the system notification area.
+- If you enable this policy setting, the networking icon isn't displayed in the system notification area.
 
-- If you disable or do not configure this policy setting, the networking icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the networking icon is displayed in the system notification area.
 <!-- HideSCANetwork-Description-End -->
 
 <!-- HideSCANetwork-Editable-Begin -->
@@ -289,9 +289,9 @@ This policy setting allows you to remove the networking icon from the system con
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the battery meter from the system control area.
 
-- If you enable this policy setting, the battery meter is not displayed in the system notification area.
+- If you enable this policy setting, the battery meter isn't displayed in the system notification area.
 
-- If you disable or do not configure this policy setting, the battery meter is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the battery meter is displayed in the system notification area.
 <!-- HideSCAPower-Description-End -->
 
 <!-- HideSCAPower-Editable-Begin -->
@@ -348,9 +348,9 @@ This policy setting allows you to remove the battery meter from the system contr
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove the volume control icon from the system control area.
 
-- If you enable this policy setting, the volume control icon is not displayed in the system notification area.
+- If you enable this policy setting, the volume control icon isn't displayed in the system notification area.
 
-- If you disable or do not configure this policy setting, the volume control icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the volume control icon is displayed in the system notification area.
 <!-- HideSCAVolume-Description-End -->
 
 <!-- HideSCAVolume-Editable-Begin -->
@@ -407,9 +407,9 @@ This policy setting allows you to remove the volume control icon from the system
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off feature advertisement balloon notifications.
 
-If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
+If you enable this policy setting, certain notification balloons that are marked as feature advertisements aren't shown.
 
-If you disable do not configure this policy setting, feature advertisement balloons are shown.
+If you disable don't configure this policy setting, feature advertisement balloons are shown.
 <!-- NoBalloonFeatureAdvertisements-Description-End -->
 
 <!-- NoBalloonFeatureAdvertisements-Editable-Begin -->
@@ -466,9 +466,9 @@ If you disable do not configure this policy setting, feature advertisement ballo
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning the Store app to the Taskbar.
 
-- If you enable this policy setting, users cannot pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
+- If you enable this policy setting, users can't pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
 
-- If you disable or do not configure this policy setting, users can pin the Store app to the Taskbar.
+- If you disable or don't configure this policy setting, users can pin the Store app to the Taskbar.
 <!-- NoPinningStoreToTaskbar-Description-End -->
 
 <!-- NoPinningStoreToTaskbar-Editable-Begin -->
@@ -525,9 +525,9 @@ This policy setting allows you to control pinning the Store app to the Taskbar.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning items in Jump Lists.
 
-- If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
+- If you enable this policy setting, users can't pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also can't unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
 
-- If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+- If you disable or don't configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
 <!-- NoPinningToDestinations-Description-End -->
 
 <!-- NoPinningToDestinations-Editable-Begin -->
@@ -584,9 +584,9 @@ This policy setting allows you to control pinning items in Jump Lists.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning programs to the Taskbar.
 
-- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
+- If you enable this policy setting, users can't change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users can't unpin these programs already pinned to the Taskbar, and they can't pin new programs to the Taskbar.
 
-- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+- If you disable or don't configure this policy setting, users can change the programs currently pinned to the Taskbar.
 <!-- NoPinningToTaskbar-Description-End -->
 
 <!-- NoPinningToTaskbar-Editable-Begin -->
@@ -645,12 +645,12 @@ This policy setting allows you to control displaying or tracking items in Jump L
 
 The Start Menu and Taskbar display Jump Lists off of programs. These menus include files, folders, websites and other relevant items for that program. This helps users more easily reopen their most important documents and other tasks.
 
-- If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers are not tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
+- If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers aren't tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
 
-- If you disable or do not configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
+- If you disable or don't configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
 
 > [!NOTE]
-> This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
+> This setting doesn't prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
 <!-- NoRemoteDestinations-Description-End -->
 
 <!-- NoRemoteDestinations-Editable-Begin -->
@@ -707,9 +707,9 @@ The Start Menu and Taskbar display Jump Lists off of programs. These menus inclu
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off automatic promotion of notification icons to the taskbar.
 
-- If you enable this policy setting, newly added notification icons are not temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
+- If you enable this policy setting, newly added notification icons aren't temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
 
-- If you disable or do not configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+- If you disable or don't configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
 <!-- NoSystraySystemPromotion-Description-End -->
 
 <!-- NoSystraySystemPromotion-Editable-Begin -->
@@ -827,9 +827,9 @@ This policy setting allows users to see Windows Store apps on the taskbar.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to lock all taskbar settings.
 
-- If you enable this policy setting, the user cannot access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
+- If you enable this policy setting, the user can't access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
 
-- If you disable or do not configure this policy setting, the user will be able to set any taskbar setting that is not prevented by another policy setting.
+- If you disable or don't configure this policy setting, the user will be able to set any taskbar setting that isn't prevented by another policy setting.
 <!-- TaskbarLockAll-Description-End -->
 
 <!-- TaskbarLockAll-Editable-Begin -->
@@ -886,9 +886,9 @@ This policy setting allows you to lock all taskbar settings.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from adding or removing toolbars.
 
-- If you enable this policy setting, the user is not allowed to add or remove any toolbars to the taskbar. Applications are not able to add toolbars either.
+- If you enable this policy setting, the user isn't allowed to add or remove any toolbars to the taskbar. Applications aren't able to add toolbars either.
 
-- If you disable or do not configure this policy setting, the users and applications are able to add toolbars to the taskbar.
+- If you disable or don't configure this policy setting, the users and applications are able to add toolbars to the taskbar.
 <!-- TaskbarNoAddRemoveToolbar-Description-End -->
 
 <!-- TaskbarNoAddRemoveToolbar-Editable-Begin -->
@@ -945,9 +945,9 @@ This policy setting allows you to prevent users from adding or removing toolbars
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from rearranging toolbars.
 
-- If you enable this policy setting, users are not able to drag or drop toolbars to the taskbar.
+- If you enable this policy setting, users aren't able to drag or drop toolbars to the taskbar.
 
-- If you disable or do not configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+- If you disable or don't configure this policy setting, users are able to rearrange the toolbars on the taskbar.
 <!-- TaskbarNoDragToolbar-Description-End -->
 
 <!-- TaskbarNoDragToolbar-Editable-Begin -->
@@ -1004,9 +1004,9 @@ This policy setting allows you to prevent users from rearranging toolbars.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent taskbars from being displayed on more than one monitor.
 
-- If you enable this policy setting, users are not able to show taskbars on more than one display. The multiple display section is not enabled in the taskbar properties dialog.
+- If you enable this policy setting, users aren't able to show taskbars on more than one display. The multiple display section isn't enabled in the taskbar properties dialog.
 
-- If you disable or do not configure this policy setting, users can show taskbars on more than one display.
+- If you disable or don't configure this policy setting, users can show taskbars on more than one display.
 <!-- TaskbarNoMultimon-Description-End -->
 
 <!-- TaskbarNoMultimon-Editable-Begin -->
@@ -1065,7 +1065,7 @@ This policy setting allows you to turn off all notification balloons.
 
 - If you enable this policy setting, no notification balloons are shown to the user.
 
-- If you disable or do not configure this policy setting, notification balloons are shown to the user.
+- If you disable or don't configure this policy setting, notification balloons are shown to the user.
 <!-- TaskbarNoNotification-Description-End -->
 
 <!-- TaskbarNoNotification-Editable-Begin -->
@@ -1126,9 +1126,9 @@ This policy setting allows you to turn off all notification balloons.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to remove pinned programs from the taskbar.
 
-- If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users cannot pin programs to the Taskbar.
+- If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users can't pin programs to the Taskbar.
 
-- If you disable or do not configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
+- If you disable or don't configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
 <!-- TaskbarNoPinnedList-Description-End -->
 
 <!-- TaskbarNoPinnedList-Editable-Begin -->
@@ -1185,9 +1185,9 @@ This policy setting allows you to remove pinned programs from the taskbar.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from moving taskbar to another screen dock location.
 
-- If you enable this policy setting, users are not able to drag their taskbar to another area of the monitor(s).
+- If you enable this policy setting, users aren't able to drag their taskbar to another area of the monitor(s).
 
-- If you disable or do not configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
+- If you disable or don't configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
 <!-- TaskbarNoRedock-Description-End -->
 
 <!-- TaskbarNoRedock-Editable-Begin -->
@@ -1244,9 +1244,9 @@ This policy setting allows you to prevent users from moving taskbar to another s
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from resizing the taskbar.
 
-- If you enable this policy setting, users are not be able to resize their taskbar.
+- If you enable this policy setting, users aren't be able to resize their taskbar.
 
-- If you disable or do not configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+- If you disable or don't configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
 <!-- TaskbarNoResize-Description-End -->
 
 <!-- TaskbarNoResize-Editable-Begin -->
@@ -1303,9 +1303,9 @@ This policy setting allows you to prevent users from resizing the taskbar.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off taskbar thumbnails.
 
-- If you enable this policy setting, the taskbar thumbnails are not displayed and the system uses standard text for the tooltips.
+- If you enable this policy setting, the taskbar thumbnails aren't displayed and the system uses standard text for the tooltips.
 
-- If you disable or do not configure this policy setting, the taskbar thumbnails are displayed.
+- If you disable or don't configure this policy setting, the taskbar thumbnails are displayed.
 <!-- TaskbarNoThumbnail-Description-End -->
 
 <!-- TaskbarNoThumbnail-Editable-Begin -->

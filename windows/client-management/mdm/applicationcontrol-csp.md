@@ -431,7 +431,7 @@ Supported values are as follows:
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsSystemPolicy-Description-Begin -->
 <!-- Description-Source-DDF -->
-TRUE/FALSE if the Policy is a System Policy, that is a policy managed by Microsoft as part of the OS.
+TRUE/FALSE if the Policy is a System Policy, that's a policy managed by Microsoft as part of the OS.
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsSystemPolicy-Description-End -->
 
 <!-- Device-Policies-{Policy GUID}-PolicyInfo-IsSystemPolicy-Editable-Begin -->

@@ -835,7 +835,7 @@ This store holds the SCEP portion of the MY store and handle operations related 
 
 <!-- Device-MY-SCEP-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The UniqueID for the SCEP enrollment request. Each client certificate should have different unique ID.
+The UniqueID for the SCEP enrollment request. Each client certificate should've different unique ID.
 <!-- Device-MY-SCEP-{UniqueID}-Description-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Editable-Begin -->
@@ -1766,7 +1766,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-The base64 Encoded X.509 certificate. Note that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it or user installs it manually. In WP, the server cannot purely rely on CertificateStore CSP to install a client certificate including private key.
+The base64 Encoded X.509 certificate. Note that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it or user installs it manually. In WP, the server can't purely rely on CertificateStore CSP to install a client certificate including private key.
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -2000,7 +2000,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 <!-- Device-MY-WSTEP-Description-Begin -->
 <!-- Description-Source-DDF -->
-The parent node that hosts client certificate that is enrolled via WSTEP, e.g. the certificate that is enrolled during MDM enrollment.
+The parent node that hosts client certificate that's enrolled via WSTEP, e.g. the certificate that's enrolled during MDM enrollment.
 <!-- Device-MY-WSTEP-Description-End -->
 
 <!-- Device-MY-WSTEP-Editable-Begin -->

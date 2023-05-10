@@ -45,9 +45,9 @@ This policy setting configures Microsoft Support Diagnostic Tool (MSDT) interact
 
 By default, the support provider is set to Microsoft Corporation.
 
-- If you disable this policy setting, MSDT cannot run in support mode, and no data can be collected or sent to the support provider.
+- If you disable this policy setting, MSDT can't run in support mode, and no data can be collected or sent to the support provider.
 
-- If you do not configure this policy setting, MSDT support mode is enabled by default.
+- If you don't configure this policy setting, MSDT support mode is enabled by default.
 
 No reboots or service restarts are required for this policy setting to take effect. Changes take effect immediately.
 <!-- MsdtSupportProvider-Description-End -->
@@ -116,13 +116,13 @@ These tools are required to completely troubleshoot the problem. If tool downloa
 
 - If you disable this policy setting, MSDT never downloads tools, and is unable to diagnose problems on remote computers.
 
-- If you do not configure this policy setting, MSDT prompts the user before downloading any additional tools.
+- If you don't configure this policy setting, MSDT prompts the user before downloading any additional tools.
 
 No reboots or service restarts are required for this policy setting to take effect. Changes take effect immediately.
 
 This policy setting will take effect only when MSDT is enabled.
 
-This policy setting will only take effect when the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting will only take effect when the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 <!-- MsdtToolDownloadPolicy-Description-End -->
 
 <!-- MsdtToolDownloadPolicy-Editable-Begin -->
@@ -183,15 +183,15 @@ Microsoft Support Diagnostic Tool (MSDT) gathers diagnostic data for analysis by
 
 - If you enable this policy setting, administrators can use MSDT to collect and send diagnostic data to a support professional to resolve a problem.
 
-- If you disable this policy setting, MSDT cannot gather diagnostic data.
+- If you disable this policy setting, MSDT can't gather diagnostic data.
 
-- If you do not configure this policy setting, MSDT is turned on by default.
+- If you don't configure this policy setting, MSDT is turned on by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
 No reboots or service restarts are required for this policy setting to take effect. Changes take effect immediately.
 
-This policy setting will only take effect when the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios will not be executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting will only take effect when the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios won't be executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 <!-- WdiScenarioExecutionPolicy-Description-End -->
 
 <!-- WdiScenarioExecutionPolicy-Editable-Begin -->

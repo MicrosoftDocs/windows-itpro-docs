@@ -41,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their Windows password on demand.
 
-If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box will not appear when you press Ctrl+Alt+Del.
+If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box won't appear when you press Ctrl+Alt+Del.
 
 However, users are still able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
 <!-- DisableChangePassword-Description-End -->
@@ -100,11 +100,11 @@ However, users are still able to change their password when prompted by the syst
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from locking the system.
 
-While locked, the desktop is hidden and the system cannot be used. Only the user who locked the system or the system administrator can unlock it.
+While locked, the desktop is hidden and the system can't be used. Only the user who locked the system or the system administrator can unlock it.
 
-- If you enable this policy setting, users cannot lock the computer from the keyboard using Ctrl+Alt+Del.
+- If you enable this policy setting, users can't lock the computer from the keyboard using Ctrl+Alt+Del.
 
-- If you disable or do not configure this policy setting, users will be able to lock the computer from the keyboard using Ctrl+Alt+Del.
+- If you disable or don't configure this policy setting, users will be able to lock the computer from the keyboard using Ctrl+Alt+Del.
 
 > [!TIP]
 > To lock a computer without configuring a setting, press Ctrl+Alt+Delete, and then click Lock this computer.
@@ -166,9 +166,9 @@ This policy setting prevents users from starting Task Manager.
 
 Task Manager (taskmgr.exe) lets users start and stop programs; monitor the performance of their computers; view and monitor all programs running on their computers, including system services; find the executable names of programs; and change the priority of the process in which programs run.
 
-- If you enable this policy setting, users will not be able to access Task Manager. If users try to start Task Manager, a message appears explaining that a policy prevents the action.
+- If you enable this policy setting, users won't be able to access Task Manager. If users try to start Task Manager, a message appears explaining that a policy prevents the action.
 
-- If you disable or do not configure this policy setting, users can access Task Manager to start and stop programs, monitor the performance of their computers, view and monitor all programs running on their computers, including system services, find the executable names of programs, and change the priority of the process in which programs run.
+- If you disable or don't configure this policy setting, users can access Task Manager to start and stop programs, monitor the performance of their computers, view and monitor all programs running on their computers, including system services, find the executable names of programs, and change the priority of the process in which programs run.
 <!-- DisableTaskMgr-Description-End -->
 
 <!-- DisableTaskMgr-Editable-Begin -->
@@ -225,11 +225,11 @@ Task Manager (taskmgr.exe) lets users start and stop programs; monitor the perfo
 <!-- Description-Source-ADMX -->
 This policy setting disables or removes all menu items and buttons that log the user off the system.
 
-- If you enable this policy setting, users will not see the Log off menu item when they press Ctrl+Alt+Del. This will prevent them from logging off unless they restart or shutdown the computer, or clicking Log off from the Start menu.
+- If you enable this policy setting, users won't see the Log off menu item when they press Ctrl+Alt+Del. This will prevent them from logging off unless they restart or shutdown the computer, or clicking Log off from the Start menu.
 
 Also, see the 'Remove Logoff on the Start Menu' policy setting.
 
-- If you disable or do not configure this policy setting, users can see and select the Log off menu item when they press Ctrl+Alt+Del.
+- If you disable or don't configure this policy setting, users can see and select the Log off menu item when they press Ctrl+Alt+Del.
 <!-- NoLogoff-Description-End -->
 
 <!-- NoLogoff-Editable-Begin -->

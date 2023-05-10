@@ -41,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Specifies the maximum number of outstanding packets permitted on the system. When the number of outstanding packets reaches this limit, the Packet Scheduler postpones all submissions to network adapters until the number falls below this limit.
 
-"Outstanding packets" are packets that the Packet Scheduler has submitted to a network adapter for transmission, but which have not yet been sent.
+"Outstanding packets" are packets that the Packet Scheduler has submitted to a network adapter for transmission, but which haven't yet been sent.
 
 - If you enable this setting, you can limit the number of outstanding packets.
 
-- If you disable this setting or do not configure it, then the setting has no effect on the system.
+- If you disable this setting or don't configure it, then the setting has no effect on the system.
 
 > [!IMPORTANT]
 > If the maximum number of outstanding packets is specified in the registry for a particular network adapter, this setting is ignored when configuring that network adapter.
@@ -108,10 +108,10 @@ By default, the Packet Scheduler limits the system to 80 percent of the bandwidt
 
 - If you enable this setting, you can use the "Bandwidth limit" box to adjust the amount of bandwidth the system can reserve.
 
-- If you disable this setting or do not configure it, the system uses the default value of 80 percent of the connection.
+- If you disable this setting or don't configure it, the system uses the default value of 80 percent of the connection.
 
 > [!IMPORTANT]
-> If a bandwidth limit is set for a particular network adapter in the registry, this setting is ignored when configuring that network adapter.
+> If a bandwidth limit's set for a particular network adapter in the registry, this setting is ignored when configuring that network adapter.
 <!-- QosNonBestEffortLimit-Description-End -->
 
 <!-- QosNonBestEffortLimit-Editable-Begin -->
@@ -230,7 +230,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Best Effort service type (ServiceTypeBestEffort). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
-This setting applies only to packets that do not conform to the flow specification.
+This setting applies only to packets that don't conform to the flow specification.
 
 - If you enable this setting, you can change the default DSCP value associated with the Best Effort service type.
 
@@ -417,7 +417,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Controlled Load service type (ServiceTypeControlledLoad). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
-This setting applies only to packets that do not conform to the flow specification.
+This setting applies only to packets that don't conform to the flow specification.
 
 - If you enable this setting, you can change the default DSCP value associated with the Controlled Load service type.
 
@@ -604,7 +604,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Guaranteed service type (ServiceTypeGuaranteed). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
-This setting applies only to packets that do not conform to the flow specification.
+This setting applies only to packets that don't conform to the flow specification.
 
 - If you enable this setting, you can change the default DSCP value associated with the Guaranteed service type.
 
@@ -791,7 +791,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Network Control service type (ServiceTypeNetworkControl). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
-This setting applies only to packets that do not conform to the flow specification.
+This setting applies only to packets that don't conform to the flow specification.
 
 - If you enable this setting, you can change the default DSCP value associated with the Network Control service type.
 
@@ -913,7 +913,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 
 <!-- QosServiceTypeNonConforming-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies an alternate link layer (Layer-2) priority value for packets that do not conform to the flow specification. The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
+Specifies an alternate link layer (Layer-2) priority value for packets that don't conform to the flow specification. The Packet Scheduler inserts the corresponding priority value in the Layer-2 header of the packets.
 
 - If you enable this setting, you can change the default priority value associated with nonconforming packets.
 
@@ -1039,7 +1039,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- Description-Source-ADMX -->
 Specifies an alternate Layer-3 Differentiated Services Code Point (DSCP) value for packets with the Qualitative service type (ServiceTypeQualitative). The Packet Scheduler inserts the corresponding DSCP value in the IP header of the packets.
 
-This setting applies only to packets that do not conform to the flow specification.
+This setting applies only to packets that don't conform to the flow specification.
 
 - If you enable this setting, you can change the default DSCP value associated with the Qualitative service type.
 
@@ -1161,11 +1161,11 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 
 <!-- QosTimerResolution-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines the smallest unit of time that the Packet Scheduler uses when scheduling packets for transmission. The Packet Scheduler cannot schedule packets for transmission more frequently than permitted by the value of this entry.
+Determines the smallest unit of time that the Packet Scheduler uses when scheduling packets for transmission. The Packet Scheduler can't schedule packets for transmission more frequently than permitted by the value of this entry.
 
 - If you enable this setting, you can override the default timer resolution established for the system, usually units of 10 microseconds.
 
-- If you disable this setting or do not configure it, the setting has no effect on the system.
+- If you disable this setting or don't configure it, the setting has no effect on the system.
 
 > [!IMPORTANT]
 > If a timer resolution is specified in the registry for a particular network adapter, then this setting is ignored when configuring that network adapter.

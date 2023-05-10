@@ -43,14 +43,14 @@ This policy setting substitutes custom alert text in the disk diagnostic message
 
 - If you enable this policy setting, Windows displays custom alert text in the disk diagnostic message. The custom text may not exceed 512 characters.
 
-- If you disable or do not configure this policy setting, Windows displays the default alert text in the disk diagnostic message.
+- If you disable or don't configure this policy setting, Windows displays the default alert text in the disk diagnostic message.
 
 No reboots or service restarts are required for this policy setting to take effect: changes take effect immediately.
 
-This policy setting only takes effect if the Disk Diagnostic scenario policy setting is enabled or not configured and the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting only takes effect if the Disk Diagnostic scenario policy setting is enabled or not configured and the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 > [!NOTE]
-> For Windows Server systems, this policy setting applies only if the Desktop Experience optional component is installed and the Remote Desktop Services role is not installed.
+> For Windows Server systems, this policy setting applies only if the Desktop Experience optional component is installed and the Remote Desktop Services role isn't installed.
 <!-- DfdAlertPolicy-Description-End -->
 
 <!-- DfdAlertPolicy-Editable-Begin -->
@@ -112,16 +112,16 @@ Self-Monitoring And Reporting Technology (S. M. A. R. T.) is a standard mechanis
 
 - If you disable this policy, S. M. A. R. T. faults are still detected and logged, but no corrective action is taken.
 
-- If you do not configure this policy setting, the DPS enables S. M. A. R. T. fault resolution by default.
+- If you don't configure this policy setting, the DPS enables S. M. A. R. T. fault resolution by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
 No reboots or service restarts are required for this policy setting to take effect: changes take effect immediately.
 
-This policy setting takes effect only when the DPS is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting takes effect only when the DPS is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 > [!NOTE]
-> For Windows Server systems, this policy setting applies only if the Desktop Experience optional component is installed and the Remote Desktop Services role is not installed.
+> For Windows Server systems, this policy setting applies only if the Desktop Experience optional component is installed and the Remote Desktop Services role isn't installed.
 <!-- WdiScenarioExecutionPolicy-Description-End -->
 
 <!-- WdiScenarioExecutionPolicy-Editable-Begin -->

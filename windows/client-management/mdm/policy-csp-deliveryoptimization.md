@@ -229,7 +229,7 @@ Options available are:
 
 2 = DHCP Option 235 Force.
 
-If this policy is not configured, the client will attempt to automatically find a cache server using DNS-SD. If set to 0, the client will not use DNS-SD to automatically find a cache server. If set to 1 or 2, the client will query DHCP Option ID 235 and use the returned value as the Cache Server Hostname. Option 2 overrides the Cache Server Hostname policy, if configured.
+If this policy isn't configured, the client will attempt to automatically find a cache server using DNS-SD. If set to 0, the client won't use DNS-SD to automatically find a cache server. If set to 1 or 2, the client will query DHCP Option ID 235 and use the returned value as the Cache Server Hostname. Option 2 overrides the Cache Server Hostname policy, if configured.
 <!-- DOCacheHostSource-Description-End -->
 
 <!-- DOCacheHostSource-Editable-Begin -->
@@ -286,11 +286,11 @@ If this policy is not configured, the client will attempt to automatically find 
 
 <!-- DODelayBackgroundDownloadFromHttp-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
+This policy allows you to delay the use of an HTTP source in a background download that's allowed to use P2P.
 
-After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
+After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that couldn't be downloaded from Peers.
 
-Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
+Note that a download that's waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 hour (3600).
 <!-- DODelayBackgroundDownloadFromHttp-Description-End -->
@@ -457,11 +457,11 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 <!-- DODelayForegroundDownloadFromHttp-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
+This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that's allowed to use P2P.
 
-After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
+After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that couldn't be downloaded from Peers.
 
-Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
+Note that a download that's waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 minute (60).
 <!-- DODelayForegroundDownloadFromHttp-Description-End -->
@@ -605,8 +605,8 @@ Specifies the download method that Delivery Optimization can use in downloads of
 | 1 | HTTP blended with peering behind the same NAT. |
 | 2 | When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2. |
 | 3 | HTTP blended with Internet peering. |
-| 99 | Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607. |
-| 100 | Bypass mode. Windows 10: Do not use Delivery Optimization and use BITS instead. Windows 11: Deprecated, use Simple mode instead. |
+| 99 | Simple download mode with no peering. Delivery Optimization downloads using HTTP only and doesn't attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607. |
+| 100 | Bypass mode. Windows 10: Don't use Delivery Optimization and use BITS instead. Windows 11: Deprecated, use Simple mode instead. |
 <!-- DODownloadMode-AllowedValues-End -->
 
 <!-- DODownloadMode-GpMapping-Begin -->
@@ -648,9 +648,9 @@ Specifies the download method that Delivery Optimization can use in downloads of
 <!-- Description-Source-ADMX -->
 Group ID must be set as a GUID. This Policy specifies an arbitrary group ID that the device belongs to.
 
-Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN.
+Use this if you need to create a single group for Local Network Peering for branches that are on different domains or aren't on the same LAN.
 
-Note this is a best effort optimization and should not be relied on for an authentication of identity.
+Note this is a best effort optimization and shouldn't be relied on for an authentication of identity.
 <!-- DOGroupId-Description-End -->
 
 <!-- DOGroupId-Editable-Begin -->
@@ -829,7 +829,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 <!-- DOMaxCacheAge-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means unlimited; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607. The default value is 604800 seconds (7 days).
+Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means unlimited; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size hasn't exceeded. The value 0 is new in Windows 10, version 1607. The default value is 604800 seconds (7 days).
 <!-- DOMaxCacheAge-Description-End -->
 
 <!-- DOMaxCacheAge-Editable-Begin -->
@@ -1335,7 +1335,7 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 
 <!-- DOMonthlyUploadDataCap-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month. The value 0 (zero) means unlimited; No monthly upload limit is applied if 0 is set. The default value is 5120 (5 TB).
+Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month. The value 0 (zero) means unlimited; No monthly upload limit's applied if 0 is set. The default value is 5120 (5 TB).
 <!-- DOMonthlyUploadDataCap-Description-End -->
 
 <!-- DOMonthlyUploadDataCap-Editable-Begin -->

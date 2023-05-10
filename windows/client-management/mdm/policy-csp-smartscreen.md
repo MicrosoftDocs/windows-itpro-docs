@@ -116,7 +116,7 @@ App Install Control is a feature of Windows Defender SmartScreen that helps prot
 
 <!-- EnableSmartScreenInShell-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that do not appear to be suspicious.
+This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
 
 Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
 
@@ -125,13 +125,13 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 - Warn and prevent bypass
 - Warn
 
-- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs will not present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
+- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 
-- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen will not warn the user again for that app if the user tells SmartScreen to run the app.
+- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
 
-- If you disable this policy, SmartScreen will be turned off for all users. Users will not be warned if they try to run suspicious apps from the Internet.
+- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
 
-- If you do not configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
 <!-- EnableSmartScreenInShell-Description-End -->
 
 <!-- EnableSmartScreenInShell-Editable-Begin -->
@@ -194,7 +194,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 
 <!-- PreventOverrideForFilesInShell-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that do not appear to be suspicious.
+This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
 
 Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
 
@@ -203,13 +203,13 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 - Warn and prevent bypass
 - Warn
 
-- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs will not present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
+- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 
-- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen will not warn the user again for that app if the user tells SmartScreen to run the app.
+- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
 
-- If you disable this policy, SmartScreen will be turned off for all users. Users will not be warned if they try to run suspicious apps from the Internet.
+- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
 
-- If you do not configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
 <!-- PreventOverrideForFilesInShell-Description-End -->
 
 <!-- PreventOverrideForFilesInShell-Editable-Begin -->
@@ -231,7 +231,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not prevent override. |
+| 0 (Default) | Don't prevent override. |
 | 1 | Prevent override. |
 <!-- PreventOverrideForFilesInShell-AllowedValues-End -->
 

@@ -215,7 +215,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- Device-CA-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- Device-CA-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-CA-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -528,7 +528,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- Device-OemEsim-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- Device-OemEsim-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-OemEsim-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -840,7 +840,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- Device-Root-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- Device-Root-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-Root-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -1154,7 +1154,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- Device-TrustedPeople-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- Device-TrustedPeople-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-TrustedPeople-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -1467,7 +1467,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- Device-TrustedPublisher-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- Device-TrustedPublisher-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-TrustedPublisher-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -1701,7 +1701,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 
 <!-- Device-UntrustedCertificates-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for certificates that are not trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
+Node for certificates that aren't trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
 <!-- Device-UntrustedCertificates-Description-End -->
 
 <!-- Device-UntrustedCertificates-Editable-Begin -->
@@ -1780,7 +1780,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- Device-UntrustedCertificates-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- Device-UntrustedCertificates-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-UntrustedCertificates-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -2093,7 +2093,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- User-CA-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- User-CA-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- User-CA-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -2406,7 +2406,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- User-OemEsim-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- User-OemEsim-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- User-OemEsim-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -2719,7 +2719,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- User-TrustedPeople-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- User-TrustedPeople-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- User-TrustedPeople-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -3032,7 +3032,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- User-TrustedPublisher-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- User-TrustedPublisher-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- User-TrustedPublisher-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -3266,7 +3266,7 @@ Returns the expiration date of the certificate. Supported operation is Get. This
 
 <!-- User-UntrustedCertificates-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for certificates that are not trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
+Node for certificates that aren't trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
 <!-- User-UntrustedCertificates-Description-End -->
 
 <!-- User-UntrustedCertificates-Editable-Begin -->
@@ -3345,7 +3345,7 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 <!-- User-UntrustedCertificates-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.
+Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 <!-- User-UntrustedCertificates-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- User-UntrustedCertificates-{CertHash}-EncodedCertificate-Editable-Begin -->

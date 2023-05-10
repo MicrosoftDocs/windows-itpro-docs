@@ -47,7 +47,7 @@ System Restore enables users, in the event of a problem, to restore their comput
 
 - If you enable this policy setting, the option to configure System Restore through System Protection is disabled.
 
-- If you disable or do not configure this policy setting, users can change the System Restore settings through System Protection.
+- If you disable or don't configure this policy setting, users can change the System Restore settings through System Protection.
 
 Also, see the "Turn off System Restore" policy setting. If the "Turn off System Restore" policy setting is enabled, the "Turn off System Restore configuration" policy setting is overwritten.
 <!-- SR_DisableConfig-Description-End -->

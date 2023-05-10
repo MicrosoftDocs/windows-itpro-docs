@@ -152,7 +152,7 @@ Character string representing the cache version set by the server.
 
 <!-- Device-{ProviderID}-ChangedNodes-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+List of nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- Device-{ProviderID}-ChangedNodes-Description-End -->
 
 <!-- Device-{ProviderID}-ChangedNodes-Editable-Begin -->
@@ -191,7 +191,7 @@ List of nodes whose values do not match their expected values as specified in /N
 
 <!-- Device-{ProviderID}-ChangedNodesData-Description-Begin -->
 <!-- Description-Source-DDF -->
-XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+XML containing nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- Device-{ProviderID}-ChangedNodesData-Description-End -->
 
 <!-- Device-{ProviderID}-ChangedNodesData-Editable-Begin -->
@@ -269,7 +269,7 @@ Root node for cached nodes.
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Information about each cached node is stored under NodeID as specified by the server. This value must not contain a comma.
+Information about each cached node is stored under NodeID as specified by the server. This value mustn't contain a comma.
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Description-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Editable-Begin -->
@@ -524,7 +524,7 @@ Character string representing the cache version set by the server.
 
 <!-- User-{ProviderID}-ChangedNodes-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+List of nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- User-{ProviderID}-ChangedNodes-Description-End -->
 
 <!-- User-{ProviderID}-ChangedNodes-Editable-Begin -->
@@ -563,7 +563,7 @@ List of nodes whose values do not match their expected values as specified in /N
 
 <!-- User-{ProviderID}-ChangedNodesData-Description-Begin -->
 <!-- Description-Source-DDF -->
-XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+XML containing nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 <!-- User-{ProviderID}-ChangedNodesData-Description-End -->
 
 <!-- User-{ProviderID}-ChangedNodesData-Editable-Begin -->
@@ -641,7 +641,7 @@ Root node for cached nodes.
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Information about each cached node is stored under NodeID as specified by the server. This value must not contain a comma.
+Information about each cached node is stored under NodeID as specified by the server. This value mustn't contain a comma.
 <!-- User-{ProviderID}-Nodes-{NodeID}-Description-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-Editable-Begin -->

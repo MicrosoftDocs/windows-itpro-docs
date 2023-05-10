@@ -263,7 +263,7 @@ This policy setting enables you to specify the URL of the corporate website, aga
 
 <!-- NCSI_DomainLocationDeterminationUrl-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
+This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it's outside the network.
 <!-- NCSI_DomainLocationDeterminationUrl-Description-End -->
 
 <!-- NCSI_DomainLocationDeterminationUrl-Editable-Begin -->
@@ -319,7 +319,7 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 <!-- NCSI_GlobalDns-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it's currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
 <!-- NCSI_GlobalDns-Description-End -->
 
 <!-- NCSI_GlobalDns-Editable-Begin -->

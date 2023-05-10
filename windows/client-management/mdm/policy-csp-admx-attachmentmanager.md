@@ -51,7 +51,7 @@ Using both the file handler and type data is the most restrictive option. Window
 
 - If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 
-- If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+- If you don't configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 <!-- AM_EstimateFileHandlerRisk-Description-End -->
 
 <!-- AM_EstimateFileHandlerRisk-Editable-Begin -->
@@ -111,13 +111,13 @@ High Risk: If the attachment is in the list of high-risk file types and is from 
 
 Moderate Risk: If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file.
 
-Low Risk: If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information.
+Low Risk: If the attachment is in the list of low-risk file types, Windows won't prompt the user before accessing the file, regardless of the file's zone information.
 
 - If you enable this policy setting, you can specify the default risk level for file types.
 
 - If you disable this policy setting, Windows sets the default risk level to moderate.
 
-- If you do not configure this policy setting, Windows sets the default risk level to moderate.
+- If you don't configure this policy setting, Windows sets the default risk level to moderate.
 <!-- AM_SetFileRiskLevel-Description-End -->
 
 <!-- AM_SetFileRiskLevel-Editable-Begin -->
@@ -177,7 +177,7 @@ This policy setting allows you to configure the list of high-risk file types. If
 
 - If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
 
-- If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
+- If you don't configure this policy setting, Windows uses its built-in list of high-risk file types.
 <!-- AM_SetHighRiskInclusion-Description-End -->
 
 <!-- AM_SetHighRiskInclusion-Editable-Begin -->
@@ -231,13 +231,13 @@ This policy setting allows you to configure the list of high-risk file types. If
 
 <!-- AM_SetLowRiskInclusion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
+This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows won't prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
 - If you enable this policy setting, you can specify file types that pose a low risk.
 
 - If you disable this policy setting, Windows uses its default trust logic.
 
-- If you do not configure this policy setting, Windows uses its default trust logic.
+- If you don't configure this policy setting, Windows uses its default trust logic.
 <!-- AM_SetLowRiskInclusion-Description-End -->
 
 <!-- AM_SetLowRiskInclusion-Editable-Begin -->
@@ -297,7 +297,7 @@ This policy setting allows you to configure the list of moderate-risk file types
 
 - If you disable this policy setting, Windows uses its default trust logic.
 
-- If you do not configure this policy setting, Windows uses its default trust logic.
+- If you don't configure this policy setting, Windows uses its default trust logic.
 <!-- AM_SetModRiskInclusion-Description-End -->
 
 <!-- AM_SetModRiskInclusion-Editable-Begin -->

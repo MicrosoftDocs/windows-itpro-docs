@@ -103,7 +103,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.
 
-- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn your users if they type their work or school password into one of the malicious scenarios described above.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen won't warn your users if they type their work or school password into one of the malicious scenarios described above.
 <!-- NotifyMalicious-Description-End -->
 
 <!-- NotifyMalicious-Editable-Begin -->
@@ -170,7 +170,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns users if they reuse their work or school password and encourages them to change it.
 
-- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they reuse their work or school password.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen won't warn users if they reuse their work or school password.
 <!-- NotifyPasswordReuse-Description-End -->
 
 <!-- NotifyPasswordReuse-Editable-Begin -->
@@ -237,7 +237,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen warns your users if they store their password in text editor apps.
 
-- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen will not warn users if they store their password in text editor apps.
+- If you disable or don't configure this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen won't warn users if they store their password in text editor apps.
 <!-- NotifyUnsafeApp-Description-End -->
 
 <!-- NotifyUnsafeApp-Editable-Begin -->
@@ -300,11 +300,11 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 <!-- ServiceEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen is in audit mode or off. Users do not see notifications for any protection scenarios when Enhanced Phishing Protection in Microsoft Defender is in audit mode. Audit mode captures unsafe password entry events and sends telemetry through Microsoft Defender.
+This policy setting determines whether Enhanced Phishing Protection in Microsoft Defender SmartScreen is in audit mode or off. Users don't see notifications for any protection scenarios when Enhanced Phishing Protection in Microsoft Defender is in audit mode. Audit mode captures unsafe password entry events and sends telemetry through Microsoft Defender.
 
 - If you enable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is enabled in audit mode and your users are unable to turn it off.
 
-- If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it will not capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
+- If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it won't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
 
 - If you don't configure this setting, users can decide whether or not they will enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
 <!-- ServiceEnabled-Description-End -->

@@ -261,7 +261,7 @@ The following list shows the VPNv2 configuration service provider nodes:
 
 <!-- Device-{ProfileName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+Unique alpha numeric identifier for the profile. The profile name mustn't include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
 <!-- Device-{ProfileName}-Description-End -->
 
 <!-- Device-{ProfileName}-Editable-Begin -->
@@ -713,7 +713,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you shouldn't skip numbers.
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Editable-Begin -->
@@ -870,7 +870,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- Device-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Do not Bypass for Local traffic
+False: Don't Bypass for Local traffic
 True: ByPass VPN Interface for Local Traffic
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
@@ -1217,7 +1217,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- Description-Source-DDF -->
 If turned on a device tunnel profile does four things.
 First, it automatically becomes an always on profile.
-Second, it does not require the presence or logging in of any user to the machine in order for it to connect.
+Second, it doesn't require the presence or logging in of any user to the machine in order for it to connect.
 Third, no other Device Tunnel profile maybe be present on the same machine.
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 <!-- Device-{ProfileName}-DeviceTunnel-Description-End -->
@@ -1241,7 +1241,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
 
 | Value | Description |
 |:--|:--|
-| false (Default) | This is not a device tunnel profile. |
+| false (Default) | This isn't a device tunnel profile. |
 | true | This is a device tunnel profile. |
 <!-- Device-{ProfileName}-DeviceTunnel-AllowedValues-End -->
 
@@ -1316,7 +1316,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. When this setting is True, the Disconnect button will not be visible for connected profiles.
+Optional. When this setting is True, the Disconnect button won't be visible for connected profiles.
 <!-- Device-{ProfileName}-DisableDisconnectButton-Description-End -->
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-Editable-Begin -->
@@ -1338,7 +1338,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 | Value | Description |
 |:--|:--|
 | false | Disconnect Button is visible. |
-| true | Disconnect Button is not visible. |
+| true | Disconnect Button isn't visible. |
 <!-- Device-{ProfileName}-DisableDisconnectButton-AllowedValues-End -->
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-Examples-Begin -->
@@ -1386,7 +1386,7 @@ Set to disable IKEv2 Fragmentation.
 
 | Value | Description |
 |:--|:--|
-| true | IKEv2 Fragmentation will not be used. |
+| true | IKEv2 Fragmentation won't be used. |
 | false (Default) | IKEv2 Fragmentation is used as normal. |
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-AllowedValues-End -->
 
@@ -1555,7 +1555,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | This DomainName rule will not trigger the VPN. |
+| false (Default) | This DomainName rule won't trigger the VPN. |
 | true | This DomainName rule will trigger the VPN. |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-AllowedValues-End -->
 
@@ -1660,7 +1660,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the namespace type. This value can be one of the following: FQDN - If the DomainName was not prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
+Returns the namespace type. This value can be one of the following: FQDN - If the DomainName wasn't prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Editable-Begin -->
@@ -1699,7 +1699,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-Begin -->
 <!-- Description-Source-DDF -->
-A boolean value that specifies if the rule being added should persist even when the VPN is not connected.
+A boolean value that specifies if the rule being added should persist even when the VPN isn't connected.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Editable-Begin -->
@@ -2290,7 +2290,7 @@ Type of user authentication.
 | Value | Description |
 |:--|:--|
 | EAP | EAP. |
-| MSChapv2 | MSChapv2: This is not supported for IKEv2. |
+| MSChapv2 | MSChapv2: This isn't supported for IKEv2. |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-AllowedValues-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-Examples-Begin -->
@@ -2810,7 +2810,7 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-Begin -->
 <!-- Description-Source-DDF -->
-True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb traffic selectors as routes.
+True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb traffic selectors as routes.
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Editable-Begin -->
@@ -3219,7 +3219,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
+Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that's deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Description-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Editable-Begin -->
@@ -3603,7 +3603,7 @@ Allows registration of the connection's address in DNS.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not register the connection's address in DNS. |
+| false (Default) | Don't register the connection's address in DNS. |
 | true | Register the connection's addresses in DNS. |
 <!-- Device-{ProfileName}-RegisterDNS-AllowedValues-End -->
 
@@ -3652,7 +3652,7 @@ Boolean value (true or false) for caching credentials.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not cache credentials. |
+| false (Default) | Don't cache credentials. |
 | true | Credentials are cached whenever possible. |
 <!-- Device-{ProfileName}-RememberCredentials-AllowedValues-End -->
 
@@ -4450,7 +4450,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Comma separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Description-End -->
 
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Editable-Begin -->
@@ -4512,7 +4512,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 | Value | Description |
 |:--|:--|
-| false | Ras Credentials are not saved. |
+| false | Ras Credentials aren't saved. |
 | true (Default) | Ras Credentials are saved. |
 <!-- Device-{ProfileName}-UseRasCredentials-AllowedValues-End -->
 
@@ -4539,7 +4539,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 <!-- User-{ProfileName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+Unique alpha numeric identifier for the profile. The profile name mustn't include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
 <!-- User-{ProfileName}-Description-End -->
 
 <!-- User-{ProfileName}-Editable-Begin -->
@@ -4991,7 +4991,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you shouldn't skip numbers.
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Editable-Begin -->
@@ -5148,7 +5148,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- User-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Do not Bypass for Local traffic
+False: Don't Bypass for Local traffic
 True: ByPass VPN Interface for Local Traffic
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
@@ -5541,7 +5541,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 
 <!-- User-{ProfileName}-DisableDisconnectButton-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. When this setting is True, the Disconnect button will not be visible for connected profiles.
+Optional. When this setting is True, the Disconnect button won't be visible for connected profiles.
 <!-- User-{ProfileName}-DisableDisconnectButton-Description-End -->
 
 <!-- User-{ProfileName}-DisableDisconnectButton-Editable-Begin -->
@@ -5563,7 +5563,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 | Value | Description |
 |:--|:--|
 | false | Disconnect Button is visible. |
-| true | Disconnect Button is not visible. |
+| true | Disconnect Button isn't visible. |
 <!-- User-{ProfileName}-DisableDisconnectButton-AllowedValues-End -->
 
 <!-- User-{ProfileName}-DisableDisconnectButton-Examples-Begin -->
@@ -5611,7 +5611,7 @@ Set to disable IKEv2 Fragmentation.
 
 | Value | Description |
 |:--|:--|
-| true | IKEv2 Fragmentation will not be used. |
+| true | IKEv2 Fragmentation won't be used. |
 | false (Default) | IKEv2 Fragmentation is used as normal. |
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-AllowedValues-End -->
 
@@ -5780,7 +5780,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | This DomainName rule will not trigger the VPN. |
+| false (Default) | This DomainName rule won't trigger the VPN. |
 | true | This DomainName rule will trigger the VPN. |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-AllowedValues-End -->
 
@@ -5885,7 +5885,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the namespace type. This value can be one of the following: FQDN - If the DomainName was not prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
+Returns the namespace type. This value can be one of the following: FQDN - If the DomainName wasn't prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Editable-Begin -->
@@ -5924,7 +5924,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-Begin -->
 <!-- Description-Source-DDF -->
-A boolean value that specifies if the rule being added should persist even when the VPN is not connected.
+A boolean value that specifies if the rule being added should persist even when the VPN isn't connected.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Editable-Begin -->
@@ -6493,7 +6493,7 @@ This is only supported in IKEv2.
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value can be one of the following: EAP or MSChapv2 (This is not supported for IKEv2).
+This value can be one of the following: EAP or MSChapv2 (This isn't supported for IKEv2).
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Editable-Begin -->
@@ -6515,7 +6515,7 @@ This value can be one of the following: EAP or MSChapv2 (This is not supported f
 | Value | Description |
 |:--|:--|
 | EAP | EAP. |
-| MSChapv2 | MSChapv2: This is not supported for IKEv2. |
+| MSChapv2 | MSChapv2: This isn't supported for IKEv2. |
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-AllowedValues-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Examples-Begin -->
@@ -7035,7 +7035,7 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-Begin -->
 <!-- Description-Source-DDF -->
-True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb traffic selectors as routes.
+True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb traffic selectors as routes.
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Editable-Begin -->
@@ -7444,7 +7444,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
+Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that's deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Description-End -->
 
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Editable-Begin -->
@@ -7828,7 +7828,7 @@ Allows registration of the connection's address in DNS.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not register the connection's address in DNS. |
+| false (Default) | Don't register the connection's address in DNS. |
 | true | Register the connection's addresses in DNS. |
 <!-- User-{ProfileName}-RegisterDNS-AllowedValues-End -->
 
@@ -7877,7 +7877,7 @@ Boolean value (true or false) for caching credentials.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not cache credentials. |
+| false (Default) | Don't cache credentials. |
 | true | Credentials are cached whenever possible. |
 <!-- User-{ProfileName}-RememberCredentials-AllowedValues-End -->
 
@@ -7906,7 +7906,7 @@ Boolean value (true or false) for caching credentials.
 <!-- Description-Source-DDF -->
 Applicable only to AppContainer profiles.
 
-False: Do not show profile in Settings UI.
+False: Don't show profile in Settings UI.
 True: Show profile in Settings UI.
 
 Optional. This node is only relevant for AppContainer profiles (i.e. using the VpnManagementAgent::AddProfileFromXmlAsync method).
@@ -8719,7 +8719,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 
 <!-- User-{ProfileName}-TrustedNetworkDetection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Comma separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 <!-- User-{ProfileName}-TrustedNetworkDetection-Description-End -->
 
 <!-- User-{ProfileName}-TrustedNetworkDetection-Editable-Begin -->
@@ -8781,7 +8781,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 | Value | Description |
 |:--|:--|
-| false | Ras Credentials are not saved. |
+| false | Ras Credentials aren't saved. |
 | true (Default) | Ras Credentials are saved. |
 <!-- User-{ProfileName}-UseRasCredentials-AllowedValues-End -->
 

@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- DisablePushToInstall-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If you enable this setting, users will not be able to push Apps to this device from the Microsoft Store running on other devices or the web.
+If you enable this setting, users won't be able to push Apps to this device from the Microsoft Store running on other devices or the web.
 <!-- DisablePushToInstall-Description-End -->
 
 <!-- DisablePushToInstall-Editable-Begin -->

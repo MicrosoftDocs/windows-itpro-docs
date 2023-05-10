@@ -43,7 +43,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines whether users can get preview builds of Windows, by configuring controls in Settings > Update and security > Windows Insider Program.
 
-- If you enable or do not configure this policy setting, users can download and install preview builds of Windows by configuring Windows Insider Program settings.
+- If you enable or don't configure this policy setting, users can download and install preview builds of Windows by configuring Windows Insider Program settings.
 
 - If you disable this policy setting, Windows Insider Program settings will be unavailable to users through the Settings app.
 
@@ -117,8 +117,8 @@ To enable this behavior:
 1. Enable this policy setting
 2. Join an Azure Active Directory account to the device
 
-Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting does not change the Windows diagnostic data collection level set for the device
-If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing".
+Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device
+If you disable or don't configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing".
 See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 <!-- AllowCommercialDataPipeline-Description-End -->
 
@@ -196,7 +196,7 @@ To enable this behavior:
 4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-This setting has no effect on devices unless they are properly enrolled in Desktop Analytics. If you disable this policy setting, devices will not appear in Desktop Analytics.
+This setting has no effect on devices unless they're properly enrolled in Desktop Analytics. If you disable this policy setting, devices won't appear in Desktop Analytics.
 <!-- AllowDesktopAnalyticsProcessing-Description-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-Editable-Begin -->
@@ -262,7 +262,7 @@ This setting has no effect on devices unless they are properly enrolled in Deskt
 <!-- Description-Source-ADMX -->
 This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.
 
-If you disable or do not configure this policy setting, then device name will not be sent to Microsoft as part of Windows diagnostic data.
+If you disable or don't configure this policy setting, then device name won't be sent to Microsoft as part of Windows diagnostic data.
 <!-- AllowDeviceNameInDiagnosticData-Description-End -->
 
 <!-- AllowDeviceNameInDiagnosticData-Editable-Begin -->
@@ -375,7 +375,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- Description-Source-DDF -->
 
 > [!NOTE]
-> This policy is not supported in Windows 10, version 1607. This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior. Most restricted value is 0.
+> This policy isn't supported in Windows 10, version 1607. This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior. Most restricted value is 0.
 <!-- AllowExperimentation-Description-End -->
 
 <!-- AllowExperimentation-Editable-Begin -->
@@ -429,9 +429,9 @@ This policy setting determines whether Windows is allowed to download fonts and 
 
 - If you enable this policy setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text.
 
-- If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally-installed fonts.
+- If you disable this policy setting, Windows doesn't connect to an online font provider and only enumerates locally-installed fonts.
 
-- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- AllowFontProviders-Description-End -->
 
 <!-- AllowFontProviders-Editable-Begin -->
@@ -522,9 +522,9 @@ Specifies whether to allow app access to the Location service. Most restricted v
 
 | Value | Description |
 |:--|:--|
-| 0 | Force Location Off. All Location Privacy settings are toggled off and grayed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search. |
+| 0 | Force Location Off. All Location Privacy settings are toggled off and grayed out. Users can't change the settings, and no apps are allowed access to the Location service, including Cortana and Search. |
 | 1 (Default) | Location service is allowed. The user has control and can change Location Privacy settings on or off. |
-| 2 | Force Location On. All Location Privacy settings are toggled on and grayed out. Users cannot change the settings and all consent permissions will be automatically suppressed. |
+| 2 | Force Location On. All Location Privacy settings are toggled on and grayed out. Users can't change the settings and all consent permissions will be automatically suppressed. |
 <!-- AllowLocation-AllowedValues-End -->
 
 <!-- AllowLocation-GpMapping-Begin -->
@@ -568,7 +568,7 @@ This policy is deprecated and will only work on Windows 10 version 1809. Setting
 This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 For customers who enroll into the Microsoft Managed Desktop service, enabling this policy is required to allow Microsoft to process data for operational and analytic needs. See <https://go.microsoft.com/fwlink/?linkid=2184944> for more information.
 hen these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-This setting has no effect on devices unless they are properly enrolled in Microsoft Managed Desktop. If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
+This setting has no effect on devices unless they're properly enrolled in Microsoft Managed Desktop. If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
 <!-- AllowMicrosoftManagedDesktopProcessing-Description-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-Begin -->
@@ -641,7 +641,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 
 | Value | Description |
 |:--|:--|
-| 0 | SD card use is not allowed and USB drives are disabled. This setting does not prevent programmatic access to the storage card. |
+| 0 | SD card use isn't allowed and USB drives are disabled. This setting doesn't prevent programmatic access to the storage card. |
 | 1 (Default) | Allow a storage card. |
 <!-- AllowStorageCard-AllowedValues-End -->
 
@@ -672,13 +672,13 @@ Controls whether the user is allowed to use the storage card for device storage.
 
 <!-- AllowTelemetry-Description-Begin -->
 <!-- Description-Source-ADMX -->
-By configuring this policy setting you can adjust what diagnostic data is collected from Windows. This policy setting also restricts the user from increasing the amount of diagnostic data collection via the Settings app. The diagnostic data collected under this policy impacts the operating system and apps that are considered part of Windows and does not apply to any additional apps installed by your organization.
+By configuring this policy setting you can adjust what diagnostic data is collected from Windows. This policy setting also restricts the user from increasing the amount of diagnostic data collection via the Settings app. The diagnostic data collected under this policy impacts the operating system and apps that are considered part of Windows and doesn't apply to any additional apps installed by your organization.
 
 - Diagnostic data off (not recommended). Using this value, no diagnostic data is sent from the device. This value is only supported on Enterprise, Education, and Server editions.
 - Send required diagnostic data. This is the minimum diagnostic data necessary to keep Windows secure, up to date, and performing as expected. Using this value disables the "Optional diagnostic data" control in the Settings app.
 - Send optional diagnostic data. Additional diagnostic data is collected that helps us to detect, diagnose and fix issues, as well as make product improvements. Required diagnostic data will always be included when you choose to send optional diagnostic data. Optional diagnostic data can also include diagnostic log files and crash dumps. Use the "Limit Dump Collection" and the "Limit Diagnostic Log Collection" policies for more granular control of what optional diagnostic data is sent.
 
-If you disable or do not configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
+If you disable or don't configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
 
 Note:
 The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
@@ -703,7 +703,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 
 | Value | Description |
 |:--|:--|
-| 0 | Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.<br>Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1. |
+| 0 | Security. Information that's required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.<br>Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1. |
 | 1 (Default) | Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level. |
 | 3 | Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels. |
 <!-- AllowTelemetry-AllowedValues-End -->
@@ -754,7 +754,7 @@ To enable this behavior:
 4. Set the Configure the Commercial ID setting for your Update Compliance workspace
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-If you disable or do not configure this policy setting, devices will not appear in Update Compliance.
+If you disable or don't configure this policy setting, devices won't appear in Update Compliance.
 <!-- AllowUpdateComplianceProcessing-Description-End -->
 
 <!-- AllowUpdateComplianceProcessing-Editable-Begin -->
@@ -876,7 +876,7 @@ To enable this behavior:
 3. Set Allow Telemetry to value 1 - Required, or higher
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
-If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
+If you disable or don't configure this policy setting, devices enrolled to the Windows Update for Business deployment service won't be able to take advantage of some deployment service features.
 <!-- AllowWUfBCloudProcessing-Description-End -->
 
 <!-- AllowWUfBCloudProcessing-Editable-Begin -->
@@ -942,16 +942,16 @@ If you disable or do not configure this policy setting, devices enrolled to the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver:
 
-  - Good: The driver has been signed and has not been tampered with.
-  - Bad: The driver has been identified as malware. It is recommended that you do not allow known bad drivers to be initialized.
-  - Bad, but required for boot: The driver has been identified as malware, but the computer cannot successfully boot without loading this driver.
-  - Unknown: This driver has not been attested to by your malware detection application and has not been classified by the Early Launch Antimalware boot-start driver.
+  - Good: The driver has been signed and hasn't been tampered with.
+  - Bad: The driver has been identified as malware. It's recommended that you don't allow known bad drivers to be initialized.
+  - Bad, but required for boot: The driver has been identified as malware, but the computer can't successfully boot without loading this driver.
+  - Unknown: This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.
 
 - If you enable this policy setting you will be able to choose which boot-start drivers to initialize the next time the computer is started.
 
-- If you disable or do not configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
+- If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
 
-If your malware detection application does not include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.
+If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.
 <!-- BootStartDriverInitialization-Description-End -->
 
 <!-- BootStartDriverInitialization-Editable-Begin -->
@@ -1064,7 +1064,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 <!-- Description-Source-ADMX -->
 This policy setting controls whether notifications are shown, following a change to diagnostic data opt-in settings, on first logon and when the changes occur in settings.
 
-If you set this policy setting to "Disable diagnostic data change notifications", diagnostic data opt-in change notifications will not appear.
+If you set this policy setting to "Disable diagnostic data change notifications", diagnostic data opt-in change notifications won't appear.
 
 If you set this policy setting to "Enable diagnostic data change notifications" or don't configure this policy setting, diagnostic data opt-in change notifications appear at first logon and when the changes occur in Settings.
 <!-- ConfigureTelemetryOptInChangeNotification-Description-End -->
@@ -1135,7 +1135,7 @@ If you set this policy setting to "Disable diagnostic data opt-in settings", dia
 If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
 
 Note:
-To set a limit on the amount of diagnostic data that is sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
+To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
 <!-- ConfigureTelemetryOptInSettingsUx-Description-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-Editable-Begin -->
@@ -1265,7 +1265,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 <!-- Description-Source-ADMX -->
 This policy setting controls whether users can enable and launch the Diagnostic Data Viewer from the Diagnostic & feedback Settings page.
 
-- If you enable this policy setting, the Diagnostic Data Viewer will not be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.
+- If you enable this policy setting, the Diagnostic Data Viewer won't be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.
 
 - If you disable or don't configure this policy setting, the Diagnostic Data Viewer will be enabled in Settings page.
 <!-- DisableDiagnosticDataViewer-Description-End -->
@@ -1387,7 +1387,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 
 <!-- DisableEnterpriseAuthProxy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
+This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or don't configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 <!-- DisableEnterpriseAuthProxy-Description-End -->
 
 <!-- DisableEnterpriseAuthProxy-Editable-Begin -->
@@ -1459,7 +1459,7 @@ This policy setting lets you prevent apps and features from working with files o
 * OneDrive files aren't kept in sync with the cloud.
 * Users can't automatically upload photos and videos from the camera roll folder.
 
-- If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.
+- If you disable or don't configure this policy setting, apps and features can work with OneDrive file storage.
 <!-- DisableOneDriveFileSync-Description-End -->
 
 <!-- DisableOneDriveFileSync-Editable-Begin -->
@@ -1524,7 +1524,7 @@ This policy setting lets you prevent apps and features from working with files o
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Windows attempts to connect with the OneSettings service.
 
-- If you enable this policy, Windows will not attempt to connect with the OneSettings Service.
+- If you enable this policy, Windows won't attempt to connect with the OneSettings Service.
 
 - If you disable or don't configure this policy setting, Windows will periodically attempt to connect with the OneSettings service to download configuration settings.
 <!-- DisableOneSettingsDownloads-Description-End -->
@@ -1594,9 +1594,9 @@ This policy setting allows you to turn off System Restore.
 
 System Restore enables users, in the event of a problem, to restore their computers to a previous state without losing personal data files. By default, System Restore is turned on for the boot volume.
 
-- If you enable this policy setting, System Restore is turned off, and the System Restore Wizard cannot be accessed. The option to configure System Restore or create a restore point through System Protection is also disabled.
+- If you enable this policy setting, System Restore is turned off, and the System Restore Wizard can't be accessed. The option to configure System Restore or create a restore point through System Protection is also disabled.
 
-- If you disable or do not configure this policy setting, users can perform System Restore and configure System Restore settings through System Protection.
+- If you disable or don't configure this policy setting, users can perform System Restore and configure System Restore settings through System Protection.
 
 Also, see the "Turn off System Restore configuration" policy setting. If the "Turn off System Restore" policy setting is disabled or not configured, the "Turn off System Restore configuration" policy setting is used to determine whether the option to configure System Restore is available.
 <!-- DisableSystemRestore-Description-End -->
@@ -1657,7 +1657,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 - If you enable this policy, Windows will record attempts to connect with the OneSettings service to the Microsoft\Windows\Privacy-Auditing\Operational EventLog channel.
 
-- If you disable or don't configure this policy setting, Windows will not record attempts to connect with the OneSettings service to the EventLog.
+- If you disable or don't configure this policy setting, Windows won't record attempts to connect with the OneSettings service to the EventLog.
 <!-- EnableOneSettingsAuditing-Description-End -->
 
 <!-- EnableOneSettingsAuditing-Editable-Begin -->
@@ -1719,7 +1719,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Description-Begin -->
 <!-- Description-Source-DDF -->
-Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy is not present or set to false, users will be presented with the option to save locally. The default is to not save locally.
+Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy isn't present or set to false, users will be presented with the option to save locally. The default is to not save locally.
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Description-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Editable-Begin -->
@@ -1741,7 +1741,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | False. The Feedback Hub will not always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so. |
+| 0 (Default) | False. The Feedback Hub won't always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so. |
 | 1 | True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted. |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-AllowedValues-End -->
 
@@ -1768,11 +1768,11 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 <!-- HideUnsupportedHardwareNotifications-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls messages which are shown when Windows is running on a device that does not meet the minimum system requirements for this OS version.
+This policy controls messages which are shown when Windows is running on a device that doesn't meet the minimum system requirements for this OS version.
 
 - If you enable this policy setting, these messages will never appear on desktop or in the Settings app.
 
-- If you disable or do not configure this policy setting, these messages will appear on desktop and in the Settings app when Windows is running on a device that does not meet the minimum system requirements for this OS version.
+- If you disable or don't configure this policy setting, these messages will appear on desktop and in the Settings app when Windows is running on a device that doesn't meet the minimum system requirements for this OS version.
 <!-- HideUnsupportedHardwareNotifications-Description-End -->
 
 <!-- HideUnsupportedHardwareNotifications-Editable-Begin -->
@@ -1837,9 +1837,9 @@ This policy controls messages which are shown when Windows is running on a devic
 <!-- Description-Source-ADMX -->
 This policy setting controls whether additional diagnostic logs are collected when more information is needed to troubleshoot a problem on the device. Diagnostic logs are only sent when the device has been configured to send optional diagnostic data.
 
-By enabling this policy setting, diagnostic logs will not be collected.
+By enabling this policy setting, diagnostic logs won't be collected.
 
-If you disable or do not configure this policy setting, we may occasionally collect diagnostic logs if the device has been configured to send optional diagnostic data.
+If you disable or don't configure this policy setting, we may occasionally collect diagnostic logs if the device has been configured to send optional diagnostic data.
 <!-- LimitDiagnosticLogCollection-Description-End -->
 
 <!-- LimitDiagnosticLogCollection-Editable-Begin -->
@@ -1905,7 +1905,7 @@ This policy setting limits the type of dumps that can be collected when more inf
 
 By enabling this setting, Windows Error Reporting is limited to sending kernel mini dumps and user mode triage dumps.
 
-If you disable or do not configure this policy setting, we may occasionally collect full or heap dumps if the user has opted to send optional diagnostic data.
+If you disable or don't configure this policy setting, we may occasionally collect full or heap dumps if the user has opted to send optional diagnostic data.
 <!-- LimitDumpCollection-Description-End -->
 
 <!-- LimitDumpCollection-Editable-Begin -->
@@ -1979,7 +1979,7 @@ To enable the behavior described above, complete the following steps:
 
 When these policies are configured, Microsoft will collect only required diagnostic data and the events required by Desktop Analytics, which can be viewed at< https://go.microsoft.com/fwlink/?linkid=2116020>.
 
-If you disable or do not configure this policy setting, diagnostic data collection is determined by the "Allow Diagnostic Data" policy setting or by the end user from the Settings app.
+If you disable or don't configure this policy setting, diagnostic data collection is determined by the "Allow Diagnostic Data" policy setting or by the end user from the Settings app.
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Description-End -->
 
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Editable-Begin -->
@@ -2043,7 +2043,7 @@ If you disable or do not configure this policy setting, diagnostic data collecti
 <!-- Description-Source-ADMX -->
 With this policy setting, you can forward Connected User Experience and Telemetry requests to a proxy server.
 
-If you enable this policy setting, you can specify the FQDN or IP address of the destination device within your organization's network (and optionally a port number, if desired). The connection will be made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if you disable or do not configure this policy setting, Connected User Experience and Telemetry data will be sent to Microsoft using the default proxy configuration.
+If you enable this policy setting, you can specify the FQDN or IP address of the destination device within your organization's network (and optionally a port number, if desired). The connection will be made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if you disable or don't configure this policy setting, Connected User Experience and Telemetry data will be sent to Microsoft using the default proxy configuration.
 
 The format for this setting is `<server>`:`<port>`
 <!-- TelemetryProxy-Description-End -->
@@ -2100,9 +2100,9 @@ The format for this setting is `<server>`:`<port>`
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off File History.
 
-- If you enable this policy setting, File History cannot be activated to create regular, automatic backups.
+- If you enable this policy setting, File History can't be activated to create regular, automatic backups.
 
-- If you disable or do not configure this policy setting, File History can be activated to create regular, automatic backups.
+- If you disable or don't configure this policy setting, File History can be activated to create regular, automatic backups.
 <!-- TurnOffFileHistory-Description-End -->
 
 <!-- TurnOffFileHistory-Editable-Begin -->

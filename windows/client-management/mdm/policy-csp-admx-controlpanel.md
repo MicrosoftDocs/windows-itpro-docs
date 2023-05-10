@@ -46,12 +46,12 @@ If you enable this setting, you can select specific items not to display on the 
 To hide a Control Panel item, enable this policy setting and click Show to access the list of disallowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft. Mouse, Microsoft. System, or Microsoft. Personalization.
 
 > [!NOTE]
-> For Windows Vista, Windows Server 2008, and earlier versions of Windows, the module name should be entered, for example timedate.cpl or inetcpl.cpl. If a Control Panel item does not have a CPL file, or the CPL file contains multiple applets, then its module name and string resource identification number should be entered, for example @systemcpl.dll,-1 for System, or @themecpl.dll,-1 for Personalization. A complete list of canonical and module names can be found in MSDN by searching "Control Panel items".
+> For Windows Vista, Windows Server 2008, and earlier versions of Windows, the module name should be entered, for example timedate.cpl or inetcpl.cpl. If a Control Panel item doesn't have a CPL file, or the CPL file contains multiple applets, then its module name and string resource identification number should be entered, for example @systemcpl.dll,-1 for System, or @themecpl.dll,-1 for Personalization. A complete list of canonical and module names can be found in MSDN by searching "Control Panel items".
 
 If both the "Hide specified Control Panel items" setting and the "Show only specified Control Panel items" setting are enabled, the "Show only specified Control Panel items" setting is ignored.
 
 > [!NOTE]
-> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
+> The Display Control Panel item can't be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
 
 > [!NOTE]
 > To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
@@ -115,7 +115,7 @@ This policy setting controls the default Control Panel view, whether by category
 
 - If this policy setting is disabled, the Control Panel opens to the category view.
 
-- If this policy setting is not configured, the Control Panel opens to the view used in the last Control Panel session.
+- If this policy setting isn't configured, the Control Panel opens to the view used in the last Control Panel session.
 
 > [!NOTE]
 > Icon size is dependent upon what the user has set it to in the previous session.
@@ -175,7 +175,7 @@ This policy setting controls the default Control Panel view, whether by category
 <!-- Description-Source-ADMX -->
 Disables all Control Panel programs and the PC settings app.
 
-This setting prevents Control.exe and SystemSettings.exe, the program files for Control Panel and PC settings, from starting. As a result, users cannot start Control Panel or PC settings, or run any of their items.
+This setting prevents Control.exe and SystemSettings.exe, the program files for Control Panel and PC settings, from starting. As a result, users can't start Control Panel or PC settings, or run any of their items.
 
 This setting removes Control Panel from:
 The Start screen
@@ -247,12 +247,12 @@ This policy setting controls which Control Panel items such as Mouse, System, or
 To display a Control Panel item, enable this policy setting and click Show to access the list of allowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft. Mouse, Microsoft. System, or Microsoft. Personalization.
 
 > [!NOTE]
-> For Windows Vista, Windows Server 2008, and earlier versions of Windows, the module name, for example timedate.cpl or inetcpl.cpl, should be entered. If a Control Panel item does not have a CPL file, or the CPL file contains multiple applets, then its module name and string resource identification number should be entered. For example, enter @systemcpl.dll,-1 for System or @themecpl.dll,-1 for Personalization. A complete list of canonical and module names of Control Panel items can be found in MSDN by searching "Control Panel items".
+> For Windows Vista, Windows Server 2008, and earlier versions of Windows, the module name, for example timedate.cpl or inetcpl.cpl, should be entered. If a Control Panel item doesn't have a CPL file, or the CPL file contains multiple applets, then its module name and string resource identification number should be entered. For example, enter @systemcpl.dll,-1 for System or @themecpl.dll,-1 for Personalization. A complete list of canonical and module names of Control Panel items can be found in MSDN by searching "Control Panel items".
 
 If both the "Hide specified Control Panel items" setting and the "Show only specified Control Panel items" setting are enabled, the "Show only specified Control Panel items" setting is ignored.
 
 > [!NOTE]
-> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
+> The Display Control Panel item can't be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
 
 > [!NOTE]
 > To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.

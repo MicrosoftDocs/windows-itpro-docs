@@ -50,7 +50,7 @@ This policy setting allows you to add a specific list of search providers to the
 > [!NOTE]
 > This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
 
-- If you disable or do not configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.
+- If you disable or don't configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.
 <!-- AddSearchProvider-Description-End -->
 
 <!-- AddSearchProvider-Editable-Begin -->
@@ -111,9 +111,9 @@ This policy setting allows you to add a specific list of search providers to the
 <!-- Description-Source-ADMX -->
 This policy setting controls the ActiveX Filtering feature for websites that are running ActiveX controls. The user can choose to turn off ActiveX Filtering for specific websites so that ActiveX controls can run properly.
 
-- If you enable this policy setting, ActiveX Filtering is enabled by default for the user. The user cannot turn off ActiveX Filtering, although they may add per-site exceptions.
+- If you enable this policy setting, ActiveX Filtering is enabled by default for the user. The user can't turn off ActiveX Filtering, although they may add per-site exceptions.
 
-- If you disable or do not configure this policy setting, ActiveX Filtering is not enabled by default for the user. The user can turn ActiveX Filtering on or off.
+- If you disable or don't configure this policy setting, ActiveX Filtering isn't enabled by default for the user. The user can turn ActiveX Filtering on or off.
 <!-- AllowActiveXFiltering-Description-End -->
 
 <!-- AllowActiveXFiltering-Editable-Begin -->
@@ -239,11 +239,11 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 <!-- Description-Source-ADMX -->
 This AutoComplete feature can remember and suggest User names and passwords on Forms.
 
-- If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
+- If you enable this setting, the user can't change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
 
-- If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords.
+- If you disable this setting the user can't change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also can't opt to be prompted to save passwords.
 
-- If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
+- If you don't configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
 <!-- AllowAutoComplete-Description-End -->
 
 <!-- AllowAutoComplete-Editable-Begin -->
@@ -306,7 +306,7 @@ This policy setting allows you to turn on the certificate address mismatch secur
 
 - If you enable this policy setting, the certificate address mismatch warning always appears.
 
-- If you disable or do not configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).
+- If you disable or don't configure this policy setting, the user can choose whether the certificate address mismatch warning appears (by using the Advanced page in the Internet Control panel).
 <!-- AllowCertificateAddressMismatchWarning-Description-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-Editable-Begin -->
@@ -367,11 +367,11 @@ This policy setting allows you to turn on the certificate address mismatch secur
 <!-- Description-Source-ADMX -->
 This policy setting allows the automatic deletion of specified items when the last browser window closes. The preferences selected in the Delete Browsing History dialog box (such as deleting temporary Internet files, cookies, history, form data, and passwords) are applied, and those items are deleted.
 
-- If you enable this policy setting, deleting browsing history on exit is turned on.
+- If you enable this policy setting, deleting browsing history on exit's turned on.
 
-- If you disable this policy setting, deleting browsing history on exit is turned off.
+- If you disable this policy setting, deleting browsing history on exit's turned off.
 
-- If you do not configure this policy setting, it can be configured on the General tab in Internet Options.
+- If you don't configure this policy setting, it can be configured on the General tab in Internet Options.
 
 If the "Prevent access to Delete Browsing History" policy setting is enabled, this policy setting has no effect.
 <!-- AllowDeletingBrowsingHistoryOnExit-Description-End -->
@@ -434,11 +434,11 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- Description-Source-ADMX -->
 Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system.
 
-- If you enable this policy setting, Enhanced Protected Mode will be turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users will not be able to disable Enhanced Protected Mode.
+- If you enable this policy setting, Enhanced Protected Mode will be turned on. Any zone that has Protected Mode enabled will use Enhanced Protected Mode. Users won't be able to disable Enhanced Protected Mode.
 
 - If you disable this policy setting, Enhanced Protected Mode will be turned off. Any zone that has Protected Mode enabled will use the version of Protected Mode introduced in Internet Explorer 7 for Windows Vista.
 
-- If you do not configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.
+- If you don't configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.
 <!-- AllowEnhancedProtectedMode-Description-End -->
 
 <!-- AllowEnhancedProtectedMode-Editable-Begin -->
@@ -684,9 +684,9 @@ This policy setting lets you specify where to find the list of websites you want
 <!-- Description-Source-ADMX -->
 This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below when TLS 1.0 or greater fails.
 
-We recommend that you do not allow insecure fallback in order to prevent a man-in-the-middle attack.
+We recommend that you don't allow insecure fallback in order to prevent a man-in-the-middle attack.
 
-This policy does not affect which security protocols are enabled.
+This policy doesn't affect which security protocols are enabled.
 
 If you disable this policy, system defaults will be used.
 <!-- AllowFallbackToSSL3-Description-End -->
@@ -748,9 +748,9 @@ If you disable this policy, system defaults will be used.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to add specific sites that must be viewed in Internet Explorer 7 Compatibility View.
 
-- If you enable this policy setting, the user can add and remove sites from the list, but the user cannot remove the entries that you specify.
+- If you enable this policy setting, the user can add and remove sites from the list, but the user can't remove the entries that you specify.
 
-- If you disable or do not configure this policy setting, the user can add and remove sites from the list.
+- If you disable or don't configure this policy setting, the user can add and remove sites from the list.
 <!-- AllowInternetExplorer7PolicyList-Description-End -->
 
 <!-- AllowInternetExplorer7PolicyList-Editable-Begin -->
@@ -810,11 +810,11 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 <!-- Description-Source-ADMX -->
 This policy setting controls how Internet Explorer displays local intranet content. Intranet content is defined as any webpage that belongs to the local intranet security zone.
 
-- If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user cannot change this behavior through the Compatibility View Settings dialog box.
+- If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user can't change this behavior through the Compatibility View Settings dialog box.
 
-- If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user cannot change this behavior through the Compatibility View Settings dialog box.
+- If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user can't change this behavior through the Compatibility View Settings dialog box.
 
-- If you do not configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.
+- If you don't configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.
 <!-- AllowInternetExplorerStandardsMode-Description-End -->
 
 <!-- AllowInternetExplorerStandardsMode-Editable-Begin -->
@@ -879,11 +879,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowInternetZoneTemplate-Description-End -->
 
 <!-- AllowInternetZoneTemplate-Editable-Begin -->
@@ -948,11 +948,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowIntranetZoneTemplate-Description-End -->
 
 <!-- AllowIntranetZoneTemplate-Editable-Begin -->
@@ -1017,11 +1017,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLocalMachineZoneTemplate-Description-End -->
 
 <!-- AllowLocalMachineZoneTemplate-Editable-Begin -->
@@ -1086,11 +1086,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownInternetZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownInternetZoneTemplate-Editable-Begin -->
@@ -1155,11 +1155,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownIntranetZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownIntranetZoneTemplate-Editable-Begin -->
@@ -1224,11 +1224,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownLocalMachineZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-Editable-Begin -->
@@ -1293,11 +1293,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Description-End -->
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-Editable-Begin -->
@@ -1358,9 +1358,9 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- Description-Source-ADMX -->
 This policy allows the user to go directly to an intranet site for a one-word entry in the Address bar.
 
-- If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it is available.
+- If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it's available.
 
-- If you disable or do not configure this policy setting, Internet Explorer does not go directly to an intranet site for a one-word entry in the Address bar.
+- If you disable or don't configure this policy setting, Internet Explorer doesn't go directly to an intranet site for a one-word entry in the Address bar.
 <!-- AllowOneWordEntry-Description-End -->
 
 <!-- AllowOneWordEntry-Editable-Begin -->
@@ -1423,7 +1423,7 @@ This policy setting allows admins to enable "Save Target As" context menu in Int
 
 - If you enable this policy, "Save Target As" will show up in the Internet Explorer mode context menu and work the same as Internet Explorer.
 
-- If you disable or do not configure this policy setting, "Save Target As" will not show up in the Internet Explorer mode context menu.
+- If you disable or don't configure this policy setting, "Save Target As" won't show up in the Internet Explorer mode context menu.
 
 For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- AllowSaveTargetAsInIEMode-Description-End -->
@@ -1504,11 +1504,11 @@ Internet Explorer has 4 security zones, numbered 1-4, and these are used by this
 
 - If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site. For each entry that you add to the list, enter the following information:
 
-Valuename - A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also include a specific protocol. For example, if you enter <https://www.contoso.com> as the valuename, other protocols are not affected. If you enter just www.contoso.com, then all protocols are affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, do not include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for www.contoso.com and www.contoso.com/mail would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.
+Valuename - A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also include a specific protocol. For example, if you enter <https://www.contoso.com> as the valuename, other protocols aren't affected. If you enter just www.contoso.com, then all protocols are affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, don't include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for www.contoso.com and www.contoso.com/mail would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.
 
 Value - A number indicating the zone with which this site should be associated for security settings. The Internet Explorer zones described above are 1-4.
 
-- If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
+- If you disable or don't configure this policy, users may choose their own site-to-zone assignments.
 <!-- AllowSiteToZoneAssignmentList-Description-End -->
 
 <!-- AllowSiteToZoneAssignmentList-Editable-Begin -->
@@ -1601,11 +1601,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Description-End -->
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-Editable-Begin -->
@@ -1668,9 +1668,9 @@ This policy setting allows you to manage whether software, such as ActiveX contr
 
 - If you enable this policy setting, users will be prompted to install or run files with an invalid signature.
 
-- If you disable this policy setting, users cannot run or install files with an invalid signature.
+- If you disable this policy setting, users can't run or install files with an invalid signature.
 
-- If you do not configure this policy, users can choose to run or install files with an invalid signature.
+- If you don't configure this policy, users can choose to run or install files with an invalid signature.
 <!-- AllowSoftwareWhenSignatureIsInvalid-Description-End -->
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-Editable-Begin -->
@@ -1735,11 +1735,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowsRestrictedSitesZoneTemplate-Description-End -->
 
 <!-- AllowsRestrictedSitesZoneTemplate-Editable-Begin -->
@@ -1800,11 +1800,11 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- Description-Source-ADMX -->
 This policy setting controls the Suggested Sites feature, which recommends websites based on the user's browsing activity. Suggested Sites reports a user's browsing history to Microsoft to suggest sites that the user might want to visit.
 
-- If you enable this policy setting, the user is not prompted to enable Suggested Sites. The user's browsing history is sent to Microsoft to produce suggestions.
+- If you enable this policy setting, the user isn't prompted to enable Suggested Sites. The user's browsing history is sent to Microsoft to produce suggestions.
 
 - If you disable this policy setting, the entry points and functionality associated with this feature are turned off.
 
-- If you do not configure this policy setting, the user can turn on and turn off the Suggested Sites feature.
+- If you don't configure this policy setting, the user can turn on and turn off the Suggested Sites feature.
 <!-- AllowSuggestedSites-Description-End -->
 
 <!-- AllowSuggestedSites-Editable-Begin -->
@@ -1869,11 +1869,11 @@ This template policy setting allows you to configure policy settings in this zon
 
 - If you disable this template policy setting, no security level is configured.
 
-- If you do not configure this template policy setting, no security level is configured.
+- If you don't configure this template policy setting, no security level is configured.
 
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+Note. It's recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 <!-- AllowTrustedSitesZoneTemplate-Description-End -->
 
 <!-- AllowTrustedSitesZoneTemplate-Editable-Begin -->
@@ -1932,13 +1932,13 @@ Note. It is recommended to configure template policy settings in one Group Polic
 
 <!-- CheckServerCertificateRevocation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether Internet Explorer will check revocation status of servers' certificates. Certificates are revoked when they have been compromised or are no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure.
+This policy setting allows you to manage whether Internet Explorer will check revocation status of servers' certificates. Certificates are revoked when they've been compromised or are no longer valid, and this option protects users from submitting confidential data to a site that may be fraudulent or not secure.
 
 - If you enable this policy setting, Internet Explorer will check to see if server certificates have been revoked.
 
-- If you disable this policy setting, Internet Explorer will not check server certificates to see if they have been revoked.
+- If you disable this policy setting, Internet Explorer won't check server certificates to see if they've been revoked.
 
-- If you do not configure this policy setting, Internet Explorer will not check server certificates to see if they have been revoked.
+- If you don't configure this policy setting, Internet Explorer won't check server certificates to see if they've been revoked.
 <!-- CheckServerCertificateRevocation-Description-End -->
 
 <!-- CheckServerCertificateRevocation-Editable-Begin -->
@@ -2001,9 +2001,9 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 
 - If you enable this policy setting, Internet Explorer will check the digital signatures of executable programs and display their identities before downloading them to user computers.
 
-- If you disable this policy setting, Internet Explorer will not check the digital signatures of executable programs or display their identities before downloading them to user computers.
+- If you disable this policy setting, Internet Explorer won't check the digital signatures of executable programs or display their identities before downloading them to user computers.
 
-- If you do not configure this policy, Internet Explorer will not check the digital signatures of executable programs or display their identities before downloading them to user computers.
+- If you don't configure this policy, Internet Explorer won't check the digital signatures of executable programs or display their identities before downloading them to user computers.
 <!-- CheckSignaturesOnDownloadedPrograms-Description-End -->
 
 <!-- CheckSignaturesOnDownloadedPrograms-Editable-Begin -->
@@ -2062,7 +2062,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 
 <!-- ConfigureEdgeRedirectChannel-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions are not installed on the device, that preference will be bypassed.
+Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions aren't installed on the device, that preference will be bypassed.
 
 If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
 
@@ -2073,7 +2073,7 @@ If both the Windows Update for the next version of Microsoft Edge* and Microsoft
 3 = Microsoft Edge Dev version 77 or later
 4 = Microsoft Edge Canary version 77 or later
 
-If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel are not installed, the following behaviors occur:
+If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel aren't installed, the following behaviors occur:
 
   - If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
   - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
@@ -2354,9 +2354,9 @@ This policy setting determines whether Internet Explorer requires that all file-
 
 - If you enable this policy setting, Internet Explorer requires consistent MIME data for all received files.
 
-- If you disable this policy setting, Internet Explorer will not require consistent MIME data for all received files.
+- If you disable this policy setting, Internet Explorer won't require consistent MIME data for all received files.
 
-- If you do not configure this policy setting, Internet Explorer requires consistent MIME data for all received files.
+- If you don't configure this policy setting, Internet Explorer requires consistent MIME data for all received files.
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Description-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-Editable-Begin -->
@@ -2479,7 +2479,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 
 - If you enable this policy setting, SmartScreen Filter warnings block the user.
 
-- If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
+- If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.
 <!-- DisableBypassOfSmartScreenWarnings-Description-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-Editable-Begin -->
@@ -2538,11 +2538,11 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users do not commonly download from the Internet.
+This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users don't commonly download from the Internet.
 
 - If you enable this policy setting, SmartScreen Filter warnings block the user.
 
-- If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
+- If you disable or don't configure this policy setting, the user can bypass SmartScreen Filter warnings.
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Description-End -->
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-Editable-Begin -->
@@ -2603,9 +2603,9 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- Description-Source-ADMX -->
 This policy setting controls the Compatibility View feature, which allows the user to fix website display problems that he or she may encounter while browsing.
 
-- If you enable this policy setting, the user cannot use the Compatibility View button or manage the Compatibility View sites list.
+- If you enable this policy setting, the user can't use the Compatibility View button or manage the Compatibility View sites list.
 
-- If you disable or do not configure this policy setting, the user can use the Compatibility View button and manage the Compatibility View sites list.
+- If you disable or don't configure this policy setting, the user can use the Compatibility View button and manage the Compatibility View sites list.
 <!-- DisableCompatView-Description-End -->
 
 <!-- DisableCompatView-Editable-Begin -->
@@ -2666,9 +2666,9 @@ This policy setting controls the Compatibility View feature, which allows the us
 <!-- Description-Source-ADMX -->
 This setting specifies the number of days that Internet Explorer tracks views of pages in the History List. To access the Temporary Internet Files and History Settings dialog box, from the Menu bar, on the Tools menu, click Internet Options, click the General tab, and then click Settings under Browsing history.
 
-- If you enable this policy setting, a user cannot set the number of days that Internet Explorer tracks views of the pages in the History List. You must specify the number of days that Internet Explorer tracks views of pages in the History List. Users can not delete browsing history.
+- If you enable this policy setting, a user can't set the number of days that Internet Explorer tracks views of the pages in the History List. You must specify the number of days that Internet Explorer tracks views of pages in the History List. Users can't delete browsing history.
 
-- If you disable or do not configure this policy setting, a user can set the number of days that Internet Explorer tracks views of pages in the History list. Users can delete browsing history.
+- If you disable or don't configure this policy setting, a user can set the number of days that Internet Explorer tracks views of pages in the History list. Users can delete browsing history.
 <!-- DisableConfiguringHistory-Description-End -->
 
 <!-- DisableConfiguringHistory-Editable-Begin -->
@@ -2731,7 +2731,7 @@ This policy setting allows you to manage the crash detection feature of add-on M
 
 - If you enable this policy setting, a crash in Internet Explorer will exhibit behavior found in Windows XP Professional Service Pack 1 and earlier, namely to invoke Windows Error Reporting. All policy settings for Windows Error Reporting continue to apply.
 
-- If you disable or do not configure this policy setting, the crash detection feature for add-on management will be functional.
+- If you disable or don't configure this policy setting, the crash detection feature for add-on management will be functional.
 <!-- DisableCrashDetection-Description-End -->
 
 <!-- DisableCrashDetection-Editable-Begin -->
@@ -2792,11 +2792,11 @@ This policy setting allows you to manage the crash detection feature of add-on M
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from participating in the Customer Experience Improvement Program (CEIP).
 
-- If you enable this policy setting, the user cannot participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.
+- If you enable this policy setting, the user can't participate in the CEIP, and the Customer Feedback Options command doesn't appear on the Help menu.
 
-- If you disable this policy setting, the user must participate in the CEIP, and the Customer Feedback Options command does not appear on the Help menu.
+- If you disable this policy setting, the user must participate in the CEIP, and the Customer Feedback Options command doesn't appear on the Help menu.
 
-- If you do not configure this policy setting, the user can choose to participate in the CEIP.
+- If you don't configure this policy setting, the user can choose to participate in the CEIP.
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Description-End -->
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-Editable-Begin -->
@@ -2861,7 +2861,7 @@ This policy setting prevents the user from deleting the history of websites that
 
 - If you disable this policy setting, websites that the user has visited are deleted when he or she clicks Delete.
 
-- If you do not configure this policy setting, the user can choose whether to delete or preserve visited websites when he or she clicks Delete.
+- If you don't configure this policy setting, the user can choose whether to delete or preserve visited websites when he or she clicks Delete.
 
 If the "Prevent access to Delete Browsing History" policy setting is enabled, this policy setting is enabled by default.
 <!-- DisableDeletingUserVisitedWebsites-Description-End -->
@@ -2924,9 +2924,9 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from having enclosures (file attachments) downloaded from a feed to the user's computer.
 
-- If you enable this policy setting, the user cannot set the Feed Sync Engine to download an enclosure through the Feed property page. A developer cannot change the download setting through the Feed APIs.
+- If you enable this policy setting, the user can't set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can't change the download setting through the Feed APIs.
 
-- If you disable or do not configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.
+- If you disable or don't configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.
 <!-- DisableEnclosureDownloading-Description-End -->
 
 <!-- DisableEnclosureDownloading-Editable-Begin -->
@@ -2987,9 +2987,9 @@ This policy setting prevents the user from having enclosures (file attachments) 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off support for Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0, or SSL 3.0 in the browser. TLS and SSL are protocols that help protect communication between the browser and the target server. When the browser attempts to set up a protected communication with the target server, the browser and server negotiate which protocol and version to use. The browser and server attempt to match each other's list of supported protocols and versions, and they select the most preferred match.
 
-- If you enable this policy setting, the browser negotiates or does not negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.
+- If you enable this policy setting, the browser negotiates or doesn't negotiate an encryption tunnel by using the encryption methods that you select from the drop-down list.
 
-- If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.
+- If you disable or don't configure this policy setting, the user can select which encryption method the browser supports.
 
 > [!NOTE]
 > SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
@@ -3054,7 +3054,7 @@ This policy setting controls whether to have background synchronization for feed
 
 - If you enable this policy setting, the ability to synchronize feeds and Web Slices in the background is turned off.
 
-- If you disable or do not configure this policy setting, the user can synchronize feeds and Web Slices in the background.
+- If you disable or don't configure this policy setting, the user can synchronize feeds and Web Slices in the background.
 <!-- DisableFeedsBackgroundSync-Description-End -->
 
 <!-- DisableFeedsBackgroundSync-Editable-Begin -->
@@ -3120,9 +3120,9 @@ This policy setting prevents Internet Explorer from running the First Run wizard
   - Skip the First Run wizard, and go directly to the user's home page.
   - Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
 
-Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not available. The user's home page will display regardless of which option is chosen.
+Starting with Windows 8, the "Welcome to Internet Explorer" webpage isn't available. The user's home page will display regardless of which option is chosen.
 
-- If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.
+- If you disable or don't configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.
 <!-- DisableFirstRunWizard-Description-End -->
 
 <!-- DisableFirstRunWizard-Editable-Begin -->
@@ -3253,7 +3253,7 @@ This policy setting allows you to disable browser geolocation support. This will
 
 - If you disable this policy setting, browser geolocation support is turned on.
 
-- If you do not configure this policy setting, browser geolocation support can be turned on or off in Internet Options on the Privacy tab.
+- If you don't configure this policy setting, browser geolocation support can be turned on or off in Internet Options on the Privacy tab.
 <!-- DisableGeolocation-Description-End -->
 
 <!-- DisableGeolocation-Editable-Begin -->
@@ -3308,11 +3308,11 @@ This policy setting allows you to disable browser geolocation support. This will
 
 <!-- DisableHomePageChange-Description-Begin -->
 <!-- Description-Source-ADMX -->
-The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it is run.
+The Home page specified on the General tab of the Internet Options dialog box is the default Web page that Internet Explorer loads whenever it's run.
 
-- If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
+- If you enable this policy setting, a user can't set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
 
-- If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.
+- If you disable or don't configure this policy setting, the Home page box is enabled and users can choose their own home page.
 <!-- DisableHomePageChange-Description-End -->
 
 <!-- DisableHomePageChange-Editable-Begin -->
@@ -3375,7 +3375,7 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 
 - If you enable this policy setting, running the HTML Application (HTA file) will be blocked.
 
-- If you disable or do not configure this policy setting, running the HTML Application (HTA file) is allowed.
+- If you disable or don't configure this policy setting, running the HTML Application (HTA file) is allowed.
 <!-- DisableHTMLApplication-Description-End -->
 
 <!-- DisableHTMLApplication-Editable-Begin -->
@@ -3436,9 +3436,9 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from ignoring Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate errors that interrupt browsing (such as "expired", "revoked", or "name mismatch" errors) in Internet Explorer.
 
-- If you enable this policy setting, the user cannot continue browsing.
+- If you enable this policy setting, the user can't continue browsing.
 
-- If you disable or do not configure this policy setting, the user can choose to ignore certificate errors and continue browsing.
+- If you disable or don't configure this policy setting, the user can choose to ignore certificate errors and continue browsing.
 <!-- DisableIgnoringCertificateErrors-Description-End -->
 
 <!-- DisableIgnoringCertificateErrors-Editable-Begin -->
@@ -3505,7 +3505,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 
 - If you disable this policy setting, InPrivate Browsing is available for use.
 
-- If you do not configure this policy setting, InPrivate Browsing can be turned on or off through the registry.
+- If you don't configure this policy setting, InPrivate Browsing can be turned on or off through the registry.
 <!-- DisableInPrivateBrowsing-Description-End -->
 
 <!-- DisableInPrivateBrowsing-Editable-Begin -->
@@ -3727,9 +3727,9 @@ This policy setting determines whether Internet Explorer 11 uses 64-bit processe
 <!-- Description-Source-ADMX -->
 This policy setting specifies if a user can change proxy settings.
 
-- If you enable this policy setting, the user will not be able to configure proxy settings.
+- If you enable this policy setting, the user won't be able to configure proxy settings.
 
-- If you disable or do not configure this policy setting, the user can configure proxy settings.
+- If you disable or don't configure this policy setting, the user can configure proxy settings.
 <!-- DisableProxyChange-Description-End -->
 
 <!-- DisableProxyChange-Editable-Begin -->
@@ -3790,9 +3790,9 @@ This policy setting specifies if a user can change proxy settings.
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from changing the default search provider for the Address bar and the toolbar Search box.
 
-- If you enable this policy setting, the user cannot change the default search provider.
+- If you enable this policy setting, the user can't change the default search provider.
 
-- If you disable or do not configure this policy setting, the user can change the default search provider.
+- If you disable or don't configure this policy setting, the user can change the default search provider.
 <!-- DisableSearchProviderChange-Description-End -->
 
 <!-- DisableSearchProviderChange-Editable-Begin -->
@@ -3853,12 +3853,12 @@ This policy setting prevents the user from changing the default search provider 
 <!-- Description-Source-ADMX -->
 Secondary home pages are the default Web pages that Internet Explorer loads in separate tabs from the home page whenever the browser is run. This policy setting allows you to set default secondary home pages.
 
-- If you enable this policy setting, you can specify which default home pages should load as secondary home pages. The user cannot set custom default secondary home pages.
+- If you enable this policy setting, you can specify which default home pages should load as secondary home pages. The user can't set custom default secondary home pages.
 
-- If you disable or do not configure this policy setting, the user can add secondary home pages.
+- If you disable or don't configure this policy setting, the user can add secondary home pages.
 
 > [!NOTE]
-> If the "Disable Changing Home Page Settings" policy is enabled, the user cannot add secondary home pages.
+> If the "Disable Changing Home Page Settings" policy is enabled, the user can't add secondary home pages.
 <!-- DisableSecondaryHomePageChange-Description-End -->
 
 <!-- DisableSecondaryHomePageChange-Editable-Begin -->
@@ -3920,7 +3920,7 @@ This policy setting turns off the Security Settings Check feature, which checks 
 
 - If you enable this policy setting, the feature is turned off.
 
-- If you disable or do not configure this policy setting, the feature is turned on.
+- If you disable or don't configure this policy setting, the feature is turned on.
 <!-- DisableSecuritySettingsCheck-Description-End -->
 
 <!-- DisableSecuritySettingsCheck-Editable-Begin -->
@@ -3977,9 +3977,9 @@ This policy setting turns off the Security Settings Check feature, which checks 
 <!-- Description-Source-ADMX -->
 Prevents Internet Explorer from checking whether a new version of the browser is available.
 
-- If you enable this policy, it prevents Internet Explorer from checking to see whether it is the latest available browser version and notifying users if a new version is available.
+- If you enable this policy, it prevents Internet Explorer from checking to see whether it's the latest available browser version and notifying users if a new version is available.
 
-- If you disable this policy or do not configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.
+- If you disable this policy or don't configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.
 
 This policy is intended to help the administrator maintain version control for Internet Explorer by preventing users from being notified about new versions of the browser.
 <!-- DisableUpdateCheck-Description-End -->
@@ -4042,11 +4042,11 @@ This policy is intended to help the administrator maintain version control for I
 <!-- Description-Source-ADMX -->
 This AutoComplete feature suggests possible matches when users are entering Web addresses in the browser address bar.
 
-- If you enable this policy setting, user will not be suggested matches when entering Web addresses. The user cannot change the auto-complete for web-address setting.
+- If you enable this policy setting, user won't be suggested matches when entering Web addresses. The user can't change the auto-complete for web-address setting.
 
-- If you disable this policy setting, user will be suggested matches when entering Web addresses. The user cannot change the auto-complete for web-address setting.
+- If you disable this policy setting, user will be suggested matches when entering Web addresses. The user can't change the auto-complete for web-address setting.
 
-- If you do not configure this policy setting, a user will have the freedom to choose to turn the auto-complete setting for web-addresses on or off.
+- If you don't configure this policy setting, a user will have the freedom to choose to turn the auto-complete setting for web-addresses on or off.
 <!-- DisableWebAddressAutoComplete-Description-End -->
 
 <!-- DisableWebAddressAutoComplete-Editable-Begin -->
@@ -4105,15 +4105,15 @@ This AutoComplete feature suggests possible matches when users are entering Web 
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that is not compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode.
+This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that isn't compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode.
 
 Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system.
 
-When Enhanced Protected Mode is enabled, and a user encounters a website that attempts to load an ActiveX control that is not compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website.
+When Enhanced Protected Mode is enabled, and a user encounters a website that attempts to load an ActiveX control that isn't compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website.
 
-- If you enable this policy setting, Internet Explorer will not give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode.
+- If you enable this policy setting, Internet Explorer won't give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode.
 
-- If you disable or do not configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode. This is the default behavior.
+- If you disable or don't configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode. This is the default behavior.
 <!-- DoNotAllowActiveXControlsInProtectedMode-Description-End -->
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-Editable-Begin -->
@@ -4172,12 +4172,12 @@ Prevents users from adding or removing sites from security zones. A security zon
 
 - If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.)
 
-- If you disable this policy or do not configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.
+- If you disable this policy or don't configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.
 
 This policy prevents users from changing site management settings for security zones established by the administrator.
 
 > [!NOTE]
-> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
+> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it's enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToAddSites-Description-End -->
@@ -4238,12 +4238,12 @@ Prevents users from changing security zone settings. A security zone is a group 
 
 - If you enable this policy, the Custom Level button and security-level slider on the Security tab in the Internet Options dialog box are disabled.
 
-- If you disable this policy or do not configure it, users can change the settings for security zones.
+- If you disable this policy or don't configure it, users can change the settings for security zones.
 
 This policy prevents users from changing security zone settings established by the administrator.
 
 > [!NOTE]
-> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
+> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it's enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToChangePolicies-Description-End -->
@@ -4443,7 +4443,7 @@ This policy setting lets admins enable extended Microsoft Edge Internet Explorer
 
 If you enable this policy, extended hotkey functionality is enabled in Internet Explorer mode and work the same as Internet Explorer.
 
-If you disable, or don't configure this policy, extended hotkeys will not work in Internet Explorer mode.
+If you disable, or don't configure this policy, extended hotkeys won't work in Internet Explorer mode.
 
 For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableExtendedIEModeHotkeys-Description-End -->
@@ -4571,13 +4571,13 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 
 <!-- IncludeAllLocalSites-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether local sites which are not explicitly mapped into any Security Zone are forced into the local Intranet security zone.
+This policy setting controls whether local sites which aren't explicitly mapped into any Security Zone are forced into the local Intranet security zone.
 
-- If you enable this policy setting, local sites which are not explicitly mapped into a zone are considered to be in the Intranet Zone.
+- If you enable this policy setting, local sites which aren't explicitly mapped into a zone are considered to be in the Intranet Zone.
 
-- If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered to be in the Intranet Zone (so would typically be in the Internet Zone).
+- If you disable this policy setting, local sites which aren't explicitly mapped into a zone won't be considered to be in the Intranet Zone (so would typically be in the Internet Zone).
 
-- If you do not configure this policy setting, users choose whether to force local sites into the Intranet Zone.
+- If you don't configure this policy setting, users choose whether to force local sites into the Intranet Zone.
 <!-- IncludeAllLocalSites-Description-End -->
 
 <!-- IncludeAllLocalSites-Editable-Begin -->
@@ -4640,9 +4640,9 @@ This policy setting controls whether URLs representing UNCs are mapped into the 
 
 - If you enable this policy setting, all network paths are mapped into the Intranet Zone.
 
-- If you disable this policy setting, network paths are not necessarily mapped into the Intranet Zone (other rules might map one there).
+- If you disable this policy setting, network paths aren't necessarily mapped into the Intranet Zone (other rules might map one there).
 
-- If you do not configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.
+- If you don't configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.
 <!-- IncludeAllNetworkPaths-Description-End -->
 
 <!-- IncludeAllNetworkPaths-Editable-Begin -->
@@ -4705,9 +4705,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- InternetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- InternetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -4767,11 +4767,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -4833,7 +4833,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -4897,9 +4897,9 @@ This policy setting allows you to manage whether scripts can perform a clipboard
 
 If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
 
-- If you disable this policy setting, a script cannot perform a clipboard operation.
+- If you disable this policy setting, a script can't perform a clipboard operation.
 
-- If you do not configure this policy setting, a script can perform a clipboard operation.
+- If you don't configure this policy setting, a script can perform a clipboard operation.
 <!-- InternetZoneAllowCopyPasteViaScript-Description-End -->
 
 <!-- InternetZoneAllowCopyPasteViaScript-Editable-Begin -->
@@ -4963,7 +4963,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 
 - If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone.
 
-- If you do not configure this policy setting, users can drag files or copy and paste files from this zone automatically.
+- If you don't configure this policy setting, users can drag files or copy and paste files from this zone automatically.
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Description-End -->
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-Editable-Begin -->
@@ -5029,7 +5029,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- InternetZoneAllowFontDownloads-Description-End -->
 
 <!-- InternetZoneAllowFontDownloads-Editable-Begin -->
@@ -5089,11 +5089,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
+- If you don't configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
 <!-- InternetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- InternetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -5153,11 +5153,11 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation.
 
-- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user cannot change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
+- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
 
-- If you disable this policy setting, XAML files are not loaded inside Internet Explorer. The user cannot change this behavior.
+- If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior.
 
-- If you do not configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
+- If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Description-End -->
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-Editable-Begin -->
@@ -5215,13 +5215,13 @@ This policy setting allows you to manage the loading of Extensible Application M
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -5283,7 +5283,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 
 - If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
 
-- If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
+- If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Description-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-Editable-Begin -->
@@ -5343,7 +5343,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
 
-- If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
+- If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone.
 
 - If you disable this policy setting, the TDC Active X control will run from all sites in this zone.
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Description-End -->
@@ -5407,9 +5407,9 @@ This policy setting determines whether a page can control embedded WebBrowser co
 
 - If you enable this policy setting, script access to the WebBrowser control is allowed.
 
-- If you disable this policy setting, script access to the WebBrowser control is not allowed.
+- If you disable this policy setting, script access to the WebBrowser control isn't allowed.
 
-- If you do not configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
+- If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Description-End -->
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-Editable-Begin -->
@@ -5469,11 +5469,11 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars.
 
-- If you enable this policy setting, Windows Restrictions security will not apply in this zone. The security zone runs without the added layer of security provided by this feature.
+- If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 
-- If you do not configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 <!-- InternetZoneAllowScriptInitiatedWindows-Description-End -->
 
 <!-- InternetZoneAllowScriptInitiatedWindows-Editable-Begin -->
@@ -5535,9 +5535,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- InternetZoneAllowScriptlets-Description-End -->
 
 <!-- InternetZoneAllowScriptlets-Editable-Begin -->
@@ -5599,9 +5599,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -5666,7 +5666,7 @@ This policy setting allows you to manage whether script is allowed to update the
 
 - If you enable this policy setting, script is allowed to update the status bar.
 
-- If you disable or do not configure this policy setting, script is not allowed to update the status bar.
+- If you disable or don't configure this policy setting, script isn't allowed to update the status bar.
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Description-End -->
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-Editable-Begin -->
@@ -5728,9 +5728,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- InternetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- InternetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -5796,7 +5796,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 If you selected Disable in the drop-down box, VBScript is prevented from running.
 
-If you do not configure or disable this policy setting, VBScript is prevented from running.
+If you don't configure or disable this policy setting, VBScript is prevented from running.
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Description-End -->
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-Editable-Begin -->
@@ -5922,9 +5922,9 @@ This policy setting allows you to manage whether users may download signed Activ
 
 - If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 
-- If you disable the policy setting, signed controls cannot be downloaded.
+- If you disable the policy setting, signed controls can't be downloaded.
 
-- If you do not configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
+- If you don't configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 <!-- InternetZoneDownloadSignedActiveXControls-Description-End -->
 
 <!-- InternetZoneDownloadSignedActiveXControls-Editable-Begin -->
@@ -5986,9 +5986,9 @@ This policy setting allows you to manage whether users may download unsigned Act
 
 - If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
 
-- If you disable this policy setting, users cannot run unsigned controls.
+- If you disable this policy setting, users can't run unsigned controls.
 
-- If you do not configure this policy setting, users cannot run unsigned controls.
+- If you don't configure this policy setting, users can't run unsigned controls.
 <!-- InternetZoneDownloadUnsignedActiveXControls-Description-End -->
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-Editable-Begin -->
@@ -6110,13 +6110,13 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
 
-If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 
-If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Description-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Editable-Begin -->
@@ -6176,13 +6176,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
 
-If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting.
 
-If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or don't configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Description-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Editable-Begin -->
@@ -6242,11 +6242,11 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage MIME sniffing for file promotion from one type to another based on a MIME sniff. A MIME sniff is the recognition by Internet Explorer of the file type based on a bit signature.
 
-- If you enable this policy setting, the MIME Sniffing Safety Feature will not apply in this zone. The security zone will run without the added layer of security provided by this feature.
+- If you enable this policy setting, the MIME Sniffing Safety Feature won't apply in this zone. The security zone will run without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the actions that may be harmful cannot run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
+- If you disable this policy setting, the actions that may be harmful can't run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
 
-- If you do not configure this policy setting, the MIME Sniffing Safety Feature will not apply in this zone.
+- If you don't configure this policy setting, the MIME Sniffing Safety Feature won't apply in this zone.
 <!-- InternetZoneEnableMIMESniffing-Description-End -->
 
 <!-- InternetZoneEnableMIMESniffing-Editable-Begin -->
@@ -6306,11 +6306,11 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
 
-- If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
+- If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode.
 
-- If you disable this policy setting, Protected Mode is turned off. The user cannot turn on Protected Mode.
+- If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode.
 
-- If you do not configure this policy setting, the user can turn on or turn off Protected Mode.
+- If you don't configure this policy setting, the user can turn on or turn off Protected Mode.
 <!-- InternetZoneEnableProtectedMode-Description-End -->
 
 <!-- InternetZoneEnableProtectedMode-Editable-Begin -->
@@ -6374,7 +6374,7 @@ This policy setting controls whether or not local path information is sent when 
 
 - If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form.
 
-- If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
+- If you don't configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Description-End -->
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-Editable-Begin -->
@@ -6434,13 +6434,13 @@ This policy setting controls whether or not local path information is sent when 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- InternetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -6504,13 +6504,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to High Safety.
+- If you don't configure this policy setting, the permission is set to High Safety.
 <!-- InternetZoneJavaPermissions-Description-End -->
 
 <!-- InternetZoneJavaPermissions-Editable-Begin -->
@@ -6574,7 +6574,7 @@ This policy setting allows you to manage whether applications may be run and fil
 
 - If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
+- If you don't configure this policy setting, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Description-End -->
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-Editable-Begin -->
@@ -6642,11 +6642,11 @@ Prompt for user name and password to query users for user IDs and passwords. Aft
 
 Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
 
-Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
 
 - If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
 
-- If you do not configure this policy setting, logon is set to Automatic logon only in Intranet zone.
+- If you don't configure this policy setting, logon is set to Automatic logon only in Intranet zone.
 <!-- InternetZoneLogonOptions-Description-End -->
 
 <!-- InternetZoneLogonOptions-Editable-Begin -->
@@ -6708,9 +6708,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- InternetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -6772,9 +6772,9 @@ This policy setting allows you to manage whether . NET Framework components that
 
 - If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute signed managed components.
+- If you disable this policy setting, Internet Explorer won't execute signed managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute signed managed components.
+- If you don't configure this policy setting, Internet Explorer will execute signed managed components.
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-End -->
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Editable-Begin -->
@@ -6836,9 +6836,9 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 - If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
 
-- If you disable this policy setting, these files do not open.
+- If you disable this policy setting, these files don't open.
 
-- If you do not configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
+- If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Description-End -->
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-Editable-Begin -->
@@ -6896,13 +6896,13 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 <!-- InternetZoneUsePopupBlocker-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked.
 
 - If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
 
-- If you disable this policy setting, pop-up windows are not prevented from appearing.
+- If you disable this policy setting, pop-up windows aren't prevented from appearing.
 
-- If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.
+- If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.
 <!-- InternetZoneUsePopupBlocker-Description-End -->
 
 <!-- InternetZoneUsePopupBlocker-Editable-Begin -->
@@ -6964,9 +6964,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- IntranetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- IntranetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -7026,11 +7026,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you don't configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -7092,7 +7092,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
+- If you disable or don't configure this setting, users will receive a file download dialog for automatic download attempts.
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -7158,7 +7158,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- IntranetZoneAllowFontDownloads-Description-End -->
 
 <!-- IntranetZoneAllowFontDownloads-Editable-Begin -->
@@ -7218,11 +7218,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
+- If you don't configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
 <!-- IntranetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- IntranetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -7280,13 +7280,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -7348,9 +7348,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- IntranetZoneAllowScriptlets-Description-End -->
 
 <!-- IntranetZoneAllowScriptlets-Editable-Begin -->
@@ -7412,9 +7412,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -7479,9 +7479,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- IntranetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- IntranetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -7605,13 +7605,13 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -7675,13 +7675,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to Medium Safety.
+- If you don't configure this policy setting, the permission is set to Medium Safety.
 <!-- IntranetZoneJavaPermissions-Description-End -->
 
 <!-- IntranetZoneJavaPermissions-Editable-Begin -->
@@ -7743,9 +7743,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- IntranetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -7967,9 +7967,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LocalMachineZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LocalMachineZoneAllowAccessToDataSources-Editable-Begin -->
@@ -8029,11 +8029,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you don't configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -8095,7 +8095,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
+- If you disable or don't configure this setting, users will receive a file download dialog for automatic download attempts.
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -8161,7 +8161,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LocalMachineZoneAllowFontDownloads-Description-End -->
 
 <!-- LocalMachineZoneAllowFontDownloads-Editable-Begin -->
@@ -8221,11 +8221,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -8283,13 +8283,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -8351,9 +8351,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LocalMachineZoneAllowScriptlets-Description-End -->
 
 <!-- LocalMachineZoneAllowScriptlets-Editable-Begin -->
@@ -8415,9 +8415,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -8482,9 +8482,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LocalMachineZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LocalMachineZoneAllowUserDataPersistence-Editable-Begin -->
@@ -8608,13 +8608,13 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
+- If you don't configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -8678,13 +8678,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to Medium Safety.
+- If you don't configure this policy setting, the permission is set to Medium Safety.
 <!-- LocalMachineZoneJavaPermissions-Description-End -->
 
 <!-- LocalMachineZoneJavaPermissions-Editable-Begin -->
@@ -8746,9 +8746,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -8810,9 +8810,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -8872,11 +8872,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -8938,7 +8938,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -9004,7 +9004,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownInternetZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownInternetZoneAllowFontDownloads-Editable-Begin -->
@@ -9064,11 +9064,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -9126,13 +9126,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -9194,9 +9194,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownInternetZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownInternetZoneAllowScriptlets-Editable-Begin -->
@@ -9258,9 +9258,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -9325,9 +9325,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -9387,13 +9387,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -9457,13 +9457,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownInternetZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownInternetZoneJavaPermissions-Editable-Begin -->
@@ -9525,9 +9525,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -9591,13 +9591,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownIntranetJavaPermissions-Description-End -->
 
 <!-- LockedDownIntranetJavaPermissions-Editable-Begin -->
@@ -9659,9 +9659,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-Editable-Begin -->
@@ -9721,11 +9721,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -9787,7 +9787,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -9853,7 +9853,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownIntranetZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-Editable-Begin -->
@@ -9913,11 +9913,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -9975,13 +9975,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -10043,9 +10043,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownIntranetZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowScriptlets-Editable-Begin -->
@@ -10107,9 +10107,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -10174,9 +10174,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-Editable-Begin -->
@@ -10236,13 +10236,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -10304,9 +10304,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -10368,9 +10368,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-Editable-Begin -->
@@ -10430,11 +10430,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -10496,7 +10496,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -10562,7 +10562,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-Editable-Begin -->
@@ -10622,11 +10622,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -10684,13 +10684,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -10752,9 +10752,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-Editable-Begin -->
@@ -10816,9 +10816,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -10883,9 +10883,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-Editable-Begin -->
@@ -10945,13 +10945,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -11015,13 +11015,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownLocalMachineZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-Editable-Begin -->
@@ -11083,9 +11083,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -11147,9 +11147,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -11209,11 +11209,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -11275,7 +11275,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -11341,7 +11341,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.
+- If you don't configure this policy setting, users are queried whether to allow HTML fonts to download.
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -11401,11 +11401,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -11463,13 +11463,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -11531,9 +11531,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -11595,9 +11595,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -11662,9 +11662,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -11724,13 +11724,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -11794,13 +11794,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-Editable-Begin -->
@@ -11862,9 +11862,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
+- If you disable this policy setting, users can't open other windows and frames from other domains or access applications from different domains.
 
-- If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.
+- If you don't configure this policy setting, users can't open other windows and frames from different domains or access applications from different domains.
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -11926,9 +11926,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -11988,11 +11988,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -12054,7 +12054,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -12120,7 +12120,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -12180,11 +12180,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -12242,13 +12242,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -12310,9 +12310,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -12374,9 +12374,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -12441,9 +12441,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -12503,13 +12503,13 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -12573,13 +12573,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-Editable-Begin -->
@@ -12641,9 +12641,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -12707,7 +12707,7 @@ This policy setting determines whether Internet Explorer MIME sniffing will prev
 
 - If you disable this policy setting, Internet Explorer processes will allow a MIME sniff promoting a file of one type to a more dangerous file type.
 
-- If you do not configure this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
+- If you don't configure this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Description-End -->
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-Editable-Begin -->
@@ -12771,7 +12771,7 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 
 - If you disable this policy setting, applications can use the MK protocol API. Resources hosted on the MK protocol will work for the File Explorer and Internet Explorer processes.
 
-- If you do not configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.
+- If you don't configure this policy setting, the MK Protocol is prevented for File Explorer and Internet Explorer, and resources hosted on the MK protocol will fail.
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Description-End -->
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-Editable-Begin -->
@@ -12829,11 +12829,11 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 
 <!-- NewTabDefaultPage-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify what is displayed when the user opens a new tab.
+This policy setting allows you to specify what's displayed when the user opens a new tab.
 
 - If you enable this policy setting, you can choose which page to display when the user opens a new tab: blank page (about:blank), the first home page, the new tab page or the new tab page with my news feed.
 
-- If you disable or do not configure this policy setting, the user can select his or her preference for this behavior.
+- If you disable or don't configure this policy setting, the user can select his or her preference for this behavior.
 <!-- NewTabDefaultPage-Description-End -->
 
 <!-- NewTabDefaultPage-Editable-Begin -->
@@ -12895,9 +12895,9 @@ This policy setting allows you to manage whether the Notification bar is display
 
 - If you enable this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
 
-- If you disable this policy setting, the Notification bar will not be displayed for Internet Explorer processes.
+- If you disable this policy setting, the Notification bar won't be displayed for Internet Explorer processes.
 
-- If you do not configure this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
+- If you don't configure this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
 <!-- NotificationBarInternetExplorerProcesses-Description-End -->
 
 <!-- NotificationBarInternetExplorerProcesses-Editable-Begin -->
@@ -12957,9 +12957,9 @@ This policy setting allows you to manage whether the Notification bar is display
 <!-- Description-Source-ADMX -->
 This policy setting prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware.
 
-- If you enable this policy setting, the user is not prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the user.
+- If you enable this policy setting, the user isn't prompted to turn on SmartScreen Filter. All website addresses that aren't on the filter's allow list are sent automatically to Microsoft without prompting the user.
 
-- If you disable or do not configure this policy setting, the user is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.
+- If you disable or don't configure this policy setting, the user is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.
 <!-- PreventManagingSmartScreenFilter-Description-End -->
 
 <!-- PreventManagingSmartScreenFilter-Editable-Begin -->
@@ -13019,9 +13019,9 @@ This policy setting prevents the user from managing SmartScreen Filter, which wa
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent the installation of ActiveX controls on a per-user basis.
 
-- If you enable this policy setting, ActiveX controls cannot be installed on a per-user basis.
+- If you enable this policy setting, ActiveX controls can't be installed on a per-user basis.
 
-- If you disable or do not configure this policy setting, ActiveX controls can be installed on a per-user basis.
+- If you disable or don't configure this policy setting, ActiveX controls can be installed on a per-user basis.
 <!-- PreventPerUserInstallationOfActiveXControls-Description-End -->
 
 <!-- PreventPerUserInstallationOfActiveXControls-Editable-Begin -->
@@ -13086,7 +13086,7 @@ Internet Explorer places restrictions on each Web page it opens. The restriction
 
 - If you disable this policy setting, no zone receives such protection for Internet Explorer processes.
 
-- If you do not configure this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
+- If you don't configure this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Description-End -->
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-Editable-Begin -->
@@ -13211,7 +13211,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- Description-Source-ADMX -->
 This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.
 
-If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
+If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode won't get propagated from its parent page.
 
 If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
 
@@ -13278,9 +13278,9 @@ This policy setting enables blocking of ActiveX control installation prompts for
 
 - If you enable this policy setting, prompting for ActiveX control installations will be blocked for Internet Explorer processes.
 
-- If you disable this policy setting, prompting for ActiveX control installations will not be blocked for Internet Explorer processes.
+- If you disable this policy setting, prompting for ActiveX control installations won't be blocked for Internet Explorer processes.
 
-- If you do not configure this policy setting, the user's preference will be used to determine whether to block ActiveX control installations for Internet Explorer processes.
+- If you don't configure this policy setting, the user's preference will be used to determine whether to block ActiveX control installations for Internet Explorer processes.
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Description-End -->
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-Editable-Begin -->
@@ -13342,9 +13342,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -13408,7 +13408,7 @@ This policy setting allows you to manage whether script code on pages in the zon
 
 - If you disable this policy setting, script code on pages in the zone is prevented from running.
 
-- If you do not configure this policy setting, script code on pages in the zone is prevented from running.
+- If you don't configure this policy setting, script code on pages in the zone is prevented from running.
 <!-- RestrictedSitesZoneAllowActiveScripting-Description-End -->
 
 <!-- RestrictedSitesZoneAllowActiveScripting-Editable-Begin -->
@@ -13468,11 +13468,11 @@ This policy setting allows you to manage whether script code on pages in the zon
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
+- If you don't configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -13534,7 +13534,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
+- If you disable or don't configure this setting, file downloads that aren't user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -13596,9 +13596,9 @@ This policy setting allows you to manage dynamic binary and script behaviors: co
 
 - If you enable this policy setting, binary and script behaviors are available. If you select Administrator approved in the drop-down box, only behaviors listed in the Admin-approved Behaviors under Binary Behaviors Security Restriction policy are available.
 
-- If you disable this policy setting, binary and script behaviors are not available unless applications have implemented a custom security manager.
+- If you disable this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager.
 
-- If you do not configure this policy setting, binary and script behaviors are not available unless applications have implemented a custom security manager.
+- If you don't configure this policy setting, binary and script behaviors aren't available unless applications have implemented a custom security manager.
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Description-End -->
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-Editable-Begin -->
@@ -13662,9 +13662,9 @@ This policy setting allows you to manage whether scripts can perform a clipboard
 
 If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
 
-- If you disable this policy setting, a script cannot perform a clipboard operation.
+- If you disable this policy setting, a script can't perform a clipboard operation.
 
-- If you do not configure this policy setting, a script cannot perform a clipboard operation.
+- If you don't configure this policy setting, a script can't perform a clipboard operation.
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Description-End -->
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-Editable-Begin -->
@@ -13728,7 +13728,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 
 - If you disable this policy setting, users are prevented from dragging files or copying and pasting files from this zone.
 
-- If you do not configure this policy setting, users are queried to choose whether to drag or copy files from this zone.
+- If you don't configure this policy setting, users are queried to choose whether to drag or copy files from this zone.
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Description-End -->
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-Editable-Begin -->
@@ -13792,7 +13792,7 @@ This policy setting allows you to manage whether file downloads are permitted fr
 
 - If you disable this policy setting, files are prevented from being downloaded from the zone.
 
-- If you do not configure this policy setting, files are prevented from being downloaded from the zone.
+- If you don't configure this policy setting, files are prevented from being downloaded from the zone.
 <!-- RestrictedSitesZoneAllowFileDownloads-Description-End -->
 
 <!-- RestrictedSitesZoneAllowFileDownloads-Editable-Begin -->
@@ -13858,7 +13858,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.
+- If you don't configure this policy setting, users are queried whether to allow HTML fonts to download.
 <!-- RestrictedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- RestrictedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -13918,11 +13918,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you don't configure this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -13982,11 +13982,11 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the loading of Extensible Application Markup Language (XAML) files. XAML is an XML-based declarative markup language commonly used for creating rich user interfaces and graphics that take advantage of the Windows Presentation Foundation.
 
-- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user cannot change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
+- If you enable this policy setting and set the drop-down box to Enable, XAML files are automatically loaded inside Internet Explorer. The user can't change this behavior. If you set the drop-down box to Prompt, the user is prompted for loading XAML files.
 
-- If you disable this policy setting, XAML files are not loaded inside Internet Explorer. The user cannot change this behavior.
+- If you disable this policy setting, XAML files aren't loaded inside Internet Explorer. The user can't change this behavior.
 
-- If you do not configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
+- If you don't configure this policy setting, the user can decide whether to load XAML files inside Internet Explorer.
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Description-End -->
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-Editable-Begin -->
@@ -14048,9 +14048,9 @@ This policy setting allows you to manage whether a user's browser can be redirec
 
 - If you enable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can be redirected to another Web page.
 
-- If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting cannot be redirected to another Web page.
+- If you disable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page.
 
-- If you do not configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting cannot be redirected to another Web page.
+- If you don't configure this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can't be redirected to another Web page.
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Description-End -->
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-Editable-Begin -->
@@ -14108,13 +14108,13 @@ This policy setting allows you to manage whether a user's browser can be redirec
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute unsigned managed components.
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -14176,7 +14176,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 
 - If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
 
-- If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
+- If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-Editable-Begin -->
@@ -14236,7 +14236,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
 
-- If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
+- If you enable this policy setting, the TDC ActiveX control won't run from websites in this zone.
 
 - If you disable this policy setting, the TDC Active X control will run from all sites in this zone.
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-Description-End -->
@@ -14300,9 +14300,9 @@ This policy setting determines whether a page can control embedded WebBrowser co
 
 - If you enable this policy setting, script access to the WebBrowser control is allowed.
 
-- If you disable this policy setting, script access to the WebBrowser control is not allowed.
+- If you disable this policy setting, script access to the WebBrowser control isn't allowed.
 
-- If you do not configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
+- If you don't configure this policy setting, the user can enable or disable script access to the WebBrowser control. By default, script access to the WebBrowser control is allowed only in the Local Machine and Intranet zones.
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Description-End -->
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-Editable-Begin -->
@@ -14362,11 +14362,11 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage restrictions on script-initiated pop-up windows and windows that include the title and status bars.
 
-- If you enable this policy setting, Windows Restrictions security will not apply in this zone. The security zone runs without the added layer of security provided by this feature.
+- If you enable this policy setting, Windows Restrictions security won't apply in this zone. The security zone runs without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you disable this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 
-- If you do not configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars cannot be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
+- If you don't configure this policy setting, the possible harmful actions contained in script-initiated pop-up windows and windows that include the title and status bars can't be run. This Internet Explorer security feature will be on in this zone as dictated by the Scripted Windows Security Restrictions feature control setting for the process.
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Description-End -->
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-Editable-Begin -->
@@ -14428,9 +14428,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- RestrictedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- RestrictedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -14492,9 +14492,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -14559,7 +14559,7 @@ This policy setting allows you to manage whether script is allowed to update the
 
 - If you enable this policy setting, script is allowed to update the status bar.
 
-- If you disable or do not configure this policy setting, script is not allowed to update the status bar.
+- If you disable or don't configure this policy setting, script isn't allowed to update the status bar.
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Description-End -->
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-Editable-Begin -->
@@ -14621,9 +14621,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -14689,7 +14689,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 If you selected Disable in the drop-down box, VBScript is prevented from running.
 
-If you do not configure or disable this policy setting, VBScript is prevented from running.
+If you don't configure or disable this policy setting, VBScript is prevented from running.
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Description-End -->
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-Editable-Begin -->
@@ -14815,9 +14815,9 @@ This policy setting allows you to manage whether users may download signed Activ
 
 - If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 
-- If you disable the policy setting, signed controls cannot be downloaded.
+- If you disable the policy setting, signed controls can't be downloaded.
 
-- If you do not configure this policy setting, signed controls cannot be downloaded.
+- If you don't configure this policy setting, signed controls can't be downloaded.
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-Editable-Begin -->
@@ -14879,9 +14879,9 @@ This policy setting allows you to manage whether users may download unsigned Act
 
 - If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
 
-- If you disable this policy setting, users cannot run unsigned controls.
+- If you disable this policy setting, users can't run unsigned controls.
 
-- If you do not configure this policy setting, users cannot run unsigned controls.
+- If you don't configure this policy setting, users can't run unsigned controls.
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-Editable-Begin -->
@@ -15003,13 +15003,13 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
 
-If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 
-If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Description-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-Editable-Begin -->
@@ -15069,13 +15069,13 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
 
-If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting.
 
-If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or don't configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users can't change this setting in the Internet Options dialog.
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Description-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-Editable-Begin -->
@@ -15135,11 +15135,11 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage MIME sniffing for file promotion from one type to another based on a MIME sniff. A MIME sniff is the recognition by Internet Explorer of the file type based on a bit signature.
 
-- If you enable this policy setting, the MIME Sniffing Safety Feature will not apply in this zone. The security zone will run without the added layer of security provided by this feature.
+- If you enable this policy setting, the MIME Sniffing Safety Feature won't apply in this zone. The security zone will run without the added layer of security provided by this feature.
 
-- If you disable this policy setting, the actions that may be harmful cannot run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
+- If you disable this policy setting, the actions that may be harmful can't run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
 
-- If you do not configure this policy setting, the actions that may be harmful cannot run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
+- If you don't configure this policy setting, the actions that may be harmful can't run; this Internet Explorer security feature will be turned on in this zone, as dictated by the feature control setting for the process.
 <!-- RestrictedSitesZoneEnableMIMESniffing-Description-End -->
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-Editable-Begin -->
@@ -15203,7 +15203,7 @@ This policy setting controls whether or not local path information is sent when 
 
 - If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form.
 
-- If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
+- If you don't configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Description-End -->
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-Editable-Begin -->
@@ -15263,13 +15263,13 @@ This policy setting controls whether or not local path information is sent when 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you don't configure this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -15333,13 +15333,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, Java applets are disabled.
+- If you don't configure this policy setting, Java applets are disabled.
 <!-- RestrictedSitesZoneJavaPermissions-Description-End -->
 
 <!-- RestrictedSitesZoneJavaPermissions-Editable-Begin -->
@@ -15403,7 +15403,7 @@ This policy setting allows you to manage whether applications may be run and fil
 
 - If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 
-- If you do not configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
+- If you don't configure this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Description-End -->
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-Editable-Begin -->
@@ -15471,11 +15471,11 @@ Prompt for user name and password to query users for user IDs and passwords. Aft
 
 Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
 
-Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
+Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response isn't supported by the server, the user is queried to provide the user name and password.
 
 - If you disable this policy setting, logon is set to Automatic logon only in Intranet zone.
 
-- If you do not configure this policy setting, logon is set to Prompt for username and password.
+- If you don't configure this policy setting, logon is set to Prompt for username and password.
 <!-- RestrictedSitesZoneLogonOptions-Description-End -->
 
 <!-- RestrictedSitesZoneLogonOptions-Editable-Begin -->
@@ -15537,9 +15537,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
+- If you disable this policy setting, users can't open other windows and frames from other domains or access applications from different domains.
 
-- If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.
+- If you don't configure this policy setting, users can't open other windows and frames from different domains or access applications from different domains.
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -15605,7 +15605,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 - If you disable this policy setting, controls and plug-ins are prevented from running.
 
-- If you do not configure this policy setting, controls and plug-ins are prevented from running.
+- If you don't configure this policy setting, controls and plug-ins are prevented from running.
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Description-End -->
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-Editable-Begin -->
@@ -15667,9 +15667,9 @@ This policy setting allows you to manage whether . NET Framework components that
 
 - If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute signed managed components.
+- If you disable this policy setting, Internet Explorer won't execute signed managed components.
 
-- If you do not configure this policy setting, Internet Explorer will not execute signed managed components.
+- If you don't configure this policy setting, Internet Explorer won't execute signed managed components.
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-End -->
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Editable-Begin -->
@@ -15735,7 +15735,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 
 - If you disable this policy setting, script interaction is prevented from occurring.
 
-- If you do not configure this policy setting, script interaction is prevented from occurring.
+- If you don't configure this policy setting, script interaction is prevented from occurring.
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Description-End -->
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-Editable-Begin -->
@@ -15801,7 +15801,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 
 - If you disable this policy setting, scripts are prevented from accessing applets.
 
-- If you do not configure this policy setting, scripts are prevented from accessing applets.
+- If you don't configure this policy setting, scripts are prevented from accessing applets.
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Description-End -->
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-Editable-Begin -->
@@ -15863,9 +15863,9 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 
 - If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
 
-- If you disable this policy setting, these files do not open.
+- If you disable this policy setting, these files don't open.
 
-- If you do not configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
+- If you don't configure this policy setting, the user can configure how the computer handles these files. By default, these files are blocked in the Restricted zone, enabled in the Intranet and Local Computer zones, and set to prompt in the Internet and Trusted zones.
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Description-End -->
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-Editable-Begin -->
@@ -15925,11 +15925,11 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
 
-- If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
+- If you enable this policy setting, Protected Mode is turned on. The user can't turn off Protected Mode.
 
-- If you disable this policy setting, Protected Mode is turned off. The user cannot turn on Protected Mode.
+- If you disable this policy setting, Protected Mode is turned off. The user can't turn on Protected Mode.
 
-- If you do not configure this policy setting, the user can turn on or turn off Protected Mode.
+- If you don't configure this policy setting, the user can turn on or turn off Protected Mode.
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Description-End -->
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-Editable-Begin -->
@@ -15987,13 +15987,13 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 
 <!-- RestrictedSitesZoneUsePopupBlocker-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link aren't blocked.
 
 - If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
 
-- If you disable this policy setting, pop-up windows are not prevented from appearing.
+- If you disable this policy setting, pop-up windows aren't prevented from appearing.
 
-- If you do not configure this policy setting, most unwanted pop-up windows are prevented from appearing.
+- If you don't configure this policy setting, most unwanted pop-up windows are prevented from appearing.
 <!-- RestrictedSitesZoneUsePopupBlocker-Description-End -->
 
 <!-- RestrictedSitesZoneUsePopupBlocker-Editable-Begin -->
@@ -16051,13 +16051,13 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables blocking of file download prompts that are not user initiated.
+This policy setting enables blocking of file download prompts that aren't user initiated.
 
-- If you enable this policy setting, file download prompts that are not user initiated will be blocked for Internet Explorer processes.
+- If you enable this policy setting, file download prompts that aren't user initiated will be blocked for Internet Explorer processes.
 
-- If you disable this policy setting, prompting will occur for file downloads that are not user initiated for Internet Explorer processes.
+- If you disable this policy setting, prompting will occur for file downloads that aren't user initiated for Internet Explorer processes.
 
-- If you do not configure this policy setting, the user's preference determines whether to prompt for file downloads that are not user initiated for Internet Explorer processes.
+- If you don't configure this policy setting, the user's preference determines whether to prompt for file downloads that aren't user initiated for Internet Explorer processes.
 <!-- RestrictFileDownloadInternetExplorerProcesses-Description-End -->
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-Editable-Begin -->
@@ -16115,13 +16115,13 @@ This policy setting enables blocking of file download prompts that are not user 
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars are not visible to the user or obfuscate other Windows' title and status bars.
+Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars aren't visible to the user or obfuscate other Windows' title and status bars.
 
 - If you enable this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
 
 - If you disable this policy setting, scripts can continue to create popup windows and windows that obfuscate other windows.
 
-- If you do not configure this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
+- If you don't configure this policy setting, popup windows and other restrictions apply for File Explorer and Internet Explorer processes.
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Description-End -->
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-Editable-Begin -->
@@ -16181,12 +16181,12 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 <!-- Description-Source-ADMX -->
 This policy setting allows you to restrict the search providers that appear in the Search box in Internet Explorer to those defined in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Normally, search providers can be added from third-party toolbars or in Setup, but the user can also add them from a search provider's website.
 
-- If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers.
+- If you enable this policy setting, the user can't configure the list of search providers on his or her computer, and any default providers installed don't appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers.
 
 > [!NOTE]
 > This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
 
-- If you disable or do not configure this policy setting, the user can configure his or her list of search providers.
+- If you disable or don't configure this policy setting, the user can configure his or her list of search providers.
 <!-- SearchProviderList-Description-End -->
 
 <!-- SearchProviderList-Editable-Begin -->
@@ -16245,11 +16245,11 @@ Applies security zone information to all users of the same computer. A security 
 
 - If you enable this policy, changes that the user makes to a security zone will apply to all users of that computer.
 
-- If you disable this policy or do not configure it, users of the same computer can establish their own security zone settings.
+- If you disable this policy or don't configure it, users of the same computer can establish their own security zone settings.
 
-This policy is intended to ensure that security zone settings apply uniformly to the same computer and do not vary from user to user.
+This policy is intended to ensure that security zone settings apply uniformly to the same computer and don't vary from user to user.
 
-Also, see the "Security zones: Do not allow users to change policies" policy.
+Also, see the "Security zones: Don't allow users to change policies" policy.
 <!-- SecurityZonesUseOnlyMachineSettings-Description-End -->
 
 <!-- SecurityZonesUseOnlyMachineSettings-Editable-Begin -->
@@ -16403,7 +16403,7 @@ This policy setting allows you to specify how ActiveX controls are installed.
 
 - If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls.
 
-- If you disable or do not configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.
+- If you disable or don't configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.
 <!-- SpecifyUseOfActiveXInstallerService-Description-End -->
 
 <!-- SpecifyUseOfActiveXInstallerService-Editable-Begin -->
@@ -16466,9 +16466,9 @@ This policy setting allows you to manage whether Internet Explorer can access da
 
 - If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-- If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
+- If you don't configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 <!-- TrustedSitesZoneAllowAccessToDataSources-Description-End -->
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-Editable-Begin -->
@@ -16528,11 +16528,11 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- Description-Source-ADMX -->
 This policy setting manages whether users will be automatically prompted for ActiveX control installations.
 
-- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 
 - If you disable this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-- If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
+- If you don't configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they don't have installed.
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Description-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-Editable-Begin -->
@@ -16594,7 +16594,7 @@ This policy setting determines whether users will be prompted for non user-initi
 
 - If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
-- If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
+- If you disable or don't configure this setting, users will receive a file download dialog for automatic download attempts.
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Description-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-Editable-Begin -->
@@ -16660,7 +16660,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 
 - If you disable this policy setting, HTML fonts are prevented from downloading.
 
-- If you do not configure this policy setting, HTML fonts can be downloaded automatically.
+- If you don't configure this policy setting, HTML fonts can be downloaded automatically.
 <!-- TrustedSitesZoneAllowFontDownloads-Description-End -->
 
 <!-- TrustedSitesZoneAllowFontDownloads-Editable-Begin -->
@@ -16720,11 +16720,11 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that's provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-- If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+- If you disable this policy setting, the possibly harmful navigations is prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
-- If you do not configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.
+- If you don't configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Description-End -->
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-Editable-Begin -->
@@ -16782,13 +16782,13 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
-- If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
+- If you disable this policy setting, Internet Explorer won't execute unsigned managed components.
 
-- If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
+- If you don't configure this policy setting, Internet Explorer will execute unsigned managed components.
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Description-End -->
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Editable-Begin -->
@@ -16850,9 +16850,9 @@ This policy setting allows you to manage whether the user can run scriptlets.
 
 - If you enable this policy setting, the user can run scriptlets.
 
-- If you disable this policy setting, the user cannot run scriptlets.
+- If you disable this policy setting, the user can't run scriptlets.
 
-- If you do not configure this policy setting, the user can enable or disable scriptlets.
+- If you don't configure this policy setting, the user can enable or disable scriptlets.
 <!-- TrustedSitesZoneAllowScriptlets-Description-End -->
 
 <!-- TrustedSitesZoneAllowScriptlets-Editable-Begin -->
@@ -16914,9 +16914,9 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 
 - If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
 
-- If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+- If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content.
 
-- If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+- If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
 
 > [!NOTE]
 > In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
@@ -16981,9 +16981,9 @@ This policy setting allows you to manage the preservation of information in the 
 
 - If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you disable this policy setting, users can't preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
-- If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
+- If you don't configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 <!-- TrustedSitesZoneAllowUserDataPersistence-Description-End -->
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-Editable-Begin -->
@@ -17107,13 +17107,13 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage ActiveX controls not marked as safe.
 
-- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
+- If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting isn't recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
 - If you enable this policy setting and select Prompt in the drop-down box, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-- If you disable this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
+- If you disable this policy setting, ActiveX controls that can't be made safe aren't loaded with parameters or scripted.
 
-- If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
+- If you don't configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Description-End -->
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-Editable-Begin -->
@@ -17177,13 +17177,13 @@ This policy setting allows you to manage permissions for Java applets.
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
-- If you disable this policy setting, Java applets cannot run.
+- If you disable this policy setting, Java applets can't run.
 
-- If you do not configure this policy setting, the permission is set to Low Safety.
+- If you don't configure this policy setting, the permission is set to Low Safety.
 <!-- TrustedSitesZoneJavaPermissions-Description-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-Editable-Begin -->
@@ -17245,9 +17245,9 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 - If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
-- If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
+- If you disable this policy setting, users can't open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+- If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->

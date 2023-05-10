@@ -39,11 +39,11 @@ ms.topic: reference
 
 <!-- Allow_Logon_Script_NetbiosDisabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows user logon scripts to run when the logon cross-forest, DNS suffixes are not configured, and NetBIOS or WINS is disabled. This policy setting affects all user accounts interactively logging on to the computer.
+This policy setting allows user logon scripts to run when the logon cross-forest, DNS suffixes aren't configured, and NetBIOS or WINS is disabled. This policy setting affects all user accounts interactively logging on to the computer.
 
 - If you enable this policy setting, user logon scripts run if NetBIOS or WINS is disabled during cross-forest logons without the DNS suffixes being configured.
 
-- If you disable or do not configure this policy setting, user account cross-forest, interactive logging cannot run logon scripts if NetBIOS or WINS is disabled, and the DNS suffixes are not configured.
+- If you disable or don't configure this policy setting, user account cross-forest, interactive logging can't run logon scripts if NetBIOS or WINS is disabled, and the DNS suffixes aren't configured.
 <!-- Allow_Logon_Script_NetbiosDisabled-Description-End -->
 
 <!-- Allow_Logon_Script_NetbiosDisabled-Editable-Begin -->
@@ -100,7 +100,7 @@ This policy setting allows user logon scripts to run when the logon cross-forest
 <!-- Description-Source-ADMX -->
 This policy setting determines how long the system waits for scripts applied by Group Policy to run.
 
-This setting limits the total time allowed for all logon, logoff, startup, and shutdown scripts applied by Group Policy to finish running. If the scripts have not finished running when the specified time expires, the system stops script processing and records an error event.
+This setting limits the total time allowed for all logon, logoff, startup, and shutdown scripts applied by Group Policy to finish running. If the scripts haven't finished running when the specified time expires, the system stops script processing and records an error event.
 
 - If you enable this setting, then, in the Seconds box, you can type a number from 1 to 32,000 for the number of seconds you want the system to wait for the set of scripts to finish. To direct the system to wait until the scripts have finished, no matter how long they take, type 0.
 
@@ -108,7 +108,7 @@ This interval is particularly important when other system tasks must wait while 
 
 An excessively long interval can delay the system and inconvenience users. However, if the interval is too short, prerequisite tasks might not be done, and the system can appear to be ready prematurely.
 
-- If you disable or do not configure this setting the system lets the combined set of scripts run for up to 600 seconds (10 minutes). This is the default.
+- If you disable or don't configure this setting the system lets the combined set of scripts run for up to 600 seconds (10 minutes). This is the default.
 <!-- MaxGPOScriptWaitPolicy-Description-End -->
 
 <!-- MaxGPOScriptWaitPolicy-Editable-Begin -->
@@ -242,11 +242,11 @@ For DesktopSales, GPOs B and C are applied, but not GPO A. Therefore, the script
 <!-- Description-Source-ADMX -->
 This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier.
 
-Logon scripts are batch files of instructions that run when the user logs on. By default, Windows 2000 displays the instructions in logon scripts written for Windows NT 4.0 and earlier in a command window as they run, although it does not display logon scripts written for Windows 2000.
+Logon scripts are batch files of instructions that run when the user logs on. By default, Windows 2000 displays the instructions in logon scripts written for Windows NT 4.0 and earlier in a command window as they run, although it doesn't display logon scripts written for Windows 2000.
 
-- If you enable this setting, Windows 2000 does not display logon scripts written for Windows NT 4.0 and earlier.
+- If you enable this setting, Windows 2000 doesn't display logon scripts written for Windows NT 4.0 and earlier.
 
-- If you disable or do not configure this policy setting, Windows 2000 displays login scripts written for Windows NT 4.0 and earlier.
+- If you disable or don't configure this policy setting, Windows 2000 displays login scripts written for Windows NT 4.0 and earlier.
 
 Also, see the "Run Logon Scripts Visible" setting.
 <!-- Run_Legacy_Logon_Script_Hidden-Description-End -->
@@ -305,11 +305,11 @@ Also, see the "Run Logon Scripts Visible" setting.
 <!-- Description-Source-ADMX -->
 This policy setting displays the instructions in logoff scripts as they run.
 
-Logoff scripts are batch files of instructions that run when the user logs off. By default, the system does not display the instructions in the logoff script.
+Logoff scripts are batch files of instructions that run when the user logs off. By default, the system doesn't display the instructions in the logoff script.
 
 - If you enable this policy setting, the system displays each instruction in the logoff script as it runs. The instructions appear in a command window. This policy setting is designed for advanced users.
 
-- If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
 <!-- Run_Logoff_Script_Visible-Description-End -->
 
 <!-- Run_Logoff_Script_Visible-Editable-Begin -->
@@ -366,9 +366,9 @@ Logoff scripts are batch files of instructions that run when the user logs off. 
 <!-- Description-Source-ADMX -->
 This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
 
-- If you enable this policy setting, File Explorer does not start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
+- If you enable this policy setting, File Explorer doesn't start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
 
-- If you disable or do not configure this policy setting, the logon scripts and File Explorer are not synchronized and can run simultaneously.
+- If you disable or don't configure this policy setting, the logon scripts and File Explorer aren't synchronized and can run simultaneously.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. The policy setting set in Computer Configuration takes precedence over the policy setting set in User Configuration.
 <!-- Run_Logon_Script_Sync_1-Description-End -->
@@ -427,9 +427,9 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- Description-Source-ADMX -->
 This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
 
-- If you enable this policy setting, File Explorer does not start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
+- If you enable this policy setting, File Explorer doesn't start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
 
-- If you disable or do not configure this policy setting, the logon scripts and File Explorer are not synchronized and can run simultaneously.
+- If you disable or don't configure this policy setting, the logon scripts and File Explorer aren't synchronized and can run simultaneously.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. The policy setting set in Computer Configuration takes precedence over the policy setting set in User Configuration.
 <!-- Run_Logon_Script_Sync_2-Description-End -->
@@ -488,11 +488,11 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- Description-Source-ADMX -->
 This policy setting displays the instructions in logon scripts as they run.
 
-Logon scripts are batch files of instructions that run when the user logs on. By default, the system does not display the instructions in logon scripts.
+Logon scripts are batch files of instructions that run when the user logs on. By default, the system doesn't display the instructions in logon scripts.
 
 - If you enable this policy setting, the system displays each instruction in the logon script as it runs. The instructions appear in a command window. This policy setting is designed for advanced users.
 
-- If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
 <!-- Run_Logon_Script_Visible-Description-End -->
 
 <!-- Run_Logon_Script_Visible-Editable-Begin -->
@@ -549,11 +549,11 @@ Logon scripts are batch files of instructions that run when the user logs on. By
 <!-- Description-Source-ADMX -->
 This policy setting displays the instructions in shutdown scripts as they run.
 
-Shutdown scripts are batch files of instructions that run when the user restarts the system or shuts it down. By default, the system does not display the instructions in the shutdown script.
+Shutdown scripts are batch files of instructions that run when the user restarts the system or shuts it down. By default, the system doesn't display the instructions in the shutdown script.
 
 - If you enable this policy setting, the system displays each instruction in the shutdown script as it runs. The instructions appear in a command window.
 
-- If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
 <!-- Run_Shutdown_Script_Visible-Description-End -->
 
 <!-- Run_Shutdown_Script_Visible-Editable-Begin -->
@@ -612,9 +612,9 @@ This policy setting lets the system run startup scripts simultaneously.
 
 Startup scripts are batch files that run before the user is invited to log on. By default, the system waits for each startup script to complete before it runs the next startup script.
 
-- If you enable this policy setting, the system does not coordinate the running of startup scripts. As a result, startup scripts can run simultaneously.
+- If you enable this policy setting, the system doesn't coordinate the running of startup scripts. As a result, startup scripts can run simultaneously.
 
-- If you disable or do not configure this policy setting, a startup cannot run until the previous script is complete.
+- If you disable or don't configure this policy setting, a startup can't run until the previous script is complete.
 
 > [!NOTE]
 > Starting with Windows Vista operating system, scripts that are configured to run asynchronously are no longer visible on startup, whether the "Run startup scripts visible" policy setting is enabled or not.
@@ -674,11 +674,11 @@ Startup scripts are batch files that run before the user is invited to log on. B
 <!-- Description-Source-ADMX -->
 This policy setting displays the instructions in startup scripts as they run.
 
-Startup scripts are batch files of instructions that run before the user is invited to log on. By default, the system does not display the instructions in the startup script.
+Startup scripts are batch files of instructions that run before the user is invited to log on. By default, the system doesn't display the instructions in the startup script.
 
 - If you enable this policy setting, the system displays each instruction in the startup script as it runs. Instructions appear in a command window. This policy setting is designed for advanced users.
 
-- If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
 
 > [!NOTE]
 > Starting with Windows Vista operating system, scripts that are configured to run asynchronously are no longer visible on startup, whether this policy setting is enabled or not.

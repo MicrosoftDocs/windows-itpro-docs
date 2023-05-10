@@ -43,7 +43,7 @@ This policy setting allows you to configure how often a Distributed File System 
 
 - If you enable this policy setting, you can configure how often a DFS client attempts to discover domain controllers. This value is specified in minutes.
 
-- If you disable or do not configure this policy setting, the default value of 15 minutes applies.
+- If you disable or don't configure this policy setting, the default value of 15 minutes applies.
 
 > [!NOTE]
 > The minimum value you can select is 15 minutes. If you try to set this setting to a value less than 15 minutes, the default value of 15 minutes is applied.

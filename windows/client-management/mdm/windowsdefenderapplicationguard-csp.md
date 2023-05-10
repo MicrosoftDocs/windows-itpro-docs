@@ -313,7 +313,7 @@ This policy setting allows you to determine whether applications inside Microsof
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Microsoft Defender Application Guard cannot access the device’s camera and microphone. When the policy is not configured, it is the same as disabled (0). |
+| 0 (Default) | Microsoft Defender Application Guard can't access the device’s camera and microphone. When the policy isn't configured, it's the same as disabled (0). |
 | 1 | Turns on the functionality to allow Microsoft Defender Application Guard to access the device’s camera and microphone. |
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-AllowedValues-End -->
 
@@ -440,7 +440,7 @@ This policy setting allows you to determine whether Application Guard can use th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy is not configured, it is the same as disabled (0). |
+| 0 (Default) | Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy isn't configured, it's the same as disabled (0). |
 | 1 | Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This can create a faster experience when working with graphics intense websites or watching video within the container. |
 <!-- Device-Settings-AllowVirtualGPU-AllowedValues-End -->
 
@@ -611,7 +611,7 @@ This policy setting allows you to decide whether websites can load non-enterpris
 This policy setting allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.
 
 - If you enable this setting, certificates with a thumbprint matching the ones specified will be transferred into the container. Multiple certificates can be specified by using a comma to separate the thumbprints for each certificate you want to transfer. Here's an example: b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a7b058cda924.
-- If you disable or don't configure this setting, certificates are not shared with the Microsoft Defender Application Guard container.
+- If you disable or don't configure this setting, certificates aren't shared with the Microsoft Defender Application Guard container.
 <!-- Device-Settings-CertificateThumbprints-Description-End -->
 
 <!-- Device-Settings-CertificateThumbprints-Editable-Begin -->
@@ -890,7 +890,7 @@ This policy setting allows you to determine whether users can elect to download 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | The user cannot download files from Edge in the container to the host file system. When the policy is not configured, it is the same as disabled (0). |
+| 0 (Default) | The user can't download files from Edge in the container to the host file system. When the policy isn't configured, it's the same as disabled (0). |
 | 1 | Turns on the functionality to allow users to download files from Edge in the container to the host file system. |
 <!-- Device-Settings-SaveFilesToHost-AllowedValues-End -->
 

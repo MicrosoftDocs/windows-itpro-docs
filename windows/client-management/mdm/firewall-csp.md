@@ -362,7 +362,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-AuthAppsAllowUserPrefMerge-Editable-Begin -->
@@ -412,7 +412,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultInboundAction-Editable-Begin -->
@@ -462,7 +462,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DefaultOutboundAction-Editable-Begin -->
@@ -535,7 +535,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableInboundNotifications-Editable-Begin -->
@@ -585,7 +585,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthMode-Editable-Begin -->
@@ -635,7 +635,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableStealthModeIpsecSecuredPacketExemption-Editable-Begin -->
@@ -685,7 +685,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If it is true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If it's true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-DisableUnicastResponsesToMulticastBroadcast-Editable-Begin -->
@@ -735,7 +735,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableFirewall-Editable-Begin -->
@@ -834,7 +834,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule is not enforced for any reason. The merge law for this option is to let "on" values win.
+This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule isn't enforced for any reason. The merge law for this option is to let "on" values win.
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-EnableLogIgnoredRules-Editable-Begin -->
@@ -934,7 +934,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it is set or enumerated in the Group Policy store or if it is enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-GlobalPortsAllowUserPrefMerge-Editable-Begin -->
@@ -984,7 +984,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogFilePath-Editable-Begin -->
@@ -1025,7 +1025,7 @@ This value is a string that represents a file path to the log where the firewall
 
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Description-End -->
 
 <!-- Device-MdmStore-DomainProfile-LogMaxFileSize-Editable-Begin -->
@@ -1155,7 +1155,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Description-Begin -->
 <!-- Description-Source-DDF -->
-A list of dynamic keyword addresses for use within firewall rules. Dynamic keyword addresses can either be a simple alias object or fully-qualified domain names which will be auto-resolved in the presence of the Microsoft Defender Advanced Threat Protection Service.
+A list of dynamic keyword addresses for use within firewall rules. Dynamic keyword addresses can either be a simple alias object or fully qualified domain names which will be auto-resolved in the presence of the Microsoft Defender Advanced Threat Protection Service.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Description-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Editable-Begin -->
@@ -1236,7 +1236,7 @@ A unique GUID string identifier for this dynamic keyword address.
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value should not be set if AutoResolve is true.
+Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value shouldn't be set if AutoResolve is true.
 Valid tokens include:
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 A valid IPv6 address.
@@ -1409,7 +1409,7 @@ A list of rules controlling traffic through the Windows Firewall. Each Rule ID i
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the rule. The rule name must not include a forward slash (/).
+Unique alpha numeric identifier for the rule. The rule name mustn't include a forward slash (/).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Editable-Begin -->
@@ -2198,7 +2198,7 @@ Specifies the friendly name of the firewall rule.
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". A PolicyAppId and ServiceName cannot be specified in the same rule.
+Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". A PolicyAppId and ServiceName can't be specified in the same rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Editable-Begin -->
@@ -2260,10 +2260,10 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 | Flag | Description |
 |:--|:--|
 | 0x1 | FW_PROFILE_TYPE_DOMAIN:  This value represents the profile for networks that are connected to domains. |
-| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they are in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
-| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator are not trusted. |
+| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they're in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
+| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator aren't trusted. |
 | 0x7FFFFFFF | FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets. |
-| 0x80000000 | FW_PROFILE_TYPE_CURRENT:  This value represents the current profiles to which the firewall and advanced security components determine the host is connected at the moment of the call. This value can be specified only in method calls, and it cannot be combined with other flags. |
+| 0x80000000 | FW_PROFILE_TYPE_CURRENT:  This value represents the current profiles to which the firewall and advanced security components determine the host is connected at the moment of the call. This value can be specified only in method calls, and it can't be combined with other flags. |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-AllowedValues-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Profiles-Examples-Begin -->
@@ -2379,7 +2379,7 @@ Consists of one or more comma-delimited tokens specifying the remote addresses c
 "RemoteCorpNetwork"
 "Internet"
 "PlayToRenderers"
-"LocalSubnet" indicates any local address on the local subnet. This token is not case-sensitive.
+"LocalSubnet" indicates any local address on the local subnet. This token isn't case-sensitive.
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 A valid IPv6 address.
 An IPv4 address range in the format of "start address - end address" with no spaces included.
@@ -2541,7 +2541,7 @@ Provides information about the specific version of the rule in deployment for mo
 
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value contains the binary version of the structures and data types that are supported by the server. This value is not merged. In addition, this value is always a fixed value for a specific firewall and advanced security component's software build. This value identifies a policy configuration option that is supported only on servers that have a schema version of 0x0201.
+This value contains the binary version of the structures and data types that are supported by the server. This value isn't merged. In addition, this value is always a fixed value for a specific firewall and advanced security component's software build. This value identifies a policy configuration option that's supported only on servers that have a schema version of 0x0201.
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Description-End -->
 
 <!-- Device-MdmStore-Global-BinaryVersionSupported-Editable-Begin -->
@@ -2580,7 +2580,7 @@ This value contains the binary version of the structures and data types that are
 
 <!-- Device-MdmStore-Global-CRLcheck-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies how certificate revocation list (CRL) verification is enforced. The value MUST be 0, 1, or 2. A value of 0 disables CRL checking. A value of 1 specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) do not cause certificate validation to fail. A value of 2 means that checking is required and that certificate validation fails if any error is encountered during CRL processing. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+This value specifies how certificate revocation list (CRL) verification is enforced. The value MUST be 0, 1, or 2. A value of 0 disables CRL checking. A value of 1 specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) don't cause certificate validation to fail. A value of 2 means that checking is required and that certificate validation fails if any error is encountered during CRL processing. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-CRLcheck-Description-End -->
 
 <!-- Device-MdmStore-Global-CRLcheck-Editable-Begin -->
@@ -2602,7 +2602,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 | Value | Description |
 |:--|:--|
 | 0 | Disables CRL checking. |
-| 1 | Specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) do not cause certificate validation to fail. |
+| 1 | Specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) don't cause certificate validation to fail. |
 | 2 | Means that checking is required and that certificate validation fails if any error is encountered during CRL processing. |
 <!-- Device-MdmStore-Global-CRLcheck-AllowedValues-End -->
 
@@ -2629,7 +2629,7 @@ This value specifies how certificate revocation list (CRL) verification is enfor
 
 <!-- Device-MdmStore-Global-CurrentProfiles-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it is not merged and has no merge law.
+Value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it isn't merged and has no merge law.
 <!-- Device-MdmStore-Global-CurrentProfiles-Description-End -->
 
 <!-- Device-MdmStore-Global-CurrentProfiles-Editable-Begin -->
@@ -2717,7 +2717,7 @@ This value is an on/off switch. If off, the firewall performs stateful File Tran
 
 <!-- Device-MdmStore-Global-EnablePacketQueue-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies how scaling for the software on the receive side is enabled for both the encrypted receive and clear text forward path for the IPsec tunnel gateway scenario. Use of this option also ensures that the packet order is preserved. The data type for this option value is a integer and is a combination of flags. A value of 0x00 indicates that all queuing is to be disabled. A value of 0x01 specifies that inbound encrypted packets are to be queued. A value of 0x02 specifies that packets are to be queued after decryption is performed for forwarding.
+This value specifies how scaling for the software on the receive side is enabled for both the encrypted receive and clear text forward path for the IPsec tunnel gateway scenario. Use of this option also ensures that the packet order is preserved. The data type for this option value is an integer and is a combination of flags. A value of 0x00 indicates that all queuing is to be disabled. A value of 0x01 specifies that inbound encrypted packets are to be queued. A value of 0x02 specifies that packets are to be queued after decryption is performed for forwarding.
 <!-- Device-MdmStore-Global-EnablePacketQueue-Description-End -->
 
 <!-- Device-MdmStore-Global-EnablePacketQueue-Editable-Begin -->
@@ -2767,7 +2767,7 @@ This value specifies how scaling for the software on the receive side is enabled
 
 <!-- Device-MdmStore-Global-IPsecExempt-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value configures IPsec exceptions and MUST be a combination of the valid flags that are defined in [IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191); therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+This value configures IPsec exceptions and MUST be a combination of the valid flags that are defined in [IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191); therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-IPsecExempt-Description-End -->
 
 <!-- Device-MdmStore-Global-IPsecExempt-Editable-Begin -->
@@ -2819,7 +2819,7 @@ This value configures IPsec exceptions and MUST be a combination of the valid fl
 
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. When this option is false, keying modules MUST ignore the entire authentication set if they do not support all of the authentication suites specified in the set. When this option is true, keying modules MUST ignore only the authentication suites that they don't support. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is used as an on/off switch. When this option is false, keying modules MUST ignore the entire authentication set if they don't support all of the authentication suites specified in the set. When this option is true, keying modules MUST ignore only the authentication suites that they don't support. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Description-End -->
 
 <!-- Device-MdmStore-Global-OpportunisticallyMatchAuthSetPerKM-Editable-Begin -->
@@ -2867,7 +2867,7 @@ This value is used as an on/off switch. When this option is false, keying module
 
 <!-- Device-MdmStore-Global-PolicyVersion-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value contains the policy version of the policy store being managed. This value is not merged and therefore, has no merge law.
+This value contains the policy version of the policy store being managed. This value isn't merged and therefore, has no merge law.
 <!-- Device-MdmStore-Global-PolicyVersion-Description-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersion-Editable-Begin -->
@@ -2906,7 +2906,7 @@ This value contains the policy version of the policy store being managed. This v
 
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value that contains the maximum policy version that the server host can accept. The version number is two octets in size. The lowest-order octet is the minor version; the second-to-lowest octet is the major version. This value is not merged and is always a fixed value for a particular firewall and advanced security components software build.
+Value that contains the maximum policy version that the server host can accept. The version number is two octets in size. The lowest-order octet is the minor version; the second-to-lowest octet is the major version. This value isn't merged and is always a fixed value for a particular firewall and advanced security components software build.
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Description-End -->
 
 <!-- Device-MdmStore-Global-PolicyVersionSupported-Editable-Begin -->
@@ -2945,7 +2945,7 @@ Value that contains the maximum policy version that the server host can accept. 
 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the preshared key encoding that is used. MUST be a valid value from the [PRESHARED_KEY_ENCODING_VALUES](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909) enumeration. Default is 1 [UTF-8]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+Specifies the preshared key encoding that's used. MUST be a valid value from the [PRESHARED_KEY_ENCODING_VALUES](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909) enumeration. Default is 1 [UTF-8]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Description-End -->
 
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-Editable-Begin -->
@@ -2967,7 +2967,7 @@ Specifies the preshared key encoding that is used. MUST be a valid value from th
 
 | Value | Description |
 |:--|:--|
-| 0 | FW_GLOBAL_CONFIG_PRESHARED_KEY_ENCODING_NONE:  Preshared key is not encoded. Instead, it is kept in its wide-character format. This symbolic constant has a value of 0. |
+| 0 | FW_GLOBAL_CONFIG_PRESHARED_KEY_ENCODING_NONE:  Preshared key isn't encoded. Instead, it's kept in its wide-character format. This symbolic constant has a value of 0. |
 | 1 (Default) | FW_GLOBAL_CONFIG_PRESHARED_KEY_ENCODING_UTF_8:  Encode the preshared key using UTF-8. This symbolic constant has a value of 1. |
 <!-- Device-MdmStore-Global-PresharedKeyEncoding-AllowedValues-End -->
 
@@ -2994,7 +2994,7 @@ Specifies the preshared key encoding that is used. MUST be a valid value from th
 
 <!-- Device-MdmStore-Global-SaIdleTime-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value configures the security association idle time, in seconds. Security associations are deleted after network traffic is not seen for this specified period of time. The value MUST be in the range of 300 to 3,600 inclusive. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, use the local store value.
+This value configures the security association idle time, in seconds. Security associations are deleted after network traffic isn't seen for this specified period of time. The value MUST be in the range of 300 to 3,600 inclusive. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 <!-- Device-MdmStore-Global-SaIdleTime-Description-End -->
 
 <!-- Device-MdmStore-Global-SaIdleTime-Editable-Begin -->
@@ -3074,7 +3074,7 @@ A list of rules controlling traffic through the Windows Firewall for Hyper-V con
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the rule. The rule name must not include a forward slash (/).
+Unique alpha numeric identifier for the rule. The rule name mustn't include a forward slash (/).
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Description-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Editable-Begin -->
@@ -3396,7 +3396,7 @@ Specifies the friendly name of the Hyper-V Firewall rule.
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value represents the order of rule enforcement. A lower priority rule is evaluated first. If not specified, block rules are evaluated before allow rules. If priority is configured, it is highly recommended to configure the value for ALL rules to ensure expected evaluation of rules.
+This value represents the order of rule enforcement. A lower priority rule is evaluated first. If not specified, block rules are evaluated before allow rules. If priority is configured, it's highly recommended to configure the value for ALL rules to ensure expected evaluation of rules.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Description-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Editable-Begin -->
@@ -3458,8 +3458,8 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 | Flag | Description |
 |:--|:--|
 | 0x1 | FW_PROFILE_TYPE_DOMAIN:  This value represents the profile for networks that are connected to domains. |
-| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they are in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
-| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator are not trusted. |
+| 0x2 | FW_PROFILE_TYPE_STANDARD:  This value represents the standard profile for networks. These networks are classified as private by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are behind Network Address Translation (NAT) devices, routers, and other edge devices, and they're in a private location, such as a home or an office. AND FW_PROFILE_TYPE_PRIVATE:  This value represents the profile for private networks, which is represented by the same value as that used for FW_PROFILE_TYPE_STANDARD. |
+| 0x4 | FW_PROFILE_TYPE_PUBLIC:  This value represents the profile for public networks. These networks are classified as public by the administrators in the server host. The classification happens the first time the host connects to the network. Usually these networks are those at airports, coffee shops, and other public places where the peers in the network or the network administrator aren't trusted. |
 | 0x7FFFFFFF | FW_PROFILE_TYPE_ALL:  This value represents all these network sets and any future network sets. |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-AllowedValues-End -->
 
@@ -3820,7 +3820,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Editable-Begin -->
@@ -3870,7 +3870,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is the action that the Hyper-V Firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Editable-Begin -->
@@ -4157,7 +4157,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. It is recommended to instead use the profile setting value under the profile subtree.
+This value is an on/off switch for the Hyper-V Firewall. This value controls the settings for all profiles. It's recommended to instead use the profile setting value under the profile subtree.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Editable-Begin -->
@@ -4867,7 +4867,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-AuthAppsAllowUserPrefMerge-Editable-Begin -->
@@ -4917,7 +4917,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultInboundAction-Editable-Begin -->
@@ -4967,7 +4967,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DefaultOutboundAction-Editable-Begin -->
@@ -5040,7 +5040,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableInboundNotifications-Editable-Begin -->
@@ -5090,7 +5090,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthMode-Editable-Begin -->
@@ -5140,7 +5140,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableStealthModeIpsecSecuredPacketExemption-Editable-Begin -->
@@ -5190,7 +5190,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If it is true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If it's true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-DisableUnicastResponsesToMulticastBroadcast-Editable-Begin -->
@@ -5240,7 +5240,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableFirewall-Editable-Begin -->
@@ -5339,7 +5339,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule is not enforced for any reason. The merge law for this option is to let "on" values win.
+This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule isn't enforced for any reason. The merge law for this option is to let "on" values win.
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-EnableLogIgnoredRules-Editable-Begin -->
@@ -5439,7 +5439,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it is set or enumerated in the Group Policy store or if it is enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-GlobalPortsAllowUserPrefMerge-Editable-Begin -->
@@ -5489,7 +5489,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogFilePath-Editable-Begin -->
@@ -5530,7 +5530,7 @@ This value is a string that represents a file path to the log where the firewall
 
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Description-End -->
 
 <!-- Device-MdmStore-PrivateProfile-LogMaxFileSize-Editable-Begin -->
@@ -5760,7 +5760,7 @@ This value is used as an on/off switch. If this value is false, firewall rules f
 
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-AuthAppsAllowUserPrefMerge-Editable-Begin -->
@@ -5810,7 +5810,7 @@ This value is used as an on/off switch. If this value is false, authorized appli
 
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on inbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 1 [Block]. The merge law for this option is to let the value of the GroupPolicyRSoPStore.win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultInboundAction-Editable-Begin -->
@@ -5860,7 +5860,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The allow action is represented by 0x00000000; 0x00000001 represents a block action. Default value is 0 [Allow]. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DefaultOutboundAction-Editable-Begin -->
@@ -5933,7 +5933,7 @@ This value is the action that the firewall does by default (and evaluates at the
 
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port. If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableInboundNotifications-Editable-Begin -->
@@ -5983,7 +5983,7 @@ This value is an on/off switch. If this value is false, the firewall MAY display
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthMode-Editable-Begin -->
@@ -6033,7 +6033,7 @@ This value is an on/off switch. When this option is false, the server operates i
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
+This value is an on/off switch. This option is ignored if DisableStealthMode is on. Otherwise, when this option is true, the firewall's stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableStealthModeIpsecSecuredPacketExemption-Editable-Begin -->
@@ -6083,7 +6083,7 @@ This value is an on/off switch. This option is ignored if DisableStealthMode is 
 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If it is true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If it's true, unicast responses to multicast broadcast traffic is blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-DisableUnicastResponsesToMulticastBroadcast-Editable-Begin -->
@@ -6133,7 +6133,7 @@ This value is used as an on/off switch. If it is true, unicast responses to mult
 
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is an on/off switch for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableFirewall-Editable-Begin -->
@@ -6232,7 +6232,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule is not enforced for any reason. The merge law for this option is to let "on" values win.
+This value is used as an on/off switch. The server MAY use this value in an implementation-specific way to control logging of events if a rule isn't enforced for any reason. The merge law for this option is to let "on" values win.
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-EnableLogIgnoredRules-Editable-Begin -->
@@ -6332,7 +6332,7 @@ This value is used as an on/off switch. If this value is on, the firewall logs a
 
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it is set or enumerated in the Group Policy store or if it is enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used.
+This value is used as an on/off switch. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-GlobalPortsAllowUserPrefMerge-Editable-Begin -->
@@ -6382,7 +6382,7 @@ This value is used as an on/off switch. If this value is false, global port fire
 
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value is a string that represents a file path to the log where the firewall logs dropped packets and successful connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogFilePath-Editable-Begin -->
@@ -6423,7 +6423,7 @@ This value is a string that represents a file path to the log where the firewall
 
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured, otherwise the MdmStore value wins if it is configured, otherwise the local store value is used.
+This value specifies the size, in kilobytes, of the log file where dropped packets and successful connections are logged. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured, otherwise the MdmStore value wins if it's configured, otherwise the local store value is used.
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Description-End -->
 
 <!-- Device-MdmStore-PublicProfile-LogMaxFileSize-Editable-Begin -->

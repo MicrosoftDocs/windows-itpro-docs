@@ -45,7 +45,7 @@ This policy setting enables process mitigation options on svchost.exe processes.
 
 This includes a policy requiring all binaries loaded in these processes to be signed by microsoft, as well as a policy disallowing dynamically-generated code.
 
-- If you disable or do not configure this policy setting, these stricter security settings will not be applied.
+- If you disable or don't configure this policy setting, these stricter security settings won't be applied.
 <!-- SvchostProcessMitigation-Description-End -->
 
 <!-- SvchostProcessMitigation-Editable-Begin -->

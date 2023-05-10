@@ -250,7 +250,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns last error description from Device Licensing. Value would be empty, if error decription can not be evaluated.
+Returns last error description from Device Licensing. Value would be empty, if error decription can't be evaluated.
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Description-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Editable-Begin -->
@@ -1134,7 +1134,7 @@ Error code of last subscription operation. Value would be empty(0) in absence of
 
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Description-Begin -->
 <!-- Description-Source-DDF -->
-Error description of last subscription operation. Value would be empty, if error description cannot be evaluated.
+Error description of last subscription operation. Value would be empty, if error description can't be evaluated.
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Description-End -->
 
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Editable-Begin -->

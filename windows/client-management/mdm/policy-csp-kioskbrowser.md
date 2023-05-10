@@ -87,7 +87,7 @@ List of exceptions to the blocked website URLs (with wildcard support). This is 
 
 <!-- BlockedUrls-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers can not navigate to.
+List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers can't navigate to.
 <!-- BlockedUrls-Description-End -->
 
 <!-- BlockedUrls-Editable-Begin -->

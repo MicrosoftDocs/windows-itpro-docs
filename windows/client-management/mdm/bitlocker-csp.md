@@ -87,16 +87,16 @@ The following list shows the BitLocker configuration service provider nodes:
 
 <!-- Device-AllowStandardUserEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user.
+Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged-on user is non-admin/standard user.
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy being set to "0", i.e, Silent encryption is enforced.
-If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
-is the current logged on user in the system.
+If "AllowWarningForOtherDiskEncryption" isn't set, or is set to "1", "RequireDeviceEncryption" policy won't try to encrypt drive(s) if a standard user
+is the current logged-on user in the system.
 
 The expected values for this policy are:
 
 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
-0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
-will not try to enable encryption on any drive.
+0 = This is the default, when the policy isn't set. If current logged-on user is a standard user, "RequireDeviceEncryption" policy
+won't try to enable encryption on any drive.
 <!-- Device-AllowStandardUserEncryption-Description-End -->
 
 <!-- Device-AllowStandardUserEncryption-Editable-Begin -->
@@ -119,7 +119,7 @@ will not try to enable encryption on any drive.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive. |
+| 0 (Default) | This is the default, when the policy isn't set. If current logged-on user is a standard user, "RequireDeviceEncryption" policy won't try to enable encryption on any drive. |
 | 1 | "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user. |
 <!-- Device-AllowStandardUserEncryption-AllowedValues-End -->
 
@@ -172,7 +172,7 @@ This policy setting allows suspending protection for BitLocker Drive Encryption 
 The expected values for this policy are:
 
 0 = Prevent BitLocker Drive Encryption protection from being suspended.
-1 = This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.
+1 = This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection.
 <!-- Device-AllowSuspensionOfBitLockerProtection-Description-End -->
 
 <!-- Device-AllowSuspensionOfBitLockerProtection-Editable-Begin -->
@@ -195,7 +195,7 @@ The expected values for this policy are:
 | Value | Description |
 |:--|:--|
 | 0 | Prevent BitLocker Drive Encryption protection from being suspended. |
-| 1 (Default) | This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection. |
+| 1 (Default) | This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection. |
 <!-- Device-AllowSuspensionOfBitLockerProtection-AllowedValues-End -->
 
 <!-- Device-AllowSuspensionOfBitLockerProtection-Examples-Begin -->
@@ -233,9 +233,9 @@ require reinstallation of Windows.
 
 The expected values for this policy are:
 
-1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
+1 = This is the default, when the policy isn't set. Warning prompt and encryption notification is allowed.
 0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update,
-the value 0 only takes affect on Azure Active Directory joined devices.
+the value 0 only takes effect on Azure Active Directory joined devices.
 Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-AllowWarningForOtherDiskEncryption-Description-End -->
 
@@ -370,11 +370,11 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 <!-- Description-Source-ADMX -->
 This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
 
-- If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+- If you enable this policy setting, all removable data drives that aren't BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
 If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.
 
-- If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
+- If you disable or don't configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
 
 > [!NOTE]
 > This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.
@@ -476,9 +476,9 @@ To disable this policy, use the following SyncML:
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.
 
-- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.
+- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option won't be presented in the BitLocker setup wizard.
 
-- If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
+- If you disable or don't configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
 <!-- Device-FixedDrivesEncryptionType-Description-End -->
 
 <!-- Device-FixedDrivesEncryptionType-Editable-Begin -->
@@ -555,7 +555,7 @@ The "Allow data recovery agent" check box is used to specify whether a data reco
 
 In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
-Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
+Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you won't be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
 
 In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.
 
@@ -566,7 +566,7 @@ Select the "Do not enable BitLocker until recovery information is stored in AD D
 
 - If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.
 
-- If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.
+- If this policy setting isn't configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
 <!-- Device-FixedDrivesRecoveryOptions-Description-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-Editable-Begin -->
@@ -678,9 +678,9 @@ To disable this policy, use the following SyncML:
 <!-- Description-Source-ADMX -->
 This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.
 
-- If you enable this policy setting, all fixed data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+- If you enable this policy setting, all fixed data drives that aren't BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
-- If you disable or do not configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.
+- If you disable or don't configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.
 <!-- Device-FixedDrivesRequireEncryption-Description-End -->
 
 <!-- Device-FixedDrivesRequireEncryption-Editable-Begin -->
@@ -754,9 +754,9 @@ To disable this policy, use hte following SyncML:
 
 <!-- Device-IdentificationField-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to associate unique organizational identifiers to a new drive that is enabled with BitLocker. These identifiers are stored as the identification field and allowed identification field. The identification field allows you to associate a unique organizational identifier to BitLocker-protected drives. This identifier is automatically added to new BitLocker-protected drives and can be updated on existing BitLocker-protected drives using the [manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool. An identification field is required for management of certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker will only manage and update data recovery agents when the identification field on the drive matches the value configured in the identification field. In a similar manner, BitLocker will only update the BitLocker To Go Reader when the identification field on the drive matches the value configured for the identification field.
+This policy setting allows you to associate unique organizational identifiers to a new drive that's enabled with BitLocker. These identifiers are stored as the identification field and allowed identification field. The identification field allows you to associate a unique organizational identifier to BitLocker-protected drives. This identifier is automatically added to new BitLocker-protected drives and can be updated on existing BitLocker-protected drives using the [manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool. An identification field is required for management of certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker will only manage and update data recovery agents when the identification field on the drive matches the value configured in the identification field. In a similar manner, BitLocker will only update the BitLocker To Go Reader when the identification field on the drive matches the value configured for the identification field.
 
-The allowed identification field is used in combination with the "Deny write access to removable drives not protected by BitLocker" policy setting to help control the use of removable drives in your organization. It is a comma separated list of identification fields from your organization or other external organizations.
+The allowed identification field is used in combination with the "Deny write access to removable drives not protected by BitLocker" policy setting to help control the use of removable drives in your organization. It's a comma separated list of identification fields from your organization or other external organizations.
 
 You can configure the identification fields on existing drives by using [manage-bde](/windows-server/administration/windows-commands/manage-bde).exe.
 
@@ -764,7 +764,7 @@ You can configure the identification fields on existing drives by using [manage-
 
 When a BitLocker-protected drive is mounted on another BitLocker-enabled computer the identification field and allowed identification field will be used to determine whether the drive is from an outside organization.
 
-- If you disable or do not configure this policy setting, the identification field is not required.
+- If you disable or don't configure this policy setting, the identification field isn't required.
 
 > [!NOTE]
 > Identification fields are required for management of certificate-based data recovery agents on BitLocker-protected drives. BitLocker will only manage and update certificate-based data recovery agents when the identification field is present on a drive and is identical to the value configured on the computer. The identification field can be any value of 260 characters or fewer.
@@ -838,9 +838,9 @@ This policy setting controls the use of BitLocker on removable data drives. This
 
 When this policy setting is enabled you can select property settings that control how users can configure BitLocker. Choose "Allow users to apply BitLocker protection on removable data drives" to permit the user to run the BitLocker setup wizard on a removable data drive. Choose "Allow users to suspend and decrypt BitLocker on removable data drives" to permit the user to remove BitLocker Drive encryption from the drive or suspend the encryption while maintenance is performed. For information about suspending BitLocker protection, see [BitLocker Basic Deployment](/windows/security/information-protection/bitlocker/bitlocker-basic-deployment).
 
-- If you do not configure this policy setting, users can use BitLocker on removable disk drives.
+- If you don't configure this policy setting, users can use BitLocker on removable disk drives.
 
-- If you disable this policy setting, users cannot use BitLocker on removable disk drives.
+- If you disable this policy setting, users can't use BitLocker on removable disk drives.
 <!-- Device-RemovableDrivesConfigureBDE-Description-End -->
 
 <!-- Device-RemovableDrivesConfigureBDE-Editable-Begin -->
@@ -909,9 +909,9 @@ Sample value for this node to enable this policy is:
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.
 
-- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.
+- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option won't be presented in the BitLocker setup wizard.
 
-- If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
+- If you disable or don't configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
 <!-- Device-RemovableDrivesEncryptionType-Description-End -->
 
 <!-- Device-RemovableDrivesEncryptionType-Editable-Begin -->
@@ -978,7 +978,7 @@ Possible values:
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, allows you to exclude removable drives and devices connected over USB interface from [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption). Excluded devices cannot be encrypted, even manually. Additionally, if "Deny write access to removable drives not protected by BitLocker" is configured, user will not be prompted for encryption and drive will be mounted in read/write mode. Provide a comma separated list of excluded removable drives\devices, using the Hardware ID of the disk device. Example USBSTOR\SEAGATE_ST39102LW_______0004.
+When enabled, allows you to exclude removable drives and devices connected over USB interface from [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption). Excluded devices can't be encrypted, even manually. Additionally, if "Deny write access to removable drives not protected by BitLocker" is configured, user won't be prompted for encryption and drive will be mounted in read/write mode. Provide a comma separated list of excluded removable drives\devices, using the Hardware ID of the disk device. Example USBSTOR\SEAGATE_ST39102LW_______0004.
 <!-- Device-RemovableDrivesExcludedFromEncryption-Description-End -->
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-Editable-Begin -->
@@ -1020,11 +1020,11 @@ When enabled, allows you to exclude removable drives and devices connected over 
 <!-- Description-Source-ADMX -->
 This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
 
-- If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+- If you enable this policy setting, all removable data drives that aren't BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
 If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.
 
-- If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
+- If you disable or don't configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
 
 > [!NOTE]
 > This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.
@@ -1119,7 +1119,7 @@ Allows the Admin to require encryption to be turned on using BitLocker\Device En
 Sample value for this node to enable this policy:
 1
 
-Disabling the policy will not turn off the encryption on the system drive. But will stop prompting the user to turn it on.
+Disabling the policy won't turn off the encryption on the system drive. But will stop prompting the user to turn it on.
 <!-- Device-RequireDeviceEncryption-Description-End -->
 
 <!-- Device-RequireDeviceEncryption-Editable-Begin -->
@@ -1154,7 +1154,7 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disable. If the policy setting is not set or is set to 0, the device's enforcement status is not checked. The policy does not enforce encryption and it does not decrypt encrypted volumes. |
+| 0 (Default) | Disable. If the policy setting isn't set or is set to 0, the device's enforcement status isn't checked. The policy doesn't enforce encryption and it doesn't decrypt encrypted volumes. |
 | 1 | Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on AllowWarningForOtherDiskEncryption policy). |
 <!-- Device-RequireDeviceEncryption-AllowedValues-End -->
 
@@ -1212,7 +1212,7 @@ This policy is only valid for mobile SKU.
 Sample value for this node to enable this policy:
 1
 
-Disabling the policy will not turn off the encryption on the storage card. But will stop prompting the user to turn it on.
+Disabling the policy won't turn off the encryption on the storage card. But will stop prompting the user to turn it on.
 <!-- Device-RequireStorageCardEncryption-Description-End -->
 
 <!-- Device-RequireStorageCardEncryption-Editable-Begin -->
@@ -1234,7 +1234,7 @@ Disabling the policy will not turn off the encryption on the storage card. But w
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Storage cards do not need to be encrypted. |
+| 0 (Default) | Storage cards don't need to be encrypted. |
 | 1 | Require storage cards to be encrypted. |
 <!-- Device-RequireStorageCardEncryption-AllowedValues-End -->
 
@@ -1550,13 +1550,13 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure whether or not standard users are allowed to change BitLocker volume PINs, provided they are able to provide the existing PIN first.
+This policy setting allows you to configure whether or not standard users are allowed to change BitLocker volume PINs, provided they're able to provide the existing PIN first.
 
 This policy setting is applied when you turn on BitLocker.
 
-- If you enable this policy setting, standard users will not be allowed to change BitLocker PINs or passwords.
+- If you enable this policy setting, standard users won't be allowed to change BitLocker PINs or passwords.
 
-- If you disable or do not configure this policy setting, standard users will be permitted to change BitLocker PINs and passwords.
+- If you disable or don't configure this policy setting, standard users will be permitted to change BitLocker PINs and passwords.
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Description-End -->
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Editable-Begin -->
@@ -1621,9 +1621,9 @@ The Windows touch keyboard (such as that used by tablets) isn't available in the
 
 - If you enable this policy setting, devices must have an alternative means of pre-boot input (such as an attached USB keyboard).
 
-- If this policy is not enabled, the Windows Recovery Environment must be enabled on tablets to support the entry of the BitLocker recovery password. When the Windows Recovery Environment is not enabled and this policy is not enabled, you cannot turn on BitLocker on a device that uses the Windows touch keyboard.
+- If this policy isn't enabled, the Windows Recovery Environment must be enabled on tablets to support the entry of the BitLocker recovery password. When the Windows Recovery Environment isn't enabled and this policy isn't enabled, you can't turn on BitLocker on a device that uses the Windows touch keyboard.
 
-Note that if you do not enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include:
+Note that if you don't enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include:
 
   - Configure TPM startup PIN: Required/Allowed
   - Configure TPM startup key and PIN: Required/Allowed
@@ -1687,7 +1687,7 @@ This policy setting allows users on devices that are compliant with InstantGo or
 
 - If you enable this policy setting, users on InstantGo and HSTI compliant devices will have the choice to turn on BitLocker without pre-boot authentication.
 
-- If this policy is not enabled, the options of "Require additional authentication at startup" policy apply.
+- If this policy isn't enabled, the options of "Require additional authentication at startup" policy apply.
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Description-End -->
 
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Editable-Begin -->
@@ -1745,9 +1745,9 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.
 
-- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.
+- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option won't be presented in the BitLocker setup wizard.
 
-- If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
+- If you disable or don't configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
 <!-- Device-SystemDrivesEncryptionType-Description-End -->
 
 <!-- Device-SystemDrivesEncryptionType-Editable-Begin -->
@@ -1826,9 +1826,9 @@ Enhanced startup PINs permit the use of characters including uppercase and lower
 - If you enable this policy setting, all new BitLocker startup PINs set will be enhanced PINs.
 
 > [!NOTE]
-> Not all computers may support enhanced PINs in the pre-boot environment. It is strongly recommended that users perform a system check during BitLocker setup.
+> Not all computers may support enhanced PINs in the pre-boot environment. It's strongly recommended that users perform a system check during BitLocker setup.
 
-- If you disable or do not configure this policy setting, enhanced PINs will not be used.
+- If you disable or don't configure this policy setting, enhanced PINs won't be used.
 <!-- Device-SystemDrivesEnhancedPIN-Description-End -->
 
 <!-- Device-SystemDrivesEnhancedPIN-Editable-Begin -->
@@ -1888,7 +1888,7 @@ This policy setting allows you to configure a minimum length for a Trusted Platf
 
 - If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.
 
-- If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
+- If you disable or don't configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
 
 > [!NOTE]
 > If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
@@ -1980,7 +1980,7 @@ If you select the "Use custom recovery message" option, the message you type in 
 If you select the "Use custom recovery URL" option, the URL you type in the "Custom recovery URL option" text box will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.
 
 > [!NOTE]
-> Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
+> Not all characters and languages are supported in pre-boot. It's strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 <!-- Device-SystemDrivesRecoveryMessage-Description-End -->
 
 <!-- Device-SystemDrivesRecoveryMessage-Editable-Begin -->
@@ -2086,7 +2086,7 @@ The "Allow certificate-based data recovery agent" check box is used to specify w
 
 In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
-Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
+Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you won't be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
 
 In "Save BitLocker recovery information to Active Directory Domain Services", choose which BitLocker recovery information to store in AD DS for operating system drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.
 
@@ -2097,7 +2097,7 @@ Select the "Do not enable BitLocker until recovery information is stored in AD D
 
 - If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected operating system drives.
 
-- If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.
+- If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
 <!-- Device-SystemDrivesRecoveryOptions-Description-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-Editable-Begin -->
@@ -2217,7 +2217,7 @@ On a computer with a compatible TPM, four types of authentication methods can be
 
 - If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.
 
-- If you disable or do not configure this policy setting, users can configure only basic options on computers with a TPM.
+- If you disable or don't configure this policy setting, users can configure only basic options on computers with a TPM.
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool [manage-bde](/windows-server/administration/windows-commands/manage-bde) instead of the BitLocker Drive Encryption setup wizard.

@@ -123,7 +123,7 @@ Require UEFI Memory Attributes Table.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not require UEFI Memory Attributes Table. |
+| 0 (Default) | Don't require UEFI Memory Attributes Table. |
 | 1 | Require UEFI Memory Attributes Table. |
 <!-- RequireUEFIMemoryAttributesTable-AllowedValues-End -->
 

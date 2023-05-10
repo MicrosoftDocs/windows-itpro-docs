@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- DeviceEnumerationPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. Note this policy does not apply to 1394, PCMCIA or ExpressCard devices.
+Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. Note this policy doesn't apply to 1394, PCMCIA or ExpressCard devices.
 <!-- DeviceEnumerationPolicy-Description-End -->
 
 <!-- DeviceEnumerationPolicy-Editable-Begin -->

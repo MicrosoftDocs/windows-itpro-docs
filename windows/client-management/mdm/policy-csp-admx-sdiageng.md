@@ -39,11 +39,11 @@ ms.topic: reference
 
 <!-- BetterWhenConnected-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows users who are connected to the Internet to access and search troubleshooting content that is hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they are prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
+This policy setting allows users who are connected to the Internet to access and search troubleshooting content that's hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they're prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
 
-- If you enable or do not configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that is hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
+- If you enable or don't configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that's hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
 
-- If you disable this policy setting, users can only access and search troubleshooting content that is available locally on their computers, even if they are connected to the Internet. They are prevented from connecting to the Microsoft servers that host the Windows Online Troubleshooting Service.
+- If you disable this policy setting, users can only access and search troubleshooting content that's available locally on their computers, even if they're connected to the Internet. They are prevented from connecting to the Microsoft servers that host the Windows Online Troubleshooting Service.
 <!-- BetterWhenConnected-Description-End -->
 
 <!-- BetterWhenConnected-Editable-Begin -->
@@ -100,9 +100,9 @@ This policy setting allows users who are connected to the Internet to access and
 <!-- Description-Source-ADMX -->
 This policy setting allows users to access and run the troubleshooting tools that are available in the Troubleshooting Control Panel and to run the troubleshooting wizard to troubleshoot problems on their computers.
 
-- If you enable or do not configure this policy setting, users can access and run the troubleshooting tools from the Troubleshooting Control Panel.
+- If you enable or don't configure this policy setting, users can access and run the troubleshooting tools from the Troubleshooting Control Panel.
 
-- If you disable this policy setting, users cannot access or run the troubleshooting tools from the Control Panel.
+- If you disable this policy setting, users can't access or run the troubleshooting tools from the Control Panel.
 
 Note that this setting also controls a user's ability to launch standalone troubleshooting packs such as those found in .diagcab files.
 <!-- ScriptedDiagnosticsExecutionPolicy-Description-End -->
@@ -163,7 +163,7 @@ This policy setting determines whether scripted diagnostics will execute diagnos
 
 - If you enable this policy setting, the scripted diagnostics execution engine validates the signer of any diagnostic package and runs only those signed by trusted publishers.
 
-- If you disable or do not configure this policy setting, the scripted diagnostics execution engine runs all digitally signed packages.
+- If you disable or don't configure this policy setting, the scripted diagnostics execution engine runs all digitally signed packages.
 <!-- ScriptedDiagnosticsSecurityPolicy-Description-End -->
 
 <!-- ScriptedDiagnosticsSecurityPolicy-Editable-Begin -->

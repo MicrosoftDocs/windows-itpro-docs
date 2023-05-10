@@ -39,13 +39,13 @@ ms.topic: reference
 
 <!-- RA_EncryptedTicketOnly-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting does not affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
+This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting doesn't affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
 
 - If you enable this policy setting, only computers running this version (or later versions) of the operating system can connect to this computer.
 
 - If you disable this policy setting, computers running this version and a previous version of the operating system can connect to this computer.
 
-- If you do not configure this policy setting, users can configure the setting in System Properties in the Control Panel.
+- If you don't configure this policy setting, users can configure the setting in System Properties in the Control Panel.
 <!-- RA_EncryptedTicketOnly-Description-End -->
 
 <!-- RA_EncryptedTicketOnly-Editable-Begin -->
@@ -122,7 +122,7 @@ For example:
 
 - If you disable this policy setting, application-based settings are used.
 
-- If you do not configure this policy setting, application-based settings are used.
+- If you don't configure this policy setting, application-based settings are used.
 <!-- RA_Optimize_Bandwidth-Description-End -->
 
 <!-- RA_Optimize_Bandwidth-Editable-Begin -->

@@ -252,7 +252,7 @@ The name that refers to the account on the device.
 
 <!-- User-Accounts-{Account GUID}-AccountType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify the account type. This value is entered during setup and cannot be modified once entered. An Exchange account is indicated by the string value "Exchange".
+Specify the account type. This value is entered during setup and can't be modified once entered. An Exchange account is indicated by the string value "Exchange".
 <!-- User-Accounts-{Account GUID}-AccountType-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-AccountType-Editable-Begin -->
@@ -330,7 +330,7 @@ Domain name of the Exchange server.
 
 <!-- User-Accounts-{Account GUID}-EmailAddress-Description-Begin -->
 <!-- Description-Source-DDF -->
-The email address the user entered during setup. This is the email address that is associated with the Exchange ActiveSync account and it is required.
+The email address the user entered during setup. This is the email address that's associated with the Exchange ActiveSync account and it's required.
 <!-- User-Accounts-{Account GUID}-EmailAddress-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-EmailAddress-Editable-Begin -->
@@ -770,7 +770,7 @@ Indicates format type of the Email. Supported values are 0 (none), 1 (text), 2 (
 
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting specifies the size beyond which HTML-formatted e-mail messages are truncated when they are synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
+This setting specifies the size beyond which HTML-formatted e-mail messages are truncated when they're synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailHTMLTruncation-Editable-Begin -->
@@ -809,7 +809,7 @@ This setting specifies the size beyond which HTML-formatted e-mail messages are 
 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting specifies the size beyond which text-formatted e-mail messages are truncated when they are synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
+This setting specifies the size beyond which text-formatted e-mail messages are truncated when they're synchronized to the mobile phone. The value is specified in KB. A value of -1 disables truncation.
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-Options-MailPlainTextTruncation-Editable-Begin -->
@@ -911,7 +911,7 @@ Specifies whether SSL is used.
 
 | Value | Description |
 |:--|:--|
-| 0 | SSL is not used. |
+| 0 | SSL isn't used. |
 | 1 (Default) | SSL is used. |
 <!-- User-Accounts-{Account GUID}-Options-UseSSL-AllowedValues-End -->
 
@@ -1142,7 +1142,7 @@ Specifies the server name used by the account.
 
 <!-- User-Accounts-{Account GUID}-UserName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the user name for the account. The user name cannot be changed after a sync has been successfully performed. The user name can be in the fully qualified format "`someone@example.com`", or just "username", depending on the type of account created. For most Exchange accounts, the user name format is just "username", whereas for Microsoft, Google, Yahoo, and most POP/IMAP accounts, the user name format is "`someone@example.com`".
+Specifies the user name for the account. The user name can't be changed after a sync has been successfully performed. The user name can be in the fully qualified format "`someone@example.com`", or just "username", depending on the type of account created. For most Exchange accounts, the user name format is just "username", whereas for Microsoft, Google, Yahoo, and most POP/IMAP accounts, the user name format is "`someone@example.com`".
 <!-- User-Accounts-{Account GUID}-UserName-Description-End -->
 
 <!-- User-Accounts-{Account GUID}-UserName-Editable-Begin -->

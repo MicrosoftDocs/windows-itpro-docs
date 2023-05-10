@@ -61,7 +61,7 @@ Disable this feature to avoid information being stored on servers outside of you
 
 | Value | Description |
 |:--|:--|
-| 0 | Message sync is not allowed and cannot be changed by the user. |
+| 0 | Message sync isn't allowed and can't be changed by the user. |
 | 1 (Default) | Message sync is allowed. The user can change this setting. |
 <!-- AllowMessageSync-AllowedValues-End -->
 

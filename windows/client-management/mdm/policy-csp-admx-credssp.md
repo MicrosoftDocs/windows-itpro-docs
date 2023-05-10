@@ -47,7 +47,7 @@ This policy setting applies when server authentication was achieved by using a t
 
 The policy becomes effective the next time the user signs on to a computer running Windows.
 
-- If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
+- If you disable or don't configure (by default) this policy setting, delegation of default credentials isn't permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
 
 FWlink for KB:
 <https://go.microsoft.com/fwlink/?LinkId=301508>
@@ -119,7 +119,7 @@ This policy setting applies when server authentication was achieved via NTLM.
 
 - If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
 
-- If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any machine.
+- If you disable or don't configure (by default) this policy setting, delegation of default credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
@@ -190,9 +190,9 @@ Some versions of the CredSSP protocol are vulnerable to an encryption oracle att
 
 If you enable this policy setting, CredSSP version support will be selected based on the following options:
 
-Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. Note this setting should not be deployed until all remote hosts support the newest version.
+Force Updated Clients: Client applications which use CredSSP won't be able to fall back to the insecure versions and services using CredSSP won't accept unpatched clients. Note this setting shouldn't be deployed until all remote hosts support the newest version.
 
-Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
+Mitigated: Client applications which use CredSSP won't be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
 
 Vulnerable: Client applications which use CredSSP will expose the remote servers to attacks by supporting fall back to the insecure versions and services using CredSSP will accept unpatched clients.
 
@@ -256,9 +256,9 @@ This policy setting applies when server authentication was achieved via a truste
 
 - If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
@@ -328,9 +328,9 @@ This policy setting applies when server authentication was achieved via NTLM.
 
 - If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating fresh credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
@@ -399,9 +399,9 @@ This policy setting applies when server authentication was achieved via a truste
 
 - If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
@@ -470,9 +470,9 @@ This policy setting applies when server authentication was achieved via NTLM.
 
 - If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine is not a member of any domain. If the client is domain-joined, by default the delegation of saved credentials is not permitted to any machine.
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine isn't a member of any domain. If the client is domain-joined, by default the delegation of saved credentials isn't permitted to any machine.
 
-- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating saved credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
@@ -537,12 +537,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-- If you enable this policy setting, you can specify the servers to which the user's default credentials cannot be delegated (default credentials are those that you use when first logging on to Windows).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials can't be delegated (default credentials are those that you use when first logging on to Windows).
 
-- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or don't configure (by default) this policy setting, this policy setting doesn't specify any server.
 
 > [!NOTE]
-> The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -606,12 +606,12 @@ This policy setting can be used in combination with the "Allow delegating defaul
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-- If you enable this policy setting, you can specify the servers to which the user's fresh credentials cannot be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials can't be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or don't configure (by default) this policy setting, this policy setting doesn't specify any server.
 
 > [!NOTE]
-> The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -675,12 +675,12 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-- If you enable this policy setting, you can specify the servers to which the user's saved credentials cannot be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials can't be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or don't configure (by default) this policy setting, this policy setting doesn't specify any server.
 
 > [!NOTE]
-> The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
 TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
@@ -742,7 +742,7 @@ This policy setting can be used in combination with the "Allow delegating saved 
 
 <!-- RestrictedRemoteAdministration-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When running in Restricted Admin or Remote Credential Guard mode, participating apps do not expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials are not delegated. Remote Credential Guard does not limit access to resources because it redirects all requests back to the client device.
+When running in Restricted Admin or Remote Credential Guard mode, participating apps don't expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials aren't delegated. Remote Credential Guard doesn't limit access to resources because it redirects all requests back to the client device.
 
 Participating apps:
 Remote Desktop Client
@@ -755,13 +755,13 @@ Require Remote Credential Guard: Participating applications must use Remote Cred
 
 Require Restricted Admin: Participating applications must use Restricted Admin to connect to remote hosts.
 
-- If you disable or do not configure this policy setting, Restricted Admin and Remote Credential Guard mode are not enforced and participating apps can delegate credentials to remote devices.
+- If you disable or don't configure this policy setting, Restricted Admin and Remote Credential Guard mode aren't enforced and participating apps can delegate credentials to remote devices.
 
 > [!NOTE]
 > To disable most credential delegation, it may be sufficient to deny delegation in Credential Security Support Provider (CredSSP) by modifying Administrative template settings (located at Computer Configuration\Administrative Templates\System\Credentials Delegation).
 
 > [!NOTE]
-> On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions do not support Remote Credential Guard.
+> On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions don't support Remote Credential Guard.
 <!-- RestrictedRemoteAdministration-Description-End -->
 
 <!-- RestrictedRemoteAdministration-Editable-Begin -->

@@ -43,7 +43,7 @@ ms.topic: reference
 
 <!-- AccountLockoutPolicy-Description-Begin -->
 <!-- Description-Source-DDF -->
-Account lockout threshold - This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password-protected screen savers count as failed logon attempts. Default: 0 Account lockout duration - This security setting determines the number of minutes a locked-out account remains locked out before automatically becoming unlocked. The available range is from 0 minutes through 99,999 minutes. If you set the account lockout duration to 0, the account will be locked out until an administrator explicitly unlocks it. If an account lockout threshold is defined, the account lockout duration must be greater than or equal to the reset time. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified. Reset account lockout counter after - This security setting determines the number of minutes that must elapse after a failed logon attempt before the failed logon attempt counter is reset to 0 bad logon attempts. The available range is 1 minute to 99,999 minutes. If an account lockout threshold is defined, this reset time must be less than or equal to the Account lockout duration. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
+Account lockout threshold - This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account can't be used until it's reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password-protected screen savers count as failed logon attempts. Default: 0 Account lockout duration - This security setting determines the number of minutes a locked-out account remains locked out before automatically becoming unlocked. The available range is from 0 minutes through 99,999 minutes. If you set the account lockout duration to 0, the account will be locked out until an administrator explicitly unlocks it. If an account lockout threshold is defined, the account lockout duration must be greater than or equal to the reset time. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified. Reset account lockout counter after - This security setting determines the number of minutes that must elapse after a failed logon attempt before the failed logon attempt counter is reset to 0 bad logon attempts. The available range is 1 minute to 99,999 minutes. If an account lockout threshold is defined, this reset time must be less than or equal to the Account lockout duration. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
 <!-- AccountLockoutPolicy-Description-End -->
 
 <!-- AccountLockoutPolicy-Editable-Begin -->
@@ -348,7 +348,7 @@ Determines the type of PIN or password required. This policy only applies if the
 <!-- ClearTextPassword-Description-Begin -->
 <!-- Description-Source-DDF -->
 Store passwords using reversible encryption
-This security setting determines whether the operating system stores passwords using reversible encryption. This policy provides support for applications that use protocols that require knowledge of the user's password for authentication purposes. Storing passwords using reversible encryption is essentially the same as storing plaintext versions of the passwords. For this reason, this policy should never be enabled unless application requirements outweigh the need to protect password information. This policy is required when using Challenge-Handshake Authentication Protocol (CHAP) authentication through remote access or Internet Authentication Services (IAS). It is also required when using Digest Authentication in Internet Information Services (IIS).
+This security setting determines whether the operating system stores passwords using reversible encryption. This policy provides support for applications that use protocols that require knowledge of the user's password for authentication purposes. Storing passwords using reversible encryption is essentially the same as storing plaintext versions of the passwords. For this reason, this policy should never be enabled unless application requirements outweigh the need to protect password information. This policy is required when using Challenge-Handshake Authentication Protocol (CHAP) authentication through remote access or Internet Authentication Services (IAS). It's also required when using Digest Authentication in Internet Information Services (IIS).
 <!-- ClearTextPassword-Description-End -->
 
 <!-- ClearTextPassword-Editable-Begin -->
@@ -578,7 +578,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 <!-- EnforceLockScreenAndLogonImage-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image. Value type is a string, which is the full image filepath and filename.
+Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users won't be able to change this image. Value type is a string, which is the full image filepath and filename.
 <!-- EnforceLockScreenAndLogonImage-Description-End -->
 
 <!-- EnforceLockScreenAndLogonImage-Editable-Begin -->
@@ -658,7 +658,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
 > [!NOTE]
-> This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+> This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it isn't wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker isn't enabled, then the policy can't be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 <!-- MaxDevicePasswordFailedAttempts-Description-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-Editable-Begin -->
@@ -703,7 +703,7 @@ The number of authentication failures allowed before the device will be wiped. A
 This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days.
 
 > [!NOTE]
-> It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
+> It's a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
 <!-- MaximumPasswordAge-Description-End -->
 
 <!-- MaximumPasswordAge-Editable-Begin -->
@@ -990,7 +990,7 @@ The following example shows how to set the minimum password length to 4 characte
 
 <!-- MinimumPasswordAge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998. Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
+This security setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998. Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting doesn't follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user doesn't have to choose a new password. For this reason, Enforce password history is set to 1 by default.
 <!-- MinimumPasswordAge-Description-End -->
 
 <!-- MinimumPasswordAge-Editable-Begin -->
@@ -1101,10 +1101,10 @@ Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordHistorySize-Description-Begin -->
 <!-- Description-Source-DDF -->
 Enforce password history
-This security setting determines the number of unique new passwords that have to be associated with a user account before an old password can be reused. The value must be between 0 and 24 passwords. This policy enables administrators to enhance security by ensuring that old passwords are not reused continually. Default: 24 on domain controllers. 0 on stand-alone servers.
+This security setting determines the number of unique new passwords that have to be associated with a user account before an old password can be reused. The value must be between 0 and 24 passwords. This policy enables administrators to enhance security by ensuring that old passwords aren't reused continually. Default: 24 on domain controllers. 0 on stand-alone servers.
 
 > [!NOTE]
-> By default, member computers follow the configuration of their domain controllers. To maintain the effectiveness of the password history, do not allow passwords to be changed immediately after they were just changed by also enabling the Minimum password age security policy setting. For information about the minimum password age security policy setting, see Minimum password age.
+> By default, member computers follow the configuration of their domain controllers. To maintain the effectiveness of the password history, don't allow passwords to be changed immediately after they were just changed by also enabling the Minimum password age security policy setting. For information about the minimum password age security policy setting, see Minimum password age.
 <!-- PasswordHistorySize-Description-End -->
 
 <!-- PasswordHistorySize-Editable-Begin -->
@@ -1158,7 +1158,7 @@ Disables the lock screen camera toggle switch in PC Settings and prevents a came
 
 By default, users can enable invocation of an available camera on the lock screen.
 
-If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
+If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera can't be invoked on the lock screen.
 <!-- PreventEnablingLockScreenCamera-Description-End -->
 
 <!-- PreventEnablingLockScreenCamera-Editable-Begin -->

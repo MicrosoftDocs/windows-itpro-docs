@@ -39,14 +39,14 @@ ms.topic: reference
 
 <!-- DwmDefaultColorizationColor_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the default color for window frames when the user does not specify a color.
+This policy setting controls the default color for window frames when the user doesn't specify a color.
 
-- If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user does not specify a color.
+- If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user doesn't specify a color.
 
-- If you disable or do not configure this policy setting, the default internal color is used, if the user does not specify a color.
+- If you disable or don't configure this policy setting, the default internal color is used, if the user doesn't specify a color.
 
 > [!NOTE]
-> This policy setting can be used in conjunction with the "Prevent color changes of window frames" setting, to enforce a specific color for window frames that cannot be changed by users.
+> This policy setting can be used in conjunction with the "Prevent color changes of window frames" setting, to enforce a specific color for window frames that can't be changed by users.
 <!-- DwmDefaultColorizationColor_1-Description-End -->
 
 <!-- DwmDefaultColorizationColor_1-Editable-Begin -->
@@ -101,14 +101,14 @@ This policy setting controls the default color for window frames when the user d
 
 <!-- DwmDefaultColorizationColor_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the default color for window frames when the user does not specify a color.
+This policy setting controls the default color for window frames when the user doesn't specify a color.
 
-- If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user does not specify a color.
+- If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user doesn't specify a color.
 
-- If you disable or do not configure this policy setting, the default internal color is used, if the user does not specify a color.
+- If you disable or don't configure this policy setting, the default internal color is used, if the user doesn't specify a color.
 
 > [!NOTE]
-> This policy setting can be used in conjunction with the "Prevent color changes of window frames" setting, to enforce a specific color for window frames that cannot be changed by users.
+> This policy setting can be used in conjunction with the "Prevent color changes of window frames" setting, to enforce a specific color for window frames that can't be changed by users.
 <!-- DwmDefaultColorizationColor_2-Description-End -->
 
 <!-- DwmDefaultColorizationColor_2-Editable-Begin -->
@@ -167,7 +167,7 @@ This policy setting controls the appearance of window animations such as those f
 
 - If you enable this policy setting, window animations are turned off.
 
-- If you disable or do not configure this policy setting, window animations are turned on.
+- If you disable or don't configure this policy setting, window animations are turned on.
 
 Changing this policy setting requires a logoff for it to be applied.
 <!-- DwmDisallowAnimations_1-Description-End -->
@@ -228,7 +228,7 @@ This policy setting controls the appearance of window animations such as those f
 
 - If you enable this policy setting, window animations are turned off.
 
-- If you disable or do not configure this policy setting, window animations are turned on.
+- If you disable or don't configure this policy setting, window animations are turned on.
 
 Changing this policy setting requires a logoff for it to be applied.
 <!-- DwmDisallowAnimations_2-Description-End -->
@@ -289,10 +289,10 @@ This policy setting controls the ability to change the color of window frames.
 
 - If you enable this policy setting, you prevent users from changing the default window frame color.
 
-- If you disable or do not configure this policy setting, you allow users to change the default window frame color.
+- If you disable or don't configure this policy setting, you allow users to change the default window frame color.
 
 > [!NOTE]
-> This policy setting can be used in conjunction with the "Specify a default color for window frames" policy setting, to enforce a specific color for window frames that cannot be changed by users.
+> This policy setting can be used in conjunction with the "Specify a default color for window frames" policy setting, to enforce a specific color for window frames that can't be changed by users.
 <!-- DwmDisallowColorizationColorChanges_1-Description-End -->
 
 <!-- DwmDisallowColorizationColorChanges_1-Editable-Begin -->
@@ -351,10 +351,10 @@ This policy setting controls the ability to change the color of window frames.
 
 - If you enable this policy setting, you prevent users from changing the default window frame color.
 
-- If you disable or do not configure this policy setting, you allow users to change the default window frame color.
+- If you disable or don't configure this policy setting, you allow users to change the default window frame color.
 
 > [!NOTE]
-> This policy setting can be used in conjunction with the "Specify a default color for window frames" policy setting, to enforce a specific color for window frames that cannot be changed by users.
+> This policy setting can be used in conjunction with the "Specify a default color for window frames" policy setting, to enforce a specific color for window frames that can't be changed by users.
 <!-- DwmDisallowColorizationColorChanges_2-Description-End -->
 
 <!-- DwmDisallowColorizationColorChanges_2-Editable-Begin -->

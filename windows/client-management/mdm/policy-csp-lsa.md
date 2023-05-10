@@ -41,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy controls the configuration under which LSASS loads custom SSPs and APs.
 
-- If you enable this setting or do not configure it, LSA allows custom SSPs and APs to be loaded.
+- If you enable this setting or don't configure it, LSA allows custom SSPs and APs to be loaded.
 
-- If you disable this setting, LSA does not load custom SSPs and APs.
+- If you disable this setting, LSA doesn't load custom SSPs and APs.
 <!-- AllowCustomSSPsAPs-Description-End -->
 
 <!-- AllowCustomSSPsAPs-Editable-Begin -->
@@ -100,13 +100,13 @@ This policy controls the configuration under which LSASS loads custom SSPs and A
 <!-- Description-Source-ADMX -->
 This policy controls the configuration under which LSASS is run.
 
-- If you do not configure this policy and there is no current setting in the registry, LSA will run as protected process for clean installed, HVCI capable, client SKUs that are domain or cloud domain joined devices. This configuration is not UEFI locked. This can be overridden if the policy is configured.
+- If you don't configure this policy and there is no current setting in the registry, LSA will run as protected process for clean installed, HVCI capable, client SKUs that are domain or cloud domain joined devices. This configuration isn't UEFI locked. This can be overridden if the policy is configured.
 
-- If you configure and set this policy setting to "Disabled", LSA will not run as a protected process.
+- If you configure and set this policy setting to "Disabled", LSA won't run as a protected process.
 
 - If you configure and set this policy setting to "EnabledWithUEFILock," LSA will run as a protected process and this configuration is UEFI locked.
 
-- If you configure and set this policy setting to "EnabledWithoutUEFILock", LSA will run as a protected process and this configuration is not UEFI locked.
+- If you configure and set this policy setting to "EnabledWithoutUEFILock", LSA will run as a protected process and this configuration isn't UEFI locked.
 <!-- ConfigureLsaProtectedProcess-Description-End -->
 
 <!-- ConfigureLsaProtectedProcess-Editable-Begin -->
@@ -128,9 +128,9 @@ This policy controls the configuration under which LSASS is run.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled. Default value. LSA will not run as protected process. |
+| 0 (Default) | Disabled. Default value. LSA won't run as protected process. |
 | 1 | Enabled with UEFI lock. LSA will run as protected process and this configuration is UEFI locked. |
-| 2 | Enabled without UEFI lock. LSA will run as protected process and this configuration is not UEFI locked. |
+| 2 | Enabled without UEFI lock. LSA will run as protected process and this configuration isn't UEFI locked. |
 <!-- ConfigureLsaProtectedProcess-AllowedValues-End -->
 
 <!-- ConfigureLsaProtectedProcess-GpMapping-Begin -->

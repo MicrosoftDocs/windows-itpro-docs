@@ -454,7 +454,7 @@ The following table shows what behavior is expected for the policy settings with
 |:--|:--|
 | 0 (Default) | Current) behavior. |
 | 1 | RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment. |
-| 2 | NoRequireAuthentication: Admin Authentication is not required for components in RecoveryEnvironment. |
+| 2 | NoRequireAuthentication: Admin Authentication isn't required for components in RecoveryEnvironment. |
 <!-- RecoveryEnvironmentAuthentication-AllowedValues-End -->
 
 <!-- RecoveryEnvironmentAuthentication-Examples-Begin -->
@@ -480,7 +480,7 @@ The following table shows what behavior is expected for the policy settings with
 
 <!-- RequireDeviceEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows enterprise to turn on internal storage encryption. Most restricted value is 1. Important. If encryption has been enabled, it cannot be turned off by using this policy.
+Allows enterprise to turn on internal storage encryption. Most restricted value is 1. Important. If encryption has been enabled, it can't be turned off by using this policy.
 <!-- RequireDeviceEncryption-Description-End -->
 
 <!-- RequireDeviceEncryption-Editable-Begin -->
@@ -502,7 +502,7 @@ Allows enterprise to turn on internal storage encryption. Most restricted value 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Encryption is not required. |
+| 0 (Default) | Encryption isn't required. |
 | 1 | Encryption is required. |
 <!-- RequireDeviceEncryption-AllowedValues-End -->
 

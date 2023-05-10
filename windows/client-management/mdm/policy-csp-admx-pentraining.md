@@ -41,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Turns off Tablet PC Pen Training.
 
-- If you enable this policy setting, users cannot open Tablet PC Pen Training.
+- If you enable this policy setting, users can't open Tablet PC Pen Training.
 
-- If you disable or do not configure this policy setting, users can open Tablet PC Pen Training.
+- If you disable or don't configure this policy setting, users can open Tablet PC Pen Training.
 <!-- PenTrainingOff_1-Description-End -->
 
 <!-- PenTrainingOff_1-Editable-Begin -->
@@ -100,9 +100,9 @@ Turns off Tablet PC Pen Training.
 <!-- Description-Source-ADMX -->
 Turns off Tablet PC Pen Training.
 
-- If you enable this policy setting, users cannot open Tablet PC Pen Training.
+- If you enable this policy setting, users can't open Tablet PC Pen Training.
 
-- If you disable or do not configure this policy setting, users can open Tablet PC Pen Training.
+- If you disable or don't configure this policy setting, users can open Tablet PC Pen Training.
 <!-- PenTrainingOff_2-Description-End -->
 
 <!-- PenTrainingOff_2-Editable-Begin -->

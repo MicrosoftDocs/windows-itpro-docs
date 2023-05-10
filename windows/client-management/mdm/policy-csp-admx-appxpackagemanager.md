@@ -51,7 +51,7 @@ User profiles for the Guest account and members of the Guests group
 
 - If you enable this policy setting, Group Policy allows deployment operations (adding, registering, staging, updating, or removing an app package) of Windows Store apps when using a special profile.
 
-- If you disable or do not configure this policy setting, Group Policy blocks deployment operations of Windows Store apps when using a special profile.
+- If you disable or don't configure this policy setting, Group Policy blocks deployment operations of Windows Store apps when using a special profile.
 <!-- AllowDeploymentInSpecialProfiles-Description-End -->
 
 <!-- AllowDeploymentInSpecialProfiles-Editable-Begin -->

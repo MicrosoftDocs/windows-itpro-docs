@@ -100,7 +100,7 @@ The following list shows the PassportForWork configuration service provider node
 
 <!-- Device-{TenantId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Windows Hello for Business provisioning and management.
+This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces `{ }`, which will be used as part of Windows Hello for Business provisioning and management.
 <!-- Device-{TenantId}-Description-End -->
 
 <!-- Device-{TenantId}-Editable-Begin -->
@@ -180,7 +180,7 @@ Root node for policies.
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Description-Begin -->
 <!-- Description-Source-DDF -->
-Do not start Windows Hello provisioning after sign-in.
+Don't start Windows Hello provisioning after sign-in.
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Description-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Editable-Begin -->
@@ -233,7 +233,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 - If you enable this policy setting, the PIN recovery secret will be stored on the device and the user will be able to change to a new PIN in case their PIN is forgotten.
 
-- If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+- If you disable or don't configure this policy setting, the PIN recovery secret won't be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Description-End -->
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Editable-Begin -->
@@ -327,7 +327,7 @@ Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revis
 
 - If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
 
-- If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.
+- If you disable or don't configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-Description-End -->
 
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-TPM12-Editable-Begin -->
@@ -421,7 +421,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
+If you don't configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Editable-Begin -->
@@ -471,7 +471,7 @@ If you do not configure this policy setting, Windows Hello for Business requires
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs do not expire.
+This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs don't expire.
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Expiration-Editable-Begin -->
@@ -512,7 +512,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs is not required. PIN history is not preserved through PIN reset.
+This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs isn't required. PIN history isn't preserved through PIN reset.
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-History-Editable-Begin -->
@@ -559,7 +559,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use lowercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Editable-Begin -->
@@ -613,10 +613,10 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 
 - If you configure this policy setting, the PIN length must be less than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be less than or equal to 127.
+- If you don't configure this policy setting, the PIN length must be less than or equal to 127.
 
 > [!NOTE]
-> If the above specified conditions for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the maximum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-MaximumPINLength-Editable-Begin -->
@@ -661,10 +661,10 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 - If you configure this policy setting, the PIN length must be greater than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be greater than or equal to 4.
+- If you don't configure this policy setting, the PIN length must be greater than or equal to 4.
 
 > [!NOTE]
-> If the above specified conditions for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the minimum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-MinimumPINLength-Editable-Begin -->
@@ -711,7 +711,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use special characters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Editable-Begin -->
@@ -767,7 +767,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use uppercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Editable-Begin -->
@@ -861,7 +861,7 @@ Boolean that specifies if phone sign-in can be used with a device. Phone sign-in
 Default value is false.
 
 - If you enable this setting, a desktop device will allow a registered, companion device to be used as an authentication factor.
-- If you disable this setting, a companion device cannot be used in desktop authentication scenarios.
+- If you disable this setting, a companion device can't be used in desktop authentication scenarios.
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Description-End -->
 
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Editable-Begin -->
@@ -912,11 +912,11 @@ Default value is false.
 
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Description-Begin -->
 <!-- Description-Source-DDF -->
-A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
+A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it can't be used on other devices.
 
 - If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
-- If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+- If you disable or don't configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Description-End -->
 
 <!-- Device-{TenantId}-Policies-RequireSecurityDevice-Editable-Begin -->
@@ -969,7 +969,7 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 
 - If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
-- If you disable or do not configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
+- If you disable or don't configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-Description-End -->
 
 <!-- Device-{TenantId}-Policies-UseCertificateForOnPremAuth-Editable-Begin -->
@@ -1022,7 +1022,7 @@ Boolean value that enables Windows Hello for Business to use Azure AD Kerberos t
 
 - If you enable this policy setting, Windows Hello for Business will use an Azure AD Kerberos ticket to authenticate to on-premises resources. The Azure AD Kerberos ticket is returned to the client after a successful authentication to Azure AD if Azure AD Kerberos is enabled for the tenant and domain.
 
-- If you disable or do not configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
+- If you disable or don't configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Description-End -->
 
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Editable-Begin -->
@@ -1074,7 +1074,7 @@ Boolean value that enables Windows Hello for Business to use Azure AD Kerberos t
 
 - If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
 
-- If you disable or do not configure this policy setting, applications do not use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+- If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
 
 Windows requires a user to lock and unlock their session after changing this setting if the user is currently signed in.
 <!-- Device-{TenantId}-Policies-UseHelloCertificatesAsSmartCardCertificates-Description-End -->
@@ -1127,9 +1127,9 @@ Windows requires a user to lock and unlock their session after changing this set
 <!-- Description-Source-DDF -->
 Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
-- If you enable or do not configure this policy setting, the device provisions Windows Hello for Business for all users.
+- If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 
-- If you disable this policy setting, the device does not provision Windows Hello for Business for any user.
+- If you disable this policy setting, the device doesn't provision Windows Hello for Business for any user.
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Description-End -->
 
 <!-- Device-{TenantId}-Policies-UsePassportForWork-Editable-Begin -->
@@ -1217,7 +1217,7 @@ Root node for biometrics policies.
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enhanced Sign-in Security (ESS) isolates both biometric template data and matching operations to trusted hardware or specified memory regions, meaning the rest of the operating system cannot access or tamper with them. Because the channel of communication between the sensors and the algorithm is also secured, it is impossible for malware to inject or replay data in order to simulate a user signing in or to lock a user out of their machine.
+Enhanced Sign-in Security (ESS) isolates both biometric template data and matching operations to trusted hardware or specified memory regions, meaning the rest of the operating system can't access or tamper with them. Because the channel of communication between the sensors and the algorithm is also secured, it's impossible for malware to inject or replay data in order to simulate a user signing in or to lock a user out of their machine.
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Description-End -->
 
 <!-- Device-Biometrics-EnableESSwithSupportedPeripherals-Editable-Begin -->
@@ -1277,11 +1277,11 @@ Enhanced Sign-in Security (ESS) isolates both biometric template data and matchi
 <!-- Description-Source-DDF -->
 This setting determines whether enhanced anti-spoofing is required for Windows Hello face authentication.
 
-- If you enable this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
+- If you enable this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that don't support enhanced anti-spoofing.
 
-- If you disable or do not configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
+- If you disable or don't configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
-Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
+Note that enhanced anti-spoofing for Windows Hello face authentication isn't required on unmanaged devices.
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Description-End -->
 
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Editable-Begin -->
@@ -1334,7 +1334,7 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
 <!-- Description-Source-DDF -->
 Windows Hello for Business enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However, users must still configure a PIN to use in case of failures.
 
-- If you enable or do not configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
+- If you enable or don't configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
 
 - If you disable this policy setting, Windows Hello for Business prevents the use of biometric gestures.
 
@@ -1714,7 +1714,7 @@ Security Key.
 
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Description-Begin -->
 <!-- Description-Source-DDF -->
-Use security key for signin. 0 is disabled. 1 is enable. If you do not configure this policy setting, the default is disabled.
+Use security key for signin. 0 is disabled. 1 is enable. If you don't configure this policy setting, the default is disabled.
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Description-End -->
 
 <!-- Device-SecurityKey-UseSecurityKeyForSignin-Editable-Begin -->
@@ -1771,7 +1771,7 @@ THIS NODE IS DEPRECATED AND WILL BE REMOVED IN A FUTURE VERSION. PLEASE USE Biom
 
 Windows Hello for Business enables users to use biometric gestures, such as face and fingerprints, as an alternative to the PIN gesture. However, users must still configure a PIN to use in case of failures.
 
-- If you enable or do not configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
+- If you enable or don't configure this policy setting, Windows Hello for Business allows the use of biometric gestures.
 
 - If you disable this policy setting, Windows Hello for Business prevents the use of biometric gestures.
 
@@ -1825,7 +1825,7 @@ Windows Hello for Business enables users to use biometric gestures, such as face
 
 <!-- User-{TenantId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces ( { , } ), which will be used as part of Windows Hello for Business provisioning and management.
+This policy specifies the Tenant ID in the format of a Globally Unique Identifier (GUID) without curly braces `{ }`, which will be used as part of Windows Hello for Business provisioning and management.
 <!-- User-{TenantId}-Description-End -->
 
 <!-- User-{TenantId}-Editable-Begin -->
@@ -1909,7 +1909,7 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 
 - If you enable this policy setting, the PIN recovery secret will be stored on the device and the user will be able to change to a new PIN in case their PIN is forgotten.
 
-- If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+- If you disable or don't configure this policy setting, the PIN recovery secret won't be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
 <!-- User-{TenantId}-Policies-EnablePinRecovery-Description-End -->
 
 <!-- User-{TenantId}-Policies-EnablePinRecovery-Editable-Begin -->
@@ -2003,7 +2003,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
+If you don't configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Editable-Begin -->
@@ -2053,7 +2053,7 @@ If you do not configure this policy setting, Windows Hello for Business requires
 
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs do not expire.
+This policy specifies when the PIN expires (in days). Valid values are 0 to 730 inclusive. If this policy is set to 0, then PINs don't expire.
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Expiration-Editable-Begin -->
@@ -2094,7 +2094,7 @@ This policy specifies when the PIN expires (in days). Valid values are 0 to 730 
 
 <!-- User-{TenantId}-Policies-PINComplexity-History-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs is not required. PIN history is not preserved through PIN reset.
+This policy specifies the number of past PINs that can be stored in the history that can't be used. Valid values are 0 to 50 inclusive. If this policy is set to 0, then storage of previous PINs isn't required. PIN history isn't preserved through PIN reset.
 <!-- User-{TenantId}-Policies-PINComplexity-History-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-History-Editable-Begin -->
@@ -2141,7 +2141,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use lowercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Editable-Begin -->
@@ -2195,10 +2195,10 @@ Maximum PIN length configures the maximum number of characters allowed for the P
 
 - If you configure this policy setting, the PIN length must be less than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be less than or equal to 127.
+- If you don't configure this policy setting, the PIN length must be less than or equal to 127.
 
 > [!NOTE]
-> If the above specified conditions for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the maximum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-MaximumPINLength-Editable-Begin -->
@@ -2243,10 +2243,10 @@ Minimum PIN length configures the minimum number of characters required for the 
 
 - If you configure this policy setting, the PIN length must be greater than or equal to this number.
 
-- If you do not configure this policy setting, the PIN length must be greater than or equal to 4.
+- If you don't configure this policy setting, the PIN length must be greater than or equal to 4.
 
 > [!NOTE]
-> If the above specified conditions for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
+> If the above specified conditions for the minimum PIN length aren't met, default values will be used for both the maximum and minimum PIN lengths.
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-MinimumPINLength-Editable-Begin -->
@@ -2293,7 +2293,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use special characters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Editable-Begin -->
@@ -2349,7 +2349,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
+If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use uppercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Editable-Begin -->
@@ -2399,11 +2399,11 @@ If you do not configure this policy setting, Windows Hello for Business does not
 
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Description-Begin -->
 <!-- Description-Source-DDF -->
-A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
+A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it can't be used on other devices.
 
 - If you enable this policy setting, only devices with a usable TPM provision Windows Hello for Business.
 
-- If you disable or do not configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+- If you disable or don't configure this policy setting, the TPM is still preferred, but all devices provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Description-End -->
 
 <!-- User-{TenantId}-Policies-RequireSecurityDevice-Editable-Begin -->
@@ -2454,9 +2454,9 @@ A Trusted Platform Module (TPM) provides additional security benefits over softw
 <!-- Description-Source-DDF -->
 Windows Hello for Business is an alternative method for signing into Windows using your Active Directory or Azure Active Directory account that can replace passwords, Smart Cards, and Virtual Smart Cards.
 
-- If you enable or do not configure this policy setting, the device provisions Windows Hello for Business for all users.
+- If you enable or don't configure this policy setting, the device provisions Windows Hello for Business for all users.
 
-- If you disable this policy setting, the device does not provision Windows Hello for Business for any user.
+- If you disable this policy setting, the device doesn't provision Windows Hello for Business for any user.
 <!-- User-{TenantId}-Policies-UsePassportForWork-Description-End -->
 
 <!-- User-{TenantId}-Policies-UsePassportForWork-Editable-Begin -->

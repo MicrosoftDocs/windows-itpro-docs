@@ -38,7 +38,7 @@ ms.topic: reference
 <!-- AllowGraphingCalculator-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app.
-- If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app.
+- If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app.
 
 - If you enable or don't configure this policy setting, users will be able to access graphing functionality.
 <!-- AllowGraphingCalculator-Description-End -->
@@ -144,7 +144,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- EnableEduThemes-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization.
-- If you disable or don't configure this policy setting, EDU-specific theme packs will not be included.
+- If you disable or don't configure this policy setting, EDU-specific theme packs won't be included.
 
 - If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
 <!-- EnableEduThemes-Description-End -->
@@ -248,11 +248,11 @@ Prevents users from using familiar methods to add local and network printers.
 
 - If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer.) This setting also removes Add Printer from the Printers folder in Control Panel.
 
-Also, users cannot add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
+Also, users can't add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
 
-However, this setting does not prevent users from using the Add Hardware Wizard to add a printer. Nor does it prevent users from running other programs to add printers.
+However, this setting doesn't prevent users from using the Add Hardware Wizard to add a printer. Nor does it prevent users from running other programs to add printers.
 
-This setting does not delete printers that users have already added. However, if users have not added a printer when this setting is applied, they cannot print.
+This setting doesn't delete printers that users have already added. However, if users haven't added a printer when this setting is applied, they can't print.
 
 > [!NOTE]
 > You can use printer permissions to restrict the use of printers without specifying a setting. In the Printers folder, right-click a printer, click Properties, and then click the Security tab.

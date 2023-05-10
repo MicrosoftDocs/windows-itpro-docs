@@ -41,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Makes subfolders available offline whenever their parent folder is made available offline.
 
-This setting automatically extends the "make available offline" setting to all new and existing subfolders of a folder. Users do not have the option of excluding subfolders.
+This setting automatically extends the "make available offline" setting to all new and existing subfolders of a folder. Users don't have the option of excluding subfolders.
 
-- If you enable this setting, when you make a folder available offline, all folders within that folder are also made available offline. Also, new folders that you create within a folder that is available offline are made available offline when the parent folder is synchronized.
+- If you enable this setting, when you make a folder available offline, all folders within that folder are also made available offline. Also, new folders that you create within a folder that's available offline are made available offline when the parent folder is synchronized.
 
-- If you disable this setting or do not configure it, the system asks users whether they want subfolders to be made available offline when they make a parent folder available offline.
+- If you disable this setting or don't configure it, the system asks users whether they want subfolders to be made available offline when they make a parent folder available offline.
 <!-- Pol_AlwaysPinSubFolders-Description-End -->
 
 <!-- Pol_AlwaysPinSubFolders-Editable-Begin -->
@@ -106,7 +106,7 @@ This policy setting lists network files and folders that are always available fo
 
 - If you disable this policy setting, the list of files or folders made always available offline (including those inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
 
-- If you do not configure this policy setting, no files or folders are made available for offline use by Group Policy.
+- If you don't configure this policy setting, no files or folders are made available for offline use by Group Policy.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings will be combined and all specified files will be available for offline use.
@@ -169,7 +169,7 @@ This policy setting lists network files and folders that are always available fo
 
 - If you disable this policy setting, the list of files or folders made always available offline (including those inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
 
-- If you do not configure this policy setting, no files or folders are made available for offline use by Group Policy.
+- If you don't configure this policy setting, no files or folders are made available for offline use by Group Policy.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings will be combined and all specified files will be available for offline use.
@@ -232,7 +232,7 @@ This policy setting controls when background synchronization occurs while operat
 
 You can also configure Background Sync for network shares that are in user selected Work Offline mode. This mode is in effect when a user selects the Work Offline button for a specific share. When selected, all configured settings will apply to shares in user selected Work Offline mode as well.
 
-- If you disable or do not configure this policy setting, Windows performs a background sync of offline folders in the slow-link mode at a default interval with the start of the sync varying between 0 and 60 additional minutes. In Windows 7 and Windows Server 2008 R2, the default sync interval is 360 minutes. In Windows 8 and Windows Server 2012, the default sync interval is 120 minutes.
+- If you disable or don't configure this policy setting, Windows performs a background sync of offline folders in the slow-link mode at a default interval with the start of the sync varying between 0 and 60 additional minutes. In Windows 7 and Windows Server 2008 R2, the default sync interval is 360 minutes. In Windows 8 and Windows Server 2012, the default sync interval is 120 minutes.
 <!-- Pol_BackgroundSyncSettings-Description-End -->
 
 <!-- Pol_BackgroundSyncSettings-Editable-Begin -->
@@ -295,13 +295,13 @@ This setting also disables the ability to adjust, through the Offline Files cont
 
 - If you disable this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit.
 
-- If you do not configure this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit. However, the users can change these values using the Offline Files control applet.
+- If you don't configure this policy setting, the system limits the space that offline files occupy to 25 percent of the total space on the drive where the Offline Files cache is located. The limit for automatically cached files is 100 percent of the total disk space limit. However, the users can change these values using the Offline Files control applet.
 
-- If you enable this setting and specify a total size limit greater than the size of the drive hosting the Offline Files cache, and that drive is the system drive, the total size limit is automatically adjusted downward to 75 percent of the size of the drive. If the cache is located on a drive other than the system drive, the limit is automatically adjusted downward to 100 percent of the size of the drive.
+- If you enable this setting and specify a total size limit greater than the size of the drive hosting the Offline Files cache, and that drive is the system drive, the total size limit's automatically adjusted downward to 75 percent of the size of the drive. If the cache is located on a drive other than the system drive, the limit's automatically adjusted downward to 100 percent of the size of the drive.
 
-- If you enable this setting and specify a total size limit less than the amount of space currently used by the Offline Files cache, the total size limit is automatically adjusted upward to the amount of space currently used by offline files. The cache is then considered full.
+- If you enable this setting and specify a total size limit less than the amount of space currently used by the Offline Files cache, the total size limit's automatically adjusted upward to the amount of space currently used by offline files. The cache is then considered full.
 
-- If you enable this setting and specify an auto-cached space limit greater than the total size limit, the auto-cached limit is automatically adjusted downward to equal the total size limit.
+- If you enable this setting and specify an auto-cached space limit greater than the total size limit, the auto-cached limit's automatically adjusted downward to equal the total size limit.
 
 This setting replaces the Default Cache Size setting used by pre-Windows Vista systems.
 <!-- Pol_CacheSize-Description-End -->
@@ -357,11 +357,11 @@ This setting replaces the Default Cache Size setting used by pre-Windows Vista s
 
 <!-- Pol_CustomGoOfflineActions_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines how computers respond when they are disconnected from particular offline file servers. This setting overrides the default response, a user-specified response, and the response specified in the "Action on server disconnect" setting.
+Determines how computers respond when they're disconnected from particular offline file servers. This setting overrides the default response, a user-specified response, and the response specified in the "Action on server disconnect" setting.
 
-To use this setting, click Show. In the Show Contents dialog box in the Value Name column box, type the server's computer name. Then, in the Value column box, type "0" if users can work offline when they are disconnected from this server, or type "1" if they cannot.
+To use this setting, click Show. In the Show Contents dialog box in the Value Name column box, type the server's computer name. Then, in the Value column box, type "0" if users can work offline when they're disconnected from this server, or type "1" if they cannot.
 
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting does not prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting doesn't prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
 
 > [!TIP]
 > To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click Advanced. This setting corresponds to the settings in the "Exception list" section.
@@ -418,11 +418,11 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!-- Pol_CustomGoOfflineActions_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines how computers respond when they are disconnected from particular offline file servers. This setting overrides the default response, a user-specified response, and the response specified in the "Action on server disconnect" setting.
+Determines how computers respond when they're disconnected from particular offline file servers. This setting overrides the default response, a user-specified response, and the response specified in the "Action on server disconnect" setting.
 
-To use this setting, click Show. In the Show Contents dialog box in the Value Name column box, type the server's computer name. Then, in the Value column box, type "0" if users can work offline when they are disconnected from this server, or type "1" if they cannot.
+To use this setting, click Show. In the Show Contents dialog box in the Value Name column box, type the server's computer name. Then, in the Value column box, type "0" if users can work offline when they're disconnected from this server, or type "1" if they cannot.
 
-This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting does not prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
+This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured for a particular server, the setting in Computer Configuration takes precedence over the setting in User Configuration. Both Computer and User configuration take precedence over a user's setting. This setting doesn't prevent users from setting custom actions through the Offline Files tab. However, users are unable to change any custom actions established via this setting.
 
 > [!TIP]
 > To configure this setting without establishing a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click Advanced. This setting corresponds to the settings in the "Exception list" section.
@@ -485,13 +485,13 @@ This setting also disables the "Amount of disk space to use for temporary offlin
 
 Automatic caching can be set on any network share. When a user opens a file on the share, the system automatically stores a copy of the file on the user's computer.
 
-This setting does not limit the disk space available for files that user's make available offline manually.
+This setting doesn't limit the disk space available for files that user's make available offline manually.
 
 - If you enable this setting, you can specify an automatic-cache disk space limit.
 
 - If you disable this setting, the system limits the space that automatically cached files occupy to 10 percent of the space on the system drive.
 
-- If you do not configure this setting, disk space for automatically cached files is limited to 10 percent of the system drive by default, but users can change it.
+- If you don't configure this setting, disk space for automatically cached files is limited to 10 percent of the system drive by default, but users can change it.
 
 > [!TIP]
 > To change the amount of disk space used for automatic caching without specifying a setting, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then use the slider bar associated with the "Amount of disk space to use for temporary offline files" option.
@@ -548,16 +548,16 @@ This setting does not limit the disk space available for files that user's make 
 
 <!-- Pol_Enabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether the Offline Files feature is enabled. Offline Files saves a copy of network files on the user's computer for use when the computer is not connected to the network.
+This policy setting determines whether the Offline Files feature is enabled. Offline Files saves a copy of network files on the user's computer for use when the computer isn't connected to the network.
 
-- If you enable this policy setting, Offline Files is enabled and users cannot disable it.
+- If you enable this policy setting, Offline Files is enabled and users can't disable it.
 
-- If you disable this policy setting, Offline Files is disabled and users cannot enable it.
+- If you disable this policy setting, Offline Files is disabled and users can't enable it.
 
-- If you do not configure this policy setting, Offline Files is enabled on Windows client computers, and disabled on computers running Windows Server, unless changed by the user.
+- If you don't configure this policy setting, Offline Files is enabled on Windows client computers, and disabled on computers running Windows Server, unless changed by the user.
 
 > [!NOTE]
-> Changes to this policy setting do not take effect until the affected computer is restarted.
+> Changes to this policy setting don't take effect until the affected computer is restarted.
 <!-- Pol_Enabled-Description-End -->
 
 <!-- Pol_Enabled-Editable-Begin -->
@@ -616,11 +616,11 @@ This policy setting determines whether offline files are encrypted.
 
 Offline files are locally cached copies of files from a network share. Encrypting this cache reduces the likelihood that a user could access files from the Offline Files cache without proper permissions.
 
-- If you enable this policy setting, all files in the Offline Files cache are encrypted. This includes existing files as well as files added later. The cached copy on the local computer is affected, but the associated network copy is not. The user cannot unencrypt Offline Files through the user interface.
+- If you enable this policy setting, all files in the Offline Files cache are encrypted. This includes existing files as well as files added later. The cached copy on the local computer is affected, but the associated network copy is not. The user can't unencrypt Offline Files through the user interface.
 
-- If you disable this policy setting, all files in the Offline Files cache are unencrypted. This includes existing files as well as files added later, even if the files were stored using NTFS encryption or BitLocker Drive Encryption while on the server. The cached copy on the local computer is affected, but the associated network copy is not. The user cannot encrypt Offline Files through the user interface.
+- If you disable this policy setting, all files in the Offline Files cache are unencrypted. This includes existing files as well as files added later, even if the files were stored using NTFS encryption or BitLocker Drive Encryption while on the server. The cached copy on the local computer is affected, but the associated network copy is not. The user can't encrypt Offline Files through the user interface.
 
-- If you do not configure this policy setting, encryption of the Offline Files cache is controlled by the user through the user interface. The current cache state is retained, and if the cache is only partially encrypted, the operation completes so that it is fully encrypted. The cache does not return to the unencrypted state. The user must be an administrator on the local computer to encrypt or decrypt the Offline Files cache.
+- If you don't configure this policy setting, encryption of the Offline Files cache is controlled by the user through the user interface. The current cache state is retained, and if the cache is only partially encrypted, the operation completes so that it's fully encrypted. The cache doesn't return to the unencrypted state. The user must be an administrator on the local computer to encrypt or decrypt the Offline Files cache.
 
 > [!NOTE]
 > By default, this cache is protected on NTFS partitions by ACLs.
@@ -822,7 +822,7 @@ This policy setting enables administrators to block certain file types from bein
 
 - If you enable this policy setting, a user will be unable to create files with the specified file extensions in any of the folders that have been made available offline.
 
-- If you disable or do not configure this policy setting, a user can create a file of any type in the folders that have been made available offline.
+- If you disable or don't configure this policy setting, a user can create a file of any type in the folders that have been made available offline.
 <!-- Pol_ExclusionListSettings-Description-End -->
 
 <!-- Pol_ExclusionListSettings-Editable-Begin -->
@@ -876,11 +876,11 @@ This policy setting enables administrators to block certain file types from bein
 
 <!-- Pol_ExtExclusionList-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Lists types of files that cannot be used offline.
+Lists types of files that can't be used offline.
 
-This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system does not cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type cannot be made available offline."
+This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system doesn't cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type can't be made available offline."
 
-This setting is designed to protect files that cannot be separated, such as database components.
+This setting is designed to protect files that can't be separated, such as database components.
 
 To use this setting, type the file name extension in the "Extensions" box. To type more than one extension, separate the extensions with a semicolon (;).
 
@@ -947,11 +947,11 @@ This setting also disables the "When a network connection is lost" option on the
 
 - "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
 
-- "Never go offline" indicates that network files are not available while the server is inaccessible.
+- "Never go offline" indicates that network files aren't available while the server is inaccessible.
 
 - If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
 
-- If you do not configure this setting, users can work offline by default, but they can change this option.
+- If you don't configure this setting, users can work offline by default, but they can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -1020,11 +1020,11 @@ This setting also disables the "When a network connection is lost" option on the
 
 - "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
 
-- "Never go offline" indicates that network files are not available while the server is inaccessible.
+- "Never go offline" indicates that network files aren't available while the server is inaccessible.
 
 - If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
 
-- If you do not configure this setting, users can work offline by default, but they can change this option.
+- If you don't configure this setting, users can work offline by default, but they can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -1087,9 +1087,9 @@ Also, see the "Non-default server disconnect actions" setting.
 <!-- Description-Source-ADMX -->
 Disables the Offline Files folder.
 
-This setting disables the "View Files" button on the Offline Files tab. As a result, users cannot use the Offline Files folder to view or open copies of network files stored on their computer. Also, they cannot use the folder to view characteristics of offline files, such as their server status, type, or location.
+This setting disables the "View Files" button on the Offline Files tab. As a result, users can't use the Offline Files folder to view or open copies of network files stored on their computer. Also, they can't use the folder to view characteristics of offline files, such as their server status, type, or location.
 
-This setting does not prevent users from working offline or from saving local copies of files available offline. Also, it does not prevent them from using other programs, such as Windows Explorer, to view their offline files.
+This setting doesn't prevent users from working offline or from saving local copies of files available offline. Also, it doesn't prevent them from using other programs, such as Windows Explorer, to view their offline files.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -1151,9 +1151,9 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Disables the Offline Files folder.
 
-This setting disables the "View Files" button on the Offline Files tab. As a result, users cannot use the Offline Files folder to view or open copies of network files stored on their computer. Also, they cannot use the folder to view characteristics of offline files, such as their server status, type, or location.
+This setting disables the "View Files" button on the Offline Files tab. As a result, users can't use the Offline Files folder to view or open copies of network files stored on their computer. Also, they can't use the folder to view characteristics of offline files, such as their server status, type, or location.
 
-This setting does not prevent users from working offline or from saving local copies of files available offline. Also, it does not prevent them from using other programs, such as Windows Explorer, to view their offline files.
+This setting doesn't prevent users from working offline or from saving local copies of files available offline. Also, it doesn't prevent them from using other programs, such as Windows Explorer, to view their offline files.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -1215,14 +1215,14 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Prevents users from enabling, disabling, or changing the configuration of Offline Files.
 
-This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users cannot view or change the options on the Offline Files tab or Offline Files dialog box.
+This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users can't view or change the options on the Offline Files tab or Offline Files dialog box.
 
 This is a comprehensive setting that locks down the configuration you establish by using other settings in this folder.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You do not have to disable any other settings in this folder.
+> This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You don't have to disable any other settings in this folder.
 <!-- Pol_NoConfigCache_1-Description-End -->
 
 <!-- Pol_NoConfigCache_1-Editable-Begin -->
@@ -1279,14 +1279,14 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Prevents users from enabling, disabling, or changing the configuration of Offline Files.
 
-This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users cannot view or change the options on the Offline Files tab or Offline Files dialog box.
+This setting removes the Offline Files tab from the Folder Options dialog box. It also removes the Settings item from the Offline Files context menu and disables the Settings button on the Offline Files Status dialog box. As a result, users can't view or change the options on the Offline Files tab or Offline Files dialog box.
 
 This is a comprehensive setting that locks down the configuration you establish by using other settings in this folder.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You do not have to disable any other settings in this folder.
+> This setting provides a quick method for locking down the default settings for Offline Files. To accept the defaults, just enable this setting. You don't have to disable any other settings in this folder.
 <!-- Pol_NoConfigCache_2-Description-End -->
 
 <!-- Pol_NoConfigCache_2-Editable-Begin -->
@@ -1343,9 +1343,9 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from making network files and folders available offline.
 
-- If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
+- If you enable this policy setting, users can't designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
 
-- If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
+- If you disable or don't configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
 Note:
 
@@ -1408,9 +1408,9 @@ The "Make Available Offline" command is called "Always available offline" on com
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from making network files and folders available offline.
 
-- If you enable this policy setting, users cannot designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
+- If you enable this policy setting, users can't designate files to be saved on their computer for offline use. However, Windows will still cache local copies of files that reside on network shares designated for automatic caching.
 
-- If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
+- If you disable or don't configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
 Note:
 
@@ -1473,11 +1473,11 @@ The "Make Available Offline" command is called "Always available offline" on com
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
 
-- If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
+- If you enable this policy setting, the "Make Available Offline" command isn't available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
 - If you disable this policy setting, the list of files and folders is deleted, including any lists inherited from lower precedence GPOs, and the "Make Available Offline" command is displayed for all files and folders.
 
-- If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
+- If you don't configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
 Note:
 
@@ -1485,7 +1485,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 
-This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
+This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
 
 If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
 <!-- Pol_NoPinFiles_1-Description-End -->
@@ -1543,11 +1543,11 @@ If the "Remove 'Make Available Offline' command" policy setting is enabled, this
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage a list of files and folders for which you want to block the "Make Available Offline" command.
 
-- If you enable this policy setting, the "Make Available Offline" command is not available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
+- If you enable this policy setting, the "Make Available Offline" command isn't available for the files and folders that you list. To specify these files and folders, click Show. In the Show Contents dialog box, in the Value Name column box, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
 - If you disable this policy setting, the list of files and folders is deleted, including any lists inherited from lower precedence GPOs, and the "Make Available Offline" command is displayed for all files and folders.
 
-- If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
+- If you don't configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
 Note:
 
@@ -1555,7 +1555,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 
-This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
+This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
 
 If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
 <!-- Pol_NoPinFiles_2-Description-End -->
@@ -1613,13 +1613,13 @@ If the "Remove 'Make Available Offline' command" policy setting is enabled, this
 <!-- Description-Source-ADMX -->
 Hides or displays reminder balloons, and prevents users from changing the setting.
 
-Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
+Reminder balloons appear above the Offline Files icon in the notification area to notify users when they've lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
 If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
 
 If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
 
-If this setting is not configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
+If this setting isn't configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
 
 To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab
 
@@ -1683,13 +1683,13 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Hides or displays reminder balloons, and prevents users from changing the setting.
 
-Reminder balloons appear above the Offline Files icon in the notification area to notify users when they have lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
+Reminder balloons appear above the Offline Files icon in the notification area to notify users when they've lost the connection to a networked file and are working on a local copy of the file. Users can then decide how to proceed.
 
 If you enable this setting, the system hides the reminder balloons, and prevents users from displaying them.
 
 If you disable the setting, the system displays the reminder balloons and prevents users from hiding them.
 
-If this setting is not configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
+If this setting isn't configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
 
 To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab
 
@@ -1753,13 +1753,13 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 This policy setting controls whether files read from file shares over a slow network are transparently cached in the Offline Files cache for future reads. When a user tries to access a file that has been transparently cached, Windows reads from the cached copy after verifying its integrity. This improves end-user response times and decreases bandwidth consumption over WAN links.
 
-The cached files are temporary and are not available to the user when offline. The cached files are not kept in sync with the version on the server, and the most current version from the server is always available for subsequent reads.
+The cached files are temporary and aren't available to the user when offline. The cached files aren't kept in sync with the version on the server, and the most current version from the server is always available for subsequent reads.
 
-This policy setting is triggered by the configured round trip network latency value. We recommend using this policy setting when the network connection to the server is slow. For example, you can configure a value of 60 ms as the round trip latency of the network above which files should be transparently cached in the Offline Files cache. If the round trip latency of the network is less than 60ms, reads to remote files will not be cached.
+This policy setting is triggered by the configured round trip network latency value. We recommend using this policy setting when the network connection to the server is slow. For example, you can configure a value of 60 ms as the round trip latency of the network above which files should be transparently cached in the Offline Files cache. If the round trip latency of the network is less than 60ms, reads to remote files won't be cached.
 
 - If you enable this policy setting, transparent caching is enabled and configurable.
 
-- If you disable or do not configure this policy setting, remote files will be not be transparently cached on client computers.
+- If you disable or don't configure this policy setting, remote files will be not be transparently cached on client computers.
 <!-- Pol_OnlineCachingSettings-Description-End -->
 
 <!-- Pol_OnlineCachingSettings-Editable-Begin -->
@@ -1815,12 +1815,12 @@ This policy setting is triggered by the configured round trip network latency va
 <!-- Description-Source-ADMX -->
 Deletes local copies of the user's offline files when the user logs off.
 
-This setting specifies that automatically and manually cached offline files are retained only while the user is logged on to the computer. When the user logs off, the system deletes all local copies of offline files.
+This setting specifies that automatically and manually cached offline files are retained only while the user is logged-on to the computer. When the user logs off, the system deletes all local copies of offline files.
 
-If you disable this setting or do not configure it, automatically and manually cached copies are retained on the user's computer for later offline use.
+If you disable this setting or don't configure it, automatically and manually cached copies are retained on the user's computer for later offline use.
 
 > [!CAUTION]
-> Files are not synchronized before they are deleted. Any changes to local files since the last synchronization are lost.
+> Files aren't synchronized before they're deleted. Any changes to local files since the last synchronization are lost.
 <!-- Pol_PurgeAtLogoff-Description-End -->
 
 <!-- Pol_PurgeAtLogoff-Editable-Begin -->
@@ -1877,7 +1877,7 @@ If you disable this setting or do not configure it, automatically and manually c
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn on economical application of administratively assigned Offline Files.
 
-- If you enable or do not configure this policy setting, only new files and folders in administratively assigned folders are synchronized at logon. Files and folders that are already available offline are skipped and are synchronized later.
+- If you enable or don't configure this policy setting, only new files and folders in administratively assigned folders are synchronized at logon. Files and folders that are already available offline are skipped and are synchronized later.
 
 - If you disable this policy setting, all administratively assigned folders are synchronized at logon.
 <!-- Pol_QuickAdimPin-Description-End -->
@@ -1938,7 +1938,7 @@ Determines how often reminder balloon updates appear.
 
 If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they're updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2001,7 +2001,7 @@ Determines how often reminder balloon updates appear.
 
 If you enable this setting, you can select how often reminder balloons updates appear and also prevent users from changing this setting.
 
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they're updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the update interval.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2062,7 +2062,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Determines how long the first reminder balloon for a network status change is displayed.
 
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they're updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 <!-- Pol_ReminderInitTimeout_1-Description-End -->
@@ -2120,7 +2120,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Determines how long the first reminder balloon for a network status change is displayed.
 
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they're updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the first reminder.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 <!-- Pol_ReminderInitTimeout_2-Description-End -->
@@ -2178,7 +2178,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Determines how long updated reminder balloons are displayed.
 
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they're updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 <!-- Pol_ReminderTimeout_1-Description-End -->
@@ -2236,7 +2236,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Description-Source-ADMX -->
 Determines how long updated reminder balloons are displayed.
 
-Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they are updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
+Reminder balloons appear when the user's connection to a network file is lost or reconnected, and they're updated periodically. By default, the first reminder for an event is displayed for 30 seconds. Then, updates appear every 60 minutes and are displayed for 15 seconds. You can use this setting to change the duration of the update reminder.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 <!-- Pol_ReminderTimeout_2-Description-End -->
@@ -2292,13 +2292,13 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!-- Pol_SlowLinkSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the network latency and throughput thresholds that will cause a client computers to transition files and folders that are already available offline to the slow-link mode so that the user's access to this data is not degraded due to network slowness. When Offline Files is operating in the slow-link mode, all network file requests are satisfied from the Offline Files cache. This is similar to a user working offline.
+This policy setting controls the network latency and throughput thresholds that will cause a client computers to transition files and folders that are already available offline to the slow-link mode so that the user's access to this data isn't degraded due to network slowness. When Offline Files is operating in the slow-link mode, all network file requests are satisfied from the Offline Files cache. This is similar to a user working offline.
 
 - If you enable this policy setting, Offline Files uses the slow-link mode if the network throughput between the client and the server is below (slower than) the Throughput threshold parameter, or if the round-trip network latency is above (slower than) the Latency threshold parameter.
 
-You can configure the slow-link mode by specifying threshold values for Throughput (in bits per second) and/or Latency (in milliseconds) for specific UNC paths. We recommend that you always specify a value for Latency, since the round-trip network latency detection is faster. You can use wildcard characters (*) for specifying UNC paths. If you do not specify a Latency or Throughput value, computers running Windows Vista or Windows Server 2008 will not use the slow-link mode.
+You can configure the slow-link mode by specifying threshold values for Throughput (in bits per second) and/or Latency (in milliseconds) for specific UNC paths. We recommend that you always specify a value for Latency, since the round-trip network latency detection is faster. You can use wildcard characters (*) for specifying UNC paths. If you don't specify a Latency or Throughput value, computers running Windows Vista or Windows Server 2008 won't use the slow-link mode.
 
-- If you do not configure this policy setting, computers running Windows Vista or Windows Server 2008 will not transition a shared folder to the slow-link mode. Computers running Windows 7 or Windows Server 2008 R2 will use the default latency value of 80 milliseconds when transitioning a folder to the slow-link mode. Computers running Windows 8 or Windows Server 2012 will use the default latency value of 35 milliseconds when transitioning a folder to the slow-link mode. To avoid extra charges on cell phone or broadband plans, it may be necessary to configure the latency threshold to be lower than the round-trip network latency.
+- If you don't configure this policy setting, computers running Windows Vista or Windows Server 2008 won't transition a shared folder to the slow-link mode. Computers running Windows 7 or Windows Server 2008 R2 will use the default latency value of 80 milliseconds when transitioning a folder to the slow-link mode. Computers running Windows 8 or Windows Server 2012 will use the default latency value of 35 milliseconds when transitioning a folder to the slow-link mode. To avoid extra charges on cell phone or broadband plans, it may be necessary to configure the latency threshold to be lower than the round-trip network latency.
 
 In Windows Vista or Windows Server 2008, once transitioned to slow-link mode, users will continue to operate in slow-link mode until the user clicks the Work Online button on the toolbar in Windows Explorer. Data will only be synchronized to the server if the user manually initiates synchronization by using Sync Center.
 
@@ -2306,7 +2306,7 @@ In Windows 7, Windows Server 2008 R2, Windows 8 or Windows Server 2012, when ope
 
 In Windows 8 or Windows Server 2012, set the Latency threshold to 1ms to keep users always working offline in slow-link mode.
 
-- If you disable this policy setting, computers will not use the slow-link mode.
+- If you disable this policy setting, computers won't use the slow-link mode.
 <!-- Pol_SlowLinkSettings-Description-End -->
 
 <!-- Pol_SlowLinkSettings-Editable-Begin -->
@@ -2363,7 +2363,7 @@ In Windows 8 or Windows Server 2012, set the Latency threshold to 1ms to keep us
 <!-- Description-Source-ADMX -->
 Configures the threshold value at which Offline Files considers a network connection to be "slow". Any network speed below this value is considered to be slow.
 
-When a connection is considered slow, Offline Files automatically adjust its behavior to avoid excessive synchronization traffic and will not automatically reconnect to a server when the presence of a server is detected.
+When a connection is considered slow, Offline Files automatically adjust its behavior to avoid excessive synchronization traffic and won't automatically reconnect to a server when the presence of a server is detected.
 
 - If you enable this setting, you can configure the threshold value that will be used to determine a slow network connection.
 
@@ -2430,9 +2430,9 @@ This setting also disables the "Synchronize all offline files before logging off
 
 - If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
 
-- If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
+- If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but doesn't ensure that they're current.
 
-- If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
+- If you don't configure this setting, the system performs a quick synchronization by default, but users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2498,9 +2498,9 @@ This setting also disables the "Synchronize all offline files before logging off
 
 - If you enable this setting, offline files are fully synchronized. Full synchronization ensures that offline files are complete and current.
 
-- If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but does not ensure that they are current.
+- If you disable this setting, the system only performs a quick synchronization. Quick synchronization ensures that files are complete, but doesn't ensure that they're current.
 
-- If you do not configure this setting, the system performs a quick synchronization by default, but users can change this option.
+- If you don't configure this setting, the system performs a quick synchronization by default, but users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2566,9 +2566,9 @@ This setting also disables the "Synchronize all offline files before logging on"
 
 - If you enable this setting, offline files are fully synchronized at logon. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
 
-- If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but does not ensure that they are current.
+- If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but doesn't ensure that they're current.
 
-- If you do not configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
+- If you don't configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2634,9 +2634,9 @@ This setting also disables the "Synchronize all offline files before logging on"
 
 - If you enable this setting, offline files are fully synchronized at logon. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
 
-- If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but does not ensure that they are current.
+- If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but doesn't ensure that they're current.
 
-- If you do not configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
+- If you don't configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2700,10 +2700,10 @@ Determines whether offline files are synchonized before a computer is suspended.
 
 - If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
-- If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+- If you disable or don't configuring this setting, files aren't synchronized when the computer is suspended.
 
 > [!NOTE]
-> If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
+> If the computer is suspended by closing the display on a portable computer, files aren't synchronized. If multiple users are logged-on to the computer at the time the computer is suspended, a synchronization isn't performed.
 <!-- Pol_SyncAtSuspend_1-Description-End -->
 
 <!-- Pol_SyncAtSuspend_1-Editable-Begin -->
@@ -2761,10 +2761,10 @@ Determines whether offline files are synchonized before a computer is suspended.
 
 - If you enable this setting, offline files are synchronized whenever the computer is suspended. Setting the synchronization action to "Quick" ensures only that all files in the cache are complete. Setting the synchronization action to "Full" ensures that all cached files and folders are up-to-date with the most current version.
 
-- If you disable or do not configuring this setting, files are not synchronized when the computer is suspended.
+- If you disable or don't configuring this setting, files aren't synchronized when the computer is suspended.
 
 > [!NOTE]
-> If the computer is suspended by closing the display on a portable computer, files are not synchronized. If multiple users are logged on to the computer at the time the computer is suspended, a synchronization is not performed.
+> If the computer is suspended by closing the display on a portable computer, files aren't synchronized. If multiple users are logged-on to the computer at the time the computer is suspended, a synchronization isn't performed.
 <!-- Pol_SyncAtSuspend_2-Description-End -->
 
 <!-- Pol_SyncAtSuspend_2-Editable-Begin -->
@@ -2822,7 +2822,7 @@ This policy setting determines whether offline files are synchronized in the bac
 
 - If you enable this setting, synchronization can occur in the background when the user's network is roaming, near, or over the plan's data limit. This may result in extra charges on cell phone or broadband plans.
 
-- If this setting is disabled or not configured, synchronization will not run in the background on network folders when the user's network is roaming, near, or over the plan's data limit. The network folder must also be in "slow-link" mode, as specified by the "Configure slow-link mode" policy to avoid network usage.
+- If this setting is disabled or not configured, synchronization won't run in the background on network folders when the user's network is roaming, near, or over the plan's data limit. The network folder must also be in "slow-link" mode, as specified by the "Configure slow-link mode" policy to avoid network usage.
 <!-- Pol_SyncOnCostedNetwork-Description-End -->
 
 <!-- Pol_SyncOnCostedNetwork-Editable-Begin -->
@@ -2879,9 +2879,9 @@ This policy setting determines whether offline files are synchronized in the bac
 <!-- Description-Source-ADMX -->
 This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
 
-- If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
+- If you enable this policy setting, the "Work offline" command isn't displayed in File Explorer.
 
-- If you disable or do not configure this policy setting, the "Work offline" command is displayed in File Explorer.
+- If you disable or don't configure this policy setting, the "Work offline" command is displayed in File Explorer.
 <!-- Pol_WorkOfflineDisabled_1-Description-End -->
 
 <!-- Pol_WorkOfflineDisabled_1-Editable-Begin -->
@@ -2938,9 +2938,9 @@ This policy setting removes the "Work offline" command from Explorer, preventing
 <!-- Description-Source-ADMX -->
 This policy setting removes the "Work offline" command from Explorer, preventing users from manually changing whether Offline Files is in online mode or offline mode.
 
-- If you enable this policy setting, the "Work offline" command is not displayed in File Explorer.
+- If you enable this policy setting, the "Work offline" command isn't displayed in File Explorer.
 
-- If you disable or do not configure this policy setting, the "Work offline" command is displayed in File Explorer.
+- If you disable or don't configure this policy setting, the "Work offline" command is displayed in File Explorer.
 <!-- Pol_WorkOfflineDisabled_2-Description-End -->
 
 <!-- Pol_WorkOfflineDisabled_2-Editable-Begin -->

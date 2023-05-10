@@ -901,7 +901,7 @@ To gather diagnostics using this CSP:
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Each dynamic node represents a registered 'Collector' node. CSP will maintain an ETW trace session for this collector with its name used as a unique identifier. In a collector, a valid ETW provider can be registered and unregistered. The collector's associated trace session will enable the registered providers in it if the provider's state is 'Enabled'. Each provider's state, trace level and keywords can be controlled separately. The name of this node must not be a valid Windows event channel name. It can be a etw provider guid as long as it is not equal to an already registered 'Provider' node name.
+Each dynamic node represents a registered 'Collector' node. CSP will maintain an ETW trace session for this collector with its name used as a unique identifier. In a collector, a valid ETW provider can be registered and unregistered. The collector's associated trace session will enable the registered providers in it if the provider's state is 'Enabled'. Each provider's state, trace level and keywords can be controlled separately. The name of this node mustn't be a valid Windows event channel name. It can be a etw provider guid as long as it isn't equal to an already registered 'Provider' node name.
 <!-- Device-EtwLog-Collectors-{CollectorName}-Description-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Editable-Begin -->
@@ -2264,9 +2264,9 @@ If you disable or don't configure this policy setting, the locally configured va
 
 | Value | Description |
 |:--|:--|
-| Truncate | When the log file reaches its maximum file size, new events are not written to the log and are lost. |
+| Truncate | When the log file reaches its maximum file size, new events aren't written to the log and are lost. |
 | Overwrite | When the log file reaches its maximum file size, new events overwrite old events. |
-| Archive | When the log file reaches its maximum size, the log file is saved to the location specified by the "Archive Location" policy setting. If archive location value is not set, the new file is saved in the same directory as current log file. |
+| Archive | When the log file reaches its maximum size, the log file is saved to the location specified by the "Archive Location" policy setting. If archive location value isn't set, the new file is saved in the same directory as current log file. |
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-AllowedValues-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-Examples-Begin -->

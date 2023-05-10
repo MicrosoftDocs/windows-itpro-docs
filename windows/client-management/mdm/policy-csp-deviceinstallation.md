@@ -45,16 +45,16 @@ When this policy setting is enabled together with the "Apply layered order of ev
 
   - Prevent installation of devices that match these device IDs
   - Prevent installation of devices that match any of these device instance IDs
-If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
 Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+- If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 <!-- AllowInstallationOfMatchingDeviceIDs-Description-End -->
 
 <!-- AllowInstallationOfMatchingDeviceIDs-Editable-Begin -->
@@ -146,16 +146,16 @@ This policy setting allows you to specify a list of Plug and Play device instanc
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
 
   - Prevent installation of devices that match any of these device instance IDs
-If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
 Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting specifically prevents that installation (for example, the "Prevent installation of devices that match any of these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+- If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Description-End -->
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Editable-Begin -->
@@ -251,16 +251,16 @@ When this policy setting is enabled together with the "Apply layered order of ev
   - Prevent installation of devices for these device classes
   - Prevent installation of devices that match these device IDs
   - Prevent installation of devices that match any of these device instance IDs
-If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
-> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
+> The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
 Alternatively, if this policy setting is enabled together with the "Prevent installation of devices not described by other policy settings" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting specifically prevents installation (for example, the "Prevent installation of devices that match these device IDs" policy setting, the "Prevent installation of devices for these device classes" policy setting, the "Prevent installation of devices that match any of these device instance IDs" policy setting, or the "Prevent installation of removable devices" policy setting).
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
+- If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Description-End -->
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Editable-Begin -->
@@ -381,7 +381,7 @@ Removable devices
 > [!NOTE]
 > This policy setting provides more granular control than the "Prevent installation of devices not described by other policy settings" policy setting. If these conflicting policy settings are enabled at the same time, the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting will be enabled and the other policy setting will be ignored.
 
-If you disable or do not configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
+If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
 <!-- EnableInstallationPolicyLayering-Description-End -->
 
 <!-- EnableInstallationPolicyLayering-Editable-Begin -->
@@ -473,9 +473,9 @@ You can also change the evaluation order of device installation policy settings 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent Windows from retrieving device metadata from the Internet.
 
-- If you enable this policy setting, Windows does not retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).
+- If you enable this policy setting, Windows doesn't retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).
 
-- If you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
+- If you disable or don't configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
 <!-- PreventDeviceMetadataFromNetwork-Description-End -->
 
 <!-- PreventDeviceMetadataFromNetwork-Editable-Begin -->
@@ -530,14 +530,14 @@ This policy setting allows you to prevent Windows from retrieving device metadat
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to prevent the installation of devices that are not specifically described by any other policy setting.
+This policy setting allows you to prevent the installation of devices that aren't specifically described by any other policy setting.
 
 > [!NOTE]
-> This policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting to provide more granular control. It is recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting instead of this policy setting.
+> This policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting to provide more granular control. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting instead of this policy setting.
 
-- If you enable this policy setting, Windows is prevented from installing or updating the driver package for any device that is not described by either the "Allow installation of devices that match any of these device IDs", the "Allow installation of devices for these device classes", or the "Allow installation of devices that match any of these device instance IDs" policy setting.
+- If you enable this policy setting, Windows is prevented from installing or updating the driver package for any device that isn't described by either the "Allow installation of devices that match any of these device IDs", the "Allow installation of devices for these device classes", or the "Allow installation of devices that match any of these device instance IDs" policy setting.
 
-- If you disable or do not configure this policy setting, Windows is allowed to install or update the driver package for any device that is not described by the "Prevent installation of devices that match any of these device IDs", "Prevent installation of devices for these device classes" policy setting, "Prevent installation of devices that match any of these device instance IDs", or "Prevent installation of removable devices" policy setting.
+- If you disable or don't configure this policy setting, Windows is allowed to install or update the driver package for any device that isn't described by the "Prevent installation of devices that match any of these device IDs", "Prevent installation of devices for these device classes" policy setting, "Prevent installation of devices that match any of these device instance IDs", or "Prevent installation of removable devices" policy setting.
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Description-End -->
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Editable-Begin -->
@@ -638,7 +638,7 @@ This policy setting allows you to specify a list of Plug and Play hardware IDs a
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 <!-- PreventInstallationOfMatchingDeviceIDs-Description-End -->
 
 <!-- PreventInstallationOfMatchingDeviceIDs-Editable-Begin -->
@@ -739,7 +739,7 @@ This policy setting allows you to specify a list of Plug and Play device instanc
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Description-End -->
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Editable-Begin -->
@@ -853,7 +853,7 @@ This policy setting allows you to specify a list of device setup class globally 
 
 - If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-- If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
+- If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Description-End -->
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Editable-Begin -->

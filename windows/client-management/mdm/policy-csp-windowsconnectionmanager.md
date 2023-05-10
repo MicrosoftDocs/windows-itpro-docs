@@ -51,7 +51,7 @@ Manual connection attempts
 - When the computer is already connected to either a non-domain based network or a domain based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed.
 - When the computer is already connected to either a non-domain based network or a domain based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
 
-- If this policy setting is not configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
+- If this policy setting isn't configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
 <!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Description-End -->
 
 <!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Editable-Begin -->

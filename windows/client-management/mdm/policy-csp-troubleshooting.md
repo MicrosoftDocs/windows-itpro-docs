@@ -42,11 +42,11 @@ This policy setting configures how troubleshooting for known problems can be app
 Not configuring this policy setting will allow the user to configure how troubleshooting is applied.
 
 Enabling this policy allows you to configure how troubleshooting is applied on the user's device. You can select from one of the following values:
-0 = Do not allow users, system features, or Microsoft to apply troubleshooting.
+0 = Don't allow users, system features, or Microsoft to apply troubleshooting.
 1 = Only automatically apply troubleshooting for critical problems by system features and Microsoft.
 2 = Automatically apply troubleshooting for critical problems by system features and Microsoft. Notify users when troubleshooting for other problems is available and allow users to choose to apply or ignore.
 3 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Notify users when troubleshooting has solved a problem.
-4 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Do not notify users when troubleshooting has solved a problem.
+4 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Don't notify users when troubleshooting has solved a problem.
 5 = Allow the user to choose their own troubleshooting settings.
 
 After setting this policy, you can use the following instructions to check devices in your domain for available troubleshooting from Microsoft:
@@ -83,11 +83,11 @@ schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanne
 
 | Value | Description |
 |:--|:--|
-| 0 | Off - Do not allow users, system features, or Microsoft to apply troubleshooting. |
-| 1 (Default) | Critical - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Do not notify users when troubleshooting has solved a problem. |
+| 0 | Off - Don't allow users, system features, or Microsoft to apply troubleshooting. |
+| 1 (Default) | Critical - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Don't notify users when troubleshooting has solved a problem. |
 | 2 | Prompt - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Prompt users when troubleshooting for other problems is available and allow the user to choose to apply or ignore. |
 | 3 | Notify - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Notify users when troubleshooting has solved a problem. |
-| 4 | Silent - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Do not notify users when troubleshooting has solved a problem. |
+| 4 | Silent - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Don't notify users when troubleshooting has solved a problem. |
 | 5 | Configurable - Allow the user to choose their own troubleshooting settings. |
 <!-- AllowRecommendations-AllowedValues-End -->
 

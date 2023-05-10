@@ -261,7 +261,7 @@ Character string that specifies whether the outgoing server requires authenticat
 0 for FALSE(default).
 
 > [!NOTE]
-> If this is not specified then SMTP authentication will not be done. Also, this is different from the SMTPALTENABLED. That is to specify different set of credentials for SMTP.
+> If this isn't specified then SMTP authentication won't be done. Also, this is different from the SMTPALTENABLED. That is to specify different set of credentials for SMTP.
 <!-- User-{Account GUID}-AUTHREQUIRED-Description-End -->
 
 <!-- User-{Account GUID}-AUTHREQUIRED-Editable-Begin -->
@@ -282,7 +282,7 @@ Character string that specifies whether the outgoing server requires authenticat
 
 | Value | Description |
 |:--|:--|
-| 0 | Server authentication is not required. |
+| 0 | Server authentication isn't required. |
 | 1 | Server authentication is required. |
 <!-- User-{Account GUID}-AUTHREQUIRED-AllowedValues-End -->
 
@@ -348,7 +348,7 @@ Character string that specifies the user's password. The same password is used f
 
 <!-- User-{Account GUID}-CALENDARSERVER-Description-Begin -->
 <!-- Description-Source-DDF -->
-Server for calendar sync if it is different from the email server.
+Server for calendar sync if it's different from the email server.
 <!-- User-{Account GUID}-CALENDARSERVER-Description-End -->
 
 <!-- User-{Account GUID}-CALENDARSERVER-Editable-Begin -->
@@ -504,7 +504,7 @@ If this flag is set, the account only uses the cellular network and not Wi-Fi.
 
 <!-- User-{Account GUID}-CONTACTSSERVER-Description-Begin -->
 <!-- Description-Source-DDF -->
-Server for contact sync if it is different from the email server.
+Server for contact sync if it's different from the email server.
 <!-- User-{Account GUID}-CONTACTSSERVER-Description-End -->
 
 <!-- User-{Account GUID}-CONTACTSSERVER-Editable-Begin -->
@@ -750,7 +750,7 @@ Character string that specifies how many days' worth of email should be download
 
 <!-- User-{Account GUID}-KEEPMAX-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the maximum size for a message attachment. Attachments beyond this size will not be downloaded but it will remain on the server. The message itself will be downloaded. This value can be set only for IMAP4 accounts. The limit is specified in KB.
+Specifies the maximum size for a message attachment. Attachments beyond this size won't be downloaded but it will remain on the server. The message itself will be downloaded. This value can be set only for IMAP4 accounts. The limit's specified in KB.
 <!-- User-{Account GUID}-KEEPMAX-Description-End -->
 
 <!-- User-{Account GUID}-KEEPMAX-Editable-Begin -->
@@ -771,7 +771,7 @@ Specifies the maximum size for a message attachment. Attachments beyond this siz
 
 | Value | Description |
 |:--|:--|
-| -1 | No limit is enforced. |
+| -1 | No limit's enforced. |
 | 0 | No attachment is downloaded. |
 | 25 | 25 KB. |
 | 50 | 50 KB. |
@@ -1414,7 +1414,7 @@ Character string that specifies if the incoming email server requires SSL.
 
 | Value | Description |
 |:--|:--|
-| 0 | SSL is not required. |
+| 0 | SSL isn't required. |
 | 1 | SSL is required. |
 <!-- User-{Account GUID}-TAGPROPS-8128000B-AllowedValues-End -->
 
@@ -1462,7 +1462,7 @@ Character string that specifies if the outgoing email server requires SSL.
 
 | Value | Description |
 |:--|:--|
-| 0 | SSL is not required. |
+| 0 | SSL isn't required. |
 | 1 | SSL is required. |
 <!-- User-{Account GUID}-TAGPROPS-812C000B-AllowedValues-End -->
 

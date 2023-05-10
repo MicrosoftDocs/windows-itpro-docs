@@ -43,7 +43,7 @@ This policy setting prohibits access to Windows Connect Now (WCN) wizards.
 
 - If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled.
 
-- If you disable or do not configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
 <!-- WCN_DisableWcnUi_1-Description-End -->
 
 <!-- WCN_DisableWcnUi_1-Editable-Begin -->
@@ -102,7 +102,7 @@ This policy setting prohibits access to Windows Connect Now (WCN) wizards.
 
 - If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled.
 
-- If you disable or do not configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
 <!-- WCN_DisableWcnUi_2-Description-End -->
 
 <!-- WCN_DisableWcnUi_2-Editable-Begin -->
@@ -165,7 +165,7 @@ Additional options are available to allow discovery and configuration over a spe
 
 - If you disable this policy setting, operations are disabled over all media.
 
-- If you do not configure this policy setting, operations are enabled over all media.
+- If you don't configure this policy setting, operations are enabled over all media.
 
 The default for this policy setting allows operations over all media.
 <!-- WCN_EnableRegistrar-Description-End -->

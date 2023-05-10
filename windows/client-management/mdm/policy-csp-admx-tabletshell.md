@@ -41,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Prevents start of InkBall game.
 
-- If you enable this policy, the InkBall game will not run.
+- If you enable this policy, the InkBall game won't run.
 
 - If you disable this policy, the InkBall game will run.
 
-- If you do not configure this policy, the InkBall game will run.
+- If you don't configure this policy, the InkBall game will run.
 <!-- DisableInkball_1-Description-End -->
 
 <!-- DisableInkball_1-Editable-Begin -->
@@ -102,11 +102,11 @@ Prevents start of InkBall game.
 <!-- Description-Source-ADMX -->
 Prevents start of InkBall game.
 
-- If you enable this policy, the InkBall game will not run.
+- If you enable this policy, the InkBall game won't run.
 
 - If you disable this policy, the InkBall game will run.
 
-- If you do not configure this policy, the InkBall game will run.
+- If you don't configure this policy, the InkBall game will run.
 <!-- DisableInkball_2-Description-End -->
 
 <!-- DisableInkball_2-Editable-Begin -->
@@ -163,11 +163,11 @@ Prevents start of InkBall game.
 <!-- Description-Source-ADMX -->
 Prevents start of Windows Journal.
 
-- If you enable this policy, the Windows Journal accessory will not run.
+- If you enable this policy, the Windows Journal accessory won't run.
 
 - If you disable this policy, the Windows Journal accessory will run.
 
-- If you do not configure this policy, the Windows Journal accessory will run.
+- If you don't configure this policy, the Windows Journal accessory will run.
 <!-- DisableJournal_1-Description-End -->
 
 <!-- DisableJournal_1-Editable-Begin -->
@@ -224,11 +224,11 @@ Prevents start of Windows Journal.
 <!-- Description-Source-ADMX -->
 Prevents start of Windows Journal.
 
-- If you enable this policy, the Windows Journal accessory will not run.
+- If you enable this policy, the Windows Journal accessory won't run.
 
 - If you disable this policy, the Windows Journal accessory will run.
 
-- If you do not configure this policy, the Windows Journal accessory will run.
+- If you don't configure this policy, the Windows Journal accessory will run.
 <!-- DisableJournal_2-Description-End -->
 
 <!-- DisableJournal_2-Editable-Begin -->
@@ -285,11 +285,11 @@ Prevents start of Windows Journal.
 <!-- Description-Source-ADMX -->
 Prevents printing to Journal Note Writer.
 
-- If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
+- If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
 
 - If you disable this policy, you will be able to use this feature to print to a Journal Note.
 
-- If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+- If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 <!-- DisableNoteWriterPrinting_1-Description-End -->
 
 <!-- DisableNoteWriterPrinting_1-Editable-Begin -->
@@ -346,11 +346,11 @@ Prevents printing to Journal Note Writer.
 <!-- Description-Source-ADMX -->
 Prevents printing to Journal Note Writer.
 
-- If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
+- If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
 
 - If you disable this policy, you will be able to use this feature to print to a Journal Note.
 
-- If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+- If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 <!-- DisableNoteWriterPrinting_2-Description-End -->
 
 <!-- DisableNoteWriterPrinting_2-Editable-Begin -->
@@ -407,11 +407,11 @@ Prevents printing to Journal Note Writer.
 <!-- Description-Source-ADMX -->
 Prevents the snipping tool from running.
 
-- If you enable this policy setting, the Snipping Tool will not run.
+- If you enable this policy setting, the Snipping Tool won't run.
 
 - If you disable this policy setting, the Snipping Tool will run.
 
-- If you do not configure this policy setting, the Snipping Tool will run.
+- If you don't configure this policy setting, the Snipping Tool will run.
 <!-- DisableSnippingTool_1-Description-End -->
 
 <!-- DisableSnippingTool_1-Editable-Begin -->
@@ -468,11 +468,11 @@ Prevents the snipping tool from running.
 <!-- Description-Source-ADMX -->
 Prevents the snipping tool from running.
 
-- If you enable this policy setting, the Snipping Tool will not run.
+- If you enable this policy setting, the Snipping Tool won't run.
 
 - If you disable this policy setting, the Snipping Tool will run.
 
-- If you do not configure this policy setting, the Snipping Tool will run.
+- If you don't configure this policy setting, the Snipping Tool will run.
 <!-- DisableSnippingTool_2-Description-End -->
 
 <!-- DisableSnippingTool_2-Editable-Begin -->
@@ -529,11 +529,11 @@ Prevents the snipping tool from running.
 <!-- Description-Source-ADMX -->
 Removes the Back->ESC mapping that normally occurs when menus are visible, and for applications that subscribe to this behavior.
 
-- If you enable this policy, a button assigned to Back will not map to ESC.
+- If you enable this policy, a button assigned to Back won't map to ESC.
 
 - If you disable this policy, Back->ESC mapping will occur.
 
-- If you do not configure this policy, Back->ESC mapping will occur.
+- If you don't configure this policy, Back->ESC mapping will occur.
 <!-- PreventBackEscMapping_1-Description-End -->
 
 <!-- PreventBackEscMapping_1-Editable-Begin -->
@@ -590,11 +590,11 @@ Removes the Back->ESC mapping that normally occurs when menus are visible, and f
 <!-- Description-Source-ADMX -->
 Removes the Back->ESC mapping that normally occurs when menus are visible, and for applications that subscribe to this behavior.
 
-- If you enable this policy, a button assigned to Back will not map to ESC.
+- If you enable this policy, a button assigned to Back won't map to ESC.
 
 - If you disable this policy, Back->ESC mapping will occur.
 
-- If you do not configure this policy, Back->ESC mapping will occur.
+- If you don't configure this policy, Back->ESC mapping will occur.
 <!-- PreventBackEscMapping_2-Description-End -->
 
 <!-- PreventBackEscMapping_2-Editable-Begin -->
@@ -653,7 +653,7 @@ Makes pen flicks and all related features unavailable.
 
 - If you enable this policy, pen flicks and all related features are unavailable. This includes: pen flicks themselves, pen flicks training, pen flicks training triggers in Internet Explorer, the pen flicks notification and the pen flicks tray icon.
 
-- If you disable or do not configure this policy, pen flicks and related features are available.
+- If you disable or don't configure this policy, pen flicks and related features are available.
 <!-- PreventFlicks_1-Description-End -->
 
 <!-- PreventFlicks_1-Editable-Begin -->
@@ -712,7 +712,7 @@ Makes pen flicks and all related features unavailable.
 
 - If you enable this policy, pen flicks and all related features are unavailable. This includes: pen flicks themselves, pen flicks training, pen flicks training triggers in Internet Explorer, the pen flicks notification and the pen flicks tray icon.
 
-- If you disable or do not configure this policy, pen flicks and related features are available.
+- If you disable or don't configure this policy, pen flicks and related features are available.
 <!-- PreventFlicks_2-Description-End -->
 
 <!-- PreventFlicks_2-Editable-Begin -->
@@ -769,9 +769,9 @@ Makes pen flicks and all related features unavailable.
 <!-- Description-Source-ADMX -->
 Makes pen flicks learning mode unavailable.
 
-- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but cannot be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
+- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but can't be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
 
-- If you disable or do not configure this policy, all the features described above will be available.
+- If you disable or don't configure this policy, all the features described above will be available.
 <!-- PreventFlicksLearningMode_1-Description-End -->
 
 <!-- PreventFlicksLearningMode_1-Editable-Begin -->
@@ -828,9 +828,9 @@ Makes pen flicks learning mode unavailable.
 <!-- Description-Source-ADMX -->
 Makes pen flicks learning mode unavailable.
 
-- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but cannot be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
+- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but can't be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
 
-- If you disable or do not configure this policy, all the features described above will be available.
+- If you disable or don't configure this policy, all the features described above will be available.
 <!-- PreventFlicksLearningMode_2-Description-End -->
 
 <!-- PreventFlicksLearningMode_2-Editable-Begin -->
@@ -887,11 +887,11 @@ Makes pen flicks learning mode unavailable.
 <!-- Description-Source-ADMX -->
 Prevents the user from launching an application from a Tablet PC hardware button.
 
-- If you enable this policy, applications cannot be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
+- If you enable this policy, applications can't be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
 
 - If you disable this policy, applications can be launched from a hardware button.
 
-- If you do not configure this policy, applications can be launched from a hardware button.
+- If you don't configure this policy, applications can be launched from a hardware button.
 <!-- PreventLaunchApp_1-Description-End -->
 
 <!-- PreventLaunchApp_1-Editable-Begin -->
@@ -948,11 +948,11 @@ Prevents the user from launching an application from a Tablet PC hardware button
 <!-- Description-Source-ADMX -->
 Prevents the user from launching an application from a Tablet PC hardware button.
 
-- If you enable this policy, applications cannot be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
+- If you enable this policy, applications can't be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
 
 - If you disable this policy, applications can be launched from a hardware button.
 
-- If you do not configure this policy, applications can be launched from a hardware button.
+- If you don't configure this policy, applications can be launched from a hardware button.
 <!-- PreventLaunchApp_2-Description-End -->
 
 <!-- PreventLaunchApp_2-Editable-Begin -->
@@ -1013,7 +1013,7 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 
 - If you disable this policy, press and hold actions for buttons will be available.
 
-- If you do not configure this policy, press and hold actions will be available.
+- If you don't configure this policy, press and hold actions will be available.
 <!-- PreventPressAndHold_1-Description-End -->
 
 <!-- PreventPressAndHold_1-Editable-Begin -->
@@ -1074,7 +1074,7 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 
 - If you disable this policy, press and hold actions for buttons will be available.
 
-- If you do not configure this policy, press and hold actions will be available.
+- If you don't configure this policy, press and hold actions will be available.
 <!-- PreventPressAndHold_2-Description-End -->
 
 <!-- PreventPressAndHold_2-Editable-Begin -->
@@ -1135,7 +1135,7 @@ Turns off Tablet PC hardware buttons.
 
 - If you disable this policy, user and OEM defined button actions will occur when the buttons are pressed.
 
-- If you do not configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
+- If you don't configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
 <!-- TurnOffButtons_1-Description-End -->
 
 <!-- TurnOffButtons_1-Editable-Begin -->
@@ -1196,7 +1196,7 @@ Turns off Tablet PC hardware buttons.
 
 - If you disable this policy, user and OEM defined button actions will occur when the buttons are pressed.
 
-- If you do not configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
+- If you don't configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
 <!-- TurnOffButtons_2-Description-End -->
 
 <!-- TurnOffButtons_2-Editable-Begin -->
@@ -1255,7 +1255,7 @@ Disables visual pen action feedback, except for press and hold feedback.
 
 - If you enable this policy, all visual pen action feedback is disabled except for press and hold feedback. Additionally, the mouse cursors are shown instead of the pen cursors.
 
-- If you disable or do not configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
+- If you disable or don't configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
 <!-- TurnOffFeedback_1-Description-End -->
 
 <!-- TurnOffFeedback_1-Editable-Begin -->
@@ -1314,7 +1314,7 @@ Disables visual pen action feedback, except for press and hold feedback.
 
 - If you enable this policy, all visual pen action feedback is disabled except for press and hold feedback. Additionally, the mouse cursors are shown instead of the pen cursors.
 
-- If you disable or do not configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
+- If you disable or don't configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
 <!-- TurnOffFeedback_2-Description-End -->
 
 <!-- TurnOffFeedback_2-Editable-Begin -->

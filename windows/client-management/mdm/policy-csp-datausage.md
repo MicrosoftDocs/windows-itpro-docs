@@ -45,11 +45,11 @@ This policy setting configures the cost of 3G connections on the local machine.
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
 
 - Variable: This connection is costed on a per byte basis.
 
-- If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.
+- If this policy setting is disabled or isn't configured, the cost of 3G connections is Fixed by default.
 <!-- SetCost3G-Description-End -->
 
 <!-- SetCost3G-Editable-Begin -->
@@ -111,11 +111,11 @@ This policy setting configures the cost of 4G connections on the local machine.
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
 
 - Variable: This connection is costed on a per byte basis.
 
-- If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
+- If this policy setting is disabled or isn't configured, the cost of 4G connections is Fixed by default.
 <!-- SetCost4G-Description-End -->
 
 <!-- SetCost4G-Editable-Begin -->

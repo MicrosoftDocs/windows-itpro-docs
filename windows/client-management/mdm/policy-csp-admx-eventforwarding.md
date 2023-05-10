@@ -43,7 +43,7 @@ This policy setting controls resource usage for the forwarder (source computer) 
 
 - If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
 
-- If you disable or do not configure this policy setting, forwarder resource usage is not specified.
+- If you disable or don't configure this policy setting, forwarder resource usage isn't specified.
 
 This setting applies across all subscriptions for the forwarder (source computer).
 <!-- ForwarderResourceUsage-Description-End -->
@@ -106,7 +106,7 @@ This policy setting allows you to configure the server address, refresh interval
 Use the following syntax when using the HTTPS protocol:
 Server=https://`<FQDN of the collector>`:5986/wsman/SubscriptionManager/WEC,Refresh=`<Refresh interval in seconds>`,IssuerCA=`<Thumb print of the client authentication certificate>`. When using the HTTP protocol, use port 5985.
 
-- If you disable or do not configure this policy setting, the Event Collector computer will not be specified.
+- If you disable or don't configure this policy setting, the Event Collector computer won't be specified.
 <!-- SubscriptionManager-Description-End -->
 
 <!-- SubscriptionManager-Editable-Begin -->

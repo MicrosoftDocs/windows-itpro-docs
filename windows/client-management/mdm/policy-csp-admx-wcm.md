@@ -41,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting specifies that power management is disabled when the machine enters connected standby mode.
 
-- If this policy setting is enabled, Windows Connection Manager does not manage adapter radios to reduce power consumption when the machine enters connected standby mode.
+- If this policy setting is enabled, Windows Connection Manager doesn't manage adapter radios to reduce power consumption when the machine enters connected standby mode.
 
-- If this policy setting is not configured or is disabled, power management is enabled when the machine enters connected standby mode.
+- If this policy setting isn't configured or is disabled, power management is enabled when the machine enters connected standby mode.
 <!-- WCM_DisablePowerManagement-Description-End -->
 
 <!-- WCM_DisablePowerManagement-Editable-Begin -->
@@ -110,7 +110,7 @@ When soft disconnect is enabled:
   - Windows then checks the traffic level on the network periodically. If the traffic level is above a certain threshold, no further action is taken. The computer stays connected to the network and continues to use it. For example, if the network connection is currently being used to download files from the Internet, the files will continue to be downloaded using that network connection.
   - When the network traffic drops below this threshold, the computer will be disconnected from the network. Apps that keep a network connection active even when they're not actively using it (for example, email apps) might lose their connection. If this happens, these apps should re-establish their connection over a different network.
 
-This policy setting depends on other group policy settings. For example, if 'Minimize the number of simultaneous connections to the Internet or a Windows Domain' is disabled, Windows will not disconnect from any networks.
+This policy setting depends on other group policy settings. For example, if 'Minimize the number of simultaneous connections to the Internet or a Windows Domain' is disabled, Windows won't disconnect from any networks.
 <!-- WCM_EnableSoftDisconnect-Description-End -->
 
 <!-- WCM_EnableSoftDisconnect-Editable-Begin -->

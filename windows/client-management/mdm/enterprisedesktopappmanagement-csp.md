@@ -153,7 +153,7 @@ The MSI product code for the application.
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-Description-Begin -->
 <!-- Description-Source-DDF -->
-Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
+Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
 <!-- Device-MSI-{ProductID}-DownloadInstall-Description-End -->
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-Editable-Begin -->
@@ -676,7 +676,7 @@ The MSI product code for the application.
 
 <!-- User-MSI-{ProductID}-DownloadInstall-Description-Begin -->
 <!-- Description-Source-DDF -->
-Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
+Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
 <!-- User-MSI-{ProductID}-DownloadInstall-Description-End -->
 
 <!-- User-MSI-{ProductID}-DownloadInstall-Editable-Begin -->

@@ -43,13 +43,13 @@ This policy setting permits or prohibits the Diagnostic Policy Service (DPS) fro
 
 - If you enable this policy setting, the DPS detects, troubleshoots, and attempts to resolve automatically any heap corruption problems.
 
-- If you disable this policy setting, Windows cannot detect, troubleshoot, and attempt to resolve automatically any heap corruption problems that are handled by the DPS.
+- If you disable this policy setting, Windows can't detect, troubleshoot, and attempt to resolve automatically any heap corruption problems that are handled by the DPS.
 
-- If you do not configure this policy setting, the DPS enables Fault Tolerant Heap for resolution by default.
+- If you don't configure this policy setting, the DPS enables Fault Tolerant Heap for resolution by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
-This policy setting takes effect only when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting takes effect only when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 No system restart or service restart is required for this policy setting to take effect: changes take effect immediately.
 <!-- WdiScenarioExecutionPolicy-Description-End -->

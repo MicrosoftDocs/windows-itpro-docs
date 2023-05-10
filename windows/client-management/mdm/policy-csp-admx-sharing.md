@@ -41,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether users can add computers to a homegroup. By default, users can add their computer to a homegroup on a private network.
 
-- If you enable this policy setting, users cannot add computers to a homegroup. This policy setting does not affect other network sharing features.
+- If you enable this policy setting, users can't add computers to a homegroup. This policy setting doesn't affect other network sharing features.
 
-- If you disable or do not configure this policy setting, users can add computers to a homegroup. However, data on a domain-joined computer is not shared with the homegroup.
+- If you disable or don't configure this policy setting, users can add computers to a homegroup. However, data on a domain-joined computer isn't shared with the homegroup.
 
-This policy setting is not configured by default.
+This policy setting isn't configured by default.
 
 You must restart the computer for this policy setting to take effect.
 <!-- DisableHomeGroup-Description-End -->
@@ -104,7 +104,7 @@ You must restart the computer for this policy setting to take effect.
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether users can share files within their profile. By default users are allowed to share files within their profile to other users on their network after an administrator opts in the computer. An administrator can opt in the computer by using the sharing wizard to share a file within their profile.
 
-- If you enable this policy setting, users cannot share files within their profile using the sharing wizard. Also, the sharing wizard cannot create a share at %root%\users and can only be used to create SMB shares on folders.
+- If you enable this policy setting, users can't share files within their profile using the sharing wizard. Also, the sharing wizard can't create a share at %root%\users and can only be used to create SMB shares on folders.
 
 - If you disable or don't configure this policy setting, users can share files out of their user profile after an administrator has opted in the computer.
 <!-- NoInplaceSharing-Description-End -->

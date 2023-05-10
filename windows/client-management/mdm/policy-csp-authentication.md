@@ -190,9 +190,9 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- Description-Source-ADMX -->
 This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
 
-- If you enable or do not configure this policy setting, users can authenticate to Windows Hello using a companion device.
+- If you enable or don't configure this policy setting, users can authenticate to Windows Hello using a companion device.
 
-- If you disable this policy, users cannot use a companion device to authenticate with Windows Hello.
+- If you disable this policy, users can't use a companion device to authenticate with Windows Hello.
 <!-- AllowSecondaryAuthenticationDevice-Description-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-Editable-Begin -->
@@ -387,7 +387,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
 | 1 | Enabled. Auto-connect new non-admin Azure AD accounts to pre-configured candidate local accounts. |
-| 2 | Disabled. Do not auto-connect new non-admin Azure AD accounts to pre-configured local accounts. |
+| 2 | Disabled. Don't auto-connect new non-admin Azure AD accounts to pre-configured local accounts. |
 <!-- EnableFastFirstSignIn-AllowedValues-End -->
 
 <!-- EnableFastFirstSignIn-Examples-Begin -->
@@ -437,7 +437,7 @@ Specifies whether connected users on AADJ devices receive a Passwordless experie
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing edition and device capabilities. |
 | 1 | Enabled. The Passwordless experience will be enabled on Windows. |
-| 2 | Disabled. The Passwordless experience will not be enabled on Windows. |
+| 2 | Disabled. The Passwordless experience won't be enabled on Windows. |
 <!-- EnablePasswordlessExperience-AllowedValues-End -->
 
 <!-- EnablePasswordlessExperience-Examples-Begin -->
@@ -495,7 +495,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 |:--|:--|
 | 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
 | 1 | Enabled. Web Sign-in will be enabled for signing in to Windows. |
-| 2 | Disabled. Web Sign-in will not be enabled for signing in to Windows. |
+| 2 | Disabled. Web Sign-in won't be enabled for signing in to Windows. |
 <!-- EnableWebSignIn-AllowedValues-End -->
 
 <!-- EnableWebSignIn-Examples-Begin -->

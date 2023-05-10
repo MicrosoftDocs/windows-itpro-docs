@@ -39,13 +39,13 @@ ms.topic: reference
 
 <!-- DoNotPreserveZoneInformation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This requires NTFS in order to function correctly, and will fail without notice on FAT32. By not preserving the zone information, Windows cannot make proper risk assessments.
+This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This requires NTFS in order to function correctly, and will fail without notice on FAT32. By not preserving the zone information, Windows can't make proper risk assessments.
 
-- If you enable this policy setting, Windows does not mark file attachments with their zone information.
+- If you enable this policy setting, Windows doesn't mark file attachments with their zone information.
 
 - If you disable this policy setting, Windows marks file attachments with their zone information.
 
-- If you do not configure this policy setting, Windows marks file attachments with their zone information.
+- If you don't configure this policy setting, Windows marks file attachments with their zone information.
 <!-- DoNotPreserveZoneInformation-Description-End -->
 
 <!-- DoNotPreserveZoneInformation-Editable-Begin -->
@@ -106,7 +106,7 @@ This policy setting allows you to manage whether users can manually remove the z
 
 - If you disable this policy setting, Windows shows the check box and Unblock button.
 
-- If you do not configure this policy setting, Windows hides the check box and Unblock button.
+- If you don't configure this policy setting, Windows hides the check box and Unblock button.
 <!-- HideZoneInfoMechanism-Description-End -->
 
 <!-- HideZoneInfoMechanism-Editable-Begin -->
@@ -165,9 +165,9 @@ This policy setting allows you to manage the behavior for notifying registered a
 
 - If you enable this policy setting, Windows tells the registered antivirus program to scan the file when a user opens a file attachment. If the antivirus program fails, the attachment is blocked from being opened.
 
-- If you disable this policy setting, Windows does not call the registered antivirus programs when file attachments are opened.
+- If you disable this policy setting, Windows doesn't call the registered antivirus programs when file attachments are opened.
 
-- If you do not configure this policy setting, Windows does not call the registered antivirus programs when file attachments are opened.
+- If you don't configure this policy setting, Windows doesn't call the registered antivirus programs when file attachments are opened.
 <!-- NotifyAntivirusPrograms-Description-End -->
 
 <!-- NotifyAntivirusPrograms-Editable-Begin -->

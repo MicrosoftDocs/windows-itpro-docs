@@ -41,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting turns off Windows Mobility Center.
 
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file does not launch it.
+- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.
 
 - If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
 
-- If you do not configure this policy setting, Windows Mobility Center is on by default.
+- If you don't configure this policy setting, Windows Mobility Center is on by default.
 <!-- MobilityCenterEnable_1-Description-End -->
 
 <!-- MobilityCenterEnable_1-Editable-Begin -->
@@ -102,11 +102,11 @@ This policy setting turns off Windows Mobility Center.
 <!-- Description-Source-ADMX -->
 This policy setting turns off Windows Mobility Center.
 
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file does not launch it.
+- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.
 
 - If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
 
-- If you do not configure this policy setting, Windows Mobility Center is on by default.
+- If you don't configure this policy setting, Windows Mobility Center is on by default.
 <!-- MobilityCenterEnable_2-Description-End -->
 
 <!-- MobilityCenterEnable_2-Editable-Begin -->

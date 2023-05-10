@@ -45,9 +45,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 
-- If you enable this policy setting, AutoPlay is not allowed for MTP devices like cameras or phones.
+- If you enable this policy setting, AutoPlay isn't allowed for MTP devices like cameras or phones.
 
-- If you disable or do not configure this policy setting, AutoPlay is enabled for non-volume devices.
+- If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.
 <!-- DisallowAutoplayForNonVolumeDevices-Description-End -->
 
 <!-- DisallowAutoplayForNonVolumeDevices-Editable-Begin -->
@@ -187,9 +187,9 @@ Starting with Windows XP SP2, Autoplay is enabled for removable drives as well, 
 
 - If you enable this policy setting, Autoplay is disabled on CD-ROM and removable media drives, or disabled on all drives.
 
-This policy setting disables Autoplay on additional types of drives. You cannot use this setting to enable Autoplay on drives on which it is disabled by default.
+This policy setting disables Autoplay on additional types of drives. You can't use this setting to enable Autoplay on drives on which it's disabled by default.
 
-- If you disable or do not configure this policy setting, AutoPlay is enabled.
+- If you disable or don't configure this policy setting, AutoPlay is enabled.
 
 > [!NOTE]
 > This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.

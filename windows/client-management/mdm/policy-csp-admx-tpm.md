@@ -43,7 +43,7 @@ This policy setting allows you to manage the Group Policy list of Trusted Platfo
 
 - If you enable this policy setting, Windows will block the specified commands from being sent to the TPM on the computer. TPM commands are referenced by a command number. For example, command number 129 is TPM_OwnerReadInternalPub, and command number 170 is TPM_FieldUpgrade. To find the command number associated with each TPM command with TPM 1.2, run "tpm.msc" and navigate to the "Command Management" section.
 
-- If you disable or do not configure this policy setting, only those TPM commands specified through the default or local lists may be blocked by Windows. The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See related policy settings to enforce or ignore the default and local lists of blocked TPM commands.
+- If you disable or don't configure this policy setting, only those TPM commands specified through the default or local lists may be blocked by Windows. The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See related policy settings to enforce or ignore the default and local lists of blocked TPM commands.
 <!-- BlockedCommandsList_Name-Description-End -->
 
 <!-- BlockedCommandsList_Name-Editable-Begin -->
@@ -159,7 +159,7 @@ This policy setting allows you to enforce or ignore the computer's default list 
 
 The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See the related policy setting to configure the Group Policy list of blocked TPM commands.
 
-- If you disable or do not configure this policy setting, Windows will block the TPM commands in the default list, in addition to commands in the Group Policy and local lists of blocked TPM commands.
+- If you disable or don't configure this policy setting, Windows will block the TPM commands in the default list, in addition to commands in the Group Policy and local lists of blocked TPM commands.
 <!-- IgnoreDefaultList_Name-Description-End -->
 
 <!-- IgnoreDefaultList_Name-Editable-Begin -->
@@ -220,7 +220,7 @@ This policy setting allows you to enforce or ignore the computer's local list of
 
 The local list of blocked TPM commands is configured outside of Group Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. The default list of blocked TPM commands is pre-configured by Windows. See the related policy setting to configure the Group Policy list of blocked TPM commands.
 
-- If you disable or do not configure this policy setting, Windows will block the TPM commands found in the local list, in addition to commands in the Group Policy and default lists of blocked TPM commands.
+- If you disable or don't configure this policy setting, Windows will block the TPM commands found in the local list, in addition to commands in the Group Policy and default lists of blocked TPM commands.
 <!-- IgnoreLocalList_Name-Description-End -->
 
 <!-- IgnoreLocalList_Name-Editable-Begin -->
@@ -275,7 +275,7 @@ The local list of blocked TPM commands is configured outside of Group Policy by 
 
 <!-- OptIntoDSHA_Name-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This group policy enables Device Health Attestation reporting (DHA-report) on supported devices. It enables supported devices to send Device Health Attestation related information (device boot logs, PCR values, TPM certificate, etc.) to Device Health Attestation Service (DHA-Service) every time a device starts. Device Health Attestation Service validates the security state and health of the devices, and makes the findings accessible to enterprise administrators via a cloud based reporting portal. This policy is independent of DHA reports that are initiated by device manageability solutions (like MDM or SCCM), and will not interfere with their workflows.
+This group policy enables Device Health Attestation reporting (DHA-report) on supported devices. It enables supported devices to send Device Health Attestation related information (device boot logs, PCR values, TPM certificate, etc.) to Device Health Attestation Service (DHA-Service) every time a device starts. Device Health Attestation Service validates the security state and health of the devices, and makes the findings accessible to enterprise administrators via a cloud based reporting portal. This policy is independent of DHA reports that are initiated by device manageability solutions (like MDM or SCCM), and won't interfere with their workflows.
 <!-- OptIntoDSHA_Name-Description-End -->
 
 <!-- OptIntoDSHA_Name-Editable-Begin -->
@@ -336,7 +336,7 @@ You can choose to have the operating system store either the full TPM owner auth
 
 If you enable this policy setting, Windows will store the TPM owner authorization in the registry of the local computer according to the operating system managed TPM authentication setting you choose.
 
-Choose the operating system managed TPM authentication setting of "Full" to store the full TPM owner authorization, the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting allows use of the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios which do not depend on preventing reset of the TPM anti-hammering logic or changing the TPM owner authorization value. Some TPM-based applications may require this setting be changed before features which depend on the TPM anti-hammering logic can be used.
+Choose the operating system managed TPM authentication setting of "Full" to store the full TPM owner authorization, the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting allows use of the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios which don't depend on preventing reset of the TPM anti-hammering logic or changing the TPM owner authorization value. Some TPM-based applications may require this setting be changed before features which depend on the TPM anti-hammering logic can be used.
 
 Choose the operating system managed TPM authentication setting of "Delegated" to store only the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting is appropriate for use with TPM-based applications that depend on the TPM anti-hammering logic.
 
@@ -405,15 +405,15 @@ An authorization failure occurs each time a standard user sends a command to the
 
 For each standard user two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
 
-The Standard User Lockout Threshold Individual value is the maximum number of authorization failures each standard user may have before the user is not allowed to send commands requiring authorization to the TPM.
+The Standard User Lockout Threshold Individual value is the maximum number of authorization failures each standard user may have before the user isn't allowed to send commands requiring authorization to the TPM.
 
-The Standard User Lockout Total Threshold value is the maximum total number of authorization failures all standard users may have before all standard users are not allowed to send commands requiring authorization to the TPM.
+The Standard User Lockout Total Threshold value is the maximum total number of authorization failures all standard users may have before all standard users aren't allowed to send commands requiring authorization to the TPM.
 
-The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it is global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
+The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
 
 An administrator with the TPM owner password may fully reset the TPM's hardware lockout logic using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.
 
-If this value is not configured, a default value of 480 minutes (8 hours) is used.
+If this value isn't configured, a default value of 480 minutes (8 hours) is used.
 <!-- StandardUserAuthorizationFailureDuration_Name-Description-End -->
 
 <!-- StandardUserAuthorizationFailureDuration_Name-Editable-Begin -->
@@ -476,17 +476,17 @@ An authorization failure occurs each time a standard user sends a command to the
 
 For each standard user two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
 
-This value is the maximum number of authorization failures each standard user may have before the user is not allowed to send commands requiring authorization to the TPM.
+This value is the maximum number of authorization failures each standard user may have before the user isn't allowed to send commands requiring authorization to the TPM.
 
-The Standard User Lockout Total Threshold value is the maximum total number of authorization failures all standard users may have before all standard users are not allowed to send commands requiring authorization to the TPM.
+The Standard User Lockout Total Threshold value is the maximum total number of authorization failures all standard users may have before all standard users aren't allowed to send commands requiring authorization to the TPM.
 
-The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it is global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
+The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
 
 An administrator with the TPM owner password may fully reset the TPM's hardware lockout logic using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.
 
-If this value is not configured, a default value of 4 is used.
+If this value isn't configured, a default value of 4 is used.
 
-A value of zero means the OS will not allow standard users to send commands to the TPM which may cause an authorization failure.
+A value of zero means the OS won't allow standard users to send commands to the TPM which may cause an authorization failure.
 <!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Description-End -->
 
 <!-- StandardUserAuthorizationFailureIndividualThreshold_Name-Editable-Begin -->
@@ -549,17 +549,17 @@ An authorization failure occurs each time a standard user sends a command to the
 
 For each standard user two thresholds apply. Exceeding either threshold will prevent the standard user from sending a command to the TPM that requires authorization.
 
-The Standard User Individual Lockout value is the maximum number of authorization failures each standard user may have before the user is not allowed to send commands requiring authorization to the TPM.
+The Standard User Individual Lockout value is the maximum number of authorization failures each standard user may have before the user isn't allowed to send commands requiring authorization to the TPM.
 
-This value is the maximum total number of authorization failures all standard users may have before all standard users are not allowed to send commands requiring authorization to the TPM.
+This value is the maximum total number of authorization failures all standard users may have before all standard users aren't allowed to send commands requiring authorization to the TPM.
 
-The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it is global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
+The TPM is designed to protect itself against password guessing attacks by entering a hardware lockout mode when it receives too many commands with an incorrect authorization value. When the TPM enters a lockout mode it's global for all users including administrators and Windows features like BitLocker Drive Encryption. The number of authorization failures a TPM allows and how long it stays locked out vary by TPM manufacturer. Some TPMs may enter lockout mode for successively longer periods of time with fewer authorization failures depending on past failures. Some TPMs may require a system restart to exit the lockout mode. Other TPMs may require the system to be on so enough clock cycles elapse before the TPM exits the lockout mode.
 
 An administrator with the TPM owner password may fully reset the TPM's hardware lockout logic using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic all prior standard user TPM authorization failures are ignored; allowing standard users to use the TPM normally again immediately.
 
-If this value is not configured, a default value of 9 is used.
+If this value isn't configured, a default value of 9 is used.
 
-A value of zero means the OS will not allow standard users to send commands to the TPM which may cause an authorization failure.
+A value of zero means the OS won't allow standard users to send commands to the TPM which may cause an authorization failure.
 <!-- StandardUserAuthorizationFailureTotalThreshold_Name-Description-End -->
 
 <!-- StandardUserAuthorizationFailureTotalThreshold_Name-Editable-Begin -->

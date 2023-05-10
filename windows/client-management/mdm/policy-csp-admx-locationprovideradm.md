@@ -43,9 +43,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting turns off the Windows Location Provider feature for this computer.
 
-- If you enable this policy setting, the Windows Location Provider feature will be turned off, and all programs on this computer will not be able to use the Windows Location Provider feature.
+- If you enable this policy setting, the Windows Location Provider feature will be turned off, and all programs on this computer won't be able to use the Windows Location Provider feature.
 
-- If you disable or do not configure this policy setting, all programs on this computer can use the Windows Location Provider feature.
+- If you disable or don't configure this policy setting, all programs on this computer can use the Windows Location Provider feature.
 <!-- DisableWindowsLocationProvider_1-Description-End -->
 
 <!-- DisableWindowsLocationProvider_1-Editable-Begin -->

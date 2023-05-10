@@ -41,12 +41,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines whether the user can publish DFS roots in Active Directory Domain Services (AD DS).
 
-- If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
+- If you enable or don't configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
 
-- If you disable this policy setting, users cannot publish DFS roots in AD DS and the "Publish in Active Directory" option is disabled.
+- If you disable this policy setting, users can't publish DFS roots in AD DS and the "Publish in Active Directory" option is disabled.
 
 > [!NOTE]
-> The default is to allow shared folders to be published when this setting is not configured.
+> The default is to allow shared folders to be published when this setting isn't configured.
 <!-- PublishDfsRoots-Description-End -->
 
 <!-- PublishDfsRoots-Editable-Begin -->
@@ -103,12 +103,12 @@ This policy setting determines whether the user can publish DFS roots in Active 
 <!-- Description-Source-ADMX -->
 This policy setting determines whether the user can publish shared folders in Active Directory Domain Services (AD DS).
 
-- If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
+- If you enable or don't configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
 
-- If you disable this policy setting, users cannot publish shared folders in AD DS, and the "Publish in Active Directory" option is disabled.
+- If you disable this policy setting, users can't publish shared folders in AD DS, and the "Publish in Active Directory" option is disabled.
 
 > [!NOTE]
-> The default is to allow shared folders to be published when this setting is not configured.
+> The default is to allow shared folders to be published when this setting isn't configured.
 <!-- PublishSharedFolders-Description-End -->
 
 <!-- PublishSharedFolders-Editable-Begin -->

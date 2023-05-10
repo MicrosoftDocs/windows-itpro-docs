@@ -133,7 +133,7 @@ Defines restrictions for applications.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Editable-Begin -->
@@ -292,7 +292,7 @@ Defines restrictions for processing DLL files.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Editable-Begin -->
@@ -449,7 +449,7 @@ Defines restrictions for launching executable applications.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
@@ -606,7 +606,7 @@ Defines restrictions for executing Windows Installer files.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Editable-Begin -->
@@ -725,7 +725,7 @@ Defines restrictions for running scripts.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Editable-Begin -->
@@ -844,7 +844,7 @@ Defines restrictions for running apps from the Microsoft Store.
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Description-End -->
 
 <!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
@@ -983,7 +983,7 @@ Additional information:
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 <!-- Device-EnterpriseDataProtection-{Grouping}-Description-End -->
 
 <!-- Device-EnterpriseDataProtection-{Grouping}-Editable-Begin -->
@@ -1298,7 +1298,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Description-End -->
 
 <!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
@@ -1416,7 +1416,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Description-End -->
 
 <!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
@@ -1611,7 +1611,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Description-End -->
 
 <!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
@@ -1729,7 +1729,7 @@ Policy nodes define the policy for launching executables, Windows Installer file
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Description-End -->
 
 <!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->

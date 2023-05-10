@@ -104,9 +104,9 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 <!-- Description-Source-ADMX -->
 This policy setting lets you control whether Windows Store apps can open files using the default desktop app for a file type. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a Windows Store app might compromise the system by opening a file in the default desktop app for a file type.
 
-- If you enable this policy setting, Windows Store apps cannot open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
+- If you enable this policy setting, Windows Store apps can't open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
 
-- If you disable or do not configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
+- If you disable or don't configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
 <!-- AppxRuntimeBlockFileElevation-Description-End -->
 
 <!-- AppxRuntimeBlockFileElevation-Editable-Begin -->
@@ -163,11 +163,11 @@ This policy setting lets you control whether Windows Store apps can open files u
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Universal Windows apps with Windows Runtime API access directly from web content can be launched.
 
-- If you enable this policy setting, Universal Windows apps which declare Windows Runtime API access in ApplicationContentUriRules section of the manifest cannot be launched; Universal Windows apps which have not declared Windows Runtime API access in the manifest are not affected.
+- If you enable this policy setting, Universal Windows apps which declare Windows Runtime API access in ApplicationContentUriRules section of the manifest can't be launched; Universal Windows apps which haven't declared Windows Runtime API access in the manifest aren't affected.
 
-- If you disable or do not configure this policy setting, all Universal Windows apps can be launched.
+- If you disable or don't configure this policy setting, all Universal Windows apps can be launched.
 
-This policy should not be enabled unless recommended by Microsoft as a security response because it can cause severe app compatibility issues.
+This policy shouldn't be enabled unless recommended by Microsoft as a security response because it can cause severe app compatibility issues.
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Description-End -->
 
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Editable-Begin -->
@@ -228,12 +228,12 @@ This policy should not be enabled unless recommended by Microsoft as a security 
 <!-- Description-Source-ADMX -->
 This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.
 
-- If you enable this policy setting, Windows Store apps cannot open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
+- If you enable this policy setting, Windows Store apps can't open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
 
-- If you disable or do not configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
+- If you disable or don't configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
 
 > [!NOTE]
-> Enabling this policy setting does not block Windows Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
+> Enabling this policy setting doesn't block Windows Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
 <!-- AppxRuntimeBlockProtocolElevation-Description-End -->
 
 <!-- AppxRuntimeBlockProtocolElevation-Editable-Begin -->

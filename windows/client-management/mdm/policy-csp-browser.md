@@ -1193,7 +1193,7 @@ With this policy, you can restrict whether printing web content in Microsoft Edg
 
 If enabled, printing is allowed.
 
-If disabled, printing is not allowed.
+If disabled, printing isn't allowed.
 <!-- AllowPrinting-Description-End -->
 
 <!-- AllowPrinting-Editable-Begin -->
@@ -1264,7 +1264,7 @@ Microsoft Edge saves your user's browsing history, which is made up of info abou
 
 If enabled or not configured, the browsing history is saved and visible in the History pane.
 
-If disabled, the browsing history stops saving and is not visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, does not stop roaming of existing history or history coming from other roamed devices.
+If disabled, the browsing history stops saving and isn't visible in the History pane. If browsing history exists before this policy was disabled, the previous browsing history remains visible in the History pane. This policy, when disabled, doesn't stop roaming of existing history or history coming from other roamed devices.
 <!-- AllowSavingHistory-Description-End -->
 
 <!-- AllowSavingHistory-Editable-Begin -->
@@ -1483,7 +1483,7 @@ Sideloading installs and runs unverified extensions in Microsoft Edge. With this
 
 If enabled or not configured, sideloading of unverified extensions in Microsoft Edge is allowed.
 
-If disabled, sideloading of unverified extensions in Microsoft Edge is not allowed. Extensions can be installed only through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
+If disabled, sideloading of unverified extensions in Microsoft Edge isn't allowed. Extensions can be installed only through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
 
 Computer Configuration > Administrative Templates > Windows Components > App Package Deployment
 
@@ -1514,7 +1514,7 @@ Related policies:
 
 | Value | Description |
 |:--|:--|
-| 0 | Prevented/Not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via Powershell. To prevent this, set the ApplicationManagement/AllowDeveloperUnlock policy to 1 (enabled). |
+| 0 | Prevented/Not allowed. Disabling doesn't prevent sideloading of extensions using Add-AppxPackage via Powershell. To prevent this, set the ApplicationManagement/AllowDeveloperUnlock policy to 1 (enabled). |
 | 1 (Default) | Allowed. |
 <!-- AllowSideloadingOfExtensions-AllowedValues-End -->
 
@@ -1587,7 +1587,7 @@ This policy setting lets you configure whether to turn on Windows Defender Smart
 
 | Value | Description |
 |:--|:--|
-| 0 | Turned off. Do not protect users from potential threats and prevent users from turning it on. |
+| 0 | Turned off. Don't protect users from potential threats and prevent users from turning it on. |
 | 1 (Default) | Turned on. Protect users from potential threats and prevent users from turning it off. |
 <!-- AllowSmartScreen-AllowedValues-End -->
 
@@ -1853,7 +1853,7 @@ This policy setting helps you to decide whether to make the Books tab visible, r
 <!-- Description-Source-ADMX -->
 This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
 
-- If you enable this policy setting, clearing browsing history on exit is turned on.
+- If you enable this policy setting, clearing browsing history on exit's turned on.
 
 - If you disable or don't configure this policy setting, it can be turned on and configured by the employee in the Clear browsing data options under Settings.
 <!-- ClearBrowsingDataOnExit-Description-End -->
@@ -1938,7 +1938,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 
 - If you disable this setting, any added search engines are removed from your employee's devices.
 
-- If you don't configure this setting, the search engine list is set to what is specified in App settings.
+- If you don't configure this setting, the search engine list is set to what's specified in App settings.
 <!-- ConfigureAdditionalSearchEngines-Description-End -->
 
 <!-- ConfigureAdditionalSearchEngines-Editable-Begin -->
@@ -1995,7 +1995,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
 
 <!-- ConfigureFavoritesBar-Description-Begin -->
 <!-- Description-Source-ADMX -->
-The favorites bar shows your user's links to sites they have added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
+The favorites bar shows your user's links to sites they've added to it. With this policy, you can specify whether to set the favorites bar to always be visible or hidden on any page.
 
 If enabled, favorites bar is always visible on any page, and the favorites bar toggle in Settings sets to On, but disabled preventing your users from making changes. An error message also shows at the top of the Settings pane indicating that your organization manages some settings. The show bar/hide bar option is hidden from the context menu.
 
@@ -2237,11 +2237,11 @@ You can configure Microsoft Edge to reset to the configured start experience aft
 
 If enabled, you can set the idle time in minutes (0-1440). You must set the Configure kiosk mode policy to 1 and configure Microsoft Edge in assigned access as a single app for this policy to work. Once the idle time meets the time specified, a confirmation message prompts the user to continue, and if no user action, Microsoft Edge resets after 30 seconds.
 
-If you set this policy to 0, Microsoft Edge does not use an idle timer.
+If you set this policy to 0, Microsoft Edge doesn't use an idle timer.
 
 If disabled or not configured, the default value is 5 minutes.
 
-If you do not configure Microsoft Edge in assigned access, then this policy does not take effect.
+If you don't configure Microsoft Edge in assigned access, then this policy doesn't take effect.
 <!-- ConfigureKioskResetAfterIdleTimeout-Description-End -->
 
 <!-- ConfigureKioskResetAfterIdleTimeout-Editable-Begin -->
@@ -2391,7 +2391,7 @@ Related policies:
 
 <!-- ConfigureTelemetryForMicrosoft365Analytics-Description-Begin -->
 <!-- Description-Source-ADMX -->
-You can configure Microsoft Edge to send intranet history only, internet history only, or both to Desktop Analytics for enterprise devices with a configured Commercial ID. If disabled or not configured, Microsoft Edge does not send browsing history data to Desktop Analytics.
+You can configure Microsoft Edge to send intranet history only, internet history only, or both to Desktop Analytics for enterprise devices with a configured Commercial ID. If disabled or not configured, Microsoft Edge doesn't send browsing history data to Desktop Analytics.
 
 Supported versions: Microsoft Edge on Windows 10, version 1809
 Default setting: Disabled or not configured (no data collected or sent)
@@ -2463,9 +2463,9 @@ Default setting: Disabled or not configured (no data collected or sent)
 
 <!-- DisableLockdownOfStartPages-Description-Begin -->
 <!-- Description-Source-ADMX -->
-You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages. To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy is not locked down allowing users to edit their Start pages.
+You can configure Microsoft Edge to disable the lockdown of Start pages allowing users to change or customize their start pages. To do this, you must also enable the Configure Start Pages or Configure Open Microsoft With policy. When enabled, all configured start pages are editable. Any Start page configured using the Configure Start pages policy isn't locked down allowing users to edit their Start pages.
 
-If disabled or not configured, the Start pages configured in the Configure Start Pages policy cannot be changed and remain locked down.
+If disabled or not configured, the Start pages configured in the Configure Start Pages policy can't be changed and remain locked down.
 
 Supported devices: Domain-joined or MDM-enrolled
 Related policy:
@@ -2761,7 +2761,7 @@ Configure first run URL.
 
 <!-- HomePages-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users are not allowed to make changes to their Start pages.
+When you enable the Configure Open Microsoft Edge With policy, you can configure one or more Start pages. When you enable this policy, users aren't allowed to make changes to their Start pages.
 
 If enabled, you must include URLs to the pages, separating multiple pages using angle brackets in the following format:
 
@@ -2770,7 +2770,7 @@ If enabled, you must include URLs to the pages, separating multiple pages using 
 If disabled or not configured, the webpages specified in App settings loads as the default Start pages.
 
 Version 1703 or later:
-If you do not want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it is the only configured URL.
+If you don't want to send traffic to Microsoft, enable this policy and use the `<about:blank>` value, which honors domain- and non-domain-joined devices, when it's the only configured URL.
 
 Version 1809:
 If enabled, and you select either Start page, New Tab page, or previous page in the Configure Open Microsoft Edge With policy, Microsoft Edge ignores the Configure Start Pages policy. If not configured or you set the Configure Open Microsoft Edge With policy to a specific page or pages, Microsoft Edge uses the Configure Start Pages policy.
@@ -2983,7 +2983,7 @@ This policy setting lets you decide whether employees can access the about:flags
 <!-- Description-Source-ADMX -->
 Web security certificates are used to ensure a site your users go to is legitimate, and in some circumstances encrypts the data. With this policy, you can specify whether to prevent users from bypassing the security warning to sites that have SSL errors.
 
-If enabled, overriding certificate errors are not allowed.
+If enabled, overriding certificate errors aren't allowed.
 
 If disabled or not configured, overriding certificate errors are allowed.
 <!-- PreventCertErrorOverrides-Description-End -->
@@ -3196,7 +3196,7 @@ This policy lets you decide whether Microsoft Edge can gather Live Tile metadata
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
 
-- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from continuing to the site.
+- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they're blocked from continuing to the site.
 
 - If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue to the site.
 <!-- PreventSmartScreenPromptOverride-Description-End -->
@@ -3267,7 +3267,7 @@ This policy setting lets you decide whether employees can override the Windows D
 <!-- Description-Source-ADMX -->
 This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
 
-- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they are blocked from downloading the unverified files.
+- If you enable this setting, employees can't ignore Windows Defender SmartScreen warnings and they're blocked from downloading the unverified files.
 
 - If you disable or don't configure this setting, employees can ignore Windows Defender SmartScreen warnings and continue the download process.
 <!-- PreventSmartScreenPromptOverrideForFiles-Description-End -->
@@ -3477,7 +3477,7 @@ This policy setting lets you decide whether an employee's LocalHost IP address s
 
 <!-- ProvisionFavorites-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees can't modify, sort, move, export or delete these provisioned favorites.
 
 - If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
 

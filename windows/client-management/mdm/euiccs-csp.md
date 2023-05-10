@@ -108,7 +108,7 @@ Represents information associated with an eUICC. There is one subtree for each k
 
 <!-- Device-{eUICC}-Actions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Actions that can be performed on the eUICC as a whole (when it is active).
+Actions that can be performed on the eUICC as a whole (when it's active).
 <!-- Device-{eUICC}-Actions-Description-End -->
 
 <!-- Device-{eUICC}-Actions-Editable-Begin -->
@@ -609,7 +609,7 @@ Determines whether the local user interface of the LUI is available (true if ava
 
 <!-- Device-{eUICC}-PPR1Allowed-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether the download of a profile with PPR1 is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 is not allowed.
+Indicates whether the download of a profile with PPR1 is allowed. If the eUICC has already a profile (regardless of its origin and policy rules associated with it), then the download of a profile with PPR1 isn't allowed.
 <!-- Device-{eUICC}-PPR1Allowed-Description-End -->
 
 <!-- Device-{eUICC}-PPR1Allowed-Editable-Begin -->
@@ -894,7 +894,7 @@ Matching ID (activation code token) for profile download. Must be set by the MDM
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Description-Begin -->
 <!-- Description-Source-DDF -->
-This profile policy rule indicates whether disabling of this profile is not allowed (true if not allowed, false otherwise).
+This profile policy rule indicates whether disabling of this profile isn't allowed (true if not allowed, false otherwise).
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR1Set-Editable-Begin -->
@@ -933,7 +933,7 @@ This profile policy rule indicates whether disabling of this profile is not allo
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Description-Begin -->
 <!-- Description-Source-DDF -->
-This profile policy rule indicates whether deletion of this profile is not allowed (true if not allowed, false otherwise).
+This profile policy rule indicates whether deletion of this profile isn't allowed (true if not allowed, false otherwise).
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Description-End -->
 
 <!-- Device-{eUICC}-Profiles-{ICCID}-PPR2Set-Editable-Begin -->

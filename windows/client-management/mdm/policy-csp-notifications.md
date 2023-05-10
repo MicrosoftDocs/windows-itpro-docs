@@ -39,11 +39,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting blocks applications from using the network to send notifications to update tiles, tile badges, toast, or raw notifications. This policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to poll application services to update tiles.
 
-- If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
+- If you enable this policy setting, applications and system features won't be able receive notifications from the network from WNS or via notification polling APIs.
 
 - If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
 
-- If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to poll for tile notification updates in the background.
+- If you disable or don't configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to poll for tile notification updates in the background.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisallowCloudNotification-Description-End -->
@@ -121,9 +121,9 @@ To validate the configuration:
 <!-- Description-Source-ADMX -->
 This policy setting turns off notification mirroring.
 
-- If you enable this policy setting, notifications from applications and system will not be mirrored to your other devices.
+- If you enable this policy setting, notifications from applications and system won't be mirrored to your other devices.
 
-- If you disable or do not configure this policy setting, notifications will be mirrored, and can be turned off by the administrator or user.
+- If you disable or don't configure this policy setting, notifications will be mirrored, and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisallowNotificationMirroring-Description-End -->
@@ -192,9 +192,9 @@ This feature can be turned off by apps that don't want to participate in notific
 <!-- Description-Source-ADMX -->
 This policy setting turns off tile notifications.
 
-- If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
+- If you enable this policy setting, applications and system features won't be able to update their tiles and tile badges in the Start screen.
 
-- If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
+- If you disable or don't configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisallowTileNotification-Description-End -->
@@ -262,7 +262,7 @@ No reboots or service restarts are required for this policy setting to take effe
 This policy setting turns on multiple expanded toast notifications in action center.
 
 - If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
-- If you disable or do not configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
+- If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
 <!-- EnableExpandedToastNotifications-Description-End -->
 
 <!-- EnableExpandedToastNotifications-Editable-Begin -->

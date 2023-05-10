@@ -41,12 +41,12 @@ This Setting allows an administrator to manage local groups on a Device.
 Possible settings:
 
 1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.
-When using Update, existing group members that are not specified in the policy remain untouched.
+When using Update, existing group members that aren't specified in the policy remain untouched.
 
 2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.
 When using Replace, existing group membership is replaced by the list of members specified in
 the add member section. This option works in the same way as a Restricted Group and any group
-members that are not specified in the policy are removed.
+members that aren't specified in the policy are removed.
 
 > [!CAUTION]
 > If the same group is configured with both Replace and Update, then Replace will win.

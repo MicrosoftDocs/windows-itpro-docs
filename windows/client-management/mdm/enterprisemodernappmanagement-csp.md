@@ -507,7 +507,7 @@ Description of last error relating to the app installation.
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
+An integer that indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus isn't available for provisioning and it's only for user-based installations. In provisioning, the value is always 0 (zero).
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
@@ -548,7 +548,7 @@ An integer the indicates the progress of the app installation. For https locatio
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution has not completed. INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action has not completed, this state may briefly appear.
+Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution hasn't completed. INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action hasn't completed, this state may briefly appear.
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
@@ -828,7 +828,7 @@ This is a required node.
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -1584,7 +1584,7 @@ Name of the app. Value type is string.
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
@@ -1881,7 +1881,7 @@ This is a required node.
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
@@ -1959,7 +1959,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Value | Description |
 |:--|:--|
-| 0 | App is not in the nonremovable app policy list. |
+| 0 | App isn't in the nonremovable app policy list. |
 | 1 | App is included in the nonremovable app policy list. |
 <!-- Device-AppManagement-AppStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
@@ -2090,7 +2090,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- Device-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -2826,7 +2826,7 @@ Name of the app. Value type is string.
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
@@ -3123,7 +3123,7 @@ This is a required node.
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
@@ -3201,7 +3201,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Value | Description |
 |:--|:--|
-| 0 | App is not in the nonremovable app policy list. |
+| 0 | App isn't in the nonremovable app policy list. |
 | 1 | App is included in the nonremovable app policy list. |
 <!-- Device-AppManagement-nonStore-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
@@ -3330,7 +3330,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- Device-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -4045,7 +4045,7 @@ Name of the app. Value type is string.
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
@@ -4874,7 +4874,7 @@ This is a required node.
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- Device-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
@@ -4952,7 +4952,7 @@ NonRemovable requires admin permission. This setting can only be defined per dev
 
 | Value | Description |
 |:--|:--|
-| 0 | App is not in the nonremovable app policy list. |
+| 0 | App isn't in the nonremovable app policy list. |
 | 1 | App is included in the nonremovable app policy list. |
 <!-- Device-AppManagement-System-{PackageFamilyName}-NonRemovable-AllowedValues-End -->
 
@@ -5081,7 +5081,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- Device-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -5590,7 +5590,7 @@ Description of last error relating to the app installation.
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-An integer the indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus is not available for provisioning and it is only for user-based installations. In provisioning, the value is always 0 (zero).
+An integer that indicates the progress of the app installation. For https locations, this indicates the download progress. ProgressStatus isn't available for provisioning and it's only for user-based installations. In provisioning, the value is always 0 (zero).
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-ProgressStatus-Editable-Begin -->
@@ -5631,7 +5631,7 @@ An integer the indicates the progress of the app installation. For https locatio
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution has not completed. INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action has not completed, this state may briefly appear.
+Status of app installation. The following values are returned: NOT_INSTALLED (0) - The node was added, but the execution hasn't completed. INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, this value is updated. FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription. INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action hasn't completed, this state may briefly appear.
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Description-End -->
 
 <!-- User-AppInstallation-{PackageFamilyName}-Status-Editable-Begin -->
@@ -5910,7 +5910,7 @@ This is a required node.
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -6663,7 +6663,7 @@ Name of the app. Value type is string.
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
@@ -7075,7 +7075,7 @@ This is a required node.
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
@@ -7172,7 +7172,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- User-AppManagement-AppStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -7906,7 +7906,7 @@ Name of the app. Value type is string.
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
@@ -8315,7 +8315,7 @@ This is a required node.
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
@@ -8410,7 +8410,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- User-AppManagement-nonStore-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->
@@ -9208,7 +9208,7 @@ Name of the app. Value type is string.
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package is not valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package is not available for use. It can still be serviced.
+Provides information about the status of the package. Value type is int. Valid values are: OK (0) - The package is usable. LicenseIssue (1) - The license of the package isn't valid. Modified (2) - The package payload was modified by an unknown source. Tampered (4) - The package payload was tampered intentionally. Disabled (8) - The package isn't available for use. It can still be serviced.
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-{PackageFullName}-PackageStatus-Editable-Begin -->
@@ -9619,7 +9619,7 @@ This is a required node.
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specify whether on a AMD64 device, across an app update, the architecture of the installed app must not change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
+Specify whether on a AMD64 device, across an app update, the architecture of the installed app mustn't change. For example if you have the x86 flavor of a Windows app installed, with this setting enabled, across an update, the x86 flavor will be installed even when x64 flavor is available.
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-MaintainProcessorArchitectureOnUpdate-Editable-Begin -->
@@ -9714,7 +9714,7 @@ Interior node for the managing updates through the Microsoft Store. These settin
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifier for the app or set of apps. If there is only one app, it is the PackageFamilyName. If it is for a set of apps, it is the PackageFamilyName of the main app.
+Identifier for the app or set of apps. If there is only one app, it's the PackageFamilyName. If it's for a set of apps, it's the PackageFamilyName of the main app.
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Description-End -->
 
 <!-- User-AppManagement-System-ReleaseManagement-{ReleaseManagementKey}-Editable-Begin -->

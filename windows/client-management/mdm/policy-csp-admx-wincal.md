@@ -43,7 +43,7 @@ Windows Calendar is a feature that allows users to manage appointments and tasks
 
 - If you enable this setting, Windows Calendar will be turned off.
 
-- If you disable or do not configure this setting, Windows Calendar will be turned on.
+- If you disable or don't configure this setting, Windows Calendar will be turned on.
 
 The default is for Windows Calendar to be turned on.
 <!-- TurnOffWinCal_1-Description-End -->
@@ -104,7 +104,7 @@ Windows Calendar is a feature that allows users to manage appointments and tasks
 
 - If you enable this setting, Windows Calendar will be turned off.
 
-- If you disable or do not configure this setting, Windows Calendar will be turned on.
+- If you disable or don't configure this setting, Windows Calendar will be turned on.
 
 The default is for Windows Calendar to be turned on.
 <!-- TurnOffWinCal_2-Description-End -->

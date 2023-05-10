@@ -37,9 +37,9 @@ ms.topic: reference
 
 <!-- AllowEdgeSwipe-Description-Begin -->
 <!-- Description-Source-ADMX -->
-- If you disable this policy setting, users will not be able to invoke any system UI by swiping in from any screen edge.
+- If you disable this policy setting, users won't be able to invoke any system UI by swiping in from any screen edge.
 
-- If you enable or do not configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
+- If you enable or don't configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
 <!-- AllowEdgeSwipe-Description-End -->
 
 <!-- AllowEdgeSwipe-Editable-Begin -->

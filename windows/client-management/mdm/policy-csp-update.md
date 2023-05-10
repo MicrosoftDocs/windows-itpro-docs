@@ -123,7 +123,7 @@ Update CSP policies are listed below based on the group policy area:
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
+When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
@@ -182,7 +182,7 @@ When enabled, devices will not automatically restart outside of active hours unt
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
+When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
@@ -266,7 +266,7 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 | Value | Description |
 |:--|:--|
 | 0 | Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft. |
-| 1 (Default) | Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the 'Trusted Publishers' certificate store of the local computer. |
+| 1 (Default) | Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate found in the 'Trusted Publishers' certificate store of the local computer. |
 <!-- AllowNonMicrosoftSignedUpdate-AllowedValues-End -->
 
 <!-- AllowNonMicrosoftSignedUpdate-Examples-Begin -->
@@ -298,7 +298,7 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 
 - If you enable this policy setting, Automatic Maintenance will attempt to set OS wake policy and make a wake request for the daily scheduled time, if required.
 
-- If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+- If you disable or don't configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 <!-- AutomaticMaintenanceWakeUp-Description-End -->
 
 <!-- AutomaticMaintenanceWakeUp-Editable-Begin -->
@@ -460,7 +460,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 |:--|:--|
 | Name | DeferFeatureUpdates |
 | Friendly Name | Select when Preview Builds and Feature Updates are received |
-| Element Name | How many days after a Feature Update is released would you like to defer the update before it is offered to the device? |
+| Element Name | How many days after a Feature Update is released would you like to defer the update before it's offered to the device? |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Update |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -498,7 +498,7 @@ To prevent quality updates from being received on their scheduled time, you can 
 
 To resume receiving Quality Updates which are paused, clear the start date field.
 
-If you disable or do not configure this policy, Windows Update will not alter its behavior.
+If you disable or don't configure this policy, Windows Update won't alter its behavior.
 <!-- DeferQualityUpdatesPeriodInDays-Description-End -->
 
 <!-- DeferQualityUpdatesPeriodInDays-Editable-Begin -->
@@ -586,7 +586,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared. |
-| 1 | Safeguards are not enabled and upgrades will be deployed without blocking on safeguards. |
+| 1 | Safeguards aren't enabled and upgrades will be deployed without blocking on safeguards. |
 <!-- DisableWUfBSafeguards-AllowedValues-End -->
 
 <!-- DisableWUfBSafeguards-Examples-Begin -->
@@ -614,7 +614,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 <!-- Description-Source-ADMX -->
 Enable this policy to not include drivers with Windows quality updates.
 
-If you disable or do not configure this policy, Windows Update will include updates that have a Driver classification.
+If you disable or don't configure this policy, Windows Update will include updates that have a Driver classification.
 <!-- ExcludeWUDriversInQualityUpdate-Description-End -->
 
 <!-- ExcludeWUDriversInQualityUpdate-Editable-Begin -->
@@ -680,7 +680,7 @@ If you disable or do not configure this policy, Windows Update will include upda
 Enable this policy to manage which updates you receive prior to the update being released to the world.
 
 Dev Channel
-Ideal for highly technical users. Insiders in the Dev Channel will receive builds from our active development branch that is earliest in a development cycle. These builds are not matched to a specific Windows 10 release.
+Ideal for highly technical users. Insiders in the Dev Channel will receive builds from our active development branch that's earliest in a development cycle. These builds aren't matched to a specific Windows 10 release.
 
 Beta Channel
 Ideal for feature explorers who want to see upcoming Windows 10 features. Your feedback will be especially important here as it will help our engineers ensure key issues are fixed before a major release.
@@ -694,7 +694,7 @@ Ideal for those who want to validate the features and fixes coming soon to their
 > [!NOTE]
 > Preview Build enrollment requires a telemetry level setting of 2 or higher and your domain registered on insider.windows.com. For additional information on Preview Builds, see: <https://aka.ms/wipforbiz>
 
-If you disable or do not configure this policy, Windows Update will not offer you any pre-release updates and you will receive such content once released to the world. Disabling this policy will cause any devices currently on a pre-release build to opt out and stay on the latest Feature Update once released.
+If you disable or don't configure this policy, Windows Update won't offer you any pre-release updates and you will receive such content once released to the world. Disabling this policy will cause any devices currently on a pre-release build to opt out and stay on the latest Feature Update once released.
 <!-- ManagePreviewBuilds-Description-End -->
 
 <!-- ManagePreviewBuilds-Editable-Begin -->
@@ -786,7 +786,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Feature Updates are not paused. |
+| 0 (Default) | Feature Updates aren't paused. |
 | 1 | Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner. |
 <!-- PauseFeatureUpdates-AllowedValues-End -->
 
@@ -887,7 +887,7 @@ To prevent quality updates from being received on their scheduled time, you can 
 
 To resume receiving Quality Updates which are paused, clear the start date field.
 
-If you disable or do not configure this policy, Windows Update will not alter its behavior.
+If you disable or don't configure this policy, Windows Update won't alter its behavior.
 <!-- PauseQualityUpdates-Description-End -->
 
 <!-- PauseQualityUpdates-Editable-Begin -->
@@ -911,7 +911,7 @@ If you disable or do not configure this policy, Windows Update will not alter it
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Quality Updates are not paused. |
+| 0 (Default) | Quality Updates aren't paused. |
 | 1 | Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner. |
 <!-- PauseQualityUpdates-AllowedValues-End -->
 
@@ -1216,7 +1216,7 @@ If the status is set to Disabled or Not Configured, Windows will check for avail
 > If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
 
 > [!NOTE]
-> This policy is not supported on %WINDOWS_ARM_VERSION_6_2%. Setting this policy will not have any effect on %WINDOWS_ARM_VERSION_6_2% PCs.
+> This policy isn't supported on %WINDOWS_ARM_VERSION_6_2%. Setting this policy won't have any effect on %WINDOWS_ARM_VERSION_6_2% PCs.
 <!-- DetectionFrequency-Description-End -->
 
 <!-- DetectionFrequency-Editable-Begin -->
@@ -1309,7 +1309,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 |:--|:--|
 | Name | CorpWuURL |
 | Friendly Name | Specify intranet Microsoft update service location |
-| Element Name | Do not enforce TLS certificate pinning for Windows Update client for detecting updates. |
+| Element Name | Don't enforce TLS certificate pinning for Windows Update client for detecting updates. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage updates offered from Windows Server Update Service |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -1339,10 +1339,10 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 
 <!-- FillEmptyContentUrls-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Windows Update Agent to determine the download URL when it is missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL).
+Allows Windows Update Agent to determine the download URL when it's missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the alternate download URL).
 
 > [!NOTE]
-> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service doesn't provide download URLs in the update metadata for files which are available on the alternate download server.
 <!-- FillEmptyContentUrls-Description-End -->
 
 <!-- FillEmptyContentUrls-Editable-Begin -->
@@ -1749,7 +1749,7 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 
 <!-- UpdateServiceUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
+Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that can't connect to the Internet.
 <!-- UpdateServiceUrl-Description-End -->
 
 <!-- UpdateServiceUrl-Editable-Begin -->
@@ -1824,10 +1824,10 @@ The following list shows the supported values:
 
 <!-- UpdateServiceUrlAlternate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network. This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server. Value type is string and the default value is an empty string, . If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network. This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server. Value type is string and the default value is an empty string, . If the setting isn't configured, and if Automatic Updates isn't disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 > [!NOTE]
-> If the Configure Automatic Updates Group Policy is disabled, then this policy has no effect. If the Alternate Download Server Group Policy is not set, it will use the WSUS server by default to download updates. This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+> If the Configure Automatic Updates Group Policy is disabled, then this policy has no effect. If the Alternate Download Server Group Policy isn't set, it will use the WSUS server by default to download updates. This policy isn't supported on Windows RT. Setting this policy won't have any effect on Windows RT PCs.
 <!-- UpdateServiceUrlAlternate-Description-End -->
 
 <!-- UpdateServiceUrlAlternate-Editable-Begin -->
@@ -1883,15 +1883,15 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 <!-- ActiveHoursEnd-Description-Begin -->
 <!-- Description-Source-ADMX -->
 
-- If you enable this policy, the PC will not automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
+- If you enable this policy, the PC won't automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
 
 Note that the PC must restart for certain updates to take effect.
 
-- If you disable or do not configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
+- If you disable or don't configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
 
 If any of the following two policies are enabled, this policy has no effect:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
@@ -1953,7 +1953,7 @@ Enable this policy to specify the maximum number of hours from the start time th
 
 The max active hours range can be set between 8 and 18 hours.
 
-If you disable or do not configure this policy, the default max active hours range will be used.
+If you disable or don't configure this policy, the default max active hours range will be used.
 <!-- ActiveHoursMaxRange-Description-End -->
 
 <!-- ActiveHoursMaxRange-Editable-Begin -->
@@ -2009,15 +2009,15 @@ If you disable or do not configure this policy, the default max active hours ran
 <!-- ActiveHoursStart-Description-Begin -->
 <!-- Description-Source-ADMX -->
 
-- If you enable this policy, the PC will not automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
+- If you enable this policy, the PC won't automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
 
 Note that the PC must restart for certain updates to take effect.
 
-- If you disable or do not configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
+- If you disable or don't configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
 
 If any of the following two policies are enabled, this policy has no effect:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
@@ -2078,7 +2078,7 @@ Note that the default max active hours range is 18 hours from the active hours s
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -2086,9 +2086,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -2096,11 +2096,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -2108,7 +2108,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- AllowAutoUpdate-Description-End -->
 
 <!-- AllowAutoUpdate-Editable-Begin -->
@@ -2131,10 +2131,10 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 | Value | Description |
 |:--|:--|
 | 0 | Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel. |
-| 1 | Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that do not shutdown properly on restart. |
-| 2 (Default) | Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shutdown properly on restart. |
+| 1 | Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that don't shutdown properly on restart. |
+| 2 (Default) | Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that doesn't shutdown properly on restart. |
 | 3 | Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart. |
-| 4 | Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only. |
+| 4 | Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This setting option also sets the end-user control panel to read-only. |
 | 5 | Turn off automatic updates. |
 <!-- AllowAutoUpdate-AllowedValues-End -->
 
@@ -2244,7 +2244,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -2252,9 +2252,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -2262,11 +2262,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -2274,7 +2274,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- AllowMUUpdateService-Description-End -->
 
 <!-- AllowMUUpdateService-Editable-Begin -->
@@ -2639,7 +2639,7 @@ Minimum number of days from update installation until restarts occur automatical
 
 <!-- ConfigureDeadlineNoAutoReboot-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates or Update/ConfigureDeadlineForFeatureUpdates is configured.
+When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates or Update/ConfigureDeadlineForFeatureUpdates is configured.
 <!-- ConfigureDeadlineNoAutoReboot-Description-End -->
 
 <!-- ConfigureDeadlineNoAutoReboot-Editable-Begin -->
@@ -2819,7 +2819,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -2827,9 +2827,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -2837,11 +2837,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -2849,7 +2849,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallDay-Description-End -->
 
 <!-- ScheduledInstallDay-Editable-Begin -->
@@ -2923,7 +2923,7 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -2931,9 +2931,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -2941,11 +2941,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -2953,7 +2953,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallEveryWeek-Description-End -->
 
 <!-- ScheduledInstallEveryWeek-Editable-Begin -->
@@ -3021,7 +3021,7 @@ If the status is set to Not Configured, use of Automatic Updates is not specifie
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -3029,9 +3029,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -3039,11 +3039,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -3051,7 +3051,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallFirstWeek-Description-End -->
 
 <!-- ScheduledInstallFirstWeek-Editable-Begin -->
@@ -3128,7 +3128,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -3136,9 +3136,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -3146,11 +3146,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -3158,7 +3158,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallFourthWeek-Description-End -->
 
 <!-- ScheduledInstallFourthWeek-Editable-Begin -->
@@ -3235,7 +3235,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -3243,9 +3243,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -3253,11 +3253,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -3265,7 +3265,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallSecondWeek-Description-End -->
 
 <!-- ScheduledInstallSecondWeek-Editable-Begin -->
@@ -3342,7 +3342,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -3350,9 +3350,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -3360,11 +3360,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -3372,7 +3372,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallThirdWeek-Description-End -->
 
 <!-- ScheduledInstallThirdWeek-Editable-Begin -->
@@ -3449,7 +3449,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
 
 > [!NOTE]
-> This policy does not apply to %WINDOWS_ARM_VERSION_6_2%.
+> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
 
 This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
 
@@ -3457,9 +3457,9 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they are ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
 
-Windows finds updates that apply to the computer and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to Windows Update, users can install them.
+Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
 4 = Automatically download updates and install them on the schedule specified below.
 
@@ -3467,11 +3467,11 @@ When "Automatic" is selected as the scheduled install time, Windows will automat
 
 Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart.)
 
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer is not in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
+On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
 
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option has not been carried over to any Win 10 Versions)
+5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
 
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
+With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
 
 7 = Notify for install and notify for restart. (Windows Server only)
 
@@ -3479,7 +3479,7 @@ With this option from Windows Server 2016, applicable only to Server SKU devices
 
 If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
 
-If the status is set to Not Configured, use of Automatic Updates is not specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3819,11 +3819,11 @@ Specify the deadline before the PC will automatically restart to apply updates. 
 
 The restart may happen inside active hours.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 Enabling either of the following two policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDays-Description-End -->
 
@@ -3883,11 +3883,11 @@ Specify the deadline before the PC will automatically restart to apply updates. 
 
 The restart may happen inside active hours.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 Enabling either of the following two policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No auto-restart with logged-on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Description-End -->
 
@@ -3947,7 +3947,7 @@ Enable this policy to specify when auto-restart reminders are displayed.
 
 You can specify the amount of time prior to a scheduled restart to notify the user.
 
-If you disable or do not configure this policy, the default period will be used.
+If you disable or don't configure this policy, the default period will be used.
 <!-- AutoRestartNotificationSchedule-Description-End -->
 
 <!-- AutoRestartNotificationSchedule-Editable-Begin -->
@@ -4017,7 +4017,7 @@ Enable this policy to specify the method by which the auto-restart required noti
 
 The method can be set to require user action to dismiss the notification.
 
-If you disable or do not configure this policy, the default method will be used.
+If you disable or don't configure this policy, the default method will be used.
 <!-- AutoRestartRequiredNotificationDismissal-Description-End -->
 
 <!-- AutoRestartRequiredNotificationDismissal-Editable-Begin -->
@@ -4254,7 +4254,7 @@ If this policy is disabled or not configured, then the Windows Update client may
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allow scan against Windows Update. |
-| 1 | Do not allow update deferral policies to cause scans against Windows Update. |
+| 1 | Don't allow update deferral policies to cause scans against Windows Update. |
 <!-- DisableDualScan-AllowedValues-End -->
 
 <!-- DisableDualScan-GpMapping-Begin -->
@@ -4300,13 +4300,13 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No auto-restart with logged-on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
 
 3. Specify deadline before auto-restart for update installation.
@@ -4370,13 +4370,13 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No auto-restart with logged-on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
 
 3. Specify deadline before auto-restart for update installation.
@@ -4440,13 +4440,13 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No auto-restart with logged-on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
 
 3. Specify deadline before auto-restart for update installation.
@@ -4510,13 +4510,13 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No auto-restart with logged-on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
 
 3. Specify deadline before auto-restart for update installation.
@@ -4580,13 +4580,13 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No auto-restart with logged-on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
 
 3. Specify deadline before auto-restart for update installation.
@@ -4650,13 +4650,13 @@ You can specify the number of days a user can snooze Engaged restart reminder no
 
 You can specify the deadline in days before automatically scheduling and executing a pending restart regardless of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
 
-If you do not specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
+If you don't specify a deadline or if the deadline is set to 0, the PC won't automatically restart and will require the person to schedule it prior to restart.
 
-If you disable or do not configure this policy, the PC will restart following the default schedule.
+If you disable or don't configure this policy, the PC will restart following the default schedule.
 
 Enabling any of the following policies will override the above policy:
 
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No auto-restart with logged-on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
 
 3. Specify deadline before auto-restart for update installation.
@@ -4747,7 +4747,7 @@ To validate this policy:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not ignore MO download limit for apps and their updates. |
+| 0 (Default) | Don't ignore MO download limit for apps and their updates. |
 | 1 | Ignore MO download limit (allow unlimited downloading) for apps and their updates. |
 <!-- IgnoreMOAppDownloadLimit-AllowedValues-End -->
 
@@ -4807,7 +4807,7 @@ To validate this policy:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not ignore MO download limit for OS updates. |
+| 0 (Default) | Don't ignore MO download limit for OS updates. |
 | 1 | Ignore MO download limit (allow unlimited downloading) for OS updates. |
 <!-- IgnoreMOUpdateDownloadLimit-AllowedValues-End -->
 
@@ -4858,7 +4858,7 @@ To validate this policy:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Deferrals are not paused. |
+| 0 (Default) | Deferrals aren't paused. |
 | 1 | Deferrals are paused. |
 <!-- PauseDeferrals-AllowedValues-End -->
 
@@ -5048,13 +5048,13 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 
 <!-- ScheduleImminentRestartWarning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users are not able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
+Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users aren't able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
 
 Specifies the amount of time prior to a scheduled restart to display the warning reminder to the user.
 
 You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
 
-If you disable or do not configure this policy, the default notification behaviors will be used.
+If you disable or don't configure this policy, the default notification behaviors will be used.
 <!-- ScheduleImminentRestartWarning-Description-End -->
 
 <!-- ScheduleImminentRestartWarning-Editable-Begin -->
@@ -5118,13 +5118,13 @@ If you disable or do not configure this policy, the default notification behavio
 
 <!-- ScheduleRestartWarning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users are not able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
+Enable this policy to control when notifications are displayed to warn users about a scheduled restart for the update installation deadline. Users aren't able to postpone the scheduled restart once the deadline has been reached and the restart is automatically executed.
 
 Specifies the amount of time prior to a scheduled restart to display the warning reminder to the user.
 
 You can specify the amount of time prior to a scheduled restart to notify the user that the auto restart is imminent to allow them time to save their work.
 
-If you disable or do not configure this policy, the default notification behaviors will be used.
+If you disable or don't configure this policy, the default notification behaviors will be used.
 <!-- ScheduleRestartWarning-Description-End -->
 
 <!-- ScheduleRestartWarning-Editable-Begin -->
@@ -5194,7 +5194,7 @@ This policy setting allows you to control whether users receive notifications fo
 
 Enable this policy to turn off all auto restart notifications.
 
-If you disable or do not configure this policy, the default notification behaviors will be unchanged.
+If you disable or don't configure this policy, the default notification behaviors will be unchanged.
 <!-- SetAutoRestartNotificationDisable-Description-End -->
 
 <!-- SetAutoRestartNotificationDisable-Editable-Begin -->

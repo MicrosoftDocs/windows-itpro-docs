@@ -132,7 +132,7 @@ Node for the antispyware query.
 
 <!-- Device-Antispyware-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it is not the most recent version. 1 - The security software reports that it is the most recent version. 2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.) If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
+Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.) If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
 <!-- Device-Antispyware-SignatureStatus-Description-End -->
 
 <!-- Device-Antispyware-SignatureStatus-Editable-Begin -->
@@ -173,7 +173,7 @@ This node also returns 0 when no anti-spyware provider is active.
 
 <!-- Device-Antispyware-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware. Valid values: 0 - The status of the security provider category is good and does not need user attention. 1 - The status of the security provider category is not monitored by Windows Security Center (WSC). 2 - The status of the security provider category is poor and the computer may be at risk. 3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
+Integer that specifies the status of the antispyware. Valid values: 0 - The status of the security provider category is good and doesn't need user attention. 1 - The status of the security provider category isn't monitored by Windows Security Center (WSC). 2 - The status of the security provider category is poor and the computer may be at risk. 3 - The security provider category is in snooze state. Snooze indicates that WSC isn't actively protecting the computer.
 <!-- Device-Antispyware-Status-Description-End -->
 
 <!-- Device-Antispyware-Status-Editable-Begin -->
@@ -252,7 +252,7 @@ Node for the antivirus query.
 
 <!-- Device-Antivirus-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antivirus signature. Valid values: 0 - The security software reports that it is not the most recent version. 1 (default) - The security software reports that it is the most recent version. 2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.) If more than one antivirus provider is active, this node returns: 1 - If every active antivirus provider has a valid signature status. 0 - If any of the active antivirus providers has an invalid signature status.
+Integer that specifies the status of the antivirus signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 (default) - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.) If more than one antivirus provider is active, this node returns: 1 - If every active antivirus provider has a valid signature status. 0 - If any of the active antivirus providers has an invalid signature status.
 <!-- Device-Antivirus-SignatureStatus-Description-End -->
 
 <!-- Device-Antivirus-SignatureStatus-Editable-Begin -->
@@ -293,7 +293,7 @@ This node also returns 0 when no antivirus provider is active.
 
 <!-- Device-Antivirus-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus is on and monitoring, 1 - Antivirus is disabled, 2 - Antivirus is not monitoring the device/PC or some options have been turned off, 3 (default) - Antivirus is temporarily not completely monitoring the device/PC, 4 - Antivirus not applicable for this device. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.)
+Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus is on and monitoring, 1 - Antivirus is disabled, 2 - Antivirus isn't monitoring the device/PC or some options have been turned off, 3 (default) - Antivirus is temporarily not completely monitoring the device/PC, 4 - Antivirus not applicable for this device. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.)
 <!-- Device-Antivirus-Status-Description-End -->
 
 <!-- Device-Antivirus-Status-Editable-Begin -->
@@ -372,7 +372,7 @@ Node for the battery query.
 
 <!-- Device-Battery-EstimatedChargeRemaining-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the estimated battery charge remaining. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
+Integer that specifies the estimated battery charge remaining. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 <!-- Device-Battery-EstimatedChargeRemaining-Description-End -->
 
 <!-- Device-Battery-EstimatedChargeRemaining-Editable-Begin -->
@@ -412,7 +412,7 @@ Integer that specifies the estimated battery charge remaining. This is the value
 
 <!-- Device-Battery-EstimatedRuntime-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the estimated runtime of the battery. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
+Integer that specifies the estimated runtime of the battery. This is the value returned in BatteryLifeTime in SYSTEM_POWER_STATUS structure. The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 <!-- Device-Battery-EstimatedRuntime-Description-End -->
 
 <!-- Device-Battery-EstimatedRuntime-Editable-Begin -->
@@ -1119,7 +1119,7 @@ System Guard status. 0 - Running, 1 - Reboot required, 2 - Not configured, 3 - S
 
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Description-Begin -->
 <!-- Description-Source-DDF -->
-Virtualization-based security hardware requirement status. The value is a 256 value bitmask. 0x0: System meets hardware configuration requirements, 0x1: SecureBoot required, 0x2: DMA Protection required, 0x4: HyperV not supported for Guest VM, 0x8: HyperV feature is not available.
+Virtualization-based security hardware requirement status. The value is a 256 value bitmask. 0x0: System meets hardware configuration requirements, 0x1: SecureBoot required, 0x2: DMA Protection required, 0x4: HyperV not supported for Guest VM, 0x8: HyperV feature isn't available.
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Description-End -->
 
 <!-- Device-DeviceGuard-VirtualizationBasedSecurityHwReq-Editable-Begin -->
@@ -1353,7 +1353,7 @@ Node for the firewall query.
 
 <!-- Device-Firewall-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the firewall. Valid values: 0 - Firewall is on and monitoring, 1 - Firewall has been disabled, 2 - Firewall is not monitoring all networks or some rules have been turned off, 3 (default) - Firewall is temporarily not monitoring all networks, 4 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn't exist.)
+Integer that specifies the status of the firewall. Valid values: 0 - Firewall is on and monitoring, 1 - Firewall has been disabled, 2 - Firewall isn't monitoring all networks or some rules have been turned off, 3 (default) - Firewall is temporarily not monitoring all networks, 4 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.)
 <!-- Device-Firewall-Status-Description-End -->
 
 <!-- Device-Firewall-Status-Editable-Begin -->

@@ -289,7 +289,7 @@ If you set it to 1, your PC may start an outgoing projection as a TCP client.
 <!-- AllowProjectionFromPC-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy allows you to turn off projection from a PC.
-If you set it to 0, your PC cannot discover or project to other devices.
+If you set it to 0, your PC can't discover or project to other devices.
 If you set it to 1, your PC can discover and project to other devices.
 <!-- AllowProjectionFromPC-Description-End -->
 
@@ -312,7 +312,7 @@ If you set it to 1, your PC can discover and project to other devices.
 
 | Value | Description |
 |:--|:--|
-| 0 | Your PC cannot discover or project to other devices. |
+| 0 | Your PC can't discover or project to other devices. |
 | 1 (Default) | Your PC can discover and project to other devices. |
 <!-- AllowProjectionFromPC-AllowedValues-End -->
 
@@ -340,7 +340,7 @@ If you set it to 1, your PC can discover and project to other devices.
 <!-- AllowProjectionFromPCOverInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy allows you to turn off projection from a PC over infrastructure.
-If you set it to 0, your PC cannot discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct.
+If you set it to 0, your PC can't discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct.
 If you set it to 1, your PC can discover and project to other devices over infrastructure.
 <!-- AllowProjectionFromPCOverInfrastructure-Description-End -->
 
@@ -363,7 +363,7 @@ If you set it to 1, your PC can discover and project to other devices over infra
 
 | Value | Description |
 |:--|:--|
-| 0 | Your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct. |
+| 0 | Your PC can't discover or project to other infrastructure devices, although it's possible to discover and project over WiFi Direct. |
 | 1 (Default) | Your PC can discover and project to other devices over infrastructure. |
 <!-- AllowProjectionFromPCOverInfrastructure-AllowedValues-End -->
 
@@ -416,7 +416,7 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 
 | Value | Description |
 |:--|:--|
-| 0 | Projection to PC is not allowed. Always off and the user cannot enable it. |
+| 0 | Projection to PC isn't allowed. Always off and the user can't enable it. |
 | 1 (Default) | Projection to PC is allowed. Enabled only above the lock screen. |
 <!-- AllowProjectionToPC-AllowedValues-End -->
 
@@ -458,7 +458,7 @@ If you turn it off or don't configure it, your PC is discoverable and can be pro
 <!-- AllowProjectionToPCOverInfrastructure-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to turn off projection to a PC over infrastructure.
-If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
+If you set it to 0, your PC can't be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct.
 If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.
 <!-- AllowProjectionToPCOverInfrastructure-Description-End -->
 
@@ -481,7 +481,7 @@ If you set it to 1, your PC can be discoverable and can be projected to over inf
 
 | Value | Description |
 |:--|:--|
-| 0 | Your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct. |
+| 0 | Your PC isn't discoverable and other devices can't project to it over infrastructure, although it's possible to project to it over WiFi Direct. |
 | 1 (Default) | Your PC is discoverable and other devices can project to it over infrastructure. |
 <!-- AllowProjectionToPCOverInfrastructure-AllowedValues-End -->
 
@@ -585,7 +585,7 @@ If you set this to 'Always', all pairings will require PIN.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | PIN is not required. |
+| 0 (Default) | PIN isn't required. |
 | 1 | Pairing ceremony for new devices will always require a PIN. |
 | 2 | All pairings will require PIN. |
 <!-- RequirePinForPairing-AllowedValues-End -->

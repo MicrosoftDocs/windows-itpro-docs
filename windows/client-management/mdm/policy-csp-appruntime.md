@@ -43,7 +43,7 @@ This policy setting lets you control whether Microsoft accounts are optional for
 
 - If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.
 
-- If you disable or do not configure this policy setting, users will need to sign in with a Microsoft account.
+- If you disable or don't configure this policy setting, users will need to sign in with a Microsoft account.
 <!-- AllowMicrosoftAccountsToBeOptional-Description-End -->
 
 <!-- AllowMicrosoftAccountsToBeOptional-Editable-Begin -->

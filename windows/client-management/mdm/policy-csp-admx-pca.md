@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- DetectBlockedDriversPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 <!-- DetectBlockedDriversPolicy-Description-End -->
 
 <!-- DetectBlockedDriversPolicy-Editable-Begin -->
@@ -93,7 +93,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectDeprecatedCOMComponentFailuresPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 <!-- DetectDeprecatedCOMComponentFailuresPolicy-Description-End -->
 
 <!-- DetectDeprecatedCOMComponentFailuresPolicy-Editable-Begin -->
@@ -148,7 +148,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectDeprecatedComponentFailuresPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 <!-- DetectDeprecatedComponentFailuresPolicy-Description-End -->
 
 <!-- DetectDeprecatedComponentFailuresPolicy-Editable-Begin -->
@@ -203,7 +203,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectInstallFailuresPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 <!-- DetectInstallFailuresPolicy-Description-End -->
 
 <!-- DetectInstallFailuresPolicy-Editable-Begin -->
@@ -257,7 +257,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectUndetectedInstallersPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 <!-- DetectUndetectedInstallersPolicy-Description-End -->
 
 <!-- DetectUndetectedInstallersPolicy-Editable-Begin -->
@@ -312,7 +312,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 
 <!-- DetectUpdateFailuresPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 <!-- DetectUpdateFailuresPolicy-Description-End -->
 
 <!-- DetectUpdateFailuresPolicy-Editable-Begin -->
@@ -371,9 +371,9 @@ This policy setting configures the Program Compatibility Assistant (PCA) to diag
 
 - If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.
 
-- If you disable this policy setting, the PCA does not detect compatibility issues for applications and drivers.
+- If you disable this policy setting, the PCA doesn't detect compatibility issues for applications and drivers.
 
-- If you do not configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.
+- If you don't configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.
 
 > [!NOTE]
 > This policy setting has no effect if the "Turn off Program Compatibility Assistant" policy setting is enabled. The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.

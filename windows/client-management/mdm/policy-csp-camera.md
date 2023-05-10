@@ -39,7 +39,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allow the use of Camera devices on the machine.
 
-- If you enable or do not configure this policy setting, Camera devices will be enabled.
+- If you enable or don't configure this policy setting, Camera devices will be enabled.
 
 - If you disable this property setting, Camera devices will be disabled.
 <!-- AllowCamera-Description-End -->

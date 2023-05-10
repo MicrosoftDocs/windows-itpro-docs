@@ -322,9 +322,9 @@ Delay reporting for the random minutes: The maximum minutes of random delay on t
 
 Repeat reporting for every (days): The periodical interval in days for sending the reporting data.
 
-Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and will not be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
+Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit's reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and won't be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
 
-Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
+Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The default value is 65536. When transmitting report data to the server, one block at a time of application records that's less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these won't factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
 <!-- AllowReportingServer-Description-End -->
 
 <!-- AllowReportingServer-Editable-Begin -->
@@ -379,7 +379,7 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 
 <!-- AllowRoamingFileExclusions-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
+Specifies the file paths relative to %userprofile% that don't roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
 <!-- AllowRoamingFileExclusions-Description-End -->
 
 <!-- AllowRoamingFileExclusions-Editable-Begin -->
@@ -433,7 +433,7 @@ Specifies the file paths relative to %userprofile% that do not roam with a user'
 
 <!-- AllowRoamingRegistryExclusions-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
+Specifies the registry paths that don't roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
 <!-- AllowRoamingRegistryExclusions-Description-End -->
 
 <!-- AllowRoamingRegistryExclusions-Editable-Begin -->
@@ -596,7 +596,7 @@ Migration mode allows the App-V client to modify shortcuts and FTA's for package
 
 <!-- IntegrationAllowRootGlobal-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links aren't used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
 <!-- IntegrationAllowRootGlobal-Description-End -->
 
 <!-- IntegrationAllowRootGlobal-Editable-Begin -->
@@ -650,7 +650,7 @@ Specifies the location where symbolic links are created to the current version o
 
 <!-- IntegrationAllowRootUser-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
+Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links aren't used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
 <!-- IntegrationAllowRootUser-Description-End -->
 
 <!-- IntegrationAllowRootUser-Editable-Begin -->
@@ -1498,7 +1498,7 @@ Specifies that streamed package contents will be not be saved to the local hard 
 
 <!-- StreamingSupportBranchCache-Description-Begin -->
 <!-- Description-Source-ADMX -->
-If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache.
+If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support isn't desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache.
 <!-- StreamingSupportBranchCache-Description-End -->
 
 <!-- StreamingSupportBranchCache-Editable-Begin -->

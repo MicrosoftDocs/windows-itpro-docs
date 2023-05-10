@@ -392,7 +392,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1. Note that most clients do not support this behavior. This value manages the settings for both SUPL and v2 UPL. If a phone is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
+This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1. Note that most clients don't support this behavior. This value manages the settings for both SUPL and v2 UPL. If a phone is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Editable-Begin -->
@@ -460,7 +460,7 @@ For OMA DM, if the format for this node is incorrect then an entry will be ignor
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the phone uses the default location service and does not use SUPL.
+Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network don't match, the phone uses the default location service and doesn't use SUPL.
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-MCCMNCPairs-Editable-Begin -->
@@ -542,7 +542,7 @@ Optional. Time in seconds that the network-initiated location request is display
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required. Specifies the root certificate for the H-SLP server. Windows does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.
+Required. Specifies the root certificate for the H-SLP server. Windows doesn't support a non-secure mode. If this node isn't included, the configuration service provider will fail but may not return a specific error.
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-RootCertificate-Editable-Begin -->

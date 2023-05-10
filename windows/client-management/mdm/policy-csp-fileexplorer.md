@@ -168,7 +168,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 | Value | Description |
 |:--|:--|
 | 0 (Default) | File Explorer will request cloud file metadata and display it in the Quick access view. |
-| 1 | File Explorer will not request cloud file metadata or display it in the Quick access view. |
+| 1 | File Explorer won't request cloud file metadata or display it in the Quick access view. |
 <!-- DisableGraphRecentItems-AllowedValues-End -->
 
 <!-- DisableGraphRecentItems-GpMapping-Begin -->

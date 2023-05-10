@@ -161,7 +161,7 @@ Manages how Queue-specific files are processed during printer installation. At p
 
 You can enable this setting to change the default behavior involving queue-specific files. To use this setting, select one of the options below from the "Manage processing of Queue-specific files" box.
 
-If you disable or do not configure this policy setting, the default behavior is "Limit Queue-specific files to Color profiles".
+If you disable or don't configure this policy setting, the default behavior is "Limit Queue-specific files to Color profiles".
 
 - "Do not allow Queue-specific files" specifies that no queue-specific files will be allowed/processed during print queue/printer connection installation.
 
@@ -226,13 +226,13 @@ The following are the supported values:
 
 <!-- ConfigureDriverValidationLevel-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the print driver signature validation mechanism. This policy controls the type of digital signature that is required for a print driver to be considered valid and installed on the system.
+This policy setting controls the print driver signature validation mechanism. This policy controls the type of digital signature that's required for a print driver to be considered valid and installed on the system.
 
 As part of this validation the catalog/embedded signature is verified and all files in the driver must be a part of the catalog or have their own embedded signature that can be used for validation.
 
 You can enable this setting to change the default signature validation method. To use this setting, select one of the options below from the "Select the driver signature mechanism for this computer" box.
 
-If you disable or do not configure this policy setting, the default method is "Allow all validly signed drivers".
+If you disable or don't configure this policy setting, the default method is "Allow all validly signed drivers".
 
 - "Require inbox signed drivers" specifies only drivers that are shipped as part of a Windows image are allowed on this computer.
 
@@ -246,7 +246,7 @@ If you disable or do not configure this policy setting, the default method is "A
 
 The 'PrintDrivers' certificate store needs to be created by an administrator under the local machine store location.
 
-The 'Trusted Publishers' certificate store can contain certificates from sources that are not related to print drivers.
+The 'Trusted Publishers' certificate store can contain certificates from sources that aren't related to print drivers.
 <!-- ConfigureDriverValidationLevel-Description-End -->
 
 <!-- ConfigureDriverValidationLevel-Editable-Begin -->
@@ -309,11 +309,11 @@ The following are the supported values:
 <!-- Description-Source-ADMX -->
 Determines whether to always send page count information for accounting purposes for printers using the Microsoft IPP Class Driver.
 
-By default, pages are sent to the printer as soon as they are rendered and page count information is not sent to the printer unless pages must be reordered.
+By default, pages are sent to the printer as soon as they're rendered and page count information isn't sent to the printer unless pages must be reordered.
 
 - If you enable this setting the system will render all print job pages up front and send the printer the total page count for the print job.
 
-- If you disable this setting or do not configure it, pages are printed as soon as they are rendered and page counts are only sent when page reordering is required to process the job.
+- If you disable this setting or don't configure it, pages are printed as soon as they're rendered and page counts are only sent when page reordering is required to process the job.
 <!-- ConfigureIppPageCountsPolicy-Description-End -->
 
 <!-- ConfigureIppPageCountsPolicy-Editable-Begin -->
@@ -376,15 +376,15 @@ Determines whether Redirection Guard is enabled for the print spooler.
 
 You can enable this setting to configure the Redirection Guard policy being applied to spooler.
 
-- If you disable or do not configure this policy setting, Redirection Guard will default to being 'enabled'.
+- If you disable or don't configure this policy setting, Redirection Guard will default to being 'enabled'.
 
 - If you enable this setting you may select the following options:
 
 - Enabled: Redirection Guard will prevent any file redirections from being followed
 
-- Disabled: Redirection Guard will not be enabled and file redirections may be used within the spooler process
+- Disabled: Redirection Guard won't be enabled and file redirections may be used within the spooler process
 
-- Audit: Redirection Guard will log events as though it were enabled but will not actually prevent file redirections from being used within the spooler.
+- Audit: Redirection Guard will log events as though it were enabled but won't actually prevent file redirections from being used within the spooler.
 <!-- ConfigureRedirectionGuardPolicy-Description-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-Editable-Begin -->
@@ -506,9 +506,9 @@ Use authentication for outgoing RPC over named pipes connections:
 
   - "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
   - "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
-  - "Authentication disabled": RPC authentication will not be used for outgoing RPC over named pipes connections
+  - "Authentication disabled": RPC authentication won't be used for outgoing RPC over named pipes connections
 
-If you disable or do not configure this policy setting, the above defaults will be used.
+If you disable or don't configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcConnectionPolicy-Description-End -->
 
 <!-- ConfigureRpcConnectionPolicy-Editable-Begin -->
@@ -577,7 +577,7 @@ Authentication protocol to use for incoming RPC connections:
   - "Negotiate": Use the Negotiate authentication protocol (the default option)
   - "Kerberos": Use the Kerberos authentication protocol
 
-If you disable or do not configure this policy setting, the above defaults will be used.
+If you disable or don't configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcListenerPolicy-Description-End -->
 
 <!-- ConfigureRpcListenerPolicy-Editable-Begin -->
@@ -639,7 +639,7 @@ RPC over TCP port:
 
   - The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used
 
-If you disable or do not configure this policy setting, dynamic TCP ports are used.
+If you disable or don't configure this policy setting, dynamic TCP ports are used.
 <!-- ConfigureRpcTcpPort-Description-End -->
 
 <!-- ConfigureRpcTcpPort-Editable-Begin -->
@@ -699,7 +699,7 @@ By default, there are no restrictions to printing based on connection type or pr
 
 - If you enable this setting, the computer will restrict printing to printer connections on the corporate network or approved USB-connected printers.
 
-- If you disable this setting or do not configure it, there are no restrictions to printing based on connection type or printer Make/Model.
+- If you disable this setting or don't configure it, there are no restrictions to printing based on connection type or printer Make/Model.
 <!-- EnableDeviceControl-Description-End -->
 
 <!-- EnableDeviceControl-Editable-Begin -->
@@ -760,7 +760,7 @@ By default, there are no restrictions to printing based on connection type or pr
 
 - If you enable this setting, the computer will restrict printing to printer connections on the corporate network or approved USB-connected printers.
 
-- If you disable this setting or do not configure it, there are no restrictions to printing based on connection type or printer Make/Model.
+- If you disable this setting or don't configure it, there are no restrictions to printing based on connection type or printer Make/Model.
 <!-- EnableDeviceControlUser-Description-End -->
 
 <!-- EnableDeviceControlUser-Editable-Begin -->
@@ -815,13 +815,13 @@ By default, there are no restrictions to printing based on connection type or pr
 
 <!-- ManageDriverExclusionList-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the print driver exclusion list. The exclusion list allows an administrator to curate a list of printer drivers that are not allowed to be installed on the system.
+This policy setting controls the print driver exclusion list. The exclusion list allows an administrator to curate a list of printer drivers that aren't allowed to be installed on the system.
 
 This checks outranks the signature check and allows drivers that have a valid signature level for the Print Driver signature validation policy to be excluded.
 
 Entries in the exclusion list consist of a SHA256 hash (or SHA1 hash for Win7) of the INF file and/or main driver DLL file of the driver and the name of the file.
 
-If you disable or do not configure this policy setting, the registry key and values associated with this policy setting will be deleted, if currently set to a value.
+If you disable or don't configure this policy setting, the registry key and values associated with this policy setting will be deleted, if currently set to a value.
 <!-- ManageDriverExclusionList-Description-End -->
 
 <!-- ManageDriverExclusionList-Editable-Begin -->
@@ -879,10 +879,10 @@ This policy setting controls the client Point and Print behavior, including the 
 
 - If you enable this policy setting:
 
--Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
--You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
+-Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
+-You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
 
-- If you do not configure this policy setting:
+- If you don't configure this policy setting:
 
 -Windows Vista client computers can point and print to any server.
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
@@ -892,8 +892,8 @@ This policy setting controls the client Point and Print behavior, including the 
 - If you disable this policy setting:
 
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+-Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+-Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 <!-- PointAndPrintRestrictions-Description-End -->
@@ -954,10 +954,10 @@ This policy setting controls the client Point and Print behavior, including the 
 
 - If you enable this policy setting:
 
--Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
--You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
+-Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
+-You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
 
-- If you do not configure this policy setting:
+- If you don't configure this policy setting:
 
 -Windows Vista client computers can point and print to any server.
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
@@ -967,8 +967,8 @@ This policy setting controls the client Point and Print behavior, including the 
 - If you disable this policy setting:
 
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+-Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+-Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 <!-- PointAndPrintRestrictions_User-Description-End -->
@@ -1027,9 +1027,9 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- Description-Source-ADMX -->
 Determines whether the computer's shared printers can be published in Active Directory.
 
-- If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
+- If you enable this setting or don't configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
 
-- If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.
+- If you disable this setting, this computer's shared printers can't be published in Active Directory, and the "List in directory" option isn't available.
 
 > [!NOTE]
 > This settings takes priority over the setting "Automatically publish new printers in the Active Directory".
@@ -1091,7 +1091,7 @@ Determines whether users that aren't Administrators can install print drivers on
 
 By default, users that aren't Administrators can't install print drivers on this computer.
 
-- If you enable this setting or do not configure it, the system will limit installation of print drivers to Administrators of this computer.
+- If you enable this setting or don't configure it, the system will limit installation of print drivers to Administrators of this computer.
 
 - If you disable this setting, the system won't limit installation of print drivers to this computer.
 <!-- RestrictDriverInstallationToAdministrators-Description-End -->

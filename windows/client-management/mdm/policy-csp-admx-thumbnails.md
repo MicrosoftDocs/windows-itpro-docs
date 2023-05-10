@@ -45,7 +45,7 @@ File Explorer displays thumbnail images by default.
 
 - If you enable this policy setting, File Explorer displays only icons and never displays thumbnail images.
 
-- If you disable or do not configure this policy setting, File Explorer displays only thumbnail images.
+- If you disable or don't configure this policy setting, File Explorer displays only thumbnail images.
 <!-- DisableThumbnails-Description-End -->
 
 <!-- DisableThumbnails-Editable-Begin -->
@@ -106,7 +106,7 @@ File Explorer displays thumbnail images on network folders by default.
 
 - If you enable this policy setting, File Explorer displays only icons and never displays thumbnail images on network folders.
 
-- If you disable or do not configure this policy setting, File Explorer displays only thumbnail images on network folders.
+- If you disable or don't configure this policy setting, File Explorer displays only thumbnail images on network folders.
 <!-- DisableThumbnailsOnNetworkFolders-Description-End -->
 
 <!-- DisableThumbnailsOnNetworkFolders-Editable-Begin -->
@@ -165,9 +165,9 @@ Turns off the caching of thumbnails in hidden thumbs.db files.
 
 This policy setting allows you to configure File Explorer to cache thumbnails of items residing in network folders in hidden thumbs.db files.
 
-- If you enable this policy setting, File Explorer does not create, read from, or write to thumbs.db files.
+- If you enable this policy setting, File Explorer doesn't create, read from, or write to thumbs.db files.
 
-- If you disable or do not configure this policy setting, File Explorer creates, reads from, and writes to thumbs.db files.
+- If you disable or don't configure this policy setting, File Explorer creates, reads from, and writes to thumbs.db files.
 <!-- DisableThumbsDBOnNetworkFolders-Description-End -->
 
 <!-- DisableThumbsDBOnNetworkFolders-Editable-Begin -->

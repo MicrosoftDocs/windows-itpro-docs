@@ -351,7 +351,7 @@ For more information about Azure AD enrollment, see [Azure Active Directory inte
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-Begin -->
 <!-- Description-Source-DDF -->
-For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token cannot be obtained.
+For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token can't be obtained.
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Editable-Begin -->
@@ -372,8 +372,8 @@ For Azure AD backed enrollments, this will cause the client to send a Device Tok
 
 | Value | Description |
 |:--|:--|
-| false | Do not send Device Token if User Token cannot be obtained. |
-| true | Send Device Token if User Token cannot be obtained. |
+| false | Don't send Device Token if User Token can't be obtained. |
+| true | Send Device Token if User Token can't be obtained. |
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Examples-Begin -->
@@ -438,7 +438,7 @@ The time in OMA DM standard time format. This node is designed to reduce the ris
 
 <!-- Device-Provider-{ProviderID}-CommercialID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization.
+Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or don't configure this policy setting, then Microsoft won't be able to use this identifier to associate this machine and its diagnostic data with your organization.
 <!-- Device-Provider-{ProviderID}-CommercialID-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-CommercialID-Editable-Begin -->
@@ -607,7 +607,7 @@ The node returns the boolean value whether the device is a SecureCore PC.
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node, when it is set, tells the client to set how many minutes the device should be temporarily unlocked from SecureCore settings protection. The default value is 480.
+This node, when it's set, tells the client to set how many minutes the device should be temporarily unlocked from SecureCore settings protection. The default value is 480.
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Editable-Begin -->
@@ -895,7 +895,7 @@ Specifies the body text of the all done page that appears at the end of the MDM 
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the URL that is shown at the end of the MDM enrollment flow.
+Specifies the URL that's shown at the end of the MDM enrollment flow.
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Editable-Begin -->
@@ -934,7 +934,7 @@ Specifies the URL that is shown at the end of the MDM enrollment flow.
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the display text for the URL that is shown at the end of the MDM enrollment flow.
+Specifies the display text for the URL that's shown at the end of the MDM enrollment flow.
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Editable-Begin -->
@@ -1012,7 +1012,7 @@ Specifies the title of the all done page that appears at the end of the MDM enro
 
 <!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Description-Begin -->
 <!-- Description-Source-DDF -->
-A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow. When the server sends a configuration request, sometimes it takes the client longer than the HTTP timeout to get all information together and then the session ends unexpectedly due to timeout. By default, the MDM client does not send an alert that a DM request is pending. To work around the timeout, you can use this setting to keep the session alive by sending a heartbeat message back to the server. This is achieved by sending a SyncML message with a specific device alert element in the body until the client is able to respond back to the server with the requested information.
+A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow. When the server sends a configuration request, sometimes it takes the client longer than the HTTP timeout to get all information together and then the session ends unexpectedly due to timeout. By default, the MDM client doesn't send an alert that a DM request is pending. To work around the timeout, you can use this setting to keep the session alive by sending a heartbeat message back to the server. This is achieved by sending a SyncML message with a specific device alert element in the body until the client is able to respond back to the server with the requested information.
 <!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Editable-Begin -->
@@ -1260,7 +1260,7 @@ This node specifies how the client will perform the app layer signing and encryp
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node, when it is set, tells the client to use the certificate even when the client cannot check the certificate's revocation status because the device is offline. The default value is set.
+This node, when it's set, tells the client to use the certificate even when the client can't check the certificate's revocation status because the device is offline. The default value is set.
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Editable-Begin -->
@@ -1428,7 +1428,7 @@ Character string that contains the unique enterprise device ID. The value is set
 
 <!-- Device-Provider-{ProviderID}-ExchangeID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that is managed by exchange and natively managed by a dedicated management server.
+Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that's managed by exchange and natively managed by a dedicated management server.
 <!-- Device-Provider-{ProviderID}-ExchangeID-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-ExchangeID-Editable-Begin -->
@@ -1541,7 +1541,7 @@ This node decides whether or not the MDM progress page displays the Collect Logs
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not show the Collect Logs button on the progress page. |
+| false (Default) | Don't show the Collect Logs button on the progress page. |
 | true | Show the Collect Logs button on the progress page. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-AllowedValues-End -->
 
@@ -1658,7 +1658,7 @@ This node allows the MDM to set custom error text, detailing what the user needs
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseModernAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the amount of apps included in the App Package. We will not verify that number. E. G. ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2 Which will represent that App Package PackageFullName contains 4 apps, whereas PackageFullName2 contains 2 apps.
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseModernAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2 Which will represent that App Package PackageFullName contains 4 apps, whereas PackageFullName2 contains 2 apps.
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Editable-Begin -->
@@ -1698,7 +1698,7 @@ This node contains a list of LocURIs that refer to App Packages the ISV expects 
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the amount of apps included in the App Package. We will not verify that number. E. G. ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2 Which will represent that App Package ProductID1 contains 4 apps, whereas ProductID2 contains 2 apps.
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2 Which will represent that App Package ProductID1 contains 4 apps, whereas ProductID2 contains 2 apps.
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Editable-Begin -->
@@ -1898,7 +1898,7 @@ This node contains a list of LocURIs that refer to SCEP certs the ISV expects to
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node, when doing a get, tells the server if the "First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it is in and tell the user that the device is provisioned. It cannot be set from True to False (it will not change its mind on whether or not the sync is done), and it cannot be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
+This node, when doing a get, tells the server if the "First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it's in and tell the user that the device is provisioned. It can't be set from True to False (it won't change its mind on whether or not the sync is done), and it can't be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Editable-Begin -->
@@ -1919,7 +1919,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 
 | Value | Description |
 |:--|:--|
-| false | The device is not finished provisioning. |
+| false | The device isn't finished provisioning. |
 | true | The device has finished provisioning. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
 
@@ -1946,7 +1946,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can "change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node is not True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
+This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can "change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node isn't True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Editable-Begin -->
@@ -1967,7 +1967,7 @@ This node is set by the server to inform the UX that the server has finished pro
 
 | Value | Description |
 |:--|:--|
-| false | Server has not finished provisioning. |
+| false | Server hasn't finished provisioning. |
 | true | Server has finished provisioning. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-AllowedValues-End -->
 
@@ -2016,7 +2016,7 @@ Device only. This node decides whether or not the MDM device progress page skips
 
 | Value | Description |
 |:--|:--|
-| false | Do not skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+| false | Don't skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
 | true (Default) | Skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-AllowedValues-End -->
 
@@ -2065,7 +2065,7 @@ Device only. This node decides whether or not the MDM user progress page skips a
 
 | Value | Description |
 |:--|:--|
-| false | Do not skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
+| false | Don't skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
 | true (Default) | Skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-AllowedValues-End -->
 
@@ -2133,7 +2133,7 @@ This node determines how long we will poll until we surface an error message to 
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer node determining if a Device was Successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value cannot be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
+Integer node determining if a Device was Successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value can't be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Editable-Begin -->
@@ -2203,7 +2203,7 @@ Force device to send device AAD token during check-in as a separate header.
 
 | Value | Description |
 |:--|:--|
-| 0 | ForceAadTokenNotDefined: the value is not defined(default). |
+| 0 | ForceAadTokenNotDefined: the value isn't defined(default). |
 | 1 | AlwaysSendAadDeviceTokenCheckIn: always send AAD device token during check-in as a separate header section(not as Bearer token). |
 | 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during check-in as a separate header section(not as Bearer token). |
 | 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send AAD Device token for auth as Bearer token. |
@@ -2650,7 +2650,7 @@ This is an execution node and will trigger a silent MMP-C unenroll, there is no 
 
 <!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Description-Begin -->
 <!-- Description-Source-DDF -->
-The list of management server URLs in the format `<URL1>` `<URL2>` `<URL3>`, and so on. If there is only one, the angle brackets (<>) are not required. The < and > should be escaped. If ManagementServerAddressList node is set, the device will only use the server URL configured in this node and ignore the ManagementServiceAddress value. When the server is not responding after a specified number of retries, the device tries to use the next server URL in the list until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first on in the list.
+The list of management server URLs in the format `<URL1>` `<URL2>` `<URL3>`, and so on. If there is only one, the angle brackets (<>) aren't required. The `< and >` should be escaped. If ManagementServerAddressList node is set, the device will only use the server URL configured in this node and ignore the ManagementServiceAddress value. When the server isn't responding after a specified number of retries, the device tries to use the next server URL in the list until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first on in the list.
 <!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Editable-Begin -->
@@ -2743,7 +2743,7 @@ Specify the Discovery server URL of the MDM server to upgrade to for a MAM enrol
 
 <!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Description-Begin -->
 <!-- Description-Source-DDF -->
-The character string that contains the device management server address. It can be updated during an OMA DM session by the management server to allow the server to load balance to another server in situations where too many devices are connected to the server. The DMClient CSP will save the address to the same location as the w7 and DMS CSPs to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION](w7-application-csp.md) configuration service provider. Starting in Windows 10, version 1511, this node supports multiple server addresses in the format `<URL1>` `<URL2>` `<URL3>`. If there is only a single URL, then the <> are not required. This is supported for both desktop and mobile devices. During a DM session, the device will use the first address on the list and then keep going down the list until a successful connection is achieved. The DM client should cache the successfully connected server URL for the next session.
+The character string that contains the device management server address. It can be updated during an OMA DM session by the management server to allow the server to load balance to another server in situations where too many devices are connected to the server. The DMClient CSP will save the address to the same location as the w7 and DMS CSPs to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the [w7 APPLICATION](w7-application-csp.md) configuration service provider. Starting in Windows 10, version 1511, this node supports multiple server addresses in the format `<URL1>` `<URL2>` `<URL3>`. If there is only a single URL, then the <> aren't required. This is supported for both desktop and mobile devices. During a DM session, the device will use the first address on the list and then keep going down the list until a successful connection is achieved. The DM client should cache the successfully connected server URL for the next session.
 <!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Editable-Begin -->
@@ -2864,7 +2864,7 @@ Used by the client to indicate the latest DM session version that it supports.
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Description-Begin -->
 <!-- Description-Source-DDF -->
-The waiting time (in minutes) for the initial set of retries as specified by the number of retries in NumberOfScheduledRetriesForUserSession. If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. Default value is 1440. If the value is 0, this schedule is disabled.
+The waiting time (in minutes) for the initial set of retries as specified by the number of retries in NumberOfScheduledRetriesForUserSession. If IntervalForScheduledRetriesForUserSession isn't set, then the default value is used. Default value is 1440. If the value is 0, this schedule is disabled.
 <!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Editable-Begin -->
@@ -2987,7 +2987,7 @@ Optional. Maximum number of concurrent user sync sessions in background. Default
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Description-Begin -->
 <!-- Description-Source-DDF -->
-The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is 0 and IntervalForScheduledRetriesForUserSession is not 0, then the schedule will be set to repeat for an infinite number of times.
+The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is 0 and IntervalForScheduledRetriesForUserSession isn't 0, then the schedule will be set to repeat for an infinite number of times.
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Editable-Begin -->
@@ -3106,7 +3106,7 @@ Polling schedules must utilize the DMClient CSP. The Registry paths previously a
 
 <!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Description-Begin -->
 <!-- Description-Source-DDF -->
-Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system; subsequent logins will not trigger an MDM session. Login is not the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
+Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system; subsequent logins won't trigger an MDM session. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
 <!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Editable-Begin -->
@@ -3155,7 +3155,7 @@ Boolean value that allows the IT admin to require the device to start a manageme
 
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Description-Begin -->
 <!-- Description-Source-DDF -->
-The waiting time (in minutes) for the initial set of retries as specified by the number of retries in /`<ProviderID>`/Poll/NumberOfFirstRetries. If IntervalForFirstSetOfRetries is not set, then the default value is used. The default value is 15. If the value is set to 0, this schedule is disabled.
+The waiting time (in minutes) for the initial set of retries as specified by the number of retries in /`<ProviderID>`/Poll/NumberOfFirstRetries. If IntervalForFirstSetOfRetries isn't set, then the default value is used. The default value is 15. If the value is set to 0, this schedule is disabled.
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Editable-Begin -->
@@ -3272,7 +3272,7 @@ The waiting time (in minutes) for the second set of retries as specified by the 
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Description-Begin -->
 <!-- Description-Source-DDF -->
-The number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. If the value is set to 0 and the IntervalForFirstSetOfRetries value is not 0, then the schedule will be set to repeat an infinite number of times and second set and this set of schedule will not set in this case. The default value is 10. The first set of retries is intended to give the management server some buffered time to be ready to send policies and settings configuration to the device. The total time for first set of retries should not be more than a few hours. The server should not set NumberOfFirstRetries to be 0. RemainingScheduledRetries is used for the long run device polling schedule.
+The number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. If the value is set to 0 and the IntervalForFirstSetOfRetries value isn't 0, then the schedule will be set to repeat an infinite number of times and second set and this set of schedule won't set in this case. The default value is 10. The first set of retries is intended to give the management server some buffered time to be ready to send policies and settings configuration to the device. The total time for first set of retries shouldn't be more than a few hours. The server shouldn't set NumberOfFirstRetries to be 0. RemainingScheduledRetries is used for the long run device polling schedule.
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Editable-Begin -->
@@ -3311,7 +3311,7 @@ The number of times the DM client should retry to connect to the server when the
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Description-Begin -->
 <!-- Description-Source-DDF -->
-The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForRemainingScheduledRetries AND the first and second set of retries are not set as infinite retries, then the schedule will be set to repeat for an infinite number of times. However, if either or both of the first and second set of retries are set as infinite, then this schedule will be disabled. The RemainingScheduledRetries is used for the long run device polling schedule. IntervalForRemainingScheduledRetries should not be set smaller than 1440 minutes (24 hours) in Windows Phone 8.1 device. Windows Phone 8.1 supports MDM server push.
+The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForRemainingScheduledRetries AND the first and second set of retries aren't set as infinite retries, then the schedule will be set to repeat for an infinite number of times. However, if either or both of the first and second set of retries are set as infinite, then this schedule will be disabled. The RemainingScheduledRetries is used for the long run device polling schedule. IntervalForRemainingScheduledRetries shouldn't be set smaller than 1440 minutes (24 hours) in Windows Phone 8.1 device. Windows Phone 8.1 supports MDM server push.
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Editable-Begin -->
@@ -3350,7 +3350,7 @@ The number of times the DM client should retry connecting to the server when the
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Description-Begin -->
 <!-- Description-Source-DDF -->
-The number of times the DM client should retry a second round of connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForSecondSetOfRetries is not set to 0 AND the first set of retries is not set as infinite retries, then the schedule repeats an infinite number of times. However, if the first set of retries is set at infinite, then this schedule is disabled. The second set of retries is also optional and temporarily retries that the total duration should be last for more than a day. And the IntervalForSecondSetOfRetries should be longer than IntervalForFirstSetOfRetries. RemainingScheduledRetries is used for the long run device polling schedule.
+The number of times the DM client should retry a second round of connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForSecondSetOfRetries isn't set to 0 AND the first set of retries isn't set as infinite retries, then the schedule repeats an infinite number of times. However, if the first set of retries is set at infinite, then this schedule is disabled. The second set of retries is also optional and temporarily retries that the total duration should be last for more than a day. And the IntervalForSecondSetOfRetries should be longer than IntervalForFirstSetOfRetries. RemainingScheduledRetries is used for the long run device polling schedule.
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Editable-Begin -->
@@ -3389,7 +3389,7 @@ The number of times the DM client should retry a second round of connecting to t
 
 <!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Description-Begin -->
 <!-- Description-Source-DDF -->
-Boolean value that allows the IT admin to require the device to start a management session on any user login, regardless of if the user has preciously logged in. Login is not the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
+Boolean value that allows the IT admin to require the device to start a management session on any user login, regardless of if the user has preciously logged in. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
 <!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Editable-Begin -->
@@ -3438,7 +3438,7 @@ Boolean value that allows the IT admin to require the device to start a manageme
 
 <!-- Device-Provider-{ProviderID}-PublisherDeviceID-Description-Begin -->
 <!-- Description-Source-DDF -->
-The PublisherDeviceID is a device-unique ID created based on the enterprise Publisher ID. Publisher ID is created based on the enterprise application token and enterprise ID via ./Vendor/MSFT/EnterpriseAppManagement/`<enterprise id>`/EnrollmentToken. It is to ensure that for one enterprise, each device has a unique ID associated with it. For the same device, if it has multiple enterprises' applications, each enterprise is identified differently.
+The PublisherDeviceID is a device-unique ID created based on the enterprise Publisher ID. Publisher ID is created based on the enterprise application token and enterprise ID via ./Vendor/MSFT/EnterpriseAppManagement/`<enterprise id>`/EnrollmentToken. It's to ensure that for one enterprise, each device has a unique ID associated with it. For the same device, if it has multiple enterprises' applications, each enterprise is identified differently.
 <!-- Device-Provider-{ProviderID}-PublisherDeviceID-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-PublisherDeviceID-Editable-Begin -->
@@ -3555,7 +3555,7 @@ A string that contains the channel that the WNS client has negotiated for the OM
 
 <!-- Device-Provider-{ProviderID}-Push-PFN-Description-Begin -->
 <!-- Description-Source-DDF -->
-A string provided by the Windows 10 ecosystem for an MDM solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it is managing.
+A string provided by the Windows 10 ecosystem for an MDM solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it's managing.
 <!-- Device-Provider-{ProviderID}-Push-PFN-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Push-PFN-Editable-Begin -->
@@ -3695,7 +3695,7 @@ This node determines whether or not the client will automatically initiate a MDM
 | Value | Description |
 |:--|:--|
 | 1 | MDM Recovery is allowed. |
-| 0 (Default) | MDM Recovery is not allowed. |
+| 0 (Default) | MDM Recovery isn't allowed. |
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Examples-Begin -->
@@ -3744,7 +3744,7 @@ This node initiates a recovery action. The server can specify prerequisites befo
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Initiate MDM Recovery. |
-| 1 | Initiate Recovery if Keys are not already protected by the TPM, there is a TPM to put the keys into, AAD keys are protected by TPM, and the TPM is ready for attestation. |
+| 1 | Initiate Recovery if Keys aren't already protected by the TPM, there is a TPM to put the keys into, AAD keys are protected by TPM, and the TPM is ready for attestation. |
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Examples-Begin -->
@@ -3770,7 +3770,7 @@ This node initiates a recovery action. The server can specify prerequisites befo
 
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node tracks the status of a Recovery request from the InitiateRecovery node. 0 - No Recovery request has been processed. 1 - Recovery is in Process. 2 - Recovery has finished successfully. 3 - Recovery has failed to start because TPM is not available. 4 - Recovery has failed to start because AAD keys are not protected by the TPM. 5 - Recovery has failed to start because the MDM keys are already protected by the TPM. 6 - Recovery has failed to start because the TPM is not ready for attestation. 7 - Recovery has failed because the client cannot authenticate to the server. 8 - Recovery has failed because the server has rejected the client's request.
+This node tracks the status of a Recovery request from the InitiateRecovery node. 0 - No Recovery request has been processed. 1 - Recovery is in Process. 2 - Recovery has finished successfully. 3 - Recovery has failed to start because TPM isn't available. 4 - Recovery has failed to start because AAD keys aren't protected by the TPM. 5 - Recovery has failed to start because the MDM keys are already protected by the TPM. 6 - Recovery has failed to start because the TPM isn't ready for attestation. 7 - Recovery has failed because the client can't authenticate to the server. 8 - Recovery has failed because the server has rejected the client's request.
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Editable-Begin -->
@@ -3832,7 +3832,7 @@ Primarily used for SSL bridging mode where firewalls and proxies are deployed an
 
 | Value | Description |
 |:--|:--|
-| false (Default) | The device management client does not include authentication information in the management session HTTP header. |
+| false (Default) | The device management client doesn't include authentication information in the management session HTTP header. |
 | true | The client authentication information is provided in the management session HTTP header. |
 <!-- Device-Provider-{ProviderID}-RequireMessageSigning-AllowedValues-End -->
 
@@ -4079,7 +4079,7 @@ The node accepts unenrollment requests by way of the OMA DM Exec command and cal
 
 <!-- Device-UpdateManagementServiceAddress-Description-Begin -->
 <!-- Description-Source-DDF -->
-For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.
+For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You can't add new servers to the list using this node.
 <!-- Device-UpdateManagementServiceAddress-Description-End -->
 
 <!-- Device-UpdateManagementServiceAddress-Editable-Begin -->
@@ -4258,7 +4258,7 @@ This node decides whether or not the MDM progress page displays the Collect Logs
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not show the Collect Logs button on the progress page. |
+| false (Default) | Don't show the Collect Logs button on the progress page. |
 | true | Show the Collect Logs button on the progress page. |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-AllowedValues-End -->
 
@@ -4324,7 +4324,7 @@ This node allows the MDM to set custom error text, detailing what the user needs
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseModernAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the amount of apps included in the App Package. We will not verify that number. E. G. ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2 Which will represent that App Package PackageFullName contains 4 apps, whereas PackageFullName2 contains 2 apps. This is per user.
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseModernAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName/Name;4"\xF000" ./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/PackageFamilyName/PackageFullName2/Name;2 Which will represent that App Package PackageFullName contains 4 apps, whereas PackageFullName2 contains 2 apps. This is per user.
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Description-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Editable-Begin -->
@@ -4364,7 +4364,7 @@ This node contains a list of LocURIs that refer to App Packages the ISV expects 
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the amount of apps included in the App Package. We will not verify that number. E. G. ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2 Which will represent that App Package ProductID1 contains 4 apps, whereas ProductID2 contains 2 apps. This is per user.
+This node contains a list of LocURIs that refer to App Packages the ISV expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package. We won't verify that number. E. G. ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2 Which will represent that App Package ProductID1 contains 4 apps, whereas ProductID2 contains 2 apps. This is per user.
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Description-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Editable-Begin -->
@@ -4564,7 +4564,7 @@ This node contains a list of LocURIs that refer to SCEP certs the ISV expects to
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node, when doing a get, tells the server if the "First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it is in and tell the user that the device is provisioned. It cannot be set from True to False (it will not change its mind on whether or not the sync is done), and it cannot be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
+This node, when doing a get, tells the server if the "First Syncs" are done and the device is fully provisioned. When doing a Set, this triggers the UX to override whatever state it's in and tell the user that the device is provisioned. It can't be set from True to False (it won't change its mind on whether or not the sync is done), and it can't be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Description-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Editable-Begin -->
@@ -4585,7 +4585,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 
 | Value | Description |
 |:--|:--|
-| false | The user is not finished provisioning. |
+| false | The user isn't finished provisioning. |
 | true | The user has finished provisioning. |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
 
@@ -4612,7 +4612,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can "change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node is not True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
+This node is set by the server to inform the UX that the server has finished provisioning the device. This was added so that the server can "change its mind" about what it needs to provision on the device. When this node is set, many other DM Client nodes will no longer be able to be changed. If this node isn't True, the UX will consider the provisioning a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Description-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Editable-Begin -->
@@ -4633,7 +4633,7 @@ This node is set by the server to inform the UX that the server has finished pro
 
 | Value | Description |
 |:--|:--|
-| false | Server has not finished provisioning. |
+| false | Server hasn't finished provisioning. |
 | true | Server has finished provisioning. |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-AllowedValues-End -->
 
@@ -4660,7 +4660,7 @@ This node is set by the server to inform the UX that the server has finished pro
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer node determining if a Device was Successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value cannot be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
+Integer node determining if a Device was Successfully provisioned. 0 is failure, 1 is success, 2 is in progress. Once the value is changed to 0 or 1, the value can't be changed again. The client will change the value of success or failure and update the node. The server can, however, force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Description-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Editable-Begin -->

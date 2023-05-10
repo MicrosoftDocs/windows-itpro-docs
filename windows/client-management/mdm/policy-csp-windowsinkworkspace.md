@@ -123,7 +123,7 @@ Allow Windows Ink Workspace.
 | Value | Description |
 |:--|:--|
 | 0 | Access to ink workspace is disabled. The feature is turned off. |
-| 1 | Ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen. |
+| 1 | Ink workspace is enabled (feature is turned on), but the user can't access it above the lock screen. |
 | 2 (Default) | Ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen. |
 <!-- AllowWindowsInkWorkspace-AllowedValues-End -->
 

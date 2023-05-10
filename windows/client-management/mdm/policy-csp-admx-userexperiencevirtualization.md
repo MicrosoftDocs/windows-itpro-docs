@@ -48,7 +48,7 @@ By default, the user settings of Calculator synchronize between computers. Use t
 
 - If you enable this policy setting, the Calculator user settings continue to synchronize.
 - If you disable this policy setting, Calculator user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Calculator-Description-End -->
 
 <!-- Calculator-Editable-Begin -->
@@ -112,7 +112,7 @@ When SyncMethod is set to "None," the UE-V Agent uses no sync provider. Settings
 Set SyncMethod to "External" when an external synchronization engine is being deployed for settings sync. This could use OneDrive, Work Folders, SharePoint or any other engine that uses a local folder to synchronize data between users' computers. In this mode, UE-V writes settings data to the local folder specified in the settings storage path. These settings are then synchronized to other computers by an external synchronization engine. UE-V has no control over this synchronization. It only reads and writes the settings data when the normal UE-V triggers take place.
 With notifications enabled, UE-V users receive a message when the settings sync is delayed. The notification delay policy setting defines the delay before a notification appears.
 - If you disable this policy setting, the sync provider is used to synchronize settings between computers and the settings storage location.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- ConfigureSyncMethod-Description-End -->
 
 <!-- ConfigureSyncMethod-Editable-Begin -->
@@ -174,7 +174,7 @@ This policy setting configures the synchronization of User Experience Virtualiza
 
 - If you enable this policy setting, the UE-V rollback state is copied to the settings storage location on logout and restored on login.
 - If you disable this policy setting, no UE-V rollback state is copied to the settings storage location.
-- If you do not configure this policy, no UE-V rollback state is copied to the settings storage location.
+- If you don't configure this policy, no UE-V rollback state is copied to the settings storage location.
 <!-- ConfigureVdi-Description-End -->
 
 <!-- ConfigureVdi-Editable-Begin -->
@@ -232,8 +232,8 @@ This policy setting configures the synchronization of User Experience Virtualiza
 This policy setting specifies the text of the Contact IT URL hyperlink in the Company Settings Center.
 
 - If you enable this policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.
-- If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the Company Settings Center doesn't display an IT Contact link.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- ContactITDescription-Description-End -->
 
 <!-- ContactITDescription-Editable-Begin -->
@@ -290,8 +290,8 @@ This policy setting specifies the text of the Contact IT URL hyperlink in the Co
 This policy setting specifies the URL for the Contact IT link in the Company Settings Center.
 
 - If you enable this policy setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol such as http or mailto.
-- If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the Company Settings Center doesn't display an IT Contact link.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- ContactITUrl-Description-End -->
 
 <!-- ContactITUrl-Editable-Begin -->
@@ -352,12 +352,12 @@ This policy setting specifies the URL for the Contact IT link in the Company Set
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings for Windows apps.
 By default, the UE-V Agent synchronizes settings for Windows apps between the computer and the settings storage location.
 
-- If you enable this policy setting, the UE-V Agent will not synchronize settings for Windows apps.
+- If you enable this policy setting, the UE-V Agent won't synchronize settings for Windows apps.
 - If you disable this policy setting, the UE-V Agent will synchronize settings for Windows apps.
-- If you do not configure this policy setting, any defined values are deleted.
+- If you don't configure this policy setting, any defined values are deleted.
 
 > [!NOTE]
-> If the user connects their Microsoft account for their computer then the UE-V Agent will not synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
+> If the user connects their Microsoft account for their computer then the UE-V Agent won't synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
 <!-- DisableWin8Sync-Description-End -->
 
 <!-- DisableWin8Sync-Editable-Begin -->
@@ -421,7 +421,7 @@ Certain Windows settings will synchronize between computers by default. These se
 
 - If you enable this policy setting, only the selected Windows settings synchronize. Unselected Windows settings are excluded from settings synchronization.
 - If you disable this policy setting, all Windows Settings are excluded from the settings synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- DisableWindowsOSSettings-Description-End -->
 
 <!-- DisableWindowsOSSettings-Editable-Begin -->
@@ -539,7 +539,7 @@ By default, the user settings of Finance sync between computers. Use the policy 
 
 - If you enable this policy setting, Finance user settings continue to sync.
 - If you disable this policy setting, Finance user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Finance-Description-End -->
 
 <!-- Finance-Editable-Begin -->
@@ -598,7 +598,7 @@ This policy setting enables a notification in the system tray that appears when 
 By default, a notification informs users that Company Settings Center, the user-facing name for the UE-V Agent, now helps to synchronize settings between their work computers.
 With this setting enabled, the notification appears the first time that the UE-V Agent runs.
 With this setting disabled, no notification appears.
-If you do not configure this policy setting, any defined values are deleted.
+If you don't configure this policy setting, any defined values are deleted.
 <!-- FirstUseNotificationEnabled-Description-End -->
 
 <!-- FirstUseNotificationEnabled-Editable-Begin -->
@@ -662,7 +662,7 @@ By default, the user settings of Games sync between computers. Use the policy se
 
 - If you enable this policy setting, Games user settings continue to sync.
 - If you disable this policy setting, Games user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Games-Description-End -->
 
 <!-- Games-Editable-Begin -->
@@ -726,7 +726,7 @@ By default, the user settings of Internet Explorer 10 synchronize between comput
 
 - If you enable this policy setting, the Internet Explorer 10 user settings continue to synchronize.
 - If you disable this policy setting, Internet Explorer 10 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer10-Description-End -->
 
 <!-- InternetExplorer10-Editable-Begin -->
@@ -790,7 +790,7 @@ By default, the user settings of Internet Explorer 11 synchronize between comput
 
 - If you enable this policy setting, the Internet Explorer 11 user settings continue to synchronize.
 - If you disable this policy setting, Internet Explorer 11 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer11-Description-End -->
 
 <!-- InternetExplorer11-Editable-Begin -->
@@ -854,7 +854,7 @@ By default, the user settings of Internet Explorer 8 synchronize between compute
 
 - If you enable this policy setting, the Internet Explorer 8 user settings continue to synchronize.
 - If you disable this policy setting, Internet Explorer 8 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer8-Description-End -->
 
 <!-- InternetExplorer8-Editable-Begin -->
@@ -918,7 +918,7 @@ By default, the user settings of Internet Explorer 9 synchronize between compute
 
 - If you enable this policy setting, the Internet Explorer 9 user settings continue to synchronize.
 - If you disable this policy setting, Internet Explorer 9 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer9-Description-End -->
 
 <!-- InternetExplorer9-Editable-Begin -->
@@ -981,8 +981,8 @@ This policy setting configures the synchronization of user settings which are co
 By default, the user settings which are common between the versions of Internet Explorer synchronize between computers. Use the policy setting to prevent the user settings of Internet Explorer from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the versions of Internet Explorer continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting should not be disabled.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting shouldn't be disabled.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorerCommon-Description-End -->
 
 <!-- InternetExplorerCommon-Editable-Begin -->
@@ -1045,7 +1045,7 @@ By default, the user settings of Maps sync between computers. Use the policy set
 
 - If you enable this policy setting, Maps user settings continue to sync.
 - If you disable this policy setting, Maps user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Maps-Description-End -->
 
 <!-- Maps-Editable-Begin -->
@@ -1104,10 +1104,10 @@ By default, the user settings of Maps sync between computers. Use the policy set
 
 <!-- MaxPackageSizeInBytes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent does not report information about package file size.
+This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent doesn't report information about package file size.
 
 - If you enable this policy setting, specify the threshold file size in bytes. When the settings package file exceeds this threshold the UE-V Agent will write a warning event to the event log.
-- If you disable or do not configure this policy setting, no event is written to the event log to report settings package size.
+- If you disable or don't configure this policy setting, no event is written to the event log to report settings package size.
 <!-- MaxPackageSizeInBytes-Description-End -->
 
 <!-- MaxPackageSizeInBytes-Editable-Begin -->
@@ -1170,7 +1170,7 @@ By default, the user settings of Microsoft Access 2010 synchronize between compu
 
 - If you enable this policy setting, Microsoft Access 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Access 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Access-Description-End -->
 
 <!-- MicrosoftOffice2010Access-Editable-Begin -->
@@ -1232,8 +1232,8 @@ This policy setting configures the synchronization of user settings which are co
 By default, the user settings which are common between the Microsoft Office Suite 2010 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2010 applications from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting should not be disabled
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting shouldn't be disabled
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Common-Description-End -->
 
 <!-- MicrosoftOffice2010Common-Editable-Begin -->
@@ -1296,7 +1296,7 @@ By default, the user settings of Microsoft Excel 2010 synchronize between comput
 
 - If you enable this policy setting, Microsoft Excel 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Excel 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Excel-Description-End -->
 
 <!-- MicrosoftOffice2010Excel-Editable-Begin -->
@@ -1359,7 +1359,7 @@ By default, the user settings of Microsoft InfoPath 2010 synchronize between com
 
 - If you enable this policy setting, Microsoft InfoPath 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft InfoPath 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010InfoPath-Description-End -->
 
 <!-- MicrosoftOffice2010InfoPath-Editable-Begin -->
@@ -1422,7 +1422,7 @@ By default, the user settings of Microsoft Lync 2010 synchronize between compute
 
 - If you enable this policy setting, Microsoft Lync 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Lync 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Lync-Description-End -->
 
 <!-- MicrosoftOffice2010Lync-Editable-Begin -->
@@ -1486,7 +1486,7 @@ By default, the user settings of Microsoft OneNote 2010 synchronize between comp
 
 - If you enable this policy setting, Microsoft OneNote 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft OneNote 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010OneNote-Description-End -->
 
 <!-- MicrosoftOffice2010OneNote-Editable-Begin -->
@@ -1549,7 +1549,7 @@ By default, the user settings of Microsoft Outlook 2010 synchronize between comp
 
 - If you enable this policy setting, Microsoft Outlook 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Outlook 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Outlook-Description-End -->
 
 <!-- MicrosoftOffice2010Outlook-Editable-Begin -->
@@ -1612,7 +1612,7 @@ By default, the user settings of Microsoft PowerPoint 2010 synchronize between c
 
 - If you enable this policy setting, Microsoft PowerPoint 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft PowerPoint 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010PowerPoint-Description-End -->
 
 <!-- MicrosoftOffice2010PowerPoint-Editable-Begin -->
@@ -1675,7 +1675,7 @@ By default, the user settings of Microsoft Project 2010 synchronize between comp
 
 - If you enable this policy setting, Microsoft Project 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Project 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Project-Description-End -->
 
 <!-- MicrosoftOffice2010Project-Editable-Begin -->
@@ -1738,7 +1738,7 @@ By default, the user settings of Microsoft Publisher 2010 synchronize between co
 
 - If you enable this policy setting, Microsoft Publisher 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Publisher 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Publisher-Description-End -->
 
 <!-- MicrosoftOffice2010Publisher-Editable-Begin -->
@@ -1801,7 +1801,7 @@ By default, the user settings of Microsoft SharePoint Designer 2010 synchronize 
 
 - If you enable this policy setting, Microsoft SharePoint Designer 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft SharePoint Designer 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010SharePointDesigner-Description-End -->
 
 <!-- MicrosoftOffice2010SharePointDesigner-Editable-Begin -->
@@ -1864,7 +1864,7 @@ By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize
 
 - If you enable this policy setting, Microsoft SharePoint Workspace 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft SharePoint Workspace 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010SharePointWorkspace-Description-End -->
 
 <!-- MicrosoftOffice2010SharePointWorkspace-Editable-Begin -->
@@ -1927,7 +1927,7 @@ By default, the user settings of Microsoft Visio 2010 synchronize between comput
 
 - If you enable this policy setting, Microsoft Visio 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Visio 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Visio-Description-End -->
 
 <!-- MicrosoftOffice2010Visio-Editable-Begin -->
@@ -1990,7 +1990,7 @@ By default, the user settings of Microsoft Word 2010 synchronize between compute
 
 - If you enable this policy setting, Microsoft Word 2010 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Word 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Word-Description-End -->
 
 <!-- MicrosoftOffice2010Word-Editable-Begin -->
@@ -2053,7 +2053,7 @@ By default, the user settings of Microsoft Access 2013 synchronize between compu
 
 - If you enable this policy setting, Microsoft Access 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Access 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Access-Description-End -->
 
 <!-- MicrosoftOffice2013Access-Editable-Begin -->
@@ -2115,8 +2115,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Access 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Access 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Access 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Access 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013AccessBackup-Description-End -->
 
 <!-- MicrosoftOffice2013AccessBackup-Editable-Begin -->
@@ -2178,8 +2178,8 @@ This policy setting configures the synchronization of user settings which are co
 By default, the user settings which are common between the Microsoft Office Suite 2013 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting should not be disabled.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting shouldn't be disabled.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Common-Description-End -->
 
 <!-- MicrosoftOffice2013Common-Editable-Begin -->
@@ -2241,8 +2241,8 @@ This policy setting configures the backup of certain user settings which are com
 Microsoft Office Suite 2013 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2013 applications.
 
 - If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will continue to be backed up.
-- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013CommonBackup-Description-End -->
 
 <!-- MicrosoftOffice2013CommonBackup-Editable-Begin -->
@@ -2305,7 +2305,7 @@ By default, the user settings of Microsoft Excel 2013 synchronize between comput
 
 - If you enable this policy setting, Microsoft Excel 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Excel 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Excel-Description-End -->
 
 <!-- MicrosoftOffice2013Excel-Editable-Begin -->
@@ -2367,8 +2367,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Excel 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Excel 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Excel 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Excel 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013ExcelBackup-Description-End -->
 
 <!-- MicrosoftOffice2013ExcelBackup-Editable-Begin -->
@@ -2431,7 +2431,7 @@ By default, the user settings of Microsoft InfoPath 2013 synchronize between com
 
 - If you enable this policy setting, Microsoft InfoPath 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft InfoPath 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013InfoPath-Description-End -->
 
 <!-- MicrosoftOffice2013InfoPath-Editable-Begin -->
@@ -2493,8 +2493,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft InfoPath 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft InfoPath 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft InfoPath 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013InfoPathBackup-Description-End -->
 
 <!-- MicrosoftOffice2013InfoPathBackup-Editable-Begin -->
@@ -2557,7 +2557,7 @@ By default, the user settings of Microsoft Lync 2013 synchronize between compute
 
 - If you enable this policy setting, Microsoft Lync 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Lync 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Lync-Description-End -->
 
 <!-- MicrosoftOffice2013Lync-Editable-Begin -->
@@ -2619,8 +2619,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Lync 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Lync 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Lync 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Lync 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013LyncBackup-Description-End -->
 
 <!-- MicrosoftOffice2013LyncBackup-Editable-Begin -->
@@ -2683,7 +2683,7 @@ By default, the user settings of OneDrive for Business 2013 synchronize between 
 
 - If you enable this policy setting, OneDrive for Business 2013 user settings continue to synchronize.
 - If you disable this policy setting, OneDrive for Business 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OneDriveForBusiness-Description-End -->
 
 <!-- MicrosoftOffice2013OneDriveForBusiness-Editable-Begin -->
@@ -2746,7 +2746,7 @@ By default, the user settings of Microsoft OneNote 2013 synchronize between comp
 
 - If you enable this policy setting, Microsoft OneNote 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft OneNote 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OneNote-Description-End -->
 
 <!-- MicrosoftOffice2013OneNote-Editable-Begin -->
@@ -2808,8 +2808,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft OneNote 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft OneNote 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft OneNote 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OneNoteBackup-Description-End -->
 
 <!-- MicrosoftOffice2013OneNoteBackup-Editable-Begin -->
@@ -2872,7 +2872,7 @@ By default, the user settings of Microsoft Outlook 2013 synchronize between comp
 
 - If you enable this policy setting, Microsoft Outlook 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Outlook 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Outlook-Description-End -->
 
 <!-- MicrosoftOffice2013Outlook-Editable-Begin -->
@@ -2934,8 +2934,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Outlook 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Outlook 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Outlook 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OutlookBackup-Description-End -->
 
 <!-- MicrosoftOffice2013OutlookBackup-Editable-Begin -->
@@ -2998,7 +2998,7 @@ By default, the user settings of Microsoft PowerPoint 2013 synchronize between c
 
 - If you enable this policy setting, Microsoft PowerPoint 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft PowerPoint 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013PowerPoint-Description-End -->
 
 <!-- MicrosoftOffice2013PowerPoint-Editable-Begin -->
@@ -3060,8 +3060,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft PowerPoint 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft PowerPoint 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013PowerPointBackup-Description-End -->
 
 <!-- MicrosoftOffice2013PowerPointBackup-Editable-Begin -->
@@ -3124,7 +3124,7 @@ By default, the user settings of Microsoft Project 2013 synchronize between comp
 
 - If you enable this policy setting, Microsoft Project 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Project 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Project-Description-End -->
 
 <!-- MicrosoftOffice2013Project-Editable-Begin -->
@@ -3186,8 +3186,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Project 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Project 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Project 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Project 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013ProjectBackup-Description-End -->
 
 <!-- MicrosoftOffice2013ProjectBackup-Editable-Begin -->
@@ -3250,7 +3250,7 @@ By default, the user settings of Microsoft Publisher 2013 synchronize between co
 
 - If you enable this policy setting, Microsoft Publisher 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Publisher 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Publisher-Description-End -->
 
 <!-- MicrosoftOffice2013Publisher-Editable-Begin -->
@@ -3312,8 +3312,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Publisher 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Publisher 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Publisher 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013PublisherBackup-Description-End -->
 
 <!-- MicrosoftOffice2013PublisherBackup-Editable-Begin -->
@@ -3376,7 +3376,7 @@ By default, the user settings of Microsoft SharePoint Designer 2013 synchronize 
 
 - If you enable this policy setting, Microsoft SharePoint Designer 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft SharePoint Designer 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013SharePointDesigner-Description-End -->
 
 <!-- MicrosoftOffice2013SharePointDesigner-Editable-Begin -->
@@ -3438,8 +3438,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft SharePoint Designer 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft SharePoint Designer 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Description-End -->
 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Editable-Begin -->
@@ -3502,7 +3502,7 @@ By default, the user settings of Microsoft Office 2013 Upload Center synchronize
 
 - If you enable this policy setting, Microsoft Office 2013 Upload Center user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Office 2013 Upload Center user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013UploadCenter-Description-End -->
 
 <!-- MicrosoftOffice2013UploadCenter-Editable-Begin -->
@@ -3565,7 +3565,7 @@ By default, the user settings of Microsoft Visio 2013 synchronize between comput
 
 - If you enable this policy setting, Microsoft Visio 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Visio 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Visio-Description-End -->
 
 <!-- MicrosoftOffice2013Visio-Editable-Begin -->
@@ -3627,8 +3627,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Visio 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Visio 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Visio 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Visio 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013VisioBackup-Description-End -->
 
 <!-- MicrosoftOffice2013VisioBackup-Editable-Begin -->
@@ -3691,7 +3691,7 @@ By default, the user settings of Microsoft Word 2013 synchronize between compute
 
 - If you enable this policy setting, Microsoft Word 2013 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Word 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Word-Description-End -->
 
 <!-- MicrosoftOffice2013Word-Editable-Begin -->
@@ -3753,8 +3753,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Word 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Word 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Word 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Word 2013 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013WordBackup-Description-End -->
 
 <!-- MicrosoftOffice2013WordBackup-Editable-Begin -->
@@ -3817,7 +3817,7 @@ By default, the user settings of Microsoft Access 2016 synchronize between compu
 
 - If you enable this policy setting, Microsoft Access 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Access 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Access-Description-End -->
 
 <!-- MicrosoftOffice2016Access-Editable-Begin -->
@@ -3879,8 +3879,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Access 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Access 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Access 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Access 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016AccessBackup-Description-End -->
 
 <!-- MicrosoftOffice2016AccessBackup-Editable-Begin -->
@@ -3942,8 +3942,8 @@ This policy setting configures the synchronization of user settings which are co
 By default, the user settings which are common between the Microsoft Office Suite 2016 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting should not be disabled.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting shouldn't be disabled.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Common-Description-End -->
 
 <!-- MicrosoftOffice2016Common-Editable-Begin -->
@@ -4005,8 +4005,8 @@ This policy setting configures the backup of certain user settings which are com
 Microsoft Office Suite 2016 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2016 applications.
 
 - If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will continue to be backed up.
-- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016CommonBackup-Description-End -->
 
 <!-- MicrosoftOffice2016CommonBackup-Editable-Begin -->
@@ -4069,7 +4069,7 @@ By default, the user settings of Microsoft Excel 2016 synchronize between comput
 
 - If you enable this policy setting, Microsoft Excel 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Excel 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Excel-Description-End -->
 
 <!-- MicrosoftOffice2016Excel-Editable-Begin -->
@@ -4131,8 +4131,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Excel 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Excel 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Excel 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Excel 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016ExcelBackup-Description-End -->
 
 <!-- MicrosoftOffice2016ExcelBackup-Editable-Begin -->
@@ -4195,7 +4195,7 @@ By default, the user settings of Microsoft Lync 2016 synchronize between compute
 
 - If you enable this policy setting, Microsoft Lync 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Lync 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Lync-Description-End -->
 
 <!-- MicrosoftOffice2016Lync-Editable-Begin -->
@@ -4257,8 +4257,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Lync 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Lync 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Lync 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Lync 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016LyncBackup-Description-End -->
 
 <!-- MicrosoftOffice2016LyncBackup-Editable-Begin -->
@@ -4321,7 +4321,7 @@ By default, the user settings of OneDrive for Business 2016 synchronize between 
 
 - If you enable this policy setting, OneDrive for Business 2016 user settings continue to synchronize.
 - If you disable this policy setting, OneDrive for Business 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OneDriveForBusiness-Description-End -->
 
 <!-- MicrosoftOffice2016OneDriveForBusiness-Editable-Begin -->
@@ -4384,7 +4384,7 @@ By default, the user settings of Microsoft OneNote 2016 synchronize between comp
 
 - If you enable this policy setting, Microsoft OneNote 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft OneNote 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OneNote-Description-End -->
 
 <!-- MicrosoftOffice2016OneNote-Editable-Begin -->
@@ -4446,8 +4446,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft OneNote 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft OneNote 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft OneNote 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OneNoteBackup-Description-End -->
 
 <!-- MicrosoftOffice2016OneNoteBackup-Editable-Begin -->
@@ -4510,7 +4510,7 @@ By default, the user settings of Microsoft Outlook 2016 synchronize between comp
 
 - If you enable this policy setting, Microsoft Outlook 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Outlook 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Outlook-Description-End -->
 
 <!-- MicrosoftOffice2016Outlook-Editable-Begin -->
@@ -4572,8 +4572,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Outlook 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Outlook 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Outlook 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OutlookBackup-Description-End -->
 
 <!-- MicrosoftOffice2016OutlookBackup-Editable-Begin -->
@@ -4636,7 +4636,7 @@ By default, the user settings of Microsoft PowerPoint 2016 synchronize between c
 
 - If you enable this policy setting, Microsoft PowerPoint 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft PowerPoint 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016PowerPoint-Description-End -->
 
 <!-- MicrosoftOffice2016PowerPoint-Editable-Begin -->
@@ -4698,8 +4698,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft PowerPoint 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft PowerPoint 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016PowerPointBackup-Description-End -->
 
 <!-- MicrosoftOffice2016PowerPointBackup-Editable-Begin -->
@@ -4762,7 +4762,7 @@ By default, the user settings of Microsoft Project 2016 synchronize between comp
 
 - If you enable this policy setting, Microsoft Project 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Project 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Project-Description-End -->
 
 <!-- MicrosoftOffice2016Project-Editable-Begin -->
@@ -4824,8 +4824,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Project 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Project 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Project 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Project 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016ProjectBackup-Description-End -->
 
 <!-- MicrosoftOffice2016ProjectBackup-Editable-Begin -->
@@ -4888,7 +4888,7 @@ By default, the user settings of Microsoft Publisher 2016 synchronize between co
 
 - If you enable this policy setting, Microsoft Publisher 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Publisher 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Publisher-Description-End -->
 
 <!-- MicrosoftOffice2016Publisher-Editable-Begin -->
@@ -4950,8 +4950,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Publisher 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Publisher 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Publisher 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016PublisherBackup-Description-End -->
 
 <!-- MicrosoftOffice2016PublisherBackup-Editable-Begin -->
@@ -5014,7 +5014,7 @@ By default, the user settings of Microsoft Office 2016 Upload Center synchronize
 
 - If you enable this policy setting, Microsoft Office 2016 Upload Center user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Office 2016 Upload Center user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016UploadCenter-Description-End -->
 
 <!-- MicrosoftOffice2016UploadCenter-Editable-Begin -->
@@ -5077,7 +5077,7 @@ By default, the user settings of Microsoft Visio 2016 synchronize between comput
 
 - If you enable this policy setting, Microsoft Visio 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Visio 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Visio-Description-End -->
 
 <!-- MicrosoftOffice2016Visio-Editable-Begin -->
@@ -5139,8 +5139,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Visio 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Visio 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Visio 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Visio 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016VisioBackup-Description-End -->
 
 <!-- MicrosoftOffice2016VisioBackup-Editable-Begin -->
@@ -5203,7 +5203,7 @@ By default, the user settings of Microsoft Word 2016 synchronize between compute
 
 - If you enable this policy setting, Microsoft Word 2016 user settings continue to synchronize.
 - If you disable this policy setting, Microsoft Word 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Word-Description-End -->
 
 <!-- MicrosoftOffice2016Word-Editable-Begin -->
@@ -5265,8 +5265,8 @@ This policy setting configures the backup of certain user settings for Microsoft
 Microsoft Word 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Word 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Word 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft Word 2016 won't be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016WordBackup-Description-End -->
 
 <!-- MicrosoftOffice2016WordBackup-Editable-Begin -->
@@ -5329,7 +5329,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Access 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Access 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Access2013-Description-End -->
 
 <!-- MicrosoftOffice365Access2013-Editable-Begin -->
@@ -5392,7 +5392,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Access 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Access 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Access2016-Description-End -->
 
 <!-- MicrosoftOffice365Access2016-Editable-Begin -->
@@ -5455,7 +5455,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize with UE-V.
 - If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Common2013-Description-End -->
 
 <!-- MicrosoftOffice365Common2013-Editable-Begin -->
@@ -5518,7 +5518,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize with UE-V.
 - If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Common2016-Description-End -->
 
 <!-- MicrosoftOffice365Common2016-Editable-Begin -->
@@ -5581,7 +5581,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Excel 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Excel 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Excel2013-Description-End -->
 
 <!-- MicrosoftOffice365Excel2013-Editable-Begin -->
@@ -5644,7 +5644,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Excel 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Excel 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Excel2016-Description-End -->
 
 <!-- MicrosoftOffice365Excel2016-Editable-Begin -->
@@ -5707,7 +5707,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 InfoPath 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 InfoPath 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365InfoPath2013-Description-End -->
 
 <!-- MicrosoftOffice365InfoPath2013-Editable-Begin -->
@@ -5770,7 +5770,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Lync 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Lync 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Lync2013-Description-End -->
 
 <!-- MicrosoftOffice365Lync2013-Editable-Begin -->
@@ -5833,7 +5833,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Lync 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Lync 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Lync2016-Description-End -->
 
 <!-- MicrosoftOffice365Lync2016-Editable-Begin -->
@@ -5896,7 +5896,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 OneNote 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 OneNote 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365OneNote2013-Description-End -->
 
 <!-- MicrosoftOffice365OneNote2013-Editable-Begin -->
@@ -5959,7 +5959,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365OneNote2016-Description-End -->
 
 <!-- MicrosoftOffice365OneNote2016-Editable-Begin -->
@@ -6022,7 +6022,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Outlook2013-Description-End -->
 
 <!-- MicrosoftOffice365Outlook2013-Editable-Begin -->
@@ -6085,7 +6085,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Outlook2016-Description-End -->
 
 <!-- MicrosoftOffice365Outlook2016-Editable-Begin -->
@@ -6148,7 +6148,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365PowerPoint2013-Description-End -->
 
 <!-- MicrosoftOffice365PowerPoint2013-Editable-Begin -->
@@ -6211,7 +6211,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365PowerPoint2016-Description-End -->
 
 <!-- MicrosoftOffice365PowerPoint2016-Editable-Begin -->
@@ -6274,7 +6274,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Project2013-Description-End -->
 
 <!-- MicrosoftOffice365Project2013-Editable-Begin -->
@@ -6337,7 +6337,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Project2016-Description-End -->
 
 <!-- MicrosoftOffice365Project2016-Editable-Begin -->
@@ -6400,7 +6400,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Publisher2013-Description-End -->
 
 <!-- MicrosoftOffice365Publisher2013-Editable-Begin -->
@@ -6463,7 +6463,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Publisher2016-Description-End -->
 
 <!-- MicrosoftOffice365Publisher2016-Editable-Begin -->
@@ -6526,7 +6526,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365SharePointDesigner2013-Description-End -->
 
 <!-- MicrosoftOffice365SharePointDesigner2013-Editable-Begin -->
@@ -6589,7 +6589,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Visio2013-Description-End -->
 
 <!-- MicrosoftOffice365Visio2013-Editable-Begin -->
@@ -6652,7 +6652,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Visio2016-Description-End -->
 
 <!-- MicrosoftOffice365Visio2016-Editable-Begin -->
@@ -6715,7 +6715,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Word2013-Description-End -->
 
 <!-- MicrosoftOffice365Word2013-Editable-Begin -->
@@ -6778,7 +6778,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 - If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
 - If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Word2016-Description-End -->
 
 <!-- MicrosoftOffice365Word2016-Editable-Begin -->
@@ -6841,7 +6841,7 @@ By default, the user settings of Music sync between computers. Use the policy se
 
 - If you enable this policy setting, Music user settings continue to sync.
 - If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Music-Description-End -->
 
 <!-- Music-Editable-Begin -->
@@ -6905,7 +6905,7 @@ By default, the user settings of News sync between computers. Use the policy set
 
 - If you enable this policy setting, News user settings continue to sync.
 - If you disable this policy setting, News user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- News-Description-End -->
 
 <!-- News-Editable-Begin -->
@@ -6969,7 +6969,7 @@ By default, the user settings of Notepad synchronize between computers. Use the 
 
 - If you enable this policy setting, the Notepad user settings continue to synchronize.
 - If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Notepad-Description-End -->
 
 <!-- Notepad-Editable-Begin -->
@@ -7033,7 +7033,7 @@ By default, the user settings of Reader sync between computers. Use the policy s
 
 - If you enable this policy setting, Reader user settings continue to sync.
 - If you disable this policy setting, Reader user settings are excluded from the synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Reader-Description-End -->
 
 <!-- Reader-Editable-Begin -->
@@ -7096,7 +7096,7 @@ This policy setting configures the number of milliseconds that the computer wait
 You can use this setting to override the default value of 2000 milliseconds.
 
 - If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings.
-- If you disable or do not configure this policy setting, the default value of 2000 milliseconds is used.
+- If you disable or don't configure this policy setting, the default value of 2000 milliseconds is used.
 <!-- RepositoryTimeout-Description-End -->
 
 <!-- RepositoryTimeout-Editable-Begin -->
@@ -7157,7 +7157,7 @@ You can use this setting to override the default value of 2000 milliseconds.
 This policy setting configures where the settings package files that contain user settings are stored.
 
 - If you enable this policy setting, the user settings are stored in the specified location.
-- If you disable or do not configure this policy setting, the user settings are stored in the user's home directory if configured for your environment.
+- If you disable or don't configure this policy setting, the user settings are stored in the user's home directory if configured for your environment.
 <!-- SettingsStoragePath-Description-End -->
 
 <!-- SettingsStoragePath-Editable-Begin -->
@@ -7216,9 +7216,9 @@ This policy setting configures where custom settings location templates are stor
 - If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
 If you specify a UNC path and leave the option to replace the default Microsoft templates unchecked, the UE-V Agent will use the default Microsoft templates installed by the UE-V Agent and custom templates in the settings template catalog. If there are custom templates in the settings template catalog which use the same ID as the default Microsoft templates, they will be ignored.
 If you specify a UNC path and check the option to replace the default Microsoft templates, all of the default Microsoft templates installed by the UE-V Agent will be deleted from the computer and only the templates located in the settings template catalog will be used.
-- If you disable this policy setting, the UE-V Agent will not use the custom settings location templates.
-- If you disable this policy setting after it has been enabled, the UE-V Agent will not restore the default Microsoft templates.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, the UE-V Agent won't use the custom settings location templates.
+- If you disable this policy setting after it has been enabled, the UE-V Agent won't restore the default Microsoft templates.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- SettingsTemplateCatalogPath-Description-End -->
 
 <!-- SettingsTemplateCatalogPath-Editable-Begin -->
@@ -7281,7 +7281,7 @@ By default, the user settings of Sports sync between computers. Use the policy s
 
 - If you enable this policy setting, Sports user settings continue to sync.
 - If you disable this policy setting, Sports user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Sports-Description-End -->
 
 <!-- Sports-Editable-Begin -->
@@ -7400,10 +7400,10 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- SyncOverMeteredNetwork-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections.
-By default, the UE-V Agent does not synchronize settings over a metered connection.
+By default, the UE-V Agent doesn't synchronize settings over a metered connection.
 With this setting enabled, the UE-V Agent synchronizes settings over a metered connection.
-With this setting disabled, the UE-V Agent does not synchronize settings over a metered connection.
-If you do not configure this policy setting, any defined values are deleted.
+With this setting disabled, the UE-V Agent doesn't synchronize settings over a metered connection.
+If you don't configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetwork-Description-End -->
 
 <!-- SyncOverMeteredNetwork-Editable-Begin -->
@@ -7463,10 +7463,10 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetworkWhenRoaming-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection.
-By default, the UE-V Agent does not synchronize settings over a metered connection that is roaming.
-With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that is roaming.
-With this setting disabled, the UE-V Agent will not synchronize settings over a metered connection that is roaming.
-If you do not configure this policy setting, any defined values are deleted.
+By default, the UE-V Agent doesn't synchronize settings over a metered connection that's roaming.
+With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that's roaming.
+With this setting disabled, the UE-V Agent won't synchronize settings over a metered connection that's roaming.
+If you don't configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetworkWhenRoaming-Description-End -->
 
 <!-- SyncOverMeteredNetworkWhenRoaming-Editable-Begin -->
@@ -7529,7 +7529,7 @@ This policy setting allows you to configure the User Experience Virtualization (
 
 - If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
 - If you disable this policy setting, the sync provider doesn't ping the settings storage location before synchronizing settings packages.
-- If you do not configure this policy, any defined values will be deleted.
+- If you don't configure this policy, any defined values will be deleted.
 <!-- SyncProviderPingEnabled-Description-End -->
 
 <!-- SyncProviderPingEnabled-Editable-Begin -->
@@ -7584,11 +7584,11 @@ This policy setting allows you to configure the User Experience Virtualization (
 
 <!-- SyncUnlistedWindows8Apps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that are not explicitly listed in Windows App List.
+This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that aren't explicitly listed in Windows App List.
 By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
 With this setting enabled, the settings of all Windows apps not expressly disable in the Windows App List are synchronized.
 With this setting disabled, only the settings of the Windows apps set to synchronize in the Windows App List are synchronized.
-If you do not configure this policy setting, any defined values are deleted.
+If you don't configure this policy setting, any defined values are deleted.
 <!-- SyncUnlistedWindows8Apps-Description-End -->
 
 <!-- SyncUnlistedWindows8Apps-Editable-Begin -->
@@ -7652,7 +7652,7 @@ By default, the user settings of Travel sync between computers. Use the policy s
 
 - If you enable this policy setting, Travel user settings continue to sync.
 - If you disable this policy setting, Travel user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Travel-Description-End -->
 
 <!-- Travel-Editable-Begin -->
@@ -7708,8 +7708,8 @@ By default, the user settings of Travel sync between computers. Use the policy s
 <!-- TrayIconEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting enables the User Experience Virtualization (UE-V) tray icon. By default, an icon appears in the system tray that displays notifications for UE-V. This icon also provides a link to the UE-V Agent application, Company Settings Center. Users can open the Company Settings Center by right-clicking the icon and selecting Open or by double-clicking the icon. When this group policy setting is enabled, the UE-V tray icon is visible, the UE-V notifications display, and the Company Settings Center is accessible from the tray icon.
-With this setting disabled, the tray icon does not appear in the system tray, UE-V never displays notifications, and the user cannot access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
-If you do not configure this policy setting, any defined values are deleted.
+With this setting disabled, the tray icon doesn't appear in the system tray, UE-V never displays notifications, and the user can't access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
+If you don't configure this policy setting, any defined values are deleted.
 <!-- TrayIconEnabled-Description-End -->
 
 <!-- TrayIconEnabled-Editable-Begin -->
@@ -7773,7 +7773,7 @@ By default, the user settings of Video sync between computers. Use the policy se
 
 - If you enable this policy setting, Video user settings continue to sync.
 - If you disable this policy setting, Video user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Video-Description-End -->
 
 <!-- Video-Editable-Begin -->
@@ -7837,7 +7837,7 @@ By default, the user settings of Weather sync between computers. Use the policy 
 
 - If you enable this policy setting, Weather user settings continue to sync.
 - If you disable this policy setting, Weather user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Weather-Description-End -->
 
 <!-- Weather-Editable-Begin -->
@@ -7901,7 +7901,7 @@ By default, the user settings of WordPad synchronize between computers. Use the 
 
 - If you enable this policy setting, the WordPad user settings continue to synchronize.
 - If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Wordpad-Description-End -->
 
 <!-- Wordpad-Editable-Begin -->

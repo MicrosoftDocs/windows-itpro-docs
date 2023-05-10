@@ -125,7 +125,7 @@ node is generated from the 256-bit version of SHA-2 hash of the w7 PROVIDER-ID p
 
 <!-- Device-{AccountUID}-AAuthPref-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the application authentication preference. Supported values: BASIC, DIGEST. If this value is empty, the client attempts to use the authentication mechanism negotiated in the previous session if one exists. If the value is empty, no previous session exists, and MD5 credentials exist, clients try MD5 authorization first. If the criteria are not met then the client tries BASIC authorization first.
+Specifies the application authentication preference. Supported values: BASIC, DIGEST. If this value is empty, the client attempts to use the authentication mechanism negotiated in the previous session if one exists. If the value is empty, no previous session exists, and MD5 credentials exist, clients try MD5 authorization first. If the criteria aren't met then the client tries BASIC authorization first.
 <!-- Device-{AccountUID}-AAuthPref-Description-End -->
 
 <!-- Device-{AccountUID}-AAuthPref-Editable-Begin -->
@@ -537,7 +537,7 @@ Defines one set of authentication settings. When mapping the [w7 APPLICATION](w7
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthData-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the next nonce used for authentication. "Nonce" refers to a number used once. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in repeat attacks.
+Specifies the next nonce used for authentication. "Nonce" refers to a number used once. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in repeat attacks.
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthData-Description-End -->
 
 <!-- Device-{AccountUID}-AppAuth-{ObjectName}-AAuthData-Editable-Begin -->
@@ -1336,7 +1336,7 @@ The acceptable access roles for this node can't be more than the roles assigned 
 
 <!-- Device-{AccountUID}-Ext-Microsoft-SSLCLIENTCERTSEARCHCRITERIA-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SSLCLIENTCERTSEARCHCRITERIA parameter is used to specify the client certificate search criteria. This parameter supports search by subject attribute and certificate stores. If any other criteria are provided, it is ignored. The string is a concatenation of name/value pairs, each member of the pair delimited by the "&" character. The name and values are delimited by the "=" character. If there are multiple values, each value is delimited by the Unicode character "U+F000". If the name or value contains characters not in the UNRESERVED set (as specified in RFC2396), then those characters are URI-escaped per the RFC. The supported names are Subject and Stores; wildcard certificate search is not supported. Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name is not case sensitive. Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute ("CN=Tester,O=Microsoft"), use the following:
+The SSLCLIENTCERTSEARCHCRITERIA parameter is used to specify the client certificate search criteria. This parameter supports search by subject attribute and certificate stores. If any other criteria are provided, it's ignored. The string is a concatenation of name/value pairs, each member of the pair delimited by the "&" character. The name and values are delimited by the "=" character. If there are multiple values, each value is delimited by the Unicode character "U+F000". If the name or value contains characters not in the UNRESERVED set (as specified in RFC2396), then those characters are URI-escaped per the RFC. The supported names are Subject and Stores; wildcard certificate search isn't supported. Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name isn't case sensitive. Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute ("CN=Tester,O=Microsoft"), use the following:
 <!-- Device-{AccountUID}-Ext-Microsoft-SSLCLIENTCERTSEARCHCRITERIA-Description-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-SSLCLIENTCERTSEARCHCRITERIA-Editable-Begin -->
@@ -1404,7 +1404,7 @@ the UUID of the device.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | An application-specific GUID is returned for the ./DevInfo/DevID rather than the hardware device ID. |
-| 1 | The hardware device ID will be provided for the ./DevInfo/DevID element and the Source LocURI for the OMA DM package that is sent to the server. |
+| 1 | The hardware device ID will be provided for the ./DevInfo/DevID element and the Source LocURI for the OMA DM package that's sent to the server. |
 <!-- Device-{AccountUID}-Ext-Microsoft-UseHwDevID-AllowedValues-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-UseHwDevID-Examples-Begin -->
@@ -1456,7 +1456,7 @@ true: Nonce resynchronization is enabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | The client does not try to authenticate the notification with the backup server nonce if authentication to the stored nonce fails. |
+| 0 (Default) | The client doesn't try to authenticate the notification with the backup server nonce if authentication to the stored nonce fails. |
 | 1 | The client initiates a DM session if the backup server nonce is received after authentication failed. |
 <!-- Device-{AccountUID}-Ext-Microsoft-UseNonceResync-AllowedValues-End -->
 

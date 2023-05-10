@@ -39,11 +39,11 @@ ms.topic: reference
 
 <!-- 6to4_Router_Name-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity is not available on the host.
+This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity isn't available on the host.
 
 - If you enable this policy setting, you can specify a relay name for a 6to4 host.
 
-- If you disable or do not configure this policy setting, the local host setting is used, and you cannot specify a relay name for a 6to4 host.
+- If you disable or don't configure this policy setting, the local host setting is used, and you can't specify a relay name for a 6to4 host.
 <!-- 6to4_Router_Name-Description-End -->
 
 <!-- 6to4_Router_Name-Editable-Begin -->
@@ -97,11 +97,11 @@ This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6
 
 <!-- 6to4_Router_Name_Resolution_Interval-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity is not available on the host.
+This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity isn't available on the host.
 
 - If you enable this policy setting, you can specify the value for the duration at which the relay name is resolved periodically.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 <!-- 6to4_Router_Name_Resolution_Interval-Description-End -->
 
 <!-- 6to4_Router_Name_Resolution_Interval-Editable-Begin -->
@@ -155,17 +155,17 @@ This policy setting allows you to specify the interval at which the relay name i
 
 <!-- 6to4_State-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
+This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that's used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 
 - If you enable this policy setting, you can configure 6to4 with one of the following settings:
 
-Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
+Policy Default State: 6to4 is turned off and connectivity with 6to4 won't be available.
 
-Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host will not have a 6to4 interface.
+Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host won't have a 6to4 interface.
 
-Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be available.
+Policy Disabled State: 6to4 is turned off and connectivity with 6to4 won't be available.
 <!-- 6to4_State-Description-End -->
 
 <!-- 6to4_State-Editable-Begin -->
@@ -221,9 +221,9 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP Stateless Autoconfiguration Limits.
 
-- If you enable or do not configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
+- If you enable or don't configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
 
-- If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system will not limit the number of autoconfigured addresses and routes.
+- If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system won't limit the number of autoconfigured addresses and routes.
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Description-End -->
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Editable-Begin -->
@@ -280,7 +280,7 @@ This policy setting allows you to configure IP Stateless Autoconfiguration Limit
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP-HTTPS, a tunneling technology that uses the HTTPS protocol to provide IP connectivity to a remote network.
 
-- If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or don't configure this policy setting, the local host settings are used.
 
 - If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
 
@@ -344,9 +344,9 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify a router name or Internet Protocol version 4 (IPv4) address for an ISATAP router.
 
-- If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services are not required.
+- If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services aren't required.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 <!-- ISATAP_Router_Name-Description-End -->
 
 <!-- ISATAP_Router_Name-Editable-Begin -->
@@ -400,15 +400,15 @@ This policy setting allows you to specify a router name or Internet Protocol ver
 
 <!-- ISATAP_State-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
+This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that's used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 
 - If you enable this policy setting, you can configure ISATAP with one of the following settings:
 
 Policy Default State: No ISATAP interfaces are present on the host.
 
-Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name is not resolved successfully, the host will have an ISATAP interface configured with a link-local address.
+Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name isn't resolved successfully, the host will have an ISATAP interface configured with a link-local address.
 
 Policy Disabled State: No ISATAP interfaces are present on the host.
 <!-- ISATAP_State-Description-End -->
@@ -464,11 +464,11 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 
 <!-- Teredo_Client_Port-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that is already in use by a system, the Teredo client will fail to initialize.
+This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that's already in use by a system, the Teredo client will fail to initialize.
 
 - If you enable this policy setting, you can customize a UDP port for the Teredo client.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 <!-- Teredo_Client_Port-Description-End -->
 
 <!-- Teredo_Client_Port-Editable-Begin -->
@@ -524,7 +524,7 @@ This policy setting allows you to select the UDP port the Teredo client will use
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set Teredo to be ready to communicate, a process referred to as qualification. By default, Teredo enters a dormant state when not in use. The qualification process brings it out of a dormant state.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+If you disable or don't configure this policy setting, the local host setting is used.
 
 This policy setting contains only one state:
 
@@ -589,7 +589,7 @@ This policy setting allows you to configure the Teredo refresh rate.
 
 - If you enable this policy setting, you can specify the refresh rate. If you choose a refresh rate longer than the port mapping in the Teredo client's NAT device, Teredo might stop working or connectivity might be intermittent.
 
-- If you disable or do not configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
+- If you disable or don't configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
 <!-- Teredo_Refresh_Rate-Description-End -->
 
 <!-- Teredo_Refresh_Rate-Editable-Begin -->
@@ -647,7 +647,7 @@ This policy setting allows you to specify the name of the Teredo server. This se
 
 - If you enable this policy setting, you can specify a Teredo server name that applies to a Teredo client.
 
-- If you disable or do not configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
+- If you disable or don't configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
 <!-- Teredo_Server_Name-Description-End -->
 
 <!-- Teredo_Server_Name-Editable-Begin -->
@@ -703,7 +703,7 @@ This policy setting allows you to specify the name of the Teredo server. This se
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Teredo, an address assignment and automatic tunneling technology that provides unicast IPv6 connectivity across the IPv4 Internet.
 
-- If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or don't configure this policy setting, the local host settings are used.
 
 - If you enable this policy setting, you can configure Teredo with one of the following settings:
 
@@ -711,7 +711,7 @@ Default: The default state is "Client."
 
 Disabled: No Teredo interfaces are present on the host.
 
-Client: The Teredo interface is present only when the host is not on a network that includes a domain controller.
+Client: The Teredo interface is present only when the host isn't on a network that includes a domain controller.
 
 Enterprise Client: The Teredo interface is always present, even if the host is on a network that includes a domain controller.
 <!-- Teredo_State-Description-End -->
@@ -769,11 +769,11 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Window Scaling Heuristics. Window Scaling Heuristics is an algorithm to identify connectivity and throughput problems caused by many Firewalls and other middle boxes that don't interpret Window Scaling option correctly.
 
-- If you do not configure this policy setting, the local host settings are used.
+- If you don't configure this policy setting, the local host settings are used.
 
 - If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
 
-- If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
+- If you disable this policy setting, Window Scaling Heuristics will be disabled and system won't try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
 <!-- Windows_Scaling_Heuristics_State-Description-End -->
 
 <!-- Windows_Scaling_Heuristics_State-Editable-Begin -->

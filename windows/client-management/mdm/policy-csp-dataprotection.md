@@ -86,10 +86,10 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 <!-- LegacySelectiveWipeID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Important. This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time. Setting used by Windows 8. 1 Selective Wipe.
+Important. This policy may change in a future release. It may be used for testing purposes, but shouldn't be used in a production environment at this time. Setting used by Windows 8. 1 Selective Wipe.
 
 > [!NOTE]
-> This policy is not recommended for use in Windows 10.
+> This policy isn't recommended for use in Windows 10.
 <!-- LegacySelectiveWipeID-Description-End -->
 
 <!-- LegacySelectiveWipeID-Editable-Begin -->

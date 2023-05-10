@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- MDMWinsOverGP-Description-Begin -->
 <!-- Description-Source-DDF -->
-If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.
+If set to 1 then any MDM policy that's set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.
 <!-- MDMWinsOverGP-Description-End -->
 
 <!-- MDMWinsOverGP-Editable-Begin -->

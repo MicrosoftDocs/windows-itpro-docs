@@ -43,7 +43,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Deploy Windows Defender Application Control
 
-This policy setting lets you deploy a Code Integrity Policy to a machine to control what is allowed to run on that machine.
+This policy setting lets you deploy a Code Integrity Policy to a machine to control what's allowed to run on that machine.
 
 If you deploy a Code Integrity Policy, Windows will restrict what can run in both kernel mode and on the Windows Desktop based on the policy. To enable this policy the machine must be rebooted.
 

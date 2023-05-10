@@ -45,7 +45,7 @@ LLTDIO allows a computer to discover the topology of a network it's connected to
 
 - If you enable this policy setting, additional options are available to fine-tune your selection. You may choose the "Allow operation while in domain" option to allow LLTDIO to operate on a network interface that's connected to a managed network. On the other hand, if a network interface is connected to an unmanaged network, you may choose the "Allow operation while in public network" and "Prohibit operation while in private network" options instead.
 
-- If you disable or do not configure this policy setting, the default behavior of LLTDIO will apply.
+- If you disable or don't configure this policy setting, the default behavior of LLTDIO will apply.
 <!-- LLTD_EnableLLTDIO-Description-End -->
 
 <!-- LLTD_EnableLLTDIO-Editable-Begin -->
@@ -106,7 +106,7 @@ The Responder allows a computer to participate in Link Layer Topology Discovery 
 
 - If you enable this policy setting, additional options are available to fine-tune your selection. You may choose the "Allow operation while in domain" option to allow the Responder to operate on a network interface that's connected to a managed network. On the other hand, if a network interface is connected to an unmanaged network, you may choose the "Allow operation while in public network" and "Prohibit operation while in private network" options instead.
 
-- If you disable or do not configure this policy setting, the default behavior for the Responder will apply.
+- If you disable or don't configure this policy setting, the default behavior for the Responder will apply.
 <!-- LLTD_EnableRspndr-Description-End -->
 
 <!-- LLTD_EnableRspndr-Editable-Begin -->

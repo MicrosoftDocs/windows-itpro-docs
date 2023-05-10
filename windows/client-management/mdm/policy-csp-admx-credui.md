@@ -46,7 +46,7 @@ This policy setting requires the user to enter Microsoft Windows credentials usi
 
 - If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop by means of the trusted path mechanism.
 
-- If you disable or do not configure this policy setting, users will enter Windows credentials within the user's desktop session, potentially allowing malicious code access to the user's Windows credentials.
+- If you disable or don't configure this policy setting, users will enter Windows credentials within the user's desktop session, potentially allowing malicious code access to the user's Windows credentials.
 <!-- EnableSecureCredentialPrompting-Description-End -->
 
 <!-- EnableSecureCredentialPrompting-Editable-Begin -->

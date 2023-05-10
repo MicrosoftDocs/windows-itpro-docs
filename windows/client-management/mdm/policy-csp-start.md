@@ -623,7 +623,7 @@ If you enable this policy, then invocations of context menus within the Start Me
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not disable. |
+| 0 (Default) | Don't disable. |
 | 1 | Disable. |
 <!-- DisableContextMenus-AllowedValues-End -->
 
@@ -668,7 +668,7 @@ This policy setting removes Quick Settings from the bottom right area on the tas
 
 The quick settings area is located at the left of the clock in the taskbar and includes icons for current network and volume.
 
-If this setting is enabled, Quick Settings is not displayed in the quick settings area.
+If this setting is enabled, Quick Settings isn't displayed in the quick settings area.
 
 A reboot is required for this policy setting to take effect.
 <!-- DisableControlCenter-Description-End -->
@@ -829,7 +829,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not force size of Start. |
+| 0 (Default) | Don't force size of Start. |
 | 1 | Force non-fullscreen size of Start. |
 | 2 | Force a fullscreen size of Start. |
 <!-- ForceStartSize-AllowedValues-End -->
@@ -964,7 +964,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideChangeAccountSettings-AllowedValues-End -->
 
@@ -998,7 +998,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 - If you enable this setting, the frequently used programs list is removed from the Start menu.
 
-- If you disable this setting or do not configure it, the frequently used programs list remains on the simple Start menu.
+- If you disable this setting or don't configure it, the frequently used programs list remains on the simple Start menu.
 <!-- HideFrequentlyUsedApps-Description-End -->
 
 <!-- HideFrequentlyUsedApps-Editable-Begin -->
@@ -1032,7 +1032,7 @@ To validate this policy, do the following steps:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideFrequentlyUsedApps-AllowedValues-End -->
 
@@ -1098,7 +1098,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideHibernate-AllowedValues-End -->
 
@@ -1148,7 +1148,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideLock-AllowedValues-End -->
 
@@ -1177,7 +1177,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 <!-- Description-Source-ADMX -->
 This policy allows you to remove the People Bar from the taskbar and disables the My People experience.
 
-If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users will not be able to pin people to the taskbar.
+If you enable this policy the people icon will be removed from the taskbar, the corresponding settings toggle is removed from the taskbar settings page, and users won't be able to pin people to the taskbar.
 <!-- HidePeopleBar-Description-End -->
 
 <!-- HidePeopleBar-Editable-Begin -->
@@ -1199,7 +1199,7 @@ If you enable this policy the people icon will be removed from the taskbar, the 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HidePeopleBar-AllowedValues-End -->
 
@@ -1265,7 +1265,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HidePowerButton-AllowedValues-End -->
 
@@ -1333,7 +1333,7 @@ To validate this policy, do the following steps:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideRecentJumplists-AllowedValues-End -->
 
@@ -1400,7 +1400,7 @@ To validate this policy, do the following steps:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideRecentlyAddedApps-AllowedValues-End -->
 
@@ -1594,7 +1594,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideRestart-AllowedValues-End -->
 
@@ -1643,7 +1643,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideShutDown-AllowedValues-End -->
 
@@ -1693,7 +1693,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideSignOut-AllowedValues-End -->
 
@@ -1742,7 +1742,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideSleep-AllowedValues-End -->
 
@@ -1791,7 +1791,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideSwitchAccount-AllowedValues-End -->
 
@@ -1912,7 +1912,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not hide. |
+| 0 (Default) | Don't hide. |
 | 1 | Hide. |
 <!-- HideUserTile-AllowedValues-End -->
 
@@ -1939,7 +1939,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 <!-- ImportEdgeAssets-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to import Edge assets to be used with StartLayout policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when StartLayout policy is modified.
+This policy setting allows you to import Edge assets to be used with StartLayout policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset wouldn't exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when StartLayout policy is modified.
 <!-- ImportEdgeAssets-Description-End -->
 
 <!-- ImportEdgeAssets-Editable-Begin -->
@@ -1997,8 +1997,8 @@ To validate this policy, do the following steps:
 <!-- Description-Source-DDF -->
 This policy setting allows you to control pinning programs to the Taskbar.
 
-- If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
-- If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+- If you enable this policy setting, users can't change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users can't unpin these programs already pinned to the Taskbar, and they can't pin new programs to the Taskbar.
+- If you disable or don't configure this policy setting, users can change the programs currently pinned to the Taskbar.
 <!-- NoPinningToTaskbar-Description-End -->
 
 <!-- NoPinningToTaskbar-Editable-Begin -->
@@ -2061,11 +2061,11 @@ To validate this policy, do the following steps:
 <!-- Description-Source-ADMX -->
 If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
 
-Selecting "Show" will force the "Most used" list to be shown, and user cannot change to hide it using the Settings app.
+Selecting "Show" will force the "Most used" list to be shown, and user can't change to hide it using the Settings app.
 
-Selecting "Hide" will force the "Most used" list to be hidden, and user cannot change to show it using the Settings app.
+Selecting "Hide" will force the "Most used" list to be hidden, and user can't change to show it using the Settings app.
 
-Selecting "Not Configured", or if you disable or do not configure this policy setting, all will allow users to turn on or off the display of "Most used" list using the Settings app. This is default behavior.
+Selecting "Not Configured", or if you disable or don't configure this policy setting, all will allow users to turn on or off the display of "Most used" list using the Settings app. This is default behavior.
 
 Note configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
 <!-- ShowOrHideMostUsedApps-Description-End -->
@@ -2089,7 +2089,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not enforce visibility of list of most used apps in Start; user can control via Settings app (default behavior equivalent to not configuring this policy). |
+| 0 (Default) | Don't enforce visibility of list of most used apps in Start; user can control via Settings app (default behavior equivalent to not configuring this policy). |
 | 1 | Force showing of list of most used apps in Start; corresponding toggle in Setting app is disabled. |
 | 2 | Force hiding of list of most used apps in Start; corresponding toggle in Setting app is disabled. |
 <!-- ShowOrHideMostUsedApps-AllowedValues-End -->
@@ -2205,9 +2205,9 @@ Specifies the Start layout for users.
 This setting lets you specify the Start layout for users and prevents them from changing its configuration. The Start layout you specify must be stored in an XML file that was generated by the Export-StartLayout PowerShell cmdlet.
 To use this setting, you must first manually configure a device's Start layout to the desired look and feel. Once you are done, run the Export-StartLayout PowerShell cmdlet on that same device. The cmdlet will generate an XML file representing the layout you configured.
 
-Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file is not available when the user logs on, the layout won't be changed. Users cannot customize their Start screen while this setting is enabled.
+Once the XML file is generated and moved to the desired file path, type the fully qualified path and name of the XML file. You can type a local path, such as C:\StartLayouts\myLayout.xml or a UNC path, such as \\Server\Share\Layout.xml. If the specified file isn't available when the user logs on, the layout won't be changed. Users can't customize their Start screen while this setting is enabled.
 
-If you disable this setting or do not configure it, the Start screen layout won't be changed and users will be able to customize it.
+If you disable this setting or don't configure it, the Start screen layout won't be changed and users will be able to customize it.
 <!-- StartLayout-Description-End -->
 
 <!-- StartLayout-Editable-Begin -->

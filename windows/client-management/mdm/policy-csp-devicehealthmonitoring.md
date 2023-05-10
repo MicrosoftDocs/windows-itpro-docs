@@ -87,7 +87,7 @@ DeviceHealthMonitoring is an opt-in health monitoring connection between the dev
 
 <!-- ConfigDeviceHealthMonitoringScope-Description-Begin -->
 <!-- Description-Source-DDF -->
-If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.
 <!-- ConfigDeviceHealthMonitoringScope-Description-End -->
 
 <!-- ConfigDeviceHealthMonitoringScope-Editable-Begin -->
@@ -128,7 +128,7 @@ This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevice
 
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Description-Begin -->
 <!-- Description-Source-DDF -->
-If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which service instance to which events are to be uploaded.
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which service instance to which events are to be uploaded.
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Description-End -->
 
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Editable-Begin -->
@@ -168,7 +168,7 @@ If the device is not opted-in to the DeviceHealthMonitoring service via the Allo
 
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Description-Begin -->
 <!-- Description-Source-DDF -->
-If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Description-End -->
 
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Editable-Begin -->

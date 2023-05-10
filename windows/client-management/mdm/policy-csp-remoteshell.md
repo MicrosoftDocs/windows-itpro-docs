@@ -41,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting configures access to remote shells.
 
-If you enable or do not configure this policy setting, new remote shell connections are accepted by the server.
+If you enable or don't configure this policy setting, new remote shell connections are accepted by the server.
 
 If you set this policy to 'disabled', new remote shell connections are rejected by the server.
 <!-- AllowRemoteShellAccess-Description-End -->
@@ -104,7 +104,7 @@ The value can be any number from 1 to 100.
 
 - If you enable this policy setting, the new shell connections are rejected if they exceed the specified limit.
 
-- If you disable or do not configure this policy setting, the default number is five users.
+- If you disable or don't configure this policy setting, the default number is five users.
 <!-- MaxConcurrentUsers-Description-End -->
 
 <!-- MaxConcurrentUsers-Editable-Begin -->
@@ -158,13 +158,13 @@ The value can be any number from 1 to 100.
 
 <!-- SpecifyIdleTimeout-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it is automatically deleted.
+This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it's automatically deleted.
 
 Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 minute) is used for smaller values.
 
 - If you enable this policy setting, the server will wait for the specified amount of time since the last received message from the client before terminating the open shell.
 
-- If you do not configure or disable this policy setting, the default value of 900000 or 15 min will be used.
+- If you don't configure or disable this policy setting, the default value of 900000 or 15 min will be used.
 <!-- SpecifyIdleTimeout-Description-End -->
 
 <!-- SpecifyIdleTimeout-Editable-Begin -->
@@ -224,7 +224,7 @@ Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, whic
 
 - If you enable this policy setting, the remote operation is terminated when a new allocation exceeds the specified quota.
 
-- If you disable or do not configure this policy setting, the value 150 is used by default.
+- If you disable or don't configure this policy setting, the value 150 is used by default.
 <!-- SpecifyMaxMemory-Description-End -->
 
 <!-- SpecifyMaxMemory-Editable-Begin -->
@@ -282,7 +282,7 @@ This policy setting configures the maximum number of processes a remote shell is
 
 - If you enable this policy setting, you can specify any number from 0 to 0x7FFFFFFF to set the maximum number of process per shell. Zero (0) means unlimited number of processes.
 
-- If you disable or do not configure this policy setting, the limit is five processes per shell.
+- If you disable or don't configure this policy setting, the limit's five processes per shell.
 <!-- SpecifyMaxProcesses-Description-End -->
 
 <!-- SpecifyMaxProcesses-Editable-Begin -->
@@ -340,9 +340,9 @@ This policy setting configures the maximum number of concurrent shells any user 
 
 Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of shells.
 
-- If you enable this policy setting, the user cannot open new remote shells if the count exceeds the specified limit.
+- If you enable this policy setting, the user can't open new remote shells if the count exceeds the specified limit.
 
-- If you disable or do not configure this policy setting, by default the limit is set to two remote shells per user.
+- If you disable or don't configure this policy setting, by default the limit's set to two remote shells per user.
 <!-- SpecifyMaxRemoteShells-Description-End -->
 
 <!-- SpecifyMaxRemoteShells-Editable-Begin -->

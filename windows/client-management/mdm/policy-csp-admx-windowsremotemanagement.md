@@ -41,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Kerberos credentials over the network.
 
-- If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.
+- If you enable this policy setting, the WinRM service doesn't accept Kerberos credentials over the network.
 
-- If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
+- If you disable or don't configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
 <!-- DisallowKerberos_1-Description-End -->
 
 <!-- DisallowKerberos_1-Editable-Begin -->
@@ -100,9 +100,9 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Kerberos authentication directly.
 
-- If you enable this policy setting, the Windows Remote Management (WinRM) client does not use Kerberos authentication directly. Kerberos can still be used if the WinRM client is using the Negotiate authentication and Kerberos is selected.
+- If you enable this policy setting, the Windows Remote Management (WinRM) client doesn't use Kerberos authentication directly. Kerberos can still be used if the WinRM client is using the Negotiate authentication and Kerberos is selected.
 
-- If you disable or do not configure this policy setting, the WinRM client uses the Kerberos authentication directly.
+- If you disable or don't configure this policy setting, the WinRM client uses the Kerberos authentication directly.
 <!-- DisallowKerberos_2-Description-End -->
 
 <!-- DisallowKerberos_2-Editable-Begin -->

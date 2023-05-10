@@ -441,7 +441,7 @@ Setting this node to "1" enables Windows Insider Preview flighting and the abili
 
 <!-- Device-InactiveThreshold-Description-Begin -->
 <!-- Description-Source-DDF -->
-Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
+Accounts will start being deleted when they haven't been logged-on during the specified period, given as number of days.
 <!-- Device-InactiveThreshold-Description-End -->
 
 <!-- Device-InactiveThreshold-Editable-Begin -->

@@ -45,7 +45,7 @@ When using credential delegation, devices provide an exportable version of crede
 
 - If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode.
 
-- If you disable or do not configure this policy setting, Restricted Administration and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
+- If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.
 <!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Description-End -->
 
 <!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Editable-Begin -->

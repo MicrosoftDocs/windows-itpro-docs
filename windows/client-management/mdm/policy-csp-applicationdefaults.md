@@ -46,7 +46,7 @@ For more information, refer to the DISM documentation on TechNet.
 
 If this group policy is enabled and the client machine is domain-joined, the file will be processed and default associations will be applied at logon time.
 
-If the group policy is not configured, disabled, or the client machine is not domain-joined, no default associations will be applied at logon time.
+If the group policy isn't configured, disabled, or the client machine isn't domain-joined, no default associations will be applied at logon time.
 
 If the policy is enabled, disabled, or not configured, users will still be able to override default file type and protocol associations.
 <!-- DefaultAssociationsConfiguration-Description-End -->
@@ -158,7 +158,7 @@ Enabling this policy setting enables web-to-app linking so that apps can be laun
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- EnableAppUriHandlers-Description-End -->
 
 <!-- EnableAppUriHandlers-Editable-Begin -->

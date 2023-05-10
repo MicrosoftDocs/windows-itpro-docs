@@ -107,7 +107,7 @@ Automatically detect settings. If enabled, the system tries to find the path to 
 
 <!-- Device-ProxyServer-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
+Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings don't apply to VPN connections.
 <!-- Device-ProxyServer-Description-End -->
 
 <!-- Device-ProxyServer-Editable-Begin -->
@@ -146,7 +146,7 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 
 <!-- Device-ProxyServer-Exceptions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries.
+Addresses that shouldn't use the proxy server. The system won't use the proxy server for addresses beginning with what's specified in this node. Use semicolons (;) to separate entries.
 <!-- Device-ProxyServer-Exceptions-Description-End -->
 
 <!-- Device-ProxyServer-Exceptions-Editable-Begin -->
@@ -248,7 +248,7 @@ Specifies whether the proxy server should be used for local (intranet) addresses
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Use proxy server for local addresses. |
-| 1 | Do not use proxy server for local addresses. |
+| 1 | Don't use proxy server for local addresses. |
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-AllowedValues-End -->
 
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-Examples-Begin -->

@@ -45,7 +45,7 @@ This setting only applies when the Audit Process Creation policy is enabled.
 
 - If you enable this policy setting the command line information for every process will be logged in plain text in the security event log as part of the Audit Process Creation event 4688, "a new process has been created," on the workstations and servers on which this policy setting is applied.
 
-- If you disable or do not configure this policy setting, the process's command line information will not be included in Audit Process Creation events.
+- If you disable or don't configure this policy setting, the process's command line information won't be included in Audit Process Creation events.
 
 Default: Not configured
 

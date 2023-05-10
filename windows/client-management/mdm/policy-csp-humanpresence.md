@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-Description-Begin -->
 <!-- Description-Source-DDF -->
-Determines whether Allow Adaptive Dimming When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user will not be able to change this setting and the checkbox in the UI will be greyed out.
+Determines whether Allow Adaptive Dimming When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceAllowDimWhenExternalDisplayConnected-Description-End -->
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-Editable-Begin -->
@@ -98,7 +98,7 @@ Determines whether Allow Adaptive Dimming When External Display Connected checkb
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-Description-Begin -->
 <!-- Description-Source-DDF -->
-Determines whether Allow Lock on Leave When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user will not be able to change this setting and the checkbox in the UI will be greyed out.
+Determines whether Allow Lock on Leave When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceAllowLockWhenExternalDisplayConnected-Description-End -->
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-Editable-Begin -->
@@ -157,7 +157,7 @@ Determines whether Allow Lock on Leave When External Display Connected checkbox 
 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Description-Begin -->
 <!-- Description-Source-DDF -->
-Determines whether Allow Wake on Approach When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user will not be able to change this setting and the checkbox in the UI will be greyed out.
+Determines whether Allow Wake on Approach When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Description-End -->
 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Editable-Begin -->
@@ -216,7 +216,7 @@ Determines whether Allow Wake on Approach When External Display Connected checkb
 
 <!-- ForceDisableWakeWhenBatterySaverOn-Description-Begin -->
 <!-- Description-Source-DDF -->
-Determines whether Disable Wake on Approach When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user will not be able to change this setting and the checkbox in the UI will be greyed out.
+Determines whether Disable Wake on Approach When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceDisableWakeWhenBatterySaverOn-Description-End -->
 
 <!-- ForceDisableWakeWhenBatterySaverOn-Editable-Begin -->
@@ -275,7 +275,7 @@ Determines whether Disable Wake on Approach When Battery Saver On checkbox is fo
 
 <!-- ForceInstantDim-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines whether Attention Based Display Dimming is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+Determines whether Attention Based Display Dimming is forced on/off by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
 <!-- ForceInstantDim-Description-End -->
 
 <!-- ForceInstantDim-Editable-Begin -->
@@ -339,7 +339,7 @@ This is a power saving feature that prolongs battery charge.
 
 <!-- ForceInstantLock-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines whether Lock on Leave is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+Determines whether Lock on Leave is forced on/off by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
 <!-- ForceInstantLock-Description-End -->
 
 <!-- ForceInstantLock-Editable-Begin -->
@@ -403,7 +403,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wi
 
 <!-- ForceInstantWake-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Determines whether Wake On Arrival is forced on/off by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.
+Determines whether Wake On Arrival is forced on/off by the MDM policy. The user won't be able to change this setting and the toggle in the UI will be greyed out.
 <!-- ForceInstantWake-Description-End -->
 
 <!-- ForceInstantWake-Editable-Begin -->

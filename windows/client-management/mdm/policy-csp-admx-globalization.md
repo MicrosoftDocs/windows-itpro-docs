@@ -41,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
 
-Note this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
+Note this doesn't affect the availability of user input methods on the lock screen or with the UAC prompt.
 
 - If the policy is enabled, then the user will get input methods enabled for the system account on the sign-in page.
 
@@ -102,19 +102,19 @@ Note this does not affect the availability of user input methods on the lock scr
 <!-- Description-Source-ADMX -->
 This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
-This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
+This doesn't affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
-The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting is not configured.
+The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting isn't configured.
 
-- If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
+- If you enable this policy setting, the user can't select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
 
-- If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
+- If you disable or don't configure this policy setting, the user can select a custom locale as their user locale.
 
-- If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
+- If this policy setting is enabled at the machine level, it can't be disabled by a per-user policy setting.
 - If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
-- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
+- If this policy setting isn't configured at the machine level, restrictions will be based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
+To set this policy setting on a per-user basis, make sure that you don't configure the per-machine policy setting.
 <!-- CustomLocalesNoSelect_1-Description-End -->
 
 <!-- CustomLocalesNoSelect_1-Editable-Begin -->
@@ -171,19 +171,19 @@ To set this policy setting on a per-user basis, make sure that you do not config
 <!-- Description-Source-ADMX -->
 This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
-This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
+This doesn't affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
-The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting is not configured.
+The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting isn't configured.
 
-- If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
+- If you enable this policy setting, the user can't select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
 
-- If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
+- If you disable or don't configure this policy setting, the user can select a custom locale as their user locale.
 
-- If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
+- If this policy setting is enabled at the machine level, it can't be disabled by a per-user policy setting.
 - If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
-- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
+- If this policy setting isn't configured at the machine level, restrictions will be based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
+To set this policy setting on a per-user basis, make sure that you don't configure the per-machine policy setting.
 <!-- CustomLocalesNoSelect_2-Description-End -->
 
 <!-- CustomLocalesNoSelect_2-Editable-Begin -->
@@ -242,9 +242,9 @@ This policy setting removes the Administrative options from the Region settings 
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-- If you enable this policy setting, the user cannot see the Administrative options.
+- If you enable this policy setting, the user can't see the Administrative options.
 
-- If you disable or do not configure this policy setting, the user can see the Administrative options.
+- If you disable or don't configure this policy setting, the user can see the Administrative options.
 
 > [!NOTE]
 > Even if a user can see the Administrative options, other policies may prevent them from modifying the values.
@@ -306,9 +306,9 @@ This policy setting removes the option to change the user's geographical locatio
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-- If you enable this policy setting, the user does not see the option to change the GeoID. This does not prevent the user or an application from changing the GeoID programmatically.
+- If you enable this policy setting, the user doesn't see the option to change the GeoID. This doesn't prevent the user or an application from changing the GeoID programmatically.
 
-- If you disable or do not configure this policy setting, the user sees the option for changing the user location (GeoID).
+- If you disable or don't configure this policy setting, the user sees the option for changing the user location (GeoID).
 
 > [!NOTE]
 > Even if a user can see the GeoID option, the "Disallow changing of geographical location" option can prevent them from actually changing their current geographical location.
@@ -370,9 +370,9 @@ This policy setting removes the option to change the user's menus and dialogs (U
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-- If you enable this policy setting, the user does not see the option for changing the UI language. This does not prevent the user or an application from changing the UI language programmatically.
+- If you enable this policy setting, the user doesn't see the option for changing the UI language. This doesn't prevent the user or an application from changing the UI language programmatically.
 
-- If you disable or do not configure this policy setting, the user sees the option for changing the UI language.
+- If you disable or don't configure this policy setting, the user sees the option for changing the UI language.
 
 > [!NOTE]
 > Even if a user can see the option to change the UI language, other policy settings can prevent them from changing their UI language.
@@ -434,9 +434,9 @@ This policy setting removes the regional formats interface from the Region setti
 
 This policy setting is used only to simplify the Regional and Language Options control panel.
 
-- If you enable this policy setting, the user does not see the regional formats options. This does not prevent the user or an application from changing their user locale or user overrides programmatically.
+- If you enable this policy setting, the user doesn't see the regional formats options. This doesn't prevent the user or an application from changing their user locale or user overrides programmatically.
 
-- If you disable or do not configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
+- If you disable or don't configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
 <!-- HideLocaleSelectAndCustomize-Description-End -->
 
 <!-- HideLocaleSelectAndCustomize-Editable-Begin -->
@@ -495,16 +495,16 @@ This policy setting turns off the automatic learning component of handwriting re
 
 Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.
 
-Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
+Text that's collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that's stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history doesn't delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. See Tablet PC Help for more information.
 
-- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
+- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users can't configure this setting in Control Panel.
 
-- If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
+- If you disable this policy setting, automatic learning is turned on. Users can't configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
-- If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
+- If you don't configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
 
 This policy setting is related to the "Turn off handwriting personalization" policy setting.
 
@@ -570,16 +570,16 @@ This policy setting turns off the automatic learning component of handwriting re
 
 Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.
 
-Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
+Text that's collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that's stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history doesn't delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. See Tablet PC Help for more information.
 
-- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
+- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users can't configure this setting in Control Panel.
 
-- If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
+- If you disable this policy setting, automatic learning is turned on. Users can't configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
-- If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
+- If you don't configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
 
 This policy setting is related to the "Turn off handwriting personalization" policy setting.
 
@@ -641,13 +641,13 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 <!-- LocaleSystemRestrict-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting does not change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
+This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting doesn't change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
 
 The locale list is specified using language names, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-US;en-CA" would restrict the system locale to English (United States) and English (Canada).
 
 - If you enable this policy setting, administrators can select a system locale only from the specified system locale list.
 
-- If you disable or do not configure this policy setting, administrators can select any system locale shipped with the operating system.
+- If you disable or don't configure this policy setting, administrators can select any system locale shipped with the operating system.
 <!-- LocaleSystemRestrict-Description-End -->
 
 <!-- LocaleSystemRestrict-Editable-Begin -->
@@ -702,19 +702,19 @@ The locale list is specified using language names, separated by a semicolon (;).
 
 <!-- LocaleUserRestrict_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting doesn't change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
+To set this policy setting on a per-user basis, make sure that you don't configure the per-computer policy setting.
 
 The locale list is specified using language tags, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-CA;fr-CA" would restrict the user locale to English (Canada) and French (Canada).
 
 - If you enable this policy setting, only locales in the specified locale list can be selected by users.
 
-- If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
+- If you disable or don't configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
-- If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
+- If this policy setting is enabled at the computer level, it can't be disabled by a per-user policy.
 - If this policy setting is disabled at the computer level, the per-user policy is ignored.
-- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+- If this policy setting isn't configured at the computer level, restrictions are based on per-user policies.
 <!-- LocaleUserRestrict_1-Description-End -->
 
 <!-- LocaleUserRestrict_1-Editable-Begin -->
@@ -769,19 +769,19 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 
 <!-- LocaleUserRestrict_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting doesn't change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
+To set this policy setting on a per-user basis, make sure that you don't configure the per-computer policy setting.
 
 The locale list is specified using language tags, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-CA;fr-CA" would restrict the user locale to English (Canada) and French (Canada).
 
 - If you enable this policy setting, only locales in the specified locale list can be selected by users.
 
-- If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
+- If you disable or don't configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
-- If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
+- If this policy setting is enabled at the computer level, it can't be disabled by a per-user policy.
 - If this policy setting is disabled at the computer level, the per-user policy is ignored.
-- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+- If this policy setting isn't configured at the computer level, restrictions are based on per-user policies.
 <!-- LocaleUserRestrict_2-Description-End -->
 
 <!-- LocaleUserRestrict_2-Editable-Begin -->
@@ -840,9 +840,9 @@ This policy setting restricts the Windows UI language for all users.
 
 This is a policy setting for computers with more than one UI language installed.
 
-- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language will follow the language specified by the administrator as the system UI languages. The UI language selected by the user will be ignored if it is different than any of the system UI languages.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language will follow the language specified by the administrator as the system UI languages. The UI language selected by the user will be ignored if it's different than any of the system UI languages.
 
-- If you disable or do not configure this policy setting, the user can specify which UI language is used.
+- If you disable or don't configure this policy setting, the user can specify which UI language is used.
 <!-- LockMachineUILanguage-Description-End -->
 
 <!-- LockMachineUILanguage-Editable-Begin -->
@@ -900,9 +900,9 @@ This policy setting restricts the Windows UI language for specific users.
 
 This policy setting applies to computers with more than one UI language installed.
 
-- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language for the selected user. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the user.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language for the selected user. If the specified language isn't installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the user.
 
-- If you disable or do not configure this policy setting, there is no restriction on which language users should use.
+- If you disable or don't configure this policy setting, there is no restriction on which language users should use.
 
 To enable this policy setting in Windows Server 2003, Windows XP, or Windows 2000, to use the "Restrict selection of Windows menus and dialogs language" policy setting.
 <!-- LockUserUILanguage-Description-End -->
@@ -960,15 +960,15 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their user geographical location (GeoID).
 
-- If you enable this policy setting, users cannot change their GeoID.
+- If you enable this policy setting, users can't change their GeoID.
 
-- If you disable or do not configure this policy setting, users may select any GeoID.
+- If you disable or don't configure this policy setting, users may select any GeoID.
 
-- If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting.
+- If you enable this policy setting at the computer level, it can't be disabled by a per-user policy setting.
 - If you disable this policy setting at the computer level, the per-user policy is ignored.
-- If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
+- If you don't configure this policy setting at the computer level, restrictions are based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
+To set this policy setting on a per-user basis, make sure that the per-computer policy setting isn't configured.
 <!-- PreventGeoIdChange_1-Description-End -->
 
 <!-- PreventGeoIdChange_1-Editable-Begin -->
@@ -1025,15 +1025,15 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their user geographical location (GeoID).
 
-- If you enable this policy setting, users cannot change their GeoID.
+- If you enable this policy setting, users can't change their GeoID.
 
-- If you disable or do not configure this policy setting, users may select any GeoID.
+- If you disable or don't configure this policy setting, users may select any GeoID.
 
-- If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting.
+- If you enable this policy setting at the computer level, it can't be disabled by a per-user policy setting.
 - If you disable this policy setting at the computer level, the per-user policy is ignored.
-- If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
+- If you don't configure this policy setting at the computer level, restrictions are based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
+To set this policy setting on a per-user basis, make sure that the per-computer policy setting isn't configured.
 <!-- PreventGeoIdChange_2-Description-End -->
 
 <!-- PreventGeoIdChange_2-Editable-Begin -->
@@ -1092,11 +1092,11 @@ This policy setting prevents the user from customizing their locale by changing 
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
-When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user cannot customize their user locale with user overrides.
+When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user can't customize their user locale with user overrides.
 
 - If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
 
-- If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy.
+- If this policy is set to Enabled at the computer level, then it can't be disabled by a per-User policy.
 - If this policy is set to Disabled at the computer level, then the per-User policy will be ignored.
 - If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
 
@@ -1159,11 +1159,11 @@ This policy setting prevents the user from customizing their locale by changing 
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
-When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user cannot customize their user locale with user overrides.
+When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user can't customize their user locale with user overrides.
 
 - If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
 
-- If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy.
+- If this policy is set to Enabled at the computer level, then it can't be disabled by a per-User policy.
 - If this policy is set to Disabled at the computer level, then the per-User policy will be ignored.
 - If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
 
@@ -1222,13 +1222,13 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 
 <!-- RestrictUILangSelect-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language is not installed on the target computer, the language selection defaults to English.
+This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language isn't installed on the target computer, the language selection defaults to English.
 
-- If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel are not accessible to the logged on user. This prevents users from specifying a language different than the one used.
+- If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel aren't accessible to the logged-on user. This prevents users from specifying a language different than the one used.
 
 To enable this policy setting in Windows Vista, use the "Restricts the UI languages Windows should use for the selected user" policy setting.
 
-- If you disable or do not configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
+- If you disable or don't configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
 <!-- RestrictUILangSelect-Description-End -->
 
 <!-- RestrictUILangSelect-Editable-Begin -->
@@ -1536,13 +1536,13 @@ Note that the availability and function of this setting is dependent on supporte
 <!-- Description-Source-ADMX -->
 This policy setting determines how programs interpret two-digit years.
 
-This policy setting affects only the programs that use this Windows feature to interpret two-digit years. If a program does not interpret two-digit years correctly, consult the documentation or manufacturer of the program.
+This policy setting affects only the programs that use this Windows feature to interpret two-digit years. If a program doesn't interpret two-digit years correctly, consult the documentation or manufacturer of the program.
 
 - If you enable this policy setting, the system specifies the largest two-digit year interpreted as being preceded by 20. All numbers less than or equal to the specified value are interpreted as being preceded by 20. All numbers greater than the specified value are interpreted as being preceded by 19.
 
-For example, the default value, 2029, specifies that all two-digit years less than or equal to 29 (00 to 29) are interpreted as being preceded by 20, that is 2000 to 2029. Conversely, all two-digit years greater than 29 (30 to 99) are interpreted as being preceded by 19, that is, 1930 to 1999.
+For example, the default value, 2029, specifies that all two-digit years less than or equal to 29 (00 to 29) are interpreted as being preceded by 20, that's 2000 to 2029. Conversely, all two-digit years greater than 29 (30 to 99) are interpreted as being preceded by 19, that is, 1930 to 1999.
 
-- If you disable or do not configure this policy setting, Windows does not interpret two-digit year formats using this scheme for the program.
+- If you disable or don't configure this policy setting, Windows doesn't interpret two-digit year formats using this scheme for the program.
 <!-- Y2K-Description-End -->
 
 <!-- Y2K-Editable-Begin -->

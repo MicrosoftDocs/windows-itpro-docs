@@ -105,7 +105,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
 
 <!-- Device-DeviceAccount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for setting device account information. A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the [Surface Hub administrator guide](/surface-hub/) for more information about setting up a device account. To use a device account from Azure Active Directory: 1. Set the UserPrincipalName (for Azure AD). 2. Set a valid Password. 3. Execute ValidateAndCommit to validate the specified username and password combination against Azure AD. 4. Get the ErrorContext in case something goes wrong during validation.
+Node for setting device account information. A device account is a Microsoft Exchange account that's connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the [Surface Hub administrator guide](/surface-hub/) for more information about setting up a device account. To use a device account from Azure Active Directory: 1. Set the UserPrincipalName (for Azure AD). 2. Set a valid Password. 3. Execute ValidateAndCommit to validate the specified username and password combination against Azure AD. 4. Get the ErrorContext in case something goes wrong during validation.
 <!-- Device-DeviceAccount-Description-End -->
 
 <!-- Device-DeviceAccount-Editable-Begin -->
@@ -1188,7 +1188,7 @@ Setting for the screen to wake up and stay on with sensor activity.
 
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Description-Begin -->
 <!-- Description-Source-DDF -->
-Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they're valid and installed on the Hub, otherwise it may not be able to load the image.
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Description-End -->
 
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Editable-Begin -->
@@ -2212,7 +2212,7 @@ Specifies the default volume value for a new session.
 
 <!-- Device-Properties-DisableSigninSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings. If this setting is true, the sign-in dialog will not be populated. If false, the dialog will auto-populate.
+Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings. If this setting is true, the sign-in dialog won't be populated. If false, the dialog will auto-populate.
 <!-- Device-Properties-DisableSigninSuggestions-Description-End -->
 
 <!-- Device-Properties-DisableSigninSuggestions-Editable-Begin -->
@@ -2235,7 +2235,7 @@ Specifies whether to disable auto-populating of the sign-in dialog with invitees
 | Value | Description |
 |:--|:--|
 | false (Default) | Dialog will auto-populate. |
-| true | Sign-in dialog will not be populated. |
+| true | Sign-in dialog won't be populated. |
 <!-- Device-Properties-DisableSigninSuggestions-AllowedValues-End -->
 
 <!-- Device-Properties-DisableSigninSuggestions-Examples-Begin -->
@@ -2261,7 +2261,7 @@ Specifies whether to disable auto-populating of the sign-in dialog with invitees
 
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365. If this setting is true, the "My meetings and files" feature will not be shown. When false, the "My meetings and files" feature will be shown.
+Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365. If this setting is true, the "My meetings and files" feature won't be shown. When false, the "My meetings and files" feature will be shown.
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Description-End -->
 
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Editable-Begin -->
@@ -2283,7 +2283,7 @@ Specifies whether to disable the "My meetings and files" feature in the Start me
 
 | Value | Description |
 |:--|:--|
-| true | "My meetings and files" feature will not be shown. |
+| true | "My meetings and files" feature won't be shown. |
 | false (Default) | The "My meetings and files" feature will be shown. |
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-AllowedValues-End -->
 

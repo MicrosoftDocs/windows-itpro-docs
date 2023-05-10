@@ -41,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting affects the ability of users to install or uninstall color profiles.
 
-- If you enable this policy setting, users cannot install new color profiles or uninstall previously installed color profiles.
+- If you enable this policy setting, users can't install new color profiles or uninstall previously installed color profiles.
 
-- If you disable or do not configure this policy setting, all users can install new color profiles. Standard users can uninstall color profiles that they previously installed. Administrators will be able to uninstall all color profiles.
+- If you disable or don't configure this policy setting, all users can install new color profiles. Standard users can uninstall color profiles that they previously installed. Administrators will be able to uninstall all color profiles.
 <!-- ProhibitChangingInstalledProfileList_1-Description-End -->
 
 <!-- ProhibitChangingInstalledProfileList_1-Editable-Begin -->
@@ -100,9 +100,9 @@ This policy setting affects the ability of users to install or uninstall color p
 <!-- Description-Source-ADMX -->
 This policy setting affects the ability of users to install or uninstall color profiles.
 
-- If you enable this policy setting, users cannot install new color profiles or uninstall previously installed color profiles.
+- If you enable this policy setting, users can't install new color profiles or uninstall previously installed color profiles.
 
-- If you disable or do not configure this policy setting, all users can install new color profiles. Standard users can uninstall color profiles that they previously installed. Administrators will be able to uninstall all color profiles.
+- If you disable or don't configure this policy setting, all users can install new color profiles. Standard users can uninstall color profiles that they previously installed. Administrators will be able to uninstall all color profiles.
 <!-- ProhibitChangingInstalledProfileList_2-Description-End -->
 
 <!-- ProhibitChangingInstalledProfileList_2-Editable-Begin -->

@@ -133,7 +133,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 
 <!-- Device-BootstrapperAgent-ExecutionContext-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node holds opaque data that will be passed to the Bootstrapper Agent as a parameter when it is invoked to execute.
+This node holds opaque data that will be passed to the Bootstrapper Agent as a parameter when it's invoked to execute.
 <!-- Device-BootstrapperAgent-ExecutionContext-Description-End -->
 
 <!-- Device-BootstrapperAgent-ExecutionContext-Editable-Begin -->
@@ -351,7 +351,7 @@ This node determines whether to enable or show the Device Preparation page.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | The page is not enabled. |
+| false (Default) | The page isn't enabled. |
 | true | The page is enabled. |
 <!-- Device-PageEnabled-AllowedValues-End -->
 

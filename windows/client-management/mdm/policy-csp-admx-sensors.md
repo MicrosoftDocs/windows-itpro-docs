@@ -43,7 +43,7 @@ This policy setting turns off the location feature for this computer.
 
 - If you enable this policy setting, the location feature is turned off, and all programs on this computer are prevented from using location information from the location feature.
 
-- If you disable or do not configure this policy setting, all programs on this computer will not be prevented from using location information from the location feature.
+- If you disable or don't configure this policy setting, all programs on this computer won't be prevented from using location information from the location feature.
 <!-- DisableLocation_1-Description-End -->
 
 <!-- DisableLocation_1-Editable-Begin -->
@@ -100,9 +100,9 @@ This policy setting turns off the location feature for this computer.
 <!-- Description-Source-ADMX -->
 This policy setting turns off scripting for the location feature.
 
-- If you enable this policy setting, scripts for the location feature will not run.
+- If you enable this policy setting, scripts for the location feature won't run.
 
-- If you disable or do not configure this policy setting, all location scripts will run.
+- If you disable or don't configure this policy setting, all location scripts will run.
 <!-- DisableLocationScripting_1-Description-End -->
 
 <!-- DisableLocationScripting_1-Editable-Begin -->
@@ -159,9 +159,9 @@ This policy setting turns off scripting for the location feature.
 <!-- Description-Source-ADMX -->
 This policy setting turns off scripting for the location feature.
 
-- If you enable this policy setting, scripts for the location feature will not run.
+- If you enable this policy setting, scripts for the location feature won't run.
 
-- If you disable or do not configure this policy setting, all location scripts will run.
+- If you disable or don't configure this policy setting, all location scripts will run.
 <!-- DisableLocationScripting_2-Description-End -->
 
 <!-- DisableLocationScripting_2-Editable-Begin -->
@@ -218,9 +218,9 @@ This policy setting turns off scripting for the location feature.
 <!-- Description-Source-ADMX -->
 This policy setting turns off the sensor feature for this computer.
 
-- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer can't use the sensor feature.
 
-- If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+- If you disable or don't configure this policy setting, all programs on this computer can use the sensor feature.
 <!-- DisableSensors_1-Description-End -->
 
 <!-- DisableSensors_1-Editable-Begin -->
@@ -277,9 +277,9 @@ This policy setting turns off the sensor feature for this computer.
 <!-- Description-Source-ADMX -->
 This policy setting turns off the sensor feature for this computer.
 
-- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer can't use the sensor feature.
 
-- If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+- If you disable or don't configure this policy setting, all programs on this computer can use the sensor feature.
 <!-- DisableSensors_2-Description-End -->
 
 <!-- DisableSensors_2-Editable-Begin -->

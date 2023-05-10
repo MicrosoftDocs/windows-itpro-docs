@@ -41,14 +41,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Diagnostic Policy Service (DPS) diagnoses memory leak problems.
 
-- If you enable or do not configure this policy setting, the DPS enables Windows Memory Leak Diagnosis by default.
+- If you enable or don't configure this policy setting, the DPS enables Windows Memory Leak Diagnosis by default.
 
-- If you disable this policy setting, the DPS is not able to diagnose memory leak problems.
+- If you disable this policy setting, the DPS isn't able to diagnose memory leak problems.
 
 This policy setting takes effect only under the following conditions:
 
-  - If the diagnostics-wide scenario execution policy is not configured.
-  - When the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed.
+  - If the diagnostics-wide scenario execution policy isn't configured.
+  - When the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed.
 
 > [!NOTE]
 > The DPS can be configured with the Services snap-in to the Microsoft Management Console.

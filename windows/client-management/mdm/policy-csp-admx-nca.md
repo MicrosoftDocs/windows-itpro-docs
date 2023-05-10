@@ -53,9 +53,9 @@ Important
 
 At least one of the entries must be a PING: resource.
 
--	A Uniform Resource Locator (URL) that NCA queries with a Hypertext Transfer Protocol (HTTP) request. The contents of the web page do not matter. The syntax is "HTTP:" followed by a URL. The host portion of the URL must resolve to an IPv6 address of a Web server or contain an IPv6 address. Examples: HTTP:https://myserver.corp.contoso.com/ or HTTP:https://2002:836b:1::1/.
+-	A Uniform Resource Locator (URL) that NCA queries with a Hypertext Transfer Protocol (HTTP) request. The contents of the web page don't matter. The syntax is "HTTP:" followed by a URL. The host portion of the URL must resolve to an IPv6 address of a Web server or contain an IPv6 address. Examples: HTTP:https://myserver.corp.contoso.com/ or HTTP:https://2002:836b:1::1/.
 
--	A Universal Naming Convention (UNC) path to a file that NCA checks for existence. The contents of the file do not matter. The syntax is "FILE:" followed by a UNC path. The ComputerName portion of the UNC path must resolve to an IPv6 address or contain an IPv6 address. Examples: FILE:\\myserver\myshare\test.txt or FILE:\\2002:836b:1::1\myshare\test.txt.
+-	A Universal Naming Convention (UNC) path to a file that NCA checks for existence. The contents of the file don't matter. The syntax is "FILE:" followed by a UNC path. The ComputerName portion of the UNC path must resolve to an IPv6 address or contain an IPv6 address. Examples: FILE:\\myserver\myshare\test.txt or FILE:\\2002:836b:1::1\myshare\test.txt.
 
 You must configure this setting to have complete NCA functionality.
 <!-- CorporateResources-Description-End -->
@@ -227,7 +227,7 @@ You must configure this setting to have complete NCA functionality.
 <!-- Description-Source-ADMX -->
 Specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify "Contoso Intranet Access" for the DirectAccess clients of the Contoso Corporation.
 
-If this setting is not configured, the string that appears for DirectAccess connectivity is "Corporate Connection".
+If this setting isn't configured, the string that appears for DirectAccess connectivity is "Corporate Connection".
 <!-- FriendlyName-Description-End -->
 
 <!-- FriendlyName-Editable-Begin -->
@@ -283,16 +283,16 @@ If this setting is not configured, the string that appears for DirectAccess conn
 <!-- Description-Source-ADMX -->
 Specifies whether the user has Connect and Disconnect options for the DirectAccess entry when the user clicks the Networking notification area icon.
 
-If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the [Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn593632(v=ws.11)) (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers. Note that NCA does not remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
+If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the [Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn593632(v=ws.11)) (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers. Note that NCA doesn't remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
 
-The ability to disconnect allows users to specify single-label, unqualified names (such as "PRINTSVR") for local resources when connected to a different intranet and for temporary access to intranet resources when network location detection has not correctly determined that the DirectAccess client computer is connected to its own intranet.
+The ability to disconnect allows users to specify single-label, unqualified names (such as "PRINTSVR") for local resources when connected to a different intranet and for temporary access to intranet resources when network location detection hasn't correctly determined that the DirectAccess client computer is connected to its own intranet.
 
 To restore the DirectAccess rules to the NRPT and resume normal DirectAccess functionality, the user clicks Connect.
 
 Note
 If the DirectAccess client computer is on the intranet and has correctly determined its network location, the Disconnect option has no effect because the rules for DirectAccess are already removed from the NRPT.
 
-If this setting is not configured, users do not have Connect or Disconnect options.
+If this setting isn't configured, users don't have Connect or Disconnect options.
 <!-- LocalNamesOn-Description-End -->
 
 <!-- LocalNamesOn-Editable-Begin -->
@@ -349,7 +349,7 @@ If this setting is not configured, users do not have Connect or Disconnect optio
 <!-- Description-Source-ADMX -->
 Specifies whether NCA service runs in Passive Mode or not.
 
-Set this to Disabled to keep NCA probing actively all the time. If this setting is not configured, NCA probing is in active mode by default.
+Set this to Disabled to keep NCA probing actively all the time. If this setting isn't configured, NCA probing is in active mode by default.
 <!-- PassiveMode-Description-End -->
 
 <!-- PassiveMode-Editable-Begin -->
@@ -408,7 +408,7 @@ Specifies whether an entry for DirectAccess connectivity appears when the user c
 
 Set this to Disabled to prevent user confusion when you are just using DirectAccess to remotely manage DirectAccess client computers from your intranet and not providing seamless intranet access.
 
-If this setting is not configured, the entry for DirectAccess connectivity appears.
+If this setting isn't configured, the entry for DirectAccess connectivity appears.
 <!-- ShowUI-Description-End -->
 
 <!-- ShowUI-Editable-Begin -->

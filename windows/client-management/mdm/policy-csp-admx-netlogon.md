@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- Netlogon_AddressLookupOnPingBehavior-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting configures how a domain controller (DC) behaves when responding to a client whose IP address does not map to any configured site.
+This policy setting configures how a domain controller (DC) behaves when responding to a client whose IP address doesn't map to any configured site.
 
 Domain controllers use the client IP address during a DC locator ping request to compute which Active Directory site the client belongs to. If no site mapping can be computed, the DC may do an address lookup on the client network name to discover other IP addresses which may then be used to compute a matching site for the client.
 
@@ -51,7 +51,7 @@ The allowable values for this setting result in the following behaviors:
 
 To specify this behavior in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 2.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_AddressLookupOnPingBehavior-Description-End -->
 
 <!-- Netlogon_AddressLookupOnPingBehavior-Editable-Begin -->
@@ -105,7 +105,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_AddressTypeReturned-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting detremines the type of IP address that is returned for a domain controller. The DC Locator APIs return the IP address of the DC with the other parts of information. Before the support of IPv6, the returned DC IP address was IPv4. But with the support of IPv6, the DC Locator APIs can return IPv6 DC address. The returned IPv6 DC address may not be correctly handled by some of the existing applications. So this policy is provided to support such scenarios.
+This policy setting detremines the type of IP address that's returned for a domain controller. The DC Locator APIs return the IP address of the DC with the other parts of information. Before the support of IPv6, the returned DC IP address was IPv4. But with the support of IPv6, the DC Locator APIs can return IPv6 DC address. The returned IPv6 DC address may not be correctly handled by some of the existing applications. So this policy is provided to support such scenarios.
 
 By default, DC Locator APIs can return IPv4/IPv6 DC address. But if some applications are broken due to the returned IPv6 DC address, this policy can be used to disable the default behavior and enforce to return only IPv4 DC address. Once applications are fixed, this policy can be used to enable the default behavior.
 
@@ -113,7 +113,7 @@ By default, DC Locator APIs can return IPv4/IPv6 DC address. But if some applica
 
 - If you disable this policy setting, DC Locator APIs will ONLY return IPv4 DC address if any. So if the domain controller supports both IPv4 and IPv6 addresses, DC Locator APIs will return IPv4 address. But if the domain controller supports only IPv6 address, then DC Locator APIs will fail.
 
-- If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
+- If you don't configure this policy setting, DC Locator APIs can return IPv4/IPv6 DC address. This is the default behavior of the DC Locator.
 <!-- Netlogon_AddressTypeReturned-Description-End -->
 
 <!-- Netlogon_AddressTypeReturned-Editable-Begin -->
@@ -168,13 +168,13 @@ By default, DC Locator APIs can return IPv4/IPv6 DC address. But if some applica
 
 <!-- Netlogon_AllowDnsSuffixSearch-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether the computers to which this setting is applied attemps DNS name resolution of single-lablel domain names, by appending different registered DNS suffixes, and uses NetBIOS name resolution only if DNS name resolution fails. This policy, including the specified default behavior, is not used if the AllowSingleLabelDnsDomain policy setting is enabled.
+This policy setting specifies whether the computers to which this setting is applied attemps DNS name resolution of single-lablel domain names, by appending different registered DNS suffixes, and uses NetBIOS name resolution only if DNS name resolution fails. This policy, including the specified default behavior, isn't used if the AllowSingleLabelDnsDomain policy setting is enabled.
 
 By default, when no setting is specified for this policy, the behavior is the same as explicitly enabling this policy, unless the AllowSingleLabelDnsDomain policy setting is enabled.
 
-- If you enable this policy setting, when the AllowSingleLabelDnsDomain policy is not enabled, computers to which this policy is applied, will locate a domain controller hosting an Active Directory domain specified with a single-label name, by appending different registered DNS suffixes to perform DNS name resolution. The single-label name is not used without appending DNS suffixes unless the computer is joined to a domain that has a single-label DNS name in the Active Directory forest. NetBIOS name resolution is performed on the single-label name only, in the event that DNS resolution fails.
+- If you enable this policy setting, when the AllowSingleLabelDnsDomain policy isn't enabled, computers to which this policy is applied, will locate a domain controller hosting an Active Directory domain specified with a single-label name, by appending different registered DNS suffixes to perform DNS name resolution. The single-label name isn't used without appending DNS suffixes unless the computer is joined to a domain that has a single-label DNS name in the Active Directory forest. NetBIOS name resolution is performed on the single-label name only, in the event that DNS resolution fails.
 
-- If you disable this policy setting, when the AllowSingleLabelDnsDomain policy is not enabled, computers to which this policy is applied, will only use NetBIOS name resolution to attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name. The computers will not attempt DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name to which this computer is joined, in the Active Directory forest.
+- If you disable this policy setting, when the AllowSingleLabelDnsDomain policy isn't enabled, computers to which this policy is applied, will only use NetBIOS name resolution to attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name. The computers won't attempt DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name to which this computer is joined, in the Active Directory forest.
 <!-- Netlogon_AllowDnsSuffixSearch-Description-End -->
 
 <!-- Netlogon_AllowDnsSuffixSearch-Editable-Begin -->
@@ -229,15 +229,15 @@ By default, when no setting is specified for this policy, the behavior is the sa
 
 <!-- Netlogon_AllowNT4Crypto-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls whether the Net Logon service will allow the use of older cryptography algorithms that are used in Windows NT 4.0. The cryptography algorithms used in Windows NT 4.0 and earlier are not as secure as newer algorithms used in Windows 2000 or later, including this version of Windows.
+This policy setting controls whether the Net Logon service will allow the use of older cryptography algorithms that are used in Windows NT 4.0. The cryptography algorithms used in Windows NT 4.0 and earlier aren't as secure as newer algorithms used in Windows 2000 or later, including this version of Windows.
 
-By default, Net Logon will not allow the older cryptography algorithms to be used and will not include them in the negotiation of cryptography algorithms. Therefore, computers running Windows NT 4.0 will not be able to establish a connection to this domain controller.
+By default, Net Logon won't allow the older cryptography algorithms to be used and won't include them in the negotiation of cryptography algorithms. Therefore, computers running Windows NT 4.0 won't be able to establish a connection to this domain controller.
 
 - If you enable this policy setting, Net Logon will allow the negotiation and use of older cryptography algorithms compatible with Windows NT 4.0. However, using the older algorithms represents a potential security risk.
 
-- If you disable this policy setting, Net Logon will not allow the negotiation and use of older cryptography algorithms.
+- If you disable this policy setting, Net Logon won't allow the negotiation and use of older cryptography algorithms.
 
-- If you do not configure this policy setting, Net Logon will not allow the negotiation and use of older cryptography algorithms.
+- If you don't configure this policy setting, Net Logon won't allow the negotiation and use of older cryptography algorithms.
 <!-- Netlogon_AllowNT4Crypto-Description-End -->
 
 <!-- Netlogon_AllowNT4Crypto-Editable-Begin -->
@@ -298,9 +298,9 @@ By default, the behavior specified in the AllowDnsSuffixSearch is used. If the A
 
 - If you enable this policy setting, computers to which this policy is applied will attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name using DNS name resolution.
 
-- If you disable this policy setting, computers to which this setting is applied will use the AllowDnsSuffixSearch policy, if it is not disabled or perform NetBIOS name resolution otherwise, to attempt to locate a domain controller that hosts an Active Directory domain specified with a single-label name. the computers will not the DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name that exists in the Active Directory forest to which this computer is joined.
+- If you disable this policy setting, computers to which this setting is applied will use the AllowDnsSuffixSearch policy, if it isn't disabled or perform NetBIOS name resolution otherwise, to attempt to locate a domain controller that hosts an Active Directory domain specified with a single-label name. the computers won't the DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name that exists in the Active Directory forest to which this computer is joined.
 
-- If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+- If you don't configure this policy setting, it isn't applied to any computers, and computers use their local configuration.
 <!-- Netlogon_AllowSingleLabelDnsDomain-Description-End -->
 
 <!-- Netlogon_AllowSingleLabelDnsDomain-Editable-Begin -->
@@ -355,13 +355,13 @@ By default, the behavior specified in the AllowDnsSuffixSearch is used. If the A
 
 <!-- Netlogon_AutoSiteCoverage-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines whether domain controllers (DC) will dynamically register DC Locator site-specific SRV records for the closest sites where no DC for the same domain exists (or no Global Catalog for the same forest exists). These DNS records are dynamically registered by the Net Logon service, and they are used to locate the DC.
+This policy setting determines whether domain controllers (DC) will dynamically register DC Locator site-specific SRV records for the closest sites where no DC for the same domain exists (or no Global Catalog for the same forest exists). These DNS records are dynamically registered by the Net Logon service, and they're used to locate the DC.
 
 - If you enable this policy setting, the DCs to which this setting is applied dynamically register DC Locator site-specific DNS SRV records for the closest sites where no DC for the same domain, or no Global Catalog for the same forest, exists.
 
-- If you disable this policy setting, the DCs will not register site-specific DC Locator DNS SRV records for any other sites but their own.
+- If you disable this policy setting, the DCs won't register site-specific DC Locator DNS SRV records for any other sites but their own.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_AutoSiteCoverage-Description-End -->
 
 <!-- Netlogon_AutoSiteCoverage-Editable-Begin -->
@@ -418,11 +418,11 @@ This policy setting determines whether domain controllers (DC) will dynamically 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control the domain controller (DC) location algorithm. By default, the DC location algorithm prefers DNS-based discovery if the DNS domain name is known. If DNS-based discovery fails and the NetBIOS domain name is known, the algorithm then uses NetBIOS-based discovery as a fallback mechanism.
 
-NetBIOS-based discovery uses a WINS server and mailslot messages but does not use site information. Hence it does not ensure that clients will discover the closest DC. It also allows a hub-site client to discover a branch-site DC even if the branch-site DC only registers site-specific DNS records (as recommended). For these reasons, NetBIOS-based discovery is not recommended.
+NetBIOS-based discovery uses a WINS server and mailslot messages but doesn't use site information. Hence it doesn't ensure that clients will discover the closest DC. It also allows a hub-site client to discover a branch-site DC even if the branch-site DC only registers site-specific DNS records (as recommended). For these reasons, NetBIOS-based discovery isn't recommended.
 
-Note that this policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
+Note that this policy setting doesn't affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
 
-- If you enable or do not configure this policy setting, the DC location algorithm does not use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
+- If you enable or don't configure this policy setting, the DC location algorithm doesn't use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
 
 - If you disable this policy setting, the DC location algorithm can use NetBIOS-based discovery as a fallback mechanism when DNS based discovery fails.
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-Description-End -->
@@ -481,13 +481,13 @@ Note that this policy setting does not affect NetBIOS-based discovery for DC loc
 <!-- Description-Source-ADMX -->
 This policy setting defines whether a domain controller (DC) should attempt to verify the password provided by a client with the PDC emulator if the DC failed to validate the password.
 
-Contacting the PDC emulator is useful in case the client's password was recently changed and did not propagate to the DC yet. Users may want to disable this feature if the PDC emulator is located over a slow WAN connection.
+Contacting the PDC emulator is useful in case the client's password was recently changed and didn't propagate to the DC yet. Users may want to disable this feature if the PDC emulator is located over a slow WAN connection.
 
 - If you enable this policy setting, the DCs to which this policy setting applies will attempt to verify a password with the PDC emulator if the DC fails to validate the password.
 
-- If you disable this policy setting, the DCs will not attempt to verify any passwords with the PDC emulator.
+- If you disable this policy setting, the DCs won't attempt to verify any passwords with the PDC emulator.
 
-- If you do not configure this policy setting, it is not applied to any DCs.
+- If you don't configure this policy setting, it isn't applied to any DCs.
 <!-- Netlogon_AvoidPdcOnWan-Description-End -->
 
 <!-- Netlogon_AvoidPdcOnWan-Editable-Begin -->
@@ -551,7 +551,7 @@ This setting is relevant only to those callers of DsGetDcName that have specifie
 If the value of this setting is less than the value specified in the NegativeCachePeriod subkey, the value in the NegativeCachePeriod subkey is used.
 
 > [!WARNING]
-> If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value set in this setting is very small and the DC is not available, the traffic caused by periodic DC discoveries may be excessive.
+> If the value for this setting is too large, a client won't attempt to find any DCs that were initially unavailable. If the value set in this setting is very small and the DC isn't available, the traffic caused by periodic DC discoveries may be excessive.
 <!-- Netlogon_BackgroundRetryInitialPeriod-Description-End -->
 
 <!-- Netlogon_BackgroundRetryInitialPeriod-Editable-Begin -->
@@ -616,7 +616,7 @@ If the value for this setting is smaller than the value specified for the Initia
 > [!WARNING]
 > If the value for this setting is too large, a client may take very long periods to try to find a DC.
 
-If the value for this setting is too small and the DC is not available, the frequent retries may produce excessive network traffic.
+If the value for this setting is too small and the DC isn't available, the frequent retries may produce excessive network traffic.
 <!-- Netlogon_BackgroundRetryMaximumPeriod-Description-End -->
 
 <!-- Netlogon_BackgroundRetryMaximumPeriod-Editable-Begin -->
@@ -729,7 +729,7 @@ The default value for this setting is to not quit retrying (0). The maximum valu
 
 <!-- Netlogon_BackgroundSuccessfulRefreshPeriod-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines when a successful DC cache entry is refreshed. This policy setting is applied to caller programs that periodically attempt to locate DCs, and it is applied before returning the DC information to the caller program. The default value for this setting is infinite (4294967200). The maximum value for this setting is (4294967200), while the maximum that is not treated as infinity is 49 days (49*24*60*60=4233600). Any larger value is treated as infinity. The minimum value for this setting is to always refresh (0).
+This policy setting determines when a successful DC cache entry is refreshed. This policy setting is applied to caller programs that periodically attempt to locate DCs, and it's applied before returning the DC information to the caller program. The default value for this setting is infinite (4294967200). The maximum value for this setting is (4294967200), while the maximum that isn't treated as infinity is 49 days (49*24*60*60=4233600). Any larger value is treated as infinity. The minimum value for this setting is to always refresh (0).
 <!-- Netlogon_BackgroundSuccessfulRefreshPeriod-Description-End -->
 
 <!-- Netlogon_BackgroundSuccessfulRefreshPeriod-Editable-Begin -->
@@ -791,7 +791,7 @@ The Net Logon service outputs debug information to the log file netlogon.log in 
 
 If you specify zero for this policy setting, the default behavior occurs as described above.
 
-- If you disable this policy setting or do not configure it, the default behavior occurs as described above.
+- If you disable this policy setting or don't configure it, the default behavior occurs as described above.
 <!-- Netlogon_DebugFlag-Description-End -->
 
 <!-- Netlogon_DebugFlag-Editable-Begin -->
@@ -931,14 +931,14 @@ This policy setting determines which DC Locator DNS records aren't registered by
 <!-- Description-Source-ADMX -->
 This policy setting specifies the Refresh Interval of the DC Locator DNS resource records for DCs to which this setting is applied. These DNS records are dynamically registered by the Net Logon service and are used by the DC Locator algorithm to locate the DC. This setting may be applied only to DCs using dynamic update.
 
-DCs configured to perform dynamic registration of the DC Locator DNS resource records periodically reregister their records with DNS servers, even if their records' data has not changed. If authoritative DNS servers are configured to perform scavenging of the stale records, this reregistration is required to instruct the DNS servers configured to automatically remove (scavenge) stale records that these records are current and should be preserved in the database.
+DCs configured to perform dynamic registration of the DC Locator DNS resource records periodically reregister their records with DNS servers, even if their records' data hasn't changed. If authoritative DNS servers are configured to perform scavenging of the stale records, this reregistration is required to instruct the DNS servers configured to automatically remove (scavenge) stale records that these records are current and should be preserved in the database.
 
 > [!WARNING]
 > If the DNS resource records are registered in zones with scavenging enabled, the value of this setting should never be longer than the Refresh Interval configured for these zones. Setting the Refresh Interval of the DC Locator DNS records to longer than the Refresh Interval of the DNS zones may result in the undesired deletion of DNS resource records.
 
 To specify the Refresh Interval of the DC records, click Enabled, and then enter a value larger than 1800. This value specifies the Refresh Interval of the DC records in seconds (for example, the value 3600 is 60 minutes).
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_DnsRefreshInterval-Description-End -->
 
 <!-- Netlogon_DnsRefreshInterval-Editable-Begin -->
@@ -1002,7 +1002,7 @@ If not configured, domain controllers will default to using their local configur
 
 The default local configuration is enabled.
 
-A reboot is not required for changes to this setting to take effect.
+A reboot isn't required for changes to this setting to take effect.
 
 More information is available at <https://aka.ms/lowercasehostnamesrvrecord>
 <!-- Netlogon_DnsSrvRecordUseLowerCaseHostNames-Description-End -->
@@ -1059,11 +1059,11 @@ More information is available at <https://aka.ms/lowercasehostnamesrvrecord>
 
 <!-- Netlogon_DnsTtl-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the value for the Time-To-Live (TTL) field in SRV resource records that are registered by the Net Logon service. These DNS records are dynamically registered, and they are used to locate the domain controller (DC).
+This policy setting specifies the value for the Time-To-Live (TTL) field in SRV resource records that are registered by the Net Logon service. These DNS records are dynamically registered, and they're used to locate the domain controller (DC).
 
 To specify the TTL for DC Locator DNS records, click Enabled, and then enter a value in seconds (for example, the value "900" is 15 minutes).
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_DnsTtl-Description-End -->
 
 <!-- Netlogon_DnsTtl-Editable-Begin -->
@@ -1121,7 +1121,7 @@ This policy setting specifies the additional time for the computer to wait for t
 
 To specify the expected dial-up delay at logon, click Enabled, and then enter the desired value in seconds (for example, the value "60" is 1 minute).
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you don't configure this policy setting, it isn't applied to any computers, and computers use their local configuration.
 <!-- Netlogon_ExpectedDialupDelay-Description-End -->
 
 <!-- Netlogon_ExpectedDialupDelay-Editable-Begin -->
@@ -1183,7 +1183,7 @@ The Domain Controller Locator (DC Locator) service is used by clients to find do
 
 - If you disable this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval.
 
-- If you do not configure this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval, unless the local machine setting in the registry is a different value.
+- If you don't configure this policy setting, Force Rediscovery will be used by default for the machine at every 12 hour interval, unless the local machine setting in the registry is a different value.
 <!-- Netlogon_ForceRediscoveryInterval-Description-End -->
 
 <!-- Netlogon_ForceRediscoveryInterval-Editable-Begin -->
@@ -1239,11 +1239,11 @@ The Domain Controller Locator (DC Locator) service is used by clients to find do
 <!-- Description-Source-ADMX -->
 This policy setting specifies the sites for which the global catalogs (GC) should register site-specific GC locator DNS SRV resource records. These records are registered in addition to the site-specific SRV records registered for the site where the GC resides, and records registered by a GC configured to register GC Locator DNS SRV records for those sites without a GC that are closest to it.
 
-The GC Locator DNS records and the site-specific SRV records are dynamically registered by the Net Logon service, and they are used to locate the GC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication. A GC is a domain controller that contains a partial replica of every domain in Active Directory.
+The GC Locator DNS records and the site-specific SRV records are dynamically registered by the Net Logon service, and they're used to locate the GC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication. A GC is a domain controller that contains a partial replica of every domain in Active Directory.
 
 To specify the sites covered by the GC Locator DNS SRV records, click Enabled, and enter the sites' names in a space-delimited format.
 
-If you do not configure this policy setting, it is not applied to any GCs, and GCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any GCs, and GCs use their local configuration.
 <!-- Netlogon_GcSiteCoverage-Description-End -->
 
 <!-- Netlogon_GcSiteCoverage-Editable-Begin -->
@@ -1300,13 +1300,13 @@ If you do not configure this policy setting, it is not applied to any GCs, and G
 This policy setting allows you to control the processing of incoming mailslot messages by a local domain controller (DC).
 
 > [!NOTE]
-> To locate a remote DC based on its NetBIOS (single-label) domain name, DC Locator first gets the list of DCs from a WINS server that is configured in its local client settings. DC Locator then sends a mailslot message to each remote DC to get more information. DC location succeeds only if a remote DC responds to the mailslot message.
+> To locate a remote DC based on its NetBIOS (single-label) domain name, DC Locator first gets the list of DCs from a WINS server that's configured in its local client settings. DC Locator then sends a mailslot message to each remote DC to get more information. DC location succeeds only if a remote DC responds to the mailslot message.
 
-This policy setting is recommended to reduce the attack surface on a DC, and can be used in an environment without WINS, in an IPv6-only environment, and whenever DC location based on a NetBIOS domain name is not required. This policy setting does not affect DC location based on DNS names.
+This policy setting is recommended to reduce the attack surface on a DC, and can be used in an environment without WINS, in an IPv6-only environment, and whenever DC location based on a NetBIOS domain name isn't required. This policy setting doesn't affect DC location based on DNS names.
 
-- If you enable this policy setting, this DC does not process incoming mailslot messages that are used for NetBIOS domain name based DC location.
+- If you enable this policy setting, this DC doesn't process incoming mailslot messages that are used for NetBIOS domain name based DC location.
 
-- If you disable or do not configure this policy setting, this DC processes incoming mailslot messages. This is the default behavior of DC Locator.
+- If you disable or don't configure this policy setting, this DC processes incoming mailslot messages. This is the default behavior of DC Locator.
 <!-- Netlogon_IgnoreIncomingMailslotMessages-Description-End -->
 
 <!-- Netlogon_IgnoreIncomingMailslotMessages-Editable-Begin -->
@@ -1367,7 +1367,7 @@ The Priority field in the SRV record sets the preference for target hosts (speci
 
 To specify the Priority in the DC Locator DNS SRV resource records, click Enabled, and then enter a value. The range of values is from 0 to 65535.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_LdapSrvPriority-Description-End -->
 
 <!-- Netlogon_LdapSrvPriority-Editable-Begin -->
@@ -1421,13 +1421,13 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_LdapSrvWeight-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the Weight field in the SRV resource records registered by the domain controllers (DC) to which this setting is applied. These DNS records are dynamically registered by the Net Logon service, and they are used to locate the DC.
+This policy setting specifies the Weight field in the SRV resource records registered by the domain controllers (DC) to which this setting is applied. These DNS records are dynamically registered by the Net Logon service, and they're used to locate the DC.
 
 The Weight field in the SRV record can be used in addition to the Priority value to provide a load-balancing mechanism where multiple servers are specified in the SRV records Target field and are all set to the same priority. The probability with which the DNS client randomly selects the target host to be contacted is proportional to the Weight field value in the SRV record.
 
 To specify the Weight in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 65535.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_LdapSrvWeight-Description-End -->
 
 <!-- Netlogon_LdapSrvWeight-Editable-Begin -->
@@ -1487,7 +1487,7 @@ By default, the maximum size of the log file is 20MB.
 
 - If you enable this policy setting, the maximum size of the log file is set to the specified size. Once this size is reached the log file is saved to netlogon.bak and netlogon.log is truncated. A reasonable value based on available storage should be specified.
 
-- If you disable or do not configure this policy setting, the default behavior occurs as indicated above.
+- If you disable or don't configure this policy setting, the default behavior occurs as indicated above.
 <!-- Netlogon_MaximumLogFileSize-Description-End -->
 
 <!-- Netlogon_MaximumLogFileSize-Editable-Begin -->
@@ -1543,11 +1543,11 @@ By default, the maximum size of the log file is 20MB.
 <!-- Description-Source-ADMX -->
 This policy setting specifies the sites for which the domain controllers (DC) that host the application directory partition should register the site-specific, application directory partition-specific DC Locator DNS SRV resource records. These records are registered in addition to the site-specific SRV records registered for the site where the DC resides, and records registered by a DC configured to register DC Locator DNS SRV records for those sites without a DC that are closest to it.
 
-The application directory partition DC Locator DNS records and the site-specific SRV records are dynamically registered by the Net Logon service, and they are used to locate the application directory partition-specific DC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication.
+The application directory partition DC Locator DNS records and the site-specific SRV records are dynamically registered by the Net Logon service, and they're used to locate the application directory partition-specific DC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication.
 
 To specify the sites covered by the DC Locator application directory partition-specific DNS SRV records, click Enabled, and then enter the site names in a space-delimited format.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_NdncSiteCoverage-Description-End -->
 
 <!-- Netlogon_NdncSiteCoverage-Editable-Begin -->
@@ -1601,12 +1601,12 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!-- Netlogon_NegativeCachePeriod-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the amount of time (in seconds) the DC locator remembers that a domain controller (DC) could not be found in a domain. When a subsequent attempt to locate the DC occurs within the time set in this setting, DC Discovery immediately fails, without attempting to find the DC.
+This policy setting specifies the amount of time (in seconds) the DC locator remembers that a domain controller (DC) couldn't be found in a domain. When a subsequent attempt to locate the DC occurs within the time set in this setting, DC Discovery immediately fails, without attempting to find the DC.
 
 The default value for this setting is 45 seconds. The maximum value for this setting is 7 days (7*24*60*60). The minimum value for this setting is 0.
 
 > [!WARNING]
-> If the value for this setting is too large, a client will not attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
+> If the value for this setting is too large, a client won't attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
 <!-- Netlogon_NegativeCachePeriod-Description-End -->
 
 <!-- Netlogon_NegativeCachePeriod-Editable-Begin -->
@@ -1664,7 +1664,7 @@ This policy setting controls whether or not the Netlogon share created by the Ne
 
 - If you enable this policy setting, the Netlogon share will honor file sharing semantics that grant requests for exclusive read access to files on the share even when the caller has only read permission.
 
-- If you disable or do not configure this policy setting, the Netlogon share will grant shared read access to files on the share when exclusive access is requested and the caller has only read permission.
+- If you disable or don't configure this policy setting, the Netlogon share will grant shared read access to files on the share when exclusive access is requested and the caller has only read permission.
 
 By default, the Netlogon share will grant shared read access to files on the share when exclusive access is requested.
 
@@ -1726,9 +1726,9 @@ By default, the Netlogon share will grant shared read access to files on the sha
 
 <!-- Netlogon_NonBackgroundSuccessfulRefreshPeriod-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting determines when a successful DC cache entry is refreshed. This policy setting is applied to caller programs that do not periodically attempt to locate DCs, and it is applied before the returning the DC information to the caller program. This policy setting is relevant to only those callers of DsGetDcName that have not specified the DS_BACKGROUND_ONLY flag.
+This policy setting determines when a successful DC cache entry is refreshed. This policy setting is applied to caller programs that don't periodically attempt to locate DCs, and it's applied before the returning the DC information to the caller program. This policy setting is relevant to only those callers of DsGetDcName that haven't specified the DS_BACKGROUND_ONLY flag.
 
-The default value for this setting is 30 minutes (1800). The maximum value for this setting is (4294967200), while the maximum that is not treated as infinity is 49 days (49*24*60*60=4233600). Any larger value will be treated as infinity. The minimum value for this setting is to always refresh (0).
+The default value for this setting is 30 minutes (1800). The maximum value for this setting is (4294967200), while the maximum that isn't treated as infinity is 49 days (49*24*60*60=4233600). Any larger value will be treated as infinity. The minimum value for this setting is to always refresh (0).
 <!-- Netlogon_NonBackgroundSuccessfulRefreshPeriod-Description-End -->
 
 <!-- Netlogon_NonBackgroundSuccessfulRefreshPeriod-Editable-Begin -->
@@ -1793,7 +1793,7 @@ The allowable values for this setting result in the following behaviors:
 
 To specify this behavior, click Enabled and then enter a value. The range of values is from 1 to 2.
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you don't configure this policy setting, it isn't applied to any computers, and computers use their local configuration.
 <!-- Netlogon_PingUrgencyMode-Description-End -->
 
 <!-- Netlogon_PingUrgencyMode-Editable-Begin -->
@@ -1851,7 +1851,7 @@ This policy setting determines the interval at which Netlogon performs the follo
 
 - Checks if a password on a secure channel needs to be modified, and modifies it if necessary.
 
-- On the domain controllers (DC), discovers a DC that has not been discovered.
+- On the domain controllers (DC), discovers a DC that hasn't been discovered.
 
 - On the PDC, attempts to add the `<DomainName>`[1B] NetBIOS name if it hasn't already been successfully added.
 
@@ -1913,11 +1913,11 @@ To enable the setting, click Enabled, and then specify the interval in seconds.
 <!-- Description-Source-ADMX -->
 This policy setting specifies the sites for which the domain controllers (DC) register the site-specific DC Locator DNS SRV resource records. These records are registered in addition to the site-specific SRV records registered for the site where the DC resides, and records registered by a DC configured to register DC Locator DNS SRV records for those sites without a DC that are closest to it.
 
-The DC Locator DNS records are dynamically registered by the Net Logon service, and they are used to locate the DC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication.
+The DC Locator DNS records are dynamically registered by the Net Logon service, and they're used to locate the DC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication.
 
 To specify the sites covered by the DC Locator DNS SRV records, click Enabled, and then enter the sites names in a space-delimited format.
 
-If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_SiteCoverage-Description-End -->
 
 <!-- Netlogon_SiteCoverage-Editable-Begin -->
@@ -1975,9 +1975,9 @@ This policy setting specifies the Active Directory site to which computers belon
 
 An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication.
 
-To specify the site name for this setting, click Enabled, and then enter the site name. When the site to which a computer belongs is not specified, the computer automatically discovers its site from Active Directory.
+To specify the site name for this setting, click Enabled, and then enter the site name. When the site to which a computer belongs isn't specified, the computer automatically discovers its site from Active Directory.
 
-If you do not configure this policy setting, it is not applied to any computers, and computers use their local configuration.
+If you don't configure this policy setting, it isn't applied to any computers, and computers use their local configuration.
 <!-- Netlogon_SiteName-Description-End -->
 
 <!-- Netlogon_SiteName-Editable-Begin -->
@@ -2097,15 +2097,15 @@ If you enable this policy setting, domain administrators should ensure that the 
 
 <!-- Netlogon_TryNextClosestSite-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting enables DC Locator to attempt to locate a DC in the nearest site based on the site link cost if a DC in same the site is not found. In scenarios with multiple sites, failing over to the try next closest site during DC Location streamlines network traffic more effectively.
+This policy setting enables DC Locator to attempt to locate a DC in the nearest site based on the site link cost if a DC in same the site isn't found. In scenarios with multiple sites, failing over to the try next closest site during DC Location streamlines network traffic more effectively.
 
 The DC Locator service is used by clients to find domain controllers for their Active Directory domain. The default behavior for DC Locator is to find a DC in the same site. If none are found in the same site, a DC in another site, which might be several site-hops away, could be returned by DC Locator. Site proximity between two sites is determined by the total site-link cost between them. A site is closer if it has a lower site link cost than another site with a higher site link cost.
 
 - If you enable this policy setting, Try Next Closest Site DC Location will be turned on for the computer.
 
-- If you disable this policy setting, Try Next Closest Site DC Location will not be used by default for the computer. However, if a DC Locator call is made using the DS_TRY_NEXTCLOSEST_SITE flag explicitly, the Try Next Closest Site behavior is honored.
+- If you disable this policy setting, Try Next Closest Site DC Location won't be used by default for the computer. However, if a DC Locator call is made using the DS_TRY_NEXTCLOSEST_SITE flag explicitly, the Try Next Closest Site behavior is honored.
 
-- If you do not configure this policy setting, Try Next Closest Site DC Location will not be used by default for the machine. If the DS_TRY_NEXTCLOSEST_SITE flag is used explicitly, the Next Closest Site behavior will be used.
+- If you don't configure this policy setting, Try Next Closest Site DC Location won't be used by default for the machine. If the DS_TRY_NEXTCLOSEST_SITE flag is used explicitly, the Next Closest Site behavior will be used.
 <!-- Netlogon_TryNextClosestSite-Description-End -->
 
 <!-- Netlogon_TryNextClosestSite-Editable-Begin -->
@@ -2164,9 +2164,9 @@ This policy setting determines if dynamic registration of the domain controller 
 
 - If you enable this policy setting, DCs to which this setting is applied dynamically register DC Locator DNS resource records through dynamic DNS update-enabled network connections.
 
-- If you disable this policy setting, DCs will not register DC Locator DNS resource records.
+- If you disable this policy setting, DCs won't register DC Locator DNS resource records.
 
-- If you do not configure this policy setting, it is not applied to any DCs, and DCs use their local configuration.
+- If you don't configure this policy setting, it isn't applied to any DCs, and DCs use their local configuration.
 <!-- Netlogon_UseDynamicDns-Description-End -->
 
 <!-- Netlogon_UseDynamicDns-Editable-Begin -->

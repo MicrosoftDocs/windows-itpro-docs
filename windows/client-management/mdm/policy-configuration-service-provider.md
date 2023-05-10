@@ -130,7 +130,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 <!-- Device-Config-{AreaName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
+The area group that can be configured by a single technology for a single provider. Once added, you can't change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- Device-Config-{AreaName}-Description-End -->
 
 <!-- Device-Config-{AreaName}-Editable-Begin -->
@@ -257,7 +257,7 @@ The root node for grouping different configuration operations.
 
 <!-- Device-ConfigOperations-ADMXInstall-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall. Each ADMX-backed policy or preference that is added is assigned a unique ID. ADMX files that have been installed by using ConfigOperations/ADMXInstall can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}.
+Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall. Each ADMX-backed policy or preference that's added is assigned a unique ID. ADMX files that have been installed by using ConfigOperations/ADMXInstall can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, ./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}.
 <!-- Device-ConfigOperations-ADMXInstall-Description-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-Editable-Begin -->
@@ -736,7 +736,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 <!-- User-Config-{AreaName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
+The area group that can be configured by a single technology for a single provider. Once added, you can't change the value. See the individual Area DDFs for Policy CSP for a list of Areas that can be configured.
 <!-- User-Config-{AreaName}-Description-End -->
 
 <!-- User-Config-{AreaName}-Editable-Begin -->

@@ -164,7 +164,7 @@ Note that the user's domain password will be cached in the system vault when usi
 
 <!-- DisableAutomaticReDeploymentCredentials-Description-Begin -->
 <!-- Description-Source-DDF -->
-Boolean policy to disable the visibility of the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device. The Autopilot Reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the Autopilot Reset is triggered the devices are for ready for use by information workers or students.
+Boolean policy to disable the visibility of the credential provider that triggers the PC refresh on a device. This policy doesn't actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device. The Autopilot Reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the Autopilot Reset is triggered the devices are for ready for use by information workers or students.
 <!-- DisableAutomaticReDeploymentCredentials-Description-End -->
 
 <!-- DisableAutomaticReDeploymentCredentials-Editable-Begin -->

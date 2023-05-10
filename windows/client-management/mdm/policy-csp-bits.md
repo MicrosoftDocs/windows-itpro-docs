@@ -37,16 +37,16 @@ ms.topic: reference
 
 <!-- BandwidthThrottlingEndTime-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting does not affect foreground transfers.)
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers.)
 
 You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
 
 - If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
 
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth.
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
 Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 <!-- BandwidthThrottlingEndTime-Description-End -->
@@ -103,16 +103,16 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!-- BandwidthThrottlingStartTime-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting does not affect foreground transfers.)
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers.)
 
 You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
 
 - If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
 
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth.
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
 Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 <!-- BandwidthThrottlingStartTime-Description-End -->
@@ -169,16 +169,16 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!-- BandwidthThrottlingTransferRate-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting does not affect foreground transfers.)
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers.)
 
 You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
 
 - If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
 
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth.
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect Peercaching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
 Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 <!-- BandwidthThrottlingTransferRate-Description-End -->
@@ -237,7 +237,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- Description-Source-ADMX -->
 This policy setting defines the default behavior that the Background Intelligent Transfer Service (BITS) uses for background transfers when the system is connected to a costed network (3G, etc.). Download behavior policies further limit the network usage of background transfers.
 
-If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting does not override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
+If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting doesn't override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
 
 For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
 
@@ -323,7 +323,7 @@ For example, you can specify that background jobs are by default to transfer onl
 <!-- Description-Source-ADMX -->
 This policy setting defines the default behavior that the Background Intelligent Transfer Service (BITS) uses for background transfers when the system is connected to a costed network (3G, etc.). Download behavior policies further limit the network usage of background transfers.
 
-If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting does not override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
+If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting doesn't override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
 
 For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
 
@@ -417,7 +417,7 @@ Consider decreasing this value if you are concerned about orphaned jobs occupyin
 
 - If you enable this policy setting, you can configure the inactive job timeout to specified number of days.
 
-- If you disable or do not configure this policy setting, the default value of 90 (days) will be used for the inactive job timeout.
+- If you disable or don't configure this policy setting, the default value of 90 (days) will be used for the inactive job timeout.
 <!-- JobInactivityTimeout-Description-End -->
 
 <!-- JobInactivityTimeout-Editable-Begin -->

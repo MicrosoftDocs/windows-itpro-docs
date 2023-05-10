@@ -45,18 +45,18 @@ Regular: Detection, troubleshooting, and recovery of corrupted files will automa
 
 Silent: Detection, troubleshooting, and recovery of corrupted files will automatically start with no UI. Windows will log an administrator event when a system restart is required. This behavior is recommended for headless operation.
 
-Troubleshooting Only: Detection and troubleshooting of corrupted files will automatically start with no UI. Recovery is not attempted automatically. Windows will log an administrator event with instructions if manual recovery is possible.
+Troubleshooting Only: Detection and troubleshooting of corrupted files will automatically start with no UI. Recovery isn't attempted automatically. Windows will log an administrator event with instructions if manual recovery is possible.
 
 - If you enable this setting, the recovery behavior for corrupted files will be set to either the regular (default), silent, or troubleshooting only state.
 
 - If you disable this setting, the recovery behavior for corrupted files will be disabled. No troubleshooting or resolution will be attempted.
 
-- If you do not configure this setting, the recovery behavior for corrupted files will be set to the regular recovery behavior.
+- If you don't configure this setting, the recovery behavior for corrupted files will be set to the regular recovery behavior.
 
 No system or service restarts are required for changes to this policy to take immediate effect after a Group Policy refresh.
 
 > [!NOTE]
-> This policy setting will take effect only when the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, system file recovery will not be attempted. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+> This policy setting will take effect only when the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, system file recovery won't be attempted. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 <!-- WdiScenarioExecutionPolicy-Description-End -->
 
 <!-- WdiScenarioExecutionPolicy-Editable-Begin -->

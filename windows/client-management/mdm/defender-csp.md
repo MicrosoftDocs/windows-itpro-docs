@@ -839,7 +839,7 @@ Control Device Control feature.
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether the CPU will be throttled for scheduled scans while the device is idle. This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle. This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Description-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Editable-Begin -->
@@ -1652,7 +1652,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, local admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell. |
-| 0 (Default) | If you disable or do not configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell. |
+| 0 (Default) | If you disable or don't configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell. |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-AllowedValues-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Examples-Begin -->
@@ -1701,7 +1701,7 @@ This policy setting controls whether or not exclusions are visible to local user
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, local users will no longer be able to see the exclusion list in Windows Security App or via PowerShell. |
-| 0 (Default) | If you disable or do not configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell. |
+| 0 (Default) | If you disable or don't configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell. |
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-AllowedValues-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-Examples-Begin -->
@@ -1749,7 +1749,7 @@ This policy setting configures the Intel TDT integration level for Intel TDT-cap
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat. |
+| 0 (Default) | If you don't configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat. |
 | 1 | If you configure this setting to enabled, Intel TDT integration will turn on. |
 | 2 | If you configure this setting to disabled, Intel TDT integration will turn off. |
 <!-- Device-Configuration-IntelTDTEnabled-AllowedValues-End -->
@@ -1849,7 +1849,7 @@ This setting allows you to configure whether real-time protection and Security I
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE. |
-| 0 (Default) | If you either disable or do not configure this setting, real-time protection and Security Intelligence Updates during OOBE is not enabled. |
+| 0 (Default) | If you either disable or don't configure this setting, real-time protection and Security Intelligence Updates during OOBE isn't enabled. |
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-AllowedValues-End -->
 
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Examples-Begin -->
@@ -2117,7 +2117,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all of the supported devices will be secured.
+Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration isn't set the default value will be applied, meaning all of the supported devices will be secured.
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Editable-Begin -->
@@ -3057,7 +3057,7 @@ Version number of the current Windows Defender engine on the device.
 
 <!-- Device-Health-FullScanOverdue-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether a Windows Defender full scan is overdue for the device. A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and catchup Full scans are disabled (default).
+Indicates whether a Windows Defender full scan is overdue for the device. A Full scan is overdue when a scheduled Full scan didn't complete successfully for 2 weeks and catchup Full scans are disabled (default).
 <!-- Device-Health-FullScanOverdue-Description-End -->
 
 <!-- Device-Health-FullScanOverdue-Editable-Begin -->
@@ -3376,7 +3376,7 @@ Provide the current state of the product. This is a bitmask flag value that can 
 
 <!-- Device-Health-QuickScanOverdue-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether a Windows Defender quick scan is overdue for the device. A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and catchup Quick scans are disabled (default).
+Indicates whether a Windows Defender quick scan is overdue for the device. A Quick scan is overdue when a scheduled Quick scan didn't complete successfully for 2 weeks and catchup Quick scans are disabled (default).
 <!-- Device-Health-QuickScanOverdue-Description-End -->
 
 <!-- Device-Health-QuickScanOverdue-Editable-Begin -->

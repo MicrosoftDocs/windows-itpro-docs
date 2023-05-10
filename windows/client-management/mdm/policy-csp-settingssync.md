@@ -43,11 +43,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Prevent the "accessibility" group from syncing to and from this PC. This turns off and disables the "accessibility" group on the "Windows backup" settings page in PC settings.
 
-If you enable this policy setting, the "accessibility", group will not be synced.
+If you enable this policy setting, the "accessibility", group won't be synced.
 
 Use the option "Allow users to turn accessibility syncing on" so that syncing is turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "accessibility" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "accessibility" group is on by default and configurable by the user.
 <!-- DisableAccessibilitySettingSync-Description-End -->
 
 <!-- DisableAccessibilitySettingSync-Editable-Begin -->

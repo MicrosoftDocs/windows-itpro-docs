@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowHardwareKeyboardTextSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Placeholder only. Do not use in production environment.
+Placeholder only. Don't use in production environment.
 <!-- AllowHardwareKeyboardTextSuggestions-Description-End -->
 
 <!-- AllowHardwareKeyboardTextSuggestions-Editable-Begin -->
@@ -135,7 +135,7 @@ Allows the user to turn on and off the logging for incorrect conversion and savi
 
 <!-- AllowIMENetworkAccess-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that do not exist in the device's local dictionary. Most restricted value is 0. In Windows 10, version 1803, we introduced new suggestion services in Japanese IME in addition to cloud suggestion. When AllowIMENetworkAccess is set to 1, all suggestion services are available as predictive input.
+Allows the user to turn on Open Extended Dictionary, Internet search integration, or cloud candidate features to provide input suggestions that don't exist in the device's local dictionary. Most restricted value is 0. In Windows 10, version 1803, we introduced new suggestion services in Japanese IME in addition to cloud suggestion. When AllowIMENetworkAccess is set to 1, all suggestion services are available as predictive input.
 <!-- AllowIMENetworkAccess-Description-End -->
 
 <!-- AllowIMENetworkAccess-Editable-Begin -->
@@ -609,7 +609,7 @@ This policy setting controls the ability to send inking and typing data to Micro
 
 <!-- AllowTextInputSuggestionUpdate-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to turn on or off the automatic downloading of newer versions of the Expressive Input UI. When downloading is not allowed the Expressive Input panel will always display the initial UI included with the base Windows image. Most restricted value is 0. The following list shows the supported values: 0 - Not allowed. 1 (default) - Allowed.
+Allows the user to turn on or off the automatic downloading of newer versions of the Expressive Input UI. When downloading isn't allowed the Expressive Input panel will always display the initial UI included with the base Windows image. Most restricted value is 0. The following list shows the supported values: 0 - Not allowed. 1 (default) - Allowed.
 <!-- AllowTextInputSuggestionUpdate-Description-End -->
 
 <!-- AllowTextInputSuggestionUpdate-Editable-Begin -->
@@ -662,14 +662,14 @@ This policy setting controls the version of Microsoft IME.
 
 - If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Japanese IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureJapaneseIMEVersion-Description-End -->
 
 <!-- ConfigureJapaneseIMEVersion-Editable-Begin -->
@@ -737,14 +737,14 @@ This policy setting controls the version of Microsoft IME.
 
 - If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Korean IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureKoreanIMEVersion-Description-End -->
 
 <!-- ConfigureKoreanIMEVersion-Editable-Begin -->
@@ -803,14 +803,14 @@ This policy setting controls the version of Microsoft IME.
 
 - If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Simplified Chinese IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureSimplifiedChineseIMEVersion-Description-End -->
 
 <!-- ConfigureSimplifiedChineseIMEVersion-Editable-Begin -->
@@ -878,14 +878,14 @@ This policy setting controls the version of Microsoft IME.
 
 - If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
 
-- If you enable this, user is not allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
 
-- If you disable this, user is not allowed to control IME version to use. The new Microsoft IME is always selected.
+- If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
 This Policy setting applies only to Microsoft Traditional Chinese IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- ConfigureTraditionalChineseIMEVersion-Description-End -->
 
 <!-- ConfigureTraditionalChineseIMEVersion-Editable-Begin -->

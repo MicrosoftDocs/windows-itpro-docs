@@ -43,9 +43,9 @@ This policy setting allows you to control the network connectivity state in stan
 
 - If you enable this policy setting, network connectivity will be maintained in standby.
 
-- If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+- If you disable this policy setting, network connectivity in standby isn't guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-- If you do not configure this policy setting, users control this setting.
+- If you don't configure this policy setting, users control this setting.
 <!-- ACConnectivityInStandby_2-Description-End -->
 
 <!-- ACConnectivityInStandby_2-Editable-Begin -->
@@ -104,7 +104,7 @@ This policy setting allows you to turn on the ability for applications and servi
 
 - If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- ACCriticalSleepTransitionsDisable_2-Description-End -->
 
 <!-- ACCriticalSleepTransitionsDisable_2-Editable-Begin -->
@@ -167,7 +167,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 -Hibernate
 -Shut down
 
-- If you disable this policy or do not configure this policy setting, users control this setting.
+- If you disable this policy or don't configure this policy setting, users control this setting.
 <!-- ACStartMenuButtonAction_2-Description-End -->
 
 <!-- ACStartMenuButtonAction_2-Editable-Begin -->
@@ -225,7 +225,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 - If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-- If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+- If you disable or don't configure this policy setting, applications, services, or drivers don't prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
 <!-- AllowSystemPowerRequestAC-Description-End -->
 
 <!-- AllowSystemPowerRequestAC-Editable-Begin -->
@@ -284,7 +284,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 - If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-- If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+- If you disable or don't configure this policy setting, applications, services, or drivers don't prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
 <!-- AllowSystemPowerRequestDC-Description-End -->
 
 <!-- AllowSystemPowerRequestDC-Editable-Begin -->
@@ -343,7 +343,7 @@ This policy setting allows you to manage automatic sleep with open network files
 
 - If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-- If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+- If you disable or don't configure this policy setting, the computer doesn't automatically sleep when network files are open.
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-Description-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-Editable-Begin -->
@@ -402,7 +402,7 @@ This policy setting allows you to manage automatic sleep with open network files
 
 - If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-- If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+- If you disable or don't configure this policy setting, the computer doesn't automatically sleep when network files are open.
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-Description-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-Editable-Begin -->
@@ -461,7 +461,7 @@ This policy setting specifies the active power plan from a specified power plan'
 
 - If you enable this policy setting, you must specify a power plan, specified as a GUID using the following format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (For example, 103eea6e-9fcd-4544-a713-c282d8e50083), indicating the power plan to be active.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- CustomActiveSchemeOverride_2-Description-End -->
 
 <!-- CustomActiveSchemeOverride_2-Editable-Begin -->
@@ -524,7 +524,7 @@ This policy setting specifies the action that Windows takes when battery capacit
 -Hibernate
 -Shut down
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- DCBatteryDischargeAction0_2-Description-End -->
 
 <!-- DCBatteryDischargeAction0_2-Editable-Begin -->
@@ -587,7 +587,7 @@ This policy setting specifies the action that Windows takes when battery capacit
 -Hibernate
 -Shut down
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- DCBatteryDischargeAction1_2-Description-End -->
 
 <!-- DCBatteryDischargeAction1_2-Editable-Begin -->
@@ -645,9 +645,9 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 - If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the critical notification.
 
-To set the action that is triggered, see the "Critical Battery Notification Action" policy setting.
+To set the action that's triggered, see the "Critical Battery Notification Action" policy setting.
 
-- If you disable this policy setting or do not configure it, users control this setting.
+- If you disable this policy setting or don't configure it, users control this setting.
 <!-- DCBatteryDischargeLevel0_2-Description-End -->
 
 <!-- DCBatteryDischargeLevel0_2-Editable-Begin -->
@@ -705,9 +705,9 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 - If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the low notification.
 
-To set the action that is triggered, see the "Low Battery Notification Action" policy setting.
+To set the action that's triggered, see the "Low Battery Notification Action" policy setting.
 
-- If you disable this policy setting or do not configure it, users control this setting.
+- If you disable this policy setting or don't configure it, users control this setting.
 <!-- DCBatteryDischargeLevel1_2-Description-End -->
 
 <!-- DCBatteryDischargeLevel1_2-Editable-Begin -->
@@ -767,7 +767,7 @@ This policy setting turns off the user notification when the battery capacity re
 
 The notification will only be shown if the "Low Battery Notification Action" policy setting is configured to "No Action".
 
-- If you disable or do not configure this policy setting, users can control this setting.
+- If you disable or don't configure this policy setting, users can control this setting.
 <!-- DCBatteryDischargeLevel1UINotification_2-Description-End -->
 
 <!-- DCBatteryDischargeLevel1UINotification_2-Editable-Begin -->
@@ -826,9 +826,9 @@ This policy setting allows you to control the network connectivity state in stan
 
 - If you enable this policy setting, network connectivity will be maintained in standby.
 
-- If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+- If you disable this policy setting, network connectivity in standby isn't guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-- If you do not configure this policy setting, users control this setting.
+- If you don't configure this policy setting, users control this setting.
 <!-- DCConnectivityInStandby_2-Description-End -->
 
 <!-- DCConnectivityInStandby_2-Editable-Begin -->
@@ -887,7 +887,7 @@ This policy setting allows you to turn on the ability for applications and servi
 
 - If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- DCCriticalSleepTransitionsDisable_2-Description-End -->
 
 <!-- DCCriticalSleepTransitionsDisable_2-Editable-Begin -->
@@ -950,7 +950,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 -Hibernate
 -Shut down
 
-- If you disable this policy or do not configure this policy setting, users control this setting.
+- If you disable this policy or don't configure this policy setting, users control this setting.
 <!-- DCStartMenuButtonAction_2-Description-End -->
 
 <!-- DCStartMenuButtonAction_2-Editable-Begin -->
@@ -1008,7 +1008,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- DiskACPowerDownTimeOut_2-Description-End -->
 
 <!-- DiskACPowerDownTimeOut_2-Editable-Begin -->
@@ -1066,7 +1066,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- DiskDCPowerDownTimeOut_2-Description-End -->
 
 <!-- DiskDCPowerDownTimeOut_2-Editable-Begin -->
@@ -1120,13 +1120,13 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 <!-- Dont_PowerOff_AfterShutdown-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes. This setting does not affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces. Applications such as UPS software may rely on Windows shutdown behavior.
+This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes. This setting doesn't affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces. Applications such as UPS software may rely on Windows shutdown behavior.
 
 This setting is only applicable when Windows shutdown is initiated by software programs invoking the Windows programming interfaces ExitWindowsEx() or InitiateSystemShutdown().
 
 - If you enable this policy setting, the computer system safely shuts down and remains in a powered state, ready for power to be safely removed.
 
-- If you disable or do not configure this policy setting, the computer system safely shuts down to a fully powered-off state.
+- If you disable or don't configure this policy setting, the computer system safely shuts down to a fully powered-off state.
 <!-- Dont_PowerOff_AfterShutdown-Description-End -->
 
 <!-- Dont_PowerOff_AfterShutdown-Editable-Begin -->
@@ -1187,7 +1187,7 @@ This policy setting allows you to specify if Windows should enable the desktop b
 
 - If you disable this policy setting, the desktop background slideshow is disabled.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- EnableDesktopSlideShowAC-Description-End -->
 
 <!-- EnableDesktopSlideShowAC-Editable-Begin -->
@@ -1248,7 +1248,7 @@ This policy setting allows you to specify if Windows should enable the desktop b
 
 - If you disable this policy setting, the desktop background slideshow is disabled.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- EnableDesktopSlideShowDC-Description-End -->
 
 <!-- EnableDesktopSlideShowDC-Editable-Begin -->
@@ -1307,7 +1307,7 @@ This policy setting specifies the active power plan from a list of default Windo
 
 - If you enable this policy setting, specify a power plan from the Active Power Plan list.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- InboxActiveSchemeOverride_2-Description-End -->
 
 <!-- InboxActiveSchemeOverride_2-Editable-Begin -->
@@ -1365,7 +1365,7 @@ This policy setting allows you to turn off Power Throttling.
 
 - If you enable this policy setting, Power Throttling will be turned off.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- PowerThrottlingTurnOff-Description-End -->
 
 <!-- PowerThrottlingTurnOff-Editable-Begin -->
@@ -1422,9 +1422,9 @@ This policy setting allows you to turn off Power Throttling.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure client computers to lock and prompt for a password when resuming from a hibernate or suspend state.
 
-- If you enable this policy setting, the client computer is locked and prompted for a password when it is resumed from a suspend or hibernate state.
+- If you enable this policy setting, the client computer is locked and prompted for a password when it's resumed from a suspend or hibernate state.
 
-- If you disable or do not configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
+- If you disable or don't configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
 <!-- PW_PromptPasswordOnResume-Description-End -->
 
 <!-- PW_PromptPasswordOnResume-Editable-Begin -->
@@ -1483,7 +1483,7 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 - If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the reserve power notification.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- ReserveBatteryNotificationLevel-Description-End -->
 
 <!-- ReserveBatteryNotificationLevel-Editable-Begin -->

@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- AdminInfoUrl-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Sets the target of the More Information link that will be displayed when the user attempts to run a program that is blocked by policy.
+Sets the target of the More Information link that will be displayed when the user attempts to run a program that's blocked by policy.
 <!-- AdminInfoUrl-Description-End -->
 
 <!-- AdminInfoUrl-Editable-Begin -->
@@ -96,14 +96,14 @@ Sets the target of the More Information link that will be displayed when the use
 This policy setting configures File Explorer to always display the menu bar.
 
 > [!NOTE]
-> By default, the menu bar is not displayed in File Explorer.
+> By default, the menu bar isn't displayed in File Explorer.
 
 - If you enable this policy setting, the menu bar will be displayed in File Explorer.
 
-- If you disable or do not configure this policy setting, the menu bar will not be displayed in File Explorer.
+- If you disable or don't configure this policy setting, the menu bar won't be displayed in File Explorer.
 
 > [!NOTE]
-> When the menu bar is not displayed, users can access the menu bar by pressing the 'ALT' key.
+> When the menu bar isn't displayed, users can access the menu bar by pressing the 'ALT' key.
 <!-- AlwaysShowClassicMenu-Description-End -->
 
 <!-- AlwaysShowClassicMenu-Editable-Begin -->
@@ -158,9 +158,9 @@ This policy setting configures File Explorer to always display the menu bar.
 
 <!-- DisableRoamedProfileInit-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer will not reinitialize default program associations and other settings to default values.
+This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer won't reinitialize default program associations and other settings to default values.
 
-If you enable this policy setting on a machine that does not contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
+If you enable this policy setting on a machine that doesn't contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
 <!-- DisableRoamedProfileInit-Description-End -->
 
 <!-- DisableRoamedProfileInit-Editable-Begin -->
@@ -219,10 +219,10 @@ This policy setting allows administrators to prevent users from adding new items
 
 - If you enable this policy setting, users will no longer be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
-- If you disable or do not configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
+- If you disable or don't configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
 > [!NOTE]
-> Enabling this policy setting does not prevent the user from being able to add new items such as files and folders to their actual file system profile folder at %userprofile%.
+> Enabling this policy setting doesn't prevent the user from being able to add new items such as files and folders to their actual file system profile folder at %userprofile%.
 <!-- PreventItemCreationInUsersFilesFolder-Description-End -->
 
 <!-- PreventItemCreationInUsersFilesFolder-Editable-Begin -->

@@ -285,7 +285,7 @@ If not specified, the default built-in local administrator account will be locat
 
 If specified, the specified account's password will be managed.
 
-Note if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting will not cause the account to be created.
+Note if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting won't cause the account to be created.
 <!-- Device-Policies-AdministratorAccountName-Description-End -->
 
 <!-- Device-Policies-AdministratorAccountName-Editable-Begin -->
@@ -332,7 +332,7 @@ This setting is only honored when the Active Directory domain is at Windows Serv
 
 - If this setting is enabled, and the Active Directory domain meets the DFL prerequisite, the password will be encrypted before being stored in Active Directory.
 
-- If this setting is disabled, or the Active Directory domain does not meet the DFL prerequisite, the password will be stored as clear-text in Active Directory.
+- If this setting is disabled, or the Active Directory domain doesn't meet the DFL prerequisite, the password will be stored as clear-text in Active Directory.
 
 If not specified, this setting defaults to True.
 <!-- Device-Policies-ADPasswordEncryptionEnabled-Description-End -->
@@ -446,7 +446,7 @@ Use this setting to configure which directory the local admin account password i
 
 The allowable settings are:
 
-0=Disabled (password will not be backed up)
+0=Disabled (password won't be backed up)
 1=Backup the password to Azure AD only
 2=Backup the password to Active Directory only
 
@@ -472,7 +472,7 @@ If not specified, this setting will default to 0.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled (password will not be backed up). |
+| 0 (Default) | Disabled (password won't be backed up). |
 | 1 | Backup the password to Azure AD only. |
 | 2 | Backup the password to Active Directory only. |
 <!-- Device-Policies-BackupDirectory-AllowedValues-End -->
@@ -640,7 +640,7 @@ If not specified, this setting defaults to True.
 | Value | Description |
 |:--|:--|
 | false | Allow configured password expiration timestamp to exceed maximum password age. |
-| true (Default) | Do not allow configured password expiration timestamp to exceed maximum password age. |
+| true (Default) | Don't allow configured password expiration timestamp to exceed maximum password age. |
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-AllowedValues-End -->
 
 <!-- Device-Policies-PasswordExpirationProtectionEnabled-Examples-Begin -->

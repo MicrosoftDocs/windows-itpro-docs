@@ -281,7 +281,7 @@ Returns the name of the mobile operator if it exists; otherwise it returns 404.
 
 <!-- Device-Ext-Microsoft-DeviceName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Contains the user-specified device name. Support for Replace operation for Windows 10 Mobile was added in Windows 10, version 1511. Replace operation is not supported in the desktop or IoT Core. When you change the device name using this node, it triggers a dialog on the device asking the user to reboot. The new device name does not take effect until the device is restarted. If the user cancels the dialog, it will show again until a reboot occurs.
+Contains the user-specified device name. Support for Replace operation for Windows 10 Mobile was added in Windows 10, version 1511. Replace operation isn't supported in the desktop or IoT Core. When you change the device name using this node, it triggers a dialog on the device asking the user to reboot. The new device name doesn't take effect until the device is restarted. If the user cancels the dialog, it will show again until a reboot occurs.
 <!-- Device-Ext-Microsoft-DeviceName-Description-End -->
 
 <!-- Device-Ext-Microsoft-DeviceName-Editable-Begin -->
@@ -445,7 +445,7 @@ Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44
 
 <!-- Device-Ext-Microsoft-MobileID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the mobile device ID associated with the cellular network. Returns 404 for devices that do not have a cellular network support. The IMSI value is returned for GSM and UMTS networks. CDMA and worldwide phones will return a 404 Not Found status code error if queried for this element.
+Returns the mobile device ID associated with the cellular network. Returns 404 for devices that don't have a cellular network support. The IMSI value is returned for GSM and UMTS networks. CDMA and worldwide phones will return a 404 Not Found status code error if queried for this element.
 <!-- Device-Ext-Microsoft-MobileID-Description-End -->
 
 <!-- Device-Ext-Microsoft-MobileID-Editable-Begin -->

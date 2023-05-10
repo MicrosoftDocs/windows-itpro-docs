@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowAdvertising-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether the device can send out Bluetooth advertisements. If this is not set or it is deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
+Specifies whether the device can send out Bluetooth advertisements. If this isn't set or it's deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
 <!-- AllowAdvertising-Description-End -->
 
 <!-- AllowAdvertising-Editable-Begin -->
@@ -59,7 +59,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this is n
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral. |
+| 0 | Not allowed. When set to 0, the device won't send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement isn't received by the peripheral. |
 | 1 (Default) | Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral. |
 <!-- AllowAdvertising-AllowedValues-End -->
 
@@ -86,7 +86,7 @@ Specifies whether the device can send out Bluetooth advertisements. If this is n
 
 <!-- AllowDiscoverableMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether other Bluetooth-enabled devices can discover the device. If this is not set or it is deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
+Specifies whether other Bluetooth-enabled devices can discover the device. If this isn't set or it's deleted, the default value of 1 (Allow) is used. Most restricted value is 0.
 <!-- AllowDiscoverableMode-Description-End -->
 
 <!-- AllowDiscoverableMode-Editable-Begin -->
@@ -108,7 +108,7 @@ Specifies whether other Bluetooth-enabled devices can discover the device. If th
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device. |
+| 0 | Not allowed. When set to 0, other devices won't be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you can't see the name of the device. |
 | 1 (Default) | Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it. |
 <!-- AllowDiscoverableMode-AllowedValues-End -->
 
@@ -233,7 +233,7 @@ This policy allows the IT admin to block users on these managed devices from usi
 
 <!-- LocalDeviceName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Sets the local Bluetooth device name. If this is set, the value that it is set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified. If this policy is not set or it is deleted, the default local radio name is used.
+Sets the local Bluetooth device name. If this is set, the value that it's set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified. If this policy isn't set or it's deleted, the default local radio name is used.
 <!-- LocalDeviceName-Description-End -->
 
 <!-- LocalDeviceName-Editable-Begin -->

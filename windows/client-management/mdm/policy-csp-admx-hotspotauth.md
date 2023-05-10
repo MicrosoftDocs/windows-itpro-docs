@@ -43,9 +43,9 @@ This policy setting defines whether WLAN hotspots are probed for Wireless Intern
 
 If a WLAN hotspot supports the WISPr protocol, users can submit credentials when manually connecting to the network. If authentication is successful, users will be connected automatically on subsequent attempts. Credentials can also be configured by network operators.
 
-- If you enable this policy setting, or if you do not configure this policy setting, WLAN hotspots are automatically probed for WISPR protocol support.
+- If you enable this policy setting, or if you don't configure this policy setting, WLAN hotspots are automatically probed for WISPR protocol support.
 
-- If you disable this policy setting, WLAN hotspots are not probed for WISPr protocol support, and users can only authenticate with WLAN hotspots using a web browser.
+- If you disable this policy setting, WLAN hotspots aren't probed for WISPr protocol support, and users can only authenticate with WLAN hotspots using a web browser.
 <!-- HotspotAuth_Enable-Description-End -->
 
 <!-- HotspotAuth_Enable-Editable-Begin -->

@@ -43,7 +43,7 @@ Enabled:
 Enter the company name in the Options section.
 
 Disabled:
-Company information will not be shown at all in either Windows Security or any notifications that it creates.
+Company information won't be shown at all in either Windows Security or any notifications that it creates.
 
 Not configured:
 Same as Disabled.
@@ -131,7 +131,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the Account protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the Account protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the Account protection area in Windows Defender Security Center. |
 <!-- DisableAccountProtectionUI-AllowedValues-End -->
 
 <!-- DisableAccountProtectionUI-GpMapping-Begin -->
@@ -203,7 +203,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the app and browser protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the app and browser protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the app and browser protection area in Windows Defender Security Center. |
 <!-- DisableAppBrowserUI-AllowedValues-End -->
 
 <!-- DisableAppBrowserUI-GpMapping-Begin -->
@@ -275,7 +275,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disabled or not configured) The security processor troubleshooting page shows a button that initiates the process to clear the security processor (TPM). |
-| 1 | (Enabled) The security processor troubleshooting page will not show a button to initiate the process to clear the security processor (TPM). |
+| 1 | (Enabled) The security processor troubleshooting page won't show a button to initiate the process to clear the security processor (TPM). |
 <!-- DisableClearTpmButton-AllowedValues-End -->
 
 <!-- DisableClearTpmButton-GpMapping-Begin -->
@@ -347,7 +347,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the Device security area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the Device security area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the Device security area in Windows Defender Security Center. |
 <!-- DisableDeviceSecurityUI-AllowedValues-End -->
 
 <!-- DisableDeviceSecurityUI-GpMapping-Begin -->
@@ -392,7 +392,7 @@ Only show critical notifications from Windows Security.
 If the Suppress all notifications GP setting has been enabled, this setting will have no effect.
 
 Enabled:
-Local users will only see critical notifications from Windows Security. They will not see other types of notifications, such as regular PC or device health information.
+Local users will only see critical notifications from Windows Security. They won't see other types of notifications, such as regular PC or device health information.
 
 Disabled:
 Local users will see all types of notifications from Windows Security.
@@ -493,7 +493,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the family options area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the family options area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the family options area in Windows Defender Security Center. |
 <!-- DisableFamilyUI-AllowedValues-End -->
 
 <!-- DisableFamilyUI-GpMapping-Begin -->
@@ -565,7 +565,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the device performance and health area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the device performance and health area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the device performance and health area in Windows Defender Security Center. |
 <!-- DisableHealthUI-AllowedValues-End -->
 
 <!-- DisableHealthUI-GpMapping-Begin -->
@@ -637,7 +637,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the firewall and network protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the firewall and network protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the firewall and network protection area in Windows Defender Security Center. |
 <!-- DisableNetworkUI-AllowedValues-End -->
 
 <!-- DisableNetworkUI-GpMapping-Begin -->
@@ -680,7 +680,7 @@ Same as Disabled.
 Hide notifications from Windows Security.
 
 Enabled:
-Local users will not see notifications from Windows Security.
+Local users won't see notifications from Windows Security.
 
 Disabled:
 Local users can see notifications from Windows Security.
@@ -709,7 +709,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of Windows Defender Security Center notifications. |
-| 1 | (Enable) The users cannot see the display of Windows Defender Security Center notifications. |
+| 1 | (Enable) The users can't see the display of Windows Defender Security Center notifications. |
 <!-- DisableNotifications-AllowedValues-End -->
 
 <!-- DisableNotifications-GpMapping-Begin -->
@@ -752,7 +752,7 @@ Same as Disabled.
 Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
 
 Enabled:
-Users will not be shown a recommendation to update their TPM Firmware.
+Users won't be shown a recommendation to update their TPM Firmware.
 
 Disabled:
 Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.
@@ -853,7 +853,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) The users can see the display of the virus and threat protection area in Windows Defender Security Center. |
-| 1 | (Enable) The users cannot see the display of the virus and threat protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the virus and threat protection area in Windows Defender Security Center. |
 <!-- DisableVirusUI-AllowedValues-End -->
 
 <!-- DisableVirusUI-GpMapping-Begin -->
@@ -896,7 +896,7 @@ Same as Disabled.
 Prevent users from making changes to the Exploit protection settings area in Windows Security.
 
 Enabled:
-Local users can not make changes in the Exploit protection settings area.
+Local users can't make changes in the Exploit protection settings area.
 
 Disabled:
 Local users are allowed to make changes in the Exploit protection settings area.
@@ -925,7 +925,7 @@ Same as Disabled.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | (Disable) Local users are allowed to make changes in the exploit protection settings area. |
-| 1 | (Enable) Local users cannot make changes in the exploit protection settings area. |
+| 1 | (Enable) Local users can't make changes in the exploit protection settings area. |
 <!-- DisallowExploitProtectionOverride-AllowedValues-End -->
 
 <!-- DisallowExploitProtectionOverride-GpMapping-Begin -->
@@ -973,7 +973,7 @@ Enabled:
 Enter the email address or email ID in the Options section.
 
 Disabled:
-A contact email address or email ID will not be shown in either Windows Security or any notifications it creates.
+A contact email address or email ID won't be shown in either Windows Security or any notifications it creates.
 
 Not configured:
 Same as Disabled.
@@ -1145,7 +1145,7 @@ Same as Disabled.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | (Disable) Do not display the company name and contact options in the card fly out notification. |
+| 0 (Default) | (Disable) Don't display the company name and contact options in the card fly out notification. |
 | 1 | (Enable) Display the company name and contact options in the card fly out notification. |
 <!-- EnableInAppCustomization-AllowedValues-End -->
 
@@ -1484,7 +1484,7 @@ Enabled:
 Enter the phone number or Skype ID in the Options section.
 
 Disabled:
-A contact phone number or Skype ID will not be shown in either Windows Security or any notifications it creates.
+A contact phone number or Skype ID won't be shown in either Windows Security or any notifications it creates.
 
 Not configured:
 Same as Disabled.
@@ -1548,7 +1548,7 @@ Enabled:
 Enter the URL in the Options section.
 
 Disabled:
-A contact website URL will not be shown in either Windows Security or any notifications it creates.
+A contact website URL won't be shown in either Windows Security or any notifications it creates.
 
 Not configured:
 Same as Disabled.

@@ -102,9 +102,9 @@ Enables or disables the automatic download of app updates on PCs running Windows
 <!-- Description-Source-ADMX -->
 Enables or disables the Store offer to update to the latest version of Windows.
 
-- If you enable this setting, the Store application will not offer updates to the latest version of Windows.
+- If you enable this setting, the Store application won't offer updates to the latest version of Windows.
 
-- If you disable or do not configure this setting the Store application will offer updates to the latest version of Windows.
+- If you disable or don't configure this setting the Store application will offer updates to the latest version of Windows.
 <!-- DisableOSUpgrade_1-Description-End -->
 
 <!-- DisableOSUpgrade_1-Editable-Begin -->
@@ -161,9 +161,9 @@ Enables or disables the Store offer to update to the latest version of Windows.
 <!-- Description-Source-ADMX -->
 Enables or disables the Store offer to update to the latest version of Windows.
 
-- If you enable this setting, the Store application will not offer updates to the latest version of Windows.
+- If you enable this setting, the Store application won't offer updates to the latest version of Windows.
 
-- If you disable or do not configure this setting the Store application will offer updates to the latest version of Windows.
+- If you disable or don't configure this setting the Store application will offer updates to the latest version of Windows.
 <!-- DisableOSUpgrade_2-Description-End -->
 
 <!-- DisableOSUpgrade_2-Editable-Begin -->

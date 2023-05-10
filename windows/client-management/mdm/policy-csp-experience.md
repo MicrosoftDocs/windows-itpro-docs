@@ -42,7 +42,7 @@ ms.topic: reference
 This policy setting determines whether history of Clipboard contents can be stored in memory.
 
 - If you enable this policy setting, history of Clipboard contents are allowed to be stored.
-- If you disable this policy setting, history of Clipboard contents are not allowed to be stored.
+- If you disable this policy setting, history of Clipboard contents aren't allowed to be stored.
 Policy change takes effect immediately.
 <!-- AllowClipboardHistory-Description-End -->
 
@@ -233,7 +233,7 @@ When Cortana is off, users will still be able to use search to find things on th
 
 <!-- AllowDeviceDiscovery-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows users to turn on/off device discovery UX. When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on. Most restricted value is 0.
+Allows users to turn on/off device discovery UX. When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys won't work on. Most restricted value is 0.
 <!-- AllowDeviceDiscovery-Description-End -->
 
 <!-- AllowDeviceDiscovery-Editable-Begin -->
@@ -286,7 +286,7 @@ This policy turns on Find My Device.
 
 When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. On devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
 
-When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. The user will also not be able to view the location of the last use of their active digitizer on their device.
+When Find My Device is off, the device and its location aren't registered and the Find My Device feature won't work. The user will also not be able to view the location of the last use of their active digitizer on their device.
 <!-- AllowFindMyDevice-Description-End -->
 
 <!-- AllowFindMyDevice-Editable-Begin -->
@@ -603,7 +603,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 Specifies whether Spotlight collection is allowed as a Personalization->Background Setting.
 
 - If you enable this policy setting, Spotlight collection will show as an option in the user's Personalization Settings, and the user will be able to get daily images from Microsoft displayed on their desktop.
-- If you disable this policy setting, Spotlight collection will not show as an option in Personalization Settings, and the user will not have the choice of getting Microsoft daily images shown on their desktop.
+- If you disable this policy setting, Spotlight collection won't show as an option in Personalization Settings, and the user won't have the choice of getting Microsoft daily images shown on their desktop.
 <!-- AllowSpotlightCollection-Description-End -->
 
 <!-- AllowSpotlightCollection-Editable-Begin -->
@@ -684,7 +684,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 
 | Value | Description |
 |:--|:--|
-| 0 | Sync settings are not allowed. |
+| 0 | Sync settings aren't allowed. |
 | 1 (Default) | Sync settings allowed. |
 <!-- AllowSyncMySettings-AllowedValues-End -->
 
@@ -713,11 +713,11 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!-- Description-Source-DDF -->
 This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user.
 
-- If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
-- If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
+- If you enable this policy setting, Windows won't use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
+- If you disable or don't configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
 
 > [!NOTE]
-> This setting does not control Cortana cutomized experiences because there are separate policies to configure it. Most restricted value is 0.
+> This setting doesn't control Cortana cutomized experiences because there are separate policies to configure it. Most restricted value is 0.
 <!-- AllowTailoredExperiencesWithDiagnosticData-Description-End -->
 
 <!-- AllowTailoredExperiencesWithDiagnosticData-Editable-Begin -->
@@ -1016,7 +1016,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 Specifies whether to turn off all Windows spotlight features at once.
 
 - If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices.
-- If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
+- If you disable or don't configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
 <!-- AllowWindowsSpotlight-Description-End -->
 
 <!-- AllowWindowsSpotlight-Editable-Begin -->
@@ -1082,7 +1082,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center.
 
 - If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center.
-- If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
+- If you disable or don't configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
 <!-- AllowWindowsSpotlightOnActionCenter-Description-End -->
 
 <!-- AllowWindowsSpotlightOnActionCenter-Editable-Begin -->
@@ -1212,7 +1212,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features.
 
 - If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps.
-- If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
+- If you disable or don't configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-End -->
 
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Editable-Begin -->
@@ -1349,9 +1349,9 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 
 - If you enable this policy setting and set it to Hide, the Chat icon will be hidden by default. Users can show or hide it in Settings.
 
-- If you enable this policy setting and set it to Disabled, the Chat icon will not be displayed, and users cannot show or hide it in Settings.
+- If you enable this policy setting and set it to Disabled, the Chat icon won't be displayed, and users can't show or hide it in Settings.
 
-- If you disable or do not configure this policy setting, the Chat icon will be configured according to the defaults for your Windows edition.
+- If you disable or don't configure this policy setting, the Chat icon will be configured according to the defaults for your Windows edition.
 <!-- ConfigureChatIcon-Description-End -->
 
 <!-- ConfigureChatIcon-Editable-Begin -->
@@ -1420,13 +1420,13 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 <!-- Description-Source-ADMX -->
 This policy setting lets you configure Windows spotlight on the lock screen.
 
-- If you enable this policy setting, "Windows spotlight" will be set as the lock screen provider and users will not be able to modify their lock screen. "Windows spotlight" will display daily images from Microsoft on the lock screen.
+- If you enable this policy setting, "Windows spotlight" will be set as the lock screen provider and users won't be able to modify their lock screen. "Windows spotlight" will display daily images from Microsoft on the lock screen.
 
-Additionally, if you check the "Include content from Enterprise spotlight" checkbox and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization does not have an Enterprise spotlight content service, the checkbox will have no effect.
+Additionally, if you check the "Include content from Enterprise spotlight" checkbox and your organization has setup an Enterprise spotlight content service in Azure, the lock screen will display internal messages and communications configured in that service, when available. If your organization doesn't have an Enterprise spotlight content service, the checkbox will have no effect.
 
 - If you disable this policy setting, Windows spotlight will be turned off and users will no longer be able to select it as their lock screen. Users will see the default lock screen image and will be able to select another image, unless you have enabled the "Prevent changing lock screen image" policy.
 
-- If you do not configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen and logon image" policy.
+- If you don't configure this policy, Windows spotlight will be available on the lock screen and will be selected by default, unless you have configured another default lock screen image using the "Force a specific default lock screen and logon image" policy.
 
 > [!NOTE]
 > This policy is only available for Enterprise SKUs.
@@ -1454,8 +1454,8 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 |:--|:--|
 | 0 | Windows spotlight disabled. |
 | 1 (Default) | Windows spotlight enabled. |
-| 2 | Windows spotlight is always enabled, the user cannot disable it. |
-| 3 | Windows spotlight is always enabled, the user cannot disable it. For special configurations only. |
+| 2 | Windows spotlight is always enabled, the user can't disable it. |
+| 3 | Windows spotlight is always enabled, the user can't disable it. For special configurations only. |
 <!-- ConfigureWindowsSpotlightOnLockScreen-AllowedValues-End -->
 
 <!-- ConfigureWindowsSpotlightOnLockScreen-GpMapping-Begin -->
@@ -1499,7 +1499,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 
 - If you enable this policy, Windows experiences that use the cloud optimized content client component, will instead present the default fallback content.
 
-- If you disable or do not configure this policy, Windows experiences will be able to use cloud optimized content.
+- If you disable or don't configure this policy, Windows experiences will be able to use cloud optimized content.
 <!-- DisableCloudOptimizedContent-Description-End -->
 
 <!-- DisableCloudOptimizedContent-Editable-Begin -->
@@ -1566,7 +1566,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 
 - If you enable this policy, Windows experiences that use the cloud consumer account state content client component, will instead present the default fallback content.
 
-- If you disable or do not configure this policy, Windows experiences will be able to use cloud consumer account state content.
+- If you disable or don't configure this policy, Windows experiences will be able to use cloud consumer account state content.
 <!-- DisableConsumerAccountStateContent-Description-End -->
 
 <!-- DisableConsumerAccountStateContent-Editable-Begin -->
@@ -1682,10 +1682,10 @@ This policy setting allows an organization to prevent its devices from showing f
 
 - If you enable this policy setting, users will no longer see feedback notifications through the Windows Feedback app.
 
-- If you disable or do not configure this policy setting, users may see notifications through the Windows Feedback app asking users for feedback.
+- If you disable or don't configure this policy setting, users may see notifications through the Windows Feedback app asking users for feedback.
 
 > [!NOTE]
-> If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
+> If you disable or don't configure this policy setting, users can control how often they receive feedback questions.
 <!-- DoNotShowFeedbackNotifications-Description-End -->
 
 <!-- DoNotShowFeedbackNotifications-Editable-Begin -->
@@ -1707,7 +1707,7 @@ This policy setting allows an organization to prevent its devices from showing f
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally. |
+| 0 (Default) | Feedback notifications aren't disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally. |
 | 1 | Feedback notifications are disabled. |
 <!-- DoNotShowFeedbackNotifications-AllowedValues-End -->
 
@@ -1750,11 +1750,11 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- Description-Source-ADMX -->
 Prevent the "browser" group from syncing to and from this PC. This turns off and disables the "browser" group on the "sync your settings" page in PC settings. The "browser" group contains settings and info like history and favorites.
 
-If you enable this policy setting, the "browser" group, including info like history and favorites, will not be synced.
+If you enable this policy setting, the "browser" group, including info like history and favorites, won't be synced.
 
 Use the option "Allow users to turn browser syncing on" so that syncing is turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "browser" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "browser" group is on by default and configurable by the user.
 <!-- DoNotSyncBrowserSettings-Description-End -->
 
 <!-- DoNotSyncBrowserSettings-Editable-Begin -->
@@ -1973,7 +1973,7 @@ Shows or hides lock from the user tile menu.
 
 - If you disable this policy setting, the lock option will never be shown in the User Tile menu.
 
-- If you do not configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.
+- If you don't configure this policy setting, users will be able to choose whether they want lock to show through the Power Options Control Panel.
 <!-- ShowLockOnUserTile-Description-End -->
 
 <!-- ShowLockOnUserTile-Editable-Begin -->
@@ -1995,7 +1995,7 @@ Shows or hides lock from the user tile menu.
 
 | Value | Description |
 |:--|:--|
-| 0 | The lock option is not displayed in the User Tile menu. |
+| 0 | The lock option isn't displayed in the User Tile menu. |
 | 1 (Default) | The lock option is displayed in the User Tile menu. |
 <!-- ShowLockOnUserTile-AllowedValues-End -->
 

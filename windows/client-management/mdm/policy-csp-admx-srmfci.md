@@ -39,13 +39,13 @@ ms.topic: reference
 
 <!-- AccessDeniedConfiguration-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies the message that users see when they are denied access to a file or folder. You can customize the Access Denied message to include additional text and links. You can also provide users with the ability to send an email to request access to the file or folder to which they were denied access.
+This policy setting specifies the message that users see when they're denied access to a file or folder. You can customize the Access Denied message to include additional text and links. You can also provide users with the ability to send an email to request access to the file or folder to which they were denied access.
 
 - If you enable this policy setting, users receive a customized Access Denied message from the file servers on which this policy setting is applied.
 
 - If you disable this policy setting, users see a standard Access Denied message that doesn't provide any of the functionality controlled by this policy setting, regardless of the file server configuration.
 
-- If you do not configure this policy setting, users see a standard Access Denied message unless the file server is configured to display the customized Access Denied message. By default, users see the standard Access Denied message.
+- If you don't configure this policy setting, users see a standard Access Denied message unless the file server is configured to display the customized Access Denied message. By default, users see the standard Access Denied message.
 <!-- AccessDeniedConfiguration-Description-End -->
 
 <!-- AccessDeniedConfiguration-Editable-Begin -->
@@ -106,7 +106,7 @@ Administrators can define the properties for the organization by using Active Di
 
 - If you enable this policy setting, you can select which list of properties is available for classification on the affected computers.
 
-- If you disable or do not configure this policy setting, the Global Resource Property List in AD DS provides the default set of properties.
+- If you disable or don't configure this policy setting, the Global Resource Property List in AD DS provides the default set of properties.
 <!-- CentralClassificationList-Description-End -->
 
 <!-- CentralClassificationList-Editable-Begin -->
@@ -166,7 +166,7 @@ The Classification tab enables users to manually classify files by selecting pro
 
 - If you enable this policy setting, the Classification tab is displayed.
 
-- If you disable or do not configure this policy setting, the Classification tab is hidden.
+- If you disable or don't configure this policy setting, the Classification tab is hidden.
 <!-- EnableManualUX-Description-End -->
 
 <!-- EnableManualUX-Editable-Begin -->
