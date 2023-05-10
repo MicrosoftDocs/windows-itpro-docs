@@ -2262,6 +2262,8 @@ Tamper protection helps protect important security features from unwanted change
 
 <!-- Device-Configuration-TamperProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- Device-Configuration-TamperProtection-Editable-End -->
 
 <!-- Device-Configuration-TamperProtection-DFProperties-Begin -->
@@ -3878,6 +3880,8 @@ Node that can be used to perform signature updates for Windows Defender.
 
 <!-- Defender-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Links -->
+[TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
 <!-- Defender-CspMoreInfo-End -->
 
 <!-- Defender-End -->
