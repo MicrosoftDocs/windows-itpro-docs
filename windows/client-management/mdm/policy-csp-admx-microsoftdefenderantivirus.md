@@ -491,7 +491,7 @@ This policy setting allows you specify a list of file types that should be exclu
 <!-- Exclusions_Extensions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- Exclusions_Extensions-Editable-End -->
 
 <!-- Exclusions_Extensions-DFProperties-Begin -->
@@ -549,7 +549,7 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 <!-- Exclusions_Paths-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- Exclusions_Paths-Editable-End -->
 
 <!-- Exclusions_Paths-DFProperties-Begin -->
@@ -607,7 +607,7 @@ This policy setting allows you to disable real-time scanning for any file opened
 <!-- Exclusions_Processes-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- Exclusions_Processes-Editable-End -->
 
 <!-- Exclusions_Processes-DFProperties-Begin -->
@@ -5732,6 +5732,9 @@ If you enable this setting AM UI won't be available to users.
 
 <!-- ADMX_MicrosoftDefenderAntivirus-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!--links-->
+[TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+[TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
 <!-- ADMX_MicrosoftDefenderAntivirus-CspMoreInfo-End -->
 
 <!-- ADMX_MicrosoftDefenderAntivirus-End -->
