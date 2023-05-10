@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -347,7 +347,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- EnableInstallationPolicyLayering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.256] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.2145] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1714] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1151] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.256] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.2145] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1714] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1151] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableInstallationPolicyLayering-Applicability-End -->
 
 <!-- EnableInstallationPolicyLayering-OmaUri-Begin -->
