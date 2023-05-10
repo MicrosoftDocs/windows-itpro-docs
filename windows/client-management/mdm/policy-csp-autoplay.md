@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- DisallowAutoplayForNonVolumeDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisallowAutoplayForNonVolumeDevices-Applicability-End -->
 
 <!-- DisallowAutoplayForNonVolumeDevices-OmaUri-Begin -->
@@ -59,7 +59,7 @@ This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisallowAutoplayForNonVolumeDevices-DFProperties-End -->
 
@@ -91,7 +91,7 @@ This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 <!-- SetDefaultAutoRunBehavior-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetDefaultAutoRunBehavior-Applicability-End -->
 
 <!-- SetDefaultAutoRunBehavior-OmaUri-Begin -->
@@ -131,7 +131,7 @@ b) Revert back to pre-Windows Vista behavior of automatically executing the auto
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SetDefaultAutoRunBehavior-DFProperties-End -->
 
@@ -162,7 +162,7 @@ b) Revert back to pre-Windows Vista behavior of automatically executing the auto
 <!-- TurnOffAutoPlay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOffAutoPlay-Applicability-End -->
 
 <!-- TurnOffAutoPlay-OmaUri-Begin -->
@@ -204,7 +204,7 @@ This policy setting disables Autoplay on additional types of drives. You cannot 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffAutoPlay-DFProperties-End -->
 

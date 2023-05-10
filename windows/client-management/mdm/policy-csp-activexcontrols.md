@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ApprovedInstallationSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ApprovedInstallationSites-Applicability-End -->
 
 <!-- ApprovedInstallationSites-OmaUri-Begin -->
@@ -58,7 +58,7 @@ This policy setting determines which ActiveX installation sites standard users i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedInstallationSites-DFProperties-End -->
 

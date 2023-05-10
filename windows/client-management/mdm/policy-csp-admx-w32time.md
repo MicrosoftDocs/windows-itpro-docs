@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- W32TIME_POLICY_CONFIG-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- W32TIME_POLICY_CONFIG-Applicability-End -->
 
 <!-- W32TIME_POLICY_CONFIG-OmaUri-Begin -->
@@ -131,7 +131,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- W32TIME_POLICY_CONFIG-DFProperties-End -->
 
@@ -162,7 +162,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-Applicability-End -->
 
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-OmaUri-Begin -->
@@ -210,7 +210,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-DFProperties-End -->
 
@@ -241,7 +241,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-Applicability-End -->
 
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-OmaUri-Begin -->
@@ -270,7 +270,7 @@ Enabling the Windows NTP Client allows your computer to synchronize its computer
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-DFProperties-End -->
 
@@ -302,7 +302,7 @@ Enabling the Windows NTP Client allows your computer to synchronize its computer
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-Applicability-End -->
 
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-OmaUri-Begin -->
@@ -329,7 +329,7 @@ This policy setting allows you to specify whether the Windows NTP Server is enab
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-DFProperties-End -->
 

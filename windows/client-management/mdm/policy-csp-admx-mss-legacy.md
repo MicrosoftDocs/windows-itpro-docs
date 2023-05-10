@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- Pol_MSS_AutoAdminLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_AutoAdminLogon-Applicability-End -->
 
 <!-- Pol_MSS_AutoAdminLogon-OmaUri-Begin -->
@@ -51,7 +51,7 @@ Enable Automatic Logon (not recommended).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_AutoAdminLogon-DFProperties-End -->
 
@@ -79,7 +79,7 @@ Enable Automatic Logon (not recommended).
 <!-- Pol_MSS_AutoReboot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_AutoReboot-Applicability-End -->
 
 <!-- Pol_MSS_AutoReboot-OmaUri-Begin -->
@@ -102,7 +102,7 @@ Allow Windows to automatically restart after a system crash (recommended except 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_AutoReboot-DFProperties-End -->
 
@@ -130,7 +130,7 @@ Allow Windows to automatically restart after a system crash (recommended except 
 <!-- Pol_MSS_AutoShareServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_AutoShareServer-Applicability-End -->
 
 <!-- Pol_MSS_AutoShareServer-OmaUri-Begin -->
@@ -153,7 +153,7 @@ Enable administrative shares on servers (recommended except for highly secure en
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_AutoShareServer-DFProperties-End -->
 
@@ -181,7 +181,7 @@ Enable administrative shares on servers (recommended except for highly secure en
 <!-- Pol_MSS_AutoShareWks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_AutoShareWks-Applicability-End -->
 
 <!-- Pol_MSS_AutoShareWks-OmaUri-Begin -->
@@ -204,7 +204,7 @@ Enable administrative shares on workstations (recommended except for highly secu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_AutoShareWks-DFProperties-End -->
 
@@ -232,7 +232,7 @@ Enable administrative shares on workstations (recommended except for highly secu
 <!-- Pol_MSS_DisableSavePassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_DisableSavePassword-Applicability-End -->
 
 <!-- Pol_MSS_DisableSavePassword-OmaUri-Begin -->
@@ -254,7 +254,7 @@ Enable administrative shares on workstations (recommended except for highly secu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_DisableSavePassword-DFProperties-End -->
 
@@ -283,7 +283,7 @@ Prevent the dial-up password from being saved (recommended).
 <!-- Pol_MSS_EnableDeadGWDetect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_EnableDeadGWDetect-Applicability-End -->
 
 <!-- Pol_MSS_EnableDeadGWDetect-OmaUri-Begin -->
@@ -306,7 +306,7 @@ Allow automatic detection of dead network gateways (could lead to DoS).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_EnableDeadGWDetect-DFProperties-End -->
 
@@ -334,7 +334,7 @@ Allow automatic detection of dead network gateways (could lead to DoS).
 <!-- Pol_MSS_HideFromBrowseList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_HideFromBrowseList-Applicability-End -->
 
 <!-- Pol_MSS_HideFromBrowseList-OmaUri-Begin -->
@@ -357,7 +357,7 @@ Hide Computer From the Browse List (not recommended except for highly secure env
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_HideFromBrowseList-DFProperties-End -->
 
@@ -385,7 +385,7 @@ Hide Computer From the Browse List (not recommended except for highly secure env
 <!-- Pol_MSS_KeepAliveTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_KeepAliveTime-Applicability-End -->
 
 <!-- Pol_MSS_KeepAliveTime-OmaUri-Begin -->
@@ -408,7 +408,7 @@ Define how often keep-alive packets are sent in milliseconds.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_KeepAliveTime-DFProperties-End -->
 
@@ -436,7 +436,7 @@ Define how often keep-alive packets are sent in milliseconds.
 <!-- Pol_MSS_NoDefaultExempt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_NoDefaultExempt-Applicability-End -->
 
 <!-- Pol_MSS_NoDefaultExempt-OmaUri-Begin -->
@@ -459,7 +459,7 @@ Configure IPSec exemptions for various types of network traffic.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_NoDefaultExempt-DFProperties-End -->
 
@@ -487,7 +487,7 @@ Configure IPSec exemptions for various types of network traffic.
 <!-- Pol_MSS_NtfsDisable8dot3NameCreation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_NtfsDisable8dot3NameCreation-Applicability-End -->
 
 <!-- Pol_MSS_NtfsDisable8dot3NameCreation-OmaUri-Begin -->
@@ -510,7 +510,7 @@ Enable the computer to stop generating 8.3 style filenames.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_NtfsDisable8dot3NameCreation-DFProperties-End -->
 
@@ -538,7 +538,7 @@ Enable the computer to stop generating 8.3 style filenames.
 <!-- Pol_MSS_PerformRouterDiscovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_PerformRouterDiscovery-Applicability-End -->
 
 <!-- Pol_MSS_PerformRouterDiscovery-OmaUri-Begin -->
@@ -561,7 +561,7 @@ Enable the computer to stop generating 8.3 style filenames.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_PerformRouterDiscovery-DFProperties-End -->
 
@@ -589,7 +589,7 @@ Enable the computer to stop generating 8.3 style filenames.
 <!-- Pol_MSS_SafeDllSearchMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_SafeDllSearchMode-Applicability-End -->
 
 <!-- Pol_MSS_SafeDllSearchMode-OmaUri-Begin -->
@@ -612,7 +612,7 @@ Enable Safe DLL search mode (recommended).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_SafeDllSearchMode-DFProperties-End -->
 
@@ -640,7 +640,7 @@ Enable Safe DLL search mode (recommended).
 <!-- Pol_MSS_ScreenSaverGracePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_ScreenSaverGracePeriod-Applicability-End -->
 
 <!-- Pol_MSS_ScreenSaverGracePeriod-OmaUri-Begin -->
@@ -663,7 +663,7 @@ he time in seconds before the screen saver grace period expires (0 recommended).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_ScreenSaverGracePeriod-DFProperties-End -->
 
@@ -691,7 +691,7 @@ he time in seconds before the screen saver grace period expires (0 recommended).
 <!-- Pol_MSS_SynAttackProtect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_SynAttackProtect-Applicability-End -->
 
 <!-- Pol_MSS_SynAttackProtect-OmaUri-Begin -->
@@ -714,7 +714,7 @@ Syn attack protection level (protects against DoS).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_SynAttackProtect-DFProperties-End -->
 
@@ -742,7 +742,7 @@ Syn attack protection level (protects against DoS).
 <!-- Pol_MSS_TcpMaxConnectResponseRetransmissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_TcpMaxConnectResponseRetransmissions-Applicability-End -->
 
 <!-- Pol_MSS_TcpMaxConnectResponseRetransmissions-OmaUri-Begin -->
@@ -765,7 +765,7 @@ SYN-ACK retransmissions when a connection request is not acknowledged.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_TcpMaxConnectResponseRetransmissions-DFProperties-End -->
 
@@ -793,7 +793,7 @@ SYN-ACK retransmissions when a connection request is not acknowledged.
 <!-- Pol_MSS_TcpMaxDataRetransmissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_TcpMaxDataRetransmissions-Applicability-End -->
 
 <!-- Pol_MSS_TcpMaxDataRetransmissions-OmaUri-Begin -->
@@ -816,7 +816,7 @@ Define how many times unacknowledged data is retransmitted (3 recommended, 5 is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_TcpMaxDataRetransmissions-DFProperties-End -->
 
@@ -844,7 +844,7 @@ Define how many times unacknowledged data is retransmitted (3 recommended, 5 is 
 <!-- Pol_MSS_TcpMaxDataRetransmissionsIPv6-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_TcpMaxDataRetransmissionsIPv6-Applicability-End -->
 
 <!-- Pol_MSS_TcpMaxDataRetransmissionsIPv6-OmaUri-Begin -->
@@ -867,7 +867,7 @@ Define how many times unacknowledged data is retransmitted (3 recommended, 5 is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_TcpMaxDataRetransmissionsIPv6-DFProperties-End -->
 
@@ -895,7 +895,7 @@ Define how many times unacknowledged data is retransmitted (3 recommended, 5 is 
 <!-- Pol_MSS_WarningLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_MSS_WarningLevel-Applicability-End -->
 
 <!-- Pol_MSS_WarningLevel-OmaUri-Begin -->
@@ -918,7 +918,7 @@ Percentage threshold for the security event log at which the system will generat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_MSS_WarningLevel-DFProperties-End -->
 

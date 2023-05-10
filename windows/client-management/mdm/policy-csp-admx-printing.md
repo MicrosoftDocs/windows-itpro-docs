@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowWebPrinting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowWebPrinting-Applicability-End -->
 
 <!-- AllowWebPrinting-OmaUri-Begin -->
@@ -62,7 +62,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" setting in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowWebPrinting-DFProperties-End -->
 
@@ -94,7 +94,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" setting in
 <!-- ApplicationDriverIsolation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApplicationDriverIsolation-Applicability-End -->
 
 <!-- ApplicationDriverIsolation-OmaUri-Begin -->
@@ -129,7 +129,7 @@ Note:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApplicationDriverIsolation-DFProperties-End -->
 
@@ -161,7 +161,7 @@ Note:
 <!-- CustomizedSupportUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomizedSupportUrl-Applicability-End -->
 
 <!-- CustomizedSupportUrl-OmaUri-Begin -->
@@ -195,7 +195,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomizedSupportUrl-DFProperties-End -->
 
@@ -226,7 +226,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 <!-- DomainPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DomainPrinters-Applicability-End -->
 
 <!-- DomainPrinters-OmaUri-Begin -->
@@ -269,7 +269,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DomainPrinters-DFProperties-End -->
 
@@ -301,7 +301,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-Applicability-End -->
 
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-OmaUri-Begin -->
@@ -331,7 +331,7 @@ By default, Windows Ultimate, Professional and Home SKUs will continue to search
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-DFProperties-End -->
 
@@ -363,7 +363,7 @@ By default, Windows Ultimate, Professional and Home SKUs will continue to search
 <!-- DownlevelBrowse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DownlevelBrowse-Applicability-End -->
 
 <!-- DownlevelBrowse-OmaUri-Begin -->
@@ -393,7 +393,7 @@ Allows users to use the Add Printer Wizard to search the network for shared prin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DownlevelBrowse-DFProperties-End -->
 
@@ -425,7 +425,7 @@ Allows users to use the Add Printer Wizard to search the network for shared prin
 <!-- EMFDespooling-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EMFDespooling-Applicability-End -->
 
 <!-- EMFDespooling-OmaUri-Begin -->
@@ -465,7 +465,7 @@ If you do not enable this policy setting, the behavior is the same as disabling 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EMFDespooling-DFProperties-End -->
 
@@ -497,7 +497,7 @@ If you do not enable this policy setting, the behavior is the same as disabling 
 <!-- ForceSoftwareRasterization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceSoftwareRasterization-Applicability-End -->
 
 <!-- ForceSoftwareRasterization-OmaUri-Begin -->
@@ -522,7 +522,7 @@ This setting may improve the performance of the XPS Rasterization Service or the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ForceSoftwareRasterization-DFProperties-End -->
 
@@ -554,7 +554,7 @@ This setting may improve the performance of the XPS Rasterization Service or the
 <!-- IntranetPrintersUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IntranetPrintersUrl-Applicability-End -->
 
 <!-- IntranetPrintersUrl-OmaUri-Begin -->
@@ -585,7 +585,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" and "Activ
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntranetPrintersUrl-DFProperties-End -->
 
@@ -616,7 +616,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" and "Activ
 <!-- KMPrintersAreBlocked-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- KMPrintersAreBlocked-Applicability-End -->
 
 <!-- KMPrintersAreBlocked-OmaUri-Begin -->
@@ -648,7 +648,7 @@ Determines whether printers using kernel-mode drivers may be installed on the lo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- KMPrintersAreBlocked-DFProperties-End -->
 
@@ -680,7 +680,7 @@ Determines whether printers using kernel-mode drivers may be installed on the lo
 <!-- LegacyDefaultPrinterMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LegacyDefaultPrinterMode-Applicability-End -->
 
 <!-- LegacyDefaultPrinterMode-OmaUri-Begin -->
@@ -709,7 +709,7 @@ This preference allows you to change default printer management.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LegacyDefaultPrinterMode-DFProperties-End -->
 
@@ -741,7 +741,7 @@ This preference allows you to change default printer management.
 <!-- MXDWUseLegacyOutputFormatMSXPS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MXDWUseLegacyOutputFormatMSXPS-Applicability-End -->
 
 <!-- MXDWUseLegacyOutputFormatMSXPS-OmaUri-Begin -->
@@ -768,7 +768,7 @@ Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MXDWUseLegacyOutputFormatMSXPS-DFProperties-End -->
 
@@ -800,7 +800,7 @@ Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default
 <!-- NoDeletePrinter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoDeletePrinter-Applicability-End -->
 
 <!-- NoDeletePrinter-OmaUri-Begin -->
@@ -830,7 +830,7 @@ This setting does not prevent users from running other programs to delete a prin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoDeletePrinter-DFProperties-End -->
 
@@ -862,7 +862,7 @@ This setting does not prevent users from running other programs to delete a prin
 <!-- NonDomainPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NonDomainPrinters-Applicability-End -->
 
 <!-- NonDomainPrinters-OmaUri-Begin -->
@@ -901,7 +901,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NonDomainPrinters-DFProperties-End -->
 
@@ -933,7 +933,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 <!-- PackagePointAndPrintOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PackagePointAndPrintOnly-Applicability-End -->
 
 <!-- PackagePointAndPrintOnly-OmaUri-Begin -->
@@ -960,7 +960,7 @@ This policy restricts clients computers to use package point and print only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PackagePointAndPrintOnly-DFProperties-End -->
 
@@ -992,7 +992,7 @@ This policy restricts clients computers to use package point and print only.
 <!-- PackagePointAndPrintOnly_Win7-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PackagePointAndPrintOnly_Win7-Applicability-End -->
 
 <!-- PackagePointAndPrintOnly_Win7-OmaUri-Begin -->
@@ -1019,7 +1019,7 @@ This policy restricts clients computers to use package point and print only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PackagePointAndPrintOnly_Win7-DFProperties-End -->
 
@@ -1051,7 +1051,7 @@ This policy restricts clients computers to use package point and print only.
 <!-- PackagePointAndPrintServerList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PackagePointAndPrintServerList-Applicability-End -->
 
 <!-- PackagePointAndPrintServerList-OmaUri-Begin -->
@@ -1082,7 +1082,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PackagePointAndPrintServerList-DFProperties-End -->
 
@@ -1114,7 +1114,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 <!-- PackagePointAndPrintServerList_Win7-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PackagePointAndPrintServerList_Win7-Applicability-End -->
 
 <!-- PackagePointAndPrintServerList_Win7-OmaUri-Begin -->
@@ -1145,7 +1145,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PackagePointAndPrintServerList_Win7-DFProperties-End -->
 
@@ -1177,7 +1177,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 <!-- PhysicalLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PhysicalLocation-Applicability-End -->
 
 <!-- PhysicalLocation-OmaUri-Begin -->
@@ -1209,7 +1209,7 @@ Type the location of the user's computer. When users search for printers, the sy
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PhysicalLocation-DFProperties-End -->
 
@@ -1240,7 +1240,7 @@ Type the location of the user's computer. When users search for printers, the sy
 <!-- PhysicalLocationSupport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PhysicalLocationSupport-Applicability-End -->
 
 <!-- PhysicalLocationSupport-OmaUri-Begin -->
@@ -1269,7 +1269,7 @@ Use Location Tracking to design a location scheme for your enterprise and assign
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PhysicalLocationSupport-DFProperties-End -->
 
@@ -1301,7 +1301,7 @@ Use Location Tracking to design a location scheme for your enterprise and assign
 <!-- PrintDriverIsolationExecutionPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PrintDriverIsolationExecutionPolicy-Applicability-End -->
 
 <!-- PrintDriverIsolationExecutionPolicy-OmaUri-Begin -->
@@ -1334,7 +1334,7 @@ Note:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PrintDriverIsolationExecutionPolicy-DFProperties-End -->
 
@@ -1366,7 +1366,7 @@ Note:
 <!-- PrintDriverIsolationOverrideCompat-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PrintDriverIsolationOverrideCompat-Applicability-End -->
 
 <!-- PrintDriverIsolationOverrideCompat-OmaUri-Begin -->
@@ -1399,7 +1399,7 @@ Note:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PrintDriverIsolationOverrideCompat-DFProperties-End -->
 
@@ -1431,7 +1431,7 @@ Note:
 <!-- PrinterDirectorySearchScope-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PrinterDirectorySearchScope-Applicability-End -->
 
 <!-- PrinterDirectorySearchScope-OmaUri-Begin -->
@@ -1460,7 +1460,7 @@ This setting only provides a starting point for Active Directory searches for pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PrinterDirectorySearchScope-DFProperties-End -->
 
@@ -1491,7 +1491,7 @@ This setting only provides a starting point for Active Directory searches for pr
 <!-- PrinterServerThread-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PrinterServerThread-Applicability-End -->
 
 <!-- PrinterServerThread-OmaUri-Begin -->
@@ -1525,7 +1525,7 @@ On domains with Active Directory, shared printer resources are available in Acti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PrinterServerThread-DFProperties-End -->
 
@@ -1557,7 +1557,7 @@ On domains with Active Directory, shared printer resources are available in Acti
 <!-- ShowJobTitleInEventLogs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ShowJobTitleInEventLogs-Applicability-End -->
 
 <!-- ShowJobTitleInEventLogs-OmaUri-Begin -->
@@ -1587,7 +1587,7 @@ This policy controls whether the print job name will be included in print event 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ShowJobTitleInEventLogs-DFProperties-End -->
 
@@ -1619,7 +1619,7 @@ This policy controls whether the print job name will be included in print event 
 <!-- V4DriverDisallowPrinterExtension-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- V4DriverDisallowPrinterExtension-Applicability-End -->
 
 <!-- V4DriverDisallowPrinterExtension-OmaUri-Begin -->
@@ -1648,7 +1648,7 @@ V4 printer drivers may include an optional, customized user interface known as a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- V4DriverDisallowPrinterExtension-DFProperties-End -->
 

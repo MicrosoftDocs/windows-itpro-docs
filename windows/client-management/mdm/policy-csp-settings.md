@@ -4,7 +4,7 @@ description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAutoPlay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoPlay-Applicability-End -->
 
 <!-- AllowAutoPlay-OmaUri-Begin -->
@@ -52,7 +52,7 @@ Allows the user to change Auto Play settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowAutoPlay-DFProperties-End -->
@@ -78,7 +78,7 @@ Allows the user to change Auto Play settings.
 <!-- AllowDataSense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDataSense-Applicability-End -->
 
 <!-- AllowDataSense-OmaUri-Begin -->
@@ -104,7 +104,7 @@ Allows the user to change Data Sense settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDataSense-DFProperties-End -->
@@ -130,7 +130,7 @@ Allows the user to change Data Sense settings.
 <!-- AllowDateTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDateTime-Applicability-End -->
 
 <!-- AllowDateTime-OmaUri-Begin -->
@@ -153,7 +153,7 @@ Allows the user to change date and time settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDateTime-DFProperties-End -->
@@ -179,7 +179,7 @@ Allows the user to change date and time settings.
 <!-- AllowEditDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEditDeviceName-Applicability-End -->
 
 <!-- AllowEditDeviceName-OmaUri-Begin -->
@@ -202,7 +202,7 @@ Allows the user to edit the device name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowEditDeviceName-DFProperties-End -->
@@ -228,7 +228,7 @@ Allows the user to edit the device name.
 <!-- AllowLanguage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLanguage-Applicability-End -->
 
 <!-- AllowLanguage-OmaUri-Begin -->
@@ -251,7 +251,7 @@ Allows the user to change the language settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowLanguage-DFProperties-End -->
@@ -277,7 +277,7 @@ Allows the user to change the language settings.
 <!-- AllowOnlineTips-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowOnlineTips-Applicability-End -->
 
 <!-- AllowOnlineTips-OmaUri-Begin -->
@@ -302,7 +302,7 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowOnlineTips-DFProperties-End -->
@@ -342,7 +342,7 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 <!-- AllowPowerSleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowPowerSleep-Applicability-End -->
 
 <!-- AllowPowerSleep-OmaUri-Begin -->
@@ -365,7 +365,7 @@ Allows the user to change power and sleep settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPowerSleep-DFProperties-End -->
@@ -391,7 +391,7 @@ Allows the user to change power and sleep settings.
 <!-- AllowRegion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowRegion-Applicability-End -->
 
 <!-- AllowRegion-OmaUri-Begin -->
@@ -414,7 +414,7 @@ Allows the user to change the region settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRegion-DFProperties-End -->
@@ -440,7 +440,7 @@ Allows the user to change the region settings.
 <!-- AllowSignInOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSignInOptions-Applicability-End -->
 
 <!-- AllowSignInOptions-OmaUri-Begin -->
@@ -463,7 +463,7 @@ Allows the user to change sign-in options.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSignInOptions-DFProperties-End -->
@@ -489,7 +489,7 @@ Allows the user to change sign-in options.
 <!-- AllowVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPN-Applicability-End -->
 
 <!-- AllowVPN-OmaUri-Begin -->
@@ -512,7 +512,7 @@ Allows the user to change VPN settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVPN-DFProperties-End -->
@@ -538,7 +538,7 @@ Allows the user to change VPN settings.
 <!-- AllowWorkplace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowWorkplace-Applicability-End -->
 
 <!-- AllowWorkplace-OmaUri-Begin -->
@@ -561,7 +561,7 @@ Allows user to change workplace settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWorkplace-DFProperties-End -->
@@ -587,7 +587,7 @@ Allows user to change workplace settings.
 <!-- AllowYourAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowYourAccount-Applicability-End -->
 
 <!-- AllowYourAccount-OmaUri-Begin -->
@@ -610,7 +610,7 @@ Allows user to change account settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowYourAccount-DFProperties-End -->
@@ -636,7 +636,7 @@ Allows user to change account settings.
 <!-- ConfigureTaskbarCalendar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ConfigureTaskbarCalendar-Applicability-End -->
 
 <!-- ConfigureTaskbarCalendar-OmaUri-Begin -->
@@ -665,7 +665,7 @@ By default, the calendar is set according to the locale of the operating system,
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTaskbarCalendar-DFProperties-End -->
@@ -707,7 +707,7 @@ By default, the calendar is set according to the locale of the operating system,
 <!-- PageVisibilityList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PageVisibilityList-Applicability-End -->
 
 <!-- PageVisibilityList-OmaUri-Begin -->
@@ -756,7 +756,7 @@ To validate this policy, use the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PageVisibilityList-DFProperties-End -->
 

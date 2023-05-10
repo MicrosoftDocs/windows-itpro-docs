@@ -4,7 +4,7 @@ description: Learn more about the EMAIL2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -72,7 +72,7 @@ The following list shows the EMAIL2 configuration service provider nodes:
 <!-- User-{Account GUID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-Applicability-End -->
 
 <!-- User-{Account GUID}-OmaUri-Begin -->
@@ -101,7 +101,7 @@ The braces {} around the GUID are required in the EMAIL2 configuration service p
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 | Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
@@ -119,7 +119,7 @@ The braces {} around the GUID are required in the EMAIL2 configuration service p
 <!-- User-{Account GUID}-ACCOUNTICON-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-ACCOUNTICON-Applicability-End -->
 
 <!-- User-{Account GUID}-ACCOUNTICON-OmaUri-Begin -->
@@ -142,7 +142,7 @@ The location of the icon associated with the account. The account icon can be us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-ACCOUNTICON-DFProperties-End -->
 
@@ -158,7 +158,7 @@ The location of the icon associated with the account. The account icon can be us
 <!-- User-{Account GUID}-ACCOUNTTYPE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-ACCOUNTTYPE-Applicability-End -->
 
 <!-- User-{Account GUID}-ACCOUNTTYPE-OmaUri-Begin -->
@@ -181,7 +181,7 @@ Specifies the type of account. Valid values are: Email - normal email, VVM - vis
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-ACCOUNTTYPE-DFProperties-End -->
 
@@ -206,7 +206,7 @@ Specifies the type of account. Valid values are: Email - normal email, VVM - vis
 <!-- User-{Account GUID}-AUTHNAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-AUTHNAME-Applicability-End -->
 
 <!-- User-{Account GUID}-AUTHNAME-OmaUri-Begin -->
@@ -229,7 +229,7 @@ Character string that specifies the name used to authorize the user to a specifi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-AUTHNAME-DFProperties-End -->
 
@@ -245,7 +245,7 @@ Character string that specifies the name used to authorize the user to a specifi
 <!-- User-{Account GUID}-AUTHREQUIRED-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-AUTHREQUIRED-Applicability-End -->
 
 <!-- User-{Account GUID}-AUTHREQUIRED-OmaUri-Begin -->
@@ -273,7 +273,7 @@ Character string that specifies whether the outgoing server requires authenticat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-AUTHREQUIRED-DFProperties-End -->
 
@@ -298,7 +298,7 @@ Character string that specifies whether the outgoing server requires authenticat
 <!-- User-{Account GUID}-AUTHSECRET-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-AUTHSECRET-Applicability-End -->
 
 <!-- User-{Account GUID}-AUTHSECRET-OmaUri-Begin -->
@@ -321,7 +321,7 @@ Character string that specifies the user's password. The same password is used f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-AUTHSECRET-DFProperties-End -->
 
@@ -337,7 +337,7 @@ Character string that specifies the user's password. The same password is used f
 <!-- User-{Account GUID}-CALENDARSERVER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CALENDARSERVER-Applicability-End -->
 
 <!-- User-{Account GUID}-CALENDARSERVER-OmaUri-Begin -->
@@ -360,7 +360,7 @@ Server for calendar sync if it is different from the email server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CALENDARSERVER-DFProperties-End -->
 
@@ -376,7 +376,7 @@ Server for calendar sync if it is different from the email server.
 <!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-Applicability-End -->
 
 <!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-OmaUri-Begin -->
@@ -399,7 +399,7 @@ Indicates if the connection to the calendar server requires SSL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CALENDARSERVERREQUIRESSL-DFProperties-End -->
 
@@ -415,7 +415,7 @@ Indicates if the connection to the calendar server requires SSL.
 <!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-Applicability-End -->
 
 <!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-OmaUri-Begin -->
@@ -438,7 +438,7 @@ Sets the schedule for syncing calendar items.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CALENDARSYNCSCHEDULE-DFProperties-End -->
 
@@ -454,7 +454,7 @@ Sets the schedule for syncing calendar items.
 <!-- User-{Account GUID}-CELLULARONLY-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CELLULARONLY-Applicability-End -->
 
 <!-- User-{Account GUID}-CELLULARONLY-OmaUri-Begin -->
@@ -477,7 +477,7 @@ If this flag is set, the account only uses the cellular network and not Wi-Fi.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CELLULARONLY-DFProperties-End -->
 
@@ -493,7 +493,7 @@ If this flag is set, the account only uses the cellular network and not Wi-Fi.
 <!-- User-{Account GUID}-CONTACTSSERVER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CONTACTSSERVER-Applicability-End -->
 
 <!-- User-{Account GUID}-CONTACTSSERVER-OmaUri-Begin -->
@@ -516,7 +516,7 @@ Server for contact sync if it is different from the email server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CONTACTSSERVER-DFProperties-End -->
 
@@ -532,7 +532,7 @@ Server for contact sync if it is different from the email server.
 <!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-Applicability-End -->
 
 <!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-OmaUri-Begin -->
@@ -555,7 +555,7 @@ Indicates if the connection to the contact server requires SSL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CONTACTSSERVERREQUIRESSL-DFProperties-End -->
 
@@ -571,7 +571,7 @@ Indicates if the connection to the contact server requires SSL.
 <!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-Applicability-End -->
 
 <!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-OmaUri-Begin -->
@@ -594,7 +594,7 @@ Sets the schedule for syncing contact items.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-CONTACTSSYNCSCHEDULE-DFProperties-End -->
 
@@ -610,7 +610,7 @@ Sets the schedule for syncing contact items.
 <!-- User-{Account GUID}-DOMAIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-DOMAIN-Applicability-End -->
 
 <!-- User-{Account GUID}-DOMAIN-OmaUri-Begin -->
@@ -633,7 +633,7 @@ Character string that specifies the incoming server credentials domain. Limited 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-DOMAIN-DFProperties-End -->
 
@@ -649,7 +649,7 @@ Character string that specifies the incoming server credentials domain. Limited 
 <!-- User-{Account GUID}-DWNDAY-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-DWNDAY-Applicability-End -->
 
 <!-- User-{Account GUID}-DWNDAY-OmaUri-Begin -->
@@ -672,7 +672,7 @@ Character string that specifies how many days' worth of email should be download
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-DWNDAY-DFProperties-End -->
 
@@ -700,7 +700,7 @@ Character string that specifies how many days' worth of email should be download
 <!-- User-{Account GUID}-INSERVER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-INSERVER-Applicability-End -->
 
 <!-- User-{Account GUID}-INSERVER-OmaUri-Begin -->
@@ -723,7 +723,7 @@ Character string that specifies how many days' worth of email should be download
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-INSERVER-DFProperties-End -->
 
@@ -739,7 +739,7 @@ Character string that specifies how many days' worth of email should be download
 <!-- User-{Account GUID}-KEEPMAX-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-KEEPMAX-Applicability-End -->
 
 <!-- User-{Account GUID}-KEEPMAX-OmaUri-Begin -->
@@ -762,7 +762,7 @@ Specifies the maximum size for a message attachment. Attachments beyond this siz
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-KEEPMAX-DFProperties-End -->
 
@@ -791,7 +791,7 @@ Specifies the maximum size for a message attachment. Attachments beyond this siz
 <!-- User-{Account GUID}-LINGER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-LINGER-Applicability-End -->
 
 <!-- User-{Account GUID}-LINGER-OmaUri-Begin -->
@@ -814,7 +814,7 @@ Character string that specifies the length of time between email send/receive up
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[(-1)-2147483647]` |
 | Default Value  | 15 |
@@ -832,7 +832,7 @@ Character string that specifies the length of time between email send/receive up
 <!-- User-{Account GUID}-NAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-NAME-Applicability-End -->
 
 <!-- User-{Account GUID}-NAME-OmaUri-Begin -->
@@ -855,7 +855,7 @@ Character string that specifies the name of the sender displayed on a sent email
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-NAME-DFProperties-End -->
 
@@ -871,7 +871,7 @@ Character string that specifies the name of the sender displayed on a sent email
 <!-- User-{Account GUID}-OUTSERVER-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-OUTSERVER-Applicability-End -->
 
 <!-- User-{Account GUID}-OUTSERVER-OmaUri-Begin -->
@@ -894,7 +894,7 @@ Character string that specifies the name of the messaging service's outgoing ema
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-OUTSERVER-DFProperties-End -->
 
@@ -910,7 +910,7 @@ Character string that specifies the name of the messaging service's outgoing ema
 <!-- User-{Account GUID}-REPLYADDR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-REPLYADDR-Applicability-End -->
 
 <!-- User-{Account GUID}-REPLYADDR-OmaUri-Begin -->
@@ -933,7 +933,7 @@ Character string that specifies the reply email address of the user (usually the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-REPLYADDR-DFProperties-End -->
 
@@ -949,7 +949,7 @@ Character string that specifies the reply email address of the user (usually the
 <!-- User-{Account GUID}-RETRIEVE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-RETRIEVE-Applicability-End -->
 
 <!-- User-{Account GUID}-RETRIEVE-OmaUri-Begin -->
@@ -972,7 +972,7 @@ Specifies the maximum size in bytes for messages retrieved from the incoming ema
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[(-1)-2147483647]` |
 <!-- User-{Account GUID}-RETRIEVE-DFProperties-End -->
@@ -989,7 +989,7 @@ Specifies the maximum size in bytes for messages retrieved from the incoming ema
 <!-- User-{Account GUID}-SERVERDELETEACTION-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SERVERDELETEACTION-Applicability-End -->
 
 <!-- User-{Account GUID}-SERVERDELETEACTION-OmaUri-Begin -->
@@ -1012,7 +1012,7 @@ Character string that specifies how message is deleted on server. The default ac
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SERVERDELETEACTION-DFProperties-End -->
 
@@ -1037,7 +1037,7 @@ Character string that specifies how message is deleted on server. The default ac
 <!-- User-{Account GUID}-SERVICENAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SERVICENAME-Applicability-End -->
 
 <!-- User-{Account GUID}-SERVICENAME-OmaUri-Begin -->
@@ -1060,7 +1060,7 @@ Character string that specifies the name of the email service to create or edit 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SERVICENAME-DFProperties-End -->
 
@@ -1078,7 +1078,7 @@ Character string that specifies the name of the email service to create or edit 
 <!-- User-{Account GUID}-SERVICETYPE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SERVICETYPE-Applicability-End -->
 
 <!-- User-{Account GUID}-SERVICETYPE-OmaUri-Begin -->
@@ -1103,7 +1103,7 @@ Character string that specifies the type of email service to create or edit (for
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SERVICETYPE-DFProperties-End -->
 
@@ -1119,7 +1119,7 @@ Character string that specifies the type of email service to create or edit (for
 <!-- User-{Account GUID}-SMTPALTAUTHNAME-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SMTPALTAUTHNAME-Applicability-End -->
 
 <!-- User-{Account GUID}-SMTPALTAUTHNAME-OmaUri-Begin -->
@@ -1142,7 +1142,7 @@ Character string that specifies the display name associated with the user's alte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SMTPALTAUTHNAME-DFProperties-End -->
 
@@ -1158,7 +1158,7 @@ Character string that specifies the display name associated with the user's alte
 <!-- User-{Account GUID}-SMTPALTDOMAIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SMTPALTDOMAIN-Applicability-End -->
 
 <!-- User-{Account GUID}-SMTPALTDOMAIN-OmaUri-Begin -->
@@ -1181,7 +1181,7 @@ Character string that specifies the domain name for the user's alternative SMTP 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SMTPALTDOMAIN-DFProperties-End -->
 
@@ -1197,7 +1197,7 @@ Character string that specifies the domain name for the user's alternative SMTP 
 <!-- User-{Account GUID}-SMTPALTENABLED-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SMTPALTENABLED-Applicability-End -->
 
 <!-- User-{Account GUID}-SMTPALTENABLED-OmaUri-Begin -->
@@ -1220,7 +1220,7 @@ Character string that specifies if the user's alternate SMTP account is enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SMTPALTENABLED-DFProperties-End -->
 
@@ -1245,7 +1245,7 @@ Character string that specifies if the user's alternate SMTP account is enabled.
 <!-- User-{Account GUID}-SMTPALTPASSWORD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SMTPALTPASSWORD-Applicability-End -->
 
 <!-- User-{Account GUID}-SMTPALTPASSWORD-OmaUri-Begin -->
@@ -1268,7 +1268,7 @@ Character string that specifies the password for the user's alternate SMTP accou
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SMTPALTPASSWORD-DFProperties-End -->
 
@@ -1284,7 +1284,7 @@ Character string that specifies the password for the user's alternate SMTP accou
 <!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-SYNCINGCONTENTTYPES-Applicability-End -->
 
 <!-- User-{Account GUID}-SYNCINGCONTENTTYPES-OmaUri-Begin -->
@@ -1307,7 +1307,7 @@ Specifies a bitmask for which content types are supported for syncing (eg: Mail,
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-SYNCINGCONTENTTYPES-DFProperties-End -->
 
@@ -1343,7 +1343,7 @@ Specifies a bitmask for which content types are supported for syncing (eg: Mail,
 <!-- User-{Account GUID}-TAGPROPS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-TAGPROPS-Applicability-End -->
 
 <!-- User-{Account GUID}-TAGPROPS-OmaUri-Begin -->
@@ -1366,7 +1366,7 @@ Specifies that stated parameter element name attributes is nonstandard tag prope
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-TAGPROPS-DFProperties-End -->
 
@@ -1382,7 +1382,7 @@ Specifies that stated parameter element name attributes is nonstandard tag prope
 <!-- User-{Account GUID}-TAGPROPS-8128000B-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-TAGPROPS-8128000B-Applicability-End -->
 
 <!-- User-{Account GUID}-TAGPROPS-8128000B-OmaUri-Begin -->
@@ -1405,7 +1405,7 @@ Character string that specifies if the incoming email server requires SSL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-TAGPROPS-8128000B-DFProperties-End -->
 
@@ -1430,7 +1430,7 @@ Character string that specifies if the incoming email server requires SSL.
 <!-- User-{Account GUID}-TAGPROPS-812C000B-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-{Account GUID}-TAGPROPS-812C000B-Applicability-End -->
 
 <!-- User-{Account GUID}-TAGPROPS-812C000B-OmaUri-Begin -->
@@ -1453,7 +1453,7 @@ Character string that specifies if the outgoing email server requires SSL.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{Account GUID}-TAGPROPS-812C000B-DFProperties-End -->
 

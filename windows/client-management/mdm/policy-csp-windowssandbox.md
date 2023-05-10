@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAudioInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowAudioInput-Applicability-End -->
 
 <!-- AllowAudioInput-OmaUri-Begin -->
@@ -59,7 +59,7 @@ Note that there may be security implications of exposing host audio input to the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -91,7 +91,7 @@ Note that there may be security implications of exposing host audio input to the
 <!-- AllowClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowClipboardRedirection-Applicability-End -->
 
 <!-- AllowClipboardRedirection-OmaUri-Begin -->
@@ -122,7 +122,7 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -154,7 +154,7 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 <!-- AllowNetworking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowNetworking-Applicability-End -->
 
 <!-- AllowNetworking-OmaUri-Begin -->
@@ -187,7 +187,7 @@ Note that enabling networking can expose untrusted applications to the internal 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -219,7 +219,7 @@ Note that enabling networking can expose untrusted applications to the internal 
 <!-- AllowPrinterRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowPrinterRedirection-Applicability-End -->
 
 <!-- AllowPrinterRedirection-OmaUri-Begin -->
@@ -250,7 +250,7 @@ This policy setting enables or disables printer sharing from the host into the S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -282,7 +282,7 @@ This policy setting enables or disables printer sharing from the host into the S
 <!-- AllowVGPU-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowVGPU-Applicability-End -->
 
 <!-- AllowVGPU-OmaUri-Begin -->
@@ -315,7 +315,7 @@ Note that enabling virtualized GPU can potentially increase the attack surface o
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -347,7 +347,7 @@ Note that enabling virtualized GPU can potentially increase the attack surface o
 <!-- AllowVideoInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowVideoInput-Applicability-End -->
 
 <!-- AllowVideoInput-OmaUri-Begin -->
@@ -380,7 +380,7 @@ Note that there may be security implications of exposing host video input to the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |

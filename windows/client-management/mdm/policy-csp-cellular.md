@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- LetAppsAccessCellularData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LetAppsAccessCellularData-Applicability-End -->
 
 <!-- LetAppsAccessCellularData-OmaUri-Begin -->
@@ -74,7 +74,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessCellularData-DFProperties-End -->
@@ -115,7 +115,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-OmaUri-Begin -->
@@ -150,7 +150,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCellularData_ForceAllowTheseApps-DFProperties-End -->
@@ -180,7 +180,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-OmaUri-Begin -->
@@ -215,7 +215,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCellularData_ForceDenyTheseApps-DFProperties-End -->
@@ -245,7 +245,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -280,7 +280,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCellularData_UserInControlOfTheseApps-DFProperties-End -->
@@ -310,7 +310,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- ShowAppCellularAccessUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ShowAppCellularAccessUI-Applicability-End -->
 
 <!-- ShowAppCellularAccessUI-OmaUri-Begin -->
@@ -336,7 +336,7 @@ This policy setting configures the visibility of the link to the per-application
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ShowAppCellularAccessUI-DFProperties-End -->
 

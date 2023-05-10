@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowDiskHealthModelUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowDiskHealthModelUpdates-Applicability-End -->
 
 <!-- AllowDiskHealthModelUpdates-OmaUri-Begin -->
@@ -60,7 +60,7 @@ Same as Enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDiskHealthModelUpdates-DFProperties-End -->
@@ -100,7 +100,7 @@ Same as Enabled.
 <!-- AllowStorageSenseGlobal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowStorageSenseGlobal-Applicability-End -->
 
 <!-- AllowStorageSenseGlobal-OmaUri-Begin -->
@@ -132,7 +132,7 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowStorageSenseGlobal-DFProperties-End -->
@@ -172,7 +172,7 @@ By default, Storage Sense is turned off until the user runs into low disk space 
 <!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-End -->
 
 <!-- AllowStorageSenseTemporaryFilesCleanup-OmaUri-Begin -->
@@ -206,7 +206,7 @@ By default, Storage Sense will delete the user's temporary files. Users can conf
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStorageSenseTemporaryFilesCleanup-DFProperties-End -->
@@ -246,7 +246,7 @@ By default, Storage Sense will delete the user's temporary files. Users can conf
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-OmaUri-Begin -->
@@ -278,7 +278,7 @@ By default, Storage Sense will not dehydrate any cloud-backed content. Users can
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 0 |
@@ -309,7 +309,7 @@ By default, Storage Sense will not dehydrate any cloud-backed content. Users can
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-OmaUri-Begin -->
@@ -341,7 +341,7 @@ By default, Storage Sense will not delete files in the user's Downloads folder. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 0 |
@@ -372,7 +372,7 @@ By default, Storage Sense will not delete files in the user's Downloads folder. 
 <!-- ConfigStorageSenseGlobalCadence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseGlobalCadence-Applicability-End -->
 
 <!-- ConfigStorageSenseGlobalCadence-OmaUri-Begin -->
@@ -410,7 +410,7 @@ Use the following integer values for the supported options:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -441,7 +441,7 @@ Use the following integer values for the supported options:
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-End -->
 
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-OmaUri-Begin -->
@@ -473,7 +473,7 @@ By default, Storage Sense will delete files in the user's Recycle Bin that have 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-365]` |
 | Default Value  | 30 |
@@ -504,7 +504,7 @@ By default, Storage Sense will delete files in the user's Recycle Bin that have 
 <!-- EnhancedStorageDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnhancedStorageDevices-Applicability-End -->
 
 <!-- EnhancedStorageDevices-OmaUri-Begin -->
@@ -531,7 +531,7 @@ This policy setting configures whether or not Windows will activate an Enhanced 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnhancedStorageDevices-DFProperties-End -->
 
@@ -563,7 +563,7 @@ This policy setting configures whether or not Windows will activate an Enhanced 
 <!-- RemovableDiskDenyWriteAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- RemovableDiskDenyWriteAccess-Applicability-End -->
 
 <!-- RemovableDiskDenyWriteAccess-OmaUri-Begin -->
@@ -593,7 +593,7 @@ This policy setting denies write access to removable disks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RemovableDiskDenyWriteAccess-DFProperties-End -->
@@ -632,7 +632,7 @@ This policy setting denies write access to removable disks.
 <!-- WPDDevicesDenyReadAccessPerDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyReadAccessPerDevice-Applicability-End -->
 
 <!-- WPDDevicesDenyReadAccessPerDevice-OmaUri-Begin -->
@@ -670,7 +670,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyReadAccessPerDevice-DFProperties-End -->
 
@@ -702,7 +702,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyReadAccessPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyReadAccessPerUser-Applicability-End -->
 
 <!-- WPDDevicesDenyReadAccessPerUser-OmaUri-Begin -->
@@ -740,7 +740,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyReadAccessPerUser-DFProperties-End -->
 
@@ -772,7 +772,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-Begin -->
@@ -810,7 +810,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-End -->
 
@@ -842,7 +842,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 <!-- WPDDevicesDenyWriteAccessPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevicesDenyWriteAccessPerUser-Applicability-End -->
 
 <!-- WPDDevicesDenyWriteAccessPerUser-OmaUri-Begin -->
@@ -880,7 +880,7 @@ To enable this policy, the minimum OS requirement is Windows 10, version 1809 an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevicesDenyWriteAccessPerUser-DFProperties-End -->
 

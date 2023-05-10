@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowHibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowHibernate-Applicability-End -->
 
 <!-- AllowHibernate-OmaUri-Begin -->
@@ -51,7 +51,7 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowHibernate-DFProperties-End -->
@@ -77,7 +77,7 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-OmaUri-Begin -->
@@ -104,7 +104,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowStandbyStatesWhenSleepingOnBattery-DFProperties-End -->
 
@@ -136,7 +136,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- AllowStandbyWhenSleepingPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowStandbyWhenSleepingPluggedIn-Applicability-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-OmaUri-Begin -->
@@ -163,7 +163,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowStandbyWhenSleepingPluggedIn-DFProperties-End -->
 
@@ -195,7 +195,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- DisplayOffTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisplayOffTimeoutOnBattery-Applicability-End -->
 
 <!-- DisplayOffTimeoutOnBattery-OmaUri-Begin -->
@@ -224,7 +224,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisplayOffTimeoutOnBattery-DFProperties-End -->
 
@@ -255,7 +255,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- DisplayOffTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisplayOffTimeoutPluggedIn-Applicability-End -->
 
 <!-- DisplayOffTimeoutPluggedIn-OmaUri-Begin -->
@@ -284,7 +284,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisplayOffTimeoutPluggedIn-DFProperties-End -->
 
@@ -315,7 +315,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- EnergySaverBatteryThresholdOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnergySaverBatteryThresholdOnBattery-Applicability-End -->
 
 <!-- EnergySaverBatteryThresholdOnBattery-OmaUri-Begin -->
@@ -342,7 +342,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -374,7 +374,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- EnergySaverBatteryThresholdPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnergySaverBatteryThresholdPluggedIn-Applicability-End -->
 
 <!-- EnergySaverBatteryThresholdPluggedIn-OmaUri-Begin -->
@@ -401,7 +401,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -433,7 +433,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- HibernateTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HibernateTimeoutOnBattery-Applicability-End -->
 
 <!-- HibernateTimeoutOnBattery-OmaUri-Begin -->
@@ -462,7 +462,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HibernateTimeoutOnBattery-DFProperties-End -->
 
@@ -493,7 +493,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- HibernateTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HibernateTimeoutPluggedIn-Applicability-End -->
 
 <!-- HibernateTimeoutPluggedIn-OmaUri-Begin -->
@@ -522,7 +522,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HibernateTimeoutPluggedIn-DFProperties-End -->
 
@@ -553,7 +553,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-OmaUri-Begin -->
@@ -580,7 +580,7 @@ This policy setting specifies whether or not the user is prompted for a password
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RequirePasswordWhenComputerWakesOnBattery-DFProperties-End -->
 
@@ -612,7 +612,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-OmaUri-Begin -->
@@ -639,7 +639,7 @@ This policy setting specifies whether or not the user is prompted for a password
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RequirePasswordWhenComputerWakesPluggedIn-DFProperties-End -->
 
@@ -671,7 +671,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- SelectLidCloseActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectLidCloseActionOnBattery-Applicability-End -->
 
 <!-- SelectLidCloseActionOnBattery-OmaUri-Begin -->
@@ -705,7 +705,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectLidCloseActionOnBattery-DFProperties-End -->
@@ -747,7 +747,7 @@ Possible actions include:
 <!-- SelectLidCloseActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectLidCloseActionPluggedIn-Applicability-End -->
 
 <!-- SelectLidCloseActionPluggedIn-OmaUri-Begin -->
@@ -781,7 +781,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectLidCloseActionPluggedIn-DFProperties-End -->
@@ -823,7 +823,7 @@ Possible actions include:
 <!-- SelectPowerButtonActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectPowerButtonActionOnBattery-Applicability-End -->
 
 <!-- SelectPowerButtonActionOnBattery-OmaUri-Begin -->
@@ -857,7 +857,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectPowerButtonActionOnBattery-DFProperties-End -->
@@ -899,7 +899,7 @@ Possible actions include:
 <!-- SelectPowerButtonActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectPowerButtonActionPluggedIn-Applicability-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-OmaUri-Begin -->
@@ -933,7 +933,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectPowerButtonActionPluggedIn-DFProperties-End -->
@@ -975,7 +975,7 @@ Possible actions include:
 <!-- SelectSleepButtonActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectSleepButtonActionOnBattery-Applicability-End -->
 
 <!-- SelectSleepButtonActionOnBattery-OmaUri-Begin -->
@@ -1009,7 +1009,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectSleepButtonActionOnBattery-DFProperties-End -->
@@ -1051,7 +1051,7 @@ Possible actions include:
 <!-- SelectSleepButtonActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectSleepButtonActionPluggedIn-Applicability-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-OmaUri-Begin -->
@@ -1085,7 +1085,7 @@ Possible actions include:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SelectSleepButtonActionPluggedIn-DFProperties-End -->
@@ -1127,7 +1127,7 @@ Possible actions include:
 <!-- StandbyTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- StandbyTimeoutOnBattery-Applicability-End -->
 
 <!-- StandbyTimeoutOnBattery-OmaUri-Begin -->
@@ -1156,7 +1156,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StandbyTimeoutOnBattery-DFProperties-End -->
 
@@ -1187,7 +1187,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- StandbyTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- StandbyTimeoutPluggedIn-Applicability-End -->
 
 <!-- StandbyTimeoutPluggedIn-OmaUri-Begin -->
@@ -1216,7 +1216,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StandbyTimeoutPluggedIn-DFProperties-End -->
 
@@ -1247,7 +1247,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- TurnOffHybridSleepOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffHybridSleepOnBattery-Applicability-End -->
 
 <!-- TurnOffHybridSleepOnBattery-OmaUri-Begin -->
@@ -1274,7 +1274,7 @@ This policy setting allows you to turn off hybrid sleep.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TurnOffHybridSleepOnBattery-DFProperties-End -->
@@ -1314,7 +1314,7 @@ This policy setting allows you to turn off hybrid sleep.
 <!-- TurnOffHybridSleepPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffHybridSleepPluggedIn-Applicability-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-OmaUri-Begin -->
@@ -1341,7 +1341,7 @@ This policy setting allows you to turn off hybrid sleep.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TurnOffHybridSleepPluggedIn-DFProperties-End -->
@@ -1381,7 +1381,7 @@ This policy setting allows you to turn off hybrid sleep.
 <!-- UnattendedSleepTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- UnattendedSleepTimeoutOnBattery-Applicability-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-OmaUri-Begin -->
@@ -1410,7 +1410,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -1442,7 +1442,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- UnattendedSleepTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- UnattendedSleepTimeoutPluggedIn-Applicability-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-OmaUri-Begin -->
@@ -1471,7 +1471,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |

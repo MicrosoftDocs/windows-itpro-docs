@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- DisablePasswordReveal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisablePasswordReveal-Applicability-End -->
 
 <!-- DisablePasswordReveal-OmaUri-Begin -->
@@ -63,7 +63,7 @@ The policy applies to all Windows components and applications that use the Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisablePasswordReveal-DFProperties-End -->
 
@@ -95,7 +95,7 @@ The policy applies to all Windows components and applications that use the Windo
 <!-- EnumerateAdministrators-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnumerateAdministrators-Applicability-End -->
 
 <!-- EnumerateAdministrators-OmaUri-Begin -->
@@ -122,7 +122,7 @@ This policy setting controls whether administrator accounts are displayed when a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnumerateAdministrators-DFProperties-End -->
 

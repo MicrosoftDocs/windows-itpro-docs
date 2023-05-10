@@ -4,7 +4,7 @@ description: Learn more about the Troubleshooting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowRecommendations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowRecommendations-Applicability-End -->
 
 <!-- AllowRecommendations-OmaUri-Begin -->
@@ -73,7 +73,7 @@ schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanne
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRecommendations-DFProperties-End -->

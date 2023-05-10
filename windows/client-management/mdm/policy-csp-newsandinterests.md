@@ -4,7 +4,7 @@ description: Learn more about the NewsAndInterests Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowNewsAndInterests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowNewsAndInterests-Applicability-End -->
 
 <!-- AllowNewsAndInterests-OmaUri-Begin -->
@@ -53,7 +53,7 @@ This policy applies to the entire widgets experience, including content on the t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowNewsAndInterests-DFProperties-End -->

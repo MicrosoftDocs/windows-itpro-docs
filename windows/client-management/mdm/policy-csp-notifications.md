@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- DisallowCloudNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisallowCloudNotification-Applicability-End -->
 
 <!-- DisallowCloudNotification-OmaUri-Begin -->
@@ -68,7 +68,7 @@ To validate the configuration:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowCloudNotification-DFProperties-End -->
@@ -108,7 +108,7 @@ To validate the configuration:
 <!-- DisallowNotificationMirroring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisallowNotificationMirroring-Applicability-End -->
 
 <!-- DisallowNotificationMirroring-OmaUri-Begin -->
@@ -139,7 +139,7 @@ This feature can be turned off by apps that don't want to participate in notific
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowNotificationMirroring-DFProperties-End -->
@@ -179,7 +179,7 @@ This feature can be turned off by apps that don't want to participate in notific
 <!-- DisallowTileNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisallowTileNotification-Applicability-End -->
 
 <!-- DisallowTileNotification-OmaUri-Begin -->
@@ -208,7 +208,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowTileNotification-DFProperties-End -->
@@ -248,7 +248,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- EnableExpandedToastNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1620] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1620] and later |
 <!-- EnableExpandedToastNotifications-Applicability-End -->
 
 <!-- EnableExpandedToastNotifications-OmaUri-Begin -->
@@ -274,7 +274,7 @@ This policy setting turns on multiple expanded toast notifications in action cen
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableExpandedToastNotifications-DFProperties-End -->
@@ -309,7 +309,7 @@ This policy setting turns on multiple expanded toast notifications in action cen
 <!-- WnsEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WnsEndpoint-Applicability-End -->
 
 <!-- WnsEndpoint-OmaUri-Begin -->
@@ -339,7 +339,7 @@ If you disable or don't configure this setting, the push notifications will conn
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WnsEndpoint-DFProperties-End -->
 

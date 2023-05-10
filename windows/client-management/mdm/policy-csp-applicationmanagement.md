@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAllTrustedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAllTrustedApps-Applicability-End -->
 
 <!-- AllowAllTrustedApps-OmaUri-Begin -->
@@ -53,7 +53,7 @@ This policy setting allows you to manage the installation of trusted line-of-bus
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowAllTrustedApps-DFProperties-End -->
@@ -94,7 +94,7 @@ This policy setting allows you to manage the installation of trusted line-of-bus
 <!-- AllowAppStoreAutoUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAppStoreAutoUpdate-Applicability-End -->
 
 <!-- AllowAppStoreAutoUpdate-OmaUri-Begin -->
@@ -117,7 +117,7 @@ Specifies whether automatic update of apps from Microsoft Store are allowed. Mos
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowAppStoreAutoUpdate-DFProperties-End -->
@@ -158,7 +158,7 @@ Specifies whether automatic update of apps from Microsoft Store are allowed. Mos
 <!-- AllowAutomaticAppArchiving-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowAutomaticAppArchiving-Applicability-End -->
 
 <!-- AllowAutomaticAppArchiving-OmaUri-Begin -->
@@ -187,7 +187,7 @@ This policy setting controls whether the system can archive infrequently used ap
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowAutomaticAppArchiving-DFProperties-End -->
@@ -228,7 +228,7 @@ This policy setting controls whether the system can archive infrequently used ap
 <!-- AllowDeveloperUnlock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDeveloperUnlock-Applicability-End -->
 
 <!-- AllowDeveloperUnlock-OmaUri-Begin -->
@@ -255,7 +255,7 @@ Allows or denies development of Microsoft Store applications and installing them
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowDeveloperUnlock-DFProperties-End -->
@@ -296,7 +296,7 @@ Allows or denies development of Microsoft Store applications and installing them
 <!-- AllowGameDVR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowGameDVR-Applicability-End -->
 
 <!-- AllowGameDVR-OmaUri-Begin -->
@@ -324,7 +324,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowGameDVR-DFProperties-End -->
@@ -364,7 +364,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- AllowSharedUserAppData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSharedUserAppData-Applicability-End -->
 
 <!-- AllowSharedUserAppData-OmaUri-Begin -->
@@ -391,7 +391,7 @@ Manages a Windows app's ability to share data between users who have installed t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowSharedUserAppData-DFProperties-End -->
@@ -434,7 +434,7 @@ Manages a Windows app's ability to share data between users who have installed t
 <!-- AllowStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStore-Applicability-End -->
 
 <!-- AllowStore-OmaUri-Begin -->
@@ -457,7 +457,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStore-DFProperties-End -->
@@ -486,7 +486,7 @@ This policy is deprecated.
 <!-- ApplicationRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ApplicationRestrictions-Applicability-End -->
 
 <!-- ApplicationRestrictions-OmaUri-Begin -->
@@ -509,7 +509,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApplicationRestrictions-DFProperties-End -->
 
@@ -525,7 +525,7 @@ This policy is deprecated.
 <!-- BlockNonAdminUserInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BlockNonAdminUserInstall-Applicability-End -->
 
 <!-- BlockNonAdminUserInstall-OmaUri-Begin -->
@@ -552,7 +552,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BlockNonAdminUserInstall-DFProperties-End -->
@@ -592,7 +592,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 <!-- DisableStoreOriginatedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableStoreOriginatedApps-Applicability-End -->
 
 <!-- DisableStoreOriginatedApps-OmaUri-Begin -->
@@ -615,7 +615,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableStoreOriginatedApps-DFProperties-End -->
@@ -655,7 +655,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 <!-- LaunchAppAfterLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- LaunchAppAfterLogOn-Applicability-End -->
 
 <!-- LaunchAppAfterLogOn-OmaUri-Begin -->
@@ -682,7 +682,7 @@ This policy allows the IT admin to specify a list of applications that users can
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LaunchAppAfterLogOn-DFProperties-End -->
@@ -708,7 +708,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <!-- MSIAllowUserControlOverInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MSIAllowUserControlOverInstall-Applicability-End -->
 
 <!-- MSIAllowUserControlOverInstall-OmaUri-Begin -->
@@ -739,7 +739,7 @@ This policy setting is designed for less restrictive environments. It can be use
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MSIAllowUserControlOverInstall-DFProperties-End -->
@@ -779,7 +779,7 @@ This policy setting is designed for less restrictive environments. It can be use
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Applicability-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-OmaUri-Begin -->
@@ -816,7 +816,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MSIAlwaysInstallWithElevatedPrivileges-DFProperties-End -->
@@ -856,7 +856,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 <!-- RequirePrivateStoreOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- RequirePrivateStoreOnly-Applicability-End -->
 
 <!-- RequirePrivateStoreOnly-OmaUri-Begin -->
@@ -887,7 +887,7 @@ Denies access to the retail catalog in the Microsoft Store, but displays the pri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RequirePrivateStoreOnly-DFProperties-End -->
@@ -927,7 +927,7 @@ Denies access to the retail catalog in the Microsoft Store, but displays the pri
 <!-- RestrictAppDataToSystemVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RestrictAppDataToSystemVolume-Applicability-End -->
 
 <!-- RestrictAppDataToSystemVolume-OmaUri-Begin -->
@@ -954,7 +954,7 @@ Prevent users' app data from moving to another location when an app is moved or 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RestrictAppDataToSystemVolume-DFProperties-End -->
@@ -994,7 +994,7 @@ Prevent users' app data from moving to another location when an app is moved or 
 <!-- RestrictAppToSystemVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RestrictAppToSystemVolume-Applicability-End -->
 
 <!-- RestrictAppToSystemVolume-OmaUri-Begin -->
@@ -1021,7 +1021,7 @@ This policy setting allows you to manage installing Windows apps on additional v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RestrictAppToSystemVolume-DFProperties-End -->
@@ -1061,7 +1061,7 @@ This policy setting allows you to manage installing Windows apps on additional v
 <!-- ScheduleForceRestartForUpdateFailures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ScheduleForceRestartForUpdateFailures-Applicability-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-OmaUri-Begin -->
@@ -1084,7 +1084,7 @@ To ensure apps are up-to-date, this policy allows the admins to set a recurring 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ScheduleForceRestartForUpdateFailures-DFProperties-End -->
 

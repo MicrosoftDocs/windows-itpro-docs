@@ -30,7 +30,7 @@ ms.topic: reference
 <!-- DisableAccessibilitySettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- DisableAccessibilitySettingSync-Applicability-End -->
 
 <!-- DisableAccessibilitySettingSync-OmaUri-Begin -->
@@ -59,7 +59,7 @@ If you do not set or disable this setting, syncing of the "accessibility" group 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAccessibilitySettingSync-DFProperties-End -->
 
@@ -91,7 +91,7 @@ If you do not set or disable this setting, syncing of the "accessibility" group 
 <!-- DisableLanguageSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- DisableLanguageSettingSync-Applicability-End -->
 
 <!-- DisableLanguageSettingSync-OmaUri-Begin -->
@@ -113,7 +113,7 @@ If you do not set or disable this setting, syncing of the "accessibility" group 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLanguageSettingSync-DFProperties-End -->
 

@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowClipboardHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowClipboardHistory-Applicability-End -->
 
 <!-- AllowClipboardHistory-OmaUri-Begin -->
@@ -55,7 +55,7 @@ Policy change takes effect immediately.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowClipboardHistory-DFProperties-End -->
@@ -105,7 +105,7 @@ Policy change takes effect immediately.
 <!-- AllowCopyPaste-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCopyPaste-Applicability-End -->
 
 <!-- AllowCopyPaste-OmaUri-Begin -->
@@ -128,7 +128,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCopyPaste-DFProperties-End -->
@@ -154,7 +154,7 @@ This policy is deprecated.
 <!-- AllowCortana-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCortana-Applicability-End -->
 
 <!-- AllowCortana-OmaUri-Begin -->
@@ -182,7 +182,7 @@ When Cortana is off, users will still be able to use search to find things on th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCortana-DFProperties-End -->
@@ -222,7 +222,7 @@ When Cortana is off, users will still be able to use search to find things on th
 <!-- AllowDeviceDiscovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDeviceDiscovery-Applicability-End -->
 
 <!-- AllowDeviceDiscovery-OmaUri-Begin -->
@@ -245,7 +245,7 @@ Allows users to turn on/off device discovery UX. When set to 0 , the projection 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowDeviceDiscovery-DFProperties-End -->
@@ -271,7 +271,7 @@ Allows users to turn on/off device discovery UX. When set to 0 , the projection 
 <!-- AllowFindMyDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFindMyDevice-Applicability-End -->
 
 <!-- AllowFindMyDevice-OmaUri-Begin -->
@@ -298,7 +298,7 @@ When Find My Device is off, the device and its location are not registered and t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFindMyDevice-DFProperties-End -->
@@ -338,7 +338,7 @@ When Find My Device is off, the device and its location are not registered and t
 <!-- AllowManualMDMUnenrollment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowManualMDMUnenrollment-Applicability-End -->
 
 <!-- AllowManualMDMUnenrollment-OmaUri-Begin -->
@@ -364,7 +364,7 @@ Specifies whether to allow the user to delete the workplace account using the wo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowManualMDMUnenrollment-DFProperties-End -->
@@ -390,7 +390,7 @@ Specifies whether to allow the user to delete the workplace account using the wo
 <!-- AllowSaveAsOfOfficeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSaveAsOfOfficeFiles-Applicability-End -->
 
 <!-- AllowSaveAsOfOfficeFiles-OmaUri-Begin -->
@@ -413,7 +413,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSaveAsOfOfficeFiles-DFProperties-End -->
@@ -439,7 +439,7 @@ This policy is deprecated.
 <!-- AllowScreenCapture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowScreenCapture-Applicability-End -->
 
 <!-- AllowScreenCapture-OmaUri-Begin -->
@@ -462,7 +462,7 @@ Allow screen capture.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowScreenCapture-DFProperties-End -->
@@ -491,7 +491,7 @@ Allow screen capture.
 <!-- AllowSharingOfOfficeFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSharingOfOfficeFiles-Applicability-End -->
 
 <!-- AllowSharingOfOfficeFiles-OmaUri-Begin -->
@@ -514,7 +514,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSharingOfOfficeFiles-DFProperties-End -->
@@ -540,7 +540,7 @@ This policy is deprecated.
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-Applicability-End -->
 
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-OmaUri-Begin -->
@@ -563,7 +563,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSIMErrorDialogPromptWhenNoSIM-DFProperties-End -->
@@ -589,7 +589,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 <!-- AllowSpotlightCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSpotlightCollection-Applicability-End -->
 
 <!-- AllowSpotlightCollection-OmaUri-Begin -->
@@ -619,7 +619,7 @@ The following list shows the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -651,7 +651,7 @@ The following list shows the supported values:
 <!-- AllowSyncMySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSyncMySettings-Applicability-End -->
 
 <!-- AllowSyncMySettings-OmaUri-Begin -->
@@ -674,7 +674,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSyncMySettings-DFProperties-End -->
@@ -700,7 +700,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowTailoredExperiencesWithDiagnosticData-Applicability-End -->
 
 <!-- AllowTailoredExperiencesWithDiagnosticData-OmaUri-Begin -->
@@ -729,7 +729,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowTailoredExperiencesWithDiagnosticData_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -773,7 +773,7 @@ This policy allows you to prevent Windows from using diagnostic data to provide 
 <!-- AllowTaskSwitcher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTaskSwitcher-Applicability-End -->
 
 <!-- AllowTaskSwitcher-OmaUri-Begin -->
@@ -796,7 +796,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTaskSwitcher-DFProperties-End -->
@@ -822,7 +822,7 @@ This policy is deprecated.
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-Applicability-End -->
 
 <!-- AllowThirdPartySuggestionsInWindowsSpotlight-OmaUri-Begin -->
@@ -845,7 +845,7 @@ Specifies whether to allow app and content suggestions from third-party software
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowThirdPartySuggestionsInWindowsSpotlight_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -889,7 +889,7 @@ Specifies whether to allow app and content suggestions from third-party software
 <!-- AllowVoiceRecording-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVoiceRecording-Applicability-End -->
 
 <!-- AllowVoiceRecording-OmaUri-Begin -->
@@ -912,7 +912,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVoiceRecording-DFProperties-End -->
@@ -938,7 +938,7 @@ This policy is deprecated.
 <!-- AllowWindowsConsumerFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsConsumerFeatures-Applicability-End -->
 
 <!-- AllowWindowsConsumerFeatures-OmaUri-Begin -->
@@ -961,7 +961,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsConsumerFeatures_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1002,7 +1002,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 <!-- AllowWindowsSpotlight-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsSpotlight-Applicability-End -->
 
 <!-- AllowWindowsSpotlight-OmaUri-Begin -->
@@ -1028,7 +1028,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWindowsSpotlight-DFProperties-End -->
@@ -1068,7 +1068,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 <!-- AllowWindowsSpotlightOnActionCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWindowsSpotlightOnActionCenter-Applicability-End -->
 
 <!-- AllowWindowsSpotlightOnActionCenter-OmaUri-Begin -->
@@ -1094,7 +1094,7 @@ This policy allows administrators to prevent Windows spotlight notifications fro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsSpotlightOnActionCenter_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1135,7 +1135,7 @@ This policy allows administrators to prevent Windows spotlight notifications fro
 <!-- AllowWindowsSpotlightOnSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowWindowsSpotlightOnSettings-Applicability-End -->
 
 <!-- AllowWindowsSpotlightOnSettings-OmaUri-Begin -->
@@ -1158,7 +1158,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWindowsSpotlightOnSettings-DFProperties-End -->
@@ -1198,7 +1198,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Applicability-End -->
 
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-OmaUri-Begin -->
@@ -1224,7 +1224,7 @@ This policy setting lets you turn off the Windows spotlight Windows welcome expe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsSpotlightWindowsWelcomeExperience_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1265,7 +1265,7 @@ This policy setting lets you turn off the Windows spotlight Windows welcome expe
 <!-- AllowWindowsTips-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsTips-Applicability-End -->
 
 <!-- AllowWindowsTips-OmaUri-Begin -->
@@ -1288,7 +1288,7 @@ Enables or disables Windows Tips / soft landing.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_AllowWindowsTips_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1332,7 +1332,7 @@ Enables or disables Windows Tips / soft landing.
 <!-- ConfigureChatIcon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureChatIcon-Applicability-End -->
 
 <!-- ConfigureChatIcon-OmaUri-Begin -->
@@ -1365,7 +1365,7 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureChatIcon-DFProperties-End -->
@@ -1407,7 +1407,7 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 <!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ConfigureWindowsSpotlightOnLockScreen-Applicability-End -->
 
 <!-- ConfigureWindowsSpotlightOnLockScreen-OmaUri-Begin -->
@@ -1441,7 +1441,7 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [Experience_ConfigureWindowsSpotlightOnLockScreen_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsSpotlight` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1484,7 +1484,7 @@ Additionally, if you check the "Include content from Enterprise spotlight" check
 <!-- DisableCloudOptimizedContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableCloudOptimizedContent-Applicability-End -->
 
 <!-- DisableCloudOptimizedContent-OmaUri-Begin -->
@@ -1511,7 +1511,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableCloudOptimizedContent-DFProperties-End -->
@@ -1551,7 +1551,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 <!-- DisableConsumerAccountStateContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableConsumerAccountStateContent-Applicability-End -->
 
 <!-- DisableConsumerAccountStateContent-OmaUri-Begin -->
@@ -1578,7 +1578,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableConsumerAccountStateContent-DFProperties-End -->
@@ -1618,7 +1618,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 <!-- DisableTextTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- DisableTextTranslation-Applicability-End -->
 
 <!-- DisableTextTranslation-OmaUri-Begin -->
@@ -1641,7 +1641,7 @@ Allows Text Translation feature to be enabled/disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableTextTranslation-DFProperties-End -->
@@ -1667,7 +1667,7 @@ Allows Text Translation feature to be enabled/disabled.
 <!-- DoNotShowFeedbackNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DoNotShowFeedbackNotifications-Applicability-End -->
 
 <!-- DoNotShowFeedbackNotifications-OmaUri-Begin -->
@@ -1697,7 +1697,7 @@ This policy setting allows an organization to prevent its devices from showing f
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DoNotShowFeedbackNotifications-DFProperties-End -->
@@ -1737,7 +1737,7 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- DoNotSyncBrowserSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DoNotSyncBrowserSettings-Applicability-End -->
 
 <!-- DoNotSyncBrowserSettings-OmaUri-Begin -->
@@ -1767,7 +1767,7 @@ Related policy: [PreventUsersFromTurningOnBrowserSyncing](#preventusersfromturni
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DoNotSyncBrowserSettings-DFProperties-End -->
@@ -1824,7 +1824,7 @@ _**Turn syncing off by default but don’t disable**_
 <!-- EnableOrganizationalMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- EnableOrganizationalMessages-Applicability-End -->
 
 <!-- EnableOrganizationalMessages-OmaUri-Begin -->
@@ -1847,7 +1847,7 @@ Organizational messages allow Administrators to deliver messages to their end us
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableOrganizationalMessages-DFProperties-End -->
@@ -1873,7 +1873,7 @@ Organizational messages allow Administrators to deliver messages to their end us
 <!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventUsersFromTurningOnBrowserSyncing-Applicability-End -->
 
 <!-- PreventUsersFromTurningOnBrowserSyncing-OmaUri-Begin -->
@@ -1896,7 +1896,7 @@ By default, the "browser" group syncs automatically between the user's devices, 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PreventUsersFromTurningOnBrowserSyncing-DFProperties-End -->
@@ -1956,7 +1956,7 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 <!-- ShowLockOnUserTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ShowLockOnUserTile-Applicability-End -->
 
 <!-- ShowLockOnUserTile-OmaUri-Begin -->
@@ -1985,7 +1985,7 @@ Shows or hides lock from the user tile menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ShowLockOnUserTile-DFProperties-End -->

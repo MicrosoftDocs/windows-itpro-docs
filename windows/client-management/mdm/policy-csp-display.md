@@ -4,7 +4,7 @@ description: Learn more about the Display Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- DisablePerProcessDpiForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisablePerProcessDpiForApps-Applicability-End -->
 
 <!-- DisablePerProcessDpiForApps-OmaUri-Begin -->
@@ -61,7 +61,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- DisablePerProcessDpiForApps-DFProperties-End -->
@@ -92,7 +92,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpi-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnablePerProcessDpi-Applicability-End -->
 
 <!-- EnablePerProcessDpi-OmaUri-Begin -->
@@ -144,7 +144,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnablePerProcessDpi-DFProperties-End -->
 
@@ -183,7 +183,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpiForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnablePerProcessDpiForApps-Applicability-End -->
 
 <!-- EnablePerProcessDpiForApps-OmaUri-Begin -->
@@ -218,7 +218,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- EnablePerProcessDpiForApps-DFProperties-End -->
@@ -249,7 +249,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- TurnOffGdiDPIScalingForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOffGdiDPIScalingForApps-Applicability-End -->
 
 <!-- TurnOffGdiDPIScalingForApps-OmaUri-Begin -->
@@ -289,7 +289,7 @@ If GDI DPI Scaling is configured to both turn-off and turn-on an application, th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- TurnOffGdiDPIScalingForApps-DFProperties-End -->
@@ -327,7 +327,7 @@ To validate on Desktop, do the following tasks:
 <!-- TurnOnGdiDPIScalingForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOnGdiDPIScalingForApps-Applicability-End -->
 
 <!-- TurnOnGdiDPIScalingForApps-OmaUri-Begin -->
@@ -365,7 +365,7 @@ If GDI DPI Scaling is configured to both turn-off and turn-on an application, th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- TurnOnGdiDPIScalingForApps-DFProperties-End -->

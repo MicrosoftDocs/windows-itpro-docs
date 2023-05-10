@@ -4,7 +4,7 @@ description: Learn more about the Education Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowGraphingCalculator-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AllowGraphingCalculator-Applicability-End -->
 
 <!-- AllowGraphingCalculator-OmaUri-Begin -->
@@ -52,7 +52,7 @@ This policy setting allows you to control whether graphing functionality is avai
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowGraphingCalculator-DFProperties-End -->
@@ -92,7 +92,7 @@ This policy setting allows you to control whether graphing functionality is avai
 <!-- DefaultPrinterName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DefaultPrinterName-Applicability-End -->
 
 <!-- DefaultPrinterName-OmaUri-Begin -->
@@ -116,7 +116,7 @@ The policy value is expected to be the name (network host name) of an installed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DefaultPrinterName-DFProperties-End -->
 
@@ -132,7 +132,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- EnableEduThemes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableEduThemes-Applicability-End -->
 
 <!-- EnableEduThemes-OmaUri-Begin -->
@@ -158,7 +158,7 @@ This policy setting allows you to control whether EDU-specific theme packs are a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableEduThemes-DFProperties-End -->
@@ -184,7 +184,7 @@ This policy setting allows you to control whether EDU-specific theme packs are a
 <!-- IsEducationEnvironment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- IsEducationEnvironment-Applicability-End -->
 
 <!-- IsEducationEnvironment-OmaUri-Begin -->
@@ -207,7 +207,7 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- IsEducationEnvironment-DFProperties-End -->
@@ -233,7 +233,7 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 <!-- PreventAddingNewPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PreventAddingNewPrinters-Applicability-End -->
 
 <!-- PreventAddingNewPrinters-OmaUri-Begin -->
@@ -269,7 +269,7 @@ This setting does not delete printers that users have already added. However, if
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventAddingNewPrinters-DFProperties-End -->
@@ -309,7 +309,7 @@ This setting does not delete printers that users have already added. However, if
 <!-- PrinterNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PrinterNames-Applicability-End -->
 
 <!-- PrinterNames-OmaUri-Begin -->
@@ -333,7 +333,7 @@ The policy value is expected to be a ```&#xF000;``` separated list of printer na
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- PrinterNames-DFProperties-End -->

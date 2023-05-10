@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- BootToCloudMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- BootToCloudMode-Applicability-End -->
 
 <!-- BootToCloudMode-OmaUri-Begin -->
@@ -51,7 +51,7 @@ This policy allows the user to configure the boot to cloud mode. Boot to Cloud m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BootToCloudMode-DFProperties-End -->

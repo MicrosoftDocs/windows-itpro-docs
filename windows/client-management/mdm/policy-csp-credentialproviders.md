@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowPINLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPINLogon-Applicability-End -->
 
 <!-- AllowPINLogon-OmaUri-Begin -->
@@ -60,7 +60,7 @@ To configure Windows Hello for Business, use the Administrative Template policie
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowPINLogon-DFProperties-End -->
 
@@ -92,7 +92,7 @@ To configure Windows Hello for Business, use the Administrative Template policie
 <!-- BlockPicturePassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- BlockPicturePassword-Applicability-End -->
 
 <!-- BlockPicturePassword-OmaUri-Begin -->
@@ -121,7 +121,7 @@ Note that the user's domain password will be cached in the system vault when usi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BlockPicturePassword-DFProperties-End -->
 
@@ -153,7 +153,7 @@ Note that the user's domain password will be cached in the system vault when usi
 <!-- DisableAutomaticReDeploymentCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableAutomaticReDeploymentCredentials-Applicability-End -->
 
 <!-- DisableAutomaticReDeploymentCredentials-OmaUri-Begin -->
@@ -176,7 +176,7 @@ Boolean policy to disable the visibility of the credential provider that trigger
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DisableAutomaticReDeploymentCredentials-DFProperties-End -->

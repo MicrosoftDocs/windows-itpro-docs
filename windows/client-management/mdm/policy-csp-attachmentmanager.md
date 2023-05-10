@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- DoNotPreserveZoneInformation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotPreserveZoneInformation-Applicability-End -->
 
 <!-- DoNotPreserveZoneInformation-OmaUri-Begin -->
@@ -57,7 +57,7 @@ This policy setting allows you to manage whether Windows marks file attachments 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotPreserveZoneInformation-DFProperties-End -->
 
@@ -89,7 +89,7 @@ This policy setting allows you to manage whether Windows marks file attachments 
 <!-- HideZoneInfoMechanism-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideZoneInfoMechanism-Applicability-End -->
 
 <!-- HideZoneInfoMechanism-OmaUri-Begin -->
@@ -118,7 +118,7 @@ This policy setting allows you to manage whether users can manually remove the z
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideZoneInfoMechanism-DFProperties-End -->
 
@@ -150,7 +150,7 @@ This policy setting allows you to manage whether users can manually remove the z
 <!-- NotifyAntivirusPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- NotifyAntivirusPrograms-Applicability-End -->
 
 <!-- NotifyAntivirusPrograms-OmaUri-Begin -->
@@ -179,7 +179,7 @@ This policy setting allows you to manage the behavior for notifying registered a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NotifyAntivirusPrograms-DFProperties-End -->
 

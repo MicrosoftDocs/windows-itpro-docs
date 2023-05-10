@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowMicrosoftAccountsToBeOptional-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowMicrosoftAccountsToBeOptional-Applicability-End -->
 
 <!-- AllowMicrosoftAccountsToBeOptional-OmaUri-Begin -->
@@ -55,7 +55,7 @@ This policy setting lets you control whether Microsoft accounts are optional for
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowMicrosoftAccountsToBeOptional-DFProperties-End -->
 

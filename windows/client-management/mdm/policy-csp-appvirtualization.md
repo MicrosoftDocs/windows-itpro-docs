@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowAppVClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowAppVClient-Applicability-End -->
 
 <!-- AllowAppVClient-OmaUri-Begin -->
@@ -51,7 +51,7 @@ This policy setting allows you to enable or disable Microsoft Application Virtua
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowAppVClient-DFProperties-End -->
 
@@ -83,7 +83,7 @@ This policy setting allows you to enable or disable Microsoft Application Virtua
 <!-- AllowDynamicVirtualization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowDynamicVirtualization-Applicability-End -->
 
 <!-- AllowDynamicVirtualization-OmaUri-Begin -->
@@ -106,7 +106,7 @@ Enables Dynamic Virtualization of supported shell extensions, browser helper obj
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowDynamicVirtualization-DFProperties-End -->
 
@@ -138,7 +138,7 @@ Enables Dynamic Virtualization of supported shell extensions, browser helper obj
 <!-- AllowPackageCleanup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPackageCleanup-Applicability-End -->
 
 <!-- AllowPackageCleanup-OmaUri-Begin -->
@@ -161,7 +161,7 @@ Enables automatic cleanup of appv packages that were added after Windows10 anniv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowPackageCleanup-DFProperties-End -->
 
@@ -193,7 +193,7 @@ Enables automatic cleanup of appv packages that were added after Windows10 anniv
 <!-- AllowPackageScripts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPackageScripts-Applicability-End -->
 
 <!-- AllowPackageScripts-OmaUri-Begin -->
@@ -216,7 +216,7 @@ Enables scripts defined in the package manifest of configuration files that shou
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowPackageScripts-DFProperties-End -->
 
@@ -248,7 +248,7 @@ Enables scripts defined in the package manifest of configuration files that shou
 <!-- AllowPublishingRefreshUX-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPublishingRefreshUX-Applicability-End -->
 
 <!-- AllowPublishingRefreshUX-OmaUri-Begin -->
@@ -271,7 +271,7 @@ Enables a UX to display to the user when a publishing refresh is performed on th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowPublishingRefreshUX-DFProperties-End -->
 
@@ -303,7 +303,7 @@ Enables a UX to display to the user when a publishing refresh is performed on th
 <!-- AllowReportingServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowReportingServer-Applicability-End -->
 
 <!-- AllowReportingServer-OmaUri-Begin -->
@@ -336,7 +336,7 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowReportingServer-DFProperties-End -->
 
@@ -368,7 +368,7 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 <!-- AllowRoamingFileExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowRoamingFileExclusions-Applicability-End -->
 
 <!-- AllowRoamingFileExclusions-OmaUri-Begin -->
@@ -391,7 +391,7 @@ Specifies the file paths relative to %userprofile% that do not roam with a user'
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowRoamingFileExclusions-DFProperties-End -->
 
@@ -422,7 +422,7 @@ Specifies the file paths relative to %userprofile% that do not roam with a user'
 <!-- AllowRoamingRegistryExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowRoamingRegistryExclusions-Applicability-End -->
 
 <!-- AllowRoamingRegistryExclusions-OmaUri-Begin -->
@@ -445,7 +445,7 @@ Specifies the registry paths that do not roam with a user profile. Example usage
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowRoamingRegistryExclusions-DFProperties-End -->
 
@@ -476,7 +476,7 @@ Specifies the registry paths that do not roam with a user profile. Example usage
 <!-- AllowStreamingAutoload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowStreamingAutoload-Applicability-End -->
 
 <!-- AllowStreamingAutoload-OmaUri-Begin -->
@@ -499,7 +499,7 @@ Specifies how new packages should be loaded automatically by App-V on a specific
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowStreamingAutoload-DFProperties-End -->
 
@@ -530,7 +530,7 @@ Specifies how new packages should be loaded automatically by App-V on a specific
 <!-- ClientCoexistenceAllowMigrationmode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ClientCoexistenceAllowMigrationmode-Applicability-End -->
 
 <!-- ClientCoexistenceAllowMigrationmode-OmaUri-Begin -->
@@ -553,7 +553,7 @@ Migration mode allows the App-V client to modify shortcuts and FTA's for package
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ClientCoexistenceAllowMigrationmode-DFProperties-End -->
 
@@ -585,7 +585,7 @@ Migration mode allows the App-V client to modify shortcuts and FTA's for package
 <!-- IntegrationAllowRootGlobal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntegrationAllowRootGlobal-Applicability-End -->
 
 <!-- IntegrationAllowRootGlobal-OmaUri-Begin -->
@@ -608,7 +608,7 @@ Specifies the location where symbolic links are created to the current version o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntegrationAllowRootGlobal-DFProperties-End -->
 
@@ -639,7 +639,7 @@ Specifies the location where symbolic links are created to the current version o
 <!-- IntegrationAllowRootUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IntegrationAllowRootUser-Applicability-End -->
 
 <!-- IntegrationAllowRootUser-OmaUri-Begin -->
@@ -662,7 +662,7 @@ Specifies the location where symbolic links are created to the current version o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IntegrationAllowRootUser-DFProperties-End -->
 
@@ -693,7 +693,7 @@ Specifies the location where symbolic links are created to the current version o
 <!-- PublishingAllowServer1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishingAllowServer1-Applicability-End -->
 
 <!-- PublishingAllowServer1-OmaUri-Begin -->
@@ -734,7 +734,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishingAllowServer1-DFProperties-End -->
 
@@ -765,7 +765,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishingAllowServer2-Applicability-End -->
 
 <!-- PublishingAllowServer2-OmaUri-Begin -->
@@ -806,7 +806,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishingAllowServer2-DFProperties-End -->
 
@@ -837,7 +837,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishingAllowServer3-Applicability-End -->
 
 <!-- PublishingAllowServer3-OmaUri-Begin -->
@@ -878,7 +878,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishingAllowServer3-DFProperties-End -->
 
@@ -909,7 +909,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer4-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishingAllowServer4-Applicability-End -->
 
 <!-- PublishingAllowServer4-OmaUri-Begin -->
@@ -950,7 +950,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishingAllowServer4-DFProperties-End -->
 
@@ -981,7 +981,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer5-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishingAllowServer5-Applicability-End -->
 
 <!-- PublishingAllowServer5-OmaUri-Begin -->
@@ -1022,7 +1022,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishingAllowServer5-DFProperties-End -->
 
@@ -1053,7 +1053,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- StreamingAllowCertificateFilterForClient_SSL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowCertificateFilterForClient_SSL-Applicability-End -->
 
 <!-- StreamingAllowCertificateFilterForClient_SSL-OmaUri-Begin -->
@@ -1076,7 +1076,7 @@ Specifies the path to a valid certificate in the certificate store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowCertificateFilterForClient_SSL-DFProperties-End -->
 
@@ -1107,7 +1107,7 @@ Specifies the path to a valid certificate in the certificate store.
 <!-- StreamingAllowHighCostLaunch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowHighCostLaunch-Applicability-End -->
 
 <!-- StreamingAllowHighCostLaunch-OmaUri-Begin -->
@@ -1130,7 +1130,7 @@ This setting controls whether virtualized applications are launched on Windows 8
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowHighCostLaunch-DFProperties-End -->
 
@@ -1162,7 +1162,7 @@ This setting controls whether virtualized applications are launched on Windows 8
 <!-- StreamingAllowLocationProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowLocationProvider-Applicability-End -->
 
 <!-- StreamingAllowLocationProvider-OmaUri-Begin -->
@@ -1185,7 +1185,7 @@ Specifies the CLSID for a compatible implementation of the IAppvPackageLocationP
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowLocationProvider-DFProperties-End -->
 
@@ -1216,7 +1216,7 @@ Specifies the CLSID for a compatible implementation of the IAppvPackageLocationP
 <!-- StreamingAllowPackageInstallationRoot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowPackageInstallationRoot-Applicability-End -->
 
 <!-- StreamingAllowPackageInstallationRoot-OmaUri-Begin -->
@@ -1239,7 +1239,7 @@ Specifies directory where all new applications and updates will be installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowPackageInstallationRoot-DFProperties-End -->
 
@@ -1270,7 +1270,7 @@ Specifies directory where all new applications and updates will be installed.
 <!-- StreamingAllowPackageSourceRoot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowPackageSourceRoot-Applicability-End -->
 
 <!-- StreamingAllowPackageSourceRoot-OmaUri-Begin -->
@@ -1293,7 +1293,7 @@ Overrides source location for downloading package content.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowPackageSourceRoot-DFProperties-End -->
 
@@ -1324,7 +1324,7 @@ Overrides source location for downloading package content.
 <!-- StreamingAllowReestablishmentInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowReestablishmentInterval-Applicability-End -->
 
 <!-- StreamingAllowReestablishmentInterval-OmaUri-Begin -->
@@ -1347,7 +1347,7 @@ Specifies the number of seconds between attempts to reestablish a dropped sessio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowReestablishmentInterval-DFProperties-End -->
 
@@ -1378,7 +1378,7 @@ Specifies the number of seconds between attempts to reestablish a dropped sessio
 <!-- StreamingAllowReestablishmentRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingAllowReestablishmentRetries-Applicability-End -->
 
 <!-- StreamingAllowReestablishmentRetries-OmaUri-Begin -->
@@ -1401,7 +1401,7 @@ Specifies the number of times to retry a dropped session.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingAllowReestablishmentRetries-DFProperties-End -->
 
@@ -1432,7 +1432,7 @@ Specifies the number of times to retry a dropped session.
 <!-- StreamingSharedContentStoreMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingSharedContentStoreMode-Applicability-End -->
 
 <!-- StreamingSharedContentStoreMode-OmaUri-Begin -->
@@ -1455,7 +1455,7 @@ Specifies that streamed package contents will be not be saved to the local hard 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingSharedContentStoreMode-DFProperties-End -->
 
@@ -1487,7 +1487,7 @@ Specifies that streamed package contents will be not be saved to the local hard 
 <!-- StreamingSupportBranchCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingSupportBranchCache-Applicability-End -->
 
 <!-- StreamingSupportBranchCache-OmaUri-Begin -->
@@ -1510,7 +1510,7 @@ If enabled, the App-V client will support BrancheCache compatible HTTP streaming
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingSupportBranchCache-DFProperties-End -->
 
@@ -1542,7 +1542,7 @@ If enabled, the App-V client will support BrancheCache compatible HTTP streaming
 <!-- StreamingVerifyCertificateRevocationList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- StreamingVerifyCertificateRevocationList-Applicability-End -->
 
 <!-- StreamingVerifyCertificateRevocationList-OmaUri-Begin -->
@@ -1565,7 +1565,7 @@ Verifies Server certificate revocation status before streaming using HTTPS.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StreamingVerifyCertificateRevocationList-DFProperties-End -->
 
@@ -1597,7 +1597,7 @@ Verifies Server certificate revocation status before streaming using HTTPS.
 <!-- VirtualComponentsAllowList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- VirtualComponentsAllowList-Applicability-End -->
 
 <!-- VirtualComponentsAllowList-OmaUri-Begin -->
@@ -1620,7 +1620,7 @@ Specifies a list of process paths (may contain wildcards) which are candidates f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- VirtualComponentsAllowList-DFProperties-End -->
 

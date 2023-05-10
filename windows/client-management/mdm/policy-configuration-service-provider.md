@@ -80,7 +80,7 @@ The following list shows the Policy configuration service provider nodes:
 <!-- Device-Config-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-Applicability-End -->
 
 <!-- Device-Config-OmaUri-Begin -->
@@ -103,7 +103,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-Config-DFProperties-End -->
 
@@ -119,7 +119,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- Device-Config-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-{AreaName}-Applicability-End -->
 
 <!-- Device-Config-{AreaName}-OmaUri-Begin -->
@@ -142,7 +142,7 @@ The area group that can be configured by a single technology for a single provid
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Config-{AreaName}-DFProperties-End -->
@@ -159,7 +159,7 @@ The area group that can be configured by a single technology for a single provid
 <!-- Device-Config-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Config-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- Device-Config-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -190,7 +190,7 @@ The following list shows some tips to help you when configuring policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Config-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -207,7 +207,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- Device-ConfigOperations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-ConfigOperations-Applicability-End -->
 
 <!-- Device-ConfigOperations-OmaUri-Begin -->
@@ -230,7 +230,7 @@ The root node for grouping different configuration operations.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-ConfigOperations-DFProperties-End -->
 
@@ -246,7 +246,7 @@ The root node for grouping different configuration operations.
 <!-- Device-ConfigOperations-ADMXInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-OmaUri-Begin -->
@@ -273,7 +273,7 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-ConfigOperations-ADMXInstall-DFProperties-End -->
 
@@ -289,7 +289,7 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-OmaUri-Begin -->
@@ -312,7 +312,7 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-DFProperties-End -->
@@ -329,7 +329,7 @@ Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX f
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-OmaUri-Begin -->
@@ -352,7 +352,7 @@ Setting Type of Win32 App. Policy Or Preference.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Setting Type of Win32 App. Policy Or Preference |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-DFProperties-End -->
@@ -369,7 +369,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -392,7 +392,7 @@ Unique ID of ADMX file.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-{SettingsType}-{AdmxFileId}-DFProperties-End -->
@@ -409,7 +409,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-OmaUri-Begin -->
@@ -432,7 +432,7 @@ Properties of Win32 App ADMX Ingestion.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-DFProperties-End -->
 
@@ -448,7 +448,7 @@ Properties of Win32 App ADMX Ingestion.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-OmaUri-Begin -->
@@ -471,7 +471,7 @@ Setting Type of Win32 App. Policy Or Preference.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: Setting Type of Win32 App. Policy Or Preference |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-DFProperties-End -->
@@ -488,7 +488,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -511,7 +511,7 @@ Unique ID of ADMX file.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-DFProperties-End -->
@@ -528,7 +528,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.1481] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1099] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.832] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.387] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-OmaUri-Begin -->
@@ -551,7 +551,7 @@ Version of ADMX file. This can be set by the server to keep a record of the vers
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-DFProperties-End -->
 
@@ -567,7 +567,7 @@ Version of ADMX file. This can be set by the server to keep a record of the vers
 <!-- Device-Result-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-Applicability-End -->
 
 <!-- Device-Result-OmaUri-Begin -->
@@ -590,7 +590,7 @@ Groups the evaluated policies from all providers that can be configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Result-DFProperties-End -->
 
@@ -606,7 +606,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- Device-Result-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-{AreaName}-Applicability-End -->
 
 <!-- Device-Result-{AreaName}-OmaUri-Begin -->
@@ -629,7 +629,7 @@ The area group that can be configured by a single technology independent of the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Result-{AreaName}-DFProperties-End -->
@@ -646,7 +646,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- Device-Result-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Result-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- Device-Result-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -669,7 +669,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Result-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -686,7 +686,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Config-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Config-Applicability-End -->
 
 <!-- User-Config-OmaUri-Begin -->
@@ -709,7 +709,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-Config-DFProperties-End -->
 
@@ -725,7 +725,7 @@ Node for grouping all policies configured by one source. The configuration sourc
 <!-- User-Config-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Config-{AreaName}-Applicability-End -->
 
 <!-- User-Config-{AreaName}-OmaUri-Begin -->
@@ -756,7 +756,7 @@ The following list shows some tips to help you when configuring policies:
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-Config-{AreaName}-DFProperties-End -->
@@ -773,7 +773,7 @@ The following list shows some tips to help you when configuring policies:
 <!-- User-Config-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Config-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- User-Config-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -796,7 +796,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Add, Delete, Get, Replace |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-Config-{AreaName}-{PolicyName}-DFProperties-End -->
@@ -813,7 +813,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 <!-- User-Result-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Result-Applicability-End -->
 
 <!-- User-Result-OmaUri-Begin -->
@@ -836,7 +836,7 @@ Groups the evaluated policies from all providers that can be configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-Result-DFProperties-End -->
 
@@ -852,7 +852,7 @@ Groups the evaluated policies from all providers that can be configured.
 <!-- User-Result-{AreaName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Result-{AreaName}-Applicability-End -->
 
 <!-- User-Result-{AreaName}-OmaUri-Begin -->
@@ -875,7 +875,7 @@ The area group that can be configured by a single technology independent of the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-Result-{AreaName}-DFProperties-End -->
@@ -892,7 +892,7 @@ The area group that can be configured by a single technology independent of the 
 <!-- User-Result-{AreaName}-{PolicyName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | <!-- Not-Found --> |
 <!-- User-Result-{AreaName}-{PolicyName}-Applicability-End -->
 
 <!-- User-Result-{AreaName}-{PolicyName}-OmaUri-Begin -->
@@ -915,7 +915,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- User-Result-{AreaName}-{PolicyName}-DFProperties-End -->

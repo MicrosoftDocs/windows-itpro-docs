@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- CustomizeConsentSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- CustomizeConsentSettings-Applicability-End -->
 
 <!-- CustomizeConsentSettings-OmaUri-Begin -->
@@ -65,7 +65,7 @@ This policy setting determines the consent behavior of Windows Error Reporting f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomizeConsentSettings-DFProperties-End -->
 
@@ -96,7 +96,7 @@ This policy setting determines the consent behavior of Windows Error Reporting f
 <!-- DisableWindowsErrorReporting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableWindowsErrorReporting-Applicability-End -->
 
 <!-- DisableWindowsErrorReporting-OmaUri-Begin -->
@@ -123,7 +123,7 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableWindowsErrorReporting-DFProperties-End -->
 
@@ -155,7 +155,7 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 <!-- DisplayErrorNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisplayErrorNotification-Applicability-End -->
 
 <!-- DisplayErrorNotification-OmaUri-Begin -->
@@ -186,7 +186,7 @@ See also the Configure Error Reporting policy setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisplayErrorNotification-DFProperties-End -->
 
@@ -218,7 +218,7 @@ See also the Configure Error Reporting policy setting.
 <!-- DoNotSendAdditionalData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotSendAdditionalData-Applicability-End -->
 
 <!-- DoNotSendAdditionalData-OmaUri-Begin -->
@@ -245,7 +245,7 @@ This policy setting controls whether additional data in support of error reports
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DoNotSendAdditionalData-DFProperties-End -->
 
@@ -277,7 +277,7 @@ This policy setting controls whether additional data in support of error reports
 <!-- PreventCriticalErrorDisplay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventCriticalErrorDisplay-Applicability-End -->
 
 <!-- PreventCriticalErrorDisplay-OmaUri-Begin -->
@@ -304,7 +304,7 @@ This policy setting prevents the display of the user interface for critical erro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventCriticalErrorDisplay-DFProperties-End -->
 

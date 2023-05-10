@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowCustomSSPsAPs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- AllowCustomSSPsAPs-Applicability-End -->
 
 <!-- AllowCustomSSPsAPs-OmaUri-Begin -->
@@ -55,7 +55,7 @@ This policy controls the configuration under which LSASS loads custom SSPs and A
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowCustomSSPsAPs-DFProperties-End -->
 
@@ -87,7 +87,7 @@ This policy controls the configuration under which LSASS loads custom SSPs and A
 <!-- ConfigureLsaProtectedProcess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureLsaProtectedProcess-Applicability-End -->
 
 <!-- ConfigureLsaProtectedProcess-OmaUri-Begin -->
@@ -118,7 +118,7 @@ This policy controls the configuration under which LSASS is run.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureLsaProtectedProcess-DFProperties-End -->

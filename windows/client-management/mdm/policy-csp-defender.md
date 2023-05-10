@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowArchiveScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowArchiveScanning-Applicability-End -->
 
 <!-- AllowArchiveScanning-OmaUri-Begin -->
@@ -55,7 +55,7 @@ This policy setting allows you to configure scans for malicious software and unw
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowArchiveScanning-DFProperties-End -->
@@ -95,7 +95,7 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- AllowBehaviorMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowBehaviorMonitoring-Applicability-End -->
 
 <!-- AllowBehaviorMonitoring-OmaUri-Begin -->
@@ -124,7 +124,7 @@ This policy setting allows you to configure behavior monitoring.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowBehaviorMonitoring-DFProperties-End -->
@@ -164,7 +164,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- AllowCloudProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCloudProtection-Applicability-End -->
 
 <!-- AllowCloudProtection-OmaUri-Begin -->
@@ -206,7 +206,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCloudProtection-DFProperties-End -->
@@ -246,7 +246,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- AllowEmailScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEmailScanning-Applicability-End -->
 
 <!-- AllowEmailScanning-OmaUri-Begin -->
@@ -273,7 +273,7 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowEmailScanning-DFProperties-End -->
@@ -313,7 +313,7 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 <!-- AllowFullScanOnMappedNetworkDrives-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFullScanOnMappedNetworkDrives-Applicability-End -->
 
 <!-- AllowFullScanOnMappedNetworkDrives-OmaUri-Begin -->
@@ -340,7 +340,7 @@ This policy setting allows you to configure scanning mapped network drives.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowFullScanOnMappedNetworkDrives-DFProperties-End -->
@@ -380,7 +380,7 @@ This policy setting allows you to configure scanning mapped network drives.
 <!-- AllowFullScanRemovableDriveScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFullScanRemovableDriveScanning-Applicability-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-OmaUri-Begin -->
@@ -407,7 +407,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFullScanRemovableDriveScanning-DFProperties-End -->
@@ -447,7 +447,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 <!-- AllowIntrusionPreventionSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowIntrusionPreventionSystem-Applicability-End -->
 
 <!-- AllowIntrusionPreventionSystem-OmaUri-Begin -->
@@ -472,7 +472,7 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowIntrusionPreventionSystem-DFProperties-End -->
@@ -498,7 +498,7 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- AllowIOAVProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowIOAVProtection-Applicability-End -->
 
 <!-- AllowIOAVProtection-OmaUri-Begin -->
@@ -527,7 +527,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowIOAVProtection-DFProperties-End -->
@@ -567,7 +567,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- AllowOnAccessProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowOnAccessProtection-Applicability-End -->
 
 <!-- AllowOnAccessProtection-OmaUri-Begin -->
@@ -596,7 +596,7 @@ This policy setting allows you to configure monitoring for file and program acti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowOnAccessProtection-DFProperties-End -->
@@ -636,7 +636,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- AllowRealtimeMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowRealtimeMonitoring-Applicability-End -->
 
 <!-- AllowRealtimeMonitoring-OmaUri-Begin -->
@@ -661,7 +661,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowRealtimeMonitoring-DFProperties-End -->
@@ -701,7 +701,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- AllowScanningNetworkFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowScanningNetworkFiles-Applicability-End -->
 
 <!-- AllowScanningNetworkFiles-OmaUri-Begin -->
@@ -727,7 +727,7 @@ This policy setting allows you to configure real-time scanning for files that ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowScanningNetworkFiles-DFProperties-End -->
@@ -767,7 +767,7 @@ This policy setting allows you to configure real-time scanning for files that ar
 <!-- AllowScriptScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowScriptScanning-Applicability-End -->
 
 <!-- AllowScriptScanning-OmaUri-Begin -->
@@ -792,7 +792,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowScriptScanning-DFProperties-End -->
@@ -818,7 +818,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowUserUIAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUserUIAccess-Applicability-End -->
 
 <!-- AllowUserUIAccess-OmaUri-Begin -->
@@ -842,7 +842,7 @@ If you enable this setting AM UI won't be available to users.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUserUIAccess-DFProperties-End -->
@@ -882,7 +882,7 @@ If you enable this setting AM UI won't be available to users.
 <!-- AttackSurfaceReductionOnlyExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AttackSurfaceReductionOnlyExclusions-Applicability-End -->
 
 <!-- AttackSurfaceReductionOnlyExclusions-OmaUri-Begin -->
@@ -920,7 +920,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- AttackSurfaceReductionOnlyExclusions-DFProperties-End -->
@@ -951,7 +951,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 <!-- AttackSurfaceReductionRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AttackSurfaceReductionRules-Applicability-End -->
 
 <!-- AttackSurfaceReductionRules-OmaUri-Begin -->
@@ -1015,7 +1015,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AttackSurfaceReductionRules-DFProperties-End -->
 
@@ -1045,7 +1045,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 <!-- AvgCPULoadFactor-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AvgCPULoadFactor-Applicability-End -->
 
 <!-- AvgCPULoadFactor-OmaUri-Begin -->
@@ -1072,7 +1072,7 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 50 |
@@ -1104,7 +1104,7 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 <!-- CheckForSignaturesBeforeRunningScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CheckForSignaturesBeforeRunningScan-Applicability-End -->
 
 <!-- CheckForSignaturesBeforeRunningScan-OmaUri-Begin -->
@@ -1133,7 +1133,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- CheckForSignaturesBeforeRunningScan-DFProperties-End -->
@@ -1172,7 +1172,7 @@ This setting applies to scheduled scans, but it has no effect on scans initiated
 <!-- CloudBlockLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CloudBlockLevel-Applicability-End -->
 
 <!-- CloudBlockLevel-OmaUri-Begin -->
@@ -1209,7 +1209,7 @@ Possible options are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- CloudBlockLevel-DFProperties-End -->
@@ -1251,7 +1251,7 @@ Possible options are:
 <!-- CloudExtendedTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- CloudExtendedTimeout-Applicability-End -->
 
 <!-- CloudExtendedTimeout-OmaUri-Begin -->
@@ -1281,7 +1281,7 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-50]` |
 | Default Value  | 0 |
@@ -1313,7 +1313,7 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 <!-- ControlledFolderAccessAllowedApplications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ControlledFolderAccessAllowedApplications-Applicability-End -->
 
 <!-- ControlledFolderAccessAllowedApplications-OmaUri-Begin -->
@@ -1353,7 +1353,7 @@ Default system folders are automatically guarded, but you can add folders in the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ControlledFolderAccessAllowedApplications-DFProperties-End -->
@@ -1384,7 +1384,7 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- ControlledFolderAccessProtectedFolders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ControlledFolderAccessProtectedFolders-Applicability-End -->
 
 <!-- ControlledFolderAccessProtectedFolders-OmaUri-Begin -->
@@ -1425,7 +1425,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ControlledFolderAccessProtectedFolders-DFProperties-End -->
@@ -1456,7 +1456,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 <!-- DaysToRetainCleanedMalware-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DaysToRetainCleanedMalware-Applicability-End -->
 
 <!-- DaysToRetainCleanedMalware-OmaUri-Begin -->
@@ -1483,7 +1483,7 @@ This policy setting defines the number of days items should be kept in the Quara
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-90]` |
 | Default Value  | 0 |
@@ -1515,7 +1515,7 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- DisableCatchupFullScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableCatchupFullScan-Applicability-End -->
 
 <!-- DisableCatchupFullScan-OmaUri-Begin -->
@@ -1542,7 +1542,7 @@ This policy setting allows you to configure catch-up scans for scheduled full sc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DisableCatchupFullScan-DFProperties-End -->
@@ -1581,7 +1581,7 @@ This policy setting allows you to configure catch-up scans for scheduled full sc
 <!-- DisableCatchupQuickScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableCatchupQuickScan-Applicability-End -->
 
 <!-- DisableCatchupQuickScan-OmaUri-Begin -->
@@ -1608,7 +1608,7 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DisableCatchupQuickScan-DFProperties-End -->
@@ -1647,7 +1647,7 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 <!-- EnableControlledFolderAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableControlledFolderAccess-Applicability-End -->
 
 <!-- EnableControlledFolderAccess-OmaUri-Begin -->
@@ -1721,7 +1721,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableControlledFolderAccess-DFProperties-End -->
@@ -1762,7 +1762,7 @@ Same as Disabled.
 <!-- EnableLowCPUPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableLowCPUPriority-Applicability-End -->
 
 <!-- EnableLowCPUPriority-OmaUri-Begin -->
@@ -1789,7 +1789,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableLowCPUPriority-DFProperties-End -->
@@ -1828,7 +1828,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 <!-- EnableNetworkProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableNetworkProtection-Applicability-End -->
 
 <!-- EnableNetworkProtection-OmaUri-Begin -->
@@ -1863,7 +1863,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableNetworkProtection-DFProperties-End -->
@@ -1903,7 +1903,7 @@ Same as Disabled.
 <!-- ExcludedExtensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludedExtensions-Applicability-End -->
 
 <!-- ExcludedExtensions-OmaUri-Begin -->
@@ -1928,7 +1928,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedExtensions-DFProperties-End -->
@@ -1959,7 +1959,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 <!-- ExcludedPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludedPaths-Applicability-End -->
 
 <!-- ExcludedPaths-OmaUri-Begin -->
@@ -1984,7 +1984,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedPaths-DFProperties-End -->
@@ -2015,7 +2015,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 <!-- ExcludedProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludedProcesses-Applicability-End -->
 
 <!-- ExcludedProcesses-OmaUri-Begin -->
@@ -2043,7 +2043,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedProcesses-DFProperties-End -->
@@ -2074,7 +2074,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 <!-- PUAProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PUAProtection-Applicability-End -->
 
 <!-- PUAProtection-OmaUri-Begin -->
@@ -2109,7 +2109,7 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PUAProtection-DFProperties-End -->
@@ -2149,7 +2149,7 @@ Same as Disabled.
 <!-- RealTimeScanDirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RealTimeScanDirection-Applicability-End -->
 
 <!-- RealTimeScanDirection-OmaUri-Begin -->
@@ -2185,7 +2185,7 @@ Any other value, or if the value does not exist, resolves to the default (0).
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RealTimeScanDirection-DFProperties-End -->
@@ -2226,7 +2226,7 @@ Any other value, or if the value does not exist, resolves to the default (0).
 <!-- ScanParameter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScanParameter-Applicability-End -->
 
 <!-- ScanParameter-OmaUri-Begin -->
@@ -2255,7 +2255,7 @@ This policy setting allows you to specify the scan type to use during a schedule
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ScanParameter-DFProperties-End -->
@@ -2295,7 +2295,7 @@ This policy setting allows you to specify the scan type to use during a schedule
 <!-- ScheduleQuickScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduleQuickScanTime-Applicability-End -->
 
 <!-- ScheduleQuickScanTime-OmaUri-Begin -->
@@ -2322,7 +2322,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1380]` |
 | Default Value  | 120 |
@@ -2354,7 +2354,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- ScheduleScanDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduleScanDay-Applicability-End -->
 
 <!-- ScheduleScanDay-OmaUri-Begin -->
@@ -2392,7 +2392,7 @@ This setting can be configured with the following ordinal number values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ScheduleScanDay-DFProperties-End -->
@@ -2439,7 +2439,7 @@ This setting can be configured with the following ordinal number values:
 <!-- ScheduleScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduleScanTime-Applicability-End -->
 
 <!-- ScheduleScanTime-OmaUri-Begin -->
@@ -2466,7 +2466,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1380]` |
 | Default Value  | 120 |
@@ -2498,7 +2498,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- SecurityIntelligenceLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SecurityIntelligenceLocation-Applicability-End -->
 
 <!-- SecurityIntelligenceLocation-OmaUri-Begin -->
@@ -2523,7 +2523,7 @@ If you disable or do not configure this setting, security intelligence will be r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SecurityIntelligenceLocation-DFProperties-End -->
 
@@ -2553,7 +2553,7 @@ If you disable or do not configure this setting, security intelligence will be r
 <!-- SignatureUpdateFallbackOrder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SignatureUpdateFallbackOrder-Applicability-End -->
 
 <!-- SignatureUpdateFallbackOrder-OmaUri-Begin -->
@@ -2582,7 +2582,7 @@ For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- SignatureUpdateFallbackOrder-DFProperties-End -->
@@ -2613,7 +2613,7 @@ For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 <!-- SignatureUpdateFileSharesSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SignatureUpdateFileSharesSources-Applicability-End -->
 
 <!-- SignatureUpdateFileSharesSources-OmaUri-Begin -->
@@ -2640,7 +2640,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- SignatureUpdateFileSharesSources-DFProperties-End -->
@@ -2671,7 +2671,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 <!-- SignatureUpdateInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- SignatureUpdateInterval-Applicability-End -->
 
 <!-- SignatureUpdateInterval-OmaUri-Begin -->
@@ -2698,7 +2698,7 @@ This policy setting allows you to specify an interval at which to check for secu
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-24]` |
 | Default Value  | 8 |
@@ -2730,7 +2730,7 @@ This policy setting allows you to specify an interval at which to check for secu
 <!-- SubmitSamplesConsent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- SubmitSamplesConsent-Applicability-End -->
 
 <!-- SubmitSamplesConsent-OmaUri-Begin -->
@@ -2759,7 +2759,7 @@ Possible options are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SubmitSamplesConsent-DFProperties-End -->
@@ -2801,7 +2801,7 @@ Possible options are:
 <!-- ThreatSeverityDefaultAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ThreatSeverityDefaultAction-Applicability-End -->
 
 <!-- ThreatSeverityDefaultAction-OmaUri-Begin -->
@@ -2837,7 +2837,7 @@ Valid remediation action values are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ThreatSeverityDefaultAction-DFProperties-End -->
 

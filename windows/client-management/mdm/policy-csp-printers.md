@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ApprovedUsbPrintDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApprovedUsbPrintDevices-Applicability-End -->
 
 <!-- ApprovedUsbPrintDevices-OmaUri-Begin -->
@@ -56,7 +56,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedUsbPrintDevices-DFProperties-End -->
 
@@ -87,7 +87,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 <!-- ApprovedUsbPrintDevicesUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApprovedUsbPrintDevicesUser-Applicability-End -->
 
 <!-- ApprovedUsbPrintDevicesUser-OmaUri-Begin -->
@@ -115,7 +115,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedUsbPrintDevicesUser-DFProperties-End -->
 
@@ -146,7 +146,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 <!-- ConfigureCopyFilesPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureCopyFilesPolicy-Applicability-End -->
 
 <!-- ConfigureCopyFilesPolicy-OmaUri-Begin -->
@@ -184,7 +184,7 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureCopyFilesPolicy-DFProperties-End -->
 
@@ -215,7 +215,7 @@ The following are the supported values:
 <!-- ConfigureDriverValidationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureDriverValidationLevel-Applicability-End -->
 
 <!-- ConfigureDriverValidationLevel-OmaUri-Begin -->
@@ -265,7 +265,7 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureDriverValidationLevel-DFProperties-End -->
 
@@ -296,7 +296,7 @@ The following are the supported values:
 <!-- ConfigureIppPageCountsPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureIppPageCountsPolicy-Applicability-End -->
 
 <!-- ConfigureIppPageCountsPolicy-OmaUri-Begin -->
@@ -329,7 +329,7 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureIppPageCountsPolicy-DFProperties-End -->
 
@@ -361,7 +361,7 @@ The following are the supported values:
 <!-- ConfigureRedirectionGuardPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRedirectionGuardPolicy-Applicability-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-OmaUri-Begin -->
@@ -401,7 +401,7 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRedirectionGuardPolicy-DFProperties-End -->
 
@@ -432,7 +432,7 @@ The following are the supported values:
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Applicability-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-OmaUri-Begin -->
@@ -454,7 +454,7 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-DFProperties-End -->
 
@@ -482,7 +482,7 @@ The following are the supported values:
 <!-- ConfigureRpcConnectionPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcConnectionPolicy-Applicability-End -->
 
 <!-- ConfigureRpcConnectionPolicy-OmaUri-Begin -->
@@ -520,7 +520,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcConnectionPolicy-DFProperties-End -->
 
@@ -551,7 +551,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 <!-- ConfigureRpcListenerPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcListenerPolicy-Applicability-End -->
 
 <!-- ConfigureRpcListenerPolicy-OmaUri-Begin -->
@@ -589,7 +589,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcListenerPolicy-DFProperties-End -->
 
@@ -620,7 +620,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 <!-- ConfigureRpcTcpPort-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcTcpPort-Applicability-End -->
 
 <!-- ConfigureRpcTcpPort-OmaUri-Begin -->
@@ -651,7 +651,7 @@ If you disable or do not configure this policy setting, dynamic TCP ports are us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcTcpPort-DFProperties-End -->
 
@@ -682,7 +682,7 @@ If you disable or do not configure this policy setting, dynamic TCP ports are us
 <!-- EnableDeviceControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableDeviceControl-Applicability-End -->
 
 <!-- EnableDeviceControl-OmaUri-Begin -->
@@ -711,7 +711,7 @@ By default, there are no restrictions to printing based on connection type or pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDeviceControl-DFProperties-End -->
 
@@ -743,7 +743,7 @@ By default, there are no restrictions to printing based on connection type or pr
 <!-- EnableDeviceControlUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableDeviceControlUser-Applicability-End -->
 
 <!-- EnableDeviceControlUser-OmaUri-Begin -->
@@ -772,7 +772,7 @@ By default, there are no restrictions to printing based on connection type or pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDeviceControlUser-DFProperties-End -->
 
@@ -804,7 +804,7 @@ By default, there are no restrictions to printing based on connection type or pr
 <!-- ManageDriverExclusionList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ManageDriverExclusionList-Applicability-End -->
 
 <!-- ManageDriverExclusionList-OmaUri-Begin -->
@@ -833,7 +833,7 @@ If you disable or do not configure this policy setting, the registry key and val
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ManageDriverExclusionList-DFProperties-End -->
 
@@ -864,7 +864,7 @@ If you disable or do not configure this policy setting, the registry key and val
 <!-- PointAndPrintRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PointAndPrintRestrictions-Applicability-End -->
 
 <!-- PointAndPrintRestrictions-OmaUri-Begin -->
@@ -907,7 +907,7 @@ This policy setting controls the client Point and Print behavior, including the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PointAndPrintRestrictions-DFProperties-End -->
 
@@ -939,7 +939,7 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- PointAndPrintRestrictions_User-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PointAndPrintRestrictions_User-Applicability-End -->
 
 <!-- PointAndPrintRestrictions_User-OmaUri-Begin -->
@@ -982,7 +982,7 @@ This policy setting controls the client Point and Print behavior, including the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PointAndPrintRestrictions_User-DFProperties-End -->
 
@@ -1014,7 +1014,7 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- PublishPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishPrinters-Applicability-End -->
 
 <!-- PublishPrinters-OmaUri-Begin -->
@@ -1044,7 +1044,7 @@ Determines whether the computer's shared printers can be published in Active Dir
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishPrinters-DFProperties-End -->
 
@@ -1076,7 +1076,7 @@ Determines whether the computer's shared printers can be published in Active Dir
 <!-- RestrictDriverInstallationToAdministrators-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RestrictDriverInstallationToAdministrators-Applicability-End -->
 
 <!-- RestrictDriverInstallationToAdministrators-OmaUri-Begin -->
@@ -1105,7 +1105,7 @@ By default, users that aren't Administrators can't install print drivers on this
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictDriverInstallationToAdministrators-DFProperties-End -->
 

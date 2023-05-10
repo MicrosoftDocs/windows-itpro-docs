@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowBluetooth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBluetooth-Applicability-End -->
 
 <!-- AllowBluetooth-OmaUri-Begin -->
@@ -54,7 +54,7 @@ Allows the user to enable Bluetooth or restrict access.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowBluetooth-DFProperties-End -->
@@ -81,7 +81,7 @@ Allows the user to enable Bluetooth or restrict access.
 <!-- AllowCellularData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowCellularData-Applicability-End -->
 
 <!-- AllowCellularData-OmaUri-Begin -->
@@ -104,7 +104,7 @@ Allows the cellular data channel on the device. Device reboot is not required to
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCellularData-DFProperties-End -->
@@ -131,7 +131,7 @@ Allows the cellular data channel on the device. Device reboot is not required to
 <!-- AllowCellularDataRoaming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCellularDataRoaming-Applicability-End -->
 
 <!-- AllowCellularDataRoaming-OmaUri-Begin -->
@@ -158,7 +158,7 @@ This policy setting prevents clients from connecting to Mobile Broadband network
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCellularDataRoaming-DFProperties-End -->
@@ -206,7 +206,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowConnectedDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowConnectedDevices-Applicability-End -->
 
 <!-- AllowConnectedDevices-OmaUri-Begin -->
@@ -231,7 +231,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowConnectedDevices-DFProperties-End -->
@@ -260,7 +260,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowNFC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNFC-Applicability-End -->
 
 <!-- AllowNFC-OmaUri-Begin -->
@@ -283,7 +283,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowNFC-DFProperties-End -->
@@ -309,7 +309,7 @@ This policy is deprecated.
 <!-- AllowPhonePCLinking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowPhonePCLinking-Applicability-End -->
 
 <!-- AllowPhonePCLinking-OmaUri-Begin -->
@@ -338,7 +338,7 @@ This policy allows IT admins to turn off the ability to Link a Phone with a PC t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPhonePCLinking-DFProperties-End -->
@@ -383,7 +383,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowUSBConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUSBConnection-Applicability-End -->
 
 <!-- AllowUSBConnection-OmaUri-Begin -->
@@ -408,7 +408,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUSBConnection-DFProperties-End -->
@@ -434,7 +434,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowVPNOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNOverCellular-Applicability-End -->
 
 <!-- AllowVPNOverCellular-OmaUri-Begin -->
@@ -457,7 +457,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVPNOverCellular-DFProperties-End -->
@@ -483,7 +483,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 <!-- AllowVPNRoamingOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNRoamingOverCellular-Applicability-End -->
 
 <!-- AllowVPNRoamingOverCellular-OmaUri-Begin -->
@@ -506,7 +506,7 @@ Prevents the device from connecting to VPN when the device roams over cellular n
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVPNRoamingOverCellular-DFProperties-End -->
@@ -532,7 +532,7 @@ Prevents the device from connecting to VPN when the device roams over cellular n
 <!-- DiablePrintingOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DiablePrintingOverHTTP-Applicability-End -->
 
 <!-- DiablePrintingOverHTTP-OmaUri-Begin -->
@@ -566,7 +566,7 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DiablePrintingOverHTTP-DFProperties-End -->
 
@@ -598,7 +598,7 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-OmaUri-Begin -->
@@ -630,7 +630,7 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableDownloadingOfPrintDriversOverHTTP-DFProperties-End -->
 
@@ -662,7 +662,7 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-End -->
 
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-OmaUri-Begin -->
@@ -693,7 +693,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-DFProperties-End -->
 
@@ -725,7 +725,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-OmaUri-Begin -->
@@ -754,7 +754,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowNetworkConnectivityActiveTests-DFProperties-End -->
@@ -794,7 +794,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 <!-- HardenedUNCPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HardenedUNCPaths-Applicability-End -->
 
 <!-- HardenedUNCPaths-OmaUri-Begin -->
@@ -820,7 +820,7 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HardenedUNCPaths-DFProperties-End -->
 
@@ -851,7 +851,7 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-OmaUri-Begin -->
@@ -881,7 +881,7 @@ If you disable this setting or do not configure it, the user will be able to cre
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-DFProperties-End -->
 

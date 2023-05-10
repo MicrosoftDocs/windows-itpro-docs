@@ -30,7 +30,7 @@ ms.topic: reference
 <!-- AutomaticDataCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- AutomaticDataCollection-Applicability-End -->
 
 <!-- AutomaticDataCollection-OmaUri-Begin -->
@@ -53,7 +53,7 @@ Automatically collect website or app content when additional analysis is needed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AutomaticDataCollection-DFProperties-End -->
@@ -88,7 +88,7 @@ Automatically collect website or app content when additional analysis is needed 
 <!-- NotifyMalicious-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyMalicious-Applicability-End -->
 
 <!-- NotifyMalicious-OmaUri-Begin -->
@@ -115,7 +115,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NotifyMalicious-DFProperties-End -->
@@ -155,7 +155,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyPasswordReuse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyPasswordReuse-Applicability-End -->
 
 <!-- NotifyPasswordReuse-OmaUri-Begin -->
@@ -182,7 +182,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NotifyPasswordReuse-DFProperties-End -->
@@ -222,7 +222,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- NotifyUnsafeApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NotifyUnsafeApp-Applicability-End -->
 
 <!-- NotifyUnsafeApp-OmaUri-Begin -->
@@ -249,7 +249,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NotifyUnsafeApp-DFProperties-End -->
@@ -289,7 +289,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 <!-- ServiceEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ServiceEnabled-Applicability-End -->
 
 <!-- ServiceEnabled-OmaUri-Begin -->
@@ -318,7 +318,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- ServiceEnabled-DFProperties-End -->

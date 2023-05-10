@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowRemoteShellAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowRemoteShellAccess-Applicability-End -->
 
 <!-- AllowRemoteShellAccess-OmaUri-Begin -->
@@ -55,7 +55,7 @@ If you set this policy to 'disabled', new remote shell connections are rejected 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowRemoteShellAccess-DFProperties-End -->
 
@@ -87,7 +87,7 @@ If you set this policy to 'disabled', new remote shell connections are rejected 
 <!-- MaxConcurrentUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MaxConcurrentUsers-Applicability-End -->
 
 <!-- MaxConcurrentUsers-OmaUri-Begin -->
@@ -116,7 +116,7 @@ The value can be any number from 1 to 100.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MaxConcurrentUsers-DFProperties-End -->
 
@@ -147,7 +147,7 @@ The value can be any number from 1 to 100.
 <!-- SpecifyIdleTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyIdleTimeout-Applicability-End -->
 
 <!-- SpecifyIdleTimeout-OmaUri-Begin -->
@@ -176,7 +176,7 @@ Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 mi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyIdleTimeout-DFProperties-End -->
 
@@ -207,7 +207,7 @@ Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 mi
 <!-- SpecifyMaxMemory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyMaxMemory-Applicability-End -->
 
 <!-- SpecifyMaxMemory-OmaUri-Begin -->
@@ -236,7 +236,7 @@ Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, whic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaxMemory-DFProperties-End -->
 
@@ -267,7 +267,7 @@ Any value from 0 to 0x7FFFFFFF can be set, where 0 equals unlimited memory, whic
 <!-- SpecifyMaxProcesses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyMaxProcesses-Applicability-End -->
 
 <!-- SpecifyMaxProcesses-OmaUri-Begin -->
@@ -294,7 +294,7 @@ This policy setting configures the maximum number of processes a remote shell is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaxProcesses-DFProperties-End -->
 
@@ -325,7 +325,7 @@ This policy setting configures the maximum number of processes a remote shell is
 <!-- SpecifyMaxRemoteShells-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyMaxRemoteShells-Applicability-End -->
 
 <!-- SpecifyMaxRemoteShells-OmaUri-Begin -->
@@ -354,7 +354,7 @@ Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaxRemoteShells-DFProperties-End -->
 
@@ -385,7 +385,7 @@ Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of s
 <!-- SpecifyShellTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyShellTimeout-Applicability-End -->
 
 <!-- SpecifyShellTimeout-OmaUri-Begin -->
@@ -408,7 +408,7 @@ This policy setting is deprecated and has no effect when set to any state: Enabl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyShellTimeout-DFProperties-End -->
 

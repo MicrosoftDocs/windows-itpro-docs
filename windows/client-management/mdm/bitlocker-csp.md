@@ -76,7 +76,7 @@ The following list shows the BitLocker configuration service provider nodes:
 <!-- Device-AllowStandardUserEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AllowStandardUserEncryption-Applicability-End -->
 
 <!-- Device-AllowStandardUserEncryption-OmaUri-Begin -->
@@ -108,7 +108,7 @@ will not try to enable encryption on any drive.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [AllowWarningForOtherDiskEncryptionDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Bitlocker/AllowWarningForOtherDiskEncryption` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -153,7 +153,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-End -->
 
 <!-- Device-AllowSuspensionOfBitLockerProtection-OmaUri-Begin -->
@@ -184,7 +184,7 @@ The expected values for this policy are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-AllowSuspensionOfBitLockerProtection-DFProperties-End -->
@@ -210,7 +210,7 @@ The expected values for this policy are:
 <!-- Device-AllowWarningForOtherDiskEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-AllowWarningForOtherDiskEncryption-Applicability-End -->
 
 <!-- Device-AllowWarningForOtherDiskEncryption-OmaUri-Begin -->
@@ -258,7 +258,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-AllowWarningForOtherDiskEncryption-DFProperties-End -->
@@ -299,7 +299,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-ConfigureRecoveryPasswordRotation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigureRecoveryPasswordRotation-Applicability-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-OmaUri-Begin -->
@@ -330,7 +330,7 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-ConfigureRecoveryPasswordRotation-DFProperties-End -->
@@ -357,7 +357,7 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 <!-- Device-EncryptionMethodByDriveType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-EncryptionMethodByDriveType-Applicability-End -->
 
 <!-- Device-EncryptionMethodByDriveType-OmaUri-Begin -->
@@ -413,7 +413,7 @@ Sample value for this node to enable this policy and set the encryption methods 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-EncryptionMethodByDriveType-DFProperties-End -->
 
@@ -463,7 +463,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-FixedDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-FixedDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-FixedDrivesEncryptionType-OmaUri-Begin -->
@@ -506,7 +506,7 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FixedDrivesEncryptionType-DFProperties-End -->
 
@@ -538,7 +538,7 @@ Possible values:
 <!-- Device-FixedDrivesRecoveryOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-FixedDrivesRecoveryOptions-Applicability-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-OmaUri-Begin -->
@@ -615,7 +615,7 @@ The possible values for 'zz' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FixedDrivesRecoveryOptions-DFProperties-End -->
 
@@ -665,7 +665,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-FixedDrivesRequireEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-FixedDrivesRequireEncryption-Applicability-End -->
 
 <!-- Device-FixedDrivesRequireEncryption-OmaUri-Begin -->
@@ -693,7 +693,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FixedDrivesRequireEncryption-DFProperties-End -->
 
@@ -743,7 +743,7 @@ To disable this policy, use hte following SyncML:
 <!-- Device-IdentificationField-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-IdentificationField-Applicability-End -->
 
 <!-- Device-IdentificationField-OmaUri-Begin -->
@@ -791,7 +791,7 @@ Sample value for this node to enable this policy is:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-IdentificationField-DFProperties-End -->
 
@@ -823,7 +823,7 @@ Sample value for this node to enable this policy is:
 <!-- Device-RemovableDrivesConfigureBDE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesConfigureBDE-Applicability-End -->
 
 <!-- Device-RemovableDrivesConfigureBDE-OmaUri-Begin -->
@@ -864,7 +864,7 @@ Sample value for this node to enable this policy is:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-RemovableDrivesConfigureBDE-DFProperties-End -->
 
@@ -896,7 +896,7 @@ Sample value for this node to enable this policy is:
 <!-- Device-RemovableDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-RemovableDrivesEncryptionType-OmaUri-Begin -->
@@ -934,7 +934,7 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [BDEAllowed] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Bitlocker/RemovableDrivesConfigureBDE` <br> Dependency Allowed Value Type: `ADMX` <br>  |
 <!-- Device-RemovableDrivesEncryptionType-DFProperties-End -->
@@ -967,7 +967,7 @@ Possible values:
 <!-- Device-RemovableDrivesExcludedFromEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesExcludedFromEncryption-Applicability-End -->
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-OmaUri-Begin -->
@@ -990,7 +990,7 @@ When enabled, allows you to exclude removable drives and devices connected over 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-RemovableDrivesExcludedFromEncryption-DFProperties-End -->
@@ -1007,7 +1007,7 @@ When enabled, allows you to exclude removable drives and devices connected over 
 <!-- Device-RemovableDrivesRequireEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RemovableDrivesRequireEncryption-Applicability-End -->
 
 <!-- Device-RemovableDrivesRequireEncryption-OmaUri-Begin -->
@@ -1053,7 +1053,7 @@ The possible values for 'xx' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-RemovableDrivesRequireEncryption-DFProperties-End -->
 
@@ -1103,7 +1103,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-RequireDeviceEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RequireDeviceEncryption-Applicability-End -->
 
 <!-- Device-RequireDeviceEncryption-OmaUri-Begin -->
@@ -1144,7 +1144,7 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-RequireDeviceEncryption-DFProperties-End -->
@@ -1195,7 +1195,7 @@ To disable RequireDeviceEncryption:
 <!-- Device-RequireStorageCardEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RequireStorageCardEncryption-Applicability-End -->
 
 <!-- Device-RequireStorageCardEncryption-OmaUri-Begin -->
@@ -1224,7 +1224,7 @@ Disabling the policy will not turn off the encryption on the storage card. But w
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-RequireStorageCardEncryption-DFProperties-End -->
@@ -1250,7 +1250,7 @@ Disabling the policy will not turn off the encryption on the storage card. But w
 <!-- Device-RotateRecoveryPasswords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-RotateRecoveryPasswords-Applicability-End -->
 
 <!-- Device-RotateRecoveryPasswords-OmaUri-Begin -->
@@ -1303,7 +1303,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-RotateRecoveryPasswords-DFProperties-End -->
 
@@ -1319,7 +1319,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -1341,7 +1341,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Status-DFProperties-End -->
 
@@ -1357,7 +1357,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-DeviceEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Status-DeviceEncryptionStatus-Applicability-End -->
 
 <!-- Device-Status-DeviceEncryptionStatus-OmaUri-Begin -->
@@ -1402,7 +1402,7 @@ This value represents a bitmask with each bit and the corresponding error code d
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Status-DeviceEncryptionStatus-DFProperties-End -->
 
@@ -1418,7 +1418,7 @@ This value represents a bitmask with each bit and the corresponding error code d
 <!-- Device-Status-RemovableDrivesEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Status-RemovableDrivesEncryptionStatus-Applicability-End -->
 
 <!-- Device-Status-RemovableDrivesEncryptionStatus-OmaUri-Begin -->
@@ -1441,7 +1441,7 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Status-RemovableDrivesEncryptionStatus-DFProperties-End -->
 
@@ -1457,7 +1457,7 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Applicability-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-OmaUri-Begin -->
@@ -1482,7 +1482,7 @@ To ensure the status is correctly matched to the request ID.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-DFProperties-End -->
 
@@ -1498,7 +1498,7 @@ To ensure the status is correctly matched to the request ID.
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Applicability-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsStatus-OmaUri-Begin -->
@@ -1523,7 +1523,7 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Status-RotateRecoveryPasswordsStatus-DFProperties-End -->
 
@@ -1539,7 +1539,7 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Applicability-End -->
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-OmaUri-Begin -->
@@ -1572,7 +1572,7 @@ Sample value for this node to disable this policy is: `<disabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-DFProperties-End -->
 
@@ -1604,7 +1604,7 @@ Sample value for this node to disable this policy is: `<disabled/>`
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Applicability-End -->
 
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-OmaUri-Begin -->
@@ -1640,7 +1640,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-DFProperties-End -->
 
@@ -1672,7 +1672,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Applicability-End -->
 
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-OmaUri-Begin -->
@@ -1700,7 +1700,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-DFProperties-End -->
 
@@ -1732,7 +1732,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-SystemDrivesEncryptionType-OmaUri-Begin -->
@@ -1776,7 +1776,7 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEncryptionType-DFProperties-End -->
 
@@ -1808,7 +1808,7 @@ Possible values:
 <!-- Device-SystemDrivesEnhancedPIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnhancedPIN-Applicability-End -->
 
 <!-- Device-SystemDrivesEnhancedPIN-OmaUri-Begin -->
@@ -1841,7 +1841,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEnhancedPIN-DFProperties-End -->
 
@@ -1873,7 +1873,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesMinimumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesMinimumPINLength-Applicability-End -->
 
 <!-- Device-SystemDrivesMinimumPINLength-OmaUri-Begin -->
@@ -1911,7 +1911,7 @@ Sample value for this node to enable this policy is:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesMinimumPINLength-DFProperties-End -->
 
@@ -1960,7 +1960,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRecoveryMessage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRecoveryMessage-Applicability-End -->
 
 <!-- Device-SystemDrivesRecoveryMessage-OmaUri-Begin -->
@@ -2020,7 +2020,7 @@ The possible value for 'yy' and 'zz' is a string of max length 900 and 500 respe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesRecoveryMessage-DFProperties-End -->
 
@@ -2069,7 +2069,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRecoveryOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRecoveryOptions-Applicability-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-OmaUri-Begin -->
@@ -2145,7 +2145,7 @@ The possible values for 'zz' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesRecoveryOptions-DFProperties-End -->
 
@@ -2195,7 +2195,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRequireStartupAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRequireStartupAuthentication-Applicability-End -->
 
 <!-- Device-SystemDrivesRequireStartupAuthentication-OmaUri-Begin -->
@@ -2265,7 +2265,7 @@ The possible values for 'yy' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesRequireStartupAuthentication-DFProperties-End -->
 

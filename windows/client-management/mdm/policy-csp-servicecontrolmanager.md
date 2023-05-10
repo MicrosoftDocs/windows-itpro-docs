@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- SvchostProcessMitigation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SvchostProcessMitigation-Applicability-End -->
 
 <!-- SvchostProcessMitigation-OmaUri-Begin -->
@@ -62,7 +62,7 @@ If you enable this policy, it adds code integrity guard (CIG) and arbitrary code
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SvchostProcessMitigation-DFProperties-End -->
 

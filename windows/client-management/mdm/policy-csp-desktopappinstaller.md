@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- EnableAdditionalSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAdditionalSources-Applicability-End -->
 
 <!-- EnableAdditionalSources-OmaUri-Begin -->
@@ -57,7 +57,7 @@ This policy controls additional sources provided by the enterprise IT administra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableAdditionalSources-DFProperties-End -->
 
@@ -89,7 +89,7 @@ This policy controls additional sources provided by the enterprise IT administra
 <!-- EnableAllowedSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAllowedSources-Applicability-End -->
 
 <!-- EnableAllowedSources-OmaUri-Begin -->
@@ -118,7 +118,7 @@ This policy controls additional sources allowed by the enterprise IT administrat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableAllowedSources-DFProperties-End -->
 
@@ -150,7 +150,7 @@ This policy controls additional sources allowed by the enterprise IT administrat
 <!-- EnableAppInstaller-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAppInstaller-Applicability-End -->
 
 <!-- EnableAppInstaller-OmaUri-Begin -->
@@ -178,7 +178,7 @@ Users will still be able to execute the *winget* command. The default help will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableAppInstaller-DFProperties-End -->
 
@@ -210,7 +210,7 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-OmaUri-Begin -->
@@ -232,7 +232,7 @@ Users will still be able to execute the *winget* command. The default help will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableBypassCertificatePinningForMicrosoftStore-DFProperties-End -->
 
@@ -260,7 +260,7 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableDefaultSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableDefaultSource-Applicability-End -->
 
 <!-- EnableDefaultSource-OmaUri-Begin -->
@@ -289,7 +289,7 @@ This policy controls the default source included with the [Windows Package Manag
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDefaultSource-DFProperties-End -->
 
@@ -321,7 +321,7 @@ This policy controls the default source included with the [Windows Package Manag
 <!-- EnableExperimentalFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableExperimentalFeatures-Applicability-End -->
 
 <!-- EnableExperimentalFeatures-OmaUri-Begin -->
@@ -349,7 +349,7 @@ Experimental features are used during Windows Package Manager development cycle 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableExperimentalFeatures-DFProperties-End -->
 
@@ -381,7 +381,7 @@ Experimental features are used during Windows Package Manager development cycle 
 <!-- EnableHashOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableHashOverride-Applicability-End -->
 
 <!-- EnableHashOverride-OmaUri-Begin -->
@@ -408,7 +408,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableHashOverride-DFProperties-End -->
 
@@ -440,7 +440,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalArchiveMalwareScanOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableLocalArchiveMalwareScanOverride-Applicability-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-OmaUri-Begin -->
@@ -462,7 +462,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableLocalArchiveMalwareScanOverride-DFProperties-End -->
 
@@ -490,7 +490,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalManifestFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableLocalManifestFiles-Applicability-End -->
 
 <!-- EnableLocalManifestFiles-OmaUri-Begin -->
@@ -517,7 +517,7 @@ This policy controls whether users can install packages with local manifest file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableLocalManifestFiles-DFProperties-End -->
 
@@ -549,7 +549,7 @@ This policy controls whether users can install packages with local manifest file
 <!-- EnableMicrosoftStoreSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMicrosoftStoreSource-Applicability-End -->
 
 <!-- EnableMicrosoftStoreSource-OmaUri-Begin -->
@@ -578,7 +578,7 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableMicrosoftStoreSource-DFProperties-End -->
 
@@ -610,7 +610,7 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 <!-- EnableMSAppInstallerProtocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMSAppInstallerProtocol-Applicability-End -->
 
 <!-- EnableMSAppInstallerProtocol-OmaUri-Begin -->
@@ -637,7 +637,7 @@ This policy controls whether users can install packages from a website that is u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableMSAppInstallerProtocol-DFProperties-End -->
 
@@ -669,7 +669,7 @@ This policy controls whether users can install packages from a website that is u
 <!-- EnableSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableSettings-Applicability-End -->
 
 <!-- EnableSettings-OmaUri-Begin -->
@@ -697,7 +697,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableSettings-DFProperties-End -->
 
@@ -729,7 +729,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- SourceAutoUpdateInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- SourceAutoUpdateInterval-Applicability-End -->
 
 <!-- SourceAutoUpdateInterval-OmaUri-Begin -->
@@ -757,7 +757,7 @@ The default source for Windows Package Manager is configured such that an index 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SourceAutoUpdateInterval-DFProperties-End -->
 

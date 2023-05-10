@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- CustomizeWarningMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- CustomizeWarningMessages-Applicability-End -->
 
 <!-- CustomizeWarningMessages-OmaUri-Begin -->
@@ -61,7 +61,7 @@ The "Display warning message before connecting" policy setting allows you to spe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomizeWarningMessages-DFProperties-End -->
 
@@ -93,7 +93,7 @@ The "Display warning message before connecting" policy setting allows you to spe
 <!-- SessionLogging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SessionLogging-Applicability-End -->
 
 <!-- SessionLogging-OmaUri-Begin -->
@@ -122,7 +122,7 @@ This policy setting allows you to turn logging on or off. Log files are located 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SessionLogging-DFProperties-End -->
 
@@ -154,7 +154,7 @@ This policy setting allows you to turn logging on or off. Log files are located 
 <!-- SolicitedRemoteAssistance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SolicitedRemoteAssistance-Applicability-End -->
 
 <!-- SolicitedRemoteAssistance-OmaUri-Begin -->
@@ -191,7 +191,7 @@ The "Select the method for sending email invitations" setting specifies which em
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SolicitedRemoteAssistance-DFProperties-End -->
 
@@ -223,7 +223,7 @@ The "Select the method for sending email invitations" setting specifies which em
 <!-- UnsolicitedRemoteAssistance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- UnsolicitedRemoteAssistance-Applicability-End -->
 
 <!-- UnsolicitedRemoteAssistance-OmaUri-Begin -->
@@ -283,7 +283,7 @@ Allow Remote Desktop Exception.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UnsolicitedRemoteAssistance-DFProperties-End -->
 

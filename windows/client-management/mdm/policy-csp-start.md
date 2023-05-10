@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowPinnedFolderDocuments-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderDocuments-Applicability-End -->
 
 <!-- AllowPinnedFolderDocuments-OmaUri-Begin -->
@@ -49,7 +49,7 @@ This policy controls the visibility of the Documents shortcut on the Start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderDocuments-DFProperties-End -->
@@ -76,7 +76,7 @@ This policy controls the visibility of the Documents shortcut on the Start menu.
 <!-- AllowPinnedFolderDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderDownloads-Applicability-End -->
 
 <!-- AllowPinnedFolderDownloads-OmaUri-Begin -->
@@ -99,7 +99,7 @@ This policy controls the visibility of the Downloads shortcut on the Start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderDownloads-DFProperties-End -->
@@ -126,7 +126,7 @@ This policy controls the visibility of the Downloads shortcut on the Start menu.
 <!-- AllowPinnedFolderFileExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderFileExplorer-Applicability-End -->
 
 <!-- AllowPinnedFolderFileExplorer-OmaUri-Begin -->
@@ -149,7 +149,7 @@ This policy controls the visibility of the File Explorer shortcut on the Start m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderFileExplorer-DFProperties-End -->
@@ -176,7 +176,7 @@ This policy controls the visibility of the File Explorer shortcut on the Start m
 <!-- AllowPinnedFolderHomeGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderHomeGroup-Applicability-End -->
 
 <!-- AllowPinnedFolderHomeGroup-OmaUri-Begin -->
@@ -199,7 +199,7 @@ This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderHomeGroup-DFProperties-End -->
@@ -226,7 +226,7 @@ This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 <!-- AllowPinnedFolderMusic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderMusic-Applicability-End -->
 
 <!-- AllowPinnedFolderMusic-OmaUri-Begin -->
@@ -249,7 +249,7 @@ This policy controls the visibility of the Music shortcut on the Start menu. The
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderMusic-DFProperties-End -->
@@ -276,7 +276,7 @@ This policy controls the visibility of the Music shortcut on the Start menu. The
 <!-- AllowPinnedFolderNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderNetwork-Applicability-End -->
 
 <!-- AllowPinnedFolderNetwork-OmaUri-Begin -->
@@ -299,7 +299,7 @@ This policy controls the visibility of the Network shortcut on the Start menu. T
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderNetwork-DFProperties-End -->
@@ -326,7 +326,7 @@ This policy controls the visibility of the Network shortcut on the Start menu. T
 <!-- AllowPinnedFolderPersonalFolder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderPersonalFolder-Applicability-End -->
 
 <!-- AllowPinnedFolderPersonalFolder-OmaUri-Begin -->
@@ -349,7 +349,7 @@ This policy controls the visibility of the PersonalFolder shortcut on the Start 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderPersonalFolder-DFProperties-End -->
@@ -376,7 +376,7 @@ This policy controls the visibility of the PersonalFolder shortcut on the Start 
 <!-- AllowPinnedFolderPictures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderPictures-Applicability-End -->
 
 <!-- AllowPinnedFolderPictures-OmaUri-Begin -->
@@ -399,7 +399,7 @@ This policy controls the visibility of the Pictures shortcut on the Start menu. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderPictures-DFProperties-End -->
@@ -426,7 +426,7 @@ This policy controls the visibility of the Pictures shortcut on the Start menu. 
 <!-- AllowPinnedFolderSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderSettings-Applicability-End -->
 
 <!-- AllowPinnedFolderSettings-OmaUri-Begin -->
@@ -449,7 +449,7 @@ This policy controls the visibility of the Settings shortcut on the Start menu. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderSettings-DFProperties-End -->
@@ -476,7 +476,7 @@ This policy controls the visibility of the Settings shortcut on the Start menu. 
 <!-- AllowPinnedFolderVideos-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowPinnedFolderVideos-Applicability-End -->
 
 <!-- AllowPinnedFolderVideos-OmaUri-Begin -->
@@ -499,7 +499,7 @@ This policy controls the visibility of the Videos shortcut on the Start menu. Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowPinnedFolderVideos-DFProperties-End -->
@@ -526,7 +526,7 @@ This policy controls the visibility of the Videos shortcut on the Start menu. Th
 <!-- ConfigureStartPins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureStartPins-Applicability-End -->
 
 <!-- ConfigureStartPins-OmaUri-Begin -->
@@ -559,7 +559,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureStartPins-DFProperties-End -->
 
@@ -584,7 +584,7 @@ This string policy takes a JSON file named `LayoutModification.json`. The file e
 <!-- DisableContextMenus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisableContextMenus-Applicability-End -->
 
 <!-- DisableContextMenus-OmaUri-Begin -->
@@ -613,7 +613,7 @@ If you enable this policy, then invocations of context menus within the Start Me
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableContextMenus-DFProperties-End -->
@@ -653,7 +653,7 @@ If you enable this policy, then invocations of context menus within the Start Me
 <!-- DisableControlCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableControlCenter-Applicability-End -->
 
 <!-- DisableControlCenter-OmaUri-Begin -->
@@ -682,7 +682,7 @@ A reboot is required for this policy setting to take effect.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableControlCenter-DFProperties-End -->
 
@@ -721,7 +721,7 @@ A reboot is required for this policy setting to take effect.
 <!-- DisableEditingQuickSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableEditingQuickSettings-Applicability-End -->
 
 <!-- DisableEditingQuickSettings-OmaUri-Begin -->
@@ -747,7 +747,7 @@ A reboot is required for this policy setting to take effect.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableEditingQuickSettings-DFProperties-End -->
@@ -787,7 +787,7 @@ A reboot is required for this policy setting to take effect.
 <!-- ForceStartSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ForceStartSize-Applicability-End -->
 
 <!-- ForceStartSize-OmaUri-Begin -->
@@ -819,7 +819,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceStartSize-DFProperties-End -->
@@ -859,7 +859,7 @@ If there's a policy configuration conflict, the latest configuration request is 
 <!-- HideAppList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideAppList-Applicability-End -->
 
 <!-- HideAppList-OmaUri-Begin -->
@@ -903,7 +903,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideAppList-DFProperties-End -->
@@ -931,7 +931,7 @@ To validate this policy, do the following steps:
 <!-- HideChangeAccountSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideChangeAccountSettings-Applicability-End -->
 
 <!-- HideChangeAccountSettings-OmaUri-Begin -->
@@ -954,7 +954,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideChangeAccountSettings-DFProperties-End -->
@@ -980,7 +980,7 @@ Enabling this policy hides "Change account settings" from appearing in the user 
 <!-- HideFrequentlyUsedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideFrequentlyUsedApps-Applicability-End -->
 
 <!-- HideFrequentlyUsedApps-OmaUri-Begin -->
@@ -1022,7 +1022,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideFrequentlyUsedApps-DFProperties-End -->
@@ -1062,7 +1062,7 @@ To validate this policy, do the following steps:
 <!-- HideHibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideHibernate-Applicability-End -->
 
 <!-- HideHibernate-OmaUri-Begin -->
@@ -1088,7 +1088,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideHibernate-DFProperties-End -->
@@ -1114,7 +1114,7 @@ Enabling this policy hides "Hibernate" from appearing in the power button in the
 <!-- HideLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideLock-Applicability-End -->
 
 <!-- HideLock-OmaUri-Begin -->
@@ -1137,7 +1137,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [Start_HideLock_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Start/HideUserTile` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1164,7 +1164,7 @@ Enabling this policy hides "Lock" from appearing in the user tile in the start m
 <!-- HidePeopleBar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HidePeopleBar-Applicability-End -->
 
 <!-- HidePeopleBar-OmaUri-Begin -->
@@ -1189,7 +1189,7 @@ If you enable this policy the people icon will be removed from the taskbar, the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HidePeopleBar-DFProperties-End -->
@@ -1229,7 +1229,7 @@ If you enable this policy the people icon will be removed from the taskbar, the 
 <!-- HidePowerButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HidePowerButton-Applicability-End -->
 
 <!-- HidePowerButton-OmaUri-Begin -->
@@ -1255,7 +1255,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HidePowerButton-DFProperties-End -->
@@ -1281,7 +1281,7 @@ Enabling this policy hides the power button from appearing in the start menu.
 <!-- HideRecentJumplists-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRecentJumplists-Applicability-End -->
 
 <!-- HideRecentJumplists-OmaUri-Begin -->
@@ -1323,7 +1323,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecentJumplists-DFProperties-End -->
@@ -1349,7 +1349,7 @@ To validate this policy, do the following steps:
 <!-- HideRecentlyAddedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRecentlyAddedApps-Applicability-End -->
 
 <!-- HideRecentlyAddedApps-OmaUri-Begin -->
@@ -1390,7 +1390,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecentlyAddedApps-DFProperties-End -->
@@ -1430,7 +1430,7 @@ To validate this policy, do the following steps:
 <!-- HideRecommendedPersonalizedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | <!-- Not-Found --> |
 <!-- HideRecommendedPersonalizedSites-Applicability-End -->
 
 <!-- HideRecommendedPersonalizedSites-OmaUri-Begin -->
@@ -1457,7 +1457,7 @@ This policy setting allows you to hide the personalized websites in the recommen
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecommendedPersonalizedSites-DFProperties-End -->
@@ -1492,7 +1492,7 @@ This policy setting allows you to hide the personalized websites in the recommen
 <!-- HideRecommendedSection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- HideRecommendedSection-Applicability-End -->
 
 <!-- HideRecommendedSection-OmaUri-Begin -->
@@ -1521,7 +1521,7 @@ If you enable this policy setting, the Start Menu will no longer show the sectio
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRecommendedSection-DFProperties-End -->
@@ -1561,7 +1561,7 @@ If you enable this policy setting, the Start Menu will no longer show the sectio
 <!-- HideRestart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideRestart-Applicability-End -->
 
 <!-- HideRestart-OmaUri-Begin -->
@@ -1584,7 +1584,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideRestart-DFProperties-End -->
@@ -1610,7 +1610,7 @@ Enabling this policy hides "Restart/Update and restart" from appearing in the po
 <!-- HideShutDown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideShutDown-Applicability-End -->
 
 <!-- HideShutDown-OmaUri-Begin -->
@@ -1633,7 +1633,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideShutDown-DFProperties-End -->
@@ -1659,7 +1659,7 @@ Enabling this policy hides "Shut down/Update and shut down" from appearing in th
 <!-- HideSignOut-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSignOut-Applicability-End -->
 
 <!-- HideSignOut-OmaUri-Begin -->
@@ -1682,7 +1682,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [Start_HideSignOut_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Start/HideUserTile` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -1709,7 +1709,7 @@ Enabling this policy hides "Sign out" from appearing in the user tile in the sta
 <!-- HideSleep-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSleep-Applicability-End -->
 
 <!-- HideSleep-OmaUri-Begin -->
@@ -1732,7 +1732,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideSleep-DFProperties-End -->
@@ -1758,7 +1758,7 @@ Enabling this policy hides "Sleep" from appearing in the power button in the sta
 <!-- HideSwitchAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideSwitchAccount-Applicability-End -->
 
 <!-- HideSwitchAccount-OmaUri-Begin -->
@@ -1781,7 +1781,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideSwitchAccount-DFProperties-End -->
@@ -1807,7 +1807,7 @@ Enabling this policy hides "Switch account" from appearing in the user tile in t
 <!-- HideTaskViewButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- HideTaskViewButton-Applicability-End -->
 
 <!-- HideTaskViewButton-OmaUri-Begin -->
@@ -1836,7 +1836,7 @@ If you enable this policy setting, the TaskView button will be hidden and the Se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideTaskViewButton-DFProperties-End -->
@@ -1876,7 +1876,7 @@ If you enable this policy setting, the TaskView button will be hidden and the Se
 <!-- HideUserTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideUserTile-Applicability-End -->
 
 <!-- HideUserTile-OmaUri-Begin -->
@@ -1902,7 +1902,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideUserTile-DFProperties-End -->
@@ -1928,7 +1928,7 @@ Enabling this policy hides the user tile from appearing in the start menu.
 <!-- ImportEdgeAssets-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ImportEdgeAssets-Applicability-End -->
 
 <!-- ImportEdgeAssets-OmaUri-Begin -->
@@ -1968,7 +1968,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ImportEdgeAssets-DFProperties-End -->
 
@@ -1984,7 +1984,7 @@ To validate this policy, do the following steps:
 <!-- NoPinningToTaskbar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- NoPinningToTaskbar-Applicability-End -->
 
 <!-- NoPinningToTaskbar-OmaUri-Begin -->
@@ -2018,7 +2018,7 @@ To validate this policy, do the following steps:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NoPinningToTaskbar-DFProperties-End -->
@@ -2044,7 +2044,7 @@ To validate this policy, do the following steps:
 <!-- ShowOrHideMostUsedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ShowOrHideMostUsedApps-Applicability-End -->
 
 <!-- ShowOrHideMostUsedApps-OmaUri-Begin -->
@@ -2079,7 +2079,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ShowOrHideMostUsedApps-DFProperties-End -->
@@ -2119,7 +2119,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 <!-- SimplifyQuickSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- SimplifyQuickSettings-Applicability-End -->
 
 <!-- SimplifyQuickSettings-OmaUri-Begin -->
@@ -2145,7 +2145,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SimplifyQuickSettings-DFProperties-End -->
@@ -2185,7 +2185,7 @@ Note configuring this policy to "Show" or "Hide" on supported versions of Window
 <!-- StartLayout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- StartLayout-Applicability-End -->
 
 <!-- StartLayout-OmaUri-Begin -->
@@ -2223,7 +2223,7 @@ For more information on how to customize the Start layout, see [Customize the St
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- StartLayout-DFProperties-End -->
 

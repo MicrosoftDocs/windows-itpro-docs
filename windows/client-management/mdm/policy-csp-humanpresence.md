@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ForceAllowDimWhenExternalDisplayConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- ForceAllowDimWhenExternalDisplayConnected-Applicability-End -->
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-OmaUri-Begin -->
@@ -51,7 +51,7 @@ Determines whether Allow Adaptive Dimming When External Display Connected checkb
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceAllowDimWhenExternalDisplayConnected-DFProperties-End -->
@@ -87,7 +87,7 @@ Determines whether Allow Adaptive Dimming When External Display Connected checkb
 <!-- ForceAllowLockWhenExternalDisplayConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- ForceAllowLockWhenExternalDisplayConnected-Applicability-End -->
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-OmaUri-Begin -->
@@ -110,7 +110,7 @@ Determines whether Allow Lock on Leave When External Display Connected checkbox 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceAllowLockWhenExternalDisplayConnected-DFProperties-End -->
@@ -146,7 +146,7 @@ Determines whether Allow Lock on Leave When External Display Connected checkbox 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Applicability-End -->
 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-OmaUri-Begin -->
@@ -169,7 +169,7 @@ Determines whether Allow Wake on Approach When External Display Connected checkb
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceAllowWakeWhenExternalDisplayConnected-DFProperties-End -->
@@ -205,7 +205,7 @@ Determines whether Allow Wake on Approach When External Display Connected checkb
 <!-- ForceDisableWakeWhenBatterySaverOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- ForceDisableWakeWhenBatterySaverOn-Applicability-End -->
 
 <!-- ForceDisableWakeWhenBatterySaverOn-OmaUri-Begin -->
@@ -228,7 +228,7 @@ Determines whether Disable Wake on Approach When Battery Saver On checkbox is fo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceDisableWakeWhenBatterySaverOn-DFProperties-End -->
@@ -264,7 +264,7 @@ Determines whether Disable Wake on Approach When Battery Saver On checkbox is fo
 <!-- ForceInstantDim-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantDim-Applicability-End -->
 
 <!-- ForceInstantDim-OmaUri-Begin -->
@@ -288,7 +288,7 @@ This is a power saving feature that prolongs battery charge.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceInstantDim-DFProperties-End -->
@@ -328,7 +328,7 @@ This is a power saving feature that prolongs battery charge.
 <!-- ForceInstantLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantLock-Applicability-End -->
 
 <!-- ForceInstantLock-OmaUri-Begin -->
@@ -351,7 +351,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceInstantLock-DFProperties-End -->
@@ -392,7 +392,7 @@ Determines whether Lock on Leave is forced on/off by the MDM policy. The user wi
 <!-- ForceInstantWake-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceInstantWake-Applicability-End -->
 
 <!-- ForceInstantWake-OmaUri-Begin -->
@@ -415,7 +415,7 @@ Determines whether Wake On Arrival is forced on/off by the MDM policy. The user 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceInstantWake-DFProperties-End -->
@@ -456,7 +456,7 @@ Determines whether Wake On Arrival is forced on/off by the MDM policy. The user 
 <!-- ForceLockTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ForceLockTimeout-Applicability-End -->
 
 <!-- ForceLockTimeout-OmaUri-Begin -->
@@ -479,7 +479,7 @@ Determines the timeout for Lock on Leave forced by the MDM policy. The user will
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ForceLockTimeout-DFProperties-End -->

@@ -29,7 +29,7 @@ These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-OmaUri-Begin -->
@@ -65,7 +65,7 @@ Steps to use this policy correctly:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-60]` |
 | Default Value  | 0 |
@@ -83,7 +83,7 @@ Steps to use this policy correctly:
 <!-- AllowCaptivePortalBeforeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- AllowCaptivePortalBeforeLogon-Applicability-End -->
 
 <!-- AllowCaptivePortalBeforeLogon-OmaUri-Begin -->
@@ -107,7 +107,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowCaptivePortalBeforeLogon-DFProperties-End -->
@@ -133,7 +133,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-OmaUri-Begin -->
@@ -159,7 +159,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowLaunchUriInSingleAppKiosk-DFProperties-End -->
@@ -185,7 +185,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 <!-- AutoLogonUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- AutoLogonUser-Applicability-End -->
 
 <!-- AutoLogonUser-OmaUri-Begin -->
@@ -218,7 +218,7 @@ On a device where you configure this policy, the user specified in the policy ne
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AutoLogonUser-DFProperties-End -->
 
@@ -234,7 +234,7 @@ On a device where you configure this policy, the user specified in the policy ne
 <!-- AutomaticDisplayAdjustment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AutomaticDisplayAdjustment-Applicability-End -->
 
 <!-- AutomaticDisplayAdjustment-OmaUri-Begin -->
@@ -257,7 +257,7 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AutomaticDisplayAdjustment-DFProperties-End -->
@@ -283,7 +283,7 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 <!-- BrightnessButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BrightnessButtonDisabled-Applicability-End -->
 
 <!-- BrightnessButtonDisabled-OmaUri-Begin -->
@@ -306,7 +306,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BrightnessButtonDisabled-DFProperties-End -->
@@ -332,7 +332,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 <!-- ConfigureMovingPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- ConfigureMovingPlatform-Applicability-End -->
 
 <!-- ConfigureMovingPlatform-OmaUri-Begin -->
@@ -356,7 +356,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureMovingPlatform-DFProperties-End -->
@@ -383,7 +383,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 <!-- ConfigureNtpClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- ConfigureNtpClient-Applicability-End -->
 
 <!-- ConfigureNtpClient-OmaUri-Begin -->
@@ -441,7 +441,7 @@ For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NT
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureNtpClient-DFProperties-End -->
 
@@ -487,7 +487,7 @@ The following XML string is an example of the value for this policy:
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-OmaUri-Begin -->
@@ -511,7 +511,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowNetworkConnectivityPassivePolling-DFProperties-End -->
@@ -537,7 +537,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 <!-- EyeTrackingCalibrationPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- EyeTrackingCalibrationPrompt-Applicability-End -->
 
 <!-- EyeTrackingCalibrationPrompt-OmaUri-Begin -->
@@ -560,7 +560,7 @@ This policy controls when a new person uses HoloLens device, if HoloLens should 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- EyeTrackingCalibrationPrompt-DFProperties-End -->
@@ -586,7 +586,7 @@ This policy controls when a new person uses HoloLens device, if HoloLens should 
 <!-- FallbackDiagnostics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- FallbackDiagnostics-Applicability-End -->
 
 <!-- FallbackDiagnostics-OmaUri-Begin -->
@@ -609,7 +609,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- FallbackDiagnostics-DFProperties-End -->
@@ -636,7 +636,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 <!-- HeadTrackingMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- HeadTrackingMode-Applicability-End -->
 
 <!-- HeadTrackingMode-OmaUri-Begin -->
@@ -665,7 +665,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 0 |
@@ -683,7 +683,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!-- ManualDownDirectionDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- ManualDownDirectionDisabled-Applicability-End -->
 
 <!-- ManualDownDirectionDisabled-OmaUri-Begin -->
@@ -707,7 +707,7 @@ When the system automatically determines the down direction, it's using the meas
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ManualDownDirectionDisabled-DFProperties-End -->
@@ -733,7 +733,7 @@ When the system automatically determines the down direction, it's using the meas
 <!-- MicrophoneDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- MicrophoneDisabled-Applicability-End -->
 
 <!-- MicrophoneDisabled-OmaUri-Begin -->
@@ -756,7 +756,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrophoneDisabled-DFProperties-End -->
@@ -782,7 +782,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 <!-- NtpClientEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- NtpClientEnabled-Applicability-End -->
 
 <!-- NtpClientEnabled-OmaUri-Begin -->
@@ -812,7 +812,7 @@ For more information, see the [ConfigureNtpClient](#configurentpclient) policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NtpClientEnabled-DFProperties-End -->
 
@@ -851,7 +851,7 @@ The following example XML string shows the value to enable this policy:
 <!-- SkipCalibrationDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- SkipCalibrationDuringSetup-Applicability-End -->
 
 <!-- SkipCalibrationDuringSetup-OmaUri-Begin -->
@@ -876,7 +876,7 @@ This policy configures whether the device will take the user through the eye tra
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SkipCalibrationDuringSetup-DFProperties-End -->
@@ -902,7 +902,7 @@ This policy configures whether the device will take the user through the eye tra
 <!-- SkipTrainingDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- SkipTrainingDuringSetup-Applicability-End -->
 
 <!-- SkipTrainingDuringSetup-OmaUri-Begin -->
@@ -926,7 +926,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SkipTrainingDuringSetup-DFProperties-End -->
@@ -952,7 +952,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 <!-- VisitorAutoLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- VisitorAutoLogon-Applicability-End -->
 
 <!-- VisitorAutoLogon-OmaUri-Begin -->
@@ -975,7 +975,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- VisitorAutoLogon-DFProperties-End -->
@@ -1001,7 +1001,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 <!-- VolumeButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- VolumeButtonDisabled-Applicability-End -->
 
 <!-- VolumeButtonDisabled-OmaUri-Begin -->
@@ -1024,7 +1024,7 @@ This policy setting controls if pressing the volume button changes the volume or
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- VolumeButtonDisabled-DFProperties-End -->

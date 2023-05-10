@@ -30,7 +30,7 @@ ms.topic: reference
 <!-- AllowAutomaticRestartSignOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowAutomaticRestartSignOn-Applicability-End -->
 
 <!-- AllowAutomaticRestartSignOn-OmaUri-Begin -->
@@ -63,7 +63,7 @@ After enabling this policy, you can configure its settings through the ConfigAut
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowAutomaticRestartSignOn-DFProperties-End -->
 
@@ -95,7 +95,7 @@ After enabling this policy, you can configure its settings through the ConfigAut
 <!-- ConfigAutomaticRestartSignOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigAutomaticRestartSignOn-Applicability-End -->
 
 <!-- ConfigAutomaticRestartSignOn-OmaUri-Begin -->
@@ -130,7 +130,7 @@ BitLocker is suspended during updates if:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigAutomaticRestartSignOn-DFProperties-End -->
 
@@ -161,7 +161,7 @@ BitLocker is suspended during updates if:
 <!-- DisableLockScreenAppNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableLockScreenAppNotifications-Applicability-End -->
 
 <!-- DisableLockScreenAppNotifications-OmaUri-Begin -->
@@ -188,7 +188,7 @@ This policy setting allows you to prevent app notifications from appearing on th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLockScreenAppNotifications-DFProperties-End -->
 
@@ -220,7 +220,7 @@ This policy setting allows you to prevent app notifications from appearing on th
 <!-- DontDisplayNetworkSelectionUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DontDisplayNetworkSelectionUI-Applicability-End -->
 
 <!-- DontDisplayNetworkSelectionUI-OmaUri-Begin -->
@@ -247,7 +247,7 @@ This policy setting allows you to control whether anyone can interact with avail
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DontDisplayNetworkSelectionUI-DFProperties-End -->
 
@@ -305,7 +305,7 @@ Here's an example to enable this policy:
 <!-- EnableFirstLogonAnimation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnableFirstLogonAnimation-Applicability-End -->
 
 <!-- EnableFirstLogonAnimation-OmaUri-Begin -->
@@ -337,7 +337,7 @@ This policy setting allows you to control whether users see the first sign-in an
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- EnableFirstLogonAnimation-DFProperties-End -->
@@ -377,7 +377,7 @@ This policy setting allows you to control whether users see the first sign-in an
 <!-- EnableMPRNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMPRNotifications-Applicability-End -->
 
 <!-- EnableMPRNotifications-OmaUri-Begin -->
@@ -404,7 +404,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableMPRNotifications-DFProperties-End -->
 
@@ -436,7 +436,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-End -->
 
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-OmaUri-Begin -->
@@ -463,7 +463,7 @@ This policy setting allows local users to be enumerated on domain-joined compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-DFProperties-End -->
 
@@ -495,7 +495,7 @@ This policy setting allows local users to be enumerated on domain-joined compute
 <!-- HideFastUserSwitching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideFastUserSwitching-Applicability-End -->
 
 <!-- HideFastUserSwitching-OmaUri-Begin -->
@@ -524,7 +524,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideFastUserSwitching-DFProperties-End -->
@@ -564,7 +564,7 @@ The locations that Switch User interface appear are in the Logon UI, the Start m
 <!-- OverrideShellProgram-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- OverrideShellProgram-Applicability-End -->
 
 <!-- OverrideShellProgram-OmaUri-Begin -->
@@ -587,7 +587,7 @@ OverrideShellProgram policy allows IT admin to configure the shell program for W
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [BootToCloudModeDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/CloudDesktop/BootToCloudMode` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |

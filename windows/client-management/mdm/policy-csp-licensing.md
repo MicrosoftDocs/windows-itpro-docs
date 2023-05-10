@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowWindowsEntitlementReactivation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsEntitlementReactivation-Applicability-End -->
 
 <!-- AllowWindowsEntitlementReactivation-OmaUri-Begin -->
@@ -54,7 +54,7 @@ Policy Options:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWindowsEntitlementReactivation-DFProperties-End -->
@@ -94,7 +94,7 @@ Policy Options:
 <!-- DisallowKMSClientOnlineAVSValidation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisallowKMSClientOnlineAVSValidation-Applicability-End -->
 
 <!-- DisallowKMSClientOnlineAVSValidation-OmaUri-Begin -->
@@ -123,7 +123,7 @@ Policy Options:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowKMSClientOnlineAVSValidation-DFProperties-End -->

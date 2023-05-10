@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowAadPasswordReset-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAadPasswordReset-Applicability-End -->
 
 <!-- AllowAadPasswordReset-OmaUri-Begin -->
@@ -53,7 +53,7 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowAadPasswordReset-DFProperties-End -->
@@ -79,7 +79,7 @@ This policy allows the Azure Active Directory (Azure AD) tenant administrator to
 <!-- AllowEAPCertSSO-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowEAPCertSSO-Applicability-End -->
 
 <!-- AllowEAPCertSSO-OmaUri-Begin -->
@@ -102,7 +102,7 @@ Allows an EAP cert-based authentication for a single sign on (SSO) to access int
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowEAPCertSSO-DFProperties-End -->
@@ -128,7 +128,7 @@ Allows an EAP cert-based authentication for a single sign on (SSO) to access int
 <!-- AllowFastReconnect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowFastReconnect-Applicability-End -->
 
 <!-- AllowFastReconnect-OmaUri-Begin -->
@@ -151,7 +151,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFastReconnect-DFProperties-End -->
@@ -177,7 +177,7 @@ Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restrict
 <!-- AllowSecondaryAuthenticationDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowSecondaryAuthenticationDevice-Applicability-End -->
 
 <!-- AllowSecondaryAuthenticationDevice-OmaUri-Begin -->
@@ -204,7 +204,7 @@ This policy allows users to use a companion device, such as a phone, fitness ban
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowSecondaryAuthenticationDevice-DFProperties-End -->
@@ -244,7 +244,7 @@ This policy allows users to use a companion device, such as a phone, fitness ban
 <!-- ConfigureWebcamAccessDomainNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureWebcamAccessDomainNames-Applicability-End -->
 
 <!-- ConfigureWebcamAccessDomainNames-OmaUri-Begin -->
@@ -270,7 +270,7 @@ Specifies a list of domains that are allowed to access the webcam in Web Sign-in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- ConfigureWebcamAccessDomainNames-DFProperties-End -->
@@ -293,7 +293,7 @@ Your organization federates to "Contoso IDP" and your web sign-in portal at `sig
 <!-- ConfigureWebSignInAllowedUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.2145] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.2145] and later |
 <!-- ConfigureWebSignInAllowedUrls-Applicability-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-OmaUri-Begin -->
@@ -324,7 +324,7 @@ This policy specifies the list of domains that users can access in certain authe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- ConfigureWebSignInAllowedUrls-DFProperties-End -->
@@ -347,7 +347,7 @@ Your organization's PIN reset or web sign-in authentication flow is expected to 
 <!-- EnableFastFirstSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableFastFirstSignIn-Applicability-End -->
 
 <!-- EnableFastFirstSignIn-OmaUri-Begin -->
@@ -375,7 +375,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableFastFirstSignIn-DFProperties-End -->
@@ -402,7 +402,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 <!-- EnablePasswordlessExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- EnablePasswordlessExperience-Applicability-End -->
 
 <!-- EnablePasswordlessExperience-OmaUri-Begin -->
@@ -425,7 +425,7 @@ Specifies whether connected users on AADJ devices receive a Passwordless experie
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnablePasswordlessExperience-DFProperties-End -->
@@ -452,7 +452,7 @@ Specifies whether connected users on AADJ devices receive a Passwordless experie
 <!-- EnableWebSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EnableWebSignIn-Applicability-End -->
 
 <!-- EnableWebSignIn-OmaUri-Begin -->
@@ -483,7 +483,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableWebSignIn-DFProperties-End -->
@@ -510,7 +510,7 @@ Specifies whether web-based sign-in is allowed for signing in to Windows.
 <!-- PreferredAadTenantDomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreferredAadTenantDomainName-Applicability-End -->
 
 <!-- PreferredAadTenantDomainName-OmaUri-Begin -->
@@ -533,7 +533,7 @@ Specifies the preferred domain among available domains in the AAD tenant.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreferredAadTenantDomainName-DFProperties-End -->
 

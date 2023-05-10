@@ -4,7 +4,7 @@ description: Learn more about the SmartScreen Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- EnableAppInstallControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnableAppInstallControl-Applicability-End -->
 
 <!-- EnableAppInstallControl-OmaUri-Begin -->
@@ -65,7 +65,7 @@ App Install Control is a feature of Windows Defender SmartScreen that helps prot
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableAppInstallControl-DFProperties-End -->
@@ -105,7 +105,7 @@ App Install Control is a feature of Windows Defender SmartScreen that helps prot
 <!-- EnableSmartScreenInShell-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EnableSmartScreenInShell-Applicability-End -->
 
 <!-- EnableSmartScreenInShell-OmaUri-Begin -->
@@ -143,7 +143,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- EnableSmartScreenInShell-DFProperties-End -->
@@ -183,7 +183,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 <!-- PreventOverrideForFilesInShell-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventOverrideForFilesInShell-Applicability-End -->
 
 <!-- PreventOverrideForFilesInShell-OmaUri-Begin -->
@@ -221,7 +221,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventOverrideForFilesInShell-DFProperties-End -->

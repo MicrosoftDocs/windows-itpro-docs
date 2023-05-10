@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-Applicability-End -->
 
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-OmaUri-Begin -->
@@ -51,7 +51,7 @@ Allow ICMP redirects to override OSPF generated routes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowICMPRedirectsToOverrideOSPFGeneratedRoutes-DFProperties-End -->
 
@@ -79,7 +79,7 @@ Allow ICMP redirects to override OSPF generated routes.
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-Applicability-End -->
 
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-OmaUri-Begin -->
@@ -102,7 +102,7 @@ Allow the computer to ignore NetBIOS name release requests except from WINS serv
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers-DFProperties-End -->
 
@@ -130,7 +130,7 @@ Allow the computer to ignore NetBIOS name release requests except from WINS serv
 <!-- IPSourceRoutingProtectionLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- IPSourceRoutingProtectionLevel-Applicability-End -->
 
 <!-- IPSourceRoutingProtectionLevel-OmaUri-Begin -->
@@ -153,7 +153,7 @@ IP source routing protection level (protects against packet spoofing).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPSourceRoutingProtectionLevel-DFProperties-End -->
 
@@ -181,7 +181,7 @@ IP source routing protection level (protects against packet spoofing).
 <!-- IPv6SourceRoutingProtectionLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- IPv6SourceRoutingProtectionLevel-Applicability-End -->
 
 <!-- IPv6SourceRoutingProtectionLevel-OmaUri-Begin -->
@@ -204,7 +204,7 @@ IPv6 source routing protection level (protects against packet spoofing).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPv6SourceRoutingProtectionLevel-DFProperties-End -->
 

@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowOptionToShowNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowOptionToShowNetwork-Applicability-End -->
 
 <!-- AllowOptionToShowNetwork-OmaUri-Begin -->
@@ -55,7 +55,7 @@ When the Network folder is restricted, give the user the option to enumerate and
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowOptionToShowNetwork-DFProperties-End -->
@@ -81,7 +81,7 @@ When the Network folder is restricted, give the user the option to enumerate and
 <!-- AllowOptionToShowThisPC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowOptionToShowThisPC-Applicability-End -->
 
 <!-- AllowOptionToShowThisPC-OmaUri-Begin -->
@@ -108,7 +108,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowOptionToShowThisPC-DFProperties-End -->
@@ -134,7 +134,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 <!-- DisableGraphRecentItems-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableGraphRecentItems-Applicability-End -->
 
 <!-- DisableGraphRecentItems-OmaUri-Begin -->
@@ -157,7 +157,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableGraphRecentItems-DFProperties-End -->
@@ -197,7 +197,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 <!-- SetAllowedFolderLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetAllowedFolderLocations-Applicability-End -->
 
 <!-- SetAllowedFolderLocations-OmaUri-Begin -->
@@ -224,7 +224,7 @@ A value that can represent one or more folder locations in File Explorer. If not
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetAllowedFolderLocations-DFProperties-End -->
@@ -254,7 +254,7 @@ A value that can represent one or more folder locations in File Explorer. If not
 <!-- SetAllowedStorageLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetAllowedStorageLocations-Applicability-End -->
 
 <!-- SetAllowedStorageLocations-OmaUri-Begin -->
@@ -281,7 +281,7 @@ A value that can represent one or more storage locations in File Explorer. If no
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SetAllowedStorageLocations-DFProperties-End -->
@@ -313,7 +313,7 @@ A value that can represent one or more storage locations in File Explorer. If no
 <!-- TurnOffDataExecutionPreventionForExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOffDataExecutionPreventionForExplorer-Applicability-End -->
 
 <!-- TurnOffDataExecutionPreventionForExplorer-OmaUri-Begin -->
@@ -336,7 +336,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffDataExecutionPreventionForExplorer-DFProperties-End -->
 
@@ -368,7 +368,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 <!-- TurnOffHeapTerminationOnCorruption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOffHeapTerminationOnCorruption-Applicability-End -->
 
 <!-- TurnOffHeapTerminationOnCorruption-OmaUri-Begin -->
@@ -391,7 +391,7 @@ Disabling heap termination on corruption can allow certain legacy plug-in applic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffHeapTerminationOnCorruption-DFProperties-End -->
 

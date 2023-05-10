@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- BandwidthThrottlingEndTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingEndTime-Applicability-End -->
 
 <!-- BandwidthThrottlingEndTime-OmaUri-Begin -->
@@ -60,7 +60,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 17 |
@@ -92,7 +92,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- BandwidthThrottlingStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingStartTime-Applicability-End -->
 
 <!-- BandwidthThrottlingStartTime-OmaUri-Begin -->
@@ -126,7 +126,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-23]` |
 | Default Value  | 8 |
@@ -158,7 +158,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- BandwidthThrottlingTransferRate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingTransferRate-Applicability-End -->
 
 <!-- BandwidthThrottlingTransferRate-OmaUri-Begin -->
@@ -192,7 +192,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967200]` |
 | Default Value  | 1000 |
@@ -224,7 +224,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- CostedNetworkBehaviorBackgroundPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CostedNetworkBehaviorBackgroundPriority-Applicability-End -->
 
 <!-- CostedNetworkBehaviorBackgroundPriority-OmaUri-Begin -->
@@ -267,7 +267,7 @@ For example, you can specify that background jobs are by default to transfer onl
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- CostedNetworkBehaviorBackgroundPriority-DFProperties-End -->
@@ -310,7 +310,7 @@ For example, you can specify that background jobs are by default to transfer onl
 <!-- CostedNetworkBehaviorForegroundPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CostedNetworkBehaviorForegroundPriority-Applicability-End -->
 
 <!-- CostedNetworkBehaviorForegroundPriority-OmaUri-Begin -->
@@ -353,7 +353,7 @@ For example, you can specify that background jobs are by default to transfer onl
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- CostedNetworkBehaviorForegroundPriority-DFProperties-End -->
@@ -396,7 +396,7 @@ For example, you can specify that background jobs are by default to transfer onl
 <!-- JobInactivityTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- JobInactivityTimeout-Applicability-End -->
 
 <!-- JobInactivityTimeout-OmaUri-Begin -->
@@ -429,7 +429,7 @@ Consider decreasing this value if you are concerned about orphaned jobs occupyin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-999]` |
 | Default Value  | 90 |

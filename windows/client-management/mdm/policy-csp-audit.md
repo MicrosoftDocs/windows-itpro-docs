@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AccountLogon_AuditCredentialValidation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogon_AuditCredentialValidation-Applicability-End -->
 
 <!-- AccountLogon_AuditCredentialValidation-OmaUri-Begin -->
@@ -50,7 +50,7 @@ Volume: High on domain controllers.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogon_AuditCredentialValidation-DFProperties-End -->
@@ -87,7 +87,7 @@ Volume: High on domain controllers.
 <!-- AccountLogon_AuditKerberosAuthenticationService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogon_AuditKerberosAuthenticationService-Applicability-End -->
 
 <!-- AccountLogon_AuditKerberosAuthenticationService-OmaUri-Begin -->
@@ -113,7 +113,7 @@ Volume: High on Kerberos Key Distribution Center servers.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogon_AuditKerberosAuthenticationService-DFProperties-End -->
@@ -150,7 +150,7 @@ Volume: High on Kerberos Key Distribution Center servers.
 <!-- AccountLogon_AuditKerberosServiceTicketOperations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogon_AuditKerberosServiceTicketOperations-Applicability-End -->
 
 <!-- AccountLogon_AuditKerberosServiceTicketOperations-OmaUri-Begin -->
@@ -176,7 +176,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogon_AuditKerberosServiceTicketOperations-DFProperties-End -->
@@ -213,7 +213,7 @@ Volume: Low.
 <!-- AccountLogon_AuditOtherAccountLogonEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogon_AuditOtherAccountLogonEvents-Applicability-End -->
 
 <!-- AccountLogon_AuditOtherAccountLogonEvents-OmaUri-Begin -->
@@ -236,7 +236,7 @@ This policy setting allows you to audit events generated by responses to credent
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogon_AuditOtherAccountLogonEvents-DFProperties-End -->
@@ -273,7 +273,7 @@ This policy setting allows you to audit events generated by responses to credent
 <!-- AccountLogonLogoff_AuditAccountLockout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditAccountLockout-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditAccountLockout-OmaUri-Begin -->
@@ -297,7 +297,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AccountLogonLogoff_AuditAccountLockout-DFProperties-End -->
@@ -334,7 +334,7 @@ Volume: Low.
 <!-- AccountLogonLogoff_AuditGroupMembership-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditGroupMembership-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditGroupMembership-OmaUri-Begin -->
@@ -358,7 +358,7 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogonLogoff_AuditGroupMembership-DFProperties-End -->
@@ -395,7 +395,7 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 <!-- AccountLogonLogoff_AuditIPsecExtendedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditIPsecExtendedMode-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditIPsecExtendedMode-OmaUri-Begin -->
@@ -421,7 +421,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogonLogoff_AuditIPsecExtendedMode-DFProperties-End -->
@@ -458,7 +458,7 @@ Volume: High.
 <!-- AccountLogonLogoff_AuditIPsecMainMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditIPsecMainMode-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditIPsecMainMode-OmaUri-Begin -->
@@ -484,7 +484,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogonLogoff_AuditIPsecMainMode-DFProperties-End -->
@@ -521,7 +521,7 @@ Volume: High.
 <!-- AccountLogonLogoff_AuditIPsecQuickMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditIPsecQuickMode-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditIPsecQuickMode-OmaUri-Begin -->
@@ -547,7 +547,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogonLogoff_AuditIPsecQuickMode-DFProperties-End -->
@@ -584,7 +584,7 @@ Volume: High.
 <!-- AccountLogonLogoff_AuditLogoff-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditLogoff-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditLogoff-OmaUri-Begin -->
@@ -610,7 +610,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AccountLogonLogoff_AuditLogoff-DFProperties-End -->
@@ -647,7 +647,7 @@ Volume: Low.
 <!-- AccountLogonLogoff_AuditLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditLogon-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditLogon-OmaUri-Begin -->
@@ -671,7 +671,7 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AccountLogonLogoff_AuditLogon-DFProperties-End -->
@@ -708,7 +708,7 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 <!-- AccountLogonLogoff_AuditNetworkPolicyServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditNetworkPolicyServer-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditNetworkPolicyServer-OmaUri-Begin -->
@@ -734,7 +734,7 @@ Volume: Medium or High on NPS and IAS server. No volume on other computers.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- AccountLogonLogoff_AuditNetworkPolicyServer-DFProperties-End -->
@@ -771,7 +771,7 @@ Volume: Medium or High on NPS and IAS server. No volume on other computers.
 <!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-OmaUri-Begin -->
@@ -795,7 +795,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-DFProperties-End -->
@@ -832,7 +832,7 @@ Volume: Low.
 <!-- AccountLogonLogoff_AuditSpecialLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditSpecialLogon-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditSpecialLogon-OmaUri-Begin -->
@@ -856,7 +856,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AccountLogonLogoff_AuditSpecialLogon-DFProperties-End -->
@@ -893,7 +893,7 @@ Volume: Low.
 <!-- AccountLogonLogoff_AuditUserDeviceClaims-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountLogonLogoff_AuditUserDeviceClaims-Applicability-End -->
 
 <!-- AccountLogonLogoff_AuditUserDeviceClaims-OmaUri-Begin -->
@@ -917,7 +917,7 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountLogonLogoff_AuditUserDeviceClaims-DFProperties-End -->
@@ -954,7 +954,7 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 <!-- AccountManagement_AuditApplicationGroupManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountManagement_AuditApplicationGroupManagement-Applicability-End -->
 
 <!-- AccountManagement_AuditApplicationGroupManagement-OmaUri-Begin -->
@@ -980,7 +980,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountManagement_AuditApplicationGroupManagement-DFProperties-End -->
@@ -1017,7 +1017,7 @@ Volume: Low.
 <!-- AccountManagement_AuditComputerAccountManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountManagement_AuditComputerAccountManagement-Applicability-End -->
 
 <!-- AccountManagement_AuditComputerAccountManagement-OmaUri-Begin -->
@@ -1043,7 +1043,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountManagement_AuditComputerAccountManagement-DFProperties-End -->
@@ -1080,7 +1080,7 @@ Volume: Low.
 <!-- AccountManagement_AuditDistributionGroupManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountManagement_AuditDistributionGroupManagement-Applicability-End -->
 
 <!-- AccountManagement_AuditDistributionGroupManagement-OmaUri-Begin -->
@@ -1109,7 +1109,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountManagement_AuditDistributionGroupManagement-DFProperties-End -->
@@ -1146,7 +1146,7 @@ Volume: Low.
 <!-- AccountManagement_AuditOtherAccountManagementEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountManagement_AuditOtherAccountManagementEvents-Applicability-End -->
 
 <!-- AccountManagement_AuditOtherAccountManagementEvents-OmaUri-Begin -->
@@ -1170,7 +1170,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AccountManagement_AuditOtherAccountManagementEvents-DFProperties-End -->
@@ -1207,7 +1207,7 @@ Volume: Low.
 <!-- AccountManagement_AuditSecurityGroupManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountManagement_AuditSecurityGroupManagement-Applicability-End -->
 
 <!-- AccountManagement_AuditSecurityGroupManagement-OmaUri-Begin -->
@@ -1233,7 +1233,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AccountManagement_AuditSecurityGroupManagement-DFProperties-End -->
@@ -1270,7 +1270,7 @@ Volume: Low.
 <!-- AccountManagement_AuditUserAccountManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AccountManagement_AuditUserAccountManagement-Applicability-End -->
 
 <!-- AccountManagement_AuditUserAccountManagement-OmaUri-Begin -->
@@ -1296,7 +1296,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AccountManagement_AuditUserAccountManagement-DFProperties-End -->
@@ -1333,7 +1333,7 @@ Volume: Low.
 <!-- DetailedTracking_AuditDPAPIActivity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DetailedTracking_AuditDPAPIActivity-Applicability-End -->
 
 <!-- DetailedTracking_AuditDPAPIActivity-OmaUri-Begin -->
@@ -1359,7 +1359,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DetailedTracking_AuditDPAPIActivity-DFProperties-End -->
@@ -1396,7 +1396,7 @@ Volume: Low.
 <!-- DetailedTracking_AuditPNPActivity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DetailedTracking_AuditPNPActivity-Applicability-End -->
 
 <!-- DetailedTracking_AuditPNPActivity-OmaUri-Begin -->
@@ -1422,7 +1422,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DetailedTracking_AuditPNPActivity-DFProperties-End -->
@@ -1459,7 +1459,7 @@ Volume: Low.
 <!-- DetailedTracking_AuditProcessCreation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DetailedTracking_AuditProcessCreation-Applicability-End -->
 
 <!-- DetailedTracking_AuditProcessCreation-OmaUri-Begin -->
@@ -1485,7 +1485,7 @@ Volume: Depends on how the computer is used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DetailedTracking_AuditProcessCreation-DFProperties-End -->
@@ -1522,7 +1522,7 @@ Volume: Depends on how the computer is used.
 <!-- DetailedTracking_AuditProcessTermination-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DetailedTracking_AuditProcessTermination-Applicability-End -->
 
 <!-- DetailedTracking_AuditProcessTermination-OmaUri-Begin -->
@@ -1548,7 +1548,7 @@ Volume: Depends on how the computer is used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DetailedTracking_AuditProcessTermination-DFProperties-End -->
@@ -1585,7 +1585,7 @@ Volume: Depends on how the computer is used.
 <!-- DetailedTracking_AuditRPCEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DetailedTracking_AuditRPCEvents-Applicability-End -->
 
 <!-- DetailedTracking_AuditRPCEvents-OmaUri-Begin -->
@@ -1611,7 +1611,7 @@ Volume: High on RPC servers.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DetailedTracking_AuditRPCEvents-DFProperties-End -->
@@ -1648,7 +1648,7 @@ Volume: High on RPC servers.
 <!-- DetailedTracking_AuditTokenRightAdjusted-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DetailedTracking_AuditTokenRightAdjusted-Applicability-End -->
 
 <!-- DetailedTracking_AuditTokenRightAdjusted-OmaUri-Begin -->
@@ -1672,7 +1672,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DetailedTracking_AuditTokenRightAdjusted-DFProperties-End -->
@@ -1709,7 +1709,7 @@ Volume: High.
 <!-- DSAccess_AuditDetailedDirectoryServiceReplication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DSAccess_AuditDetailedDirectoryServiceReplication-Applicability-End -->
 
 <!-- DSAccess_AuditDetailedDirectoryServiceReplication-OmaUri-Begin -->
@@ -1733,7 +1733,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DSAccess_AuditDetailedDirectoryServiceReplication-DFProperties-End -->
@@ -1770,7 +1770,7 @@ Volume: High.
 <!-- DSAccess_AuditDirectoryServiceAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DSAccess_AuditDirectoryServiceAccess-Applicability-End -->
 
 <!-- DSAccess_AuditDirectoryServiceAccess-OmaUri-Begin -->
@@ -1794,7 +1794,7 @@ Volume: High on domain controllers. None on client computers.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DSAccess_AuditDirectoryServiceAccess-DFProperties-End -->
@@ -1831,7 +1831,7 @@ Volume: High on domain controllers. None on client computers.
 <!-- DSAccess_AuditDirectoryServiceChanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DSAccess_AuditDirectoryServiceChanges-Applicability-End -->
 
 <!-- DSAccess_AuditDirectoryServiceChanges-OmaUri-Begin -->
@@ -1860,7 +1860,7 @@ Volume: High on domain controllers only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DSAccess_AuditDirectoryServiceChanges-DFProperties-End -->
@@ -1897,7 +1897,7 @@ Volume: High on domain controllers only.
 <!-- DSAccess_AuditDirectoryServiceReplication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DSAccess_AuditDirectoryServiceReplication-Applicability-End -->
 
 <!-- DSAccess_AuditDirectoryServiceReplication-OmaUri-Begin -->
@@ -1923,7 +1923,7 @@ Volume: Medium on domain controllers. None on client computers.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DSAccess_AuditDirectoryServiceReplication-DFProperties-End -->
@@ -1960,7 +1960,7 @@ Volume: Medium on domain controllers. None on client computers.
 <!-- ObjectAccess_AuditApplicationGenerated-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditApplicationGenerated-Applicability-End -->
 
 <!-- ObjectAccess_AuditApplicationGenerated-OmaUri-Begin -->
@@ -1984,7 +1984,7 @@ Volume: Depends on the applications that are generating them.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditApplicationGenerated-DFProperties-End -->
@@ -2021,7 +2021,7 @@ Volume: Depends on the applications that are generating them.
 <!-- ObjectAccess_AuditCentralAccessPolicyStaging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditCentralAccessPolicyStaging-Applicability-End -->
 
 <!-- ObjectAccess_AuditCentralAccessPolicyStaging-OmaUri-Begin -->
@@ -2045,7 +2045,7 @@ Volume: Potentially high on a file server when the proposed policy differs signi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditCentralAccessPolicyStaging-DFProperties-End -->
@@ -2082,7 +2082,7 @@ Volume: Potentially high on a file server when the proposed policy differs signi
 <!-- ObjectAccess_AuditCertificationServices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditCertificationServices-Applicability-End -->
 
 <!-- ObjectAccess_AuditCertificationServices-OmaUri-Begin -->
@@ -2106,7 +2106,7 @@ Volume: Medium or Low on computers running Active Directory Certificate Services
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditCertificationServices-DFProperties-End -->
@@ -2143,7 +2143,7 @@ Volume: Medium or Low on computers running Active Directory Certificate Services
 <!-- ObjectAccess_AuditDetailedFileShare-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditDetailedFileShare-Applicability-End -->
 
 <!-- ObjectAccess_AuditDetailedFileShare-OmaUri-Begin -->
@@ -2173,7 +2173,7 @@ Volume: High on a file server or domain controller because of SYSVOL network acc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditDetailedFileShare-DFProperties-End -->
@@ -2210,7 +2210,7 @@ Volume: High on a file server or domain controller because of SYSVOL network acc
 <!-- ObjectAccess_AuditFileShare-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditFileShare-Applicability-End -->
 
 <!-- ObjectAccess_AuditFileShare-OmaUri-Begin -->
@@ -2241,7 +2241,7 @@ Volume: High on a file server or domain controller because of SYSVOL network acc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditFileShare-DFProperties-End -->
@@ -2278,7 +2278,7 @@ Volume: High on a file server or domain controller because of SYSVOL network acc
 <!-- ObjectAccess_AuditFileSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditFileSystem-Applicability-End -->
 
 <!-- ObjectAccess_AuditFileSystem-OmaUri-Begin -->
@@ -2307,7 +2307,7 @@ Volume: Depends on how the file system SACLs are configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditFileSystem-DFProperties-End -->
@@ -2344,7 +2344,7 @@ Volume: Depends on how the file system SACLs are configured.
 <!-- ObjectAccess_AuditFilteringPlatformConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditFilteringPlatformConnection-Applicability-End -->
 
 <!-- ObjectAccess_AuditFilteringPlatformConnection-OmaUri-Begin -->
@@ -2370,7 +2370,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditFilteringPlatformConnection-DFProperties-End -->
@@ -2407,7 +2407,7 @@ Volume: High.
 <!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Applicability-End -->
 
 <!-- ObjectAccess_AuditFilteringPlatformPacketDrop-OmaUri-Begin -->
@@ -2431,7 +2431,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditFilteringPlatformPacketDrop-DFProperties-End -->
@@ -2468,7 +2468,7 @@ Volume: High.
 <!-- ObjectAccess_AuditHandleManipulation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditHandleManipulation-Applicability-End -->
 
 <!-- ObjectAccess_AuditHandleManipulation-OmaUri-Begin -->
@@ -2497,7 +2497,7 @@ Volume: Depends on how SACLs are configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditHandleManipulation-DFProperties-End -->
@@ -2534,7 +2534,7 @@ Volume: Depends on how SACLs are configured.
 <!-- ObjectAccess_AuditKernelObject-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditKernelObject-Applicability-End -->
 
 <!-- ObjectAccess_AuditKernelObject-OmaUri-Begin -->
@@ -2561,7 +2561,7 @@ Volume: High if auditing access of global system objects is enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditKernelObject-DFProperties-End -->
@@ -2598,7 +2598,7 @@ Volume: High if auditing access of global system objects is enabled.
 <!-- ObjectAccess_AuditOtherObjectAccessEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditOtherObjectAccessEvents-Applicability-End -->
 
 <!-- ObjectAccess_AuditOtherObjectAccessEvents-OmaUri-Begin -->
@@ -2622,7 +2622,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditOtherObjectAccessEvents-DFProperties-End -->
@@ -2659,7 +2659,7 @@ Volume: Low.
 <!-- ObjectAccess_AuditRegistry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditRegistry-Applicability-End -->
 
 <!-- ObjectAccess_AuditRegistry-OmaUri-Begin -->
@@ -2688,7 +2688,7 @@ Volume: Depends on how registry SACLs are configured.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditRegistry-DFProperties-End -->
@@ -2725,7 +2725,7 @@ Volume: Depends on how registry SACLs are configured.
 <!-- ObjectAccess_AuditRemovableStorage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditRemovableStorage-Applicability-End -->
 
 <!-- ObjectAccess_AuditRemovableStorage-OmaUri-Begin -->
@@ -2750,7 +2750,7 @@ This policy setting allows you to audit user attempts to access file system obje
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditRemovableStorage-DFProperties-End -->
@@ -2787,7 +2787,7 @@ This policy setting allows you to audit user attempts to access file system obje
 <!-- ObjectAccess_AuditSAM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- ObjectAccess_AuditSAM-Applicability-End -->
 
 <!-- ObjectAccess_AuditSAM-OmaUri-Begin -->
@@ -2816,7 +2816,7 @@ Volume: High on domain controllers. For more information about reducing the numb
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ObjectAccess_AuditSAM-DFProperties-End -->
@@ -2853,7 +2853,7 @@ Volume: High on domain controllers. For more information about reducing the numb
 <!-- PolicyChange_AuditAuthenticationPolicyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PolicyChange_AuditAuthenticationPolicyChange-Applicability-End -->
 
 <!-- PolicyChange_AuditAuthenticationPolicyChange-OmaUri-Begin -->
@@ -2882,7 +2882,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PolicyChange_AuditAuthenticationPolicyChange-DFProperties-End -->
@@ -2919,7 +2919,7 @@ Volume: Low.
 <!-- PolicyChange_AuditAuthorizationPolicyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PolicyChange_AuditAuthorizationPolicyChange-Applicability-End -->
 
 <!-- PolicyChange_AuditAuthorizationPolicyChange-OmaUri-Begin -->
@@ -2945,7 +2945,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PolicyChange_AuditAuthorizationPolicyChange-DFProperties-End -->
@@ -2982,7 +2982,7 @@ Volume: Low.
 <!-- PolicyChange_AuditFilteringPlatformPolicyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PolicyChange_AuditFilteringPlatformPolicyChange-Applicability-End -->
 
 <!-- PolicyChange_AuditFilteringPlatformPolicyChange-OmaUri-Begin -->
@@ -3008,7 +3008,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PolicyChange_AuditFilteringPlatformPolicyChange-DFProperties-End -->
@@ -3045,7 +3045,7 @@ Volume: Low.
 <!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Applicability-End -->
 
 <!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-OmaUri-Begin -->
@@ -3071,7 +3071,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-DFProperties-End -->
@@ -3108,7 +3108,7 @@ Volume: Low.
 <!-- PolicyChange_AuditOtherPolicyChangeEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PolicyChange_AuditOtherPolicyChangeEvents-Applicability-End -->
 
 <!-- PolicyChange_AuditOtherPolicyChangeEvents-OmaUri-Begin -->
@@ -3132,7 +3132,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PolicyChange_AuditOtherPolicyChangeEvents-DFProperties-End -->
@@ -3169,7 +3169,7 @@ Volume: Low.
 <!-- PolicyChange_AuditPolicyChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PolicyChange_AuditPolicyChange-Applicability-End -->
 
 <!-- PolicyChange_AuditPolicyChange-OmaUri-Begin -->
@@ -3196,7 +3196,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PolicyChange_AuditPolicyChange-DFProperties-End -->
@@ -3233,7 +3233,7 @@ Volume: Low.
 <!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Applicability-End -->
 
 <!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-OmaUri-Begin -->
@@ -3260,7 +3260,7 @@ Volume: Very High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-DFProperties-End -->
@@ -3297,7 +3297,7 @@ Volume: Very High.
 <!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Applicability-End -->
 
 <!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-OmaUri-Begin -->
@@ -3320,7 +3320,7 @@ Not used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-DFProperties-End -->
@@ -3357,7 +3357,7 @@ Not used.
 <!-- PrivilegeUse_AuditSensitivePrivilegeUse-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PrivilegeUse_AuditSensitivePrivilegeUse-Applicability-End -->
 
 <!-- PrivilegeUse_AuditSensitivePrivilegeUse-OmaUri-Begin -->
@@ -3383,7 +3383,7 @@ Volume: High.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PrivilegeUse_AuditSensitivePrivilegeUse-DFProperties-End -->
@@ -3420,7 +3420,7 @@ Volume: High.
 <!-- System_AuditIPsecDriver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- System_AuditIPsecDriver-Applicability-End -->
 
 <!-- System_AuditIPsecDriver-OmaUri-Begin -->
@@ -3446,7 +3446,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- System_AuditIPsecDriver-DFProperties-End -->
@@ -3483,7 +3483,7 @@ Volume: Low.
 <!-- System_AuditOtherSystemEvents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- System_AuditOtherSystemEvents-Applicability-End -->
 
 <!-- System_AuditOtherSystemEvents-OmaUri-Begin -->
@@ -3507,7 +3507,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- System_AuditOtherSystemEvents-DFProperties-End -->
@@ -3544,7 +3544,7 @@ Volume: Low.
 <!-- System_AuditSecurityStateChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- System_AuditSecurityStateChange-Applicability-End -->
 
 <!-- System_AuditSecurityStateChange-OmaUri-Begin -->
@@ -3568,7 +3568,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- System_AuditSecurityStateChange-DFProperties-End -->
@@ -3605,7 +3605,7 @@ Volume: Low.
 <!-- System_AuditSecuritySystemExtension-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- System_AuditSecuritySystemExtension-Applicability-End -->
 
 <!-- System_AuditSecuritySystemExtension-OmaUri-Begin -->
@@ -3631,7 +3631,7 @@ Volume: Low. Security system extension events are generated more often on a doma
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- System_AuditSecuritySystemExtension-DFProperties-End -->
@@ -3668,7 +3668,7 @@ Volume: Low. Security system extension events are generated more often on a doma
 <!-- System_AuditSystemIntegrity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.1039] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.774] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.329] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- System_AuditSystemIntegrity-Applicability-End -->
 
 <!-- System_AuditSystemIntegrity-OmaUri-Begin -->
@@ -3692,7 +3692,7 @@ Volume: Low.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- System_AuditSystemIntegrity-DFProperties-End -->

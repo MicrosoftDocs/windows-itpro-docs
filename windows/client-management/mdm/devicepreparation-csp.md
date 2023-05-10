@@ -44,7 +44,7 @@ The following list shows the DevicePreparation configuration service provider no
 <!-- Device-BootstrapperAgent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-OmaUri-Begin -->
@@ -67,7 +67,7 @@ The subnodes configure settings for the Bootstrapper Agent.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-BootstrapperAgent-DFProperties-End -->
 
@@ -83,7 +83,7 @@ The subnodes configure settings for the Bootstrapper Agent.
 <!-- Device-BootstrapperAgent-ClassID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ClassID-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ClassID-OmaUri-Begin -->
@@ -106,7 +106,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-BootstrapperAgent-ClassID-DFProperties-End -->
 
@@ -122,7 +122,7 @@ This node stores the class ID for the Bootstrapper Agent WinRT object.
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-ExecutionContext-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-ExecutionContext-OmaUri-Begin -->
@@ -145,7 +145,7 @@ This node holds opaque data that will be passed to the Bootstrapper Agent as a p
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-BootstrapperAgent-ExecutionContext-DFProperties-End -->
 
@@ -161,7 +161,7 @@ This node holds opaque data that will be passed to the Bootstrapper Agent as a p
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-BootstrapperAgent-InstallationStatusUri-Applicability-End -->
 
 <!-- Device-BootstrapperAgent-InstallationStatusUri-OmaUri-Begin -->
@@ -184,7 +184,7 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-BootstrapperAgent-InstallationStatusUri-DFProperties-End -->
 
@@ -200,7 +200,7 @@ This node holds a URI that can be queried for the status of the Bootstrapper Age
 <!-- Device-MdmAgentInstalled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-MdmAgentInstalled-Applicability-End -->
 
 <!-- Device-MdmAgentInstalled-OmaUri-Begin -->
@@ -223,7 +223,7 @@ This node indicates whether the MDM agent was installed or not. When set to true
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-MdmAgentInstalled-DFProperties-End -->
@@ -240,7 +240,7 @@ This node indicates whether the MDM agent was installed or not. When set to true
 <!-- Device-MDMProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-Applicability-End -->
 
 <!-- Device-MDMProvider-OmaUri-Begin -->
@@ -263,7 +263,7 @@ The subnode configures the settings for the MDMProvider.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MDMProvider-DFProperties-End -->
 
@@ -279,7 +279,7 @@ The subnode configures the settings for the MDMProvider.
 <!-- Device-MDMProvider-Progress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-MDMProvider-Progress-Applicability-End -->
 
 <!-- Device-MDMProvider-Progress-OmaUri-Begin -->
@@ -302,7 +302,7 @@ Node for reporting progress status as opaque data.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-MDMProvider-Progress-DFProperties-End -->
 
@@ -318,7 +318,7 @@ Node for reporting progress status as opaque data.
 <!-- Device-PageEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-PageEnabled-Applicability-End -->
 
 <!-- Device-PageEnabled-OmaUri-Begin -->
@@ -341,7 +341,7 @@ This node determines whether to enable or show the Device Preparation page.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-PageEnabled-DFProperties-End -->
@@ -367,7 +367,7 @@ This node determines whether to enable or show the Device Preparation page.
 <!-- Device-PageSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-PageSettings-Applicability-End -->
 
 <!-- Device-PageSettings-OmaUri-Begin -->
@@ -390,7 +390,7 @@ This node configures specific settings for the Device Preparation page.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-PageSettings-DFProperties-End -->
 
@@ -406,7 +406,7 @@ This node configures specific settings for the Device Preparation page.
 <!-- Device-PageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-PageStatus-Applicability-End -->
 
 <!-- Device-PageStatus-OmaUri-Begin -->
@@ -429,7 +429,7 @@ This node provides status of the Device Preparation page. Values are an enum: 0 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-PageStatus-DFProperties-End -->
 

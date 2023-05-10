@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- DOAbsoluteMaxCacheSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOAbsoluteMaxCacheSize-Applicability-End -->
 
 <!-- DOAbsoluteMaxCacheSize-OmaUri-Begin -->
@@ -55,7 +55,7 @@ The value 0 (zero) means "unlimited" cache; Delivery Optimization will clear the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -87,7 +87,7 @@ The value 0 (zero) means "unlimited" cache; Delivery Optimization will clear the
 <!-- DOAllowVPNPeerCaching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOAllowVPNPeerCaching-Applicability-End -->
 
 <!-- DOAllowVPNPeerCaching-OmaUri-Begin -->
@@ -110,7 +110,7 @@ Specifies whether the device is allowed to participate in Peer Caching while con
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DOAllowVPNPeerCaching-DFProperties-End -->
@@ -150,7 +150,7 @@ Specifies whether the device is allowed to participate in Peer Caching while con
 <!-- DOCacheHost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DOCacheHost-Applicability-End -->
 
 <!-- DOCacheHost-OmaUri-Begin -->
@@ -177,7 +177,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- DOCacheHost-DFProperties-End -->
@@ -208,7 +208,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 <!-- DOCacheHostSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DOCacheHostSource-Applicability-End -->
 
 <!-- DOCacheHostSource-OmaUri-Begin -->
@@ -243,7 +243,7 @@ If this policy is not configured, the client will attempt to automatically find 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -275,7 +275,7 @@ If this policy is not configured, the client will attempt to automatically find 
 <!-- DODelayBackgroundDownloadFromHttp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DODelayBackgroundDownloadFromHttp-Applicability-End -->
 
 <!-- DODelayBackgroundDownloadFromHttp-OmaUri-Begin -->
@@ -304,7 +304,7 @@ The recommended value is 1 hour (3600).
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -336,7 +336,7 @@ The recommended value is 1 hour (3600).
 <!-- DODelayCacheServerFallbackBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DODelayCacheServerFallbackBackground-Applicability-End -->
 
 <!-- DODelayCacheServerFallbackBackground-OmaUri-Begin -->
@@ -359,7 +359,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2592000]` |
 | Default Value  | 0 |
@@ -391,7 +391,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 <!-- DODelayCacheServerFallbackForeground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DODelayCacheServerFallbackForeground-Applicability-End -->
 
 <!-- DODelayCacheServerFallbackForeground-OmaUri-Begin -->
@@ -414,7 +414,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2592000]` |
 | Default Value  | 0 |
@@ -446,7 +446,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 <!-- DODelayForegroundDownloadFromHttp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DODelayForegroundDownloadFromHttp-Applicability-End -->
 
 <!-- DODelayForegroundDownloadFromHttp-OmaUri-Begin -->
@@ -475,7 +475,7 @@ The recommended value is 1 minute (60).
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -507,7 +507,7 @@ The recommended value is 1 minute (60).
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-OmaUri-Begin -->
@@ -530,7 +530,7 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DODisallowCacheServerDownloadsOnVPN-DFProperties-End -->
@@ -566,7 +566,7 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 <!-- DODownloadMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DODownloadMode-Applicability-End -->
 
 <!-- DODownloadMode-OmaUri-Begin -->
@@ -591,7 +591,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DODownloadMode-DFProperties-End -->
@@ -635,7 +635,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 <!-- DOGroupId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOGroupId-Applicability-End -->
 
 <!-- DOGroupId-OmaUri-Begin -->
@@ -662,7 +662,7 @@ Note this is a best effort optimization and should not be relied on for an authe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DOGroupId-DFProperties-End -->
 
@@ -692,7 +692,7 @@ Note this is a best effort optimization and should not be relied on for an authe
 <!-- DOGroupIdSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOGroupIdSource-Applicability-End -->
 
 <!-- DOGroupIdSource-OmaUri-Begin -->
@@ -717,7 +717,7 @@ Set this policy to restrict peer selection to a specific source. Available optio
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DOGroupIdSource-DFProperties-End -->
@@ -761,7 +761,7 @@ Set this policy to restrict peer selection to a specific source. Available optio
 <!-- DOMaxBackgroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DOMaxBackgroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOMaxBackgroundDownloadBandwidth-OmaUri-Begin -->
@@ -786,7 +786,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -818,7 +818,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DOMaxCacheAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DOMaxCacheAge-Applicability-End -->
 
 <!-- DOMaxCacheAge-OmaUri-Begin -->
@@ -841,7 +841,7 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -873,7 +873,7 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 <!-- DOMaxCacheSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DOMaxCacheSize-Applicability-End -->
 
 <!-- DOMaxCacheSize-OmaUri-Begin -->
@@ -896,7 +896,7 @@ Specifies the maximum cache size that Delivery Optimization can utilize, as a pe
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-100]` |
 | Default Value  | 0 |
@@ -928,7 +928,7 @@ Specifies the maximum cache size that Delivery Optimization can utilize, as a pe
 <!-- DOMaxForegroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- DOMaxForegroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOMaxForegroundDownloadBandwidth-OmaUri-Begin -->
@@ -953,7 +953,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -985,7 +985,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DOMinBackgroundQos-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOMinBackgroundQos-Applicability-End -->
 
 <!-- DOMinBackgroundQos-OmaUri-Begin -->
@@ -1008,7 +1008,7 @@ Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-4294967295]` |
 | Default Value  | 0 |
@@ -1040,7 +1040,7 @@ Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/se
 <!-- DOMinBatteryPercentageAllowedToUpload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinBatteryPercentageAllowedToUpload-Applicability-End -->
 
 <!-- DOMinBatteryPercentageAllowedToUpload-OmaUri-Begin -->
@@ -1067,7 +1067,7 @@ The value 0 means "not-limited"; The cloud service set default value will be use
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -1099,7 +1099,7 @@ The value 0 means "not-limited"; The cloud service set default value will be use
 <!-- DOMinDiskSizeAllowedToPeer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinDiskSizeAllowedToPeer-Applicability-End -->
 
 <!-- DOMinDiskSizeAllowedToPeer-OmaUri-Begin -->
@@ -1127,7 +1127,7 @@ Recommended values: 64 GB to 256 GB.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-100000]` |
 | Default Value  | 0 |
@@ -1159,7 +1159,7 @@ Recommended values: 64 GB to 256 GB.
 <!-- DOMinFileSizeToCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinFileSizeToCache-Applicability-End -->
 
 <!-- DOMinFileSizeToCache-OmaUri-Begin -->
@@ -1182,7 +1182,7 @@ Specifies the minimum content file size in MB enabled to use Peer Caching. Recom
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-100000]` |
 | Default Value  | 0 |
@@ -1214,7 +1214,7 @@ Specifies the minimum content file size in MB enabled to use Peer Caching. Recom
 <!-- DOMinRAMAllowedToPeer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DOMinRAMAllowedToPeer-Applicability-End -->
 
 <!-- DOMinRAMAllowedToPeer-OmaUri-Begin -->
@@ -1237,7 +1237,7 @@ Specifies the minimum RAM size in GB required to use Peer Caching. For example, 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-100000]` |
 | Default Value  | 0 |
@@ -1269,7 +1269,7 @@ Specifies the minimum RAM size in GB required to use Peer Caching. For example, 
 <!-- DOModifyCacheDrive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOModifyCacheDrive-Applicability-End -->
 
 <!-- DOModifyCacheDrive-OmaUri-Begin -->
@@ -1294,7 +1294,7 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DOModifyCacheDrive-DFProperties-End -->
 
@@ -1324,7 +1324,7 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 <!-- DOMonthlyUploadDataCap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DOMonthlyUploadDataCap-Applicability-End -->
 
 <!-- DOMonthlyUploadDataCap-OmaUri-Begin -->
@@ -1347,7 +1347,7 @@ Specifies the maximum total bytes in GB that Delivery Optimization is allowed to
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
@@ -1379,7 +1379,7 @@ Specifies the maximum total bytes in GB that Delivery Optimization is allowed to
 <!-- DOPercentageMaxBackgroundBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOPercentageMaxBackgroundBandwidth-Applicability-End -->
 
 <!-- DOPercentageMaxBackgroundBandwidth-OmaUri-Begin -->
@@ -1406,7 +1406,7 @@ Downloads from LAN peers won't be throttled even when this policy is set.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -1438,7 +1438,7 @@ Downloads from LAN peers won't be throttled even when this policy is set.
 <!-- DOPercentageMaxForegroundBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOPercentageMaxForegroundBandwidth-Applicability-End -->
 
 <!-- DOPercentageMaxForegroundBandwidth-OmaUri-Begin -->
@@ -1463,7 +1463,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 0 |
@@ -1495,7 +1495,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DORestrictPeerSelectionBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DORestrictPeerSelectionBy-Applicability-End -->
 
 <!-- DORestrictPeerSelectionBy-OmaUri-Begin -->
@@ -1530,7 +1530,7 @@ In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DORestrictPeerSelectionBy-DFProperties-End -->
@@ -1571,7 +1571,7 @@ In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer 
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-OmaUri-Begin -->
@@ -1594,7 +1594,7 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-DFProperties-End -->
 
@@ -1625,7 +1625,7 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-Applicability-End -->
 
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-OmaUri-Begin -->
@@ -1653,7 +1653,7 @@ This policy allows an IT Admin to define the following details:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-DFProperties-End -->
 
@@ -1684,7 +1684,7 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DOVpnKeywords-Applicability-End -->
 
 <!-- DOVpnKeywords-OmaUri-Begin -->
@@ -1707,7 +1707,7 @@ This policy allows you to set one or more keywords used to recognize VPN connect
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- DOVpnKeywords-DFProperties-End -->

@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-Applicability-End -->
 
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-OmaUri-Begin -->
@@ -50,7 +50,7 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-DFProperties-End -->
 
@@ -78,7 +78,7 @@ ms.topic: reference
 <!-- ConfigureSMBV1ClientDriver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureSMBV1ClientDriver-Applicability-End -->
 
 <!-- ConfigureSMBV1ClientDriver-OmaUri-Begin -->
@@ -100,7 +100,7 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureSMBV1ClientDriver-DFProperties-End -->
 
@@ -128,7 +128,7 @@ ms.topic: reference
 <!-- ConfigureSMBV1Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureSMBV1Server-Applicability-End -->
 
 <!-- ConfigureSMBV1Server-OmaUri-Begin -->
@@ -150,7 +150,7 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureSMBV1Server-DFProperties-End -->
 
@@ -178,7 +178,7 @@ ms.topic: reference
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Applicability-End -->
 
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-OmaUri-Begin -->
@@ -200,7 +200,7 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-DFProperties-End -->
 
@@ -228,7 +228,7 @@ ms.topic: reference
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Applicability-End -->
 
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-OmaUri-Begin -->
@@ -250,7 +250,7 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-DFProperties-End -->
 
@@ -278,7 +278,7 @@ ms.topic: reference
 <!-- WDigestAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- WDigestAuthentication-Applicability-End -->
 
 <!-- WDigestAuthentication-OmaUri-Begin -->
@@ -300,7 +300,7 @@ ms.topic: reference
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WDigestAuthentication-DFProperties-End -->
 

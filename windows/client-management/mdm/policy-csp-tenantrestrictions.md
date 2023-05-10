@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ConfigureTenantRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.320] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1320] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1320] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1320] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.320] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1320] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1320] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1320] and later <br> ✅ Windows 10, version 21H2 [10.0.19044] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureTenantRestrictions-Applicability-End -->
 
 <!-- ConfigureTenantRestrictions-OmaUri-Begin -->
@@ -61,7 +61,7 @@ For details about setting up WDAC with tenant restrictions, see <https://go.micr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureTenantRestrictions-DFProperties-End -->
 

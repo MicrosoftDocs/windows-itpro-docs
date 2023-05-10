@@ -30,7 +30,7 @@ ms.topic: reference
 <!-- Accounts_BlockMicrosoftAccounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_BlockMicrosoftAccounts-Applicability-End -->
 
 <!-- Accounts_BlockMicrosoftAccounts-OmaUri-Begin -->
@@ -53,7 +53,7 @@ This policy setting prevents users from adding new Microsoft accounts on this co
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Accounts_BlockMicrosoftAccounts-DFProperties-End -->
@@ -89,7 +89,7 @@ This policy setting prevents users from adding new Microsoft accounts on this co
 <!-- Accounts_EnableAdministratorAccountStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_EnableAdministratorAccountStatus-Applicability-End -->
 
 <!-- Accounts_EnableAdministratorAccountStatus-OmaUri-Begin -->
@@ -115,7 +115,7 @@ This security setting determines whether the local Administrator account is enab
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Accounts_EnableAdministratorAccountStatus-DFProperties-End -->
@@ -150,7 +150,7 @@ This security setting determines whether the local Administrator account is enab
 <!-- Accounts_EnableGuestAccountStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_EnableGuestAccountStatus-Applicability-End -->
 
 <!-- Accounts_EnableGuestAccountStatus-OmaUri-Begin -->
@@ -176,7 +176,7 @@ This security setting determines if the Guest account is enabled or disabled. De
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Accounts_EnableGuestAccountStatus-DFProperties-End -->
@@ -211,7 +211,7 @@ This security setting determines if the Guest account is enabled or disabled. De
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-Applicability-End -->
 
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-OmaUri-Begin -->
@@ -240,7 +240,7 @@ Accounts: Limit local account use of blank passwords to console logon only This 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly-DFProperties-End -->
@@ -275,7 +275,7 @@ Accounts: Limit local account use of blank passwords to console logon only This 
 <!-- Accounts_RenameAdministratorAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_RenameAdministratorAccount-Applicability-End -->
 
 <!-- Accounts_RenameAdministratorAccount-OmaUri-Begin -->
@@ -298,7 +298,7 @@ Accounts: Rename administrator account This security setting determines whether 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Administrator |
 <!-- Accounts_RenameAdministratorAccount-DFProperties-End -->
@@ -324,7 +324,7 @@ Accounts: Rename administrator account This security setting determines whether 
 <!-- Accounts_RenameGuestAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Accounts_RenameGuestAccount-Applicability-End -->
 
 <!-- Accounts_RenameGuestAccount-OmaUri-Begin -->
@@ -347,7 +347,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Guest |
 <!-- Accounts_RenameGuestAccount-DFProperties-End -->
@@ -373,7 +373,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Applicability-End -->
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-OmaUri-Begin -->
@@ -396,7 +396,7 @@ Devices: Allowed to format and eject removable media This security setting deter
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-DFProperties-End -->
@@ -422,7 +422,7 @@ Devices: Allowed to format and eject removable media This security setting deter
 <!-- Devices_AllowUndockWithoutHavingToLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_AllowUndockWithoutHavingToLogon-Applicability-End -->
 
 <!-- Devices_AllowUndockWithoutHavingToLogon-OmaUri-Begin -->
@@ -448,7 +448,7 @@ Devices: Allow undock without having to log on This security setting determines 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Devices_AllowUndockWithoutHavingToLogon-DFProperties-End -->
@@ -483,7 +483,7 @@ Devices: Allow undock without having to log on This security setting determines 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Applicability-End -->
 
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-OmaUri-Begin -->
@@ -509,7 +509,7 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-DFProperties-End -->
@@ -544,7 +544,7 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-Applicability-End -->
 
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-OmaUri-Begin -->
@@ -567,7 +567,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly-DFProperties-End -->
@@ -593,7 +593,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Applicability-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-OmaUri-Begin -->
@@ -616,7 +616,7 @@ Interactive Logon:Display user information when the session is locked User displ
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-DFProperties-End -->
@@ -653,7 +653,7 @@ Interactive Logon:Display user information when the session is locked User displ
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-Applicability-End -->
 
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-OmaUri-Begin -->
@@ -676,7 +676,7 @@ Interactive logon: Don't display last signed-in This security setting determines
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- InteractiveLogon_DoNotDisplayLastSignedIn-DFProperties-End -->
@@ -711,7 +711,7 @@ Interactive logon: Don't display last signed-in This security setting determines
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-Applicability-End -->
 
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-OmaUri-Begin -->
@@ -734,7 +734,7 @@ Interactive logon: Don't display username at sign-in This security setting deter
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- InteractiveLogon_DoNotDisplayUsernameAtSignIn-DFProperties-End -->
@@ -769,7 +769,7 @@ Interactive logon: Don't display username at sign-in This security setting deter
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-Applicability-End -->
 
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-OmaUri-Begin -->
@@ -792,7 +792,7 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- InteractiveLogon_DoNotRequireCTRLALTDEL-DFProperties-End -->
@@ -827,7 +827,7 @@ Interactive logon: Do not require CTRL+ALT+DEL This security setting determines 
 <!-- InteractiveLogon_MachineInactivityLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_MachineInactivityLimit-Applicability-End -->
 
 <!-- InteractiveLogon_MachineInactivityLimit-OmaUri-Begin -->
@@ -850,7 +850,7 @@ Interactive logon: Machine inactivity limit. Windows notices inactivity of a log
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-599940]` |
 | Default Value  | 0 |
@@ -880,7 +880,7 @@ Valid values: From 0 to 599940, where the value is the amount of inactivity time
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Applicability-End -->
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-OmaUri-Begin -->
@@ -903,7 +903,7 @@ Interactive logon: Message text for users attempting to log on This security set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-DFProperties-End -->
@@ -929,7 +929,7 @@ Interactive logon: Message text for users attempting to log on This security set
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Applicability-End -->
 
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-OmaUri-Begin -->
@@ -952,7 +952,7 @@ Interactive logon: Message title for users attempting to log on This security se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-DFProperties-End -->
 
@@ -977,7 +977,7 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- InteractiveLogon_SmartCardRemovalBehavior-Applicability-End -->
 
 <!-- InteractiveLogon_SmartCardRemovalBehavior-OmaUri-Begin -->
@@ -1003,7 +1003,7 @@ Interactive logon: Smart card removal behavior This security setting determines 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- InteractiveLogon_SmartCardRemovalBehavior-DFProperties-End -->
@@ -1040,7 +1040,7 @@ Interactive logon: Smart card removal behavior This security setting determines 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-Applicability-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-OmaUri-Begin -->
@@ -1072,7 +1072,7 @@ Microsoft network client: Digitally sign communications (always) This security s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsAlways-DFProperties-End -->
@@ -1107,7 +1107,7 @@ Microsoft network client: Digitally sign communications (always) This security s
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Applicability-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-OmaUri-Begin -->
@@ -1136,7 +1136,7 @@ Microsoft network client: Digitally sign communications (if server agrees) This 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-DFProperties-End -->
@@ -1171,7 +1171,7 @@ Microsoft network client: Digitally sign communications (if server agrees) This 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-Applicability-End -->
 
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-OmaUri-Begin -->
@@ -1194,7 +1194,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers-DFProperties-End -->
@@ -1229,7 +1229,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-OmaUri-Begin -->
@@ -1261,7 +1261,7 @@ Microsoft network server: Digitally sign communications (always) This security s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsAlways-DFProperties-End -->
@@ -1296,7 +1296,7 @@ Microsoft network server: Digitally sign communications (always) This security s
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-OmaUri-Begin -->
@@ -1325,7 +1325,7 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-DFProperties-End -->
@@ -1360,7 +1360,7 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Applicability-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-OmaUri-Begin -->
@@ -1385,7 +1385,7 @@ Network access: Allow anonymous SID/name translation This policy setting determi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-DFProperties-End -->
@@ -1420,7 +1420,7 @@ Network access: Allow anonymous SID/name translation This policy setting determi
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-Applicability-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-OmaUri-Begin -->
@@ -1446,7 +1446,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts This security
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts-DFProperties-End -->
@@ -1481,7 +1481,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts This security
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-Applicability-End -->
 
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-OmaUri-Begin -->
@@ -1504,7 +1504,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts and shares Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares-DFProperties-End -->
@@ -1539,7 +1539,7 @@ Network access: Do not allow anonymous enumeration of SAM accounts and shares Th
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-Applicability-End -->
 
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-OmaUri-Begin -->
@@ -1562,7 +1562,7 @@ Network access: Restrict anonymous access to Named Pipes and Shares When enabled
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares-DFProperties-End -->
@@ -1597,7 +1597,7 @@ Network access: Restrict anonymous access to Named Pipes and Shares When enabled
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-Applicability-End -->
 
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-OmaUri-Begin -->
@@ -1620,7 +1620,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM-DFProperties-End -->
 
@@ -1645,7 +1645,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-Applicability-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-OmaUri-Begin -->
@@ -1676,7 +1676,7 @@ Network security: Allow Local System to use computer identity for NTLM This poli
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM-DFProperties-End -->
@@ -1711,7 +1711,7 @@ Network security: Allow Local System to use computer identity for NTLM This poli
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-Applicability-End -->
 
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-OmaUri-Begin -->
@@ -1734,7 +1734,7 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkSecurity_AllowPKU2UAuthenticationRequests-DFProperties-End -->
@@ -1772,7 +1772,7 @@ Network security: Allow PKU2U authentication requests to this computer to use on
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-Applicability-End -->
 
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-OmaUri-Begin -->
@@ -1798,7 +1798,7 @@ Network security: Do not store LAN Manager hash value on next password change Th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange-DFProperties-End -->
@@ -1833,7 +1833,7 @@ Network security: Do not store LAN Manager hash value on next password change Th
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Applicability-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-OmaUri-Begin -->
@@ -1859,7 +1859,7 @@ Network security: Force logoff when logon hours expire This security setting det
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-DFProperties-End -->
@@ -1894,7 +1894,7 @@ Network security: Force logoff when logon hours expire This security setting det
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-Applicability-End -->
 
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-OmaUri-Begin -->
@@ -1920,7 +1920,7 @@ Network security LAN Manager authentication level This security setting determin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- NetworkSecurity_LANManagerAuthenticationLevel-DFProperties-End -->
@@ -1959,7 +1959,7 @@ Network security LAN Manager authentication level This security setting determin
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-Applicability-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-OmaUri-Begin -->
@@ -1982,7 +1982,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 536870912 |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients-DFProperties-End -->
@@ -2019,7 +2019,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-Applicability-End -->
 
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-OmaUri-Begin -->
@@ -2042,7 +2042,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 536870912 |
 <!-- NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers-DFProperties-End -->
@@ -2079,7 +2079,7 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-OmaUri-Begin -->
@@ -2104,7 +2104,7 @@ Network security: Restrict NTLM: Add remote server exceptions for NTLM authentic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-DFProperties-End -->
@@ -2130,7 +2130,7 @@ Network security: Restrict NTLM: Add remote server exceptions for NTLM authentic
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-OmaUri-Begin -->
@@ -2156,7 +2156,7 @@ Network security: Restrict NTLM: Audit Incoming NTLM Traffic This policy setting
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic-DFProperties-End -->
@@ -2192,7 +2192,7 @@ Network security: Restrict NTLM: Audit Incoming NTLM Traffic This policy setting
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-OmaUri-Begin -->
@@ -2218,7 +2218,7 @@ Network security: Restrict NTLM: Incoming NTLM traffic This policy setting allow
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic-DFProperties-End -->
@@ -2254,7 +2254,7 @@ Network security: Restrict NTLM: Incoming NTLM traffic This policy setting allow
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-Applicability-End -->
 
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-OmaUri-Begin -->
@@ -2280,7 +2280,7 @@ Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers This po
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers-DFProperties-End -->
@@ -2316,7 +2316,7 @@ Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers This po
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-Applicability-End -->
 
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-OmaUri-Begin -->
@@ -2339,7 +2339,7 @@ Shutdown: Allow system to be shut down without having to log on This security se
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn-DFProperties-End -->
@@ -2374,7 +2374,7 @@ Shutdown: Allow system to be shut down without having to log on This security se
 <!-- Shutdown_ClearVirtualMemoryPageFile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Shutdown_ClearVirtualMemoryPageFile-Applicability-End -->
 
 <!-- Shutdown_ClearVirtualMemoryPageFile-OmaUri-Begin -->
@@ -2397,7 +2397,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Shutdown_ClearVirtualMemoryPageFile-DFProperties-End -->
@@ -2432,7 +2432,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Applicability-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-OmaUri-Begin -->
@@ -2455,7 +2455,7 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-DFProperties-End -->
@@ -2490,7 +2490,7 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Applicability-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-OmaUri-Begin -->
@@ -2516,7 +2516,7 @@ User Account Control: Behavior of the elevation prompt for administrators in Adm
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 5 |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-DFProperties-End -->
@@ -2555,7 +2555,7 @@ User Account Control: Behavior of the elevation prompt for administrators in Adm
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Applicability-End -->
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-OmaUri-Begin -->
@@ -2578,7 +2578,7 @@ User Account Control: Behavior of the elevation prompt for standard users This p
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-DFProperties-End -->
@@ -2614,7 +2614,7 @@ User Account Control: Behavior of the elevation prompt for standard users This p
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-Applicability-End -->
 
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-OmaUri-Begin -->
@@ -2637,7 +2637,7 @@ User Account Control: Detect application installations and prompt for elevation 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_DetectApplicationInstallationsAndPromptForElevation-DFProperties-End -->
@@ -2672,7 +2672,7 @@ User Account Control: Detect application installations and prompt for elevation 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Applicability-End -->
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-OmaUri-Begin -->
@@ -2695,7 +2695,7 @@ User Account Control: Only elevate executable files that are signed and validate
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-DFProperties-End -->
@@ -2730,7 +2730,7 @@ User Account Control: Only elevate executable files that are signed and validate
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Applicability-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-OmaUri-Begin -->
@@ -2753,7 +2753,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-DFProperties-End -->
@@ -2788,7 +2788,7 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Applicability-End -->
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-OmaUri-Begin -->
@@ -2814,7 +2814,7 @@ User Account Control: Turn on Admin Approval Mode This policy setting controls t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-DFProperties-End -->
@@ -2849,7 +2849,7 @@ User Account Control: Turn on Admin Approval Mode This policy setting controls t
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Applicability-End -->
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-OmaUri-Begin -->
@@ -2872,7 +2872,7 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-DFProperties-End -->
@@ -2907,7 +2907,7 @@ User Account Control: Switch to the secure desktop when prompting for elevation 
 <!-- UserAccountControl_UseAdminApprovalMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_UseAdminApprovalMode-Applicability-End -->
 
 <!-- UserAccountControl_UseAdminApprovalMode-OmaUri-Begin -->
@@ -2930,7 +2930,7 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- UserAccountControl_UseAdminApprovalMode-DFProperties-End -->
@@ -2965,7 +2965,7 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Applicability-End -->
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-OmaUri-Begin -->
@@ -2988,7 +2988,7 @@ User Account Control: Virtualize file and registry write failures to per-user lo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-DFProperties-End -->

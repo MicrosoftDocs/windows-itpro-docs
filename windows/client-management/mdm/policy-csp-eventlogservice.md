@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ControlEventLogBehavior-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ControlEventLogBehavior-Applicability-End -->
 
 <!-- ControlEventLogBehavior-OmaUri-Begin -->
@@ -58,7 +58,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ControlEventLogBehavior-DFProperties-End -->
 
@@ -90,7 +90,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- SpecifyMaximumFileSizeApplicationLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SpecifyMaximumFileSizeApplicationLog-Applicability-End -->
 
 <!-- SpecifyMaximumFileSizeApplicationLog-OmaUri-Begin -->
@@ -117,7 +117,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaximumFileSizeApplicationLog-DFProperties-End -->
 
@@ -148,7 +148,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 <!-- SpecifyMaximumFileSizeSecurityLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SpecifyMaximumFileSizeSecurityLog-Applicability-End -->
 
 <!-- SpecifyMaximumFileSizeSecurityLog-OmaUri-Begin -->
@@ -175,7 +175,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaximumFileSizeSecurityLog-DFProperties-End -->
 
@@ -206,7 +206,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 <!-- SpecifyMaximumFileSizeSystemLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SpecifyMaximumFileSizeSystemLog-Applicability-End -->
 
 <!-- SpecifyMaximumFileSizeSystemLog-OmaUri-Begin -->
@@ -233,7 +233,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpecifyMaximumFileSizeSystemLog-DFProperties-End -->
 

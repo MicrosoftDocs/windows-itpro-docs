@@ -30,7 +30,7 @@ ms.topic: reference
 <!-- AllowBuildPreview-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBuildPreview-Applicability-End -->
 
 <!-- AllowBuildPreview-OmaUri-Begin -->
@@ -59,7 +59,7 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowBuildPreview-DFProperties-End -->
@@ -100,7 +100,7 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 <!-- AllowCommercialDataPipeline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowCommercialDataPipeline-Applicability-End -->
 
 <!-- AllowCommercialDataPipeline-OmaUri-Begin -->
@@ -136,7 +136,7 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowCommercialDataPipeline-DFProperties-End -->
@@ -175,7 +175,7 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 <!-- AllowDesktopAnalyticsProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDesktopAnalyticsProcessing-Applicability-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-OmaUri-Begin -->
@@ -210,7 +210,7 @@ This setting has no effect on devices unless they are properly enrolled in Deskt
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowDesktopAnalyticsProcessing-DFProperties-End -->
@@ -249,7 +249,7 @@ This setting has no effect on devices unless they are properly enrolled in Deskt
 <!-- AllowDeviceNameInDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowDeviceNameInDiagnosticData-Applicability-End -->
 
 <!-- AllowDeviceNameInDiagnosticData-OmaUri-Begin -->
@@ -274,7 +274,7 @@ If you disable or do not configure this policy setting, then device name will no
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowDeviceNameInDiagnosticData-DFProperties-End -->
@@ -313,7 +313,7 @@ If you disable or do not configure this policy setting, then device name will no
 <!-- AllowEmbeddedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEmbeddedMode-Applicability-End -->
 
 <!-- AllowEmbeddedMode-OmaUri-Begin -->
@@ -336,7 +336,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowEmbeddedMode-DFProperties-End -->
@@ -362,7 +362,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowExperimentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowExperimentation-Applicability-End -->
 
 <!-- AllowExperimentation-OmaUri-Begin -->
@@ -387,7 +387,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowExperimentation-DFProperties-End -->
@@ -414,7 +414,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowFontProviders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFontProviders-Applicability-End -->
 
 <!-- AllowFontProviders-OmaUri-Begin -->
@@ -449,7 +449,7 @@ This setting is used by lower-level components for text display and fond handlin
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFontProviders-DFProperties-End -->
@@ -489,7 +489,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!-- AllowLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLocation-Applicability-End -->
 
 <!-- AllowLocation-OmaUri-Begin -->
@@ -512,7 +512,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowLocation-DFProperties-End -->
@@ -553,7 +553,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-OmaUri-Begin -->
@@ -582,7 +582,7 @@ This setting has no effect on devices unless they are properly enrolled in Micro
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowMicrosoftManagedDesktopProcessing-DFProperties-End -->
@@ -608,7 +608,7 @@ This setting has no effect on devices unless they are properly enrolled in Micro
 <!-- AllowStorageCard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStorageCard-Applicability-End -->
 
 <!-- AllowStorageCard-OmaUri-Begin -->
@@ -631,7 +631,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStorageCard-DFProperties-End -->
@@ -657,7 +657,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 <!-- AllowTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTelemetry-Applicability-End -->
 
 <!-- AllowTelemetry-OmaUri-Begin -->
@@ -693,7 +693,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowTelemetry-DFProperties-End -->
@@ -733,7 +733,7 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 <!-- AllowUpdateComplianceProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowUpdateComplianceProcessing-Applicability-End -->
 
 <!-- AllowUpdateComplianceProcessing-OmaUri-Begin -->
@@ -768,7 +768,7 @@ If you disable or do not configure this policy setting, devices will not appear 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowUpdateComplianceProcessing-DFProperties-End -->
@@ -807,7 +807,7 @@ If you disable or do not configure this policy setting, devices will not appear 
 <!-- AllowUserToResetPhone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUserToResetPhone-Applicability-End -->
 
 <!-- AllowUserToResetPhone-OmaUri-Begin -->
@@ -830,7 +830,7 @@ Specifies whether to allow the user to factory reset the device by using control
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUserToResetPhone-DFProperties-End -->
@@ -856,7 +856,7 @@ Specifies whether to allow the user to factory reset the device by using control
 <!-- AllowWUfBCloudProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763.1217] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.836] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowWUfBCloudProcessing-Applicability-End -->
 
 <!-- AllowWUfBCloudProcessing-OmaUri-Begin -->
@@ -890,7 +890,7 @@ If you disable or do not configure this policy setting, devices enrolled to the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowWUfBCloudProcessing-DFProperties-End -->
@@ -929,7 +929,7 @@ If you disable or do not configure this policy setting, devices enrolled to the 
 <!-- BootStartDriverInitialization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- BootStartDriverInitialization-Applicability-End -->
 
 <!-- BootStartDriverInitialization-OmaUri-Begin -->
@@ -963,7 +963,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BootStartDriverInitialization-DFProperties-End -->
 
@@ -995,7 +995,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-End -->
 
 <!-- ConfigureMicrosoft365UploadEndpoint-OmaUri-Begin -->
@@ -1021,7 +1021,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureMicrosoft365UploadEndpoint-DFProperties-End -->
 
@@ -1051,7 +1051,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInChangeNotification-OmaUri-Begin -->
@@ -1078,7 +1078,7 @@ If you set this policy setting to "Enable diagnostic data change notifications" 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTelemetryOptInChangeNotification-DFProperties-End -->
@@ -1117,7 +1117,7 @@ If you set this policy setting to "Enable diagnostic data change notifications" 
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-OmaUri-Begin -->
@@ -1147,7 +1147,7 @@ To set a limit on the amount of diagnostic data that is sent to Microsoft by you
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureTelemetryOptInSettingsUx-DFProperties-End -->
@@ -1186,7 +1186,7 @@ To set a limit on the amount of diagnostic data that is sent to Microsoft by you
 <!-- DisableDeviceDelete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDeviceDelete-Applicability-End -->
 
 <!-- DisableDeviceDelete-OmaUri-Begin -->
@@ -1213,7 +1213,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDeviceDelete-DFProperties-End -->
@@ -1252,7 +1252,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 <!-- DisableDiagnosticDataViewer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDiagnosticDataViewer-Applicability-End -->
 
 <!-- DisableDiagnosticDataViewer-OmaUri-Begin -->
@@ -1279,7 +1279,7 @@ This policy setting controls whether users can enable and launch the Diagnostic 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDiagnosticDataViewer-DFProperties-End -->
@@ -1318,7 +1318,7 @@ This policy setting controls whether users can enable and launch the Diagnostic 
 <!-- DisableDirectXDatabaseUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableDirectXDatabaseUpdate-Applicability-End -->
 
 <!-- DisableDirectXDatabaseUpdate-OmaUri-Begin -->
@@ -1341,7 +1341,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableDirectXDatabaseUpdate-DFProperties-End -->
@@ -1376,7 +1376,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 <!-- DisableEnterpriseAuthProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableEnterpriseAuthProxy-Applicability-End -->
 
 <!-- DisableEnterpriseAuthProxy-OmaUri-Begin -->
@@ -1399,7 +1399,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableEnterpriseAuthProxy-DFProperties-End -->
@@ -1438,7 +1438,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!-- DisableOneDriveFileSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableOneDriveFileSync-Applicability-End -->
 
 <!-- DisableOneDriveFileSync-OmaUri-Begin -->
@@ -1471,7 +1471,7 @@ This policy setting lets you prevent apps and features from working with files o
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableOneDriveFileSync-DFProperties-End -->
@@ -1511,7 +1511,7 @@ This policy setting lets you prevent apps and features from working with files o
 <!-- DisableOneSettingsDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableOneSettingsDownloads-Applicability-End -->
 
 <!-- DisableOneSettingsDownloads-OmaUri-Begin -->
@@ -1538,7 +1538,7 @@ This policy setting controls whether Windows attempts to connect with the OneSet
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableOneSettingsDownloads-DFProperties-End -->
@@ -1577,7 +1577,7 @@ This policy setting controls whether Windows attempts to connect with the OneSet
 <!-- DisableSystemRestore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSystemRestore-Applicability-End -->
 
 <!-- DisableSystemRestore-OmaUri-Begin -->
@@ -1610,7 +1610,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSystemRestore-DFProperties-End -->
 
@@ -1642,7 +1642,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!-- EnableOneSettingsAuditing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableOneSettingsAuditing-Applicability-End -->
 
 <!-- EnableOneSettingsAuditing-OmaUri-Begin -->
@@ -1669,7 +1669,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableOneSettingsAuditing-DFProperties-End -->
@@ -1708,7 +1708,7 @@ This policy setting controls whether Windows records attempts to connect with th
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-OmaUri-Begin -->
@@ -1731,7 +1731,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-DFProperties-End -->
@@ -1757,7 +1757,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 <!-- HideUnsupportedHardwareNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- HideUnsupportedHardwareNotifications-Applicability-End -->
 
 <!-- HideUnsupportedHardwareNotifications-OmaUri-Begin -->
@@ -1784,7 +1784,7 @@ This policy controls messages which are shown when Windows is running on a devic
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- HideUnsupportedHardwareNotifications-DFProperties-End -->
@@ -1824,7 +1824,7 @@ This policy controls messages which are shown when Windows is running on a devic
 <!-- LimitDiagnosticLogCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDiagnosticLogCollection-Applicability-End -->
 
 <!-- LimitDiagnosticLogCollection-OmaUri-Begin -->
@@ -1851,7 +1851,7 @@ If you disable or do not configure this policy setting, we may occasionally coll
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LimitDiagnosticLogCollection-DFProperties-End -->
@@ -1890,7 +1890,7 @@ If you disable or do not configure this policy setting, we may occasionally coll
 <!-- LimitDumpCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDumpCollection-Applicability-End -->
 
 <!-- LimitDumpCollection-OmaUri-Begin -->
@@ -1917,7 +1917,7 @@ If you disable or do not configure this policy setting, we may occasionally coll
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LimitDumpCollection-DFProperties-End -->
@@ -1956,7 +1956,7 @@ If you disable or do not configure this policy setting, we may occasionally coll
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-End -->
 
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-OmaUri-Begin -->
@@ -1991,7 +1991,7 @@ If you disable or do not configure this policy setting, diagnostic data collecti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-DFProperties-End -->
@@ -2030,7 +2030,7 @@ If you disable or do not configure this policy setting, diagnostic data collecti
 <!-- TelemetryProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- TelemetryProxy-Applicability-End -->
 
 <!-- TelemetryProxy-OmaUri-Begin -->
@@ -2057,7 +2057,7 @@ The format for this setting is `<server>`:`<port>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TelemetryProxy-DFProperties-End -->
 
@@ -2087,7 +2087,7 @@ The format for this setting is `<server>`:`<port>`
 <!-- TurnOffFileHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffFileHistory-Applicability-End -->
 
 <!-- TurnOffFileHistory-OmaUri-Begin -->
@@ -2114,7 +2114,7 @@ This policy setting allows you to turn off File History.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- TurnOffFileHistory-DFProperties-End -->
