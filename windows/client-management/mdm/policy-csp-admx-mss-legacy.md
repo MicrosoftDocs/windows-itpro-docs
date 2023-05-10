@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MSS-legacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_MSS-legacy-Begin -->
 # Policy CSP - ADMX_MSS-legacy
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_MSS-legacy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -60,8 +57,7 @@ Enable Automatic Logon (not recommended).
 
 <!-- Pol_MSS_AutoAdminLogon-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -112,8 +108,7 @@ Allow Windows to automatically restart after a system crash (recommended except 
 
 <!-- Pol_MSS_AutoReboot-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -164,8 +159,7 @@ Enable administrative shares on servers (recommended except for highly secure en
 
 <!-- Pol_MSS_AutoShareServer-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -216,8 +210,7 @@ Enable administrative shares on workstations (recommended except for highly secu
 
 <!-- Pol_MSS_AutoShareWks-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -267,8 +260,7 @@ Enable administrative shares on workstations (recommended except for highly secu
 
 <!-- Pol_MSS_DisableSavePassword-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -320,8 +312,7 @@ Allow automatic detection of dead network gateways (could lead to DoS).
 
 <!-- Pol_MSS_EnableDeadGWDetect-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -372,8 +363,7 @@ Hide Computer From the Browse List (not recommended except for highly secure env
 
 <!-- Pol_MSS_HideFromBrowseList-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -424,8 +414,7 @@ Define how often keep-alive packets are sent in milliseconds.
 
 <!-- Pol_MSS_KeepAliveTime-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -476,8 +465,7 @@ Configure IPSec exemptions for various types of network traffic.
 
 <!-- Pol_MSS_NoDefaultExempt-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -528,8 +516,7 @@ Enable the computer to stop generating 8.3 style filenames.
 
 <!-- Pol_MSS_NtfsDisable8dot3NameCreation-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -580,8 +567,7 @@ Enable the computer to stop generating 8.3 style filenames.
 
 <!-- Pol_MSS_PerformRouterDiscovery-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -632,8 +618,7 @@ Enable Safe DLL search mode (recommended).
 
 <!-- Pol_MSS_SafeDllSearchMode-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -684,8 +669,7 @@ he time in seconds before the screen saver grace period expires (0 recommended).
 
 <!-- Pol_MSS_ScreenSaverGracePeriod-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -736,8 +720,7 @@ Syn attack protection level (protects against DoS).
 
 <!-- Pol_MSS_SynAttackProtect-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -788,8 +771,7 @@ SYN-ACK retransmissions when a connection request is not acknowledged.
 
 <!-- Pol_MSS_TcpMaxConnectResponseRetransmissions-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -840,8 +822,7 @@ Define how many times unacknowledged data is retransmitted (3 recommended, 5 is 
 
 <!-- Pol_MSS_TcpMaxDataRetransmissions-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -892,8 +873,7 @@ Define how many times unacknowledged data is retransmitted (3 recommended, 5 is 
 
 <!-- Pol_MSS_TcpMaxDataRetransmissionsIPv6-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -944,8 +924,7 @@ Percentage threshold for the security event log at which the system will generat
 
 <!-- Pol_MSS_WarningLevel-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

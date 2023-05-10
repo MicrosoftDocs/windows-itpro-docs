@@ -4,7 +4,7 @@ description: Learn more about the DevicePreparation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- DevicePreparation-Begin -->
 # DevicePreparation CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DevicePreparation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -291,7 +290,7 @@ The subnode configures the settings for the MDMProvider.
 
 <!-- Device-MDMProvider-Progress-Description-Begin -->
 <!-- Description-Source-DDF -->
-Noode for reporting progress status as opaque data.
+Node for reporting progress status as opaque data.
 <!-- Device-MDMProvider-Progress-Description-End -->
 
 <!-- Device-MDMProvider-Progress-Editable-Begin -->

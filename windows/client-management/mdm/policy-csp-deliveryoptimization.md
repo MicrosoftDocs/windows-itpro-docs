@@ -4,7 +4,7 @@ description: Learn more about the DeliveryOptimization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- DeliveryOptimization-Begin -->
 # Policy CSP - DeliveryOptimization
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- DeliveryOptimization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -293,7 +290,7 @@ This policy allows you to delay the use of an HTTP source in a background downlo
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
 
-**Note** that a download that is waiting for peer sources, will appear to be stuck for the end user.
+Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 hour (3600).
 <!-- DODelayBackgroundDownloadFromHttp-Description-End -->
@@ -350,7 +347,7 @@ The recommended value is 1 hour (3600).
 
 <!-- DODelayCacheServerFallbackBackground-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download. **Note** that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download. Note that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
 <!-- DODelayCacheServerFallbackBackground-Description-End -->
 
 <!-- DODelayCacheServerFallbackBackground-Editable-Begin -->
@@ -405,7 +402,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 <!-- DODelayCacheServerFallbackForeground-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download. **Note** that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
+Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download. Note that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
 <!-- DODelayCacheServerFallbackForeground-Description-End -->
 
 <!-- DODelayCacheServerFallbackForeground-Editable-Begin -->
@@ -464,7 +461,7 @@ This policy allows you to delay the use of an HTTP source in a foreground (inter
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
 
-**Note** that a download that is waiting for peer sources, will appear to be stuck for the end user.
+Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 minute (60).
 <!-- DODelayForegroundDownloadFromHttp-Description-End -->
@@ -653,7 +650,7 @@ Group ID must be set as a GUID. This Policy specifies an arbitrary group ID that
 
 Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN.
 
-**Note** this is a best effort optimization and should not be relied on for an authentication of identity.
+Note this is a best effort optimization and should not be relied on for an authentication of identity.
 <!-- DOGroupId-Description-End -->
 
 <!-- DOGroupId-Editable-Begin -->
@@ -1602,8 +1599,7 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-DFProperties-End -->
 
 <!-- DOSetHoursToLimitBackgroundDownloadBandwidth-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1662,8 +1658,7 @@ This policy allows an IT Admin to define the following details:
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-DFProperties-End -->
 
 <!-- DOSetHoursToLimitForegroundDownloadBandwidth-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

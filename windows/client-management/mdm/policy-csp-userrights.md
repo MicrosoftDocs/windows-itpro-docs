@@ -4,7 +4,7 @@ description: Learn more about the UserRights Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- UserRights-Begin -->
 # Policy CSP - UserRights
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- UserRights-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -173,10 +172,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 
 <!-- AccessFromNetwork-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services are not affected by this user right.
-
-> [!NOTE]
-> Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
+This user right determines which users and groups are allowed to connect to the computer over the network. Remote Desktop Services are not affected by this user right. Note: Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
 <!-- AccessFromNetwork-Description-End -->
 
 <!-- AccessFromNetwork-Editable-Begin -->
@@ -1660,10 +1656,7 @@ This user right determines which users and groups can run maintenance tasks on a
 
 <!-- ModifyFirmwareEnvironment-Description-Begin -->
 <!-- Description-Source-DDF -->
-This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should only be modified by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows.
-
-> [!NOTE]
-> This security setting does not affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
+This user right determines who can modify firmware environment values. Firmware environment variables are settings stored in the nonvolatile RAM of non-x86-based computers. The effect of the setting depends on the processor. On x86-based computers, the only firmware environment value that can be modified by assigning this user right is the Last Known Good Configuration setting, which should only be modified by the system. On Itanium-based computers, boot information is stored in nonvolatile RAM. Users must be assigned this user right to run bootcfg.exe and to change the Default Operating System setting on Startup and Recovery in System Properties. On all computers, this user right is required to install or upgrade Windows. Note: This security setting does not affect who can modify the system environment variables and user environment variables that are displayed on the Advanced tab of System Properties.
 <!-- ModifyFirmwareEnvironment-Description-End -->
 
 <!-- ModifyFirmwareEnvironment-Editable-Begin -->

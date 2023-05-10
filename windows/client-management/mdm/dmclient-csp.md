@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- DMClient-Begin -->
 # DMClient CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DMClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -1921,7 +1920,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 | Value | Description |
 |:--|:--|
 | false | The device is not finished provisioning. |
-| true | The device has finished provisoining. |
+| true | The device has finished provisioning. |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Examples-Begin -->
@@ -2206,7 +2205,7 @@ Force device to send device AAD token during check-in as a separate header.
 |:--|:--|
 | 0 | ForceAadTokenNotDefined: the value is not defined(default). |
 | 1 | AlwaysSendAadDeviceTokenCheckIn: always send AAD device token during check-in as a separate header section(not as Bearer token). |
-| 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during check-in as a separate header section(not as Bearer toekn). |
+| 2 | Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during check-in as a separate header section(not as Bearer token). |
 | 4 | SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send AAD Device token for auth as Bearer token. |
 | 8 | Reserved for future. ForceAadTokenMaxAllowed: max value allowed. |
 <!-- Device-Provider-{ProviderID}-ForceAadToken-AllowedValues-End -->
@@ -2563,7 +2562,7 @@ return the last error for enroll/unenroll.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Allowed value is 0 or 1. 0 means the main enrollment has authority for mdm settings and resources, 1 means the linked enrollment has authority.
+Optional. Allowed value is 0 or 1. 0 means the main enrollment has authority for MDM settings and resources, 1 means the linked enrollment has authority.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Description-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Editable-Begin -->
@@ -4587,7 +4586,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 | Value | Description |
 |:--|:--|
 | false | The user is not finished provisioning. |
-| true | The user has finished provisoining. |
+| true | The user has finished provisioning. |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-AllowedValues-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Examples-Begin -->

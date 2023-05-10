@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Globalization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Globalization-Begin -->
 # Policy CSP - ADMX_Globalization
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Globalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -44,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
 
-**Note** this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
+Note this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
 
 - If the policy is enabled, then the user will get input methods enabled for the system account on the sign-in page.
 
@@ -65,8 +62,7 @@ This policy prevents automatic copying of user input methods to the system accou
 <!-- BlockUserInputMethodsForSignIn-DFProperties-End -->
 
 <!-- BlockUserInputMethodsForSignIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -135,8 +131,7 @@ To set this policy setting on a per-user basis, make sure that you do not config
 <!-- CustomLocalesNoSelect_1-DFProperties-End -->
 
 <!-- CustomLocalesNoSelect_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -205,8 +200,7 @@ To set this policy setting on a per-user basis, make sure that you do not config
 <!-- CustomLocalesNoSelect_2-DFProperties-End -->
 
 <!-- CustomLocalesNoSelect_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -270,8 +264,7 @@ This policy setting is used only to simplify the Regional Options control panel.
 <!-- HideAdminOptions-DFProperties-End -->
 
 <!-- HideAdminOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -335,8 +328,7 @@ This policy setting is used only to simplify the Regional Options control panel.
 <!-- HideCurrentLocation-DFProperties-End -->
 
 <!-- HideCurrentLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -400,8 +392,7 @@ This policy setting is used only to simplify the Regional Options control panel.
 <!-- HideLanguageSelection-DFProperties-End -->
 
 <!-- HideLanguageSelection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -462,8 +453,7 @@ This policy setting is used only to simplify the Regional and Language Options c
 <!-- HideLocaleSelectAndCustomize-DFProperties-End -->
 
 <!-- HideLocaleSelectAndCustomize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -539,8 +529,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 <!-- ImplicitDataCollectionOff_1-DFProperties-End -->
 
 <!-- ImplicitDataCollectionOff_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -615,8 +604,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 <!-- ImplicitDataCollectionOff_2-DFProperties-End -->
 
 <!-- ImplicitDataCollectionOff_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -676,8 +664,7 @@ The locale list is specified using language names, separated by a semicolon (;).
 <!-- LocaleSystemRestrict-DFProperties-End -->
 
 <!-- LocaleSystemRestrict-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -744,8 +731,7 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 <!-- LocaleUserRestrict_1-DFProperties-End -->
 
 <!-- LocaleUserRestrict_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -812,8 +798,7 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 <!-- LocaleUserRestrict_2-DFProperties-End -->
 
 <!-- LocaleUserRestrict_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -874,8 +859,7 @@ This is a policy setting for computers with more than one UI language installed.
 <!-- LockMachineUILanguage-DFProperties-End -->
 
 <!-- LockMachineUILanguage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -937,8 +921,7 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 <!-- LockUserUILanguage-DFProperties-End -->
 
 <!-- LockUserUILanguage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1002,8 +985,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!-- PreventGeoIdChange_1-DFProperties-End -->
 
 <!-- PreventGeoIdChange_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1068,8 +1050,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!-- PreventGeoIdChange_2-DFProperties-End -->
 
 <!-- PreventGeoIdChange_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1136,8 +1117,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 <!-- PreventUserOverrides_1-DFProperties-End -->
 
 <!-- PreventUserOverrides_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1204,8 +1184,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 <!-- PreventUserOverrides_2-DFProperties-End -->
 
 <!-- PreventUserOverrides_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1266,8 +1245,7 @@ To enable this policy setting in Windows Vista, use the "Restricts the UI langua
 <!-- RestrictUILangSelect-DFProperties-End -->
 
 <!-- RestrictUILangSelect-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1312,7 +1290,7 @@ The autocorrect misspelled words option controls whether or not errors in typed 
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffAutocorrectMisspelledWords-Description-End -->
 
 <!-- TurnOffAutocorrectMisspelledWords-Editable-Begin -->
@@ -1329,8 +1307,7 @@ The autocorrect misspelled words option controls whether or not errors in typed 
 <!-- TurnOffAutocorrectMisspelledWords-DFProperties-End -->
 
 <!-- TurnOffAutocorrectMisspelledWords-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1376,7 +1353,7 @@ The highlight misspelled words option controls whether or next spelling errors i
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffHighlightMisspelledWords-Description-End -->
 
 <!-- TurnOffHighlightMisspelledWords-Editable-Begin -->
@@ -1393,8 +1370,7 @@ The highlight misspelled words option controls whether or next spelling errors i
 <!-- TurnOffHighlightMisspelledWords-DFProperties-End -->
 
 <!-- TurnOffHighlightMisspelledWords-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1440,7 +1416,7 @@ The insert a space after selecting a text prediction option controls whether or 
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffInsertSpace-Description-End -->
 
 <!-- TurnOffInsertSpace-Editable-Begin -->
@@ -1457,8 +1433,7 @@ The insert a space after selecting a text prediction option controls whether or 
 <!-- TurnOffInsertSpace-DFProperties-End -->
 
 <!-- TurnOffInsertSpace-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1504,7 +1479,7 @@ The offer text predictions as I type option controls whether or not text predict
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffOfferTextPredictions-Description-End -->
 
 <!-- TurnOffOfferTextPredictions-Editable-Begin -->
@@ -1521,8 +1496,7 @@ The offer text predictions as I type option controls whether or not text predict
 <!-- TurnOffOfferTextPredictions-DFProperties-End -->
 
 <!-- TurnOffOfferTextPredictions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1585,8 +1559,7 @@ For example, the default value, 2029, specifies that all two-digit years less th
 <!-- Y2K-DFProperties-End -->
 
 <!-- Y2K-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_tcpip Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_tcpip-Begin -->
 # Policy CSP - ADMX_tcpip
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_tcpip-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -63,8 +60,7 @@ This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6
 <!-- 6to4_Router_Name-DFProperties-End -->
 
 <!-- 6to4_Router_Name-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -122,8 +118,7 @@ This policy setting allows you to specify the interval at which the relay name i
 <!-- 6to4_Router_Name_Resolution_Interval-DFProperties-End -->
 
 <!-- 6to4_Router_Name_Resolution_Interval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -187,8 +182,7 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 <!-- 6to4_State-DFProperties-End -->
 
 <!-- 6to4_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -246,8 +240,7 @@ This policy setting allows you to configure IP Stateless Autoconfiguration Limit
 <!-- IP_Stateless_Autoconfiguration_Limits_State-DFProperties-End -->
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -312,8 +305,7 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 <!-- IPHTTPS_ClientState-DFProperties-End -->
 
 <!-- IPHTTPS_ClientState-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -371,8 +363,7 @@ This policy setting allows you to specify a router name or Internet Protocol ver
 <!-- ISATAP_Router_Name-DFProperties-End -->
 
 <!-- ISATAP_Router_Name-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -436,8 +427,7 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 <!-- ISATAP_State-DFProperties-End -->
 
 <!-- ISATAP_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -495,8 +485,7 @@ This policy setting allows you to select the UDP port the Teredo client will use
 <!-- Teredo_Client_Port-DFProperties-End -->
 
 <!-- Teredo_Client_Port-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -556,8 +545,7 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 <!-- Teredo_Default_Qualified-DFProperties-End -->
 
 <!-- Teredo_Default_Qualified-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -618,8 +606,7 @@ This policy setting allows you to configure the Teredo refresh rate.
 <!-- Teredo_Refresh_Rate-DFProperties-End -->
 
 <!-- Teredo_Refresh_Rate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -677,8 +664,7 @@ This policy setting allows you to specify the name of the Teredo server. This se
 <!-- Teredo_Server_Name-DFProperties-End -->
 
 <!-- Teredo_Server_Name-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -744,8 +730,7 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 <!-- Teredo_State-DFProperties-End -->
 
 <!-- Teredo_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -805,8 +790,7 @@ This policy setting allows you to configure Window Scaling Heuristics. Window Sc
 <!-- Windows_Scaling_Heuristics_State-DFProperties-End -->
 
 <!-- Windows_Scaling_Heuristics_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

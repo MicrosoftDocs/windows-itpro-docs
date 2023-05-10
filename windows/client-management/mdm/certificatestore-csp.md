@@ -4,7 +4,7 @@ description: Learn more about the CertificateStore CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1766,7 +1766,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-The base64 Encoded X.509 certificate. **Note** that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it or user installs it manually. In WP, the server cannot purely rely on CertificateStore CSP to install a client certificate including private key.
+The base64 Encoded X.509 certificate. Note that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it or user installs it manually. In WP, the server cannot purely rely on CertificateStore CSP to install a client certificate including private key.
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Editable-Begin -->

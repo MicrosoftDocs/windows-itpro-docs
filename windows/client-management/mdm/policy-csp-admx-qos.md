@@ -4,7 +4,7 @@ description: Learn more about the ADMX_QOS Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_QOS-Begin -->
 # Policy CSP - ADMX_QOS
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_QOS-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -68,8 +65,7 @@ Specifies the maximum number of outstanding packets permitted on the system. Whe
 <!-- QosMaxOutstandingSends-DFProperties-End -->
 
 <!-- QosMaxOutstandingSends-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -132,8 +128,7 @@ By default, the Packet Scheduler limits the system to 80 percent of the bandwidt
 <!-- QosNonBestEffortLimit-DFProperties-End -->
 
 <!-- QosNonBestEffortLimit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -196,8 +191,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- QosServiceTypeBestEffort_C-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_C-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -260,8 +254,7 @@ This setting applies only to packets that do not conform to the flow specificati
 <!-- QosServiceTypeBestEffort_NC-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_NC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -322,8 +315,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 <!-- QosServiceTypeBestEffort_PV-DFProperties-End -->
 
 <!-- QosServiceTypeBestEffort_PV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -386,8 +378,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- QosServiceTypeControlledLoad_C-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_C-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -450,8 +441,7 @@ This setting applies only to packets that do not conform to the flow specificati
 <!-- QosServiceTypeControlledLoad_NC-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_NC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -512,8 +502,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 <!-- QosServiceTypeControlledLoad_PV-DFProperties-End -->
 
 <!-- QosServiceTypeControlledLoad_PV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -576,8 +565,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- QosServiceTypeGuaranteed_C-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_C-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -640,8 +628,7 @@ This setting applies only to packets that do not conform to the flow specificati
 <!-- QosServiceTypeGuaranteed_NC-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_NC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -702,8 +689,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 <!-- QosServiceTypeGuaranteed_PV-DFProperties-End -->
 
 <!-- QosServiceTypeGuaranteed_PV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -766,8 +752,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- QosServiceTypeNetworkControl_C-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_C-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -830,8 +815,7 @@ This setting applies only to packets that do not conform to the flow specificati
 <!-- QosServiceTypeNetworkControl_NC-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_NC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -892,8 +876,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 <!-- QosServiceTypeNetworkControl_PV-DFProperties-End -->
 
 <!-- QosServiceTypeNetworkControl_PV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -954,8 +937,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets that do n
 <!-- QosServiceTypeNonConforming-DFProperties-End -->
 
 <!-- QosServiceTypeNonConforming-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1018,8 +1000,7 @@ This setting applies only to packets that conform to the flow specification.
 <!-- QosServiceTypeQualitative_C-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_C-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1082,8 +1063,7 @@ This setting applies only to packets that do not conform to the flow specificati
 <!-- QosServiceTypeQualitative_NC-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_NC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1144,8 +1124,7 @@ Specifies an alternate link layer (Layer-2) priority value for packets with the 
 <!-- QosServiceTypeQualitative_PV-DFProperties-End -->
 
 <!-- QosServiceTypeQualitative_PV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1206,8 +1185,7 @@ Determines the smallest unit of time that the Packet Scheduler uses when schedul
 <!-- QosTimerResolution-DFProperties-End -->
 
 <!-- QosTimerResolution-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

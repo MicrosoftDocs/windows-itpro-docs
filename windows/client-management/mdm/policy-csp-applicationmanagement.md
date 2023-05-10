@@ -4,7 +4,7 @@ description: Learn more about the ApplicationManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -804,7 +804,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 > This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
 
 > [!CAUTION]
-> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. **Note** that the User Configuration version of this policy setting is not guaranteed to be secure.
+> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Description-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Editable-Begin -->

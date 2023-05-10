@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WinLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_WinLogon-Begin -->
 # Policy CSP - ADMX_WinLogon
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_WinLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -70,8 +67,7 @@ To use this setting, copy your interface program to a network share or to your s
 <!-- CustomShell-DFProperties-End -->
 
 <!-- CustomShell-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -114,7 +110,7 @@ For local user accounts and domain user accounts in domains of at least a Window
 
 For domain user accounts in Windows Server 2003, Windows 2000 native, or Windows 2000 mixed functional level domains, if you enable this setting, a warning message will appear that Windows could not retrieve the information and the user will not be able to log on. Therefore, you should not enable this policy setting if the domain is not at the Windows Server 2008 domain functional level.
 
-- If you disable or do not configure this setting, messages about the previous logon or logon failures are not displayed.
+If you disable or do not configure this setting, messages about the previous logon or logon failures are not displayed.
 <!-- DisplayLastLogonInfoDescription-Description-End -->
 
 <!-- DisplayLastLogonInfoDescription-Editable-Begin -->
@@ -131,8 +127,7 @@ For domain user accounts in Windows Server 2003, Windows 2000 native, or Windows
 <!-- DisplayLastLogonInfoDescription-DFProperties-End -->
 
 <!-- DisplayLastLogonInfoDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ This policy controls whether the logged on user should be notified when his logo
 <!-- LogonHoursNotificationPolicyDescription-DFProperties-End -->
 
 <!-- LogonHoursNotificationPolicyDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -261,8 +255,7 @@ If you choose to log off a user, the user cannot log on again except during perm
 <!-- LogonHoursPolicyDescription-DFProperties-End -->
 
 <!-- LogonHoursPolicyDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -324,8 +317,7 @@ If disabled or not configured, no popup will be displayed to the user.
 <!-- ReportCachedLogonPolicyDescription-DFProperties-End -->
 
 <!-- ReportCachedLogonPolicyDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -389,8 +381,7 @@ If you set this policy setting to "Services and Ease of Access applications," bo
 <!-- SoftwareSASGeneration-DFProperties-End -->
 
 <!-- SoftwareSASGeneration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_GroupPolicy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_GroupPolicy-Begin -->
 # Policy CSP - ADMX_GroupPolicy
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_GroupPolicy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -47,6 +44,7 @@ This policy setting allows user-based policy processing, roaming user profiles, 
 This policy setting affects all user accounts that interactively log on to a computer in a different forest when a trust across forests or a two-way forest trust exists.
 
 - If you do not configure this policy setting:
+
   - No user-based policy settings are applied from the user's forest.
   - Users do not receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
   - Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
@@ -71,8 +69,7 @@ This policy setting affects all user accounts that interactively log on to a com
 <!-- AllowX-ForestPolicy-and-RUP-DFProperties-End -->
 
 <!-- AllowX-ForestPolicy-and-RUP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -131,8 +128,7 @@ This policy setting specifies how long Group Policy should wait for workplace co
 <!-- CorpConnSyncWaitTime-DFProperties-End -->
 
 <!-- CorpConnSyncWaitTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -197,8 +193,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_AppMgmt-DFProperties-End -->
 
 <!-- CSE_AppMgmt-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -265,8 +260,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_DiskQuota-DFProperties-End -->
 
 <!-- CSE_DiskQuota-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -333,8 +327,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_EFSRecovery-DFProperties-End -->
 
 <!-- CSE_EFSRecovery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -399,8 +392,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_FolderRedirection-DFProperties-End -->
 
 <!-- CSE_FolderRedirection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -467,8 +459,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_IEM-DFProperties-End -->
 
 <!-- CSE_IEM-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -535,8 +526,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_IPSecurity-DFProperties-End -->
 
 <!-- CSE_IPSecurity-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -599,8 +589,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_Registry-DFProperties-End -->
 
 <!-- CSE_Registry-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -665,8 +654,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_Scripts-DFProperties-End -->
 
 <!-- CSE_Scripts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -731,8 +719,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_Security-DFProperties-End -->
 
 <!-- CSE_Security-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -800,8 +787,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_Wired-DFProperties-End -->
 
 <!-- CSE_Wired-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -869,8 +855,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 <!-- CSE_Wireless-DFProperties-End -->
 
 <!-- CSE_Wireless-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -941,8 +926,7 @@ Also, see the "Turn off Resultant set of Policy logging" policy setting in Compu
 <!-- DenyRsopToInteractiveUser_1-DFProperties-End -->
 
 <!-- DenyRsopToInteractiveUser_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1014,8 +998,7 @@ Also, see the "Turn off Resultant set of Policy logging" policy setting in Compu
 <!-- DenyRsopToInteractiveUser_2-DFProperties-End -->
 
 <!-- DenyRsopToInteractiveUser_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1070,8 +1053,7 @@ This policy setting prevents the Group Policy Client Service from stopping when 
 <!-- DisableAOACProcessing-DFProperties-End -->
 
 <!-- DisableAOACProcessing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1135,8 +1117,7 @@ Changing the status of this setting to Disabled will enforce the default behavio
 <!-- DisableAutoADMUpdate-DFProperties-End -->
 
 <!-- DisableAutoADMUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1198,8 +1179,7 @@ This policy setting prevents Group Policy from being updated while the computer 
 <!-- DisableBackgroundPolicy-DFProperties-End -->
 
 <!-- DisableBackgroundPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1263,8 +1243,7 @@ By default, the policy settings in Local GPOs are applied before any domain-base
 <!-- DisableLGPOProcessing-DFProperties-End -->
 
 <!-- DisableLGPOProcessing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1331,8 +1310,7 @@ Also, see the "Set Group Policy refresh interval for computers" policy setting t
 <!-- DisableUsersFromMachGP-DFProperties-End -->
 
 <!-- DisableUsersFromMachGP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1393,8 +1371,7 @@ This policy setting determines whether the Windows device is allowed to particip
 <!-- EnableCDP-DFProperties-End -->
 
 <!-- EnableCDP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1457,8 +1434,7 @@ The timeout value that is defined in this policy setting determines how long Gro
 <!-- EnableLogonOptimization-DFProperties-End -->
 
 <!-- EnableLogonOptimization-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1518,8 +1494,7 @@ The timeout value that is defined in this policy setting determines how long Gro
 <!-- EnableLogonOptimizationOnServerSKU-DFProperties-End -->
 
 <!-- EnableLogonOptimizationOnServerSKU-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1580,8 +1555,7 @@ This policy allows IT admins to turn off the ability to Link a Phone with a PC t
 <!-- EnableMMX-DFProperties-End -->
 
 <!-- EnableMMX-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1647,8 +1621,7 @@ In Group Policy Object Editor, preferences have a red icon to distinguish them f
 <!-- EnforcePoliciesOnly-DFProperties-End -->
 
 <!-- EnforcePoliciesOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1703,8 +1676,7 @@ This security feature provides a global setting to prevent programs from loading
 <!-- FontMitigation-DFProperties-End -->
 
 <!-- FontMitigation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1771,8 +1743,7 @@ This policy setting determines which domain controller the Group Policy Object E
 <!-- GPDCOptions-DFProperties-End -->
 
 <!-- GPDCOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1841,8 +1812,7 @@ Also, see the "Do not detect slow network connections" and related policies in C
 <!-- GPTransferRate_1-DFProperties-End -->
 
 <!-- GPTransferRate_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1911,8 +1881,7 @@ Also, see the "Do not detect slow network connections" and related policies in C
 <!-- GPTransferRate_2-DFProperties-End -->
 
 <!-- GPTransferRate_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1983,8 +1952,7 @@ This setting is only used when the "Turn off background refresh of Group Policy"
 <!-- GroupPolicyRefreshRate-DFProperties-End -->
 
 <!-- GroupPolicyRefreshRate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2049,8 +2017,7 @@ This setting also lets you specify how much the actual update interval varies. T
 <!-- GroupPolicyRefreshRateDC-DFProperties-End -->
 
 <!-- GroupPolicyRefreshRateDC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2123,8 +2090,7 @@ This setting also lets you specify how much the actual update interval varies. T
 <!-- GroupPolicyRefreshRateUser-DFProperties-End -->
 
 <!-- GroupPolicyRefreshRateUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2188,8 +2154,7 @@ By default, the Group Policy client waits five minutes before running logon scri
 <!-- LogonScriptDelay-DFProperties-End -->
 
 <!-- LogonScriptDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2250,8 +2215,7 @@ If this setting is Disabled or Not Configured, the default display name of New G
 <!-- NewGPODisplayName-DFProperties-End -->
 
 <!-- NewGPODisplayName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2309,8 +2273,7 @@ This policy setting allows you to create new Group Policy object links in the di
 <!-- NewGPOLinksDisabled-DFProperties-End -->
 
 <!-- NewGPOLinksDisabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2386,8 +2349,7 @@ This leads to the following behavior:
 <!-- OnlyUseLocalAdminFiles-DFProperties-End -->
 
 <!-- OnlyUseLocalAdminFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2467,8 +2429,7 @@ Setting flags not specified here to any value other than ? results in undefined 
 <!-- ProcessMitigationOptions-DFProperties-End -->
 
 <!-- ProcessMitigationOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2522,8 +2483,7 @@ Enabling this setting will cause the Group Policy Client to connect to the same 
 <!-- ResetDfsClientInfoDuringRefreshPolicy-DFProperties-End -->
 
 <!-- ResetDfsClientInfoDuringRefreshPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2587,8 +2547,7 @@ RSoP logs information on Group Policy settings that have been applied to the cli
 <!-- RSoPLogging-DFProperties-End -->
 
 <!-- RSoPLogging-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2652,8 +2611,7 @@ When Group Policy detects the bandwidth speed of a Direct Access connection, the
 <!-- SlowLinkDefaultForDirectAccess-DFProperties-End -->
 
 <!-- SlowLinkDefaultForDirectAccess-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2696,10 +2654,10 @@ This policy directs Group Policy processing to skip processing any client side e
 - If you enable this policy setting, when a slow network connection is detected, Group Policy processing will always run in an asynchronous manner.
 Client computers will not wait for the network to be fully initialized at startup and logon. Existing users will be logged on using cached credentials,
 which will result in shorter logon times. Group Policy will be applied in the background after the network becomes available.
-**Note** that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
+Note that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
 and Drive Maps preference extension will not be applied.
 
-**Note** There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
+Note There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
 1 - At the first computer startup after the client computer has joined the domain.
 2 - If the policy setting "Always wait for the network at computer startup and logon" is enabled.
 
@@ -2720,8 +2678,7 @@ and Drive Maps preference extension will not be applied.
 <!-- SlowlinkDefaultToAsync-DFProperties-End -->
 
 <!-- SlowlinkDefaultToAsync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2780,8 +2737,7 @@ This policy setting specifies how long Group Policy should wait for network avai
 <!-- SyncWaitTime-DFProperties-End -->
 
 <!-- SyncWaitTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2850,8 +2806,7 @@ By default, the user's Group Policy Objects determine which user settings apply.
 <!-- UserPolicyMode-DFProperties-End -->
 
 <!-- UserPolicyMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

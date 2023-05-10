@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EventLog Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_EventLog-Begin -->
 # Policy CSP - ADMX_EventLog
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_EventLog-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -65,8 +62,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_1-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -127,8 +123,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_2-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -189,8 +184,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_3-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -251,8 +245,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_AutoBackup_4-DFProperties-End -->
 
 <!-- Channel_Log_AutoBackup_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -314,8 +307,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_1-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -376,8 +368,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_2-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -438,8 +429,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_3-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -500,8 +490,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_4-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -561,8 +550,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_5-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_5-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -622,8 +610,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_6-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_6-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -683,8 +670,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_7-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_7-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -744,8 +730,7 @@ This policy setting specifies the security descriptor to use for the log using t
 <!-- Channel_Log_FileLogAccess_8-DFProperties-End -->
 
 <!-- Channel_Log_FileLogAccess_8-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -806,8 +791,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_Retention_2-DFProperties-End -->
 
 <!-- Channel_Log_Retention_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -869,8 +853,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_Retention_3-DFProperties-End -->
 
 <!-- Channel_Log_Retention_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -932,8 +915,7 @@ This policy setting controls Event Log behavior when the log file reaches its ma
 <!-- Channel_Log_Retention_4-DFProperties-End -->
 
 <!-- Channel_Log_Retention_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -992,8 +974,7 @@ If the policy setting is disabled, then no new events can be logged. Events can 
 <!-- Channel_LogEnabled-DFProperties-End -->
 
 <!-- Channel_LogEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1052,8 +1033,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_1-DFProperties-End -->
 
 <!-- Channel_LogFilePath_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1111,8 +1091,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_2-DFProperties-End -->
 
 <!-- Channel_LogFilePath_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1170,8 +1149,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_3-DFProperties-End -->
 
 <!-- Channel_LogFilePath_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1229,8 +1207,7 @@ This policy setting controls the location of the log file. The location of the f
 <!-- Channel_LogFilePath_4-DFProperties-End -->
 
 <!-- Channel_LogFilePath_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1288,8 +1265,7 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 <!-- Channel_LogMaxSize_3-DFProperties-End -->
 
 <!-- Channel_LogMaxSize_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

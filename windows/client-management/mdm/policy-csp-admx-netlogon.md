@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Netlogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Netlogon-Begin -->
 # Policy CSP - ADMX_Netlogon
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Netlogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -71,8 +68,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_AddressLookupOnPingBehavior-DFProperties-End -->
 
 <!-- Netlogon_AddressLookupOnPingBehavior-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -134,8 +130,7 @@ By default, DC Locator APIs can return IPv4/IPv6 DC address. But if some applica
 <!-- Netlogon_AddressTypeReturned-DFProperties-End -->
 
 <!-- Netlogon_AddressTypeReturned-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -196,8 +191,7 @@ By default, when no setting is specified for this policy, the behavior is the sa
 <!-- Netlogon_AllowDnsSuffixSearch-DFProperties-End -->
 
 <!-- Netlogon_AllowDnsSuffixSearch-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -260,8 +254,7 @@ By default, Net Logon will not allow the older cryptography algorithms to be use
 <!-- Netlogon_AllowNT4Crypto-DFProperties-End -->
 
 <!-- Netlogon_AllowNT4Crypto-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -324,8 +317,7 @@ By default, the behavior specified in the AllowDnsSuffixSearch is used. If the A
 <!-- Netlogon_AllowSingleLabelDnsDomain-DFProperties-End -->
 
 <!-- Netlogon_AllowSingleLabelDnsDomain-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -386,8 +378,7 @@ This policy setting determines whether domain controllers (DC) will dynamically 
 <!-- Netlogon_AutoSiteCoverage-DFProperties-End -->
 
 <!-- Netlogon_AutoSiteCoverage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -429,7 +420,7 @@ This policy setting allows you to control the domain controller (DC) location al
 
 NetBIOS-based discovery uses a WINS server and mailslot messages but does not use site information. Hence it does not ensure that clients will discover the closest DC. It also allows a hub-site client to discover a branch-site DC even if the branch-site DC only registers site-specific DNS records (as recommended). For these reasons, NetBIOS-based discovery is not recommended.
 
-**Note** that this policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
+Note that this policy setting does not affect NetBIOS-based discovery for DC location if only the NetBIOS domain name is known.
 
 - If you enable or do not configure this policy setting, the DC location algorithm does not use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
 
@@ -450,8 +441,7 @@ NetBIOS-based discovery uses a WINS server and mailslot messages but does not us
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-DFProperties-End -->
 
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -514,8 +504,7 @@ Contacting the PDC emulator is useful in case the client's password was recently
 <!-- Netlogon_AvoidPdcOnWan-DFProperties-End -->
 
 <!-- Netlogon_AvoidPdcOnWan-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -579,8 +568,7 @@ If the value of this setting is less than the value specified in the NegativeCac
 <!-- Netlogon_BackgroundRetryInitialPeriod-DFProperties-End -->
 
 <!-- Netlogon_BackgroundRetryInitialPeriod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -645,8 +633,7 @@ If the value for this setting is too small and the DC is not available, the freq
 <!-- Netlogon_BackgroundRetryMaximumPeriod-DFProperties-End -->
 
 <!-- Netlogon_BackgroundRetryMaximumPeriod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -705,8 +692,7 @@ The default value for this setting is to not quit retrying (0). The maximum valu
 <!-- Netlogon_BackgroundRetryQuitTime-DFProperties-End -->
 
 <!-- Netlogon_BackgroundRetryQuitTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -760,8 +746,7 @@ This policy setting determines when a successful DC cache entry is refreshed. Th
 <!-- Netlogon_BackgroundSuccessfulRefreshPeriod-DFProperties-End -->
 
 <!-- Netlogon_BackgroundSuccessfulRefreshPeriod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -823,8 +808,7 @@ If you specify zero for this policy setting, the default behavior occurs as desc
 <!-- Netlogon_DebugFlag-DFProperties-End -->
 
 <!-- Netlogon_DebugFlag-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -908,8 +892,7 @@ This policy setting determines which DC Locator DNS records aren't registered by
 <!-- Netlogon_DnsAvoidRegisterRecords-DFProperties-End -->
 
 <!-- Netlogon_DnsAvoidRegisterRecords-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -972,8 +955,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_DnsRefreshInterval-DFProperties-End -->
 
 <!-- Netlogon_DnsRefreshInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1039,8 +1021,7 @@ More information is available at <https://aka.ms/lowercasehostnamesrvrecord>
 <!-- Netlogon_DnsSrvRecordUseLowerCaseHostNames-DFProperties-End -->
 
 <!-- Netlogon_DnsSrvRecordUseLowerCaseHostNames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1099,8 +1080,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_DnsTtl-DFProperties-End -->
 
 <!-- Netlogon_DnsTtl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1158,8 +1138,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 <!-- Netlogon_ExpectedDialupDelay-DFProperties-End -->
 
 <!-- Netlogon_ExpectedDialupDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1221,8 +1200,7 @@ The Domain Controller Locator (DC Locator) service is used by clients to find do
 <!-- Netlogon_ForceRediscoveryInterval-DFProperties-End -->
 
 <!-- Netlogon_ForceRediscoveryInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1282,8 +1260,7 @@ If you do not configure this policy setting, it is not applied to any GCs, and G
 <!-- Netlogon_GcSiteCoverage-DFProperties-End -->
 
 <!-- Netlogon_GcSiteCoverage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1346,8 +1323,7 @@ This policy setting is recommended to reduce the attack surface on a DC, and can
 <!-- Netlogon_IgnoreIncomingMailslotMessages-DFProperties-End -->
 
 <!-- Netlogon_IgnoreIncomingMailslotMessages-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1408,8 +1384,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_LdapSrvPriority-DFProperties-End -->
 
 <!-- Netlogon_LdapSrvPriority-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1469,8 +1444,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_LdapSrvWeight-DFProperties-End -->
 
 <!-- Netlogon_LdapSrvWeight-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1530,8 +1504,7 @@ By default, the maximum size of the log file is 20MB.
 <!-- Netlogon_MaximumLogFileSize-DFProperties-End -->
 
 <!-- Netlogon_MaximumLogFileSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1591,8 +1564,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_NdncSiteCoverage-DFProperties-End -->
 
 <!-- Netlogon_NdncSiteCoverage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1651,8 +1623,7 @@ The default value for this setting is 45 seconds. The maximum value for this set
 <!-- Netlogon_NegativeCachePeriod-DFProperties-End -->
 
 <!-- Netlogon_NegativeCachePeriod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1717,8 +1688,7 @@ By default, the Netlogon share will grant shared read access to files on the sha
 <!-- Netlogon_NetlogonShareCompatibilityMode-DFProperties-End -->
 
 <!-- Netlogon_NetlogonShareCompatibilityMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1775,8 +1745,7 @@ The default value for this setting is 30 minutes (1800). The maximum value for t
 <!-- Netlogon_NonBackgroundSuccessfulRefreshPeriod-DFProperties-End -->
 
 <!-- Netlogon_NonBackgroundSuccessfulRefreshPeriod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1841,8 +1810,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 <!-- Netlogon_PingUrgencyMode-DFProperties-End -->
 
 <!-- Netlogon_PingUrgencyMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1906,8 +1874,7 @@ To enable the setting, click Enabled, and then specify the interval in seconds.
 <!-- Netlogon_ScavengeInterval-DFProperties-End -->
 
 <!-- Netlogon_ScavengeInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1967,8 +1934,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 <!-- Netlogon_SiteCoverage-DFProperties-End -->
 
 <!-- Netlogon_SiteCoverage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2028,8 +1994,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 <!-- Netlogon_SiteName-DFProperties-End -->
 
 <!-- Netlogon_SiteName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2094,8 +2059,7 @@ If you enable this policy setting, domain administrators should ensure that the 
 <!-- Netlogon_SysvolShareCompatibilityMode-DFProperties-End -->
 
 <!-- Netlogon_SysvolShareCompatibilityMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2158,8 +2122,7 @@ The DC Locator service is used by clients to find domain controllers for their A
 <!-- Netlogon_TryNextClosestSite-DFProperties-End -->
 
 <!-- Netlogon_TryNextClosestSite-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2220,8 +2183,7 @@ This policy setting determines if dynamic registration of the domain controller 
 <!-- Netlogon_UseDynamicDns-DFProperties-End -->
 
 <!-- Netlogon_UseDynamicDns-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

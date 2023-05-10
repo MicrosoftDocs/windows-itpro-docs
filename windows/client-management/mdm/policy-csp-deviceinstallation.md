@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- DeviceInstallation-Begin -->
 # Policy CSP - DeviceInstallation
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- DeviceInstallation-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -45,6 +42,7 @@ ms.topic: reference
 This policy setting allows you to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
+
   - Prevent installation of devices that match these device IDs
   - Prevent installation of devices that match any of these device instance IDs
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
@@ -74,8 +72,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 <!-- AllowInstallationOfMatchingDeviceIDs-DFProperties-End -->
 
 <!-- AllowInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -147,6 +144,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 This policy setting allows you to specify a list of Plug and Play device instance IDs for devices that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
+
   - Prevent installation of devices that match any of these device instance IDs
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
@@ -175,8 +173,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-DFProperties-End -->
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -250,6 +247,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for driver packages that Windows is allowed to install. This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
+
   - Prevent installation of devices for these device classes
   - Prevent installation of devices that match these device IDs
   - Prevent installation of devices that match any of these device instance IDs
@@ -280,8 +278,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-DFProperties-End -->
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -401,8 +398,7 @@ If you disable or do not configure this policy setting, the default evaluation i
 <!-- EnableInstallationPolicyLayering-DFProperties-End -->
 
 <!-- EnableInstallationPolicyLayering-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -496,8 +492,7 @@ This policy setting allows you to prevent Windows from retrieving device metadat
 <!-- PreventDeviceMetadataFromNetwork-DFProperties-End -->
 
 <!-- PreventDeviceMetadataFromNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -559,8 +554,7 @@ This policy setting allows you to prevent the installation of devices that are n
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-DFProperties-End -->
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -662,8 +656,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 <!-- PreventInstallationOfMatchingDeviceIDs-DFProperties-End -->
 
 <!-- PreventInstallationOfMatchingDeviceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -764,8 +757,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-DFProperties-End -->
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -879,8 +871,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-DFProperties-End -->
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

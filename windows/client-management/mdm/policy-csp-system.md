@@ -4,7 +4,7 @@ description: Learn more about the System Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,13 +16,9 @@ ms.topic: reference
 <!-- System-Begin -->
 # Policy CSP - System
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- System-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -684,7 +680,7 @@ By configuring this policy setting you can adjust what diagnostic data is collec
 
 If you disable or do not configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
 
-**Note**:
+Note:
 The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
 <!-- AllowTelemetry-Description-End -->
 
@@ -945,6 +941,7 @@ If you disable or do not configure this policy setting, devices enrolled to the 
 <!-- BootStartDriverInitialization-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver:
+
   - Good: The driver has been signed and has not been tampered with.
   - Bad: The driver has been identified as malware. It is recommended that you do not allow known bad drivers to be initialized.
   - Bad, but required for boot: The driver has been identified as malware, but the computer cannot successfully boot without loading this driver.
@@ -971,8 +968,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 <!-- BootStartDriverInitialization-DFProperties-End -->
 
 <!-- BootStartDriverInitialization-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1138,7 +1134,7 @@ If you set this policy setting to "Disable diagnostic data opt-in settings", dia
 
 If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
 
-**Note**:
+Note:
 To set a limit on the amount of diagnostic data that is sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
 <!-- ConfigureTelemetryOptInSettingsUx-Description-End -->
 
@@ -1619,8 +1615,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!-- DisableSystemRestore-DFProperties-End -->
 
 <!-- DisableSystemRestore-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2048,7 +2043,7 @@ If you disable or do not configure this policy setting, diagnostic data collecti
 <!-- Description-Source-ADMX -->
 With this policy setting, you can forward Connected User Experience and Telemetry requests to a proxy server.
 
-- If you enable this policy setting, you can specify the FQDN or IP address of the destination device within your organization's network (and optionally a port number, if desired). The connection will be made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if you disable or do not configure this policy setting, Connected User Experience and Telemetry data will be sent to Microsoft using the default proxy configuration.
+If you enable this policy setting, you can specify the FQDN or IP address of the destination device within your organization's network (and optionally a port number, if desired). The connection will be made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if you disable or do not configure this policy setting, Connected User Experience and Telemetry data will be sent to Microsoft using the default proxy configuration.
 
 The format for this setting is `<server>`:`<port>`
 <!-- TelemetryProxy-Description-End -->

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Printing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Printing-Begin -->
 # Policy CSP - ADMX_Printing
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Printing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -70,8 +67,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" setting in
 <!-- AllowWebPrinting-DFProperties-End -->
 
 <!-- AllowWebPrinting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -117,7 +113,8 @@ Not all applications support driver isolation. By default, Microsoft Excel 2007,
 
 - If you disable this policy setting, then print drivers will be loaded within all associated application processes.
 
-**Note**:
+Note:
+
 -This policy setting applies only to applications opted into isolation.
 -This policy setting applies only to print drivers loaded by applications. Print drivers loaded by the print spooler are not affected.
 -This policy setting is only checked once during the lifetime of a process. After changing the policy, a running application must be relaunched before settings take effect.
@@ -137,8 +134,7 @@ Not all applications support driver isolation. By default, Microsoft Excel 2007,
 <!-- ApplicationDriverIsolation-DFProperties-End -->
 
 <!-- ApplicationDriverIsolation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -204,8 +200,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 <!-- CustomizedSupportUrl-DFProperties-End -->
 
 <!-- CustomizedSupportUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -279,8 +274,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 <!-- DomainPrinters-DFProperties-End -->
 
 <!-- DomainPrinters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -342,8 +336,7 @@ By default, Windows Ultimate, Professional and Home SKUs will continue to search
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-DFProperties-End -->
 
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -405,8 +398,7 @@ Allows users to use the Add Printer Wizard to search the network for shared prin
 <!-- DownlevelBrowse-DFProperties-End -->
 
 <!-- DownlevelBrowse-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -478,8 +470,7 @@ If you do not enable this policy setting, the behavior is the same as disabling 
 <!-- EMFDespooling-DFProperties-End -->
 
 <!-- EMFDespooling-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -536,8 +527,7 @@ This setting may improve the performance of the XPS Rasterization Service or the
 <!-- ForceSoftwareRasterization-DFProperties-End -->
 
 <!-- ForceSoftwareRasterization-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -600,8 +590,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" and "Activ
 <!-- IntranetPrintersUrl-DFProperties-End -->
 
 <!-- IntranetPrintersUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -664,8 +653,7 @@ Determines whether printers using kernel-mode drivers may be installed on the lo
 <!-- KMPrintersAreBlocked-DFProperties-End -->
 
 <!-- KMPrintersAreBlocked-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -726,8 +714,7 @@ This preference allows you to change default printer management.
 <!-- LegacyDefaultPrinterMode-DFProperties-End -->
 
 <!-- LegacyDefaultPrinterMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -786,8 +773,7 @@ Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default
 <!-- MXDWUseLegacyOutputFormatMSXPS-DFProperties-End -->
 
 <!-- MXDWUseLegacyOutputFormatMSXPS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -849,8 +835,7 @@ This setting does not prevent users from running other programs to delete a prin
 <!-- NoDeletePrinter-DFProperties-End -->
 
 <!-- NoDeletePrinter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -921,8 +906,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 <!-- NonDomainPrinters-DFProperties-End -->
 
 <!-- NonDomainPrinters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -981,8 +965,7 @@ This policy restricts clients computers to use package point and print only.
 <!-- PackagePointAndPrintOnly-DFProperties-End -->
 
 <!-- PackagePointAndPrintOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1041,8 +1024,7 @@ This policy restricts clients computers to use package point and print only.
 <!-- PackagePointAndPrintOnly_Win7-DFProperties-End -->
 
 <!-- PackagePointAndPrintOnly_Win7-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1105,8 +1087,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 <!-- PackagePointAndPrintServerList-DFProperties-End -->
 
 <!-- PackagePointAndPrintServerList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1169,8 +1150,7 @@ Windows Vista and later clients will attempt to make a non-package point and pri
 <!-- PackagePointAndPrintServerList_Win7-DFProperties-End -->
 
 <!-- PackagePointAndPrintServerList_Win7-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1234,8 +1214,7 @@ Type the location of the user's computer. When users search for printers, the sy
 <!-- PhysicalLocation-DFProperties-End -->
 
 <!-- PhysicalLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1295,8 +1274,7 @@ Use Location Tracking to design a location scheme for your enterprise and assign
 <!-- PhysicalLocationSupport-DFProperties-End -->
 
 <!-- PhysicalLocationSupport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1340,7 +1318,8 @@ This policy setting determines whether the print spooler will execute print driv
 
 - If you disable this policy setting, the print spooler will execute print drivers in the print spooler process.
 
-**Note**:
+Note:
+
 -Other system or driver policy settings may alter the process in which a print driver is executed.
 -This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications are not affected.
 -This policy setting takes effect without restarting the print spooler service.
@@ -1360,8 +1339,7 @@ This policy setting determines whether the print spooler will execute print driv
 <!-- PrintDriverIsolationExecutionPolicy-DFProperties-End -->
 
 <!-- PrintDriverIsolationExecutionPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1405,7 +1383,8 @@ This policy setting determines whether the print spooler will override the Drive
 
 - If you disable or do not configure this policy setting, the print spooler uses the Driver Isolation compatibility flag value reported by the print driver.
 
-**Note**:
+Note:
+
 -Other system or driver policy settings may alter the process in which a print driver is executed.
 -This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications are not affected.
 -This policy setting takes effect without restarting the print spooler service.
@@ -1425,8 +1404,7 @@ This policy setting determines whether the print spooler will override the Drive
 <!-- PrintDriverIsolationOverrideCompat-DFProperties-End -->
 
 <!-- PrintDriverIsolationOverrideCompat-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1487,8 +1465,7 @@ This setting only provides a starting point for Active Directory searches for pr
 <!-- PrinterDirectorySearchScope-DFProperties-End -->
 
 <!-- PrinterDirectorySearchScope-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1553,8 +1530,7 @@ On domains with Active Directory, shared printer resources are available in Acti
 <!-- PrinterServerThread-DFProperties-End -->
 
 <!-- PrinterServerThread-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1616,8 +1592,7 @@ This policy controls whether the print job name will be included in print event 
 <!-- ShowJobTitleInEventLogs-DFProperties-End -->
 
 <!-- ShowJobTitleInEventLogs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1678,8 +1653,7 @@ V4 printer drivers may include an optional, customized user interface known as a
 <!-- V4DriverDisallowPrinterExtension-DFProperties-End -->
 
 <!-- V4DriverDisallowPrinterExtension-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

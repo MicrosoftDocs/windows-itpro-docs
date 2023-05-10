@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CredSsp Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_CredSsp-Begin -->
 # Policy CSP - ADMX_CredSsp
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_CredSsp-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -78,8 +75,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowDefaultCredentials-DFProperties-End -->
 
 <!-- AllowDefaultCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -148,8 +144,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowDefCredentialsWhenNTLMOnly-DFProperties-End -->
 
 <!-- AllowDefCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -195,7 +190,7 @@ Some versions of the CredSSP protocol are vulnerable to an encryption oracle att
 
 If you enable this policy setting, CredSSP version support will be selected based on the following options:
 
-Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. **Note** this setting should not be deployed until all remote hosts support the newest version.
+Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. Note this setting should not be deployed until all remote hosts support the newest version.
 
 Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
 
@@ -218,8 +213,7 @@ For more information about the vulnerability and servicing requirements for prot
 <!-- AllowEncryptionOracle-DFProperties-End -->
 
 <!-- AllowEncryptionOracle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -290,8 +284,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowFreshCredentials-DFProperties-End -->
 
 <!-- AllowFreshCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -362,8 +355,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowFreshCredentialsWhenNTLMOnly-DFProperties-End -->
 
 <!-- AllowFreshCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -434,8 +426,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowSavedCredentials-DFProperties-End -->
 
 <!-- AllowSavedCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -506,8 +497,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowSavedCredentialsWhenNTLMOnly-DFProperties-End -->
 
 <!-- AllowSavedCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -576,8 +566,7 @@ This policy setting can be used in combination with the "Allow delegating defaul
 <!-- DenyDefaultCredentials-DFProperties-End -->
 
 <!-- DenyDefaultCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -646,8 +635,7 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 <!-- DenyFreshCredentials-DFProperties-End -->
 
 <!-- DenyFreshCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -716,8 +704,7 @@ This policy setting can be used in combination with the "Allow delegating saved 
 <!-- DenySavedCredentials-DFProperties-End -->
 
 <!-- DenySavedCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -791,8 +778,7 @@ Require Restricted Admin: Participating applications must use Restricted Admin t
 <!-- RestrictedRemoteAdministration-DFProperties-End -->
 
 <!-- RestrictedRemoteAdministration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

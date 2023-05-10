@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Smartcard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/27/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Smartcard-Begin -->
 # Policy CSP - ADMX_Smartcard
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Smartcard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -47,6 +44,7 @@ This policy setting lets you allow certificates without an Extended Key Usage (E
 In versions of Windows prior to Windows Vista, smart card certificates that are used for logon require an extended key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
 - If you enable this policy setting, certificates with the following attributes can also be used to log on with a smart card:
+
   - Certificates with no EKU
   - Certificates with an All Purpose EKU
   - Certificates with a Client Authentication EKU
@@ -68,8 +66,7 @@ In versions of Windows prior to Windows Vista, smart card certificates that are 
 <!-- AllowCertificatesWithNoEKU-DFProperties-End -->
 
 <!-- AllowCertificatesWithNoEKU-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -130,8 +127,7 @@ In order to use the integrated unblock feature your smart card must support this
 <!-- AllowIntegratedUnblock-DFProperties-End -->
 
 <!-- AllowIntegratedUnblock-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -190,8 +186,7 @@ This policy setting lets you allow signature key-based certificates to be enumer
 <!-- AllowSignatureOnlyKeys-DFProperties-End -->
 
 <!-- AllowSignatureOnlyKeys-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -252,8 +247,7 @@ Under previous versions of Microsoft Windows, certificates were required to cont
 <!-- AllowTimeInvalidCertificates-DFProperties-End -->
 
 <!-- AllowTimeInvalidCertificates-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -312,8 +306,7 @@ This policy setting allows you to manage the certificate propagation that occurs
 <!-- CertPropEnabledString-DFProperties-End -->
 
 <!-- CertPropEnabledString-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -371,8 +364,7 @@ This policy setting allows you to manage the clean up behavior of root certifica
 <!-- CertPropRootCleanupString-DFProperties-End -->
 
 <!-- CertPropRootCleanupString-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -433,8 +425,7 @@ This policy setting allows you to manage the root certificate propagation that o
 <!-- CertPropRootEnabledString-DFProperties-End -->
 
 <!-- CertPropRootEnabledString-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -496,8 +487,7 @@ This policy setting prevents plaintext PINs from being returned by Credential Ma
 <!-- DisallowPlaintextPin-DFProperties-End -->
 
 <!-- DisallowPlaintextPin-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -562,8 +552,7 @@ This policy setting allows you to control whether elliptic curve cryptography (E
 <!-- EnumerateECCCerts-DFProperties-End -->
 
 <!-- EnumerateECCCerts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -629,8 +618,7 @@ If there are two or more of the "same" certificate on a smart card and this poli
 <!-- FilterDuplicateCerts-DFProperties-End -->
 
 <!-- FilterDuplicateCerts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -691,8 +679,7 @@ During logon Windows will by default only read the default certificate from the 
 <!-- ForceReadingAllCertificates-DFProperties-End -->
 
 <!-- ForceReadingAllCertificates-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -754,8 +741,7 @@ This policy setting allows you to manage the displayed message when a smart card
 <!-- IntegratedUnblockPromptString-DFProperties-End -->
 
 <!-- IntegratedUnblockPromptString-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -815,8 +801,7 @@ If you disable , the subject name will be displayed as it appears in the certifi
 <!-- ReverseSubject-DFProperties-End -->
 
 <!-- ReverseSubject-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -878,8 +863,7 @@ This policy setting allows you to control whether Smart Card Plug and Play is en
 <!-- SCPnPEnabled-DFProperties-End -->
 
 <!-- SCPnPEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -941,8 +925,7 @@ This policy setting allows you to control whether a confirmation message is disp
 <!-- SCPnPNotification-DFProperties-End -->
 
 <!-- SCPnPNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1001,8 +984,7 @@ This policy setting lets you determine whether an optional field will be display
 <!-- X509HintsNeeded-DFProperties-End -->
 
 <!-- X509HintsNeeded-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

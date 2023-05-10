@@ -4,7 +4,7 @@ description: Learn more about the ADMX_NetworkConnections Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_NetworkConnections-Begin -->
 # Policy CSP - ADMX_NetworkConnections
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_NetworkConnections-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -76,8 +73,7 @@ The Install and Uninstall buttons appear in the properties dialog box for connec
 <!-- NC_AddRemoveComponents-DFProperties-End -->
 
 <!-- NC_AddRemoveComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -144,8 +140,7 @@ The Advanced Settings item lets users view and change bindings and view and chan
 <!-- NC_AdvancedSettings-DFProperties-End -->
 
 <!-- NC_AdvancedSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -219,8 +214,7 @@ Determines whether users can configure advanced TCP/IP settings.
 <!-- NC_AllowAdvancedTCPIPConfig-DFProperties-End -->
 
 <!-- NC_AllowAdvancedTCPIPConfig-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -288,8 +282,7 @@ Determines whether administrators can enable and disable the components used by 
 <!-- NC_ChangeBindState-DFProperties-End -->
 
 <!-- NC_ChangeBindState-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -364,8 +357,7 @@ To create an all-user remote access connection, on the Connection Availability p
 <!-- NC_DeleteAllUserConnection-DFProperties-End -->
 
 <!-- NC_DeleteAllUserConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -436,8 +428,7 @@ Determines whether users can delete remote access connections.
 <!-- NC_DeleteConnection-DFProperties-End -->
 
 <!-- NC_DeleteConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -501,8 +492,7 @@ The Remote Access Preferences item lets users create and change connections befo
 <!-- NC_DialupPrefs-DFProperties-End -->
 
 <!-- NC_DialupPrefs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -561,8 +551,7 @@ If you disable this setting or do not configure it, the "local access only" icon
 <!-- NC_DoNotShowLocalOnlyIcon-DFProperties-End -->
 
 <!-- NC_DoNotShowLocalOnlyIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -628,8 +617,7 @@ By default, Network Connections group settings in Windows XP Professional do not
 <!-- NC_EnableAdminProhibits-DFProperties-End -->
 
 <!-- NC_EnableAdminProhibits-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -692,8 +680,7 @@ When a remote client computer connects to an internal network using DirectAccess
 <!-- NC_ForceTunneling-DFProperties-End -->
 
 <!-- NC_ForceTunneling-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -751,8 +738,7 @@ This policy setting allows you to manage whether notifications are shown to the 
 <!-- NC_IpStateChecking-DFProperties-End -->
 
 <!-- NC_IpStateChecking-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -830,8 +816,7 @@ The Local Area Connection Properties dialog box includes a list of the network c
 <!-- NC_LanChangeProperties-DFProperties-End -->
 
 <!-- NC_LanChangeProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -898,8 +883,7 @@ Determines whether users can enable/disable LAN connections.
 <!-- NC_LanConnect-DFProperties-End -->
 
 <!-- NC_LanConnect-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -971,8 +955,7 @@ This setting determines whether the Properties menu item is enabled, and thus, w
 <!-- NC_LanProperties-DFProperties-End -->
 
 <!-- NC_LanProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1040,8 +1023,7 @@ Determines whether users can use the New Connection Wizard, which creates new ne
 <!-- NC_NewConnectionWizard-DFProperties-End -->
 
 <!-- NC_NewConnectionWizard-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1110,8 +1092,7 @@ The Internet Connection Firewall is a stateful packet filter for home and small 
 <!-- NC_PersonalFirewallConfig-DFProperties-End -->
 
 <!-- NC_PersonalFirewallConfig-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1186,8 +1167,7 @@ This setting determines whether the Properties menu item is enabled, and thus, w
 <!-- NC_RasAllUserProperties-DFProperties-End -->
 
 <!-- NC_RasAllUserProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1262,8 +1242,7 @@ The Networking tab of the Remote Access Connection Properties dialog box include
 <!-- NC_RasChangeProperties-DFProperties-End -->
 
 <!-- NC_RasChangeProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1325,8 +1304,7 @@ Determines whether users can connect and disconnect remote access connections.
 <!-- NC_RasConnect-DFProperties-End -->
 
 <!-- NC_RasConnect-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1400,8 +1378,7 @@ This setting determines whether the Properties menu item is enabled, and thus, w
 <!-- NC_RasMyProperties-DFProperties-End -->
 
 <!-- NC_RasMyProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1473,8 +1450,7 @@ To create an all-user connection, on the Connection Availability page in the New
 <!-- NC_RenameAllUserRasConnection-DFProperties-End -->
 
 <!-- NC_RenameAllUserRasConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1544,8 +1520,7 @@ If this setting is not configured, only Administrators and Network Configuration
 <!-- NC_RenameConnection-DFProperties-End -->
 
 <!-- NC_RenameConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1612,8 +1587,7 @@ Determines whether nonadministrators can rename a LAN connection.
 <!-- NC_RenameLanConnection-DFProperties-End -->
 
 <!-- NC_RenameLanConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1680,8 +1654,7 @@ Private connections are those that are available only to one user. To create a p
 <!-- NC_RenameMyRasConnection-DFProperties-End -->
 
 <!-- NC_RenameMyRasConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1739,7 +1712,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 > Nonadministrators are already prohibited from configuring Internet Connection Sharing, regardless of this setting.
 
 > [!NOTE]
-> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Don't use hosted networks" check box.
+> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Do not use hosted networks" check box.
 <!-- NC_ShowSharedAccessUI-Description-End -->
 
 <!-- NC_ShowSharedAccessUI-Editable-Begin -->
@@ -1756,8 +1729,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 <!-- NC_ShowSharedAccessUI-DFProperties-End -->
 
 <!-- NC_ShowSharedAccessUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1821,8 +1793,7 @@ Connection status is available from the connection status taskbar icon or from t
 <!-- NC_Statistics-DFProperties-End -->
 
 <!-- NC_Statistics-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1881,8 +1852,7 @@ This policy setting determines whether to require domain users to elevate when s
 <!-- NC_StdDomainUserSetLocation-DFProperties-End -->
 
 <!-- NC_StdDomainUserSetLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

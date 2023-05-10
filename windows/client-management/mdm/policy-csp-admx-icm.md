@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ICM Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_ICM-Begin -->
 # Policy CSP - ADMX_ICM
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_ICM-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -65,8 +62,7 @@ This policy setting turns off the Windows Customer Experience Improvement Progra
 <!-- CEIPEnable-DFProperties-End -->
 
 <!-- CEIPEnable-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -127,8 +123,7 @@ Typically, a certificate is used when you use a secure website or when you send 
 <!-- CertMgr_DisableAutoRootUpdates-DFProperties-End -->
 
 <!-- CertMgr_DisableAutoRootUpdates-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 <!-- DisableHTTPPrinting_1-DFProperties-End -->
 
 <!-- DisableHTTPPrinting_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -259,8 +253,7 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 <!-- DisableWebPnPDownload_1-DFProperties-End -->
 
 <!-- DisableWebPnPDownload_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -326,8 +319,7 @@ Also see "Turn off Windows Update device driver search prompt" in "Administrativ
 <!-- DriverSearchPlaces_DontSearchWindowsUpdate-DFProperties-End -->
 
 <!-- DriverSearchPlaces_DontSearchWindowsUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -388,8 +380,7 @@ The Event Viewer normally makes all HTTP(S) URLs into hyperlinks that activate t
 <!-- EventViewer_DisableLinks-DFProperties-End -->
 
 <!-- EventViewer_DisableLinks-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -452,8 +443,7 @@ You might want to enable this policy setting for users who do not have Internet 
 <!-- HSS_HeadlinesPolicy-DFProperties-End -->
 
 <!-- HSS_HeadlinesPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -514,8 +504,7 @@ The Knowledge Base is an online source of technical support information and self
 <!-- HSS_KBSearchPolicy-DFProperties-End -->
 
 <!-- HSS_KBSearchPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -576,8 +565,7 @@ This policy setting specifies whether Windows can access the Internet to accompl
 <!-- InternetManagement_RestrictCommunication_1-DFProperties-End -->
 
 <!-- InternetManagement_RestrictCommunication_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -638,8 +626,7 @@ This policy setting specifies whether Windows can access the Internet to accompl
 <!-- InternetManagement_RestrictCommunication_2-DFProperties-End -->
 
 <!-- InternetManagement_RestrictCommunication_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -698,8 +685,7 @@ This policy setting specifies whether the Internet Connection Wizard can connect
 <!-- NC_ExitOnISP-DFProperties-End -->
 
 <!-- NC_ExitOnISP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -743,7 +729,7 @@ This policy setting specifies whether the Windows Registration Wizard connects t
 
 - If you disable or do not configure this policy setting, users can connect to Microsoft.com to complete the online Windows Registration.
 
-**Note** that registration is optional and involves submitting some personal information to Microsoft. However, Windows Product Activation is required but does not involve submitting any personal information (except the country/region you live in).
+Note that registration is optional and involves submitting some personal information to Microsoft. However, Windows Product Activation is required but does not involve submitting any personal information (except the country/region you live in).
 <!-- NC_NoRegistration-Description-End -->
 
 <!-- NC_NoRegistration-Editable-Begin -->
@@ -760,8 +746,7 @@ This policy setting specifies whether the Windows Registration Wizard connects t
 <!-- NC_NoRegistration-DFProperties-End -->
 
 <!-- NC_NoRegistration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -826,8 +811,7 @@ Also see the "Configure Error Reporting", "Display Error Notification" and "Disa
 <!-- PCH_DoNotReport-DFProperties-End -->
 
 <!-- PCH_DoNotReport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -888,8 +872,7 @@ This policy setting allows you to remove access to Windows Update.
 <!-- RemoveWindowsUpdate_ICM-DFProperties-End -->
 
 <!-- RemoveWindowsUpdate_ICM-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -953,8 +936,7 @@ When users search the local computer or the Internet, Search Companion occasiona
 <!-- SearchCompanion_DisableFileUpdates-DFProperties-End -->
 
 <!-- SearchCompanion_DisableFileUpdates-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1015,8 +997,7 @@ When a user opens a file that has an extension that is not associated with any a
 <!-- ShellNoUseInternetOpenWith_1-DFProperties-End -->
 
 <!-- ShellNoUseInternetOpenWith_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1077,8 +1058,7 @@ When a user opens a file that has an extension that is not associated with any a
 <!-- ShellNoUseInternetOpenWith_2-DFProperties-End -->
 
 <!-- ShellNoUseInternetOpenWith_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1139,8 +1119,7 @@ When a user opens a file type or protocol that is not associated with any applic
 <!-- ShellNoUseStoreOpenWith_1-DFProperties-End -->
 
 <!-- ShellNoUseStoreOpenWith_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1201,8 +1180,7 @@ When a user opens a file type or protocol that is not associated with any applic
 <!-- ShellNoUseStoreOpenWith_2-DFProperties-End -->
 
 <!-- ShellNoUseStoreOpenWith_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1265,8 +1243,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 <!-- ShellPreventWPWDownload_1-DFProperties-End -->
 
 <!-- ShellPreventWPWDownload_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1327,8 +1304,7 @@ The Order Prints Online Wizard is used to download a list of providers and allow
 <!-- ShellRemoveOrderPrints_1-DFProperties-End -->
 
 <!-- ShellRemoveOrderPrints_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1389,8 +1365,7 @@ The Order Prints Online Wizard is used to download a list of providers and allow
 <!-- ShellRemoveOrderPrints_2-DFProperties-End -->
 
 <!-- ShellRemoveOrderPrints_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1451,8 +1426,7 @@ The Web Publishing Wizard is used to download a list of providers and allow user
 <!-- ShellRemovePublishToWeb_1-DFProperties-End -->
 
 <!-- ShellRemovePublishToWeb_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1513,8 +1487,7 @@ The Web Publishing Wizard is used to download a list of providers and allow user
 <!-- ShellRemovePublishToWeb_2-DFProperties-End -->
 
 <!-- ShellRemovePublishToWeb_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1577,8 +1550,7 @@ With the Customer Experience Improvement program, users can allow Microsoft to c
 <!-- WinMSG_NoInstrumentation_1-DFProperties-End -->
 
 <!-- WinMSG_NoInstrumentation_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1641,8 +1613,7 @@ With the Customer Experience Improvement program, users can allow Microsoft to c
 <!-- WinMSG_NoInstrumentation_2-DFProperties-End -->
 
 <!-- WinMSG_NoInstrumentation_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

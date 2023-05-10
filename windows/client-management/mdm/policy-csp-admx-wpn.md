@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WPN Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_WPN-Begin -->
 # Policy CSP - ADMX_WPN
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_WPN-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -65,8 +62,7 @@ This policy setting blocks voice and video calls during Quiet Hours.
 <!-- NoCallsDuringQuietHours-DFProperties-End -->
 
 <!-- NoCallsDuringQuietHours-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -127,8 +123,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- NoLockScreenToastNotification-DFProperties-End -->
 
 <!-- NoLockScreenToastNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -189,8 +184,7 @@ This policy setting turns off Quiet Hours functionality.
 <!-- NoQuietHours-DFProperties-End -->
 
 <!-- NoQuietHours-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -236,9 +230,9 @@ This policy setting turns off toast notifications for applications.
 
 - If you enable this policy setting, applications will not be able to raise toast notifications.
 
-**Note** that this policy does not affect taskbar notification balloons.
+Note that this policy does not affect taskbar notification balloons.
 
-**Note** that Windows system features are not affected by this policy. You must enable/disable system features individually to stop their ability to raise toast notifications.
+Note that Windows system features are not affected by this policy. You must enable/disable system features individually to stop their ability to raise toast notifications.
 
 - If you disable or do not configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
 
@@ -259,8 +253,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- NoToastNotification-DFProperties-End -->
 
 <!-- NoToastNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -321,8 +314,7 @@ This policy setting specifies the number of minutes after midnight (local time) 
 <!-- QuietHoursDailyBeginMinute-DFProperties-End -->
 
 <!-- QuietHoursDailyBeginMinute-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -382,8 +374,7 @@ This policy setting specifies the number of minutes after midnight (local time) 
 <!-- QuietHoursDailyEndMinute-DFProperties-End -->
 
 <!-- QuietHoursDailyEndMinute-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

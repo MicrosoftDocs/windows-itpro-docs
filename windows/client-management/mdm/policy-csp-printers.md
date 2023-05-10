@@ -4,7 +4,7 @@ description: Learn more about the Printers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Printers-Begin -->
 # Policy CSP - Printers
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Printers-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -64,8 +61,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 <!-- ApprovedUsbPrintDevices-DFProperties-End -->
 
 <!-- ApprovedUsbPrintDevices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -124,8 +120,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 <!-- ApprovedUsbPrintDevicesUser-DFProperties-End -->
 
 <!-- ApprovedUsbPrintDevicesUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ The following are the supported values:
 <!-- ConfigureCopyFilesPolicy-DFProperties-End -->
 
 <!-- ConfigureCopyFilesPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -276,8 +270,7 @@ The following are the supported values:
 <!-- ConfigureDriverValidationLevel-DFProperties-End -->
 
 <!-- ConfigureDriverValidationLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -341,8 +334,7 @@ The following are the supported values:
 <!-- ConfigureIppPageCountsPolicy-DFProperties-End -->
 
 <!-- ConfigureIppPageCountsPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -388,11 +380,11 @@ You can enable this setting to configure the Redirection Guard policy being appl
 
 - If you enable this setting you may select the following options:
 
-- Enabled : Redirection Guard will prevent any file redirections from being followed
+- Enabled: Redirection Guard will prevent any file redirections from being followed
 
-- Disabled : Redirection Guard will not be enabled and file redirections may be used within the spooler process
+- Disabled: Redirection Guard will not be enabled and file redirections may be used within the spooler process
 
-- Audit : Redirection Guard will log events as though it were enabled but will not actually prevent file redirections from being used within the spooler.
+- Audit: Redirection Guard will log events as though it were enabled but will not actually prevent file redirections from being used within the spooler.
 <!-- ConfigureRedirectionGuardPolicy-Description-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-Editable-Begin -->
@@ -414,8 +406,7 @@ The following are the supported values:
 <!-- ConfigureRedirectionGuardPolicy-DFProperties-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -469,8 +460,7 @@ The following are the supported values:
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -508,10 +498,12 @@ This policy setting controls which protocol and protocol settings to use for out
 By default, RPC over TCP is used and authentication is always enabled. For RPC over named pipes, authentication is always enabled for domain joined machines but disabled for non domain joined machines.
 
 Protocol to use for outgoing RPC connections:
+
   - "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
   - "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler
 
 Use authentication for outgoing RPC over named pipes connections:
+
   - "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
   - "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
   - "Authentication disabled": RPC authentication will not be used for outgoing RPC over named pipes connections
@@ -533,8 +525,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 <!-- ConfigureRpcConnectionPolicy-DFProperties-End -->
 
 <!-- ConfigureRpcConnectionPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -576,11 +567,13 @@ This policy setting controls which protocols incoming RPC connections to the pri
 By default, RPC over TCP is enabled and Negotiate is used for the authentication protocol.
 
 Protocols to allow for incoming RPC connections:
+
   - "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
   - "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
   - "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes
 
 Authentication protocol to use for incoming RPC connections:
+
   - "Negotiate": Use the Negotiate authentication protocol (the default option)
   - "Kerberos": Use the Kerberos authentication protocol
 
@@ -601,8 +594,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 <!-- ConfigureRpcListenerPolicy-DFProperties-End -->
 
 <!-- ConfigureRpcListenerPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -644,6 +636,7 @@ This policy setting controls which port is used for RPC over TCP for incoming co
 By default dynamic TCP ports are used.
 
 RPC over TCP port:
+
   - The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used
 
 If you disable or do not configure this policy setting, dynamic TCP ports are used.
@@ -663,8 +656,7 @@ If you disable or do not configure this policy setting, dynamic TCP ports are us
 <!-- ConfigureRpcTcpPort-DFProperties-End -->
 
 <!-- ConfigureRpcTcpPort-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -724,8 +716,7 @@ By default, there are no restrictions to printing based on connection type or pr
 <!-- EnableDeviceControl-DFProperties-End -->
 
 <!-- EnableDeviceControl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -786,8 +777,7 @@ By default, there are no restrictions to printing based on connection type or pr
 <!-- EnableDeviceControlUser-DFProperties-End -->
 
 <!-- EnableDeviceControlUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -848,8 +838,7 @@ If you disable or do not configure this policy setting, the registry key and val
 <!-- ManageDriverExclusionList-DFProperties-End -->
 
 <!-- ManageDriverExclusionList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -889,16 +878,19 @@ If you disable or do not configure this policy setting, the registry key and val
 This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
 
 - If you enable this policy setting:
+
 -Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
 -You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
 
 - If you do not configure this policy setting:
+
 -Windows Vista client computers can point and print to any server.
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
 -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
 
 - If you disable this policy setting:
+
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
 -Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
 -Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
@@ -920,8 +912,7 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- PointAndPrintRestrictions-DFProperties-End -->
 
 <!-- PointAndPrintRestrictions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -962,16 +953,19 @@ This policy setting controls the client Point and Print behavior, including the 
 This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
 
 - If you enable this policy setting:
+
 -Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
 -You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
 
 - If you do not configure this policy setting:
+
 -Windows Vista client computers can point and print to any server.
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
 -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
 
 - If you disable this policy setting:
+
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
 -Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
 -Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
@@ -993,8 +987,7 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- PointAndPrintRestrictions_User-DFProperties-End -->
 
 <!-- PointAndPrintRestrictions_User-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1056,8 +1049,7 @@ Determines whether the computer's shared printers can be published in Active Dir
 <!-- PublishPrinters-DFProperties-End -->
 
 <!-- PublishPrinters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1118,8 +1110,7 @@ By default, users that aren't Administrators can't install print drivers on this
 <!-- RestrictDriverInstallationToAdministrators-DFProperties-End -->
 
 <!-- RestrictDriverInstallationToAdministrators-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

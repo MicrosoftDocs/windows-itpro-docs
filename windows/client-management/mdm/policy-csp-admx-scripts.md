@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Scripts Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Scripts-Begin -->
 # Policy CSP - ADMX_Scripts
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Scripts-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -63,8 +60,7 @@ This policy setting allows user logon scripts to run when the logon cross-forest
 <!-- Allow_Logon_Script_NetbiosDisabled-DFProperties-End -->
 
 <!-- Allow_Logon_Script_NetbiosDisabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -129,8 +125,7 @@ An excessively long interval can delay the system and inconvenience users. Howev
 <!-- MaxGPOScriptWaitPolicy-DFProperties-End -->
 
 <!-- MaxGPOScriptWaitPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -207,8 +202,7 @@ For DesktopSales, GPOs B and C are applied, but not GPO A. Therefore, the script
 <!-- Run_Computer_PS_Scripts_First-DFProperties-End -->
 
 <!-- Run_Computer_PS_Scripts_First-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -271,8 +265,7 @@ Also, see the "Run Logon Scripts Visible" setting.
 <!-- Run_Legacy_Logon_Script_Hidden-DFProperties-End -->
 
 <!-- Run_Legacy_Logon_Script_Hidden-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -333,8 +326,7 @@ Logoff scripts are batch files of instructions that run when the user logs off. 
 <!-- Run_Logoff_Script_Visible-DFProperties-End -->
 
 <!-- Run_Logoff_Script_Visible-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -395,8 +387,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- Run_Logon_Script_Sync_1-DFProperties-End -->
 
 <!-- Run_Logon_Script_Sync_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -457,8 +448,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- Run_Logon_Script_Sync_2-DFProperties-End -->
 
 <!-- Run_Logon_Script_Sync_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -519,8 +509,7 @@ Logon scripts are batch files of instructions that run when the user logs on. By
 <!-- Run_Logon_Script_Visible-DFProperties-End -->
 
 <!-- Run_Logon_Script_Visible-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -581,8 +570,7 @@ Shutdown scripts are batch files of instructions that run when the user restarts
 <!-- Run_Shutdown_Script_Visible-DFProperties-End -->
 
 <!-- Run_Shutdown_Script_Visible-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -646,8 +634,7 @@ Startup scripts are batch files that run before the user is invited to log on. B
 <!-- Run_Startup_Script_Sync-DFProperties-End -->
 
 <!-- Run_Startup_Script_Sync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -711,8 +698,7 @@ Startup scripts are batch files of instructions that run before the user is invi
 <!-- Run_Startup_Script_Visible-DFProperties-End -->
 
 <!-- Run_Startup_Script_Visible-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -794,8 +780,7 @@ For Tamara, GPOs B and C are applied, but not GPO A. Therefore, the scripts for 
 <!-- Run_User_PS_Scripts_First-DFProperties-End -->
 
 <!-- Run_User_PS_Scripts_First-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AppCompat Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_AppCompat-Begin -->
 # Policy CSP - ADMX_AppCompat
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_AppCompat-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -70,8 +67,7 @@ If the status is set to Not Configured, the OS falls back on a local policy set 
 <!-- AppCompatPrevent16BitMach-DFProperties-End -->
 
 <!-- AppCompatPrevent16BitMach-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -128,8 +124,7 @@ The compatibility property page displays a list of options that can be selected 
 <!-- AppCompatRemoveProgramCompatPropPage-DFProperties-End -->
 
 <!-- AppCompatRemoveProgramCompatPropPage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -192,8 +187,7 @@ Disabling telemetry will take effect on any newly launched applications. To ensu
 <!-- AppCompatTurnOffApplicationImpactTelemetry-DFProperties-End -->
 
 <!-- AppCompatTurnOffApplicationImpactTelemetry-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -259,8 +253,7 @@ This option is useful to server administrators who require faster performance an
 <!-- AppCompatTurnOffEngine-DFProperties-End -->
 
 <!-- AppCompatTurnOffEngine-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -315,8 +308,7 @@ This setting exists only for backward compatibility, and is not valid for this v
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_1-DFProperties-End -->
 
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -380,8 +372,7 @@ The PCA monitors applications run by the user. When a potential compatibility is
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-DFProperties-End -->
 
 <!-- AppCompatTurnOffProgramCompatibilityAssistant_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -445,8 +436,7 @@ The Inventory Collector inventories applications, files, devices, and drivers on
 <!-- AppCompatTurnOffProgramInventory-DFProperties-End -->
 
 <!-- AppCompatTurnOffProgramInventory-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -511,8 +501,7 @@ Please reboot the system after changing the setting to ensure that your system a
 <!-- AppCompatTurnOffSwitchBack-DFProperties-End -->
 
 <!-- AppCompatTurnOffSwitchBack-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -573,8 +562,7 @@ Steps Recorder keeps a record of steps taken by the user. The data generated by 
 <!-- AppCompatTurnOffUserActionRecord-DFProperties-End -->
 
 <!-- AppCompatTurnOffUserActionRecord-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

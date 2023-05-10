@@ -4,7 +4,7 @@ description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2059,8 +2059,7 @@ To validate this policy, do the following steps:
 
 <!-- ShowOrHideMostUsedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-
-- If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
+If you enable this policy setting, you can configure Start menu to show or hide the list of user's most used apps, regardless of user settings.
 
 Selecting "Show" will force the "Most used" list to be shown, and user cannot change to hide it using the Settings app.
 
@@ -2068,7 +2067,7 @@ Selecting "Hide" will force the "Most used" list to be hidden, and user cannot c
 
 Selecting "Not Configured", or if you disable or do not configure this policy setting, all will allow users to turn on or off the display of "Most used" list using the Settings app. This is default behavior.
 
-**Note** configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
+Note configuring this policy to "Show" or "Hide" on supported versions of Windows 10 will supercede any policy setting of "Remove frequent programs list from the Start Menu" (which manages same part of Start menu but with fewer options).
 <!-- ShowOrHideMostUsedApps-Description-End -->
 
 <!-- ShowOrHideMostUsedApps-Editable-Begin -->

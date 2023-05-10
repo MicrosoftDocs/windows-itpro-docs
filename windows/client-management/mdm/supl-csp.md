@@ -4,7 +4,7 @@ description: Learn more about the SUPL CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -392,7 +392,7 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1. **Note** that most clients do not support this behavior. This value manages the settings for both SUPL and v2 UPL. If a phone is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
+This setting is deprecated in Windows 10. Optional. Boolean. Specifies whether the location toggle on the location screen in Settings is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1. Note that most clients do not support this behavior. This value manages the settings for both SUPL and v2 UPL. If a phone is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Description-End -->
 
 <!-- Device-SUPL1-Ext-Microsoft-LocMasterSwitchDependencyNII-Editable-Begin -->

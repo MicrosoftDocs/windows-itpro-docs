@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TabletPCInputPanel Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_TabletPCInputPanel-Begin -->
 # Policy CSP - ADMX_TabletPCInputPanel
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_TabletPCInputPanel-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -67,8 +64,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- AutoComplete_1-DFProperties-End -->
 
 <!-- AutoComplete_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -131,8 +127,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- AutoComplete_2-DFProperties-End -->
 
 <!-- AutoComplete_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -198,8 +193,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- EdgeTarget_1-DFProperties-End -->
 
 <!-- EdgeTarget_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -265,8 +259,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- EdgeTarget_2-DFProperties-End -->
 
 <!-- EdgeTarget_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -332,8 +325,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTarget_1-DFProperties-End -->
 
 <!-- IPTIPTarget_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -399,8 +391,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTarget_2-DFProperties-End -->
 
 <!-- IPTIPTarget_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -463,8 +454,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTouchTarget_1-DFProperties-End -->
 
 <!-- IPTIPTouchTarget_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -527,8 +517,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTouchTarget_2-DFProperties-End -->
 
 <!-- IPTIPTouchTarget_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -602,8 +591,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- PasswordSecurity_1-DFProperties-End -->
 
 <!-- PasswordSecurity_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -677,8 +665,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- PasswordSecurity_2-DFProperties-End -->
 
 <!-- PasswordSecurity_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -741,8 +728,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- Prediction_1-DFProperties-End -->
 
 <!-- Prediction_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -805,8 +791,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- Prediction_2-DFProperties-End -->
 
 <!-- Prediction_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -869,8 +854,7 @@ Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 
 <!-- RareChar_1-DFProperties-End -->
 
 <!-- RareChar_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -933,8 +917,7 @@ Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 
 <!-- RareChar_2-DFProperties-End -->
 
 <!-- RareChar_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1003,8 +986,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- ScratchOut_1-DFProperties-End -->
 
 <!-- ScratchOut_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1073,8 +1055,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- ScratchOut_2-DFProperties-End -->
 
 <!-- ScratchOut_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

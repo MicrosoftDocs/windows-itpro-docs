@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/07/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -285,7 +285,7 @@ If not specified, the default built-in local administrator account will be locat
 
 If specified, the specified account's password will be managed.
 
-**Note** if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting will not cause the account to be created.
+Note if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting will not cause the account to be created.
 <!-- Device-Policies-AdministratorAccountName-Description-End -->
 
 <!-- Device-Policies-AdministratorAccountName-Editable-Begin -->

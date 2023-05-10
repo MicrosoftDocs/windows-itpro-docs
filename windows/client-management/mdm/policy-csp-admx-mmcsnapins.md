@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MMCSnapins Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_MMCSnapins-Begin -->
 # Policy CSP - ADMX_MMCSnapins
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_MMCSnapins-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -73,8 +70,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ActiveDirDomTrusts-DFProperties-End -->
 
 <!-- MMC_ActiveDirDomTrusts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -143,8 +139,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ActiveDirSitesServices-DFProperties-End -->
 
 <!-- MMC_ActiveDirSitesServices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -213,8 +208,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ActiveDirUsersComp-DFProperties-End -->
 
 <!-- MMC_ActiveDirUsersComp-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -283,8 +277,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ADMComputers_1-DFProperties-End -->
 
 <!-- MMC_ADMComputers_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -353,8 +346,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ADMComputers_2-DFProperties-End -->
 
 <!-- MMC_ADMComputers_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -423,8 +415,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ADMUsers_1-DFProperties-End -->
 
 <!-- MMC_ADMUsers_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -493,8 +484,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ADMUsers_2-DFProperties-End -->
 
 <!-- MMC_ADMUsers_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -563,8 +553,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ADSI-DFProperties-End -->
 
 <!-- MMC_ADSI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -633,8 +622,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_AppleTalkRouting-DFProperties-End -->
 
 <!-- MMC_AppleTalkRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -703,8 +691,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_AuthMan-DFProperties-End -->
 
 <!-- MMC_AuthMan-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -773,8 +760,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_CertAuth-DFProperties-End -->
 
 <!-- MMC_CertAuth-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -843,8 +829,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_CertAuthPolSet-DFProperties-End -->
 
 <!-- MMC_CertAuthPolSet-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -913,8 +898,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_Certs-DFProperties-End -->
 
 <!-- MMC_Certs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -983,8 +967,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_CertsTemplate-DFProperties-End -->
 
 <!-- MMC_CertsTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1053,8 +1036,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ComponentServices-DFProperties-End -->
 
 <!-- MMC_ComponentServices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1123,8 +1105,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ComputerManagement-DFProperties-End -->
 
 <!-- MMC_ComputerManagement-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1193,8 +1174,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ConnectionSharingNAT-DFProperties-End -->
 
 <!-- MMC_ConnectionSharingNAT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1263,8 +1243,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DCOMCFG-DFProperties-End -->
 
 <!-- MMC_DCOMCFG-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1333,8 +1312,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DeviceManager_1-DFProperties-End -->
 
 <!-- MMC_DeviceManager_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1403,8 +1381,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DeviceManager_2-DFProperties-End -->
 
 <!-- MMC_DeviceManager_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1473,8 +1450,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DFS-DFProperties-End -->
 
 <!-- MMC_DFS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1543,8 +1519,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DHCPRelayMgmt-DFProperties-End -->
 
 <!-- MMC_DHCPRelayMgmt-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1613,8 +1588,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DiskDefrag-DFProperties-End -->
 
 <!-- MMC_DiskDefrag-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1683,8 +1657,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_DiskMgmt-DFProperties-End -->
 
 <!-- MMC_DiskMgmt-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1753,8 +1726,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_EnterprisePKI-DFProperties-End -->
 
 <!-- MMC_EnterprisePKI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1823,8 +1795,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_EventViewer_1-DFProperties-End -->
 
 <!-- MMC_EventViewer_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1893,8 +1864,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_EventViewer_2-DFProperties-End -->
 
 <!-- MMC_EventViewer_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1963,8 +1933,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_EventViewer_3-DFProperties-End -->
 
 <!-- MMC_EventViewer_3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2033,8 +2002,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_EventViewer_4-DFProperties-End -->
 
 <!-- MMC_EventViewer_4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2103,8 +2071,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_FailoverClusters-DFProperties-End -->
 
 <!-- MMC_FailoverClusters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2173,8 +2140,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_FAXService-DFProperties-End -->
 
 <!-- MMC_FAXService-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2243,8 +2209,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_FolderRedirection_1-DFProperties-End -->
 
 <!-- MMC_FolderRedirection_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2313,8 +2278,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_FolderRedirection_2-DFProperties-End -->
 
 <!-- MMC_FolderRedirection_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2383,8 +2347,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_FrontPageExt-DFProperties-End -->
 
 <!-- MMC_FrontPageExt-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2453,8 +2416,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_GroupPolicyManagementSnapIn-DFProperties-End -->
 
 <!-- MMC_GroupPolicyManagementSnapIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2523,8 +2485,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_GroupPolicySnapIn-DFProperties-End -->
 
 <!-- MMC_GroupPolicySnapIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2593,8 +2554,7 @@ When the Group Policy tab is inaccessible, it does not appear in the site, domai
 <!-- MMC_GroupPolicyTab-DFProperties-End -->
 
 <!-- MMC_GroupPolicyTab-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2663,8 +2623,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_HRA-DFProperties-End -->
 
 <!-- MMC_HRA-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2733,8 +2692,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IAS-DFProperties-End -->
 
 <!-- MMC_IAS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2803,8 +2761,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IASLogging-DFProperties-End -->
 
 <!-- MMC_IASLogging-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2873,8 +2830,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IEMaintenance_1-DFProperties-End -->
 
 <!-- MMC_IEMaintenance_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2943,8 +2899,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IEMaintenance_2-DFProperties-End -->
 
 <!-- MMC_IEMaintenance_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3013,8 +2968,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IGMPRouting-DFProperties-End -->
 
 <!-- MMC_IGMPRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3083,8 +3037,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IIS-DFProperties-End -->
 
 <!-- MMC_IIS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3153,8 +3106,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IndexingService-DFProperties-End -->
 
 <!-- MMC_IndexingService-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3223,8 +3175,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IPRouting-DFProperties-End -->
 
 <!-- MMC_IPRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3293,8 +3244,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IpSecManage-DFProperties-End -->
 
 <!-- MMC_IpSecManage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3363,8 +3313,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IPSecManage_GP-DFProperties-End -->
 
 <!-- MMC_IPSecManage_GP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3433,8 +3382,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IpSecMonitor-DFProperties-End -->
 
 <!-- MMC_IpSecMonitor-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3503,8 +3451,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IPXRIPRouting-DFProperties-End -->
 
 <!-- MMC_IPXRIPRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3573,8 +3520,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IPXRouting-DFProperties-End -->
 
 <!-- MMC_IPXRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3643,8 +3589,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_IPXSAPRouting-DFProperties-End -->
 
 <!-- MMC_IPXSAPRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3713,8 +3658,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_LocalUsersGroups-DFProperties-End -->
 
 <!-- MMC_LocalUsersGroups-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3783,8 +3727,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_LogicalMappedDrives-DFProperties-End -->
 
 <!-- MMC_LogicalMappedDrives-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3853,8 +3796,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_NapSnap-DFProperties-End -->
 
 <!-- MMC_NapSnap-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3923,8 +3865,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_NapSnap_GP-DFProperties-End -->
 
 <!-- MMC_NapSnap_GP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3993,8 +3934,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_Net_Framework-DFProperties-End -->
 
 <!-- MMC_Net_Framework-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4063,8 +4003,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_NPSUI-DFProperties-End -->
 
 <!-- MMC_NPSUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4133,8 +4072,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_OCSP-DFProperties-End -->
 
 <!-- MMC_OCSP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4203,8 +4141,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_OSPFRouting-DFProperties-End -->
 
 <!-- MMC_OSPFRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4273,8 +4210,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_PerfLogsAlerts-DFProperties-End -->
 
 <!-- MMC_PerfLogsAlerts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4343,8 +4279,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_PublicKey-DFProperties-End -->
 
 <!-- MMC_PublicKey-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4413,8 +4348,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_QoSAdmission-DFProperties-End -->
 
 <!-- MMC_QoSAdmission-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4483,8 +4417,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RAS_DialinUser-DFProperties-End -->
 
 <!-- MMC_RAS_DialinUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4553,8 +4486,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RemoteAccess-DFProperties-End -->
 
 <!-- MMC_RemoteAccess-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4623,8 +4555,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RemoteDesktop-DFProperties-End -->
 
 <!-- MMC_RemoteDesktop-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4693,8 +4624,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RemStore-DFProperties-End -->
 
 <!-- MMC_RemStore-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4763,8 +4693,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ResultantSetOfPolicySnapIn-DFProperties-End -->
 
 <!-- MMC_ResultantSetOfPolicySnapIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4833,8 +4762,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RIPRouting-DFProperties-End -->
 
 <!-- MMC_RIPRouting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4903,8 +4831,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RIS-DFProperties-End -->
 
 <!-- MMC_RIS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4973,8 +4900,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_Routing-DFProperties-End -->
 
 <!-- MMC_Routing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5043,8 +4969,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RRA-DFProperties-End -->
 
 <!-- MMC_RRA-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5113,8 +5038,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_RSM-DFProperties-End -->
 
 <!-- MMC_RSM-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5183,8 +5107,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SCA-DFProperties-End -->
 
 <!-- MMC_SCA-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5253,8 +5176,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ScriptsMachine_1-DFProperties-End -->
 
 <!-- MMC_ScriptsMachine_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5323,8 +5245,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ScriptsMachine_2-DFProperties-End -->
 
 <!-- MMC_ScriptsMachine_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5393,8 +5314,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ScriptsUser_1-DFProperties-End -->
 
 <!-- MMC_ScriptsUser_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5463,8 +5383,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ScriptsUser_2-DFProperties-End -->
 
 <!-- MMC_ScriptsUser_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5533,8 +5452,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SecuritySettings_1-DFProperties-End -->
 
 <!-- MMC_SecuritySettings_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5603,8 +5521,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SecuritySettings_2-DFProperties-End -->
 
 <!-- MMC_SecuritySettings_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5673,8 +5590,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SecurityTemplates-DFProperties-End -->
 
 <!-- MMC_SecurityTemplates-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5743,8 +5659,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SendConsoleMessage-DFProperties-End -->
 
 <!-- MMC_SendConsoleMessage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5813,8 +5728,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ServerManager-DFProperties-End -->
 
 <!-- MMC_ServerManager-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5883,8 +5797,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_ServiceDependencies-DFProperties-End -->
 
 <!-- MMC_ServiceDependencies-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5953,8 +5866,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_Services-DFProperties-End -->
 
 <!-- MMC_Services-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6023,8 +5935,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SharedFolders-DFProperties-End -->
 
 <!-- MMC_SharedFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6093,8 +6004,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SharedFolders_Ext-DFProperties-End -->
 
 <!-- MMC_SharedFolders_Ext-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6163,8 +6073,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SMTPProtocol-DFProperties-End -->
 
 <!-- MMC_SMTPProtocol-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6233,8 +6142,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SNMP-DFProperties-End -->
 
 <!-- MMC_SNMP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6303,8 +6211,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SoftwareInstalationComputers_1-DFProperties-End -->
 
 <!-- MMC_SoftwareInstalationComputers_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6373,8 +6280,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SoftwareInstalationComputers_2-DFProperties-End -->
 
 <!-- MMC_SoftwareInstalationComputers_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6443,8 +6349,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SoftwareInstallationUsers_1-DFProperties-End -->
 
 <!-- MMC_SoftwareInstallationUsers_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6513,8 +6418,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SoftwareInstallationUsers_2-DFProperties-End -->
 
 <!-- MMC_SoftwareInstallationUsers_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6583,8 +6487,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SysInfo-DFProperties-End -->
 
 <!-- MMC_SysInfo-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6653,8 +6556,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_SysProp-DFProperties-End -->
 
 <!-- MMC_SysProp-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6723,8 +6625,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_Telephony-DFProperties-End -->
 
 <!-- MMC_Telephony-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6793,8 +6694,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_TerminalServices-DFProperties-End -->
 
 <!-- MMC_TerminalServices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6863,8 +6763,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_TPMManagement-DFProperties-End -->
 
 <!-- MMC_TPMManagement-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6933,8 +6832,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_WindowsFirewall-DFProperties-End -->
 
 <!-- MMC_WindowsFirewall-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7003,8 +6901,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_WindowsFirewall_GP-DFProperties-End -->
 
 <!-- MMC_WindowsFirewall_GP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7073,8 +6970,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_WiredNetworkPolicy-DFProperties-End -->
 
 <!-- MMC_WiredNetworkPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7143,8 +7039,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_WirelessMon-DFProperties-End -->
 
 <!-- MMC_WirelessMon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7213,8 +7108,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_WirelessNetworkPolicy-DFProperties-End -->
 
 <!-- MMC_WirelessNetworkPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7283,8 +7177,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 <!-- MMC_WMI-DFProperties-End -->
 
 <!-- MMC_WMI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

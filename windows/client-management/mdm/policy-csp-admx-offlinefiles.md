@@ -4,7 +4,7 @@ description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_OfflineFiles-Begin -->
 # Policy CSP - ADMX_OfflineFiles
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_OfflineFiles-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -65,8 +62,7 @@ This setting automatically extends the "make available offline" setting to all n
 <!-- Pol_AlwaysPinSubFolders-DFProperties-End -->
 
 <!-- Pol_AlwaysPinSubFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -130,8 +126,7 @@ This policy setting lists network files and folders that are always available fo
 <!-- Pol_AssignedOfflineFiles_1-DFProperties-End -->
 
 <!-- Pol_AssignedOfflineFiles_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ This policy setting lists network files and folders that are always available fo
 <!-- Pol_AssignedOfflineFiles_2-DFProperties-End -->
 
 <!-- Pol_AssignedOfflineFiles_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -255,8 +249,7 @@ You can also configure Background Sync for network shares that are in user selec
 <!-- Pol_BackgroundSyncSettings-DFProperties-End -->
 
 <!-- Pol_BackgroundSyncSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -327,8 +320,7 @@ This setting replaces the Default Cache Size setting used by pre-Windows Vista s
 <!-- Pol_CacheSize-DFProperties-End -->
 
 <!-- Pol_CacheSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -389,8 +381,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_CustomGoOfflineActions_1-DFProperties-End -->
 
 <!-- Pol_CustomGoOfflineActions_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -451,8 +442,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_CustomGoOfflineActions_2-DFProperties-End -->
 
 <!-- Pol_CustomGoOfflineActions_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -521,8 +511,7 @@ This setting does not limit the disk space available for files that user's make 
 <!-- Pol_DefCacheSize-DFProperties-End -->
 
 <!-- Pol_DefCacheSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -585,8 +574,7 @@ This policy setting determines whether the Offline Files feature is enabled. Off
 <!-- Pol_Enabled-DFProperties-End -->
 
 <!-- Pol_Enabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -654,8 +642,7 @@ This setting is applied at user logon. If this setting is changed after user log
 <!-- Pol_EncryptOfflineFiles-DFProperties-End -->
 
 <!-- Pol_EncryptOfflineFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -725,8 +712,7 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 <!-- Pol_EventLoggingLevel_1-DFProperties-End -->
 
 <!-- Pol_EventLoggingLevel_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -795,8 +781,7 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 <!-- Pol_EventLoggingLevel_2-DFProperties-End -->
 
 <!-- Pol_EventLoggingLevel_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -854,8 +839,7 @@ This policy setting enables administrators to block certain file types from bein
 <!-- Pol_ExclusionListSettings-DFProperties-End -->
 
 <!-- Pol_ExclusionListSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -918,8 +902,7 @@ To use this setting, type the file name extension in the "Extensions" box. To ty
 <!-- Pol_ExtExclusionList-DFProperties-End -->
 
 <!-- Pol_ExtExclusionList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -992,8 +975,7 @@ Also, see the "Non-default server disconnect actions" setting.
 <!-- Pol_GoOfflineAction_1-DFProperties-End -->
 
 <!-- Pol_GoOfflineAction_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1066,8 +1048,7 @@ Also, see the "Non-default server disconnect actions" setting.
 <!-- Pol_GoOfflineAction_2-DFProperties-End -->
 
 <!-- Pol_GoOfflineAction_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1130,8 +1111,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_NoCacheViewer_1-DFProperties-End -->
 
 <!-- Pol_NoCacheViewer_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1195,8 +1175,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_NoCacheViewer_2-DFProperties-End -->
 
 <!-- Pol_NoCacheViewer_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1260,8 +1239,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_NoConfigCache_1-DFProperties-End -->
 
 <!-- Pol_NoConfigCache_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1325,8 +1303,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_NoConfigCache_2-DFProperties-End -->
 
 <!-- Pol_NoConfigCache_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1370,7 +1347,7 @@ This policy setting prevents users from making network files and folders availab
 
 - If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
-**Note**:
+Note:
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
 
@@ -1391,8 +1368,7 @@ The "Make Available Offline" command is called "Always available offline" on com
 <!-- Pol_NoMakeAvailableOffline_1-DFProperties-End -->
 
 <!-- Pol_NoMakeAvailableOffline_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1436,7 +1412,7 @@ This policy setting prevents users from making network files and folders availab
 
 - If you disable or do not configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
-**Note**:
+Note:
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
 
@@ -1457,8 +1433,7 @@ The "Make Available Offline" command is called "Always available offline" on com
 <!-- Pol_NoMakeAvailableOffline_2-DFProperties-End -->
 
 <!-- Pol_NoMakeAvailableOffline_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1504,7 +1479,7 @@ This policy setting allows you to manage a list of files and folders for which y
 
 - If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
-**Note**:
+Note:
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
 
@@ -1529,8 +1504,7 @@ If the "Remove 'Make Available Offline' command" policy setting is enabled, this
 <!-- Pol_NoPinFiles_1-DFProperties-End -->
 
 <!-- Pol_NoPinFiles_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1575,7 +1549,7 @@ This policy setting allows you to manage a list of files and folders for which y
 
 - If you do not configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
-**Note**:
+Note:
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
 
@@ -1600,8 +1574,7 @@ If the "Remove 'Make Available Offline' command" policy setting is enabled, this
 <!-- Pol_NoPinFiles_2-DFProperties-End -->
 
 <!-- Pol_NoPinFiles_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1670,8 +1643,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_NoReminders_1-DFProperties-End -->
 
 <!-- Pol_NoReminders_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1741,8 +1713,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_NoReminders_2-DFProperties-End -->
 
 <!-- Pol_NoReminders_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1805,8 +1776,7 @@ This policy setting is triggered by the configured round trip network latency va
 <!-- Pol_OnlineCachingSettings-DFProperties-End -->
 
 <!-- Pol_OnlineCachingSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1867,8 +1837,7 @@ If you disable this setting or do not configure it, automatically and manually c
 <!-- Pol_PurgeAtLogoff-DFProperties-End -->
 
 <!-- Pol_PurgeAtLogoff-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1927,8 +1896,7 @@ This policy setting allows you to turn on economical application of administrati
 <!-- Pol_QuickAdimPin-DFProperties-End -->
 
 <!-- Pol_QuickAdimPin-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1992,8 +1960,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderFreq_1-DFProperties-End -->
 
 <!-- Pol_ReminderFreq_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2056,8 +2023,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderFreq_2-DFProperties-End -->
 
 <!-- Pol_ReminderFreq_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2115,8 +2081,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderInitTimeout_1-DFProperties-End -->
 
 <!-- Pol_ReminderInitTimeout_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2174,8 +2139,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderInitTimeout_2-DFProperties-End -->
 
 <!-- Pol_ReminderInitTimeout_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2233,8 +2197,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderTimeout_1-DFProperties-End -->
 
 <!-- Pol_ReminderTimeout_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2292,8 +2255,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_ReminderTimeout_2-DFProperties-End -->
 
 <!-- Pol_ReminderTimeout_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2361,8 +2323,7 @@ In Windows 8 or Windows Server 2012, set the Latency threshold to 1ms to keep us
 <!-- Pol_SlowLinkSettings-DFProperties-End -->
 
 <!-- Pol_SlowLinkSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2426,8 +2387,7 @@ When a connection is considered slow, Offline Files automatically adjust its beh
 <!-- Pol_SlowLinkSpeed-DFProperties-End -->
 
 <!-- Pol_SlowLinkSpeed-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2494,8 +2454,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_SyncAtLogoff_1-DFProperties-End -->
 
 <!-- Pol_SyncAtLogoff_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2563,8 +2522,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_SyncAtLogoff_2-DFProperties-End -->
 
 <!-- Pol_SyncAtLogoff_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2632,8 +2590,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_SyncAtLogon_1-DFProperties-End -->
 
 <!-- Pol_SyncAtLogon_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2701,8 +2658,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 <!-- Pol_SyncAtLogon_2-DFProperties-End -->
 
 <!-- Pol_SyncAtLogon_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2764,8 +2720,7 @@ Determines whether offline files are synchonized before a computer is suspended.
 <!-- Pol_SyncAtSuspend_1-DFProperties-End -->
 
 <!-- Pol_SyncAtSuspend_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2826,8 +2781,7 @@ Determines whether offline files are synchonized before a computer is suspended.
 <!-- Pol_SyncAtSuspend_2-DFProperties-End -->
 
 <!-- Pol_SyncAtSuspend_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2885,8 +2839,7 @@ This policy setting determines whether offline files are synchronized in the bac
 <!-- Pol_SyncOnCostedNetwork-DFProperties-End -->
 
 <!-- Pol_SyncOnCostedNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2945,8 +2898,7 @@ This policy setting removes the "Work offline" command from Explorer, preventing
 <!-- Pol_WorkOfflineDisabled_1-DFProperties-End -->
 
 <!-- Pol_WorkOfflineDisabled_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3005,8 +2957,7 @@ This policy setting removes the "Work offline" command from Explorer, preventing
 <!-- Pol_WorkOfflineDisabled_2-DFProperties-End -->
 
 <!-- Pol_WorkOfflineDisabled_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

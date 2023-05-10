@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DnsClient Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_DnsClient-Begin -->
 # Policy CSP - ADMX_DnsClient
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_DnsClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -63,8 +60,7 @@ Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualifie
 <!-- DNS_AllowFQDNNetBiosQueries-DFProperties-End -->
 
 <!-- DNS_AllowFQDNNetBiosQueries-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -131,8 +127,7 @@ If attaching suffixes is allowed, and a DNS client with a primary domain suffix 
 <!-- DNS_AppendToMultiLabelName-DFProperties-End -->
 
 <!-- DNS_AppendToMultiLabelName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -193,8 +188,7 @@ To use this policy setting, click Enabled, and then enter a string value represe
 <!-- DNS_Domain-DFProperties-End -->
 
 <!-- DNS_Domain-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -270,8 +264,7 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 <!-- DNS_DomainNameDevolutionLevel-DFProperties-End -->
 
 <!-- DNS_DomainNameDevolutionLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -330,8 +323,7 @@ Specifies whether the DNS client should convert internationalized domain names (
 <!-- DNS_IdnEncoding-DFProperties-End -->
 
 <!-- DNS_IdnEncoding-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -390,8 +382,7 @@ Specifies whether the DNS client should convert internationalized domain names (
 <!-- DNS_IdnMapping-DFProperties-End -->
 
 <!-- DNS_IdnMapping-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -452,8 +443,7 @@ To use this policy setting, click Enabled, and then enter a space-delimited list
 <!-- DNS_NameServer-DFProperties-End -->
 
 <!-- DNS_NameServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -514,8 +504,7 @@ Specifies that responses from link local name resolution protocols received over
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-DFProperties-End -->
 
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -581,8 +570,7 @@ You can use this policy setting to prevent users, including local administrators
 <!-- DNS_PrimaryDnsSuffix-DFProperties-End -->
 
 <!-- DNS_PrimaryDnsSuffix-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -647,8 +635,7 @@ For example, with a computer name of mycomputer, a primary DNS suffix of microso
 <!-- DNS_RegisterAdapterName-DFProperties-End -->
 
 <!-- DNS_RegisterAdapterName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -717,8 +704,7 @@ Register only if A record registration succeeds: Computers will attempt to regis
 <!-- DNS_RegisterReverseLookup-DFProperties-End -->
 
 <!-- DNS_RegisterReverseLookup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -776,8 +762,7 @@ Specifies if DNS dynamic update is enabled. Computers configured for DNS dynamic
 <!-- DNS_RegistrationEnabled-DFProperties-End -->
 
 <!-- DNS_RegistrationEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -840,8 +825,7 @@ During dynamic update of resource records in a zone that does not use Secure Dyn
 <!-- DNS_RegistrationOverwritesInConflict-DFProperties-End -->
 
 <!-- DNS_RegistrationOverwritesInConflict-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -907,8 +891,7 @@ To specify the registration refresh interval, click Enabled and then enter a val
 <!-- DNS_RegistrationRefreshInterval-DFProperties-End -->
 
 <!-- DNS_RegistrationRefreshInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -968,8 +951,7 @@ To specify the TTL, click Enabled and then enter a value in seconds (for example
 <!-- DNS_RegistrationTtl-DFProperties-End -->
 
 <!-- DNS_RegistrationTtl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1033,8 +1015,7 @@ To use this policy setting, click Enabled, and then enter a string value represe
 <!-- DNS_SearchList-DFProperties-End -->
 
 <!-- DNS_SearchList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1092,8 +1073,7 @@ Specifies that a multi-homed DNS client should optimize name resolution across n
 <!-- DNS_SmartMultiHomedNameResolution-DFProperties-End -->
 
 <!-- DNS_SmartMultiHomedNameResolution-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1155,8 +1135,7 @@ Specifies that the DNS client should prefer responses from link local name resol
 <!-- DNS_SmartProtocolReorder-DFProperties-End -->
 
 <!-- DNS_SmartProtocolReorder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1223,8 +1202,7 @@ Only secure - computers send only secure dynamic updates.
 <!-- DNS_UpdateSecurityLevel-DFProperties-End -->
 
 <!-- DNS_UpdateSecurityLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1284,8 +1262,7 @@ By default, a DNS client that is configured to perform dynamic DNS update will u
 <!-- DNS_UpdateTopLevelDomainZones-DFProperties-End -->
 
 <!-- DNS_UpdateTopLevelDomainZones-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1362,8 +1339,7 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 <!-- DNS_UseDomainNameDevolution-DFProperties-End -->
 
 <!-- DNS_UseDomainNameDevolution-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1424,8 +1400,7 @@ LLMNR is a secondary name resolution protocol. With LLMNR, queries are sent usin
 <!-- Turn_Off_Multicast-DFProperties-End -->
 
 <!-- Turn_Off_Multicast-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

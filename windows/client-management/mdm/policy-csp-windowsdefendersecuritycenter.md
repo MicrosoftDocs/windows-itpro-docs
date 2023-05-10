@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderSecurityCenter Area in Policy C
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1035,6 +1035,7 @@ Enabled:
 Your company contact information will be displayed in notifications that come from Windows Security.
 
 After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
+
 -Specify contact phone number or Skype ID
 -Specify contact email number or email ID
 -Specify contact website
@@ -1113,6 +1114,7 @@ Enabled:
 Your company contact information will be displayed in a flyout menu in Windows Security.
 
 After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
+
 -Specify contact phone number or Skype ID
 -Specify contact email number or email ID
 -Specify contact website

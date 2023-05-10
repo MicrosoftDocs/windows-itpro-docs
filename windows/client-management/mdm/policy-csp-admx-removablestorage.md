@@ -4,7 +4,7 @@ description: Learn more about the ADMX_RemovableStorage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_RemovableStorage-Begin -->
 # Policy CSP - ADMX_RemovableStorage
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_RemovableStorage-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -66,8 +63,7 @@ This policy setting configures the amount of time (in seconds) that the operatin
 <!-- AccessRights_RebootTime_1-DFProperties-End -->
 
 <!-- AccessRights_RebootTime_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -129,8 +125,7 @@ This policy setting configures the amount of time (in seconds) that the operatin
 <!-- AccessRights_RebootTime_2-DFProperties-End -->
 
 <!-- AccessRights_RebootTime_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -189,8 +184,7 @@ This policy setting denies execute access to the CD and DVD removable storage cl
 <!-- CDandDVD_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- CDandDVD_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -249,8 +243,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 <!-- CDandDVD_DenyRead_Access_1-DFProperties-End -->
 
 <!-- CDandDVD_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -309,8 +302,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 <!-- CDandDVD_DenyRead_Access_2-DFProperties-End -->
 
 <!-- CDandDVD_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -369,8 +361,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 <!-- CDandDVD_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- CDandDVD_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -429,8 +420,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 <!-- CDandDVD_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- CDandDVD_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -489,8 +479,7 @@ This policy setting denies read access to custom removable storage classes.
 <!-- CustomClasses_DenyRead_Access_1-DFProperties-End -->
 
 <!-- CustomClasses_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -549,8 +538,7 @@ This policy setting denies read access to custom removable storage classes.
 <!-- CustomClasses_DenyRead_Access_2-DFProperties-End -->
 
 <!-- CustomClasses_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -609,8 +597,7 @@ This policy setting denies write access to custom removable storage classes.
 <!-- CustomClasses_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- CustomClasses_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -669,8 +656,7 @@ This policy setting denies write access to custom removable storage classes.
 <!-- CustomClasses_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- CustomClasses_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -729,8 +715,7 @@ This policy setting denies execute access to the Floppy Drives removable storage
 <!-- FloppyDrives_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- FloppyDrives_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -789,8 +774,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 <!-- FloppyDrives_DenyRead_Access_1-DFProperties-End -->
 
 <!-- FloppyDrives_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -849,8 +833,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 <!-- FloppyDrives_DenyRead_Access_2-DFProperties-End -->
 
 <!-- FloppyDrives_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -909,8 +892,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 <!-- FloppyDrives_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -969,8 +951,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 <!-- FloppyDrives_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1029,8 +1010,7 @@ This policy setting grants normal users direct access to removable storage devic
 <!-- Removable_Remote_Allow_Access-DFProperties-End -->
 
 <!-- Removable_Remote_Allow_Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1089,8 +1069,7 @@ This policy setting denies execute access to removable disks.
 <!-- RemovableDisks_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- RemovableDisks_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1149,8 +1128,7 @@ This policy setting denies read access to removable disks.
 <!-- RemovableDisks_DenyRead_Access_1-DFProperties-End -->
 
 <!-- RemovableDisks_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1209,8 +1187,7 @@ This policy setting denies read access to removable disks.
 <!-- RemovableDisks_DenyRead_Access_2-DFProperties-End -->
 
 <!-- RemovableDisks_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1272,8 +1249,7 @@ This policy setting denies write access to removable disks.
 <!-- RemovableDisks_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- RemovableDisks_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1334,8 +1310,7 @@ This policy setting takes precedence over any individual removable storage polic
 <!-- RemovableStorageClasses_DenyAll_Access_1-DFProperties-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1396,8 +1371,7 @@ This policy setting takes precedence over any individual removable storage polic
 <!-- RemovableStorageClasses_DenyAll_Access_2-DFProperties-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1456,8 +1430,7 @@ This policy setting denies execute access to the Tape Drive removable storage cl
 <!-- TapeDrives_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- TapeDrives_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1516,8 +1489,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 <!-- TapeDrives_DenyRead_Access_1-DFProperties-End -->
 
 <!-- TapeDrives_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1576,8 +1548,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 <!-- TapeDrives_DenyRead_Access_2-DFProperties-End -->
 
 <!-- TapeDrives_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1636,8 +1607,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 <!-- TapeDrives_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- TapeDrives_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1696,8 +1666,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 <!-- TapeDrives_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- TapeDrives_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1756,8 +1725,7 @@ This policy setting denies read access to removable disks, which may include med
 <!-- WPDDevices_DenyRead_Access_1-DFProperties-End -->
 
 <!-- WPDDevices_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1816,8 +1784,7 @@ This policy setting denies read access to removable disks, which may include med
 <!-- WPDDevices_DenyRead_Access_2-DFProperties-End -->
 
 <!-- WPDDevices_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1876,8 +1843,7 @@ This policy setting denies write access to removable disks, which may include me
 <!-- WPDDevices_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- WPDDevices_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1936,8 +1902,7 @@ This policy setting denies write access to removable disks, which may include me
 <!-- WPDDevices_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- WPDDevices_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

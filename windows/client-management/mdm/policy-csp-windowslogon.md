@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,13 +16,9 @@ ms.topic: reference
 <!-- WindowsLogon-Begin -->
 # Policy CSP - WindowsLogon
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsLogon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -72,8 +68,7 @@ After enabling this policy, you can configure its settings through the ConfigAut
 <!-- AllowAutomaticRestartSignOn-DFProperties-End -->
 
 <!-- AllowAutomaticRestartSignOn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -117,6 +112,7 @@ This policy setting controls the configuration under which an automatic restart 
 
 1. "Enabled if BitLocker is on and not suspended" specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device's hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 BitLocker is suspended during updates if:
+
   - The device doesn't have TPM 2.0 and PCR7, or
   - The device doesn't use a TPM-only protector
 
@@ -139,8 +135,7 @@ BitLocker is suspended during updates if:
 <!-- ConfigAutomaticRestartSignOn-DFProperties-End -->
 
 <!-- ConfigAutomaticRestartSignOn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -198,8 +193,7 @@ This policy setting allows you to prevent app notifications from appearing on th
 <!-- DisableLockScreenAppNotifications-DFProperties-End -->
 
 <!-- DisableLockScreenAppNotifications-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -258,8 +252,7 @@ This policy setting allows you to control whether anyone can interact with avail
 <!-- DontDisplayNetworkSelectionUI-DFProperties-End -->
 
 <!-- DontDisplayNetworkSelectionUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -416,8 +409,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 <!-- EnableMPRNotifications-DFProperties-End -->
 
 <!-- EnableMPRNotifications-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -476,8 +468,7 @@ This policy setting allows local users to be enumerated on domain-joined compute
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-DFProperties-End -->
 
 <!-- EnumerateLocalUsersOnDomainJoinedComputers-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

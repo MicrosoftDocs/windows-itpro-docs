@@ -4,7 +4,7 @@ description: Learn more about the VPNv2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -870,8 +870,8 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- Device-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False : Do not Bypass for Local traffic
-True : ByPass VPN Interface for Local Traffic
+False: Do not Bypass for Local traffic
+True: ByPass VPN Interface for Local Traffic
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
 <!-- Device-{ProfileName}-ByPassForLocal-Description-End -->
@@ -5148,8 +5148,8 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- User-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False : Do not Bypass for Local traffic
-True : ByPass VPN Interface for Local Traffic
+False: Do not Bypass for Local traffic
+True: ByPass VPN Interface for Local Traffic
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
 <!-- User-{ProfileName}-ByPassForLocal-Description-End -->
@@ -7906,8 +7906,8 @@ Boolean value (true or false) for caching credentials.
 <!-- Description-Source-DDF -->
 Applicable only to AppContainer profiles.
 
-False : Do not show profile in Settings UI.
-True : Show profile in Settings UI.
+False: Do not show profile in Settings UI.
+True: Show profile in Settings UI.
 
 Optional. This node is only relevant for AppContainer profiles (i.e. using the VpnManagementAgent::AddProfileFromXmlAsync method).
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Description-End -->

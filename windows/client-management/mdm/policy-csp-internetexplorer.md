@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- InternetExplorer-Begin -->
 # Policy CSP - InternetExplorer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- InternetExplorer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -70,8 +67,7 @@ This policy setting allows you to add a specific list of search providers to the
 <!-- AddSearchProvider-DFProperties-End -->
 
 <!-- AddSearchProvider-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -134,8 +130,7 @@ This policy setting controls the ActiveX Filtering feature for websites that are
 <!-- AllowActiveXFiltering-DFProperties-End -->
 
 <!-- AllowActiveXFiltering-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -204,8 +199,7 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 <!-- AllowAddOnList-DFProperties-End -->
 
 <!-- AllowAddOnList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -266,8 +260,7 @@ This AutoComplete feature can remember and suggest User names and passwords on F
 <!-- AllowAutoComplete-DFProperties-End -->
 
 <!-- AllowAutoComplete-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -330,8 +323,7 @@ This policy setting allows you to turn on the certificate address mismatch secur
 <!-- AllowCertificateAddressMismatchWarning-DFProperties-End -->
 
 <!-- AllowCertificateAddressMismatchWarning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -398,8 +390,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- AllowDeletingBrowsingHistoryOnExit-DFProperties-End -->
 
 <!-- AllowDeletingBrowsingHistoryOnExit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -464,8 +455,7 @@ Enhanced Protected Mode provides additional protection against malicious website
 <!-- AllowEnhancedProtectedMode-DFProperties-End -->
 
 <!-- AllowEnhancedProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -530,8 +520,7 @@ This policy setting allows Internet Explorer to provide enhanced suggestions as 
 <!-- AllowEnhancedSuggestionsInAddressBar-DFProperties-End -->
 
 <!-- AllowEnhancedSuggestionsInAddressBar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -594,8 +583,7 @@ If you disable or don't configure this policy setting, the menu option won't app
 <!-- AllowEnterpriseModeFromToolsMenu-DFProperties-End -->
 
 <!-- AllowEnterpriseModeFromToolsMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -657,8 +645,7 @@ This policy setting lets you specify where to find the list of websites you want
 <!-- AllowEnterpriseModeSiteList-DFProperties-End -->
 
 <!-- AllowEnterpriseModeSiteList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -718,8 +705,7 @@ If you disable this policy, system defaults will be used.
 <!-- AllowFallbackToSSL3-DFProperties-End -->
 
 <!-- AllowFallbackToSSL3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -781,8 +767,7 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 <!-- AllowInternetExplorer7PolicyList-DFProperties-End -->
 
 <!-- AllowInternetExplorer7PolicyList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -846,8 +831,7 @@ This policy setting controls how Internet Explorer displays local intranet conte
 <!-- AllowInternetExplorerStandardsMode-DFProperties-End -->
 
 <!-- AllowInternetExplorerStandardsMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -916,8 +900,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowInternetZoneTemplate-DFProperties-End -->
 
 <!-- AllowInternetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -986,8 +969,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowIntranetZoneTemplate-DFProperties-End -->
 
 <!-- AllowIntranetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1056,8 +1038,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLocalMachineZoneTemplate-DFProperties-End -->
 
 <!-- AllowLocalMachineZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1126,8 +1107,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownInternetZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownInternetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1196,8 +1176,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownIntranetZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownIntranetZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1266,8 +1245,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownLocalMachineZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownLocalMachineZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1336,8 +1314,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowLockedDownRestrictedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1400,8 +1377,7 @@ This policy allows the user to go directly to an intranet site for a one-word en
 <!-- AllowOneWordEntry-DFProperties-End -->
 
 <!-- AllowOneWordEntry-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1466,8 +1442,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- AllowSaveTargetAsInIEMode-DFProperties-End -->
 
 <!-- AllowSaveTargetAsInIEMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1552,8 +1527,7 @@ Value - A number indicating the zone with which this site should be associated f
 <!-- AllowSiteToZoneAssignmentList-DFProperties-End -->
 
 <!-- AllowSiteToZoneAssignmentList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1648,8 +1622,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowsLockedDownTrustedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1714,8 +1687,7 @@ This policy setting allows you to manage whether software, such as ActiveX contr
 <!-- AllowSoftwareWhenSignatureIsInvalid-DFProperties-End -->
 
 <!-- AllowSoftwareWhenSignatureIsInvalid-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1784,8 +1756,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowsRestrictedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowsRestrictedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1850,8 +1821,7 @@ This policy setting controls the Suggested Sites feature, which recommends websi
 <!-- AllowSuggestedSites-DFProperties-End -->
 
 <!-- AllowSuggestedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1920,8 +1890,7 @@ Note. It is recommended to configure template policy settings in one Group Polic
 <!-- AllowTrustedSitesZoneTemplate-DFProperties-End -->
 
 <!-- AllowTrustedSitesZoneTemplate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1986,8 +1955,7 @@ This policy setting allows you to manage whether Internet Explorer will check re
 <!-- CheckServerCertificateRevocation-DFProperties-End -->
 
 <!-- CheckServerCertificateRevocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2052,8 +2020,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 <!-- CheckSignaturesOnDownloadedPrograms-DFProperties-End -->
 
 <!-- CheckSignaturesOnDownloadedPrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2098,6 +2065,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 Enables you to configure up to three versions of Microsoft Edge to open a redirected site (in order of preference). Use this policy if your environment is configured to redirect sites from Internet Explorer 11 to Microsoft Edge. If any of the chosen versions are not installed on the device, that preference will be bypassed.
 
 If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
+
   - If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
   - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
 1 = Microsoft Edge Stable
@@ -2106,6 +2074,7 @@ If both the Windows Update for the next version of Microsoft Edge* and Microsoft
 4 = Microsoft Edge Canary version 77 or later
 
 If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel are not installed, the following behaviors occur:
+
   - If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
   - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
 0 = Microsoft Edge version 45 or earlier
@@ -2131,8 +2100,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 <!-- ConfigureEdgeRedirectChannel-DFProperties-End -->
 
 <!-- ConfigureEdgeRedirectChannel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2405,8 +2373,7 @@ This policy setting determines whether Internet Explorer requires that all file-
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-DFProperties-End -->
 
 <!-- ConsistentMimeHandlingInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2466,8 +2433,7 @@ For more information, see "Out-of-date ActiveX control blocking" in the Internet
 <!-- DisableActiveXVersionListAutoDownload-DFProperties-End -->
 
 <!-- DisableActiveXVersionListAutoDownload-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2530,8 +2496,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- DisableBypassOfSmartScreenWarnings-DFProperties-End -->
 
 <!-- DisableBypassOfSmartScreenWarnings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2594,8 +2559,7 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-DFProperties-End -->
 
 <!-- DisableBypassOfSmartScreenWarningsAboutUncommonFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2658,8 +2622,7 @@ This policy setting controls the Compatibility View feature, which allows the us
 <!-- DisableCompatView-DFProperties-End -->
 
 <!-- DisableCompatView-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2722,8 +2685,7 @@ This setting specifies the number of days that Internet Explorer tracks views of
 <!-- DisableConfiguringHistory-DFProperties-End -->
 
 <!-- DisableConfiguringHistory-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2786,8 +2748,7 @@ This policy setting allows you to manage the crash detection feature of add-on M
 <!-- DisableCrashDetection-DFProperties-End -->
 
 <!-- DisableCrashDetection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2852,8 +2813,7 @@ This policy setting prevents the user from participating in the Customer Experie
 <!-- DisableCustomerExperienceImprovementProgramParticipation-DFProperties-End -->
 
 <!-- DisableCustomerExperienceImprovementProgramParticipation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2920,8 +2880,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!-- DisableDeletingUserVisitedWebsites-DFProperties-End -->
 
 <!-- DisableDeletingUserVisitedWebsites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2984,8 +2943,7 @@ This policy setting prevents the user from having enclosures (file attachments) 
 <!-- DisableEnclosureDownloading-DFProperties-End -->
 
 <!-- DisableEnclosureDownloading-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3051,8 +3009,7 @@ This policy setting allows you to turn off support for Transport Layer Security 
 <!-- DisableEncryptionSupport-DFProperties-End -->
 
 <!-- DisableEncryptionSupport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3114,8 +3071,7 @@ This policy setting controls whether to have background synchronization for feed
 <!-- DisableFeedsBackgroundSync-DFProperties-End -->
 
 <!-- DisableFeedsBackgroundSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3160,6 +3116,7 @@ This policy setting controls whether to have background synchronization for feed
 This policy setting prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows.
 
 - If you enable this policy setting, you must make one of the following choices:
+
   - Skip the First Run wizard, and go directly to the user's home page.
   - Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
 
@@ -3182,8 +3139,7 @@ Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not avail
 <!-- DisableFirstRunWizard-DFProperties-End -->
 
 <!-- DisableFirstRunWizard-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3249,8 +3205,7 @@ Microsoft collects your browsing history to improve how flip ahead with page pre
 <!-- DisableFlipAheadFeature-DFProperties-End -->
 
 <!-- DisableFlipAheadFeature-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3315,8 +3270,7 @@ This policy setting allows you to disable browser geolocation support. This will
 <!-- DisableGeolocation-DFProperties-End -->
 
 <!-- DisableGeolocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3375,8 +3329,7 @@ The Home page specified on the General tab of the Internet Options dialog box is
 <!-- DisableHomePageChange-DFProperties-End -->
 
 <!-- DisableHomePageChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3439,8 +3392,7 @@ This policy setting specifies if running the HTML Application (HTA file) is bloc
 <!-- DisableHTMLApplication-DFProperties-End -->
 
 <!-- DisableHTMLApplication-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3503,8 +3455,7 @@ This policy setting prevents the user from ignoring Secure Sockets Layer/Transpo
 <!-- DisableIgnoringCertificateErrors-DFProperties-End -->
 
 <!-- DisableIgnoringCertificateErrors-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3571,8 +3522,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 <!-- DisableInPrivateBrowsing-DFProperties-End -->
 
 <!-- DisableInPrivateBrowsing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3617,6 +3567,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 This policy lets you restrict launching of Internet Explorer as a standalone browser.
 
 If you enable this policy, it:
+
   - Prevents Internet Explorer 11 from launching as a standalone browser.
   - Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
   - Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
@@ -3642,8 +3593,7 @@ If you disable, or don't configure this policy, all sites are opened using the c
 <!-- DisableInternetExplorerApp-DFProperties-End -->
 
 <!-- DisableInternetExplorerApp-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3733,8 +3683,7 @@ This policy setting determines whether Internet Explorer 11 uses 64-bit processe
 <!-- DisableProcessesInEnhancedProtectedMode-DFProperties-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3797,8 +3746,7 @@ This policy setting specifies if a user can change proxy settings.
 <!-- DisableProxyChange-DFProperties-End -->
 
 <!-- DisableProxyChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3861,8 +3809,7 @@ This policy setting prevents the user from changing the default search provider 
 <!-- DisableSearchProviderChange-DFProperties-End -->
 
 <!-- DisableSearchProviderChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3928,8 +3875,7 @@ Secondary home pages are the default Web pages that Internet Explorer loads in s
 <!-- DisableSecondaryHomePageChange-DFProperties-End -->
 
 <!-- DisableSecondaryHomePageChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3991,8 +3937,7 @@ This policy setting turns off the Security Settings Check feature, which checks 
 <!-- DisableSecuritySettingsCheck-DFProperties-End -->
 
 <!-- DisableSecuritySettingsCheck-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4053,8 +3998,7 @@ This policy is intended to help the administrator maintain version control for I
 <!-- DisableUpdateCheck-DFProperties-End -->
 
 <!-- DisableUpdateCheck-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4119,8 +4063,7 @@ This AutoComplete feature suggests possible matches when users are entering Web 
 <!-- DisableWebAddressAutoComplete-DFProperties-End -->
 
 <!-- DisableWebAddressAutoComplete-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4187,8 +4130,7 @@ When Enhanced Protected Mode is enabled, and a user encounters a website that at
 <!-- DoNotAllowActiveXControlsInProtectedMode-DFProperties-End -->
 
 <!-- DoNotAllowActiveXControlsInProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4254,8 +4196,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToAddSites-DFProperties-End -->
 
 <!-- DoNotAllowUsersToAddSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4321,8 +4262,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!-- DoNotAllowUsersToChangePolicies-DFProperties-End -->
 
 <!-- DoNotAllowUsersToChangePolicies-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4387,8 +4327,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- DoNotBlockOutdatedActiveXControls-DFProperties-End -->
 
 <!-- DoNotBlockOutdatedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4458,8 +4397,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-DFProperties-End -->
 
 <!-- DoNotBlockOutdatedActiveXControlsOnSpecificDomains-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4524,8 +4462,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableExtendedIEModeHotkeys-DFProperties-End -->
 
 <!-- EnableExtendedIEModeHotkeys-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4592,8 +4529,7 @@ To learn more about disabling Internet Explorer 11 as a standalone browser, see 
 <!-- EnableGlobalWindowListInIEMode-DFProperties-End -->
 
 <!-- EnableGlobalWindowListInIEMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4658,8 +4594,7 @@ This policy setting controls whether local sites which are not explicitly mapped
 <!-- IncludeAllLocalSites-DFProperties-End -->
 
 <!-- IncludeAllLocalSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4724,8 +4659,7 @@ This policy setting controls whether URLs representing UNCs are mapped into the 
 <!-- IncludeAllNetworkPaths-DFProperties-End -->
 
 <!-- IncludeAllNetworkPaths-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4790,8 +4724,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- InternetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- InternetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4855,8 +4788,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4918,8 +4850,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- InternetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4985,8 +4916,7 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 <!-- InternetZoneAllowCopyPasteViaScript-DFProperties-End -->
 
 <!-- InternetZoneAllowCopyPasteViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5050,8 +4980,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-DFProperties-End -->
 
 <!-- InternetZoneAllowDragAndDropCopyAndPasteFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5117,8 +5046,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- InternetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- InternetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5182,8 +5110,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- InternetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- InternetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5247,8 +5174,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 <!-- InternetZoneAllowLoadingOfXAMLFiles-DFProperties-End -->
 
 <!-- InternetZoneAllowLoadingOfXAMLFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5312,8 +5238,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- InternetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5375,8 +5300,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5438,8 +5362,7 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-DFProperties-End -->
 
 <!-- InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5503,8 +5426,7 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-DFProperties-End -->
 
 <!-- InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5568,8 +5490,7 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 <!-- InternetZoneAllowScriptInitiatedWindows-DFProperties-End -->
 
 <!-- InternetZoneAllowScriptInitiatedWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5633,8 +5554,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- InternetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- InternetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5701,8 +5621,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- InternetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- InternetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5764,8 +5683,7 @@ This policy setting allows you to manage whether script is allowed to update the
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-DFProperties-End -->
 
 <!-- InternetZoneAllowUpdatesToStatusBarViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5829,8 +5747,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- InternetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- InternetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5896,8 +5813,7 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-DFProperties-End -->
 
 <!-- InternetZoneAllowVBScriptToRunInInternetExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5961,8 +5877,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6026,8 +5941,7 @@ This policy setting allows you to manage whether users may download signed Activ
 <!-- InternetZoneDownloadSignedActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneDownloadSignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6091,8 +6005,7 @@ This policy setting allows you to manage whether users may download unsigned Act
 <!-- InternetZoneDownloadUnsignedActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneDownloadUnsignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6154,8 +6067,7 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- InternetZoneEnableCrossSiteScriptingFilter-DFProperties-End -->
 
 <!-- InternetZoneEnableCrossSiteScriptingFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6198,9 +6110,9 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
 
 In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
@@ -6221,8 +6133,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-DFProperties-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6265,9 +6176,9 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
 
 In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
@@ -6288,8 +6199,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-DFProperties-End -->
 
 <!-- InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6353,8 +6263,7 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- InternetZoneEnableMIMESniffing-DFProperties-End -->
 
 <!-- InternetZoneEnableMIMESniffing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6418,8 +6327,7 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 <!-- InternetZoneEnableProtectedMode-DFProperties-End -->
 
 <!-- InternetZoneEnableProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6483,8 +6391,7 @@ This policy setting controls whether or not local path information is sent when 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-DFProperties-End -->
 
 <!-- InternetZoneIncludeLocalPathWhenUploadingFilesToServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6550,8 +6457,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- InternetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- InternetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6621,8 +6527,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- InternetZoneJavaPermissions-DFProperties-End -->
 
 <!-- InternetZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6686,8 +6591,7 @@ This policy setting allows you to manage whether applications may be run and fil
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-DFProperties-End -->
 
 <!-- InternetZoneLaunchingApplicationsAndFilesInIFRAME-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6759,8 +6663,7 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- InternetZoneLogonOptions-DFProperties-End -->
 
 <!-- InternetZoneLogonOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6803,11 +6706,11 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- InternetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -6824,8 +6727,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- InternetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- InternetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6889,8 +6791,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-DFProperties-End -->
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6954,8 +6855,7 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-DFProperties-End -->
 
 <!-- InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7019,8 +6919,7 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 <!-- InternetZoneUsePopupBlocker-DFProperties-End -->
 
 <!-- InternetZoneUsePopupBlocker-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7084,8 +6983,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- IntranetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- IntranetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7149,8 +7047,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7212,8 +7109,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- IntranetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7279,8 +7175,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- IntranetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- IntranetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7344,8 +7239,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- IntranetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- IntranetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7409,8 +7303,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7474,8 +7367,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- IntranetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- IntranetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7542,8 +7434,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- IntranetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- IntranetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7607,8 +7498,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- IntranetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- IntranetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7672,8 +7562,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- IntranetZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7739,8 +7628,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- IntranetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- IntranetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7810,8 +7698,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- IntranetZoneJavaPermissions-DFProperties-End -->
 
 <!-- IntranetZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7854,11 +7741,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- IntranetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -7875,8 +7762,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- IntranetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- IntranetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7940,8 +7826,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 <!-- JScriptReplacement-DFProperties-End -->
 
 <!-- JScriptReplacement-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7992,6 +7877,7 @@ Prevents intranet sites from being opened in any browser except Internet Explore
 We strongly recommend keeping this policy in sync with the 'Send all intranet sites to Internet Explorer' ('SendIntranetToInternetExplorer') policy. Additionally, it's best to enable this policy only if your intranet sites have known compatibility problems with Microsoft Edge.
 
 Related policies:
+
   - Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
   - Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
 
@@ -8012,8 +7898,7 @@ For more info about how to use this policy together with other related policies 
 <!-- KeepIntranetSitesInInternetExplorer-DFProperties-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8101,8 +7986,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LocalMachineZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8166,8 +8050,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8229,8 +8112,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8296,8 +8178,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LocalMachineZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8361,8 +8242,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8426,8 +8306,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8491,8 +8370,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LocalMachineZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8559,8 +8437,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LocalMachineZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8624,8 +8501,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LocalMachineZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LocalMachineZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8689,8 +8565,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8756,8 +8631,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LocalMachineZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8827,8 +8701,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LocalMachineZoneJavaPermissions-DFProperties-End -->
 
 <!-- LocalMachineZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8871,11 +8744,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -8892,8 +8765,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LocalMachineZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LocalMachineZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8957,8 +8829,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownInternetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9022,8 +8893,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9085,8 +8955,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9152,8 +9021,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownInternetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9217,8 +9085,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9282,8 +9149,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9347,8 +9213,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownInternetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9415,8 +9280,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownInternetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9480,8 +9344,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownInternetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9547,8 +9410,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownInternetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9618,8 +9480,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownInternetZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownInternetZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9662,11 +9523,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -9683,8 +9544,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownInternetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9754,8 +9614,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownIntranetJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownIntranetJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9819,8 +9678,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9884,8 +9742,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -9947,8 +9804,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10014,8 +9870,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownIntranetZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10079,8 +9934,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10144,8 +9998,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10209,8 +10062,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownIntranetZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10277,8 +10129,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10342,8 +10193,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10409,8 +10259,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10453,11 +10302,11 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -10474,8 +10323,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownIntranetZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10539,8 +10387,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10604,8 +10451,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10667,8 +10513,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10734,8 +10579,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10799,8 +10643,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10864,8 +10707,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10929,8 +10771,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownLocalMachineZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -10997,8 +10838,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11062,8 +10902,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11129,8 +10968,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11200,8 +11038,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownLocalMachineZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11244,11 +11081,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -11265,8 +11102,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownLocalMachineZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11330,8 +11166,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11395,8 +11230,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11458,8 +11292,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11525,8 +11358,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11590,8 +11422,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11655,8 +11486,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11720,8 +11550,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11788,8 +11617,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11853,8 +11681,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11920,8 +11747,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -11991,8 +11817,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12056,8 +11881,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownRestrictedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12121,8 +11945,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12186,8 +12009,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12249,8 +12071,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12316,8 +12137,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12381,8 +12201,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12446,8 +12265,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12511,8 +12329,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12579,8 +12396,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12644,8 +12460,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12711,8 +12526,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12782,8 +12596,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LockedDownTrustedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12826,11 +12639,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -12847,8 +12660,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- LockedDownTrustedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12912,8 +12724,7 @@ This policy setting determines whether Internet Explorer MIME sniffing will prev
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-DFProperties-End -->
 
 <!-- MimeSniffingSafetyFeatureInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -12977,8 +12788,7 @@ The MK Protocol Security Restriction policy setting reduces attack surface area 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-DFProperties-End -->
 
 <!-- MKProtocolSecurityRestrictionInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13040,8 +12850,7 @@ This policy setting allows you to specify what is displayed when the user opens 
 <!-- NewTabDefaultPage-DFProperties-End -->
 
 <!-- NewTabDefaultPage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13105,8 +12914,7 @@ This policy setting allows you to manage whether the Notification bar is display
 <!-- NotificationBarInternetExplorerProcesses-DFProperties-End -->
 
 <!-- NotificationBarInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13168,8 +12976,7 @@ This policy setting prevents the user from managing SmartScreen Filter, which wa
 <!-- PreventManagingSmartScreenFilter-DFProperties-End -->
 
 <!-- PreventManagingSmartScreenFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13231,8 +13038,7 @@ This policy setting allows you to prevent the installation of ActiveX controls o
 <!-- PreventPerUserInstallationOfActiveXControls-DFProperties-End -->
 
 <!-- PreventPerUserInstallationOfActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13297,8 +13103,7 @@ Internet Explorer places restrictions on each Web page it opens. The restriction
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-DFProperties-End -->
 
 <!-- ProtectionFromZoneElevationInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13362,8 +13167,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-DFProperties-End -->
 
 <!-- RemoveRunThisTimeButtonForOutdatedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13428,8 +13232,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- ResetZoomForDialogInIEMode-DFProperties-End -->
 
 <!-- ResetZoomForDialogInIEMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13494,8 +13297,7 @@ This policy setting enables blocking of ActiveX control installation prompts for
 <!-- RestrictActiveXInstallInternetExplorerProcesses-DFProperties-End -->
 
 <!-- RestrictActiveXInstallInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13559,8 +13361,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- RestrictedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13624,8 +13425,7 @@ This policy setting allows you to manage whether script code on pages in the zon
 <!-- RestrictedSitesZoneAllowActiveScripting-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowActiveScripting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13689,8 +13489,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13752,8 +13551,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13817,8 +13615,7 @@ This policy setting allows you to manage dynamic binary and script behaviors: co
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowBinaryAndScriptBehaviors-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13884,8 +13681,7 @@ If you select Prompt in the drop-down box, users are queried as to whether to pe
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowCopyPasteViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -13949,8 +13745,7 @@ This policy setting allows you to manage whether users can drag files or copy an
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14014,8 +13809,7 @@ This policy setting allows you to manage whether file downloads are permitted fr
 <!-- RestrictedSitesZoneAllowFileDownloads-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14081,8 +13875,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- RestrictedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14146,8 +13939,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14211,8 +14003,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowLoadingOfXAMLFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14276,8 +14067,7 @@ This policy setting allows you to manage whether a user's browser can be redirec
 <!-- RestrictedSitesZoneAllowMETAREFRESH-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowMETAREFRESH-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14341,8 +14131,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14404,8 +14193,7 @@ This policy setting controls whether or not the user is prompted to allow Active
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14467,8 +14255,7 @@ This policy setting controls whether or not the user is allowed to run the TDC A
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14532,8 +14319,7 @@ This policy setting determines whether a page can control embedded WebBrowser co
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14597,8 +14383,7 @@ This policy setting allows you to manage restrictions on script-initiated pop-up
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowScriptInitiatedWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14662,8 +14447,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- RestrictedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14730,8 +14514,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- RestrictedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14793,8 +14576,7 @@ This policy setting allows you to manage whether script is allowed to update the
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowUpdatesToStatusBarViaScript-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14858,8 +14640,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14925,8 +14706,7 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-DFProperties-End -->
 
 <!-- RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -14990,8 +14770,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15055,8 +14834,7 @@ This policy setting allows you to manage whether users may download signed Activ
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneDownloadSignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15120,8 +14898,7 @@ This policy setting allows you to manage whether users may download unsigned Act
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneDownloadUnsignedActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15183,8 +14960,7 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableCrossSiteScriptingFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15227,9 +15003,9 @@ This policy controls whether or not the Cross-Site Scripting (XSS) Filter will d
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
 
 In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
@@ -15250,8 +15026,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15294,9 +15069,9 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
 
-- If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
 
-- If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
 
 In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
@@ -15317,8 +15092,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15382,8 +15156,7 @@ This policy setting allows you to manage MIME sniffing for file promotion from o
 <!-- RestrictedSitesZoneEnableMIMESniffing-DFProperties-End -->
 
 <!-- RestrictedSitesZoneEnableMIMESniffing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15447,8 +15220,7 @@ This policy setting controls whether or not local path information is sent when 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-DFProperties-End -->
 
 <!-- RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15514,8 +15286,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- RestrictedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15585,8 +15356,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- RestrictedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- RestrictedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15650,8 +15420,7 @@ This policy setting allows you to manage whether applications may be run and fil
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-DFProperties-End -->
 
 <!-- RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15723,8 +15492,7 @@ Automatic logon with current user name and password to attempt logon using Windo
 <!-- RestrictedSitesZoneLogonOptions-DFProperties-End -->
 
 <!-- RestrictedSitesZoneLogonOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15788,8 +15556,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- RestrictedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15855,8 +15622,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-DFProperties-End -->
 
 <!-- RestrictedSitesZoneRunActiveXControlsAndPlugins-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15920,8 +15686,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-DFProperties-End -->
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -15987,8 +15752,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-DFProperties-End -->
 
 <!-- RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16054,8 +15818,7 @@ If you select Prompt in the drop-down box, users are queried to choose whether t
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-DFProperties-End -->
 
 <!-- RestrictedSitesZoneScriptingOfJavaApplets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16119,8 +15882,7 @@ This policy setting controls whether or not the "Open File - Security Warning" m
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-DFProperties-End -->
 
 <!-- RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16184,8 +15946,7 @@ This policy setting allows you to turn on Protected Mode. Protected Mode helps p
 <!-- RestrictedSitesZoneTurnOnProtectedMode-DFProperties-End -->
 
 <!-- RestrictedSitesZoneTurnOnProtectedMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16249,8 +16010,7 @@ This policy setting allows you to manage whether unwanted pop-up windows appear.
 <!-- RestrictedSitesZoneUsePopupBlocker-DFProperties-End -->
 
 <!-- RestrictedSitesZoneUsePopupBlocker-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16314,8 +16074,7 @@ This policy setting enables blocking of file download prompts that are not user 
 <!-- RestrictFileDownloadInternetExplorerProcesses-DFProperties-End -->
 
 <!-- RestrictFileDownloadInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16379,8 +16138,7 @@ Internet Explorer allows scripts to programmatically open, resize, and repositio
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-DFProperties-End -->
 
 <!-- ScriptedWindowSecurityRestrictionsInternetExplorerProcesses-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16445,8 +16203,7 @@ This policy setting allows you to restrict the search providers that appear in t
 <!-- SearchProviderList-DFProperties-End -->
 
 <!-- SearchProviderList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16509,8 +16266,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 <!-- SecurityZonesUseOnlyMachineSettings-DFProperties-End -->
 
 <!-- SecurityZonesUseOnlyMachineSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16578,8 +16334,7 @@ Disabling, or not configuring this setting, opens all sites based on the current
 <!-- SendSitesNotInEnterpriseSiteListToEdge-DFProperties-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16665,8 +16420,7 @@ This policy setting allows you to specify how ActiveX controls are installed.
 <!-- SpecifyUseOfActiveXInstallerService-DFProperties-End -->
 
 <!-- SpecifyUseOfActiveXInstallerService-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16731,8 +16485,7 @@ This policy setting allows you to manage whether Internet Explorer can access da
 <!-- TrustedSitesZoneAllowAccessToDataSources-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowAccessToDataSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16796,8 +16549,7 @@ This policy setting manages whether users will be automatically prompted for Act
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16859,8 +16611,7 @@ This policy setting determines whether users will be prompted for non user-initi
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowAutomaticPromptingForFileDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16926,8 +16677,7 @@ This policy setting allows you to manage whether pages of the zone may download 
 <!-- TrustedSitesZoneAllowFontDownloads-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowFontDownloads-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -16991,8 +16741,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowLessPrivilegedSites-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17056,8 +16805,7 @@ This policy setting allows you to manage whether . NET Framework components that
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17121,8 +16869,7 @@ This policy setting allows you to manage whether the user can run scriptlets.
 <!-- TrustedSitesZoneAllowScriptlets-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowScriptlets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17189,8 +16936,7 @@ This policy setting controls whether SmartScreen Filter scans pages in this zone
 <!-- TrustedSitesZoneAllowSmartScreenIE-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowSmartScreenIE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17254,8 +17000,7 @@ This policy setting allows you to manage the preservation of information in the 
 <!-- TrustedSitesZoneAllowUserDataPersistence-DFProperties-End -->
 
 <!-- TrustedSitesZoneAllowUserDataPersistence-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17319,8 +17064,7 @@ This policy setting determines whether Internet Explorer runs antimalware progra
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-DFProperties-End -->
 
 <!-- TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17386,8 +17130,7 @@ This policy setting allows you to manage ActiveX controls not marked as safe.
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-DFProperties-End -->
 
 <!-- TrustedSitesZoneInitializeAndScriptActiveXControls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17457,8 +17200,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- TrustedSitesZoneJavaPermissions-DFProperties-End -->
 
 <!-- TrustedSitesZoneJavaPermissions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -17501,11 +17243,11 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
 
-- If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+- If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 - If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-- If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+- If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Description-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-Editable-Begin -->
@@ -17522,8 +17264,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-DFProperties-End -->
 
 <!-- TrustedSitesZoneNavigateWindowsAndFrames-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

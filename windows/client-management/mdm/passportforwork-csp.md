@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- PassportForWork-Begin -->
 # PassportForWork CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- PassportForWork-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -422,7 +421,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
+If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Editable-Begin -->
@@ -560,7 +559,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Editable-Begin -->
@@ -712,7 +711,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Editable-Begin -->
@@ -768,7 +767,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
 
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Editable-Begin -->
@@ -1282,7 +1281,7 @@ This setting determines whether enhanced anti-spoofing is required for Windows H
 
 - If you disable or do not configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
-**Note** that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
+Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Description-End -->
 
 <!-- Device-Biometrics-FacialFeaturesUseEnhancedAntiSpoofing-Editable-Begin -->
@@ -1588,7 +1587,7 @@ Dynamic Lock.
 
 <!-- Device-DynamicLock-DynamicLock-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables/Disables Dyanamic Lock.
+Enables/Disables Dynamic Lock.
 <!-- Device-DynamicLock-DynamicLock-Description-End -->
 
 <!-- Device-DynamicLock-DynamicLock-Editable-Begin -->
@@ -2004,7 +2003,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
+If you do not configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Editable-Begin -->
@@ -2142,7 +2141,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use lowercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Editable-Begin -->
@@ -2294,7 +2293,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use special characters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Editable-Begin -->
@@ -2350,7 +2349,7 @@ A value of 1 corresponds to "Required." If you configure this policy setting to 
 
 A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
-- If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
+If you do not configure this policy setting, Windows Hello for Business does not allow users to use uppercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
 
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Editable-Begin -->

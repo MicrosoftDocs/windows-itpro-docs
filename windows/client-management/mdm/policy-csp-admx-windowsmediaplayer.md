@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsMediaPlayer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_WindowsMediaPlayer-Begin -->
 # Policy CSP - ADMX_WindowsMediaPlayer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_WindowsMediaPlayer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -75,8 +72,7 @@ This policy is ignored if the "Streaming media protocols" policy setting is enab
 <!-- ConfigureHTTPProxySettings-DFProperties-End -->
 
 <!-- ConfigureHTTPProxySettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -146,8 +142,7 @@ This policy setting is ignored if the "Streaming media protocols" policy setting
 <!-- ConfigureMMSProxySettings-DFProperties-End -->
 
 <!-- ConfigureMMSProxySettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -215,8 +210,7 @@ The Configure button on the Network tab in the Player is not available and the p
 <!-- ConfigureRTSPProxySettings-DFProperties-End -->
 
 <!-- ConfigureRTSPProxySettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -277,8 +271,7 @@ This policy setting prevents the dialog boxes which allow users to select privac
 <!-- DisableAutoUpdate-DFProperties-End -->
 
 <!-- DisableAutoUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -337,8 +330,7 @@ This policy setting allows you to hide the Network tab.
 <!-- DisableNetworkSettings-DFProperties-End -->
 
 <!-- DisableNetworkSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -399,8 +391,7 @@ This policy setting allows you to prevent the anchor window from being displayed
 <!-- DisableSetupFirstUseConfiguration-DFProperties-End -->
 
 <!-- DisableSetupFirstUseConfiguration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -461,8 +452,7 @@ When this policy is not configured and the Set and Lock Skin policy is enabled, 
 <!-- DoNotShowAnchor-DFProperties-End -->
 
 <!-- DoNotShowAnchor-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -525,8 +515,7 @@ Video smoothing is available only on the Windows XP Home Edition and Windows XP 
 <!-- DontUseFrameInterpolation-DFProperties-End -->
 
 <!-- DontUseFrameInterpolation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -587,8 +576,7 @@ This policy setting allows a screen saver to interrupt playback.
 <!-- EnableScreenSaver-DFProperties-End -->
 
 <!-- EnableScreenSaver-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -649,8 +637,7 @@ The default privacy settings are used for the options on the Privacy tab unless 
 <!-- HidePrivacyTab-DFProperties-End -->
 
 <!-- HidePrivacyTab-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -709,8 +696,7 @@ This policy setting allows you to hide the Security tab in Windows Media Player.
 <!-- HideSecurityTab-DFProperties-End -->
 
 <!-- HideSecurityTab-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -774,8 +760,7 @@ The "Use default buffering" and "Buffer" options on the Performance tab in the P
 <!-- NetworkBuffering-DFProperties-End -->
 
 <!-- NetworkBuffering-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -836,8 +821,7 @@ This policy setting allows you to prevent Windows Media Player from downloading 
 <!-- PolicyCodecUpdate-DFProperties-End -->
 
 <!-- PolicyCodecUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -896,8 +880,7 @@ This policy setting allows you to prevent media information for CDs and DVDs fro
 <!-- PreventCDDVDMetadataRetrieval-DFProperties-End -->
 
 <!-- PreventCDDVDMetadataRetrieval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -956,8 +939,7 @@ This policy setting allows you to prevent media sharing from Windows Media Playe
 <!-- PreventLibrarySharing-DFProperties-End -->
 
 <!-- PreventLibrarySharing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1016,8 +998,7 @@ This policy setting allows you to prevent media information for music files from
 <!-- PreventMusicFileMetadataRetrieval-DFProperties-End -->
 
 <!-- PreventMusicFileMetadataRetrieval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1076,8 +1057,7 @@ This policy setting allows you to prevent a shortcut for the Player from being a
 <!-- PreventQuickLaunchShortcut-DFProperties-End -->
 
 <!-- PreventQuickLaunchShortcut-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1136,8 +1116,7 @@ This policy setting allows you to prevent radio station presets from being retri
 <!-- PreventRadioPresetsRetrieval-DFProperties-End -->
 
 <!-- PreventRadioPresetsRetrieval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1196,8 +1175,7 @@ This policy setting allows you to prevent a shortcut icon for the Player from be
 <!-- PreventWMPDeskTopShortcut-DFProperties-End -->
 
 <!-- PreventWMPDeskTopShortcut-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1260,8 +1238,7 @@ A user has access only to the Player features that are available with the specif
 <!-- SkinLockDown-DFProperties-End -->
 
 <!-- SkinLockDown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1324,8 +1301,7 @@ This policy setting allows you to specify that Windows Media Player can attempt 
 <!-- WindowsStreamingMediaProtocols-DFProperties-End -->
 
 <!-- WindowsStreamingMediaProtocols-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_WindowsExplorer-Begin -->
 # Policy CSP - ADMX_WindowsExplorer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_WindowsExplorer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -66,8 +63,7 @@ This policy setting allows you to prevent data loss when you change the target l
 <!-- CheckSameSourceAndTargetForFRAndDFS-DFProperties-End -->
 
 <!-- CheckSameSourceAndTargetForFRAndDFS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -132,8 +128,7 @@ Also, see the "Disable Active Desktop" setting in User Configuration\Administrat
 <!-- ClassicShell-DFProperties-End -->
 
 <!-- ClassicShell-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -192,8 +187,7 @@ Allows you to have File Explorer display a confirmation dialog whenever a file i
 <!-- ConfirmFileDelete-DFProperties-End -->
 
 <!-- ConfirmFileDelete-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -256,8 +250,7 @@ This policy setting allows you to specify a location where all default Library d
 <!-- DefaultLibrariesLocation-DFProperties-End -->
 
 <!-- DefaultLibrariesLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -317,8 +310,7 @@ This disables access to user-defined properties, and properties stored in NTFS s
 <!-- DisableBindDirectlyToPropertySetStorage-DFProperties-End -->
 
 <!-- DisableBindDirectlyToPropertySetStorage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -385,8 +377,7 @@ This policy will not enable users to add unsupported locations to Libraries.
 <!-- DisableIndexedLibraryExperience-DFProperties-End -->
 
 <!-- DisableIndexedLibraryExperience-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -446,8 +437,7 @@ You can specify a known folder using its known folder id or using its canonical 
 <!-- DisableKnownFolders-DFProperties-End -->
 
 <!-- DisableKnownFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -507,8 +497,7 @@ File Explorer shows suggestion pop-ups as users type into the Search Box. These 
 <!-- DisableSearchBoxSuggestions-DFProperties-End -->
 
 <!-- DisableSearchBoxSuggestions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -570,8 +559,7 @@ This policy setting determines whether remote paths can be used for file shortcu
 <!-- EnableShellShortcutIconRemotePath-DFProperties-End -->
 
 <!-- EnableShellShortcutIconRemotePath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -643,8 +631,7 @@ For more information, see [Microsoft Defender SmartScreen](/windows/security/thr
 <!-- EnableSmartScreen-DFProperties-End -->
 
 <!-- EnableSmartScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -705,8 +692,7 @@ For shell extensions to run on a per-user basis, there must be an entry at HKEY_
 <!-- EnforceShellExtensionSecurity-DFProperties-End -->
 
 <!-- EnforceShellExtensionSecurity-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -768,8 +754,7 @@ This policy setting allows you to specify whether the ribbon appears minimized o
 <!-- ExplorerRibbonStartsMinimized-DFProperties-End -->
 
 <!-- ExplorerRibbonStartsMinimized-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -828,8 +813,7 @@ This policy setting allows you to turn off the display of snippets in Content vi
 <!-- HideContentViewModeSnippets-DFProperties-End -->
 
 <!-- HideContentViewModeSnippets-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -896,8 +880,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_Internet-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_Internet-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -964,8 +947,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_InternetLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_InternetLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1032,8 +1014,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_Intranet-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_Intranet-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1100,8 +1081,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1168,8 +1148,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_LocalMachine-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_LocalMachine-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1236,8 +1215,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1304,8 +1282,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_Restricted-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_Restricted-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1372,8 +1349,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1440,8 +1416,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_Trusted-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_Trusted-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1508,8 +1483,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 <!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1574,8 +1548,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_Internet-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_Internet-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1640,8 +1613,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_InternetLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_InternetLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1706,8 +1678,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_Intranet-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_Intranet-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1772,8 +1743,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1838,8 +1808,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_LocalMachine-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_LocalMachine-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1904,8 +1873,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1970,8 +1938,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_Restricted-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_Restricted-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2036,8 +2003,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2102,8 +2068,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_Trusted-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_Trusted-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2168,8 +2133,7 @@ This policy setting allows you to manage whether OpenSearch queries in this zone
 <!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-DFProperties-End -->
 
 <!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2230,8 +2194,7 @@ Shortcut files typically include an absolute path to the original target file as
 <!-- LinkResolveIgnoreLinkInfo-DFProperties-End -->
 
 <!-- LinkResolveIgnoreLinkInfo-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2292,8 +2255,7 @@ The Recent Items menu contains shortcuts to the nonprogram files the user has mo
 <!-- MaxRecentDocs-DFProperties-End -->
 
 <!-- MaxRecentDocs-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2358,8 +2320,7 @@ To see an example of the standard Open dialog box, start Notepad and, on the Fil
 <!-- NoBackButton-DFProperties-End -->
 
 <!-- NoBackButton-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2421,8 +2382,7 @@ This policy setting allows you to turn off caching of thumbnail pictures.
 <!-- NoCacheThumbNailPictures-DFProperties-End -->
 
 <!-- NoCacheThumbNailPictures-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2484,8 +2444,7 @@ This policy setting allows you to remove CD Burning features. File Explorer allo
 <!-- NoCDBurning-DFProperties-End -->
 
 <!-- NoCDBurning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2546,8 +2505,7 @@ Effects, such as animation, are designed to enhance the user's experience but mi
 <!-- NoChangeAnimation-DFProperties-End -->
 
 <!-- NoChangeAnimation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2606,8 +2564,7 @@ Effects, such as transitory underlines, are designed to enhance the user's exper
 <!-- NoChangeKeyboardNavigationIndicators-DFProperties-End -->
 
 <!-- NoChangeKeyboardNavigationIndicators-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2668,8 +2625,7 @@ This policy setting does not prevent users from using other methods to configure
 <!-- NoDFSTab-DFProperties-End -->
 
 <!-- NoDFSTab-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2737,8 +2693,7 @@ Also, see the "Prevent access to drives from My Computer" policy setting.
 <!-- NoDrives-DFProperties-End -->
 
 <!-- NoDrives-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2801,8 +2756,7 @@ To remove computers in the user's workgroup or domain from lists of network reso
 <!-- NoEntireNetwork-DFProperties-End -->
 
 <!-- NoEntireNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2859,8 +2813,7 @@ This setting does not prevent users from using other methods to perform tasks av
 <!-- NoFileMenu-DFProperties-End -->
 
 <!-- NoFileMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2926,8 +2879,7 @@ To see an example of the standard Open dialog box, start Wordpad and, on the Fil
 <!-- NoFileMRU-DFProperties-End -->
 
 <!-- NoFileMRU-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2988,8 +2940,7 @@ Folder Options allows users to change the way files and folders open, what appea
 <!-- NoFolderOptions-DFProperties-End -->
 
 <!-- NoFolderOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3046,8 +2997,7 @@ This setting removes the Hardware tab from Mouse, Keyboard, and Sounds and Audio
 <!-- NoHardwareTab-DFProperties-End -->
 
 <!-- NoHardwareTab-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3109,8 +3059,7 @@ This setting does not remove the Computer Management item from the Start menu (S
 <!-- NoManageMyComputerVerb-DFProperties-End -->
 
 <!-- NoManageMyComputerVerb-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3174,8 +3123,7 @@ When a Windows client is in a workgroup, a Shared Documents icon appears in the 
 <!-- NoMyComputerSharedDocuments-DFProperties-End -->
 
 <!-- NoMyComputerSharedDocuments-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3242,8 +3190,7 @@ This setting was documented incorrectly on the Explain tab in Group Policy for W
 <!-- NoNetConnectDisconnect-DFProperties-End -->
 
 <!-- NoNetConnectDisconnect-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3300,8 +3247,7 @@ If this group policy is enabled, no notifications will be shown. If the group po
 <!-- NoNewAppAlert-DFProperties-End -->
 
 <!-- NoNewAppAlert-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3363,8 +3309,7 @@ To see an example of the standard Open dialog box, start Wordpad and, on the Fil
 <!-- NoPlacesBar-DFProperties-End -->
 
 <!-- NoPlacesBar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3423,8 +3368,7 @@ When a file or folder is deleted in File Explorer, a copy of the file or folder 
 <!-- NoRecycleFiles-DFProperties-End -->
 
 <!-- NoRecycleFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3489,8 +3433,7 @@ By default, users are not prompted for alternate logon credentials when installi
 <!-- NoRunAsInstallPrompt-DFProperties-End -->
 
 <!-- NoRunAsInstallPrompt-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3550,8 +3493,7 @@ By default, users are not prompted for alternate logon credentials when installi
 <!-- NoSearchInternetTryHarderButton-DFProperties-End -->
 
 <!-- NoSearchInternetTryHarderButton-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3610,8 +3552,7 @@ Removes the Security tab from File Explorer.
 <!-- NoSecurityTab-DFProperties-End -->
 
 <!-- NoSecurityTab-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3674,8 +3615,7 @@ This policy setting does not affect the Search items on the File Explorer contex
 <!-- NoShellSearchButton-DFProperties-End -->
 
 <!-- NoShellSearchButton-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3737,8 +3677,7 @@ This policy setting allows you to have file names sorted literally (as in Window
 <!-- NoStrCmpLogical-DFProperties-End -->
 
 <!-- NoStrCmpLogical-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3795,8 +3734,7 @@ If you enable this setting, menus do not appear when you right-click the desktop
 <!-- NoViewContextMenu-DFProperties-End -->
 
 <!-- NoViewContextMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3862,8 +3800,7 @@ Also, see the "Hide these specified drives in My Computer" setting.
 <!-- NoViewOnDrive-DFProperties-End -->
 
 <!-- NoViewOnDrive-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3923,8 +3860,7 @@ Keyboards with a Windows key provide users with shortcuts to common shell featur
 <!-- NoWindowsHotKeys-DFProperties-End -->
 
 <!-- NoWindowsHotKeys-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3987,8 +3923,7 @@ To remove network computers from lists of network resources, use the "No Entire 
 <!-- NoWorkgroupContents-DFProperties-End -->
 
 <!-- NoWorkgroupContents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4064,8 +3999,7 @@ If you disable or do not configure this setting the default list of items will b
 <!-- PlacesBar-DFProperties-End -->
 
 <!-- PlacesBar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4130,8 +4064,7 @@ If the dialog box does not appear, the installation proceeds with the current us
 <!-- PromptRunasInstallNetPath-DFProperties-End -->
 
 <!-- PromptRunasInstallNetPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4193,8 +4126,7 @@ Limits the percentage of a volume's disk space that can be used to store deleted
 <!-- RecycleBinSize-DFProperties-End -->
 
 <!-- RecycleBinSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4254,8 +4186,7 @@ This policy setting allows you to configure the amount of functionality that the
 <!-- ShellProtocolProtectedModeTitle_1-DFProperties-End -->
 
 <!-- ShellProtocolProtectedModeTitle_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4316,8 +4247,7 @@ This policy setting allows you to configure the amount of functionality that the
 <!-- ShellProtocolProtectedModeTitle_2-DFProperties-End -->
 
 <!-- ShellProtocolProtectedModeTitle_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4378,8 +4308,7 @@ Shows or hides hibernate from the power options menu.
 <!-- ShowHibernateOption-DFProperties-End -->
 
 <!-- ShowHibernateOption-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4440,8 +4369,7 @@ Shows or hides sleep from the power options menu.
 <!-- ShowSleepOption-DFProperties-End -->
 
 <!-- ShowSleepOption-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4504,8 +4432,7 @@ The first several links will also be pinned to the Start menu. A total of four l
 <!-- TryHarderPinnedLibrary-DFProperties-End -->
 
 <!-- TryHarderPinnedLibrary-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4568,8 +4495,7 @@ The first several links will also be pinned to the Start menu. A total of four l
 <!-- TryHarderPinnedOpenSearch-DFProperties-End -->
 
 <!-- TryHarderPinnedOpenSearch-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

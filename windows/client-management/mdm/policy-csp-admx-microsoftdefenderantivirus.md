@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_MicrosoftDefenderAntivirus-Begin -->
 # Policy CSP - ADMX_MicrosoftDefenderAntivirus
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_MicrosoftDefenderAntivirus-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -63,8 +60,7 @@ This policy setting controls the load priority for the antimalware service. Incr
 <!-- AllowFastServiceStartup-DFProperties-End -->
 
 <!-- AllowFastServiceStartup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -129,8 +125,7 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 <!-- DisableAntiSpywareDefender-DFProperties-End -->
 
 <!-- DisableAntiSpywareDefender-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ Same as Disabled.
 <!-- DisableAutoExclusions-DFProperties-End -->
 
 <!-- DisableAutoExclusions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -260,8 +254,7 @@ Real-time Protection -> Do not enable the "Turn off real-time protection" policy
 <!-- DisableBlockAtFirstSeen-DFProperties-End -->
 
 <!-- DisableBlockAtFirstSeen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -320,8 +313,7 @@ This policy setting controls whether or not complex list settings configured by 
 <!-- DisableLocalAdminMerge-DFProperties-End -->
 
 <!-- DisableLocalAdminMerge-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -384,8 +376,7 @@ Real-time protection consists of always-on scanning with file and process behavi
 <!-- DisableRealtimeMonitoring-DFProperties-End -->
 
 <!-- DisableRealtimeMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -446,8 +437,7 @@ This policy setting allows you to configure whether Microsoft Defender Antivirus
 <!-- DisableRoutinelyTakingAction-DFProperties-End -->
 
 <!-- DisableRoutinelyTakingAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -504,8 +494,7 @@ This policy setting allows you specify a list of file types that should be exclu
 <!-- Exclusions_Extensions-DFProperties-End -->
 
 <!-- Exclusions_Extensions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -562,8 +551,7 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 <!-- Exclusions_Paths-DFProperties-End -->
 
 <!-- Exclusions_Paths-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -601,7 +589,7 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 
 <!-- Exclusions_Processes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy does not apply to scheduled scans. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. **Note** that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value is not used and it is recommended that this be set to 0.
+This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy does not apply to scheduled scans. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. Note that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value is not used and it is recommended that this be set to 0.
 <!-- Exclusions_Processes-Description-End -->
 
 <!-- Exclusions_Processes-Editable-Begin -->
@@ -620,8 +608,7 @@ This policy setting allows you to disable real-time scanning for any file opened
 <!-- Exclusions_Processes-DFProperties-End -->
 
 <!-- Exclusions_Processes-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -664,6 +651,7 @@ Exclude files and paths from Attack Surface Reduction (ASR) rules.
 Enabled:
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
 Enter each rule on a new line as a name-value pair:
+
   - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
   - Value column: Enter "0" for each item
 
@@ -690,8 +678,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 <!-- ExploitGuard_ASR_ASROnlyExclusions-DFProperties-End -->
 
 <!-- ExploitGuard_ASR_ASROnlyExclusions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -732,6 +719,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
+
   - Block: the rule will be applied
   - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
   - Off: the rule will not be applied
@@ -743,10 +731,12 @@ Unless the ASR rule is disabled, a subsample of audit events are collected for A
 Enabled:
 Specify the state for each ASR rule under the Options section for this setting.
 Enter each rule on a new line as a name-value pair:
+
   - Name column: Enter a valid ASR rule ID
   - Value column: Enter the status ID that relates to state you want to specify for the associated rule
 
 The following status IDs are permitted under the value column:
+
   - 1 (Block)
   - 0 (Off)
   - 2 (Audit)
@@ -784,8 +774,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 <!-- ExploitGuard_ASR_Rules-DFProperties-End -->
 
 <!-- ExploitGuard_ASR_Rules-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -857,8 +846,7 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-DFProperties-End -->
 
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -931,8 +919,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-DFProperties-End -->
 
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -996,8 +983,7 @@ Same as Disabled.
 <!-- MpEngine_EnableFileHashComputation-DFProperties-End -->
 
 <!-- MpEngine_EnableFileHashComputation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1056,8 +1042,7 @@ This policy setting allows you to configure definition retirement for network pr
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-DFProperties-End -->
 
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1112,8 +1097,7 @@ This policy setting defines additional definition sets to enable for network tra
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-DFProperties-End -->
 
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1172,8 +1156,7 @@ This policy setting allows you to configure protocol recognition for network pro
 <!-- Nis_DisableProtocolRecognition-DFProperties-End -->
 
 <!-- Nis_DisableProtocolRecognition-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1232,8 +1215,7 @@ This policy, if defined, will prevent antimalware from using the configured prox
 <!-- ProxyBypass-DFProperties-End -->
 
 <!-- ProxyBypass-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1271,6 +1253,7 @@ This policy, if defined, will prevent antimalware from using the configured prox
 <!-- ProxyPacUrl-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines the URL of a proxy .pac file that should be used when the client attempts to connect the network for security intelligence updates and MAPS reporting. If the proxy auto-config fails or if there is no proxy auto-config specified, the client will fall back to the alternative options (in order):
+
 1. Proxy server (if specified)
 2. Proxy .pac URL (if specified)
 
@@ -1298,8 +1281,7 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 <!-- ProxyPacUrl-DFProperties-End -->
 
 <!-- ProxyPacUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1337,6 +1319,7 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 <!-- ProxyServer-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the named proxy that should be used when the client attempts to connect to the network for security intelligence updates and MAPS reporting. If the named proxy fails or if there is no proxy specified, the client will fall back to the alternative options (in order):
+
 1. Proxy server (if specified)
 2. Proxy .pac URL (if specified)
 
@@ -1364,8 +1347,7 @@ This policy setting allows you to configure the named proxy that should be used 
 <!-- ProxyServer-DFProperties-End -->
 
 <!-- ProxyServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1423,8 +1405,7 @@ This policy setting configures a local override for the configuration of the num
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-DFProperties-End -->
 
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1483,8 +1464,7 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- Quarantine_PurgeItemsAfterDelay-DFProperties-End -->
 
 <!-- Quarantine_PurgeItemsAfterDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1543,8 +1523,7 @@ This policy setting allows you to configure the scheduled scan, and the schedule
 <!-- RandomizeScheduleTaskTimes-DFProperties-End -->
 
 <!-- RandomizeScheduleTaskTimes-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1605,8 +1584,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- RealtimeProtection_DisableBehaviorMonitoring-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableBehaviorMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1667,8 +1645,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- RealtimeProtection_DisableIOAVProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableIOAVProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1729,8 +1706,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- RealtimeProtection_DisableOnAccessProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableOnAccessProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1789,8 +1765,7 @@ This policy setting controls whether raw volume write notifications are sent to 
 <!-- RealtimeProtection_DisableRawWriteNotification-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableRawWriteNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1851,8 +1826,7 @@ This policy setting allows you to configure process scanning when real-time prot
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1911,8 +1885,7 @@ This policy setting defines the maximum size (in kilobytes) of downloaded files 
 <!-- RealtimeProtection_IOAVMaxSize-DFProperties-End -->
 
 <!-- RealtimeProtection_IOAVMaxSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1971,8 +1944,7 @@ This policy setting configures a local override for the configuration of behavio
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2031,8 +2003,7 @@ This policy setting configures a local override for the configuration of scannin
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2091,8 +2062,7 @@ This policy setting configures a local override for the configuration of monitor
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2151,8 +2121,7 @@ This policy setting configures a local override for the configuration to turn on
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2211,8 +2180,7 @@ This policy setting configures a local override for the configuration of monitor
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2271,8 +2239,7 @@ This policy setting configures a local override for the configuration of the tim
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-DFProperties-End -->
 
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2342,8 +2309,7 @@ This setting can be configured with the following ordinal number values:
 <!-- Remediation_Scan_ScheduleDay-DFProperties-End -->
 
 <!-- Remediation_Scan_ScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2402,8 +2368,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- Remediation_Scan_ScheduleTime-DFProperties-End -->
 
 <!-- Remediation_Scan_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2458,8 +2423,7 @@ This policy setting configures the time in minutes before a detection in the "ad
 <!-- Reporting_AdditionalActionTimeout-DFProperties-End -->
 
 <!-- Reporting_AdditionalActionTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2514,8 +2478,7 @@ This policy setting configures the time in minutes before a detection in the "cr
 <!-- Reporting_CriticalFailureTimeout-DFProperties-End -->
 
 <!-- Reporting_CriticalFailureTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2576,8 +2539,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus enha
 <!-- Reporting_DisableEnhancedNotifications-DFProperties-End -->
 
 <!-- Reporting_DisableEnhancedNotifications-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2636,8 +2598,7 @@ This policy setting allows you to configure whether or not Watson events are sen
 <!-- Reporting_DisablegenericrePorts-DFProperties-End -->
 
 <!-- Reporting_DisablegenericrePorts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2692,8 +2653,7 @@ This policy setting configures the time in minutes before a detection in the "no
 <!-- Reporting_NonCriticalTimeout-DFProperties-End -->
 
 <!-- Reporting_NonCriticalTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2748,8 +2708,7 @@ This policy setting configures the time in minutes before a detection in the "co
 <!-- Reporting_RecentlyCleanedTimeout-DFProperties-End -->
 
 <!-- Reporting_RecentlyCleanedTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2804,8 +2763,7 @@ This policy configures Windows software trace preprocessor (WPP Software Tracing
 <!-- Reporting_WppTracingComponents-DFProperties-End -->
 
 <!-- Reporting_WppTracingComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2865,8 +2823,7 @@ Tracing levels are defined as:
 <!-- Reporting_WppTracingLevel-DFProperties-End -->
 
 <!-- Reporting_WppTracingLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2925,8 +2882,7 @@ This policy setting allows you to manage whether or not end users can pause a sc
 <!-- Scan_AllowPause-DFProperties-End -->
 
 <!-- Scan_AllowPause-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2985,8 +2941,7 @@ This policy setting allows you to configure the maximum directory depth level in
 <!-- Scan_ArchiveMaxDepth-DFProperties-End -->
 
 <!-- Scan_ArchiveMaxDepth-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3045,8 +3000,7 @@ This policy setting allows you to configure the maximum size of archive files su
 <!-- Scan_ArchiveMaxSize-DFProperties-End -->
 
 <!-- Scan_ArchiveMaxSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3107,8 +3061,7 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- Scan_DisableArchiveScanning-DFProperties-End -->
 
 <!-- Scan_DisableArchiveScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3167,8 +3120,7 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 <!-- Scan_DisableEmailScanning-DFProperties-End -->
 
 <!-- Scan_DisableEmailScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3227,8 +3179,7 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 <!-- Scan_DisableHeuristics-DFProperties-End -->
 
 <!-- Scan_DisableHeuristics-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3283,8 +3234,7 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 
 <!-- Scan_DisablePackedExeScanning-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3338,8 +3288,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 <!-- Scan_DisableRemovableDriveScanning-DFProperties-End -->
 
 <!-- Scan_DisableRemovableDriveScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3398,8 +3347,7 @@ This policy setting allows you to configure reparse point scanning. If you allow
 <!-- Scan_DisableReparsePointScanning-DFProperties-End -->
 
 <!-- Scan_DisableReparsePointScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3458,8 +3406,7 @@ This policy setting allows you to create a system restore point on the computer 
 <!-- Scan_DisableRestorePoint-DFProperties-End -->
 
 <!-- Scan_DisableRestorePoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3518,8 +3465,7 @@ This policy setting allows you to configure scanning mapped network drives.
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-DFProperties-End -->
 
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3578,8 +3524,7 @@ This policy setting allows you to configure scanning for network files. It is re
 <!-- Scan_DisableScanningNetworkFiles-DFProperties-End -->
 
 <!-- Scan_DisableScanningNetworkFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3638,8 +3583,7 @@ This policy setting configures a local override for the configuration of maximum
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3698,8 +3642,7 @@ This policy setting configures a local override for the configuration of the sca
 <!-- Scan_LocalSettingOverrideScanParameters-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScanParameters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3758,8 +3701,7 @@ This policy setting configures a local override for the configuration of schedul
 <!-- Scan_LocalSettingOverrideScheduleDay-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3818,8 +3760,7 @@ This policy setting configures a local override for the configuration of schedul
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3878,8 +3819,7 @@ This policy setting configures a local override for the configuration of schedul
 <!-- Scan_LocalSettingOverrideScheduleTime-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3938,8 +3878,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 <!-- Scan_LowCpuPriority-DFProperties-End -->
 
 <!-- Scan_LowCpuPriority-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3998,8 +3937,7 @@ This policy setting allows you to define the number of consecutive scheduled sca
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-DFProperties-End -->
 
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4058,8 +3996,7 @@ This policy setting defines the number of days items should be kept in the scan 
 <!-- Scan_PurgeItemsAfterDelay-DFProperties-End -->
 
 <!-- Scan_PurgeItemsAfterDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4118,8 +4055,7 @@ This policy setting allows you to specify an interval at which to perform a quic
 <!-- Scan_QuickScanInterval-DFProperties-End -->
 
 <!-- Scan_QuickScanInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4178,8 +4114,7 @@ This policy setting allows you to configure scheduled scans to start only when y
 <!-- Scan_ScanOnlyIfIdle-DFProperties-End -->
 
 <!-- Scan_ScanOnlyIfIdle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4249,8 +4184,7 @@ This setting can be configured with the following ordinal number values:
 <!-- Scan_ScheduleDay-DFProperties-End -->
 
 <!-- Scan_ScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4309,8 +4243,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- Scan_ScheduleTime-DFProperties-End -->
 
 <!-- Scan_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4369,8 +4302,7 @@ This policy setting allows you to configure whether or not the antimalware servi
 <!-- ServiceKeepAlive-DFProperties-End -->
 
 <!-- ServiceKeepAlive-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4429,8 +4361,7 @@ This policy setting allows you to define the number of days that must pass befor
 <!-- SignatureUpdate_ASSignatureDue-DFProperties-End -->
 
 <!-- SignatureUpdate_ASSignatureDue-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4489,8 +4420,7 @@ This policy setting allows you to define the number of days that must pass befor
 <!-- SignatureUpdate_AVSignatureDue-DFProperties-End -->
 
 <!-- SignatureUpdate_AVSignatureDue-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4549,8 +4479,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-DFProperties-End -->
 
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4608,8 +4537,7 @@ This policy setting allows you to configure the automatic scan which starts afte
 <!-- SignatureUpdate_DisableScanOnUpdate-DFProperties-End -->
 
 <!-- SignatureUpdate_DisableScanOnUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4668,8 +4596,7 @@ This policy setting allows you to configure security intelligence updates when t
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-DFProperties-End -->
 
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4728,8 +4655,7 @@ This policy setting allows you to configure security intelligence updates on sta
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-DFProperties-End -->
 
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4790,8 +4716,7 @@ For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 <!-- SignatureUpdate_FallbackOrder-DFProperties-End -->
 
 <!-- SignatureUpdate_FallbackOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4849,8 +4774,7 @@ This policy setting allows you to enable download of security intelligence updat
 <!-- SignatureUpdate_ForceUpdateFromMU-DFProperties-End -->
 
 <!-- SignatureUpdate_ForceUpdateFromMU-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4909,8 +4833,7 @@ This policy setting allows you to enable real-time security intelligence updates
 <!-- SignatureUpdate_RealtimeSignatureDelivery-DFProperties-End -->
 
 <!-- SignatureUpdate_RealtimeSignatureDelivery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4980,8 +4903,7 @@ This setting can be configured with the following ordinal number values:
 <!-- SignatureUpdate_ScheduleDay-DFProperties-End -->
 
 <!-- SignatureUpdate_ScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5040,8 +4962,7 @@ This policy setting allows you to specify the time of day at which to check for 
 <!-- SignatureUpdate_ScheduleTime-DFProperties-End -->
 
 <!-- SignatureUpdate_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5098,8 +5019,7 @@ If you disable or do not configure this setting, security intelligence will be r
 <!-- SignatureUpdate_SharedSignaturesLocation-DFProperties-End -->
 
 <!-- SignatureUpdate_SharedSignaturesLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5157,8 +5077,7 @@ This policy setting allows you to configure the antimalware service to receive n
 <!-- SignatureUpdate_SignatureDisableNotification-DFProperties-End -->
 
 <!-- SignatureUpdate_SignatureDisableNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5217,8 +5136,7 @@ This policy setting allows you to define the number of days after which a catch-
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-DFProperties-End -->
 
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5277,8 +5195,7 @@ This policy setting allows you to manage whether a check for new virus and spywa
 <!-- SignatureUpdate_UpdateOnStartup-DFProperties-End -->
 
 <!-- SignatureUpdate_UpdateOnStartup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5337,8 +5254,7 @@ This policy setting configures a local override for the configuration to join Mi
 <!-- Spynet_LocalSettingOverrideSpynetReporting-DFProperties-End -->
 
 <!-- Spynet_LocalSettingOverrideSpynetReporting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5410,8 +5326,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- SpynetReporting-DFProperties-End -->
 
 <!-- SpynetReporting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5471,8 +5386,7 @@ Valid remediation action values are:
 <!-- Threats_ThreatIdDefaultAction-DFProperties-End -->
 
 <!-- Threats_ThreatIdDefaultAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5531,8 +5445,7 @@ This policy setting allows you to configure whether or not to display additional
 <!-- UX_Configuration_CustomDefaultActionToastString-DFProperties-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5591,8 +5504,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus noti
 <!-- UX_Configuration_Notification_Suppress-DFProperties-End -->
 
 <!-- UX_Configuration_Notification_Suppress-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5651,8 +5563,7 @@ If you enable this setting AM UI won't show reboot notifications.
 <!-- UX_Configuration_SuppressRebootNotification-DFProperties-End -->
 
 <!-- UX_Configuration_SuppressRebootNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5708,8 +5619,7 @@ If you enable this setting AM UI won't be available to users.
 <!-- UX_Configuration_UILockdown-DFProperties-End -->
 
 <!-- UX_Configuration_UILockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

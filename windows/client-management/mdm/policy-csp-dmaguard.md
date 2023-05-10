@@ -4,7 +4,7 @@ description: Learn more about the DmaGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- DeviceEnumerationPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. **Note** this policy does not apply to 1394, PCMCIA or ExpressCard devices.
+Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. Note this policy does not apply to 1394, PCMCIA or ExpressCard devices.
 <!-- DeviceEnumerationPolicy-Description-End -->
 
 <!-- DeviceEnumerationPolicy-Editable-Begin -->

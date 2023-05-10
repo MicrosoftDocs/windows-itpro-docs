@@ -4,7 +4,7 @@ description: Learn more about the ClientCertificateInstall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -299,7 +299,6 @@ Required.
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
-
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-End -->
 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Editable-Begin -->
@@ -1171,7 +1170,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify where to keep the private key. **Note** that even it is protected by TPM, it is not guarded with TPM PIN.
+Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN.
 SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Description-End -->
 
@@ -1466,7 +1465,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. OID of certificate template name. **Note** that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
+Optional. OID of certificate template name. Note that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Description-End -->
 
 <!-- Device-SCEP-{UniqueID}-Install-TemplateName-Editable-Begin -->
@@ -1556,7 +1555,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriodUnits-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. **Note** the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 > [!NOTE]
 > The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It is the server's decision on how to use this valid period to create the certificate.
@@ -1859,7 +1858,6 @@ Required.
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
-
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-End -->
 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Editable-Begin -->
@@ -2729,7 +2727,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify where to keep the private key. **Note** that even it is protected by TPM, it is not guarded with TPM PIN.
+Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN.
 SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Description-End -->
 
@@ -3024,7 +3022,7 @@ For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/
 
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. OID of certificate template name. **Note** that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
+Optional. OID of certificate template name. Note that this name is typically ignored by the SCEP server, therefore the MDM server typically doesn't need to provide it.
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Description-End -->
 
 <!-- User-SCEP-{UniqueID}-Install-TemplateName-Editable-Begin -->
@@ -3114,7 +3112,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
 
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriodUnits-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. **Note** the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 > [!NOTE]
 > The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It is the server's decision on how to use this valid period to create the certificate.

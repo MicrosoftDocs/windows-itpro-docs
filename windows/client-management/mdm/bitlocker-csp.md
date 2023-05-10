@@ -4,7 +4,7 @@ description: Learn more about the BitLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -76,7 +76,7 @@ The following list shows the BitLocker configuration service provider nodes:
 <!-- Device-AllowStandardUserEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AllowStandardUserEncryption-Applicability-End -->
 
 <!-- Device-AllowStandardUserEncryption-OmaUri-Begin -->
@@ -87,17 +87,16 @@ The following list shows the BitLocker configuration service provider nodes:
 
 <!-- Device-AllowStandardUserEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged-on user is non-admin/standard user.
-
+Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user.
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy being set to "0", i.e, Silent encryption is enforced.
-
-If "AllowWarningForOtherDiskEncryption" isn't set, or is set to "1", "RequireDeviceEncryption" policy won't try to encrypt drive(s) if a standard user is the current logged-on user in the system.
+If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
+is the current logged on user in the system.
 
 The expected values for this policy are:
 
 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
-
-0 = This is the default, when the policy isn't set. If current logged-on user is a standard user, "RequireDeviceEncryption" policy won't try to enable encryption on any drive.
+0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
+will not try to enable encryption on any drive.
 <!-- Device-AllowStandardUserEncryption-Description-End -->
 
 <!-- Device-AllowStandardUserEncryption-Editable-Begin -->
@@ -109,7 +108,7 @@ The expected values for this policy are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 | Dependency [AllowWarningForOtherDiskEncryptionDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Bitlocker/AllowWarningForOtherDiskEncryption` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -120,7 +119,7 @@ The expected values for this policy are:
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | This is the default, when the policy isn't set. If current logged-on user is a standard user, "RequireDeviceEncryption" policy won't try to enable encryption on any drive. |
+| 0 (Default) | This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy will not try to enable encryption on any drive. |
 | 1 | "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user. |
 <!-- Device-AllowStandardUserEncryption-AllowedValues-End -->
 
@@ -154,7 +153,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
 <!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-End -->
 
 <!-- Device-AllowSuspensionOfBitLockerProtection-OmaUri-Begin -->
@@ -173,8 +172,7 @@ This policy setting allows suspending protection for BitLocker Drive Encryption 
 The expected values for this policy are:
 
 0 = Prevent BitLocker Drive Encryption protection from being suspended.
-
-1 = This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection.
+1 = This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.
 <!-- Device-AllowSuspensionOfBitLockerProtection-Description-End -->
 
 <!-- Device-AllowSuspensionOfBitLockerProtection-Editable-Begin -->
@@ -186,7 +184,7 @@ The expected values for this policy are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-AllowSuspensionOfBitLockerProtection-DFProperties-End -->
@@ -197,7 +195,7 @@ The expected values for this policy are:
 | Value | Description |
 |:--|:--|
 | 0 | Prevent BitLocker Drive Encryption protection from being suspended. |
-| 1 (Default) | This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection. |
+| 1 (Default) | This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection. |
 <!-- Device-AllowSuspensionOfBitLockerProtection-AllowedValues-End -->
 
 <!-- Device-AllowSuspensionOfBitLockerProtection-Examples-Begin -->
@@ -212,7 +210,7 @@ The expected values for this policy are:
 <!-- Device-AllowWarningForOtherDiskEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-AllowWarningForOtherDiskEncryption-Applicability-End -->
 
 <!-- Device-AllowWarningForOtherDiskEncryption-OmaUri-Begin -->
@@ -227,17 +225,17 @@ Allows Admin to disable all UI (notification for encryption and warning prompt f
 and turn on encryption on the user machines silently.
 
 > [!WARNING]
-> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
+> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will
+require reinstallation of Windows.
 
 > [!NOTE]
 > This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
 
 The expected values for this policy are:
 
-1 = This is the default, when the policy isn't set. Warning prompt and encryption notification is allowed.
-
-0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, the value 0 only takes effect on Azure Active Directory joined devices.
-
+1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
+0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update,
+the value 0 only takes affect on Azure Active Directory joined devices.
 Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-AllowWarningForOtherDiskEncryption-Description-End -->
 
@@ -260,7 +258,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-AllowWarningForOtherDiskEncryption-DFProperties-End -->
@@ -301,7 +299,7 @@ Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-ConfigureRecoveryPasswordRotation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigureRecoveryPasswordRotation-Applicability-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-OmaUri-Begin -->
@@ -313,14 +311,12 @@ Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-Begin -->
 <!-- Description-Source-DDF -->
 Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
-
-When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
-
-For OS drive: Turn on "don't enable Bitlocker until recovery information is stored to AD DS for operating system drives"
-For Fixed drives: Turn on "don't enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
+When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when
+Active Directory back up for recovery password is configured to required.
+For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
+For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
 
 Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
-
 1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
 2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-End -->
@@ -334,7 +330,7 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-ConfigureRecoveryPasswordRotation-DFProperties-End -->
@@ -361,7 +357,7 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 <!-- Device-EncryptionMethodByDriveType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-EncryptionMethodByDriveType-Applicability-End -->
 
 <!-- Device-EncryptionMethodByDriveType-OmaUri-Begin -->
@@ -374,11 +370,11 @@ Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
 <!-- Description-Source-ADMX -->
 This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
 
-- If you enable this policy setting, all removable data drives that aren't BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+- If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
 If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.
 
-- If you disable or don't configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
+- If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
 
 > [!NOTE]
 > This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.
@@ -417,12 +413,12 @@ Sample value for this node to enable this policy and set the encryption methods 
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-EncryptionMethodByDriveType-DFProperties-End -->
 
 <!-- Device-EncryptionMethodByDriveType-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -467,7 +463,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-FixedDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-FixedDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-FixedDrivesEncryptionType-OmaUri-Begin -->
@@ -480,9 +476,9 @@ To disable this policy, use the following SyncML:
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.
 
-- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option won't be presented in the BitLocker setup wizard.
+- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.
 
-- If you disable or don't configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
+- If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
 <!-- Device-FixedDrivesEncryptionType-Description-End -->
 
 <!-- Device-FixedDrivesEncryptionType-Editable-Begin -->
@@ -510,12 +506,12 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FixedDrivesEncryptionType-DFProperties-End -->
 
 <!-- Device-FixedDrivesEncryptionType-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -542,7 +538,7 @@ Possible values:
 <!-- Device-FixedDrivesRecoveryOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-FixedDrivesRecoveryOptions-Applicability-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-OmaUri-Begin -->
@@ -559,18 +555,18 @@ The "Allow data recovery agent" check box is used to specify whether a data reco
 
 In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
-Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you won't be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
+Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
 
 In "Save BitLocker recovery information to Active Directory Domain Services" choose which BitLocker recovery information to store in AD DS for fixed data drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.
 
-Select the "don't enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
+Select the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
 > [!NOTE]
-> If the "don't enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.
+> If the "Do not enable BitLocker until recovery information is stored in AD DS for fixed data drives" check box is selected, a recovery password is automatically generated.
 
 - If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected fixed data drives.
 
-- If this policy setting isn't configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
+- If this policy setting is not configured or disabled, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.
 <!-- Device-FixedDrivesRecoveryOptions-Description-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-Editable-Begin -->
@@ -619,12 +615,12 @@ The possible values for 'zz' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FixedDrivesRecoveryOptions-DFProperties-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -669,7 +665,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-FixedDrivesRequireEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-FixedDrivesRequireEncryption-Applicability-End -->
 
 <!-- Device-FixedDrivesRequireEncryption-OmaUri-Begin -->
@@ -682,9 +678,9 @@ To disable this policy, use the following SyncML:
 <!-- Description-Source-ADMX -->
 This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.
 
-- If you enable this policy setting, all fixed data drives that aren't BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+- If you enable this policy setting, all fixed data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
-- If you disable or don't configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.
+- If you disable or do not configure this policy setting, all fixed data drives on the computer will be mounted with read and write access.
 <!-- Device-FixedDrivesRequireEncryption-Description-End -->
 
 <!-- Device-FixedDrivesRequireEncryption-Editable-Begin -->
@@ -697,12 +693,12 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-FixedDrivesRequireEncryption-DFProperties-End -->
 
 <!-- Device-FixedDrivesRequireEncryption-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -747,7 +743,7 @@ To disable this policy, use hte following SyncML:
 <!-- Device-IdentificationField-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-IdentificationField-Applicability-End -->
 
 <!-- Device-IdentificationField-OmaUri-Begin -->
@@ -758,9 +754,9 @@ To disable this policy, use hte following SyncML:
 
 <!-- Device-IdentificationField-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to associate unique organizational identifiers to a new drive that's enabled with BitLocker. These identifiers are stored as the identification field and allowed identification field. The identification field allows you to associate a unique organizational identifier to BitLocker-protected drives. This identifier is automatically added to new BitLocker-protected drives and can be updated on existing BitLocker-protected drives using the [manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool. An identification field is required for management of certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker will only manage and update data recovery agents when the identification field on the drive matches the value configured in the identification field. In a similar manner, BitLocker will only update the BitLocker To Go Reader when the identification field on the drive matches the value configured for the identification field.
+This policy setting allows you to associate unique organizational identifiers to a new drive that is enabled with BitLocker. These identifiers are stored as the identification field and allowed identification field. The identification field allows you to associate a unique organizational identifier to BitLocker-protected drives. This identifier is automatically added to new BitLocker-protected drives and can be updated on existing BitLocker-protected drives using the [manage-bde](/windows-server/administration/windows-commands/manage-bde) command-line tool. An identification field is required for management of certificate-based data recovery agents on BitLocker-protected drives and for potential updates to the BitLocker To Go Reader. BitLocker will only manage and update data recovery agents when the identification field on the drive matches the value configured in the identification field. In a similar manner, BitLocker will only update the BitLocker To Go Reader when the identification field on the drive matches the value configured for the identification field.
 
-The allowed identification field is used in combination with the "Deny write access to removable drives not protected by BitLocker" policy setting to help control the use of removable drives in your organization. It's a comma separated list of identification fields from your organization or other external organizations.
+The allowed identification field is used in combination with the "Deny write access to removable drives not protected by BitLocker" policy setting to help control the use of removable drives in your organization. It is a comma separated list of identification fields from your organization or other external organizations.
 
 You can configure the identification fields on existing drives by using [manage-bde](/windows-server/administration/windows-commands/manage-bde).exe.
 
@@ -768,7 +764,7 @@ You can configure the identification fields on existing drives by using [manage-
 
 When a BitLocker-protected drive is mounted on another BitLocker-enabled computer the identification field and allowed identification field will be used to determine whether the drive is from an outside organization.
 
-- If you disable or don't configure this policy setting, the identification field isn't required.
+- If you disable or do not configure this policy setting, the identification field is not required.
 
 > [!NOTE]
 > Identification fields are required for management of certificate-based data recovery agents on BitLocker-protected drives. BitLocker will only manage and update certificate-based data recovery agents when the identification field is present on a drive and is identical to the value configured on the computer. The identification field can be any value of 260 characters or fewer.
@@ -795,12 +791,12 @@ Sample value for this node to enable this policy is:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-IdentificationField-DFProperties-End -->
 
 <!-- Device-IdentificationField-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -827,7 +823,7 @@ Sample value for this node to enable this policy is:
 <!-- Device-RemovableDrivesConfigureBDE-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesConfigureBDE-Applicability-End -->
 
 <!-- Device-RemovableDrivesConfigureBDE-OmaUri-Begin -->
@@ -842,9 +838,9 @@ This policy setting controls the use of BitLocker on removable data drives. This
 
 When this policy setting is enabled you can select property settings that control how users can configure BitLocker. Choose "Allow users to apply BitLocker protection on removable data drives" to permit the user to run the BitLocker setup wizard on a removable data drive. Choose "Allow users to suspend and decrypt BitLocker on removable data drives" to permit the user to remove BitLocker Drive encryption from the drive or suspend the encryption while maintenance is performed. For information about suspending BitLocker protection, see [BitLocker Basic Deployment](/windows/security/information-protection/bitlocker/bitlocker-basic-deployment).
 
-- If you don't configure this policy setting, users can use BitLocker on removable disk drives.
+- If you do not configure this policy setting, users can use BitLocker on removable disk drives.
 
-- If you disable this policy setting, users can't use BitLocker on removable disk drives.
+- If you disable this policy setting, users cannot use BitLocker on removable disk drives.
 <!-- Device-RemovableDrivesConfigureBDE-Description-End -->
 
 <!-- Device-RemovableDrivesConfigureBDE-Editable-Begin -->
@@ -868,12 +864,12 @@ Sample value for this node to enable this policy is:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-RemovableDrivesConfigureBDE-DFProperties-End -->
 
 <!-- Device-RemovableDrivesConfigureBDE-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -900,7 +896,7 @@ Sample value for this node to enable this policy is:
 <!-- Device-RemovableDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-RemovableDrivesEncryptionType-OmaUri-Begin -->
@@ -913,9 +909,9 @@ Sample value for this node to enable this policy is:
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.
 
-- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option won't be presented in the BitLocker setup wizard.
+- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.
 
-- If you disable or don't configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
+- If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
 <!-- Device-RemovableDrivesEncryptionType-Description-End -->
 
 <!-- Device-RemovableDrivesEncryptionType-Editable-Begin -->
@@ -938,13 +934,13 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [BDEAllowed] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Bitlocker/RemovableDrivesConfigureBDE` <br> Dependency Allowed Value Type: `ADMX` <br>  |
 <!-- Device-RemovableDrivesEncryptionType-DFProperties-End -->
 
 <!-- Device-RemovableDrivesEncryptionType-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -971,7 +967,7 @@ Possible values:
 <!-- Device-RemovableDrivesExcludedFromEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-RemovableDrivesExcludedFromEncryption-Applicability-End -->
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-OmaUri-Begin -->
@@ -982,7 +978,7 @@ Possible values:
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
-When enabled, allows you to exclude removable drives and devices connected over USB interface from [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption). Excluded devices can't be encrypted, even manually. Additionally, if "Deny write access to removable drives not protected by BitLocker" is configured, user won't be prompted for encryption and drive will be mounted in read/write mode. Provide a comma separated list of excluded removable drives\devices, using the Hardware ID of the disk device. Example USBSTOR\SEAGATE_ST39102LW_______0004.
+When enabled, allows you to exclude removable drives and devices connected over USB interface from [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption). Excluded devices cannot be encrypted, even manually. Additionally, if "Deny write access to removable drives not protected by BitLocker" is configured, user will not be prompted for encryption and drive will be mounted in read/write mode. Provide a comma separated list of excluded removable drives\devices, using the Hardware ID of the disk device. Example USBSTOR\SEAGATE_ST39102LW_______0004.
 <!-- Device-RemovableDrivesExcludedFromEncryption-Description-End -->
 
 <!-- Device-RemovableDrivesExcludedFromEncryption-Editable-Begin -->
@@ -994,7 +990,7 @@ When enabled, allows you to exclude removable drives and devices connected over 
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `,`) |
 <!-- Device-RemovableDrivesExcludedFromEncryption-DFProperties-End -->
@@ -1011,7 +1007,7 @@ When enabled, allows you to exclude removable drives and devices connected over 
 <!-- Device-RemovableDrivesRequireEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RemovableDrivesRequireEncryption-Applicability-End -->
 
 <!-- Device-RemovableDrivesRequireEncryption-OmaUri-Begin -->
@@ -1024,11 +1020,11 @@ When enabled, allows you to exclude removable drives and devices connected over 
 <!-- Description-Source-ADMX -->
 This policy setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
 
-- If you enable this policy setting, all removable data drives that aren't BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
+- If you enable this policy setting, all removable data drives that are not BitLocker-protected will be mounted as read-only. If the drive is protected by BitLocker, it will be mounted with read and write access.
 
 If the "Deny write access to devices configured in another organization" option is selected, only drives with identification fields matching the computer's identification fields will be given write access. When a removable data drive is accessed it will be checked for valid identification field and allowed identification fields. These fields are defined by the "Provide the unique identifiers for your organization" policy setting.
 
-- If you disable or don't configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
+- If you disable or do not configure this policy setting, all removable data drives on the computer will be mounted with read and write access.
 
 > [!NOTE]
 > This policy setting can be overridden by the policy settings under User Configuration\Administrative Templates\System\Removable Storage Access. If the "Removable Disks: Deny write access" policy setting is enabled this policy setting will be ignored.
@@ -1057,12 +1053,12 @@ The possible values for 'xx' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-RemovableDrivesRequireEncryption-DFProperties-End -->
 
 <!-- Device-RemovableDrivesRequireEncryption-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1107,7 +1103,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-RequireDeviceEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RequireDeviceEncryption-Applicability-End -->
 
 <!-- Device-RequireDeviceEncryption-OmaUri-Begin -->
@@ -1123,7 +1119,7 @@ Allows the Admin to require encryption to be turned on using BitLocker\Device En
 Sample value for this node to enable this policy:
 1
 
-Disabling the policy won't turn off the encryption on the system drive. But will stop prompting the user to turn it on.
+Disabling the policy will not turn off the encryption on the system drive. But will stop prompting the user to turn it on.
 <!-- Device-RequireDeviceEncryption-Description-End -->
 
 <!-- Device-RequireDeviceEncryption-Editable-Begin -->
@@ -1148,7 +1144,7 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-RequireDeviceEncryption-DFProperties-End -->
@@ -1158,7 +1154,7 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disable. If the policy setting isn't set or is set to 0, the device's enforcement status isn't checked. The policy doesn't enforce encryption and it doesn't decrypt encrypted volumes. |
+| 0 (Default) | Disable. If the policy setting is not set or is set to 0, the device's enforcement status is not checked. The policy does not enforce encryption and it does not decrypt encrypted volumes. |
 | 1 | Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on AllowWarningForOtherDiskEncryption policy). |
 <!-- Device-RequireDeviceEncryption-AllowedValues-End -->
 
@@ -1199,7 +1195,7 @@ To disable RequireDeviceEncryption:
 <!-- Device-RequireStorageCardEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RequireStorageCardEncryption-Applicability-End -->
 
 <!-- Device-RequireStorageCardEncryption-OmaUri-Begin -->
@@ -1213,11 +1209,10 @@ To disable RequireDeviceEncryption:
 Allows the Admin to require storage card encryption on the device.
 
 This policy is only valid for mobile SKU.
-
 Sample value for this node to enable this policy:
 1
 
-Disabling the policy won't turn off the encryption on the storage card. But will stop prompting the user to turn it on.
+Disabling the policy will not turn off the encryption on the storage card. But will stop prompting the user to turn it on.
 <!-- Device-RequireStorageCardEncryption-Description-End -->
 
 <!-- Device-RequireStorageCardEncryption-Editable-Begin -->
@@ -1229,7 +1224,7 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-RequireStorageCardEncryption-DFProperties-End -->
@@ -1239,7 +1234,7 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Storage cards don't need to be encrypted. |
+| 0 (Default) | Storage cards do not need to be encrypted. |
 | 1 | Require storage cards to be encrypted. |
 <!-- Device-RequireStorageCardEncryption-AllowedValues-End -->
 
@@ -1255,7 +1250,7 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 <!-- Device-RotateRecoveryPasswords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-RotateRecoveryPasswords-Applicability-End -->
 
 <!-- Device-RotateRecoveryPasswords-OmaUri-Begin -->
@@ -1267,12 +1262,11 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 <!-- Device-RotateRecoveryPasswords-Description-Begin -->
 <!-- Description-Source-DDF -->
 Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
-
 This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
 
 The policy only comes into effect when Active Directory backup for a recovery password is configured to "required."
-- For OS drives, enable "don't enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
-- For fixed drives, enable "don't enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
+- For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
+- For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
 
 Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes:
 
@@ -1309,7 +1303,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Exec |
 <!-- Device-RotateRecoveryPasswords-DFProperties-End -->
 
@@ -1325,7 +1319,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -1347,7 +1341,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 
 | Property name | Property value |
 |:--|:--|
-| Format | `node` |
+| Format | node |
 | Access Type | Get |
 <!-- Device-Status-DFProperties-End -->
 
@@ -1363,7 +1357,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-DeviceEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Status-DeviceEncryptionStatus-Applicability-End -->
 
 <!-- Device-Status-DeviceEncryptionStatus-OmaUri-Begin -->
@@ -1375,7 +1369,6 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-DeviceEncryptionStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
 This node reports compliance state of device encryption on the system.
-
 Value '0' means the device is compliant. Any other value represents a non-compliant device.
 <!-- Device-Status-DeviceEncryptionStatus-Description-End -->
 
@@ -1409,7 +1402,7 @@ This value represents a bitmask with each bit and the corresponding error code d
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Get |
 <!-- Device-Status-DeviceEncryptionStatus-DFProperties-End -->
 
@@ -1425,7 +1418,7 @@ This value represents a bitmask with each bit and the corresponding error code d
 <!-- Device-Status-RemovableDrivesEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Status-RemovableDrivesEncryptionStatus-Applicability-End -->
 
 <!-- Device-Status-RemovableDrivesEncryptionStatus-OmaUri-Begin -->
@@ -1448,7 +1441,7 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Get |
 <!-- Device-Status-RemovableDrivesEncryptionStatus-DFProperties-End -->
 
@@ -1464,7 +1457,7 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Applicability-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-OmaUri-Begin -->
@@ -1476,8 +1469,8 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Description-Begin -->
 <!-- Description-Source-DDF -->
 This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
-
-This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus To ensure the status is correctly matched to the request ID.
+This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus
+To ensure the status is correctly matched to the request ID.
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Description-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Editable-Begin -->
@@ -1489,7 +1482,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Get |
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-DFProperties-End -->
 
@@ -1505,7 +1498,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1909 [10.0.18363] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Applicability-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsStatus-OmaUri-Begin -->
@@ -1517,7 +1510,6 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
 This Node reports the status of RotateRecoveryPasswords request.
-
 Status code can be one of the following:
 NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Description-End -->
@@ -1531,7 +1523,7 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 
 | Property name | Property value |
 |:--|:--|
-| Format | `int` |
+| Format | int |
 | Access Type | Get |
 <!-- Device-Status-RotateRecoveryPasswordsStatus-DFProperties-End -->
 
@@ -1547,7 +1539,7 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Applicability-End -->
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-OmaUri-Begin -->
@@ -1558,13 +1550,13 @@ NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure whether or not standard users are allowed to change BitLocker volume PINs, provided they're able to provide the existing PIN first.
+This policy setting allows you to configure whether or not standard users are allowed to change BitLocker volume PINs, provided they are able to provide the existing PIN first.
 
 This policy setting is applied when you turn on BitLocker.
 
-- If you enable this policy setting, standard users won't be allowed to change BitLocker PINs or passwords.
+- If you enable this policy setting, standard users will not be allowed to change BitLocker PINs or passwords.
 
-- If you disable or don't configure this policy setting, standard users will be permitted to change BitLocker PINs and passwords.
+- If you disable or do not configure this policy setting, standard users will be permitted to change BitLocker PINs and passwords.
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Description-End -->
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-Editable-Begin -->
@@ -1580,12 +1572,12 @@ Sample value for this node to disable this policy is: `<disabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-DFProperties-End -->
 
 <!-- Device-SystemDrivesDisallowStandardUsersCanChangePIN-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1612,7 +1604,7 @@ Sample value for this node to disable this policy is: `<disabled/>`
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Applicability-End -->
 
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-OmaUri-Begin -->
@@ -1629,9 +1621,9 @@ The Windows touch keyboard (such as that used by tablets) isn't available in the
 
 - If you enable this policy setting, devices must have an alternative means of pre-boot input (such as an attached USB keyboard).
 
-- If this policy isn't enabled, the Windows Recovery Environment must be enabled on tablets to support the entry of the BitLocker recovery password. When the Windows Recovery Environment isn't enabled and this policy isn't enabled, you can't turn on BitLocker on a device that uses the Windows touch keyboard.
+- If this policy is not enabled, the Windows Recovery Environment must be enabled on tablets to support the entry of the BitLocker recovery password. When the Windows Recovery Environment is not enabled and this policy is not enabled, you cannot turn on BitLocker on a device that uses the Windows touch keyboard.
 
-Note that if you don't enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include:
+Note that if you do not enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include:
 
   - Configure TPM startup PIN: Required/Allowed
   - Configure TPM startup key and PIN: Required/Allowed
@@ -1648,12 +1640,12 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-DFProperties-End -->
 
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1680,7 +1672,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Applicability-End -->
 
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-OmaUri-Begin -->
@@ -1695,7 +1687,7 @@ This policy setting allows users on devices that are compliant with InstantGo or
 
 - If you enable this policy setting, users on InstantGo and HSTI compliant devices will have the choice to turn on BitLocker without pre-boot authentication.
 
-- If this policy isn't enabled, the options of "Require additional authentication at startup" policy apply.
+- If this policy is not enabled, the options of "Require additional authentication at startup" policy apply.
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Description-End -->
 
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-Editable-Begin -->
@@ -1708,12 +1700,12 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-DFProperties-End -->
 
 <!-- Device-SystemDrivesEnablePreBootPinExceptionOnDECapableDevice-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1740,7 +1732,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEncryptionType-Applicability-End -->
 
 <!-- Device-SystemDrivesEncryptionType-OmaUri-Begin -->
@@ -1753,9 +1745,9 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the encryption type used by BitLocker Drive Encryption. This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose used space only encryption to require that only the portion of the drive used to store data is encrypted when BitLocker is turned on.
 
-- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option won't be presented in the BitLocker setup wizard.
+- If you enable this policy setting the encryption type that BitLocker will use to encrypt drives is defined by this policy and the encryption type option will not be presented in the BitLocker setup wizard.
 
-- If you disable or don't configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
+- If you disable or do not configure this policy setting, the BitLocker setup wizard will ask the user to select the encryption type before turning on BitLocker.
 <!-- Device-SystemDrivesEncryptionType-Description-End -->
 
 <!-- Device-SystemDrivesEncryptionType-Editable-Begin -->
@@ -1784,12 +1776,12 @@ Possible values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEncryptionType-DFProperties-End -->
 
 <!-- Device-SystemDrivesEncryptionType-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1816,7 +1808,7 @@ Possible values:
 <!-- Device-SystemDrivesEnhancedPIN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-SystemDrivesEnhancedPIN-Applicability-End -->
 
 <!-- Device-SystemDrivesEnhancedPIN-OmaUri-Begin -->
@@ -1834,9 +1826,9 @@ Enhanced startup PINs permit the use of characters including uppercase and lower
 - If you enable this policy setting, all new BitLocker startup PINs set will be enhanced PINs.
 
 > [!NOTE]
-> Not all computers may support enhanced PINs in the pre-boot environment. It's strongly recommended that users perform a system check during BitLocker setup.
+> Not all computers may support enhanced PINs in the pre-boot environment. It is strongly recommended that users perform a system check during BitLocker setup.
 
-- If you disable or don't configure this policy setting, enhanced PINs won't be used.
+- If you disable or do not configure this policy setting, enhanced PINs will not be used.
 <!-- Device-SystemDrivesEnhancedPIN-Description-End -->
 
 <!-- Device-SystemDrivesEnhancedPIN-Editable-Begin -->
@@ -1849,12 +1841,12 @@ Sample value for this node to enable this policy is: `<enabled/>`
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesEnhancedPIN-DFProperties-End -->
 
 <!-- Device-SystemDrivesEnhancedPIN-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1881,7 +1873,7 @@ Sample value for this node to enable this policy is: `<enabled/>`
 <!-- Device-SystemDrivesMinimumPINLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesMinimumPINLength-Applicability-End -->
 
 <!-- Device-SystemDrivesMinimumPINLength-OmaUri-Begin -->
@@ -1896,7 +1888,7 @@ This policy setting allows you to configure a minimum length for a Trusted Platf
 
 - If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.
 
-- If you disable or don't configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
+- If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
 
 > [!NOTE]
 > If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
@@ -1919,12 +1911,12 @@ Sample value for this node to enable this policy is:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesMinimumPINLength-DFProperties-End -->
 
 <!-- Device-SystemDrivesMinimumPINLength-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1968,7 +1960,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRecoveryMessage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRecoveryMessage-Applicability-End -->
 
 <!-- Device-SystemDrivesRecoveryMessage-OmaUri-Begin -->
@@ -1988,7 +1980,7 @@ If you select the "Use custom recovery message" option, the message you type in 
 If you select the "Use custom recovery URL" option, the URL you type in the "Custom recovery URL option" text box will replace the default URL in the default recovery message, which will be displayed in the pre-boot key recovery screen.
 
 > [!NOTE]
-> Not all characters and languages are supported in pre-boot. It's strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
+> Not all characters and languages are supported in pre-boot. It is strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 <!-- Device-SystemDrivesRecoveryMessage-Description-End -->
 
 <!-- Device-SystemDrivesRecoveryMessage-Editable-Begin -->
@@ -2028,12 +2020,12 @@ The possible value for 'yy' and 'zz' is a string of max length 900 and 500 respe
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesRecoveryMessage-DFProperties-End -->
 
 <!-- Device-SystemDrivesRecoveryMessage-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2077,7 +2069,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRecoveryOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRecoveryOptions-Applicability-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-OmaUri-Begin -->
@@ -2094,18 +2086,18 @@ The "Allow certificate-based data recovery agent" check box is used to specify w
 
 In "Configure user storage of BitLocker recovery information" select whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
-Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you won't be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
+Select "Omit recovery options from the BitLocker setup wizard" to prevent users from specifying recovery options when they turn on BitLocker on a drive. This means that you will not be able to specify which recovery option to use when you turn on BitLocker, instead BitLocker recovery options for the drive are determined by the policy setting.
 
 In "Save BitLocker recovery information to Active Directory Domain Services", choose which BitLocker recovery information to store in AD DS for operating system drives. If you select "Backup recovery password and key package", both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you select "Backup recovery password only," only the recovery password is stored in AD DS.
 
-Select the "don't enable BitLocker until recovery information is stored in AD DS for operating system drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
+Select the "Do not enable BitLocker until recovery information is stored in AD DS for operating system drives" check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
 > [!NOTE]
-> If the "don't enable BitLocker until recovery information is stored in AD DS for operating system drives" check box is selected, a recovery password is automatically generated.
+> If the "Do not enable BitLocker until recovery information is stored in AD DS for operating system drives" check box is selected, a recovery password is automatically generated.
 
 - If you enable this policy setting, you can control the methods available to users to recover data from BitLocker-protected operating system drives.
 
-- If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
+- If this policy setting is disabled or not configured, the default recovery options are supported for BitLocker recovery. By default a DRA is allowed, the recovery options can be specified by the user including the recovery password and recovery key, and recovery information is not backed up to AD DS.
 <!-- Device-SystemDrivesRecoveryOptions-Description-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-Editable-Begin -->
@@ -2153,12 +2145,12 @@ The possible values for 'zz' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesRecoveryOptions-DFProperties-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2203,7 +2195,7 @@ To disable this policy, use the following SyncML:
 <!-- Device-SystemDrivesRequireStartupAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SystemDrivesRequireStartupAuthentication-Applicability-End -->
 
 <!-- Device-SystemDrivesRequireStartupAuthentication-OmaUri-Begin -->
@@ -2225,7 +2217,7 @@ On a computer with a compatible TPM, four types of authentication methods can be
 
 - If you enable this policy setting, users can configure advanced startup options in the BitLocker setup wizard.
 
-- If you disable or don't configure this policy setting, users can configure only basic options on computers with a TPM.
+- If you disable or do not configure this policy setting, users can configure only basic options on computers with a TPM.
 
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool [manage-bde](/windows-server/administration/windows-commands/manage-bde) instead of the BitLocker Drive Encryption setup wizard.
@@ -2273,12 +2265,12 @@ The possible values for 'yy' are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-SystemDrivesRequireStartupAuthentication-DFProperties-End -->
 
 <!-- Device-SystemDrivesRequireStartupAuthentication-AdmxBacked-Begin -->
-[!INCLUDE [ADMX Backed Policy Tip](includes/mdm-admx-policy-note.md)]
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

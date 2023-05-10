@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ErrorReporting Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_ErrorReporting-Begin -->
 # Policy CSP - ADMX_ErrorReporting
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_ErrorReporting-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -69,8 +66,7 @@ For related information, see the Configure Error Reporting and Report Operating 
 <!-- PCH_AllOrNoneDef-DFProperties-End -->
 
 <!-- PCH_AllOrNoneDef-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -130,8 +126,7 @@ This policy setting controls Windows Error Reporting behavior for errors in gene
 <!-- PCH_AllOrNoneEx-DFProperties-End -->
 
 <!-- PCH_AllOrNoneEx-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -197,8 +192,7 @@ This setting will be ignored if the 'Configure Error Reporting' setting is disab
 <!-- PCH_AllOrNoneInc-DFProperties-End -->
 
 <!-- PCH_AllOrNoneInc-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -279,8 +273,7 @@ See related policy settings Display Error Notification (same folder as this poli
 <!-- PCH_ConfigureReport-DFProperties-End -->
 
 <!-- PCH_ConfigureReport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -342,8 +335,7 @@ See also the Configure Error Reporting policy setting.
 <!-- PCH_ReportOperatingSystemFaults-DFProperties-End -->
 
 <!-- PCH_ReportOperatingSystemFaults-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -402,8 +394,7 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 <!-- WerArchive_1-DFProperties-End -->
 
 <!-- WerArchive_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -462,8 +453,7 @@ This policy setting controls the behavior of the Windows Error Reporting archive
 <!-- WerArchive_2-DFProperties-End -->
 
 <!-- WerArchive_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -522,8 +512,7 @@ This policy setting controls whether memory dumps in support of OS-generated err
 <!-- WerAutoApproveOSDumps_1-DFProperties-End -->
 
 <!-- WerAutoApproveOSDumps_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -582,8 +571,7 @@ This policy setting controls whether memory dumps in support of OS-generated err
 <!-- WerAutoApproveOSDumps_2-DFProperties-End -->
 
 <!-- WerAutoApproveOSDumps_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -642,8 +630,7 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 <!-- WerBypassDataThrottling_1-DFProperties-End -->
 
 <!-- WerBypassDataThrottling_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -702,8 +689,7 @@ This policy setting determines whether Windows Error Reporting (WER) sends addit
 <!-- WerBypassDataThrottling_2-DFProperties-End -->
 
 <!-- WerBypassDataThrottling_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -762,8 +748,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 <!-- WerBypassNetworkCostThrottling_1-DFProperties-End -->
 
 <!-- WerBypassNetworkCostThrottling_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -822,8 +807,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks for 
 <!-- WerBypassNetworkCostThrottling_2-DFProperties-End -->
 
 <!-- WerBypassNetworkCostThrottling_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -882,8 +866,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 <!-- WerBypassPowerThrottling_1-DFProperties-End -->
 
 <!-- WerBypassPowerThrottling_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -942,8 +925,7 @@ This policy setting determines whether Windows Error Reporting (WER) checks if t
 <!-- WerBypassPowerThrottling_2-DFProperties-End -->
 
 <!-- WerBypassPowerThrottling_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1002,8 +984,7 @@ This policy setting specifies a corporate server to which Windows Error Reportin
 <!-- WerCER-DFProperties-End -->
 
 <!-- WerCER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1071,8 +1052,7 @@ This policy setting determines the consent behavior of Windows Error Reporting f
 <!-- WerConsentCustomize_1-DFProperties-End -->
 
 <!-- WerConsentCustomize_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1130,8 +1110,7 @@ This policy setting determines the behavior of the Configure Default Consent set
 <!-- WerConsentOverride_1-DFProperties-End -->
 
 <!-- WerConsentOverride_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1190,8 +1169,7 @@ This policy setting determines the behavior of the Configure Default Consent set
 <!-- WerConsentOverride_2-DFProperties-End -->
 
 <!-- WerConsentOverride_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1258,8 +1236,7 @@ This policy setting determines the default consent behavior of Windows Error Rep
 <!-- WerDefaultConsent_1-DFProperties-End -->
 
 <!-- WerDefaultConsent_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1325,8 +1302,7 @@ This policy setting determines the default consent behavior of Windows Error Rep
 <!-- WerDefaultConsent_2-DFProperties-End -->
 
 <!-- WerDefaultConsent_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1384,8 +1360,7 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 <!-- WerDisable_1-DFProperties-End -->
 
 <!-- WerDisable_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1446,8 +1421,7 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 <!-- WerExlusion_1-DFProperties-End -->
 
 <!-- WerExlusion_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1507,8 +1481,7 @@ This policy setting limits Windows Error Reporting behavior for errors in genera
 <!-- WerExlusion_2-DFProperties-End -->
 
 <!-- WerExlusion_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1566,8 +1539,7 @@ This policy setting controls whether Windows Error Reporting saves its own event
 <!-- WerNoLogging_1-DFProperties-End -->
 
 <!-- WerNoLogging_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1626,8 +1598,7 @@ This policy setting controls whether Windows Error Reporting saves its own event
 <!-- WerNoLogging_2-DFProperties-End -->
 
 <!-- WerNoLogging_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1686,8 +1657,7 @@ This policy setting controls whether additional data in support of error reports
 <!-- WerNoSecondLevelData_1-DFProperties-End -->
 
 <!-- WerNoSecondLevelData_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1748,8 +1718,7 @@ The Maximum number of reports to queue setting determines how many reports can b
 <!-- WerQueue_1-DFProperties-End -->
 
 <!-- WerQueue_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1810,8 +1779,7 @@ The Maximum number of reports to queue setting determines how many reports can b
 <!-- WerQueue_2-DFProperties-End -->
 
 <!-- WerQueue_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

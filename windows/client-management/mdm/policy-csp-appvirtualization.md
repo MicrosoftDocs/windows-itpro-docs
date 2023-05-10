@@ -4,7 +4,7 @@ description: Learn more about the AppVirtualization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- AppVirtualization-Begin -->
 # Policy CSP - AppVirtualization
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- AppVirtualization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -59,8 +56,7 @@ This policy setting allows you to enable or disable Microsoft Application Virtua
 <!-- AllowAppVClient-DFProperties-End -->
 
 <!-- AllowAppVClient-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -115,8 +111,7 @@ Enables Dynamic Virtualization of supported shell extensions, browser helper obj
 <!-- AllowDynamicVirtualization-DFProperties-End -->
 
 <!-- AllowDynamicVirtualization-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -171,8 +166,7 @@ Enables automatic cleanup of appv packages that were added after Windows10 anniv
 <!-- AllowPackageCleanup-DFProperties-End -->
 
 <!-- AllowPackageCleanup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -227,8 +221,7 @@ Enables scripts defined in the package manifest of configuration files that shou
 <!-- AllowPackageScripts-DFProperties-End -->
 
 <!-- AllowPackageScripts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -283,8 +276,7 @@ Enables a UX to display to the user when a publishing refresh is performed on th
 <!-- AllowPublishingRefreshUX-DFProperties-End -->
 
 <!-- AllowPublishingRefreshUX-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -349,8 +341,7 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 <!-- AllowReportingServer-DFProperties-End -->
 
 <!-- AllowReportingServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -405,8 +396,7 @@ Specifies the file paths relative to %userprofile% that do not roam with a user'
 <!-- AllowRoamingFileExclusions-DFProperties-End -->
 
 <!-- AllowRoamingFileExclusions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -460,8 +450,7 @@ Specifies the registry paths that do not roam with a user profile. Example usage
 <!-- AllowRoamingRegistryExclusions-DFProperties-End -->
 
 <!-- AllowRoamingRegistryExclusions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -515,8 +504,7 @@ Specifies how new packages should be loaded automatically by App-V on a specific
 <!-- AllowStreamingAutoload-DFProperties-End -->
 
 <!-- AllowStreamingAutoload-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -570,8 +558,7 @@ Migration mode allows the App-V client to modify shortcuts and FTA's for package
 <!-- ClientCoexistenceAllowMigrationmode-DFProperties-End -->
 
 <!-- ClientCoexistenceAllowMigrationmode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -626,8 +613,7 @@ Specifies the location where symbolic links are created to the current version o
 <!-- IntegrationAllowRootGlobal-DFProperties-End -->
 
 <!-- IntegrationAllowRootGlobal-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -681,8 +667,7 @@ Specifies the location where symbolic links are created to the current version o
 <!-- IntegrationAllowRootUser-DFProperties-End -->
 
 <!-- IntegrationAllowRootUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -754,8 +739,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer1-DFProperties-End -->
 
 <!-- PublishingAllowServer1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -827,8 +811,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer2-DFProperties-End -->
 
 <!-- PublishingAllowServer2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -900,8 +883,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer3-DFProperties-End -->
 
 <!-- PublishingAllowServer3-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -973,8 +955,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer4-DFProperties-End -->
 
 <!-- PublishingAllowServer4-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1046,8 +1027,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 <!-- PublishingAllowServer5-DFProperties-End -->
 
 <!-- PublishingAllowServer5-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1101,8 +1081,7 @@ Specifies the path to a valid certificate in the certificate store.
 <!-- StreamingAllowCertificateFilterForClient_SSL-DFProperties-End -->
 
 <!-- StreamingAllowCertificateFilterForClient_SSL-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1156,8 +1135,7 @@ This setting controls whether virtualized applications are launched on Windows 8
 <!-- StreamingAllowHighCostLaunch-DFProperties-End -->
 
 <!-- StreamingAllowHighCostLaunch-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1212,8 +1190,7 @@ Specifies the CLSID for a compatible implementation of the IAppvPackageLocationP
 <!-- StreamingAllowLocationProvider-DFProperties-End -->
 
 <!-- StreamingAllowLocationProvider-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1267,8 +1244,7 @@ Specifies directory where all new applications and updates will be installed.
 <!-- StreamingAllowPackageInstallationRoot-DFProperties-End -->
 
 <!-- StreamingAllowPackageInstallationRoot-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1322,8 +1298,7 @@ Overrides source location for downloading package content.
 <!-- StreamingAllowPackageSourceRoot-DFProperties-End -->
 
 <!-- StreamingAllowPackageSourceRoot-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1377,8 +1352,7 @@ Specifies the number of seconds between attempts to reestablish a dropped sessio
 <!-- StreamingAllowReestablishmentInterval-DFProperties-End -->
 
 <!-- StreamingAllowReestablishmentInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1432,8 +1406,7 @@ Specifies the number of times to retry a dropped session.
 <!-- StreamingAllowReestablishmentRetries-DFProperties-End -->
 
 <!-- StreamingAllowReestablishmentRetries-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1487,8 +1460,7 @@ Specifies that streamed package contents will be not be saved to the local hard 
 <!-- StreamingSharedContentStoreMode-DFProperties-End -->
 
 <!-- StreamingSharedContentStoreMode-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1543,8 +1515,7 @@ If enabled, the App-V client will support BrancheCache compatible HTTP streaming
 <!-- StreamingSupportBranchCache-DFProperties-End -->
 
 <!-- StreamingSupportBranchCache-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1599,8 +1570,7 @@ Verifies Server certificate revocation status before streaming using HTTPS.
 <!-- StreamingVerifyCertificateRevocationList-DFProperties-End -->
 
 <!-- StreamingVerifyCertificateRevocationList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1655,8 +1625,7 @@ Specifies a list of process paths (may contain wildcards) which are candidates f
 <!-- VirtualComponentsAllowList-DFProperties-End -->
 
 <!-- VirtualComponentsAllowList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

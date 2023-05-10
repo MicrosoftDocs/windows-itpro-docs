@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_TerminalServer-Begin -->
 # Policy CSP - ADMX_TerminalServer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_TerminalServer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -65,8 +62,7 @@ If the status is set to Not Configured, automatic reconnection is not specified 
 <!-- TS_AUTO_RECONNECT-DFProperties-End -->
 
 <!-- TS_AUTO_RECONNECT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -127,8 +123,7 @@ By default, Remote Desktop Services allows redirection of video capture devices.
 <!-- TS_CAMERA_REDIRECTION-DFProperties-End -->
 
 <!-- TS_CAMERA_REDIRECTION-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ If no certificate can be found that was created with the specified certificate t
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-DFProperties-End -->
 
 <!-- TS_CERTIFICATE_TEMPLATE_POLICY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -257,8 +251,7 @@ This policy setting allows you to specify whether users can run Remote Desktop P
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-DFProperties-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -321,8 +314,7 @@ This policy setting allows you to specify whether users can run Remote Desktop P
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-DFProperties-End -->
 
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -381,8 +373,7 @@ This policy setting allows you to specify whether users can run unsigned Remote 
 <!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-DFProperties-End -->
 
 <!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -441,8 +432,7 @@ This policy setting allows you to specify whether users can run unsigned Remote 
 <!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_2-DFProperties-End -->
 
 <!-- TS_CLIENT_ALLOW_UNSIGNED_FILES_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -506,8 +496,7 @@ By default, audio and video playback redirection is not allowed when connecting 
 <!-- TS_CLIENT_AUDIO-DFProperties-End -->
 
 <!-- TS_CLIENT_AUDIO-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -571,8 +560,7 @@ By default, audio recording redirection is not allowed when connecting to a comp
 <!-- TS_CLIENT_AUDIO_CAPTURE-DFProperties-End -->
 
 <!-- TS_CLIENT_AUDIO_CAPTURE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -635,8 +623,7 @@ Audio playback quality can be configured on the client computer by using the aud
 <!-- TS_CLIENT_AUDIO_QUALITY-DFProperties-End -->
 
 <!-- TS_CLIENT_AUDIO_QUALITY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -698,8 +685,7 @@ You can use this setting to prevent users from redirecting Clipboard data to and
 <!-- TS_CLIENT_CLIPBOARD-DFProperties-End -->
 
 <!-- TS_CLIENT_CLIPBOARD-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -762,8 +748,7 @@ You can use this setting to prevent users from redirecting data to COM port peri
 <!-- TS_CLIENT_COM-DFProperties-End -->
 
 <!-- TS_CLIENT_COM-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -826,8 +811,7 @@ By default, Remote Desktop Services automatically designates the client default 
 <!-- TS_CLIENT_DEFAULT_M-DFProperties-End -->
 
 <!-- TS_CLIENT_DEFAULT_M-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -882,8 +866,7 @@ This policy setting specifies whether the Remote Desktop Connection can use hard
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-DFProperties-End -->
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -942,8 +925,7 @@ Controls whether a user can save passwords using Remote Desktop Connection.
 <!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-DFProperties-End -->
 
 <!-- TS_CLIENT_DISABLE_PASSWORD_SAVING_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1006,8 +988,7 @@ You can use this setting to prevent users from mapping local LPT ports and redir
 <!-- TS_CLIENT_LPT-DFProperties-End -->
 
 <!-- TS_CLIENT_LPT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1072,8 +1053,7 @@ By default, Remote Desktop Services does not allow redirection of supported Plug
 <!-- TS_CLIENT_PNP-DFProperties-End -->
 
 <!-- TS_CLIENT_PNP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1136,8 +1116,7 @@ You can use this policy setting to prevent users from redirecting print jobs fro
 <!-- TS_CLIENT_PRINTER-DFProperties-End -->
 
 <!-- TS_CLIENT_PRINTER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1181,7 +1160,7 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 
 - If you disable or do not configure this policy setting, no publisher is treated as a trusted .rdp publisher.
 
-**Note**:
+Note:
 
 You can define this policy setting in the Computer Configuration node or in the User Configuration node.
 - If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
@@ -1205,8 +1184,7 @@ If the list contains a string that is not a certificate thumbprint, it is ignore
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1-DFProperties-End -->
 
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1249,7 +1227,7 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 
 - If you disable or do not configure this policy setting, no publisher is treated as a trusted .rdp publisher.
 
-**Note**:
+Note:
 
 You can define this policy setting in the Computer Configuration node or in the User Configuration node.
 - If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
@@ -1273,8 +1251,7 @@ If the list contains a string that is not a certificate thumbprint, it is ignore
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-DFProperties-End -->
 
 <!-- TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1332,8 +1309,7 @@ This policy setting specifies whether the UDP protocol will be used to access se
 <!-- TS_CLIENT_TURN_OFF_UDP-DFProperties-End -->
 
 <!-- TS_CLIENT_TURN_OFF_UDP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1379,7 +1355,7 @@ You can use this policy setting to set a limit on the color depth of any connect
 
 - If you disable or do not configure this policy setting, the color depth for connections is not specified at the Group Policy level.
 
-**Note**:
+Note:
 
 1.	Setting the color depth to 24 bits is only supported on Windows Server 2003 and Windows XP Professional.
 2.	The value specified in this policy setting is not applied to connections from client computers that are using at least Remote Desktop Protocol 8.0 (computers running at least Windows 8 or Windows Server 2012). The 32-bit color depth format is always used for these connections.
@@ -1406,8 +1382,7 @@ If the client does not support at least 16 bits, the connection is terminated.
 <!-- TS_COLORDEPTH-DFProperties-End -->
 
 <!-- TS_COLORDEPTH-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1471,8 +1446,7 @@ This policy setting allows you to limit the size of the entire roaming user prof
 <!-- TS_DELETE_ROAMING_USER_PROFILES-DFProperties-End -->
 
 <!-- TS_DELETE_ROAMING_USER_PROFILES-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1535,8 +1509,7 @@ If the status is set to Not Configured, the default behavior applies.
 <!-- TS_DISABLE_REMOTE_DESKTOP_WALLPAPER-DFProperties-End -->
 
 <!-- TS_DISABLE_REMOTE_DESKTOP_WALLPAPER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1600,8 +1573,7 @@ This policy setting enables system administrators to change the graphics renderi
 <!-- TS_DX_USE_FULL_HWGPU-DFProperties-End -->
 
 <!-- TS_DX_USE_FULL_HWGPU-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1663,8 +1635,7 @@ This policy setting allows you to specify whether the Remote Desktop Easy Print 
 <!-- TS_EASY_PRINT-DFProperties-End -->
 
 <!-- TS_EASY_PRINT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1726,8 +1697,7 @@ This policy setting allows you to specify whether the Remote Desktop Easy Print 
 <!-- TS_EASY_PRINT_User-DFProperties-End -->
 
 <!-- TS_EASY_PRINT_User-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1792,8 +1762,7 @@ When deployed on an RD Session Host server, RemoteFX delivers a rich user experi
 <!-- TS_EnableVirtualGraphics-DFProperties-End -->
 
 <!-- TS_EnableVirtualGraphics-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1867,8 +1836,7 @@ By default, the RD Session Host server fallback printer driver is disabled. If t
 <!-- TS_FALLBACKPRINTDRIVERTYPE-DFProperties-End -->
 
 <!-- TS_FALLBACKPRINTDRIVERTYPE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1932,8 +1900,7 @@ This policy is useful when the currently connected administrator does not want t
 <!-- TS_FORCIBLE_LOGOFF-DFProperties-End -->
 
 <!-- TS_FORCIBLE_LOGOFF-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1992,8 +1959,7 @@ If you disable or do not configure this policy setting, the authentication metho
 <!-- TS_GATEWAY_POLICY_AUTH_METHOD-DFProperties-End -->
 
 <!-- TS_GATEWAY_POLICY_AUTH_METHOD-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2057,8 +2023,7 @@ To allow users to overwrite this policy setting, select the "Allow users to chan
 <!-- TS_GATEWAY_POLICY_ENABLE-DFProperties-End -->
 
 <!-- TS_GATEWAY_POLICY_ENABLE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2121,8 +2086,7 @@ To allow users to overwrite the "Set RD Gateway server address" policy setting a
 <!-- TS_GATEWAY_POLICY_SERVER-DFProperties-End -->
 
 <!-- TS_GATEWAY_POLICY_SERVER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2167,7 +2131,7 @@ If the policy setting is enabled, the RD Session Host server joins the farm that
 
 If the policy setting is not configured, the policy setting is not specified at the Group Policy level.
 
-**Note**:
+Note:
 
 1.
 
@@ -2190,8 +2154,7 @@ If the policy setting is not configured, the policy setting is not specified at 
 <!-- TS_JOIN_SESSION_DIRECTORY-DFProperties-End -->
 
 <!-- TS_JOIN_SESSION_DIRECTORY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2252,8 +2215,7 @@ After an RD Session Host server client loses the connection to an RD Session Hos
 <!-- TS_KEEP_ALIVE-DFProperties-End -->
 
 <!-- TS_KEEP_ALIVE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2319,8 +2281,7 @@ By default, the RDS Endpoint Servers group is empty.
 <!-- TS_LICENSE_SECGROUP-DFProperties-End -->
 
 <!-- TS_LICENSE_SECGROUP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2383,8 +2344,7 @@ This policy setting allows you to specify the order in which an RD Session Host 
 <!-- TS_LICENSE_SERVERS-DFProperties-End -->
 
 <!-- TS_LICENSE_SERVERS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2444,8 +2404,7 @@ By default, notifications are displayed on an RD Session Host server after you l
 <!-- TS_LICENSE_TOOLTIP-DFProperties-End -->
 
 <!-- TS_LICENSE_TOOLTIP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2509,8 +2468,7 @@ Per Device licensing mode requires that each device connecting to this RD Sessio
 <!-- TS_LICENSING_MODE-DFProperties-End -->
 
 <!-- TS_LICENSING_MODE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2575,8 +2533,7 @@ If the status is set to Disabled or Not Configured, limits to the number of conn
 <!-- TS_MAX_CON_POLICY-DFProperties-End -->
 
 <!-- TS_MAX_CON_POLICY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2634,8 +2591,7 @@ This policy setting allows you to specify the maximum display resolution that ca
 <!-- TS_MAXDISPLAYRES-DFProperties-End -->
 
 <!-- TS_MAXDISPLAYRES-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2693,8 +2649,7 @@ This policy setting allows you to limit the number of monitors that a user can u
 <!-- TS_MAXMONITOR-DFProperties-End -->
 
 <!-- TS_MAXMONITOR-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2757,8 +2712,7 @@ You can use this policy setting to prevent users from using this familiar method
 <!-- TS_NoDisconnectMenu-DFProperties-End -->
 
 <!-- TS_NoDisconnectMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2817,8 +2771,7 @@ If the status is set to Disabled or Not Configured, Windows Security remains in 
 <!-- TS_NoSecurityMenu-DFProperties-End -->
 
 <!-- TS_NoSecurityMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2884,8 +2837,7 @@ By default, if the most appropriate RDS CAL is not available for a connection, a
 <!-- TS_PreventLicenseUpgrade-DFProperties-End -->
 
 <!-- TS_PreventLicenseUpgrade-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2947,8 +2899,7 @@ This policy setting determines whether a user will be prompted on the client com
 <!-- TS_PROMT_CREDS_CLIENT_COMP-DFProperties-End -->
 
 <!-- TS_PROMT_CREDS_CLIENT_COMP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3012,8 +2963,7 @@ The default connection URL must be configured in the form of< https://contoso.co
 <!-- TS_RADC_DefaultConnection-DFProperties-End -->
 
 <!-- TS_RADC_DefaultConnection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3073,8 +3023,7 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 <!-- TS_RDSAppX_WaitForRegistration-DFProperties-End -->
 
 <!-- TS_RDSAppX_WaitForRegistration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3140,8 +3089,7 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 <!-- TS_RemoteControl_1-DFProperties-End -->
 
 <!-- TS_RemoteControl_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3206,8 +3154,7 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 <!-- TS_RemoteControl_2-DFProperties-End -->
 
 <!-- TS_RemoteControl_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3267,8 +3214,7 @@ By default, Remote Desktop Connection sessions that use RemoteFX are optimized f
 <!-- TS_RemoteDesktopVirtualGraphics-DFProperties-End -->
 
 <!-- TS_RemoteDesktopVirtualGraphics-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3313,7 +3259,7 @@ If you specify a new farm name, a new farm is created in RD Connection Broker. I
 
 - If you disable or do not configure this policy setting, the farm name is not specified at the Group Policy level.
 
-**Note**:
+Note:
 
 1. This policy setting is not effective unless both the Join RD Connection Broker and the Configure RD Connection Broker server name policy settings are enabled and configured by using Group Policy.
 
@@ -3334,8 +3280,7 @@ If you specify a new farm name, a new farm is created in RD Connection Broker. I
 <!-- TS_SD_ClustName-DFProperties-End -->
 
 <!-- TS_SD_ClustName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3380,7 +3325,7 @@ This policy setting allows you to specify the redirection method to use when a c
 
 - If you do not configure this policy setting, the Use IP address redirection policy setting is not enforced at the group Group policy Policy level and the default will be used. This setting is enabled by default.
 
-**Note**:
+Note:
 
 1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 <!-- TS_SD_EXPOSE_ADDRESS-Description-End -->
@@ -3399,8 +3344,7 @@ This policy setting allows you to specify the redirection method to use when a c
 <!-- TS_SD_EXPOSE_ADDRESS-DFProperties-End -->
 
 <!-- TS_SD_EXPOSE_ADDRESS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3444,7 +3388,7 @@ This policy setting allows you to specify the RD Connection Broker server that t
 
 - If you disable or do not configure this policy setting, the policy setting is not specified at the Group Policy level.
 
-**Note**:
+Note:
 
 1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 
@@ -3467,8 +3411,7 @@ This policy setting allows you to specify the RD Connection Broker server that t
 <!-- TS_SD_Loc-DFProperties-End -->
 
 <!-- TS_SD_Loc-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3532,8 +3475,7 @@ This policy setting specifies whether to require the use of a specific security 
 <!-- TS_SECURITY_LAYER_POLICY-DFProperties-End -->
 
 <!-- TS_SECURITY_LAYER_POLICY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3597,8 +3539,7 @@ If you disable or do not configure this policy setting, Remote Desktop Protocol 
 <!-- TS_SELECT_NETWORK_DETECT-DFProperties-End -->
 
 <!-- TS_SELECT_NETWORK_DETECT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3662,8 +3603,7 @@ If the UDP connection is not successful or if you select "Use only TCP," all of 
 <!-- TS_SELECT_TRANSPORT-DFProperties-End -->
 
 <!-- TS_SELECT_TRANSPORT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3721,8 +3661,7 @@ This policy setting allows you to enable RemoteApp programs to use advanced grap
 <!-- TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP-DFProperties-End -->
 
 <!-- TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3787,8 +3726,7 @@ Do not connect if authentication fails: The client establishes a connection to t
 <!-- TS_SERVER_AUTH-DFProperties-End -->
 
 <!-- TS_SERVER_AUTH-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3842,8 +3780,7 @@ This policy setting lets you enable H.264/AVC hardware encoding support for Remo
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-DFProperties-End -->
 
 <!-- TS_SERVER_AVC_HW_ENCODE_PREFERRED-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3898,8 +3835,7 @@ This policy setting prioritizes the H.264/AVC 444 graphics mode for non-RemoteFX
 <!-- TS_SERVER_AVC444_MODE_PREFERRED-DFProperties-End -->
 
 <!-- TS_SERVER_AVC444_MODE_PREFERRED-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3962,8 +3898,7 @@ You can also choose not to use an RDP compression algorithm. Choosing not to use
 <!-- TS_SERVER_COMPRESSOR-DFProperties-End -->
 
 <!-- TS_SERVER_COMPRESSOR-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4026,8 +3961,7 @@ This policy setting allows you to specify the visual quality for remote users wh
 <!-- TS_SERVER_IMAGE_QUALITY-DFProperties-End -->
 
 <!-- TS_SERVER_IMAGE_QUALITY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4084,8 +4018,7 @@ This policy setting allows you to configure graphics encoding to use the RemoteF
 <!-- TS_SERVER_LEGACY_RFX-DFProperties-End -->
 
 <!-- TS_SERVER_LEGACY_RFX-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4149,8 +4082,7 @@ This policy setting allows the administrator to configure the RemoteFX experienc
 <!-- TS_SERVER_PROFILE-DFProperties-End -->
 
 <!-- TS_SERVER_PROFILE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4210,8 +4142,7 @@ By default, Remote Desktop Services sessions are optimized for rich multimedia, 
 <!-- TS_SERVER_VISEXP-DFProperties-End -->
 
 <!-- TS_SERVER_VISEXP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4271,8 +4202,7 @@ For this change to take effect, you must restart Windows.
 <!-- TS_SERVER_WDDM_GRAPHICS_DRIVER-DFProperties-End -->
 
 <!-- TS_SERVER_WDDM_GRAPHICS_DRIVER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4340,8 +4270,7 @@ Time limits are set locally by the server administrator or by using Group Policy
 <!-- TS_Session_End_On_Limit_1-DFProperties-End -->
 
 <!-- TS_Session_End_On_Limit_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4409,8 +4338,7 @@ Time limits are set locally by the server administrator or by using Group Policy
 <!-- TS_Session_End_On_Limit_2-DFProperties-End -->
 
 <!-- TS_Session_End_On_Limit_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4476,8 +4404,7 @@ When a session is in a disconnected state, running programs are kept active even
 <!-- TS_SESSIONS_Disconnected_Timeout_1-DFProperties-End -->
 
 <!-- TS_SESSIONS_Disconnected_Timeout_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4542,8 +4469,7 @@ When a session is in a disconnected state, running programs are kept active even
 <!-- TS_SESSIONS_Disconnected_Timeout_2-DFProperties-End -->
 
 <!-- TS_SESSIONS_Disconnected_Timeout_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4606,8 +4532,7 @@ If you want Remote Desktop Services to end instead of disconnect a session when 
 <!-- TS_SESSIONS_Idle_Limit_1-DFProperties-End -->
 
 <!-- TS_SESSIONS_Idle_Limit_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4670,8 +4595,7 @@ If you want Remote Desktop Services to end instead of disconnect a session when 
 <!-- TS_SESSIONS_Idle_Limit_2-DFProperties-End -->
 
 <!-- TS_SESSIONS_Idle_Limit_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4734,8 +4658,7 @@ If you want Remote Desktop Services to end instead of disconnect a session when 
 <!-- TS_SESSIONS_Limits_1-DFProperties-End -->
 
 <!-- TS_SESSIONS_Limits_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4798,8 +4721,7 @@ If you want Remote Desktop Services to end instead of disconnect a session when 
 <!-- TS_SESSIONS_Limits_2-DFProperties-End -->
 
 <!-- TS_SESSIONS_Limits_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4859,8 +4781,7 @@ This policy setting allows you to restrict users to a single Remote Desktop Serv
 <!-- TS_SINGLE_SESSION-DFProperties-End -->
 
 <!-- TS_SINGLE_SESSION-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4922,8 +4843,7 @@ This policy setting allows you to control the redirection of smart card devices 
 <!-- TS_SMART_CARD-DFProperties-End -->
 
 <!-- TS_SMART_CARD-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4991,8 +4911,7 @@ If the status is set to Disabled or Not Configured, Remote Desktop Services sess
 <!-- TS_START_PROGRAM_1-DFProperties-End -->
 
 <!-- TS_START_PROGRAM_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5060,8 +4979,7 @@ If the status is set to Disabled or Not Configured, Remote Desktop Services sess
 <!-- TS_START_PROGRAM_2-DFProperties-End -->
 
 <!-- TS_START_PROGRAM_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5126,8 +5044,7 @@ You can use this setting to maintain a user's session-specific temporary folders
 <!-- TS_TEMP_DELETE-DFProperties-End -->
 
 <!-- TS_TEMP_DELETE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5190,8 +5107,7 @@ You can use this policy setting to disable the creation of separate temporary fo
 <!-- TS_TEMP_PER_SESSION-DFProperties-End -->
 
 <!-- TS_TEMP_PER_SESSION-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5253,8 +5169,7 @@ This policy setting determines whether the client computer redirects its time zo
 <!-- TS_TIME_ZONE-DFProperties-End -->
 
 <!-- TS_TIME_ZONE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5318,8 +5233,7 @@ You can use this setting to prevent administrators from making changes to the us
 <!-- TS_TSCC_PERMISSIONS_POLICY-DFProperties-End -->
 
 <!-- TS_TSCC_PERMISSIONS_POLICY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5381,8 +5295,7 @@ This policy setting determines whether the desktop is always displayed after a c
 <!-- TS_TURNOFF_SINGLEAPP-DFProperties-End -->
 
 <!-- TS_TURNOFF_SINGLEAPP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5445,8 +5358,7 @@ Remote Desktop sessions don't currently support UI Automation redirection.
 <!-- TS_UIA-DFProperties-End -->
 
 <!-- TS_UIA-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5507,8 +5419,7 @@ For this change to take effect, you must restart Windows.
 <!-- TS_USB_REDIRECTION_DISABLE-DFProperties-End -->
 
 <!-- TS_USB_REDIRECTION_DISABLE-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5573,8 +5484,7 @@ To determine whether a client computer supports Network Level Authentication, st
 <!-- TS_USER_AUTHENTICATION_POLICY-DFProperties-End -->
 
 <!-- TS_USER_AUTHENTICATION_POLICY-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5640,8 +5550,7 @@ If the status is set to Disabled or Not Configured, the user's home directory is
 <!-- TS_USER_HOME-DFProperties-End -->
 
 <!-- TS_USER_HOME-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5684,7 +5593,7 @@ This policy setting allows you to specify whether Remote Desktop Services uses a
 
 - If you disable or do not configure this policy setting, mandatory user profiles are not used by users connecting remotely to the RD Session Host server.
 
-**Note**:
+Note:
 
 For this policy setting to take effect, you must also enable and configure the "Set path for Remote Desktop Services Roaming User Profile" policy setting.
 <!-- TS_USER_MANDATORY_PROFILES-Description-End -->
@@ -5703,8 +5612,7 @@ For this policy setting to take effect, you must also enable and configure the "
 <!-- TS_USER_MANDATORY_PROFILES-DFProperties-End -->
 
 <!-- TS_USER_MANDATORY_PROFILES-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5752,7 +5660,7 @@ To configure this policy setting, type the path to the network share in the form
 
 - If you disable or do not configure this policy setting, user profiles are stored locally on the RD Session Host server. You can configure a user's profile path on the Remote Desktop Services Profile tab on the user's account Properties dialog box.
 
-**Note**:
+Note:
 
 1. The roaming user profiles enabled by the policy setting apply only to Remote Desktop Services connections. A user might also have a Windows roaming user profile configured. The Remote Desktop Services roaming user profile always takes precedence in a Remote Desktop Services session.
 2. To configure a mandatory Remote Desktop Services roaming user profile for all users connecting remotely to the RD Session Host server, use this policy setting together with the "Use mandatory profiles on the RD Session Host server" policy setting located in Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Profiles. The path set in the "Set path for Remote Desktop Services Roaming User Profile" policy setting should contain the mandatory profile.
@@ -5772,8 +5680,7 @@ To configure this policy setting, type the path to the network share in the form
 <!-- TS_USER_PROFILES-DFProperties-End -->
 
 <!-- TS_USER_PROFILES-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

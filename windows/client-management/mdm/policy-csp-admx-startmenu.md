@@ -4,7 +4,7 @@ description: Learn more about the ADMX_StartMenu Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_StartMenu-Begin -->
 # Policy CSP - ADMX_StartMenu
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_StartMenu-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -64,8 +61,7 @@ ms.topic: reference
 <!-- AddSearchInternetLinkInStartMenu-DFProperties-End -->
 
 <!-- AddSearchInternetLinkInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -135,8 +131,7 @@ This policy also does not clear items that the user may have pinned to the Jump 
 <!-- ClearRecentDocsOnExit-DFProperties-End -->
 
 <!-- ClearRecentDocsOnExit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -194,8 +189,7 @@ This policy also does not clear items that the user may have pinned to the Jump 
 <!-- ClearRecentProgForNewUserInStartMenu-DFProperties-End -->
 
 <!-- ClearRecentProgForNewUserInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -255,8 +249,7 @@ This setting does not prevent new notifications from appearing. See the "Turn of
 <!-- ClearTilesOnExit-DFProperties-End -->
 
 <!-- ClearTilesOnExit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -315,8 +308,7 @@ This policy setting allows desktop apps to be listed first in the Apps view in S
 <!-- DesktopAppsFirstInAppsView-DFProperties-End -->
 
 <!-- DesktopAppsFirstInAppsView-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -377,8 +369,7 @@ This policy setting is only applied when the Apps view is set as the default vie
 <!-- DisableGlobalSearchOnAppsView-DFProperties-End -->
 
 <!-- DisableGlobalSearchOnAppsView-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -446,8 +437,7 @@ Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\
 <!-- ForceStartMenuLogOff-DFProperties-End -->
 
 <!-- ForceStartMenuLogOff-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -508,8 +498,7 @@ This policy setting allows users to go to the desktop instead of the Start scree
 <!-- GoToDesktopOnSignIn-DFProperties-End -->
 
 <!-- GoToDesktopOnSignIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -573,8 +562,7 @@ If you disable this setting or do not configure it, all Start menu shortcuts app
 <!-- GreyMSIAds-DFProperties-End -->
 
 <!-- GreyMSIAds-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -633,8 +621,7 @@ This policy setting prevents users from performing the following commands from t
 <!-- HidePowerOptions-DFProperties-End -->
 
 <!-- HidePowerOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -699,8 +686,7 @@ If you enable this setting, the system does not personalize menus. All menu item
 <!-- Intellimenus-DFProperties-End -->
 
 <!-- Intellimenus-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -764,8 +750,7 @@ The taskbar includes the Start button, list of currently running tasks, and the 
 <!-- LockTaskbar-DFProperties-End -->
 
 <!-- LockTaskbar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -824,8 +809,7 @@ Enabling this setting adds a check box to the Run dialog box, giving users the o
 <!-- MemCheckBoxInRunDlg-DFProperties-End -->
 
 <!-- MemCheckBoxInRunDlg-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -888,8 +872,7 @@ The notification area is located in the task bar, generally at the bottom of the
 <!-- NoAutoTrayNotify-DFProperties-End -->
 
 <!-- NoAutoTrayNotify-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -950,8 +933,7 @@ When you hold the cursor over an item on the Start menu or in the notification a
 <!-- NoBalloonTip-DFProperties-End -->
 
 <!-- NoBalloonTip-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1014,8 +996,7 @@ This policy setting allows you to prevent users from changing their Start screen
 <!-- NoChangeStartMenu-DFProperties-End -->
 
 <!-- NoChangeStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1077,8 +1058,7 @@ This policy setting prevents users from performing the following commands from t
 <!-- NoClose-DFProperties-End -->
 
 <!-- NoClose-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1138,8 +1118,7 @@ By default, the Programs menu contains items from the All Users profile and item
 <!-- NoCommonGroups-DFProperties-End -->
 
 <!-- NoCommonGroups-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1207,8 +1186,7 @@ Prevents users from adding the Favorites menu to the Start menu or classic Start
 <!-- NoFavoritesMenu-DFProperties-End -->
 
 <!-- NoFavoritesMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1246,7 +1224,7 @@ Prevents users from adding the Favorites menu to the Start menu or classic Start
 
 <!-- NoFind-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to remove the Search link from the Start menu, and disables some File Explorer search elements. **Note** that this does not remove the search box from the new style Start menu.
+This policy setting allows you to remove the Search link from the Start menu, and disables some File Explorer search elements. Note that this does not remove the search box from the new style Start menu.
 
 - If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
 
@@ -1274,8 +1252,7 @@ This policy setting affects the specified user interface elements only. It does 
 <!-- NoFind-DFProperties-End -->
 
 <!-- NoFind-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1333,8 +1310,7 @@ This policy setting affects the specified user interface elements only. It does 
 <!-- NoGamesFolderOnStartMenu-DFProperties-End -->
 
 <!-- NoGamesFolderOnStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1395,8 +1371,7 @@ This policy setting only affects the Start menu. It does not remove the Help men
 <!-- NoHelp-DFProperties-End -->
 
 <!-- NoHelp-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1459,8 +1434,7 @@ This policy setting does not prevent users from pinning programs to the Start Me
 <!-- NoInstrumentation-DFProperties-End -->
 
 <!-- NoInstrumentation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1528,8 +1502,7 @@ Selecting "Remove and disable setting" will remove the all apps list from Start 
 <!-- NoMoreProgramsList-DFProperties-End -->
 
 <!-- NoMoreProgramsList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1593,8 +1566,7 @@ Also, see the "Disable programs on Settings menu" and "Disable Control Panel" po
 <!-- NoNetAndDialupConnect-DFProperties-End -->
 
 <!-- NoNetAndDialupConnect-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1654,8 +1626,7 @@ In Windows XP and Windows Vista, the Internet and email checkboxes are removed f
 <!-- NoPinnedPrograms-DFProperties-End -->
 
 <!-- NoPinnedPrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1725,8 +1696,7 @@ This setting also does not hide document shortcuts displayed in the Open dialog 
 <!-- NoRecentDocsMenu-DFProperties-End -->
 
 <!-- NoRecentDocsMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1790,8 +1760,7 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 <!-- NoResolveSearch-DFProperties-End -->
 
 <!-- NoResolveSearch-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1855,8 +1824,7 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 <!-- NoResolveTrack-DFProperties-End -->
 
 <!-- NoResolveTrack-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1939,8 +1907,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoRun-DFProperties-End -->
 
 <!-- NoRun-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1998,8 +1965,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoSearchCommInStartMenu-DFProperties-End -->
 
 <!-- NoSearchCommInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2057,8 +2023,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoSearchComputerLinkInStartMenu-DFProperties-End -->
 
 <!-- NoSearchComputerLinkInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2116,8 +2081,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoSearchEverywhereLinkInStartMenu-DFProperties-End -->
 
 <!-- NoSearchEverywhereLinkInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2177,8 +2141,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoSearchFilesInStartMenu-DFProperties-End -->
 
 <!-- NoSearchFilesInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2236,8 +2199,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoSearchInternetInStartMenu-DFProperties-End -->
 
 <!-- NoSearchInternetInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2295,8 +2257,7 @@ Also, users with extended keyboards will no longer be able to display the Run di
 <!-- NoSearchProgramsInStartMenu-DFProperties-End -->
 
 <!-- NoSearchProgramsInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2359,8 +2320,7 @@ Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "
 <!-- NoSetFolders-DFProperties-End -->
 
 <!-- NoSetFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2425,8 +2385,7 @@ If the user right-clicks the taskbar and then clicks Properties, a message appea
 <!-- NoSetTaskbar-DFProperties-End -->
 
 <!-- NoSetTaskbar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2490,8 +2449,7 @@ Clicking the Default Programs link from the Start menu opens the Default Program
 <!-- NoSMConfigurePrograms-DFProperties-End -->
 
 <!-- NoSMConfigurePrograms-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2555,8 +2513,7 @@ Also, see the "Remove Documents icon on the desktop" policy setting.
 <!-- NoSMMyDocuments-DFProperties-End -->
 
 <!-- NoSMMyDocuments-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2615,8 +2572,7 @@ This policy setting allows you to remove the Music icon from Start Menu.
 <!-- NoSMMyMusic-DFProperties-End -->
 
 <!-- NoSMMyMusic-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2675,8 +2631,7 @@ This policy setting allows you to remove the Network icon from Start Menu.
 <!-- NoSMMyNetworkPlaces-DFProperties-End -->
 
 <!-- NoSMMyNetworkPlaces-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2735,8 +2690,7 @@ This policy setting allows you to remove the Pictures icon from Start Menu.
 <!-- NoSMMyPictures-DFProperties-End -->
 
 <!-- NoSMMyPictures-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2795,8 +2749,7 @@ This policy setting allows you to remove the Downloads link from the Start Menu.
 <!-- NoStartMenuDownload-DFProperties-End -->
 
 <!-- NoStartMenuDownload-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2854,8 +2807,7 @@ This policy setting allows you to remove the Downloads link from the Start Menu.
 <!-- NoStartMenuHomegroup-DFProperties-End -->
 
 <!-- NoStartMenuHomegroup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2914,8 +2866,7 @@ This policy setting allows you to remove the Recorded TV link from the Start Men
 <!-- NoStartMenuRecordedTV-DFProperties-End -->
 
 <!-- NoStartMenuRecordedTV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2957,7 +2908,7 @@ Hides all folders on the user-specific (top) section of the Start menu. Other it
 
 This setting is designed for use with redirected folders. Redirected folders appear on the main (bottom) section of the Start menu. However, the original, user-specific version of the folder still appears on the top section of the Start menu. Because the appearance of two folders with the same name might confuse users, you can use this setting to hide user-specific folders.
 
-**Note** that this setting hides all user-specific folders, not just those associated with redirected folders.
+Note that this setting hides all user-specific folders, not just those associated with redirected folders.
 
 - If you enable this setting, no folders appear on the top section of the Start menu. If users add folders to the Start Menu directory in their user profiles, the folders appear in the directory but not on the Start menu.
 
@@ -2978,8 +2929,7 @@ This setting is designed for use with redirected folders. Redirected folders app
 <!-- NoStartMenuSubFolders-DFProperties-End -->
 
 <!-- NoStartMenuSubFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3038,8 +2988,7 @@ This policy setting allows you to remove the Videos link from the Start Menu.
 <!-- NoStartMenuVideos-DFProperties-End -->
 
 <!-- NoStartMenuVideos-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3102,8 +3051,7 @@ The classic Start menu in Windows 2000 Professional allows users to begin common
 <!-- NoStartPage-DFProperties-End -->
 
 <!-- NoStartPage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3162,8 +3110,7 @@ Prevents the clock in the system notification area from being displayed.
 <!-- NoTaskBarClock-DFProperties-End -->
 
 <!-- NoTaskBarClock-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3224,8 +3171,7 @@ Taskbar grouping consolidates similar applications when there is no room on the 
 <!-- NoTaskGrouping-DFProperties-End -->
 
 <!-- NoTaskGrouping-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3286,8 +3232,7 @@ The taskbar includes the Start button, buttons for currently running tasks, cust
 <!-- NoToolbarsOnTaskbar-DFProperties-End -->
 
 <!-- NoToolbarsOnTaskbar-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3352,8 +3297,7 @@ This policy setting does not prevent users from using other methods to issue the
 <!-- NoTrayContextMenu-DFProperties-End -->
 
 <!-- NoTrayContextMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3417,8 +3361,7 @@ Description: The notification area is located at the far right end of the task b
 <!-- NoTrayItemsDisplay-DFProperties-End -->
 
 <!-- NoTrayItemsDisplay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3480,8 +3423,7 @@ Description: The notification area is located at the far right end of the task b
 <!-- NoUninstallFromStart-DFProperties-End -->
 
 <!-- NoUninstallFromStart-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3539,8 +3481,7 @@ Description: The notification area is located at the far right end of the task b
 <!-- NoUserFolderOnStartMenu-DFProperties-End -->
 
 <!-- NoUserFolderOnStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3601,8 +3542,7 @@ To remove the user name folder on Windows Vista, set the "Remove user folder lin
 <!-- NoUserNameOnStartMenu-DFProperties-End -->
 
 <!-- NoUserNameOnStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3667,8 +3607,7 @@ Also, see the "Hide the "Add programs from Microsoft" option" policy setting.
 <!-- NoWindowsUpdate-DFProperties-End -->
 
 <!-- NoWindowsUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3729,8 +3668,7 @@ If you set the button to either Sleep or Hibernate, and that state is not suppor
 <!-- PowerButtonAction-DFProperties-End -->
 
 <!-- PowerButtonAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3790,8 +3728,7 @@ This policy setting controls whether the QuickLaunch bar is displayed in the Tas
 <!-- QuickLaunchEnabled-DFProperties-End -->
 
 <!-- QuickLaunchEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3849,8 +3786,7 @@ This policy setting controls whether the QuickLaunch bar is displayed in the Tas
 <!-- RemoveUnDockPCButton-DFProperties-End -->
 
 <!-- RemoveUnDockPCButton-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3909,8 +3845,7 @@ This policy setting allows the Apps view to be opened by default when the user g
 <!-- ShowAppsViewOnStart-DFProperties-End -->
 
 <!-- ShowAppsViewOnStart-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3972,8 +3907,7 @@ This policy setting shows or hides the "Run as different user" command on the St
 <!-- ShowRunAsDifferentUserInStart-DFProperties-End -->
 
 <!-- ShowRunAsDifferentUserInStart-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4030,8 +3964,7 @@ This policy setting shows or hides the "Run as different user" command on the St
 <!-- ShowRunInStartMenu-DFProperties-End -->
 
 <!-- ShowRunInStartMenu-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4090,8 +4023,7 @@ This policy setting allows the Start screen to appear on the display the user is
 <!-- ShowStartOnDisplayWithForegroundOnWinKey-DFProperties-End -->
 
 <!-- ShowStartOnDisplayWithForegroundOnWinKey-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4157,8 +4089,7 @@ See also: "Remove Logoff" policy setting in User Configuration\Administrative Te
 <!-- StartMenuLogOff-DFProperties-End -->
 
 <!-- StartMenuLogOff-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4217,8 +4148,7 @@ This policy setting allows pinning apps to Start by default, when they are inclu
 <!-- StartPinAppsWhenInstalled-DFProperties-End -->
 
 <!-- StartPinAppsWhenInstalled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

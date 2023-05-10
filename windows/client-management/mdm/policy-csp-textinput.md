@@ -4,7 +4,7 @@ description: Learn more about the TextInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -429,7 +429,7 @@ Allows the Japanese user dictionary. Most restricted value is 0.
 
 <!-- AllowKeyboardTextSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
+ Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. Most restricted value is 0.
 <!-- AllowKeyboardTextSuggestions-Description-End -->
 
 <!-- AllowKeyboardTextSuggestions-Editable-Begin -->

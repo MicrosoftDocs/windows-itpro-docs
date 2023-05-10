@@ -4,7 +4,7 @@ description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Power-Begin -->
 # Policy CSP - Power
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Power-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -112,8 +109,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- AllowStandbyStatesWhenSleepingOnBattery-DFProperties-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -172,8 +168,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- AllowStandbyWhenSleepingPluggedIn-DFProperties-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -234,8 +229,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- DisplayOffTimeoutOnBattery-DFProperties-End -->
 
 <!-- DisplayOffTimeoutOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -295,8 +289,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- DisplayOffTimeoutPluggedIn-DFProperties-End -->
 
 <!-- DisplayOffTimeoutPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -474,8 +467,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- HibernateTimeoutOnBattery-DFProperties-End -->
 
 <!-- HibernateTimeoutOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -535,8 +527,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- HibernateTimeoutPluggedIn-DFProperties-End -->
 
 <!-- HibernateTimeoutPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -594,8 +585,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- RequirePasswordWhenComputerWakesOnBattery-DFProperties-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -654,8 +644,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- RequirePasswordWhenComputerWakesPluggedIn-DFProperties-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -696,6 +685,7 @@ This policy setting specifies whether or not the user is prompted for a password
 This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
@@ -771,6 +761,7 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
@@ -846,6 +837,7 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the power button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
@@ -921,6 +913,7 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the power button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
@@ -996,6 +989,7 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the sleep button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
@@ -1071,6 +1065,7 @@ Possible actions include:
 This policy setting specifies the action that Windows takes when a user presses the sleep button.
 
 Possible actions include:
+
 -Take no action
 -Sleep
 -Hibernate
@@ -1166,8 +1161,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- StandbyTimeoutOnBattery-DFProperties-End -->
 
 <!-- StandbyTimeoutOnBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1227,8 +1221,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- StandbyTimeoutPluggedIn-DFProperties-End -->
 
 <!-- StandbyTimeoutPluggedIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

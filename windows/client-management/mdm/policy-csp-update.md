@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- Update-Begin -->
 # Policy CSP - Update
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Update-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -1886,7 +1885,7 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 
 - If you enable this policy, the PC will not automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
 
-**Note** that the PC must restart for certain updates to take effect.
+Note that the PC must restart for certain updates to take effect.
 
 - If you disable or do not configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
 
@@ -1895,7 +1894,7 @@ If any of the following two policies are enabled, this policy has no effect:
 1. No auto-restart with logged on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
-**Note** that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
+Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
 <!-- ActiveHoursEnd-Description-End -->
 
 <!-- ActiveHoursEnd-Editable-Begin -->
@@ -2012,7 +2011,7 @@ If you disable or do not configure this policy, the default max active hours ran
 
 - If you enable this policy, the PC will not automatically restart after updates during active hours. The PC will attempt to restart outside of active hours.
 
-**Note** that the PC must restart for certain updates to take effect.
+Note that the PC must restart for certain updates to take effect.
 
 - If you disable or do not configure this policy and have no other reboot group policies, the user selected active hours will be in effect.
 
@@ -2021,7 +2020,7 @@ If any of the following two policies are enabled, this policy has no effect:
 1. No auto-restart with logged on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
-**Note** that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
+Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
 <!-- ActiveHoursStart-Description-End -->
 
 <!-- ActiveHoursStart-Editable-Begin -->
@@ -2750,7 +2749,7 @@ Enable enterprises/IT admin to configure feature update uninstall period.
 
 This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
-**Important** if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+Important if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
 If you select "Apply only during active hours" in conjunction with Option 1 or 2, then notifications will only be disabled during active hours. You can set active hours by setting "Turn off auto-restart for updates during active hours" or allow the device to set active hours based on user behavior. To ensure that the device stays secure, a notification will still be shown if this option is selected once "Specify deadlines for automatic updates and restarts" deadline has been reached if configured, regardless of active hours.
 <!-- NoUpdateNotificationsDuringActiveHours-Description-End -->
@@ -3748,7 +3747,7 @@ These settings are designed for education devices that remain in carts overnight
 
 This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
-**Important** if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
+Important if you choose not to get update notifications and also define other Group policy so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
 
 If you select "Apply only during active hours" in conjunction with Option 1 or 2, then notifications will only be disabled during active hours. You can set active hours by setting "Turn off auto-restart for updates during active hours" or allow the device to set active hours based on user behavior. To ensure that the device stays secure, a notification will still be shown if this option is selected once "Specify deadlines for automatic updates and restarts" deadline has been reached if configured, regardless of active hours.
 <!-- UpdateNotificationLevel-Description-End -->
@@ -4335,7 +4334,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Deadline (days)  |
+| Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4405,7 +4404,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Deadline (days)  |
+| Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4475,7 +4474,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Snooze (days)  |
+| Element Name | Snooze (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4545,7 +4544,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Snooze (days)  |
+| Element Name | Snooze (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4615,7 +4614,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Transition (days)  |
+| Element Name | Transition (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
@@ -4685,7 +4684,7 @@ Enabling any of the following policies will override the above policy:
 |:--|:--|
 | Name | EngagedRestartTransitionSchedule |
 | Friendly Name | Specify Engaged restart transition and notification schedule for updates |
-| Element Name | Transition (days)  |
+| Element Name | Transition (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Legacy Policies |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |

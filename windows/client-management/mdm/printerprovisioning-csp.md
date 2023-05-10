@@ -4,7 +4,7 @@ description: Learn more about the PrinterProvisioning CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -89,7 +89,7 @@ This setting will take the action on the specified user account to install or un
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the Universal Print printer, by its Share ID, you wish to install on the targeted user account. The printer's Share ID can be found in the printer's properties via the Universal Print portal. **Note** the targeted user account must have access rights to both the printer and to the Universal Print service.
+Identifies the Universal Print printer, by its Share ID, you wish to install on the targeted user account. The printer's Share ID can be found in the printer's properties via the Universal Print portal. Note the targeted user account must have access rights to both the printer and to the Universal Print service.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Description-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Editable-Begin -->
@@ -129,7 +129,7 @@ Identifies the Universal Print printer, by its Share ID, you wish to install on 
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the Universal Print printer, by its Printer ID, you wish to install on the targeted user account. The printer's Printer ID can be found in the printer's properties via the Universal Print portal. **Note** the targeted user account must have access rights to both the printer and to the Universal Print service.
+Identifies the Universal Print printer, by its Printer ID, you wish to install on the targeted user account. The printer's Printer ID can be found in the printer's properties via the Universal Print portal. Note the targeted user account must have access rights to both the printer and to the Universal Print service.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Description-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Editable-Begin -->
@@ -246,7 +246,7 @@ Support async execute. Install Universal Print printer.
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the Universal Print printer, by its Share Name, you wish to install on the targeted user account. The printer's Share Name can be found in the printer's properties via the Universal Print portal. **Note** the targeted user account must have access rights to both the printer and to the Universal Print service.
+Identifies the Universal Print printer, by its Share Name, you wish to install on the targeted user account. The printer's Share Name can be found in the printer's properties via the Universal Print portal. Note the targeted user account must have access rights to both the printer and to the Universal Print service.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Description-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Editable-Begin -->

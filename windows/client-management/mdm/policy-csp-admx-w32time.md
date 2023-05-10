@@ -4,7 +4,7 @@ description: Learn more about the ADMX_W32Time Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_W32Time-Begin -->
 # Policy CSP - ADMX_W32Time
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_W32Time-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -139,8 +136,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 <!-- W32TIME_POLICY_CONFIG-DFProperties-End -->
 
 <!-- W32TIME_POLICY_CONFIG-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -181,7 +177,7 @@ This policy setting specifies a set of parameters for controlling the Windows NT
 
 - If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
-- If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
+- If you disable or do not configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
 
 NtpServer
 The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of "dnsName,flags" where "flags" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is "time.windows.com,0x09".
@@ -219,8 +215,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-DFProperties-End -->
 
 <!-- W32TIME_POLICY_CONFIGURE_NTPCLIENT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -280,8 +275,7 @@ Enabling the Windows NTP Client allows your computer to synchronize its computer
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-DFProperties-End -->
 
 <!-- W32TIME_POLICY_ENABLE_NTPCLIENT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -340,8 +334,7 @@ This policy setting allows you to specify whether the Windows NTP Server is enab
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-DFProperties-End -->
 
 <!-- W32TIME_POLICY_ENABLE_NTPSERVER-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

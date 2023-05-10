@@ -4,7 +4,7 @@ description: Learn more about the BITS Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -240,6 +240,7 @@ This policy setting defines the default behavior that the Background Intelligent
 If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting does not override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
 
 For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
+
   - Always transfer
   - Transfer unless roaming
   - Transfer unless surcharge applies (when not roaming or overcap)
@@ -325,6 +326,7 @@ This policy setting defines the default behavior that the Background Intelligent
 If you enable this policy setting, you can define a default download policy for each BITS job priority. This setting does not override a download policy explicitly configured by the application that created the BITS job, but does apply to jobs that are created by specifying only a priority.
 
 For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
+
   - Always transfer
   - Transfer unless roaming
   - Transfer unless surcharge applies (when not roaming or overcap)

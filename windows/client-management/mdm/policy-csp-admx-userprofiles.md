@@ -4,7 +4,7 @@ description: Learn more about the ADMX_UserProfiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_UserProfiles-Begin -->
 # Policy CSP - ADMX_UserProfiles
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_UserProfiles-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -66,8 +63,7 @@ This policy setting allows an administrator to automatically delete user profile
 <!-- CleanupProfiles-DFProperties-End -->
 
 <!-- CleanupProfiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -128,8 +124,7 @@ This policy setting controls whether Windows forcefully unloads the user's regis
 <!-- DontForceUnloadHive-DFProperties-End -->
 
 <!-- DontForceUnloadHive-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -193,8 +188,7 @@ By default Windows deletes all information related to a roaming user (which incl
 <!-- LeaveAppMgmtData-DFProperties-End -->
 
 <!-- LeaveAppMgmtData-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -262,8 +256,7 @@ This policy setting sets the maximum size of each user profile and determines th
 <!-- LimitSize-DFProperties-End -->
 
 <!-- LimitSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -326,8 +319,7 @@ Also, see the "Delete cached copies of roaming profiles" policy setting.
 <!-- ProfileErrorAction-DFProperties-End -->
 
 <!-- ProfileErrorAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -373,10 +365,7 @@ This policy setting and related policy settings in this folder together define t
 
 - If you enable this policy setting, you can change how long Windows waits for a response from the server before considering the connection to be slow.
 
-- If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections.
-
-> [!IMPORTANT]
-> If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
+- If you disable or do not configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections. Important: If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
 <!-- SlowLinkTimeOut-Description-End -->
 
 <!-- SlowLinkTimeOut-Editable-Begin -->
@@ -393,8 +382,7 @@ This policy setting and related policy settings in this folder together define t
 <!-- SlowLinkTimeOut-DFProperties-End -->
 
 <!-- SlowLinkTimeOut-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -461,8 +449,7 @@ If the "Set Remote Desktop Services User Home Directory" policy setting is enabl
 <!-- USER_HOME-DFProperties-End -->
 
 <!-- USER_HOME-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -524,8 +511,7 @@ This setting prevents users from managing the ability to allow apps to access th
 <!-- UserInfoAccessAction-DFProperties-End -->
 
 <!-- UserInfoAccessAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

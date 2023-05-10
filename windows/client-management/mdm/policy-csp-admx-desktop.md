@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Desktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Desktop-Begin -->
 # Policy CSP - ADMX_Desktop
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Desktop-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -65,8 +62,7 @@ To see the filter bar, open Network Locations, click Entire Network, and then cl
 <!-- AD_EnableFilter-DFProperties-End -->
 
 <!-- AD_EnableFilter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -129,8 +125,7 @@ This setting is designed to let users search Active Directory but not tempt them
 <!-- AD_HideDirectoryFolder-DFProperties-End -->
 
 <!-- AD_HideDirectoryFolder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -191,8 +186,7 @@ This setting is designed to protect the network and the domain controller from t
 <!-- AD_QueryLimit-DFProperties-End -->
 
 <!-- AD_QueryLimit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -253,8 +247,7 @@ If you disable this setting or do not configure it, Active Desktop is disabled b
 <!-- ForceActiveDesktopOn-DFProperties-End -->
 
 <!-- ForceActiveDesktopOn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -316,8 +309,7 @@ If you disable this setting or do not configure it, Active Desktop is disabled b
 <!-- NoActiveDesktop-DFProperties-End -->
 
 <!-- NoActiveDesktop-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -374,8 +366,7 @@ This is a comprehensive setting that locks down the configuration you establish 
 <!-- NoActiveDesktopChanges-DFProperties-End -->
 
 <!-- NoActiveDesktopChanges-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -438,8 +429,7 @@ Also, see "Items displayed in Places Bar" in User Configuration\Administrative T
 <!-- NoDesktop-DFProperties-End -->
 
 <!-- NoDesktop-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -501,8 +491,7 @@ Prevents users from using the Desktop Cleanup Wizard.
 <!-- NoDesktopCleanupWizard-DFProperties-End -->
 
 <!-- NoDesktopCleanupWizard-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -559,8 +548,7 @@ This setting does not prevent the user from starting Internet Explorer by using 
 <!-- NoInternetIcon-DFProperties-End -->
 
 <!-- NoInternetIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -624,8 +612,7 @@ This setting hides Computer from the desktop and from the new Start menu. It als
 <!-- NoMyComputerIcon-DFProperties-End -->
 
 <!-- NoMyComputerIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -689,8 +676,7 @@ This setting does not remove the My Documents icon from the Start menu. To do so
 <!-- NoMyDocumentsIcon-DFProperties-End -->
 
 <!-- NoMyDocumentsIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -750,8 +736,7 @@ This setting only affects the desktop icon. It does not prevent users from conne
 <!-- NoNetHood-DFProperties-End -->
 
 <!-- NoNetHood-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -810,8 +795,7 @@ This setting hides Properties on the context menu for Computer.
 <!-- NoPropertiesMyComputer-DFProperties-End -->
 
 <!-- NoPropertiesMyComputer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -874,8 +858,7 @@ Clicks the My Documents icon, and then presses ALT+ENTER.
 <!-- NoPropertiesMyDocuments-DFProperties-End -->
 
 <!-- NoPropertiesMyDocuments-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -934,8 +917,7 @@ Remote shared folders are not added to Network Locations whenever you open a doc
 <!-- NoRecentDocsNetHood-DFProperties-End -->
 
 <!-- NoRecentDocsNetHood-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -997,8 +979,7 @@ This setting does not prevent the user from using other methods to gain access t
 <!-- NoRecycleBinIcon-DFProperties-End -->
 
 <!-- NoRecycleBinIcon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1057,8 +1038,7 @@ Removes the Properties option from the Recycle Bin context menu.
 <!-- NoRecycleBinProperties-DFProperties-End -->
 
 <!-- NoRecycleBinProperties-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1115,8 +1095,7 @@ If you enable this setting, users can change the desktop, but some changes, such
 <!-- NoSaveSettings-DFProperties-End -->
 
 <!-- NoSaveSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1175,8 +1154,7 @@ Prevents windows from being minimized or restored when the active window is shak
 <!-- NoWindowMinimizingShortcuts-DFProperties-End -->
 
 <!-- NoWindowMinimizingShortcuts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1241,8 +1219,7 @@ You can also use this setting to delete particular Web-based items from users' d
 <!-- sz_AdminComponents_Title-DFProperties-End -->
 
 <!-- sz_AdminComponents_Title-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1300,8 +1277,7 @@ Also, see the "Disable all items" setting.
 <!-- sz_ATC_DisableAdd-DFProperties-End -->
 
 <!-- sz_ATC_DisableAdd-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1363,8 +1339,7 @@ If you enable this setting, items added to the desktop cannot be closed; they al
 <!-- sz_ATC_DisableClose-DFProperties-End -->
 
 <!-- sz_ATC_DisableClose-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1425,8 +1400,7 @@ Also, see the "Prohibit closing items" and "Disable all items" settings.
 <!-- sz_ATC_DisableDel-DFProperties-End -->
 
 <!-- sz_ATC_DisableDel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1483,8 +1457,7 @@ This setting disables the Properties button on the Web tab in Display in Control
 <!-- sz_ATC_DisableEdit-DFProperties-End -->
 
 <!-- sz_ATC_DisableEdit-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1544,8 +1517,7 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 <!-- sz_ATC_NoComponents-DFProperties-End -->
 
 <!-- sz_ATC_NoComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1610,8 +1582,7 @@ Also, see the "Prohibit adjusting desktop toolbars" setting.
 <!-- sz_DB_DragDropClose-DFProperties-End -->
 
 <!-- sz_DB_DragDropClose-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1673,8 +1644,7 @@ Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's tool
 <!-- sz_DB_Moving-DFProperties-End -->
 
 <!-- sz_DB_Moving-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1731,8 +1701,7 @@ Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User 
 <!-- sz_DWP_NoHTMLPaper-DFProperties-End -->
 
 <!-- sz_DWP_NoHTMLPaper-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1798,8 +1767,7 @@ Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Pr
 <!-- Wallpaper-DFProperties-End -->
 
 <!-- Wallpaper-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

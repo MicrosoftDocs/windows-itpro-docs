@@ -4,7 +4,7 @@ description: Learn more about the Wifi Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -130,7 +130,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 > Nonadministrators are already prohibited from configuring Internet Connection Sharing, regardless of this setting.
 
 > [!NOTE]
-> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Don't use hosted networks" check box.
+> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Do not use hosted networks" check box.
 <!-- AllowInternetSharing-Description-End -->
 
 <!-- AllowInternetSharing-Editable-Begin -->

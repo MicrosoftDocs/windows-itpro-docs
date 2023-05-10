@@ -4,7 +4,7 @@ description: Learn more about the ADMX_UserExperienceVirtualization Area in Poli
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_UserExperienceVirtualization-Begin -->
 # Policy CSP - ADMX_UserExperienceVirtualization
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_UserExperienceVirtualization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -68,8 +65,7 @@ By default, the user settings of Calculator synchronize between computers. Use t
 <!-- Calculator-DFProperties-End -->
 
 <!-- Calculator-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -133,8 +129,7 @@ With notifications enabled, UE-V users receive a message when the settings sync 
 <!-- ConfigureSyncMethod-DFProperties-End -->
 
 <!-- ConfigureSyncMethod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -196,8 +191,7 @@ This policy setting configures the synchronization of User Experience Virtualiza
 <!-- ConfigureVdi-DFProperties-End -->
 
 <!-- ConfigureVdi-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -256,8 +250,7 @@ This policy setting specifies the text of the Contact IT URL hyperlink in the Co
 <!-- ContactITDescription-DFProperties-End -->
 
 <!-- ContactITDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -315,8 +308,7 @@ This policy setting specifies the URL for the Contact IT link in the Company Set
 <!-- ContactITUrl-DFProperties-End -->
 
 <!-- ContactITUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -382,8 +374,7 @@ By default, the UE-V Agent synchronizes settings for Windows apps between the co
 <!-- DisableWin8Sync-DFProperties-End -->
 
 <!-- DisableWin8Sync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -447,8 +438,7 @@ Certain Windows settings will synchronize between computers by default. These se
 <!-- DisableWindowsOSSettings-DFProperties-End -->
 
 <!-- DisableWindowsOSSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -502,8 +492,7 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- EnableUEV-DFProperties-End -->
 
 <!-- EnableUEV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -567,8 +556,7 @@ By default, the user settings of Finance sync between computers. Use the policy 
 <!-- Finance-DFProperties-End -->
 
 <!-- Finance-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -627,8 +615,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- FirstUseNotificationEnabled-DFProperties-End -->
 
 <!-- FirstUseNotificationEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -692,8 +679,7 @@ By default, the user settings of Games sync between computers. Use the policy se
 <!-- Games-DFProperties-End -->
 
 <!-- Games-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -757,8 +743,7 @@ By default, the user settings of Internet Explorer 10 synchronize between comput
 <!-- InternetExplorer10-DFProperties-End -->
 
 <!-- InternetExplorer10-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -822,8 +807,7 @@ By default, the user settings of Internet Explorer 11 synchronize between comput
 <!-- InternetExplorer11-DFProperties-End -->
 
 <!-- InternetExplorer11-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -887,8 +871,7 @@ By default, the user settings of Internet Explorer 8 synchronize between compute
 <!-- InternetExplorer8-DFProperties-End -->
 
 <!-- InternetExplorer8-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -952,8 +935,7 @@ By default, the user settings of Internet Explorer 9 synchronize between compute
 <!-- InternetExplorer9-DFProperties-End -->
 
 <!-- InternetExplorer9-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1017,8 +999,7 @@ By default, the user settings which are common between the versions of Internet 
 <!-- InternetExplorerCommon-DFProperties-End -->
 
 <!-- InternetExplorerCommon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1081,8 +1062,7 @@ By default, the user settings of Maps sync between computers. Use the policy set
 <!-- Maps-DFProperties-End -->
 
 <!-- Maps-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1144,8 +1124,7 @@ This policy setting allows you to configure the UE-V Agent to write a warning ev
 <!-- MaxPackageSizeInBytes-DFProperties-End -->
 
 <!-- MaxPackageSizeInBytes-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1208,8 +1187,7 @@ By default, the user settings of Microsoft Access 2010 synchronize between compu
 <!-- MicrosoftOffice2010Access-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1272,8 +1250,7 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2010Common-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Common-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1336,8 +1313,7 @@ By default, the user settings of Microsoft Excel 2010 synchronize between comput
 <!-- MicrosoftOffice2010Excel-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Excel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1400,8 +1376,7 @@ By default, the user settings of Microsoft InfoPath 2010 synchronize between com
 <!-- MicrosoftOffice2010InfoPath-DFProperties-End -->
 
 <!-- MicrosoftOffice2010InfoPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1464,8 +1439,7 @@ By default, the user settings of Microsoft Lync 2010 synchronize between compute
 <!-- MicrosoftOffice2010Lync-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Lync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1529,8 +1503,7 @@ By default, the user settings of Microsoft OneNote 2010 synchronize between comp
 <!-- MicrosoftOffice2010OneNote-DFProperties-End -->
 
 <!-- MicrosoftOffice2010OneNote-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1593,8 +1566,7 @@ By default, the user settings of Microsoft Outlook 2010 synchronize between comp
 <!-- MicrosoftOffice2010Outlook-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Outlook-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1657,8 +1629,7 @@ By default, the user settings of Microsoft PowerPoint 2010 synchronize between c
 <!-- MicrosoftOffice2010PowerPoint-DFProperties-End -->
 
 <!-- MicrosoftOffice2010PowerPoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1721,8 +1692,7 @@ By default, the user settings of Microsoft Project 2010 synchronize between comp
 <!-- MicrosoftOffice2010Project-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Project-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1785,8 +1755,7 @@ By default, the user settings of Microsoft Publisher 2010 synchronize between co
 <!-- MicrosoftOffice2010Publisher-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Publisher-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1849,8 +1818,7 @@ By default, the user settings of Microsoft SharePoint Designer 2010 synchronize 
 <!-- MicrosoftOffice2010SharePointDesigner-DFProperties-End -->
 
 <!-- MicrosoftOffice2010SharePointDesigner-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1913,8 +1881,7 @@ By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize
 <!-- MicrosoftOffice2010SharePointWorkspace-DFProperties-End -->
 
 <!-- MicrosoftOffice2010SharePointWorkspace-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1977,8 +1944,7 @@ By default, the user settings of Microsoft Visio 2010 synchronize between comput
 <!-- MicrosoftOffice2010Visio-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Visio-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2041,8 +2007,7 @@ By default, the user settings of Microsoft Word 2010 synchronize between compute
 <!-- MicrosoftOffice2010Word-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Word-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2105,8 +2070,7 @@ By default, the user settings of Microsoft Access 2013 synchronize between compu
 <!-- MicrosoftOffice2013Access-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2169,8 +2133,7 @@ Microsoft Access 2013 has user settings that are backed up instead of synchroniz
 <!-- MicrosoftOffice2013AccessBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013AccessBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2233,8 +2196,7 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2013Common-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Common-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2297,8 +2259,7 @@ Microsoft Office Suite 2013 has user settings which are common between applicati
 <!-- MicrosoftOffice2013CommonBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013CommonBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2361,8 +2322,7 @@ By default, the user settings of Microsoft Excel 2013 synchronize between comput
 <!-- MicrosoftOffice2013Excel-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Excel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2425,8 +2385,7 @@ Microsoft Excel 2013 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2013ExcelBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013ExcelBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2489,8 +2448,7 @@ By default, the user settings of Microsoft InfoPath 2013 synchronize between com
 <!-- MicrosoftOffice2013InfoPath-DFProperties-End -->
 
 <!-- MicrosoftOffice2013InfoPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2553,8 +2511,7 @@ Microsoft InfoPath 2013 has user settings that are backed up instead of synchron
 <!-- MicrosoftOffice2013InfoPathBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013InfoPathBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2617,8 +2574,7 @@ By default, the user settings of Microsoft Lync 2013 synchronize between compute
 <!-- MicrosoftOffice2013Lync-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Lync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2681,8 +2637,7 @@ Microsoft Lync 2013 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2013LyncBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013LyncBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2745,8 +2700,7 @@ By default, the user settings of OneDrive for Business 2013 synchronize between 
 <!-- MicrosoftOffice2013OneDriveForBusiness-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OneDriveForBusiness-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2809,8 +2763,7 @@ By default, the user settings of Microsoft OneNote 2013 synchronize between comp
 <!-- MicrosoftOffice2013OneNote-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OneNote-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2873,8 +2826,7 @@ Microsoft OneNote 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013OneNoteBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OneNoteBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2937,8 +2889,7 @@ By default, the user settings of Microsoft Outlook 2013 synchronize between comp
 <!-- MicrosoftOffice2013Outlook-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Outlook-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3001,8 +2952,7 @@ Microsoft Outlook 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013OutlookBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OutlookBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3065,8 +3015,7 @@ By default, the user settings of Microsoft PowerPoint 2013 synchronize between c
 <!-- MicrosoftOffice2013PowerPoint-DFProperties-End -->
 
 <!-- MicrosoftOffice2013PowerPoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3129,8 +3078,7 @@ Microsoft PowerPoint 2013 has user settings that are backed up instead of synchr
 <!-- MicrosoftOffice2013PowerPointBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013PowerPointBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3193,8 +3141,7 @@ By default, the user settings of Microsoft Project 2013 synchronize between comp
 <!-- MicrosoftOffice2013Project-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Project-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3257,8 +3204,7 @@ Microsoft Project 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013ProjectBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013ProjectBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3321,8 +3267,7 @@ By default, the user settings of Microsoft Publisher 2013 synchronize between co
 <!-- MicrosoftOffice2013Publisher-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Publisher-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3385,8 +3330,7 @@ Microsoft Publisher 2013 has user settings that are backed up instead of synchro
 <!-- MicrosoftOffice2013PublisherBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013PublisherBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3449,8 +3393,7 @@ By default, the user settings of Microsoft SharePoint Designer 2013 synchronize 
 <!-- MicrosoftOffice2013SharePointDesigner-DFProperties-End -->
 
 <!-- MicrosoftOffice2013SharePointDesigner-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3513,8 +3456,7 @@ Microsoft SharePoint Designer 2013 has user settings that are backed up instead 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3577,8 +3519,7 @@ By default, the user settings of Microsoft Office 2013 Upload Center synchronize
 <!-- MicrosoftOffice2013UploadCenter-DFProperties-End -->
 
 <!-- MicrosoftOffice2013UploadCenter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3641,8 +3582,7 @@ By default, the user settings of Microsoft Visio 2013 synchronize between comput
 <!-- MicrosoftOffice2013Visio-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Visio-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3705,8 +3645,7 @@ Microsoft Visio 2013 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2013VisioBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013VisioBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3769,8 +3708,7 @@ By default, the user settings of Microsoft Word 2013 synchronize between compute
 <!-- MicrosoftOffice2013Word-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Word-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3833,8 +3771,7 @@ Microsoft Word 2013 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2013WordBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013WordBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3897,8 +3834,7 @@ By default, the user settings of Microsoft Access 2016 synchronize between compu
 <!-- MicrosoftOffice2016Access-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3961,8 +3897,7 @@ Microsoft Access 2016 has user settings that are backed up instead of synchroniz
 <!-- MicrosoftOffice2016AccessBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016AccessBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4025,8 +3960,7 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2016Common-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Common-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4089,8 +4023,7 @@ Microsoft Office Suite 2016 has user settings which are common between applicati
 <!-- MicrosoftOffice2016CommonBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016CommonBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4153,8 +4086,7 @@ By default, the user settings of Microsoft Excel 2016 synchronize between comput
 <!-- MicrosoftOffice2016Excel-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Excel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4217,8 +4149,7 @@ Microsoft Excel 2016 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2016ExcelBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016ExcelBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4281,8 +4212,7 @@ By default, the user settings of Microsoft Lync 2016 synchronize between compute
 <!-- MicrosoftOffice2016Lync-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Lync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4345,8 +4275,7 @@ Microsoft Lync 2016 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2016LyncBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016LyncBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4409,8 +4338,7 @@ By default, the user settings of OneDrive for Business 2016 synchronize between 
 <!-- MicrosoftOffice2016OneDriveForBusiness-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OneDriveForBusiness-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4473,8 +4401,7 @@ By default, the user settings of Microsoft OneNote 2016 synchronize between comp
 <!-- MicrosoftOffice2016OneNote-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OneNote-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4537,8 +4464,7 @@ Microsoft OneNote 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016OneNoteBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OneNoteBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4601,8 +4527,7 @@ By default, the user settings of Microsoft Outlook 2016 synchronize between comp
 <!-- MicrosoftOffice2016Outlook-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Outlook-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4665,8 +4590,7 @@ Microsoft Outlook 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016OutlookBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OutlookBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4729,8 +4653,7 @@ By default, the user settings of Microsoft PowerPoint 2016 synchronize between c
 <!-- MicrosoftOffice2016PowerPoint-DFProperties-End -->
 
 <!-- MicrosoftOffice2016PowerPoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4793,8 +4716,7 @@ Microsoft PowerPoint 2016 has user settings that are backed up instead of synchr
 <!-- MicrosoftOffice2016PowerPointBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016PowerPointBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4857,8 +4779,7 @@ By default, the user settings of Microsoft Project 2016 synchronize between comp
 <!-- MicrosoftOffice2016Project-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Project-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4921,8 +4842,7 @@ Microsoft Project 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016ProjectBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016ProjectBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4985,8 +4905,7 @@ By default, the user settings of Microsoft Publisher 2016 synchronize between co
 <!-- MicrosoftOffice2016Publisher-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Publisher-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5049,8 +4968,7 @@ Microsoft Publisher 2016 has user settings that are backed up instead of synchro
 <!-- MicrosoftOffice2016PublisherBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016PublisherBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5113,8 +5031,7 @@ By default, the user settings of Microsoft Office 2016 Upload Center synchronize
 <!-- MicrosoftOffice2016UploadCenter-DFProperties-End -->
 
 <!-- MicrosoftOffice2016UploadCenter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5177,8 +5094,7 @@ By default, the user settings of Microsoft Visio 2016 synchronize between comput
 <!-- MicrosoftOffice2016Visio-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Visio-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5241,8 +5157,7 @@ Microsoft Visio 2016 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2016VisioBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016VisioBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5305,8 +5220,7 @@ By default, the user settings of Microsoft Word 2016 synchronize between compute
 <!-- MicrosoftOffice2016Word-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Word-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5369,8 +5283,7 @@ Microsoft Word 2016 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2016WordBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016WordBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5433,8 +5346,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Access2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Access2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5497,8 +5409,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Access2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Access2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5561,8 +5472,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Common2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Common2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5625,8 +5535,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Common2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Common2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5689,8 +5598,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Excel2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Excel2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5753,8 +5661,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Excel2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Excel2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5817,8 +5724,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365InfoPath2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365InfoPath2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5881,8 +5787,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Lync2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Lync2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5945,8 +5850,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Lync2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Lync2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6009,8 +5913,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365OneNote2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365OneNote2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6073,8 +5976,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365OneNote2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365OneNote2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6137,8 +6039,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Outlook2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Outlook2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6201,8 +6102,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Outlook2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Outlook2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6265,8 +6165,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365PowerPoint2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365PowerPoint2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6329,8 +6228,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365PowerPoint2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365PowerPoint2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6393,8 +6291,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Project2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Project2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6457,8 +6354,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Project2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Project2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6521,8 +6417,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Publisher2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Publisher2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6585,8 +6480,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Publisher2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Publisher2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6649,8 +6543,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365SharePointDesigner2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365SharePointDesigner2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6713,8 +6606,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Visio2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Visio2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6777,8 +6669,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Visio2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Visio2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6841,8 +6732,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Word2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Word2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6905,8 +6795,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Word2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Word2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6969,8 +6858,7 @@ By default, the user settings of Music sync between computers. Use the policy se
 <!-- Music-DFProperties-End -->
 
 <!-- Music-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7034,8 +6922,7 @@ By default, the user settings of News sync between computers. Use the policy set
 <!-- News-DFProperties-End -->
 
 <!-- News-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7099,8 +6986,7 @@ By default, the user settings of Notepad synchronize between computers. Use the 
 <!-- Notepad-DFProperties-End -->
 
 <!-- Notepad-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7164,8 +7050,7 @@ By default, the user settings of Reader sync between computers. Use the policy s
 <!-- Reader-DFProperties-End -->
 
 <!-- Reader-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7228,8 +7113,7 @@ You can use this setting to override the default value of 2000 milliseconds.
 <!-- RepositoryTimeout-DFProperties-End -->
 
 <!-- RepositoryTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7290,8 +7174,7 @@ This policy setting configures where the settings package files that contain use
 <!-- SettingsStoragePath-DFProperties-End -->
 
 <!-- SettingsStoragePath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7352,8 +7235,7 @@ If you specify a UNC path and check the option to replace the default Microsoft 
 <!-- SettingsTemplateCatalogPath-DFProperties-End -->
 
 <!-- SettingsTemplateCatalogPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7416,8 +7298,7 @@ By default, the user settings of Sports sync between computers. Use the policy s
 <!-- Sports-DFProperties-End -->
 
 <!-- Sports-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7476,8 +7357,7 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- SyncEnabled-DFProperties-End -->
 
 <!-- SyncEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7540,8 +7420,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetwork-DFProperties-End -->
 
 <!-- SyncOverMeteredNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7604,8 +7483,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetworkWhenRoaming-DFProperties-End -->
 
 <!-- SyncOverMeteredNetworkWhenRoaming-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7668,8 +7546,7 @@ This policy setting allows you to configure the User Experience Virtualization (
 <!-- SyncProviderPingEnabled-DFProperties-End -->
 
 <!-- SyncProviderPingEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7728,8 +7605,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncUnlistedWindows8Apps-DFProperties-End -->
 
 <!-- SyncUnlistedWindows8Apps-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7793,8 +7669,7 @@ By default, the user settings of Travel sync between computers. Use the policy s
 <!-- Travel-DFProperties-End -->
 
 <!-- Travel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7851,8 +7726,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- TrayIconEnabled-DFProperties-End -->
 
 <!-- TrayIconEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7916,8 +7790,7 @@ By default, the user settings of Video sync between computers. Use the policy se
 <!-- Video-DFProperties-End -->
 
 <!-- Video-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7981,8 +7854,7 @@ By default, the user settings of Weather sync between computers. Use the policy 
 <!-- Weather-DFProperties-End -->
 
 <!-- Weather-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8046,8 +7918,7 @@ By default, the user settings of WordPad synchronize between computers. Use the 
 <!-- Wordpad-DFProperties-End -->
 
 <!-- Wordpad-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

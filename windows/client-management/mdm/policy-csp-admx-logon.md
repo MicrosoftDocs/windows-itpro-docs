@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Logon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Logon-Begin -->
 # Policy CSP - ADMX_Logon
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Logon-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -63,8 +60,7 @@ This policy prevents the user from showing account details (email address or use
 <!-- BlockUserFromShowingAccountDetailsOnSignin-DFProperties-End -->
 
 <!-- BlockUserFromShowingAccountDetailsOnSignin-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -122,8 +118,7 @@ This policy setting disables the acrylic blur effect on logon background image.
 <!-- DisableAcrylicBackgroundOnLogon-DFProperties-End -->
 
 <!-- DisableAcrylicBackgroundOnLogon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -191,8 +186,7 @@ Also, see the "Do not process the run once list" policy setting.
 <!-- DisableExplorerRunLegacy_1-DFProperties-End -->
 
 <!-- DisableExplorerRunLegacy_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -260,8 +254,7 @@ Also, see the "Do not process the run once list" policy setting.
 <!-- DisableExplorerRunLegacy_2-DFProperties-End -->
 
 <!-- DisableExplorerRunLegacy_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -329,8 +322,7 @@ Also, see the "Do not process the legacy run list" policy setting.
 <!-- DisableExplorerRunOnceLegacy_1-DFProperties-End -->
 
 <!-- DisableExplorerRunOnceLegacy_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -398,8 +390,7 @@ Also, see the "Do not process the legacy run list" policy setting.
 <!-- DisableExplorerRunOnceLegacy_2-DFProperties-End -->
 
 <!-- DisableExplorerRunOnceLegacy_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -458,8 +449,7 @@ This policy setting suppresses system status messages.
 <!-- DisableStatusMessages-DFProperties-End -->
 
 <!-- DisableStatusMessages-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -518,8 +508,7 @@ This policy setting prevents connected users from being enumerated on domain-joi
 <!-- DontEnumerateConnectedUsers-DFProperties-End -->
 
 <!-- DontEnumerateConnectedUsers-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -588,8 +577,7 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 <!-- NoWelcomeTips_1-DFProperties-End -->
 
 <!-- NoWelcomeTips_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -658,8 +646,7 @@ This setting applies only to Windows 2000 Professional. It does not affect the "
 <!-- NoWelcomeTips_2-DFProperties-End -->
 
 <!-- NoWelcomeTips_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -725,8 +712,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 <!-- Run_1-DFProperties-End -->
 
 <!-- Run_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -791,8 +777,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 <!-- Run_2-DFProperties-End -->
 
 <!-- Run_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -831,7 +816,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 <!-- Description-Source-ADMX -->
 This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user logon). By default, on client computers, Group Policy processing is not synchronous; client computers typically do not wait for the network to be fully initialized at startup and logon. Existing users are logged on using cached credentials, which results in shorter logon times. Group Policy is applied in the background after the network becomes available.
 
-**Note** that because this is a background refresh, extensions such as Software Installation and Folder Redirection take two logons to apply changes. To be able to operate safely, these extensions require that no users be logged on. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two logons to be detected.
+Note that because this is a background refresh, extensions such as Software Installation and Folder Redirection take two logons to apply changes. To be able to operate safely, these extensions require that no users be logged on. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two logons to be detected.
 
 If a user with a roaming profile, home directory, or user object logon script logs on to a computer, computers always wait for the network to be initialized before logging the user on. If a user has never logged on to this computer before, computers always wait for the network to be initialized.
 
@@ -840,6 +825,7 @@ If a user with a roaming profile, home directory, or user object logon script lo
 On servers running Windows Server 2008 or later, this policy setting is ignored during Group Policy processing at computer startup and Group Policy processing will be synchronous (these servers wait for the network to be initialized during computer startup).
 
 If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon:
+
   - The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
   - The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
 
@@ -847,7 +833,7 @@ If this configuration is not implemented on the server, this policy setting is i
 
 - If you disable or do not configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically does not wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
 
-**Note**:
+Note
 -If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy.
 -If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 <!-- SyncForegroundPolicy-Description-End -->
@@ -866,8 +852,7 @@ If this configuration is not implemented on the server, this policy setting is i
 <!-- SyncForegroundPolicy-DFProperties-End -->
 
 <!-- SyncForegroundPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -928,8 +913,7 @@ This policy setting may be used to make Windows give preference to a custom logo
 <!-- UseOEMBackground-DFProperties-End -->
 
 <!-- UseOEMBackground-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -993,8 +977,7 @@ This policy setting is designed for advanced users who require this information.
 <!-- VerboseStatus-DFProperties-End -->
 
 <!-- VerboseStatus-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

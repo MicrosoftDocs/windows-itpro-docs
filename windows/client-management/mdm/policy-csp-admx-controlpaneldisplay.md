@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_ControlPanelDisplay-Begin -->
 # Policy CSP - ADMX_ControlPanelDisplay
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_ControlPanelDisplay-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -63,8 +60,7 @@ Also, see the "Prohibit access to the Control Panel" (User Configuration\Adminis
 <!-- CPL_Display_Disable-DFProperties-End -->
 
 <!-- CPL_Display_Disable-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -121,8 +117,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 <!-- CPL_Display_HideSettings-DFProperties-End -->
 
 <!-- CPL_Display_HideSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -183,8 +178,7 @@ For Windows 7 and later, use the "Prevent changing color and appearance" setting
 <!-- CPL_Personalization_DisableColorSchemeChoice-DFProperties-End -->
 
 <!-- CPL_Personalization_DisableColorSchemeChoice-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -246,8 +240,7 @@ This setting disables the theme gallery in the Personalization Control Panel.
 <!-- CPL_Personalization_DisableThemeChange-DFProperties-End -->
 
 <!-- CPL_Personalization_DisableThemeChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -306,8 +299,7 @@ When enabled on Windows XP and later systems, this setting prevents users and ap
 <!-- CPL_Personalization_DisableVisualStyle-DFProperties-End -->
 
 <!-- CPL_Personalization_DisableVisualStyle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -370,8 +362,7 @@ Also, see the "Prevent changing Screen Saver" setting.
 <!-- CPL_Personalization_EnableScreenSaver-DFProperties-End -->
 
 <!-- CPL_Personalization_EnableScreenSaver-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -435,8 +426,7 @@ This can be used in conjunction with the "Prevent changing lock screen and logon
 <!-- CPL_Personalization_ForceDefaultLockScreen-DFProperties-End -->
 
 <!-- CPL_Personalization_ForceDefaultLockScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -494,8 +484,7 @@ Prevents users from changing the size of the font in the windows and buttons dis
 <!-- CPL_Personalization_LockFontSize-DFProperties-End -->
 
 <!-- CPL_Personalization_LockFontSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -554,8 +543,7 @@ If you enable this setting, the user will not be able to change their lock scree
 <!-- CPL_Personalization_NoChangingLockScreen-DFProperties-End -->
 
 <!-- CPL_Personalization_NoChangingLockScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -618,8 +606,7 @@ If the "Force a specific Start background" policy is also set on a supported ver
 <!-- CPL_Personalization_NoChangingStartMenuBackground-DFProperties-End -->
 
 <!-- CPL_Personalization_NoChangingStartMenuBackground-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -680,8 +667,7 @@ For systems prior to Windows Vista, this setting hides the Appearance and Themes
 <!-- CPL_Personalization_NoColorAppearanceUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoColorAppearanceUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -747,8 +733,7 @@ Also, see the "Allow only bitmapped wallpaper" setting.
 <!-- CPL_Personalization_NoDesktopBackgroundUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoDesktopBackgroundUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -809,8 +794,7 @@ For systems prior to Windows Vista, this setting also hides the Desktop tab in t
 <!-- CPL_Personalization_NoDesktopIconsUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoDesktopIconsUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -869,8 +853,7 @@ This policy setting controls whether the lock screen appears for users.
 <!-- CPL_Personalization_NoLockScreen-DFProperties-End -->
 
 <!-- CPL_Personalization_NoLockScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -929,8 +912,7 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 <!-- CPL_Personalization_NoMousePointersUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoMousePointersUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -987,8 +969,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 <!-- CPL_Personalization_NoScreenSaverUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoScreenSaverUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1047,8 +1028,7 @@ If you enable this setting, none of the Sound Scheme settings can be changed by 
 <!-- CPL_Personalization_NoSoundSchemeUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoSoundSchemeUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1107,8 +1087,7 @@ If this setting is enabled, the background and accent colors of Windows will be 
 <!-- CPL_Personalization_PersonalColors-DFProperties-End -->
 
 <!-- CPL_Personalization_PersonalColors-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1174,8 +1153,7 @@ To ensure that a computer will be password protected, enable the "Enable Screen 
 <!-- CPL_Personalization_ScreenSaverIsSecure-DFProperties-End -->
 
 <!-- CPL_Personalization_ScreenSaverIsSecure-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1244,8 +1222,7 @@ When not configured, whatever wait time is set on the client through the Screen 
 <!-- CPL_Personalization_ScreenSaverTimeOut-DFProperties-End -->
 
 <!-- CPL_Personalization_ScreenSaverTimeOut-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1310,8 +1287,7 @@ If the specified screen saver is not installed on a computer to which this setti
 <!-- CPL_Personalization_SetScreenSaver-DFProperties-End -->
 
 <!-- CPL_Personalization_SetScreenSaver-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1373,8 +1349,7 @@ Specifies which theme file is applied to the computer the first time a user logs
 <!-- CPL_Personalization_SetTheme-DFProperties-End -->
 
 <!-- CPL_Personalization_SetTheme-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1443,8 +1418,7 @@ This can be a local computer visual style (aero.msstyles), or a file located on 
 <!-- CPL_Personalization_SetVisualStyle-DFProperties-End -->
 
 <!-- CPL_Personalization_SetVisualStyle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1502,8 +1476,7 @@ If this setting is set to a nonzero value, then Start uses the specified backgro
 <!-- CPL_Personalization_StartBackground-DFProperties-End -->
 
 <!-- CPL_Personalization_StartBackground-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

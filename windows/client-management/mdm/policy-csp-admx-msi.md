@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_MSI-Begin -->
 # Policy CSP - ADMX_MSI
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_MSI-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -67,8 +64,7 @@ This policy setting does not affect installations that run in the user's securit
 <!-- AllowLockdownBrowse-DFProperties-End -->
 
 <!-- AllowLockdownBrowse-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -131,8 +127,7 @@ Also, see the "Prevent removable media source for any install" policy setting.
 <!-- AllowLockdownMedia-DFProperties-End -->
 
 <!-- AllowLockdownMedia-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -193,8 +188,7 @@ This policy setting does not affect installations that run in the user's securit
 <!-- AllowLockdownPatch-DFProperties-End -->
 
 <!-- AllowLockdownPatch-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -259,8 +253,7 @@ This policy setting controls Windows Installer's interaction with the Restart Ma
 <!-- DisableAutomaticApplicationShutdown-DFProperties-End -->
 
 <!-- DisableAutomaticApplicationShutdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -324,8 +317,7 @@ Also, see the "Enable user to browse for source while elevated" policy setting.
 <!-- DisableBrowse-DFProperties-End -->
 
 <!-- DisableBrowse-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -384,8 +376,7 @@ This policy setting controls the ability to turn off all patch optimizations.
 <!-- DisableFlyweightPatching-DFProperties-End -->
 
 <!-- DisableFlyweightPatching-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -447,8 +438,7 @@ This policy setting controls Windows Installer's processing of the MsiLogging pr
 <!-- DisableLoggingFromPackage-DFProperties-End -->
 
 <!-- DisableLoggingFromPackage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -510,8 +500,7 @@ Also, see the "Enable user to use media source while elevated" and "Hide the 'Ad
 <!-- DisableMedia-DFProperties-End -->
 
 <!-- DisableMedia-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -576,8 +565,7 @@ This policy setting affects Windows Installer only. It does not prevent users fr
 <!-- DisableMSI-DFProperties-End -->
 
 <!-- DisableMSI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -640,8 +628,7 @@ Also, see the "Enable user to patch elevated products" policy setting.
 <!-- DisablePatch-DFProperties-End -->
 
 <!-- DisablePatch-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -702,8 +689,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- DisableRollback_1-DFProperties-End -->
 
 <!-- DisableRollback_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -764,8 +750,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 <!-- DisableRollback_2-DFProperties-End -->
 
 <!-- DisableRollback_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -824,8 +809,7 @@ This policy setting controls the ability to turn off shared components.
 <!-- DisableSharedComponent-DFProperties-End -->
 
 <!-- DisableSharedComponent-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -886,8 +870,7 @@ Non-administrator updates provide a mechanism for the author of an application t
 <!-- MSI_DisableLUAPatching-DFProperties-End -->
 
 <!-- MSI_DisableLUAPatching-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -948,8 +931,7 @@ This policy setting should be used if you need to maintain a tight control over 
 <!-- MSI_DisablePatchUninstall-DFProperties-End -->
 
 <!-- MSI_DisablePatchUninstall-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1008,8 +990,7 @@ This policy setting prevents Windows Installer from creating a System Restore ch
 <!-- MSI_DisableSRCheckPoints-DFProperties-End -->
 
 <!-- MSI_DisableSRCheckPoints-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1068,8 +1049,7 @@ This policy setting allows you to configure user installs. To configure this pol
 <!-- MSI_DisableUserInstalls-DFProperties-End -->
 
 <!-- MSI_DisableUserInstalls-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1133,8 +1113,7 @@ The new feature must be added as a new leaf feature to an existing feature tree.
 <!-- MSI_EnforceUpgradeComponentRules-DFProperties-End -->
 
 <!-- MSI_EnforceUpgradeComponentRules-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1199,8 +1178,7 @@ If you set the baseline cache to 100, the Windows Installer will use available f
 <!-- MSI_MaxPatchCacheSize-DFProperties-End -->
 
 <!-- MSI_MaxPatchCacheSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1258,8 +1236,7 @@ This policy setting controls the ability to prevent embedded UI.
 <!-- MsiDisableEmbeddedUI-DFProperties-End -->
 
 <!-- MsiDisableEmbeddedUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1320,8 +1297,7 @@ If you disable or do not configure this policy setting, Windows Installer logs t
 <!-- MSILogging-DFProperties-End -->
 
 <!-- MSILogging-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1381,8 +1357,7 @@ This policy setting is designed for enterprises that use Web-based tools to dist
 <!-- SafeForScripting-DFProperties-End -->
 
 <!-- SafeForScripting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1449,8 +1424,7 @@ To exclude a file source, omit or delete the letter representing that source typ
 <!-- SearchOrder-DFProperties-End -->
 
 <!-- SearchOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1516,8 +1490,7 @@ This policy setting is designed for enterprises to prevent unauthorized or malic
 <!-- TransformsSecure-DFProperties-End -->
 
 <!-- TransformsSecure-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

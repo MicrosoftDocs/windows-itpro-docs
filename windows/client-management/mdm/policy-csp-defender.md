@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -898,6 +898,7 @@ Exclude files and paths from Attack Surface Reduction (ASR) rules.
 Enabled:
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
 Enter each rule on a new line as a name-value pair:
+
   - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
   - Value column: Enter "0" for each item
 
@@ -964,6 +965,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
+
   - Block: the rule will be applied
   - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
   - Off: the rule will not be applied
@@ -975,10 +977,12 @@ Unless the ASR rule is disabled, a subsample of audit events are collected for A
 Enabled:
 Specify the state for each ASR rule under the Options section for this setting.
 Enter each rule on a new line as a name-value pair:
+
   - Name column: Enter a valid ASR rule ID
   - Value column: Enter the status ID that relates to state you want to specify for the associated rule
 
 The following status IDs are permitted under the value column:
+
   - 1 (Block)
   - 0 (Off)
   - 2 (Audit)
@@ -1655,6 +1659,7 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 <!-- EnableControlledFolderAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
 Enable or disable controlled folder access for untrusted applications. You can choose to block, audit, or allow attempts by untrusted apps to:
+
   - Modify or delete files in protected folders, such as the Documents folder
   - Write to disk sectors
 
@@ -1665,33 +1670,39 @@ Default system folders are automatically protected, but you can add folders in t
 
 Block:
 The following will be blocked:
+
   - Attempts by untrusted apps to modify or delete files in protected folders
   - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
 Disabled:
 The following will not be blocked and will be allowed to run:
+
   - Attempts by untrusted apps to modify or delete files in protected folders
   - Attempts by untrusted apps to write to disk sectors
 These attempts will not be recorded in the Windows event log.
 
 Audit Mode:
 The following will not be blocked and will be allowed to run:
+
   - Attempts by untrusted apps to modify or delete files in protected folders
   - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
 
 Block disk modification only:
 The following will be blocked:
+
   - Attempts by untrusted apps to write to disk sectors
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
 The following will not be blocked and will be allowed to run:
+
   - Attempts by untrusted apps to modify or delete files in protected folders
 These attempts will not be recorded in the Windows event log.
 
 Audit disk modification only:
 The following will not be blocked and will be allowed to run:
+
   - Attempts by untrusted apps to write to disk sectors
   - Attempts by untrusted apps to modify or delete files in protected folders
 Only attempts to write to protected disk sectors will be recorded in the Windows event log (under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124).
@@ -1832,6 +1843,7 @@ Enable or disable Microsoft Defender Exploit Guard network protection to prevent
 
 Enabled:
 Specify the mode in the Options section:
+
 -Block: Users and applications will not be able to access dangerous domains
 -Audit Mode: Users and applications can connect to dangerous domains, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
 
@@ -2077,6 +2089,7 @@ Enable or disable detection for potentially unwanted applications. You can choos
 
 Enabled:
 Specify the mode in the Options section:
+
 -Block: Potentially unwanted software will be blocked.
 -Audit Mode: Potentially unwanted software will not be blocked, however if this feature would have blocked access if it were set to Block, then a record of the event will be in the event logs.
 
@@ -2149,7 +2162,7 @@ Same as Disabled.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for incoming and outgoing files, without having to turn off monitoring entirely. It is recommended for use on servers where there is a lot of incoming and outgoing file activity but for performance reasons need to have scanning disabled for a particular scan direction. The appropriate configuration should be evaluated based on the server role.
 
-**Note** that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
+Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
 
 The options for this setting are mutually exclusive:
 0 = Scan incoming and outgoing files (default)

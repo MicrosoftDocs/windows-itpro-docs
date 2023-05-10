@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2030,9 +2030,9 @@ If more than one interface type is specified, the strings must be separated by a
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
+Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "\*" is the default value.
 Valid tokens include:
-"*" indicates any local address. If present, this must be the only token included.
+"\*" indicates any local address. If present, this must be the only token included.
 
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 A valid IPv6 address.
@@ -2119,7 +2119,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the list of authorized local users for the app container.
-This is a string in Security Descriptor Definition Language (SDDL) format..
+This is a string in Security Descriptor Definition Language (SDDL) format\.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Editable-Begin -->
@@ -2369,8 +2369,8 @@ Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying th
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "*". Valid tokens include:
-"*" indicates any remote address. If present, this must be the only token included.
+Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:
+"\*" indicates any remote address. If present, this must be the only token included.
 "Defaultgateway"
 "DHCP"
 "DNS"
@@ -3270,9 +3270,9 @@ If not specified - a new rule is disabled by default.
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
+Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "\*" is the default value.
 Valid tokens include:
-"*" indicates any local address. If present, this must be the only token included.
+"\*" indicates any local address. If present, this must be the only token included.
 
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 A valid IPv6 address.
@@ -3526,8 +3526,8 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
-Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "*". Valid tokens include:
-"*" indicates any remote address. If present, this must be the only token included.
+Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:
+"\*" indicates any remote address. If present, this must be the only token included.
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 A valid IPv6 address.
 An IPv4 address range in the format of "start address - end address" with no spaces included.

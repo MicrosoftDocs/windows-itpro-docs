@@ -4,7 +4,7 @@ description: Learn more about the WindowsSandbox Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,7 +45,7 @@ This policy setting enables or disables audio input to the Sandbox.
 
 - If you do not configure this policy setting, audio input will be enabled.
 
-**Note** that there may be security implications of exposing host audio input to the container.
+Note that there may be security implications of exposing host audio input to the container.
 <!-- AllowAudioInput-Description-End -->
 
 <!-- AllowAudioInput-Editable-Begin -->
@@ -173,7 +173,7 @@ This policy setting enables or disables networking in the sandbox. You can disab
 
 - If you do not configure this policy setting, networking will be enabled.
 
-**Note** that enabling networking can expose untrusted applications to the internal network.
+Note that enabling networking can expose untrusted applications to the internal network.
 <!-- AllowNetworking-Description-End -->
 
 <!-- AllowNetworking-Editable-Begin -->
@@ -301,7 +301,7 @@ This policy setting is to enable or disable the virtualized GPU.
 
 - If you do not configure this policy setting, vGPU will be enabled.
 
-**Note** that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
+Note that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
 <!-- AllowVGPU-Description-End -->
 
 <!-- AllowVGPU-Editable-Begin -->
@@ -366,7 +366,7 @@ This policy setting enables or disables video input to the Sandbox.
 
 - If you do not configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
 
-**Note** that there may be security implications of exposing host video input to the container.
+Note that there may be security implications of exposing host video input to the container.
 <!-- AllowVideoInput-Description-End -->
 
 <!-- AllowVideoInput-Editable-Begin -->
