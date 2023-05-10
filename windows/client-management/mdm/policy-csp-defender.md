@@ -47,7 +47,7 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- AllowArchiveScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowArchiveScanning-Editable-End -->
 
 <!-- AllowArchiveScanning-DFProperties-Begin -->
@@ -116,7 +116,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- AllowBehaviorMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowBehaviorMonitoring-Editable-End -->
 
 <!-- AllowBehaviorMonitoring-DFProperties-Begin -->
@@ -198,7 +198,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- AllowCloudProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowCloudProtection-Editable-End -->
 
 <!-- AllowCloudProtection-DFProperties-Begin -->
@@ -464,7 +464,7 @@ Allows or disallows Windows Defender Intrusion Prevention functionality.
 <!-- AllowIntrusionPreventionSystem-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowIntrusionPreventionSystem-Editable-End -->
 
 <!-- AllowIntrusionPreventionSystem-DFProperties-Begin -->
@@ -519,7 +519,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- AllowIOAVProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowIOAVProtection-Editable-End -->
 
 <!-- AllowIOAVProtection-DFProperties-Begin -->
@@ -588,7 +588,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- AllowOnAccessProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowOnAccessProtection-Editable-End -->
 
 <!-- AllowOnAccessProtection-DFProperties-Begin -->
@@ -653,7 +653,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 <!-- AllowRealtimeMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowRealtimeMonitoring-Editable-End -->
 
 <!-- AllowRealtimeMonitoring-DFProperties-Begin -->
@@ -784,7 +784,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowScriptScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- AllowScriptScanning-Editable-End -->
 
 <!-- AllowScriptScanning-DFProperties-Begin -->
@@ -1908,7 +1908,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 <!-- ExcludedExtensions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- ExcludedExtensions-Editable-End -->
 
 <!-- ExcludedExtensions-DFProperties-Begin -->
@@ -1964,7 +1964,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 <!-- ExcludedPaths-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- ExcludedPaths-Editable-End -->
 
 <!-- ExcludedPaths-DFProperties-Begin -->
@@ -2023,7 +2023,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 <!-- ExcludedProcesses-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions](https://go.microsoft.com/fwlink/?linkid=2235765) are met.
+> To prevent unauthorized changes to exclusions, apply tamper protection. Tamper protection for exclusions only works when [certain conditions][TAMPER-2] are met.
 <!-- ExcludedProcesses-Editable-End -->
 
 <!-- ExcludedProcesses-DFProperties-Begin -->
@@ -2816,7 +2816,7 @@ Valid remediation action values are:
 <!-- ThreatSeverityDefaultAction-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- ThreatSeverityDefaultAction-Editable-End -->
 
 <!-- ThreatSeverityDefaultAction-DFProperties-Begin -->
@@ -2850,6 +2850,9 @@ Valid remediation action values are:
 
 <!-- Defender-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Links -->
+[TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+[TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
 <!-- Defender-CspMoreInfo-End -->
 
 <!-- Defender-End -->

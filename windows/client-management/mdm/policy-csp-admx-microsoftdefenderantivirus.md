@@ -116,7 +116,7 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 <!-- DisableAntiSpywareDefender-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- DisableAntiSpywareDefender-Editable-End -->
 
 <!-- DisableAntiSpywareDefender-DFProperties-Begin -->
@@ -247,7 +247,7 @@ Real-time Protection -> Do not enable the "Turn off real-time protection" policy
 <!-- DisableBlockAtFirstSeen-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- DisableBlockAtFirstSeen-Editable-End -->
 
 <!-- DisableBlockAtFirstSeen-DFProperties-Begin -->
@@ -371,7 +371,7 @@ Real-time protection consists of always-on scanning with file and process behavi
 <!-- DisableRealtimeMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- DisableRealtimeMonitoring-Editable-End -->
 
 <!-- DisableRealtimeMonitoring-DFProperties-Begin -->
@@ -433,7 +433,7 @@ This policy setting allows you to configure whether Microsoft Defender Antivirus
 <!-- DisableRoutinelyTakingAction-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- DisableRoutinelyTakingAction-Editable-End -->
 
 <!-- DisableRoutinelyTakingAction-DFProperties-Begin -->
@@ -1592,7 +1592,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- RealtimeProtection_DisableBehaviorMonitoring-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- RealtimeProtection_DisableBehaviorMonitoring-Editable-End -->
 
 <!-- RealtimeProtection_DisableBehaviorMonitoring-DFProperties-Begin -->
@@ -1654,7 +1654,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- RealtimeProtection_DisableIOAVProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- RealtimeProtection_DisableIOAVProtection-Editable-End -->
 
 <!-- RealtimeProtection_DisableIOAVProtection-DFProperties-Begin -->
@@ -1716,7 +1716,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- RealtimeProtection_DisableOnAccessProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- RealtimeProtection_DisableOnAccessProtection-Editable-End -->
 
 <!-- RealtimeProtection_DisableOnAccessProtection-DFProperties-Begin -->
@@ -1838,7 +1838,7 @@ This policy setting allows you to configure process scanning when real-time prot
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-Editable-End -->
 
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-DFProperties-Begin -->
@@ -2563,7 +2563,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus enha
 <!-- Reporting_DisableEnhancedNotifications-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- Reporting_DisableEnhancedNotifications-Editable-End -->
 
 <!-- Reporting_DisableEnhancedNotifications-DFProperties-Begin -->
@@ -3094,7 +3094,7 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- Scan_DisableArchiveScanning-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- Scan_DisableArchiveScanning-Editable-End -->
 
 <!-- Scan_DisableArchiveScanning-DFProperties-Begin -->
@@ -5578,7 +5578,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus noti
 <!-- UX_Configuration_Notification_Suppress-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- UX_Configuration_Notification_Suppress-Editable-End -->
 
 <!-- UX_Configuration_Notification_Suppress-DFProperties-Begin -->
@@ -5638,7 +5638,7 @@ If you enable this setting AM UI won't show reboot notifications.
 <!-- UX_Configuration_SuppressRebootNotification-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection](https://go.microsoft.com/fwlink/?LinkId=2236030) is enabled.
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- UX_Configuration_SuppressRebootNotification-Editable-End -->
 
 <!-- UX_Configuration_SuppressRebootNotification-DFProperties-Begin -->
@@ -5732,7 +5732,7 @@ If you enable this setting AM UI won't be available to users.
 
 <!-- ADMX_MicrosoftDefenderAntivirus-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-<!--links-->
+<!-- Links -->
 [TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
 [TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
 <!-- ADMX_MicrosoftDefenderAntivirus-CspMoreInfo-End -->
