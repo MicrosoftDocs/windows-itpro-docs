@@ -204,7 +204,7 @@ The following tables list registry values that correspond to the Group Policy se
 | AUOptions | REG_DWORD | 2: notify for download and notify for installation of updates</br>3: automatically download and notify for installation of updates</br>4: Automatically download and schedule installation of updates</br>5: allow the local admin to configure these settings</br>**Note:** To configure restart behavior, set this value to **4** |
 | NoAutoRebootWithLoggedOnUsers | REG_DWORD | 0: disable do not reboot if users are logged on</br>1: do not reboot after an update installation if a user is logged on</br>**Note:** If disabled: Automatic Updates will notify the user that the computer will automatically restart in 5 minutes to complete the installation  |
 | UseWUServer | REG_DWORD | Set this value to 1 to configure Automatic Updates to use a server that is running Software Update Services instead of Windows Update |
-| ScheduledInstallDay |  | 0: Every day</br>1 through 7: The days of the week from Sunday (1) to Saturday (7).
+| ScheduledInstallDay |  | 0: every day</br>1 through 7: the days of the week from Sunday (1) to Saturday (7)
 | ScheduledInstallTime | REG_DWORD | 0-23: schedule update installation time to a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) |
 | RescheduleWaitTime | REG_DWORD | m, where m equals the time period to wait between the time Automatic Updates starts and the time that it begins installations where the scheduled times have passed. The time is set in minutes from 1 to 60, representing 1 minute to 60 minutes) |
 
