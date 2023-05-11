@@ -18,6 +18,8 @@ Other apps, especially those that were not specifically designed with security s
 
 When an app needs to run with more than standard user rights, UAC allows users to run apps with their administrator token (with administrative groups and privileges) instead of their default, standard user access token. Users continue to operate in the standard user security context, while enabling certain apps to run with elevated privileges, if needed.
 
+[!INCLUDE [user-account-control-uac](../../../../includes/licensing/user-account-control-uac.md)]
+
 ## Practical applications
 
 Admin Approval Mode in UAC helps prevent malware from silently installing without an administrator's knowledge. It also helps protect from inadvertent system-wide changes. Lastly, it can be used to enforce a higher level of compliance where administrators must actively consent or provide credentials for each administrative process.

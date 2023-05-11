@@ -71,6 +71,8 @@ The Security Settings extension of the Local Group Policy Editor includes the fo
 - **IP Security Policies on Local Computer.** Specify settings to ensure private, secure communications over IP networks by using cryptographic security services. IPsec establishes trust and security from a source IP address to a destination IP address.
 - **Advanced Audit Policy Configuration.** Specify settings that control the logging of security events into the security log on the device. The settings under Advanced Audit Policy Configuration provide finer control over which activities to monitor as opposed to the Audit Policy settings under Local Policies.
 
+[!INCLUDE [windows-security-policy-settings-and-auditing](../../../../includes/licensing/windows-security-policy-settings-and-auditing.md)]
+
 ## Policy-based security settings management
 
 The Security Settings extension to Group Policy provides an integrated policy-based management infrastructure to help you manage and enforce your security policies.
