@@ -4,7 +4,7 @@ description: Learn more about the DeviceStatus CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -132,7 +132,7 @@ Node for the antispyware query.
 
 <!-- Device-Antispyware-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.) If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
+Integer that specifies the status of the antispyware signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist). If more than one antispyware provider is active, this node returns: 1 - If every active antispyware provider has a valid signature status. 0 - If any of the active antispyware providers has an invalid signature status.
 <!-- Device-Antispyware-SignatureStatus-Description-End -->
 
 <!-- Device-Antispyware-SignatureStatus-Editable-Begin -->
@@ -252,7 +252,7 @@ Node for the antivirus query.
 
 <!-- Device-Antivirus-SignatureStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antivirus signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 (default) - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.) If more than one antivirus provider is active, this node returns: 1 - If every active antivirus provider has a valid signature status. 0 - If any of the active antivirus providers has an invalid signature status.
+Integer that specifies the status of the antivirus signature. Valid values: 0 - The security software reports that it isn't the most recent version. 1 (default) - The security software reports that it's the most recent version. 2 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist). If more than one antivirus provider is active, this node returns: 1 - If every active antivirus provider has a valid signature status. 0 - If any of the active antivirus providers has an invalid signature status.
 <!-- Device-Antivirus-SignatureStatus-Description-End -->
 
 <!-- Device-Antivirus-SignatureStatus-Editable-Begin -->
@@ -293,7 +293,7 @@ This node also returns 0 when no antivirus provider is active.
 
 <!-- Device-Antivirus-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus is on and monitoring, 1 - Antivirus is disabled, 2 - Antivirus isn't monitoring the device/PC or some options have been turned off, 3 (default) - Antivirus is temporarily not completely monitoring the device/PC, 4 - Antivirus not applicable for this device. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.)
+Integer that specifies the status of the antivirus. Valid values: 0 - Antivirus is on and monitoring, 1 - Antivirus is disabled, 2 - Antivirus isn't monitoring the device/PC or some options have been turned off, 3 (default) - Antivirus is temporarily not completely monitoring the device/PC, 4 - Antivirus not applicable for this device. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist).
 <!-- Device-Antivirus-Status-Description-End -->
 
 <!-- Device-Antivirus-Status-Editable-Begin -->
@@ -1353,7 +1353,7 @@ Node for the firewall query.
 
 <!-- Device-Firewall-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Integer that specifies the status of the firewall. Valid values: 0 - Firewall is on and monitoring, 1 - Firewall has been disabled, 2 - Firewall isn't monitoring all networks or some rules have been turned off, 3 (default) - Firewall is temporarily not monitoring all networks, 4 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist.)
+Integer that specifies the status of the firewall. Valid values: 0 - Firewall is on and monitoring, 1 - Firewall has been disabled, 2 - Firewall isn't monitoring all networks or some rules have been turned off, 3 (default) - Firewall is temporarily not monitoring all networks, 4 - Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn't exist).
 <!-- Device-Firewall-Status-Description-End -->
 
 <!-- Device-Firewall-Status-Editable-Begin -->

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DiskDiagnostic Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -106,7 +106,7 @@ This policy setting only takes effect if the Disk Diagnostic scenario policy set
 <!-- Description-Source-ADMX -->
 This policy setting determines the execution level for S. M. A. R. T.-based disk diagnostics.
 
-Self-Monitoring And Reporting Technology (S. M. A. R. T.) is a standard mechanism for storage devices to report faults to Windows. A disk that reports a S. M. A. R. T. fault may need to be repaired or replaced. The Diagnostic Policy Service (DPS) detects and logs S. M. A. R. T. faults to the event log when they occur.
+Self-Monitoring And Reporting Technology (S. M. A. R. T). is a standard mechanism for storage devices to report faults to Windows. A disk that reports a S. M. A. R. T. fault may need to be repaired or replaced. The Diagnostic Policy Service (DPS) detects and logs S. M. A. R. T. faults to the event log when they occur.
 
 - If you enable this policy setting, the DPS also warns users of S. M. A. R. T. faults and guides them through backup and recovery to minimize potential data loss.
 

@@ -4,7 +4,7 @@ description: Learn more about the LanguagePackManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -138,7 +138,7 @@ Language tag of the language to be installed or being installed.
 
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Description-Begin -->
 <!-- Description-Source-DDF -->
-Copies the language to the international settings (i.e., locale, input layout, speech recognizer, preferred UI language) of the device immediately after installation if the value is true. Default value is false.
+Copies the language to the international settings (that is, locale, input layout, speech recognizer, preferred UI language) of the device immediately after installation if the value is true. Default value is false.
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Description-End -->
 
 <!-- Device-Install-{Language ID}-CopyToDeviceInternationalSettings-Editable-Begin -->
