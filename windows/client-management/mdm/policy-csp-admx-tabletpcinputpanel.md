@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TabletPCInputPanel Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -559,17 +559,17 @@ Adjusts password security settings in Touch Keyboard and Handwriting panel (a.k.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low." At this setting, all password security settings are turned off. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low". At this setting, all password security settings are turned off. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "High" from the drop-down box, password security is set to "High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "High" from the drop-down box, password security is set to "High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
 - If you don't configure this policy, password security is set to "Medium-High" by default. At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users will be able to configure this setting on the Advanced tab in Input Panel Options in Windows 7 and Windows Vista.
 
@@ -633,17 +633,17 @@ Adjusts password security settings in Touch Keyboard and Handwriting panel (a.k.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low." At this setting, all password security settings are turned off. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low". At this setting, all password security settings are turned off. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "High" from the drop-down box, password security is set to "High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "High" from the drop-down box, password security is set to "High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
 - If you don't configure this policy, password security is set to "Medium-High" by default. At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users will be able to configure this setting on the Advanced tab in Input Panel Options in Windows 7 and Windows Vista.
 

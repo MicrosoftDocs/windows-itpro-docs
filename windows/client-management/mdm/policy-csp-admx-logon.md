@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Logon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -101,6 +101,7 @@ This policy prevents the user from showing account details (email address or use
 This policy setting disables the acrylic blur effect on logon background image.
 
 - If you enable this policy, the logon background image shows without blur.
+
 - If you disable or don't configure this policy, the logon background image adopts the acrylic blur effect.
 <!-- DisableAcrylicBackgroundOnLogon-Description-End -->
 
@@ -560,7 +561,7 @@ This setting applies only to Windows 2000 Professional. It doesn't affect the "C
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started." To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started". To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
 <!-- NoWelcomeTips_1-Description-End -->
 
 <!-- NoWelcomeTips_1-Editable-Begin -->
@@ -629,7 +630,7 @@ This setting applies only to Windows 2000 Professional. It doesn't affect the "C
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started." To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
+> To display the welcome screen, click Start, point to Programs, point to Accessories, point to System Tools, and then click "Getting Started". To suppress the welcome screen without specifying a setting, clear the "Show this screen at startup" check box on the welcome screen.
 <!-- NoWelcomeTips_2-Description-End -->
 
 <!-- NoWelcomeTips_2-Editable-Begin -->
@@ -826,15 +827,17 @@ On servers running Windows Server 2008 or later, this policy setting is ignored 
 
 If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon:
 
-  - The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
-  - The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
+- The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
+- The "Allow asynchronous user Group Policy processing when logging on through Terminal Services" policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\.
 
 If this configuration isn't implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user logon is synchronous (these servers wait for the network to be initialized during user logon).
 
 - If you disable or don't configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that's configured as described earlier, the computer typically doesn't wait for the network to be fully initialized. In this case, users are logged-on with cached credentials. Group Policy is applied asynchronously in the background.
 
 Note
+
 -If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy.
+
 -If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 <!-- SyncForegroundPolicy-Description-End -->
 

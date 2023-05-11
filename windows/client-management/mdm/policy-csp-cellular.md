@@ -4,7 +4,7 @@ description: Learn more about the Cellular Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -324,6 +324,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 This policy setting configures the visibility of the link to the per-application cellular access control page in the cellular setting UX.
 
 - If this policy setting is enabled, a drop-down list box presenting possible values will be active. Select "Hide" or "Show" to hide or show the link to the per-application cellular access control page.
+
 - If this policy setting is disabled or isn't configured, the link to the per-application cellular access control page is showed by default.
 <!-- ShowAppCellularAccessUI-Description-End -->
 

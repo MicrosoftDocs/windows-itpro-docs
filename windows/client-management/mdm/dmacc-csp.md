@@ -4,7 +4,7 @@ description: Learn more about the DMAcc CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -878,9 +878,10 @@ Defines a set of Microsoft-specific extended parameters. This element is created
 <!-- Device-{AccountUID}-Ext-Microsoft-BackCompatRetryDisabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 This node specifies whether to disable the ability of the DM client to communicate with a down-level server.
+
 Possible Values:
-false (default) -- Compatibility with down-level servers is enabled
-true -- Compatibility with down-level servers is disabled.
+
+false (default) -- Compatibility with down-level servers is enabled true -- Compatibility with down-level servers is disabled.
 <!-- Device-{AccountUID}-Ext-Microsoft-BackCompatRetryDisabled-Description-End -->
 
 <!-- Device-{AccountUID}-Ext-Microsoft-BackCompatRetryDisabled-Editable-Begin -->
@@ -1432,8 +1433,11 @@ the UUID of the device.
 <!-- Description-Source-DDF -->
 This node specifies whether the DM client can use the nonce resynchronization protocol when authentication of a server notification fails. If nonce
 resynchronization is disabled and authentication of the server notification fails, the notification is dropped.
+
 Possible Values:
+
 false (default) : Nonce resynchronization is disabled.
+
 true: Nonce resynchronization is enabled.
 <!-- Device-{AccountUID}-Ext-Microsoft-UseNonceResync-Description-End -->
 

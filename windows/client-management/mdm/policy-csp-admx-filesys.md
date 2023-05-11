@@ -4,7 +4,7 @@ description: Learn more about the ADMX_FileSys Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -99,6 +99,7 @@ A reboot is required for this setting to take effect.
 Delete notification is a feature that notifies the underlying storage device of clusters that are freed due to a file delete operation.
 
 A value of 0, the default, will enable delete notifications for all volumes.
+
 A value of 1 will disable delete notifications for all volumes.
 <!-- DisableDeleteNotification-Description-End -->
 
@@ -379,12 +380,15 @@ If you enable short names on all volumes then short names will always be generat
 <!-- Description-Source-ADMX -->
 Symbolic links can introduce vulnerabilities in certain applications. To mitigate this issue, you can selectively enable or disable the evaluation of these types of symbolic links:
 
-Local Link to a Local Target
-Local Link to a Remote Target
-Remote Link to Remote Target
-Remote Link to Local Target
+Local Link to a Local Target.
 
-For further information please refer to the Windows Help section
+Local Link to a Remote Target.
+
+Remote Link to Remote Target.
+
+Remote Link to Local Target.
+
+For further information please refer to the Windows Help section.
 
 > [!NOTE]
 > If this policy is Disabled or Not Configured, local administrators may select the types of symbolic links to be evaluated.

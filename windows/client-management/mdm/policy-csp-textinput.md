@@ -4,7 +4,7 @@ description: Learn more about the TextInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -658,11 +658,11 @@ Allows the user to turn on or off the automatic downloading of newer versions of
 
 <!-- ConfigureJapaneseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
 - If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
@@ -733,11 +733,11 @@ This Policy setting applies only to Microsoft Japanese IME.
 
 <!-- ConfigureKoreanIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
 - If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
@@ -799,11 +799,11 @@ This Policy setting applies only to Microsoft Korean IME.
 
 <!-- ConfigureSimplifiedChineseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
 - If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 
@@ -874,11 +874,11 @@ This Policy setting applies only to Microsoft Simplified Chinese IME.
 
 <!-- ConfigureTraditionalChineseIMEVersion-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the version of Microsoft IME. 
+This policy setting controls the version of Microsoft IME.
 
-- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default. 
+- If you don't configure this policy setting, user can control IME version to use. The new Microsoft IME is on by default.
 
-- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected. 
+- If you enable this, user isn't allowed to control IME version to use. The previous version of Microsoft IME is always selected.
 
 - If you disable this, user isn't allowed to control IME version to use. The new Microsoft IME is always selected.
 

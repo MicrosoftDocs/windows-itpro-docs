@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -234,6 +234,7 @@ This policy setting allows you to specify whether users can run Remote Desktop P
 
 > [!NOTE]
 > You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+
 - If you configure this policy setting for the computer, all users on the computer are affected.
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_1-Description-End -->
 
@@ -297,6 +298,7 @@ This policy setting allows you to specify whether users can run Remote Desktop P
 
 > [!NOTE]
 > You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+
 - If you configure this policy setting for the computer, all users on the computer are affected.
 <!-- TS_CLIENT_ALLOW_SIGNED_FILES_2-Description-End -->
 
@@ -471,6 +473,7 @@ This policy setting allows you to specify whether users can run unsigned Remote 
 <!-- TS_CLIENT_AUDIO-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify whether users can redirect the remote computer's audio and video output in a Remote Desktop Services session.
+
 Users can specify where to play the remote computer's audio output by configuring the remote audio settings on the Local Resources tab in Remote Desktop Connection (RDC). Users can choose to play the remote audio on the remote computer or on the local computer. Users can also choose to not play the audio. Video playback can be configured by using the videoplayback setting in a Remote Desktop Protocol (.rdp) file. By default, video playback is enabled.
 
 By default, audio and video playback redirection isn't allowed when connecting to a computer running Windows Server 2008 R2, Windows Server 2008, or Windows Server 2003. Audio and video playback redirection is allowed by default when connecting to a computer running Windows 8, Windows Server 2012, Windows 7, Windows Vista, or Windows XP Professional.
@@ -535,6 +538,7 @@ By default, audio and video playback redirection isn't allowed when connecting t
 <!-- TS_CLIENT_AUDIO_CAPTURE-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify whether users can record audio to the remote computer in a Remote Desktop Services session.
+
 Users can specify whether to record audio to the remote computer by configuring the remote audio settings on the Local Resources tab in Remote Desktop Connection (RDC). Users can record audio by using an audio input device on the local computer, such as a built-in microphone.
 
 By default, audio recording redirection isn't allowed when connecting to a computer running Windows Server 2008 R2. Audio recording redirection is allowed by default when connecting to a computer running at least Windows 7, or Windows Server 2008 R2.
@@ -849,7 +853,7 @@ By default, Remote Desktop Services automatically designates the client default 
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether the Remote Desktop Connection can use hardware acceleration if supported hardware is available. If you use this setting, the Remote Desktop Client will use only software decoding. For example, if you have a problem that you suspect may be related to hardware acceleration, use this setting to disable the acceleration; then, if the problem still occurs, you will know that there are additional issues to investigate. If you disable this setting or leave it not configured, the Remote Desktop client will use hardware accelerated decoding if supported hardware is available.
+This policy setting specifies whether the Remote Desktop Connection can use hardware acceleration if supported hardware is available. If you use this setting, the Remote Desktop Client will use only software decoding. For example, if you have a problem that you suspect may be related to hardware acceleration, use this setting to disable the acceleration; then, if the problem still occurs, you'll know that there are additional issues to investigate. If you disable this setting or leave it not configured, the Remote Desktop client will use hardware accelerated decoding if supported hardware is available.
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Description-End -->
 
 <!-- TS_CLIENT_DISABLE_HARDWARE_MODE-Editable-Begin -->
@@ -1033,6 +1037,7 @@ By default, Remote Desktop Services doesn't allow redirection of supported Plug 
 - If you disable this policy setting, users can redirect their supported Plug and Play devices to the remote computer. Users can use the More option on the Local Resources tab of Remote Desktop Connection to choose the supported Plug and Play devices to redirect to the remote computer.
 
 - If you enable this policy setting, users can't redirect their supported Plug and Play devices to the remote computer.
+
 - If you don't configure this policy setting, users can redirect their supported Plug and Play devices to the remote computer only if it's running Windows Server 2012 R2 and earlier versions.
 
 > [!NOTE]
@@ -1163,6 +1168,7 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 Note:
 
 You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+
 - If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
 This policy setting overrides the behavior of the "Allow .rdp files from valid publishers and user's default .rdp settings" policy setting.
@@ -1230,6 +1236,7 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 Note:
 
 You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+
 - If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
 This policy setting overrides the behavior of the "Allow .rdp files from valid publishers and user's default .rdp settings" policy setting.
@@ -1358,12 +1365,12 @@ You can use this policy setting to set a limit on the color depth of any connect
 Note:
 
 1.	Setting the color depth to 24 bits is only supported on Windows Server 2003 and Windows XP Professional.
+
 2.	The value specified in this policy setting isn't applied to connections from client computers that are using at least Remote Desktop Protocol 8.0 (computers running at least Windows 8 or Windows Server 2012). The 32-bit color depth format is always used for these connections.
 
 3.	For connections from client computers that are using Remote Desktop Protocol 7.1 or earlier versions that are connecting to computers running at least Windows 8 or Windows Server 2012, the minimum of the following values is used as the color depth format:
-a.	Value specified by this policy setting
-b.	Maximum color depth supported by the client
-c.	Value requested by the client
+
+a.	Value specified by this policy setting b.	Maximum color depth supported by the client c.	Value requested by the client.
 
 If the client doesn't support at least 16 bits, the connection is terminated.
 <!-- TS_COLORDEPTH-Description-End -->
@@ -2816,7 +2823,7 @@ A license server attempts to provide the most appropriate RDS or TS CAL for a co
 By default, if the most appropriate RDS CAL isn't available for a connection, a Windows Server 2008 license server will issue a Windows Server 2008 TS CAL, if available, to the following:
 
 * A client connecting to a Windows Server 2003 terminal server
-* A client connecting to a Windows 2000 terminal server
+* A client connecting to a Windows 2000 terminal server.
 
 - If you enable this policy setting, the license server will only issue a temporary RDS CAL to the client if an appropriate RDS CAL for the RD Session Host server isn't available. If the client has already been issued a temporary RDS CAL and the temporary RDS CAL has expired, the client won't be able to connect to the RD Session Host server unless the RD Licensing grace period for the RD Session Host server hasn't expired.
 
@@ -3065,9 +3072,11 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 - If you enable this policy setting, administrators can interact with a user's Remote Desktop Services session based on the option selected. Select the desired level of control and permission from the options list:
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
+
 2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
 
 3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
+
 4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
 
 5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
@@ -3130,9 +3139,11 @@ By default, when a new user signs in to a computer, the Start screen is shown an
 - If you enable this policy setting, administrators can interact with a user's Remote Desktop Services session based on the option selected. Select the desired level of control and permission from the options list:
 
 1. No remote control allowed: Disallows an administrator to use remote control or view a remote user session.
+
 2. Full Control with user's permission: Allows the administrator to interact with the session, with the user's consent.
 
 3. Full Control without user's permission: Allows the administrator to interact with the session, without the user's consent.
+
 4. View Session with user's permission: Allows the administrator to watch the session of a remote user with the user's consent.
 
 5. View Session without user's permission: Allows the administrator to watch the session of a remote user without the user's consent.
@@ -3580,7 +3591,7 @@ This policy setting allows you to specify which protocols can be used for Remote
 
 - If you enable this policy setting, you must specify if you would like RDP to use UDP.
 
-You can select one of the following options: "Use both UDP and TCP", "Use only TCP" or "Use either UDP or TCP (default)"
+You can select one of the following options: "Use both UDP and TCP", "Use only TCP" or "Use either UDP or TCP (default)".
 
 If you select "Use either UDP or TCP" and the UDP connection is successful, most of the RDP traffic will use UDP.
 
@@ -3944,6 +3955,7 @@ This policy setting allows you to specify the visual quality for remote users wh
 - If you enable this policy setting and set quality to High, RemoteFX Adaptive Graphics uses an encoding mechanism that results in high quality images and consumes moderate network bandwidth.
 
 - If you enable this policy setting and set quality to Lossless, RemoteFX Adaptive Graphics uses lossless encoding. In this mode, the color integrity of the graphics data isn't impacted. However, this setting results in a significant increase in network bandwidth consumption. We recommend that you set this for very specific cases only.
+
 - If you disable or don't configure this policy setting, RemoteFX Adaptive Graphics uses an encoding mechanism that results in medium quality images.
 <!-- TS_SERVER_IMAGE_QUALITY-Description-End -->
 
@@ -4001,6 +4013,7 @@ This policy setting allows you to specify the visual quality for remote users wh
 This policy setting allows you to configure graphics encoding to use the RemoteFX Codec on the Remote Desktop Session Host server so that the sessions are compatible with non-Windows thin client devices designed for Windows Server 2008 R2 SP1. These clients only support the Windows Server 2008 R2 SP1 RemoteFX Codec.
 
 - If you enable this policy setting, users' sessions on this server will only use the Windows Server 2008 R2 SP1 RemoteFX Codec for encoding. This mode is compatible with thin client devices that only support the Windows Server 2008 R2 SP1 RemoteFX Codec.
+
 - If you disable or don't configure this policy setting, non-Windows thin clients that only support the Windows Server 2008 R2 SP1 RemoteFX Codec won't be able to connect to this server. This policy setting applies only to clients that are using Remote Desktop Protocol (RDP) 7.1, and doesn't affect clients that are using other RDP versions.
 <!-- TS_SERVER_LEGACY_RFX-Description-End -->
 
@@ -4061,11 +4074,11 @@ This policy setting allows the administrator to configure the RemoteFX experienc
 - If you enable this policy setting, the RemoteFX experience could be set to one of the following options:
 
 1. Let the system choose the experience for the network condition
-2. Optimize for server scalability
+2. Optimize for server scalability.
 
-3. Optimize for minimum bandwidth usage
+3. Optimize for minimum bandwidth usage.
 
-- If you disable or don't configure this policy setting, the RemoteFX experience will change dynamically based on the network condition."
+- If you disable or don't configure this policy setting, the RemoteFX experience will change dynamically based on the network condition".
 <!-- TS_SERVER_PROFILE-Description-End -->
 
 <!-- TS_SERVER_PROFILE-Editable-Begin -->
@@ -4891,7 +4904,7 @@ To use this setting, in Program path and file name, type the fully qualified pat
 
 If the status is set to Enabled, Remote Desktop Services sessions automatically run the specified program and use the specified Working Directory (or the program default directory, if Working Directory isn't specified) as the working directory for the program.
 
-If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting.)
+If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting).
 
 > [!NOTE]
 > This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting overrides.
@@ -4959,7 +4972,7 @@ To use this setting, in Program path and file name, type the fully qualified pat
 
 If the status is set to Enabled, Remote Desktop Services sessions automatically run the specified program and use the specified Working Directory (or the program default directory, if Working Directory isn't specified) as the working directory for the program.
 
-If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting.)
+If the status is set to Disabled or Not Configured, Remote Desktop Services sessions start with the full desktop, unless the server administrator or user specify otherwise. (See "Computer Configuration\Administrative Templates\System\Logon\Run these programs at user logon" setting).
 
 > [!NOTE]
 > This setting appears in both Computer Configuration and User Configuration. If both settings are configured, the Computer Configuration setting overrides.
@@ -5663,6 +5676,7 @@ To configure this policy setting, type the path to the network share in the form
 Note:
 
 1. The roaming user profiles enabled by the policy setting apply only to Remote Desktop Services connections. A user might also have a Windows roaming user profile configured. The Remote Desktop Services roaming user profile always takes precedence in a Remote Desktop Services session.
+
 2. To configure a mandatory Remote Desktop Services roaming user profile for all users connecting remotely to the RD Session Host server, use this policy setting together with the "Use mandatory profiles on the RD Session Host server" policy setting located in Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Profiles. The path set in the "Set path for Remote Desktop Services Roaming User Profile" policy setting should contain the mandatory profile.
 <!-- TS_USER_PROFILES-Description-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the WindowsPowerShell Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,13 +45,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting enables logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
 
-- If you enable this policy setting,
-Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation.
+- If you enable this policy setting, Windows PowerShell will log the processing of commands, script blocks, functions, and scripts - whether invoked interactively, or through automation.
 
 - If you disable this policy setting, logging of PowerShell script input is disabled.
 
-If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script
-starts or stops. Enabling Invocation Logging generates a high volume of event logs.
+If you enable the Script Block Invocation Logging, PowerShell additionally logs events when invocation of a command, script block, function, or script starts or stops. Enabling Invocation Logging generates a high volume of event logs.
 
 > [!NOTE]
 > This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.

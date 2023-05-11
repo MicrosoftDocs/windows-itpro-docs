@@ -4,7 +4,7 @@ description: Learn more about the Printers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -380,9 +380,9 @@ You can enable this setting to configure the Redirection Guard policy being appl
 
 - If you enable this setting you may select the following options:
 
-- Enabled: Redirection Guard will prevent any file redirections from being followed
+- Enabled: Redirection Guard will prevent any file redirections from being followed.
 
-- Disabled: Redirection Guard won't be enabled and file redirections may be used within the spooler process
+- Disabled: Redirection Guard won't be enabled and file redirections may be used within the spooler process.
 
 - Audit: Redirection Guard will log events as though it were enabled but won't actually prevent file redirections from being used within the spooler.
 <!-- ConfigureRedirectionGuardPolicy-Description-End -->
@@ -499,14 +499,14 @@ By default, RPC over TCP is used and authentication is always enabled. For RPC o
 
 Protocol to use for outgoing RPC connections:
 
-  - "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
-  - "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler
+- "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
+- "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler.
 
 Use authentication for outgoing RPC over named pipes connections:
 
-  - "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
-  - "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
-  - "Authentication disabled": RPC authentication won't be used for outgoing RPC over named pipes connections
+- "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
+- "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
+- "Authentication disabled": RPC authentication won't be used for outgoing RPC over named pipes connections.
 
 If you disable or don't configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcConnectionPolicy-Description-End -->
@@ -568,14 +568,14 @@ By default, RPC over TCP is enabled and Negotiate is used for the authentication
 
 Protocols to allow for incoming RPC connections:
 
-  - "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
-  - "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
-  - "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes
+- "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
+- "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
+- "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes.
 
 Authentication protocol to use for incoming RPC connections:
 
-  - "Negotiate": Use the Negotiate authentication protocol (the default option)
-  - "Kerberos": Use the Kerberos authentication protocol
+- "Negotiate": Use the Negotiate authentication protocol (the default option)
+- "Kerberos": Use the Kerberos authentication protocol.
 
 If you disable or don't configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcListenerPolicy-Description-End -->
@@ -637,7 +637,7 @@ By default dynamic TCP ports are used.
 
 RPC over TCP port:
 
-  - The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used
+- The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used.
 
 If you disable or don't configure this policy setting, dynamic TCP ports are used.
 <!-- ConfigureRpcTcpPort-Description-End -->
@@ -880,21 +880,29 @@ This policy setting controls the client Point and Print behavior, including the 
 - If you enable this policy setting:
 
 -Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
+
 -You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
 
 - If you don't configure this policy setting:
 
 -Windows Vista client computers can point and print to any server.
+
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
+
 -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
 
 - If you disable this policy setting:
 
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
+
 -Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+
 -Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
+
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 <!-- PointAndPrintRestrictions-Description-End -->
 
@@ -955,21 +963,29 @@ This policy setting controls the client Point and Print behavior, including the 
 - If you enable this policy setting:
 
 -Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
+
 -You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
 
 - If you don't configure this policy setting:
 
 -Windows Vista client computers can point and print to any server.
+
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
+
 -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
 
 - If you disable this policy setting:
 
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
+
 -Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+
 -Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
+
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 <!-- PointAndPrintRestrictions_User-Description-End -->
 

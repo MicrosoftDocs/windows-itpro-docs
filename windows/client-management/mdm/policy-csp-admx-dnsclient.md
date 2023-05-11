@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DnsClient Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -100,11 +100,11 @@ Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualifie
 <!-- Description-Source-ADMX -->
 Specifies that computers may attach suffixes to an unqualified multi-label name before sending subsequent DNS queries if the original name query fails.
 
-A name containing dots, but not dot-terminated, is called an unqualified multi-label name, for example "server.corp" is an unqualified multi-label name. The name "server.corp.contoso.com." is an example of a fully qualified name because it contains a terminating dot.
+A name containing dots, but not dot-terminated, is called an unqualified multi-label name, for example "server.corp" is an unqualified multi-label name. The name "server.corp.contoso.com" is an example of a fully qualified name because it contains a terminating dot.
 
 For example, if attaching suffixes is allowed, an unqualified multi-label name query for "server.corp" will be queried by the DNS client first. If the query succeeds, the response is returned to the client. If the query fails, the unqualified multi-label name is appended with DNS suffixes. These suffixes can be derived from a combination of the local DNS client's primary domain suffix, a connection-specific domain suffix, and a DNS suffix search list.
 
-If attaching suffixes is allowed, and a DNS client with a primary domain suffix of "contoso.com" performs a query for "server.corp" the DNS client will send a query for "server.corp" first, and then a query for "server.corp.contoso.com." second if the first query fails.
+If attaching suffixes is allowed, and a DNS client with a primary domain suffix of "contoso.com" performs a query for "server.corp" the DNS client will send a query for "server.corp" first, and then a query for "server.corp.contoso.com" second if the first query fails.
 
 - If you enable this policy setting, suffixes are allowed to be appended to an unqualified multi-label name if the original name query fails.
 
@@ -990,9 +990,9 @@ To specify the TTL, click Enabled and then enter a value in seconds (for example
 <!-- Description-Source-ADMX -->
 Specifies the DNS suffixes to attach to an unqualified single-label name before submission of a DNS query for that name.
 
-An unqualified single-label name contains no dots. The name "example" is a single-label name. This is different from a fully qualified domain name such as "example.microsoft.com."
+An unqualified single-label name contains no dots. The name "example" is a single-label name. This is different from a fully qualified domain name such as "example.microsoft.com".
 
-Client computers that receive this policy setting will attach one or more suffixes to DNS queries for a single-label name. For example, a DNS query for the single-label name "example" will be modified to "example.microsoft.com" before sending the query to a DNS server if this policy setting is enabled with a suffix of "microsoft.com."
+Client computers that receive this policy setting will attach one or more suffixes to DNS queries for a single-label name. For example, a DNS query for the single-label name "example" will be modified to "example.microsoft.com" before sending the query to a DNS server if this policy setting is enabled with a suffix of "microsoft.com".
 
 To use this policy setting, click Enabled, and then enter a string value representing the DNS suffixes that should be appended to single-label names. You must specify at least one suffix. Use a comma-delimited string, such as "microsoft.com,serverua.microsoft.com,office.microsoft.com" to specify multiple suffixes.
 
@@ -1239,7 +1239,7 @@ Only secure - computers send only secure dynamic updates.
 
 <!-- DNS_UpdateTopLevelDomainZones-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies if computers may send dynamic updates to zones with a single label name. These zones are also known as top-level domain zones, for example: "com."
+Specifies if computers may send dynamic updates to zones with a single label name. These zones are also known as top-level domain zones, for example: "com".
 
 By default, a DNS client that's configured to perform dynamic DNS update will update the DNS zone that's authoritative for its DNS resource records unless the authoritative zone is a top-level domain or root zone.
 

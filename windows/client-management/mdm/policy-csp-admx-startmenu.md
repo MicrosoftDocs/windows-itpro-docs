@@ -4,7 +4,7 @@ description: Learn more about the ADMX_StartMenu Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -847,9 +847,9 @@ Enabling this setting adds a check box to the Run dialog box, giving users the o
 
 <!-- NoAutoTrayNotify-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting affects the notification area, also called the "system tray."
+This setting affects the notification area, also called the "system tray".
 
-The notification area is located in the task bar, generally at the bottom of the screen, and it includes the clock and current notifications. This setting determines whether the items are always expanded or always collapsed. By default, notifications are collapsed. The notification cleanup << icon can be referred to as the "notification chevron."
+The notification area is located in the task bar, generally at the bottom of the screen, and it includes the clock and current notifications. This setting determines whether the items are always expanded or always collapsed. By default, notifications are collapsed. The notification cleanup << icon can be referred to as the "notification chevron".
 
 - If you enable this setting, the system notification area expands to show all of the notifications that use this area.
 
@@ -977,9 +977,9 @@ When you hold the cursor over an item on the Start menu or in the notification a
 <!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from changing their Start screen layout.
 
-- If you enable this setting, you will prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.
+- If you enable this setting, you'll prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.
 
-- If you disable or don't configure this setting, you will allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.
+- If you disable or don't configure this setting, you'll allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.
 <!-- NoChangeStartMenu-Description-End -->
 
 <!-- NoChangeStartMenu-Editable-Begin -->
@@ -3947,6 +3947,7 @@ This policy setting shows or hides the "Run as different user" command on the St
 <!-- Description-Source-ADMX -->
 
 - If you enable this setting, the Run command is added to the Start menu.
+
 - If you disable or don't configure this setting, the Run command isn't visible on the Start menu by default, but it can be added from the Taskbar and Start menu properties. If the Remove Run link from Start Menu policy is set, the Add the Run command to the Start menu policy has no effect.
 <!-- ShowRunInStartMenu-Description-End -->
 

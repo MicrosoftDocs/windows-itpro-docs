@@ -4,7 +4,7 @@ description: Learn more about the ADMX_FileRevocation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,8 @@ ms.topic: reference
 Windows Runtime applications can protect content which has been associated with an enterprise identifier (EID), but can only revoke access to content it protected. To allow an application to revoke access to all content on the device that's protected by a particular enterprise, add an entry to the list on a new line that contains the enterprise identifier, separated by a comma, and the Package Family Name of the application. The EID must be an internet domain belonging to the enterprise in standard international domain name format.
 
 Example value:
-Contoso.com,ContosoIT. HumanResourcesApp_m5g0r7arhahqy
+
+Contoso.com,ContosoIT. HumanResourcesApp_m5g0r7arhahqy.
 
 - If you enable this policy setting, the application identified by the Package Family Name will be permitted to revoke access to all content protected using the specified EID on the device.
 

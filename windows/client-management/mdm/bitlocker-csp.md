@@ -4,7 +4,7 @@ description: Learn more about the BitLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -88,15 +88,16 @@ The following list shows the BitLocker configuration service provider nodes:
 <!-- Device-AllowStandardUserEncryption-Description-Begin -->
 <!-- Description-Source-DDF -->
 Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged-on user is non-admin/standard user.
+
 "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy being set to "0", i.e, Silent encryption is enforced.
-If "AllowWarningForOtherDiskEncryption" isn't set, or is set to "1", "RequireDeviceEncryption" policy won't try to encrypt drive(s) if a standard user
-is the current logged-on user in the system.
+
+If "AllowWarningForOtherDiskEncryption" isn't set, or is set to "1", "RequireDeviceEncryption" policy won't try to encrypt drive(s) if a standard user is the current logged-on user in the system.
 
 The expected values for this policy are:
 
 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
-0 = This is the default, when the policy isn't set. If current logged-on user is a standard user, "RequireDeviceEncryption" policy
-won't try to enable encryption on any drive.
+
+0 = This is the default, when the policy isn't set. If current logged-on user is a standard user, "RequireDeviceEncryption" policy won't try to enable encryption on any drive.
 <!-- Device-AllowStandardUserEncryption-Description-End -->
 
 <!-- Device-AllowStandardUserEncryption-Editable-Begin -->
@@ -172,6 +173,7 @@ This policy setting allows suspending protection for BitLocker Drive Encryption 
 The expected values for this policy are:
 
 0 = Prevent BitLocker Drive Encryption protection from being suspended.
+
 1 = This is the default, when the policy isn't set. Allows suspending BitLocker Drive Encryption protection.
 <!-- Device-AllowSuspensionOfBitLockerProtection-Description-End -->
 
@@ -225,8 +227,7 @@ Allows Admin to disable all UI (notification for encryption and warning prompt f
 and turn on encryption on the user machines silently.
 
 > [!WARNING]
-> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will
-require reinstallation of Windows.
+> When you enable BitLocker on a device with third party encryption, it may render the device unusable and will require reinstallation of Windows.
 
 > [!NOTE]
 > This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
@@ -234,8 +235,9 @@ require reinstallation of Windows.
 The expected values for this policy are:
 
 1 = This is the default, when the policy isn't set. Warning prompt and encryption notification is allowed.
-0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update,
-the value 0 only takes effect on Azure Active Directory joined devices.
+
+0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, the value 0 only takes effect on Azure Active Directory joined devices.
+
 Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-AllowWarningForOtherDiskEncryption-Description-End -->
 
@@ -311,14 +313,17 @@ Windows will attempt to silently enable BitLocker for value 0.
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-Begin -->
 <!-- Description-Source-DDF -->
 Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
-When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when
-Active Directory back up for recovery password is configured to required.
-For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
-For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
+
+When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when Active Directory back up for recovery password is configured to required.
+
+For OS drive: Turn on "Do not enable BitLocker until recovery information is stored to AD DS for operating system drives".
+
+For Fixed drives: Turn on "Do not enable BitLocker until recovery information is stored to AD DS for fixed data drives".
 
 Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
+
 1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
-2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices
+2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices.
 <!-- Device-ConfigureRecoveryPasswordRotation-Description-End -->
 
 <!-- Device-ConfigureRecoveryPasswordRotation-Editable-Begin -->
@@ -1117,6 +1122,7 @@ To disable this policy, use the following SyncML:
 Allows the Admin to require encryption to be turned on using BitLocker\Device Encryption.
 
 Sample value for this node to enable this policy:
+
 1
 
 Disabling the policy won't turn off the encryption on the system drive. But will stop prompting the user to turn it on.
@@ -1209,7 +1215,9 @@ To disable RequireDeviceEncryption:
 Allows the Admin to require storage card encryption on the device.
 
 This policy is only valid for mobile SKU.
+
 Sample value for this node to enable this policy:
+
 1
 
 Disabling the policy won't turn off the encryption on the storage card. But will stop prompting the user to turn it on.
@@ -1262,16 +1270,19 @@ Disabling the policy won't turn off the encryption on the storage card. But will
 <!-- Device-RotateRecoveryPasswords-Description-Begin -->
 <!-- Description-Source-DDF -->
 Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
+
 This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
 
-The policy only comes into effect when Active Directory backup for a recovery password is configured to "required."
-- For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
-- For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
+The policy only comes into effect when Active Directory backup for a recovery password is configured to "required".
+
+- For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives".
+
+- For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives".
 
 Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes:
 
 - status\RotateRecoveryPasswordsStatus
-- status\RotateRecoveryPasswordsRequestID
+- status\RotateRecoveryPasswordsRequestID.
 
 Supported Values: String form of request ID. Example format of request ID is GUID. Server can choose the format as needed according to the management tools.
 <!-- Device-RotateRecoveryPasswords-Description-End -->
@@ -1369,6 +1380,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
 <!-- Device-Status-DeviceEncryptionStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
 This node reports compliance state of device encryption on the system.
+
 Value '0' means the device is compliant. Any other value represents a non-compliant device.
 <!-- Device-Status-DeviceEncryptionStatus-Description-End -->
 
@@ -1469,8 +1481,8 @@ This node reports compliance state of removal drive encryption. "0" Value means 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Description-Begin -->
 <!-- Description-Source-DDF -->
 This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
-This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus
-To ensure the status is correctly matched to the request ID.
+
+This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Description-End -->
 
 <!-- Device-Status-RotateRecoveryPasswordsRequestID-Editable-Begin -->
@@ -1510,7 +1522,9 @@ To ensure the status is correctly matched to the request ID.
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Description-Begin -->
 <!-- Description-Source-DDF -->
 This Node reports the status of RotateRecoveryPasswords request.
+
 Status code can be one of the following:
+
 NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure.
 <!-- Device-Status-RotateRecoveryPasswordsStatus-Description-End -->
 
@@ -1625,9 +1639,9 @@ The Windows touch keyboard (such as that used by tablets) isn't available in the
 
 Note that if you don't enable this policy setting, options in the "Require additional authentication at startup" policy might not be available on such devices. These options include:
 
-  - Configure TPM startup PIN: Required/Allowed
-  - Configure TPM startup key and PIN: Required/Allowed
-  - Configure use of passwords for operating system drives.
+- Configure TPM startup PIN: Required/Allowed
+- Configure TPM startup key and PIN: Required/Allowed
+- Configure use of passwords for operating system drives.
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Description-End -->
 
 <!-- Device-SystemDrivesEnablePrebootInputProtectorsOnSlates-Editable-Begin -->
@@ -2211,7 +2225,7 @@ This policy setting allows you to configure whether BitLocker requires additiona
 > [!NOTE]
 > Only one of the additional authentication options can be required at startup, otherwise a policy error occurs.
 
-If you want to use BitLocker on a computer without a TPM, select the "Allow BitLocker without a compatible TPM" check box. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you will need to use one of the BitLocker recovery options to access the drive.
+If you want to use BitLocker on a computer without a TPM, select the "Allow BitLocker without a compatible TPM" check box. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you have forgotten the password then you'll need to use one of the BitLocker recovery options to access the drive.
 
 On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.
 

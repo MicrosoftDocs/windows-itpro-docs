@@ -4,7 +4,7 @@ description: Learn more about the ADMX_NetworkConnections Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -326,7 +326,7 @@ To create an all-user remote access connection, on the Connection Availability p
 
 - If you enable this setting, all users can delete shared remote access connections. In addition, if your file system is NTFS, users need to have Write access to Documents and Settings\All Users\Application Data\Microsoft\Network\Connections\Pbk to delete a shared remote access connection.
 
-- If you disable this setting (and enable the "Enable Network Connections settings for Administrators" setting), users (including administrators) can't delete all-user remote access connections. (By default, users can still delete their private connections, but you can change the default by using the "Prohibit deletion of remote access connections" setting.)
+- If you disable this setting (and enable the "Enable Network Connections settings for Administrators" setting), users (including administrators) can't delete all-user remote access connections. (By default, users can still delete their private connections, but you can change the default by using the "Prohibit deletion of remote access connections" setting).
 
 > [!IMPORTANT]
 > If the "Enable Network Connections settings for Administrators" is disabled or not configured, this setting won't apply to administrators on post-Windows 2000 computers.
@@ -402,7 +402,7 @@ Determines whether users can delete remote access connections.
 > [!IMPORTANT]
 > If the "Enable Network Connections settings for Administrators" is disabled or not configured, this setting won't apply to administrators on post-Windows 2000 computers.
 
-- If you disable this setting or don't configure it, all users can delete their private remote access connections. Private connections are those that are available only to one user. (By default, only Administrators and Network Configuration Operators can delete connections available to all users, but you can change the default by using the "Ability to delete all user remote access connections" setting.)
+- If you disable this setting or don't configure it, all users can delete their private remote access connections. Private connections are those that are available only to one user. (By default, only Administrators and Network Configuration Operators can delete connections available to all users, but you can change the default by using the "Ability to delete all user remote access connections" setting).
 
 > [!IMPORTANT]
 > When enabled, this setting takes precedence over the "Ability to delete all user remote access connections" setting. Users can't delete any remote access connections, and the "Ability to delete all user remote access connections" setting is ignored.
@@ -1147,6 +1147,7 @@ This setting determines whether the Properties menu item is enabled, and thus, w
 
 > [!NOTE]
 > This setting takes precedence over settings that manipulate the availability of features inside the Remote Access Connection Properties dialog box.
+
 - If this setting is disabled, nothing within the properties dialog box for a remote access connection will be available to users.
 
 > [!NOTE]
@@ -1427,7 +1428,7 @@ To create an all-user connection, on the Connection Availability page in the New
 - If you don't configure the setting, only Administrators and Network Configuration Operators can rename all-user remote access connections.
 
 > [!NOTE]
-> This setting doesn't apply to Administrators
+> This setting doesn't apply to Administrators.
 
 > [!NOTE]
 > When the "Ability to rename LAN connections or remote access connections available to all users" setting is configured (set to either Enabled or Disabled), this setting doesn't apply.
@@ -1564,7 +1565,7 @@ Determines whether nonadministrators can rename a LAN connection.
 
 - If you disable this setting, the Rename option is disabled for nonadministrators only.
 
-- If you don't configure this setting, only Administrators and Network Configuration Operators can rename LAN connections
+- If you don't configure this setting, only Administrators and Network Configuration Operators can rename LAN connections.
 
 > [!NOTE]
 > This setting doesn't apply to Administrators.
@@ -1698,7 +1699,7 @@ ICS lets administrators configure their system as an Internet gateway for a smal
 
 - If you enable this setting, ICS can't be enabled or configured by administrators, and the ICS service can't run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
 
-- If you disable this setting or don't configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional.)
+- If you disable this setting or don't configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional).
 
 By default, ICS is disabled when you create a remote access connection, but administrators can use the Advanced tab to enable it. When running the New Connection Wizard or Network Setup Wizard, administrators can choose to enable ICS.
 

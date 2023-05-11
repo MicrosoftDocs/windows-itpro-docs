@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Desktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,7 +45,7 @@ Displays the filter bar above the results of an Active Directory search. The fil
 
 - If you disable this setting or don't configure it, the filter bar doesn't appear, but users can display it by selecting "Filter" on the "View" menu.
 
-To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as "Administrator." If the filter bar doesn't appear above the resulting display, on the View menu, click Filter.
+To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as "Administrator". If the filter bar doesn't appear above the resulting display, on the View menu, click Filter.
 <!-- AD_EnableFilter-Description-End -->
 
 <!-- AD_EnableFilter-Editable-Begin -->
@@ -838,7 +838,9 @@ This policy setting hides the Properties menu command on the shortcut menu for t
 - If you enable this policy setting, the Properties menu command won't be displayed when the user does any of the following:
 
 Right-clicks the My Documents icon.
+
 Clicks the My Documents icon, and then opens the File menu.
+
 Clicks the My Documents icon, and then presses ALT+ENTER.
 
 - If you disable or don't configure this policy setting, the Properties menu command is displayed.
@@ -1563,7 +1565,7 @@ If you enable this setting, users can't add or remove toolbars from the desktop.
 > If users have added or removed toolbars, this setting prevents them from restoring the default configuration.
 
 > [!TIP]
-> To view the toolbars that can be added to the desktop, right-click a docked toolbar (such as the taskbar beside the Start button), and point to "Toolbars."
+> To view the toolbars that can be added to the desktop, right-click a docked toolbar (such as the taskbar beside the Start button), and point to "Toolbars".
 
 Also, see the "Prohibit adjusting desktop toolbars" setting.
 <!-- sz_DB_DragDropClose-Description-End -->

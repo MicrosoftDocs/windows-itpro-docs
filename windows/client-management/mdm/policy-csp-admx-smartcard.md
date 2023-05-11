@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Smartcard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,9 +45,9 @@ In versions of Windows prior to Windows Vista, smart card certificates that are 
 
 - If you enable this policy setting, certificates with the following attributes can also be used to log on with a smart card:
 
-  - Certificates with no EKU
-  - Certificates with an All Purpose EKU
-  - Certificates with a Client Authentication EKU
+- Certificates with no EKU
+- Certificates with an All Purpose EKU
+- Certificates with a Client Authentication EKU.
 
 - If you disable or don't configure this policy setting, only certificates that contain the smart card logon object identifier can be used to log on with a smart card.
 <!-- AllowCertificatesWithNoEKU-Description-End -->
@@ -347,6 +347,7 @@ This policy setting allows you to manage the certificate propagation that occurs
 This policy setting allows you to manage the clean up behavior of root certificates.
 
 - If you enable this policy setting then root certificate cleanup will occur according to the option selected.
+
 - If you disable or don't configure this setting then root certificate clean up will occur on log off.
 <!-- CertPropRootCleanupString-Description-End -->
 
@@ -470,7 +471,7 @@ This policy setting prevents plaintext PINs from being returned by Credential Ma
 - If you disable or don't configure this policy setting, plaintext PINs can be returned by Credential Manager.
 
 > [!NOTE]
-> Enabling this policy setting could prevent certain smart cards from working on Windows. Please consult your smart card manufacturer to find out whether you will be affected by this policy setting.
+> Enabling this policy setting could prevent certain smart cards from working on Windows. Please consult your smart card manufacturer to find out whether you'll be affected by this policy setting.
 <!-- DisallowPlaintextPin-Description-End -->
 
 <!-- DisallowPlaintextPin-Editable-Begin -->
@@ -597,7 +598,7 @@ During the certificate renewal period, a user can have multiple valid logon cert
 If there are two or more of the "same" certificate on a smart card and this policy is enabled then the certificate that's used for logon on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the certificate with the expiration time furthest in the future will be shown.
 
 > [!NOTE]
-> This setting will be applied after the following policy: "Allow time invalid certificates"
+> This setting will be applied after the following policy: "Allow time invalid certificates".
 
 - If you enable or don't configure this policy setting, filtering will take place.
 
@@ -780,7 +781,7 @@ This policy setting allows you to manage the displayed message when a smart card
 <!-- Description-Source-ADMX -->
 This policy setting lets you reverse the subject name from how it's stored in the certificate when displaying it during logon.
 
-By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN isn't present then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
+By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com". If the UPN isn't present then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
 
 If you enable this policy setting or don't configure this setting, then the subject name will be reversed.
 

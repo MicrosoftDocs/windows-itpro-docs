@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderApplicationGuard CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -291,6 +291,7 @@ Interior Node for Settings.
 This policy setting allows you to determine whether applications inside Microsoft Defender Application Guard can access the device's camera and microphone when these settings are enabled on the user's device.
 
 - If you enable this policy setting, applications inside Microsoft Defender Application Guard will be able to access the camera and microphone on the user's device.
+
 - If you disable or don't configure this policy setting, applications inside Microsoft Defender Application Guard will be unable to access the camera and microphone on the user's device.
 <!-- Device-Settings-AllowCameraMicrophoneRedirection-Description-End -->
 
@@ -611,6 +612,7 @@ This policy setting allows you to decide whether websites can load non-enterpris
 This policy setting allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.
 
 - If you enable this setting, certificates with a thumbprint matching the ones specified will be transferred into the container. Multiple certificates can be specified by using a comma to separate the thumbprints for each certificate you want to transfer. Here's an example: b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a7b058cda924.
+
 - If you disable or don't configure this setting, certificates aren't shared with the Microsoft Defender Application Guard container.
 <!-- Device-Settings-CertificateThumbprints-Description-End -->
 

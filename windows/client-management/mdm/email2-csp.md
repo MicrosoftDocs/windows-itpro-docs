@@ -4,7 +4,7 @@ description: Learn more about the EMAIL2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -257,6 +257,7 @@ Character string that specifies the name used to authorize the user to a specifi
 <!-- User-{Account GUID}-AUTHREQUIRED-Description-Begin -->
 <!-- Description-Source-DDF -->
 Character string that specifies whether the outgoing server requires authentication.
+
 1 for TRUE
 0 for FALSE(default).
 

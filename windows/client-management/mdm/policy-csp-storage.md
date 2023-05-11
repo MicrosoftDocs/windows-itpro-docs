@@ -4,7 +4,7 @@ description: Learn more about the Storage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,12 +42,15 @@ ms.topic: reference
 Allows downloading new updates to ML Model parameters for predicting storage disk failure.
 
 Enabled:
+
 Updates would be downloaded for the Disk Failure Prediction Failure Model.
 
 Disabled:
+
 Updates wouldn't be downloaded for the Disk Failure Prediction Failure Model.
 
 Not configured:
+
 Same as Enabled.
 <!-- AllowDiskHealthModelUpdates-Description-End -->
 
@@ -114,12 +117,15 @@ Same as Enabled.
 Storage Sense can automatically clean some of the user's files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
 
 Enabled:
+
 Storage Sense is turned on for the machine, with the default cadence as 'during low free disk space'. Users can't disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
 
 Disabled:
+
 Storage Sense is turned off the machine. Users can't enable Storage Sense.
 
 Not Configured:
+
 By default, Storage Sense is turned off until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
 <!-- AllowStorageSenseGlobal-Description-End -->
 
@@ -188,12 +194,15 @@ When Storage Sense runs, it can delete the user's temporary files that aren't in
 If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 Storage Sense will delete the user's temporary files that aren't in use. Users can't disable this setting in Storage settings.
 
 Disabled:
+
 Storage Sense won't delete the user's temporary files. Users can't enable this setting in Storage settings.
 
 Not Configured:
+
 By default, Storage Sense will delete the user's temporary files. Users can configure this setting in Storage settings.
 <!-- AllowStorageSenseTemporaryFilesCleanup-Description-End -->
 
@@ -262,10 +271,13 @@ When Storage Sense runs, it can dehydrate cloud-backed content that hasn't been 
 If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it from the sync root. Supported values are: 0 - 365.
+
 If you set this value to zero, Storage Sense won't dehydrate any cloud-backed content. The default value is 0, or never dehydrating cloud-backed content.
 
 Disabled or Not Configured:
+
 By default, Storage Sense won't dehydrate any cloud-backed content. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseCloudContentDehydrationThreshold-Description-End -->
 
@@ -325,10 +337,13 @@ When Storage Sense runs, it can delete files in the user's Downloads folder if t
 If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from Downloads folder. Supported values are: 0 - 365.
+
 If you set this value to zero, Storage Sense won't delete files in the user's Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
 Disabled or Not Configured:
+
 By default, Storage Sense won't delete files in the user's Downloads folder. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseDownloadsCleanupThreshold-Description-End -->
 
@@ -388,9 +403,11 @@ Storage Sense can automatically clean some of the user's files to free up disk s
 If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the desired Storage Sense cadence. Supported options are: daily, weekly, monthly, and during low free disk space. The default is 0 (during low free disk space).
 
 Disabled or Not Configured:
+
 By default, the Storage Sense cadence is set to "during low free disk space". Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseGlobalCadence-Description-End -->
 
@@ -457,10 +474,13 @@ When Storage Sense runs, it can delete files in the user's Recycle Bin if they'v
 If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
 Enabled:
+
 You must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0 - 365.
+
 If you set this value to zero, Storage Sense won't delete files in the user's Recycle Bin. The default is 30 days.
 
 Disabled or Not Configured:
+
 By default, Storage Sense will delete files in the user's Recycle Bin that have been there for over 30 days. Users can configure this setting in Storage settings.
 <!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-End -->
 
@@ -581,7 +601,7 @@ This policy setting denies write access to removable disks.
 - If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 > [!NOTE]
-> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
+> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives".
 <!-- RemovableDiskDenyWriteAccess-Description-End -->
 
 <!-- RemovableDiskDenyWriteAccess-Editable-Begin -->

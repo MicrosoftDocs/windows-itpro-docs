@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1500,7 +1500,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage a list of sites that you want to associate with a particular security zone. These zone numbers have associated security settings that apply to all of the sites in the zone.
 
-Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Low template), Intranet zone (Medium-Low template), Internet zone (Medium template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer.)
+Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Low template), Intranet zone (Medium-Low template), Internet zone (Medium template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer).
 
 - If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site. For each entry that you add to the list, enter the following information:
 
@@ -2066,22 +2066,26 @@ Enables you to configure up to three versions of Microsoft Edge to open a redire
 
 If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
 
-  - If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
-  - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+- If you disable or don't configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
+
+- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+
 1 = Microsoft Edge Stable
 2 = Microsoft Edge Beta version 77 or later
 3 = Microsoft Edge Dev version 77 or later
-4 = Microsoft Edge Canary version 77 or later
+4 = Microsoft Edge Canary version 77 or later.
 
 If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel aren't installed, the following behaviors occur:
 
-  - If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
-  - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+- If you disable or don't configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
+
+- If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
+
 0 = Microsoft Edge version 45 or earlier
 1 = Microsoft Edge Stable
 2 = Microsoft Edge Beta version 77 or later
 3 = Microsoft Edge Dev version 77 or later
-4 = Microsoft Edge Canary version 77 or later
+4 = Microsoft Edge Canary version 77 or later.
 
 - For more information about the Windows update for the next version of Microsoft Edge including how to disable it, see< https://go.microsoft.com/fwlink/?linkid=2102115>. This update applies only to Windows 10 version 1709 and higher.
 <!-- ConfigureEdgeRedirectChannel-Description-End -->
@@ -3117,8 +3121,9 @@ This policy setting prevents Internet Explorer from running the First Run wizard
 
 - If you enable this policy setting, you must make one of the following choices:
 
-  - Skip the First Run wizard, and go directly to the user's home page.
-  - Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
+- Skip the First Run wizard, and go directly to the user's home page.
+
+- Skip the First Run wizard, and go directly to the "Welcome to Internet Explorer" webpage.
 
 Starting with Windows 8, the "Welcome to Internet Explorer" webpage isn't available. The user's home page will display regardless of which option is chosen.
 
@@ -3568,10 +3573,13 @@ This policy lets you restrict launching of Internet Explorer as a standalone bro
 
 If you enable this policy, it:
 
-  - Prevents Internet Explorer 11 from launching as a standalone browser.
-  - Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
-  - Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
-  - Overrides any other policies that redirect to Internet Explorer 11.
+- Prevents Internet Explorer 11 from launching as a standalone browser.
+
+- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.
+
+- Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.
+
+- Overrides any other policies that redirect to Internet Explorer 11.
 
 If you disable, or don't configure this policy, all sites are opened using the current active browser settings.
 
@@ -4170,7 +4178,7 @@ When Enhanced Protected Mode is enabled, and a user encounters a website that at
 <!-- Description-Source-ADMX -->
 Prevents users from adding or removing sites from security zones. A security zone is a group of Web sites with the same security level.
 
-- If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button.)
+- If you enable this policy, the site management settings for security zones are disabled. (To see the site management settings for security zones, in the Internet Options dialog box, click the Security tab, and then click the Sites button).
 
 - If you disable this policy or don't configure it, users can add Web sites to or remove sites from the Trusted Sites and Restricted Sites zones, and alter settings for the Local Intranet zone.
 
@@ -4374,9 +4382,9 @@ This policy setting allows you to manage a list of domains on which Internet Exp
 - If you enable this policy setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in Internet Explorer. Each domain entry must be formatted like one of the following:
 
 1. "domain.name. TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
-2. "hostname". For example, if you want to include https://example, use "example"
+2. "hostname". For example, if you want to include https://example, use "example".
 
-3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm"
+3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm".
 
 - If you disable or don't configure this policy setting, the list is deleted and Internet Explorer continues to block specific outdated ActiveX controls on all domains in the Internet Zone.
 
@@ -4505,6 +4513,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableGlobalWindowListInIEMode-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This setting allows Internet Explorer mode to use the global window list that enables sharing state with other applications.
+
 The setting will take effect only when Internet Explorer 11 is disabled as a standalone browser.
 
 - If you enable this policy, Internet Explorer mode will use the global window list.
@@ -7878,8 +7887,8 @@ We strongly recommend keeping this policy in sync with the 'Send all intranet si
 
 Related policies:
 
-  - Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
-  - Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
+- Send all intranet sites to Internet Explorer ('SendIntranetToInternetExplorer')
+- Send all sites not included in the Enterprise Mode Site List to Microsoft Edge ('RestrictIE')
 
 For more info about how to use this policy together with other related policies to create the optimal configuration for your organization, see< https://go.microsoft.com/fwlink/?linkid=2094210>.
 <!-- KeepIntranetSitesInInternetExplorer-Description-End -->

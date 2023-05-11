@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DiskQuota Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -53,7 +53,7 @@ To prevent users from changing the setting while a setting is in effect, the sys
 > This policy setting turns on disk quota management but doesn't establish or enforce a particular disk quota limit. To specify a disk quota limit, use the "Default quota limit and warning level" policy setting. Otherwise, the system uses the physical space on the volume as the quota limit.
 
 > [!NOTE]
-> To turn on or turn off disk quota management without specifying a setting, in My Computer, right-click the name of an NTFS volume, click Properties, click the Quota tab, and then click "Enable quota management."
+> To turn on or turn off disk quota management without specifying a setting, in My Computer, right-click the name of an NTFS volume, click Properties, click the Quota tab, and then click "Enable quota management".
 <!-- DQ_Enable-Description-End -->
 
 <!-- DQ_Enable-Editable-Begin -->
@@ -111,6 +111,7 @@ To prevent users from changing the setting while a setting is in effect, the sys
 This policy setting determines whether disk quota limits are enforced and prevents users from changing the setting.
 
 - If you enable this policy setting, disk quota limits are enforced.
+
 - If you disable this policy setting, disk quota limits aren't enforced. When you enable or disable this policy setting, the system disables the "Deny disk space to users exceeding quota limit" option on the Quota tab so administrators can't make changes while the setting is in effect.
 
 - If you don't configure this policy setting, the disk quota limit isn't enforced by default, but administrators can change the setting.
@@ -245,6 +246,7 @@ This policy setting is effective only when disk quota management is enabled on t
 This policy setting determines whether the system records an event in the local Application log when users reach their disk quota limit on a volume, and prevents users from changing the logging setting.
 
 - If you enable this policy setting, the system records an event when the user reaches their limit.
+
 - If you disable this policy setting, no event is recorded. Also, when you enable or disable this policy setting, the system disables the "Log event when a user exceeds their quota limit" option on the Quota tab, so administrators can't change the setting while a setting is in effect.
 
 - If you don't configure this policy setting, no events are recorded, but administrators can use the Quota tab option to change the setting.
@@ -312,6 +314,7 @@ Also, this policy setting doesn't affect the Quota Entries window on the Quota t
 This policy setting determines whether the system records an event in the Application log when users reach their disk quota warning level on a volume.
 
 - If you enable this policy setting, the system records an event.
+
 - If you disable this policy setting, no event is recorded. When you enable or disable this policy setting, the system disables the corresponding "Log event when a user exceeds their warning level" option on the Quota tab so that administrators can't change logging while a policy setting is in effect.
 
 - If you don't configure this policy setting, no event is recorded, but administrators can use the Quota tab option to change the logging setting.

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -878,7 +878,7 @@ This policy setting enables administrators to block certain file types from bein
 <!-- Description-Source-ADMX -->
 Lists types of files that can't be used offline.
 
-This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system doesn't cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type can't be made available offline."
+This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system doesn't cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type can't be made available offline".
 
 This setting is designed to protect files that can't be separated, such as database components.
 
@@ -1094,7 +1094,7 @@ This setting doesn't prevent users from working offline or from saving local cop
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files."
+> To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files".
 <!-- Pol_NoCacheViewer_1-Description-End -->
 
 <!-- Pol_NoCacheViewer_1-Editable-Begin -->
@@ -1158,7 +1158,7 @@ This setting doesn't prevent users from working offline or from saving local cop
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 > [!TIP]
-> To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files."
+> To view the Offline Files Folder, in Windows Explorer, on the Tools menu, click Folder Options, click the Offline Files tab, and then click "View Files".
 <!-- Pol_NoCacheViewer_2-Description-End -->
 
 <!-- Pol_NoCacheViewer_2-Editable-Begin -->
@@ -1485,7 +1485,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 
-This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
+This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching". It only affects the display of the "Make Available Offline" command in File Explorer.
 
 If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
 <!-- Pol_NoPinFiles_1-Description-End -->
@@ -1555,7 +1555,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 
-This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching." It only affects the display of the "Make Available Offline" command in File Explorer.
+This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching". It only affects the display of the "Make Available Offline" command in File Explorer.
 
 If the "Remove 'Make Available Offline' command" policy setting is enabled, this setting has no effect.
 <!-- Pol_NoPinFiles_2-Description-End -->
@@ -1621,7 +1621,7 @@ If you disable the setting, the system displays the reminder balloons and preven
 
 If this setting isn't configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
 
-To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab
+To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -1691,7 +1691,7 @@ If you disable the setting, the system displays the reminder balloons and preven
 
 If this setting isn't configured, reminder balloons are displayed by default when you enable offline files, but users can change the setting.
 
-To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab
+To prevent users from changing the setting while a setting is in effect, the system disables the "Enable reminders" option on the Offline Files tab.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 

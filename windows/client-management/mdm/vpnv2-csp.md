@@ -4,7 +4,7 @@ description: Learn more about the VPNv2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -870,8 +870,9 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- Device-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Don't Bypass for Local traffic
-True: ByPass VPN Interface for Local Traffic
+False: Don't Bypass for Local traffic.
+
+True: ByPass VPN Interface for Local Traffic.
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
 <!-- Device-{ProfileName}-ByPassForLocal-Description-End -->
@@ -1216,9 +1217,13 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- Device-{ProfileName}-DeviceTunnel-Description-Begin -->
 <!-- Description-Source-DDF -->
 If turned on a device tunnel profile does four things.
+
 First, it automatically becomes an always on profile.
+
 Second, it doesn't require the presence or logging in of any user to the machine in order for it to connect.
+
 Third, no other Device Tunnel profile maybe be present on the same machine.
+
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 <!-- Device-{ProfileName}-DeviceTunnel-Description-End -->
 
@@ -3101,7 +3106,7 @@ Type of routing policy.
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -4163,6 +4168,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-Begin -->
 <!-- Description-Source-DDF -->
 Outbound - The traffic filter allows traffic to reach destinations matching this rule. This is the default.
+
 Inbound - The traffic filter allows traffic coming from external locations matching this rule.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-End -->
 
@@ -5148,8 +5154,9 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- User-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Don't Bypass for Local traffic
-True: ByPass VPN Interface for Local Traffic
+False: Don't Bypass for Local traffic.
+
+True: ByPass VPN Interface for Local Traffic.
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
 <!-- User-{ProfileName}-ByPassForLocal-Description-End -->
@@ -7326,7 +7333,7 @@ Type of routing policy.
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -7907,6 +7914,7 @@ Boolean value (true or false) for caching credentials.
 Applicable only to AppContainer profiles.
 
 False: Don't show profile in Settings UI.
+
 True: Show profile in Settings UI.
 
 Optional. This node is only relevant for AppContainer profiles (i.e. using the VpnManagementAgent::AddProfileFromXmlAsync method).
@@ -8432,6 +8440,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-Begin -->
 <!-- Description-Source-DDF -->
 Outbound - The traffic filter allows traffic to reach destinations matching this rule. This is the default.
+
 Inbound - The traffic filter allows traffic coming from external locations matching this rule.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-End -->
 

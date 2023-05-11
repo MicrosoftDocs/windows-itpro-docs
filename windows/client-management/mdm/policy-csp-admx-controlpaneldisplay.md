@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1127,6 +1127,7 @@ If this setting is enabled, the background and accent colors of Windows will be 
 Determines whether screen savers used on the computer are password protected.
 
 - If you enable this setting, all screen savers are password protected.
+
 - If you disable this setting, password protection can't be set on any screen saver.
 
 This setting also disables the "Password protected" checkbox on the Screen Saver dialog in the Personalization or Display Control Panel, preventing users from changing the password protection setting.
@@ -1398,7 +1399,7 @@ This can be a local computer visual style (aero.msstyles), or a file located on 
 > If this setting is enabled and the file isn't available at user logon, the default visual style is loaded.
 
 > [!NOTE]
-> When running Windows XP, you can select the Luna visual style by typing %windir%\resources\Themes\Luna\Luna.msstyles
+> When running Windows XP, you can select the Luna visual style by typing %windir%\resources\Themes\Luna\Luna.msstyles.
 
 > [!NOTE]
 > To select the Windows Classic visual style, leave the box blank beside "Path to Visual Style:" and enable this setting. When running Windows 8 or Windows RT, you can't apply the Windows Classic visual style.

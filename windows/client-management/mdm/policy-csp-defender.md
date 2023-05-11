@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -180,15 +180,15 @@ This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the onl
 You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft won't use this information to identify you or contact you.
 
 Possible options are:
+
 (0x0) Disabled (default)
-(0x1) Basic membership
-(0x2) Advanced membership
+(0x1) Basic membership (0x2) Advanced membership.
 
 Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.
 
 Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
 
-- If you enable this setting, you will join Microsoft MAPS with the membership specified.
+- If you enable this setting, you'll join Microsoft MAPS with the membership specified.
 
 - If you disable or don't configure this setting, you won't join Microsoft MAPS.
 
@@ -830,6 +830,7 @@ Allows or disallows Windows Defender Script Scanning functionality.
 <!-- AllowUserUIAccess-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
+
 If you enable this setting AM UI won't be available to users.
 <!-- AllowUserUIAccess-Description-End -->
 
@@ -896,16 +897,20 @@ If you enable this setting AM UI won't be available to users.
 Exclude files and paths from Attack Surface Reduction (ASR) rules.
 
 Enabled:
+
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
+
 Enter each rule on a new line as a name-value pair:
 
-  - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
-  - Value column: Enter "0" for each item
+- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+- Value column: Enter "0" for each item.
 
 Disabled:
+
 No exclusions will be applied to the ASR rules.
 
 Not configured:
+
 Same as Disabled.
 
 You can configure ASR rules in the Configure Attack Surface Reduction rules GP setting.
@@ -966,30 +971,33 @@ Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
 
-  - Block: the rule will be applied
-  - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
-  - Off: the rule won't be applied
-  - Not Configured: the rule is enabled with default values
-  - Warn: the rule will be applied and the end-user will have the option to bypass the block
+- Block: the rule will be applied
+- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
+- Off: the rule won't be applied
+- Not Configured: the rule is enabled with default values
+- Warn: the rule will be applied and the end-user will have the option to bypass the block.
 
 Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules with the value of not configured.
 
 Enabled:
+
 Specify the state for each ASR rule under the Options section for this setting.
+
 Enter each rule on a new line as a name-value pair:
 
-  - Name column: Enter a valid ASR rule ID
-  - Value column: Enter the status ID that relates to state you want to specify for the associated rule
+- Name column: Enter a valid ASR rule ID
+- Value column: Enter the status ID that relates to state you want to specify for the associated rule.
 
 The following status IDs are permitted under the value column:
 
-  - 1 (Block)
-  - 0 (Off)
-  - 2 (Audit)
-  - 5 (Not Configured)
-  - 6 (Warn)
+- 1 (Block)
+- 0 (Off)
+- 2 (Audit)
+- 5 (Not Configured)
+- 6 (Warn)
 
 Example:
+
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 0
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -998,9 +1006,11 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 2
 
 Disabled:
+
 No ASR rules will be configured.
 
 Not configured:
+
 Same as Disabled.
 
 You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
@@ -1193,9 +1203,8 @@ For more information about specific values that are supported, see the Microsoft
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 Possible options are:
-(0x0) Default Microsoft Defender Antivirus blocking level
-(0x1) Moderate Microsoft Defender Antivirus blocking level, delivers verdict only for high confidence detections
-(0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)
+
+(0x0) Default Microsoft Defender Antivirus blocking level (0x1) Moderate Microsoft Defender Antivirus blocking level, delivers verdict only for high confidence detections (0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)
 (0x4) High+ blocking level - aggressively block unknowns and apply additional protection measures (may impact client performance)
 (0x6) Zero tolerance blocking level - block all unknown executables.
 <!-- CloudBlockLevel-Description-End -->
@@ -1331,12 +1340,15 @@ These applications are allowed to modify or delete files in controlled folder ac
 Microsoft Defender Antivirus automatically determines which applications should be trusted. You can configure this setting to add additional applications.
 
 Enabled:
+
 Specify additional allowed applications in the Options section..
 
 Disabled:
+
 No additional applications will be added to the trusted list.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -1400,15 +1412,19 @@ Specify additional folders that should be guarded by the Controlled folder acces
 Files in these folders can't be modified or deleted by untrusted applications.
 
 Default system folders are automatically protected. You can configure this setting to add additional folders.
+
 The list of default system folders that are protected is shown in Windows Security.
 
 Enabled:
+
 Specify additional folders that should be protected in the Options section.
 
 Disabled:
+
 No additional folders will be protected.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -1660,55 +1676,69 @@ This policy setting allows you to configure catch-up scans for scheduled quick s
 <!-- Description-Source-ADMX -->
 Enable or disable controlled folder access for untrusted applications. You can choose to block, audit, or allow attempts by untrusted apps to:
 
-  - Modify or delete files in protected folders, such as the Documents folder
-  - Write to disk sectors
+- Modify or delete files in protected folders, such as the Documents folder
+- Write to disk sectors.
 
 You can also choose to only block or audit writes to disk sectors while still allowing the modification or deletion of files in protected folders.
 
 Microsoft Defender Antivirus automatically determines which applications can be trusted. You can add additional trusted applications in the Configure allowed applications GP setting.
+
 Default system folders are automatically protected, but you can add folders in the Configure protected folders GP setting.
 
 Block:
+
 The following will be blocked:
 
-  - Attempts by untrusted apps to modify or delete files in protected folders
-  - Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors.
+
 The Windows event log will record these blocks under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
 Disabled:
+
 The following won't be blocked and will be allowed to run:
 
-  - Attempts by untrusted apps to modify or delete files in protected folders
-  - Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors.
+
 These attempts won't be recorded in the Windows event log.
 
 Audit Mode:
+
 The following won't be blocked and will be allowed to run:
 
-  - Attempts by untrusted apps to modify or delete files in protected folders
-  - Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors.
+
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124.
 
 Block disk modification only:
+
 The following will be blocked:
 
-  - Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to write to disk sectors.
+
 The Windows event log will record these attempts under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1123.
 
 The following won't be blocked and will be allowed to run:
 
-  - Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to modify or delete files in protected folders.
+
 These attempts won't be recorded in the Windows event log.
 
 Audit disk modification only:
+
 The following won't be blocked and will be allowed to run:
 
-  - Attempts by untrusted apps to write to disk sectors
-  - Attempts by untrusted apps to modify or delete files in protected folders
+- Attempts by untrusted apps to write to disk sectors
+- Attempts by untrusted apps to modify or delete files in protected folders.
+
 Only attempts to write to protected disk sectors will be recorded in the Windows event log (under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124).
+
 Attempts to modify or delete files in protected folders won't be recorded.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableControlledFolderAccess-Description-End -->
 
@@ -1842,15 +1872,18 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 Enable or disable Microsoft Defender Exploit Guard network protection to prevent employees from using any application to access dangerous domains that may host phishing scams, exploit-hosting sites, and other malicious content on the Internet.
 
 Enabled:
+
 Specify the mode in the Options section:
 
 -Block: Users and applications won't be able to access dangerous domains
 -Audit Mode: Users and applications can connect to dangerous domains, however if this feature would've blocked access if it were set to Block, then a record of the event will be in the event logs.
 
 Disabled:
+
 Users and applications won't be blocked from connecting to dangerous domains.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableNetworkProtection-Description-End -->
 
@@ -2088,15 +2121,19 @@ Allows an administrator to specify a list of files opened by processes to ignore
 Enable or disable detection for potentially unwanted applications. You can choose to block, audit, or allow when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
 Enabled:
+
 Specify the mode in the Options section:
 
 -Block: Potentially unwanted software will be blocked.
+
 -Audit Mode: Potentially unwanted software won't be blocked, however if this feature would've blocked access if it were set to Block, then a record of the event will be in the event logs.
 
 Disabled:
+
 Potentially unwanted software won't be blocked.
 
 Not configured:
+
 Same as Disabled.
 <!-- PUAProtection-Description-End -->
 
@@ -2165,9 +2202,10 @@ This policy setting allows you to configure monitoring for incoming and outgoing
 Note that this configuration is only honored for NTFS volumes. For any other file system type, full monitoring of file and program activity will be present on those volumes.
 
 The options for this setting are mutually exclusive:
+
 0 = Scan incoming and outgoing files (default)
 1 = Scan incoming files only
-2 = Scan outgoing files only
+2 = Scan outgoing files only.
 
 Any other value, or if the value doesn't exist, resolves to the default (0).
 
@@ -2238,8 +2276,9 @@ Any other value, or if the value doesn't exist, resolves to the default (0).
 <!-- ScanParameter-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify the scan type to use during a scheduled scan. Scan type options are:
+
 1 = Quick Scan (default)
-2 = Full Scan
+2 = Full Scan.
 
 - If you enable this setting, the scan type will be set to the specified value.
 
@@ -2368,15 +2407,8 @@ This policy setting allows you to specify the time of day at which to perform a 
 This policy setting allows you to specify the day of the week on which to perform a scheduled scan. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
-(0x0) Every Day
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never (default)
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
 
 - If you enable this setting, a scheduled scan will run at the frequency specified.
 
@@ -2564,7 +2596,7 @@ If you disable or don't configure this setting, security intelligence will be re
 
 <!-- SignatureUpdateFallbackOrder-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares".
 
 For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
@@ -2744,10 +2776,8 @@ This policy setting allows you to specify an interval at which to check for secu
 This policy setting configures behavior of samples submission when opt-in for MAPS telemetry is set.
 
 Possible options are:
-(0x0) Always prompt
-(0x1) Send safe samples automatically
-(0x2) Never send
-(0x3) Send all samples automatically.
+
+(0x0) Always prompt (0x1) Send safe samples automatically (0x2) Never send (0x3) Send all samples automatically.
 <!-- SubmitSamplesConsent-Description-End -->
 
 <!-- SubmitSamplesConsent-Editable-Begin -->
@@ -2815,12 +2845,14 @@ Possible options are:
 This policy setting allows you to customize which automatic remediation action will be taken for each threat alert level. Threat alert levels should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a threat alert level. The value contains the action ID for the remediation action that should be taken.
 
 Valid threat alert levels are:
+
 1 = Low
 2 = Medium
 4 = High
-5 = Severe
+5 = Severe.
 
 Valid remediation action values are:
+
 2 = Quarantine
 3 = Remove
 6 = Ignore.

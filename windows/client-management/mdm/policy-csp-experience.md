@@ -4,7 +4,7 @@ description: Learn more about the Experience Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,9 @@ ms.topic: reference
 This policy setting determines whether history of Clipboard contents can be stored in memory.
 
 - If you enable this policy setting, history of Clipboard contents are allowed to be stored.
+
 - If you disable this policy setting, history of Clipboard contents aren't allowed to be stored.
+
 Policy change takes effect immediately.
 <!-- AllowClipboardHistory-Description-End -->
 
@@ -168,6 +170,7 @@ This policy is deprecated.
 This policy setting specifies whether Cortana is allowed on the device.
 
 - If you enable or don't configure this setting, Cortana will be allowed on the device.
+
 - If you disable this setting, Cortana will be turned off.
 
 When Cortana is off, users will still be able to use search to find things on the device.
@@ -603,6 +606,7 @@ Allow SIM error dialog prompts when no SIM is inserted.
 Specifies whether Spotlight collection is allowed as a Personalization->Background Setting.
 
 - If you enable this policy setting, Spotlight collection will show as an option in the user's Personalization Settings, and the user will be able to get daily images from Microsoft displayed on their desktop.
+
 - If you disable this policy setting, Spotlight collection won't show as an option in Personalization Settings, and the user won't have the choice of getting Microsoft daily images shown on their desktop.
 <!-- AllowSpotlightCollection-Description-End -->
 
@@ -714,6 +718,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user.
 
 - If you enable this policy setting, Windows won't use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant.
+
 - If you disable or don't configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them. Diagnostic data can include browser, app and feature usage, depending on the Diagnostic and usage data setting value.
 
 > [!NOTE]
@@ -1016,6 +1021,7 @@ Prior to Windows 10, version 1803, this policy had User scope. This policy allow
 Specifies whether to turn off all Windows spotlight features at once.
 
 - If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices.
+
 - If you disable or don't configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings. Most restricted value is 0.
 <!-- AllowWindowsSpotlight-Description-End -->
 
@@ -1082,6 +1088,7 @@ Specifies whether to turn off all Windows spotlight features at once.
 This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center.
 
 - If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center.
+
 - If you disable or don't configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows. Most restricted value is 0.
 <!-- AllowWindowsSpotlightOnActionCenter-Description-End -->
 
@@ -1212,6 +1219,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 This policy setting lets you turn off the Windows spotlight Windows welcome experience feature. The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features.
 
 - If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps.
+
 - If you disable or don't configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested. Most restricted value is 0.
 <!-- AllowWindowsSpotlightWindowsWelcomeExperience-Description-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -226,7 +226,7 @@ This policy setting controls whether a device will request claims and compound a
 <!-- Description-Source-ADMX -->
 This policy setting controls hash or checksum algorithms used by the Kerberos client when performing certificate authentication.
 
-- If you enable this policy, you will be able to configure one of four states for each algorithm:
+- If you enable this policy, you'll be able to configure one of four states for each algorithm:
 
 - "Default" sets the algorithm to the recommended state.
 

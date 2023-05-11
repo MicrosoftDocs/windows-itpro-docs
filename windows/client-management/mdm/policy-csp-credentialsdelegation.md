@@ -4,7 +4,7 @@ description: Learn more about the CredentialsDelegation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Remote host allows delegation of non-exportable credentials
+Remote host allows delegation of non-exportable credentials.
 
 When using credential delegation, devices provide an exportable version of credentials to the remote host. This exposes users to the risk of credential theft from attackers on the remote host.
 

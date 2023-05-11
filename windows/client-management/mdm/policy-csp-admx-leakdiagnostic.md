@@ -4,7 +4,7 @@ description: Learn more about the ADMX_LeakDiagnostic Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,8 +47,9 @@ This policy setting determines whether Diagnostic Policy Service (DPS) diagnoses
 
 This policy setting takes effect only under the following conditions:
 
-  - If the diagnostics-wide scenario execution policy isn't configured.
-  - When the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed.
+- If the diagnostics-wide scenario execution policy isn't configured.
+
+- When the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed.
 
 > [!NOTE]
 > The DPS can be configured with the Services snap-in to the Microsoft Management Console.

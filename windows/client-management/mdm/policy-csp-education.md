@@ -4,7 +4,7 @@ description: Learn more about the Education Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,6 +38,7 @@ ms.topic: reference
 <!-- AllowGraphingCalculator-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app.
+
 - If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app.
 
 - If you enable or don't configure this policy setting, users will be able to access graphing functionality.
@@ -144,6 +145,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- EnableEduThemes-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization.
+
 - If you disable or don't configure this policy setting, EDU-specific theme packs won't be included.
 
 - If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
@@ -246,7 +248,7 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 <!-- Description-Source-ADMX -->
 Prevents users from using familiar methods to add local and network printers.
 
-- If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer.) This setting also removes Add Printer from the Printers folder in Control Panel.
+- If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer). This setting also removes Add Printer from the Printers folder in Control Panel.
 
 Also, users can't add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
 

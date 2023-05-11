@@ -4,7 +4,7 @@ description: Learn more about the NewsAndInterests Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,7 +38,9 @@ ms.topic: reference
 <!-- AllowNewsAndInterests-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy specifies whether the widgets feature is allowed on the device.
+
 Widgets will be turned on by default unless you change this in your settings.
+
 If you turned this feature on before, it will stay on automatically unless you turn it off.
 <!-- AllowNewsAndInterests-Description-End -->
 

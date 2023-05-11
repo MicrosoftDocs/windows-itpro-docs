@@ -4,7 +4,7 @@ description: Learn more about the RemoteAssistance Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -173,7 +173,7 @@ This policy setting allows you to turn on or turn off Solicited (Ask for) Remote
 
 - If you don't configure this policy setting, users can turn on or turn off Solicited (Ask for) Remote Assistance themselves in System Properties in Control Panel. Users can also configure Remote Assistance settings.
 
-- If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer."
+- If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer".
 
 The "Maximum ticket time" policy setting sets a limit on the amount of time that a Remote Assistance invitation created by using email or file transfer can remain open.
 
@@ -242,35 +242,37 @@ This policy setting allows you to turn on or turn off Offer (Unsolicited) Remote
 
 - If you don't configure this policy setting, users on this computer can't get help from their corporate technical support staff using Offer (Unsolicited) Remote Assistance.
 
-- If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer." When you configure this policy setting, you also specify the list of users or user groups that are allowed to offer remote assistance.
+- If you enable this policy setting, you have two ways to allow helpers to provide Remote Assistance: "Allow helpers to only view the computer" or "Allow helpers to remotely control the computer". When you configure this policy setting, you also specify the list of users or user groups that are allowed to offer remote assistance.
 
-To configure the list of helpers, click "Show." In the window that opens, you can enter the names of the helpers. Add each user or group one by one. When you enter the name of the helper user or user groups, use the following format:
+To configure the list of helpers, click "Show". In the window that opens, you can enter the names of the helpers. Add each user or group one by one. When you enter the name of the helper user or user groups, use the following format:
 
-`<Domain Name>`\\`<User Name>` or
+`<Domain Name>`\\`<User Name>` or.
 
 `<Domain Name>`\\`<Group Name>`
 
 - If you enable this policy setting, you should also enable firewall exceptions to allow Remote Assistance communications. The firewall exceptions required for Offer (Unsolicited) Remote Assistance depend on the version of Windows you are running.
 
-Windows Vista and later
+Windows Vista and later.
 
 Enable the Remote Assistance exception for the domain profile. The exception must contain:
+
 Port 135:TCP
 %WINDIR%\System32\msra.exe
-%WINDIR%\System32\raserver.exe
+%WINDIR%\System32\raserver.exe.
 
 Windows XP with Service Pack 2 (SP2) and Windows XP Professional x64 Edition with Service Pack 1 (SP1)
 
 Port 135:TCP
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
-%WINDIR%\System32\Sessmgr.exe
+%WINDIR%\System32\Sessmgr.exe.
 
 For computers running Windows Server 2003 with Service Pack 1 (SP1)
 
 Port 135:TCP
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
-%WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
+%WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe.
+
 Allow Remote Desktop Exception.
 <!-- UnsolicitedRemoteAssistance-Description-End -->
 

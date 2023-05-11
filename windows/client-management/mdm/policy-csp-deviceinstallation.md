@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,8 +43,9 @@ This policy setting allows you to specify a list of Plug and Play hardware IDs a
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
 
-  - Prevent installation of devices that match these device IDs
-  - Prevent installation of devices that match any of these device instance IDs
+- Prevent installation of devices that match these device IDs
+- Prevent installation of devices that match any of these device instance IDs.
+
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
@@ -145,7 +146,8 @@ This policy setting allows you to specify a list of Plug and Play device instanc
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
 
-  - Prevent installation of devices that match any of these device instance IDs
+- Prevent installation of devices that match any of these device instance IDs.
+
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
@@ -248,9 +250,10 @@ This policy setting allows you to specify a list of device setup class globally 
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update driver packages whose device setup class GUIDs appear in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
 
-  - Prevent installation of devices for these device classes
-  - Prevent installation of devices that match these device IDs
-  - Prevent installation of devices that match any of these device instance IDs
+- Prevent installation of devices for these device classes
+- Prevent installation of devices that match these device IDs
+- Prevent installation of devices that match any of these device instance IDs.
+
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
 > [!NOTE]
@@ -357,31 +360,31 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- Description-Source-ADMX -->
 This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
-Device instance IDs > Device IDs > Device setup class > Removable devices
+Device instance IDs > Device IDs > Device setup class > Removable devices.
 
-Device instance IDs
+Device instance IDs.
 
 1. Prevent installation of devices using drivers that match these device instance IDs
-2. Allow installation of devices using drivers that match these device instance IDs
+2. Allow installation of devices using drivers that match these device instance IDs.
 
-Device IDs
+Device IDs.
 
 3. Prevent installation of devices using drivers that match these device IDs
-4. Allow installation of devices using drivers that match these device IDs
+4. Allow installation of devices using drivers that match these device IDs.
 
-Device setup class
+Device setup class.
 
 5. Prevent installation of devices using drivers that match these device setup classes
-6. Allow installation of devices using drivers that match these device setup classes
+6. Allow installation of devices using drivers that match these device setup classes.
 
-Removable devices
+Removable devices.
 
-7. Prevent installation of removable devices
+7. Prevent installation of removable devices.
 
 > [!NOTE]
 > This policy setting provides more granular control than the "Prevent installation of devices not described by other policy settings" policy setting. If these conflicting policy settings are enabled at the same time, the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting will be enabled and the other policy setting will be ignored.
 
-If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
+If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation..". policy settings have precedence over any other policy setting that allows Windows to install a device.
 <!-- EnableInstallationPolicyLayering-Description-End -->
 
 <!-- EnableInstallationPolicyLayering-Editable-Begin -->

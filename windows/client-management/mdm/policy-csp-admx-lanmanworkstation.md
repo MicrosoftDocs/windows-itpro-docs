@@ -4,7 +4,7 @@ description: Learn more about the ADMX_LanmanWorkstation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,14 +47,17 @@ If you enable this policy setting and don't specify at least one supported ciphe
 
 SMB 3.11 cipher suites:
 
-AES_128_GCM
-AES_128_CCM
-AES_256_GCM
-AES_256_CCM
+AES_128_GCM.
+
+AES_128_CCM.
+
+AES_256_GCM.
+
+AES_256_CCM.
 
 SMB 3.0 and 3.02 cipher suites:
 
-AES_128_CCM
+AES_128_CCM.
 
 How to modify this setting:
 

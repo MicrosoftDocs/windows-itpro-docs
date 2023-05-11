@@ -4,7 +4,7 @@ description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CS
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -335,7 +335,7 @@ Accounts: Rename administrator account This security setting determines whether 
 
 <!-- Accounts_RenameGuestAccount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Accounts: Rename guest account This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest." Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination. Default: Guest.
+Accounts: Rename guest account This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest". Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination. Default: Guest.
 <!-- Accounts_RenameGuestAccount-Description-End -->
 
 <!-- Accounts_RenameGuestAccount-Editable-Begin -->
@@ -497,6 +497,7 @@ Devices: Allow undock without having to log on This security setting determines 
 Devices: Prevent users from installing printer drivers when connecting to shared printers For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer.
 
 - If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer.
+
 - If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer. Default on servers: Enabled. Default on workstations: Disabled Notes This setting doesn't affect the ability to add a local printer. This setting doesn't affect Administrators.
 <!-- Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters-Description-End -->
 
@@ -1054,6 +1055,7 @@ Interactive logon: Smart card removal behavior This security setting determines 
 Microsoft network client: Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB client component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
 
 - If this setting is enabled, the Microsoft network client won't communicate with a Microsoft network server unless that server agrees to perform SMB packet signing.
+
 - If this policy is disabled, SMB packet signing is negotiated between the client and server. Default: Disabled.
 
 > [!IMPORTANT]
@@ -1121,6 +1123,7 @@ Microsoft network client: Digitally sign communications (always) This security s
 Microsoft network client: Digitally sign communications (if server agrees) This security setting determines whether the SMB client attempts to negotiate SMB packet signing. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server.
 
 - If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated.
+
 - If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default: Enabled.
 
 > [!NOTE]
@@ -1243,6 +1246,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 Microsoft network server: Digitally sign communications (always) This security setting determines whether packet signing is required by the SMB server component. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted.
 
 - If this setting is enabled, the Microsoft network server won't communicate with a Microsoft network client unless that client agrees to perform SMB packet signing.
+
 - If this setting is disabled, SMB packet signing is negotiated between the client and server. Default: Disabled for member servers. Enabled for domain controllers.
 
 > [!NOTE]
@@ -1310,6 +1314,7 @@ Microsoft network server: Digitally sign communications (always) This security s
 Microsoft network server: Digitally sign communications (if client agrees) This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it. The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it.
 
 - If this setting is enabled, the Microsoft network server will negotiate SMB packet signing as requested by the client. That is, if packet signing has been enabled on the client, packet signing will be negotiated.
+
 - If this policy is disabled, the SMB client will never negotiate SMB packet signing. Default: Enabled on domain controllers only.
 
 > [!IMPORTANT]
@@ -1372,7 +1377,9 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Description-Begin -->
 <!-- Description-Source-DDF -->
 Network access: Allow anonymous SID/name translation This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user.
+
 - If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation.
+
 - If this policy setting is disabled, an anonymous user can't request the SID attribute for another user. Default on workstations and member servers: Disabled. Default on domain controllers running Windows Server 2008 or later: Disabled. Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Description-End -->
 
@@ -1659,6 +1666,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 Network security: Allow Local System to use computer identity for NTLM This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
 
 - If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
+
 - If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. By default, this policy is enabled on Windows 7 and above. By default, this policy is disabled on Windows Vista. This policy is supported on at least Windows Vista or Windows Server 2008.
 
 > [!NOTE]
@@ -2091,7 +2099,9 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Description-Begin -->
 <!-- Description-Source-DDF -->
 Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+
 - If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
+
 - If you don't configure this policy setting, no exceptions will be applied. The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
 <!-- NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication-Description-End -->
 

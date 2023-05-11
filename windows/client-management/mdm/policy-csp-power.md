@@ -4,7 +4,7 @@ description: Learn more about the Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -689,7 +689,7 @@ Possible actions include:
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
@@ -765,7 +765,7 @@ Possible actions include:
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
@@ -841,7 +841,7 @@ Possible actions include:
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
@@ -917,7 +917,7 @@ Possible actions include:
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
@@ -993,7 +993,7 @@ Possible actions include:
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 
@@ -1069,7 +1069,7 @@ Possible actions include:
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you enable this policy setting, you must select the desired action.
 

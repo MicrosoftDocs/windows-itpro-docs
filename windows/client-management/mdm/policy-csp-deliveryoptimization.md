@@ -4,7 +4,7 @@ description: Learn more about the DeliveryOptimization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1509,8 +1509,11 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 Set this policy to restrict peer selection via selected option.
 
 Options available are:
+
 0 = NAT.
+
 1 = Subnet mask.
+
 2 = Local discovery (DNS-SD).
 
 The default value has changed from 0 (no restriction) to 1 (restrict to the subnet).

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DeviceGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -41,7 +41,7 @@ ms.topic: reference
 
 <!-- ConfigCIPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Deploy Windows Defender Application Control
+Deploy Windows Defender Application Control.
 
 This policy setting lets you deploy a Code Integrity Policy to a machine to control what's allowed to run on that machine.
 

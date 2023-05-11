@@ -4,7 +4,7 @@ description: Learn more about the NetworkIsolation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,7 +45,7 @@ Contains a list of Enterprise resource domains hosted in the cloud. Connections 
 
 If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the Intranet proxy servers for apps policy.
 
-Example: [cloudresource]|[cloudresource]|[cloudresource],[proxy]|[cloudresource]|[cloudresource],[proxy]|
+Example: [cloudresource]|[cloudresource]|[cloudresource],[proxy]|[cloudresource]|[cloudresource],[proxy]|.
 
 For more information see: <https://go.microsoft.com/fwlink/p/?LinkId=234043>
 <!-- EnterpriseCloudResources-Description-End -->

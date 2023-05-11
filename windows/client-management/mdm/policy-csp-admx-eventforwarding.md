@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EventForwarding Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -104,6 +104,7 @@ This policy setting allows you to configure the server address, refresh interval
 - If you enable this policy setting, you can configure the Source Computer to contact a specific FQDN (Fully Qualified Domain Name) or IP Address and request subscription specifics.
 
 Use the following syntax when using the HTTPS protocol:
+
 Server=https://`<FQDN of the collector>`:5986/wsman/SubscriptionManager/WEC,Refresh=`<Refresh interval in seconds>`,IssuerCA=`<Thumb print of the client authentication certificate>`. When using the HTTP protocol, use port 5985.
 
 - If you disable or don't configure this policy setting, the Event Collector computer won't be specified.

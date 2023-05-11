@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ServerManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -230,6 +230,7 @@ This policy setting allows you to set the refresh interval for Server Manager. E
 - If you enable this policy setting, Server Manager uses the refresh interval specified in the policy setting instead of the "Configure Refresh Interval" setting (in Windows Server 2008 and Windows Server 2008 R2), or the "Refresh the data shown in Server Manager every [x] [minutes/hours/days]" setting (in Windows Server 2012) that's configured in the Server Manager console.
 
 - If you disable this policy setting, Server Manager doesn't refresh automatically.
+
 - If you don't configure this policy setting, Server Manager uses the refresh interval settings that are specified in the Server Manager console.
 
 > [!NOTE]

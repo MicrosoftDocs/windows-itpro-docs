@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CredentialProviders Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -163,19 +163,15 @@ This policy setting allows the administrator to assign a specified credential pr
 
 <!-- ExcludedCredentialProviders-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows the administrator to exclude the specified
-credential providers from use during authentication.
+This policy setting allows the administrator to exclude the specified credential providers from use during authentication.
 
-Note credential providers are used to process and validate user
-credentials during logon or when authentication is required.
+Note credential providers are used to process and validate user credentials during logon or when authentication is required.
+
 Windows Vista provides two default credential providers:
-Password and Smart Card. An administrator can install additional
-credential providers for different sets of credentials
-(for example, to support biometric authentication).
 
-- If you enable this policy, an administrator can specify the CLSIDs
-of the credential providers to exclude from the set of installed
-credential providers available for authentication purposes.
+Password and Smart Card. An administrator can install additional credential providers for different sets of credentials (for example, to support biometric authentication).
+
+- If you enable this policy, an administrator can specify the CLSIDs of the credential providers to exclude from the set of installed credential providers available for authentication purposes.
 
 - If you disable or don't configure this policy, all installed and otherwise enabled credential providers are available for authentication purposes.
 <!-- ExcludedCredentialProviders-Description-End -->

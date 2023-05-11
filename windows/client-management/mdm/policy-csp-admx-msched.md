@@ -4,7 +4,7 @@ description: Learn more about the ADMX_msched Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -41,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Automatic Maintenance activation boundary.
 
-The maintenance activation boundary is the daily schduled time at which Automatic Maintenance starts
+The maintenance activation boundary is the daily schduled time at which Automatic Maintenance starts.
 
 - If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 

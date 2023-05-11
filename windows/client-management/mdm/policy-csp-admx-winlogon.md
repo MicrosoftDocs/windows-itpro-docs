@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WinLogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -360,8 +360,11 @@ This policy setting controls whether or not software can simulate the Secure Att
 - If you enable this policy setting, you have one of four options:
 
 If you set this policy setting to "None," user mode software can't simulate the SAS.
+
 If you set this policy setting to "Services," services can simulate the SAS.
+
 If you set this policy setting to "Ease of Access applications," Ease of Access applications can simulate the SAS.
+
 If you set this policy setting to "Services and Ease of Access applications," both services and Ease of Access applications can simulate the SAS.
 
 - If you disable or don't configure this setting, only Ease of Access applications running on the secure desktop can simulate the SAS.

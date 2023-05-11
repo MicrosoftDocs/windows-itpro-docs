@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -417,9 +417,9 @@ Root node for PIN policies.
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of digits in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
@@ -555,9 +555,9 @@ This policy specifies the number of past PINs that can be stored in the history 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of lowercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use lowercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
@@ -707,9 +707,9 @@ Minimum PIN length configures the minimum number of characters required for the 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use special characters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
@@ -763,9 +763,9 @@ If you don't configure this policy setting, Windows Hello for Business doesn't a
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of uppercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use uppercase letters in their PIN.
 <!-- Device-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->
@@ -861,6 +861,7 @@ Boolean that specifies if phone sign-in can be used with a device. Phone sign-in
 Default value is false.
 
 - If you enable this setting, a desktop device will allow a registered, companion device to be used as an authentication factor.
+
 - If you disable this setting, a companion device can't be used in desktop authentication scenarios.
 <!-- Device-{TenantId}-Policies-Remote-UseRemotePassport-Description-End -->
 
@@ -1999,9 +2000,9 @@ Root node for PIN policies.
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of digits in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one digit in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using digits in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business requires users to use digits in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-Digits-Description-End -->
@@ -2137,9 +2138,9 @@ This policy specifies the number of past PINs that can be stored in the history 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of lowercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one lowercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using lowercase letters in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use lowercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-LowercaseLetters-Description-End -->
@@ -2289,9 +2290,9 @@ Minimum PIN length configures the minimum number of characters required for the 
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of special characters in the Windows Hello for Business PIN gesture. Valid special characters for Windows Hello for Business PIN gestures include: ! " # $ % & ' ( ) * + , - . / : ; `< = >` ? @ [ \ ] ^ _ ` { | } ~ .
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one special character in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using special characters in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use special characters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-SpecialCharacters-Description-End -->
@@ -2345,9 +2346,9 @@ If you don't configure this policy setting, Windows Hello for Business doesn't a
 <!-- Description-Source-DDF -->
 Use this policy setting to configure the use of uppercase letters in the Windows Hello for Business PIN.
 
-A value of 1 corresponds to "Required." If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
+A value of 1 corresponds to "Required". If you configure this policy setting to 1, Windows Hello for Business requires users to include at least one uppercase letter in their PIN.
 
-A value of 2 corresponds to "Disallow." If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
+A value of 2 corresponds to "Disallow". If you configure this policy setting to 2, Windows Hello for Business prevents users from using uppercase letters in their PIN.
 
 If you don't configure this policy setting, Windows Hello for Business doesn't allow users to use uppercase letters in their PIN.
 <!-- User-{TenantId}-Policies-PINComplexity-UppercaseLetters-Description-End -->

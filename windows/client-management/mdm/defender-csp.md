@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2429,57 +2429,108 @@ The ID of a threat that has been detected by Windows Defender.
 <!-- Description-Source-DDF -->
 Threat category ID. Supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Invalid |
-| 1 | Adware |
-| 2 | Spyware |
-| 3 | Password stealer |
-| 4 | Trojan downloader |
-| 5 | Worm |
-| 6 | Backdoor |
-| 7 | Remote access Trojan |
-| 8 | Trojan |
-| 9 | Email flooder |
-| 10 | Keylogger |
-| 11 | Dialer |
-| 12 | Monitoring software |
-| 13 | Browser modifier |
-| 14 | Cookie |
-| 15 | Browser plugin |
-| 16 | AOL exploit |
-| 17 | Nuker |
-| 18 | Security disabler |
-| 19 | Joke program |
-| 20 | Hostile ActiveX control |
-| 21 | Software bundler |
-| 22 | Stealth modifier |
-| 23 | Settings modifier |
-| 24 | Toolbar |
-| 25 | Remote control software |
-| 26 | Trojan FTP |
-| 27 | Potential unwanted software |
-| 28 | ICQ exploit |
-| 29 | Trojan telnet |
-| 30 | Exploit |
-| 31 | File sharing program |
-| 32 | Malware creation tool |
-| 33 | Remote control software |
-| 34 | Tool |
-| 36 | Trojan denial of service |
-| 37 | Trojan dropper |
-| 38 | Trojan mass mailer |
-| 39 | Trojan monitoring software |
-| 40 | Trojan proxy server |
-| 42 | Virus |
-| 43 | Known |
-| 44 | Unknown |
-| 45 | SPP |
-| 46 | Behavior |
-| 47 | Vulnerability |
-| 48 | Policy |
-| 49 | EUS (Enterprise Unwanted Software) |
-| 50 | Ransomware |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Invalid |.
+
+| 1 | Adware |.
+
+| 2 | Spyware |.
+
+| 3 | Password stealer |.
+
+| 4 | Trojan downloader |.
+
+| 5 | Worm |.
+
+| 6 | Backdoor |.
+
+| 7 | Remote access Trojan |.
+
+| 8 | Trojan |.
+
+| 9 | Email flooder |.
+
+| 10 | Keylogger |.
+
+| 11 | Dialer |.
+
+| 12 | Monitoring software |.
+
+| 13 | Browser modifier |.
+
+| 14 | Cookie |.
+
+| 15 | Browser plugin |.
+
+| 16 | AOL exploit |.
+
+| 17 | Nuker |.
+
+| 18 | Security disabler |.
+
+| 19 | Joke program |.
+
+| 20 | Hostile ActiveX control |.
+
+| 21 | Software bundler |.
+
+| 22 | Stealth modifier |.
+
+| 23 | Settings modifier |.
+
+| 24 | Toolbar |.
+
+| 25 | Remote control software |.
+
+| 26 | Trojan FTP |.
+
+| 27 | Potential unwanted software |.
+
+| 28 | ICQ exploit |.
+
+| 29 | Trojan telnet |.
+
+| 30 | Exploit |.
+
+| 31 | File sharing program |.
+
+| 32 | Malware creation tool |.
+
+| 33 | Remote control software |.
+
+| 34 | Tool |.
+
+| 36 | Trojan denial of service |.
+
+| 37 | Trojan dropper |.
+
+| 38 | Trojan mass mailer |.
+
+| 39 | Trojan monitoring software |.
+
+| 40 | Trojan proxy server |.
+
+| 42 | Virus |.
+
+| 43 | Known |.
+
+| 44 | Unknown |.
+
+| 45 | SPP |.
+
+| 46 | Behavior |.
+
+| 47 | Vulnerability |.
+
+| 48 | Policy |.
+
+| 49 | EUS (Enterprise Unwanted Software) |.
+
+| 50 | Ransomware |.
+
 | 51 | ASR Rule |
 <!-- Device-Detections-{ThreatId}-Category-Description-End -->
 
@@ -2521,18 +2572,30 @@ Threat category ID. Supported values:
 <!-- Description-Source-DDF -->
 Information about the current status of the threat. The following list shows the supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Active |
-| 1 | Action failed |
-| 2 | Manual steps required |
-| 3 | Full scan required |
-| 4 | Reboot required |
-| 5 | Remediated with noncritical failures |
-| 6 | Quarantined |
-| 7 | Removed |
-| 8 | Cleaned |
-| 9 | Allowed |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Active |.
+
+| 1 | Action failed |.
+
+| 2 | Manual steps required |.
+
+| 3 | Full scan required |.
+
+| 4 | Reboot required |.
+
+| 5 | Remediated with noncritical failures |.
+
+| 6 | Quarantined |.
+
+| 7 | Removed |.
+
+| 8 | Cleaned |.
+
+| 9 | Allowed |.
+
 | 10 | No Status ( Cleared) |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Description-End -->
 
@@ -2769,12 +2832,18 @@ Number of times this threat has been detected on a particular client.
 <!-- Description-Source-DDF -->
 Threat severity ID. The following list shows the supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Unknown |
-| 1 | Low |
-| 2 | Moderate |
-| 4 | High |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Unknown |.
+
+| 1 | Low |.
+
+| 2 | Moderate |.
+
+| 4 | High |.
+
 | 5 | Severe |
 <!-- Device-Detections-{ThreatId}-Severity-Description-End -->
 
@@ -2894,13 +2963,20 @@ An interior node to group information about Windows Defender health status.
 <!-- Description-Source-DDF -->
 Provide the current state of the device. The following list shows the supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Clean |
-| 1 | Pending full scan |
-| 2 | Pending reboot |
-| 4 | Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan) |
-| 8 | Pending offline scan |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Clean |.
+
+| 1 | Pending full scan |.
+
+| 2 | Pending reboot |.
+
+| 4 | Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan) |.
+
+| 8 | Pending offline scan |.
+
 | 16 | Pending critical failure (Windows Defender has failed critically and an Administrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender) |
 <!-- Device-Health-ComputerState-Description-End -->
 
@@ -3293,33 +3369,60 @@ Indicates whether network protection is running.
 <!-- Description-Source-DDF -->
 Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. Supported product status values:
 
-| Value | Description |
-|:--|:--|
-| 0 | No status |
-| 1 (1 << 0) | Service not running |
-| 2 (1 << 1) | Service started without any malware protection engine |
-| 4 (1 << 2) | Pending full scan due to threat action |
-| 8 (1 << 3) | Pending reboot due to threat action |
-| 16 (1 << 4) | ending manual steps due to threat action |
-| 32 (1 << 5) | AV signatures out of date |
-| 64 (1 << 6) | AS signatures out of date |
-| 128 (1 << 7) | No quick scan has happened for a specified period |
-| 256 (1 << 8) | No full scan has happened for a specified period |
-| 512 (1 << 9) | System initiated scan in progress |
-| 1024 (1 << 10) | System initiated clean in progress |
-| 2048 (1 << 11) | There are samples pending submission |
-| 4096 (1 << 12) | Product running in evaluation mode |
-| 8192 (1 << 13) | Product running in non-genuine Windows mode |
-| 16384 (1 << 14) | Product expired |
-| 32768 (1 << 15) | Off-line scan required |
-| 65536 (1 << 16) | Service is shutting down as part of system shutdown |
-| 131072 (1 << 17) | Threat remediation failed critically |
-| 262144 (1 << 18) | Threat remediation failed non-critically |
-| 524288 (1 << 19) | No status flags set (well initialized state) |
-| 1048576 (1 << 20) | Platform is out of date |
-| 2097152 (1 << 21) | Platform update is in progress |
-| 4194304 (1 << 22) | Platform is about to be outdated |
-| 8388608 (1 << 23) | Signature or platform end of life is past or is impending |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | No status |.
+
+| 1 (1 << 0) | Service not running |.
+
+| 2 (1 << 1) | Service started without any malware protection engine |.
+
+| 4 (1 << 2) | Pending full scan due to threat action |.
+
+| 8 (1 << 3) | Pending reboot due to threat action |.
+
+| 16 (1 << 4) | ending manual steps due to threat action |.
+
+| 32 (1 << 5) | AV signatures out of date |.
+
+| 64 (1 << 6) | AS signatures out of date |.
+
+| 128 (1 << 7) | No quick scan has happened for a specified period |.
+
+| 256 (1 << 8) | No full scan has happened for a specified period |.
+
+| 512 (1 << 9) | System initiated scan in progress |.
+
+| 1024 (1 << 10) | System initiated clean in progress |.
+
+| 2048 (1 << 11) | There are samples pending submission |.
+
+| 4096 (1 << 12) | Product running in evaluation mode |.
+
+| 8192 (1 << 13) | Product running in non-genuine Windows mode |.
+
+| 16384 (1 << 14) | Product expired |.
+
+| 32768 (1 << 15) | Off-line scan required |.
+
+| 65536 (1 << 16) | Service is shutting down as part of system shutdown |.
+
+| 131072 (1 << 17) | Threat remediation failed critically |.
+
+| 262144 (1 << 18) | Threat remediation failed non-critically |.
+
+| 524288 (1 << 19) | No status flags set (well initialized state) |.
+
+| 1048576 (1 << 20) | Platform is out of date |.
+
+| 2097152 (1 << 21) | Platform update is in progress |.
+
+| 4194304 (1 << 22) | Platform is about to be outdated |.
+
+| 8388608 (1 << 23) | Signature or platform end of life is past or is impending |.
+
 | 16777216 (1 << 24) | Windows SMode signatures still in use on non-Win10S install |
 <!-- Device-Health-ProductStatus-Description-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -730,11 +730,11 @@ This policy has two modes: it can either specify a list of settings pages to sho
 
 Example: to specify that only the About and Bluetooth pages should be shown (their respective URIs are ms-settings:about and ms-settings:bluetooth) and all other pages hidden:
 
-showonly:about;bluetooth
+showonly:about;bluetooth.
 
 Example: to specify that only the Bluetooth page (which has URI ms-settings:bluetooth) should be hidden:
 
-hide:bluetooth
+hide:bluetooth.
 
 The availability of per-user support is documented here: <https://go.microsoft.com/fwlink/?linkid=2102995>
 <!-- PageVisibilityList-Description-End -->

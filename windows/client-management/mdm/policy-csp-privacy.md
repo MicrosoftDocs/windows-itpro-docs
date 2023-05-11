@@ -4,7 +4,7 @@ description: Learn more about the Privacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -92,7 +92,9 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 This policy setting determines whether Clipboard contents can be synchronized across devices.
 
 - If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
+
 - If you disable this policy setting, Clipboard contents can't be shared to other devices.
+
 Policy change takes effect immediately.
 <!-- AllowCrossDeviceClipboard-Description-End -->
 
@@ -375,7 +377,9 @@ In some managed environments, the privacy settings may be set by other policies.
 This policy setting determines whether ActivityFeed is enabled.
 
 - If you enable this policy setting, all activity types (as applicable) are allowed to be published and ActivityFeed shall roam these activities across device graph of the user.
+
 - If you disable this policy setting, activities can't be published and ActivityFeed shall disable cloud sync.
+
 Policy change takes effect immediately.
 <!-- EnableActivityFeed-Description-End -->
 
@@ -6569,7 +6573,9 @@ If an app is open when this Group Policy object is applied on a device, employee
 This policy setting determines whether User Activities can be published.
 
 - If you enable this policy setting, activities of type User Activity are allowed to be published.
+
 - If you disable this policy setting, activities of type User Activity aren't allowed to be published.
+
 Policy change takes effect immediately.
 <!-- PublishUserActivities-Description-End -->
 
@@ -6638,8 +6644,11 @@ For more information, see [Windows activity history and your privacy](https://su
 This policy setting determines whether published User Activities can be uploaded.
 
 - If you enable this policy setting, activities of type User Activity are allowed to be uploaded.
+
 - If you disable this policy setting, activities of type User Activity aren't allowed to be uploaded.
+
 Deletion of activities of type User Activity are independent of this setting.
+
 Policy change takes effect immediately.
 <!-- UploadUserActivities-Description-End -->
 

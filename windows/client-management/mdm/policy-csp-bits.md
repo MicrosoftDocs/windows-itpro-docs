@@ -4,7 +4,7 @@ description: Learn more about the BITS Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- BandwidthThrottlingEndTime-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers.)
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
 
 You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
 
@@ -103,7 +103,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!-- BandwidthThrottlingStartTime-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers.)
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
 
 You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
 
@@ -169,7 +169,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 
 <!-- BandwidthThrottlingTransferRate-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers.)
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
 
 You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
 
@@ -241,20 +241,27 @@ If you enable this policy setting, you can define a default download policy for 
 
 For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
 
-  - Always transfer
-  - Transfer unless roaming
-  - Transfer unless surcharge applies (when not roaming or overcap)
-  - Transfer unless nearing limit (when not roaming or nearing cap)
-  - Transfer only if unconstrained
-  - Custom--allows you to specify a bitmask, in which the bits describe cost states allowed or disallowed for this priority: (bits described here)
+- Always transfer
+- Transfer unless roaming
+- Transfer unless surcharge applies (when not roaming or overcap)
+- Transfer unless nearing limit (when not roaming or nearing cap)
+- Transfer only if unconstrained
+- Custom--allows you to specify a bitmask, in which the bits describe cost states allowed or disallowed for this priority: (bits described here)
 0x1 - The cost is unknown or the connection is unlimited and is considered to be unrestricted of usage charges and capacity constraints.
+
 0x2 - The usage of this connection is unrestricted up to a certain data limit
 0x4 - The usage of this connection is unrestricted up to a certain data limit and plan usage is less than 80 percent of the limit.
+
 0x8 - Usage of this connection is unrestricted up to a certain data limit and plan usage is between 80 percent and 100 percent of the limit.
+
 0x10 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. Surcharge applied or unknown.
+
 0x20 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. No surcharge applies, but speeds are likely reduced.
+
 0x40 - The connection is costed on a per-byte basis.
+
 0x80 - The connection is roaming.
+
 0x80000000 - Ignore congestion.
 <!-- CostedNetworkBehaviorBackgroundPriority-Description-End -->
 
@@ -327,20 +334,27 @@ If you enable this policy setting, you can define a default download policy for 
 
 For example, you can specify that background jobs are by default to transfer only when on uncosted network connections, but foreground jobs should proceed only when not roaming. The values that can be assigned are:
 
-  - Always transfer
-  - Transfer unless roaming
-  - Transfer unless surcharge applies (when not roaming or overcap)
-  - Transfer unless nearing limit (when not roaming or nearing cap)
-  - Transfer only if unconstrained
-  - Custom--allows you to specify a bitmask, in which the bits describe cost states allowed or disallowed for this priority: (bits described here)
+- Always transfer
+- Transfer unless roaming
+- Transfer unless surcharge applies (when not roaming or overcap)
+- Transfer unless nearing limit (when not roaming or nearing cap)
+- Transfer only if unconstrained
+- Custom--allows you to specify a bitmask, in which the bits describe cost states allowed or disallowed for this priority: (bits described here)
 0x1 - The cost is unknown or the connection is unlimited and is considered to be unrestricted of usage charges and capacity constraints.
+
 0x2 - The usage of this connection is unrestricted up to a certain data limit
 0x4 - The usage of this connection is unrestricted up to a certain data limit and plan usage is less than 80 percent of the limit.
+
 0x8 - Usage of this connection is unrestricted up to a certain data limit and plan usage is between 80 percent and 100 percent of the limit.
+
 0x10 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. Surcharge applied or unknown.
+
 0x20 - Usage of this connection is unrestricted up to a certain data limit, which has been exceeded. No surcharge applies, but speeds are likely reduced.
+
 0x40 - The connection is costed on a per-byte basis.
+
 0x80 - The connection is roaming.
+
 0x80000000 - Ignore congestion.
 <!-- CostedNetworkBehaviorForegroundPriority-Description-End -->
 
@@ -413,6 +427,7 @@ This policy setting specifies the number of days a pending BITS job can remain i
 > Any property changes to the job or any successful download action will reset this timeout.
 
 Consider increasing the timeout value if computers tend to stay offline for a long period of time and still have pending jobs.
+
 Consider decreasing this value if you are concerned about orphaned jobs occupying disk space.
 
 - If you enable this policy setting, you can configure the inactive job timeout to specified number of days.

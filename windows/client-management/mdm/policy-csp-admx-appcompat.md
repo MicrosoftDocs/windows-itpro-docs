@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AppCompat Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -229,7 +229,7 @@ This policy controls the state of the application compatibility engine in the sy
 
 The engine is part of the loader and looks through a compatibility database every time an application is started on the system. If a match for the application is found it provides either run-time solutions or compatibility fixes, or displays an Application Help message if the application has a know problem.
 
-Turning off the application compatibility engine will boost system performance. However, this will degrade the compatibility of many popular legacy applications, and won't block known incompatible applications from installing. (For Instance: This may result in a blue screen if an old anti-virus application is installed.)
+Turning off the application compatibility engine will boost system performance. However, this will degrade the compatibility of many popular legacy applications, and won't block known incompatible applications from installing. (For Instance: This may result in a blue screen if an old anti-virus application is installed).
 
 The Windows Resource Protection and User Account Control features of Windows use the application compatibility engine to provide mitigations for application problems. If the engine is turned off, these mitigations won't be applied to applications and their installers and these applications may fail to install or run properly.
 

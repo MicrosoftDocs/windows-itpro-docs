@@ -4,7 +4,7 @@ description: Learn more about the Licensing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,11 +38,12 @@ ms.topic: reference
 <!-- AllowWindowsEntitlementReactivation-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting controls whether OS Reactivation is blocked on a device.
+
 Policy Options:
 
-  - Not Configured (default -- Windows registration and reactivation is allowed)
-  - Disabled (Windows registration and reactivation isn't allowed)
-  - Enabled (Windows registration is allowed)
+- Not Configured (default -- Windows registration and reactivation is allowed)
+- Disabled (Windows registration and reactivation isn't allowed)
+- Enabled (Windows registration is allowed)
 <!-- AllowWindowsEntitlementReactivation-Description-End -->
 
 <!-- AllowWindowsEntitlementReactivation-Editable-Begin -->
@@ -106,12 +107,14 @@ Policy Options:
 <!-- DisallowKMSClientOnlineAVSValidation-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting lets you opt-out of sending KMS client activation data to Microsoft automatically. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
+
 If you disable or don't configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.
+
 Policy Options:
 
-  - Not Configured (default -- data will be automatically sent to Microsoft)
-  - Disabled (data will be automatically sent to Microsoft)
-  - Enabled (data won't be sent to Microsoft)
+- Not Configured (default -- data will be automatically sent to Microsoft)
+- Disabled (data will be automatically sent to Microsoft)
+- Enabled (data won't be sent to Microsoft)
 <!-- DisallowKMSClientOnlineAVSValidation-Description-End -->
 
 <!-- DisallowKMSClientOnlineAVSValidation-Editable-Begin -->

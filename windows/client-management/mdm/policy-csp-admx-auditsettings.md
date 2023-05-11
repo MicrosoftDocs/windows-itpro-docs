@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AuditSettings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ This setting only applies when the Audit Process Creation policy is enabled.
 
 - If you disable or don't configure this policy setting, the process's command line information won't be included in Audit Process Creation events.
 
-Default: Not configured
+Default: Not configured.
 
 > [!NOTE]
 > When this policy setting is enabled, any user with access to read the security events will be able to read the command line arguments for any successfully created process. Command line arguments can contain sensitive or private information such as passwords or user data.

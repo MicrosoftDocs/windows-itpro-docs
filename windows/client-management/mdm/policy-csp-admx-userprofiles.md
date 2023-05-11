@@ -4,7 +4,7 @@ description: Learn more about the ADMX_UserProfiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -233,9 +233,13 @@ This policy setting sets the maximum size of each user profile and determines th
 - If you enable this policy setting, you can:
 
 - Set a maximum permitted user profile size.
+
 - Determine whether the registry files are included in the calculation of the profile size.
+
 - Determine whether users are notified when the profile exceeds the permitted maximum size.
+
 - Specify a customized message notifying users of the oversized profile.
+
 - Determine how often the customized message is displayed.
 
 > [!NOTE]
@@ -365,7 +369,10 @@ This policy setting and related policy settings in this folder together define t
 
 - If you enable this policy setting, you can change how long Windows waits for a response from the server before considering the connection to be slow.
 
-- If you disable or don't configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections. Important: If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
+- If you disable or don't configure this policy setting, Windows considers the network connection to be slow if the server returns less than 500 kilobits of data per second or take 120 milliseconds to respond. Consider increasing this value for clients using DHCP Service-assigned addresses or for computers accessing profiles across dial-up connections.
+
+> [!IMPORTANT]
+> If the "Do not detect slow network connections" policy setting is enabled, this policy setting is ignored. Also, if the "Delete cached copies of roaming profiles" policy setting is enabled, there is no local copy of the roaming profile to load when the system detects a slow connection.
 <!-- SlowLinkTimeOut-Description-End -->
 
 <!-- SlowLinkTimeOut-Editable-Begin -->

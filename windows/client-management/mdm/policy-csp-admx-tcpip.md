@@ -4,7 +4,7 @@ description: Learn more about the ADMX_tcpip Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -282,7 +282,7 @@ This policy setting allows you to configure IP-HTTPS, a tunneling technology tha
 
 - If you disable or don't configure this policy setting, the local host settings are used.
 
-- If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
+- If you enable this policy setting, you can specify an IP-HTTPS server URL. You'll be able to configure IP-HTTPS with one of the following settings:
 
 Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
 
@@ -707,7 +707,7 @@ This policy setting allows you to configure Teredo, an address assignment and au
 
 - If you enable this policy setting, you can configure Teredo with one of the following settings:
 
-Default: The default state is "Client."
+Default: The default state is "Client".
 
 Disabled: No Teredo interfaces are present on the host.
 

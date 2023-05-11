@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Netlogon Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,9 @@ Domain controllers use the client IP address during a DC locator ping request to
 The allowable values for this setting result in the following behaviors:
 
 0 - DCs will never perform address lookups.
+
 1 - DCs will perform an exhaustive address lookup to discover additional client IP addresses.
+
 2 - DCs will perform a fast, DNS-only address lookup to discover additional client IP addresses.
 
 To specify this behavior in the DC Locator DNS SRV records, click Enabled, and then enter a value. The range of values is from 0 to 2.
@@ -1789,6 +1791,7 @@ When an environment has a large number of DCs running both old and new operating
 The allowable values for this setting result in the following behaviors:
 
 1 - Computers will ping DCs at the normal frequency.
+
 2 - Computers will ping DCs at the higher frequency.
 
 To specify this behavior, click Enabled and then enter a value. The range of values is from 1 to 2.

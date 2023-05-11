@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -262,6 +262,7 @@ No reboots or service restarts are required for this policy setting to take effe
 This policy setting turns on multiple expanded toast notifications in action center.
 
 - If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
+
 - If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
 <!-- EnableExpandedToastNotifications-Description-End -->
 

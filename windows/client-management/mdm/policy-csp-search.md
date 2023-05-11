@@ -4,7 +4,7 @@ description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -228,7 +228,9 @@ This policy controls whether the user can configure search to *Find My Files* mo
 This policy setting allows encrypted items to be indexed.
 
 - If you enable this policy setting, indexing will attempt to decrypt and index the content (access restrictions will still apply).
+
 - If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting isn't configured by default.
+
 - If you don't configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
 
 When this setting is enabled or disabled, the index is rebuilt completely.
@@ -483,7 +485,9 @@ This policy has been deprecated.
 This policy setting allows words that contain diacritic characters to be treated as separate words.
 
 - If you enable this policy setting, words that only differ in diacritics are treated as different words.
+
 - If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting isn't configured by default.
+
 - If you don't configure this policy setting, the local setting, configured through Control Panel, will be used.
 
 > [!NOTE]
@@ -596,6 +600,7 @@ Allow Windows indexer. Value type is integer.
 This policy setting determines when Windows uses automatic language detection results, and when it relies on indexing history.
 
 - If you enable this policy setting, Windows will always use automatic language detection to index (as it did in Windows 7). Using automatic language detection can increase memory usage. We recommend enabling this policy setting only on PCs where documents are stored in many languages.
+
 - If you disable or don't configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
 <!-- AlwaysUseAutoLangDetection-Description-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ControlPanel Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -178,14 +178,20 @@ Disables all Control Panel programs and the PC settings app.
 This setting prevents Control.exe and SystemSettings.exe, the program files for Control Panel and PC settings, from starting. As a result, users can't start Control Panel or PC settings, or run any of their items.
 
 This setting removes Control Panel from:
-The Start screen
-File Explorer
+
+The Start screen.
+
+File Explorer.
 
 This setting removes PC settings from:
-The Start screen
-Settings charm
-Account picture
-Search results
+
+The Start screen.
+
+Settings charm.
+
+Account picture.
+
+Search results.
 
 If users try to select a Control Panel item from the Properties item on a context menu, a message appears explaining that a setting prevents the action.
 <!-- NoControlPanel-Description-End -->

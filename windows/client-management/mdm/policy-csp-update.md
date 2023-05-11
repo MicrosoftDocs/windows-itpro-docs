@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -363,7 +363,7 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 <!-- Description-Source-ADMX -->
 Enable this policy to specify when to receive Feature Updates.
 
-Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo
+Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo.
 
 Pause Updates | To prevent Feature Updates from being offered to the device, you can temporarily pause Feature Updates. This pause will remain in effect for 35 days from the specified start date or until the field is cleared. Note, Quality Updates will still be offered even if Feature Updates are paused.
 <!-- BranchReadinessLevel-Description-End -->
@@ -433,7 +433,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 <!-- Description-Source-ADMX -->
 Enable this policy to specify when to receive Feature Updates.
 
-Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo
+Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo.
 
 Pause Updates | To prevent Feature Updates from being offered to the device, you can temporarily pause Feature Updates. This pause will remain in effect for 35 days from the specified start date or until the field is cleared. Note, Quality Updates will still be offered even if Feature Updates are paused.
 <!-- DeferFeatureUpdatesPeriodInDays-Description-End -->
@@ -679,22 +679,25 @@ If you disable or don't configure this policy, Windows Update will include updat
 <!-- Description-Source-ADMX -->
 Enable this policy to manage which updates you receive prior to the update being released to the world.
 
-Dev Channel
+Dev Channel.
+
 Ideal for highly technical users. Insiders in the Dev Channel will receive builds from our active development branch that's earliest in a development cycle. These builds aren't matched to a specific Windows 10 release.
 
-Beta Channel
+Beta Channel.
+
 Ideal for feature explorers who want to see upcoming Windows 10 features. Your feedback will be especially important here as it will help our engineers ensure key issues are fixed before a major release.
 
 Release Preview Channel (default)
 Insiders in the Release Preview Channel will have access to the upcoming release of Windows 10 prior to it being released to the world. These builds are supported by Microsoft. The Release Preview Channel is where we recommend companies preview and validate upcoming Windows 10 releases before broad deployment within their organization.
 
-Release Preview Channel, Quality Updates Only
+Release Preview Channel, Quality Updates Only.
+
 Ideal for those who want to validate the features and fixes coming soon to their current version. Note, released feature updates will continue to be offered in accordance with configured policies when this option is selected.
 
 > [!NOTE]
 > Preview Build enrollment requires a telemetry level setting of 2 or higher and your domain registered on insider.windows.com. For additional information on Preview Builds, see: <https://aka.ms/wipforbiz>
 
-If you disable or don't configure this policy, Windows Update won't offer you any pre-release updates and you will receive such content once released to the world. Disabling this policy will cause any devices currently on a pre-release build to opt out and stay on the latest Feature Update once released.
+If you disable or don't configure this policy, Windows Update won't offer you any pre-release updates and you'll receive such content once released to the world. Disabling this policy will cause any devices currently on a pre-release build to opt out and stay on the latest Feature Update once released.
 <!-- ManagePreviewBuilds-Description-End -->
 
 <!-- ManagePreviewBuilds-Editable-Begin -->
@@ -760,7 +763,7 @@ If you disable or don't configure this policy, Windows Update won't offer you an
 <!-- Description-Source-ADMX -->
 Enable this policy to specify when to receive Feature Updates.
 
-Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo
+Defer Updates | This enables devices to defer taking the next Feature Update available for their current product (or a new product if specified in the Select the target Feature Update version policy). You can defer a Feature Update for up to 14 days for all pre-release channels and up to 365 days for the General Availability Channel. To learn more about the current releases, please see aka.ms/WindowsTargetVersioninfo.
 
 Pause Updates | To prevent Feature Updates from being offered to the device, you can temporarily pause Feature Updates. This pause will remain in effect for 35 days from the specified start date or until the field is cleared. Note, Quality Updates will still be offered even if Feature Updates are paused.
 <!-- PauseFeatureUpdates-Description-End -->
@@ -1008,13 +1011,13 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 <!-- Description-Source-ADMX -->
 Enter the product and version as listed on the Windows Update target version page:
 
-aka.ms/WindowsTargetVersioninfo
+aka.ms/WindowsTargetVersioninfo.
 
 The device will request that Windows Update product and version in subsequent scans.
 
 Entering a target product and clicking OK or Apply means I accept the Microsoft Software License Terms for it found at aka.ms/WindowsTargetVersioninfo. If an organization is licensing the software, I am authorized to bind the organization.
 
-If you enter an invalid value, you will remain on your current version until you correct the values to a supported product and version.
+If you enter an invalid value, you'll remain on your current version until you correct the values to a supported product and version.
 <!-- ProductVersion-Description-End -->
 
 <!-- ProductVersion-Editable-Begin -->
@@ -1076,13 +1079,13 @@ Supported value type is a string containing a Windows product. For example, "Win
 <!-- Description-Source-ADMX -->
 Enter the product and version as listed on the Windows Update target version page:
 
-aka.ms/WindowsTargetVersioninfo
+aka.ms/WindowsTargetVersioninfo.
 
 The device will request that Windows Update product and version in subsequent scans.
 
 Entering a target product and clicking OK or Apply means I accept the Microsoft Software License Terms for it found at aka.ms/WindowsTargetVersioninfo. If an organization is licensing the software, I am authorized to bind the organization.
 
-If you enter an invalid value, you will remain on your current version until you correct the values to a supported product and version.
+If you enter an invalid value, you'll remain on your current version until you correct the values to a supported product and version.
 <!-- TargetReleaseVersion-Description-End -->
 
 <!-- TargetReleaseVersion-Editable-Begin -->
@@ -1892,6 +1895,7 @@ Note that the PC must restart for certain updates to take effect.
 If any of the following two policies are enabled, this policy has no effect:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
 2. Always automatically restart at scheduled time.
 
 Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
@@ -2018,6 +2022,7 @@ Note that the PC must restart for certain updates to take effect.
 If any of the following two policies are enabled, this policy has no effect:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
 2. Always automatically restart at scheduled time.
 
 Note that the default max active hours range is 18 hours from the active hours start time unless otherwise configured via the Specify active hours range for auto-restarts policy.
@@ -2086,7 +2091,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -2252,7 +2257,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -2745,7 +2750,7 @@ Enable enterprises/IT admin to configure feature update uninstall period.
 <!-- Description-Source-ADMX -->
 0 (default) - Use the default Windows Update notifications
 1 - Turn off all notifications, excluding restart warnings
-2 - Turn off all notifications, including restart warnings
+2 - Turn off all notifications, including restart warnings.
 
 This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
@@ -2827,7 +2832,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -2931,7 +2936,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -3029,7 +3034,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -3136,7 +3141,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -3243,7 +3248,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -3350,7 +3355,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -3457,7 +3462,7 @@ This setting lets you specify whether automatic updates are enabled on this comp
 
 When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
 
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed
+3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
 
 Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
 
@@ -3743,7 +3748,7 @@ These settings are designed for education devices that remain in carts overnight
 <!-- Description-Source-ADMX -->
 0 (default) - Use the default Windows Update notifications
 1 - Turn off all notifications, excluding restart warnings
-2 - Turn off all notifications, including restart warnings
+2 - Turn off all notifications, including restart warnings.
 
 This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed.
 
@@ -3824,6 +3829,7 @@ If you disable or don't configure this policy, the PC will restart according to 
 Enabling either of the following two policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDays-Description-End -->
 
@@ -3888,6 +3894,7 @@ If you disable or don't configure this policy, the PC will restart according to 
 Enabling either of the following two policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations.
+
 2. Always automatically restart at scheduled time.
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Description-End -->
 
@@ -4307,7 +4314,7 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+2. Always automatically restart at scheduled time.
 
 3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartDeadline-Description-End -->
@@ -4377,7 +4384,7 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+2. Always automatically restart at scheduled time.
 
 3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartDeadlineForFeatureUpdates-Description-End -->
@@ -4447,7 +4454,7 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+2. Always automatically restart at scheduled time.
 
 3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartSnoozeSchedule-Description-End -->
@@ -4517,7 +4524,7 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+2. Always automatically restart at scheduled time.
 
 3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Description-End -->
@@ -4587,7 +4594,7 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+2. Always automatically restart at scheduled time.
 
 3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartTransitionSchedule-Description-End -->
@@ -4657,7 +4664,7 @@ If you disable or don't configure this policy, the PC will restart following the
 Enabling any of the following policies will override the above policy:
 
 1. No auto-restart with logged-on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
+2. Always automatically restart at scheduled time.
 
 3. Specify deadline before auto-restart for update installation.
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Description-End -->

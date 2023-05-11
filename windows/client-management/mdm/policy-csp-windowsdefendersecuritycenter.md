@@ -4,7 +4,7 @@ description: Learn more about the WindowsDefenderSecurityCenter Area in Policy C
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -40,12 +40,15 @@ ms.topic: reference
 Specify the company name that will be displayed in Windows Security and associated notifications. This setting must be enabled for any contact information to appear.
 
 Enabled:
+
 Enter the company name in the Options section.
 
 Disabled:
+
 Company information won't be shown at all in either Windows Security or any notifications that it creates.
 
 Not configured:
+
 Same as Disabled.
 <!-- CompanyName-Description-End -->
 
@@ -102,12 +105,15 @@ Same as Disabled.
 Hide the Account protection area in Windows Security.
 
 Enabled:
+
 The Account protection area will be hidden.
 
 Disabled:
+
 The Account protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableAccountProtectionUI-Description-End -->
 
@@ -174,12 +180,15 @@ Same as Disabled.
 Hide the App and browser protection area in Windows Security.
 
 Enabled:
+
 The App and browser protection area will be hidden.
 
 Disabled:
+
 The App and browser protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableAppBrowserUI-Description-End -->
 
@@ -246,12 +255,15 @@ Same as Disabled.
 Disable the Clear TPM button in Windows Security.
 
 Enabled:
+
 The Clear TPM button will be unavailable for use.
 
 Disabled:
+
 The Clear TPM button will be available for use.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableClearTpmButton-Description-End -->
 
@@ -318,12 +330,15 @@ Same as Disabled.
 Hide the Device security area in Windows Security.
 
 Enabled:
+
 The Device security area will be hidden.
 
 Disabled:
+
 The Device security area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableDeviceSecurityUI-Description-End -->
 
@@ -392,12 +407,15 @@ Only show critical notifications from Windows Security.
 If the Suppress all notifications GP setting has been enabled, this setting will have no effect.
 
 Enabled:
+
 Local users will only see critical notifications from Windows Security. They won't see other types of notifications, such as regular PC or device health information.
 
 Disabled:
+
 Local users will see all types of notifications from Windows Security.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableEnhancedNotifications-Description-End -->
 
@@ -464,12 +482,15 @@ Same as Disabled.
 Hide the Family options area in Windows Security.
 
 Enabled:
+
 The Family options area will be hidden.
 
 Disabled:
+
 The Family options area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableFamilyUI-Description-End -->
 
@@ -536,12 +557,15 @@ Same as Disabled.
 Hide the Device performance and health area in Windows Security.
 
 Enabled:
+
 The Device performance and health area will be hidden.
 
 Disabled:
+
 The Device performance and health area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableHealthUI-Description-End -->
 
@@ -608,12 +632,15 @@ Same as Disabled.
 Hide the Firewall and network protection area in Windows Security.
 
 Enabled:
+
 The Firewall and network protection area will be hidden.
 
 Disabled:
+
 The Firewall and network protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableNetworkUI-Description-End -->
 
@@ -680,12 +707,15 @@ Same as Disabled.
 Hide notifications from Windows Security.
 
 Enabled:
+
 Local users won't see notifications from Windows Security.
 
 Disabled:
+
 Local users can see notifications from Windows Security.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableNotifications-Description-End -->
 
@@ -752,12 +782,15 @@ Same as Disabled.
 Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
 
 Enabled:
+
 Users won't be shown a recommendation to update their TPM Firmware.
 
 Disabled:
+
 Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableTpmFirmwareUpdateWarning-Description-End -->
 
@@ -824,12 +857,15 @@ Same as Disabled.
 Hide the Virus and threat protection area in Windows Security.
 
 Enabled:
+
 The Virus and threat protection area will be hidden.
 
 Disabled:
+
 The Virus and threat protection area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableVirusUI-Description-End -->
 
@@ -896,12 +932,15 @@ Same as Disabled.
 Prevent users from making changes to the Exploit protection settings area in Windows Security.
 
 Enabled:
+
 Local users can't make changes in the Exploit protection settings area.
 
 Disabled:
+
 Local users are allowed to make changes in the Exploit protection settings area.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisallowExploitProtectionOverride-Description-End -->
 
@@ -970,12 +1009,15 @@ Specify the email address or email ID that will be displayed in Windows Security
 Users can click on the contact information to create an email that will be sent to the specified address. The default email application will be used.
 
 Enabled:
+
 Enter the email address or email ID in the Options section.
 
 Disabled:
+
 A contact email address or email ID won't be shown in either Windows Security or any notifications it creates.
 
 Not configured:
+
 Same as Disabled.
 <!-- Email-Description-End -->
 
@@ -1032,19 +1074,23 @@ Same as Disabled.
 Display specified contact information to local users in Windows Security notifications.
 
 Enabled:
+
 Your company contact information will be displayed in notifications that come from Windows Security.
 
 After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
 
 -Specify contact phone number or Skype ID
 -Specify contact email number or email ID
--Specify contact website
+-Specify contact website.
+
 Please note that in some cases we will be limiting the contact options that are displayed based on the notification space available.
 
 Disabled:
+
 No contact information will be shown on notifications.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableCustomizedToasts-Description-End -->
 
@@ -1108,21 +1154,24 @@ Same as Disabled.
 
 <!-- EnableInAppCustomization-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Display specified contact information to local users in a contact card flyout menu in Windows Security
+Display specified contact information to local users in a contact card flyout menu in Windows Security.
 
 Enabled:
+
 Your company contact information will be displayed in a flyout menu in Windows Security.
 
 After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
 
 -Specify contact phone number or Skype ID
 -Specify contact email number or email ID
--Specify contact website
+-Specify contact website.
 
 Disabled:
+
 No contact information will be shown in Windows Security.
 
 Not configured:
+
 Same as Disabled.
 <!-- EnableInAppCustomization-Description-End -->
 
@@ -1189,12 +1238,15 @@ Same as Disabled.
 Hide the Ransomware data recovery area in Windows Security.
 
 Enabled:
+
 The Ransomware data recovery area will be hidden.
 
 Disabled:
+
 The Ransomware data recovery area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideRansomwareDataRecovery-Description-End -->
 
@@ -1261,12 +1313,15 @@ Same as Disabled.
 Hide the Secure boot area in Windows Security.
 
 Enabled:
+
 The Secure boot area will be hidden.
 
 Disabled:
+
 The Secure boot area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideSecureBoot-Description-End -->
 
@@ -1333,12 +1388,15 @@ Same as Disabled.
 Hide the Security processor (TPM) troubleshooting area in Windows Security.
 
 Enabled:
+
 The Security processor (TPM) troubleshooting area will be hidden.
 
 Disabled:
+
 The Security processor (TPM) troubleshooting area will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideTPMTroubleshooting-Description-End -->
 
@@ -1407,12 +1465,15 @@ This policy setting hides the Windows Security notification area control.
 The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
 
 Enabled:
+
 Windows Security notification area control will be hidden.
 
 Disabled:
+
 Windows Security notification area control will be shown.
 
 Not configured:
+
 Same as Disabled.
 <!-- HideWindowsSecurityNotificationAreaControl-Description-End -->
 
@@ -1481,12 +1542,15 @@ Specify the phone number or Skype ID that will be displayed in Windows Security 
 Users can click on the contact information to automatically call the supplied number. Skype will be used to initiate the call.
 
 Enabled:
+
 Enter the phone number or Skype ID in the Options section.
 
 Disabled:
+
 A contact phone number or Skype ID won't be shown in either Windows Security or any notifications it creates.
 
 Not configured:
+
 Same as Disabled.
 <!-- Phone-Description-End -->
 
@@ -1545,12 +1609,15 @@ Specify the URL that will be displayed in Windows Security and associated notifi
 Users can click on the contact information to visit the specified website. The default web browser will be used.
 
 Enabled:
+
 Enter the URL in the Options section.
 
 Disabled:
+
 A contact website URL won't be shown in either Windows Security or any notifications it creates.
 
 Not configured:
+
 Same as Disabled.
 <!-- URL-Description-End -->
 

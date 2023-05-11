@@ -4,7 +4,7 @@ description: Learn more about the ApplicationDefaults Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -40,7 +40,8 @@ ms.topic: reference
 This policy specifies the path to a file (e.g. either stored locally or on a network location) that contains file type and protocol default application associations. This file can be created using the DISM tool.
 
 For example:
-Dism.exe /Online /Export-DefaultAppAssociations:C:\AppAssoc.txt
+
+Dism.exe /Online /Export-DefaultAppAssociations:C:\AppAssoc.txt.
 
 For more information, refer to the DISM documentation on TechNet.
 

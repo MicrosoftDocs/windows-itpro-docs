@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsMediaPlayer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -44,7 +44,9 @@ This policy setting allows you to specify the HTTP proxy settings for Windows Me
 - If you enable this policy setting, select one of the following proxy types:
 
 - Autodetect: the proxy settings are automatically detected.
+
 - Custom: unique proxy settings are used.
+
 - Use browser proxy settings: browser's proxy settings are used.
 
 If the Custom proxy type is selected, the rest of the options on the Setting tab must be specified because no default settings are used for the proxy. The options are ignored if Autodetect or Browser is selected.
@@ -115,6 +117,7 @@ This policy setting allows you to specify the MMS proxy settings for Windows Med
 - If you enable this policy setting, select one of the following proxy types:
 
 - Autodetect: the proxy settings are automatically detected.
+
 - Custom: unique proxy settings are used.
 
 If the Custom proxy type is selected, the rest of the options on the Setting tab must be specified; otherwise, the default settings are used. The options are ignored if Autodetect is selected.
@@ -185,6 +188,7 @@ This policy setting allows you to specify the RTSP proxy settings for Windows Me
 - If you enable this policy setting, select one of the following proxy types:
 
 - Autodetect: the proxy settings are automatically detected.
+
 - Custom: unique proxy settings are used.
 
 If the Custom proxy type is selected, the rest of the options on the Setting tab must be specified; otherwise, the default settings are used. The options are ignored if Autodetect is selected.
@@ -739,6 +743,7 @@ This policy setting allows you to specify whether network buffering uses the def
 - If you enable this policy setting, select one of the following options to specify the number of seconds streaming media is buffered before it's played.
 
 - Custom: the number of seconds, up to 60, that streaming media is buffered.
+
 - Default: default network buffering is used and the number of seconds that's specified is ignored.
 
 The "Use default buffering" and "Buffer" options on the Performance tab in the Player aren't available.

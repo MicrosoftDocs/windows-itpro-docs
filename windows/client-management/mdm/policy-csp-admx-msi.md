@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MSI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -914,7 +914,7 @@ This policy setting should be used if you need to maintain a tight control over 
 
 - If you enable this policy setting, updates can't be removed from the computer by a user or an administrator. The Windows Installer can still remove an update that's no longer applicable to the product.
 
-- If you disable or don't configure this policy setting, a user can remove an update from the computer only if the user has been granted privileges to remove the update. This can depend on whether the user is an administrator, whether "Disable Windows Installer" and "Always install with elevated privileges" policy settings are set, and whether the update was installed in a per-user managed, per-user unmanaged, or per-machine context."
+- If you disable or don't configure this policy setting, a user can remove an update from the computer only if the user has been granted privileges to remove the update. This can depend on whether the user is an administrator, whether "Disable Windows Installer" and "Always install with elevated privileges" policy settings are set, and whether the update was installed in a per-user managed, per-user unmanaged, or per-machine context".
 <!-- MSI_DisablePatchUninstall-Description-End -->
 
 <!-- MSI_DisablePatchUninstall-Editable-Begin -->
@@ -1091,9 +1091,11 @@ This policy setting causes the Windows Installer to enforce strict rules for com
 - If you enable this policy setting, strict upgrade rules will be enforced by the Windows Installer which may cause some upgrades to fail. Upgrades can fail if they attempt to do one of the following:
 
 (1) Remove a component from a feature.
+
 This can also occur if you change the GUID of a component. The component identified by the original GUID appears to be removed and the component as identified by the new GUID appears as a new component.
 
 (2) Add a new feature to the top or middle of an existing feature tree.
+
 The new feature must be added as a new leaf feature to an existing feature tree.
 
 - If you disable or don't configure this policy setting, the Windows Installer will use less restrictive rules for component upgrades.
@@ -1280,7 +1282,7 @@ When you enable this policy setting, you can specify the types of events you wan
 
 To disable logging, delete all of the letters from the box.
 
-If you disable or don't configure this policy setting, Windows Installer logs the default event types, represented by the letters "iweap."
+If you disable or don't configure this policy setting, Windows Installer logs the default event types, represented by the letters "iweap".
 <!-- MSILogging-Description-End -->
 
 <!-- MSILogging-Editable-Begin -->

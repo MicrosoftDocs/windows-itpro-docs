@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MSAPolicy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,9 +42,13 @@ ms.topic: reference
 This setting controls whether users can provide Microsoft accounts for authentication for applications or services.
 
 - If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
+
 This applies both to existing users of a device and new users who may be added. However, any application or service that has already authenticated a user won't be affected by enabling this setting until the authentication cache expires.
+
 It's recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present.
+
 - If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication.
+
 By default, this setting is Disabled. This setting doesn't affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
 <!-- MicrosoftAccount_DisableUserAuth-Description-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_GroupPolicy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -23,7 +23,7 @@ ms.topic: reference
 <!-- ADMX_GroupPolicy-Editable-End -->
 
 <!-- AllowX-ForestPolicy-and-RUP-Begin -->
-##### AllowX/ForestPolicy/and/RUP
+2 AllowX/ForestPolicy/and/RUP
 
 <!-- AllowX-ForestPolicy-and-RUP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -45,10 +45,13 @@ This policy setting affects all user accounts that interactively log on to a com
 
 - If you don't configure this policy setting:
 
-  - No user-based policy settings are applied from the user's forest.
-  - Users don't receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
-  - Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
-  - An event log message (1109) is posted, stating that loopback was invoked in Replace mode.
+- No user-based policy settings are applied from the user's forest.
+
+- Users don't receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
+
+- Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
+
+- An event log message (1109) is posted, stating that loopback was invoked in Replace mode.
 
 - If you enable this policy setting, the behavior is exactly the same as in Windows 2000: user policy is applied, and a roaming user profile is allowed from the trusted forest.
 
@@ -172,6 +175,7 @@ This policy setting affects all policy settings that use the software installati
 This policy setting overrides customized settings that the program implementing the software installation policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -237,6 +241,7 @@ This policy setting affects all policies that use the disk quota component of Gr
 This policy setting overrides customized settings that the program implementing the disk quota policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -304,6 +309,7 @@ This policy setting affects all policies that use the encryption component of Gr
 It overrides customized settings that the program implementing the encryption policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -371,6 +377,7 @@ This policy setting affects all policies that use the folder redirection compone
 This policy setting overrides customized settings that the program implementing the folder redirection policy setting set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -436,6 +443,7 @@ This policy setting affects all policies that use the Internet Explorer Maintena
 This policy setting overrides customized settings that the program implementing the Internet Explorer Maintenance policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -503,6 +511,7 @@ This policy setting affects all policies that use the IP security component of G
 This policy setting overrides customized settings that the program implementing the IP security policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -568,6 +577,7 @@ This policy setting determines when registry policies are updated.
 This policy setting affects all policies in the Administrative Templates folder and any other policies that store values in the registry. It overrides customized settings that the program implementing a registry policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user logon or system restart.
@@ -631,6 +641,7 @@ This policy setting determines when policies that assign shared scripts are upda
 This policy setting affects all policies that use the scripts component of Group Policy, such as those in WindowsSettings\Scripts. It overrides customized settings that the program implementing the scripts policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
@@ -698,6 +709,7 @@ This policy setting affects all policies that use the security component of Grou
 This policy setting overrides customized settings that the program implementing the security policy set when it was installed.
 
 - If you enable this policy setting, you can use the check boxes provided to change the options.
+
 - If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user logon or system restart.
@@ -904,7 +916,7 @@ By default, interactively logged-on users can view their own Resultant Set of Po
 > This policy setting doesn't affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
 
 > [!NOTE]
-> To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc
+> To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc.
 
 > [!NOTE]
 > This policy setting exists as both a User Configuration and Computer Configuration setting.
@@ -976,7 +988,7 @@ By default, interactively logged-on users can view their own Resultant Set of Po
 > This policy setting doesn't affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
 
 > [!NOTE]
-> To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc
+> To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc.
 
 > [!NOTE]
 > This policy setting exists as both a User Configuration and Computer Configuration setting.
@@ -1411,13 +1423,13 @@ This policy setting determines whether the Windows device is allowed to particip
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Group Policy caching behavior.
 
-- If you enable or don't configure this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
+- If you enable or don't configure this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior).
 
 The slow link value that's defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
 
 The timeout value that's defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
 
-- If you disable this policy setting, the Group Policy client won't cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
+- If you disable this policy setting, the Group Policy client won't cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior).
 <!-- EnableLogonOptimization-Description-End -->
 
 <!-- EnableLogonOptimization-Editable-Begin -->
@@ -1474,10 +1486,13 @@ The timeout value that's defined in this policy setting determines how long Grou
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Group Policy caching behavior on Windows Server machines.
 
-- If you enable this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
+- If you enable this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior).
+
 The slow link value that's defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
+
 The timeout value that's defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
-- If you disable or don't configure this policy setting, the Group Policy client won't cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior.)
+
+- If you disable or don't configure this policy setting, the Group Policy client won't cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the "Configure Group Policy Slow Link Detection" policy setting to configure asynchronous foreground behavior).
 <!-- EnableLogonOptimizationOnServerSKU-Description-End -->
 
 <!-- EnableLogonOptimizationOnServerSKU-Editable-Begin -->
@@ -1602,7 +1617,7 @@ A Group Policy administration (.adm) file can contain both true settings and pre
 - If you disable or don't configure this policy setting, the "Show Policies Only" command is turned on by default, but administrators can view preferences by turning off the "Show Policies Only" command.
 
 > [!NOTE]
-> To find the "Show Policies Only" command, in Group Policy Object Editor, click the Administrative Templates folder (either one), right-click the same folder, and then point to "View."
+> To find the "Show Policies Only" command, in Group Policy Object Editor, click the Administrative Templates folder (either one), right-click the same folder, and then point to "View".
 
 In Group Policy Object Editor, preferences have a red icon to distinguish them from true settings, which have a blue icon.
 <!-- EnforcePoliciesOnly-Description-End -->
@@ -1726,7 +1741,7 @@ This policy setting determines which domain controller the Group Policy Object E
 - If you disable this setting or don't configure it, the Group Policy Object Editor snap-in uses the domain controller designated as the PDC Operations Master for the domain.
 
 > [!NOTE]
-> To change the PDC Operations Master for a domain, in Active Directory Users and Computers, right-click a domain, and then click "Operations Masters."
+> To change the PDC Operations Master for a domain, in Active Directory Users and Computers, right-click a domain, and then click "Operations Masters".
 <!-- GPDCOptions-Description-End -->
 
 <!-- GPDCOptions-Editable-Begin -->
@@ -2394,7 +2409,7 @@ This leads to the following behavior:
 This security feature provides a means to override individual process MitigationOptions settings. This can be used to enforce a number of security policies specific to applications. The application name is specified as the Value name, including extension. The Value is specified as a bit field with a series of flags in particular positions. Bits can be set to either 0 (setting is forced off), 1 (setting is forced on), or ? (setting retains its existing value prior to GPO evaluation). The recognized bit locations are:
 
 PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE (0x00000001)
-Enables data execution prevention (DEP) for the child process
+Enables data execution prevention (DEP) for the child process.
 
 PROCESS_CREATION_MITIGATION_POLICY_DEP_ATL_THUNK_ENABLE (0x00000002)
 Enables DEP-ATL thunk emulation for the child process. DEP-ATL thunk emulation causes the system to intercept NX faults that originate from the Active Template Library (ATL) thunk layer.
@@ -2410,6 +2425,7 @@ PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF (0x00020000)
 The bottom-up randomization policy, which includes stack randomization options, causes a random location to be used as the lowest user address.
 
 For instance, to enable PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE and PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON, disable PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF, and to leave all other options at their default values, specify a value of:
+
 ???????????????0???????1???????1
 
 Setting flags not specified here to any value other than ? results in undefined behavior.
@@ -2652,13 +2668,15 @@ When Group Policy detects the bandwidth speed of a Direct Access connection, the
 This policy directs Group Policy processing to skip processing any client side extension that requires synchronous processing (that is, whether computers wait for the network to be fully initialized during computer startup and user logon) when a slow network connection is detected.
 
 - If you enable this policy setting, when a slow network connection is detected, Group Policy processing will always run in an asynchronous manner.
-Client computers won't wait for the network to be fully initialized at startup and logon. Existing users will be logged-on using cached credentials,
-which will result in shorter logon times. Group Policy will be applied in the background after the network becomes available.
-Note that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
-and Drive Maps preference extension won't be applied.
+
+Client computers won't wait for the network to be fully initialized at startup and logon. Existing users will be logged-on using cached credentials, which will result in shorter logon times. Group Policy will be applied in the background after the network becomes available.
+
+Note that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection and Drive Maps preference extension won't be applied.
 
 Note There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
+
 1 - At the first computer startup after the client computer has joined the domain.
+
 2 - If the policy setting "Always wait for the network at computer startup and logon" is enabled.
 
 - If you disable or don't configure this policy setting, detecting a slow network connection won't affect whether Group Policy processing will be synchronous or asynchronous.

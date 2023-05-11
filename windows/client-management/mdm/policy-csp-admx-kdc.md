@@ -4,7 +4,7 @@ description: Learn more about the ADMX_kdc Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -52,13 +52,15 @@ If you configure the "Not supported" option, the domain controller doesn't suppo
 
 If you configure "Supported", the domain controller supports claims, compound authentication and Kerberos armoring. The domain controller advertises to Kerberos client computers that the domain is capable of claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
-Domain functional level requirements
+Domain functional level requirements.
+
 For the options "Always provide claims" and "Fail unarmored authentication requests", when the domain functional level is set to Windows Server 2008 R2 or earlier then domain controllers behave as if the "Supported" option is selected.
 
 When the domain functional level is set to Windows Server 2012 then the domain controller advertises to Kerberos client computers that the domain is capable of claims and compound authentication for Dynamic Access Control and Kerberos armoring, and:
 
-  - If you set the "Always provide claims" option, always returns claims for accounts and supports the RFC behavior for advertising the flexible authentication secure tunneling (FAST).
-  - If you set the "Fail unarmored authentication requests" option, rejects unarmored Kerberos messages.
+- If you set the "Always provide claims" option, always returns claims for accounts and supports the RFC behavior for advertising the flexible authentication secure tunneling (FAST).
+
+- If you set the "Fail unarmored authentication requests" option, rejects unarmored Kerberos messages.
 
 > [!WARNING]
 > When "Fail unarmored authentication requests" is set, then client computers which don't support Kerberos armoring will fail to authenticate to the domain controller.
@@ -67,9 +69,11 @@ To ensure this feature is effective, deploy enough domain controllers that suppo
 
 Impact on domain controller performance when this policy setting is enabled:
 
-  - Secure Kerberos domain capability discovery is required resulting in additional message exchanges.
-  - Claims and compound authentication for Dynamic Access Control increases the size and complexity of the data in the message which results in more processing time and greater Kerberos service ticket size.
-  - Kerberos armoring fully encrypts Kerberos messages and signs Kerberos errors which results in increased processing time, but doesn't change the service ticket size.
+- Secure Kerberos domain capability discovery is required resulting in additional message exchanges.
+
+- Claims and compound authentication for Dynamic Access Control increases the size and complexity of the data in the message which results in more processing time and greater Kerberos service ticket size.
+
+- Kerberos armoring fully encrypts Kerberos messages and signs Kerberos errors which results in increased processing time, but doesn't change the service ticket size.
 <!-- CbacAndArmor-Description-End -->
 
 <!-- CbacAndArmor-Editable-Begin -->

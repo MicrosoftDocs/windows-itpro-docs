@@ -4,7 +4,7 @@ description: Learn more about the System Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -112,13 +112,16 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 <!-- AllowCommercialDataPipeline-Description-Begin -->
 <!-- Description-Source-ADMX -->
 AllowCommercialDataPipeline configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
-Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device
+Windows diagnostic data is collected when the Allow Telemetry policy setting is set to value 1 - Required or above. Configuring this setting doesn't change the Windows diagnostic data collection level set for the device.
+
 If you disable or don't configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft's privacy statement at <https://go.microsoft.com/fwlink/?LinkId=521839> unless you have enabled policies like 'Allow Update Compliance Processing' or 'Allow Desktop Analytics Processing".
+
 See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 <!-- AllowCommercialDataPipeline-Description-End -->
 
@@ -187,15 +190,17 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 <!-- AllowDesktopAnalyticsProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher
-4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+4. Set the Configure the Commercial ID setting for your Desktop Analytics workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
 This setting has no effect on devices unless they're properly enrolled in Desktop Analytics. If you disable this policy setting, devices won't appear in Desktop Analytics.
 <!-- AllowDesktopAnalyticsProcessing-Description-End -->
 
@@ -675,12 +680,15 @@ Controls whether the user is allowed to use the storage card for device storage.
 By configuring this policy setting you can adjust what diagnostic data is collected from Windows. This policy setting also restricts the user from increasing the amount of diagnostic data collection via the Settings app. The diagnostic data collected under this policy impacts the operating system and apps that are considered part of Windows and doesn't apply to any additional apps installed by your organization.
 
 - Diagnostic data off (not recommended). Using this value, no diagnostic data is sent from the device. This value is only supported on Enterprise, Education, and Server editions.
+
 - Send required diagnostic data. This is the minimum diagnostic data necessary to keep Windows secure, up to date, and performing as expected. Using this value disables the "Optional diagnostic data" control in the Settings app.
+
 - Send optional diagnostic data. Additional diagnostic data is collected that helps us to detect, diagnose and fix issues, as well as make product improvements. Required diagnostic data will always be included when you choose to send optional diagnostic data. Optional diagnostic data can also include diagnostic log files and crash dumps. Use the "Limit Dump Collection" and the "Limit Diagnostic Log Collection" policies for more granular control of what optional diagnostic data is sent.
 
 If you disable or don't configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
 
 Note:
+
 The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
 <!-- AllowTelemetry-Description-End -->
 
@@ -745,15 +753,17 @@ The "Configure diagnostic data opt-in settings user interface" group policy can 
 <!-- AllowUpdateComplianceProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
 3. Set Allow Telemetry to value 1 - Required, or higher
-4. Set the Configure the Commercial ID setting for your Update Compliance workspace
+4. Set the Configure the Commercial ID setting for your Update Compliance workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
 If you disable or don't configure this policy setting, devices won't appear in Update Compliance.
 <!-- AllowUpdateComplianceProcessing-Description-End -->
 
@@ -868,14 +878,16 @@ Specifies whether to allow the user to factory reset the device by using control
 <!-- AllowWUfBCloudProcessing-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
+
 To enable this behavior:
 
 1. Enable this policy setting
-2. Join an Azure Active Directory account to the device
+2. Join an Azure Active Directory account to the device.
 
-3. Set Allow Telemetry to value 1 - Required, or higher
+3. Set Allow Telemetry to value 1 - Required, or higher.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
 If you disable or don't configure this policy setting, devices enrolled to the Windows Update for Business deployment service won't be able to take advantage of some deployment service features.
 <!-- AllowWUfBCloudProcessing-Description-End -->
 
@@ -942,12 +954,15 @@ If you disable or don't configure this policy setting, devices enrolled to the W
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver:
 
-  - Good: The driver has been signed and hasn't been tampered with.
-  - Bad: The driver has been identified as malware. It's recommended that you don't allow known bad drivers to be initialized.
-  - Bad, but required for boot: The driver has been identified as malware, but the computer can't successfully boot without loading this driver.
-  - Unknown: This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.
+- Good: The driver has been signed and hasn't been tampered with.
 
-- If you enable this policy setting you will be able to choose which boot-start drivers to initialize the next time the computer is started.
+- Bad: The driver has been identified as malware. It's recommended that you don't allow known bad drivers to be initialized.
+
+- Bad, but required for boot: The driver has been identified as malware, but the computer can't successfully boot without loading this driver.
+
+- Unknown: This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.
+
+- If you enable this policy setting you'll be able to choose which boot-start drivers to initialize the next time the computer is started.
 
 - If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
 
@@ -1009,6 +1024,7 @@ If your malware detection application doesn't include an Early Launch Antimalwar
 This policy sets the upload endpoint for this device's diagnostic data as part of the Desktop Analytics program.
 
 If your organization is participating in the program and has been instructed to configure a custom upload endpoint, then use this setting to define that endpoint.
+
 The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
 <!-- ConfigureMicrosoft365UploadEndpoint-Description-End -->
 
@@ -1135,6 +1151,7 @@ If you set this policy setting to "Disable diagnostic data opt-in settings", dia
 If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
 
 Note:
+
 To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
 <!-- ConfigureTelemetryOptInSettingsUx-Description-End -->
 
@@ -1454,9 +1471,13 @@ This policy setting lets you prevent apps and features from working with files o
 - If you enable this policy setting:
 
 * Users can't access OneDrive from the OneDrive app and file picker.
+
 * Windows Store apps can't access OneDrive using the WinRT API.
+
 * OneDrive doesn't appear in the navigation pane in File Explorer.
+
 * OneDrive files aren't kept in sync with the cloud.
+
 * Users can't automatically upload photos and videos from the camera roll folder.
 
 - If you disable or don't configure this policy setting, apps and features can work with OneDrive file storage.
@@ -1972,10 +1993,10 @@ This policy setting, in combination with the "Allow Diagnostic Data" policy sett
 To enable the behavior described above, complete the following steps:
 
 1. Enable this policy setting
-2. Set the "Allow Diagnostic Data" policy to "Send optional diagnostic data"
+2. Set the "Allow Diagnostic Data" policy to "Send optional diagnostic data".
 
 3. Enable the "Limit Dump Collection" policy
-4. Enable the "Limit Diagnostic Log Collection" policy
+4. Enable the "Limit Diagnostic Log Collection" policy.
 
 When these policies are configured, Microsoft will collect only required diagnostic data and the events required by Desktop Analytics, which can be viewed at< https://go.microsoft.com/fwlink/?linkid=2116020>.
 

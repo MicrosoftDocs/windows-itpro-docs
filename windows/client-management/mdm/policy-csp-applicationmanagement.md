@@ -4,7 +4,7 @@ description: Learn more about the ApplicationManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -310,6 +310,7 @@ Allows or denies development of Microsoft Store applications and installing them
 Windows Game Recording and Broadcasting.
 
 This setting enables or disables the Windows Game Recording and Broadcasting features. If you disable this setting, Windows Game Recording won't be allowed.
+
 If the setting is enabled or not configured, then Recording and Broadcasting (streaming) will be allowed.
 <!-- AllowGameDVR-Description-End -->
 

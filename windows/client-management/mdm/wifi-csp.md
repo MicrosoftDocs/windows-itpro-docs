@@ -4,7 +4,7 @@ description: Learn more about the WiFi CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -383,6 +383,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- Device-Profile-{SSID}-WlanXml-Description-Begin -->
 <!-- Description-Source-DDF -->
 XML describing the network configuration and follows Windows WLAN_profile schema.
+
 Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx>
 <!-- Device-Profile-{SSID}-WlanXml-Description-End -->
 
@@ -741,6 +742,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- User-Profile-{SSID}-WlanXml-Description-Begin -->
 <!-- Description-Source-DDF -->
 XML describing the network configuration and follows Windows WLAN_profile schema.
+
 Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx>
 <!-- User-Profile-{SSID}-WlanXml-Description-End -->
 

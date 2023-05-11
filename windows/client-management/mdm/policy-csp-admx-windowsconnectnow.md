@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsConnectNow Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,7 +43,7 @@ This policy setting prohibits access to Windows Connect Now (WCN) wizards.
 
 - If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled.
 
-- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device". The default for this policy setting allows users to access all WCN wizards.
 <!-- WCN_DisableWcnUi_1-Description-End -->
 
 <!-- WCN_DisableWcnUi_1-Editable-Begin -->
@@ -102,7 +102,7 @@ This policy setting prohibits access to Windows Connect Now (WCN) wizards.
 
 - If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled.
 
-- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+- If you disable or don't configure this policy setting, users can access the wizard tasks, including "Set up a wireless router or access point" and "Add a wireless device". The default for this policy setting allows users to access all WCN wizards.
 <!-- WCN_DisableWcnUi_2-Description-End -->
 
 <!-- WCN_DisableWcnUi_2-Editable-Begin -->

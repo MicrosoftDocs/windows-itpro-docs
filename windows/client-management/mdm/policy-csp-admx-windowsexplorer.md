@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -104,6 +104,7 @@ This policy setting allows you to prevent data loss when you change the target l
 This setting allows an administrator to revert specific Windows Shell behavior to classic Shell behavior.
 
 - If you enable this setting, users can't configure their system to open items by single-clicking (such as in Mouse in Control Panel). As a result, the user interface looks and operates like the interface for Windows NT 4.0, and users can't restore the new features.
+
 Enabling this policy will also turn off the preview pane and set the folder options for File Explorer to Use classic folders view and disable the users ability to change these options.
 
 - If you disable or not configure this policy, the default File Explorer behavior is applied to the user.
@@ -351,15 +352,19 @@ This disables access to user-defined properties, and properties stored in NTFS s
 This policy setting allows you to turn off Windows Libraries features that need indexed file metadata to function properly.
 
 - If you enable this policy, some Windows Libraries features will be turned off to better handle included folders that have been redirected to non-indexed network locations.
+
 Setting this policy will:
+
 * Disable all Arrangement views except for "By Folder"
 * Disable all Search filter suggestions other than "Date Modified" and "Size"
 * Disable view of file content snippets in Content mode when search results are returned
 * Disable ability to stack in the Context menu and Column headers
-* Exclude Libraries from the scope of Start search
+* Exclude Libraries from the scope of Start search.
+
 This policy won't enable users to add unsupported locations to Libraries.
 
 - If you enable this policy, Windows Libraries features that rely on indexed file data will be disabled.
+
 - If you disable or don't configure this policy, all default Windows Libraries features will be enabled.
 <!-- DisableIndexedLibraryExperience-Description-End -->
 
@@ -604,7 +609,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 - If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
 
 - Warn and prevent bypass
-- Warn
+- Warn.
 
 - If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 
@@ -737,6 +742,7 @@ For shell extensions to run on a per-user basis, there must be an entry at HKEY_
 This policy setting allows you to specify whether the ribbon appears minimized or in full when new File Explorer windows are opened.
 
 - If you enable this policy setting, you can set how the ribbon appears the first time users open File Explorer and whenever they open new windows.
+
 - If you disable or don't configure this policy setting, users can choose how the ribbon appears when they open new windows.
 <!-- ExplorerRibbonStartsMinimized-Description-End -->
 
@@ -2238,7 +2244,7 @@ The Recent Items menu contains shortcuts to the nonprogram files the user has mo
 
 - If you enable this policy setting, the system displays the number of shortcuts specified by the policy setting.
 
-- If you disable or don't configure this policy setting, by default, the system displays shortcuts to the 10 most recently opened documents."
+- If you disable or don't configure this policy setting, by default, the system displays shortcuts to the 10 most recently opened documents".
 <!-- MaxRecentDocs-Description-End -->
 
 <!-- MaxRecentDocs-Editable-Begin -->
@@ -3660,6 +3666,7 @@ This policy setting doesn't affect the Search items on the File Explorer context
 This policy setting allows you to have file names sorted literally (as in Windows 2000 and earlier) rather than in numerical order.
 
 - If you enable this policy setting, File Explorer will sort file names by each digit in a file name (for example, 111 < 22 < 3).
+
 - If you disable or don't configure this policy setting, File Explorer will sort file names by increasing number value (for example, 3 < 22 < 111).
 <!-- NoStrCmpLogical-Description-End -->
 
@@ -3969,9 +3976,9 @@ The valid items you may display in the Places Bar are:
 
 2) Shortcuts to remote folders -- (\\server\share)
 
-3) FTP folders
+3) FTP folders.
 
-4) web folders
+4) web folders.
 
 5) Common Shell folders.
 

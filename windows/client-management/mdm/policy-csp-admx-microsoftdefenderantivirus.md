@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -166,12 +166,15 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 Allows an administrator to specify if Automatic Exclusions feature for Server SKUs should be turned off.
 
 Disabled (Default):
+
 Microsoft Defender will exclude pre-defined list of paths from the scan to improve performance.
 
 Enabled:
+
 Microsoft Defender won't exclude pre-defined list of paths from scans. This can impact machine performance in some scenarios.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableAutoExclusions-Description-End -->
 
@@ -228,13 +231,19 @@ Same as Disabled.
 <!-- DisableBlockAtFirstSeen-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check won't occur, which will lower the protection state of the device.
+
 Enabled - The Block at First Sight setting is turned on.
+
 Disabled - The Block at First Sight setting is turned off.
 
 This feature requires these Group Policy settings to be set as follows:
+
 MAPS -> The "Join Microsoft MAPS" must be enabled or the "Block at First Sight" feature won't function.
+
 MAPS -> The "Send file samples when further analysis is required" should be set to 1 (Send safe samples) or 3 (Send all samples). Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature won't function.
+
 Real-time Protection -> The "Scan all downloaded files and attachments" policy must be enabled or the "Block at First Sight" feature won't function.
+
 Real-time Protection -> Don't enable the "Turn off real-time protection" policy or the "Block at First Sight" feature won't function.
 <!-- DisableBlockAtFirstSeen-Description-End -->
 
@@ -649,16 +658,20 @@ This policy setting allows you to disable real-time scanning for any file opened
 Exclude files and paths from Attack Surface Reduction (ASR) rules.
 
 Enabled:
+
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
+
 Enter each rule on a new line as a name-value pair:
 
-  - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
-  - Value column: Enter "0" for each item
+- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+- Value column: Enter "0" for each item.
 
 Disabled:
+
 No exclusions will be applied to the ASR rules.
 
 Not configured:
+
 Same as Disabled.
 
 You can configure ASR rules in the Configure Attack Surface Reduction rules GP setting.
@@ -720,30 +733,33 @@ Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
 
-  - Block: the rule will be applied
-  - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
-  - Off: the rule won't be applied
-  - Not Configured: the rule is enabled with default values
-  - Warn: the rule will be applied and the end-user will have the option to bypass the block
+- Block: the rule will be applied
+- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
+- Off: the rule won't be applied
+- Not Configured: the rule is enabled with default values
+- Warn: the rule will be applied and the end-user will have the option to bypass the block.
 
 Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules with the value of not configured.
 
 Enabled:
+
 Specify the state for each ASR rule under the Options section for this setting.
+
 Enter each rule on a new line as a name-value pair:
 
-  - Name column: Enter a valid ASR rule ID
-  - Value column: Enter the status ID that relates to state you want to specify for the associated rule
+- Name column: Enter a valid ASR rule ID
+- Value column: Enter the status ID that relates to state you want to specify for the associated rule.
 
 The following status IDs are permitted under the value column:
 
-  - 1 (Block)
-  - 0 (Off)
-  - 2 (Audit)
-  - 5 (Not Configured)
-  - 6 (Warn)
+- 1 (Block)
+- 0 (Off)
+- 2 (Audit)
+- 5 (Not Configured)
+- 6 (Warn)
 
 Example:
+
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 0
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -752,9 +768,11 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 2
 
 Disabled:
+
 No ASR rules will be configured.
 
 Not configured:
+
 Same as Disabled.
 
 You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
@@ -819,12 +837,15 @@ These applications are allowed to modify or delete files in controlled folder ac
 Microsoft Defender Antivirus automatically determines which applications should be trusted. You can configure this setting to add additional applications.
 
 Enabled:
+
 Specify additional allowed applications in the Options section..
 
 Disabled:
+
 No additional applications will be added to the trusted list.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -889,15 +910,19 @@ Specify additional folders that should be guarded by the Controlled folder acces
 Files in these folders can't be modified or deleted by untrusted applications.
 
 Default system folders are automatically protected. You can configure this setting to add additional folders.
+
 The list of default system folders that are protected is shown in Windows Security.
 
 Enabled:
+
 Specify additional folders that should be protected in the Options section.
 
 Disabled:
+
 No additional folders will be protected.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -960,12 +985,15 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 Enable or disable file hash computation feature.
 
 Enabled:
+
 When this feature is enabled Microsoft Defender will compute hash value for files it scans.
 
 Disabled:
-File hash value isn't computed
+
+File hash value isn't computed.
 
 Not configured:
+
 Same as Disabled.
 <!-- MpEngine_EnableFileHashComputation-Description-End -->
 
@@ -1258,9 +1286,9 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 2. Proxy .pac URL (if specified)
 
 3. None
-4. Internet Explorer proxy settings
+4. Internet Explorer proxy settings.
 
-5. Autodetect
+5. Autodetect.
 
 - If you enable this setting, the proxy setting will be set to use the specified proxy .pac according to the order specified above.
 
@@ -1324,9 +1352,9 @@ This policy setting allows you to configure the named proxy that should be used 
 2. Proxy .pac URL (if specified)
 
 3. None
-4. Internet Explorer proxy settings
+4. Internet Explorer proxy settings.
 
-5. Autodetect
+5. Autodetect.
 
 - If you enable this setting, the proxy will be set to the specified URL according to the order specified above. The URL should be proceeded with either https:// or https://.
 
@@ -2280,15 +2308,8 @@ This policy setting configures a local override for the configuration of the tim
 This policy setting allows you to specify the day of the week on which to perform a scheduled full scan in order to complete remediation. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
-(0x0) Every Day
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never (default)
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
 
 - If you enable this setting, a scheduled full scan to complete remediation will run at the frequency specified.
 
@@ -2802,7 +2823,9 @@ This policy configures Windows software trace preprocessor (WPP Software Tracing
 <!-- Reporting_WppTracingLevel-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy allows you to configure tracing levels for Windows software trace preprocessor (WPP Software Tracing).
+
 Tracing levels are defined as:
+
 1 - Error
 2 - Warning
 3 - Info
@@ -4155,15 +4178,8 @@ This policy setting allows you to configure scheduled scans to start only when y
 This policy setting allows you to specify the day of the week on which to perform a scheduled scan. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
-(0x0) Every Day
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never (default)
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
 
 - If you enable this setting, a scheduled scan will run at the frequency specified.
 
@@ -4693,7 +4709,7 @@ This policy setting allows you to configure security intelligence updates on sta
 
 <!-- SignatureUpdate_FallbackOrder-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares".
 
 For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
@@ -4874,15 +4890,9 @@ This policy setting allows you to enable real-time security intelligence updates
 This policy setting allows you to specify the day of the week on which to check for security intelligence updates. The check can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
+
 (0x0) Every Day (default)
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never
+(0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never.
 
 - If you enable this setting, the check for security intelligence updates will occur at the frequency specified.
 
@@ -5297,15 +5307,15 @@ This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the onl
 You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft won't use this information to identify you or contact you.
 
 Possible options are:
+
 (0x0) Disabled (default)
-(0x1) Basic membership
-(0x2) Advanced membership
+(0x1) Basic membership (0x2) Advanced membership.
 
 Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.
 
 Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
 
-- If you enable this setting, you will join Microsoft MAPS with the membership specified.
+- If you enable this setting, you'll join Microsoft MAPS with the membership specified.
 
 - If you disable or don't configure this setting, you won't join Microsoft MAPS.
 
@@ -5367,6 +5377,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 This policy setting customize which remediation action will be taken for each listed Threat ID when it's detected during a scan. Threats should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid Threat ID, while the value contains the action ID for the remediation action that should be taken.
 
 Valid remediation action values are:
+
 2 = Quarantine
 3 = Remove
 6 = Ignore.
@@ -5483,6 +5494,7 @@ This policy setting allows you to configure whether or not to display additional
 <!-- UX_Configuration_Notification_Suppress-Description-Begin -->
 <!-- Description-Source-ADMX -->
 Use this policy setting to specify if you want Microsoft Defender Antivirus notifications to display on clients.
+
 - If you disable or don't configure this setting, Microsoft Defender Antivirus notifications will display on clients.
 
 - If you enable this setting, Microsoft Defender Antivirus notifications won't display on clients.
@@ -5602,6 +5614,7 @@ If you enable this setting AM UI won't show reboot notifications.
 <!-- UX_Configuration_UILockdown-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
+
 If you enable this setting AM UI won't be available to users.
 <!-- UX_Configuration_UILockdown-Description-End -->
 

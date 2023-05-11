@@ -4,7 +4,7 @@ description: Learn more about the ADMX_nca Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,11 +45,11 @@ Each string can be one of the following types:
 
 - A DNS name or IPv6 address that NCA pings. The syntax is "PING:" followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1.
 
-Note
+Note.
 
 We recommend that you use FQDNs instead of IPv6 addresses wherever possible.
 
-Important
+Important.
 
 At least one of the entries must be a PING: resource.
 
@@ -289,7 +289,8 @@ The ability to disconnect allows users to specify single-label, unqualified name
 
 To restore the DirectAccess rules to the NRPT and resume normal DirectAccess functionality, the user clicks Connect.
 
-Note
+Note.
+
 If the DirectAccess client computer is on the intranet and has correctly determined its network location, the Disconnect option has no effect because the rules for DirectAccess are already removed from the NRPT.
 
 If this setting isn't configured, users don't have Connect or Disconnect options.

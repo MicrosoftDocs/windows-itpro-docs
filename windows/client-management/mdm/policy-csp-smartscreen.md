@@ -4,7 +4,7 @@ description: Learn more about the SmartScreen Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -41,13 +41,13 @@ App Install Control is a feature of Windows Defender SmartScreen that helps prot
 
 - If you enable this setting, you must choose from the following behaviors:
 
-- Turn off app recommendations
+- Turn off app recommendations.
 
-- Show me app recommendations
+- Show me app recommendations.
 
-- Warn me before installing apps from outside the Store
+- Warn me before installing apps from outside the Store.
 
-- Allow apps from Store only
+- Allow apps from Store only.
 
 - If you disable or don't configure this setting, users will be able to install apps from anywhere, including files downloaded from the Internet.
 <!-- EnableAppInstallControl-Description-End -->
@@ -123,7 +123,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 - If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
 
 - Warn and prevent bypass
-- Warn
+- Warn.
 
 - If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 
@@ -201,7 +201,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 - If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
 
 - Warn and prevent bypass
-- Warn
+- Warn.
 
 - If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 

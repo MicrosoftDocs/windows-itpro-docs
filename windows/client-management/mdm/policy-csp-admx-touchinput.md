@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TouchInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,7 +39,8 @@ ms.topic: reference
 
 <!-- PanningEverywhereOff_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turn off Panning
+Turn off Panning.
+
 Turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.
 
 - If you enable this setting, the user won't be able to pan windows by touch.
@@ -104,7 +105,8 @@ Turns off touch panning, which allows users pan inside windows by touch. On a co
 
 <!-- PanningEverywhereOff_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turn off Panning
+Turn off Panning.
+
 Turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.
 
 - If you enable this setting, the user won't be able to pan windows by touch.
@@ -169,7 +171,7 @@ Turns off touch panning, which allows users pan inside windows by touch. On a co
 
 <!-- TouchInputOff_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turn off Tablet PC touch input
+Turn off Tablet PC touch input.
 
 Turns off touch input, which allows the user to interact with their computer using their finger.
 
@@ -235,7 +237,7 @@ Turns off touch input, which allows the user to interact with their computer usi
 
 <!-- TouchInputOff_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turn off Tablet PC touch input
+Turn off Tablet PC touch input.
 
 Turns off touch input, which allows the user to interact with their computer using their finger.
 

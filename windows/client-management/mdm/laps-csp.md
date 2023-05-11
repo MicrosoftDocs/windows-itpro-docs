@@ -4,7 +4,7 @@ description: Learn more about the LAPS CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -448,7 +448,7 @@ The allowable settings are:
 
 0=Disabled (password won't be backed up)
 1=Backup the password to Azure AD only
-2=Backup the password to Active Directory only
+2=Backup the password to Active Directory only.
 
 If not specified, this setting will default to 0.
 <!-- Device-Policies-BackupDirectory-Description-End -->
@@ -502,7 +502,7 @@ If not specified, this setting will default to 0.
 <!-- Description-Source-DDF -->
 Use this policy to configure the maximum password age of the managed local administrator account.
 
-If not specified, this setting will default to 30 days
+If not specified, this setting will default to 30 days.
 
 This setting has a minimum allowed value of 1 day when backing the password to on-premises Active Directory, and 7 days when backing the password to Azure AD.
 
@@ -555,7 +555,7 @@ The allowable settings are:
 1=Large letters
 2=Large letters + small letters
 3=Large letters + small letters + numbers
-4=Large letters + small letters + numbers + special characters
+4=Large letters + small letters + numbers + special characters.
 
 If not specified, this setting will default to 4.
 <!-- Device-Policies-PasswordComplexity-Description-End -->

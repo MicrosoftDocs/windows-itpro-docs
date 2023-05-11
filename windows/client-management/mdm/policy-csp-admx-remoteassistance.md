@@ -4,7 +4,7 @@ description: Learn more about the ADMX_RemoteAssistance Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -109,14 +109,14 @@ For example:
 "Turn off background" will include the following optimizations:
 
 -No full window drag
--Turn off background
+-Turn off background.
 
 "Full optimization" will include the following optimizations:
 
 -Use 16-bit color (8-bit color in Windows Vista)
 -Turn off font smoothing (not supported in Windows Vista)
 -No full window drag
--Turn off background
+-Turn off background.
 
 - If you enable this policy setting, bandwidth optimization occurs at the level specified.
 

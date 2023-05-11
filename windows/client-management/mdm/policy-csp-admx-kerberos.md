@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Kerberos Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -112,6 +112,7 @@ Automatic: Device will attempt to authenticate using its certificate. If the DC 
 Force: Device will always authenticate using its certificate. If a DC can't be found which support computer account authentication using certificates then authentication will fail.
 
 - If you disable this policy setting, certificates will never be used.
+
 - If you don't configure this policy setting, Automatic will be used.
 <!-- DevicePKInitEnabled-Description-End -->
 
@@ -423,6 +424,7 @@ Automatic: Compound authentication is provided for this computer account when on
 Always: Compound authentication is always provided for this computer account.
 
 - If you disable this policy setting, Never will be used.
+
 - If you don't configure this policy setting, Automatic will be used.
 <!-- ServerAcceptsCompound-Description-End -->
 

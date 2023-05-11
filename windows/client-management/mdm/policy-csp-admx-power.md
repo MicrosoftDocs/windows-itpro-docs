@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -165,7 +165,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you disable this policy or don't configure this policy setting, users control this setting.
 <!-- ACStartMenuButtonAction_2-Description-End -->
@@ -522,7 +522,7 @@ This policy setting specifies the action that Windows takes when battery capacit
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you disable or don't configure this policy setting, users control this setting.
 <!-- DCBatteryDischargeAction0_2-Description-End -->
@@ -585,7 +585,7 @@ This policy setting specifies the action that Windows takes when battery capacit
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you disable or don't configure this policy setting, users control this setting.
 <!-- DCBatteryDischargeAction1_2-Description-End -->
@@ -948,7 +948,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
 - If you disable this policy or don't configure this policy setting, users control this setting.
 <!-- DCStartMenuButtonAction_2-Description-End -->

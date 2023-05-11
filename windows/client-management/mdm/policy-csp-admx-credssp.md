@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CredSsp Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -50,14 +50,18 @@ The policy becomes effective the next time the user signs on to a computer runni
 - If you disable or don't configure (by default) this policy setting, delegation of default credentials isn't permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
 
 FWlink for KB:
+
 <https://go.microsoft.com/fwlink/?LinkId=301508>
 
 > [!NOTE]
 > The "Allow delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 <!-- AllowDefaultCredentials-Description-End -->
 
@@ -125,8 +129,11 @@ This policy setting applies when server authentication was achieved via NTLM.
 > The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 <!-- AllowDefCredentialsWhenNTLMOnly-Description-End -->
 
@@ -182,7 +189,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowEncryptionOracle-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Encryption Oracle Remediation
+Encryption Oracle Remediation.
 
 This policy setting applies to applications using the CredSSP component (for example: Remote Desktop Connection).
 
@@ -264,9 +271,13 @@ This policy setting applies when server authentication was achieved via a truste
 > The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com
-Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com.
+
+Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 <!-- AllowFreshCredentials-Description-End -->
 
@@ -336,8 +347,11 @@ This policy setting applies when server authentication was achieved via NTLM.
 > The "Allow delegating fresh credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
 <!-- AllowFreshCredentialsWhenNTLMOnly-Description-End -->
 
@@ -407,8 +421,11 @@ This policy setting applies when server authentication was achieved via a truste
 > The "Allow delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
 <!-- AllowSavedCredentials-Description-End -->
 
@@ -478,8 +495,11 @@ This policy setting applies when server authentication was achieved via NTLM.
 > The "Allow delegating saved credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
 <!-- AllowSavedCredentialsWhenNTLMOnly-Description-End -->
 
@@ -545,9 +565,12 @@ This policy setting applies to applications using the Cred SSP component (for ex
 > The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
-TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 
 This policy setting can be used in combination with the "Allow delegating default credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating default credentials" server list.
 <!-- DenyDefaultCredentials-Description-End -->
@@ -614,9 +637,12 @@ This policy setting applies to applications using the Cred SSP component (for ex
 > The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
-TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 
 This policy setting can be used in combination with the "Allow delegating fresh credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating fresh credentials" server list.
 <!-- DenyFreshCredentials-Description-End -->
@@ -683,9 +709,12 @@ This policy setting applies to applications using the Cred SSP component (for ex
 > The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
-TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 
 This policy setting can be used in combination with the "Allow delegating saved credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating saved credentials" server list.
 <!-- DenySavedCredentials-Description-End -->
@@ -745,7 +774,8 @@ This policy setting can be used in combination with the "Allow delegating saved 
 When running in Restricted Admin or Remote Credential Guard mode, participating apps don't expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials aren't delegated. Remote Credential Guard doesn't limit access to resources because it redirects all requests back to the client device.
 
 Participating apps:
-Remote Desktop Client
+
+Remote Desktop Client.
 
 - If you enable this policy setting, the following options are supported:
 

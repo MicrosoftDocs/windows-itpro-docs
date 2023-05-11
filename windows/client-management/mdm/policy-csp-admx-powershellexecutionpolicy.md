@@ -4,7 +4,7 @@ description: Learn more about the ADMX_PowerShellExecutionPolicy Area in Policy 
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -126,9 +126,9 @@ The "Allow all scripts" policy setting allows all scripts to run.
 - If you disable this policy setting, no scripts are allowed to run.
 
 > [!NOTE]
-> This policy setting exists under both "Computer Configuration" and "User Configuration" in the Local Group Policy Editor. The "Computer Configuration" has precedence over "User Configuration."
+> This policy setting exists under both "Computer Configuration" and "User Configuration" in the Local Group Policy Editor. The "Computer Configuration" has precedence over "User Configuration".
 
-- If you disable or don't configure this policy setting, it reverts to a per-machine preference setting; the default if that isn't configured is "No scripts allowed."
+- If you disable or don't configure this policy setting, it reverts to a per-machine preference setting; the default if that isn't configured is "No scripts allowed".
 <!-- EnableScripts-Description-End -->
 
 <!-- EnableScripts-Editable-Begin -->
@@ -189,16 +189,11 @@ The "Allow all scripts" policy setting allows all scripts to run.
 <!-- Description-Source-ADMX -->
 This policy setting lets you capture the input and output of Windows PowerShell commands into text-based transcripts.
 
-- If you enable this policy setting, Windows PowerShell will enable transcripting for Windows PowerShell, the Windows PowerShell ISE, and any other
-applications that leverage the Windows PowerShell engine. By default, Windows PowerShell will record transcript output to each users' My Documents
-directory, with a file name that includes 'PowerShell_transcript', along with the computer name and time started. Enabling this policy is equivalent
-to calling the Start-Transcript cmdlet on each Windows PowerShell session.
+- If you enable this policy setting, Windows PowerShell will enable transcripting for Windows PowerShell, the Windows PowerShell ISE, and any other applications that leverage the Windows PowerShell engine. By default, Windows PowerShell will record transcript output to each users' My Documents directory, with a file name that includes 'PowerShell_transcript', along with the computer name and time started. Enabling this policy is equivalent to calling the Start-Transcript cmdlet on each Windows PowerShell session.
 
-- If you disable this policy setting, transcripting of PowerShell-based applications is disabled by default, although transcripting can still be enabled
-through the Start-Transcript cmdlet.
+- If you disable this policy setting, transcripting of PowerShell-based applications is disabled by default, although transcripting can still be enabled through the Start-Transcript cmdlet.
 
-If you use the OutputDirectory setting to enable transcript logging to a shared location, be sure to limit access to that directory to prevent users
-from viewing the transcripts of other users or computers.
+If you use the OutputDirectory setting to enable transcript logging to a shared location, be sure to limit access to that directory to prevent users from viewing the transcripts of other users or computers.
 
 > [!NOTE]
 > This policy setting exists under both Computer Configuration and User Configuration in the Group Policy Editor. The Computer Configuration policy setting takes precedence over the User Configuration policy setting.

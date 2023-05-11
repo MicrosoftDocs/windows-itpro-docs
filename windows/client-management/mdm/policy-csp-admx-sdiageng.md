@@ -4,7 +4,7 @@ description: Learn more about the ADMX_sdiageng Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,7 +39,7 @@ ms.topic: reference
 
 <!-- BetterWhenConnected-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows users who are connected to the Internet to access and search troubleshooting content that's hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they're prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
+This policy setting allows users who are connected to the Internet to access and search troubleshooting content that's hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they're prompted by a message that states, "Do you want the most up-to-date troubleshooting content?".
 
 - If you enable or don't configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that's hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
 

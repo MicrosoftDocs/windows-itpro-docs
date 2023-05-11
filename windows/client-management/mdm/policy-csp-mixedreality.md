@@ -4,7 +4,7 @@ description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -400,25 +400,32 @@ This policy setting specifies a set of parameters for controlling the Windows NT
 
 - If you disable or don't configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
 
-NtpServer
+NtpServer.
+
 The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of "dnsName,flags" where "flags" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is "time.windows.com,0x09".
 
-Type
+Type.
+
 This value controls the authentication that W32time uses. The default value is NT5DS.
 
-CrossSiteSyncFlags
+CrossSiteSyncFlags.
+
 This value, expressed as a bitmask, controls how W32time chooses time sources outside its own site. The possible values are 0, 1, and 2. Setting this value to 0 (None) indicates that the time client shouldn't attempt to synchronize time outside its site. Setting this value to 1 (PdcOnly) indicates that only the computers that function as primary domain controller (PDC) emulator operations masters in other domains can be used as synchronization partners when the client has to synchronize time with a partner outside its own site. Setting a value of 2 (All) indicates that any synchronization partner can be used. This value is ignored if the NT5DS value isn't set. The default value is 2 decimal (0x02 hexadecimal).
 
-ResolvePeerBackoffMinutes
+ResolvePeerBackoffMinutes.
+
 This value, expressed in minutes, controls how long W32time waits before it attempts to resolve a DNS name when a previous attempt failed. The default value is 15 minutes.
 
-ResolvePeerBackoffMaxTimes
+ResolvePeerBackoffMaxTimes.
+
 This value controls how many times W32time attempts to resolve a DNS name before the discovery process is restarted. Each time DNS name resolution fails, the amount of time to wait before the next attempt will be twice the previous amount. The default value is seven attempts.
 
-SpecialPollInterval
+SpecialPollInterval.
+
 This NTP client value, expressed in seconds, controls how often a manually configured time source is polled when the time source is configured to use a special polling interval. If the SpecialInterval flag is enabled on the NTPServer setting, the client uses the value that's set as the SpecialPollInterval, instead of a variable interval between MinPollInterval and MaxPollInterval values, to determine how frequently to poll the time source. SpecialPollInterval must be in the range of [MinPollInterval, MaxPollInterval], else the nearest value of the range is picked. Default: 1024 seconds.
 
-EventLogFlags
+EventLogFlags.
+
 This value is a bitmask that controls events that may be logged to the System log in Event Viewer. Setting this value to 0x1 indicates that W32time will create an event whenever a time jump is detected. Setting this value to 0x2 indicates that W32time will create an event whenever a time source change is made. Because it's a bitmask value, setting 0x3 (the addition of 0x1 and 0x2) indicates that both time jumps and time source changes will be logged.
 <!-- ConfigureNtpClient-Description-End -->
 

@@ -4,7 +4,7 @@ description: Learn more about the ClientCertificateInstall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -162,7 +162,9 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- Device-PFXCertInstall-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
+
 Format is node.
+
 Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 <!-- Device-PFXCertInstall-{UniqueID}-Description-End -->
 
@@ -205,6 +207,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
+
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- Device-PFXCertInstall-{UniqueID}-ContainerName-Description-End -->
 
@@ -295,9 +298,13 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required.
+
 [CRYPT_DATA_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
+
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
+
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it doesn't exist, this will fail.
+
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-End -->
 
@@ -377,6 +384,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
+
 When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-End -->
 
@@ -418,6 +426,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 <!-- Device-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
+
 If the value is
 0 - Password isn't encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
@@ -643,6 +652,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- Device-SCEP-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
+
 Calling Delete on the this node, should delete the corresponding SCEP certificate.
 <!-- Device-SCEP-{UniqueID}-Description-End -->
 
@@ -921,6 +931,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
+
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- Device-SCEP-{UniqueID}-Install-ContainerName-Description-End -->
 
@@ -1119,6 +1130,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for enrollment. Specify private key length (RSA).
+
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- Device-SCEP-{UniqueID}-Install-KeyLength-Description-End -->
 
@@ -1171,6 +1183,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specify where to keep the private key. Note that even it's protected by TPM, it isn't guarded with TPM PIN.
+
 SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- Device-SCEP-{UniqueID}-Install-KeyProtection-Description-End -->
 
@@ -1262,6 +1275,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
+
 The min value is 0 which means no retry.
 <!-- Device-SCEP-{UniqueID}-Install-RetryCount-Description-End -->
 
@@ -1505,6 +1519,7 @@ Optional. OID of certificate template name. Note that this name is typically ign
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
+
 MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It's the server's decision on how to use this valid period to create the certificate.
 <!-- Device-SCEP-{UniqueID}-Install-ValidPeriod-Description-End -->
 
@@ -1638,7 +1653,9 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- Device-SCEP-{UniqueID}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required. Specify the latest status for the certificate due to enroll request.
+
 Valid values are:
+
 1 - finished successfully
 2 - pending (the device hasn't finished the action but has received the SCEP server pending response)
 32 - unknown
@@ -1721,7 +1738,9 @@ Required for PFX certificate installation. The parent node grouping the PFX cert
 <!-- User-PFXCertInstall-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
+
 Format is node.
+
 Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 <!-- User-PFXCertInstall-{UniqueID}-Description-End -->
 
@@ -1764,6 +1783,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
+
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- User-PFXCertInstall-{UniqueID}-ContainerName-Description-End -->
 
@@ -1854,9 +1874,13 @@ Required for PFX certificate installation. Indicates the KeyStorage provider to 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required.
+
 [CRYPT_DATA_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)) structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
+
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
+
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it doesn't exist, this will fail.
+
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertBlob-Description-End -->
 
@@ -1936,6 +1960,7 @@ Password that protects the PFX blob. This is required if the PFX is password pro
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
+
 When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionStore-Description-End -->
 
@@ -1977,6 +2002,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
 <!-- User-PFXCertInstall-{UniqueID}-PFXCertPasswordEncryptionType-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
+
 If the value is
 0 - Password isn't encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
@@ -2200,6 +2226,7 @@ Node for SCEP. An alert is sent after the SCEP certificate is installed.
 <!-- User-SCEP-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
+
 Calling Delete on the this node, should delete the corresponding SCEP certificate.
 <!-- User-SCEP-{UniqueID}-Description-End -->
 
@@ -2478,6 +2505,7 @@ Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge.
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional.
+
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node isn't specified when NGC KSP is chosen, enrollment will fail.
 <!-- User-SCEP-{UniqueID}-Install-ContainerName-Description-End -->
 
@@ -2676,6 +2704,7 @@ For NGC, only SHA256 is supported as the supported algorithm.
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required for enrollment. Specify private key length (RSA).
+
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- User-SCEP-{UniqueID}-Install-KeyLength-Description-End -->
 
@@ -2728,6 +2757,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specify where to keep the private key. Note that even it's protected by TPM, it isn't guarded with TPM PIN.
+
 SCEP enrolled cert doesn't support TPM PIN protection.
 <!-- User-SCEP-{UniqueID}-Install-KeyProtection-Description-End -->
 
@@ -2819,6 +2849,7 @@ Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Special to SCEP. Specify device retry times when the SCEP sever sends pending status. Format is int. Default value is 3. Max value: the value can't be larger than 30. If it's larger than 30, the device will use 30.
+
 The min value is 0 which means no retry.
 <!-- User-SCEP-{UniqueID}-Install-RetryCount-Description-End -->
 
@@ -3062,6 +3093,7 @@ Optional. OID of certificate template name. Note that this name is typically ign
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Description-Begin -->
 <!-- Description-Source-DDF -->
 Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
+
 MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) the SCEP server as part of certificate enrollment request. It's the server's decision on how to use this valid period to create the certificate.
 <!-- User-SCEP-{UniqueID}-Install-ValidPeriod-Description-End -->
 
@@ -3195,7 +3227,9 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 <!-- User-SCEP-{UniqueID}-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
 Required. Specify the latest status for the certificate due to enroll request.
+
 Valid values are:
+
 1 - finished successfully
 2 - pending (the device hasn't finished the action but has received the SCEP server pending response)
 32 - unknown

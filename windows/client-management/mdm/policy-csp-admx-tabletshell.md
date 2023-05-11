@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TabletShell Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -287,7 +287,7 @@ Prevents printing to Journal Note Writer.
 
 - If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
 
-- If you disable this policy, you will be able to use this feature to print to a Journal Note.
+- If you disable this policy, you'll be able to use this feature to print to a Journal Note.
 
 - If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 <!-- DisableNoteWriterPrinting_1-Description-End -->
@@ -348,7 +348,7 @@ Prevents printing to Journal Note Writer.
 
 - If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
 
-- If you disable this policy, you will be able to use this feature to print to a Journal Note.
+- If you disable this policy, you'll be able to use this feature to print to a Journal Note.
 
 - If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 <!-- DisableNoteWriterPrinting_2-Description-End -->
@@ -1009,7 +1009,7 @@ Prevents the user from launching an application from a Tablet PC hardware button
 <!-- Description-Source-ADMX -->
 Prevents press and hold actions on hardware buttons, so that only one action is available per button.
 
-- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator."
+- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator".
 
 - If you disable this policy, press and hold actions for buttons will be available.
 
@@ -1070,7 +1070,7 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 <!-- Description-Source-ADMX -->
 Prevents press and hold actions on hardware buttons, so that only one action is available per button.
 
-- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator."
+- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator".
 
 - If you disable this policy, press and hold actions for buttons will be available.
 

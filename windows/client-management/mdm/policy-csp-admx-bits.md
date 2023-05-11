@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Bits Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -287,7 +287,9 @@ If BITS peer caching is enabled, BITS caches downloaded files and makes them ava
 <!-- BITS_MaxBandwidthServedForPeers-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting doesn't affect transfers from the origin server).
+
 To prevent any negative impact to a computer caused by serving other peers, by default BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100 Mbps network card and a 56 Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps.
+
 You can change the default behavior of BITS, and specify a fixed maximum bandwidth that BITS will use for peer caching.
 
 - If you enable this policy setting, you can enter a value in bits per second (bps) between 1048576 and 4294967200 to use as the maximum network bandwidth used for peer caching.

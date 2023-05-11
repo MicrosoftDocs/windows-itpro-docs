@@ -4,7 +4,7 @@ description: Learn more about the ADMX_IIS Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -42,7 +42,8 @@ ms.topic: reference
 "This policy setting prevents installation of Internet Information Services (IIS) on this computer.
 
 - If you enable this policy setting, Internet Information Services (IIS) can't be installed, and you won't be able to install Windows components or applications that require IIS. Users installing Windows components or applications that require IIS might not receive a warning that IIS can't be installed because of this Group Policy setting. Enabling this setting won't have any effect on IIS if IIS is already installed on the computer.
-- If you disable or don't configure this policy setting, IIS can be installed, as well as all the programs and applications that require IIS to run."
+
+- If you disable or don't configure this policy setting, IIS can be installed, as well as all the programs and applications that require IIS to run".
 <!-- PreventIISInstall-Description-End -->
 
 <!-- PreventIISInstall-Editable-Begin -->

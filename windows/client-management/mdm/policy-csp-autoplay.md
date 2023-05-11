@@ -4,7 +4,7 @@ description: Learn more about the Autoplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -116,8 +116,7 @@ This creates a major security concern as code may be executed without user's kno
 
 - If you enable this policy setting, an Administrator can change the default Windows Vista or later behavior for autorun to:
 
-a) Completely disable autorun commands, or
-b) Revert back to pre-Windows Vista behavior of automatically executing the autorun command.
+a) Completely disable autorun commands, or b) Revert back to pre-Windows Vista behavior of automatically executing the autorun command.
 
 - If you disable or not configure this policy setting, Windows Vista or later will prompt the user whether autorun command is to be run.
 <!-- SetDefaultAutoRunBehavior-Description-End -->

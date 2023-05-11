@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1237,10 +1237,15 @@ A unique GUID string identifier for this dynamic keyword address.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Description-Begin -->
 <!-- Description-Source-DDF -->
 Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value shouldn't be set if AutoResolve is true.
+
 Valid tokens include:
+
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Description-End -->
 
@@ -1491,6 +1496,7 @@ Specifies the action for the rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the action the rule enforces:
+
 0 - Block
 1 - Allow.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Action-Type-Description-End -->
@@ -1545,9 +1551,12 @@ Rules that control connections for an app, program or service.
 
 Specified based on the intersection of the following nodes.
 
-PackageFamilyName
-FilePath
-FQBN
+PackageFamilyName.
+
+FilePath.
+
+FQBN.
+
 ServiceName.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-App-Description-End -->
 
@@ -1785,6 +1794,7 @@ Specifies the description of the rule.
 The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
+
 OUT - the rule applies to outbound traffic.
 
 If not specified the default is OUT.
@@ -1889,6 +1899,7 @@ New rules have the EdgeTraversal property disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
+
 If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-Enabled-Description-End -->
 
@@ -1978,6 +1989,7 @@ Comma separated list of ICMP types and codes applicable to the firewall rule. To
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Description-Begin -->
 <!-- Description-Source-DDF -->
 String value. Multiple interface types can be included in the string by separating each value with a ",". Acceptable values are "RemoteAccess", "Wireless", "Lan", "MBB", and "All".
+
 If more than one interface type is specified, the strings must be separated by a comma.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-InterfaceTypes-Description-End -->
 
@@ -2031,12 +2043,17 @@ If more than one interface type is specified, the strings must be separated by a
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "\*" is the default value.
+
 Valid tokens include:
+
 "\*" indicates any local address. If present, this must be the only token included.
 
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-End -->
 
@@ -2078,6 +2095,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
+
 When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalPortRanges-Description-End -->
 
@@ -2119,6 +2137,7 @@ When setting this field in a firewall rule, the protocol field must also be set,
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the list of authorized local users for the app container.
+
 This is a string in Security Descriptor Definition Language (SDDL) format\.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-LocalUserAuthorizedList-Description-End -->
 
@@ -2198,7 +2217,7 @@ Specifies the friendly name of the firewall rule.
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ".", and "_". A PolicyAppId and ServiceName can't be specified in the same rule.
+Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ""., and "_". A PolicyAppId and ServiceName can't be specified in the same rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Editable-Begin -->
@@ -2370,7 +2389,9 @@ Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying th
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:
+
 "\*" indicates any remote address. If present, this must be the only token included.
+
 "Defaultgateway"
 "DHCP"
 "DNS"
@@ -2380,9 +2401,13 @@ Consists of one or more comma-delimited tokens specifying the remote addresses c
 "Internet"
 "PlayToRenderers"
 "LocalSubnet" indicates any local address on the local subnet. This token isn't case-sensitive.
+
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-End -->
 
@@ -2424,6 +2449,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the default is All.
+
 When setting this field in a firewall rule, the protocol field must also be set, to either 6 (TCP) or 17 (UDP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemotePortRanges-Description-End -->
 
@@ -3117,6 +3143,7 @@ Unique alpha numeric identifier for the rule. The rule name mustn't include a fo
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Description-Begin -->
 <!-- Description-Source-DDF -->
 Specifies the action the rule enforces:
+
 0 - Block
 1 - Allow.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Description-End -->
@@ -3170,6 +3197,7 @@ Specifies the action the rule enforces:
 The rule is enabled based on the traffic direction as following.
 
 IN - the rule applies to inbound traffic.
+
 OUT - the rule applies to outbound traffic.
 
 If not specified the default is OUT.
@@ -3222,6 +3250,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
 Indicates whether the rule is enabled or disabled. If the rule must be enabled, this value must be set to true.
+
 If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Description-End -->
 
@@ -3271,12 +3300,17 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "\*" is the default value.
+
 Valid tokens include:
+
 "\*" indicates any local address. If present, this must be the only token included.
 
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Description-End -->
 
@@ -3527,10 +3561,15 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-Begin -->
 <!-- Description-Source-DDF -->
 Consists of one or more comma-delimited tokens specifying the remote addresses covered by the rule. The default value is "\*". Valid tokens include:
+
 "\*" indicates any remote address. If present, this must be the only token included.
+
 A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+
 A valid IPv6 address.
+
 An IPv4 address range in the format of "start address - end address" with no spaces included.
+
 An IPv6 address range in the format of "start address - end address" with no spaces included. If not specified the default is All.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Description-End -->
 

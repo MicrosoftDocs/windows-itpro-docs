@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Printing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -116,7 +116,9 @@ Not all applications support driver isolation. By default, Microsoft Excel 2007,
 Note:
 
 -This policy setting applies only to applications opted into isolation.
+
 -This policy setting applies only to print drivers loaded by applications. Print drivers loaded by the print spooler aren't affected.
+
 -This policy setting is only checked once during the lifetime of a process. After changing the policy, a running application must be relaunched before settings take effect.
 <!-- ApplicationDriverIsolation-Description-End -->
 
@@ -179,7 +181,7 @@ By default, the Printers folder includes a link to the Microsoft Support Web pag
 - If you disable this setting or don't configure it, or if you don't enter an alternate Internet address, the default link will appear in the Printers folder.
 
 > [!NOTE]
-> Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect. (To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders.")
+> Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect. (To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders").
 
 Also, see the "Activate Internet printing" setting in this setting folder and the "Browse a common web site to find printers" setting in User Configuration\Administrative Templates\Control Panel\Printers.
 
@@ -238,11 +240,12 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 <!-- DomainPrinters-Description-Begin -->
 <!-- Description-Source-ADMX -->
 
-- If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, e.g. a domain-joined laptop on a corporate network.)
+- If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, e.g. a domain-joined laptop on a corporate network).
 
 - If this policy setting is disabled, the network scan page won't be displayed.
 
 - If this policy setting isn't configured, the Add Printer wizard will display the default number of printers of each type:
+
 Directory printers: 20
 TCP/IP printers: 0
 Web Services printers: 0
@@ -319,6 +322,7 @@ This policy setting allows you to manage where client computers search for Point
 - If you disable this policy setting, the client computer will only search the local driver store and server driver cache for compatible Point and Print drivers. If it's unable to find a compatible driver, then the Point and Print connection will fail.
 
 This policy setting isn't configured by default, and the behavior depends on the version of Windows that you are using.
+
 By default, Windows Ultimate, Professional and Home SKUs will continue to search for compatible Point and Print drivers from Windows Update, if needed. However, you must explicitly enable this policy setting for other versions of Windows (for example Windows Enterprise, and all versions of Windows Server 2008 R2 and later) to have the same behavior.
 <!-- DoNotInstallCompatibleDriverFromWindowsUpdate-Description-End -->
 
@@ -573,7 +577,7 @@ If you enable this setting and type an Internet or intranet address in the text 
 
 This setting makes it easy for users to find the printers you want them to add.
 
-Also, see the "Custom support URL in the Printers folder's left pane" and "Activate Internet printing" settings in "Computer Configuration\Administrative Templates\Printers."
+Also, see the "Custom support URL in the Printers folder's left pane" and "Activate Internet printing" settings in "Computer Configuration\Administrative Templates\Printers".
 <!-- IntranetPrintersUrl-Description-End -->
 
 <!-- IntranetPrintersUrl-Editable-Begin -->
@@ -873,11 +877,12 @@ This setting doesn't prevent users from running other programs to delete a print
 
 <!-- NonDomainPrinters-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on an unmanaged network (when the computer isn't able to reach a domain controller, e.g. a domain-joined laptop on a home network.)
+This policy sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on an unmanaged network (when the computer isn't able to reach a domain controller, e.g. a domain-joined laptop on a home network).
 
 - If this setting is disabled, the network scan page won't be displayed.
 
 If this setting isn't configured, the Add Printer wizard will display the default number of printers of each type:
+
 TCP/IP printers: 50
 Web Services printers: 50
 Bluetooth printers: 10
@@ -1321,7 +1326,9 @@ This policy setting determines whether the print spooler will execute print driv
 Note:
 
 -Other system or driver policy settings may alter the process in which a print driver is executed.
+
 -This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications aren't affected.
+
 -This policy setting takes effect without restarting the print spooler service.
 <!-- PrintDriverIsolationExecutionPolicy-Description-End -->
 
@@ -1386,7 +1393,9 @@ This policy setting determines whether the print spooler will override the Drive
 Note:
 
 -Other system or driver policy settings may alter the process in which a print driver is executed.
+
 -This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications aren't affected.
+
 -This policy setting takes effect without restarting the print spooler service.
 <!-- PrintDriverIsolationOverrideCompat-Description-End -->
 
