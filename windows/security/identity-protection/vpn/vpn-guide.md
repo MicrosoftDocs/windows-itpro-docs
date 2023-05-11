@@ -14,6 +14,8 @@ To create a Windows 10 VPN device configuration profile see: [Windows 10 and Win
 > [!NOTE]
 > This guide does not explain server deployment.
 
+[!INCLUDE [virtual-private-network-vpn](../../../../includes/licensing/virtual-private-network-vpn.md)]
+
 ## In this guide
 
 | Article | Description  |

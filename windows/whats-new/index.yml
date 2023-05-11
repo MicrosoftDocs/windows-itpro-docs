@@ -32,6 +32,8 @@ landingContent:
             url: windows-11-plan.md
           - text: Prepare for Windows 11
             url: windows-11-prepare.md
+          - text: Windows commercial licensing overview
+            url: windows-licensing.md
 
   - title: Windows 10
     linkLists:
