@@ -1,7 +1,7 @@
 ---
 title: Manage Windows Autopatch groups
 description: This article explains how to manage Autopatch groups
-ms.date: 05/05/2023
+ms.date: 05/11/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -219,3 +219,14 @@ The Windows Autopatch team is currently developing the Autopatch group Azure AD 
 > - Modern Workplace Devices-Windows Autopatch-Broad
 > 
 > Use the [Policy health feature](../operate/windows-autopatch-policy-health-and-remediation.md) to restore these groups, if needed. For more information, see [restore deployment groups](../operate/windows-autopatch-policy-health-and-remediation.md#restore-deployment-groups).
+
+### Autopatch group rename
+
+- **Status: Active**
+
+The Windows Autopatch team is aware that the Windows Autopatch service doesn't allow the rename of Autopatch groups yet. The Autopatch group name is appended to all deployment ring names in the Autopatch group.
+
+> [!IMPORTANT]
+> During the public preview, if you try to rename either the [Update rings](/mem/intune/protect/windows-10-update-rings) or [feature updates](/mem/intune/protect/windows-10-feature-updates) for Windows 10 and later policies directly in the Microsoft Intune end-user experience, the policy names are reverted back to the name defined by the Autopatch group end-user experience interface.
+
+The Windows Autopatch team is currently developing the rename feature and plan to make it available during public preview.
