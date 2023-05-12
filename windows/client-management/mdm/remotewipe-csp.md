@@ -19,6 +19,8 @@ ms.topic: reference
 <!-- RemoteWipe-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The RemoteWipe configuration service provider can be used by mobile operators DM server or enterprise management server to remotely reset a device. The RemoteWipe configuration service provider can make the data stored in memory and hard disks difficult to recover if the device is remotely reset after being lost or stolen. Enterprise IT Professionals can update these settings by using the Exchange Server.
+
+[!INCLUDE [remote-wipe](../../../includes/licensing/remote-wipe.md)]
 <!-- RemoteWipe-Editable-End -->
 
 <!-- RemoteWipe-Tree-Begin -->

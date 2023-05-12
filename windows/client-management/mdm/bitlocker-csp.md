@@ -4,7 +4,7 @@ description: Learn more about the BitLocker CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -20,6 +20,9 @@ ms.topic: reference
 > This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+> [!IMPORTANT]
+> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
 
 <!-- BitLocker-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -40,6 +43,7 @@ The following list shows the BitLocker configuration service provider nodes:
 
 - ./Device/Vendor/MSFT/BitLocker
   - [AllowStandardUserEncryption](#allowstandarduserencryption)
+  - [AllowSuspensionOfBitLockerProtection](#allowsuspensionofbitlockerprotection)
   - [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption)
   - [ConfigureRecoveryPasswordRotation](#configurerecoverypasswordrotation)
   - [EncryptionMethodByDriveType](#encryptionmethodbydrivetype)
@@ -148,6 +152,63 @@ To disable this policy, use the following SyncML:
 <!-- Device-AllowStandardUserEncryption-Examples-End -->
 
 <!-- Device-AllowStandardUserEncryption-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-Begin -->
+## AllowSuspensionOfBitLockerProtection
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- Device-AllowSuspensionOfBitLockerProtection-Applicability-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/BitLocker/AllowSuspensionOfBitLockerProtection
+```
+<!-- Device-AllowSuspensionOfBitLockerProtection-OmaUri-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows suspending protection for BitLocker Drive Encryption when enabled and prevents suspending protection when disabled.
+
+> [!WARNING]
+> When policy is disabled, some scenarios will be blocked and prevent those scenarios from behaving normally.
+
+The expected values for this policy are:
+
+0 = Prevent BitLocker Drive Encryption protection from being suspended.
+1 = This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection.
+<!-- Device-AllowSuspensionOfBitLockerProtection-Description-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-AllowSuspensionOfBitLockerProtection-Editable-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- Device-AllowSuspensionOfBitLockerProtection-DFProperties-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Prevent BitLocker Drive Encryption protection from being suspended. |
+| 1 (Default) | This is the default, when the policy is not set. Allows suspending BitLocker Drive Encryption protection. |
+<!-- Device-AllowSuspensionOfBitLockerProtection-AllowedValues-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-AllowSuspensionOfBitLockerProtection-Examples-End -->
+
+<!-- Device-AllowSuspensionOfBitLockerProtection-End -->
 
 <!-- Device-AllowWarningForOtherDiskEncryption-Begin -->
 ## AllowWarningForOtherDiskEncryption

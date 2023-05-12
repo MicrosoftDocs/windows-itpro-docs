@@ -4,7 +4,7 @@ description: Learn more about the TextInput Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -949,7 +949,7 @@ This Policy setting applies only to Microsoft Traditional Chinese IME.
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. When this policy is enabled, the touch keyboard automatically shows up when the device is in the desktop mode. This policy corresponds to Show the touch keyboard when not in tablet mode and there's no keyboard attached in the Settings app.
+This policy allows the IT admin to control whether the touch keyboard should show up on tapping an edit control. By default, when you tap a textbox, the touch keyboard automatically shows up when there's no keyboard attached. When this policy is enabled, the touch keyboard can be shown or suppressed regardless of the hardware keyboard availability. This policy corresponds to Show the touch keyboard setting in the Settings app.
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Description-End -->
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Editable-Begin -->
@@ -971,8 +971,9 @@ This policy allows the IT admin to enable the touch keyboard to automatically sh
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
+| 0 (Default) | Never. |
+| 1 | When no keyboard attached. |
+| 2 | Always. |
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-AllowedValues-End -->
 
 <!-- EnableTouchKeyboardAutoInvokeInDesktopMode-Examples-Begin -->
