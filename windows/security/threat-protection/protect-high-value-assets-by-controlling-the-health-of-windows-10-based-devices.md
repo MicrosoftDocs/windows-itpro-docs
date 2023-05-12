@@ -1,5 +1,5 @@
 ---
-title: Control the health of Windows 10-based devices (Windows 10)
+title: Control the health of Windows devices
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
 ms.prod: windows-client
 ms.date: 10/13/2017
@@ -11,7 +11,7 @@ manager: dougeby
 ms.topic: conceptual
 ---
 
-# Control the health of Windows 10-based devices
+# Control the health of Windows devices
 
 **Applies to**
 
@@ -326,6 +326,8 @@ Device health attestation uses the TPM to provide cryptographically strong and v
 For Windows 10-based devices, Microsoft introduces a new public API that will allow MDM software to access a remote attestation service called Windows Health Attestation Service. A health attestation result, in addition with other elements, can be used to allow or deny access to networks, apps, or services, based on whether devices prove to be healthy.
 
 For more information on device health attestation, see the [Detect an unhealthy Windows 10-based device](#detect-unhealthy) section.
+
+[!INCLUDE [device-health-attestation-service](../../../includes/licensing/device-health-attestation-service.md)]
 
 ### <a href="" id="hardware-req"></a>Hardware requirements
 

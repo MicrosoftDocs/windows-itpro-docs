@@ -1,7 +1,7 @@
 ---
 title: Configure federated sign-in for Windows devices
 description: Description of federated sign-in feature for the Education SKUs of Windows 11 and how to configure it via Intune or provisioning packages.
-ms.date: 04/11/2023
+ms.date: 04/24/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -53,9 +53,11 @@ To use federated sign-in, the devices must have Internet access. This feature wo
 > - provisioning packages (PPKG)
 > - Windows Autopilot self-deploying mode
 
-### System requirements
+[!INCLUDE [federated-sign-in](../../includes/licensing/federated-sign-in.md)]
 
-Federated sign-in is supported on the following Windows SKUs and versions:
+## System requirements
+
+Federated sign-in is supported on the following Windows editions and versions:
 
 - Windows 11 SE, version 22H2 and later
 - Windows 11 Pro Edu/Education, version 22H2 with [KB5022913][KB-1]

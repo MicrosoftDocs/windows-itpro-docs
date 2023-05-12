@@ -1,0 +1,5 @@
+items:
+- name: FIPS 140-2 Validation
+  href: ../../threat-protection/fips-140-validation.md
+- name: Common Criteria Certifications
+  href: ../../threat-protection/windows-platform-common-criteria.md
