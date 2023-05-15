@@ -59,6 +59,9 @@ Beginning with Windows 11 22H2, the Windows Security app shows a warning if memo
 
 To proactively dismiss the memory integrity warning, you can set the **Hardware_HVCI_Off** (DWORD) registry value under `HKLM\SOFTWARE\Microsoft\Windows Security Health\State` to 0. After you change the registry value, you must restart the device for the change to take effect.
 
+> [!WARNING]
+> In Windows 11 22H2, Windows will delete this key even if it was configured by an administrator directly and not via Windows Security App. This prevents administrators from proactively dismissing this warning. This behavior is not intended and will be rectified in a future release of Windows Security App. 
+
 ### Enable memory integrity using Intune
 
 Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure these settings by using the [settings catalog](/mem/intune/configuration/settings-catalog).
