@@ -75,5 +75,5 @@ To be taken out of the **inactive** status, you must [resolve any critical actio
 
 | Impact area | Description |
 | ----- | ----- |
-| Management | Windows Autopatch isn’t able to manage your tenant and perform non-interactive actions we use to run the service. Non-interactive actions include:<ul><li>Managing the Windows Autopatch service</li><li>Publishing the baseline configuration updates to your tenant’s devices</li><li>Maintaining overall service health</li></ul><p>For more information, see [Windows Autopatch enterprise applications](../references/windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications)</p>|
+| Management | Windows Autopatch isn’t able to manage your tenant and perform non-interactive actions we use to run the service. Non-interactive actions include:<ul><li>Managing the Windows Autopatch service</li><li>Publishing the baseline configuration updates to your tenant’s devices</li><li>Maintaining overall service health</li></ul><p>For more information, see [Windows Autopatch enterprise applications](../references/windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications).</p>|
 | Device updates | Changes to Windows Autopatch policies aren't pushed to your devices. The existing configurations on these devices remain unchanged, and they continue receiving updates. |
