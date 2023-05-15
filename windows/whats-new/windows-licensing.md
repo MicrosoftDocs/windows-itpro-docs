@@ -199,7 +199,7 @@ To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Win
 [MEM-3]: /mem/intune/protect/windows-update-compatibility-reports
 [UP-1]: /universal-print/
 [WIN-1]: /windows/security/identity-protection/credential-guard/credential-guard
-[WIN-2]: /windows/security/information-protection/bitlocker/bitlocker-overview
+[WIN-2]: /windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises
 [WIN-3]: /windows/security/information-protection/personal-data-encryption/overview-pde
 [WIN-4]: /windows/client-management/mdm/policy-csp-experience
 [WIN-5]: /windows/deployment/windows-10-subscription-activation
