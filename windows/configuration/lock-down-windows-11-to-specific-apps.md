@@ -31,6 +31,7 @@ An assigned access multi-app kiosk runs one or more apps from the desktop. Peopl
 ## Configure a Multi-App Kiosk
 
 See the table below for the different methods to configure a multi-app kiosk in Windows 11.
+
 |Configuration Method|Availability|
 |--------------------|------------|
 |[MDM WMI Bridge Provider](#configure-a-kiosk-using-wmi-bridge) | Available May 2023|
