@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 05/15/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1947,12 +1947,19 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-OmaUri-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Description-Begin -->
-<!-- Description-Source-Manual-Forced -->
+<!-- Description-Source-DDF -->
+String value. Multiple ICMP type+code pairs can be included in the string by separating each value with a ",". If more than one ICMP type+code pair is specified, the strings must be separated by a comma.
+
+To specify all ICMP types and codes, use the "\*" character. For specific ICMP types and codes, use the ":" to separate the type and code.
+
+The following are valid examples: 3:4 or 1:*. The "\*" character can be used to represent any code. The "\*" character can't be used to specify any type, examples such as "*:4" or "*:*" are invalid.
+
+When setting this field in a firewall rule, the protocol field must also be set, to either 1 (ICMP) or 58 (IPv6-ICMP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Comma separated list of ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the "\*" character. For specific ICMP types and codes, use the ":" character to separate the type and code, for example, 3:4, 1:\*. The "\*" character can be used to represent any code. The "\*" character cannot be used to specify any type; examples such as "\*:4" or "\*:\*" are invalid. If not specified, the default is All.
+If not specified, the default is All.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Editable-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-DFProperties-Begin -->
