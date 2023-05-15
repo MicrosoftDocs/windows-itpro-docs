@@ -336,7 +336,7 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 
 Set-CimInstance -CimInstance $obj
 ```
-# Sample Assigned Access XML
+## Sample Assigned Access XML
 
 Compare the below to your XML file to check for correct formatting. 
 
