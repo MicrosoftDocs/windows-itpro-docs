@@ -6,7 +6,7 @@ ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
-author: tiaraquan
+author: tiaraquan 
 ms.author: tiaraquan
 manager: dougeby 
 ms.reviewer: hathind
