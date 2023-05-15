@@ -56,7 +56,7 @@ Let's start by looking at the basic structure of the XML file.
 You can start your file by pasting the following XML into an XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this article. 
 
 > [!NOTE]
-> If you want to write a configuration file to be applied to both Windows 10 and Windows 11 devices, follow the [Windows 10 instructions](lock-down-windows-10-to-specific-apps.md) to add the StartLayout tag to your XML file, just avobe the StartPins tag. Windows will automatically ignore the sections that don't apply to the version running. 
+> If you want to write a configuration file to be applied to both Windows 10 and Windows 11 devices, follow the [Windows 10 instructions](lock-down-windows-10-to-specific-apps.md) to add the StartLayout tag to your XML file, just above the StartPins tag. Windows will automatically ignore the sections that don't apply to the version running. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -116,7 +116,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 **AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. Starting with Windows 10 version 1809, you can configure a single app in the **AllowedApps** list to run automatically when the assigned access user account signs in.
 
-- For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md), or [get the AUMID from the Start Layout XML](#startlayout).
+- For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md), or [get the AUMID from the Start Layout XML](#create-the-xml-file).
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of `%variableName%`. For example, `%systemroot%` or `%windir%`.
 - If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both `"C:\Program Files\internet explorer\iexplore.exe"` and `"C:\Program Files (x86)\Internet Explorer\iexplore.exe"`.
 - To configure a single app to launch automatically when the user signs in, include `rs5:AutoLaunch="true"` after the AUMID or path. You can also include arguments to be passed to the app. For an example, see [the AllowedApps sample XML](#apps-sample).
