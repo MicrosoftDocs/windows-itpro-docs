@@ -56,7 +56,7 @@ Let's start by looking at the basic structure of the XML file.
 You can start your file by pasting the following XML into an XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this article. 
 
 > [!NOTE]
-> If you want to write a configuration file to be applied to both WIndows 1o and Windows 11 devices, follow the [Windows 10 instructions](lock-down-windows-10-to-specific-apps.md) to add the StartLayout tag to your XML file, just avobe the StartPins tag. Windows will automatically ignore the sections that don't apply to the version running. 
+> If you want to write a configuration file to be applied to both Windows 10 and Windows 11 devices, follow the [Windows 10 instructions](lock-down-windows-10-to-specific-apps.md) to add the StartLayout tag to your XML file, just avobe the StartPins tag. Windows will automatically ignore the sections that don't apply to the version running. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
