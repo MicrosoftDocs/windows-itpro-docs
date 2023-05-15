@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 05/01/2023
+ms.date: 05/15/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby 
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # What's new 2023
@@ -24,6 +27,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Maintain the Windows Autopatch environment](../operate/windows-autopatch-maintain-environment.md) | Updated the following sections:<ul><li>Tenant actions</li><li>Tenant action severity types</li><li>Critical actions</li></ul><p>Added the [Inactive status](../operate/windows-autopatch-maintain-environment.md#inactive-status) section</p>
 | [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md) | Updated article to include Windows Autopatch groups. The Windows Autopatch groups feature is in public preview |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) | Updated article to include Windows Autopatch groups. The Windows Autopatch groups feature is in public preview |
 | [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
