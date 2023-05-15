@@ -1952,7 +1952,7 @@ String value. Multiple ICMP type+code pairs can be included in the string by sep
 
 To specify all ICMP types and codes, use the "\*" character. For specific ICMP types and codes, use the ":" to separate the type and code.
 
-The following are valid examples: 3:4 or 1:*. The "\*" character can be used to represent any code. The "\*" character can't be used to specify any type, examples such as "*:4" or "*:*" are invalid.
+The following are valid examples: 3:4 or 1:\*. The "\*" character can be used to represent any code. The "\*" character can't be used to specify any type, examples such as "\*:4" or "\*:\*" are invalid.
 
 When setting this field in a firewall rule, the protocol field must also be set, to either 1 (ICMP) or 58 (IPv6-ICMP).
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-IcmpTypesAndCodes-Description-End -->
