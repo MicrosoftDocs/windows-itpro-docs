@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 09/09/2021
+ms.date: 05/01/2023
 ms.reviewer: 
 manager: aaroncz
 ms.custom: asr
@@ -48,6 +48,8 @@ Application Guard has been created to target several types of devices:
 - **Bring your own device (BYOD) mobile laptops**. These personally owned laptops aren't domain-joined, but are managed by your organization through tools, such as Microsoft Intune. The employee is typically an admin on the device and uses a high-bandwidth wireless corporate network while at work and a comparable personal network while at home.
 
 - **Personal devices**. These personally owned desktops or mobile laptops aren't domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
+
+[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
 
 ## Related articles
 

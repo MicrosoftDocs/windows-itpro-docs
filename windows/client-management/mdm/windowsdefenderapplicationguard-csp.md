@@ -19,6 +19,8 @@ ms.topic: reference
 <!-- WindowsDefenderApplicationGuard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Microsoft Defender Application Guard. This CSP was added in Windows 10, version 1709.
+
+[!INCLUDE [microsoft-defender-application-guard-mdag-configure-via-mdm](../../../includes/licensing/microsoft-defender-application-guard-mdag-configure-via-mdm.md)]
 <!-- WindowsDefenderApplicationGuard-Editable-End -->
 
 <!-- WindowsDefenderApplicationGuard-Tree-Begin -->

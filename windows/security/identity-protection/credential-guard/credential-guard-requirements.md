@@ -66,6 +66,8 @@ Applications may cause performance issues when they attempt to hook the isolated
 
 Services or protocols that rely on Kerberos, such as file shares, remote desktop, or BranchCache, continue to work and are not affected by Windows Defender Credential Guard.
 
+[!INCLUDE [windows-defender-credential-guard](../../../../includes/licensing/windows-defender-credential-guard.md)]
+
 ## Security considerations
 
 All computers that meet baseline protections for hardware, firmware, and software can use Windows Defender Credential Guard.
@@ -96,7 +98,7 @@ The following tables describe baseline protections, plus protections for improve
 |Protections for Improved Security|Description|
 |---|---|
 |Hardware: **IOMMU** (input/output memory management unit)|**Requirement**: </br> - VT-D or AMD Vi IOMMU </br> </br> **Security benefits**: </br> - An IOMMU can enhance system resiliency against memory attacks. For more information, see [Advanced Configuration and Power Interface (ACPI) description tables](/windows-hardware/drivers/bringup/acpi-system-description-tables)|
-|Firmware: **Securing Boot Configuration and Management**|**Requirements**: </br> - BIOS password or stronger authentication must be supported. </br> - In the BIOS configuration, BIOS authentication must be set. </br> - There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system. </br> - In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.|
+|Firmware: **Securing Boot Configuration and Management**|**Requirements**: </br> - BIOS password or stronger authentication must be supported. </br> - In the BIOS configuration, BIOS authentication must be set. </br> - There must be support for protected BIOS option to configure list of permitted boot devices (for example, "Boot only from internal hard drive") and boot device order, overriding BOOTORDER modification made by operating system. </br> - In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.|
 |Firmware: **Secure MOR, revision 2 implementation**|**Requirement**: </br> - Secure MOR, revision 2 implementation|
 
 ### 2016 Additional security qualifications starting with Windows 10, version 1607, and Windows Server 2016
