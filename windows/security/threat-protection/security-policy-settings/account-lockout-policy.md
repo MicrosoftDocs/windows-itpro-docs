@@ -32,6 +32,8 @@ The following topics provide a discussion of each policy setting's implementatio
 >[!NOTE]
 >Account lockout settings for remote access clients can be configured separately by editing the Registry on the server that manages the remote access. For more information, see [How to configure remote access client account lockout](/troubleshoot/windows-server/networking/configure-remote-access-client-account-lockout).
 
+[!INCLUDE [account-lockout-policy](../../../../includes/licensing/account-lockout-policy.md)]
+
 ## In this section
 
 | Topic | Description |

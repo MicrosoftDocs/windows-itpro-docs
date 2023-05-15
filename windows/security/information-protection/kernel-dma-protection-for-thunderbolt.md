@@ -41,6 +41,8 @@ When Kernel DMA Protection is enabled:
 - Peripherals with DMA Remapping-compatible device drivers will be automatically enumerated and started
 - Peripherals with DMA Remapping-incompatible drivers will be blocked from starting if the peripheral was plugged in before an authorized user logs in, or while the screen is locked. Once the system is unlocked, the peripheral driver will be started by the OS, and the peripheral will continue to function normally until the system is rebooted, or the peripheral is unplugged. The peripheral will continue to function normally if the user locks the screen or signs out of the system.
 
+[!INCLUDE [kernel-direct-memory-access-dma-protection](../../../includes/licensing/kernel-direct-memory-access-dma-protection.md)]
+
 ## System compatibility
 
 Kernel DMA Protection requires UEFI firmware support, and Virtualization-based Security (VBS) isn't required.
