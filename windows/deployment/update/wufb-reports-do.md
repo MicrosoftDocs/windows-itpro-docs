@@ -14,14 +14,15 @@ ms.technology: itpro-updates
 <!--7715481-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement. 
+[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement.
 
 Windows Update for Business reports provides Delivery Optimization information in the following places:
+
 - The Windows Update for Business reports [workbook](wufb-reports-workbook.md)
 - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
 - [UCDOStatus](wufb-reports-schema-ucdostatus.md)
 
-Windows Update for Business reports doesn't include Delivery Optimization data for Windows Insider devices. 
+Windows Update for Business reports doesn't include Delivery Optimization data for Windows Insider devices.
 
 ## Delivery Optimization terms
 
@@ -29,16 +30,17 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 - **Peer**: A device in the solution
 - **Peering 'ON'** - Devices where DO peer-to-peer is enabled in one of the following modes:
-   - LAN (1)
-   - Group (2)
-   - Internet (3)
+  - LAN (1)
+  - Group (2)
+  - Internet (3)
+  
 - **Peering 'OFF'**: Devices where DO peer-to-peer is disabled, set to one of the following modes:
-   - HTTP Only (0)
-   - Simple Mode (99)
-   - Bypass (100), deprecated in Windows 11
+  - HTTP Only (0)
+  - Simple Mode (99)
+  - Bypass (100), deprecated in Windows 11
 - **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache (MCC) out of the total amount of data downloaded.
-   - If bandwidth savings are <= 60%, a *Warning* icon is displayed
-   - When bandwidth savings are <10%, an *Error* icon is displayed.
+- If bandwidth savings are <= 60%, a *Warning* icon is displayed
+- When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 - **P2P Device Count**: The device count is the number of devices configured to use peering.
 - **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
@@ -56,13 +58,13 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 There are several calculated values that appear on the Delivery Optimization report. Listed below each calculation is the table that's used for it:
 
 **Efficiency (%) Calculations**:
- 
+
 - Bandwidth Savings (BW SAV%) = 100 * (BytesFromPeers + BytesFromGroupPeers + BytesFromCache) /
 (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache)
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
 - % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers) / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) 
+- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 **Bytes Calculations**:
@@ -157,10 +159,10 @@ The top groups are represented by the number of devices in a particular group, f
 The GroupID values are encoded for data protection telemetry requirements. You can find more information in the 'Mapping GroupIDs' section above.
 
 - **How can I see data for device in the office vs. out of the office?**
-Today, we don't have a distinction for data that was downloaded by location. 
+Today, we don't have a distinction for data that was downloaded by location.
 
 - **What does the data in UCDOStatus table represent?**
-A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType). 
+A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType).
 
 - **What does the data in UCDOAggregatedStatus table represent?**
 A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
@@ -170,12 +172,12 @@ If there's a Connected Cache server at the ISP level, BytesFromCache will filter
 
 - **What does the 'Other' content type represent?**
 The 'Other' category is a subset of the [complete list](../do/waas-delivery-optimization.md) of supported Delivery Optimization content types including:
-  * Windows Defender definition updates
-  * Intune Win32 apps
-  * Edge Browser updates
-  * Configuration Manager Express updates
-  * Dynamic updates
-  * MDM Agent
-  * Xbox Game Pass (PC)
-  * Windows Package Manager
-  * MSIX
+  - Windows Defender definition updates
+  - Intune Win32 apps
+  - Edge Browser updates
+  - Configuration Manager Express updates
+  - Dynamic updates
+  - MDM Agent
+  - Xbox Game Pass (PC)
+  - Windows Package Manager
+  - MSIX

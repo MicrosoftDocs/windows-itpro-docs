@@ -119,9 +119,8 @@ sections:
           
       - question: How do I turn off Delivery Optimization?
         answer: |
-          Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default) it will do so inconjunction with the HTTP downloader capabilities to optimize bandwidth usage. 
-          If you'd like to prevent the peering capabilities of Delivery Optimization, you can change the Delivery Optimization Download mode setting '99', [Simple mode](waas-delivery-optimization-reference.md#download-mode). Simple mode prevents any peering for the downloaded content. 
-          Delivery Optimization will still be used as the HTTP downloader, but any communication to the cloud peering service is disabled. 
+          Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default) it will do so in conjunction with the HTTP downloader capabilities to optimize bandwidth usage. 
+          If you'd like to prevent the peering capabilities of Delivery Optimization, you have two options, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to either '0' or '99'. Both modes prevent any peering for the downloaded content while still using the HTTP downloader.
       
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
