@@ -73,13 +73,13 @@ Enhanced Phishing Protection can be configured using the following Administrativ
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][WIN-1].
+  
 | Setting                 | OMA-URI                                                                   | Data type |
 |-------------------------|---------------------------------------------------------------------------|-----------|
 | **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
 | **NotifyMalicious**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyMalicious`     | Integer   |
 | **NotifyPasswordReuse** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyPasswordReuse` | Integer   |
 | **NotifyUnsafeApp**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp`     | Integer   |
-
 
 ---
 
@@ -88,7 +88,9 @@ Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][
 By default, Enhanced Phishing Protection is deployed in audit mode, preventing notifications to the users for any protection scenarios. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends diagnostic data through Microsoft Defender. Users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in applications. Because of this possibility, it's recommended that you configure Enhanced Phishing Protection to warn users during all protection scenarios.
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen settings.
+
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+  
 |Settings catalog element|Recommendation|
 |---------|---------|
 |Service Enabled|**Enable**: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends diagnostic data but doesn't show any notifications to your users.|
@@ -114,7 +116,6 @@ To better help you protect your organization, we recommend turning on and using 
 |NotifyPasswordReuse|**1**: Turns on Enhanced Phishing Protection notifications when users reuse their work or school password and encourages them to change their password.|
 |NotifyUnsafeApp|**1**: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in Notepad and Microsoft 365 Office Apps.|
 
-
 ---
 
 ## Related articles
@@ -126,6 +127,4 @@ To better help you protect your organization, we recommend turning on and using 
 <!-- Links -->
 
 [WIN-1]: /windows/client-management/mdm/policy-csp-webthreatdefense
-
 [MEM-2]: /mem/intune/configuration/settings-catalog
-
