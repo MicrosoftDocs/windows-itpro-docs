@@ -23,13 +23,13 @@ sections:
   - name: Ignored
     questions:
       - question: Does Delivery Optimization work with WSUS?
-        answer: Yes. Devices will obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
+        answer: Yes. Devices obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
           
       - question: Which ports does Delivery Optimization use?
         answer: | 
-          Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
+          Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service registers and opens this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
 
-          Delivery Optimization will use Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). To enable this scenario, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+          Delivery Optimization uses Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). To enable this scenario, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
           Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
@@ -66,11 +66,11 @@ sections:
 
       - question: How does Delivery Optimization handle VPNs?
         answer: |
-          Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection will be treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
+          Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection is treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
-          If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
+          If the connection is identified as a VPN, Delivery Optimization suspends uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 
-          If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there will be no peer-to-peer activity over the VPN. When the device isn't connected using a VPN, it can still use peer-to-peer with the default of LAN.
+          If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there is no peer-to-peer activity over the VPN. When the device isn't connected using a VPN, it can still use peer-to-peer with the default of LAN.
 
           With split tunneling, make sure to allow direct access to these endpoints:
 
@@ -115,15 +115,15 @@ sections:
   
             •	*.do.dsp.mp.microsoft.com
 
-            If that's not an option, that try using Group Download mode '2' would be the best next step. For more information on using Group mode, https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#select-the-source-of-group-ids
+            If that's not an option, try using Group Download mode '2' would be the best next step. For more information on using Group mode, https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#select-the-source-of-group-ids
           
-      - question: How do I turn Delivery Optimization off?
+      - question: How do I turn off Delivery Optimization?
         answer: |
-          Delivery Optimization is an HTTP downloader used by a majority of content providers from Microsoft. When a Windows device is configured to use Delivery Optimization peering (on by default), for the content types, in addition to the HTTP downloader capabilities the Delivery Optimization peering service 
-          can be used to optimize bandwidth. If you'd like to prevent the peering capabilities of Delivery Optimization, you can simply change the setting to Download Mode '99', [Simple mode](waas-delivery-optimization-reference.md#download-mode). This will prevent any peering for the downloaded content. 
+          Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a Windows device is configured to use Delivery Optimization peering (on by default), for the content types, in addition to the HTTP downloader capabilities the Delivery Optimization peering service 
+          can be used to optimize bandwidth. If you'd like to prevent the peering capabilities of Delivery Optimization, you can change the setting to Download Mode '99', [Simple mode](waas-delivery-optimization-reference.md#download-mode). Simple mode prevents any peering for the downloaded content. 
           Delivery Optimization will still be used as the HTTP downloader, but any communication to the cloud peering service will be disabled. 
       
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
-          Delivery Optimization is used by a majority of content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers don't realize the vast application of Delivery Optimization and different apps can be 
+          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers don't realize the vast application of Delivery Optimization and different apps can be 
           running in the background. There are different Delivery Optimization [settings](waas-delivery-optimization-reference.md) that can help manage the amount of bandwidth, time of day, etc. Also note that depending on the app, closing the app don't necessarily stop the download.
