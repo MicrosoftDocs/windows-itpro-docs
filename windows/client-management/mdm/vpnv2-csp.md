@@ -2764,7 +2764,7 @@ Required for native profiles. Type of tunneling protocol used.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Using ProtocolList requires additional configuration of the NativeProfile/ProtocolList parameter.
+> Using NativeProtocolType the NativeProfile/ProtocolList node.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-Begin -->
@@ -2896,7 +2896,7 @@ List of inbox VPN protocols in priority order. Up to 4 VPN protocols are support
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. Please see the examples section for the format.
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-Begin -->
@@ -2936,7 +2936,7 @@ List of inbox VPN protocols in priority order. Up to 4 VPN protocols are support
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. Please see the examples section for the format.
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-DFProperties-Begin -->
@@ -2977,7 +2977,7 @@ Inbox VPN protocols type.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. Please see the examples section for the format.
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-DFProperties-Begin -->
@@ -3023,13 +3023,12 @@ Inbox VPN protocols type.
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Description-Begin -->
 <!-- Description-Source-DDF -->
-Default 168, max 500000, min 0
+Default 168, max 500000.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-RetryTimeInHours specifies the length of time Windows will try to use the last succesful protocol first when making a new connection.
-Setting this to 0 disables remembering the last successful protocol.
+RetryTimeInHours specifies the length of time Windows tries to use the last succesful protocol when making a new connection. Setting this value to 0 disables remembering the last successful protocol.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-DFProperties-Begin -->
@@ -6999,6 +6998,8 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Using NativeProtocolType requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-Begin -->
@@ -7021,9 +7022,6 @@ Required for native profiles. Type of tunneling protocol used.
 | Automatic | Automatic. |
 | SSTP | SSTP. |
 | ProtocolList | ProtocolList. |
-
-> [!NOTE]
-> Using ProtocolList requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-AllowedValues-End -->
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Examples-Begin -->
@@ -7126,13 +7124,13 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of inbox VPN protocols in priority order. Up to 4 VPN protocols are supported.
+List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. Please see the examples section for the format.
+> Up to 4 VPN protocols are supported. A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-Begin -->
@@ -7172,7 +7170,7 @@ List of inbox VPN protocols in priority order. Up to 4 VPN protocols are support
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. Please see the examples section for the format.
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-DFProperties-Begin -->
@@ -7213,7 +7211,7 @@ Inbox VPN protocols type.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. Please see the examples section for the format.
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-DFProperties-Begin -->
@@ -7259,13 +7257,12 @@ Inbox VPN protocols type.
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Description-Begin -->
 <!-- Description-Source-DDF -->
-Default 168, max 500000, min 0
+Default 168, max 500000.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-RetryTimeInHours specifies the length of time Windows will try to use the last succesful protocol first when making a new connection.
-Setting this to 0 disables remembering the last successful protocol.
+RetryTimeInHours specifies the length of time Windows tries to use the last succesful protocol when making a new connection. Setting this value to 0 disables remembering the last successful protocol.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-DFProperties-Begin -->
