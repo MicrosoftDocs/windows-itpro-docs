@@ -2763,6 +2763,8 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Using ProtocolList requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-Begin -->
@@ -2786,8 +2788,6 @@ Required for native profiles. Type of tunneling protocol used.
 | SSTP | SSTP. |
 | ProtocolList | ProtocolList. |
 
-> [!NOTE]
-> Using ProtocolList requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-AllowedValues-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Examples-Begin -->
@@ -9024,7 +9024,7 @@ Profile example
         <NativeProtocol>
           <Type>Sstp</Type>
         </NativeProtocol>
-        <RetryTimeinHours>1</RetryTimeinHours>
+        <RetryTimeinHours>168</RetryTimeinHours>
       </ProtocolList>
     <Authentication>
       <UserMethod>Eap</UserMethod>
