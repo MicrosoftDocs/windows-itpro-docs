@@ -35,7 +35,7 @@ items:
     href: ../../information-protection/bitlocker/bitlocker-basic-deployment.md
   - name: Deploy BitLocker on Windows Server 2012 and later
     href: ../../information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md
-  - name: BitLocker management for enterprises
+  - name: BitLocker management
     href: ../../information-protection/bitlocker/bitlocker-management-for-enterprises.md
   - name: Enable Network Unlock with BitLocker
     href: ../../information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md
