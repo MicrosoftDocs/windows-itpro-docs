@@ -110,20 +110,21 @@ sections:
       
       - question: What is the recommended configuration for Delivery Optimization used with Zscaler?
         answer: |
-          The best configuration with Zscaler is to bypass the [hostnames](waas-delivery-optimization-faq.yml#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization) for Delivery Optimization services and allow that traffic to go directly to the Internet and not through Zscaler. 
+          The best configuration with Zscaler is to bypass the [hostnames](waas-delivery-optimization-faq.yml#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization) for Delivery Optimization services, allowing traffic to go directly to the Internet and not through Zscaler. 
           For communication between clients and the Delivery Optimization cloud service:
   
-            •	*.do.dsp.mp.microsoft.com
+              •	*.do.dsp.mp.microsoft.com
 
-            If that's not an option, try using Group Download mode '2' would be the best next step. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
+            If that's not an option, try using Group Download mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
       - question: How do I turn off Delivery Optimization?
         answer: |
-          Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a Windows device is configured to use Delivery Optimization peering (on by default), for the content types, in addition to the HTTP downloader capabilities the Delivery Optimization peering service 
-          can be used to optimize bandwidth. If you'd like to prevent the peering capabilities of Delivery Optimization, you can change the setting to Download Mode '99', [Simple mode](waas-delivery-optimization-reference.md#download-mode). Simple mode prevents any peering for the downloaded content. 
-          Delivery Optimization will still be used as the HTTP downloader, but any communication to the cloud peering service will be disabled. 
+          Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default) it will do so inconjunction with the HTTP downloader capabilities to optimize bandwidth usage. 
+          If you'd like to prevent the peering capabilities of Delivery Optimization, you can change the Delivery Optimization Download mode setting '99', [Simple mode](waas-delivery-optimization-reference.md#download-mode). Simple mode prevents any peering for the downloaded content. 
+          Delivery Optimization will still be used as the HTTP downloader, but any communication to the cloud peering service is disabled. 
       
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
-          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers don't realize the vast application of Delivery Optimization and different apps can be 
-          running in the background. There are different Delivery Optimization [settings](waas-delivery-optimization-reference.md) that can help manage the amount of bandwidth, time of day, etc. Also note that depending on the app, closing the app don't necessarily stop the download.
+          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers don't realize the vast application of Delivery Optimization and how it is used across different apps.
+          Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app don't necessarily stop the download.
+          There are different Delivery Optimization [settings](waas-delivery-optimization-reference.md) that can help manage the amount of bandwidth, time of day, etc. 
