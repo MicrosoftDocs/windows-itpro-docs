@@ -210,7 +210,7 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 | GPO for Windows 10, version 1607 or later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
 
-## Enable features that are behind temporary enterprise feature control 
+## Enable features that are behind temporary enterprise feature control
 <!--6544872-->
 
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. 
