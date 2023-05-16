@@ -115,7 +115,7 @@ sections:
   
             •	*.do.dsp.mp.microsoft.com
 
-            If that's not an option, try using Group Download mode '2' would be the best next step. For more information on using Group mode, https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#select-the-source-of-group-ids
+            If that's not an option, try using Group Download mode '2' would be the best next step. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
       - question: How do I turn off Delivery Optimization?
         answer: |
