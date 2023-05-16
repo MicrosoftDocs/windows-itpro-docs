@@ -312,7 +312,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 
 <span id="add-xml" />
 
-##### Configure a kiosk using WMI Bridge
+## Configure a kiosk using WMI Bridge
 
 Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class.
 
