@@ -2787,7 +2787,6 @@ Required for native profiles. Type of tunneling protocol used.
 | Automatic | Automatic. |
 | SSTP | SSTP. |
 | ProtocolList | ProtocolList. |
-
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-AllowedValues-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Examples-Begin -->
@@ -2890,13 +2889,13 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of inbox VPN protocols in priority order. Up to 4 VPN protocols are supported.
+List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
+> Up to 4 VPN protocols are supported. A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-Begin -->
