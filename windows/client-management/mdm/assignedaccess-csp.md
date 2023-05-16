@@ -1074,6 +1074,7 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
                 <xs:sequence minOccurs="1" maxOccurs="1">
                     <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="rs5:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="StartLayout" type="xs:string" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="v5:StartPins" minOccurs="0" maxOccurs="1"/>
                     <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="v5:TaskbarLayout" minOccurs="0" maxOccurs="1"/>
