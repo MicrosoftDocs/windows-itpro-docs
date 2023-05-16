@@ -316,7 +316,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups aren't supported
 
 Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class.
 
-Here's an example on how to set AssignedAccess configuration:
+Here's an example of how to set AssignedAccess configuration:
 
 1. Download the [psexec tool](/sysinternals/downloads/psexec).  
 2. Run `psexec.exe -i -s cmd.exe`.
