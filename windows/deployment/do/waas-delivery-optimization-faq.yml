@@ -106,4 +106,23 @@ sections:
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
+      
+      - question: What is the recommended configuration for Delivery Optimization used with Zscaler?
+        answer: |
+          The best configuration with Zscaler is to bypass the [hostnames](waas-delivery-optimization-faq.yml#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization) for Delivery Optimization services and allow that traffic to go directly to the Internet and not through Zscaler. 
+          For communication between clients and the Delivery Optimization cloud service:
+  
+            •	*.do.dsp.mp.microsoft.com
+
+            If that's not an option, that try using Group Download mode '2' would be the best next step. For more information on using Group mode, https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference#select-the-source-of-group-ids
           
+      - question: How do I turn Delivery Optimization off?
+        answer: |
+          Delivery Optimization is an HTTP downloader used by a majority of content providers from Microsoft. When a Windows device is configured to use Delivery Optimization peering (on by default), for the content types, in addition to the HTTP downloader capabilities the Delivery Optimization peering service 
+          can be used to optimize bandwidth. If you'd like to prevent the peering capabilities of Delivery Optimization, you can simply change the setting to Download Mode '99', [Simple mode](waas-delivery-optimization-reference.md#download-mode). This will prevent any peering for the downloaded content. 
+          Delivery Optimization will still be used as the HTTP downloader, but any communication to the cloud peering service will be disabled. 
+      
+      - question: Delivery Optimization is using device resources and I can't tell why?
+        answer: |
+          Delivery Optimization is used by a majority of content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers don't realize the vast application of Delivery Optimization and different apps can be 
+          running in the background. There are different Delivery Optimization [settings](waas-delivery-optimization-reference.md) that can help manage the amount of bandwidth, time of day, etc. Also note that depending on the app, closing the app don't necessarily stop the download.

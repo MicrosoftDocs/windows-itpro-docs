@@ -92,7 +92,7 @@ There are several calculated values that appear on the Delivery Optimization rep
 In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
-$text = "<myEncodedGroupID>" ;
+$text = "<myOriginalGroupID>" ;
 
 $hashObj = [System.Security.Cryptography.HashAlgorithm]::Create('sha256') ; $dig = $hashObj.ComputeHash([System.Text.Encoding]::Unicode.GetBytes($text)) ; $digB64 = [System.Convert]::ToBase64String($dig) ; Write-Host "$text ==> $digB64"
 ```
@@ -106,8 +106,8 @@ Get-DeliveryOptimizationLog -Flush | Set-Content C:\dosvc.log
 The below two lines are together in verbose logs:
 
 ```text
-2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myEncodedGroupId>**
-2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myDecodedGroupId>**
+2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myOriginalGroupId>**
+2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myEncodedGroupId>**
 ```
 
 ## Sample queries
@@ -167,3 +167,15 @@ A row in UCDOAggregatedStatus represents data summarized at the tenant level (Az
 
 - **How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?**
 If there's a Connected Cache server at the ISP level, BytesFromCache will filter out any bytes coming the ISP's Connected Cache.
+
+- **What does the 'Other' content type represent?**
+The 'Other' category is a subset of the [complete list](../do/waas-delivery-optimization.md) of supported Delivery Optimization content types including:
+  * Windows Defender definition updates
+  * Intune Win32 apps
+  * Edge Browser updates
+  * Configuration Manager Express updates
+  * Dynamic updates
+  * MDM Agent
+  * Xbox Game Pass (PC)
+  * Windows Package Manager
+  * MSIX
