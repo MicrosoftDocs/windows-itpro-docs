@@ -20,6 +20,8 @@ Encrypted messages can be read only by recipients who have a certificate. If you
 
 A digitally signed message reassures the recipient that the message hasn't been tampered with and verifies the identity of the sender. Recipients can only verify the digital signature if they're using an email client that supports S/MIME.
 
+[!INCLUDE [email-encryption-smime](../../../includes/licensing/email-encryption-smime.md)]
+
 ## Prerequisites
 
 -   [S/MIME is enabled for Exchange accounts](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) (on-premises and Office 365). Users can't use S/MIME signing and encryption with a personal account such as Outlook.com.
