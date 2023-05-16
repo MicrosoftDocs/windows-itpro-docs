@@ -2764,7 +2764,7 @@ Required for native profiles. Type of tunneling protocol used.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Using NativeProtocolType the NativeProfile/ProtocolList node.
+> Using NativeProtocolType requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-Begin -->
