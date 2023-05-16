@@ -53,7 +53,7 @@ To use federated sign-in, the devices must have Internet access. This feature do
 > - Provisioning packages (PPKG)
 > - Windows Autopilot self-deploying mode
 
-### System requirements
+[!INCLUDE [federated-sign-in](../../includes/licensing/federated-sign-in.md)]
 
 Federated sign-in for student assigned (1:1) devices is supported on the following Windows editions and versions:
 

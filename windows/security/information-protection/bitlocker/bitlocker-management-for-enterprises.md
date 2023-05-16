@@ -1,6 +1,6 @@
 ---
-title: BitLocker Management Recommendations for Enterprises (Windows 10)
-description: Refer to relevant documentation, products, and services to learn about managing BitLocker for enterprises and see recommendations for different computers.
+title: BitLocker management
+description: Refer to relevant documentation, products, and services to learn about managing BitLocker and see recommendations for different computers.
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
@@ -12,11 +12,13 @@ ms.custom: bitlocker
 ms.technology: itpro-security
 ---
 
-# BitLocker management for enterprises
+# BitLocker management
 
 The ideal solution for BitLocker management is to eliminate the need for IT administrators to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, secure boot, and other hardware improvements, for example, have helped to alleviate the support burden on help desks and a decrease in support-call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1.
 
 Though much Windows [BitLocker documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently asked questions, and also provides BitLocker recommendations for different types of computers.
+
+[!INCLUDE [bitlocker](../../../../includes/licensing/bitlocker-management.md)]
 
 ## Managing domain-joined computers and moving to cloud  
 
@@ -34,11 +36,6 @@ Devices joined to Azure AD are managed using Mobile Device Management (MDM) poli
 Starting with Windows 10 version 1703, the enablement of BitLocker can be triggered over MDM either by the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider/) or the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred, and is available on computers that run Windows 11, Windows 10, and on Windows phones.
 
 For hardware that is compliant with Modern Standby and HSTI, when using either of these features, [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if necessary. For older devices that aren't yet encrypted, beginning with Windows 10 version 1703, admins can use the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/) to trigger encryption and store the recovery key in Azure AD. This process and feature is applicable to Azure Hybrid AD as well.
-
-> [!NOTE]
-> To manage Bitlocker via CSP (Configuration Service Provider), except to enable and disable it, regardless of your management platform, one of the following licenses must be assigned to your users:
-> - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, and E5).
-> - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 and A5).
 
 ## Managing workplace-joined PCs and phones
 
