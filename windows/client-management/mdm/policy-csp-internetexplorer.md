@@ -4,7 +4,7 @@ description: Learn more about the InternetExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1428,7 +1428,7 @@ This policy allows the user to go directly to an intranet site for a one-word en
 <!-- AllowSaveTargetAsInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- AllowSaveTargetAsInIEMode-Applicability-End -->
 
 <!-- AllowSaveTargetAsInIEMode-OmaUri-Begin -->
@@ -2080,7 +2080,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 <!-- ConfigureEdgeRedirectChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- ConfigureEdgeRedirectChannel-Applicability-End -->
 
 <!-- ConfigureEdgeRedirectChannel-OmaUri-Begin -->
@@ -3403,7 +3403,7 @@ The Home page specified on the General tab of the Internet Options dialog box is
 <!-- DisableHTMLApplication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.1060] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.3460] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2060] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1030] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.1060] and later <br> :heavy_check_mark: Windows 10, version 1809 [10.0.17763.3460] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.2060] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.1030] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableHTMLApplication-Applicability-End -->
 
 <!-- DisableHTMLApplication-OmaUri-Begin -->
@@ -3599,7 +3599,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 <!-- DisableInternetExplorerApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- DisableInternetExplorerApp-Applicability-End -->
 
 <!-- DisableInternetExplorerApp-OmaUri-Begin -->
@@ -4486,7 +4486,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- EnableExtendedIEModeHotkeys-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.143] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1474] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.906] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.143] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1474] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.906] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableExtendedIEModeHotkeys-Applicability-End -->
 
 <!-- EnableExtendedIEModeHotkeys-OmaUri-Begin -->
@@ -4552,7 +4552,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableGlobalWindowListInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.558] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1566] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.527] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.558] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1566] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.527] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableGlobalWindowListInIEMode-Applicability-End -->
 
 <!-- EnableGlobalWindowListInIEMode-OmaUri-Begin -->
@@ -7968,7 +7968,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-OmaUri-Begin -->
@@ -13390,7 +13390,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- ResetZoomForDialogInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348.261] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1832] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1266] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.282] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348.261] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1832] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1266] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000.282] and later <br> :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ResetZoomForDialogInIEMode-Applicability-End -->
 
 <!-- ResetZoomForDialogInIEMode-OmaUri-Begin -->
@@ -16537,7 +16537,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: [10.0.20348] and later <br> :heavy_check_mark: Windows 10, version 1903 [10.0.18362.1350] and later <br> :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later |
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-OmaUri-Begin -->
