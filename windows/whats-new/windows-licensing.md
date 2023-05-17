@@ -68,7 +68,7 @@ The following table describes the unique Windows Enterprise edition features:
 | OS-based feature | Description |
 |-|-|
 |**[Windows Defender Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
-|**[Managed Microsoft Defender Application Guard for Microsoft Edge][EDGE-1]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
+|**[Managed Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
 |**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
 |**[Personal Data Encryption][WIN-3]**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
 |**[Direct Access][WINS-1]**|Connect remote users to the organization network without the need for traditional VPN connections.|
@@ -142,7 +142,7 @@ The following table lists the Windows 11 Enterprise features and their Windows e
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
 |**[Windows Defender Credential Guard][WIN-1]**|❌|Yes|
-|**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][EDGE-1]**|Yes|Yes|
+|**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**|Yes|Yes|
 |**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
 |**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|
 |**[Direct Access][WINS-1]**|Yes|Yes|
@@ -186,7 +186,6 @@ To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Win
 - How to acquire licenses through Commercial Licensing
 
 [AZ-1]: /azure/virtual-desktop/prerequisites#operating-systems-and-licenses
-[EDGE-1]: /deployedge/microsoft-edge-security-windows-defender-application-guard
 [EXT-1]: https://www.microsoft.com/licensing/terms/productoffering/WindowsDesktopOperatingSystem/EAEAS
 [EXT-2]: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-release-health-now-available-in-the-microsoft-365-admin/ba-p/2235908
 [EXT-3]: https://windows.com/enterprise
@@ -208,5 +207,7 @@ To learn more about Windows 11 Enterprise E3 and E5 licensing, download the [Win
 [WIN-8]: /windows/deployment/do/waas-microsoft-connected-cache
 [WIN-9]: /windows/release-health/supported-versions-windows-client#enterprise-and-iot-enterprise-ltsbltsc-editions
 [WIN-10]: /windows/whats-new/ltsc/
+[WIN-11]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
 [WINS-1]: /windows-server/remote/remote-access/directaccess/directaccess
 [WINS-2]: /windows-server/remote/remote-access/vpn/always-on-vpn/
+
