@@ -110,7 +110,6 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|store-images.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store. If you turn off traffic for these endpoints, apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|TLS v1.2|*.md.mp.microsoft.com*|
 |||HTTPS|*displaycatalog.mp.microsoft.com|
-|||HTTP \ HTTPS|pti.store.microsoft.com|
 |||HTTP|storeedgefd.dsx.mp.microsoft.com|
 |||HTTP|markets.books.microsoft.com|
 |||HTTP |share.microsoft.com|
