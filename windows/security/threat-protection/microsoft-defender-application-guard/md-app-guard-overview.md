@@ -50,6 +50,8 @@ Application Guard has been created to target several types of devices:
 
 [!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
 
+For more information about Microsoft Defender Application Guard (MDAG) for Edge enterprise mode, [Configure Microsoft Defender Application Guard policy settings.](/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+
 ## Related articles
 
 |Article |Description |
@@ -62,3 +64,4 @@ Application Guard has been created to target several types of devices:
 | [Microsoft Defender Application Guard for Microsoft Office](/microsoft-365/security/office-365-security/install-app-guard) | Describes Application Guard for Microsoft Office, including minimum hardware requirements, configuration, and a troubleshooting guide |
 |[Frequently asked questions - Microsoft Defender Application Guard](faq-md-app-guard.yml)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
 |[Use a network boundary to add trusted sites on Windows devices in Microsoft Intune](/mem/intune/configuration/network-boundary-windows)|Network boundary, a feature that helps you protect your environment from sites that aren't trusted by your organization.|
+
