@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Securitycenter Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 05/18/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -43,7 +43,7 @@ This policy setting specifies whether Security Center is turned on or off for co
 
 Note that Security Center can only be turned off for computers that are joined to a Windows domain. When a computer isn't joined to a Windows domain, the policy setting will have no effect.
 
-If you don't congifure this policy setting, the Security Center is turned off for domain members.
+- If you don't configure this policy setting, the Security Center is turned off for domain members.
 
 - If you enable this policy setting, Security Center is turned on for all users.
 
