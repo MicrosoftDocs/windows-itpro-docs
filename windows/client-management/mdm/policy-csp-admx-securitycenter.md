@@ -46,7 +46,7 @@ This policy setting specifies whether Security Center is turned on or off for co
 
 **Note** that Security Center can only be turned off for computers that are joined to a Windows domain. When a computer is not joined to a Windows domain, the policy setting will have no effect.
 
-If you do not congifure this policy setting, the Security Center is turned off for domain members.
+If you do not configure this policy setting, the Security Center is turned off for domain members.
 
 - If you enable this policy setting, Security Center is turned on for all users.
 
