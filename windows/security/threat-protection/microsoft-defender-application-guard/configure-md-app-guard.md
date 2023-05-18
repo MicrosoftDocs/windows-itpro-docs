@@ -29,6 +29,8 @@ Application Guard uses both network isolation and application-specific settings.
 
 [!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
 
+For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
+
 ## Network isolation settings
 
 These settings, located at `Computer Configuration\Administrative Templates\Network\Network Isolation`, help you define and manage your organization's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
@@ -38,7 +40,6 @@ These settings, located at `Computer Configuration\Administrative Templates\Netw
 
 > [!NOTE]
 > You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. Proxy servers must be a neutral resource listed in the **Domains categorized as both work and personal** policy.
- 
 |Policy name|Supported versions|Description|
 |-----------|------------------|-----------|
 |Private network ranges for apps | At least Windows Server 2012, Windows 8, or Windows RT| A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.|
@@ -68,9 +69,9 @@ These settings, located at `Computer Configuration\Administrative Templates\Wind
 |Allow camera and microphone access in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<p>Windows 11 Enterprise|Determines whether to allow camera and microphone access inside Microsoft Defender Application Guard.|**Enabled.** This is effective only in managed mode. Applications inside Microsoft Defender Application Guard are able to access the camera and microphone on the user's device. **Important:** Enabling this policy with a potentially compromised container could bypass camera and microphone permissions and access the camera and microphone without the user's knowledge.<p>**Disabled or not configured.** Applications inside Microsoft Defender Application Guard are unable to access the camera and microphone on the user's device.|
 |Allow Microsoft Defender Application Guard to use Root Certificate Authorities from a user's device|Windows 10 Enterprise or Pro, 1809 or higher<p>Windows 11 Enterprise or Pro|Determines whether Root Certificates are shared with Microsoft Defender Application Guard.|**Enabled.** Certificates matching the specified thumbprint are transferred into the container. Use a comma to separate multiple certificates.<p>**Disabled or not configured.** Certificates aren't shared with Microsoft Defender Application Guard.|
 |Allow auditing events in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<p>Windows 11 Enterprise|This policy setting allows you to decide whether auditing events can be collected from Microsoft Defender Application Guard.|**Enabled.** This is effective only in managed mode. Application Guard inherits auditing policies from your device and logs system events from the Application Guard container to your host.<p>**Disabled or not configured.** Event logs aren't collected from your Application Guard container.|
- 
 ## Application Guard support dialog settings
 
 These settings are located at `Administrative Templates\Windows Components\Windows Security\Enterprise Customization`. If an error is encountered, you're presented with a dialog box. By default, this dialog box only contains the error information and a button for you to report it to Microsoft via the feedback hub. However, it's possible to provide additional information in the dialog box.
 
 [Use Group Policy to enable and customize contact information](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information#use-group-policy-to-enable-and-customize-contact-information).
+
