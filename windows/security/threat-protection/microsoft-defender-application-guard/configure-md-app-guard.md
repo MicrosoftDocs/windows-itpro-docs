@@ -29,7 +29,7 @@ Application Guard uses both network isolation and application-specific settings.
 
 [!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
 
-For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
+For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview).
 
 ## Network isolation settings
 
