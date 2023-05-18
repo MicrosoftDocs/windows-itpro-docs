@@ -40,6 +40,7 @@ These settings, located at `Computer Configuration\Administrative Templates\Netw
 
 > [!NOTE]
 > You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. Proxy servers must be a neutral resource listed in the **Domains categorized as both work and personal** policy.
+
 |Policy name|Supported versions|Description|
 |-----------|------------------|-----------|
 |Private network ranges for apps | At least Windows Server 2012, Windows 8, or Windows RT| A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.|
