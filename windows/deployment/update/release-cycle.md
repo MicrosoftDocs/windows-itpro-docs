@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 03/23/2023
+ms.date: 05/19/2023
 ---
 
 # Update release cycle for Windows clients

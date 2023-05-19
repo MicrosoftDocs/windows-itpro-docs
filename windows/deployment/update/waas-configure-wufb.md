@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 05/18/2023
+ms.date: 05/19/2023
 ---
 
 # Configure Windows Update for Business
