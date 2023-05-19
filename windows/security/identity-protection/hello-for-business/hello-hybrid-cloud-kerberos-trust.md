@@ -35,7 +35,9 @@ With Azure AD Kerberos, Azure AD can issue TGTs for one or more AD domains. Wind
 When Azure AD Kerberos is enabled in an Active Directory domain, an *Azure AD Kerberos server object* is created in the domain. This object:
 
 - Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
-- Is only used by Azure AD to generate TGTs for the Active Directory domain. The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object
+- Is only used by Azure AD to generate TGTs for the Active Directory domain.
+  > [!NOTE]
+  > The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object. For example, users that are direct or indirect members of the built-in security group *Denied RODC Password Replication Group* won't be able to use cloud Kerberos trust.
 
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Azure AD Kerberos server ":::
 
