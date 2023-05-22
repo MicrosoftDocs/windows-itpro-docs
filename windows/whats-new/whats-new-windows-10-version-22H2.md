@@ -13,7 +13,7 @@ ms.collection:
   - highpri
   - tier2
   - appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 22H2</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 22H2</a> 
 ---
 
 # What's new in Windows 10, version 22H2
