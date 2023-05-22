@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Enterprise LTSC
+title: Windows 10 Enterprise LTSC overview
 description: New and updated IT Pro content about new features in Windows 10, LTSC (also known as Windows 10 LTSB).
 ms.prod: windows-client
 author: mestew
@@ -9,16 +9,13 @@ ms.localizationpriority: low
 ms.topic: overview
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 Enterprise LTSC</a>
 ---
 
 # Windows 10 Enterprise LTSC
 
-**Applies to**
--   Windows 10 Enterprise LTSC
-
-## In this topic
-
-This topic provides links to articles with information about what's new in each release of Windows 10 Enterprise LTSC, and includes a short description of this servicing channel. 
+This article provides links to  information about what's new in each release of Windows 10 Enterprise LTSC, and includes a short description of this servicing channel. 
 
 [What's New in Windows 10 Enterprise LTSC 2021](whats-new-windows-10-2021.md)<br>
 [What's New in Windows 10 Enterprise LTSC 2019](whats-new-windows-10-2019.md)<br>
