@@ -12,11 +12,11 @@ ms.collection:
   - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ---
 
 # What's new in Windows 11, version 22H2
-
-**Applies to**: Windows 11, version 22H2
 <!--6681501-->
 Windows 11, version 22H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 21H2, the original Windows 11 release version. This article lists the new and updated features IT Pros should know.
 
