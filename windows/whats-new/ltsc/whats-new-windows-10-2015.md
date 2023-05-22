@@ -10,7 +10,7 @@ ms.topic: article
 ms.technology: itpro-fundamentals
 ms.date: 02/26/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 Enterprise LTSC 2015</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2015</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2015
