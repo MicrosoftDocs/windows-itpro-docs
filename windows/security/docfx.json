@@ -71,11 +71,11 @@
     "fileMetadata": {
       "author":{
         "identity-protection/**/*.md": "paolomatarazzo",
-        "threat-protection/windows-firewall/**/*.md": "aczechowski"
+        "operating-system-security/network-security/windows-firewall/**/*.md": "aczechowski"
       },
       "ms.author":{
         "identity-protection/**/*.md": "paoloma",
-        "threat-protection/windows-firewall/*.md": "aaroncz"
+        "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
       },
       "appliesto":{
         "identity-protection/**/*.md": [
@@ -115,8 +115,8 @@
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/access-control/*.md": "sulahiri",
-        "threat-protection/windows-firewall/*.md": "paoloma",
-        "identity-protection/vpn/*.md": "pesmith"
+        "operating-system-security/network-security/windows-firewall/*.md": "paoloma",
+        "operating-system-security/network-security/vpn/*.md": "pesmith"
       },
       "ms.collection":{
         "identity-protection/hello-for-business/*.md": "tier1",
@@ -126,7 +126,7 @@
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
         "threat-protection/windows-defender-application-control/*.md": "tier3",
-        "threat-protection/windows-firewall/*.md": "tier3"
+        "operating-system-security/network-security/windows-firewall/*.md": "tier3"
       }
     },
     "template": [],
