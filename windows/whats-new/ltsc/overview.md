@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Enterprise LTSC
+title: Windows 10 Enterprise LTSC overview
 description: New and updated IT Pro content about new features in Windows 10, LTSC (also known as Windows 10 LTSB).
 ms.prod: windows-client
 author: mestew
