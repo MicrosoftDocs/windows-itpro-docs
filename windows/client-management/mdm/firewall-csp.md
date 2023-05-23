@@ -22,6 +22,10 @@ The Firewall configuration service provider (CSP) allows the mobile device manag
 
 > [!NOTE]
 > Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
+>
+> Atomic blocks are "all or nothing", if a firewall rule or firewall setting in an Atomic block fails to be applied, the entire Atomic block fails to be applied.
+>
+> If an Atomic block contains a firewall rule or firewall setting that is not supported on a particular Windows OS version, the entire Atomic block fails to be applied on that Windows version. For example, firewall rules with IcmpTypesAndCodes are only supported on Windows 11, applying an Atomic block that contains a rule with IcmpTypesAndCodes on Windows 10 fails.
 
 For detailed information on some of the fields below, see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](/openspecs/windows_protocols/ms-winerrata/6521c5c4-1f76-4003-9ade-5cccfc27c8ac).
 <!-- Firewall-Editable-End -->
