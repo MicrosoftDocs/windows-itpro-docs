@@ -4,7 +4,7 @@ description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_MicrosoftDefenderAntivirus-Begin -->
 # Policy CSP - ADMX_MicrosoftDefenderAntivirus
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_MicrosoftDefenderAntivirus-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowFastServiceStartup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowFastServiceStartup-Applicability-End -->
 
 <!-- AllowFastServiceStartup-OmaUri-Begin -->
@@ -44,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting controls the load priority for the antimalware service. Increasing the load priority will allow for faster service startup, but may impact performance.
 
-- If you enable or do not configure this setting, the antimalware service will load as a normal priority task.
+- If you enable or don't configure this setting, the antimalware service will load as a normal priority task.
 
 - If you disable this setting, the antimalware service will load as a low priority task.
 <!-- AllowFastServiceStartup-Description-End -->
@@ -58,13 +55,12 @@ This policy setting controls the load priority for the antimalware service. Incr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowFastServiceStartup-DFProperties-End -->
 
 <!-- AllowFastServiceStartup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ This policy setting controls the load priority for the antimalware service. Incr
 <!-- DisableAntiSpywareDefender-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableAntiSpywareDefender-Applicability-End -->
 
 <!-- DisableAntiSpywareDefender-OmaUri-Begin -->
@@ -104,13 +100,13 @@ This policy setting controls the load priority for the antimalware service. Incr
 <!-- Description-Source-ADMX -->
 This policy setting turns off Microsoft Defender Antivirus.
 
-- If you enable this policy setting, Microsoft Defender Antivirus does not run, and will not scan computers for malware or other potentially unwanted software.
+- If you enable this policy setting, Microsoft Defender Antivirus doesn't run, and won't scan computers for malware or other potentially unwanted software.
 
 - If you disable this policy setting, Microsoft Defender Antivirus will run regardless of any other installed antivirus product.
 
-- If you do not configure this policy setting, Windows will internally manage Microsoft Defender Antivirus. If you install another antivirus program, Windows automatically disables Microsoft Defender Antivirus. Otherwise, Microsoft Defender Antivirus will scan your computers for malware and other potentially unwanted software.
+- If you don't configure this policy setting, Windows will internally manage Microsoft Defender Antivirus. If you install another antivirus program, Windows automatically disables Microsoft Defender Antivirus. Otherwise, Microsoft Defender Antivirus will scan your computers for malware and other potentially unwanted software.
 
-Enabling or disabling this policy may lead to unexpected or unsupported behavior. It is recommended that you leave this policy setting unconfigured.
+Enabling or disabling this policy may lead to unexpected or unsupported behavior. It's recommended that you leave this policy setting unconfigured.
 <!-- DisableAntiSpywareDefender-Description-End -->
 
 <!-- DisableAntiSpywareDefender-Editable-Begin -->
@@ -124,13 +120,12 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAntiSpywareDefender-DFProperties-End -->
 
 <!-- DisableAntiSpywareDefender-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -157,7 +152,7 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 <!-- DisableAutoExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableAutoExclusions-Applicability-End -->
 
 <!-- DisableAutoExclusions-OmaUri-Begin -->
@@ -171,12 +166,15 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 Allows an administrator to specify if Automatic Exclusions feature for Server SKUs should be turned off.
 
 Disabled (Default):
+
 Microsoft Defender will exclude pre-defined list of paths from the scan to improve performance.
 
 Enabled:
-Microsoft Defender will not exclude pre-defined list of paths from scans. This can impact machine performance in some scenarios.
+
+Microsoft Defender won't exclude pre-defined list of paths from scans. This can impact machine performance in some scenarios.
 
 Not configured:
+
 Same as Disabled.
 <!-- DisableAutoExclusions-Description-End -->
 
@@ -189,13 +187,12 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAutoExclusions-DFProperties-End -->
 
 <!-- DisableAutoExclusions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -222,7 +219,7 @@ Same as Disabled.
 <!-- DisableBlockAtFirstSeen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableBlockAtFirstSeen-Applicability-End -->
 
 <!-- DisableBlockAtFirstSeen-OmaUri-Begin -->
@@ -233,15 +230,21 @@ Same as Disabled.
 
 <!-- DisableBlockAtFirstSeen-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check will not occur, which will lower the protection state of the device.
+This feature ensures the device checks in real time with the Microsoft Active Protection Service (MAPS) before allowing certain content to be run or accessed. If this feature is disabled, the check won't occur, which will lower the protection state of the device.
+
 Enabled - The Block at First Sight setting is turned on.
+
 Disabled - The Block at First Sight setting is turned off.
 
 This feature requires these Group Policy settings to be set as follows:
-MAPS -> The "Join Microsoft MAPS" must be enabled or the "Block at First Sight" feature will not function.
-MAPS -> The "Send file samples when further analysis is required" should be set to 1 (Send safe samples) or 3 (Send all samples). Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature will not function.
-Real-time Protection -> The "Scan all downloaded files and attachments" policy must be enabled or the "Block at First Sight" feature will not function.
-Real-time Protection -> Do not enable the "Turn off real-time protection" policy or the "Block at First Sight" feature will not function.
+
+MAPS -> The "Join Microsoft MAPS" must be enabled or the "Block at First Sight" feature won't function.
+
+MAPS -> The "Send file samples when further analysis is required" should be set to 1 (Send safe samples) or 3 (Send all samples). Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the "Block at First Sight" feature won't function.
+
+Real-time Protection -> The "Scan all downloaded files and attachments" policy must be enabled or the "Block at First Sight" feature won't function.
+
+Real-time Protection -> Don't enable the "Turn off real-time protection" policy or the "Block at First Sight" feature won't function.
 <!-- DisableBlockAtFirstSeen-Description-End -->
 
 <!-- DisableBlockAtFirstSeen-Editable-Begin -->
@@ -255,13 +258,12 @@ Real-time Protection -> Do not enable the "Turn off real-time protection" policy
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableBlockAtFirstSeen-DFProperties-End -->
 
 <!-- DisableBlockAtFirstSeen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -288,7 +290,7 @@ Real-time Protection -> Do not enable the "Turn off real-time protection" policy
 <!-- DisableLocalAdminMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableLocalAdminMerge-Applicability-End -->
 
 <!-- DisableLocalAdminMerge-OmaUri-Begin -->
@@ -301,7 +303,7 @@ Real-time Protection -> Do not enable the "Turn off real-time protection" policy
 <!-- Description-Source-ADMX -->
 This policy setting controls whether or not complex list settings configured by a local administrator are merged with Group Policy settings. This setting applies to lists such as threats and Exclusions.
 
-- If you disable or do not configure this setting, unique items defined in Group Policy and in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, Group policy Settings will override preference settings.
+- If you disable or don't configure this setting, unique items defined in Group Policy and in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, Group policy Settings will override preference settings.
 
 - If you enable this setting, only items defined by Group Policy will be used in the resulting effective policy. Group Policy settings will override preference settings configured by the local administrator.
 <!-- DisableLocalAdminMerge-Description-End -->
@@ -315,13 +317,12 @@ This policy setting controls whether or not complex list settings configured by 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLocalAdminMerge-DFProperties-End -->
 
 <!-- DisableLocalAdminMerge-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -348,7 +349,7 @@ This policy setting controls whether or not complex list settings configured by 
 <!-- DisableRealtimeMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableRealtimeMonitoring-Applicability-End -->
 
 <!-- DisableRealtimeMonitoring-OmaUri-Begin -->
@@ -365,7 +366,7 @@ Real-time protection consists of always-on scanning with file and process behavi
 
 - If you enable this policy setting, real-time protection is turned off.
 
-- If you either disable or do not configure this policy setting, real-time protection is turned on.
+- If you either disable or don't configure this policy setting, real-time protection is turned on.
 <!-- DisableRealtimeMonitoring-Description-End -->
 
 <!-- DisableRealtimeMonitoring-Editable-Begin -->
@@ -379,13 +380,12 @@ Real-time protection consists of always-on scanning with file and process behavi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableRealtimeMonitoring-DFProperties-End -->
 
 <!-- DisableRealtimeMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -412,7 +412,7 @@ Real-time protection consists of always-on scanning with file and process behavi
 <!-- DisableRoutinelyTakingAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableRoutinelyTakingAction-Applicability-End -->
 
 <!-- DisableRoutinelyTakingAction-OmaUri-Begin -->
@@ -425,9 +425,9 @@ Real-time protection consists of always-on scanning with file and process behavi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether Microsoft Defender Antivirus automatically takes action on all detected threats. The action to be taken on a particular threat is determined by the combination of the policy-defined action, user-defined action, and the signature-defined action.
 
-- If you enable this policy setting, Microsoft Defender Antivirus does not automatically take action on the detected threats, but prompts users to choose from the actions available for each threat.
+- If you enable this policy setting, Microsoft Defender Antivirus doesn't automatically take action on the detected threats, but prompts users to choose from the actions available for each threat.
 
-- If you disable or do not configure this policy setting, Microsoft Defender Antivirus automatically takes action on all detected threats after a nonconfigurable delay of approximately five seconds.
+- If you disable or don't configure this policy setting, Microsoft Defender Antivirus automatically takes action on all detected threats after a nonconfigurable delay of approximately five seconds.
 <!-- DisableRoutinelyTakingAction-Description-End -->
 
 <!-- DisableRoutinelyTakingAction-Editable-Begin -->
@@ -441,13 +441,12 @@ This policy setting allows you to configure whether Microsoft Defender Antivirus
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableRoutinelyTakingAction-DFProperties-End -->
 
 <!-- DisableRoutinelyTakingAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -474,7 +473,7 @@ This policy setting allows you to configure whether Microsoft Defender Antivirus
 <!-- Exclusions_Extensions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Exclusions_Extensions-Applicability-End -->
 
 <!-- Exclusions_Extensions-OmaUri-Begin -->
@@ -485,7 +484,7 @@ This policy setting allows you to configure whether Microsoft Defender Antivirus
 
 <!-- Exclusions_Extensions-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you specify a list of file types that should be excluded from scheduled, custom, and real-time scanning. File types should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the file type extension (such as "obj" or "lib"). The value is not used and it is recommended that this be set to 0.
+This policy setting allows you specify a list of file types that should be excluded from scheduled, custom, and real-time scanning. File types should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the file type extension (such as "obj" or "lib"). The value isn't used and it's recommended that this be set to 0.
 <!-- Exclusions_Extensions-Description-End -->
 
 <!-- Exclusions_Extensions-Editable-Begin -->
@@ -499,13 +498,12 @@ This policy setting allows you specify a list of file types that should be exclu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Exclusions_Extensions-DFProperties-End -->
 
 <!-- Exclusions_Extensions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -532,7 +530,7 @@ This policy setting allows you specify a list of file types that should be exclu
 <!-- Exclusions_Paths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Exclusions_Paths-Applicability-End -->
 
 <!-- Exclusions_Paths-OmaUri-Begin -->
@@ -543,7 +541,7 @@ This policy setting allows you specify a list of file types that should be exclu
 
 <!-- Exclusions_Paths-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to disable scheduled and real-time scanning for files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe". The value is not used and it is recommended that this be set to 0.
+This policy setting allows you to disable scheduled and real-time scanning for files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe". The value isn't used and it's recommended that this be set to 0.
 <!-- Exclusions_Paths-Description-End -->
 
 <!-- Exclusions_Paths-Editable-Begin -->
@@ -557,13 +555,12 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Exclusions_Paths-DFProperties-End -->
 
 <!-- Exclusions_Paths-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -590,7 +587,7 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 <!-- Exclusions_Processes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Exclusions_Processes-Applicability-End -->
 
 <!-- Exclusions_Processes-OmaUri-Begin -->
@@ -601,7 +598,7 @@ This policy setting allows you to disable scheduled and real-time scanning for f
 
 <!-- Exclusions_Processes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy does not apply to scheduled scans. The process itself will not be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. **Note** that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value is not used and it is recommended that this be set to 0.
+This policy setting allows you to disable real-time scanning for any file opened by any of the specified processes. This policy doesn't apply to scheduled scans. The process itself won't be excluded. To exclude the process, use the Path exclusion. Processes should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of the path to the process image. Note that only executables can be excluded. For example, a process might be defined as: "c:\windows\app.exe". The value isn't used and it's recommended that this be set to 0.
 <!-- Exclusions_Processes-Description-End -->
 
 <!-- Exclusions_Processes-Editable-Begin -->
@@ -615,13 +612,12 @@ This policy setting allows you to disable real-time scanning for any file opened
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Exclusions_Processes-DFProperties-End -->
 
 <!-- Exclusions_Processes-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -648,7 +644,7 @@ This policy setting allows you to disable real-time scanning for any file opened
 <!-- ExploitGuard_ASR_ASROnlyExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ExploitGuard_ASR_ASROnlyExclusions-Applicability-End -->
 
 <!-- ExploitGuard_ASR_ASROnlyExclusions-OmaUri-Begin -->
@@ -662,15 +658,20 @@ This policy setting allows you to disable real-time scanning for any file opened
 Exclude files and paths from Attack Surface Reduction (ASR) rules.
 
 Enabled:
+
 Specify the folders or files and resources that should be excluded from ASR rules in the Options section.
+
 Enter each rule on a new line as a name-value pair:
-  - Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
-  - Value column: Enter "0" for each item
+
+- Name column: Enter a folder path or a fully qualified resource name. For example, "C:\Windows" will exclude all files in that directory. "C:\Windows\App.exe" will exclude only that specific file in that specific folder
+- Value column: Enter "0" for each item.
 
 Disabled:
+
 No exclusions will be applied to the ASR rules.
 
 Not configured:
+
 Same as Disabled.
 
 You can configure ASR rules in the Configure Attack Surface Reduction rules GP setting.
@@ -685,13 +686,12 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ExploitGuard_ASR_ASROnlyExclusions-DFProperties-End -->
 
 <!-- ExploitGuard_ASR_ASROnlyExclusions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -718,7 +718,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 <!-- ExploitGuard_ASR_Rules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ExploitGuard_ASR_Rules-Applicability-End -->
 
 <!-- ExploitGuard_ASR_Rules-OmaUri-Begin -->
@@ -732,28 +732,34 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 Set the state for each Attack Surface Reduction (ASR) rule.
 
 After enabling this setting, you can set each rule to the following in the Options section:
-  - Block: the rule will be applied
-  - Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule will not actually be applied)
-  - Off: the rule will not be applied
-  - Not Configured: the rule is enabled with default values
-  - Warn: the rule will be applied and the end-user will have the option to bypass the block
+
+- Block: the rule will be applied
+- Audit Mode: if the rule would normally cause an event, then it will be recorded (although the rule won't actually be applied)
+- Off: the rule won't be applied
+- Not Configured: the rule is enabled with default values
+- Warn: the rule will be applied and the end-user will have the option to bypass the block.
 
 Unless the ASR rule is disabled, a subsample of audit events are collected for ASR rules with the value of not configured.
 
 Enabled:
+
 Specify the state for each ASR rule under the Options section for this setting.
+
 Enter each rule on a new line as a name-value pair:
-  - Name column: Enter a valid ASR rule ID
-  - Value column: Enter the status ID that relates to state you want to specify for the associated rule
+
+- Name column: Enter a valid ASR rule ID
+- Value column: Enter the status ID that relates to state you want to specify for the associated rule.
 
 The following status IDs are permitted under the value column:
-  - 1 (Block)
-  - 0 (Off)
-  - 2 (Audit)
-  - 5 (Not Configured)
-  - 6 (Warn)
+
+- 1 (Block)
+- 0 (Off)
+- 2 (Audit)
+- 5 (Not Configured)
+- 6 (Warn)
 
 Example:
+
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 0
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -762,9 +768,11 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 2
 
 Disabled:
+
 No ASR rules will be configured.
 
 Not configured:
+
 Same as Disabled.
 
 You can exclude folders or files in the "Exclude files and paths from Attack Surface Reduction Rules" GP setting.
@@ -779,13 +787,12 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ExploitGuard_ASR_Rules-DFProperties-End -->
 
 <!-- ExploitGuard_ASR_Rules-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -812,7 +819,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-Applicability-End -->
 
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-OmaUri-Begin -->
@@ -830,12 +837,15 @@ These applications are allowed to modify or delete files in controlled folder ac
 Microsoft Defender Antivirus automatically determines which applications should be trusted. You can configure this setting to add additional applications.
 
 Enabled:
+
 Specify additional allowed applications in the Options section..
 
 Disabled:
+
 No additional applications will be added to the trusted list.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -852,13 +862,12 @@ Default system folders are automatically guarded, but you can add folders in the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-DFProperties-End -->
 
 <!-- ExploitGuard_ControlledFolderAccess_AllowedApplications-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -885,7 +894,7 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-Applicability-End -->
 
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-OmaUri-Begin -->
@@ -898,18 +907,22 @@ Default system folders are automatically guarded, but you can add folders in the
 <!-- Description-Source-ADMX -->
 Specify additional folders that should be guarded by the Controlled folder access feature.
 
-Files in these folders cannot be modified or deleted by untrusted applications.
+Files in these folders can't be modified or deleted by untrusted applications.
 
 Default system folders are automatically protected. You can configure this setting to add additional folders.
+
 The list of default system folders that are protected is shown in Windows Security.
 
 Enabled:
+
 Specify additional folders that should be protected in the Options section.
 
 Disabled:
+
 No additional folders will be protected.
 
 Not configured:
+
 Same as Disabled.
 
 You can enable controlled folder access in the Configure controlled folder access GP setting.
@@ -926,13 +939,12 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-DFProperties-End -->
 
 <!-- ExploitGuard_ControlledFolderAccess_ProtectedFolders-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -959,7 +971,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 <!-- MpEngine_EnableFileHashComputation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MpEngine_EnableFileHashComputation-Applicability-End -->
 
 <!-- MpEngine_EnableFileHashComputation-OmaUri-Begin -->
@@ -973,12 +985,15 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 Enable or disable file hash computation feature.
 
 Enabled:
+
 When this feature is enabled Microsoft Defender will compute hash value for files it scans.
 
 Disabled:
-File hash value is not computed
+
+File hash value isn't computed.
 
 Not configured:
+
 Same as Disabled.
 <!-- MpEngine_EnableFileHashComputation-Description-End -->
 
@@ -991,13 +1006,12 @@ Same as Disabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MpEngine_EnableFileHashComputation-DFProperties-End -->
 
 <!-- MpEngine_EnableFileHashComputation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1024,7 +1038,7 @@ Same as Disabled.
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-Applicability-End -->
 
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-OmaUri-Begin -->
@@ -1035,9 +1049,9 @@ Same as Disabled.
 
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure definition retirement for network protection against exploits of known vulnerabilities. Definition retirement checks to see if a computer has the required security updates necessary to protect it against a particular vulnerability. If the system is not vulnerable to the exploit detected by a definition, then that definition is "retired". If all security intelligence for a given protocal are retired then that protocol is no longer parsed. Enabling this feature helps to improve performance. On a computer that is up-to-date with all the latest security updates, network protection will have no impact on network performance.
+This policy setting allows you to configure definition retirement for network protection against exploits of known vulnerabilities. Definition retirement checks to see if a computer has the required security updates necessary to protect it against a particular vulnerability. If the system isn't vulnerable to the exploit detected by a definition, then that definition is "retired". If all security intelligence for a given protocal are retired then that protocol is no longer parsed. Enabling this feature helps to improve performance. On a computer that's up-to-date with all the latest security updates, network protection will have no impact on network performance.
 
-- If you enable or do not configure this setting, definition retirement will be enabled.
+- If you enable or don't configure this setting, definition retirement will be enabled.
 
 - If you disable this setting, definition retirement will be disabled.
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-Description-End -->
@@ -1051,13 +1065,12 @@ This policy setting allows you to configure definition retirement for network pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-DFProperties-End -->
 
 <!-- Nis_Consumers_IPS_DisableSignatureRetirement-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1084,7 +1097,7 @@ This policy setting allows you to configure definition retirement for network pr
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-Applicability-End -->
 
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-OmaUri-Begin -->
@@ -1095,7 +1108,7 @@ This policy setting allows you to configure definition retirement for network pr
 
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting defines additional definition sets to enable for network traffic inspection. Definition set GUIDs should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a definition set GUID. As an example, the definition set GUID to enable test security intelligence is defined as: "{b54b6ac9-a737-498e-9120-6616ad3bf590}". The value is not used and it is recommended that this be set to 0.
+This policy setting defines additional definition sets to enable for network traffic inspection. Definition set GUIDs should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a definition set GUID. As an example, the definition set GUID to enable test security intelligence is defined as: "{b54b6ac9-a737-498e-9120-6616ad3bf590}". The value isn't used and it's recommended that this be set to 0.
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-Description-End -->
 
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-Editable-Begin -->
@@ -1107,13 +1120,12 @@ This policy setting defines additional definition sets to enable for network tra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-DFProperties-End -->
 
 <!-- Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1140,7 +1152,7 @@ This policy setting defines additional definition sets to enable for network tra
 <!-- Nis_DisableProtocolRecognition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Nis_DisableProtocolRecognition-Applicability-End -->
 
 <!-- Nis_DisableProtocolRecognition-OmaUri-Begin -->
@@ -1153,7 +1165,7 @@ This policy setting defines additional definition sets to enable for network tra
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure protocol recognition for network protection against exploits of known vulnerabilities.
 
-- If you enable or do not configure this setting, protocol recognition will be enabled.
+- If you enable or don't configure this setting, protocol recognition will be enabled.
 
 - If you disable this setting, protocol recognition will be disabled.
 <!-- Nis_DisableProtocolRecognition-Description-End -->
@@ -1167,13 +1179,12 @@ This policy setting allows you to configure protocol recognition for network pro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Nis_DisableProtocolRecognition-DFProperties-End -->
 
 <!-- Nis_DisableProtocolRecognition-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1200,7 +1211,7 @@ This policy setting allows you to configure protocol recognition for network pro
 <!-- ProxyBypass-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProxyBypass-Applicability-End -->
 
 <!-- ProxyBypass-OmaUri-Begin -->
@@ -1215,7 +1226,7 @@ This policy, if defined, will prevent antimalware from using the configured prox
 
 - If you enable this setting, the proxy server will be bypassed for the specified addresses.
 
-- If you disable or do not configure this setting, the proxy server will not be bypassed for the specified addresses.
+- If you disable or don't configure this setting, the proxy server won't be bypassed for the specified addresses.
 <!-- ProxyBypass-Description-End -->
 
 <!-- ProxyBypass-Editable-Begin -->
@@ -1227,13 +1238,12 @@ This policy, if defined, will prevent antimalware from using the configured prox
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProxyBypass-DFProperties-End -->
 
 <!-- ProxyBypass-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1259,7 +1269,7 @@ This policy, if defined, will prevent antimalware from using the configured prox
 <!-- ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProxyPacUrl-Applicability-End -->
 
 <!-- ProxyPacUrl-OmaUri-Begin -->
@@ -1271,17 +1281,18 @@ This policy, if defined, will prevent antimalware from using the configured prox
 <!-- ProxyPacUrl-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines the URL of a proxy .pac file that should be used when the client attempts to connect the network for security intelligence updates and MAPS reporting. If the proxy auto-config fails or if there is no proxy auto-config specified, the client will fall back to the alternative options (in order):
+
 1. Proxy server (if specified)
 2. Proxy .pac URL (if specified)
 
 3. None
-4. Internet Explorer proxy settings
+4. Internet Explorer proxy settings.
 
-5. Autodetect
+5. Autodetect.
 
 - If you enable this setting, the proxy setting will be set to use the specified proxy .pac according to the order specified above.
 
-- If you disable or do not configure this setting, the proxy will skip over this fallback step according to the order specified above.
+- If you disable or don't configure this setting, the proxy will skip over this fallback step according to the order specified above.
 <!-- ProxyPacUrl-Description-End -->
 
 <!-- ProxyPacUrl-Editable-Begin -->
@@ -1293,13 +1304,12 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProxyPacUrl-DFProperties-End -->
 
 <!-- ProxyPacUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1325,7 +1335,7 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 <!-- ProxyServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProxyServer-Applicability-End -->
 
 <!-- ProxyServer-OmaUri-Begin -->
@@ -1337,17 +1347,18 @@ This policy setting defines the URL of a proxy .pac file that should be used whe
 <!-- ProxyServer-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the named proxy that should be used when the client attempts to connect to the network for security intelligence updates and MAPS reporting. If the named proxy fails or if there is no proxy specified, the client will fall back to the alternative options (in order):
+
 1. Proxy server (if specified)
 2. Proxy .pac URL (if specified)
 
 3. None
-4. Internet Explorer proxy settings
+4. Internet Explorer proxy settings.
 
-5. Autodetect
+5. Autodetect.
 
 - If you enable this setting, the proxy will be set to the specified URL according to the order specified above. The URL should be proceeded with either https:// or https://.
 
-- If you disable or do not configure this setting, the proxy will skip over this fallback step according to the order specified above.
+- If you disable or don't configure this setting, the proxy will skip over this fallback step according to the order specified above.
 <!-- ProxyServer-Description-End -->
 
 <!-- ProxyServer-Editable-Begin -->
@@ -1359,13 +1370,12 @@ This policy setting allows you to configure the named proxy that should be used 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProxyServer-DFProperties-End -->
 
 <!-- ProxyServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1391,7 +1401,7 @@ This policy setting allows you to configure the named proxy that should be used 
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-Applicability-End -->
 
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-OmaUri-Begin -->
@@ -1406,7 +1416,7 @@ This policy setting configures a local override for the configuration of the num
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-Description-End -->
 
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-Editable-Begin -->
@@ -1418,13 +1428,12 @@ This policy setting configures a local override for the configuration of the num
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-DFProperties-End -->
 
 <!-- Quarantine_LocalSettingOverridePurgeItemsAfterDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1451,7 +1460,7 @@ This policy setting configures a local override for the configuration of the num
 <!-- Quarantine_PurgeItemsAfterDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Quarantine_PurgeItemsAfterDelay-Applicability-End -->
 
 <!-- Quarantine_PurgeItemsAfterDelay-OmaUri-Begin -->
@@ -1466,7 +1475,7 @@ This policy setting defines the number of days items should be kept in the Quara
 
 - If you enable this setting, items will be removed from the Quarantine folder after the number of days specified.
 
-- If you disable or do not configure this setting, items will be kept in the quarantine folder indefinitely and will not be automatically removed.
+- If you disable or don't configure this setting, items will be kept in the quarantine folder indefinitely and won't be automatically removed.
 <!-- Quarantine_PurgeItemsAfterDelay-Description-End -->
 
 <!-- Quarantine_PurgeItemsAfterDelay-Editable-Begin -->
@@ -1478,13 +1487,12 @@ This policy setting defines the number of days items should be kept in the Quara
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Quarantine_PurgeItemsAfterDelay-DFProperties-End -->
 
 <!-- Quarantine_PurgeItemsAfterDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1511,7 +1519,7 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- RandomizeScheduleTaskTimes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RandomizeScheduleTaskTimes-Applicability-End -->
 
 <!-- RandomizeScheduleTaskTimes-OmaUri-Begin -->
@@ -1524,7 +1532,7 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the scheduled scan, and the scheduled security intelligence update, start time window in hours.
 
-- If you disable or do not configure this setting, scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler.
+- If you disable or don't configure this setting, scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler.
 
 - If you enable this setting, you can widen, or narrow, this randomization period. Specify a randomization window of between 1 and 23 hours.
 <!-- RandomizeScheduleTaskTimes-Description-End -->
@@ -1538,13 +1546,12 @@ This policy setting allows you to configure the scheduled scan, and the schedule
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RandomizeScheduleTaskTimes-DFProperties-End -->
 
 <!-- RandomizeScheduleTaskTimes-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1571,7 +1578,7 @@ This policy setting allows you to configure the scheduled scan, and the schedule
 <!-- RealtimeProtection_DisableBehaviorMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_DisableBehaviorMonitoring-Applicability-End -->
 
 <!-- RealtimeProtection_DisableBehaviorMonitoring-OmaUri-Begin -->
@@ -1584,7 +1591,7 @@ This policy setting allows you to configure the scheduled scan, and the schedule
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure behavior monitoring.
 
-- If you enable or do not configure this setting, behavior monitoring will be enabled.
+- If you enable or don't configure this setting, behavior monitoring will be enabled.
 
 - If you disable this setting, behavior monitoring will be disabled.
 <!-- RealtimeProtection_DisableBehaviorMonitoring-Description-End -->
@@ -1600,13 +1607,12 @@ This policy setting allows you to configure behavior monitoring.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_DisableBehaviorMonitoring-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableBehaviorMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1633,7 +1639,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- RealtimeProtection_DisableIOAVProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_DisableIOAVProtection-Applicability-End -->
 
 <!-- RealtimeProtection_DisableIOAVProtection-OmaUri-Begin -->
@@ -1646,7 +1652,7 @@ This policy setting allows you to configure behavior monitoring.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scanning for all downloaded files and attachments.
 
-- If you enable or do not configure this setting, scanning for all downloaded files and attachments will be enabled.
+- If you enable or don't configure this setting, scanning for all downloaded files and attachments will be enabled.
 
 - If you disable this setting, scanning for all downloaded files and attachments will be disabled.
 <!-- RealtimeProtection_DisableIOAVProtection-Description-End -->
@@ -1662,13 +1668,12 @@ This policy setting allows you to configure scanning for all downloaded files an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_DisableIOAVProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableIOAVProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1695,7 +1700,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- RealtimeProtection_DisableOnAccessProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_DisableOnAccessProtection-Applicability-End -->
 
 <!-- RealtimeProtection_DisableOnAccessProtection-OmaUri-Begin -->
@@ -1708,7 +1713,7 @@ This policy setting allows you to configure scanning for all downloaded files an
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure monitoring for file and program activity.
 
-- If you enable or do not configure this setting, monitoring for file and program activity will be enabled.
+- If you enable or don't configure this setting, monitoring for file and program activity will be enabled.
 
 - If you disable this setting, monitoring for file and program activity will be disabled.
 <!-- RealtimeProtection_DisableOnAccessProtection-Description-End -->
@@ -1724,13 +1729,12 @@ This policy setting allows you to configure monitoring for file and program acti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_DisableOnAccessProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableOnAccessProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1757,7 +1761,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- RealtimeProtection_DisableRawWriteNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_DisableRawWriteNotification-Applicability-End -->
 
 <!-- RealtimeProtection_DisableRawWriteNotification-OmaUri-Begin -->
@@ -1770,7 +1774,7 @@ This policy setting allows you to configure monitoring for file and program acti
 <!-- Description-Source-ADMX -->
 This policy setting controls whether raw volume write notifications are sent to behavior monitoring.
 
-- If you enable or do not configure this setting, raw write notifications will be enabled.
+- If you enable or don't configure this setting, raw write notifications will be enabled.
 
 - If you disable this setting, raw write notifications be disabled.
 <!-- RealtimeProtection_DisableRawWriteNotification-Description-End -->
@@ -1784,13 +1788,12 @@ This policy setting controls whether raw volume write notifications are sent to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_DisableRawWriteNotification-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableRawWriteNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1817,7 +1820,7 @@ This policy setting controls whether raw volume write notifications are sent to 
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-Applicability-End -->
 
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-OmaUri-Begin -->
@@ -1830,9 +1833,9 @@ This policy setting controls whether raw volume write notifications are sent to 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure process scanning when real-time protection is turned on. This helps to catch malware which could start when real-time protection is turned off.
 
-- If you enable or do not configure this setting, a process scan will be initiated when real-time protection is turned on.
+- If you enable or don't configure this setting, a process scan will be initiated when real-time protection is turned on.
 
-- If you disable this setting, a process scan will not be initiated when real-time protection is turned on.
+- If you disable this setting, a process scan won't be initiated when real-time protection is turned on.
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-Description-End -->
 
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-Editable-Begin -->
@@ -1846,13 +1849,12 @@ This policy setting allows you to configure process scanning when real-time prot
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-DFProperties-End -->
 
 <!-- RealtimeProtection_DisableScanOnRealtimeEnable-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1879,7 +1881,7 @@ This policy setting allows you to configure process scanning when real-time prot
 <!-- RealtimeProtection_IOAVMaxSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_IOAVMaxSize-Applicability-End -->
 
 <!-- RealtimeProtection_IOAVMaxSize-OmaUri-Begin -->
@@ -1894,7 +1896,7 @@ This policy setting defines the maximum size (in kilobytes) of downloaded files 
 
 - If you enable this setting, downloaded files and attachments smaller than the size specified will be scanned.
 
-- If you disable or do not configure this setting, a default size will be applied.
+- If you disable or don't configure this setting, a default size will be applied.
 <!-- RealtimeProtection_IOAVMaxSize-Description-End -->
 
 <!-- RealtimeProtection_IOAVMaxSize-Editable-Begin -->
@@ -1906,13 +1908,12 @@ This policy setting defines the maximum size (in kilobytes) of downloaded files 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_IOAVMaxSize-DFProperties-End -->
 
 <!-- RealtimeProtection_IOAVMaxSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1939,7 +1940,7 @@ This policy setting defines the maximum size (in kilobytes) of downloaded files 
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-Applicability-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-OmaUri-Begin -->
@@ -1954,7 +1955,7 @@ This policy setting configures a local override for the configuration of behavio
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-Description-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-Editable-Begin -->
@@ -1966,13 +1967,12 @@ This policy setting configures a local override for the configuration of behavio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1999,7 +1999,7 @@ This policy setting configures a local override for the configuration of behavio
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-Applicability-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-OmaUri-Begin -->
@@ -2014,7 +2014,7 @@ This policy setting configures a local override for the configuration of scannin
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-Description-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-Editable-Begin -->
@@ -2026,13 +2026,12 @@ This policy setting configures a local override for the configuration of scannin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableIOAVProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2059,7 +2058,7 @@ This policy setting configures a local override for the configuration of scannin
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-Applicability-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-OmaUri-Begin -->
@@ -2074,7 +2073,7 @@ This policy setting configures a local override for the configuration of monitor
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-Description-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-Editable-Begin -->
@@ -2086,13 +2085,12 @@ This policy setting configures a local override for the configuration of monitor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2119,7 +2117,7 @@ This policy setting configures a local override for the configuration of monitor
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-Applicability-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-OmaUri-Begin -->
@@ -2134,7 +2132,7 @@ This policy setting configures a local override for the configuration to turn on
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-Description-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-Editable-Begin -->
@@ -2146,13 +2144,12 @@ This policy setting configures a local override for the configuration to turn on
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2179,7 +2176,7 @@ This policy setting configures a local override for the configuration to turn on
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-Applicability-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-OmaUri-Begin -->
@@ -2194,7 +2191,7 @@ This policy setting configures a local override for the configuration of monitor
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-Description-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-Editable-Begin -->
@@ -2206,13 +2203,12 @@ This policy setting configures a local override for the configuration of monitor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-DFProperties-End -->
 
 <!-- RealtimeProtection_LocalSettingOverrideRealtimeScanDirection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2239,7 +2235,7 @@ This policy setting configures a local override for the configuration of monitor
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-Applicability-End -->
 
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-OmaUri-Begin -->
@@ -2254,7 +2250,7 @@ This policy setting configures a local override for the configuration of the tim
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-Description-End -->
 
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-Editable-Begin -->
@@ -2266,13 +2262,12 @@ This policy setting configures a local override for the configuration of the tim
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-DFProperties-End -->
 
 <!-- Remediation_LocalSettingOverrideScan_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2299,7 +2294,7 @@ This policy setting configures a local override for the configuration of the tim
 <!-- Remediation_Scan_ScheduleDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Remediation_Scan_ScheduleDay-Applicability-End -->
 
 <!-- Remediation_Scan_ScheduleDay-OmaUri-Begin -->
@@ -2313,19 +2308,12 @@ This policy setting configures a local override for the configuration of the tim
 This policy setting allows you to specify the day of the week on which to perform a scheduled full scan in order to complete remediation. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
-(0x0) Every Day
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never (default)
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
 
 - If you enable this setting, a scheduled full scan to complete remediation will run at the frequency specified.
 
-- If you disable or do not configure this setting, a scheduled full scan to complete remediation will run at a default frequency.
+- If you disable or don't configure this setting, a scheduled full scan to complete remediation will run at a default frequency.
 <!-- Remediation_Scan_ScheduleDay-Description-End -->
 
 <!-- Remediation_Scan_ScheduleDay-Editable-Begin -->
@@ -2337,13 +2325,12 @@ This setting can be configured with the following ordinal number values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Remediation_Scan_ScheduleDay-DFProperties-End -->
 
 <!-- Remediation_Scan_ScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2370,7 +2357,7 @@ This setting can be configured with the following ordinal number values:
 <!-- Remediation_Scan_ScheduleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Remediation_Scan_ScheduleTime-Applicability-End -->
 
 <!-- Remediation_Scan_ScheduleTime-OmaUri-Begin -->
@@ -2385,7 +2372,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 - If you enable this setting, a scheduled full scan to complete remediation will run at the time of day specified.
 
-- If you disable or do not configure this setting, a scheduled full scan to complete remediation will run at a default time.
+- If you disable or don't configure this setting, a scheduled full scan to complete remediation will run at a default time.
 <!-- Remediation_Scan_ScheduleTime-Description-End -->
 
 <!-- Remediation_Scan_ScheduleTime-Editable-Begin -->
@@ -2397,13 +2384,12 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Remediation_Scan_ScheduleTime-DFProperties-End -->
 
 <!-- Remediation_Scan_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2430,7 +2416,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- Reporting_AdditionalActionTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_AdditionalActionTimeout-Applicability-End -->
 
 <!-- Reporting_AdditionalActionTimeout-OmaUri-Begin -->
@@ -2453,13 +2439,12 @@ This policy setting configures the time in minutes before a detection in the "ad
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_AdditionalActionTimeout-DFProperties-End -->
 
 <!-- Reporting_AdditionalActionTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2486,7 +2471,7 @@ This policy setting configures the time in minutes before a detection in the "ad
 <!-- Reporting_CriticalFailureTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_CriticalFailureTimeout-Applicability-End -->
 
 <!-- Reporting_CriticalFailureTimeout-OmaUri-Begin -->
@@ -2509,13 +2494,12 @@ This policy setting configures the time in minutes before a detection in the "cr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_CriticalFailureTimeout-DFProperties-End -->
 
 <!-- Reporting_CriticalFailureTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2542,7 +2526,7 @@ This policy setting configures the time in minutes before a detection in the "cr
 <!-- Reporting_DisableEnhancedNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_DisableEnhancedNotifications-Applicability-End -->
 
 <!-- Reporting_DisableEnhancedNotifications-OmaUri-Begin -->
@@ -2555,9 +2539,9 @@ This policy setting configures the time in minutes before a detection in the "cr
 <!-- Description-Source-ADMX -->
 Use this policy setting to specify if you want Microsoft Defender Antivirus enhanced notifications to display on clients.
 
-- If you disable or do not configure this setting, Microsoft Defender Antivirus enhanced notifications will display on clients.
+- If you disable or don't configure this setting, Microsoft Defender Antivirus enhanced notifications will display on clients.
 
-- If you enable this setting, Microsoft Defender Antivirus enhanced notifications will not display on clients.
+- If you enable this setting, Microsoft Defender Antivirus enhanced notifications won't display on clients.
 <!-- Reporting_DisableEnhancedNotifications-Description-End -->
 
 <!-- Reporting_DisableEnhancedNotifications-Editable-Begin -->
@@ -2571,13 +2555,12 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus enha
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_DisableEnhancedNotifications-DFProperties-End -->
 
 <!-- Reporting_DisableEnhancedNotifications-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2604,7 +2587,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus enha
 <!-- Reporting_DisablegenericrePorts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_DisablegenericrePorts-Applicability-End -->
 
 <!-- Reporting_DisablegenericrePorts-OmaUri-Begin -->
@@ -2617,9 +2600,9 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus enha
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not Watson events are sent.
 
-- If you enable or do not configure this setting, Watson events will be sent.
+- If you enable or don't configure this setting, Watson events will be sent.
 
-- If you disable this setting, Watson events will not be sent.
+- If you disable this setting, Watson events won't be sent.
 <!-- Reporting_DisablegenericrePorts-Description-End -->
 
 <!-- Reporting_DisablegenericrePorts-Editable-Begin -->
@@ -2631,13 +2614,12 @@ This policy setting allows you to configure whether or not Watson events are sen
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_DisablegenericrePorts-DFProperties-End -->
 
 <!-- Reporting_DisablegenericrePorts-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2664,7 +2646,7 @@ This policy setting allows you to configure whether or not Watson events are sen
 <!-- Reporting_NonCriticalTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_NonCriticalTimeout-Applicability-End -->
 
 <!-- Reporting_NonCriticalTimeout-OmaUri-Begin -->
@@ -2687,13 +2669,12 @@ This policy setting configures the time in minutes before a detection in the "no
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_NonCriticalTimeout-DFProperties-End -->
 
 <!-- Reporting_NonCriticalTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2720,7 +2701,7 @@ This policy setting configures the time in minutes before a detection in the "no
 <!-- Reporting_RecentlyCleanedTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_RecentlyCleanedTimeout-Applicability-End -->
 
 <!-- Reporting_RecentlyCleanedTimeout-OmaUri-Begin -->
@@ -2743,13 +2724,12 @@ This policy setting configures the time in minutes before a detection in the "co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_RecentlyCleanedTimeout-DFProperties-End -->
 
 <!-- Reporting_RecentlyCleanedTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2776,7 +2756,7 @@ This policy setting configures the time in minutes before a detection in the "co
 <!-- Reporting_WppTracingComponents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_WppTracingComponents-Applicability-End -->
 
 <!-- Reporting_WppTracingComponents-OmaUri-Begin -->
@@ -2799,13 +2779,12 @@ This policy configures Windows software trace preprocessor (WPP Software Tracing
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_WppTracingComponents-DFProperties-End -->
 
 <!-- Reporting_WppTracingComponents-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2832,7 +2811,7 @@ This policy configures Windows software trace preprocessor (WPP Software Tracing
 <!-- Reporting_WppTracingLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reporting_WppTracingLevel-Applicability-End -->
 
 <!-- Reporting_WppTracingLevel-OmaUri-Begin -->
@@ -2844,7 +2823,9 @@ This policy configures Windows software trace preprocessor (WPP Software Tracing
 <!-- Reporting_WppTracingLevel-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy allows you to configure tracing levels for Windows software trace preprocessor (WPP Software Tracing).
+
 Tracing levels are defined as:
+
 1 - Error
 2 - Warning
 3 - Info
@@ -2860,13 +2841,12 @@ Tracing levels are defined as:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reporting_WppTracingLevel-DFProperties-End -->
 
 <!-- Reporting_WppTracingLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2893,7 +2873,7 @@ Tracing levels are defined as:
 <!-- Scan_AllowPause-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_AllowPause-Applicability-End -->
 
 <!-- Scan_AllowPause-OmaUri-Begin -->
@@ -2906,9 +2886,9 @@ Tracing levels are defined as:
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether or not end users can pause a scan in progress.
 
-- If you enable or do not configure this setting, a new context menu will be added to the task tray icon to allow the user to pause a scan.
+- If you enable or don't configure this setting, a new context menu will be added to the task tray icon to allow the user to pause a scan.
 
-- If you disable this setting, users will not be able to pause scans.
+- If you disable this setting, users won't be able to pause scans.
 <!-- Scan_AllowPause-Description-End -->
 
 <!-- Scan_AllowPause-Editable-Begin -->
@@ -2920,13 +2900,12 @@ This policy setting allows you to manage whether or not end users can pause a sc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_AllowPause-DFProperties-End -->
 
 <!-- Scan_AllowPause-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2953,7 +2932,7 @@ This policy setting allows you to manage whether or not end users can pause a sc
 <!-- Scan_ArchiveMaxDepth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_ArchiveMaxDepth-Applicability-End -->
 
 <!-- Scan_ArchiveMaxDepth-OmaUri-Begin -->
@@ -2968,7 +2947,7 @@ This policy setting allows you to configure the maximum directory depth level in
 
 - If you enable this setting, archive files will be scanned to the directory depth level specified.
 
-- If you disable or do not configure this setting, archive files will be scanned to the default directory depth level.
+- If you disable or don't configure this setting, archive files will be scanned to the default directory depth level.
 <!-- Scan_ArchiveMaxDepth-Description-End -->
 
 <!-- Scan_ArchiveMaxDepth-Editable-Begin -->
@@ -2980,13 +2959,12 @@ This policy setting allows you to configure the maximum directory depth level in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_ArchiveMaxDepth-DFProperties-End -->
 
 <!-- Scan_ArchiveMaxDepth-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3013,7 +2991,7 @@ This policy setting allows you to configure the maximum directory depth level in
 <!-- Scan_ArchiveMaxSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_ArchiveMaxSize-Applicability-End -->
 
 <!-- Scan_ArchiveMaxSize-OmaUri-Begin -->
@@ -3028,7 +3006,7 @@ This policy setting allows you to configure the maximum size of archive files su
 
 - If you enable this setting, archive files less than or equal to the size specified will be scanned.
 
-- If you disable or do not configure this setting, archive files will be scanned according to the default value.
+- If you disable or don't configure this setting, archive files will be scanned according to the default value.
 <!-- Scan_ArchiveMaxSize-Description-End -->
 
 <!-- Scan_ArchiveMaxSize-Editable-Begin -->
@@ -3040,13 +3018,12 @@ This policy setting allows you to configure the maximum size of archive files su
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_ArchiveMaxSize-DFProperties-End -->
 
 <!-- Scan_ArchiveMaxSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3073,7 +3050,7 @@ This policy setting allows you to configure the maximum size of archive files su
 <!-- Scan_DisableArchiveScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableArchiveScanning-Applicability-End -->
 
 <!-- Scan_DisableArchiveScanning-OmaUri-Begin -->
@@ -3086,9 +3063,9 @@ This policy setting allows you to configure the maximum size of archive files su
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as . ZIP or . CAB files.
 
-- If you enable or do not configure this setting, archive files will be scanned.
+- If you enable or don't configure this setting, archive files will be scanned.
 
-- If you disable this setting, archive files will not be scanned. However, archives are always scanned during directed scans.
+- If you disable this setting, archive files won't be scanned. However, archives are always scanned during directed scans.
 <!-- Scan_DisableArchiveScanning-Description-End -->
 
 <!-- Scan_DisableArchiveScanning-Editable-Begin -->
@@ -3102,13 +3079,12 @@ This policy setting allows you to configure scans for malicious software and unw
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableArchiveScanning-DFProperties-End -->
 
 <!-- Scan_DisableArchiveScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3135,7 +3111,7 @@ This policy setting allows you to configure scans for malicious software and unw
 <!-- Scan_DisableEmailScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableEmailScanning-Applicability-End -->
 
 <!-- Scan_DisableEmailScanning-OmaUri-Begin -->
@@ -3146,11 +3122,11 @@ This policy setting allows you to configure scans for malicious software and unw
 
 <!-- Scan_DisableEmailScanning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning is not supported on modern email clients.
+This policy setting allows you to configure e-mail scanning. When e-mail scanning is enabled, the engine will parse the mailbox and mail files, according to their specific format, in order to analyze the mail bodies and attachments. Several e-mail formats are currently supported, for example: pst (Outlook), dbx, mbx, mime (Outlook Express), binhex (Mac). Email scanning isn't supported on modern email clients.
 
 - If you enable this setting, e-mail scanning will be enabled.
 
-- If you disable or do not configure this setting, e-mail scanning will be disabled.
+- If you disable or don't configure this setting, e-mail scanning will be disabled.
 <!-- Scan_DisableEmailScanning-Description-End -->
 
 <!-- Scan_DisableEmailScanning-Editable-Begin -->
@@ -3162,13 +3138,12 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableEmailScanning-DFProperties-End -->
 
 <!-- Scan_DisableEmailScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3195,7 +3170,7 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 <!-- Scan_DisableHeuristics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableHeuristics-Applicability-End -->
 
 <!-- Scan_DisableHeuristics-OmaUri-Begin -->
@@ -3206,9 +3181,9 @@ This policy setting allows you to configure e-mail scanning. When e-mail scannin
 
 <!-- Scan_DisableHeuristics-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure heuristics. Suspicious detections will be suppressed right before reporting to the engine client. Turning off heuristics will reduce the capability to flag new threats. It is recommended that you do not turn off heuristics.
+This policy setting allows you to configure heuristics. Suspicious detections will be suppressed right before reporting to the engine client. Turning off heuristics will reduce the capability to flag new threats. It's recommended that you don't turn off heuristics.
 
-- If you enable or do not configure this setting, heuristics will be enabled.
+- If you enable or don't configure this setting, heuristics will be enabled.
 
 - If you disable this setting, heuristics will be disabled.
 <!-- Scan_DisableHeuristics-Description-End -->
@@ -3222,13 +3197,12 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableHeuristics-DFProperties-End -->
 
 <!-- Scan_DisableHeuristics-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3255,7 +3229,7 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 <!-- Scan_DisablePackedExeScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisablePackedExeScanning-Applicability-End -->
 
 <!-- Scan_DisablePackedExeScanning-OmaUri-Begin -->
@@ -3277,14 +3251,13 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisablePackedExeScanning-DFProperties-End -->
 
 <!-- Scan_DisablePackedExeScanning-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3306,7 +3279,7 @@ This policy setting allows you to configure heuristics. Suspicious detections wi
 <!-- Scan_DisableRemovableDriveScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableRemovableDriveScanning-Applicability-End -->
 
 <!-- Scan_DisableRemovableDriveScanning-OmaUri-Begin -->
@@ -3321,7 +3294,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 - If you enable this setting, removable drives will be scanned during any type of scan.
 
-- If you disable or do not configure this setting, removable drives will not be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
+- If you disable or don't configure this setting, removable drives won't be scanned during a full scan. Removable drives may still be scanned during quick scan and custom scan.
 <!-- Scan_DisableRemovableDriveScanning-Description-End -->
 
 <!-- Scan_DisableRemovableDriveScanning-Editable-Begin -->
@@ -3333,13 +3306,12 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableRemovableDriveScanning-DFProperties-End -->
 
 <!-- Scan_DisableRemovableDriveScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3366,7 +3338,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 <!-- Scan_DisableReparsePointScanning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableReparsePointScanning-Applicability-End -->
 
 <!-- Scan_DisableReparsePointScanning-OmaUri-Begin -->
@@ -3381,7 +3353,7 @@ This policy setting allows you to configure reparse point scanning. If you allow
 
 - If you enable this setting, reparse point scanning will be enabled.
 
-- If you disable or do not configure this setting, reparse point scanning will be disabled.
+- If you disable or don't configure this setting, reparse point scanning will be disabled.
 <!-- Scan_DisableReparsePointScanning-Description-End -->
 
 <!-- Scan_DisableReparsePointScanning-Editable-Begin -->
@@ -3393,13 +3365,12 @@ This policy setting allows you to configure reparse point scanning. If you allow
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableReparsePointScanning-DFProperties-End -->
 
 <!-- Scan_DisableReparsePointScanning-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3426,7 +3397,7 @@ This policy setting allows you to configure reparse point scanning. If you allow
 <!-- Scan_DisableRestorePoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableRestorePoint-Applicability-End -->
 
 <!-- Scan_DisableRestorePoint-OmaUri-Begin -->
@@ -3441,7 +3412,7 @@ This policy setting allows you to create a system restore point on the computer 
 
 - If you enable this setting, a system restore point will be created.
 
-- If you disable or do not configure this setting, a system restore point will not be created.
+- If you disable or don't configure this setting, a system restore point won't be created.
 <!-- Scan_DisableRestorePoint-Description-End -->
 
 <!-- Scan_DisableRestorePoint-Editable-Begin -->
@@ -3453,13 +3424,12 @@ This policy setting allows you to create a system restore point on the computer 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableRestorePoint-DFProperties-End -->
 
 <!-- Scan_DisableRestorePoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3486,7 +3456,7 @@ This policy setting allows you to create a system restore point on the computer 
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-Applicability-End -->
 
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-OmaUri-Begin -->
@@ -3501,7 +3471,7 @@ This policy setting allows you to configure scanning mapped network drives.
 
 - If you enable this setting, mapped network drives will be scanned.
 
-- If you disable or do not configure this setting, mapped network drives will not be scanned.
+- If you disable or don't configure this setting, mapped network drives won't be scanned.
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-Description-End -->
 
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-Editable-Begin -->
@@ -3513,13 +3483,12 @@ This policy setting allows you to configure scanning mapped network drives.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-DFProperties-End -->
 
 <!-- Scan_DisableScanningMappedNetworkDrivesForFullScan-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3546,7 +3515,7 @@ This policy setting allows you to configure scanning mapped network drives.
 <!-- Scan_DisableScanningNetworkFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_DisableScanningNetworkFiles-Applicability-End -->
 
 <!-- Scan_DisableScanningNetworkFiles-OmaUri-Begin -->
@@ -3557,11 +3526,11 @@ This policy setting allows you to configure scanning mapped network drives.
 
 <!-- Scan_DisableScanningNetworkFiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.
+This policy setting allows you to configure scanning for network files. It's recommended that you don't enable this setting.
 
 - If you enable this setting, network files will be scanned.
 
-- If you disable or do not configure this setting, network files will not be scanned.
+- If you disable or don't configure this setting, network files won't be scanned.
 <!-- Scan_DisableScanningNetworkFiles-Description-End -->
 
 <!-- Scan_DisableScanningNetworkFiles-Editable-Begin -->
@@ -3573,13 +3542,12 @@ This policy setting allows you to configure scanning for network files. It is re
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_DisableScanningNetworkFiles-DFProperties-End -->
 
 <!-- Scan_DisableScanningNetworkFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3606,7 +3574,7 @@ This policy setting allows you to configure scanning for network files. It is re
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-Applicability-End -->
 
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-OmaUri-Begin -->
@@ -3621,7 +3589,7 @@ This policy setting configures a local override for the configuration of maximum
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-Description-End -->
 
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-Editable-Begin -->
@@ -3633,13 +3601,12 @@ This policy setting configures a local override for the configuration of maximum
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideAvgCPULoadFactor-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3666,7 +3633,7 @@ This policy setting configures a local override for the configuration of maximum
 <!-- Scan_LocalSettingOverrideScanParameters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_LocalSettingOverrideScanParameters-Applicability-End -->
 
 <!-- Scan_LocalSettingOverrideScanParameters-OmaUri-Begin -->
@@ -3681,7 +3648,7 @@ This policy setting configures a local override for the configuration of the sca
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Scan_LocalSettingOverrideScanParameters-Description-End -->
 
 <!-- Scan_LocalSettingOverrideScanParameters-Editable-Begin -->
@@ -3693,13 +3660,12 @@ This policy setting configures a local override for the configuration of the sca
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_LocalSettingOverrideScanParameters-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScanParameters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3726,7 +3692,7 @@ This policy setting configures a local override for the configuration of the sca
 <!-- Scan_LocalSettingOverrideScheduleDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_LocalSettingOverrideScheduleDay-Applicability-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleDay-OmaUri-Begin -->
@@ -3741,7 +3707,7 @@ This policy setting configures a local override for the configuration of schedul
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Scan_LocalSettingOverrideScheduleDay-Description-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleDay-Editable-Begin -->
@@ -3753,13 +3719,12 @@ This policy setting configures a local override for the configuration of schedul
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_LocalSettingOverrideScheduleDay-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3786,7 +3751,7 @@ This policy setting configures a local override for the configuration of schedul
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-Applicability-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-OmaUri-Begin -->
@@ -3801,7 +3766,7 @@ This policy setting configures a local override for the configuration of schedul
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-Description-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-Editable-Begin -->
@@ -3813,13 +3778,12 @@ This policy setting configures a local override for the configuration of schedul
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleQuickScantime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3846,7 +3810,7 @@ This policy setting configures a local override for the configuration of schedul
 <!-- Scan_LocalSettingOverrideScheduleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_LocalSettingOverrideScheduleTime-Applicability-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleTime-OmaUri-Begin -->
@@ -3861,7 +3825,7 @@ This policy setting configures a local override for the configuration of schedul
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Scan_LocalSettingOverrideScheduleTime-Description-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleTime-Editable-Begin -->
@@ -3873,13 +3837,12 @@ This policy setting configures a local override for the configuration of schedul
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_LocalSettingOverrideScheduleTime-DFProperties-End -->
 
 <!-- Scan_LocalSettingOverrideScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3906,7 +3869,7 @@ This policy setting configures a local override for the configuration of schedul
 <!-- Scan_LowCpuPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_LowCpuPriority-Applicability-End -->
 
 <!-- Scan_LowCpuPriority-OmaUri-Begin -->
@@ -3921,7 +3884,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 - If you enable this setting, low CPU priority will be used during scheduled scans.
 
-- If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
+- If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
 <!-- Scan_LowCpuPriority-Description-End -->
 
 <!-- Scan_LowCpuPriority-Editable-Begin -->
@@ -3933,13 +3896,12 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_LowCpuPriority-DFProperties-End -->
 
 <!-- Scan_LowCpuPriority-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3966,7 +3928,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-Applicability-End -->
 
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-OmaUri-Begin -->
@@ -3981,7 +3943,7 @@ This policy setting allows you to define the number of consecutive scheduled sca
 
 - If you enable this setting, a catch-up scan will occur after the specified number consecutive missed scheduled scans.
 
-- If you disable or do not configure this setting, a catch-up scan will occur after the 2 consecutive missed scheduled scans.
+- If you disable or don't configure this setting, a catch-up scan will occur after the 2 consecutive missed scheduled scans.
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-Description-End -->
 
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-Editable-Begin -->
@@ -3993,13 +3955,12 @@ This policy setting allows you to define the number of consecutive scheduled sca
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-DFProperties-End -->
 
 <!-- Scan_MissedScheduledScanCountBeforeCatchup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4026,7 +3987,7 @@ This policy setting allows you to define the number of consecutive scheduled sca
 <!-- Scan_PurgeItemsAfterDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_PurgeItemsAfterDelay-Applicability-End -->
 
 <!-- Scan_PurgeItemsAfterDelay-OmaUri-Begin -->
@@ -4037,11 +3998,11 @@ This policy setting allows you to define the number of consecutive scheduled sca
 
 <!-- Scan_PurgeItemsAfterDelay-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting defines the number of days items should be kept in the scan history folder before being permanently removed. The value represents the number of days to keep items in the folder. If set to zero, items will be kept forever and will not be automatically removed. By default, the value is set to 30 days.
+This policy setting defines the number of days items should be kept in the scan history folder before being permanently removed. The value represents the number of days to keep items in the folder. If set to zero, items will be kept forever and won't be automatically removed. By default, the value is set to 30 days.
 
 - If you enable this setting, items will be removed from the scan history folder after the number of days specified.
 
-- If you disable or do not configure this setting, items will be kept in the scan history folder for the default number of days.
+- If you disable or don't configure this setting, items will be kept in the scan history folder for the default number of days.
 <!-- Scan_PurgeItemsAfterDelay-Description-End -->
 
 <!-- Scan_PurgeItemsAfterDelay-Editable-Begin -->
@@ -4053,13 +4014,12 @@ This policy setting defines the number of days items should be kept in the scan 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_PurgeItemsAfterDelay-DFProperties-End -->
 
 <!-- Scan_PurgeItemsAfterDelay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4086,7 +4046,7 @@ This policy setting defines the number of days items should be kept in the scan 
 <!-- Scan_QuickScanInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_QuickScanInterval-Applicability-End -->
 
 <!-- Scan_QuickScanInterval-OmaUri-Begin -->
@@ -4097,11 +4057,11 @@ This policy setting defines the number of days items should be kept in the scan 
 
 <!-- Scan_QuickScanInterval-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify an interval at which to perform a quick scan. The time value is represented as the number of hours between quick scans. Valid values range from 1 (every hour) to 24 (once per day). If set to zero, interval quick scans will not occur. By default, this setting is set to 0.
+This policy setting allows you to specify an interval at which to perform a quick scan. The time value is represented as the number of hours between quick scans. Valid values range from 1 (every hour) to 24 (once per day). If set to zero, interval quick scans won't occur. By default, this setting is set to 0.
 
 - If you enable this setting, a quick scan will run at the interval specified.
 
-- If you disable or do not configure this setting, quick scan controlled by this config will not be run.
+- If you disable or don't configure this setting, quick scan controlled by this config won't be run.
 <!-- Scan_QuickScanInterval-Description-End -->
 
 <!-- Scan_QuickScanInterval-Editable-Begin -->
@@ -4113,13 +4073,12 @@ This policy setting allows you to specify an interval at which to perform a quic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_QuickScanInterval-DFProperties-End -->
 
 <!-- Scan_QuickScanInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4146,7 +4105,7 @@ This policy setting allows you to specify an interval at which to perform a quic
 <!-- Scan_ScanOnlyIfIdle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_ScanOnlyIfIdle-Applicability-End -->
 
 <!-- Scan_ScanOnlyIfIdle-OmaUri-Begin -->
@@ -4159,7 +4118,7 @@ This policy setting allows you to specify an interval at which to perform a quic
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure scheduled scans to start only when your computer is on but not in use.
 
-- If you enable or do not configure this setting, scheduled scans will only run when the computer is on but not in use.
+- If you enable or don't configure this setting, scheduled scans will only run when the computer is on but not in use.
 
 - If you disable this setting, scheduled scans will run at the scheduled time.
 <!-- Scan_ScanOnlyIfIdle-Description-End -->
@@ -4173,13 +4132,12 @@ This policy setting allows you to configure scheduled scans to start only when y
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_ScanOnlyIfIdle-DFProperties-End -->
 
 <!-- Scan_ScanOnlyIfIdle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4206,7 +4164,7 @@ This policy setting allows you to configure scheduled scans to start only when y
 <!-- Scan_ScheduleDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_ScheduleDay-Applicability-End -->
 
 <!-- Scan_ScheduleDay-OmaUri-Begin -->
@@ -4220,19 +4178,12 @@ This policy setting allows you to configure scheduled scans to start only when y
 This policy setting allows you to specify the day of the week on which to perform a scheduled scan. The scan can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
-(0x0) Every Day
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never (default)
+
+(0x0) Every Day (0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never (default)
 
 - If you enable this setting, a scheduled scan will run at the frequency specified.
 
-- If you disable or do not configure this setting, a scheduled scan will run at a default frequency.
+- If you disable or don't configure this setting, a scheduled scan will run at a default frequency.
 <!-- Scan_ScheduleDay-Description-End -->
 
 <!-- Scan_ScheduleDay-Editable-Begin -->
@@ -4244,13 +4195,12 @@ This setting can be configured with the following ordinal number values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_ScheduleDay-DFProperties-End -->
 
 <!-- Scan_ScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4277,7 +4227,7 @@ This setting can be configured with the following ordinal number values:
 <!-- Scan_ScheduleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Scan_ScheduleTime-Applicability-End -->
 
 <!-- Scan_ScheduleTime-OmaUri-Begin -->
@@ -4292,7 +4242,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 - If you enable this setting, a scheduled scan will run at the time of day specified.
 
-- If you disable or do not configure this setting, a scheduled scan will run at a default time.
+- If you disable or don't configure this setting, a scheduled scan will run at a default time.
 <!-- Scan_ScheduleTime-Description-End -->
 
 <!-- Scan_ScheduleTime-Editable-Begin -->
@@ -4304,13 +4254,12 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Scan_ScheduleTime-DFProperties-End -->
 
 <!-- Scan_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4337,7 +4286,7 @@ This policy setting allows you to specify the time of day at which to perform a 
 <!-- ServiceKeepAlive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ServiceKeepAlive-Applicability-End -->
 
 <!-- ServiceKeepAlive-OmaUri-Begin -->
@@ -4348,11 +4297,11 @@ This policy setting allows you to specify the time of day at which to perform a 
 
 <!-- ServiceKeepAlive-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure whether or not the antimalware service remains running when antivirus and antispyware security intelligence is disabled. It is recommended that this setting remain disabled.
+This policy setting allows you to configure whether or not the antimalware service remains running when antivirus and antispyware security intelligence is disabled. It's recommended that this setting remain disabled.
 
 - If you enable this setting, the antimalware service will always remain running even if both antivirus and antispyware security intelligence is disabled.
 
-- If you disable or do not configure this setting, the antimalware service will be stopped when both antivirus and antispyware security intelligence is disabled. If the computer is restarted, the service will be started if it is set to Automatic startup. After the service has started, there will be a check to see if antivirus and antispyware security intelligence is enabled. If at least one is enabled, the service will remain running. If both are disabled, the service will be stopped.
+- If you disable or don't configure this setting, the antimalware service will be stopped when both antivirus and antispyware security intelligence is disabled. If the computer is restarted, the service will be started if it's set to Automatic startup. After the service has started, there will be a check to see if antivirus and antispyware security intelligence is enabled. If at least one is enabled, the service will remain running. If both are disabled, the service will be stopped.
 <!-- ServiceKeepAlive-Description-End -->
 
 <!-- ServiceKeepAlive-Editable-Begin -->
@@ -4364,13 +4313,12 @@ This policy setting allows you to configure whether or not the antimalware servi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ServiceKeepAlive-DFProperties-End -->
 
 <!-- ServiceKeepAlive-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4397,7 +4345,7 @@ This policy setting allows you to configure whether or not the antimalware servi
 <!-- SignatureUpdate_ASSignatureDue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_ASSignatureDue-Applicability-End -->
 
 <!-- SignatureUpdate_ASSignatureDue-OmaUri-Begin -->
@@ -4412,7 +4360,7 @@ This policy setting allows you to define the number of days that must pass befor
 
 - If you enable this setting, spyware security intelligence will be considered out of date after the number of days specified have passed without an update.
 
-- If you disable or do not configure this setting, spyware security intelligence will be considered out of date after the default number of days have passed without an update.
+- If you disable or don't configure this setting, spyware security intelligence will be considered out of date after the default number of days have passed without an update.
 <!-- SignatureUpdate_ASSignatureDue-Description-End -->
 
 <!-- SignatureUpdate_ASSignatureDue-Editable-Begin -->
@@ -4424,13 +4372,12 @@ This policy setting allows you to define the number of days that must pass befor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_ASSignatureDue-DFProperties-End -->
 
 <!-- SignatureUpdate_ASSignatureDue-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4457,7 +4404,7 @@ This policy setting allows you to define the number of days that must pass befor
 <!-- SignatureUpdate_AVSignatureDue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_AVSignatureDue-Applicability-End -->
 
 <!-- SignatureUpdate_AVSignatureDue-OmaUri-Begin -->
@@ -4472,7 +4419,7 @@ This policy setting allows you to define the number of days that must pass befor
 
 - If you enable this setting, virus security intelligence will be considered out of date after the number of days specified have passed without an update.
 
-- If you disable or do not configure this setting, virus security intelligence will be considered out of date after the default number of days have passed without an update.
+- If you disable or don't configure this setting, virus security intelligence will be considered out of date after the default number of days have passed without an update.
 <!-- SignatureUpdate_AVSignatureDue-Description-End -->
 
 <!-- SignatureUpdate_AVSignatureDue-Editable-Begin -->
@@ -4484,13 +4431,12 @@ This policy setting allows you to define the number of days that must pass befor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_AVSignatureDue-DFProperties-End -->
 
 <!-- SignatureUpdate_AVSignatureDue-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4517,7 +4463,7 @@ This policy setting allows you to define the number of days that must pass befor
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-Applicability-End -->
 
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-OmaUri-Begin -->
@@ -4528,11 +4474,11 @@ This policy setting allows you to define the number of days that must pass befor
 
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "{\\unc1 | \\unc2 }". The list is empty by default.
+This policy setting allows you to configure UNC file share sources for downloading security intelligence updates. Sources will be contacted in the order specified. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources. For example: "`{\\unc1 | \\unc2 }`". The list is empty by default.
 
-- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, the specified sources will be contacted for security intelligence updates. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-- If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+- If you disable or don't configure this setting, the list will remain empty by default and no sources will be contacted.
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-Description-End -->
 
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-Editable-Begin -->
@@ -4544,13 +4490,12 @@ This policy setting allows you to configure UNC file share sources for downloadi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-DFProperties-End -->
 
 <!-- SignatureUpdate_DefinitionUpdateFileSharesSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4576,7 +4521,7 @@ This policy setting allows you to configure UNC file share sources for downloadi
 <!-- SignatureUpdate_DisableScanOnUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_DisableScanOnUpdate-Applicability-End -->
 
 <!-- SignatureUpdate_DisableScanOnUpdate-OmaUri-Begin -->
@@ -4589,9 +4534,9 @@ This policy setting allows you to configure UNC file share sources for downloadi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the automatic scan which starts after a security intelligence update has occurred.
 
-- If you enable or do not configure this setting, a scan will start following a security intelligence update.
+- If you enable or don't configure this setting, a scan will start following a security intelligence update.
 
-- If you disable this setting, a scan will not start following a security intelligence update.
+- If you disable this setting, a scan won't start following a security intelligence update.
 <!-- SignatureUpdate_DisableScanOnUpdate-Description-End -->
 
 <!-- SignatureUpdate_DisableScanOnUpdate-Editable-Begin -->
@@ -4603,13 +4548,12 @@ This policy setting allows you to configure the automatic scan which starts afte
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_DisableScanOnUpdate-DFProperties-End -->
 
 <!-- SignatureUpdate_DisableScanOnUpdate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4636,7 +4580,7 @@ This policy setting allows you to configure the automatic scan which starts afte
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-Applicability-End -->
 
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-OmaUri-Begin -->
@@ -4649,7 +4593,7 @@ This policy setting allows you to configure the automatic scan which starts afte
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure security intelligence updates when the computer is running on battery power.
 
-- If you enable or do not configure this setting, security intelligence updates will occur as usual regardless of power state.
+- If you enable or don't configure this setting, security intelligence updates will occur as usual regardless of power state.
 
 - If you disable this setting, security intelligence updates will be turned off while the computer is running on battery power.
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-Description-End -->
@@ -4663,13 +4607,12 @@ This policy setting allows you to configure security intelligence updates when t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-DFProperties-End -->
 
 <!-- SignatureUpdate_DisableScheduledSignatureUpdateonBattery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4696,7 +4639,7 @@ This policy setting allows you to configure security intelligence updates when t
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-Applicability-End -->
 
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-OmaUri-Begin -->
@@ -4709,9 +4652,9 @@ This policy setting allows you to configure security intelligence updates when t
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure security intelligence updates on startup when there is no antimalware engine present.
 
-- If you enable or do not configure this setting, security intelligence updates will be initiated on startup when there is no antimalware engine present.
+- If you enable or don't configure this setting, security intelligence updates will be initiated on startup when there is no antimalware engine present.
 
-- If you disable this setting, security intelligence updates will not be initiated on startup when there is no antimalware engine present.
+- If you disable this setting, security intelligence updates won't be initiated on startup when there is no antimalware engine present.
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-Description-End -->
 
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-Editable-Begin -->
@@ -4723,13 +4666,12 @@ This policy setting allows you to configure security intelligence updates on sta
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-DFProperties-End -->
 
 <!-- SignatureUpdate_DisableUpdateOnStartupWithoutEngine-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4756,7 +4698,7 @@ This policy setting allows you to configure security intelligence updates on sta
 <!-- SignatureUpdate_FallbackOrder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_FallbackOrder-Applicability-End -->
 
 <!-- SignatureUpdate_FallbackOrder-OmaUri-Begin -->
@@ -4767,13 +4709,13 @@ This policy setting allows you to configure security intelligence updates on sta
 
 <!-- SignatureUpdate_FallbackOrder-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares"
+This policy setting allows you to define the order in which different security intelligence update sources should be contacted. The value of this setting should be entered as a pipe-separated string enumerating the security intelligence update sources in order. Possible values are: "InternalDefinitionUpdateServer", "MicrosoftUpdateServer", "MMPC", and "FileShares".
 
 For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
-- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+- If you enable this setting, security intelligence update sources will be contacted in the order specified. Once security intelligence updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-- If you disable or do not configure this setting, security intelligence update sources will be contacted in a default order.
+- If you disable or don't configure this setting, security intelligence update sources will be contacted in a default order.
 <!-- SignatureUpdate_FallbackOrder-Description-End -->
 
 <!-- SignatureUpdate_FallbackOrder-Editable-Begin -->
@@ -4785,13 +4727,12 @@ For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_FallbackOrder-DFProperties-End -->
 
 <!-- SignatureUpdate_FallbackOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4817,7 +4758,7 @@ For Example: `{ InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC }`
 <!-- SignatureUpdate_ForceUpdateFromMU-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_ForceUpdateFromMU-Applicability-End -->
 
 <!-- SignatureUpdate_ForceUpdateFromMU-OmaUri-Begin -->
@@ -4832,7 +4773,7 @@ This policy setting allows you to enable download of security intelligence updat
 
 - If you enable this setting, security intelligence updates will be downloaded from Microsoft Update.
 
-- If you disable or do not configure this setting, security intelligence updates will be downloaded from the configured download source.
+- If you disable or don't configure this setting, security intelligence updates will be downloaded from the configured download source.
 <!-- SignatureUpdate_ForceUpdateFromMU-Description-End -->
 
 <!-- SignatureUpdate_ForceUpdateFromMU-Editable-Begin -->
@@ -4844,13 +4785,12 @@ This policy setting allows you to enable download of security intelligence updat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_ForceUpdateFromMU-DFProperties-End -->
 
 <!-- SignatureUpdate_ForceUpdateFromMU-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4877,7 +4817,7 @@ This policy setting allows you to enable download of security intelligence updat
 <!-- SignatureUpdate_RealtimeSignatureDelivery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_RealtimeSignatureDelivery-Applicability-End -->
 
 <!-- SignatureUpdate_RealtimeSignatureDelivery-OmaUri-Begin -->
@@ -4890,7 +4830,7 @@ This policy setting allows you to enable download of security intelligence updat
 <!-- Description-Source-ADMX -->
 This policy setting allows you to enable real-time security intelligence updates in response to reports sent to Microsoft MAPS. If the service reports a file as an unknown and Microsoft MAPS finds that the latest security intelligence update has security intelligence for a threat involving that file, the service will receive all of the latest security intelligence for that threat immediately. You must have configured your computer to join Microsoft MAPS for this functionality to work.
 
-- If you enable or do not configure this setting, real-time security intelligence updates will be enabled.
+- If you enable or don't configure this setting, real-time security intelligence updates will be enabled.
 
 - If you disable this setting, real-time security intelligence updates will disabled.
 <!-- SignatureUpdate_RealtimeSignatureDelivery-Description-End -->
@@ -4904,13 +4844,12 @@ This policy setting allows you to enable real-time security intelligence updates
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_RealtimeSignatureDelivery-DFProperties-End -->
 
 <!-- SignatureUpdate_RealtimeSignatureDelivery-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4937,7 +4876,7 @@ This policy setting allows you to enable real-time security intelligence updates
 <!-- SignatureUpdate_ScheduleDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_ScheduleDay-Applicability-End -->
 
 <!-- SignatureUpdate_ScheduleDay-OmaUri-Begin -->
@@ -4951,19 +4890,13 @@ This policy setting allows you to enable real-time security intelligence updates
 This policy setting allows you to specify the day of the week on which to check for security intelligence updates. The check can also be configured to run every day or to never run at all.
 
 This setting can be configured with the following ordinal number values:
+
 (0x0) Every Day (default)
-(0x1) Sunday
-(0x2) Monday
-(0x3) Tuesday
-(0x4) Wednesday
-(0x5) Thursday
-(0x6) Friday
-(0x7) Saturday
-(0x8) Never
+(0x1) Sunday (0x2) Monday (0x3) Tuesday (0x4) Wednesday (0x5) Thursday (0x6) Friday (0x7) Saturday (0x8) Never.
 
 - If you enable this setting, the check for security intelligence updates will occur at the frequency specified.
 
-- If you disable or do not configure this setting, the check for security intelligence updates will occur at a default frequency.
+- If you disable or don't configure this setting, the check for security intelligence updates will occur at a default frequency.
 <!-- SignatureUpdate_ScheduleDay-Description-End -->
 
 <!-- SignatureUpdate_ScheduleDay-Editable-Begin -->
@@ -4975,13 +4908,12 @@ This setting can be configured with the following ordinal number values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_ScheduleDay-DFProperties-End -->
 
 <!-- SignatureUpdate_ScheduleDay-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5008,7 +4940,7 @@ This setting can be configured with the following ordinal number values:
 <!-- SignatureUpdate_ScheduleTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_ScheduleTime-Applicability-End -->
 
 <!-- SignatureUpdate_ScheduleTime-OmaUri-Begin -->
@@ -5023,7 +4955,7 @@ This policy setting allows you to specify the time of day at which to check for 
 
 - If you enable this setting, the check for security intelligence updates will occur at the time of day specified.
 
-- If you disable or do not configure this setting, the check for security intelligence updates will occur at the default time.
+- If you disable or don't configure this setting, the check for security intelligence updates will occur at the default time.
 <!-- SignatureUpdate_ScheduleTime-Description-End -->
 
 <!-- SignatureUpdate_ScheduleTime-Editable-Begin -->
@@ -5035,13 +4967,12 @@ This policy setting allows you to specify the time of day at which to check for 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_ScheduleTime-DFProperties-End -->
 
 <!-- SignatureUpdate_ScheduleTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5068,7 +4999,7 @@ This policy setting allows you to specify the time of day at which to check for 
 <!-- SignatureUpdate_SharedSignaturesLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_SharedSignaturesLocation-Applicability-End -->
 
 <!-- SignatureUpdate_SharedSignaturesLocation-OmaUri-Begin -->
@@ -5081,7 +5012,7 @@ This policy setting allows you to specify the time of day at which to check for 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
-If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+If you disable or don't configure this setting, security intelligence will be referred from the default local source.
 <!-- SignatureUpdate_SharedSignaturesLocation-Description-End -->
 
 <!-- SignatureUpdate_SharedSignaturesLocation-Editable-Begin -->
@@ -5093,13 +5024,12 @@ If you disable or do not configure this setting, security intelligence will be r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_SharedSignaturesLocation-DFProperties-End -->
 
 <!-- SignatureUpdate_SharedSignaturesLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5125,7 +5055,7 @@ If you disable or do not configure this setting, security intelligence will be r
 <!-- SignatureUpdate_SignatureDisableNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_SignatureDisableNotification-Applicability-End -->
 
 <!-- SignatureUpdate_SignatureDisableNotification-OmaUri-Begin -->
@@ -5138,9 +5068,9 @@ If you disable or do not configure this setting, security intelligence will be r
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure the antimalware service to receive notifications to disable individual security intelligence in response to reports it sends to Microsoft MAPS. Microsoft MAPS uses these notifications to disable security intelligence that are causing false positive reports. You must have configured your computer to join Microsoft MAPS for this functionality to work.
 
-- If you enable this setting or do not configure, the antimalware service will receive notifications to disable security intelligence.
+- If you enable this setting or don't configure, the antimalware service will receive notifications to disable security intelligence.
 
-- If you disable this setting, the antimalware service will not receive notifications to disable security intelligence.
+- If you disable this setting, the antimalware service won't receive notifications to disable security intelligence.
 <!-- SignatureUpdate_SignatureDisableNotification-Description-End -->
 
 <!-- SignatureUpdate_SignatureDisableNotification-Editable-Begin -->
@@ -5152,13 +5082,12 @@ This policy setting allows you to configure the antimalware service to receive n
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_SignatureDisableNotification-DFProperties-End -->
 
 <!-- SignatureUpdate_SignatureDisableNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5185,7 +5114,7 @@ This policy setting allows you to configure the antimalware service to receive n
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-Applicability-End -->
 
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-OmaUri-Begin -->
@@ -5200,7 +5129,7 @@ This policy setting allows you to define the number of days after which a catch-
 
 - If you enable this setting, a catch-up security intelligence update will occur after the specified number of days.
 
-- If you disable or do not configure this setting, a catch-up security intelligence update will be required after the default number of days.
+- If you disable or don't configure this setting, a catch-up security intelligence update will be required after the default number of days.
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-Description-End -->
 
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-Editable-Begin -->
@@ -5212,13 +5141,12 @@ This policy setting allows you to define the number of days after which a catch-
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-DFProperties-End -->
 
 <!-- SignatureUpdate_SignatureUpdateCatchupInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5245,7 +5173,7 @@ This policy setting allows you to define the number of days after which a catch-
 <!-- SignatureUpdate_UpdateOnStartup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SignatureUpdate_UpdateOnStartup-Applicability-End -->
 
 <!-- SignatureUpdate_UpdateOnStartup-OmaUri-Begin -->
@@ -5260,7 +5188,7 @@ This policy setting allows you to manage whether a check for new virus and spywa
 
 - If you enable this setting, a check for new security intelligence will occur after service startup.
 
-- If you disable this setting or do not configure this setting, a check for new security intelligence will not occur after service startup.
+- If you disable this setting or don't configure this setting, a check for new security intelligence won't occur after service startup.
 <!-- SignatureUpdate_UpdateOnStartup-Description-End -->
 
 <!-- SignatureUpdate_UpdateOnStartup-Editable-Begin -->
@@ -5272,13 +5200,12 @@ This policy setting allows you to manage whether a check for new virus and spywa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SignatureUpdate_UpdateOnStartup-DFProperties-End -->
 
 <!-- SignatureUpdate_UpdateOnStartup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5305,7 +5232,7 @@ This policy setting allows you to manage whether a check for new virus and spywa
 <!-- Spynet_LocalSettingOverrideSpynetReporting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Spynet_LocalSettingOverrideSpynetReporting-Applicability-End -->
 
 <!-- Spynet_LocalSettingOverrideSpynetReporting-OmaUri-Begin -->
@@ -5320,7 +5247,7 @@ This policy setting configures a local override for the configuration to join Mi
 
 - If you enable this setting, the local preference setting will take priority over Group Policy.
 
-- If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+- If you disable or don't configure this setting, Group Policy will take priority over the local preference setting.
 <!-- Spynet_LocalSettingOverrideSpynetReporting-Description-End -->
 
 <!-- Spynet_LocalSettingOverrideSpynetReporting-Editable-Begin -->
@@ -5332,13 +5259,12 @@ This policy setting configures a local override for the configuration to join Mi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Spynet_LocalSettingOverrideSpynetReporting-DFProperties-End -->
 
 <!-- Spynet_LocalSettingOverrideSpynetReporting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5365,7 +5291,7 @@ This policy setting configures a local override for the configuration to join Mi
 <!-- SpynetReporting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SpynetReporting-Applicability-End -->
 
 <!-- SpynetReporting-OmaUri-Begin -->
@@ -5378,20 +5304,20 @@ This policy setting configures a local override for the configuration to join Mi
 <!-- Description-Source-ADMX -->
 This policy setting allows you to join Microsoft MAPS. Microsoft MAPS is the online community that helps you choose how to respond to potential threats. The community also helps stop the spread of new malicious software infections.
 
-You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft will not use this information to identify you or contact you.
+You can choose to send basic or additional information about detected software. Additional information helps Microsoft create new security intelligence and help it to protect your computer. This information can include things like location of detected items on your computer if harmful software was removed. The information will be automatically collected and sent. In some instances, personal information might unintentionally be sent to Microsoft. However, Microsoft won't use this information to identify you or contact you.
 
 Possible options are:
+
 (0x0) Disabled (default)
-(0x1) Basic membership
-(0x2) Advanced membership
+(0x1) Basic membership (0x2) Advanced membership.
 
 Basic membership will send basic information to Microsoft about software that has been detected, including where the software came from, the actions that you apply or that are applied automatically, and whether the actions were successful.
 
 Advanced membership, in addition to basic information, will send more information to Microsoft about malicious software, spyware, and potentially unwanted software, including the location of the software, file names, how the software operates, and how it has impacted your computer.
 
-- If you enable this setting, you will join Microsoft MAPS with the membership specified.
+- If you enable this setting, you'll join Microsoft MAPS with the membership specified.
 
-- If you disable or do not configure this setting, you will not join Microsoft MAPS.
+- If you disable or don't configure this setting, you won't join Microsoft MAPS.
 
 In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.
 <!-- SpynetReporting-Description-End -->
@@ -5405,13 +5331,12 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SpynetReporting-DFProperties-End -->
 
 <!-- SpynetReporting-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5438,7 +5363,7 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 <!-- Threats_ThreatIdDefaultAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Threats_ThreatIdDefaultAction-Applicability-End -->
 
 <!-- Threats_ThreatIdDefaultAction-OmaUri-Begin -->
@@ -5449,9 +5374,10 @@ In Windows 10, Basic membership is no longer available, so setting the value to 
 
 <!-- Threats_ThreatIdDefaultAction-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting customize which remediation action will be taken for each listed Threat ID when it is detected during a scan. Threats should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid Threat ID, while the value contains the action ID for the remediation action that should be taken.
+This policy setting customize which remediation action will be taken for each listed Threat ID when it's detected during a scan. Threats should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid Threat ID, while the value contains the action ID for the remediation action that should be taken.
 
 Valid remediation action values are:
+
 2 = Quarantine
 3 = Remove
 6 = Ignore.
@@ -5466,13 +5392,12 @@ Valid remediation action values are:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Threats_ThreatIdDefaultAction-DFProperties-End -->
 
 <!-- Threats_ThreatIdDefaultAction-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5499,7 +5424,7 @@ Valid remediation action values are:
 <!-- UX_Configuration_CustomDefaultActionToastString-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- UX_Configuration_CustomDefaultActionToastString-Applicability-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-OmaUri-Begin -->
@@ -5514,7 +5439,7 @@ This policy setting allows you to configure whether or not to display additional
 
 - If you enable this setting, the additional text specified will be displayed.
 
-- If you disable or do not configure this setting, there will be no additional text displayed.
+- If you disable or don't configure this setting, there will be no additional text displayed.
 <!-- UX_Configuration_CustomDefaultActionToastString-Description-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-Editable-Begin -->
@@ -5526,13 +5451,12 @@ This policy setting allows you to configure whether or not to display additional
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UX_Configuration_CustomDefaultActionToastString-DFProperties-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5558,7 +5482,7 @@ This policy setting allows you to configure whether or not to display additional
 <!-- UX_Configuration_Notification_Suppress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- UX_Configuration_Notification_Suppress-Applicability-End -->
 
 <!-- UX_Configuration_Notification_Suppress-OmaUri-Begin -->
@@ -5570,9 +5494,10 @@ This policy setting allows you to configure whether or not to display additional
 <!-- UX_Configuration_Notification_Suppress-Description-Begin -->
 <!-- Description-Source-ADMX -->
 Use this policy setting to specify if you want Microsoft Defender Antivirus notifications to display on clients.
-- If you disable or do not configure this setting, Microsoft Defender Antivirus notifications will display on clients.
 
-- If you enable this setting, Microsoft Defender Antivirus notifications will not display on clients.
+- If you disable or don't configure this setting, Microsoft Defender Antivirus notifications will display on clients.
+
+- If you enable this setting, Microsoft Defender Antivirus notifications won't display on clients.
 <!-- UX_Configuration_Notification_Suppress-Description-End -->
 
 <!-- UX_Configuration_Notification_Suppress-Editable-Begin -->
@@ -5586,13 +5511,12 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus noti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UX_Configuration_Notification_Suppress-DFProperties-End -->
 
 <!-- UX_Configuration_Notification_Suppress-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5619,7 +5543,7 @@ Use this policy setting to specify if you want Microsoft Defender Antivirus noti
 <!-- UX_Configuration_SuppressRebootNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- UX_Configuration_SuppressRebootNotification-Applicability-End -->
 
 <!-- UX_Configuration_SuppressRebootNotification-OmaUri-Begin -->
@@ -5646,13 +5570,12 @@ If you enable this setting AM UI won't show reboot notifications.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UX_Configuration_SuppressRebootNotification-DFProperties-End -->
 
 <!-- UX_Configuration_SuppressRebootNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5679,7 +5602,7 @@ If you enable this setting AM UI won't show reboot notifications.
 <!-- UX_Configuration_UILockdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- UX_Configuration_UILockdown-Applicability-End -->
 
 <!-- UX_Configuration_UILockdown-OmaUri-Begin -->
@@ -5691,6 +5614,7 @@ If you enable this setting AM UI won't show reboot notifications.
 <!-- UX_Configuration_UILockdown-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure whether or not to display AM UI to the users.
+
 If you enable this setting AM UI won't be available to users.
 <!-- UX_Configuration_UILockdown-Description-End -->
 
@@ -5703,13 +5627,12 @@ If you enable this setting AM UI won't be available to users.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- UX_Configuration_UILockdown-DFProperties-End -->
 
 <!-- UX_Configuration_UILockdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

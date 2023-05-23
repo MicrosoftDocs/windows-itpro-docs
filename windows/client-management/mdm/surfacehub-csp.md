@@ -4,7 +4,7 @@ description: Learn more about the SurfaceHub CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/27/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- SurfaceHub-Begin -->
 # SurfaceHub CSP
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- SurfaceHub-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -95,7 +94,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
 <!-- Device-DeviceAccount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-Applicability-End -->
 
 <!-- Device-DeviceAccount-OmaUri-Begin -->
@@ -106,7 +105,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
 
 <!-- Device-DeviceAccount-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for setting device account information. A device account is a Microsoft Exchange account that is connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the [Surface Hub administrator guide](/surface-hub/) for more information about setting up a device account. To use a device account from Azure Active Directory: 1. Set the UserPrincipalName (for Azure AD). 2. Set a valid Password. 3. Execute ValidateAndCommit to validate the specified username and password combination against Azure AD. 4. Get the ErrorContext in case something goes wrong during validation.
+Node for setting device account information. A device account is a Microsoft Exchange account that's connected with Skype for Business, which allows people to join scheduled meetings, make Skype for Business calls, and share content from the device. See the [Surface Hub administrator guide](/surface-hub/) for more information about setting up a device account. To use a device account from Azure Active Directory: 1. Set the UserPrincipalName (for Azure AD). 2. Set a valid Password. 3. Execute ValidateAndCommit to validate the specified username and password combination against Azure AD. 4. Get the ErrorContext in case something goes wrong during validation.
 <!-- Device-DeviceAccount-Description-End -->
 
 <!-- Device-DeviceAccount-Editable-Begin -->
@@ -120,7 +119,7 @@ Node for setting device account information. A device account is a Microsoft Exc
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Case Sensitive | True |
 <!-- Device-DeviceAccount-DFProperties-End -->
@@ -186,7 +185,7 @@ Node for setting device account information. A device account is a Microsoft Exc
 <!-- Device-DeviceAccount-CalendarSyncEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-CalendarSyncEnabled-Applicability-End -->
 
 <!-- Device-DeviceAccount-CalendarSyncEnabled-OmaUri-Begin -->
@@ -209,7 +208,7 @@ Specifies whether calendar sync and other Exchange server services is enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-CalendarSyncEnabled-DFProperties-End -->
 
@@ -234,7 +233,7 @@ Specifies whether calendar sync and other Exchange server services is enabled.
 <!-- Device-DeviceAccount-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-DomainName-Applicability-End -->
 
 <!-- Device-DeviceAccount-DomainName-OmaUri-Begin -->
@@ -257,7 +256,7 @@ Domain of the device account when you are using Active Directory. To use a devic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-DomainName-DFProperties-End -->
 
@@ -273,7 +272,7 @@ Domain of the device account when you are using Active Directory. To use a devic
 <!-- Device-DeviceAccount-Email-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-Email-Applicability-End -->
 
 <!-- Device-DeviceAccount-Email-OmaUri-Begin -->
@@ -296,7 +295,7 @@ Email address of the device account.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-Email-DFProperties-End -->
 
@@ -312,7 +311,7 @@ Email address of the device account.
 <!-- Device-DeviceAccount-ErrorContext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-ErrorContext-Applicability-End -->
 
 <!-- Device-DeviceAccount-ErrorContext-OmaUri-Begin -->
@@ -345,7 +344,7 @@ Possible error values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DeviceAccount-ErrorContext-DFProperties-End -->
 
@@ -361,7 +360,7 @@ Possible error values:
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.789] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.789] and later <br> :heavy_check_mark: Windows Insider Preview [99.9.9999] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.789] and later <br> ✅ Windows 10, version 2009 [10.0.19042.789] and later <br> ✅ Windows Insider Preview [99.9.9999] |
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-Applicability-End -->
 
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-OmaUri-Begin -->
@@ -384,7 +383,7 @@ Specifies whether Device Account calendar sync will attempt to use token-based M
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | True |
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-DFProperties-End -->
@@ -410,7 +409,7 @@ Specifies whether Device Account calendar sync will attempt to use token-based M
 <!-- Device-DeviceAccount-ExchangeServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-ExchangeServer-Applicability-End -->
 
 <!-- Device-DeviceAccount-ExchangeServer-OmaUri-Begin -->
@@ -433,7 +432,7 @@ Exchange server of the device account. Normally, the device will try to auto-dis
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-ExchangeServer-DFProperties-End -->
 
@@ -449,7 +448,7 @@ Exchange server of the device account. Normally, the device will try to auto-dis
 <!-- Device-DeviceAccount-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-Password-Applicability-End -->
 
 <!-- Device-DeviceAccount-Password-OmaUri-Begin -->
@@ -472,7 +471,7 @@ Password for the device account. Get is allowed here, but will always return a b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-Password-DFProperties-End -->
 
@@ -488,7 +487,7 @@ Password for the device account. Get is allowed here, but will always return a b
 <!-- Device-DeviceAccount-PasswordRotationEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-PasswordRotationEnabled-Applicability-End -->
 
 <!-- Device-DeviceAccount-PasswordRotationEnabled-OmaUri-Begin -->
@@ -511,7 +510,7 @@ Specifies whether automatic password rotation is enabled. If you enforce a passw
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-PasswordRotationEnabled-DFProperties-End -->
 
@@ -536,7 +535,7 @@ Specifies whether automatic password rotation is enabled. If you enforce a passw
 <!-- Device-DeviceAccount-SipAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-SipAddress-Applicability-End -->
 
 <!-- Device-DeviceAccount-SipAddress-OmaUri-Begin -->
@@ -559,7 +558,7 @@ Session Initiation Protocol (SIP) address of the device account. Normally, the d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-SipAddress-DFProperties-End -->
 
@@ -575,7 +574,7 @@ Session Initiation Protocol (SIP) address of the device account. Normally, the d
 <!-- Device-DeviceAccount-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-UserName-Applicability-End -->
 
 <!-- Device-DeviceAccount-UserName-OmaUri-Begin -->
@@ -598,7 +597,7 @@ Username of the device account when you are using Active Directory. To use a dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-UserName-DFProperties-End -->
 
@@ -614,7 +613,7 @@ Username of the device account when you are using Active Directory. To use a dev
 <!-- Device-DeviceAccount-UserPrincipalName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-UserPrincipalName-Applicability-End -->
 
 <!-- Device-DeviceAccount-UserPrincipalName-OmaUri-Begin -->
@@ -637,7 +636,7 @@ User principal name (UPN) of the device account. To use a device account from Az
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-DeviceAccount-UserPrincipalName-DFProperties-End -->
 
@@ -653,7 +652,7 @@ User principal name (UPN) of the device account. To use a device account from Az
 <!-- Device-DeviceAccount-ValidateAndCommit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceAccount-ValidateAndCommit-Applicability-End -->
 
 <!-- Device-DeviceAccount-ValidateAndCommit-OmaUri-Begin -->
@@ -676,7 +675,7 @@ This method validates the data provided and then commits the changes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-DeviceAccount-ValidateAndCommit-DFProperties-End -->
 
@@ -692,7 +691,7 @@ This method validates the data provided and then commits the changes.
 <!-- Device-Dot3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.64] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Dot3-Applicability-End -->
 
 <!-- Device-Dot3-OmaUri-Begin -->
@@ -715,7 +714,7 @@ Parent node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Dot3-DFProperties-End -->
 
@@ -731,7 +730,7 @@ Parent node.
 <!-- Device-Dot3-EapUserData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.64] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Dot3-EapUserData-Applicability-End -->
 
 <!-- Device-Dot3-EapUserData-OmaUri-Begin -->
@@ -754,7 +753,7 @@ Used to specify credentials to authenticate device to the network.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-Dot3-EapUserData-DFProperties-End -->
 
@@ -770,7 +769,7 @@ Used to specify credentials to authenticate device to the network.
 <!-- Device-Dot3-LanProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299.64] and later <br> :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Dot3-LanProfile-Applicability-End -->
 
 <!-- Device-Dot3-LanProfile-OmaUri-Begin -->
@@ -793,7 +792,7 @@ Used to specify credentials to authenticate device to the network.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-Dot3-LanProfile-DFProperties-End -->
 
@@ -809,7 +808,7 @@ Used to specify credentials to authenticate device to the network.
 <!-- Device-InBoxApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-Applicability-End -->
 
 <!-- Device-InBoxApps-OmaUri-Begin -->
@@ -832,7 +831,7 @@ Node for the in-box app settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-DFProperties-End -->
 
@@ -848,7 +847,7 @@ Node for the in-box app settings.
 <!-- Device-InBoxApps-Connect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-Connect-Applicability-End -->
 
 <!-- Device-InBoxApps-Connect-OmaUri-Begin -->
@@ -871,7 +870,7 @@ Node for the Connect app.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-Connect-DFProperties-End -->
 
@@ -887,7 +886,7 @@ Node for the Connect app.
 <!-- Device-InBoxApps-Connect-AutoLaunch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-InBoxApps-Connect-AutoLaunch-Applicability-End -->
 
 <!-- Device-InBoxApps-Connect-AutoLaunch-OmaUri-Begin -->
@@ -910,7 +909,7 @@ Specifies whether to automatically launch the Connect app whenever a projection 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-Connect-AutoLaunch-DFProperties-End -->
 
@@ -935,7 +934,7 @@ Specifies whether to automatically launch the Connect app whenever a projection 
 <!-- Device-InBoxApps-SkypeForBusiness-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-SkypeForBusiness-Applicability-End -->
 
 <!-- Device-InBoxApps-SkypeForBusiness-OmaUri-Begin -->
@@ -958,7 +957,7 @@ Node for the Skype for Business settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-SkypeForBusiness-DFProperties-End -->
 
@@ -974,7 +973,7 @@ Node for the Skype for Business settings.
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-Applicability-End -->
 
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-OmaUri-Begin -->
@@ -997,7 +996,7 @@ Specifies the domain of the Skype for Business account when you are using Active
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-SkypeForBusiness-DomainName-DFProperties-End -->
 
@@ -1013,7 +1012,7 @@ Specifies the domain of the Skype for Business account when you are using Active
 <!-- Device-InBoxApps-Teams-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.450] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.450] and later <br> ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-InBoxApps-Teams-Applicability-End -->
 
 <!-- Device-InBoxApps-Teams-OmaUri-Begin -->
@@ -1036,7 +1035,7 @@ This node controls policies specific to the Teams App on Surface Hub.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-Teams-DFProperties-End -->
 
@@ -1052,7 +1051,7 @@ This node controls policies specific to the Teams App on Surface Hub.
 <!-- Device-InBoxApps-Teams-Configurations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.450] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.450] and later <br> ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-InBoxApps-Teams-Configurations-Applicability-End -->
 
 <!-- Device-InBoxApps-Teams-Configurations-OmaUri-Begin -->
@@ -1075,7 +1074,7 @@ String to contain Teams policy configs.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-Teams-Configurations-DFProperties-End -->
 
@@ -1091,7 +1090,7 @@ String to contain Teams policy configs.
 <!-- Device-InBoxApps-Welcome-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-Welcome-Applicability-End -->
 
 <!-- Device-InBoxApps-Welcome-OmaUri-Begin -->
@@ -1114,7 +1113,7 @@ Node for the welcome screen.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-Welcome-DFProperties-End -->
 
@@ -1130,7 +1129,7 @@ Node for the welcome screen.
 <!-- Device-InBoxApps-Welcome-AutoWakeScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-Welcome-AutoWakeScreen-Applicability-End -->
 
 <!-- Device-InBoxApps-Welcome-AutoWakeScreen-OmaUri-Begin -->
@@ -1153,7 +1152,7 @@ Setting for the screen to wake up and stay on with sensor activity.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-Welcome-AutoWakeScreen-DFProperties-End -->
 
@@ -1178,7 +1177,7 @@ Setting for the screen to wake up and stay on with sensor activity.
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Applicability-End -->
 
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-OmaUri-Begin -->
@@ -1189,7 +1188,7 @@ Setting for the screen to wake up and stay on with sensor activity.
 
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Description-Begin -->
 <!-- Description-Source-DDF -->
-Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they're valid and installed on the Hub, otherwise it may not be able to load the image.
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Description-End -->
 
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-Editable-Begin -->
@@ -1201,7 +1200,7 @@ Background image for the welcome screen. To set this, specify an https URL to a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-Welcome-CurrentBackgroundPath-DFProperties-End -->
 
@@ -1217,7 +1216,7 @@ Background image for the welcome screen. To set this, specify an https URL to a 
 <!-- Device-InBoxApps-Welcome-MeetingInfoOption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-Welcome-MeetingInfoOption-Applicability-End -->
 
 <!-- Device-InBoxApps-Welcome-MeetingInfoOption-OmaUri-Begin -->
@@ -1240,7 +1239,7 @@ Meeting information displayed on the welcome screen.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-Welcome-MeetingInfoOption-DFProperties-End -->
 
@@ -1265,7 +1264,7 @@ Meeting information displayed on the welcome screen.
 <!-- Device-InBoxApps-Whiteboard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362.449] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-OmaUri-Begin -->
@@ -1288,7 +1287,7 @@ This node controls policies specific to the Whiteboard App on Surface Hub.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-Whiteboard-DFProperties-End -->
 
@@ -1304,7 +1303,7 @@ This node controls policies specific to the Whiteboard App on Surface Hub.
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362.449] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-OmaUri-Begin -->
@@ -1327,7 +1326,7 @@ When enabled, prevents a user from initiating a collaborative session on the dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-DFProperties-End -->
 
@@ -1352,7 +1351,7 @@ When enabled, prevents a user from initiating a collaborative session on the dev
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362.449] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-OmaUri-Begin -->
@@ -1375,7 +1374,7 @@ When enabled, prevents a user from Signing into Whiteboard on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-DFProperties-End -->
@@ -1401,7 +1400,7 @@ When enabled, prevents a user from Signing into Whiteboard on the device.
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362.449] and later <br> :heavy_check_mark: Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-OmaUri-Begin -->
@@ -1424,7 +1423,7 @@ When enabled, prevents Whiteboard from sending telemetry from the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-DFProperties-End -->
@@ -1450,7 +1449,7 @@ When enabled, prevents Whiteboard from sending telemetry from the device.
 <!-- Device-InBoxApps-WirelessProjection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-WirelessProjection-Applicability-End -->
 
 <!-- Device-InBoxApps-WirelessProjection-OmaUri-Begin -->
@@ -1473,7 +1472,7 @@ Node for the wireless projector app settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-InBoxApps-WirelessProjection-DFProperties-End -->
 
@@ -1489,7 +1488,7 @@ Node for the wireless projector app settings.
 <!-- Device-InBoxApps-WirelessProjection-Channel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-WirelessProjection-Channel-Applicability-End -->
 
 <!-- Device-InBoxApps-WirelessProjection-Channel-OmaUri-Begin -->
@@ -1519,7 +1518,7 @@ Outside of regulatory concerns, if the channel is configured incorrectly, the dr
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 255 |
 <!-- Device-InBoxApps-WirelessProjection-Channel-DFProperties-End -->
@@ -1536,7 +1535,7 @@ Outside of regulatory concerns, if the channel is configured incorrectly, the dr
 <!-- Device-InBoxApps-WirelessProjection-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-WirelessProjection-Enabled-Applicability-End -->
 
 <!-- Device-InBoxApps-WirelessProjection-Enabled-OmaUri-Begin -->
@@ -1559,7 +1558,7 @@ Enables wireless projection to the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-WirelessProjection-Enabled-DFProperties-End -->
 
@@ -1584,7 +1583,7 @@ Enables wireless projection to the device.
 <!-- Device-InBoxApps-WirelessProjection-PINRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-InBoxApps-WirelessProjection-PINRequired-Applicability-End -->
 
 <!-- Device-InBoxApps-WirelessProjection-PINRequired-OmaUri-Begin -->
@@ -1607,7 +1606,7 @@ Users must enter a PIN to wirelessly project to the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-InBoxApps-WirelessProjection-PINRequired-DFProperties-End -->
 
@@ -1632,7 +1631,7 @@ Users must enter a PIN to wirelessly project to the device.
 <!-- Device-MaintenanceHoursSimple-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MaintenanceHoursSimple-Applicability-End -->
 
 <!-- Device-MaintenanceHoursSimple-OmaUri-Begin -->
@@ -1655,7 +1654,7 @@ Node for maintenance schedule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MaintenanceHoursSimple-DFProperties-End -->
 
@@ -1671,7 +1670,7 @@ Node for maintenance schedule.
 <!-- Device-MaintenanceHoursSimple-Hours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MaintenanceHoursSimple-Hours-Applicability-End -->
 
 <!-- Device-MaintenanceHoursSimple-Hours-OmaUri-Begin -->
@@ -1694,7 +1693,7 @@ Node for maintenance schedule.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MaintenanceHoursSimple-Hours-DFProperties-End -->
 
@@ -1710,7 +1709,7 @@ Node for maintenance schedule.
 <!-- Device-MaintenanceHoursSimple-Hours-Duration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MaintenanceHoursSimple-Hours-Duration-Applicability-End -->
 
 <!-- Device-MaintenanceHoursSimple-Hours-Duration-OmaUri-Begin -->
@@ -1733,7 +1732,7 @@ Specifies the duration of maintenance window in minutes. For example, to set a 3
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[0-1439]` |
 <!-- Device-MaintenanceHoursSimple-Hours-Duration-DFProperties-End -->
@@ -1750,7 +1749,7 @@ Specifies the duration of maintenance window in minutes. For example, to set a 3
 <!-- Device-MaintenanceHoursSimple-Hours-StartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MaintenanceHoursSimple-Hours-StartTime-Applicability-End -->
 
 <!-- Device-MaintenanceHoursSimple-Hours-StartTime-OmaUri-Begin -->
@@ -1773,7 +1772,7 @@ Specifies the start time for maintenance hours in minutes from midnight. For exa
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[0-1439]` |
 <!-- Device-MaintenanceHoursSimple-Hours-StartTime-DFProperties-End -->
@@ -1790,7 +1789,7 @@ Specifies the start time for maintenance hours in minutes from midnight. For exa
 <!-- Device-Management-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393.969] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Management-Applicability-End -->
 
 <!-- Device-Management-OmaUri-Begin -->
@@ -1813,7 +1812,7 @@ Not a supported scenario.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Management-DFProperties-End -->
 
@@ -1829,7 +1828,7 @@ Not a supported scenario.
 <!-- Device-Management-GroupName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393.969] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Management-GroupName-Applicability-End -->
 
 <!-- Device-Management-GroupName-OmaUri-Begin -->
@@ -1852,7 +1851,7 @@ The name of the domain admin group to add to the administrators group on the dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-Management-GroupName-DFProperties-End -->
 
@@ -1868,7 +1867,7 @@ The name of the domain admin group to add to the administrators group on the dev
 <!-- Device-Management-GroupSid-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393.969] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Management-GroupSid-Applicability-End -->
 
 <!-- Device-Management-GroupSid-OmaUri-Begin -->
@@ -1891,7 +1890,7 @@ The sid of the domain admin group to add to the administrators group on the devi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-Management-GroupSid-DFProperties-End -->
 
@@ -1907,7 +1906,7 @@ The sid of the domain admin group to add to the administrators group on the devi
 <!-- Device-MOMAgent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MOMAgent-Applicability-End -->
 
 <!-- Device-MOMAgent-OmaUri-Begin -->
@@ -1930,7 +1929,7 @@ Node for the Microsoft Operations Management Suite.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MOMAgent-DFProperties-End -->
 
@@ -1946,7 +1945,7 @@ Node for the Microsoft Operations Management Suite.
 <!-- Device-MOMAgent-WorkspaceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MOMAgent-WorkspaceID-Applicability-End -->
 
 <!-- Device-MOMAgent-WorkspaceID-OmaUri-Begin -->
@@ -1969,7 +1968,7 @@ GUID identifying the Microsoft Operations Management Suite workspace ID to colle
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-MOMAgent-WorkspaceID-DFProperties-End -->
 
@@ -1985,7 +1984,7 @@ GUID identifying the Microsoft Operations Management Suite workspace ID to colle
 <!-- Device-MOMAgent-WorkspaceKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MOMAgent-WorkspaceKey-Applicability-End -->
 
 <!-- Device-MOMAgent-WorkspaceKey-OmaUri-Begin -->
@@ -2008,7 +2007,7 @@ Primary key for authenticating with workspace. Will always return an empty strin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-MOMAgent-WorkspaceKey-DFProperties-End -->
 
@@ -2024,7 +2023,7 @@ Primary key for authenticating with workspace. Will always return an empty strin
 <!-- Device-Properties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Properties-Applicability-End -->
 
 <!-- Device-Properties-OmaUri-Begin -->
@@ -2047,7 +2046,7 @@ Node for the device properties.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Properties-DFProperties-End -->
 
@@ -2063,7 +2062,7 @@ Node for the device properties.
 <!-- Device-Properties-AllowAutoProxyAuth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-AllowAutoProxyAuth-Applicability-End -->
 
 <!-- Device-Properties-AllowAutoProxyAuth-OmaUri-Begin -->
@@ -2086,7 +2085,7 @@ Specifies whether to use the device account for proxy authentication. If this se
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-Properties-AllowAutoProxyAuth-DFProperties-End -->
@@ -2112,7 +2111,7 @@ Specifies whether to use the device account for proxy authentication. If this se
 <!-- Device-Properties-AllowSessionResume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-AllowSessionResume-Applicability-End -->
 
 <!-- Device-Properties-AllowSessionResume-OmaUri-Begin -->
@@ -2135,7 +2134,7 @@ Specifies whether to allow the ability to resume a session when the session time
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-Properties-AllowSessionResume-DFProperties-End -->
@@ -2161,7 +2160,7 @@ Specifies whether to allow the ability to resume a session when the session time
 <!-- Device-Properties-DefaultVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-DefaultVolume-Applicability-End -->
 
 <!-- Device-Properties-DefaultVolume-OmaUri-Begin -->
@@ -2184,7 +2183,7 @@ Specifies the default volume value for a new session.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[0-100]` |
 | Default Value  | 45 |
@@ -2202,7 +2201,7 @@ Specifies the default volume value for a new session.
 <!-- Device-Properties-DisableSigninSuggestions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-DisableSigninSuggestions-Applicability-End -->
 
 <!-- Device-Properties-DisableSigninSuggestions-OmaUri-Begin -->
@@ -2213,7 +2212,7 @@ Specifies the default volume value for a new session.
 
 <!-- Device-Properties-DisableSigninSuggestions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings. If this setting is true, the sign-in dialog will not be populated. If false, the dialog will auto-populate.
+Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings. If this setting is true, the sign-in dialog won't be populated. If false, the dialog will auto-populate.
 <!-- Device-Properties-DisableSigninSuggestions-Description-End -->
 
 <!-- Device-Properties-DisableSigninSuggestions-Editable-Begin -->
@@ -2225,7 +2224,7 @@ Specifies whether to disable auto-populating of the sign-in dialog with invitees
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-Properties-DisableSigninSuggestions-DFProperties-End -->
@@ -2236,7 +2235,7 @@ Specifies whether to disable auto-populating of the sign-in dialog with invitees
 | Value | Description |
 |:--|:--|
 | false (Default) | Dialog will auto-populate. |
-| true | Sign-in dialog will not be populated. |
+| true | Sign-in dialog won't be populated. |
 <!-- Device-Properties-DisableSigninSuggestions-AllowedValues-End -->
 
 <!-- Device-Properties-DisableSigninSuggestions-Examples-Begin -->
@@ -2251,7 +2250,7 @@ Specifies whether to disable auto-populating of the sign-in dialog with invitees
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Applicability-End -->
 
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-OmaUri-Begin -->
@@ -2262,7 +2261,7 @@ Specifies whether to disable auto-populating of the sign-in dialog with invitees
 
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365. If this setting is true, the "My meetings and files" feature will not be shown. When false, the "My meetings and files" feature will be shown.
+Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365. If this setting is true, the "My meetings and files" feature won't be shown. When false, the "My meetings and files" feature will be shown.
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Description-End -->
 
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-Editable-Begin -->
@@ -2274,7 +2273,7 @@ Specifies whether to disable the "My meetings and files" feature in the Start me
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | false |
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-DFProperties-End -->
@@ -2284,7 +2283,7 @@ Specifies whether to disable the "My meetings and files" feature in the Start me
 
 | Value | Description |
 |:--|:--|
-| true | "My meetings and files" feature will not be shown. |
+| true | "My meetings and files" feature won't be shown. |
 | false (Default) | The "My meetings and files" feature will be shown. |
 <!-- Device-Properties-DoNotShowMyMeetingsAndFiles-AllowedValues-End -->
 
@@ -2300,7 +2299,7 @@ Specifies whether to disable the "My meetings and files" feature in the Start me
 <!-- Device-Properties-FriendlyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Properties-FriendlyName-Applicability-End -->
 
 <!-- Device-Properties-FriendlyName-OmaUri-Begin -->
@@ -2323,7 +2322,7 @@ Friendly name of the device. Specifies the name that users see when they want to
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 <!-- Device-Properties-FriendlyName-DFProperties-End -->
 
@@ -2339,7 +2338,7 @@ Friendly name of the device. Specifies the name that users see when they want to
 <!-- Device-Properties-ProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Properties-ProxyServers-Applicability-End -->
 
 <!-- Device-Properties-ProxyServers-OmaUri-Begin -->
@@ -2363,7 +2362,7 @@ Specifies hostnames of proxy servers to automatically provide device account cre
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Delete, Get, Replace |
 <!-- Device-Properties-ProxyServers-DFProperties-End -->
 
@@ -2379,7 +2378,7 @@ Specifies hostnames of proxy servers to automatically provide device account cre
 <!-- Device-Properties-ScreenTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-ScreenTimeout-Applicability-End -->
 
 <!-- Device-Properties-ScreenTimeout-OmaUri-Begin -->
@@ -2402,7 +2401,7 @@ Specifies the number of minutes until the Hub screen turns off.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 5 |
 <!-- Device-Properties-ScreenTimeout-DFProperties-End -->
@@ -2437,7 +2436,7 @@ Specifies the number of minutes until the Hub screen turns off.
 <!-- Device-Properties-SessionTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-SessionTimeout-Applicability-End -->
 
 <!-- Device-Properties-SessionTimeout-OmaUri-Begin -->
@@ -2460,7 +2459,7 @@ Specifies the number of minutes until the session times out.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Properties-SessionTimeout-DFProperties-End -->
@@ -2495,7 +2494,7 @@ Specifies the number of minutes until the session times out.
 <!-- Device-Properties-SleepMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-SleepMode-Applicability-End -->
 
 <!-- Device-Properties-SleepMode-OmaUri-Begin -->
@@ -2518,7 +2517,7 @@ Specifies the type of sleep mode for the Surface Hub.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Properties-SleepMode-DFProperties-End -->
@@ -2544,7 +2543,7 @@ Specifies the type of sleep mode for the Surface Hub.
 <!-- Device-Properties-SleepTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-SleepTimeout-Applicability-End -->
 
 <!-- Device-Properties-SleepTimeout-OmaUri-Begin -->
@@ -2567,7 +2566,7 @@ Specifies the number of minutes until the Hub enters sleep mode.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 5 |
 <!-- Device-Properties-SleepTimeout-DFProperties-End -->
@@ -2602,7 +2601,7 @@ Specifies the number of minutes until the Hub enters sleep mode.
 <!-- Device-Properties-SurfaceHubMeetingMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393.969] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-SurfaceHubMeetingMode-Applicability-End -->
 
 <!-- Device-Properties-SurfaceHubMeetingMode-OmaUri-Begin -->
@@ -2625,7 +2624,7 @@ Teams mode.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
 | Default Value  | 0 |
@@ -2643,7 +2642,7 @@ Teams mode.
 <!-- Device-Properties-VtcAppPackageId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393.969] and later <br> :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-VtcAppPackageId-Applicability-End -->
 
 <!-- Device-Properties-VtcAppPackageId-OmaUri-Begin -->
@@ -2666,7 +2665,7 @@ App name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Delete, Get, Replace |
 <!-- Device-Properties-VtcAppPackageId-DFProperties-End -->
 
