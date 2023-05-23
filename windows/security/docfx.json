@@ -71,7 +71,7 @@
     "fileMetadata": {
       "author":{
         "identity-protection/**/*.md": "paolomatarazzo",
-        "operating-system-security/network-security/windows-firewall/**/*.md": "aczechowski"
+        "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms"
       },
       "ms.author":{
         "identity-protection/**/*.md": "paoloma",
