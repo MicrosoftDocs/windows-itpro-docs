@@ -2,7 +2,7 @@ items:
 - name: User Account Control (UAC)
   items:
   - name: Overview
-    href: user-account-control/user-account-control-overview.md
+    href: index.md
   - name: How User Account Control works
     href: user-account-control/how-user-account-control-works.md
   - name: User Account Control security policy settings
