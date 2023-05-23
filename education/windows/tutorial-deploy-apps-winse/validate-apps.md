@@ -1,7 +1,7 @@
 ---
 title: Validate the applications deployed to Windows SE devices
 description: Learn how to validate the applications deployed to Windows SE devices via Intune.
-ms.date: 04/07/2023
+ms.date: 05/23/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>

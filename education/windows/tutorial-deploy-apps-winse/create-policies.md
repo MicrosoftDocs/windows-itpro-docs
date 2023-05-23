@@ -1,7 +1,7 @@
 ---
 title: Create policies to enable applications
 description: Learn how to create policies to enable the installation and execution of apps on Windows SE.
-ms.date: 03/07/2023
+ms.date: 05/23/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>

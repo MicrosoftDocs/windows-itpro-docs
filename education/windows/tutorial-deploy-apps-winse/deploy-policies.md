@@ -1,7 +1,7 @@
 ---
 title: Deploy policies to enable applications
 description: Learn how to deploy AppLocker policies to enable apps execution on Windows SE devices.
-ms.date: 03/07/2023
+ms.date: 05/23/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>

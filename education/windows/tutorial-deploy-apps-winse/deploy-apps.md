@@ -1,7 +1,7 @@
 ---
 title: Applications deployment considerations
 description: Learn how to deploy different types of applications to Windows 11 SE and some considerations before deploying them.
-ms.date: 03/01/2023
+ms.date: 05/23/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
