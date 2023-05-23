@@ -23,7 +23,7 @@ Windows Defender Firewall in Windows 8, Windows 7, Windows Vista, Windows Serv
 
 The Windows Defender Firewall with Advanced Security MMC snap-in is more flexible and provides much more functionality than the consumer-friendly Windows Defender Firewall interface found in the Control Panel. Both interfaces interact with the same underlying services, but provide different levels of control over those services. While the Windows Defender Firewall Control Panel program can protect a single device in a home environment, it doesn't provide enough centralized management or security features to help secure more complex network traffic found in a typical business enterprise environment.
 
-[!INCLUDE [windows-firewall](../../../../includes/licensing/windows-firewall.md)]
+[!INCLUDE [windows-firewall](../../../../../includes/licensing/windows-firewall.md)]
 
 ## Feature description
 
