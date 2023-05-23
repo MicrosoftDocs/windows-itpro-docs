@@ -4,7 +4,7 @@ description: Learn more about the ADMX_tcpip Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_tcpip-Begin -->
 # Policy CSP - ADMX_tcpip
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_tcpip-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- 6to4_Router_Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- 6to4_Router_Name-Applicability-End -->
 
 <!-- 6to4_Router_Name-OmaUri-Begin -->
@@ -42,11 +39,11 @@ ms.topic: reference
 
 <!-- 6to4_Router_Name-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity is not available on the host.
+This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6to4 relay is used as a default gateway for IPv6 network traffic sent by the 6to4 host. The 6to4 relay name setting has no effect if 6to4 connectivity isn't available on the host.
 
 - If you enable this policy setting, you can specify a relay name for a 6to4 host.
 
-- If you disable or do not configure this policy setting, the local host setting is used, and you cannot specify a relay name for a 6to4 host.
+- If you disable or don't configure this policy setting, the local host setting is used, and you can't specify a relay name for a 6to4 host.
 <!-- 6to4_Router_Name-Description-End -->
 
 <!-- 6to4_Router_Name-Editable-Begin -->
@@ -58,13 +55,12 @@ This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- 6to4_Router_Name-DFProperties-End -->
 
 <!-- 6to4_Router_Name-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -90,7 +86,7 @@ This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6
 <!-- 6to4_Router_Name_Resolution_Interval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- 6to4_Router_Name_Resolution_Interval-Applicability-End -->
 
 <!-- 6to4_Router_Name_Resolution_Interval-OmaUri-Begin -->
@@ -101,11 +97,11 @@ This policy setting allows you to specify a 6to4 relay name for a 6to4 host. A 6
 
 <!-- 6to4_Router_Name_Resolution_Interval-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity is not available on the host.
+This policy setting allows you to specify the interval at which the relay name is resolved. The 6to4 relay name resolution interval setting has no effect if 6to4 connectivity isn't available on the host.
 
 - If you enable this policy setting, you can specify the value for the duration at which the relay name is resolved periodically.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 <!-- 6to4_Router_Name_Resolution_Interval-Description-End -->
 
 <!-- 6to4_Router_Name_Resolution_Interval-Editable-Begin -->
@@ -117,13 +113,12 @@ This policy setting allows you to specify the interval at which the relay name i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- 6to4_Router_Name_Resolution_Interval-DFProperties-End -->
 
 <!-- 6to4_Router_Name_Resolution_Interval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -149,7 +144,7 @@ This policy setting allows you to specify the interval at which the relay name i
 <!-- 6to4_State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- 6to4_State-Applicability-End -->
 
 <!-- 6to4_State-OmaUri-Begin -->
@@ -160,17 +155,17 @@ This policy setting allows you to specify the interval at which the relay name i
 
 <!-- 6to4_State-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
+This policy setting allows you to configure 6to4, an address assignment and router-to-router automatic tunneling technology that's used to provide unicast IPv6 connectivity between IPv6 sites and hosts across the IPv4 Internet. 6to4 uses the global address prefix: 2002:WWXX:YYZZ::/48 in which the letters are a hexadecimal representation of the global IPv4 address (w.x.y.z) assigned to a site.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 
 - If you enable this policy setting, you can configure 6to4 with one of the following settings:
 
-Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
+Policy Default State: 6to4 is turned off and connectivity with 6to4 won't be available.
 
-Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host will not have a 6to4 interface.
+Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host won't have a 6to4 interface.
 
-Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be available.
+Policy Disabled State: 6to4 is turned off and connectivity with 6to4 won't be available.
 <!-- 6to4_State-Description-End -->
 
 <!-- 6to4_State-Editable-Begin -->
@@ -182,13 +177,12 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- 6to4_State-DFProperties-End -->
 
 <!-- 6to4_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -214,7 +208,7 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Applicability-End -->
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-OmaUri-Begin -->
@@ -227,9 +221,9 @@ Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP Stateless Autoconfiguration Limits.
 
-- If you enable or do not configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
+- If you enable or don't configure this policy setting, IP Stateless Autoconfiguration Limits will be enabled and system will limit the number of autoconfigured addresses and routes.
 
-- If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system will not limit the number of autoconfigured addresses and routes.
+- If you disable this policy setting, IP Stateless Autoconfiguration Limits will be disabled and system won't limit the number of autoconfigured addresses and routes.
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Description-End -->
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-Editable-Begin -->
@@ -241,13 +235,12 @@ This policy setting allows you to configure IP Stateless Autoconfiguration Limit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IP_Stateless_Autoconfiguration_Limits_State-DFProperties-End -->
 
 <!-- IP_Stateless_Autoconfiguration_Limits_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -274,7 +267,7 @@ This policy setting allows you to configure IP Stateless Autoconfiguration Limit
 <!-- IPHTTPS_ClientState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IPHTTPS_ClientState-Applicability-End -->
 
 <!-- IPHTTPS_ClientState-OmaUri-Begin -->
@@ -287,9 +280,9 @@ This policy setting allows you to configure IP Stateless Autoconfiguration Limit
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure IP-HTTPS, a tunneling technology that uses the HTTPS protocol to provide IP connectivity to a remote network.
 
-- If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or don't configure this policy setting, the local host settings are used.
 
-- If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
+- If you enable this policy setting, you can specify an IP-HTTPS server URL. You'll be able to configure IP-HTTPS with one of the following settings:
 
 Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
 
@@ -307,13 +300,12 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPHTTPS_ClientState-DFProperties-End -->
 
 <!-- IPHTTPS_ClientState-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -339,7 +331,7 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 <!-- ISATAP_Router_Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ISATAP_Router_Name-Applicability-End -->
 
 <!-- ISATAP_Router_Name-OmaUri-Begin -->
@@ -352,9 +344,9 @@ Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to specify a router name or Internet Protocol version 4 (IPv4) address for an ISATAP router.
 
-- If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services are not required.
+- If you enable this policy setting, you can specify a router name or IPv4 address for an ISATAP router. If you enter an IPv4 address of the ISATAP router in the text box, DNS services aren't required.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 <!-- ISATAP_Router_Name-Description-End -->
 
 <!-- ISATAP_Router_Name-Editable-Begin -->
@@ -366,13 +358,12 @@ This policy setting allows you to specify a router name or Internet Protocol ver
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ISATAP_Router_Name-DFProperties-End -->
 
 <!-- ISATAP_Router_Name-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -398,7 +389,7 @@ This policy setting allows you to specify a router name or Internet Protocol ver
 <!-- ISATAP_State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ISATAP_State-Applicability-End -->
 
 <!-- ISATAP_State-OmaUri-Begin -->
@@ -409,15 +400,15 @@ This policy setting allows you to specify a router name or Internet Protocol ver
 
 <!-- ISATAP_State-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that is used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
+This policy setting allows you to configure Intra-Site Automatic Tunnel Addressing Protocol (ISATAP), an address-to-router and host-to-host, host-to-router and router-to-host automatic tunneling technology that's used to provide unicast IPv6 connectivity between IPv6 hosts across an IPv4 intranet.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 
 - If you enable this policy setting, you can configure ISATAP with one of the following settings:
 
 Policy Default State: No ISATAP interfaces are present on the host.
 
-Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name is not resolved successfully, the host will have an ISATAP interface configured with a link-local address.
+Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name isn't resolved successfully, the host will have an ISATAP interface configured with a link-local address.
 
 Policy Disabled State: No ISATAP interfaces are present on the host.
 <!-- ISATAP_State-Description-End -->
@@ -431,13 +422,12 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ISATAP_State-DFProperties-End -->
 
 <!-- ISATAP_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -463,7 +453,7 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 <!-- Teredo_Client_Port-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Teredo_Client_Port-Applicability-End -->
 
 <!-- Teredo_Client_Port-OmaUri-Begin -->
@@ -474,11 +464,11 @@ Policy Disabled State: No ISATAP interfaces are present on the host.
 
 <!-- Teredo_Client_Port-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that is already in use by a system, the Teredo client will fail to initialize.
+This policy setting allows you to select the UDP port the Teredo client will use to send packets. If you leave the default of 0, the operating system will select a port (recommended). If you select a UDP port that's already in use by a system, the Teredo client will fail to initialize.
 
 - If you enable this policy setting, you can customize a UDP port for the Teredo client.
 
-- If you disable or do not configure this policy setting, the local host setting is used.
+- If you disable or don't configure this policy setting, the local host setting is used.
 <!-- Teredo_Client_Port-Description-End -->
 
 <!-- Teredo_Client_Port-Editable-Begin -->
@@ -490,13 +480,12 @@ This policy setting allows you to select the UDP port the Teredo client will use
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Teredo_Client_Port-DFProperties-End -->
 
 <!-- Teredo_Client_Port-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -522,7 +511,7 @@ This policy setting allows you to select the UDP port the Teredo client will use
 <!-- Teredo_Default_Qualified-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Teredo_Default_Qualified-Applicability-End -->
 
 <!-- Teredo_Default_Qualified-OmaUri-Begin -->
@@ -535,7 +524,7 @@ This policy setting allows you to select the UDP port the Teredo client will use
 <!-- Description-Source-ADMX -->
 This policy setting allows you to set Teredo to be ready to communicate, a process referred to as qualification. By default, Teredo enters a dormant state when not in use. The qualification process brings it out of a dormant state.
 
-If you disable or do not configure this policy setting, the local host setting is used.
+If you disable or don't configure this policy setting, the local host setting is used.
 
 This policy setting contains only one state:
 
@@ -551,13 +540,12 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Teredo_Default_Qualified-DFProperties-End -->
 
 <!-- Teredo_Default_Qualified-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -583,7 +571,7 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 <!-- Teredo_Refresh_Rate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Teredo_Refresh_Rate-Applicability-End -->
 
 <!-- Teredo_Refresh_Rate-OmaUri-Begin -->
@@ -601,7 +589,7 @@ This policy setting allows you to configure the Teredo refresh rate.
 
 - If you enable this policy setting, you can specify the refresh rate. If you choose a refresh rate longer than the port mapping in the Teredo client's NAT device, Teredo might stop working or connectivity might be intermittent.
 
-- If you disable or do not configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
+- If you disable or don't configure this policy setting, the refresh rate is configured using the local settings on the computer. The default refresh rate is 30 seconds.
 <!-- Teredo_Refresh_Rate-Description-End -->
 
 <!-- Teredo_Refresh_Rate-Editable-Begin -->
@@ -613,13 +601,12 @@ This policy setting allows you to configure the Teredo refresh rate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Teredo_Refresh_Rate-DFProperties-End -->
 
 <!-- Teredo_Refresh_Rate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -645,7 +632,7 @@ This policy setting allows you to configure the Teredo refresh rate.
 <!-- Teredo_Server_Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Teredo_Server_Name-Applicability-End -->
 
 <!-- Teredo_Server_Name-OmaUri-Begin -->
@@ -660,7 +647,7 @@ This policy setting allows you to specify the name of the Teredo server. This se
 
 - If you enable this policy setting, you can specify a Teredo server name that applies to a Teredo client.
 
-- If you disable or do not configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
+- If you disable or don't configure this policy setting, the local settings on the computer are used to determine the Teredo server name.
 <!-- Teredo_Server_Name-Description-End -->
 
 <!-- Teredo_Server_Name-Editable-Begin -->
@@ -672,13 +659,12 @@ This policy setting allows you to specify the name of the Teredo server. This se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Teredo_Server_Name-DFProperties-End -->
 
 <!-- Teredo_Server_Name-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -704,7 +690,7 @@ This policy setting allows you to specify the name of the Teredo server. This se
 <!-- Teredo_State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Teredo_State-Applicability-End -->
 
 <!-- Teredo_State-OmaUri-Begin -->
@@ -717,15 +703,15 @@ This policy setting allows you to specify the name of the Teredo server. This se
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Teredo, an address assignment and automatic tunneling technology that provides unicast IPv6 connectivity across the IPv4 Internet.
 
-- If you disable or do not configure this policy setting, the local host settings are used.
+- If you disable or don't configure this policy setting, the local host settings are used.
 
 - If you enable this policy setting, you can configure Teredo with one of the following settings:
 
-Default: The default state is "Client."
+Default: The default state is "Client".
 
 Disabled: No Teredo interfaces are present on the host.
 
-Client: The Teredo interface is present only when the host is not on a network that includes a domain controller.
+Client: The Teredo interface is present only when the host isn't on a network that includes a domain controller.
 
 Enterprise Client: The Teredo interface is always present, even if the host is on a network that includes a domain controller.
 <!-- Teredo_State-Description-End -->
@@ -739,13 +725,12 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Teredo_State-DFProperties-End -->
 
 <!-- Teredo_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -771,7 +756,7 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 <!-- Windows_Scaling_Heuristics_State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Windows_Scaling_Heuristics_State-Applicability-End -->
 
 <!-- Windows_Scaling_Heuristics_State-OmaUri-Begin -->
@@ -784,11 +769,11 @@ Enterprise Client: The Teredo interface is always present, even if the host is o
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure Window Scaling Heuristics. Window Scaling Heuristics is an algorithm to identify connectivity and throughput problems caused by many Firewalls and other middle boxes that don't interpret Window Scaling option correctly.
 
-- If you do not configure this policy setting, the local host settings are used.
+- If you don't configure this policy setting, the local host settings are used.
 
 - If you enable this policy setting, Window Scaling Heuristics will be enabled and system will try to identify connectivity and throughput problems and take appropriate measures.
 
-- If you disable this policy setting, Window Scaling Heuristics will be disabled and system will not try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
+- If you disable this policy setting, Window Scaling Heuristics will be disabled and system won't try to identify connectivity and throughput problems casued by Firewalls or other middle boxes.
 <!-- Windows_Scaling_Heuristics_State-Description-End -->
 
 <!-- Windows_Scaling_Heuristics_State-Editable-Begin -->
@@ -800,13 +785,12 @@ This policy setting allows you to configure Window Scaling Heuristics. Window Sc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Windows_Scaling_Heuristics_State-DFProperties-End -->
 
 <!-- Windows_Scaling_Heuristics_State-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -65,4 +65,4 @@ landingContent:
           - text: Compare Windows 11 Editions
             url: https://www.microsoft.com/windows/business/compare-windows-11
           - text: Windows 10 Enterprise LTSC
-            url: ltsc/index.md
+            url: ltsc/overview.md

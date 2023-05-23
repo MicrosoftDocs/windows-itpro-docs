@@ -4,7 +4,7 @@ description: Learn more about the DevDetail CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -73,7 +73,7 @@ The following list shows the DevDetail configuration service provider nodes:
 <!-- Device-DevTyp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DevTyp-Applicability-End -->
 
 <!-- Device-DevTyp-OmaUri-Begin -->
@@ -96,7 +96,7 @@ Returns the device model name /SystemProductName as a string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-DevTyp-DFProperties-End -->
 
@@ -112,7 +112,7 @@ Returns the device model name /SystemProductName as a string.
 <!-- Device-Ext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Applicability-End -->
 
 <!-- Device-Ext-OmaUri-Begin -->
@@ -135,7 +135,7 @@ Subtree to hold vendor-specific parameters.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Ext-DFProperties-End -->
 
@@ -151,7 +151,7 @@ Subtree to hold vendor-specific parameters.
 <!-- Device-Ext-DeviceHardwareData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Ext-DeviceHardwareData-Applicability-End -->
 
 <!-- Device-Ext-DeviceHardwareData-OmaUri-Begin -->
@@ -176,7 +176,7 @@ Added in Windows 10 version 1703. Returns a base64 encoded string of the hardwar
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-DeviceHardwareData-DFProperties-End -->
 
@@ -192,7 +192,7 @@ Added in Windows 10 version 1703. Returns a base64 encoded string of the hardwar
 <!-- Device-Ext-Microsoft-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-OmaUri-Begin -->
@@ -215,7 +215,7 @@ Subtree to hold vendor-specific parameters.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-DFProperties-End -->
 
@@ -231,7 +231,7 @@ Subtree to hold vendor-specific parameters.
 <!-- Device-Ext-Microsoft-CommercializationOperator-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-CommercializationOperator-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-CommercializationOperator-OmaUri-Begin -->
@@ -254,7 +254,7 @@ Returns the name of the mobile operator if it exists; otherwise it returns 404.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-CommercializationOperator-DFProperties-End -->
 
@@ -270,7 +270,7 @@ Returns the name of the mobile operator if it exists; otherwise it returns 404.
 <!-- Device-Ext-Microsoft-DeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-DeviceName-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-DeviceName-OmaUri-Begin -->
@@ -281,7 +281,7 @@ Returns the name of the mobile operator if it exists; otherwise it returns 404.
 
 <!-- Device-Ext-Microsoft-DeviceName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Contains the user-specified device name. Support for Replace operation for Windows 10 Mobile was added in Windows 10, version 1511. Replace operation is not supported in the desktop or IoT Core. When you change the device name using this node, it triggers a dialog on the device asking the user to reboot. The new device name does not take effect until the device is restarted. If the user cancels the dialog, it will show again until a reboot occurs.
+Contains the user-specified device name. Support for Replace operation for Windows 10 Mobile was added in Windows 10, version 1511. Replace operation isn't supported in the desktop or IoT Core. When you change the device name using this node, it triggers a dialog on the device asking the user to reboot. The new device name doesn't take effect until the device is restarted. If the user cancels the dialog, it will show again until a reboot occurs.
 <!-- Device-Ext-Microsoft-DeviceName-Description-End -->
 
 <!-- Device-Ext-Microsoft-DeviceName-Editable-Begin -->
@@ -293,7 +293,7 @@ Contains the user-specified device name. Support for Replace operation for Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Reboot Behavior | Automatic |
 <!-- Device-Ext-Microsoft-DeviceName-DFProperties-End -->
@@ -310,7 +310,7 @@ Contains the user-specified device name. Support for Replace operation for Windo
 <!-- Device-Ext-Microsoft-DNSComputerName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-Ext-Microsoft-DNSComputerName-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-DNSComputerName-OmaUri-Begin -->
@@ -339,7 +339,7 @@ On desktop PCs, this setting specifies the DNS hostname of the computer (Compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Reboot Behavior | ServerInitiated |
 <!-- Device-Ext-Microsoft-DNSComputerName-DFProperties-End -->
@@ -356,7 +356,7 @@ On desktop PCs, this setting specifies the DNS hostname of the computer (Compute
 <!-- Device-Ext-Microsoft-FreeStorage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-FreeStorage-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-FreeStorage-OmaUri-Begin -->
@@ -379,7 +379,7 @@ Total free storage in MB from first internal drive on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-FreeStorage-DFProperties-End -->
 
@@ -395,7 +395,7 @@ Total free storage in MB from first internal drive on the device.
 <!-- Device-Ext-Microsoft-LocalTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-LocalTime-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-LocalTime-OmaUri-Begin -->
@@ -418,7 +418,7 @@ Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-LocalTime-DFProperties-End -->
 
@@ -434,7 +434,7 @@ Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44
 <!-- Device-Ext-Microsoft-MobileID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-MobileID-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-MobileID-OmaUri-Begin -->
@@ -445,7 +445,7 @@ Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44
 
 <!-- Device-Ext-Microsoft-MobileID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the mobile device ID associated with the cellular network. Returns 404 for devices that do not have a cellular network support. The IMSI value is returned for GSM and UMTS networks. CDMA and worldwide phones will return a 404 Not Found status code error if queried for this element.
+Returns the mobile device ID associated with the cellular network. Returns 404 for devices that don't have a cellular network support. The IMSI value is returned for GSM and UMTS networks. CDMA and worldwide phones will return a 404 Not Found status code error if queried for this element.
 <!-- Device-Ext-Microsoft-MobileID-Description-End -->
 
 <!-- Device-Ext-Microsoft-MobileID-Editable-Begin -->
@@ -457,7 +457,7 @@ Returns the mobile device ID associated with the cellular network. Returns 404 f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-MobileID-DFProperties-End -->
 
@@ -473,7 +473,7 @@ Returns the mobile device ID associated with the cellular network. Returns 404 f
 <!-- Device-Ext-Microsoft-OSPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-OSPlatform-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-OSPlatform-OmaUri-Begin -->
@@ -496,7 +496,7 @@ Returns the OS platform of the device. For Windows 10 for desktop editions, it r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-OSPlatform-DFProperties-End -->
 
@@ -512,7 +512,7 @@ Returns the OS platform of the device. For Windows 10 for desktop editions, it r
 <!-- Device-Ext-Microsoft-ProcessorArchitecture-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-ProcessorArchitecture-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-ProcessorArchitecture-OmaUri-Begin -->
@@ -535,7 +535,7 @@ Returns the processor architecture of the device as "arm" or "x86".
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-ProcessorArchitecture-DFProperties-End -->
 
@@ -551,7 +551,7 @@ Returns the processor architecture of the device as "arm" or "x86".
 <!-- Device-Ext-Microsoft-ProcessorType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-ProcessorType-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-ProcessorType-OmaUri-Begin -->
@@ -574,7 +574,7 @@ Returns the processor type of the device as documented in SYSTEM_INFO.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-ProcessorType-DFProperties-End -->
 
@@ -590,7 +590,7 @@ Returns the processor type of the device as documented in SYSTEM_INFO.
 <!-- Device-Ext-Microsoft-RadioSwV-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-RadioSwV-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-RadioSwV-OmaUri-Begin -->
@@ -613,7 +613,7 @@ Returns the radio stack software version number.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-RadioSwV-DFProperties-End -->
 
@@ -629,7 +629,7 @@ Returns the radio stack software version number.
 <!-- Device-Ext-Microsoft-Resolution-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-Resolution-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-Resolution-OmaUri-Begin -->
@@ -652,7 +652,7 @@ Resolution of the device in the format of WidthxLength (e.g., "400x800").
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-Resolution-DFProperties-End -->
 
@@ -668,7 +668,7 @@ Resolution of the device in the format of WidthxLength (e.g., "400x800").
 <!-- Device-Ext-Microsoft-SMBIOSSerialNumber-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Ext-Microsoft-SMBIOSSerialNumber-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-SMBIOSSerialNumber-OmaUri-Begin -->
@@ -691,7 +691,7 @@ SMBIOS Serial Number of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-SMBIOSSerialNumber-DFProperties-End -->
 
@@ -707,7 +707,7 @@ SMBIOS Serial Number of the device.
 <!-- Device-Ext-Microsoft-SMBIOSVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1387] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1387] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1387] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1387] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Ext-Microsoft-SMBIOSVersion-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-SMBIOSVersion-OmaUri-Begin -->
@@ -730,7 +730,7 @@ SMBIOS version of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-SMBIOSVersion-DFProperties-End -->
 
@@ -746,7 +746,7 @@ SMBIOS version of the device.
 <!-- Device-Ext-Microsoft-SystemSKU-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-SystemSKU-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-SystemSKU-OmaUri-Begin -->
@@ -769,7 +769,7 @@ Returns the System SKU, as defined in the registry key HKEY_LOCAL_MACHINE\HARDWA
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-SystemSKU-DFProperties-End -->
 
@@ -785,7 +785,7 @@ Returns the System SKU, as defined in the registry key HKEY_LOCAL_MACHINE\HARDWA
 <!-- Device-Ext-Microsoft-TotalRAM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-TotalRAM-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-TotalRAM-OmaUri-Begin -->
@@ -808,7 +808,7 @@ Total available memory in MB on the device (may be less than total physical memo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-TotalRAM-DFProperties-End -->
 
@@ -824,7 +824,7 @@ Total available memory in MB on the device (may be less than total physical memo
 <!-- Device-Ext-Microsoft-TotalStorage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Microsoft-TotalStorage-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-TotalStorage-OmaUri-Begin -->
@@ -847,7 +847,7 @@ Total available storage in MB from first internal drive on the device (may be le
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Ext-Microsoft-TotalStorage-DFProperties-End -->
 
@@ -863,7 +863,7 @@ Total available storage in MB from first internal drive on the device (may be le
 <!-- Device-Ext-VoLTEServiceSetting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-VoLTEServiceSetting-Applicability-End -->
 
 <!-- Device-Ext-VoLTEServiceSetting-OmaUri-Begin -->
@@ -886,7 +886,7 @@ The VoLTE service setting on or off. Only exposed to Mobile Operator-based OMA-D
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Ext-VoLTEServiceSetting-DFProperties-End -->
 
@@ -902,7 +902,7 @@ The VoLTE service setting on or off. Only exposed to Mobile Operator-based OMA-D
 <!-- Device-Ext-WlanDnsSuffix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-WlanDnsSuffix-Applicability-End -->
 
 <!-- Device-Ext-WlanDnsSuffix-OmaUri-Begin -->
@@ -925,7 +925,7 @@ The DNS suffix of the active WiFi connection. Only exposed to Enterprise-based O
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-WlanDnsSuffix-DFProperties-End -->
 
@@ -941,7 +941,7 @@ The DNS suffix of the active WiFi connection. Only exposed to Enterprise-based O
 <!-- Device-Ext-WlanIPv4Address-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-WlanIPv4Address-Applicability-End -->
 
 <!-- Device-Ext-WlanIPv4Address-OmaUri-Begin -->
@@ -964,7 +964,7 @@ The IPv4 address of the active WiFi connection. Only exposed to Enterprise-based
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-WlanIPv4Address-DFProperties-End -->
 
@@ -980,7 +980,7 @@ The IPv4 address of the active WiFi connection. Only exposed to Enterprise-based
 <!-- Device-Ext-WlanIPv6Address-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-WlanIPv6Address-Applicability-End -->
 
 <!-- Device-Ext-WlanIPv6Address-OmaUri-Begin -->
@@ -1003,7 +1003,7 @@ The IPv6 address of the active WiFi connection. Only exposed to Enterprise-based
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-WlanIPv6Address-DFProperties-End -->
 
@@ -1019,7 +1019,7 @@ The IPv6 address of the active WiFi connection. Only exposed to Enterprise-based
 <!-- Device-Ext-WLANMACAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-WLANMACAddress-Applicability-End -->
 
 <!-- Device-Ext-WLANMACAddress-OmaUri-Begin -->
@@ -1044,7 +1044,7 @@ The MAC address of the active WiFi connection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-WLANMACAddress-DFProperties-End -->
 
@@ -1060,7 +1060,7 @@ The MAC address of the active WiFi connection.
 <!-- Device-Ext-WlanSubnetMask-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-WlanSubnetMask-Applicability-End -->
 
 <!-- Device-Ext-WlanSubnetMask-OmaUri-Begin -->
@@ -1083,7 +1083,7 @@ The subnet mask for the active WiFi connection. Only exposed to Enterprise-based
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-WlanSubnetMask-DFProperties-End -->
 
@@ -1099,7 +1099,7 @@ The subnet mask for the active WiFi connection. Only exposed to Enterprise-based
 <!-- Device-FwV-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FwV-Applicability-End -->
 
 <!-- Device-FwV-OmaUri-Begin -->
@@ -1122,7 +1122,7 @@ Returns the firmware version, as defined in the registry key HKEY_LOCAL_MACHINE\
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-FwV-DFProperties-End -->
 
@@ -1138,7 +1138,7 @@ Returns the firmware version, as defined in the registry key HKEY_LOCAL_MACHINE\
 <!-- Device-HwV-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-HwV-Applicability-End -->
 
 <!-- Device-HwV-OmaUri-Begin -->
@@ -1161,7 +1161,7 @@ Returns the hardware version, as defined in the registry key HKEY_LOCAL_MACHINE\
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-HwV-DFProperties-End -->
 
@@ -1177,7 +1177,7 @@ Returns the hardware version, as defined in the registry key HKEY_LOCAL_MACHINE\
 <!-- Device-LrgObj-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LrgObj-Applicability-End -->
 
 <!-- Device-LrgObj-OmaUri-Begin -->
@@ -1200,7 +1200,7 @@ Returns whether the device uses OMA DM Large Object Handling, as defined in the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-LrgObj-DFProperties-End -->
 
@@ -1216,7 +1216,7 @@ Returns whether the device uses OMA DM Large Object Handling, as defined in the 
 <!-- Device-OEM-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-OEM-Applicability-End -->
 
 <!-- Device-OEM-OmaUri-Begin -->
@@ -1239,7 +1239,7 @@ Returns the name of the Original Equipment Manufacturer (OEM) as a string, as de
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-OEM-DFProperties-End -->
 
@@ -1255,7 +1255,7 @@ Returns the name of the Original Equipment Manufacturer (OEM) as a string, as de
 <!-- Device-SwV-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-SwV-Applicability-End -->
 
 <!-- Device-SwV-OmaUri-Begin -->
@@ -1278,7 +1278,7 @@ Returns the Windows 10 OS software version in the format MajorVersion. MinorVers
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-SwV-DFProperties-End -->
 
@@ -1294,7 +1294,7 @@ Returns the Windows 10 OS software version in the format MajorVersion. MinorVers
 <!-- Device-URI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-URI-Applicability-End -->
 
 <!-- Device-URI-OmaUri-Begin -->
@@ -1316,7 +1316,7 @@ Returns the Windows 10 OS software version in the format MajorVersion. MinorVers
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-URI-DFProperties-End -->
 
@@ -1332,7 +1332,7 @@ Returns the Windows 10 OS software version in the format MajorVersion. MinorVers
 <!-- Device-URI-MaxDepth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-URI-MaxDepth-Applicability-End -->
 
 <!-- Device-URI-MaxDepth-OmaUri-Begin -->
@@ -1355,7 +1355,7 @@ Returns the maximum depth of the management tree that the device supports. The d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-URI-MaxDepth-DFProperties-End -->
 
@@ -1371,7 +1371,7 @@ Returns the maximum depth of the management tree that the device supports. The d
 <!-- Device-URI-MaxSegLen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-URI-MaxSegLen-Applicability-End -->
 
 <!-- Device-URI-MaxSegLen-OmaUri-Begin -->
@@ -1394,7 +1394,7 @@ Returns the total length of any URI segment in a URI that addresses a node or no
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-URI-MaxSegLen-DFProperties-End -->
 
@@ -1410,7 +1410,7 @@ Returns the total length of any URI segment in a URI that addresses a node or no
 <!-- Device-URI-MaxTotLen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-URI-MaxTotLen-Applicability-End -->
 
 <!-- Device-URI-MaxTotLen-OmaUri-Begin -->
@@ -1433,7 +1433,7 @@ Returns the maximum total length of any URI used to address a node or node prope
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-URI-MaxTotLen-DFProperties-End -->
 

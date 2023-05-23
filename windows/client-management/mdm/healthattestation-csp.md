@@ -4,7 +4,7 @@ description: Learn more about the HealthAttestation CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -55,7 +55,7 @@ The following list shows the HealthAttestation configuration service provider no
 <!-- Device-AttestStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-AttestStatus-Applicability-End -->
 
 <!-- Device-AttestStatus-OmaUri-Begin -->
@@ -79,7 +79,7 @@ The status is always cleared prior to making the attest service call.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-AttestStatus-DFProperties-End -->
 
@@ -122,7 +122,7 @@ The status is always cleared prior to making the attest service call.
 <!-- Device-Certificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Certificate-Applicability-End -->
 
 <!-- Device-Certificate-OmaUri-Begin -->
@@ -146,7 +146,7 @@ Value type is a base64 string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Certificate-DFProperties-End -->
 
@@ -162,7 +162,7 @@ Value type is a base64 string.
 <!-- Device-CorrelationID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CorrelationID-Applicability-End -->
 
 <!-- Device-CorrelationID-OmaUri-Begin -->
@@ -185,7 +185,7 @@ Identifies a unique device health attestation session. CorrelationId is used to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CorrelationID-DFProperties-End -->
 
@@ -201,7 +201,7 @@ Identifies a unique device health attestation session. CorrelationId is used to 
 <!-- Device-CurrentProtocolVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-CurrentProtocolVersion-Applicability-End -->
 
 <!-- Device-CurrentProtocolVersion-OmaUri-Begin -->
@@ -224,7 +224,7 @@ Provides the current protocol version that the client is using to communicate wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-CurrentProtocolVersion-DFProperties-End -->
 
@@ -240,7 +240,7 @@ Provides the current protocol version that the client is using to communicate wi
 <!-- Device-ForceRetrieve-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ForceRetrieve-Applicability-End -->
 
 <!-- Device-ForceRetrieve-OmaUri-Begin -->
@@ -251,7 +251,7 @@ Provides the current protocol version that the client is using to communicate wi
 
 <!-- Device-ForceRetrieve-Description-Begin -->
 <!-- Description-Source-DDF -->
-Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.
+Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that's issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.
 <!-- Device-ForceRetrieve-Description-End -->
 
 <!-- Device-ForceRetrieve-Editable-Begin -->
@@ -263,7 +263,7 @@ Instructs the client to initiate a new request to DHA-Service, and get a new DHA
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | False |
 <!-- Device-ForceRetrieve-DFProperties-End -->
@@ -289,7 +289,7 @@ Instructs the client to initiate a new request to DHA-Service, and get a new DHA
 <!-- Device-GetAttestReport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-GetAttestReport-Applicability-End -->
 
 <!-- Device-GetAttestReport-OmaUri-Begin -->
@@ -313,7 +313,7 @@ The report is stored in a registry key in the respective MDM enrollment store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-GetAttestReport-DFProperties-End -->
 
@@ -357,7 +357,7 @@ The report is stored in a registry key in the respective MDM enrollment store.
 <!-- Device-GetServiceCorrelationIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-GetServiceCorrelationIDs-Applicability-End -->
 
 <!-- Device-GetServiceCorrelationIDs-OmaUri-Begin -->
@@ -381,7 +381,7 @@ If there's more than one correlation ID, they're separated by ";" in the string.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-GetServiceCorrelationIDs-DFProperties-End -->
 
@@ -426,7 +426,7 @@ If there's more than one correlation ID, they're separated by ";" in the string.
 <!-- Device-HASEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-HASEndpoint-Applicability-End -->
 
 <!-- Device-HASEndpoint-OmaUri-Begin -->
@@ -437,7 +437,7 @@ If there's more than one correlation ID, they're separated by ";" in the string.
 
 <!-- Device-HASEndpoint-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.
+Identifies the fully qualified domain name (FQDN) of the DHA-Service that's assigned to perform attestation. If an FQDN isn't assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.
 <!-- Device-HASEndpoint-Description-End -->
 
 <!-- Device-HASEndpoint-Editable-Begin -->
@@ -449,7 +449,7 @@ Identifies the fully qualified domain name (FQDN) of the DHA-Service that is ass
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | has.spserv.microsoft.com. |
 <!-- Device-HASEndpoint-DFProperties-End -->
@@ -466,7 +466,7 @@ Identifies the fully qualified domain name (FQDN) of the DHA-Service that is ass
 <!-- Device-MaxSupportedProtocolVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-MaxSupportedProtocolVersion-Applicability-End -->
 
 <!-- Device-MaxSupportedProtocolVersion-OmaUri-Begin -->
@@ -489,7 +489,7 @@ Returns the maximum protocol version that this client can support.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MaxSupportedProtocolVersion-DFProperties-End -->
 
@@ -505,7 +505,7 @@ Returns the maximum protocol version that this client can support.
 <!-- Device-Nonce-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Nonce-Applicability-End -->
 
 <!-- Device-Nonce-OmaUri-Begin -->
@@ -516,7 +516,7 @@ Returns the maximum protocol version that this client can support.
 
 <!-- Device-Nonce-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables MDMs to protect the device health attestation communications from man-in-the-middle type (MITM) attacks with a crypt-protected random value that is generated by the MDM Server. The nonce is in hex format, with a minimum size of 8 bytes, and a maximum size of 32 bytes.
+Enables MDMs to protect the device health attestation communications from man-in-the-middle type (MITM) attacks with a crypt-protected random value that's generated by the MDM Server. The nonce is in hex format, with a minimum size of 8 bytes, and a maximum size of 32 bytes.
 <!-- Device-Nonce-Description-End -->
 
 <!-- Device-Nonce-Editable-Begin -->
@@ -528,7 +528,7 @@ Enables MDMs to protect the device health attestation communications from man-in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | \0 |
 <!-- Device-Nonce-DFProperties-End -->
@@ -545,7 +545,7 @@ Enables MDMs to protect the device health attestation communications from man-in
 <!-- Device-PreferredMaxProtocolVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-PreferredMaxProtocolVersion-Applicability-End -->
 
 <!-- Device-PreferredMaxProtocolVersion-OmaUri-Begin -->
@@ -568,7 +568,7 @@ Provides the maximum preferred protocol version that the client is configured to
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 3 |
 <!-- Device-PreferredMaxProtocolVersion-DFProperties-End -->
@@ -585,7 +585,7 @@ Provides the maximum preferred protocol version that the client is configured to
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -608,7 +608,7 @@ Provides the current status of the device health request. For the complete list 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Status-DFProperties-End -->
 
@@ -624,7 +624,7 @@ Provides the current status of the device health request. For the complete list 
 <!-- Device-TpmReadyStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-TpmReadyStatus-Applicability-End -->
 
 <!-- Device-TpmReadyStatus-OmaUri-Begin -->
@@ -647,7 +647,7 @@ Returns a bitmask of information describing the state of TPM. It indicates wheth
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-TpmReadyStatus-DFProperties-End -->
 
@@ -663,7 +663,7 @@ Returns a bitmask of information describing the state of TPM. It indicates wheth
 <!-- Device-TriggerAttestation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TriggerAttestation-Applicability-End -->
 
 <!-- Device-TriggerAttestation-OmaUri-Begin -->
@@ -687,7 +687,7 @@ If the attestation process is launched successfully, this node will return code 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-TriggerAttestation-DFProperties-End -->
 
@@ -750,7 +750,7 @@ If the attestation process is launched successfully, this node will return code 
 <!-- Device-VerifyHealth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-VerifyHealth-Applicability-End -->
 
 <!-- Device-VerifyHealth-OmaUri-Begin -->
@@ -773,7 +773,7 @@ Notifies the device to prepare a device health verification request.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-VerifyHealth-DFProperties-End -->
 
