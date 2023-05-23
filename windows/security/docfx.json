@@ -71,12 +71,12 @@
     "fileMetadata": {
       "author":{
         "identity-protection/**/*.md": "paolomatarazzo",
-        "network-security/**/*.md": "paolomatarazzo",
+        "operating-system-security/network-security/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms"
       },
       "ms.author":{
         "identity-protection/**/*.md": "paoloma",
-        "network-security/**/*.md": "paoloma",
+        "operating-system-security/network-security/**/*.md": "paoloma",
         "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
       },
       "appliesto":{
