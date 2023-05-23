@@ -12,13 +12,12 @@ ms.collection:
   - tier1
 ms.technology: itpro-fundamentals
 ms.date: 02/13/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+
 ---
 
 # Windows 11 requirements
-
-**Applies to**
-
-- Windows 11
 
 This article lists the system requirements for Windows 11. Windows 11 is also [supported on a virtual machine (VM)](#virtual-machine-support).
 

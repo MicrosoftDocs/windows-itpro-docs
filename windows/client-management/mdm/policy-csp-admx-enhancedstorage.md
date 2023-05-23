@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EnhancedStorage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_EnhancedStorage-Begin -->
 # Policy CSP - ADMX_EnhancedStorage
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_EnhancedStorage-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- ApprovedEnStorDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApprovedEnStorDevices-Applicability-End -->
 
 <!-- ApprovedEnStorDevices-OmaUri-Begin -->
@@ -46,7 +43,7 @@ This policy setting allows you to configure a list of Enhanced Storage devices b
 
 - If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
 
-- If you disable or do not configure this policy setting, all Enhanced Storage devices are usable on your computer.
+- If you disable or don't configure this policy setting, all Enhanced Storage devices are usable on your computer.
 <!-- ApprovedEnStorDevices-Description-End -->
 
 <!-- ApprovedEnStorDevices-Editable-Begin -->
@@ -58,13 +55,12 @@ This policy setting allows you to configure a list of Enhanced Storage devices b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedEnStorDevices-DFProperties-End -->
 
 <!-- ApprovedEnStorDevices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ This policy setting allows you to configure a list of Enhanced Storage devices b
 <!-- ApprovedSilos-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApprovedSilos-Applicability-End -->
 
 <!-- ApprovedSilos-OmaUri-Begin -->
@@ -106,7 +102,7 @@ This policy setting allows you to create a list of IEEE 1667 silos, compliant wi
 
 - If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
 
-- If you disable or do not configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
+- If you disable or don't configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
 <!-- ApprovedSilos-Description-End -->
 
 <!-- ApprovedSilos-Editable-Begin -->
@@ -118,13 +114,12 @@ This policy setting allows you to create a list of IEEE 1667 silos, compliant wi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedSilos-DFProperties-End -->
 
 <!-- ApprovedSilos-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -151,7 +146,7 @@ This policy setting allows you to create a list of IEEE 1667 silos, compliant wi
 <!-- DisablePasswordAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisablePasswordAuthentication-Applicability-End -->
 
 <!-- DisablePasswordAuthentication-OmaUri-Begin -->
@@ -164,9 +159,9 @@ This policy setting allows you to create a list of IEEE 1667 silos, compliant wi
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not a password can be used to unlock an Enhanced Storage device.
 
-- If you enable this policy setting, a password cannot be used to unlock an Enhanced Storage device.
+- If you enable this policy setting, a password can't be used to unlock an Enhanced Storage device.
 
-- If you disable or do not configure this policy setting, a password can be used to unlock an Enhanced Storage device.
+- If you disable or don't configure this policy setting, a password can be used to unlock an Enhanced Storage device.
 <!-- DisablePasswordAuthentication-Description-End -->
 
 <!-- DisablePasswordAuthentication-Editable-Begin -->
@@ -178,13 +173,12 @@ This policy setting configures whether or not a password can be used to unlock a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisablePasswordAuthentication-DFProperties-End -->
 
 <!-- DisablePasswordAuthentication-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -211,7 +205,7 @@ This policy setting configures whether or not a password can be used to unlock a
 <!-- DisallowLegacyDiskDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisallowLegacyDiskDevices-Applicability-End -->
 
 <!-- DisallowLegacyDiskDevices-OmaUri-Begin -->
@@ -224,9 +218,9 @@ This policy setting configures whether or not a password can be used to unlock a
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not non-Enhanced Storage removable devices are allowed on your computer.
 
-- If you enable this policy setting, non-Enhanced Storage removable devices are not allowed on your computer.
+- If you enable this policy setting, non-Enhanced Storage removable devices aren't allowed on your computer.
 
-- If you disable or do not configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
+- If you disable or don't configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
 <!-- DisallowLegacyDiskDevices-Description-End -->
 
 <!-- DisallowLegacyDiskDevices-Editable-Begin -->
@@ -238,13 +232,12 @@ This policy setting configures whether or not non-Enhanced Storage removable dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisallowLegacyDiskDevices-DFProperties-End -->
 
 <!-- DisallowLegacyDiskDevices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -271,7 +264,7 @@ This policy setting configures whether or not non-Enhanced Storage removable dev
 <!-- LockDeviceOnMachineLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LockDeviceOnMachineLock-Applicability-End -->
 
 <!-- LockDeviceOnMachineLock-OmaUri-Begin -->
@@ -288,7 +281,7 @@ This policy setting is supported in Windows Server SKUs only.
 
 - If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
 
-- If you disable or do not configure this policy setting, the Enhanced Storage device state is not changed when the computer is locked.
+- If you disable or don't configure this policy setting, the Enhanced Storage device state isn't changed when the computer is locked.
 <!-- LockDeviceOnMachineLock-Description-End -->
 
 <!-- LockDeviceOnMachineLock-Editable-Begin -->
@@ -300,13 +293,12 @@ This policy setting is supported in Windows Server SKUs only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockDeviceOnMachineLock-DFProperties-End -->
 
 <!-- LockDeviceOnMachineLock-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -333,7 +325,7 @@ This policy setting is supported in Windows Server SKUs only.
 <!-- RootHubConnectedEnStorDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RootHubConnectedEnStorDevices-Applicability-End -->
 
 <!-- RootHubConnectedEnStorDevices-OmaUri-Begin -->
@@ -348,7 +340,7 @@ This policy setting configures whether or not only USB root hub connected Enhanc
 
 - If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
 
-- If you disable or do not configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
+- If you disable or don't configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
 <!-- RootHubConnectedEnStorDevices-Description-End -->
 
 <!-- RootHubConnectedEnStorDevices-Editable-Begin -->
@@ -360,13 +352,12 @@ This policy setting configures whether or not only USB root hub connected Enhanc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RootHubConnectedEnStorDevices-DFProperties-End -->
 
 <!-- RootHubConnectedEnStorDevices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

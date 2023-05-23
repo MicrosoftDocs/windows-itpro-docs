@@ -12,6 +12,8 @@ ms.date: 05/19/2023
 ms.collection:
   - highpri
   - tier2
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 and later</a>
 ---
 
 # Temporary enterprise feature control in Windows 11

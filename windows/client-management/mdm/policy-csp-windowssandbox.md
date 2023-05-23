@@ -4,7 +4,7 @@ description: Learn more about the WindowsSandbox Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAudioInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowAudioInput-Applicability-End -->
 
 <!-- AllowAudioInput-OmaUri-Begin -->
@@ -41,11 +41,11 @@ This policy setting enables or disables audio input to the Sandbox.
 
 - If you enable this policy setting, Windows Sandbox will be able to receive audio input from the user. Applications using a microphone may require this setting.
 
-- If you disable this policy setting, Windows Sandbox will not be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
+- If you disable this policy setting, Windows Sandbox won't be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
 
-- If you do not configure this policy setting, audio input will be enabled.
+- If you don't configure this policy setting, audio input will be enabled.
 
-**Note** that there may be security implications of exposing host audio input to the container.
+Note that there may be security implications of exposing host audio input to the container.
 <!-- AllowAudioInput-Description-End -->
 
 <!-- AllowAudioInput-Editable-Begin -->
@@ -59,7 +59,7 @@ This policy setting enables or disables audio input to the Sandbox.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -91,7 +91,7 @@ This policy setting enables or disables audio input to the Sandbox.
 <!-- AllowClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowClipboardRedirection-Applicability-End -->
 
 <!-- AllowClipboardRedirection-OmaUri-Begin -->
@@ -108,7 +108,7 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 
 - If you disable this policy setting, copy and paste in and out of Sandbox will be restricted.
 
-- If you do not configure this policy setting, clipboard sharing will be enabled.
+- If you don't configure this policy setting, clipboard sharing will be enabled.
 <!-- AllowClipboardRedirection-Description-End -->
 
 <!-- AllowClipboardRedirection-Editable-Begin -->
@@ -122,7 +122,7 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -154,7 +154,7 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 <!-- AllowNetworking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowNetworking-Applicability-End -->
 
 <!-- AllowNetworking-OmaUri-Begin -->
@@ -171,9 +171,9 @@ This policy setting enables or disables networking in the sandbox. You can disab
 
 - If you disable this policy setting, networking is disabled in Windows Sandbox.
 
-- If you do not configure this policy setting, networking will be enabled.
+- If you don't configure this policy setting, networking will be enabled.
 
-**Note** that enabling networking can expose untrusted applications to the internal network.
+Note that enabling networking can expose untrusted applications to the internal network.
 <!-- AllowNetworking-Description-End -->
 
 <!-- AllowNetworking-Editable-Begin -->
@@ -187,7 +187,7 @@ This policy setting enables or disables networking in the sandbox. You can disab
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -219,7 +219,7 @@ This policy setting enables or disables networking in the sandbox. You can disab
 <!-- AllowPrinterRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowPrinterRedirection-Applicability-End -->
 
 <!-- AllowPrinterRedirection-OmaUri-Begin -->
@@ -234,9 +234,9 @@ This policy setting enables or disables printer sharing from the host into the S
 
 - If you enable this policy setting, host printers will be shared into Windows Sandbox.
 
-- If you disable this policy setting, Windows Sandbox will not be able to view printers from the host.
+- If you disable this policy setting, Windows Sandbox won't be able to view printers from the host.
 
-- If you do not configure this policy setting, printer redirection will be disabled.
+- If you don't configure this policy setting, printer redirection will be disabled.
 <!-- AllowPrinterRedirection-Description-End -->
 
 <!-- AllowPrinterRedirection-Editable-Begin -->
@@ -250,7 +250,7 @@ This policy setting enables or disables printer sharing from the host into the S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -282,7 +282,7 @@ This policy setting enables or disables printer sharing from the host into the S
 <!-- AllowVGPU-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowVGPU-Applicability-End -->
 
 <!-- AllowVGPU-OmaUri-Begin -->
@@ -299,9 +299,9 @@ This policy setting is to enable or disable the virtualized GPU.
 
 - If you disable this policy setting, Windows Sandbox will use software rendering, which can be slower than virtualized GPU.
 
-- If you do not configure this policy setting, vGPU will be enabled.
+- If you don't configure this policy setting, vGPU will be enabled.
 
-**Note** that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
+Note that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
 <!-- AllowVGPU-Description-End -->
 
 <!-- AllowVGPU-Editable-Begin -->
@@ -315,7 +315,7 @@ This policy setting is to enable or disable the virtualized GPU.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -347,7 +347,7 @@ This policy setting is to enable or disable the virtualized GPU.
 <!-- AllowVideoInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowVideoInput-Applicability-End -->
 
 <!-- AllowVideoInput-OmaUri-Begin -->
@@ -364,9 +364,9 @@ This policy setting enables or disables video input to the Sandbox.
 
 - If you disable this policy setting, video input is disabled in Windows Sandbox. Applications using video input may not function properly in Windows Sandbox.
 
-- If you do not configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
+- If you don't configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
 
-**Note** that there may be security implications of exposing host video input to the container.
+Note that there may be security implications of exposing host video input to the container.
 <!-- AllowVideoInput-Description-End -->
 
 <!-- AllowVideoInput-Editable-Begin -->
@@ -380,7 +380,7 @@ This policy setting enables or disables video input to the Sandbox.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |

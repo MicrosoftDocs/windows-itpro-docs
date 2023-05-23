@@ -4,7 +4,7 @@ description: Learn more about the SettingsSync Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,13 +16,9 @@ ms.topic: reference
 <!-- SettingsSync-Begin -->
 # Policy CSP - SettingsSync
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- SettingsSync-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -34,7 +30,7 @@ ms.topic: reference
 <!-- DisableAccessibilitySettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- DisableAccessibilitySettingSync-Applicability-End -->
 
 <!-- DisableAccessibilitySettingSync-OmaUri-Begin -->
@@ -47,11 +43,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Prevent the "accessibility" group from syncing to and from this PC. This turns off and disables the "accessibility" group on the "Windows backup" settings page in PC settings.
 
-If you enable this policy setting, the "accessibility", group will not be synced.
+If you enable this policy setting, the "accessibility", group won't be synced.
 
 Use the option "Allow users to turn accessibility syncing on" so that syncing is turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "accessibility" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "accessibility" group is on by default and configurable by the user.
 <!-- DisableAccessibilitySettingSync-Description-End -->
 
 <!-- DisableAccessibilitySettingSync-Editable-Begin -->
@@ -63,13 +59,12 @@ If you do not set or disable this setting, syncing of the "accessibility" group 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableAccessibilitySettingSync-DFProperties-End -->
 
 <!-- DisableAccessibilitySettingSync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -96,7 +91,7 @@ If you do not set or disable this setting, syncing of the "accessibility" group 
 <!-- DisableLanguageSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- DisableLanguageSettingSync-Applicability-End -->
 
 <!-- DisableLanguageSettingSync-OmaUri-Begin -->
@@ -118,14 +113,13 @@ If you do not set or disable this setting, syncing of the "accessibility" group 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLanguageSettingSync-DFProperties-End -->
 
 <!-- DisableLanguageSettingSync-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

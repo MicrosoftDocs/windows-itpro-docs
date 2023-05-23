@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Globalization Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Globalization-Begin -->
 # Policy CSP - ADMX_Globalization
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Globalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- BlockUserInputMethodsForSignIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BlockUserInputMethodsForSignIn-Applicability-End -->
 
 <!-- BlockUserInputMethodsForSignIn-OmaUri-Begin -->
@@ -44,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
 
-**Note** this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
+Note this doesn't affect the availability of user input methods on the lock screen or with the UAC prompt.
 
 - If the policy is enabled, then the user will get input methods enabled for the system account on the sign-in page.
 
@@ -60,13 +57,12 @@ This policy prevents automatic copying of user input methods to the system accou
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BlockUserInputMethodsForSignIn-DFProperties-End -->
 
 <!-- BlockUserInputMethodsForSignIn-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy prevents automatic copying of user input methods to the system accou
 <!-- CustomLocalesNoSelect_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomLocalesNoSelect_1-Applicability-End -->
 
 <!-- CustomLocalesNoSelect_1-OmaUri-Begin -->
@@ -106,19 +102,21 @@ This policy prevents automatic copying of user input methods to the system accou
 <!-- Description-Source-ADMX -->
 This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
-This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
+This doesn't affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
-The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting is not configured.
+The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting isn't configured.
 
-- If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
+- If you enable this policy setting, the user can't select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
 
-- If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
+- If you disable or don't configure this policy setting, the user can select a custom locale as their user locale.
 
-- If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
+- If this policy setting is enabled at the machine level, it can't be disabled by a per-user policy setting.
+
 - If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
-- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
+- If this policy setting isn't configured at the machine level, restrictions will be based on per-user policy settings.
+
+To set this policy setting on a per-user basis, make sure that you don't configure the per-machine policy setting.
 <!-- CustomLocalesNoSelect_1-Description-End -->
 
 <!-- CustomLocalesNoSelect_1-Editable-Begin -->
@@ -130,13 +128,12 @@ To set this policy setting on a per-user basis, make sure that you do not config
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomLocalesNoSelect_1-DFProperties-End -->
 
 <!-- CustomLocalesNoSelect_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -163,7 +160,7 @@ To set this policy setting on a per-user basis, make sure that you do not config
 <!-- CustomLocalesNoSelect_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomLocalesNoSelect_2-Applicability-End -->
 
 <!-- CustomLocalesNoSelect_2-OmaUri-Begin -->
@@ -176,19 +173,21 @@ To set this policy setting on a per-user basis, make sure that you do not config
 <!-- Description-Source-ADMX -->
 This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
-This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
+This doesn't affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
-The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting is not configured.
+The policy setting "Restrict user locales" can also be enabled to disallow selection of a custom locale, even if this policy setting isn't configured.
 
-- If you enable this policy setting, the user cannot select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
+- If you enable this policy setting, the user can't select a custom locale as their user locale, but they can still select a replacement locale if one is installed.
 
-- If you disable or do not configure this policy setting, the user can select a custom locale as their user locale.
+- If you disable or don't configure this policy setting, the user can select a custom locale as their user locale.
 
-- If this policy setting is enabled at the machine level, it cannot be disabled by a per-user policy setting.
+- If this policy setting is enabled at the machine level, it can't be disabled by a per-user policy setting.
+
 - If this policy setting is disabled at the machine level, the per-user policy setting will be ignored.
-- If this policy setting is not configured at the machine level, restrictions will be based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
+- If this policy setting isn't configured at the machine level, restrictions will be based on per-user policy settings.
+
+To set this policy setting on a per-user basis, make sure that you don't configure the per-machine policy setting.
 <!-- CustomLocalesNoSelect_2-Description-End -->
 
 <!-- CustomLocalesNoSelect_2-Editable-Begin -->
@@ -200,13 +199,12 @@ To set this policy setting on a per-user basis, make sure that you do not config
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomLocalesNoSelect_2-DFProperties-End -->
 
 <!-- CustomLocalesNoSelect_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -233,7 +231,7 @@ To set this policy setting on a per-user basis, make sure that you do not config
 <!-- HideAdminOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HideAdminOptions-Applicability-End -->
 
 <!-- HideAdminOptions-OmaUri-Begin -->
@@ -248,9 +246,9 @@ This policy setting removes the Administrative options from the Region settings 
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-- If you enable this policy setting, the user cannot see the Administrative options.
+- If you enable this policy setting, the user can't see the Administrative options.
 
-- If you disable or do not configure this policy setting, the user can see the Administrative options.
+- If you disable or don't configure this policy setting, the user can see the Administrative options.
 
 > [!NOTE]
 > Even if a user can see the Administrative options, other policies may prevent them from modifying the values.
@@ -265,13 +263,12 @@ This policy setting is used only to simplify the Regional Options control panel.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideAdminOptions-DFProperties-End -->
 
 <!-- HideAdminOptions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -298,7 +295,7 @@ This policy setting is used only to simplify the Regional Options control panel.
 <!-- HideCurrentLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HideCurrentLocation-Applicability-End -->
 
 <!-- HideCurrentLocation-OmaUri-Begin -->
@@ -313,9 +310,9 @@ This policy setting removes the option to change the user's geographical locatio
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-- If you enable this policy setting, the user does not see the option to change the GeoID. This does not prevent the user or an application from changing the GeoID programmatically.
+- If you enable this policy setting, the user doesn't see the option to change the GeoID. This doesn't prevent the user or an application from changing the GeoID programmatically.
 
-- If you disable or do not configure this policy setting, the user sees the option for changing the user location (GeoID).
+- If you disable or don't configure this policy setting, the user sees the option for changing the user location (GeoID).
 
 > [!NOTE]
 > Even if a user can see the GeoID option, the "Disallow changing of geographical location" option can prevent them from actually changing their current geographical location.
@@ -330,13 +327,12 @@ This policy setting is used only to simplify the Regional Options control panel.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideCurrentLocation-DFProperties-End -->
 
 <!-- HideCurrentLocation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -363,7 +359,7 @@ This policy setting is used only to simplify the Regional Options control panel.
 <!-- HideLanguageSelection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HideLanguageSelection-Applicability-End -->
 
 <!-- HideLanguageSelection-OmaUri-Begin -->
@@ -378,9 +374,9 @@ This policy setting removes the option to change the user's menus and dialogs (U
 
 This policy setting is used only to simplify the Regional Options control panel.
 
-- If you enable this policy setting, the user does not see the option for changing the UI language. This does not prevent the user or an application from changing the UI language programmatically.
+- If you enable this policy setting, the user doesn't see the option for changing the UI language. This doesn't prevent the user or an application from changing the UI language programmatically.
 
-- If you disable or do not configure this policy setting, the user sees the option for changing the UI language.
+- If you disable or don't configure this policy setting, the user sees the option for changing the UI language.
 
 > [!NOTE]
 > Even if a user can see the option to change the UI language, other policy settings can prevent them from changing their UI language.
@@ -395,13 +391,12 @@ This policy setting is used only to simplify the Regional Options control panel.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideLanguageSelection-DFProperties-End -->
 
 <!-- HideLanguageSelection-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -428,7 +423,7 @@ This policy setting is used only to simplify the Regional Options control panel.
 <!-- HideLocaleSelectAndCustomize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HideLocaleSelectAndCustomize-Applicability-End -->
 
 <!-- HideLocaleSelectAndCustomize-OmaUri-Begin -->
@@ -443,9 +438,9 @@ This policy setting removes the regional formats interface from the Region setti
 
 This policy setting is used only to simplify the Regional and Language Options control panel.
 
-- If you enable this policy setting, the user does not see the regional formats options. This does not prevent the user or an application from changing their user locale or user overrides programmatically.
+- If you enable this policy setting, the user doesn't see the regional formats options. This doesn't prevent the user or an application from changing their user locale or user overrides programmatically.
 
-- If you disable or do not configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
+- If you disable or don't configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
 <!-- HideLocaleSelectAndCustomize-Description-End -->
 
 <!-- HideLocaleSelectAndCustomize-Editable-Begin -->
@@ -457,13 +452,12 @@ This policy setting is used only to simplify the Regional and Language Options c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideLocaleSelectAndCustomize-DFProperties-End -->
 
 <!-- HideLocaleSelectAndCustomize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -490,7 +484,7 @@ This policy setting is used only to simplify the Regional and Language Options c
 <!-- ImplicitDataCollectionOff_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ImplicitDataCollectionOff_1-Applicability-End -->
 
 <!-- ImplicitDataCollectionOff_1-OmaUri-Begin -->
@@ -505,16 +499,16 @@ This policy setting turns off the automatic learning component of handwriting re
 
 Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.
 
-Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
+Text that's collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that's stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history doesn't delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. See Tablet PC Help for more information.
 
-- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
+- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users can't configure this setting in Control Panel.
 
-- If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
+- If you disable this policy setting, automatic learning is turned on. Users can't configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
-- If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
+- If you don't configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
 
 This policy setting is related to the "Turn off handwriting personalization" policy setting.
 
@@ -534,13 +528,12 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ImplicitDataCollectionOff_1-DFProperties-End -->
 
 <!-- ImplicitDataCollectionOff_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -566,7 +559,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 <!-- ImplicitDataCollectionOff_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ImplicitDataCollectionOff_2-Applicability-End -->
 
 <!-- ImplicitDataCollectionOff_2-OmaUri-Begin -->
@@ -581,16 +574,16 @@ This policy setting turns off the automatic learning component of handwriting re
 
 Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.
 
-Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
+Text that's collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that's stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history doesn't delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. See Tablet PC Help for more information.
 
-- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users cannot configure this setting in Control Panel.
+- If you enable this policy setting, automatic learning stops and any stored data is deleted. Users can't configure this setting in Control Panel.
 
-- If you disable this policy setting, automatic learning is turned on. Users cannot configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
+- If you disable this policy setting, automatic learning is turned on. Users can't configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
-- If you do not configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
+- If you don't configure this policy, users can choose to enable or disable automatic learning either from the Handwriting tab in the Tablet Settings in Control Panel or from the opt-in dialog.
 
 This policy setting is related to the "Turn off handwriting personalization" policy setting.
 
@@ -610,13 +603,12 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ImplicitDataCollectionOff_2-DFProperties-End -->
 
 <!-- ImplicitDataCollectionOff_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -642,7 +634,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 <!-- LocaleSystemRestrict-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LocaleSystemRestrict-Applicability-End -->
 
 <!-- LocaleSystemRestrict-OmaUri-Begin -->
@@ -653,13 +645,13 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 <!-- LocaleSystemRestrict-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting does not change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
+This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting doesn't change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
 
 The locale list is specified using language names, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-US;en-CA" would restrict the system locale to English (United States) and English (Canada).
 
 - If you enable this policy setting, administrators can select a system locale only from the specified system locale list.
 
-- If you disable or do not configure this policy setting, administrators can select any system locale shipped with the operating system.
+- If you disable or don't configure this policy setting, administrators can select any system locale shipped with the operating system.
 <!-- LocaleSystemRestrict-Description-End -->
 
 <!-- LocaleSystemRestrict-Editable-Begin -->
@@ -671,13 +663,12 @@ The locale list is specified using language names, separated by a semicolon (;).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocaleSystemRestrict-DFProperties-End -->
 
 <!-- LocaleSystemRestrict-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -704,7 +695,7 @@ The locale list is specified using language names, separated by a semicolon (;).
 <!-- LocaleUserRestrict_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LocaleUserRestrict_1-Applicability-End -->
 
 <!-- LocaleUserRestrict_1-OmaUri-Begin -->
@@ -715,19 +706,21 @@ The locale list is specified using language names, separated by a semicolon (;).
 
 <!-- LocaleUserRestrict_1-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting doesn't change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
+To set this policy setting on a per-user basis, make sure that you don't configure the per-computer policy setting.
 
 The locale list is specified using language tags, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-CA;fr-CA" would restrict the user locale to English (Canada) and French (Canada).
 
 - If you enable this policy setting, only locales in the specified locale list can be selected by users.
 
-- If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
+- If you disable or don't configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
-- If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
+- If this policy setting is enabled at the computer level, it can't be disabled by a per-user policy.
+
 - If this policy setting is disabled at the computer level, the per-user policy is ignored.
-- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+
+- If this policy setting isn't configured at the computer level, restrictions are based on per-user policies.
 <!-- LocaleUserRestrict_1-Description-End -->
 
 <!-- LocaleUserRestrict_1-Editable-Begin -->
@@ -739,13 +732,12 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocaleUserRestrict_1-DFProperties-End -->
 
 <!-- LocaleUserRestrict_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -772,7 +764,7 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 <!-- LocaleUserRestrict_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LocaleUserRestrict_2-Applicability-End -->
 
 <!-- LocaleUserRestrict_2-OmaUri-Begin -->
@@ -783,19 +775,21 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 
 <!-- LocaleUserRestrict_2-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting doesn't change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
-To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
+To set this policy setting on a per-user basis, make sure that you don't configure the per-computer policy setting.
 
 The locale list is specified using language tags, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-CA;fr-CA" would restrict the user locale to English (Canada) and French (Canada).
 
 - If you enable this policy setting, only locales in the specified locale list can be selected by users.
 
-- If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
+- If you disable or don't configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.
 
-- If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy.
+- If this policy setting is enabled at the computer level, it can't be disabled by a per-user policy.
+
 - If this policy setting is disabled at the computer level, the per-user policy is ignored.
-- If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
+
+- If this policy setting isn't configured at the computer level, restrictions are based on per-user policies.
 <!-- LocaleUserRestrict_2-Description-End -->
 
 <!-- LocaleUserRestrict_2-Editable-Begin -->
@@ -807,13 +801,12 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocaleUserRestrict_2-DFProperties-End -->
 
 <!-- LocaleUserRestrict_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -840,7 +833,7 @@ The locale list is specified using language tags, separated by a semicolon (;). 
 <!-- LockMachineUILanguage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LockMachineUILanguage-Applicability-End -->
 
 <!-- LockMachineUILanguage-OmaUri-Begin -->
@@ -855,9 +848,9 @@ This policy setting restricts the Windows UI language for all users.
 
 This is a policy setting for computers with more than one UI language installed.
 
-- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language will follow the language specified by the administrator as the system UI languages. The UI language selected by the user will be ignored if it is different than any of the system UI languages.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language will follow the language specified by the administrator as the system UI languages. The UI language selected by the user will be ignored if it's different than any of the system UI languages.
 
-- If you disable or do not configure this policy setting, the user can specify which UI language is used.
+- If you disable or don't configure this policy setting, the user can specify which UI language is used.
 <!-- LockMachineUILanguage-Description-End -->
 
 <!-- LockMachineUILanguage-Editable-Begin -->
@@ -869,13 +862,12 @@ This is a policy setting for computers with more than one UI language installed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockMachineUILanguage-DFProperties-End -->
 
 <!-- LockMachineUILanguage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -901,7 +893,7 @@ This is a policy setting for computers with more than one UI language installed.
 <!-- LockUserUILanguage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LockUserUILanguage-Applicability-End -->
 
 <!-- LockUserUILanguage-OmaUri-Begin -->
@@ -916,9 +908,9 @@ This policy setting restricts the Windows UI language for specific users.
 
 This policy setting applies to computers with more than one UI language installed.
 
-- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language for the selected user. If the specified language is not installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the user.
+- If you enable this policy setting, the UI language of Windows menus and dialogs for systems with more than one language is restricted to a specified language for the selected user. If the specified language isn't installed on the target computer or you disable this policy setting, the language selection defaults to the language selected by the user.
 
-- If you disable or do not configure this policy setting, there is no restriction on which language users should use.
+- If you disable or don't configure this policy setting, there is no restriction on which language users should use.
 
 To enable this policy setting in Windows Server 2003, Windows XP, or Windows 2000, to use the "Restrict selection of Windows menus and dialogs language" policy setting.
 <!-- LockUserUILanguage-Description-End -->
@@ -932,13 +924,12 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LockUserUILanguage-DFProperties-End -->
 
 <!-- LockUserUILanguage-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -964,7 +955,7 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 <!-- PreventGeoIdChange_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventGeoIdChange_1-Applicability-End -->
 
 <!-- PreventGeoIdChange_1-OmaUri-Begin -->
@@ -977,15 +968,17 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their user geographical location (GeoID).
 
-- If you enable this policy setting, users cannot change their GeoID.
+- If you enable this policy setting, users can't change their GeoID.
 
-- If you disable or do not configure this policy setting, users may select any GeoID.
+- If you disable or don't configure this policy setting, users may select any GeoID.
 
-- If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting.
+- If you enable this policy setting at the computer level, it can't be disabled by a per-user policy setting.
+
 - If you disable this policy setting at the computer level, the per-user policy is ignored.
-- If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
+- If you don't configure this policy setting at the computer level, restrictions are based on per-user policy settings.
+
+To set this policy setting on a per-user basis, make sure that the per-computer policy setting isn't configured.
 <!-- PreventGeoIdChange_1-Description-End -->
 
 <!-- PreventGeoIdChange_1-Editable-Begin -->
@@ -997,13 +990,12 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventGeoIdChange_1-DFProperties-End -->
 
 <!-- PreventGeoIdChange_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1030,7 +1022,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!-- PreventGeoIdChange_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventGeoIdChange_2-Applicability-End -->
 
 <!-- PreventGeoIdChange_2-OmaUri-Begin -->
@@ -1043,15 +1035,17 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!-- Description-Source-ADMX -->
 This policy setting prevents users from changing their user geographical location (GeoID).
 
-- If you enable this policy setting, users cannot change their GeoID.
+- If you enable this policy setting, users can't change their GeoID.
 
-- If you disable or do not configure this policy setting, users may select any GeoID.
+- If you disable or don't configure this policy setting, users may select any GeoID.
 
-- If you enable this policy setting at the computer level, it cannot be disabled by a per-user policy setting.
+- If you enable this policy setting at the computer level, it can't be disabled by a per-user policy setting.
+
 - If you disable this policy setting at the computer level, the per-user policy is ignored.
-- If you do not configure this policy setting at the computer level, restrictions are based on per-user policy settings.
 
-To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
+- If you don't configure this policy setting at the computer level, restrictions are based on per-user policy settings.
+
+To set this policy setting on a per-user basis, make sure that the per-computer policy setting isn't configured.
 <!-- PreventGeoIdChange_2-Description-End -->
 
 <!-- PreventGeoIdChange_2-Editable-Begin -->
@@ -1063,13 +1057,12 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventGeoIdChange_2-DFProperties-End -->
 
 <!-- PreventGeoIdChange_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1096,7 +1089,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!-- PreventUserOverrides_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventUserOverrides_1-Applicability-End -->
 
 <!-- PreventUserOverrides_1-OmaUri-Begin -->
@@ -1111,12 +1104,14 @@ This policy setting prevents the user from customizing their locale by changing 
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
-When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user cannot customize their user locale with user overrides.
+When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user can't customize their user locale with user overrides.
 
 - If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
 
-- If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy.
+- If this policy is set to Enabled at the computer level, then it can't be disabled by a per-User policy.
+
 - If this policy is set to Disabled at the computer level, then the per-User policy will be ignored.
+
 - If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
 
 To set this policy on a per-user basis, make sure that the per-computer policy is set to Not Configured.
@@ -1131,13 +1126,12 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventUserOverrides_1-DFProperties-End -->
 
 <!-- PreventUserOverrides_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1164,7 +1158,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 <!-- PreventUserOverrides_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventUserOverrides_2-Applicability-End -->
 
 <!-- PreventUserOverrides_2-OmaUri-Begin -->
@@ -1179,12 +1173,14 @@ This policy setting prevents the user from customizing their locale by changing 
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
-When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user cannot customize their user locale with user overrides.
+When this policy setting is enabled, users can still choose alternate locales installed on the system unless prevented by other policies, however, they will be unable to customize those choices. The user can't customize their user locale with user overrides.
 
 - If this policy setting is disabled or not configured, then the user can customize their user locale overrides.
 
-- If this policy is set to Enabled at the computer level, then it cannot be disabled by a per-User policy.
+- If this policy is set to Enabled at the computer level, then it can't be disabled by a per-User policy.
+
 - If this policy is set to Disabled at the computer level, then the per-User policy will be ignored.
+
 - If this policy is set to Not Configured at the computer level, then restrictions will be based on per-User policies.
 
 To set this policy on a per-user basis, make sure that the per-computer policy is set to Not Configured.
@@ -1199,13 +1195,12 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventUserOverrides_2-DFProperties-End -->
 
 <!-- PreventUserOverrides_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1232,7 +1227,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 <!-- RestrictUILangSelect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RestrictUILangSelect-Applicability-End -->
 
 <!-- RestrictUILangSelect-OmaUri-Begin -->
@@ -1243,13 +1238,13 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 
 <!-- RestrictUILangSelect-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language is not installed on the target computer, the language selection defaults to English.
+This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language isn't installed on the target computer, the language selection defaults to English.
 
-- If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel are not accessible to the logged on user. This prevents users from specifying a language different than the one used.
+- If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel aren't accessible to the logged-on user. This prevents users from specifying a language different than the one used.
 
 To enable this policy setting in Windows Vista, use the "Restricts the UI languages Windows should use for the selected user" policy setting.
 
-- If you disable or do not configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
+- If you disable or don't configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
 <!-- RestrictUILangSelect-Description-End -->
 
 <!-- RestrictUILangSelect-Editable-Begin -->
@@ -1261,13 +1256,12 @@ To enable this policy setting in Windows Vista, use the "Restricts the UI langua
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictUILangSelect-DFProperties-End -->
 
 <!-- RestrictUILangSelect-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1293,7 +1287,7 @@ To enable this policy setting in Windows Vista, use the "Restricts the UI langua
 <!-- TurnOffAutocorrectMisspelledWords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffAutocorrectMisspelledWords-Applicability-End -->
 
 <!-- TurnOffAutocorrectMisspelledWords-OmaUri-Begin -->
@@ -1312,7 +1306,7 @@ The autocorrect misspelled words option controls whether or not errors in typed 
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffAutocorrectMisspelledWords-Description-End -->
 
 <!-- TurnOffAutocorrectMisspelledWords-Editable-Begin -->
@@ -1324,13 +1318,12 @@ The autocorrect misspelled words option controls whether or not errors in typed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffAutocorrectMisspelledWords-DFProperties-End -->
 
 <!-- TurnOffAutocorrectMisspelledWords-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1357,7 +1350,7 @@ The autocorrect misspelled words option controls whether or not errors in typed 
 <!-- TurnOffHighlightMisspelledWords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffHighlightMisspelledWords-Applicability-End -->
 
 <!-- TurnOffHighlightMisspelledWords-OmaUri-Begin -->
@@ -1376,7 +1369,7 @@ The highlight misspelled words option controls whether or next spelling errors i
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffHighlightMisspelledWords-Description-End -->
 
 <!-- TurnOffHighlightMisspelledWords-Editable-Begin -->
@@ -1388,13 +1381,12 @@ The highlight misspelled words option controls whether or next spelling errors i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffHighlightMisspelledWords-DFProperties-End -->
 
 <!-- TurnOffHighlightMisspelledWords-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1421,7 +1413,7 @@ The highlight misspelled words option controls whether or next spelling errors i
 <!-- TurnOffInsertSpace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffInsertSpace-Applicability-End -->
 
 <!-- TurnOffInsertSpace-OmaUri-Begin -->
@@ -1440,7 +1432,7 @@ The insert a space after selecting a text prediction option controls whether or 
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffInsertSpace-Description-End -->
 
 <!-- TurnOffInsertSpace-Editable-Begin -->
@@ -1452,13 +1444,12 @@ The insert a space after selecting a text prediction option controls whether or 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffInsertSpace-DFProperties-End -->
 
 <!-- TurnOffInsertSpace-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1485,7 +1476,7 @@ The insert a space after selecting a text prediction option controls whether or 
 <!-- TurnOffOfferTextPredictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffOfferTextPredictions-Applicability-End -->
 
 <!-- TurnOffOfferTextPredictions-OmaUri-Begin -->
@@ -1504,7 +1495,7 @@ The offer text predictions as I type option controls whether or not text predict
 
 - If the policy is disabled or Not Configured, then the user will be free to change the setting according to their preference.
 
-**Note** that the availability and function of this setting is dependent on supported languages being enabled.
+Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!-- TurnOffOfferTextPredictions-Description-End -->
 
 <!-- TurnOffOfferTextPredictions-Editable-Begin -->
@@ -1516,13 +1507,12 @@ The offer text predictions as I type option controls whether or not text predict
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffOfferTextPredictions-DFProperties-End -->
 
 <!-- TurnOffOfferTextPredictions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1549,7 +1539,7 @@ The offer text predictions as I type option controls whether or not text predict
 <!-- Y2K-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Y2K-Applicability-End -->
 
 <!-- Y2K-OmaUri-Begin -->
@@ -1562,13 +1552,13 @@ The offer text predictions as I type option controls whether or not text predict
 <!-- Description-Source-ADMX -->
 This policy setting determines how programs interpret two-digit years.
 
-This policy setting affects only the programs that use this Windows feature to interpret two-digit years. If a program does not interpret two-digit years correctly, consult the documentation or manufacturer of the program.
+This policy setting affects only the programs that use this Windows feature to interpret two-digit years. If a program doesn't interpret two-digit years correctly, consult the documentation or manufacturer of the program.
 
 - If you enable this policy setting, the system specifies the largest two-digit year interpreted as being preceded by 20. All numbers less than or equal to the specified value are interpreted as being preceded by 20. All numbers greater than the specified value are interpreted as being preceded by 19.
 
-For example, the default value, 2029, specifies that all two-digit years less than or equal to 29 (00 to 29) are interpreted as being preceded by 20, that is 2000 to 2029. Conversely, all two-digit years greater than 29 (30 to 99) are interpreted as being preceded by 19, that is, 1930 to 1999.
+For example, the default value, 2029, specifies that all two-digit years less than or equal to 29 (00 to 29) are interpreted as being preceded by 20, that's 2000 to 2029. Conversely, all two-digit years greater than 29 (30 to 99) are interpreted as being preceded by 19, that is, 1930 to 1999.
 
-- If you disable or do not configure this policy setting, Windows does not interpret two-digit year formats using this scheme for the program.
+- If you disable or don't configure this policy setting, Windows doesn't interpret two-digit year formats using this scheme for the program.
 <!-- Y2K-Description-End -->
 
 <!-- Y2K-Editable-Begin -->
@@ -1580,13 +1570,12 @@ For example, the default value, 2029, specifies that all two-digit years less th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Y2K-DFProperties-End -->
 
 <!-- Y2K-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

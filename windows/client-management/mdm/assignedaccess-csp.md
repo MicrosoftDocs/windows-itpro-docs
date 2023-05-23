@@ -4,7 +4,7 @@ description: Learn more about the AssignedAccess CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -50,7 +50,7 @@ The following list shows the AssignedAccess configuration service provider nodes
 <!-- Device-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-Applicability-End -->
 
 <!-- Device-Configuration-OmaUri-Begin -->
@@ -87,7 +87,7 @@ In **Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DFProperties-End -->
 
@@ -145,7 +145,7 @@ For more examples, see [AssignedAccessConfiguration examples](#assignedaccesscon
 <!-- Device-KioskModeApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-KioskModeApp-Applicability-End -->
 
 <!-- Device-KioskModeApp-OmaUri-Begin -->
@@ -187,7 +187,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-KioskModeApp-DFProperties-End -->
 
@@ -284,7 +284,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 <!-- Device-ShellLauncher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-ShellLauncher-Applicability-End -->
 
 <!-- Device-ShellLauncher-OmaUri-Begin -->
@@ -318,7 +318,7 @@ For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllau
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-ShellLauncher-DFProperties-End -->
 
@@ -720,7 +720,7 @@ For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllau
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -759,7 +759,7 @@ Additionally, the Status payload includes the following fields:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Status-DFProperties-End -->
 
@@ -854,7 +854,7 @@ Additionally, the Status payload includes the following fields:
 <!-- Device-StatusConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-StatusConfiguration-Applicability-End -->
 
 <!-- Device-StatusConfiguration-OmaUri-Begin -->
@@ -893,7 +893,7 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-StatusConfiguration-DFProperties-End -->
 
