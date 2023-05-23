@@ -1,0 +1,17 @@
+items: 
+  - name: Introduction
+    href: index.md
+  - name: 1. Deploy apps
+    href: deploy-apps.md
+  - name: 2. Validate apps
+    href: validate-apps.md
+  - name: 3. Create and deploy policies to allow apps
+    items: 
+      - name: Create policies
+        href: create-policies.md
+      - name: Deploy policies
+        href: deploy-policies.md
+  - name: Important app deployment considerations
+    href: considerations.md
+  - name: Troubleshoot common issues
+    href: troubleshoot.md

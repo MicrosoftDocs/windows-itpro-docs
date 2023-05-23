@@ -6,6 +6,8 @@ items:
   items:
   - name: Deploy and manage Windows devices in a school
     href: tutorial-school-deployment/toc.yml
+  - name: Deploy applications to Windows 11 SE
+    href: tutorial-deploy-apps-winse/toc.yml
 - name: Concepts
   items: 
     - name: Windows 11 SE
