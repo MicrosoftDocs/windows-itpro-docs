@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Bits Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Bits-Begin -->
 # Policy CSP - ADMX_Bits
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Bits-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- BITS_DisableBranchCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_DisableBranchCache-Applicability-End -->
 
 <!-- BITS_DisableBranchCache-OmaUri-Begin -->
@@ -44,12 +41,12 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This setting affects whether the BITS client is allowed to use Windows Branch Cache. If the Windows Branch Cache component is installed and enabled on a computer, BITS jobs on that computer can use Windows Branch Cache by default.
 
-- If you enable this policy setting, the BITS client does not use Windows Branch Cache.
+- If you enable this policy setting, the BITS client doesn't use Windows Branch Cache.
 
-- If you disable or do not configure this policy setting, the BITS client uses Windows Branch Cache.
+- If you disable or don't configure this policy setting, the BITS client uses Windows Branch Cache.
 
 > [!NOTE]
-> This policy setting does not affect the use of Windows Branch Cache by applications other than BITS. This policy setting does not apply to BITS transfers over SMB. This setting has no effect if the computer's administrative settings for Windows Branch Cache disable its use entirely.
+> This policy setting doesn't affect the use of Windows Branch Cache by applications other than BITS. This policy setting doesn't apply to BITS transfers over SMB. This setting has no effect if the computer's administrative settings for Windows Branch Cache disable its use entirely.
 <!-- BITS_DisableBranchCache-Description-End -->
 
 <!-- BITS_DisableBranchCache-Editable-Begin -->
@@ -61,13 +58,12 @@ This setting affects whether the BITS client is allowed to use Windows Branch Ca
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_DisableBranchCache-DFProperties-End -->
 
 <!-- BITS_DisableBranchCache-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -94,7 +90,7 @@ This setting affects whether the BITS client is allowed to use Windows Branch Ca
 <!-- BITS_DisablePeercachingClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_DisablePeercachingClient-Applicability-End -->
 
 <!-- BITS_DisablePeercachingClient-OmaUri-Begin -->
@@ -109,7 +105,7 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 
 - If you enable this policy setting, the computer will no longer use the BITS peer caching feature to download files; files will be downloaded only from the origin server. However, the computer will still make files available to its peers.
 
-- If you disable or do not configure this policy setting, the computer attempts to download peer-enabled BITS jobs from peer computers before reverting to the origin server.
+- If you disable or don't configure this policy setting, the computer attempts to download peer-enabled BITS jobs from peer computers before reverting to the origin server.
 
 > [!NOTE]
 > This policy setting has no effect if the "Allow BITS peer caching" policy setting is disabled or not configured.
@@ -124,13 +120,12 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_DisablePeercachingClient-DFProperties-End -->
 
 <!-- BITS_DisablePeercachingClient-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -157,7 +152,7 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 <!-- BITS_DisablePeercachingServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_DisablePeercachingServer-Applicability-End -->
 
 <!-- BITS_DisablePeercachingServer-OmaUri-Begin -->
@@ -172,7 +167,7 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 
 - If you enable this policy setting, the computer will no longer cache downloaded files and offer them to its peers. However, the computer will still download files from peers.
 
-- If you disable or do not configure this policy setting, the computer will offer downloaded and cached files to its peers.
+- If you disable or don't configure this policy setting, the computer will offer downloaded and cached files to its peers.
 
 > [!NOTE]
 > This setting has no effect if the "Allow BITS peer caching" setting is disabled or not configured.
@@ -187,13 +182,12 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_DisablePeercachingServer-DFProperties-End -->
 
 <!-- BITS_DisablePeercachingServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -220,7 +214,7 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 <!-- BITS_EnablePeercaching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_EnablePeercaching-Applicability-End -->
 
 <!-- BITS_EnablePeercaching-OmaUri-Begin -->
@@ -235,9 +229,9 @@ This policy setting determines if the Background Intelligent Transfer Service (B
 
 If BITS peer caching is enabled, BITS caches downloaded files and makes them available to other BITS peers. When transferring a download job, BITS first requests the files for the job from its peers in the same IP subnet. If none of the peers in the subnet have the requested files, BITS downloads them from the origin server.
 
-- If you enable this policy setting, BITS downloads files from peers, caches the files, and responds to content requests from peers. Using the "Do not allow the computer to act as a BITS peer caching server" and "Do not allow the computer to act as a BITS peer caching client" policy settings, it is possible to control BITS peer caching functionality at a more detailed level. However, it should be noted that the "Allow BITS peer caching" policy setting must be enabled for the other two policy settings to have any effect.
+- If you enable this policy setting, BITS downloads files from peers, caches the files, and responds to content requests from peers. Using the "Do not allow the computer to act as a BITS peer caching server" and "Do not allow the computer to act as a BITS peer caching client" policy settings, it's possible to control BITS peer caching functionality at a more detailed level. However, it should be noted that the "Allow BITS peer caching" policy setting must be enabled for the other two policy settings to have any effect.
 
-- If you disable or do not configure this policy setting, the BITS peer caching feature will be disabled, and BITS will download files directly from the origin server.
+- If you disable or don't configure this policy setting, the BITS peer caching feature will be disabled, and BITS will download files directly from the origin server.
 <!-- BITS_EnablePeercaching-Description-End -->
 
 <!-- BITS_EnablePeercaching-Editable-Begin -->
@@ -249,13 +243,12 @@ If BITS peer caching is enabled, BITS caches downloaded files and makes them ava
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_EnablePeercaching-DFProperties-End -->
 
 <!-- BITS_EnablePeercaching-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -282,7 +275,7 @@ If BITS peer caching is enabled, BITS caches downloaded files and makes them ava
 <!-- BITS_MaxBandwidthServedForPeers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxBandwidthServedForPeers-Applicability-End -->
 
 <!-- BITS_MaxBandwidthServedForPeers-OmaUri-Begin -->
@@ -293,13 +286,15 @@ If BITS peer caching is enabled, BITS caches downloaded files and makes them ava
 
 <!-- BITS_MaxBandwidthServedForPeers-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting does not affect transfers from the origin server).
+This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting doesn't affect transfers from the origin server).
+
 To prevent any negative impact to a computer caused by serving other peers, by default BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100 Mbps network card and a 56 Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps.
+
 You can change the default behavior of BITS, and specify a fixed maximum bandwidth that BITS will use for peer caching.
 
 - If you enable this policy setting, you can enter a value in bits per second (bps) between 1048576 and 4294967200 to use as the maximum network bandwidth used for peer caching.
 
-- If you disable this policy setting or do not configure it, the default value of 30 percent of the slowest active network interface will be used.
+- If you disable this policy setting or don't configure it, the default value of 30 percent of the slowest active network interface will be used.
 
 > [!NOTE]
 > This setting has no effect if the "Allow BITS peer caching" policy setting is disabled or not configured.
@@ -314,13 +309,12 @@ You can change the default behavior of BITS, and specify a fixed maximum bandwid
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxBandwidthServedForPeers-DFProperties-End -->
 
 <!-- BITS_MaxBandwidthServedForPeers-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -346,7 +340,7 @@ You can change the default behavior of BITS, and specify a fixed maximum bandwid
 <!-- BITS_MaxBandwidthV2_Maintenance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxBandwidthV2_Maintenance-Applicability-End -->
 
 <!-- BITS_MaxBandwidthV2_Maintenance-OmaUri-Begin -->
@@ -357,13 +351,13 @@ You can change the default behavior of BITS, and specify a fixed maximum bandwid
 
 <!-- BITS_MaxBandwidthV2_Maintenance-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers during the maintenance days and hours. Maintenance schedules further limit the network bandwidth that is used for background transfers.
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers during the maintenance days and hours. Maintenance schedules further limit the network bandwidth that's used for background transfers.
 
 - If you enable this policy setting, you can define a separate set of network bandwidth limits and set up a schedule for the maintenance period.
 
 You can specify a limit to use for background jobs during a maintenance schedule. For example, if normal priority jobs are currently limited to 256 Kbps on a work schedule, you can further limit the network bandwidth of normal priority jobs to 0 Kbps from 8:00 A. M. to 10:00 A. M. on a maintenance schedule.
 
-- If you disable or do not configure this policy setting, the limits defined for work or nonwork schedules will be used.
+- If you disable or don't configure this policy setting, the limits defined for work or nonwork schedules will be used.
 
 > [!NOTE]
 > The bandwidth limits that are set for the maintenance period supersede any limits defined for work and other schedules.
@@ -378,13 +372,12 @@ You can specify a limit to use for background jobs during a maintenance schedule
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxBandwidthV2_Maintenance-DFProperties-End -->
 
 <!-- BITS_MaxBandwidthV2_Maintenance-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -411,7 +404,7 @@ You can specify a limit to use for background jobs during a maintenance schedule
 <!-- BITS_MaxBandwidthV2_Work-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxBandwidthV2_Work-Applicability-End -->
 
 <!-- BITS_MaxBandwidthV2_Work-OmaUri-Begin -->
@@ -422,13 +415,13 @@ You can specify a limit to use for background jobs during a maintenance schedule
 
 <!-- BITS_MaxBandwidthV2_Work-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers during the work and nonwork days and hours. The work schedule is defined using a weekly calendar, which consists of days of the week and hours of the day. All hours and days that are not defined in a work schedule are considered non-work hours.
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers during the work and nonwork days and hours. The work schedule is defined using a weekly calendar, which consists of days of the week and hours of the day. All hours and days that aren't defined in a work schedule are considered non-work hours.
 
 - If you enable this policy setting, you can set up a schedule for limiting network bandwidth during both work and nonwork hours. After the work schedule is defined, you can set the bandwidth usage limits for each of the three BITS background priority levels: high, normal, and low.
 
 You can specify a limit to use for background jobs during a work schedule. For example, you can limit the network bandwidth of low priority jobs to 128 Kbps from 8:00 A. M. to 5:00 P. M. on Monday through Friday, and then set the limit to 512 Kbps for nonwork hours.
 
-- If you disable or do not configure this policy setting, BITS uses all available unused bandwidth for background job transfers.
+- If you disable or don't configure this policy setting, BITS uses all available unused bandwidth for background job transfers.
 <!-- BITS_MaxBandwidthV2_Work-Description-End -->
 
 <!-- BITS_MaxBandwidthV2_Work-Editable-Begin -->
@@ -440,13 +433,12 @@ You can specify a limit to use for background jobs during a work schedule. For e
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxBandwidthV2_Work-DFProperties-End -->
 
 <!-- BITS_MaxBandwidthV2_Work-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -473,7 +465,7 @@ You can specify a limit to use for background jobs during a work schedule. For e
 <!-- BITS_MaxCacheSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxCacheSize-Applicability-End -->
 
 <!-- BITS_MaxCacheSize-OmaUri-Begin -->
@@ -488,7 +480,7 @@ This policy setting limits the maximum amount of disk space that can be used for
 
 - If you enable this policy setting, you can enter the percentage of disk space to be used for the BITS peer cache. You can enter a value between 1 percent and 80 percent.
 
-- If you disable or do not configure this policy setting, the default size of the BITS peer cache is 1 percent of the total system disk size.
+- If you disable or don't configure this policy setting, the default size of the BITS peer cache is 1 percent of the total system disk size.
 
 > [!NOTE]
 > This policy setting has no effect if the "Allow BITS peer caching" setting is disabled or not configured.
@@ -503,13 +495,12 @@ This policy setting limits the maximum amount of disk space that can be used for
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxCacheSize-DFProperties-End -->
 
 <!-- BITS_MaxCacheSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -535,7 +526,7 @@ This policy setting limits the maximum amount of disk space that can be used for
 <!-- BITS_MaxContentAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxContentAge-Applicability-End -->
 
 <!-- BITS_MaxContentAge-OmaUri-Begin -->
@@ -546,11 +537,11 @@ This policy setting limits the maximum amount of disk space that can be used for
 
 <!-- BITS_MaxContentAge-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting limits the maximum age of files in the Background Intelligent Transfer Service (BITS) peer cache. In order to make the most efficient use of disk space, by default BITS removes any files in the peer cache that have not been accessed in the past 90 days.
+This policy setting limits the maximum age of files in the Background Intelligent Transfer Service (BITS) peer cache. In order to make the most efficient use of disk space, by default BITS removes any files in the peer cache that haven't been accessed in the past 90 days.
 
 - If you enable this policy setting, you can specify in days the maximum age of files in the cache. You can enter a value between 1 and 120 days.
 
-- If you disable or do not configure this policy setting, files that have not been accessed for the past 90 days will be removed from the peer cache.
+- If you disable or don't configure this policy setting, files that haven't been accessed for the past 90 days will be removed from the peer cache.
 
 > [!NOTE]
 > This policy setting has no effect if the "Allow BITS Peercaching" policy setting is disabled or not configured.
@@ -565,13 +556,12 @@ This policy setting limits the maximum age of files in the Background Intelligen
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxContentAge-DFProperties-End -->
 
 <!-- BITS_MaxContentAge-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -597,7 +587,7 @@ This policy setting limits the maximum age of files in the Background Intelligen
 <!-- BITS_MaxDownloadTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxDownloadTime-Applicability-End -->
 
 <!-- BITS_MaxDownloadTime-OmaUri-Begin -->
@@ -616,7 +606,7 @@ By default BITS uses a maximum download time of 90 days (7,776,000 seconds).
 
 - If you enable this policy setting, you can set the maximum job download time to a specified number of seconds.
 
-- If you disable or do not configure this policy setting, the default value of 90 days (7,776,000 seconds) will be used.
+- If you disable or don't configure this policy setting, the default value of 90 days (7,776,000 seconds) will be used.
 <!-- BITS_MaxDownloadTime-Description-End -->
 
 <!-- BITS_MaxDownloadTime-Editable-Begin -->
@@ -628,13 +618,12 @@ By default BITS uses a maximum download time of 90 days (7,776,000 seconds).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxDownloadTime-DFProperties-End -->
 
 <!-- BITS_MaxDownloadTime-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -660,7 +649,7 @@ By default BITS uses a maximum download time of 90 days (7,776,000 seconds).
 <!-- BITS_MaxFilesPerJob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxFilesPerJob-Applicability-End -->
 
 <!-- BITS_MaxFilesPerJob-OmaUri-Begin -->
@@ -675,10 +664,10 @@ This policy setting limits the number of files that a BITS job can contain. By d
 
 - If you enable this policy setting, BITS will limit the maximum number of files a job can contain to the specified number.
 
-- If you disable or do not configure this policy setting, BITS will use the default value of 200 for the maximum number of files a job can contain.
+- If you disable or don't configure this policy setting, BITS will use the default value of 200 for the maximum number of files a job can contain.
 
 > [!NOTE]
-> BITS Jobs created by services and the local administrator account do not count toward this limit.
+> BITS Jobs created by services and the local administrator account don't count toward this limit.
 <!-- BITS_MaxFilesPerJob-Description-End -->
 
 <!-- BITS_MaxFilesPerJob-Editable-Begin -->
@@ -690,13 +679,12 @@ This policy setting limits the number of files that a BITS job can contain. By d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxFilesPerJob-DFProperties-End -->
 
 <!-- BITS_MaxFilesPerJob-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -722,7 +710,7 @@ This policy setting limits the number of files that a BITS job can contain. By d
 <!-- BITS_MaxJobsPerMachine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxJobsPerMachine-Applicability-End -->
 
 <!-- BITS_MaxJobsPerMachine-OmaUri-Begin -->
@@ -737,10 +725,10 @@ This policy setting limits the number of BITS jobs that can be created for all u
 
 - If you enable this policy setting, BITS will limit the maximum number of BITS jobs to the specified number.
 
-- If you disable or do not configure this policy setting, BITS will use the default BITS job limit of 300 jobs.
+- If you disable or don't configure this policy setting, BITS will use the default BITS job limit of 300 jobs.
 
 > [!NOTE]
-> BITS jobs created by services and the local administrator account do not count toward this limit.
+> BITS jobs created by services and the local administrator account don't count toward this limit.
 <!-- BITS_MaxJobsPerMachine-Description-End -->
 
 <!-- BITS_MaxJobsPerMachine-Editable-Begin -->
@@ -752,13 +740,12 @@ This policy setting limits the number of BITS jobs that can be created for all u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxJobsPerMachine-DFProperties-End -->
 
 <!-- BITS_MaxJobsPerMachine-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -784,7 +771,7 @@ This policy setting limits the number of BITS jobs that can be created for all u
 <!-- BITS_MaxJobsPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxJobsPerUser-Applicability-End -->
 
 <!-- BITS_MaxJobsPerUser-OmaUri-Begin -->
@@ -799,10 +786,10 @@ This policy setting limits the number of BITS jobs that can be created by a user
 
 - If you enable this policy setting, BITS will limit the maximum number of BITS jobs a user can create to the specified number.
 
-- If you disable or do not configure this policy setting, BITS will use the default user BITS job limit of 300 jobs.
+- If you disable or don't configure this policy setting, BITS will use the default user BITS job limit of 300 jobs.
 
 > [!NOTE]
-> This limit must be lower than the setting specified in the "Maximum number of BITS jobs for this computer" policy setting, or 300 if the "Maximum number of BITS jobs for this computer" policy setting is not configured. BITS jobs created by services and the local administrator account do not count toward this limit.
+> This limit must be lower than the setting specified in the "Maximum number of BITS jobs for this computer" policy setting, or 300 if the "Maximum number of BITS jobs for this computer" policy setting isn't configured. BITS jobs created by services and the local administrator account don't count toward this limit.
 <!-- BITS_MaxJobsPerUser-Description-End -->
 
 <!-- BITS_MaxJobsPerUser-Editable-Begin -->
@@ -814,13 +801,12 @@ This policy setting limits the number of BITS jobs that can be created by a user
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxJobsPerUser-DFProperties-End -->
 
 <!-- BITS_MaxJobsPerUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -846,7 +832,7 @@ This policy setting limits the number of BITS jobs that can be created by a user
 <!-- BITS_MaxRangesPerFile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- BITS_MaxRangesPerFile-Applicability-End -->
 
 <!-- BITS_MaxRangesPerFile-OmaUri-Begin -->
@@ -861,10 +847,10 @@ This policy setting limits the number of ranges that can be added to a file in a
 
 - If you enable this policy setting, BITS will limit the maximum number of ranges that can be added to a file to the specified number.
 
-- If you disable or do not configure this policy setting, BITS will limit ranges to 500 ranges per file.
+- If you disable or don't configure this policy setting, BITS will limit ranges to 500 ranges per file.
 
 > [!NOTE]
-> BITS Jobs created by services and the local administrator account do not count toward this limit.
+> BITS Jobs created by services and the local administrator account don't count toward this limit.
 <!-- BITS_MaxRangesPerFile-Description-End -->
 
 <!-- BITS_MaxRangesPerFile-Editable-Begin -->
@@ -876,13 +862,12 @@ This policy setting limits the number of ranges that can be added to a file in a
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- BITS_MaxRangesPerFile-DFProperties-End -->
 
 <!-- BITS_MaxRangesPerFile-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

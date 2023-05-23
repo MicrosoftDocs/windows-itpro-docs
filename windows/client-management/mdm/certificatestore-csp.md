@@ -4,7 +4,7 @@ description: Learn more about the CertificateStore CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -113,7 +113,7 @@ The following list shows the CertificateStore configuration service provider nod
 <!-- Device-CA-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-Applicability-End -->
 
 <!-- Device-CA-OmaUri-Begin -->
@@ -136,7 +136,7 @@ This cryptographic store contains intermediary certification authorities.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-CA-DFProperties-End -->
 
@@ -152,7 +152,7 @@ This cryptographic store contains intermediary certification authorities.
 <!-- Device-CA-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-OmaUri-Begin -->
@@ -175,7 +175,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Delete, Get |
 | Dynamic Node Naming | UniqueName: The SHA1 hash for the certificate.  |
 <!-- Device-CA-{CertHash}-DFProperties-End -->
@@ -192,7 +192,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 <!-- Device-CA-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -215,7 +215,7 @@ The base64 Encoded X.509 certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Add, Get, Replace |
 <!-- Device-CA-{CertHash}-EncodedCertificate-DFProperties-End -->
 
@@ -231,7 +231,7 @@ The base64 Encoded X.509 certificate.
 <!-- Device-CA-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -254,7 +254,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-{CertHash}-IssuedBy-DFProperties-End -->
 
@@ -270,7 +270,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 <!-- Device-CA-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -293,7 +293,7 @@ The name of the certificate subject. This node is implicitly created only when t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-{CertHash}-IssuedTo-DFProperties-End -->
 
@@ -309,7 +309,7 @@ The name of the certificate subject. This node is implicitly created only when t
 <!-- Device-CA-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -332,7 +332,7 @@ Returns the certificate template name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-{CertHash}-TemplateName-DFProperties-End -->
 
@@ -348,7 +348,7 @@ Returns the certificate template name.
 <!-- Device-CA-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -371,7 +371,7 @@ The starting date of the certificate's validity. This node is implicitly created
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-{CertHash}-ValidFrom-DFProperties-End -->
 
@@ -387,7 +387,7 @@ The starting date of the certificate's validity. This node is implicitly created
 <!-- Device-CA-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-CA-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -410,7 +410,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-{CertHash}-ValidTo-DFProperties-End -->
 
@@ -426,7 +426,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 <!-- Device-CA-System-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-Applicability-End -->
 
 <!-- Device-CA-System-OmaUri-Begin -->
@@ -451,7 +451,7 @@ This store holds the System portion of the CA store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-CA-System-DFProperties-End -->
 
@@ -467,7 +467,7 @@ This store holds the System portion of the CA store.
 <!-- Device-CA-System-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-OmaUri-Begin -->
@@ -490,7 +490,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Delete, Get |
 | Dynamic Node Naming | UniqueName: The SHA1 hash for the certificate.  |
 <!-- Device-CA-System-{CertHash}-DFProperties-End -->
@@ -507,7 +507,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 <!-- Device-CA-System-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -530,7 +530,7 @@ The base64 Encoded X.509 certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Add, Get, Replace |
 <!-- Device-CA-System-{CertHash}-EncodedCertificate-DFProperties-End -->
 
@@ -546,7 +546,7 @@ The base64 Encoded X.509 certificate.
 <!-- Device-CA-System-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -569,7 +569,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-System-{CertHash}-IssuedBy-DFProperties-End -->
 
@@ -585,7 +585,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 <!-- Device-CA-System-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -608,7 +608,7 @@ The name of the certificate subject. This node is implicitly created only when t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-System-{CertHash}-IssuedTo-DFProperties-End -->
 
@@ -624,7 +624,7 @@ The name of the certificate subject. This node is implicitly created only when t
 <!-- Device-CA-System-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -647,7 +647,7 @@ Returns the certificate template name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-System-{CertHash}-TemplateName-DFProperties-End -->
 
@@ -663,7 +663,7 @@ Returns the certificate template name.
 <!-- Device-CA-System-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -686,7 +686,7 @@ The starting date of the certificate's validity. This node is implicitly created
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-System-{CertHash}-ValidFrom-DFProperties-End -->
 
@@ -702,7 +702,7 @@ The starting date of the certificate's validity. This node is implicitly created
 <!-- Device-CA-System-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CA-System-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-CA-System-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -725,7 +725,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-CA-System-{CertHash}-ValidTo-DFProperties-End -->
 
@@ -741,7 +741,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 <!-- Device-MY-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-Applicability-End -->
 
 <!-- Device-MY-OmaUri-Begin -->
@@ -764,7 +764,7 @@ This store keeps all end-user personal certificates.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MY-DFProperties-End -->
 
@@ -783,7 +783,7 @@ This store keeps all end-user personal certificates.
 <!-- Device-MY-SCEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-Applicability-End -->
 
 <!-- Device-MY-SCEP-OmaUri-Begin -->
@@ -808,7 +808,7 @@ This store holds the SCEP portion of the MY store and handle operations related 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MY-SCEP-DFProperties-End -->
 
@@ -824,7 +824,7 @@ This store holds the SCEP portion of the MY store and handle operations related 
 <!-- Device-MY-SCEP-{UniqueID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-OmaUri-Begin -->
@@ -835,7 +835,7 @@ This store holds the SCEP portion of the MY store and handle operations related 
 
 <!-- Device-MY-SCEP-{UniqueID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The UniqueID for the SCEP enrollment request. Each client certificate should have different unique ID.
+The UniqueID for the SCEP enrollment request. Each client certificate should've different unique ID.
 <!-- Device-MY-SCEP-{UniqueID}-Description-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Editable-Begin -->
@@ -847,7 +847,7 @@ The UniqueID for the SCEP enrollment request. Each client certificate should hav
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-MY-SCEP-{UniqueID}-DFProperties-End -->
 
@@ -863,7 +863,7 @@ The UniqueID for the SCEP enrollment request. Each client certificate should hav
 <!-- Device-MY-SCEP-{UniqueID}-CertThumbPrint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-CertThumbPrint-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-CertThumbPrint-OmaUri-Begin -->
@@ -887,7 +887,7 @@ Specify the current cert's thumbprint.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-SCEP-{UniqueID}-CertThumbPrint-DFProperties-End -->
 
@@ -903,7 +903,7 @@ Specify the current cert's thumbprint.
 <!-- Device-MY-SCEP-{UniqueID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-ErrorCode-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-ErrorCode-OmaUri-Begin -->
@@ -926,7 +926,7 @@ Specify the last hresult in case enroll action failed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MY-SCEP-{UniqueID}-ErrorCode-DFProperties-End -->
 
@@ -942,7 +942,7 @@ Specify the last hresult in case enroll action failed.
 <!-- Device-MY-SCEP-{UniqueID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-OmaUri-Begin -->
@@ -967,7 +967,7 @@ The group to represent the install request.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-DFProperties-End -->
 
@@ -983,7 +983,7 @@ The group to represent the install request.
 <!-- Device-MY-SCEP-{UniqueID}-Install-CAThumbPrint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-CAThumbPrint-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-CAThumbPrint-OmaUri-Begin -->
@@ -1007,7 +1007,7 @@ Specify root CA thumbprint.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-CAThumbPrint-DFProperties-End -->
 
@@ -1023,7 +1023,7 @@ Specify root CA thumbprint.
 <!-- Device-MY-SCEP-{UniqueID}-Install-Challenge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-Challenge-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-Challenge-OmaUri-Begin -->
@@ -1047,7 +1047,7 @@ The value must be base64 encoded. Challenge is deleted shortly after the Exec co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-Challenge-DFProperties-End -->
 
@@ -1063,7 +1063,7 @@ The value must be base64 encoded. Challenge is deleted shortly after the Exec co
 <!-- Device-MY-SCEP-{UniqueID}-Install-EKUMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-EKUMapping-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-EKUMapping-OmaUri-Begin -->
@@ -1086,7 +1086,7 @@ Specify extended key usages. The list of OIDs are separated by plus "+".
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-EKUMapping-DFProperties-End -->
 
@@ -1102,7 +1102,7 @@ Specify extended key usages. The list of OIDs are separated by plus "+".
 <!-- Device-MY-SCEP-{UniqueID}-Install-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-Enroll-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-Enroll-OmaUri-Begin -->
@@ -1126,7 +1126,7 @@ The MDM server can later query the device to find out whether the new certificat
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-MY-SCEP-{UniqueID}-Install-Enroll-DFProperties-End -->
 
@@ -1142,7 +1142,7 @@ The MDM server can later query the device to find out whether the new certificat
 <!-- Device-MY-SCEP-{UniqueID}-Install-HashAlgrithm-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-HashAlgrithm-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-HashAlgrithm-OmaUri-Begin -->
@@ -1166,7 +1166,7 @@ Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by the MDM server. If mult
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-HashAlgrithm-DFProperties-End -->
 
@@ -1182,7 +1182,7 @@ Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by the MDM server. If mult
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyLength-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyLength-OmaUri-Begin -->
@@ -1206,7 +1206,7 @@ Valid values are 1024, 2048, 4096. NGC key lengths supported should be specified
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyLength-DFProperties-End -->
 
@@ -1222,7 +1222,7 @@ Valid values are 1024, 2048, 4096. NGC key lengths supported should be specified
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyProtection-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyProtection-OmaUri-Begin -->
@@ -1250,7 +1250,7 @@ Although the private key is protected by TPM, it isn't protected with TPM PIN. S
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyProtection-DFProperties-End -->
 
@@ -1266,7 +1266,7 @@ Although the private key is protected by TPM, it isn't protected with TPM PIN. S
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyUsage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyUsage-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyUsage-OmaUri-Begin -->
@@ -1290,7 +1290,7 @@ The value must be specified in decimal format and should at least have second (0
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-KeyUsage-DFProperties-End -->
 
@@ -1306,7 +1306,7 @@ The value must be specified in decimal format and should at least have second (0
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryCount-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryCount-OmaUri-Begin -->
@@ -1330,7 +1330,7 @@ Default value is 3. Max value can't be larger than 30. If it's larger than 30, t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryCount-DFProperties-End -->
 
@@ -1346,7 +1346,7 @@ Default value is 3. Max value can't be larger than 30. If it's larger than 30, t
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryDelay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryDelay-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryDelay-OmaUri-Begin -->
@@ -1370,7 +1370,7 @@ Default value is 5 and the minimum value is 1.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-RetryDelay-DFProperties-End -->
 
@@ -1386,7 +1386,7 @@ Default value is 5 and the minimum value is 1.
 <!-- Device-MY-SCEP-{UniqueID}-Install-ServerURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-ServerURL-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-ServerURL-OmaUri-Begin -->
@@ -1409,7 +1409,7 @@ Specify the cert enrollment server.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-ServerURL-DFProperties-End -->
 
@@ -1425,7 +1425,7 @@ Specify the cert enrollment server.
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectAlternativeNames-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectAlternativeNames-OmaUri-Begin -->
@@ -1449,7 +1449,7 @@ or example, multiple subject alternative names are presented in the format `<nam
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectAlternativeNames-DFProperties-End -->
 
@@ -1465,7 +1465,7 @@ or example, multiple subject alternative names are presented in the format `<nam
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectName-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectName-OmaUri-Begin -->
@@ -1489,7 +1489,7 @@ The SubjectName value is quoted if it contains leading or trailing white space o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-SubjectName-DFProperties-End -->
 
@@ -1505,7 +1505,7 @@ The SubjectName value is quoted if it contains leading or trailing white space o
 <!-- Device-MY-SCEP-{UniqueID}-Install-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-TemplateName-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-TemplateName-OmaUri-Begin -->
@@ -1528,7 +1528,7 @@ Certificate Template Name OID (As in AD used by PKI infrastructure.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-TemplateName-DFProperties-End -->
 
@@ -1544,7 +1544,7 @@ Certificate Template Name OID (As in AD used by PKI infrastructure.
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriod-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriod-OmaUri-Begin -->
@@ -1572,7 +1572,7 @@ Valid values are one of the following:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriod-DFProperties-End -->
 
@@ -1588,7 +1588,7 @@ Valid values are one of the following:
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriodUnit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriodUnit-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriodUnit-OmaUri-Begin -->
@@ -1611,7 +1611,7 @@ Specify valid period unit type.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Get |
 <!-- Device-MY-SCEP-{UniqueID}-Install-ValidPeriodUnit-DFProperties-End -->
 
@@ -1631,7 +1631,7 @@ Default is 0. The period is defined in ValidPeriod node. The valid period specif
 <!-- Device-MY-SCEP-{UniqueID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-SCEP-{UniqueID}-Status-Applicability-End -->
 
 <!-- Device-MY-SCEP-{UniqueID}-Status-OmaUri-Begin -->
@@ -1660,7 +1660,7 @@ Valid values are one of the following values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MY-SCEP-{UniqueID}-Status-DFProperties-End -->
 
@@ -1676,7 +1676,7 @@ Valid values are one of the following values:
 <!-- Device-MY-User-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-Applicability-End -->
 
 <!-- Device-MY-User-OmaUri-Begin -->
@@ -1699,7 +1699,7 @@ This store holds the User portion of the MY store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MY-User-DFProperties-End -->
 
@@ -1715,7 +1715,7 @@ This store holds the User portion of the MY store.
 <!-- Device-MY-User-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-OmaUri-Begin -->
@@ -1738,7 +1738,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Delete, Get |
 | Dynamic Node Naming | UniqueName: The SHA1 hash for the certificate.  |
 <!-- Device-MY-User-{CertHash}-DFProperties-End -->
@@ -1755,7 +1755,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -1766,7 +1766,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Description-Begin -->
 <!-- Description-Source-DDF -->
-The base64 Encoded X.509 certificate. **Note** that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it or user installs it manually. In WP, the server cannot purely rely on CertificateStore CSP to install a client certificate including private key.
+The base64 Encoded X.509 certificate. Note that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it or user installs it manually. In WP, the server can't purely rely on CertificateStore CSP to install a client certificate including private key.
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Description-End -->
 
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-Editable-Begin -->
@@ -1778,7 +1778,7 @@ The base64 Encoded X.509 certificate. **Note** that though during MDM enrollment
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Add, Get, Replace |
 <!-- Device-MY-User-{CertHash}-EncodedCertificate-DFProperties-End -->
 
@@ -1794,7 +1794,7 @@ The base64 Encoded X.509 certificate. **Note** that though during MDM enrollment
 <!-- Device-MY-User-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -1817,7 +1817,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-User-{CertHash}-IssuedBy-DFProperties-End -->
 
@@ -1833,7 +1833,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 <!-- Device-MY-User-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -1856,7 +1856,7 @@ The name of the certificate subject. This node is implicitly created only when t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-User-{CertHash}-IssuedTo-DFProperties-End -->
 
@@ -1872,7 +1872,7 @@ The name of the certificate subject. This node is implicitly created only when t
 <!-- Device-MY-User-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -1895,7 +1895,7 @@ Returns the certificate template name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-User-{CertHash}-TemplateName-DFProperties-End -->
 
@@ -1911,7 +1911,7 @@ Returns the certificate template name.
 <!-- Device-MY-User-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -1934,7 +1934,7 @@ The starting date of the certificate's validity. This node is implicitly created
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-User-{CertHash}-ValidFrom-DFProperties-End -->
 
@@ -1950,7 +1950,7 @@ The starting date of the certificate's validity. This node is implicitly created
 <!-- Device-MY-User-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-User-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-MY-User-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -1973,7 +1973,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-User-{CertHash}-ValidTo-DFProperties-End -->
 
@@ -1989,7 +1989,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 <!-- Device-MY-WSTEP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Applicability-End -->
 
 <!-- Device-MY-WSTEP-OmaUri-Begin -->
@@ -2000,7 +2000,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 <!-- Device-MY-WSTEP-Description-Begin -->
 <!-- Description-Source-DDF -->
-The parent node that hosts client certificate that is enrolled via WSTEP, e.g. the certificate that is enrolled during MDM enrollment.
+The parent node that hosts client certificate that's enrolled via WSTEP, e.g. the certificate that's enrolled during MDM enrollment.
 <!-- Device-MY-WSTEP-Description-End -->
 
 <!-- Device-MY-WSTEP-Editable-Begin -->
@@ -2013,7 +2013,7 @@ The nodes under WSTEP are mostly for MDM client certificate renew requests.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MY-WSTEP-DFProperties-End -->
 
@@ -2029,7 +2029,7 @@ The nodes under WSTEP are mostly for MDM client certificate renew requests.
 <!-- Device-MY-WSTEP-CertThumprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-CertThumprint-Applicability-End -->
 
 <!-- Device-MY-WSTEP-CertThumprint-OmaUri-Begin -->
@@ -2053,7 +2053,7 @@ If renewal succeeds, it shows the renewed certificate thumbprint. If renewal fai
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MY-WSTEP-CertThumprint-DFProperties-End -->
 
@@ -2069,7 +2069,7 @@ If renewal succeeds, it shows the renewed certificate thumbprint. If renewal fai
 <!-- Device-MY-WSTEP-Renew-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-OmaUri-Begin -->
@@ -2092,7 +2092,7 @@ The parent node to group renewal related settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Atomic Required | True |
 <!-- Device-MY-WSTEP-Renew-DFProperties-End -->
@@ -2109,7 +2109,7 @@ The parent node to group renewal related settings.
 <!-- Device-MY-WSTEP-Renew-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-ErrorCode-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-ErrorCode-OmaUri-Begin -->
@@ -2132,7 +2132,7 @@ If certificate renew fails, this node provide the last hresult code during renew
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MY-WSTEP-Renew-ErrorCode-DFProperties-End -->
 
@@ -2148,7 +2148,7 @@ If certificate renew fails, this node provide the last hresult code during renew
 <!-- Device-MY-WSTEP-Renew-LastRenewalAttemptTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MY-WSTEP-Renew-LastRenewalAttemptTime-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-LastRenewalAttemptTime-OmaUri-Begin -->
@@ -2171,7 +2171,7 @@ Time of last attempted renew.
 
 | Property name | Property value |
 |:--|:--|
-| Format | time |
+| Format | `time` |
 | Access Type | Get |
 <!-- Device-MY-WSTEP-Renew-LastRenewalAttemptTime-DFProperties-End -->
 
@@ -2187,7 +2187,7 @@ Time of last attempted renew.
 <!-- Device-MY-WSTEP-Renew-RenewNow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MY-WSTEP-Renew-RenewNow-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-RenewNow-OmaUri-Begin -->
@@ -2210,7 +2210,7 @@ Initiate a renew now.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec |
 <!-- Device-MY-WSTEP-Renew-RenewNow-DFProperties-End -->
 
@@ -2226,7 +2226,7 @@ Initiate a renew now.
 <!-- Device-MY-WSTEP-Renew-RenewPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-RenewPeriod-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-RenewPeriod-OmaUri-Begin -->
@@ -2255,7 +2255,7 @@ The default value is 42 and the valid values are 1-1000.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-1000]` |
 | Default Value  | 42 |
@@ -2273,7 +2273,7 @@ The default value is 42 and the valid values are 1-1000.
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-OmaUri-Begin -->
@@ -2296,7 +2296,7 @@ How long after the enrollment cert has expiried to keep trying to renew.
 
 | Property name | Property value |
 |:--|:--|
-| Format | time |
+| Format | `time` |
 | Access Type | Add, Get, Replace |
 <!-- Device-MY-WSTEP-Renew-RetryAfterExpiryInterval-DFProperties-End -->
 
@@ -2312,7 +2312,7 @@ How long after the enrollment cert has expiried to keep trying to renew.
 <!-- Device-MY-WSTEP-Renew-RetryInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-RetryInterval-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-RetryInterval-OmaUri-Begin -->
@@ -2337,7 +2337,7 @@ Optional. This parameter specifies retry interval when previous renew failed (in
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-1000]` |
 | Default Value  | 7 |
@@ -2355,7 +2355,7 @@ Optional. This parameter specifies retry interval when previous renew failed (in
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-OmaUri-Begin -->
@@ -2380,7 +2380,7 @@ Optional. Notify the client whether enrollment server supports ROBO auto certifi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | true |
 <!-- Device-MY-WSTEP-Renew-ROBOSupport-DFProperties-End -->
@@ -2405,7 +2405,7 @@ Optional. Notify the client whether enrollment server supports ROBO auto certifi
 <!-- Device-MY-WSTEP-Renew-ServerURL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-ServerURL-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-ServerURL-OmaUri-Begin -->
@@ -2432,7 +2432,7 @@ If this node doesn't exist, the client uses the initial certificate enrollment U
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-MY-WSTEP-Renew-ServerURL-DFProperties-End -->
 
@@ -2448,7 +2448,7 @@ If this node doesn't exist, the client uses the initial certificate enrollment U
 <!-- Device-MY-WSTEP-Renew-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MY-WSTEP-Renew-Status-Applicability-End -->
 
 <!-- Device-MY-WSTEP-Renew-Status-OmaUri-Begin -->
@@ -2471,7 +2471,7 @@ Show the latest action status for this certificate. Supported values are one of 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MY-WSTEP-Renew-Status-DFProperties-End -->
 
@@ -2487,7 +2487,7 @@ Show the latest action status for this certificate. Supported values are one of 
 <!-- Device-ROOT-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-Applicability-End -->
 
 <!-- Device-ROOT-OmaUri-Begin -->
@@ -2510,7 +2510,7 @@ This store holds only root (self-signed) certificates.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-ROOT-DFProperties-End -->
 
@@ -2526,7 +2526,7 @@ This store holds only root (self-signed) certificates.
 <!-- Device-ROOT-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-OmaUri-Begin -->
@@ -2549,7 +2549,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Delete, Get |
 | Dynamic Node Naming | UniqueName: The SHA1 hash for the certificate. |
 <!-- Device-ROOT-{CertHash}-DFProperties-End -->
@@ -2566,7 +2566,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 <!-- Device-ROOT-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -2589,7 +2589,7 @@ The base64 Encoded X.509 certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Add, Get, Replace |
 <!-- Device-ROOT-{CertHash}-EncodedCertificate-DFProperties-End -->
 
@@ -2605,7 +2605,7 @@ The base64 Encoded X.509 certificate.
 <!-- Device-ROOT-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -2628,7 +2628,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-{CertHash}-IssuedBy-DFProperties-End -->
 
@@ -2644,7 +2644,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 <!-- Device-ROOT-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -2667,7 +2667,7 @@ The name of the certificate subject. This node is implicitly created only when t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-{CertHash}-IssuedTo-DFProperties-End -->
 
@@ -2683,7 +2683,7 @@ The name of the certificate subject. This node is implicitly created only when t
 <!-- Device-ROOT-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -2706,7 +2706,7 @@ Returns the certificate template name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-{CertHash}-TemplateName-DFProperties-End -->
 
@@ -2722,7 +2722,7 @@ Returns the certificate template name.
 <!-- Device-ROOT-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -2745,7 +2745,7 @@ The starting date of the certificate's validity. This node is implicitly created
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-{CertHash}-ValidFrom-DFProperties-End -->
 
@@ -2761,7 +2761,7 @@ The starting date of the certificate's validity. This node is implicitly created
 <!-- Device-ROOT-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-ROOT-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -2784,7 +2784,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-{CertHash}-ValidTo-DFProperties-End -->
 
@@ -2800,7 +2800,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 <!-- Device-ROOT-System-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-Applicability-End -->
 
 <!-- Device-ROOT-System-OmaUri-Begin -->
@@ -2823,7 +2823,7 @@ This store holds the System portion of the root store.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-ROOT-System-DFProperties-End -->
 
@@ -2839,7 +2839,7 @@ This store holds the System portion of the root store.
 <!-- Device-ROOT-System-{CertHash}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-OmaUri-Begin -->
@@ -2862,7 +2862,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Delete, Get |
 | Dynamic Node Naming | UniqueName: The SHA1 hash for the certificate.  |
 <!-- Device-ROOT-System-{CertHash}-DFProperties-End -->
@@ -2879,7 +2879,7 @@ The SHA1 hash for the certificate. The 20-byte SHA1 hash of the certificate is s
 <!-- Device-ROOT-System-{CertHash}-EncodedCertificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-EncodedCertificate-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-EncodedCertificate-OmaUri-Begin -->
@@ -2902,7 +2902,7 @@ The base64 Encoded X.509 certificate.
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Add, Get, Replace |
 <!-- Device-ROOT-System-{CertHash}-EncodedCertificate-DFProperties-End -->
 
@@ -2918,7 +2918,7 @@ The base64 Encoded X.509 certificate.
 <!-- Device-ROOT-System-{CertHash}-IssuedBy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-IssuedBy-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-IssuedBy-OmaUri-Begin -->
@@ -2941,7 +2941,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-System-{CertHash}-IssuedBy-DFProperties-End -->
 
@@ -2957,7 +2957,7 @@ The name of the certificate issuer. This node is implicitly created only when th
 <!-- Device-ROOT-System-{CertHash}-IssuedTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-IssuedTo-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-IssuedTo-OmaUri-Begin -->
@@ -2980,7 +2980,7 @@ The name of the certificate subject. This node is implicitly created only when t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-System-{CertHash}-IssuedTo-DFProperties-End -->
 
@@ -2996,7 +2996,7 @@ The name of the certificate subject. This node is implicitly created only when t
 <!-- Device-ROOT-System-{CertHash}-TemplateName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-TemplateName-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-TemplateName-OmaUri-Begin -->
@@ -3019,7 +3019,7 @@ Returns the certificate template name.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-System-{CertHash}-TemplateName-DFProperties-End -->
 
@@ -3035,7 +3035,7 @@ Returns the certificate template name.
 <!-- Device-ROOT-System-{CertHash}-ValidFrom-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-ValidFrom-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-ValidFrom-OmaUri-Begin -->
@@ -3058,7 +3058,7 @@ The starting date of the certificate's validity. This node is implicitly created
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-System-{CertHash}-ValidFrom-DFProperties-End -->
 
@@ -3074,7 +3074,7 @@ The starting date of the certificate's validity. This node is implicitly created
 <!-- Device-ROOT-System-{CertHash}-ValidTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-ROOT-System-{CertHash}-ValidTo-Applicability-End -->
 
 <!-- Device-ROOT-System-{CertHash}-ValidTo-OmaUri-Begin -->
@@ -3097,7 +3097,7 @@ The expiration date of the certificate. This node is implicitly created only whe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-ROOT-System-{CertHash}-ValidTo-DFProperties-End -->
 

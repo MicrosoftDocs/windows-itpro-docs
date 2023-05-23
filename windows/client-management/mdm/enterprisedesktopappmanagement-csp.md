@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseDesktopAppManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/27/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -62,7 +62,7 @@ The following list shows the EnterpriseDesktopAppManagement configuration servic
 <!-- Device-MSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-Applicability-End -->
 
 <!-- Device-MSI-OmaUri-Begin -->
@@ -85,7 +85,7 @@ Product Type is MSI.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-MSI-DFProperties-End -->
 
@@ -101,7 +101,7 @@ Product Type is MSI.
 <!-- Device-MSI-{ProductID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-OmaUri-Begin -->
@@ -124,7 +124,7 @@ The MSI product code for the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Atomic Required | True |
 | Dynamic Node Naming | UniqueName: The MSI product code for the application. |
@@ -142,7 +142,7 @@ The MSI product code for the application.
 <!-- Device-MSI-{ProductID}-DownloadInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-DownloadInstall-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-OmaUri-Begin -->
@@ -153,7 +153,7 @@ The MSI product code for the application.
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-Description-Begin -->
 <!-- Description-Source-DDF -->
-Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
+Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
 <!-- Device-MSI-{ProductID}-DownloadInstall-Description-End -->
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-Editable-Begin -->
@@ -178,7 +178,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Add, Delete, Exec, Get |
 <!-- Device-MSI-{ProductID}-DownloadInstall-DFProperties-End -->
 
@@ -194,7 +194,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 <!-- Device-MSI-{ProductID}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-InstallDate-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-InstallDate-OmaUri-Begin -->
@@ -217,7 +217,7 @@ Installation date of the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-InstallDate-DFProperties-End -->
 
@@ -233,7 +233,7 @@ Installation date of the application.
 <!-- Device-MSI-{ProductID}-InstallPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-InstallPath-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-InstallPath-OmaUri-Begin -->
@@ -256,7 +256,7 @@ Installation path of the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-InstallPath-DFProperties-End -->
 
@@ -272,7 +272,7 @@ Installation path of the application.
 <!-- Device-MSI-{ProductID}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-LastError-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-LastError-OmaUri-Begin -->
@@ -295,7 +295,7 @@ The last error code during the application installation process. This is typical
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-LastError-DFProperties-End -->
 
@@ -311,7 +311,7 @@ The last error code during the application installation process. This is typical
 <!-- Device-MSI-{ProductID}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-LastErrorDesc-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-LastErrorDesc-OmaUri-Begin -->
@@ -334,7 +334,7 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-LastErrorDesc-DFProperties-End -->
 
@@ -350,7 +350,7 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 <!-- Device-MSI-{ProductID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Name-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Name-OmaUri-Begin -->
@@ -373,7 +373,7 @@ Name of the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-Name-DFProperties-End -->
 
@@ -389,7 +389,7 @@ Name of the application.
 <!-- Device-MSI-{ProductID}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Publisher-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Publisher-OmaUri-Begin -->
@@ -412,7 +412,7 @@ Publisher of application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-Publisher-DFProperties-End -->
 
@@ -428,7 +428,7 @@ Publisher of application.
 <!-- Device-MSI-{ProductID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Status-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Status-OmaUri-Begin -->
@@ -451,7 +451,7 @@ Status of the application. Valid values: 10-Initialized, 20-Download In Progress
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-Status-DFProperties-End -->
 
@@ -467,7 +467,7 @@ Status of the application. Valid values: 10-Initialized, 20-Download In Progress
 <!-- Device-MSI-{ProductID}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Version-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Version-OmaUri-Begin -->
@@ -490,7 +490,7 @@ MSI Product Version.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-MSI-{ProductID}-Version-DFProperties-End -->
 
@@ -506,7 +506,7 @@ MSI Product Version.
 <!-- Device-MSI-UpgradeCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MSI-UpgradeCode-Applicability-End -->
 
 <!-- Device-MSI-UpgradeCode-OmaUri-Begin -->
@@ -528,7 +528,7 @@ MSI Product Version.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Case Sensitive | True |
 <!-- Device-MSI-UpgradeCode-DFProperties-End -->
@@ -545,7 +545,7 @@ MSI Product Version.
 <!-- Device-MSI-UpgradeCode-{Guid}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MSI-UpgradeCode-{Guid}-Applicability-End -->
 
 <!-- Device-MSI-UpgradeCode-{Guid}-OmaUri-Begin -->
@@ -568,7 +568,7 @@ A gateway (or device management server) uses this method to detect matching upgr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-MSI-UpgradeCode-{Guid}-DFProperties-End -->
@@ -585,7 +585,7 @@ A gateway (or device management server) uses this method to detect matching upgr
 <!-- User-MSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-Applicability-End -->
 
 <!-- User-MSI-OmaUri-Begin -->
@@ -608,7 +608,7 @@ Product Type is MSI.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-MSI-DFProperties-End -->
 
@@ -624,7 +624,7 @@ Product Type is MSI.
 <!-- User-MSI-{ProductID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-OmaUri-Begin -->
@@ -647,7 +647,7 @@ The MSI product code for the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Atomic Required | True |
 | Dynamic Node Naming | UniqueName: The MSI product code for the application. |
@@ -665,7 +665,7 @@ The MSI product code for the application.
 <!-- User-MSI-{ProductID}-DownloadInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-DownloadInstall-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-DownloadInstall-OmaUri-Begin -->
@@ -676,7 +676,7 @@ The MSI product code for the application.
 
 <!-- User-MSI-{ProductID}-DownloadInstall-Description-Begin -->
 <!-- Description-Source-DDF -->
-Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
+Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag `<DownloadFromAad>` was added to the `<Enforcement>` section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
 <!-- User-MSI-{ProductID}-DownloadInstall-Description-End -->
 
 <!-- User-MSI-{ProductID}-DownloadInstall-Editable-Begin -->
@@ -701,7 +701,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 
 | Property name | Property value |
 |:--|:--|
-| Format | xml |
+| Format | `xml` |
 | Access Type | Add, Delete, Exec, Get |
 <!-- User-MSI-{ProductID}-DownloadInstall-DFProperties-End -->
 
@@ -717,7 +717,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 <!-- User-MSI-{ProductID}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-InstallDate-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-InstallDate-OmaUri-Begin -->
@@ -740,7 +740,7 @@ Installation date of the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-InstallDate-DFProperties-End -->
 
@@ -756,7 +756,7 @@ Installation date of the application.
 <!-- User-MSI-{ProductID}-InstallPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-InstallPath-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-InstallPath-OmaUri-Begin -->
@@ -779,7 +779,7 @@ Installation path of the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-InstallPath-DFProperties-End -->
 
@@ -795,7 +795,7 @@ Installation path of the application.
 <!-- User-MSI-{ProductID}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-LastError-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-LastError-OmaUri-Begin -->
@@ -818,7 +818,7 @@ The last error code during the application installation process. This is typical
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-LastError-DFProperties-End -->
 
@@ -834,7 +834,7 @@ The last error code during the application installation process. This is typical
 <!-- User-MSI-{ProductID}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-LastErrorDesc-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-LastErrorDesc-OmaUri-Begin -->
@@ -857,7 +857,7 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-LastErrorDesc-DFProperties-End -->
 
@@ -873,7 +873,7 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 <!-- User-MSI-{ProductID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Name-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Name-OmaUri-Begin -->
@@ -896,7 +896,7 @@ Name of the application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-Name-DFProperties-End -->
 
@@ -912,7 +912,7 @@ Name of the application.
 <!-- User-MSI-{ProductID}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Publisher-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Publisher-OmaUri-Begin -->
@@ -935,7 +935,7 @@ Publisher of application.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-Publisher-DFProperties-End -->
 
@@ -951,7 +951,7 @@ Publisher of application.
 <!-- User-MSI-{ProductID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Status-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Status-OmaUri-Begin -->
@@ -974,7 +974,7 @@ Status of the application. Valid values: 10-Initialized, 20-Download In Progress
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-Status-DFProperties-End -->
 
@@ -990,7 +990,7 @@ Status of the application. Valid values: 10-Initialized, 20-Download In Progress
 <!-- User-MSI-{ProductID}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Version-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Version-OmaUri-Begin -->
@@ -1013,7 +1013,7 @@ MSI Product Version.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-MSI-{ProductID}-Version-DFProperties-End -->
 
@@ -1029,7 +1029,7 @@ MSI Product Version.
 <!-- User-MSI-UpgradeCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-MSI-UpgradeCode-Applicability-End -->
 
 <!-- User-MSI-UpgradeCode-OmaUri-Begin -->
@@ -1051,7 +1051,7 @@ MSI Product Version.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Case Sensitive | True |
 <!-- User-MSI-UpgradeCode-DFProperties-End -->
@@ -1068,7 +1068,7 @@ MSI Product Version.
 <!-- User-MSI-UpgradeCode-{Guid}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-MSI-UpgradeCode-{Guid}-Applicability-End -->
 
 <!-- User-MSI-UpgradeCode-{Guid}-OmaUri-Begin -->
@@ -1091,7 +1091,7 @@ A gateway (or device management server) uses this method to detect matching upgr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- User-MSI-UpgradeCode-{Guid}-DFProperties-End -->

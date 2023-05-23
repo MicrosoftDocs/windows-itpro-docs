@@ -4,7 +4,7 @@ description: Learn more about the DmaGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- DeviceEnumerationPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DeviceEnumerationPolicy-Applicability-End -->
 
 <!-- DeviceEnumerationPolicy-OmaUri-Begin -->
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- DeviceEnumerationPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. **Note** this policy does not apply to 1394, PCMCIA or ExpressCard devices.
+Enumeration policy for external DMA-capable devices incompatible with DMA remapping. This policy only takes effect when Kernel DMA Protection is enabled and supported by the system. Note this policy doesn't apply to 1394, PCMCIA or ExpressCard devices.
 <!-- DeviceEnumerationPolicy-Description-End -->
 
 <!-- DeviceEnumerationPolicy-Editable-Begin -->
@@ -54,7 +54,7 @@ This policy only takes effect when Kernel DMA Protection is supported and enable
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DeviceEnumerationPolicy-DFProperties-End -->

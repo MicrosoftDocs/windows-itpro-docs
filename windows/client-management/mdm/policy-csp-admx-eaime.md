@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EAIME Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_EAIME-Begin -->
 # Policy CSP - ADMX_EAIME
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_EAIME-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Applicability-End -->
 
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-OmaUri-Begin -->
@@ -44,14 +41,14 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting allows you to include the Non-Publishing Standard Glyph in the candidate list when Publishing Standard Glyph for the word exists.
 
-- If you enable this policy setting, Non-Publishing Standard Glyph is not included in the candidate list when Publishing Standard Glyph for the word exists.
+- If you enable this policy setting, Non-Publishing Standard Glyph isn't included in the candidate list when Publishing Standard Glyph for the word exists.
 
-- If you disable or do not configure this policy setting, both Publishing Standard Glyph and Non-Publishing Standard Glyph are included in the candidate list.
+- If you disable or don't configure this policy setting, both Publishing Standard Glyph and Non-Publishing Standard Glyph are included in the candidate list.
 
 This policy setting applies to Japanese Microsoft IME only.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Description-End -->
 
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Editable-Begin -->
@@ -63,13 +60,12 @@ This policy setting applies to Japanese Microsoft IME only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-DFProperties-End -->
 
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -96,7 +92,7 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- L_RestrictCharacterCodeRangeOfConversion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_RestrictCharacterCodeRangeOfConversion-Applicability-End -->
 
 <!-- L_RestrictCharacterCodeRangeOfConversion-OmaUri-Begin -->
@@ -123,12 +119,12 @@ This policy setting allows you to restrict character code range of conversion by
 0x1000 // IVS char
 0xFFFF // no definition.
 
-- If you disable or do not configure this policy setting, no range of characters are filtered by default.
+- If you disable or don't configure this policy setting, no range of characters are filtered by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- L_RestrictCharacterCodeRangeOfConversion-Description-End -->
 
 <!-- L_RestrictCharacterCodeRangeOfConversion-Editable-Begin -->
@@ -140,13 +136,12 @@ This policy setting applies to Japanese Microsoft IME only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_RestrictCharacterCodeRangeOfConversion-DFProperties-End -->
 
 <!-- L_RestrictCharacterCodeRangeOfConversion-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -172,7 +167,7 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- L_TurnOffCustomDictionary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOffCustomDictionary-Applicability-End -->
 
 <!-- L_TurnOffCustomDictionary-OmaUri-Begin -->
@@ -185,9 +180,9 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off the ability to use a custom dictionary.
 
-- If you enable this policy setting, you cannot add, edit, and delete words in the custom dictionary either with GUI tools or APIs. A word registered in the custom dictionary before enabling this policy setting can continue to be used for conversion.
+- If you enable this policy setting, you can't add, edit, and delete words in the custom dictionary either with GUI tools or APIs. A word registered in the custom dictionary before enabling this policy setting can continue to be used for conversion.
 
-- If you disable or do not configure this policy setting, the custom dictionary can be used by default.
+- If you disable or don't configure this policy setting, the custom dictionary can be used by default.
 
 [Clear auto-tuning information] removes self-tuned words from the custom dictionary, even if a group policy setting is turned on. To do this, select Settings > Time & Language > Japanese Options > Microsoft IME Options. If compatibility mode is turned on, select Advanced options > Dictionary/Auto-tuning > [Clear auto-tuning information].
 
@@ -196,7 +191,7 @@ This policy setting allows you to turn off the ability to use a custom dictionar
 This policy setting is applied to Japanese Microsoft IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- L_TurnOffCustomDictionary-Description-End -->
 
 <!-- L_TurnOffCustomDictionary-Editable-Begin -->
@@ -208,13 +203,12 @@ This policy setting is applied to Japanese Microsoft IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOffCustomDictionary-DFProperties-End -->
 
 <!-- L_TurnOffCustomDictionary-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -241,7 +235,7 @@ This policy setting is applied to Japanese Microsoft IME.
 <!-- L_TurnOffHistorybasedPredictiveInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOffHistorybasedPredictiveInput-Applicability-End -->
 
 <!-- L_TurnOffHistorybasedPredictiveInput-OmaUri-Begin -->
@@ -256,12 +250,12 @@ This policy setting allows you to turn off history-based predictive input.
 
 - If you enable this policy setting, history-based predictive input is turned off.
 
-- If you disable or do not configure this policy setting, history-based predictive input is on by default.
+- If you disable or don't configure this policy setting, history-based predictive input is on by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- L_TurnOffHistorybasedPredictiveInput-Description-End -->
 
 <!-- L_TurnOffHistorybasedPredictiveInput-Editable-Begin -->
@@ -273,13 +267,12 @@ This policy setting applies to Japanese Microsoft IME only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOffHistorybasedPredictiveInput-DFProperties-End -->
 
 <!-- L_TurnOffHistorybasedPredictiveInput-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -306,7 +299,7 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- L_TurnOffInternetSearchIntegration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOffInternetSearchIntegration-Applicability-End -->
 
 <!-- L_TurnOffInternetSearchIntegration-OmaUri-Begin -->
@@ -321,14 +314,14 @@ This policy setting allows you to turn off Internet search integration.
 
 Search integration includes both using Search Provider (Japanese Microsoft IME) and performing bing search from predictive input for Japanese Microsoft IME.
 
-- If you enable this policy setting, you cannot use search integration.
+- If you enable this policy setting, you can't use search integration.
 
-- If you disable or do not configure this policy setting, the search integration function can be used by default.
+- If you disable or don't configure this policy setting, the search integration function can be used by default.
 
 This policy setting applies to Japanese Microsoft IME.
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 <!-- L_TurnOffInternetSearchIntegration-Description-End -->
 
 <!-- L_TurnOffInternetSearchIntegration-Editable-Begin -->
@@ -340,13 +333,12 @@ This policy setting applies to Japanese Microsoft IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOffInternetSearchIntegration-DFProperties-End -->
 
 <!-- L_TurnOffInternetSearchIntegration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -373,7 +365,7 @@ This policy setting applies to Japanese Microsoft IME.
 <!-- L_TurnOffOpenExtendedDictionary-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOffOpenExtendedDictionary-Applicability-End -->
 
 <!-- L_TurnOffOpenExtendedDictionary-OmaUri-Begin -->
@@ -386,11 +378,11 @@ This policy setting applies to Japanese Microsoft IME.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off Open Extended Dictionary.
 
-- If you enable this policy setting, Open Extended Dictionary is turned off. You cannot add a new Open Extended Dictionary.
+- If you enable this policy setting, Open Extended Dictionary is turned off. You can't add a new Open Extended Dictionary.
 
-For Japanese Microsoft IME, an Open Extended Dictionary that is added before enabling this policy setting is not used for conversion.
+For Japanese Microsoft IME, an Open Extended Dictionary that's added before enabling this policy setting isn't used for conversion.
 
-- If you disable or do not configure this policy setting, Open Extended Dictionary can be added and used by default.
+- If you disable or don't configure this policy setting, Open Extended Dictionary can be added and used by default.
 
 This policy setting is applied to Japanese Microsoft IME.
 <!-- L_TurnOffOpenExtendedDictionary-Description-End -->
@@ -404,13 +396,12 @@ This policy setting is applied to Japanese Microsoft IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOffOpenExtendedDictionary-DFProperties-End -->
 
 <!-- L_TurnOffOpenExtendedDictionary-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -437,7 +428,7 @@ This policy setting is applied to Japanese Microsoft IME.
 <!-- L_TurnOffSavingAutoTuningDataToFile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOffSavingAutoTuningDataToFile-Applicability-End -->
 
 <!-- L_TurnOffSavingAutoTuningDataToFile-OmaUri-Begin -->
@@ -450,9 +441,9 @@ This policy setting is applied to Japanese Microsoft IME.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to turn off saving the auto-tuning result to file.
 
-- If you enable this policy setting, the auto-tuning data is not saved to file.
+- If you enable this policy setting, the auto-tuning data isn't saved to file.
 
-- If you disable or do not configure this policy setting, auto-tuning data is saved to file by default.
+- If you disable or don't configure this policy setting, auto-tuning data is saved to file by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 <!-- L_TurnOffSavingAutoTuningDataToFile-Description-End -->
@@ -466,13 +457,12 @@ This policy setting applies to Japanese Microsoft IME only.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOffSavingAutoTuningDataToFile-DFProperties-End -->
 
 <!-- L_TurnOffSavingAutoTuningDataToFile-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -499,7 +489,7 @@ This policy setting applies to Japanese Microsoft IME only.
 <!-- L_TurnOnCloudCandidate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOnCloudCandidate-Applicability-End -->
 
 <!-- L_TurnOnCloudCandidate-OmaUri-Begin -->
@@ -530,13 +520,12 @@ This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOnCloudCandidate-DFProperties-End -->
 
 <!-- L_TurnOnCloudCandidate-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -563,7 +552,7 @@ This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 <!-- L_TurnOnCloudCandidateCHS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOnCloudCandidateCHS-Applicability-End -->
 
 <!-- L_TurnOnCloudCandidateCHS-OmaUri-Begin -->
@@ -594,13 +583,12 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOnCloudCandidateCHS-DFProperties-End -->
 
 <!-- L_TurnOnCloudCandidateCHS-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -627,7 +615,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- L_TurnOnLexiconUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOnLexiconUpdate-Applicability-End -->
 
 <!-- L_TurnOnLexiconUpdate-OmaUri-Begin -->
@@ -658,14 +646,13 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOnLexiconUpdate-DFProperties-End -->
 
 <!-- L_TurnOnLexiconUpdate-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -687,7 +674,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- L_TurnOnLiveStickers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOnLiveStickers-Applicability-End -->
 
 <!-- L_TurnOnLiveStickers-OmaUri-Begin -->
@@ -718,14 +705,13 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOnLiveStickers-DFProperties-End -->
 
 <!-- L_TurnOnLiveStickers-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -747,7 +733,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-Applicability-End -->
 
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-OmaUri-Begin -->
@@ -762,7 +748,7 @@ This policy setting allows you to turn on logging of misconversion for the misco
 
 - If you enable this policy setting, misconversion logging is turned on.
 
-- If you disable or do not configure this policy setting, misconversion logging is turned off.
+- If you disable or don't configure this policy setting, misconversion logging is turned off.
 
 This policy setting applies to Japanese Microsoft IME and Traditional Chinese IME.
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-Description-End -->
@@ -776,13 +762,12 @@ This policy setting applies to Japanese Microsoft IME and Traditional Chinese IM
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-DFProperties-End -->
 
 <!-- L_TurnOnMisconversionLoggingForMisconversionReport-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

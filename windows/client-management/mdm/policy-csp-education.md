@@ -4,7 +4,7 @@ description: Learn more about the Education Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowGraphingCalculator-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AllowGraphingCalculator-Applicability-End -->
 
 <!-- AllowGraphingCalculator-OmaUri-Begin -->
@@ -38,7 +38,8 @@ ms.topic: reference
 <!-- AllowGraphingCalculator-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app.
-- If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app.
+
+- If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app.
 
 - If you enable or don't configure this policy setting, users will be able to access graphing functionality.
 <!-- AllowGraphingCalculator-Description-End -->
@@ -52,7 +53,7 @@ This policy setting allows you to control whether graphing functionality is avai
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowGraphingCalculator-DFProperties-End -->
@@ -92,7 +93,7 @@ This policy setting allows you to control whether graphing functionality is avai
 <!-- DefaultPrinterName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DefaultPrinterName-Applicability-End -->
 
 <!-- DefaultPrinterName-OmaUri-Begin -->
@@ -116,7 +117,7 @@ The policy value is expected to be the name (network host name) of an installed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DefaultPrinterName-DFProperties-End -->
 
@@ -132,7 +133,7 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- EnableEduThemes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableEduThemes-Applicability-End -->
 
 <!-- EnableEduThemes-OmaUri-Begin -->
@@ -144,7 +145,8 @@ The policy value is expected to be the name (network host name) of an installed 
 <!-- EnableEduThemes-Description-Begin -->
 <!-- Description-Source-DDF -->
 This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization.
-- If you disable or don't configure this policy setting, EDU-specific theme packs will not be included.
+
+- If you disable or don't configure this policy setting, EDU-specific theme packs won't be included.
 
 - If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
 <!-- EnableEduThemes-Description-End -->
@@ -158,7 +160,7 @@ This policy setting allows you to control whether EDU-specific theme packs are a
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableEduThemes-DFProperties-End -->
@@ -184,7 +186,7 @@ This policy setting allows you to control whether EDU-specific theme packs are a
 <!-- IsEducationEnvironment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- IsEducationEnvironment-Applicability-End -->
 
 <!-- IsEducationEnvironment-OmaUri-Begin -->
@@ -207,7 +209,7 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- IsEducationEnvironment-DFProperties-End -->
@@ -233,7 +235,7 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 <!-- PreventAddingNewPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PreventAddingNewPrinters-Applicability-End -->
 
 <!-- PreventAddingNewPrinters-OmaUri-Begin -->
@@ -246,13 +248,13 @@ This policy setting allows tenant to control whether to declare this OS as an ed
 <!-- Description-Source-ADMX -->
 Prevents users from using familiar methods to add local and network printers.
 
-- If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer.) This setting also removes Add Printer from the Printers folder in Control Panel.
+- If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer). This setting also removes Add Printer from the Printers folder in Control Panel.
 
-Also, users cannot add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
+Also, users can't add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
 
-However, this setting does not prevent users from using the Add Hardware Wizard to add a printer. Nor does it prevent users from running other programs to add printers.
+However, this setting doesn't prevent users from using the Add Hardware Wizard to add a printer. Nor does it prevent users from running other programs to add printers.
 
-This setting does not delete printers that users have already added. However, if users have not added a printer when this setting is applied, they cannot print.
+This setting doesn't delete printers that users have already added. However, if users haven't added a printer when this setting is applied, they can't print.
 
 > [!NOTE]
 > You can use printer permissions to restrict the use of printers without specifying a setting. In the Printers folder, right-click a printer, click Properties, and then click the Security tab.
@@ -269,7 +271,7 @@ This setting does not delete printers that users have already added. However, if
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- PreventAddingNewPrinters-DFProperties-End -->
@@ -309,7 +311,7 @@ This setting does not delete printers that users have already added. However, if
 <!-- PrinterNames-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PrinterNames-Applicability-End -->
 
 <!-- PrinterNames-OmaUri-Begin -->
@@ -333,7 +335,7 @@ The policy value is expected to be a ```&#xF000;``` separated list of printer na
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `0xF000`) |
 <!-- PrinterNames-DFProperties-End -->
