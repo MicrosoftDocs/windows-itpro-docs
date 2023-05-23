@@ -4,7 +4,7 @@ description: Learn more about the Printers Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Printers-Begin -->
 # Policy CSP - Printers
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Printers-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- ApprovedUsbPrintDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApprovedUsbPrintDevices-Applicability-End -->
 
 <!-- ApprovedUsbPrintDevices-OmaUri-Begin -->
@@ -59,13 +56,12 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedUsbPrintDevices-DFProperties-End -->
 
 <!-- ApprovedUsbPrintDevices-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 <!-- ApprovedUsbPrintDevicesUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ApprovedUsbPrintDevicesUser-Applicability-End -->
 
 <!-- ApprovedUsbPrintDevicesUser-OmaUri-Begin -->
@@ -119,13 +115,12 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApprovedUsbPrintDevicesUser-DFProperties-End -->
 
 <!-- ApprovedUsbPrintDevicesUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -151,7 +146,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`.
 <!-- ConfigureCopyFilesPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureCopyFilesPolicy-Applicability-End -->
 
 <!-- ConfigureCopyFilesPolicy-OmaUri-Begin -->
@@ -166,7 +161,7 @@ Manages how Queue-specific files are processed during printer installation. At p
 
 You can enable this setting to change the default behavior involving queue-specific files. To use this setting, select one of the options below from the "Manage processing of Queue-specific files" box.
 
-If you disable or do not configure this policy setting, the default behavior is "Limit Queue-specific files to Color profiles".
+If you disable or don't configure this policy setting, the default behavior is "Limit Queue-specific files to Color profiles".
 
 - "Do not allow Queue-specific files" specifies that no queue-specific files will be allowed/processed during print queue/printer connection installation.
 
@@ -189,13 +184,12 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureCopyFilesPolicy-DFProperties-End -->
 
 <!-- ConfigureCopyFilesPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -221,7 +215,7 @@ The following are the supported values:
 <!-- ConfigureDriverValidationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureDriverValidationLevel-Applicability-End -->
 
 <!-- ConfigureDriverValidationLevel-OmaUri-Begin -->
@@ -232,13 +226,13 @@ The following are the supported values:
 
 <!-- ConfigureDriverValidationLevel-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the print driver signature validation mechanism. This policy controls the type of digital signature that is required for a print driver to be considered valid and installed on the system.
+This policy setting controls the print driver signature validation mechanism. This policy controls the type of digital signature that's required for a print driver to be considered valid and installed on the system.
 
 As part of this validation the catalog/embedded signature is verified and all files in the driver must be a part of the catalog or have their own embedded signature that can be used for validation.
 
 You can enable this setting to change the default signature validation method. To use this setting, select one of the options below from the "Select the driver signature mechanism for this computer" box.
 
-If you disable or do not configure this policy setting, the default method is "Allow all validly signed drivers".
+If you disable or don't configure this policy setting, the default method is "Allow all validly signed drivers".
 
 - "Require inbox signed drivers" specifies only drivers that are shipped as part of a Windows image are allowed on this computer.
 
@@ -252,7 +246,7 @@ If you disable or do not configure this policy setting, the default method is "A
 
 The 'PrintDrivers' certificate store needs to be created by an administrator under the local machine store location.
 
-The 'Trusted Publishers' certificate store can contain certificates from sources that are not related to print drivers.
+The 'Trusted Publishers' certificate store can contain certificates from sources that aren't related to print drivers.
 <!-- ConfigureDriverValidationLevel-Description-End -->
 
 <!-- ConfigureDriverValidationLevel-Editable-Begin -->
@@ -271,13 +265,12 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureDriverValidationLevel-DFProperties-End -->
 
 <!-- ConfigureDriverValidationLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -303,7 +296,7 @@ The following are the supported values:
 <!-- ConfigureIppPageCountsPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureIppPageCountsPolicy-Applicability-End -->
 
 <!-- ConfigureIppPageCountsPolicy-OmaUri-Begin -->
@@ -316,11 +309,11 @@ The following are the supported values:
 <!-- Description-Source-ADMX -->
 Determines whether to always send page count information for accounting purposes for printers using the Microsoft IPP Class Driver.
 
-By default, pages are sent to the printer as soon as they are rendered and page count information is not sent to the printer unless pages must be reordered.
+By default, pages are sent to the printer as soon as they're rendered and page count information isn't sent to the printer unless pages must be reordered.
 
 - If you enable this setting the system will render all print job pages up front and send the printer the total page count for the print job.
 
-- If you disable this setting or do not configure it, pages are printed as soon as they are rendered and page counts are only sent when page reordering is required to process the job.
+- If you disable this setting or don't configure it, pages are printed as soon as they're rendered and page counts are only sent when page reordering is required to process the job.
 <!-- ConfigureIppPageCountsPolicy-Description-End -->
 
 <!-- ConfigureIppPageCountsPolicy-Editable-Begin -->
@@ -336,13 +329,12 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureIppPageCountsPolicy-DFProperties-End -->
 
 <!-- ConfigureIppPageCountsPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -369,7 +361,7 @@ The following are the supported values:
 <!-- ConfigureRedirectionGuardPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRedirectionGuardPolicy-Applicability-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-OmaUri-Begin -->
@@ -384,15 +376,15 @@ Determines whether Redirection Guard is enabled for the print spooler.
 
 You can enable this setting to configure the Redirection Guard policy being applied to spooler.
 
-- If you disable or do not configure this policy setting, Redirection Guard will default to being 'enabled'.
+- If you disable or don't configure this policy setting, Redirection Guard will default to being 'enabled'.
 
 - If you enable this setting you may select the following options:
 
-- Enabled : Redirection Guard will prevent any file redirections from being followed
+- Enabled: Redirection Guard will prevent any file redirections from being followed.
 
-- Disabled : Redirection Guard will not be enabled and file redirections may be used within the spooler process
+- Disabled: Redirection Guard won't be enabled and file redirections may be used within the spooler process.
 
-- Audit : Redirection Guard will log events as though it were enabled but will not actually prevent file redirections from being used within the spooler.
+- Audit: Redirection Guard will log events as though it were enabled but won't actually prevent file redirections from being used within the spooler.
 <!-- ConfigureRedirectionGuardPolicy-Description-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-Editable-Begin -->
@@ -409,13 +401,12 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRedirectionGuardPolicy-DFProperties-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -441,7 +432,7 @@ The following are the supported values:
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Applicability-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-OmaUri-Begin -->
@@ -463,14 +454,13 @@ The following are the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-DFProperties-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -492,7 +482,7 @@ The following are the supported values:
 <!-- ConfigureRpcConnectionPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcConnectionPolicy-Applicability-End -->
 
 <!-- ConfigureRpcConnectionPolicy-OmaUri-Begin -->
@@ -508,15 +498,17 @@ This policy setting controls which protocol and protocol settings to use for out
 By default, RPC over TCP is used and authentication is always enabled. For RPC over named pipes, authentication is always enabled for domain joined machines but disabled for non domain joined machines.
 
 Protocol to use for outgoing RPC connections:
-  - "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
-  - "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler
+
+- "RPC over TCP": Use RPC over TCP for outgoing RPC connections to a remote print spooler
+- "RPC over named pipes": Use RPC over named pipes for outgoing RPC connections to a remote print spooler.
 
 Use authentication for outgoing RPC over named pipes connections:
-  - "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
-  - "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
-  - "Authentication disabled": RPC authentication will not be used for outgoing RPC over named pipes connections
 
-If you disable or do not configure this policy setting, the above defaults will be used.
+- "Default": By default domain joined computers enable RPC authentication for RPC over named pipes while non domain joined computers disable RPC authentication for RPC over named pipes
+- "Authentication enabled": RPC authentication will be used for outgoing RPC over named pipes connections
+- "Authentication disabled": RPC authentication won't be used for outgoing RPC over named pipes connections.
+
+If you disable or don't configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcConnectionPolicy-Description-End -->
 
 <!-- ConfigureRpcConnectionPolicy-Editable-Begin -->
@@ -528,13 +520,12 @@ If you disable or do not configure this policy setting, the above defaults will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcConnectionPolicy-DFProperties-End -->
 
 <!-- ConfigureRpcConnectionPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -560,7 +551,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 <!-- ConfigureRpcListenerPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcListenerPolicy-Applicability-End -->
 
 <!-- ConfigureRpcListenerPolicy-OmaUri-Begin -->
@@ -576,15 +567,17 @@ This policy setting controls which protocols incoming RPC connections to the pri
 By default, RPC over TCP is enabled and Negotiate is used for the authentication protocol.
 
 Protocols to allow for incoming RPC connections:
-  - "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
-  - "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
-  - "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes
+
+- "RPC over named pipes": Incoming RPC connections are only allowed over named pipes
+- "RPC over TCP": Incoming RPC connections are only allowed over TCP (the default option)
+- "RPC over named pipes and TCP": Incoming RPC connections will be allowed over TCP and named pipes.
 
 Authentication protocol to use for incoming RPC connections:
-  - "Negotiate": Use the Negotiate authentication protocol (the default option)
-  - "Kerberos": Use the Kerberos authentication protocol
 
-If you disable or do not configure this policy setting, the above defaults will be used.
+- "Negotiate": Use the Negotiate authentication protocol (the default option)
+- "Kerberos": Use the Kerberos authentication protocol.
+
+If you disable or don't configure this policy setting, the above defaults will be used.
 <!-- ConfigureRpcListenerPolicy-Description-End -->
 
 <!-- ConfigureRpcListenerPolicy-Editable-Begin -->
@@ -596,13 +589,12 @@ If you disable or do not configure this policy setting, the above defaults will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcListenerPolicy-DFProperties-End -->
 
 <!-- ConfigureRpcListenerPolicy-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -628,7 +620,7 @@ If you disable or do not configure this policy setting, the above defaults will 
 <!-- ConfigureRpcTcpPort-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureRpcTcpPort-Applicability-End -->
 
 <!-- ConfigureRpcTcpPort-OmaUri-Begin -->
@@ -644,9 +636,10 @@ This policy setting controls which port is used for RPC over TCP for incoming co
 By default dynamic TCP ports are used.
 
 RPC over TCP port:
-  - The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used
 
-If you disable or do not configure this policy setting, dynamic TCP ports are used.
+- The port to use for RPC over TCP. A value of 0 is the default and indicates that dynamic TCP ports will be used.
+
+If you disable or don't configure this policy setting, dynamic TCP ports are used.
 <!-- ConfigureRpcTcpPort-Description-End -->
 
 <!-- ConfigureRpcTcpPort-Editable-Begin -->
@@ -658,13 +651,12 @@ If you disable or do not configure this policy setting, dynamic TCP ports are us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureRpcTcpPort-DFProperties-End -->
 
 <!-- ConfigureRpcTcpPort-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -690,7 +682,7 @@ If you disable or do not configure this policy setting, dynamic TCP ports are us
 <!-- EnableDeviceControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableDeviceControl-Applicability-End -->
 
 <!-- EnableDeviceControl-OmaUri-Begin -->
@@ -707,7 +699,7 @@ By default, there are no restrictions to printing based on connection type or pr
 
 - If you enable this setting, the computer will restrict printing to printer connections on the corporate network or approved USB-connected printers.
 
-- If you disable this setting or do not configure it, there are no restrictions to printing based on connection type or printer Make/Model.
+- If you disable this setting or don't configure it, there are no restrictions to printing based on connection type or printer Make/Model.
 <!-- EnableDeviceControl-Description-End -->
 
 <!-- EnableDeviceControl-Editable-Begin -->
@@ -719,13 +711,12 @@ By default, there are no restrictions to printing based on connection type or pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDeviceControl-DFProperties-End -->
 
 <!-- EnableDeviceControl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -752,7 +743,7 @@ By default, there are no restrictions to printing based on connection type or pr
 <!-- EnableDeviceControlUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableDeviceControlUser-Applicability-End -->
 
 <!-- EnableDeviceControlUser-OmaUri-Begin -->
@@ -769,7 +760,7 @@ By default, there are no restrictions to printing based on connection type or pr
 
 - If you enable this setting, the computer will restrict printing to printer connections on the corporate network or approved USB-connected printers.
 
-- If you disable this setting or do not configure it, there are no restrictions to printing based on connection type or printer Make/Model.
+- If you disable this setting or don't configure it, there are no restrictions to printing based on connection type or printer Make/Model.
 <!-- EnableDeviceControlUser-Description-End -->
 
 <!-- EnableDeviceControlUser-Editable-Begin -->
@@ -781,13 +772,12 @@ By default, there are no restrictions to printing based on connection type or pr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDeviceControlUser-DFProperties-End -->
 
 <!-- EnableDeviceControlUser-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -814,7 +804,7 @@ By default, there are no restrictions to printing based on connection type or pr
 <!-- ManageDriverExclusionList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ManageDriverExclusionList-Applicability-End -->
 
 <!-- ManageDriverExclusionList-OmaUri-Begin -->
@@ -825,13 +815,13 @@ By default, there are no restrictions to printing based on connection type or pr
 
 <!-- ManageDriverExclusionList-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting controls the print driver exclusion list. The exclusion list allows an administrator to curate a list of printer drivers that are not allowed to be installed on the system.
+This policy setting controls the print driver exclusion list. The exclusion list allows an administrator to curate a list of printer drivers that aren't allowed to be installed on the system.
 
 This checks outranks the signature check and allows drivers that have a valid signature level for the Print Driver signature validation policy to be excluded.
 
 Entries in the exclusion list consist of a SHA256 hash (or SHA1 hash for Win7) of the INF file and/or main driver DLL file of the driver and the name of the file.
 
-If you disable or do not configure this policy setting, the registry key and values associated with this policy setting will be deleted, if currently set to a value.
+If you disable or don't configure this policy setting, the registry key and values associated with this policy setting will be deleted, if currently set to a value.
 <!-- ManageDriverExclusionList-Description-End -->
 
 <!-- ManageDriverExclusionList-Editable-Begin -->
@@ -843,13 +833,12 @@ If you disable or do not configure this policy setting, the registry key and val
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ManageDriverExclusionList-DFProperties-End -->
 
 <!-- ManageDriverExclusionList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -875,7 +864,7 @@ If you disable or do not configure this policy setting, the registry key and val
 <!-- PointAndPrintRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PointAndPrintRestrictions-Applicability-End -->
 
 <!-- PointAndPrintRestrictions-OmaUri-Begin -->
@@ -889,20 +878,31 @@ If you disable or do not configure this policy setting, the registry key and val
 This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
 
 - If you enable this policy setting:
--Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
--You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
 
-- If you do not configure this policy setting:
+-Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
+
+-You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
+
+- If you don't configure this policy setting:
+
 -Windows Vista client computers can point and print to any server.
+
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
+
 -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
 
 - If you disable this policy setting:
+
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+
+-Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+
+-Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
+
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 <!-- PointAndPrintRestrictions-Description-End -->
 
@@ -915,13 +915,12 @@ This policy setting controls the client Point and Print behavior, including the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PointAndPrintRestrictions-DFProperties-End -->
 
 <!-- PointAndPrintRestrictions-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -948,7 +947,7 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- PointAndPrintRestrictions_User-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PointAndPrintRestrictions_User-Applicability-End -->
 
 <!-- PointAndPrintRestrictions_User-OmaUri-Begin -->
@@ -962,20 +961,31 @@ This policy setting controls the client Point and Print behavior, including the 
 This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
 
 - If you enable this policy setting:
--Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
--You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
 
-- If you do not configure this policy setting:
+-Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
+
+-You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
+
+- If you don't configure this policy setting:
+
 -Windows Vista client computers can point and print to any server.
+
 -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
+
 -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
 
 - If you disable this policy setting:
+
 -Windows Vista client computers can create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
--Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+
+-Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+
+-Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
+
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 <!-- PointAndPrintRestrictions_User-Description-End -->
 
@@ -988,13 +998,12 @@ This policy setting controls the client Point and Print behavior, including the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PointAndPrintRestrictions_User-DFProperties-End -->
 
 <!-- PointAndPrintRestrictions_User-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1021,7 +1030,7 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- PublishPrinters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PublishPrinters-Applicability-End -->
 
 <!-- PublishPrinters-OmaUri-Begin -->
@@ -1034,9 +1043,9 @@ This policy setting controls the client Point and Print behavior, including the 
 <!-- Description-Source-ADMX -->
 Determines whether the computer's shared printers can be published in Active Directory.
 
-- If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
+- If you enable this setting or don't configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
 
-- If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.
+- If you disable this setting, this computer's shared printers can't be published in Active Directory, and the "List in directory" option isn't available.
 
 > [!NOTE]
 > This settings takes priority over the setting "Automatically publish new printers in the Active Directory".
@@ -1051,13 +1060,12 @@ Determines whether the computer's shared printers can be published in Active Dir
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PublishPrinters-DFProperties-End -->
 
 <!-- PublishPrinters-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1084,7 +1092,7 @@ Determines whether the computer's shared printers can be published in Active Dir
 <!-- RestrictDriverInstallationToAdministrators-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- RestrictDriverInstallationToAdministrators-Applicability-End -->
 
 <!-- RestrictDriverInstallationToAdministrators-OmaUri-Begin -->
@@ -1099,7 +1107,7 @@ Determines whether users that aren't Administrators can install print drivers on
 
 By default, users that aren't Administrators can't install print drivers on this computer.
 
-- If you enable this setting or do not configure it, the system will limit installation of print drivers to Administrators of this computer.
+- If you enable this setting or don't configure it, the system will limit installation of print drivers to Administrators of this computer.
 
 - If you disable this setting, the system won't limit installation of print drivers to this computer.
 <!-- RestrictDriverInstallationToAdministrators-Description-End -->
@@ -1113,13 +1121,12 @@ By default, users that aren't Administrators can't install print drivers on this
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictDriverInstallationToAdministrators-DFProperties-End -->
 
 <!-- RestrictDriverInstallationToAdministrators-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

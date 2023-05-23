@@ -32,10 +32,10 @@ Windows Sandbox has the following properties:
 > [!IMPORTANT]
 > Windows Sandbox enables network connection by default. It can be disabled using the [Windows Sandbox configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
 
+[!INCLUDE [windows-sandbox](../../../../includes/licensing/windows-sandbox.md)]
+
 ## Prerequisites
 
-- Windows 10, version 1903 and later, or Windows 11
-- Windows Pro, Enterprise or Education edition
 - ARM64 (for Windows 11, version 22H2 and later) or AMD64 architecture
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)

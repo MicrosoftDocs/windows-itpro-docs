@@ -4,7 +4,7 @@ description: Learn more about the Reboot CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,7 +38,7 @@ The following list shows the Reboot configuration service provider nodes:
 <!-- Device-RebootNow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-RebootNow-Applicability-End -->
 
 <!-- Device-RebootNow-OmaUri-Begin -->
@@ -61,7 +61,7 @@ This node executes a reboot of the device. RebootNow triggers a reboot within 5 
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec, Get |
 <!-- Device-RebootNow-DFProperties-End -->
 
@@ -77,7 +77,7 @@ This node executes a reboot of the device. RebootNow triggers a reboot within 5 
 <!-- Device-Schedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Applicability-End -->
 
 <!-- Device-Schedule-OmaUri-Begin -->
@@ -100,7 +100,7 @@ The supported operation is Get.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Schedule-DFProperties-End -->
 
@@ -116,7 +116,7 @@ The supported operation is Get.
 <!-- Device-Schedule-DailyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-DailyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-DailyRecurrent-OmaUri-Begin -->
@@ -139,7 +139,7 @@ Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Schedule-DailyRecurrent-DFProperties-End -->
 
@@ -155,7 +155,7 @@ Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecur
 <!-- Device-Schedule-Single-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Schedule-Single-Applicability-End -->
 
 <!-- Device-Schedule-Single-OmaUri-Begin -->
@@ -178,7 +178,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Schedule-Single-DFProperties-End -->
 
@@ -194,7 +194,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-WeeklyRecurrent-OmaUri-Begin -->
@@ -217,7 +217,7 @@ Value in ISO8601, time is required. Either setting DailyRecurrent or WeeklyRecur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Schedule-WeeklyRecurrent-DFProperties-End -->
 

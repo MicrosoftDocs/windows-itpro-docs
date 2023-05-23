@@ -48,6 +48,8 @@ Encrypted hard drives are supported natively in the operating system through the
 
 If you're a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](/previous-versions/windows/hardware/design/dn653989(v=vs.85)).
 
+[!INCLUDE [encrypted-hard-drive](../../../includes/licensing/encrypted-hard-drive.md)]
+
 ## System Requirements
 
 To use encrypted hard drives, the following system requirements apply:

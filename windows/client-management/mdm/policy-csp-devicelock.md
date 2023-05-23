@@ -4,7 +4,7 @@ description: Learn more about the DeviceLock Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,13 +16,9 @@ ms.topic: reference
 <!-- DeviceLock-Begin -->
 # Policy CSP - DeviceLock
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DeviceLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -30,105 +26,44 @@ ms.topic: reference
 > The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
 <!-- DeviceLock-Editable-End -->
 
-<!-- AccountLockoutDuration-Begin -->
-## AccountLockoutDuration
+<!-- AccountLockoutPolicy-Begin -->
+## AccountLockoutPolicy
 
-<!-- AccountLockoutDuration-Applicability-Begin -->
+<!-- AccountLockoutPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- AccountLockoutDuration-Applicability-End -->
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+<!-- AccountLockoutPolicy-Applicability-End -->
 
-<!-- AccountLockoutDuration-OmaUri-Begin -->
+<!-- AccountLockoutPolicy-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/DeviceLock/AccountLockoutDuration
+./Device/Vendor/MSFT/Policy/Config/DeviceLock/AccountLockoutPolicy
 ```
-<!-- AccountLockoutDuration-OmaUri-End -->
+<!-- AccountLockoutPolicy-OmaUri-End -->
 
-<!-- AccountLockoutDuration-Description-Begin -->
+<!-- AccountLockoutPolicy-Description-Begin -->
 <!-- Description-Source-DDF -->
-Account lockout duration This security setting determines the number of minutes a locked-out account remains locked out before automatically becoming unlocked. The available range is from 0 minutes through 99,999 minutes. If you set the account lockout duration to 0, the account will be locked out until an administrator explicitly unlocks it. If an account lockout threshold is defined, the account lockout duration must be greater than or equal to the reset time. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
-<!-- AccountLockoutDuration-Description-End -->
+Account lockout threshold - This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account can't be used until it's reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password-protected screen savers count as failed logon attempts. Default: 0 Account lockout duration - This security setting determines the number of minutes a locked-out account remains locked out before automatically becoming unlocked. The available range is from 0 minutes through 99,999 minutes. If you set the account lockout duration to 0, the account will be locked out until an administrator explicitly unlocks it. If an account lockout threshold is defined, the account lockout duration must be greater than or equal to the reset time. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified. Reset account lockout counter after - This security setting determines the number of minutes that must elapse after a failed logon attempt before the failed logon attempt counter is reset to 0 bad logon attempts. The available range is 1 minute to 99,999 minutes. If an account lockout threshold is defined, this reset time must be less than or equal to the Account lockout duration. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
+<!-- AccountLockoutPolicy-Description-End -->
 
-<!-- AccountLockoutDuration-Editable-Begin -->
+<!-- AccountLockoutPolicy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AccountLockoutDuration-Editable-End -->
+<!-- AccountLockoutPolicy-Editable-End -->
 
-<!-- AccountLockoutDuration-DFProperties-Begin -->
+<!-- AccountLockoutPolicy-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-99999]` |
-| Default Value  | 0 |
-<!-- AccountLockoutDuration-DFProperties-End -->
+<!-- AccountLockoutPolicy-DFProperties-End -->
 
-<!-- AccountLockoutDuration-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Account lockout duration |
-| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
-<!-- AccountLockoutDuration-GpMapping-End -->
-
-<!-- AccountLockoutDuration-Examples-Begin -->
+<!-- AccountLockoutPolicy-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AccountLockoutDuration-Examples-End -->
+<!-- AccountLockoutPolicy-Examples-End -->
 
-<!-- AccountLockoutDuration-End -->
-
-<!-- AccountLockoutThreshold-Begin -->
-## AccountLockoutThreshold
-
-<!-- AccountLockoutThreshold-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- AccountLockoutThreshold-Applicability-End -->
-
-<!-- AccountLockoutThreshold-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/DeviceLock/AccountLockoutThreshold
-```
-<!-- AccountLockoutThreshold-OmaUri-End -->
-
-<!-- AccountLockoutThreshold-Description-Begin -->
-<!-- Description-Source-DDF -->
-Account lockout threshold - This security setting determines the number of failed logon attempts that causes a user account to be locked out. A locked-out account cannot be used until it is reset by an administrator or until the lockout duration for the account has expired. You can set a value between 0 and 999 failed logon attempts. If you set the value to 0, the account will never be locked out. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password-protected screen savers count as failed logon attempts. Default: 0.
-<!-- AccountLockoutThreshold-Description-End -->
-
-<!-- AccountLockoutThreshold-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AccountLockoutThreshold-Editable-End -->
-
-<!-- AccountLockoutThreshold-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-10]` |
-| Default Value  | 0 |
-<!-- AccountLockoutThreshold-DFProperties-End -->
-
-<!-- AccountLockoutThreshold-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Account lockout threshold |
-| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
-<!-- AccountLockoutThreshold-GpMapping-End -->
-
-<!-- AccountLockoutThreshold-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AccountLockoutThreshold-Examples-End -->
-
-<!-- AccountLockoutThreshold-End -->
+<!-- AccountLockoutPolicy-End -->
 
 <!-- AllowAdministratorLockout-Begin -->
 ## AllowAdministratorLockout
@@ -136,7 +71,7 @@ Account lockout threshold - This security setting determines the number of faile
 <!-- AllowAdministratorLockout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- AllowAdministratorLockout-Applicability-End -->
 
 <!-- AllowAdministratorLockout-OmaUri-Begin -->
@@ -159,10 +94,10 @@ Allow Administrator account lockout This security setting determines whether the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
-| Default Value  | 0 |
+| Default Value  | 1 |
 <!-- AllowAdministratorLockout-DFProperties-End -->
 
 <!-- AllowAdministratorLockout-GpMapping-Begin -->
@@ -186,7 +121,7 @@ Allow Administrator account lockout This security setting determines whether the
 <!-- AllowIdleReturnWithoutPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowIdleReturnWithoutPassword-Applicability-End -->
 
 <!-- AllowIdleReturnWithoutPassword-OmaUri-Begin -->
@@ -214,7 +149,7 @@ Specifies whether the user must input a PIN or password when the device resumes 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [DeviceLock_AllowIdleReturnWithoutPassword_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceLock/DevicePasswordEnabled` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -241,7 +176,7 @@ Specifies whether the user must input a PIN or password when the device resumes 
 <!-- AllowScreenTimeoutWhileLockedUserConfig-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowScreenTimeoutWhileLockedUserConfig-Applicability-End -->
 
 <!-- AllowScreenTimeoutWhileLockedUserConfig-OmaUri-Begin -->
@@ -264,7 +199,7 @@ Specifies whether to show a user-configurable setting to control the screen time
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowScreenTimeoutWhileLockedUserConfig-DFProperties-End -->
@@ -290,7 +225,7 @@ Specifies whether to show a user-configurable setting to control the screen time
 <!-- AllowSimpleDevicePassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSimpleDevicePassword-Applicability-End -->
 
 <!-- AllowSimpleDevicePassword-OmaUri-Begin -->
@@ -317,7 +252,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [DeviceLock_AllowSimpleDevicePassword_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceLock/DevicePasswordEnabled` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -344,7 +279,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- AlphanumericDevicePasswordRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AlphanumericDevicePasswordRequired-Applicability-End -->
 
 <!-- AlphanumericDevicePasswordRequired-OmaUri-Begin -->
@@ -373,7 +308,7 @@ Determines the type of PIN or password required. This policy only applies if the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 | Dependency [DeviceLock_AlphanumericDevicePasswordRequired_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceLock/DevicePasswordEnabled` <br> Dependency Allowed Value: `[0]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -401,7 +336,7 @@ Determines the type of PIN or password required. This policy only applies if the
 <!-- ClearTextPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- ClearTextPassword-Applicability-End -->
 
 <!-- ClearTextPassword-OmaUri-Begin -->
@@ -413,7 +348,7 @@ Determines the type of PIN or password required. This policy only applies if the
 <!-- ClearTextPassword-Description-Begin -->
 <!-- Description-Source-DDF -->
 Store passwords using reversible encryption
-This security setting determines whether the operating system stores passwords using reversible encryption. This policy provides support for applications that use protocols that require knowledge of the user's password for authentication purposes. Storing passwords using reversible encryption is essentially the same as storing plaintext versions of the passwords. For this reason, this policy should never be enabled unless application requirements outweigh the need to protect password information. This policy is required when using Challenge-Handshake Authentication Protocol (CHAP) authentication through remote access or Internet Authentication Services (IAS). It is also required when using Digest Authentication in Internet Information Services (IIS).
+This security setting determines whether the operating system stores passwords using reversible encryption. This policy provides support for applications that use protocols that require knowledge of the user's password for authentication purposes. Storing passwords using reversible encryption is essentially the same as storing plaintext versions of the passwords. For this reason, this policy should never be enabled unless application requirements outweigh the need to protect password information. This policy is required when using Challenge-Handshake Authentication Protocol (CHAP) authentication through remote access or Internet Authentication Services (IAS). It's also required when using Digest Authentication in Internet Information Services (IIS).
 <!-- ClearTextPassword-Description-End -->
 
 <!-- ClearTextPassword-Editable-Begin -->
@@ -425,7 +360,7 @@ This security setting determines whether the operating system stores passwords u
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 0 |
@@ -452,7 +387,7 @@ This security setting determines whether the operating system stores passwords u
 <!-- DevicePasswordEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DevicePasswordEnabled-Applicability-End -->
 
 <!-- DevicePasswordEnabled-OmaUri-Begin -->
@@ -508,7 +443,7 @@ Specifies whether device lock is enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DevicePasswordEnabled-DFProperties-End -->
@@ -534,7 +469,7 @@ Specifies whether device lock is enabled.
 <!-- DevicePasswordExpiration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DevicePasswordExpiration-Applicability-End -->
 
 <!-- DevicePasswordExpiration-OmaUri-Begin -->
@@ -563,7 +498,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-730]` |
 | Default Value  | 0 |
@@ -582,7 +517,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- DevicePasswordHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DevicePasswordHistory-Applicability-End -->
 
 <!-- DevicePasswordHistory-OmaUri-Begin -->
@@ -613,7 +548,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-50]` |
 | Default Value  | 0 |
@@ -632,7 +567,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- EnforceLockScreenAndLogonImage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnforceLockScreenAndLogonImage-Applicability-End -->
 
 <!-- EnforceLockScreenAndLogonImage-OmaUri-Begin -->
@@ -643,7 +578,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 <!-- EnforceLockScreenAndLogonImage-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image. Value type is a string, which is the full image filepath and filename.
+Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users won't be able to change this image. Value type is a string, which is the full image filepath and filename.
 <!-- EnforceLockScreenAndLogonImage-Description-End -->
 
 <!-- EnforceLockScreenAndLogonImage-Editable-Begin -->
@@ -655,7 +590,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnforceLockScreenAndLogonImage-DFProperties-End -->
 
@@ -671,7 +606,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 <!-- EnforceLockScreenProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnforceLockScreenProvider-Applicability-End -->
 
 <!-- EnforceLockScreenProvider-OmaUri-Begin -->
@@ -693,7 +628,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnforceLockScreenProvider-DFProperties-End -->
 
@@ -709,7 +644,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 <!-- MaxDevicePasswordFailedAttempts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MaxDevicePasswordFailedAttempts-Applicability-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-OmaUri-Begin -->
@@ -723,7 +658,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
 > [!NOTE]
-> This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+> This policy must be wrapped in an Atomic command. This policy has different behaviors on the mobile device and desktop. On a mobile device, when the user reaches the value set by this policy, then the device is wiped. On a desktop, when the user reaches the value set by this policy, it isn't wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker isn't enabled, then the policy can't be enforced. Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key. Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value. For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 <!-- MaxDevicePasswordFailedAttempts-Description-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-Editable-Begin -->
@@ -735,7 +670,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-999]` |
 | Default Value  | 0 |
@@ -754,7 +689,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <!-- MaximumPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- MaximumPasswordAge-Applicability-End -->
 
 <!-- MaximumPasswordAge-OmaUri-Begin -->
@@ -768,7 +703,7 @@ The number of authentication failures allowed before the device will be wiped. A
 This security setting determines the period of time (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If the maximum password age is between 1 and 999 days, the Minimum password age must be less than the maximum password age. If the maximum password age is set to 0, the minimum password age can be any value between 0 and 998 days.
 
 > [!NOTE]
-> It is a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
+> It's a security best practice to have passwords expire every 30 to 90 days, depending on your environment. This way, an attacker has a limited amount of time in which to crack a user's password and have access to your network resources. Default: 42.
 <!-- MaximumPasswordAge-Description-End -->
 
 <!-- MaximumPasswordAge-Editable-Begin -->
@@ -780,7 +715,7 @@ This security setting determines the period of time (in days) that a password ca
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-999]` |
 | Default Value  | 1 |
@@ -807,7 +742,7 @@ This security setting determines the period of time (in days) that a password ca
 <!-- MaxInactivityTimeDeviceLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MaxInactivityTimeDeviceLock-Applicability-End -->
 
 <!-- MaxInactivityTimeDeviceLock-OmaUri-Begin -->
@@ -835,7 +770,7 @@ On HoloLens, this timeout is controlled by the device's system sleep timeout, re
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-999]` |
 | Default Value  | 0 |
@@ -854,7 +789,7 @@ On HoloLens, this timeout is controlled by the device's system sleep timeout, re
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-Applicability-End -->
 
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-OmaUri-Begin -->
@@ -877,7 +812,7 @@ Sets the maximum timeout value for the external display.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-999]` |
 | Default Value  | 0 |
@@ -895,7 +830,7 @@ Sets the maximum timeout value for the external display.
 <!-- MinDevicePasswordComplexCharacters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MinDevicePasswordComplexCharacters-Applicability-End -->
 
 <!-- MinDevicePasswordComplexCharacters-OmaUri-Begin -->
@@ -944,7 +879,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 | Dependency [DeviceLock_MinDevicePasswordComplexCharacters_DependencyGroup] | Dependency Type: `DependsOn DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceLock/DevicePasswordEnabled Device/Vendor/MSFT/Policy/Config/DeviceLock/AlphanumericDevicePasswordRequired` <br> Dependency Allowed Value: `[0] [0]` <br> Dependency Allowed Value Type: `Range Range` <br>  |
@@ -973,7 +908,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- MinDevicePasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MinDevicePasswordLength-Applicability-End -->
 
 <!-- MinDevicePasswordLength-OmaUri-Begin -->
@@ -1002,7 +937,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[4-16]` |
 | Default Value  | 4 |
@@ -1044,7 +979,7 @@ The following example shows how to set the minimum password length to 4 characte
 <!-- MinimumPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MinimumPasswordAge-Applicability-End -->
 
 <!-- MinimumPasswordAge-OmaUri-Begin -->
@@ -1055,7 +990,7 @@ The following example shows how to set the minimum password length to 4 characte
 
 <!-- MinimumPasswordAge-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998. Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
+This security setting determines the period of time (in days) that a password must be used before the user can change it. You can set a value between 1 and 998 days, or you can allow changes immediately by setting the number of days to 0. The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998. Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting doesn't follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user doesn't have to choose a new password. For this reason, Enforce password history is set to 1 by default.
 <!-- MinimumPasswordAge-Description-End -->
 
 <!-- MinimumPasswordAge-Editable-Begin -->
@@ -1067,7 +1002,7 @@ This security setting determines the period of time (in days) that a password mu
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-998]` |
 | Default Value  | 1 |
@@ -1094,7 +1029,7 @@ This security setting determines the period of time (in days) that a password mu
 <!-- PasswordComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- PasswordComplexity-Applicability-End -->
 
 <!-- PasswordComplexity-OmaUri-Begin -->
@@ -1127,7 +1062,7 @@ Complexity requirements are enforced when passwords are changed or created.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -1154,7 +1089,7 @@ Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordHistorySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- PasswordHistorySize-Applicability-End -->
 
 <!-- PasswordHistorySize-OmaUri-Begin -->
@@ -1165,11 +1100,11 @@ Complexity requirements are enforced when passwords are changed or created.
 
 <!-- PasswordHistorySize-Description-Begin -->
 <!-- Description-Source-DDF -->
-Minimum password length
-This security setting determines the least number of characters that a password for a user account may contain. The maximum value for this setting is dependent on the value of the Relax minimum password length limits setting. If the Relax minimum password length limits setting is not defined, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and disabled, this setting may be configured from 0 to 14. If the Relax minimum password length limits setting is defined and enabled, this setting may be configured from 0 to 128. Setting the required number of characters to 0 means that no password is required.
+Enforce password history
+This security setting determines the number of unique new passwords that have to be associated with a user account before an old password can be reused. The value must be between 0 and 24 passwords. This policy enables administrators to enhance security by ensuring that old passwords aren't reused continually. Default: 24 on domain controllers. 0 on stand-alone servers.
 
 > [!NOTE]
-> By default, member computers follow the configuration of their domain controllers. Default: 7 on domain controllers. 0 on stand-alone servers. Configuring this setting than 14 may affect compatibility with clients, services, and applications. Microsoft recommends that you only configure this setting larger than 14 after using the Minimum password length audit setting to test for potential incompatibilities at the new setting.
+> By default, member computers follow the configuration of their domain controllers. To maintain the effectiveness of the password history, don't allow passwords to be changed immediately after they were just changed by also enabling the Minimum password age security policy setting. For information about the minimum password age security policy setting, see Minimum password age.
 <!-- PasswordHistorySize-Description-End -->
 
 <!-- PasswordHistorySize-Editable-Begin -->
@@ -1181,10 +1116,10 @@ This security setting determines the least number of characters that a password 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-24]` |
-| Default Value  | 7 |
+| Default Value  | 24 |
 <!-- PasswordHistorySize-DFProperties-End -->
 
 <!-- PasswordHistorySize-GpMapping-Begin -->
@@ -1192,7 +1127,7 @@ This security setting determines the least number of characters that a password 
 
 | Name | Value |
 |:--|:--|
-| Name | Minimum password length |
+| Name | Enforce password history |
 | Path | Windows Settings > Security Settings > Account Policies > Password Policy |
 <!-- PasswordHistorySize-GpMapping-End -->
 
@@ -1208,7 +1143,7 @@ This security setting determines the least number of characters that a password 
 <!-- PreventEnablingLockScreenCamera-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- PreventEnablingLockScreenCamera-Applicability-End -->
 
 <!-- PreventEnablingLockScreenCamera-OmaUri-Begin -->
@@ -1223,7 +1158,7 @@ Disables the lock screen camera toggle switch in PC Settings and prevents a came
 
 By default, users can enable invocation of an available camera on the lock screen.
 
-If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
+If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera can't be invoked on the lock screen.
 <!-- PreventEnablingLockScreenCamera-Description-End -->
 
 <!-- PreventEnablingLockScreenCamera-Editable-Begin -->
@@ -1235,13 +1170,12 @@ If you enable this setting, users will no longer be able to enable or disable lo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventEnablingLockScreenCamera-DFProperties-End -->
 
 <!-- PreventEnablingLockScreenCamera-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1268,7 +1202,7 @@ If you enable this setting, users will no longer be able to enable or disable lo
 <!-- PreventLockScreenSlideShow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventLockScreenSlideShow-Applicability-End -->
 
 <!-- PreventLockScreenSlideShow-OmaUri-Begin -->
@@ -1295,13 +1229,12 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventLockScreenSlideShow-DFProperties-End -->
 
 <!-- PreventLockScreenSlideShow-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1322,63 +1255,13 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!-- PreventLockScreenSlideShow-End -->
 
-<!-- ResetAccountLockoutCounterAfter-Begin -->
-## ResetAccountLockoutCounterAfter
-
-<!-- ResetAccountLockoutCounterAfter-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
-<!-- ResetAccountLockoutCounterAfter-Applicability-End -->
-
-<!-- ResetAccountLockoutCounterAfter-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/DeviceLock/ResetAccountLockoutCounterAfter
-```
-<!-- ResetAccountLockoutCounterAfter-OmaUri-End -->
-
-<!-- ResetAccountLockoutCounterAfter-Description-Begin -->
-<!-- Description-Source-DDF -->
-Reset account lockout counter after - This security setting determines the number of minutes that must elapse after a failed logon attempt before the failed logon attempt counter is reset to 0 bad logon attempts. The available range is 1 minute to 99,999 minutes. If an account lockout threshold is defined, this reset time must be less than or equal to the Account lockout duration. Default: None, because this policy setting only has meaning when an Account lockout threshold is specified.
-<!-- ResetAccountLockoutCounterAfter-Description-End -->
-
-<!-- ResetAccountLockoutCounterAfter-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ResetAccountLockoutCounterAfter-Editable-End -->
-
-<!-- ResetAccountLockoutCounterAfter-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | int |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[1-99999]` |
-| Default Value  | 0 |
-<!-- ResetAccountLockoutCounterAfter-DFProperties-End -->
-
-<!-- ResetAccountLockoutCounterAfter-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | Reset account lockout counter after |
-| Path | Windows Settings > Security Settings > Account Policies > Account Lockout Policy |
-<!-- ResetAccountLockoutCounterAfter-GpMapping-End -->
-
-<!-- ResetAccountLockoutCounterAfter-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ResetAccountLockoutCounterAfter-Examples-End -->
-
-<!-- ResetAccountLockoutCounterAfter-End -->
-
 <!-- ScreenTimeoutWhileLocked-Begin -->
 ## ScreenTimeoutWhileLocked
 
 <!-- ScreenTimeoutWhileLocked-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ScreenTimeoutWhileLocked-Applicability-End -->
 
 <!-- ScreenTimeoutWhileLocked-OmaUri-Begin -->
@@ -1401,7 +1284,7 @@ Specifies whether to show a user-configurable setting to control the screen time
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[10-1800]` |
 | Default Value  | 10 |
