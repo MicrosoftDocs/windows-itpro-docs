@@ -19,9 +19,9 @@ The following table provides an overview of the applications types that can be d
 |**Installer/App type**|**Installer extensions**|**Available installation methods via Intune**|**Considerations for Windows 11 SE**|
 |-|-|-|-|
 |[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration|⚠️ There are known limitations that might prevent an app to install or run.|
-|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For private apps: line-of-business (LOB) apps<br>- For public apps: Microsoft Store integration|⛔ It's currently unsupported to deploy UWP apps.<!--⚠️ LOB apps require a supplemental policy.<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy UWP apps.-->|
-|[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ PWAs are supported.<!--<br><br>⛔ It's currently unsupported to use the Microsoft Store to deploy PWAs.-->|
-|Web links| n/a |- Windows web links|✅ Web links are supported. |
+|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For public apps: Microsoft Store integration<br>- For private apps: line-of-business (LOB) apps|✅ UWP public apps are supported.<br><br>⛔ UWP private apps are currently unsupported.<!--⚠️ LOB apps require a supplemental policy.-->|
+|[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ PWAs are supported.|
+|Web links| n/a |- Windows web links|✅ Web links are supported.|
 
 > [!IMPORTANT]
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
@@ -38,7 +38,13 @@ There are known limitations that might prevent applications to install or execut
 
 ## UWP apps
 
-It's currently unsupported to deploy UWP apps.
+### Microsoft Store apps
+
+Public UWP apps available in the Microsoft Store are supported for Windows 11 SE.
+
+### Line of business apps
+
+Private UWP apps are currently unsupported for Windows 11 SE.
 
 <!--### Line of business apps
 
@@ -47,15 +53,10 @@ For private, line-of-business (LOB) UWP apps, [deploy as line-of-business apps][
 > [!IMPORTANT]
 > UWP apps require the creation and deployment of supplemental policies. For more information, see the next section [validate applications](validate-apps.md).
 
-### Microsoft Store apps
-
-Public UWP apps available in the Microsoft Store aren't currently supported for Windows 11 SE.
 -->
 ## PWA apps
 
 PWAs can be deployed using the [Force-installed web Apps][EDGE-1] option via [settings catalog policies][MEM-3], or using the Microsoft Store integration with Intune.
-
-<!--PWAs available in the Microsoft Store aren't currently supported for Windows 11 SE.-->
 
 ## Web links
 
