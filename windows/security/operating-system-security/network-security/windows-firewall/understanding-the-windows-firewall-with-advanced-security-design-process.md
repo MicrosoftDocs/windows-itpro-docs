@@ -4,9 +4,6 @@ description: Resources for helping you understand the Windows Defender Firewall 
 ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-appliesto: 
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Understanding the Windows Defender Firewall with Advanced Security Design Process

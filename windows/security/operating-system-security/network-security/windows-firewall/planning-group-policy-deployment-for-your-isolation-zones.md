@@ -4,9 +4,6 @@ description: Learn how to plan a group policy deployment for your isolation zone
 ms.prod: windows-client
 ms.topic: conceptual
 ms.date: 09/08/2021
-appliesto: 
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # Planning Group Policy Deployment for Your Isolation Zones

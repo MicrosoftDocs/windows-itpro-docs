@@ -3,9 +3,6 @@ title: Filter origin audit log improvements
 description: Filter origin documentation audit log improvements
 ms.prod: windows-client
 ms.topic: troubleshooting
-appliesto: 
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ms.date: 12/31/2017
 ---
 
@@ -29,19 +26,19 @@ The blocking filters can be categorized under these filter origins:
 
 2. Firewall default block filters
 
-    a.	AppContainer loopback
+    a.    AppContainer loopback
     
-    b.	Boottime default
+    b.    Boottime default
     
-    c.	Quarantine default
+    c.    Quarantine default
     
-    d.	Query user default
+    d.    Query user default
     
-    e.	Stealth
+    e.    Stealth
     
-    f.	Universal Windows Platform (UWP) default
+    f.    Universal Windows Platform (UWP) default
     
-    g.	Windows Service Hardening (WSH) default
+    g.    Windows Service Hardening (WSH) default
 
 The next section describes the improvements made to audits 5157 and 5152, and how the above filter origins are used in these events. These improvements were added in the Windows Server 2022 and Windows 11 releases.
  
@@ -59,8 +56,8 @@ To enable a specific audit event, run the corresponding command in an administra
 
 |**Audit #**|**Enable command**|**Link**|
 |:-----|:-----|:-----|
-|**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](../auditing/event-5157.md)|
-|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Packet Drop" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](../auditing/event-5152.md)|
+|**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](../../../threat-protection/auditing/event-5157.md)|
+|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Packet Drop" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](../../../threat-protection/auditing/event-5152.md)|
 
 ## Example flow of debugging packet drops with filter origin 
 
@@ -75,13 +72,13 @@ The next sections are divided by `Filter Origin` type, the value is either a rul
 Run the following PowerShell command to generate the rule information using `Filter Origin`. 
 
 ```Powershell
-Get-NetFirewallRule -Name “<Filter Origin>”
+Get-NetFirewallRule -Name "<Filter Origin>"
 Get-NetFirewallRule -Name " {A549B7CF-0542-4B67-93F9-EEBCDD584377} "
 ```
 
 ![Firewall rule.](images/firewallrule.png)
 
-After identifying the rule that caused the drop, the network admin can now modify/disable the rule to allow the traffic they want through command prompt or using the Windows Defender UI. The network admin can find the rule in the UI with the rule’s `DisplayName`.
+After identifying the rule that caused the drop, the network admin can now modify/disable the rule to allow the traffic they want through command prompt or using the Windows Defender UI. The network admin can find the rule in the UI with the rule's `DisplayName`.
 
 >[!NOTE]
 > Firewall rules from Mobile Device Management (MDM) store cannot be searched using the Windows Defender UI. Additionally, the above method will not work when the `Filter Origin` is one of the default block filters, as they do not correspond to any firewall rules.
@@ -161,4 +158,4 @@ For more information on how to debug drops caused by UWP default block filters, 
 
 **WSH default**
 
-Network drops from Windows Service Hardening (WSH) default filters indicate that there wasn’t an explicit Windows Service Hardening allow rule to allow network traffic for the protected service. The service owner will need to configure allow rules for the service if the block isn't expected.
+Network drops from Windows Service Hardening (WSH) default filters indicate that there wasn't an explicit Windows Service Hardening allow rule to allow network traffic for the protected service. The service owner will need to configure allow rules for the service if the block isn't expected.

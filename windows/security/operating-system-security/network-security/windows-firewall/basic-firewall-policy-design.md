@@ -3,9 +3,6 @@ title: Basic Firewall Policy Design (Windows)
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
 ms.prod: windows-client
 ms.topic: conceptual
-appliesto: 
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ms.date: 12/31/2017
 ---
 

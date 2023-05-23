@@ -4,9 +4,6 @@ description: This example GPO supports the ability for servers that contain sens
 ms.topic: conceptual
 ms.prod: windows-client
 ms.date: 09/08/2021
-appliesto: 
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016 and later</a>
 ---
 
 # GPO\_DOMISO\_Encryption\_WS2008
