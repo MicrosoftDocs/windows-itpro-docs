@@ -66,8 +66,10 @@
       href: setup-digital-signage.md
     - name: Set up a single-app kiosk
       href: kiosk-single-app.md
-    - name: Set up a multi-app kiosk
+    - name: Set up a multi-app kiosk for Windows 10
       href: lock-down-windows-10-to-specific-apps.md
+    - name: Set up a multi-app kiosk for Windows 11
+      href: lock-down-windows-11-to-specific-apps.md
     - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
