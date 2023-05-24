@@ -1,5 +1,5 @@
 ---
-title: Security policy settings (Windows 10)
+title: Security policy settings 
 description: This reference topic describes the common scenarios, architecture, and processes for security settings.
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
 ms.reviewer: 

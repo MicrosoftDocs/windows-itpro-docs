@@ -1,5 +1,5 @@
 ---
-title: Planning GPO Deployment (Windows)
+title: Planning GPO Deployment 
 description: Learn how to use security group filtering and WMI filtering to provide the most flexible options for applying GPOs to devices in Active Directory.
 ms.prod: windows-client
 ms.topic: conceptual

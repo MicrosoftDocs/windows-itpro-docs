@@ -1,5 +1,5 @@
 ---
-title: Chromebook migration guide (Windows 10)
+title: Chromebook migration guide 
 description: Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
 ms.topic: how-to
 ms.date: 08/10/2022

@@ -1,5 +1,5 @@
 ---
-title: 5070(S, F) A cryptographic function property modification was attempted. (Windows 10)
+title: 5070(S, F) A cryptographic function property modification was attempted. 
 description: Describes security event 5070(S, F) A cryptographic function property modification was attempted.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 4657(S) A registry value was modified. (Windows 10)
+title: 4657(S) A registry value was modified. 
 description: Describes security event 4657(S) A registry value was modified. This event is generated when a registry key value is modified.
 ms.pagetype: security
 ms.prod: windows-client

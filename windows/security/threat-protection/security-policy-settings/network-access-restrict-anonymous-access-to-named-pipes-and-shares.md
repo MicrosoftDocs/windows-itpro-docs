@@ -1,5 +1,5 @@
 ---
-title: Network access Restrict anonymous access to Named Pipes and Shares (Windows 10)
+title: Network access Restrict anonymous access to Named Pipes and Shares 
 description: Best practices, security considerations, and more for the security policy setting, Network access Restrict anonymous access to Named Pipes and Shares.
 ms.assetid: e66cd708-7322-4d49-9b57-1bf8ec7a4c10
 ms.reviewer: 

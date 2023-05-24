@@ -1,5 +1,5 @@
 ---
-title: Checklist Creating Outbound Firewall Rules (Windows)
+title: Checklist Creating Outbound Firewall Rules 
 description: Use these tasks for creating outbound firewall rules in your GPOs for Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

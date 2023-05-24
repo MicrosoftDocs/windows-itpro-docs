@@ -1,5 +1,5 @@
 ---
-title: Configure Data Protection (Quick Mode) Settings (Windows)
+title: Configure Data Protection (Quick Mode) Settings 
 description: Learn how to configure the data protection settings for connection security rules in an isolated domain or a standalone isolated server zone.
 ms.prod: windows-client
 ms.topic: conceptual

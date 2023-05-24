@@ -1,5 +1,5 @@
 ---
-title: 4864(S) A namespace collision was detected. (Windows 10)
+title: 4864(S) A namespace collision was detected. 
 description: Describes security event 4864(S) A namespace collision was detected. This event is generated when a namespace collision is detected.
 ms.pagetype: security
 ms.prod: windows-client

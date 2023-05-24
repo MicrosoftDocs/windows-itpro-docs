@@ -1,5 +1,5 @@
 ---
-title: 4724(S, F) An attempt was made to reset an account's password. (Windows 10)
+title: 4724(S, F) An attempt was made to reset an account's password. 
 description: Describes security event 4724(S, F) An attempt was made to reset an account's password.
 ms.pagetype: security
 ms.prod: windows-client

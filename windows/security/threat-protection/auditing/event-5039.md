@@ -1,5 +1,5 @@
 ---
-title: 5039(-) A registry key was virtualized. (Windows 10)
+title: 5039(-) A registry key was virtualized. 
 description: Describes security event 5039(-) A registry key was virtualized. This event is generated when a registry key is virtualized using LUAFV.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: Boundary Zone GPOs (Windows)
+title: Boundary Zone GPOs 
 description: Learn about GPOs to create that must align with the group you create for the boundary zone in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

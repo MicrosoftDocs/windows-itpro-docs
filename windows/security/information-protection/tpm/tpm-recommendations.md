@@ -1,5 +1,5 @@
 ---
-title: TPM recommendations (Windows)
+title: TPM recommendations 
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.prod: windows-client
 author: paolomatarazzo

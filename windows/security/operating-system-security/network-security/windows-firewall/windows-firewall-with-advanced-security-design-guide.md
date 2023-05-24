@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Firewall with Advanced Security design guide (Windows)
+title: Windows Defender Firewall with Advanced Security design guide 
 description: Learn about common goals for using Windows Defender Firewall with Advanced Security to choose or create a design for deploying the firewall in your enterprise.
 ms.prod: windows-client
 ms.topic: conceptual

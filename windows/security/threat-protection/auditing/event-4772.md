@@ -1,5 +1,5 @@
 ---
-title: 4772(F) A Kerberos authentication ticket request failed. (Windows 10)
+title: 4772(F) A Kerberos authentication ticket request failed. 
 description: Describes security event 4772(F) A Kerberos authentication ticket request failed.
 ms.pagetype: security
 ms.prod: windows-client

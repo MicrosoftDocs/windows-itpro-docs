@@ -1,5 +1,5 @@
 ---
-title: Audit Kernel Object (Windows 10)
+title: Audit Kernel Object 
 description: The policy setting, Audit Kernel Object, decides if user attempts to access the system kernel (which includes mutexes and semaphores) generate audit events.
 ms.assetid: 75619d8b-b1eb-445b-afc9-0f9053be97fb
 ms.reviewer: 

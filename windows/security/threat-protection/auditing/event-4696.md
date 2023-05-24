@@ -1,5 +1,5 @@
 ---
-title: 4696(S) A primary token was assigned to process. (Windows 10)
+title: 4696(S) A primary token was assigned to process. 
 description: Describes security event 4696(S) A primary token was assigned to process.
 ms.pagetype: security
 ms.prod: windows-client

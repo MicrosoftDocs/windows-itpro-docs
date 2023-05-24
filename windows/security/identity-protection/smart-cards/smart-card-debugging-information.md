@@ -1,5 +1,5 @@
 ---
-title: Smart Card Troubleshooting (Windows)
+title: Smart Card Troubleshooting 
 description: Describes the tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
 ms.reviewer: ardenw
 ms.collection: 

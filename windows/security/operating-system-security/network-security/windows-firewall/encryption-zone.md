@@ -1,5 +1,5 @@
 ---
-title: Encryption Zone (Windows)
+title: Encryption Zone 
 description: Learn how to create an encryption zone to contain devices that host sensitive data and require that the sensitive network traffic be encrypted.
 ms.prod: windows-client
 ms.topic: conceptual

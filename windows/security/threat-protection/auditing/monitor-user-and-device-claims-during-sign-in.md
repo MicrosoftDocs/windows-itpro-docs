@@ -1,5 +1,5 @@
 ---
-title: Monitor user and device claims during sign-in (Windows 10)
+title: Monitor user and device claims during sign-in 
 description: Learn how to monitor user and device claims that are associated with a user’s security token. This advice assumes you have deployed Dynamic Access Control.
 ms.assetid: 71796ea9-5fe4-4183-8475-805c3c1f319f
 ms.reviewer: 

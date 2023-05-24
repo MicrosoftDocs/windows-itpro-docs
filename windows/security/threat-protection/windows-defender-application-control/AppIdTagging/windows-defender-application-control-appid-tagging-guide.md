@@ -1,5 +1,5 @@
 ---
-title: Designing, creating, managing and troubleshooting Windows Defender Application Control AppId Tagging policies (Windows)
+title: Designing, creating, managing and troubleshooting Windows Defender Application Control AppId Tagging policies 
 description: How to design, create, manage and troubleshoot your WDAC AppId Tagging policies
 keywords: security, malware, firewall
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

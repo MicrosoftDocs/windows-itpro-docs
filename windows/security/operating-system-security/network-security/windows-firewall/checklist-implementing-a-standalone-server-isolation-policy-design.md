@@ -1,5 +1,5 @@
 ---
-title: Checklist Implementing a Standalone Server Isolation Policy Design (Windows)
+title: Checklist Implementing a Standalone Server Isolation Policy Design 
 description: Use these tasks to create a server isolation policy design that isn't part of an isolated domain. See references to concepts and links to other checklists.
 ms.prod: windows-client
 ms.topic: conceptual

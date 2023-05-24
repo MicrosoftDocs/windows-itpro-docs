@@ -1,5 +1,5 @@
 ---
-title: 4780(S) The ACL was set on accounts which are members of administrators groups. (Windows 10)
+title: 4780(S) The ACL was set on accounts which are members of administrators groups. 
 description: Describes security event 4780(S) The ACL was set on accounts which are members of administrators groups.
 ms.pagetype: security
 ms.prod: windows-client
