@@ -4,11 +4,11 @@ description: Add an Autopilot profile to devices. Autopilot profiles control wha
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.date: 07/21/2021
 ms.reviewer: 
-manager: dansimp
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---
