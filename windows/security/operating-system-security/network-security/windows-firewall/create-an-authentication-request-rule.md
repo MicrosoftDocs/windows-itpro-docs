@@ -1,5 +1,5 @@
 ---
-title: Create an Authentication Request Rule (Windows)
+title: Create an Authentication Request Rule 
 description: Create a new rule for Windows Defender Firewall with Advanced Security so devices on the network use IPsec protocols and methods before they can communicate.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Block untrusted fonts in an enterprise (Windows 10)
+title: Block untrusted fonts in an enterprise 
 description: To help protect your company from attacks that may originate from untrusted or attacker controlled font files, we've created the Blocking Untrusted Fonts feature.
 ms.reviewer: 
 ms.prod: windows-client

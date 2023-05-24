@@ -1,5 +1,5 @@
 ---
-title: Exempt ICMP from Authentication (Windows)
+title: Exempt ICMP from Authentication 
 description: Learn how to add exemptions for any network traffic that uses the ICMP protocol in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

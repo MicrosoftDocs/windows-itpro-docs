@@ -1,5 +1,5 @@
 ---
-title: Planning Domain Isolation Zones (Windows)
+title: Planning Domain Isolation Zones 
 description: Learn how to use information you've gathered to make decisions about isolation zones for your environment in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

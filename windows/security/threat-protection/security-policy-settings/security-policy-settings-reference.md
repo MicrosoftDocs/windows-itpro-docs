@@ -1,5 +1,5 @@
 ---
-title: Security policy settings reference (Windows 10)
+title: Security policy settings reference 
 description: This reference of security settings provides information about how to implement and manage security policies, including setting options and security considerations.
 ms.assetid: ef5a4579-15a8-4507-9a43-b7ccddcb0ed1
 ms.reviewer: 

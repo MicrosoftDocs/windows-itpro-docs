@@ -1,5 +1,5 @@
 ---
-title: Create an Authentication Exemption List Rule (Windows)
+title: Create an Authentication Exemption List Rule 
 description: Learn how to create rules that exempt devices that cannot communicate by using IPSec from the authentication requirements of your isolation policies.
 ms.prod: windows-client
 ms.topic: conceptual

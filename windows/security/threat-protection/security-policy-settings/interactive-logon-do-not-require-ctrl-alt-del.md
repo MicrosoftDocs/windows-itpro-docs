@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Do not require CTRL+ALT+DEL (Windows 10)
+title: Interactive logon Do not require CTRL+ALT+DEL 
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Do not require CTRL+ALT+DEL security policy setting.
 ms.assetid: 04e2c000-2eb2-4d4b-8179-1e2cb4793e18
 ms.reviewer: 

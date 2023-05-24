@@ -1,5 +1,5 @@
 ---
-title: 5149(F) The DoS attack has subsided and normal processing is being resumed. (Windows 10)
+title: 5149(F) The DoS attack has subsided and normal processing is being resumed. 
 description: Describes security event 5149(F) The DoS attack has subsided and normal processing is being resumed.
 ms.pagetype: security
 ms.prod: windows-client

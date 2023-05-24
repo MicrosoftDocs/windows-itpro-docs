@@ -1,5 +1,5 @@
 ---
-title: Implementing Your Windows Defender Firewall with Advanced Security Design Plan (Windows)
+title: Implementing Your Windows Defender Firewall with Advanced Security Design Plan 
 description: Implementing Your Windows Defender Firewall with Advanced Security Design Plan
 ms.prod: windows-client
 ms.topic: conceptual

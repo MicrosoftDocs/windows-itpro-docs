@@ -1,5 +1,5 @@
 ---
-title: Checklist Implementing a Domain Isolation Policy Design (Windows)
+title: Checklist Implementing a Domain Isolation Policy Design 
 description: Use these references to learn about the domain isolation policy design and links to other checklists to complete tasks require to implement this design.
 ms.prod: windows-client
 ms.topic: conceptual

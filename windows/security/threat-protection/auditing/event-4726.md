@@ -1,5 +1,5 @@
 ---
-title: 4726(S) A user account was deleted. (Windows 10)
+title: 4726(S) A user account was deleted. 
 description: Describes security event 4726(S) A user account was deleted. This event is generated when a user object is deleted.
 ms.pagetype: security
 ms.prod: windows-client

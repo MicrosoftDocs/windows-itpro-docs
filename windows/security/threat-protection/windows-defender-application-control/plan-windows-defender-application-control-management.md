@@ -1,5 +1,5 @@
 ---
-title: Plan for WDAC policy management (Windows)
+title: Plan for WDAC policy management 
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

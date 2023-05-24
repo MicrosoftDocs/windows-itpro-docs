@@ -1,5 +1,5 @@
 ---
-title: Configure the Rules to Require Encryption (Windows)
+title: Configure the Rules to Require Encryption 
 description: Learn how to configure rules to add encryption algorithms and delete the algorithm combinations that don't use encryption for zones that require encryption.
 ms.prod: windows-client
 ms.topic: conceptual

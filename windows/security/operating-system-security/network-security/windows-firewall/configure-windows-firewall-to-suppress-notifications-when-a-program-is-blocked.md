@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program is Blocked (Windows)
+title: Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program is Blocked 
 description: Configure Windows Defender Firewall with Advanced Security to suppress notifications when a program is Blocked
 ms.prod: windows-client
 ms.topic: conceptual

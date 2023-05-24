@@ -1,5 +1,5 @@
 ---
-title: GPO\_DOMISO\_Firewall (Windows)
+title: GPO\_DOMISO\_Firewall 
 description: Learn about the settings and rules in this example GPO, which is authored by using the Group Policy editing tools.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Identify implementation goals for Windows Defender Firewall with Advanced Security Deployment (Windows)
+title: Identify implementation goals for Windows Defender Firewall with Advanced Security Deployment 
 description: Identifying Your Windows Defender Firewall with Advanced Security (WFAS) implementation goals
 ms.prod: windows-client
 ms.topic: conceptual

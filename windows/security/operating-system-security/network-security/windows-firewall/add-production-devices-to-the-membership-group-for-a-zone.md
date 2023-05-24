@@ -1,5 +1,5 @@
 ---
-title: Add Production Devices to the Membership Group for a Zone (Windows)
+title: Add Production Devices to the Membership Group for a Zone 
 description: Learn how to add production devices to the membership group for a zone and refresh the group policy on the devices in the membership group.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows)
+title: GPO\_DOMISO\_IsolatedDomain\_Servers 
 description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
 ms.prod: windows-client
 ms.topic: conceptual

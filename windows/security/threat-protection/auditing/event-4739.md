@@ -1,5 +1,5 @@
 ---
-title: 4739(S) Domain Policy was changed. (Windows 10)
+title: 4739(S) Domain Policy was changed. 
 description: Describes security event 4739(S) Domain Policy was changed. This event is generated when certain changes are made to the local computer security policy.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: Server Isolation Policy Design Example (Windows)
+title: Server Isolation Policy Design Example 
 description: Learn about server isolation policy design in Windows Defender Firewall with Advanced Security by referring to this example of a fictitious company.
 ms.prod: windows-client
 ms.topic: conceptual

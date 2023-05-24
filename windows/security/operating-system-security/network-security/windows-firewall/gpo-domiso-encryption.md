@@ -1,5 +1,5 @@
 ---
-title: GPO\_DOMISO\_Encryption\_WS2008 (Windows)
+title: GPO\_DOMISO\_Encryption\_WS2008 
 description: This example GPO supports the ability for servers that contain sensitive data to require encryption for all connection requests.
 ms.topic: conceptual
 ms.prod: windows-client

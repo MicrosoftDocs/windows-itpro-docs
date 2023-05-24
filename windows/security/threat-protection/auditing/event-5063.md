@@ -1,5 +1,5 @@
 ---
-title: 5063(S, F) A cryptographic provider operation was attempted. (Windows 10)
+title: 5063(S, F) A cryptographic provider operation was attempted. 
 description: Describes security event 5063(S, F) A cryptographic provider operation was attempted.
 ms.pagetype: security
 ms.prod: windows-client

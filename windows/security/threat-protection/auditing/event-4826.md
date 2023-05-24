@@ -1,5 +1,5 @@
 ---
-title: 4826(S) Boot Configuration Data loaded. (Windows 10)
+title: 4826(S) Boot Configuration Data loaded. 
 description: Describes security event 4826(S) Boot Configuration Data loaded. This event is generated every time system starts and loads Boot Configuration Data settings.
 ms.pagetype: security
 ms.prod: windows-client

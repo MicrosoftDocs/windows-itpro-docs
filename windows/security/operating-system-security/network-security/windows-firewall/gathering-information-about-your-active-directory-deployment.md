@@ -1,5 +1,5 @@
 ---
-title: Gathering Information about Your Active Directory Deployment (Windows)
+title: Gathering Information about Your Active Directory Deployment 
 description: Learn about gathering Active Directory information, including domain layout, organizational unit architecture, and site topology, for your firewall deployment.
 ms.prod: windows-client
 ms.topic: conceptual

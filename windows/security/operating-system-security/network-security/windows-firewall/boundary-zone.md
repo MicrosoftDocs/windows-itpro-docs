@@ -1,5 +1,5 @@
 ---
-title: Boundary Zone (Windows)
+title: Boundary Zone 
 description: Learn how a boundary zone supports devices that must receive traffic from beyond an isolated domain in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

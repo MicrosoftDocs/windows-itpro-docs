@@ -1,5 +1,5 @@
 ---
-title: 4777(F) The domain controller failed to validate the credentials for an account. (Windows 10)
+title: 4777(F) The domain controller failed to validate the credentials for an account. 
 description: Describes security event 4777(F) The domain controller failed to validate the credentials for an account.
 ms.pagetype: security
 ms.prod: windows-client
