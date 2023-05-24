@@ -24,9 +24,9 @@ ms.date: 05/24/2023
 
 ## Microsoft Store for Business tab removed
 
-In April 2023, the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. The Microsoft Store for Business tab will continue to be available on Hololens devices. Users will no longer be able to see products added to the private store within the Microsoft Store app and will need to go to the [Microsoft Store for Business](https://businessstore.microsoft.com/) website to access the private store. 
+In April 2023, the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. The Microsoft Store for Business tab will continue to be available on Hololens devices. Users will no longer be able to see products added to the private store within the Microsoft Store app and will need to go to the [Microsoft Store for Business](https://businessstore.microsoft.com/) website to access the private store.
 
-The [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-configuration-service-provider#ApplicationManagement_RequirePrivateStoreOnly) MDM policy and **Only display the private store within the Microsoft Store app** Group policy will block access to the Microsoft Store app entirely. With those policies in place, users may see the one of the following errors in the Microsoft Store app.
+The [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-configuration-service-provider#ApplicationManagement_RequirePrivateStoreOnly) MDM policy and **Only display the private store within the Microsoft Store app** Group policy will block access to the Microsoft Store app entirely. With those policies in place, users may see one of the following errors in the Microsoft Store app.
 
 1. Microsoft Store is blocked + Check with your IT or system administrator + Report this problem + Code 0x700704E
 2. Try that again + Page could not be loaded. Please try that again + Refresh the page + Code 0x80131500
