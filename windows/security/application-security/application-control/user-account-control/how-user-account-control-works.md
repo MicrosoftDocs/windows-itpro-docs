@@ -4,19 +4,24 @@ description: User Account Control (UAC) is a fundamental component of Microsoft'
 ms.collection: 
   - highpri
   - tier2
-ms.topic: article
-ms.date: 09/23/2021
+ms.topic: conceptual
+ms.date: 05/24/2023
 ---
 
 # How User Account Control works
 
-User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
-
 ## UAC process and interactions
 
-Each app that requires the administrator access token must prompt for consent. The one exception is the relationship that exists between parent and child processes. Child processes inherit the user's access token from the parent process. Both the parent and child processes, however, must have the same integrity level. Windows protects processes by marking their integrity levels. Integrity levels are measurements of trust. A "high" integrity application is one that performs tasks that modify system data, such as a disk partitioning application, while a "low" integrity application is one that performs tasks that could potentially compromise the operating system, such as a Web browser. Apps with lower integrity levels cannot modify data in applications with higher integrity levels. When a standard user attempts to run an app that requires an administrator access token, UAC requires that the user provide valid administrator credentials.
+Each application that requires the *administrator access token* must prompt for consent. The only exception is the relationship that exists between parent and child processes. Child processes inherit the user's access token from the parent process. Both the parent and child processes, however, must have the same *integrity level*.
 
-To better understand how this process happens, let's look at the Windows logon process.
+Windows protects processes by marking their integrity levels. Integrity levels are measurements of trust:
+
+- A *high integrity application* is one that performs tasks that modify system data, such as a disk partitioning application
+- A *low integrity application* is one that performs tasks that could potentially compromise the operating system, like as a Web brows
+
+Applications with lower integrity levels cannot modify data in applications with higher integrity levels. When a standard user attempts to run an app that requires an administrator access token, UAC requires that the user provide valid administrator credentials.
+
+To better understand how this process works, let's take a closer look at the Windows logon process.
 
 ### Logon process
 
