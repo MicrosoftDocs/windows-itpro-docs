@@ -1,0 +1,25 @@
+items:
+  - name: Overview
+    href: vpn-guide.md
+  - name: VPN connection types
+    href: vpn-connection-type.md
+  - name: VPN routing decisions
+    href: vpn-routing.md
+  - name: VPN authentication options
+    href: vpn-authentication.md
+  - name: VPN and conditional access
+    href: vpn-conditional-access.md
+  - name: VPN name resolution
+    href: vpn-name-resolution.md
+  - name: VPN auto-triggered profile options
+    href: vpn-auto-trigger-profile.md
+  - name: VPN security features
+    href: vpn-security-features.md
+  - name: VPN profile options
+    href: vpn-profile-options.md
+  - name: How to configure Diffie Hellman protocol over IKEv2 VPN connections
+    href: how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
+  - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
+    href: how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
+  - name: Optimizing Office 365 traffic with the Windows VPN client
+    href: vpn-office-365-optimization.md

@@ -1,40 +1,17 @@
 items:
-- name: Transport layer security (TLS)
-  href: /windows-server/security/tls/tls-ssl-schannel-ssp-overview
-- name: WiFi Security
-  href: https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09
-- name: Windows Firewall
-  href: ../../threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-- name: Virtual Private Network (VPN)
-  href: ../../identity-protection/vpn/vpn-guide.md
-  items:
-  - name: VPN connection types
-    href: ../../identity-protection/vpn/vpn-connection-type.md
-  - name: VPN routing decisions
-    href: ../../identity-protection/vpn/vpn-routing.md
-  - name: VPN authentication options
-    href: ../../identity-protection/vpn/vpn-authentication.md
-  - name: VPN and conditional access
-    href: ../../identity-protection/vpn/vpn-conditional-access.md
-  - name: VPN name resolution
-    href: ../../identity-protection/vpn/vpn-name-resolution.md
-  - name: VPN auto-triggered profile options
-    href: ../../identity-protection/vpn/vpn-auto-trigger-profile.md
-  - name: VPN security features
-    href: ../../identity-protection/vpn/vpn-security-features.md
-  - name: VPN profile options
-    href: ../../identity-protection/vpn/vpn-profile-options.md
-  - name: How to configure Diffie Hellman protocol over IKEv2 VPN connections
-    href: ../../identity-protection/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
-  - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
-    href: ../../identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
-  - name: Optimizing Office 365 traffic with the Windows VPN client
-    href: ../../identity-protection/vpn/vpn-office-365-optimization.md
-- name: Always On VPN
-  href: /windows-server/remote/remote-access/vpn/always-on-vpn/
-- name: Direct Access
-  href: /windows-server/remote/remote-access/directaccess/directaccess
-- name: Server Message Block (SMB) file service
-  href: /windows-server/storage/file-server/file-server-smb-overview
-- name: Server Message Block Direct (SMB Direct)
-  href: /windows-server/storage/file-server/smb-direct
+  - name: Transport layer security (TLS) 🔗
+    href: /windows-server/security/tls/tls-ssl-schannel-ssp-overview
+  - name: WiFi Security
+    href: https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09
+  - name: Windows Firewall 🔗
+    href: windows-firewall/windows-firewall-with-advanced-security.md
+  - name: Virtual Private Network (VPN)
+    href: vpn/toc.yml
+  - name: Always On VPN 🔗
+    href: /windows-server/remote/remote-access/vpn/always-on-vpn/
+  - name: Direct Access 🔗
+    href: /windows-server/remote/remote-access/directaccess/directaccess
+  - name: Server Message Block (SMB) file service 🔗
+    href: /windows-server/storage/file-server/file-server-smb-overview
+  - name: Server Message Block Direct (SMB Direct) 🔗
+    href: /windows-server/storage/file-server/smb-direct
