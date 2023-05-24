@@ -1,5 +1,5 @@
 ---
-title: VPN and conditional access (Windows 10 and Windows 11)
+title: VPN and conditional access 
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
 ms.date: 09/23/2021
 ms.topic: conceptual

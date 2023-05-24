@@ -1,5 +1,5 @@
 ---
-title: 4714(S) Encrypted data recovery policy was changed. (Windows 10)
+title: 4714(S) Encrypted data recovery policy was changed. 
 description: Describes security event 4714(S) Encrypted data recovery policy was changed.
 ms.pagetype: security
 ms.prod: windows-client

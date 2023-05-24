@@ -1,5 +1,5 @@
 ---
-title: 4718(S) System security access was removed from an account. (Windows 10)
+title: 4718(S) System security access was removed from an account. 
 description: Describes security event 4718(S) System security access was removed from an account.
 ms.pagetype: security
 ms.prod: windows-client

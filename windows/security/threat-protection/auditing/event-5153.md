@@ -1,5 +1,5 @@
 ---
-title: 5153(S) A more restrictive Windows Filtering Platform filter has blocked a packet. (Windows 10)
+title: 5153(S) A more restrictive Windows Filtering Platform filter has blocked a packet. 
 description: Describes security event 5153(S) A more restrictive Windows Filtering Platform filter has blocked a packet.
 ms.pagetype: security
 ms.prod: windows-client

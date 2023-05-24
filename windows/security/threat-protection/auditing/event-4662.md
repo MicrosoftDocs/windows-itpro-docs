@@ -1,5 +1,5 @@
 ---
-title: 4662(S, F) An operation was performed on an object. (Windows 10)
+title: 4662(S, F) An operation was performed on an object. 
 description: Describes security event 4662(S, F) An operation was performed on an object.
 ms.pagetype: security
 ms.prod: windows-client

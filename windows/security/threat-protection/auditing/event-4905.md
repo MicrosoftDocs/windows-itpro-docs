@@ -1,5 +1,5 @@
 ---
-title: 4905(S) An attempt was made to unregister a security event source. (Windows 10)
+title: 4905(S) An attempt was made to unregister a security event source. 
 description: Describes security event 4905(S) An attempt was made to unregister a security event source.
 ms.pagetype: security
 ms.prod: windows-client

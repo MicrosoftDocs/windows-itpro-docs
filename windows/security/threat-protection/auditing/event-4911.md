@@ -1,5 +1,5 @@
 ---
-title: 4911(S) Resource attributes of the object were changed. (Windows 10)
+title: 4911(S) Resource attributes of the object were changed. 
 description: Describes security event 4911(S) Resource attributes of the object were changed.
 ms.pagetype: security
 ms.prod: windows-client

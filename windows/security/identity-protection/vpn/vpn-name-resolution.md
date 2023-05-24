@@ -1,5 +1,5 @@
 ---
-title: VPN name resolution (Windows 10 and Windows 11)
+title: VPN name resolution 
 description: Learn how the name resolution setting in the VPN profile configures how name resolution works when a VPN client connects to a VPN server.
 ms.date: 09/23/2021
 ms.topic: conceptual

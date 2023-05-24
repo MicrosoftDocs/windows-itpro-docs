@@ -1,5 +1,5 @@
 ---
-title: Windows VPN technical guide (Windows 10 and Windows 11)
+title: Windows VPN technical guide 
 description: Learn about decisions to make for Windows 10 or Windows 11 clients in your enterprise VPN solution and how to configure your deployment.
 ms.date: 02/21/2022
 ms.topic: conceptual

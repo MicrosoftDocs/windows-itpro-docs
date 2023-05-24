@@ -1,5 +1,5 @@
 ---
-title: 5057(F) A cryptographic primitive operation failed. (Windows 10)
+title: 5057(F) A cryptographic primitive operation failed. 
 description: Describes security event 5057(F) A cryptographic primitive operation failed.
 ms.pagetype: security
 ms.prod: windows-client
