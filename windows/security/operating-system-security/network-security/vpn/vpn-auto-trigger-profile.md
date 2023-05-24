@@ -39,7 +39,7 @@ There are four types of name-based triggers:
 
 - Short name: for example, if *HRweb* is configured as a trigger, and the stack sees a DNS resolution request for *HRweb*, the VPN triggers
 - Fully qualified domain name (FQDN): for example, if *HRweb.corp.contoso.com* is configured as a trigger, and the stack sees a DNS resolution request for *HRweb.corp.contoso.com*, the VPN triggers
-- Suffix: for example, if *.corp.contoso.com* is configured as a trigger, and the stack sees a DNS resolution request with a matching suffix (such as *HRweb.corp.contoso.com*), the VPN triggers. For any short name resolution, VPN triggers, and the DNS servers are queried for the *<ShortName>.corp.contoso.com*
+- Suffix: for example, if *.corp.contoso.com* is configured as a trigger, and the stack sees a DNS resolution request with a matching suffix (such as *HRweb.corp.contoso.com*), the VPN triggers. For any short name resolution, VPN triggers, and the DNS servers are queried for the *<ShortName\>.corp.contoso.com*
 - All: if used, all DNS resolution triggers VPN
 
 ## Always On
@@ -52,7 +52,7 @@ Always On is a Windows feature that enables the active VPN profile to connect au
 
 When the trigger occurs, VPN tries to connect. If an error occurs, or any user input is needed, the user sees a toast notification for more interaction.
 
-When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings > Network & Internet > VPN > <VPN profile>** by selecting the **Let apps automatically use this VPN connection** checkbox. By default, the first MDM-configured profile is marked as **Active**. Devices with multiple users have the same restriction: only one profile, and therefore only one user, is able to use the Always On triggers.
+When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings > Network & Internet > VPN > <VPN profile\>** by selecting the **Let apps automatically use this VPN connection** checkbox. By default, the first MDM-configured profile is marked as **Active**. Devices with multiple users have the same restriction: only one profile, and therefore only one user, is able to use the Always On triggers.
 
 ## Preserving user Always On preference
 
