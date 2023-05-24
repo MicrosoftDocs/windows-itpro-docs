@@ -72,6 +72,8 @@ In **Windows 10, version 1803** the Configuration node introduces single app kio
 
 In **Windows 10, version 1909**, Microsoft Edge kiosk mode support was added. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like `shift+alt+a`, where `shift` and `alt` are the modifiers and `a` is the key.
 
+In **Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/5026446)**, AssignedAccessConfiguration schema was updated to add StartPins and TaskbarLayout nodes to support pinning apps to the Start Menu and Taskbar respectively.
+
 - For more information about setting up a multi-app kiosk, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
 - For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd).
 - For examples, see [AssignedAccessConfiguration examples](#assignedaccessconfiguration-examples).
@@ -175,7 +177,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 
 > [!IMPORTANT]
 >
-> - In Windows 10, version 1803, the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
+> - In Windows 10, version 1803, the Configuration node introduced single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in configuration xml for Configuration node to configure public-facing single app Kiosk.
 > - Additionally, starting in Windows 10, version 1803, the KioskModeApp node becomes No-Op if Configuration node is configured on the device. Add/Replace/Delete commands on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it's not effective.
 > - You can't set both KioskModeApp and ShellLauncher at the same time on the device.
 <!-- Device-KioskModeApp-Editable-End -->
@@ -1043,6 +1045,7 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
         xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
         xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
         xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+        xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
         targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
         >
 
@@ -1072,7 +1075,9 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
                     <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="rs5:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
                     <xs:element name="StartLayout" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="v5:StartPins" minOccurs="0" maxOccurs="1"/>
                     <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="v5:TaskbarLayout" minOccurs="0" maxOccurs="1"/>
                 </xs:sequence>
                 <xs:sequence minOccurs="1" maxOccurs="1">
                     <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1">
@@ -1229,7 +1234,7 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
     </xs:schema>);
     ```
 
-- Schema for features introduced in Windows 10, version 1909 which added support for Microsoft Edge kiosk mode and breakout key sequence customization.
+- Schema for features introduced in Windows 10, version 1809 which added support for Microsoft Edge kiosk mode and breakout key sequence customization.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -1350,6 +1355,101 @@ By default, the StatusConfiguration node doesn't exist, and it implies this feat
 >     ...
 > </AssignedAccessConfiguration>
 > ```
+
+- Example XML configuration for a multi-app kiosk for Windows 11, version 22H2 with [KB5026446](https://support.microsoft.com/kb/5026446).
+
+    > [!NOTE]
+    > This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
+    >
+    > - StartPins element is used to pin apps to the Start menu and uses the [pinnedList JSON](/windows/configuration/customize-start-menu-layout-windows-11#get-the-pinnedlist-json) format.
+    > - TaskbarLayout element is used to pin apps to the taskbar and uses the [TaskbarLayoutModification XML](/windows/configuration/customize-taskbar-windows-11#create-the-xml-file) format.
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+        xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+        xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+        xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+        <Profiles>
+            <Profile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}">
+                <AllAppsList>
+                    <AllowedApps>
+                        <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                        <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!BCHost" />
+                        <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!ContentProcess" />
+                        <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!F12" />
+                        <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                        <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!PdfReader" />
+                        <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
+                        <App DesktopAppPath="%SystemRoot%\system32\control.exe" />
+                        <App DesktopAppPath="%SystemRoot%\system32\cmd.exe" />
+                        <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+                        <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
+                        <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App" />
+                        <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\103.0.1264.62\identity_helper.exe" />
+                    </AllowedApps>
+                </AllAppsList>
+                <v2:FileExplorerNamespaceRestrictions>
+                    <v3:NoRestriction />
+                </v2:FileExplorerNamespaceRestrictions>
+                <StartLayout>
+                    <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+                        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1"
+                        xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                        <LayoutOptions StartTileGroupCellWidth="6" />
+                        <DefaultLayoutOverride>
+                            <StartLayoutCollection>
+                                <defaultlayout:StartLayout GroupCellWidth="6">
+                                    <start:Group Name="Life at a glance">
+                                        <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                                        <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                                        <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AppData%\Microsoft\Windows\Start Menu\Programs\Accessories\notepad.lnk" />
+                                        <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%SystemRoot%\system32\cmd.exe" />
+                                        <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%SystemRoot%\system32\control.exe" />
+                                    </start:Group>
+                                </defaultlayout:StartLayout>
+                            </StartLayoutCollection>
+                        </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>]]>
+                </StartLayout>
+                <v5:StartPins>
+                    <![CDATA[{
+                        "pinnedList": [
+                            { "desktopAppId": "MSEdge" },
+                            { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
+                            { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
+                            { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" },
+                            { "desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk" },
+                            { "desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk" }
+                        ]
+                    }]]>
+                </v5:StartPins>
+                <Taskbar ShowTaskbar="true"/>
+                <v5:TaskbarLayout>
+                    <![CDATA[<LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+                        xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+                        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+                        xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" Version="1">
+                        <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+                            <defaultlayout:TaskbarLayout>
+                                <taskbar:TaskbarPinList>
+                                    <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+                                    <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk" />
+                                </taskbar:TaskbarPinList>
+                            </defaultlayout:TaskbarLayout>
+                        </CustomTaskbarLayoutCollection>
+                    </LayoutModificationTemplate>]]>
+                </v5:TaskbarLayout>
+            </Profile>
+        </Profiles>
+        <Configs>
+            <Config>
+                <Account>MultiAppKioskUser</Account>
+                <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+            </Config>
+        </Configs>
+    </AssignedAccessConfiguration>
+    ```
 
 - Example XML configuration for a multi-app kiosk for Windows 10.
 
