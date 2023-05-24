@@ -1,5 +1,5 @@
 ---
-title: Audit account management (Windows 10)
+title: Audit account management 
 description: Determines whether to audit each event of account management on a device.
 ms.assetid: 369197E1-7E0E-45A4-89EA-16D91EF01689
 ms.reviewer: 

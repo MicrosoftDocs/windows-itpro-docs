@@ -1,5 +1,5 @@
 ---
-title: 5066(S, F) A cryptographic function operation was attempted. (Windows 10)
+title: 5066(S, F) A cryptographic function operation was attempted. 
 description: Describes security event 5066(S, F) A cryptographic function operation was attempted.
 ms.pagetype: security
 ms.prod: windows-client

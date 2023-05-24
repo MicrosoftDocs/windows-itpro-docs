@@ -1,5 +1,5 @@
 ---
-title: Verify That Network Traffic Is Authenticated (Windows)
+title: Verify That Network Traffic Is Authenticated 
 description: Learn how to confirm that network traffic is being protected by IPsec authentication after you configure your domain isolation rule to require authentication.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: 4625(F) An account failed to log on. (Windows 10)
+title: 4625(F) An account failed to log on. 
 description: Describes security event 4625(F) An account failed to log on. This event is generated if an account logon attempt failed for a locked out account.
 ms.pagetype: security
 ms.prod: windows-client

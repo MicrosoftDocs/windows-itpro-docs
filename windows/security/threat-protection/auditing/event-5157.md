@@ -1,5 +1,5 @@
 ---
-title: 5157(F) The Windows Filtering Platform has blocked a connection. (Windows 10)
+title: 5157(F) The Windows Filtering Platform has blocked a connection. 
 description: Describes security event 5157(F) The Windows Filtering Platform has blocked a connection.
 ms.pagetype: security
 ms.prod: windows-client

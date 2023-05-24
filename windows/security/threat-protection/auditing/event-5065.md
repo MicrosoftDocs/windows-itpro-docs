@@ -1,5 +1,5 @@
 ---
-title: 5065(S, F) A cryptographic context modification was attempted. (Windows 10)
+title: 5065(S, F) A cryptographic context modification was attempted. 
 description: Describes security event 5065(S, F) A cryptographic context modification was attempted.
 ms.pagetype: security
 ms.prod: windows-client

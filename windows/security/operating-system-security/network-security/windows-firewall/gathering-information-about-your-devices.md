@@ -1,5 +1,5 @@
 ---
-title: Gathering Information about Your Devices (Windows)
+title: Gathering Information about Your Devices 
 description: Learn what information to gather about the devices in your enterprise to plan your Windows Defender Firewall with Advanced Security deployment.
 ms.prod: windows-client
 ms.topic: conceptual

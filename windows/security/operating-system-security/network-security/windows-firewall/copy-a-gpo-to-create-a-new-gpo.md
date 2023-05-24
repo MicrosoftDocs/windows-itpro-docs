@@ -1,5 +1,5 @@
 ---
-title: Copy a GPO to Create a New GPO (Windows)
+title: Copy a GPO to Create a New GPO 
 description: Learn how to make a copy of a GPO by using the Active Directory Users and devices MMC snap-in to create a GPO for boundary zone devices.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Planning Isolation Groups for the Zones (Windows)
+title: Planning Isolation Groups for the Zones 
 description: Learn about planning isolation groups for the zones in Microsoft Firewall, including information on universal groups and GPOs.
 ms.prod: windows-client
 ms.topic: conceptual

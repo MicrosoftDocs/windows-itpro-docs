@@ -1,5 +1,5 @@
 ---
-title: Create Rules for Standalone Isolated Server Zone Clients (Windows)
+title: Create Rules for Standalone Isolated Server Zone Clients 
 description: Checklist for when creating rules for clients of a Standalone Isolated Server Zone
 ms.prod: windows-client
 ms.topic: conceptual

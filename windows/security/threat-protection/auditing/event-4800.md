@@ -1,5 +1,5 @@
 ---
-title: 4800(S) The workstation was locked. (Windows 10)
+title: 4800(S) The workstation was locked. 
 description: Describes security event 4800(S) The workstation was locked. This event is generated when a workstation is locked.
 ms.pagetype: security
 ms.prod: windows-client

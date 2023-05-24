@@ -1,5 +1,5 @@
 ---
-title: Administer AppLocker (Windows)
+title: Administer AppLocker 
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
 ms.reviewer: 

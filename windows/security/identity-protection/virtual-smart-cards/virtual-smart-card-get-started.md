@@ -1,5 +1,5 @@
 ---
-title: Get Started with Virtual Smart Cards - Walkthrough Guide (Windows 10)
+title: Get Started with Virtual Smart Cards - Walkthrough Guide 
 description: This topic for the IT professional describes how to set up a basic test environment for using TPM virtual smart cards.
 ms.topic: conceptual
 ms.date: 02/22/2023

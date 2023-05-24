@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Firewall with Advanced Security (Windows)
+title: Windows Defender Firewall with Advanced Security 
 description: Learn overview information about the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
 ms.prod: windows-client
 ms.collection: 

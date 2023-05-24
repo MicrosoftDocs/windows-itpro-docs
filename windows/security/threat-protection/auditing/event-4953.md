@@ -1,5 +1,5 @@
 ---
-title: 4953(F) Windows Firewall ignored a rule because it couldn't be parsed. (Windows 10)
+title: 4953(F) Windows Firewall ignored a rule because it couldn't be parsed. 
 description: Describes security event 4953(F) Windows Firewall ignored a rule because it couldn't be parsed.
 ms.pagetype: security
 ms.prod: windows-client

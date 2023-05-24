@@ -1,5 +1,5 @@
 ---
-title: Planning Certificate-based Authentication (Windows)
+title: Planning Certificate-based Authentication 
 description: Learn how a device unable to join an Active Directory domain can still participate in an isolated domain by using certificate-based authentication.
 ms.prod: windows-client
 ms.topic: conceptual

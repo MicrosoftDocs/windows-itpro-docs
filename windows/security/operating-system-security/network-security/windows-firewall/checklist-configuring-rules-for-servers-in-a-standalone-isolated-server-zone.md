@@ -1,5 +1,5 @@
 ---
-title: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone (Windows)
+title: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone 
 description: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone
 ms.prod: windows-client
 ms.topic: conceptual

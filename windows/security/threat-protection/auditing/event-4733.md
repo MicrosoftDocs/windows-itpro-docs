@@ -1,5 +1,5 @@
 ---
-title: 4733(S) A member was removed from a security-enabled local group. (Windows 10)
+title: 4733(S) A member was removed from a security-enabled local group. 
 description: Describes security event 4733(S) A member was removed from a security-enabled local group.
 ms.pagetype: security
 ms.prod: windows-client

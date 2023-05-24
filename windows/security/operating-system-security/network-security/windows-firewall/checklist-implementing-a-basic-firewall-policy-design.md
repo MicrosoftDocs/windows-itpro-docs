@@ -1,5 +1,5 @@
 ---
-title: Checklist Implementing a Basic Firewall Policy Design (Windows)
+title: Checklist Implementing a Basic Firewall Policy Design 
 description: Follow this parent checklist for implementing a basic firewall policy design to ensure successful implementation.
 ms.prod: windows-client
 ms.topic: conceptual

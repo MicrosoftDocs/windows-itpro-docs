@@ -1,5 +1,5 @@
 ---
-title: Create a Group Policy Object (Windows)
+title: Create a Group Policy Object 
 description: Learn how to use the Active Directory Users and Computers MMC snap-in to create a GPO. You must be a member of the Domain Administrators group.
 ms.prod: windows-client
 ms.collection: 

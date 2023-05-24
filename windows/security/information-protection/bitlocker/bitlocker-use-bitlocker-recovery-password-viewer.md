@@ -1,5 +1,5 @@
 ---
-title: BitLocker Use BitLocker Recovery Password Viewer (Windows 10)
+title: BitLocker Use BitLocker Recovery Password Viewer 
 description: This article for the IT professional describes how to use the BitLocker Recovery Password Viewer.
 ms.reviewer: 
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: Accounts Limit local account use of blank passwords (Windows 10)
+title: Accounts Limit local account use of blank passwords 
 description: Learn best practices, security considerations, and more for the policy setting, Accounts Limit local account use of blank passwords to console logon only.
 ms.assetid: a1bfb58b-1ae8-4de9-832b-aa889a6e64bd
 ms.reviewer: 

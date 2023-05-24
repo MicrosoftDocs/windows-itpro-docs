@@ -1,5 +1,5 @@
 ---
-title: Planning Group Policy Deployment for Your Isolation Zones (Windows)
+title: Planning Group Policy Deployment for Your Isolation Zones 
 description: Learn how to plan a group policy deployment for your isolation zones after you determine the best logical design for your isolation environment.
 ms.prod: windows-client
 ms.topic: conceptual

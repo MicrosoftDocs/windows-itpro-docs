@@ -1,5 +1,5 @@
 ---
-title: Managed installer and ISG technical reference and troubleshooting guide (Windows)
+title: Managed installer and ISG technical reference and troubleshooting guide 
 description: Explains how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

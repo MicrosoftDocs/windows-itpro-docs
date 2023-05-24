@@ -1,5 +1,5 @@
 ---
-title: User Account Control security policy settings (Windows)
+title: User Account Control security policy settings 
 description: You can use security policies to configure how User Account Control works in your organization.
 ms.topic: article
 ms.date: 09/24/2021

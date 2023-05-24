@@ -1,5 +1,5 @@
 ---
-title: Refresh an AppLocker policy (Windows)
+title: Refresh an AppLocker policy 
 description: This topic for IT professionals describes the steps to force an update for an AppLocker policy.
 ms.assetid: 3f24fcbc-3926-46b9-a1a2-dd036edab8a9
 ms.reviewer: 

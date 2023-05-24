@@ -1,5 +1,5 @@
 ---
-title: Checklist Creating Inbound Firewall Rules (Windows)
+title: Checklist Creating Inbound Firewall Rules 
 description: Use these tasks for creating inbound firewall rules in your GPOs for Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

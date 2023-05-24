@@ -1,5 +1,5 @@
 ---
-title: 5136(S) A directory service object was modified. (Windows 10)
+title: 5136(S) A directory service object was modified. 
 description: Describes security event 5136(S) A directory service object was modified.
 ms.pagetype: security
 ms.prod: windows-client

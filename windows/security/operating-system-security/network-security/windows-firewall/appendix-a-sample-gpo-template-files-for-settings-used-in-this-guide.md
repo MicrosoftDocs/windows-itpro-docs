@@ -1,5 +1,5 @@
 ---
-title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows)
+title: Appendix A Sample GPO Template Files for Settings Used in this Guide 
 description: Use sample template files import an XML file containing customized registry preferences into a Group Policy Object (GPO).
 ms.prod: windows-client
 ms.topic: conceptual

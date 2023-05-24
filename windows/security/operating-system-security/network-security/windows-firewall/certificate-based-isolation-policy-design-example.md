@@ -1,5 +1,5 @@
 ---
-title: Certificate-based Isolation Policy Design Example (Windows)
+title: Certificate-based Isolation Policy Design Example 
 description: This example uses a fictitious company to illustrate certificate-based isolation policy design in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual
