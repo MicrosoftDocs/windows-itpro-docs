@@ -1,5 +1,5 @@
 ---
-title: Manage Windows Hello in your organization (Windows)
+title: Manage Windows Hello in your organization 
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.collection: 
   - highpri

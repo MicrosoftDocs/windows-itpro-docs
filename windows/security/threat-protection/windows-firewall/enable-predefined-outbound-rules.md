@@ -1,5 +1,5 @@
 ---
-title: Enable Predefined Outbound Rules (Windows)
+title: Enable Predefined Outbound Rules 
 description: Learn to deploy predefined firewall rules that block outbound network traffic for common network functions in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

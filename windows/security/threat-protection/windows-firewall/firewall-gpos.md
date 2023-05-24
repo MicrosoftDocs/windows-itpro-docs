@@ -1,5 +1,5 @@
 ---
-title: Firewall GPOs (Windows)
+title: Firewall GPOs 
 description: In this example, a Group Policy Object is linked to the domain container because the domain controllers aren't part of the isolated domain.
 ms.prod: windows-client
 ms.topic: conceptual

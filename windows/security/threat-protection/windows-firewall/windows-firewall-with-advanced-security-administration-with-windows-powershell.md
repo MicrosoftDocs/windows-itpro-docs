@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows)
+title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell 
 description: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 ms.prod: windows-client
 ms.topic: conceptual

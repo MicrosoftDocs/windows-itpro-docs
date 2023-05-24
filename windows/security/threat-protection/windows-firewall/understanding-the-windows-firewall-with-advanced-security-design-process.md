@@ -1,5 +1,5 @@
 ---
-title: Understand WFAS Deployment (Windows)
+title: Understand WFAS Deployment 
 description: Resources for helping you understand the Windows Defender Firewall with Advanced Security (WFAS) Design Process
 ms.prod: windows-client
 ms.topic: conceptual

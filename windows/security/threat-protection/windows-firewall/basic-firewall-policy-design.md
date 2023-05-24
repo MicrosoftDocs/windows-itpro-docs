@@ -1,5 +1,5 @@
 ---
-title: Basic Firewall Policy Design (Windows)
+title: Basic Firewall Policy Design 
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
 ms.prod: windows-client
 ms.topic: conceptual

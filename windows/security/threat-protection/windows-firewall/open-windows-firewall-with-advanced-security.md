@@ -1,5 +1,5 @@
 ---
-title: Open Windows Defender Firewall with Advanced Security (Windows)
+title: Open Windows Defender Firewall with Advanced Security 
 description: Learn how to open the Windows Defender Firewall with Advanced Security console. You must be a member of the Administrators group.
 ms.prod: windows-client
 ms.topic: conceptual

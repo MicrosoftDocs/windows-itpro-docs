@@ -1,5 +1,5 @@
 ---
-title: Checklist Configuring Basic Firewall Settings (Windows)
+title: Checklist Configuring Basic Firewall Settings 
 description: Configure Windows Firewall to set inbound and outbound behavior, display notifications, record log files and more of the necessary function for Firewall.
 ms.prod: windows-client
 ms.topic: conceptual

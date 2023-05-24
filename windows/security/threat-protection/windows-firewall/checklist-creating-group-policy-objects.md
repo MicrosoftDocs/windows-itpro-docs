@@ -1,5 +1,5 @@
 ---
-title: Checklist Creating Group Policy Objects (Windows)
+title: Checklist Creating Group Policy Objects 
 description: Learn to deploy firewall settings, IPsec settings, firewall rules, or connection security rules, by using Group Policy in AD DS.
 ms.prod: windows-client
 ms.topic: conceptual

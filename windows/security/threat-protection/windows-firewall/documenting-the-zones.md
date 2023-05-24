@@ -1,5 +1,5 @@
 ---
-title: Documenting the Zones (Windows)
+title: Documenting the Zones 
 description: Learn how to document the zone placement of devices in your design for Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

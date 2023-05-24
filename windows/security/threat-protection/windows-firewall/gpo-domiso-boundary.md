@@ -1,5 +1,5 @@
 ---
-title: GPO\_DOMISO\_Boundary (Windows)
+title: GPO\_DOMISO\_Boundary 
 description: This example GPO supports devices that aren't part of the isolated domain to access specific servers that must be available to those untrusted devices.
 ms.prod: windows-client
 ms.topic: conceptual

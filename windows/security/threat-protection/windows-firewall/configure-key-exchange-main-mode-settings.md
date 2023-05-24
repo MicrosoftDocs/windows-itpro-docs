@@ -1,5 +1,5 @@
 ---
-title: Configure Key Exchange (Main Mode) Settings (Windows)
+title: Configure Key Exchange (Main Mode) Settings 
 description: Learn how to configure the main mode key exchange settings used to secure the IPsec authentication traffic in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

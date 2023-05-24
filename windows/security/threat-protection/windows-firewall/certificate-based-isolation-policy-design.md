@@ -1,5 +1,5 @@
 ---
-title: Certificate-based Isolation Policy Design (Windows)
+title: Certificate-based Isolation Policy Design 
 description: Explore the methodology behind Certificate-based Isolation Policy Design and how it defers from Domain Isolation and Server Isolation Policy Design.
 ms.prod: windows-client
 ms.topic: conceptual

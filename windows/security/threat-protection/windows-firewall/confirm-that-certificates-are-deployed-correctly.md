@@ -1,5 +1,5 @@
 ---
-title: Confirm That Certificates Are Deployed Correctly (Windows)
+title: Confirm That Certificates Are Deployed Correctly 
 description: Learn how to confirm that a Group Policy is being applied as expected and that the certificates are being properly installed on the workstations.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Group Policy Management of Windows Defender Firewall (Windows)
+title: Group Policy Management of Windows Defender Firewall 
 description: Group Policy Management of Windows Defender Firewall with Advanced Security
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior (Windows)
+title: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior 
 description: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: User Account Control (Windows)
+title: User Account Control 
 description: User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop.
 ms.collection: 
   - highpri

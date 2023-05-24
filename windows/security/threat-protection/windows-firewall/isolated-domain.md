@@ -1,5 +1,5 @@
 ---
-title: Isolated Domain (Windows)
+title: Isolated Domain 
 description: Learn about the isolated domain, which is the primary zone for trusted devices, which use connection security and firewall rules to control communication.
 ms.prod: windows-client
 ms.topic: conceptual

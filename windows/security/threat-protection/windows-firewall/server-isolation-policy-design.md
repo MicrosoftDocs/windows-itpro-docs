@@ -1,5 +1,5 @@
 ---
-title: Server Isolation Policy Design (Windows)
+title: Server Isolation Policy Design 
 description: Learn about server isolation policy design, where you assign servers to a zone that allows access only to members of an approved network access group.
 ms.prod: windows-client
 ms.topic: conceptual

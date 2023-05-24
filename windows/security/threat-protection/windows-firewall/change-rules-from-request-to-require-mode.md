@@ -1,5 +1,5 @@
 ---
-title: Change Rules from Request to Require Mode (Windows)
+title: Change Rules from Request to Require Mode 
 description: Learn how to convert a rule from request to require mode and apply the modified GPOs to the client devices.
 ms.prod: windows-client
 ms.topic: conceptual

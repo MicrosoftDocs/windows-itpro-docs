@@ -1,5 +1,5 @@
 ---
-title: Domain Isolation Policy Design (Windows)
+title: Domain Isolation Policy Design 
 description: Learn how to design a domain isolation policy, based on which devices accept only connections from authenticated members of the same isolated domain.
 ms.prod: windows-client
 ms.topic: conceptual

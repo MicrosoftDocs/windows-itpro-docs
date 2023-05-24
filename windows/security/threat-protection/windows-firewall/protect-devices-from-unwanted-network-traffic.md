@@ -1,5 +1,5 @@
 ---
-title: Protect devices from unwanted network traffic (Windows)
+title: Protect devices from unwanted network traffic 
 description: Learn how running a host-based firewall on every device in your organization can help protect against attacks as part of a defense-in-depth security strategy.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Isolating Microsoft Store Apps on Your Network (Windows)
+title: Isolating Microsoft Store Apps on Your Network 
 description: Learn how to customize your firewall configuration to isolate the network access of the new Microsoft Store apps that run on devices added to your network.
 ms.prod: windows-client
 ms.topic: conceptual

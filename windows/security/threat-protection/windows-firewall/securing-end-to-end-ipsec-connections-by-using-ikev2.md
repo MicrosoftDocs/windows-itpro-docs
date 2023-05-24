@@ -1,5 +1,5 @@
 ---
-title: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012 (Windows)
+title: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012 
 description: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Domain Isolation Policy Design Example (Windows)
+title: Domain Isolation Policy Design Example 
 description: This example uses a fictitious company to illustrate domain isolation policy design in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

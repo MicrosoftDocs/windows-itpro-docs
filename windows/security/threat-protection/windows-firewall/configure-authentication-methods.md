@@ -1,5 +1,5 @@
 ---
-title: Configure Authentication Methods (Windows)
+title: Configure Authentication Methods 
 description: Learn how to configure authentication methods for devices in an isolated domain or standalone server zone in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

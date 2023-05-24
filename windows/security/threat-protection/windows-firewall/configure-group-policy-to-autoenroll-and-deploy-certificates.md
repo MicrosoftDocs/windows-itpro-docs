@@ -1,5 +1,5 @@
 ---
-title: Configure Group Policy to Autoenroll and Deploy Certificates (Windows)
+title: Configure Group Policy to Autoenroll and Deploy Certificates 
 description: Learn how to configure Group Policy to automatically enroll client computer certificates and deploy them to the workstations on your network.
 ms.prod: windows-client
 ms.topic: conceptual

@@ -1,5 +1,5 @@
 ---
-title: Server Isolation GPOs (Windows)
+title: Server Isolation GPOs 
 description: Learn about required GPOs for isolation zones and how many server isolation zones you need in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

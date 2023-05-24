@@ -1,5 +1,5 @@
 ---
-title: Restrict Access to Only Specified Users or Devices (Windows)
+title: Restrict Access to Only Specified Users or Devices 
 description: Restrict access to devices and users that are members of domain groups authorized to access that device using Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

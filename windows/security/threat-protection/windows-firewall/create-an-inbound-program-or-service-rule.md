@@ -1,5 +1,5 @@
 ---
-title: Create an Inbound Program or Service Rule (Windows)
+title: Create an Inbound Program or Service Rule 
 description: Learn how to allow inbound traffic to a program or service by using the Group Policy Management MMC snap-in to create firewall rules.
 ms.prod: windows-client
 ms.topic: conceptual

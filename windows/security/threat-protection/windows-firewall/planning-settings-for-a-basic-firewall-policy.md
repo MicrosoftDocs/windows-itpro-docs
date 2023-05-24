@@ -1,5 +1,5 @@
 ---
-title: Planning Settings for a Basic Firewall Policy (Windows)
+title: Planning Settings for a Basic Firewall Policy 
 description: Learn how to design a basic policy for Windows Defender Firewall with Advanced Security, the settings and rules that enforce your requirements on devices.
 ms.prod: windows-client
 ms.topic: conceptual

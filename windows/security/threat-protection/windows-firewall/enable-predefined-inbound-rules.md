@@ -1,5 +1,5 @@
 ---
-title: Enable Predefined Inbound Rules (Windows)
+title: Enable Predefined Inbound Rules 
 description: Learn the rules for Windows Defender Firewall with Advanced Security for common networking roles and functions.
 ms.prod: windows-client
 ms.topic: conceptual

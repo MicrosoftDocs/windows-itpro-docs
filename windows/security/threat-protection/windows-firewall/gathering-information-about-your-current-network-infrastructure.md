@@ -1,5 +1,5 @@
 ---
-title: Gathering Info about Your Network Infrastructure (Windows)
+title: Gathering Info about Your Network Infrastructure 
 description: Learn how to gather info about your network infrastructure so that you can effectively plan for Windows Defender Firewall with Advanced Security deployment.
 ms.prod: windows-client
 ms.topic: conceptual

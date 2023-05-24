@@ -1,5 +1,5 @@
 ---
-title: Group Policy Management of Windows Firewall with Advanced Security (Windows)
+title: Group Policy Management of Windows Firewall with Advanced Security 
 description: Group Policy Management of Windows Firewall with Advanced Security
 ms.prod: windows-client
 ms.collection: 

@@ -1,5 +1,5 @@
 ---
-title: Restrict Server Access to Members of a Group Only (Windows)
+title: Restrict Server Access to Members of a Group Only 
 description: Create a firewall rule to access isolated servers running Windows Server 2008 or later and restrict server access to members of a group.
 ms.prod: windows-client
 ms.topic: conceptual

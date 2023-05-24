@@ -1,5 +1,5 @@
 ---
-title: Gathering Other Relevant Information (Windows)
+title: Gathering Other Relevant Information 
 description: Learn about additional information you may need to gather to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 ms.prod: windows-client
 ms.topic: conceptual

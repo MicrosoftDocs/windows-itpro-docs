@@ -1,5 +1,5 @@
 ---
-title: Create an Inbound Port Rule (Windows)
+title: Create an Inbound Port Rule 
 description: Learn to allow traffic on specific ports by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.collection: 

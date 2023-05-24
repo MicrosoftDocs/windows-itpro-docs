@@ -1,5 +1,5 @@
 ---
-title: Exemption List (Windows)
+title: Exemption List 
 description: Learn about reasons to add devices to an exemption list in Windows Defender Firewall with Advanced Security and the trade-offs of having too many exemptions.
 ms.prod: windows-client
 ms.topic: conceptual

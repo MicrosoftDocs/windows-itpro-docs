@@ -1,5 +1,5 @@
 ---
-title: Planning Network Access Groups (Windows)
+title: Planning Network Access Groups 
 description: Learn how to implement a network access group for users and devices that can access an isolated server in Windows Defender Firewall with Advanced Security.
 ms.prod: windows-client
 ms.topic: conceptual

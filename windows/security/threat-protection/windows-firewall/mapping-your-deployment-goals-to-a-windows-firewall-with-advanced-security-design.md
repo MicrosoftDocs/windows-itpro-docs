@@ -1,5 +1,5 @@
 ---
-title: Mapping your implementation goals to a Windows Firewall with Advanced Security design (Windows)
+title: Mapping your implementation goals to a Windows Firewall with Advanced Security design 
 description: Mapping your implementation goals to a Windows Firewall with Advanced Security design
 ms.prod: windows-client
 ms.topic: conceptual

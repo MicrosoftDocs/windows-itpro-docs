@@ -1,5 +1,5 @@
 ---
-title: Designing a Windows Defender Firewall Strategy (Windows)
+title: Designing a Windows Defender Firewall Strategy 
 description: Answer the question in this article to design an effective Windows Defender Firewall with Advanced Security Strategy.
 ms.prod: windows-client
 ms.topic: conceptual

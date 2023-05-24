@@ -1,5 +1,5 @@
 ---
-title: AppLocker deployment guide (Windows)
+title: AppLocker deployment guide 
 description: This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 ms.assetid: 38632795-be13-46b0-a7af-487a4340bea1
 ms.reviewer: 

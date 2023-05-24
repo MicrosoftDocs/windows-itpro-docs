@@ -1,5 +1,5 @@
 ---
-title: Restrict access to only trusted devices (Windows)
+title: Restrict access to only trusted devices 
 description: Windows Defender Firewall with Advanced Security enables you to isolate devices you trust and restrict access of untrusted devices to trusted devices.
 ms.prod: windows-client
 ms.topic: conceptual
