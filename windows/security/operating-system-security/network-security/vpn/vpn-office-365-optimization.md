@@ -1,17 +1,17 @@
 ---
-title: Optimizing Office 365 traffic for remote workers with the native Windows VPN client
-description: Learn how to optimize Office 365 traffic for remote workers with the native Windows VPN client
+title: Optimize Microsoft 365 traffic for remote workers with the Windows VPN client
+description: Learn how to optimize Microsoft 365 traffic for remote workers with the Windows VPN client
 ms.topic: article
-ms.date: 09/23/2021
+ms.date: 05/24/2023
 ---
-# Optimizing Office 365 traffic for remote workers with the native Windows 10 and Windows 11 VPN client
+# Optimize Microsoft 365 traffic for remote workers with the Windows VPN client
 
-This article describes how to configure the recommendations in the article [Optimize Office 365 connectivity for remote users using VPN split tunneling](/office365/enterprise/office-365-vpn-split-tunnel) for the *native Windows 10 and Windows 11 VPN client*. This guidance enables VPN administrators to optimize Office 365 usage while still ensuring that all other traffic goes over the VPN connection and through existing security gateways and tooling.
+This article describes how to configure the recommendations in the article [VPN split tunneling for Microsoft 365](/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel) for the Windows VPN client. This guidance enables VPN administrators to optimize Microsoft 365 usage while ensuring that all other traffic goes over the VPN connection and through existing security gateways or tooling.
 
-This can be achieved for the native/built-in Windows 10 and Windows 11 VPN client using a _Force Tunneling with Exclusions_ approach. This allows you to define IP-based exclusions *even when using force tunneling* in order to "split" certain traffic to use the physical interface while still forcing all other traffic via the VPN interface. Traffic addressed to specifically defined destinations (like those listed in the Office 365 optimize categories) will therefore follow a much more direct and efficient path, without the need to traverse or "hairpin" via the VPN tunnel and back out of the corporate network. For cloud-services like Office 365, this makes a huge difference in performance and usability for remote users.
+The recommendations can be implemented for the built-in Windows VPN client using a *Force Tunneling with Exclusions* approach, defining IP-based exclusions even when using *force tunneling*. Certain traffic can be *split* to use the physical interface, while still forcing all other traffic via the VPN interface. Traffic addressed to defined destinations (like those listed in the Microsoft 365 optimized categories) follows a much more direct and efficient path, without the need to traverse or *hairpin* via the VPN tunnel and back out of the organization's network. For cloud-services like Microsoft 365, this makes a significant difference in performance and usability for remote users.
 
 > [!NOTE]
-> The term _force tunneling with exclusions_ is sometimes confusingly called "split tunnels" by other vendors and in some online documentation. For Windows 10 and Windows 11 VPN, the term _split tunneling_ is defined differently as described in the article [VPN routing decisions](./vpn-routing.md#split-tunnel-configuration).
+> The term *force tunneling with exclusions* is sometimes confusingly called *split tunnels* by other vendors and in some online documentation. For Windows VPN, the term *split tunneling* is defined differently, as described in the article [VPN routing decisions](./vpn-routing.md#split-tunnel-configuration).
 
 ## Solution Overview
 
@@ -35,9 +35,9 @@ In order to define specific force tunnel exclusions, you then need to add the fo
 </Route>
 ```
 
-Entries defined by the `[IP Addresses or Subnet]` and `[IP Prefix]` references will consequently be added to the routing table as _more specific route entries_ that will use the Internet-connected interface as the default gateway, as opposed to using the VPN interface. You will need to define a unique and separate `<Route></Route>` section for each required exclusion.
+Entries defined by the `[IP Addresses or Subnet]` and `[IP Prefix]` references will consequently be added to the routing table as _more specific route entries_ that will use the Internet-connected interface as the default gateway, as opposed to using the VPN interface. You must define a unique and separate `<Route></Route>` section for each required exclusion.
 
-An example of a correctly formatted Profile XML configuration for force tunnel with exclusions is shown below:
+An example of a correctly formatted Profile XML configuration for force tunnel with exclusions is the following:
 
 ```xml
 <VPNProfile>
@@ -62,11 +62,11 @@ An example of a correctly formatted Profile XML configuration for force tunnel w
 
 ## Solution Deployment
 
-For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges) to ensure that they are excluded from VPN force tunneling.
+For Microsoft 365, it's therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure that they're excluded from VPN force tunneling.
 
 This can be achieved manually by adding the IP addresses defined within the *optimize* category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the correct IP address ranges are always used.
 
-An example of a PowerShell script that can be used to update a force tunnel VPN connection with Office 365 exclusions is provided below.
+An example of a PowerShell script that can be used to update a force tunnel VPN connection with Microsoft 365 exclusions is provided below.
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -79,9 +79,9 @@ An example of a PowerShell script that can be used to update a force tunnel VPN 
 
 <#
 .SYNOPSIS
-    Applies or updates recommended Office 365 optimize IP address exclusions to an existing force tunnel Windows 10 and Windows 11 VPN profile
+    Applies or updates recommended Microsoft 365 optimize IP address exclusions to an existing force tunnel Windows 10 and Windows 11 VPN profile
 .DESCRIPTION
-    Connects to the Office 365 worldwide commercial service instance endpoints to obtain the latest published IP address ranges
+    Connects to the Microsoft 365 worldwide commercial service instance endpoints to obtain the latest published IP address ranges
     Compares the optimized IP addresses with those contained in the supplied VPN Profile (PowerShell or XML file)
     Adds or updates IP addresses as necessary and saves the resultant file with "-NEW" appended to the file name
 .PARAMETERS
@@ -170,7 +170,7 @@ if ( $VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
     }
 }
 
-# Define Office 365 endpoints and service URLs #
+# Define Microsoft 365 endpoints and service URLs #
 $ws = "https://endpoints.office.com"
 $baseServiceUrl = "https://endpoints.office.com"
 
@@ -198,7 +198,7 @@ if ($version[0].latest -gt $lastVersion)
 {
 
     Write-Host
-    Write-Host "A new version of Office 365 worldwide commercial service instance endpoints has been detected!" -ForegroundColor Cyan
+    Write-Host "A new version of Microsoft 365 worldwide commercial service instance endpoints has been detected!" -ForegroundColor Cyan
 
     # Write the new version number to the data file #
     @($clientRequestId, $version[0].latest) | Out-File $datapath
@@ -415,29 +415,13 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
 }
 ```
 
-## Version Support
-
-This solution is supported with the following versions of Windows:
-
-- Windows 11
-- Windows 10 1903/1909 and newer: Included, no action needed
-- Windows 10 1809: At least [KB4490481](https://support.microsoft.com/help/4490481/windows-10-update-kb4490481)
-- Windows 10 1803: At least [KB4493437](https://support.microsoft.com/help/4493437/windows-10-update-kb4493437)
-- Windows 10 1709 and lower: Exclusion routes are not supported
-
-- Windows 10 Enterprise 2019 LTSC: At least [KB4490481](https://support.microsoft.com/help/4490481/windows-10-update-kb4490481)
-- Windows 10 Enterprise 2016 LTSC: Exclusion routes are not supported
-- Windows 10 Enterprise 2015 LTSC: Exclusion routes are not supported
-
-Microsoft strongly recommends that the latest available Windows 10 cumulative update always be applied.
-
 ## Other Considerations
 
 You should also be able to adapt this approach to include necessary exclusions for other cloud-services that can be defined by known/static IP addresses; exclusions required for [Cisco WebEx](https://help.webex.com/WBX000028782/Network-Requirements-for-Webex-Teams-Services) or [Zoom](https://support.zoom.us/hc/en-us/articles/201362683) are good examples.
 
 ## Examples
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial PowerShell script:
+An example of a PowerShell script that can be used to create a force tunnel VPN connection with Microsoft 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial PowerShell script:
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -462,7 +446,7 @@ An example of a PowerShell script that can be used to create a force tunnel VPN 
 #>
 
 <#-- Define Key VPN Profile Parameters --#>
-$ProfileName = 'Contoso VPN with Office 365 Exclusions'
+$ProfileName = 'Contoso VPN with Microsoft 365 Exclusions'
 $ProfileNameEscaped = $ProfileName -replace ' ', '%20'
 
 <#-- Define VPN ProfileXML --#>
@@ -656,7 +640,7 @@ Write-Host "$Message"
 
 ```
 
-An example of an [Intune-ready XML file](./vpn-profile-options.md#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
+An example of an [Intune-ready XML file](./vpn-profile-options.md#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Microsoft 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
 
 >[!NOTE]
 >This XML is formatted for use with Intune and cannot contain any carriage returns or whitespace.
