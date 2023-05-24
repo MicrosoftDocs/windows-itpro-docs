@@ -18,11 +18,12 @@ ms.reviewer:
 > [!IMPORTANT]
 >
 > - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
-> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. The Microsoft Store for Business tab will continue to be available on Hololens devices. Users will no longer be able to see products added to the private store within the Microsoft Store app and will need to go to the [Microsoft Store for Business](https://businessstore.microsoft.com/) website to access the private store. The [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-configuration-service-provider#ApplicationManagement_RequirePrivateStoreOnly) MDM policy and **Only display the private store within the Microsoft Store app** Group policy will block access to the Microsoft Store app entirely.https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 After you've acquired apps, you can review order information and invoices on **Order history**. On this page, you can view invoices, and request refunds.
 
 **Order history** lists orders in chronological order and shows:
+
 - Date ordered
 - Product name
 - Product publisher
@@ -30,6 +31,7 @@ After you've acquired apps, you can review order information and invoices on **O
 - Order status.
 
 Click to expand an order, and the following info is available:
+
 - Who purchased the app
 - Order number
 - Quantity purchased
@@ -51,6 +53,7 @@ For free apps, there isn't really a refund to request -- you're removing the app
 **Refunds for apps that have a price**
 
 There are a few requirements for apps that have a price:
+
 - **Timing** - Refunds are available for the first 30 days after you place your order. For example, if your order is placed on June 1, you can self-refund through June 30.
 - **Available licenses** - You need to have enough available licenses to cover the number of licenses in the order you are refunding. For example, if you purchased 10 copies of an app and you want to request a refund, you must have at least 10 licenses of the app available in your inventory -- those 10 licenses can't be assigned to people in your organization.
 - **Whole order refunds only** - You must refund the complete amount of apps in an order. You can't refund a part of an order. For example, if you purchased 10 copies of an app, but later found you only needed 5 copies, you'll need to request a refund for the 10 apps, and then make a separate order for 5 apps. If you have had multiple orders of the same app, you can refund one order but still keep the rest of the inventory.

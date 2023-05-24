@@ -15,8 +15,9 @@ ms.localizationpriority: medium
 
 # Manage Windows device deployment with Windows Autopilot Deployment
 
-**Applies to**
--   Windows 10
+**Applies to:**
+
+- Windows 10
 
 > [!IMPORTANT]
 >
