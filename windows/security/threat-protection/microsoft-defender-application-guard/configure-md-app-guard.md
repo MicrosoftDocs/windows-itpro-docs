@@ -1,5 +1,5 @@
 ---
-title: Configure the Group Policy settings for Microsoft Defender Application Guard (Windows)
+title: Configure the Group Policy settings for Microsoft Defender Application Guard 
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
 ms.prod: windows-client
 ms.mktglfcycl: manage

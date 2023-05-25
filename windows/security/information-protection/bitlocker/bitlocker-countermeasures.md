@@ -1,5 +1,5 @@
 ---
-title: BitLocker Countermeasures (Windows 10)
+title: BitLocker Countermeasures 
 description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Anti-malware (ELAM) to protect against attacks on the BitLocker encryption key.
 ms.reviewer: 
 ms.prod: windows-client

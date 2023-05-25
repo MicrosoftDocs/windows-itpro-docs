@@ -1,5 +1,5 @@
 ---
-title: 6421(S) A request was made to enable a device. (Windows 10)
+title: 6421(S) A request was made to enable a device. 
 description: Describes security event 6421(S) A request was made to enable a device.
 ms.pagetype: security
 ms.prod: windows-client

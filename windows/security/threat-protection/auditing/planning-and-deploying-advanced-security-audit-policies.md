@@ -1,5 +1,5 @@
 ---
-title: Plan and deploy advanced security audit policies (Windows 10)
+title: Plan and deploy advanced security audit policies 
 description: Learn to deploy an effective security audit policy in a network that includes advanced security audit policies.
 ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
 ms.reviewer: 

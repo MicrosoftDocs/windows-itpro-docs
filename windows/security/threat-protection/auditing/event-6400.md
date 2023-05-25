@@ -1,5 +1,5 @@
 ---
-title: 6400(-) BranchCache Received an incorrectly formatted response while discovering availability of content. (Windows 10)
+title: 6400(-) BranchCache Received an incorrectly formatted response while discovering availability of content. 
 description: Describes security event 6400(-) BranchCache Received an incorrectly formatted response while discovering availability of content.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 4660(S) An object was deleted. (Windows 10)
+title: 4660(S) An object was deleted. 
 description: Describes security event 4660(S) An object was deleted. This event is generated when an object is deleted.
 ms.pagetype: security
 ms.prod: windows-client

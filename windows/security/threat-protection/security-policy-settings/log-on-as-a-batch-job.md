@@ -1,5 +1,5 @@
 ---
-title: Log on as a batch job (Windows 10)
+title: Log on as a batch job 
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a batch job security policy setting.
 ms.assetid: 4eaddb51-0a18-470e-9d3d-5e7cd7970b41
 ms.reviewer: 

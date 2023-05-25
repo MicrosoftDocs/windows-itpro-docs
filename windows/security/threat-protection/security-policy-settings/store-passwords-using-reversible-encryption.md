@@ -1,5 +1,5 @@
 ---
-title: Store passwords using reversible encryption (Windows 10)
+title: Store passwords using reversible encryption 
 description: Describes the best practices, location, values, and security considerations for the Store passwords using reversible encryption security policy setting.
 ms.assetid: 57f958c2-f1e9-48bf-871b-0a9b3299e238
 ms.reviewer: 

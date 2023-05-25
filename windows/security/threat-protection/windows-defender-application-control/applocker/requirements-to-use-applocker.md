@@ -1,5 +1,5 @@
 ---
-title: Requirements to use AppLocker (Windows)
+title: Requirements to use AppLocker 
 description: This topic for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 ms.assetid: dc380535-071e-4794-8f9d-e5d1858156f0
 ms.reviewer: 

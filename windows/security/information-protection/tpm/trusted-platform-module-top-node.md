@@ -1,5 +1,5 @@
 ---
-title: Trusted Platform Module (Windows)
+title: Trusted Platform Module 
 description: This topic for the IT professional provides links to information about the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 ms.prod: windows-client
 author: paolomatarazzo

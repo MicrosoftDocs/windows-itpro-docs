@@ -1,5 +1,5 @@
 ---
-title: 4773(F) A Kerberos service ticket request failed. (Windows 10)
+title: 4773(F) A Kerberos service ticket request failed. 
 description: Describes security event 4773(F) A Kerberos service ticket request failed.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Machine inactivity limit (Windows 10)
+title: Interactive logon Machine inactivity limit 
 description: Describes the best practices, location, values, management, and security considerations for the Interactive logon Machine inactivity limit security policy setting.
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
 ms.reviewer: 
