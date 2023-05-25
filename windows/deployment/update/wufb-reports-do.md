@@ -11,6 +11,7 @@ ms.technology: itpro-updates
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
+
 <!--7715481-->
 ***(Applies to: Windows 11 & Windows 10)***
 
