@@ -91,9 +91,9 @@ A http or https Url to a jpg, jpeg or png image that needs to be downloaded and 
 
 > [!NOTE]
 > This setting is only compatible with Windows 10 Pro if SetEduPolicy is enabled in 
-[SharedPC](sharedpc-csp.md)
+[SharedPC](sharedpc-csp.md).
 >
-> This only applies to Windows 10 Pro and not the other editions listed
+> This only applies to Windows 10 Pro and not the other editions listed.
 <!-- Device-DesktopImageUrl-Description-End -->
 
 <!-- Device-DesktopImageUrl-Editable-Begin -->
