@@ -90,7 +90,7 @@ landingContent:
         - text: Application Guard
           url: threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md
         - text: Windows Sandbox
-          url: threat-protection/windows-sandbox/windows-sandbox-overview.md
+          url: application-security\application-isolation\windows-sandbox\windows-sandbox-overview.md
         - text: Microsoft Defender SmartScreen
           url: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
         - text: S/MIME for Windows
