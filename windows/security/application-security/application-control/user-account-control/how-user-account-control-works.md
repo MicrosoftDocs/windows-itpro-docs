@@ -56,13 +56,11 @@ The default, built-in UAC elevation component for an administrator account in Ad
 
 The credential prompt is presented when a standard user attempts to perform a task that requires a user's administrative access token. Administrators can also be required to provide their credentials by setting the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** policy setting value to **Prompt for credentials**.
 
-The following is an example of the UAC credential prompt.
-
 :::image type="content" source="images/uaccredentialprompt.png" alt-text="UAC credential prompt.":::
 
 ### The consent prompt
 
-The consent prompt is presented when a user attempts to perform a task that requires a user's administrative access token. The following is an example of the UAC consent prompt.
+The consent prompt is presented when a user attempts to perform a task that requires a user's administrative access token.
 
   :::image type="content" source="images/uacconsentpromptadmin.png" alt-text="UAC consent prompt.":::
 
@@ -105,7 +103,7 @@ The following diagram details the UAC architecture.
 
 ![uac architecture.](images/uacarchitecture.gif)
 
-To better understand each component, review the table below:
+To better understand each component, review the following tables:
 
 ### User
 
@@ -135,7 +133,7 @@ To better understand each component, review the table below:
 |<p>Virtualization|<p>Virtualization technology ensures that noncompliant apps don't silently fail to run or fail in a way that the cause can't be determined. UAC also provides file and registry virtualization and logging for applications that write to protected areas.|
 |<p>File system and registry|<p>The per-user file and registry virtualization redirects per-computer registry and file write requests to equivalent per-user locations. Read requests are redirected to the virtualized per-user location first and to the per-computer location second.|
  
-The slider will never turn off UAC completely. If you set it to **Never notify**, it will:
+The slider never turns off UAC completely. If you set it to **Never notify**, it will:
 
 - Keep the UAC service running
 - Cause all elevation request initiated by administrators to be auto-approved without showing a UAC prompt
@@ -165,7 +163,7 @@ Virtualization isn't an option in the following scenarios:
 
 An app manifest is an XML file that describes and identifies the shared and private side-by-side assemblies that an app should bind to at run time. The app manifest includes entries for UAC app compatibility purposes. Administrative apps that include an entry in the app manifest prompt the user for permission to access the user's access token. Although they lack an entry in the app manifest, most administrative app can run without modification by using app compatibility fixes. App compatibility fixes are database entries that enable applications that aren't UAC-compliant to work properly.
 
-All UAC-compliant apps should have a requested execution level added to the application manifest. If the application requires administrative access to the system, then marking the app with a requested execution level of "require administrator" ensures that the system identifies this program as an administrative app and performs the necessary elevation steps. Requested execution levels specify the privileges required for an app.
+All UAC-compliant apps should have a requested execution level added to the application manifest. If the application requires administrative access to the system, marking the app with a requested execution level of *require administrator* ensures that the system identifies this program as an administrative app, and performs the necessary elevation steps. Requested execution levels specify the privileges required for an app.
 
 ### Installer detection technology
 

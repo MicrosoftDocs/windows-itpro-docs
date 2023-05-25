@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier2
 ms.topic: article
-ms.date: 04/19/2017
+ms.date: 05/25/2023
 ---
 
 # User Account Control Group Policy and registry key settings
@@ -189,3 +189,38 @@ The registry keys are found in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Wind
 | EnableLUA | [User Account Control: Run all administrators in Admin Approval Mode](#user-account-control-run-all-administrators-in-admin-approval-mode) | 0 = Disabled<br />1 (Default) = Enabled |
 | PromptOnSecureDesktop | [User Account Control: Switch to the secure desktop when prompting for elevation](#user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation) | 0 = Disabled<br />1 (Default) = Enabled |
 | EnableVirtualization | [User Account Control: Virtualize file and registry write failures to per-user locations](#user-account-control-virtualize-file-and-registry-write-failures-to-per-user-locations) | 0 = Disabled<br />1 (Default) = Enabled |
+
+
+
+
+
+## Configure Shared PC
+
+Shared PC can be configured using the following methods:
+
+- Microsoft Intune/MDM
+- Provisioning package (PPKG)
+- PowerShell script
+
+Follow the instructions below to configure your devices, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="../../../../../images/group-policy.svg"::: **Intune**](#tab/intune)
+
+To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`User Account Control`**:
+
+:::image type="content" source="../../../../../images/group-policy.svg" alt-text="Screenshot that shows the Shared PC policies in the Intune settings catalog." lightbox="../../../../../images/group-policy.svg" border="True":::
+
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
+
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [SharedPC CSP][WIN-3].
+
+#### [:::image type="icon" source="../../../../../images/group-policy.svg"::: **PPKG**](#tab/ppkg)
+
+
+#### [:::image type="icon" source="../../../../../images/group-policy.svg"::: **PowerShell**](#tab/powershell)
+
+To configure devices using the registry
+
+
+
+---
