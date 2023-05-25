@@ -140,7 +140,7 @@ Try these steps:
 
 1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
 2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) setting. For peering to work, download mode should be 1, 2, or 3.
-3. If the download mode is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
+3. If the download mode is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.prod.do.dsp.mp.microsoft.com**.
 
 ### The cloud service doesn't see other peers on the network
 
