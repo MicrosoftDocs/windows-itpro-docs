@@ -45,7 +45,6 @@ sections:
           **For Delivery Optimization metadata**:
 
           - `*.dl.delivery.mp.microsoft.com`
-          - `*.emdl.ws.microsoft.com`
 
           **For the payloads (optional)**:
 
@@ -80,7 +79,6 @@ sections:
 
           Delivery Optimization metadata:
           
-          - `http://emdl.ws.microsoft.com`
           - `http://download.windowsupdate.com`
           - `http://*.dl.delivery.mp.microsoft.com`
 
@@ -108,14 +106,14 @@ sections:
         answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
       
-      - question: What is the recommended configuration for Delivery Optimization used with Zscaler?
+      - question: What is the recommended configuration for Delivery Optimization used with cloud proxies (e.g. Zscaler)?
         answer: |
-          The best configuration with Zscaler is to bypass the [hostnames](waas-delivery-optimization-faq.yml#what-hostnames-should-i-allow-through-my-firewall-to-support-delivery-optimization) for Delivery Optimization services, allowing traffic to go directly to the Internet and not through Zscaler. 
-          For communication between clients and the Delivery Optimization cloud service:
-  
+          The recommended configuration for Delivery Optimization Peer-to-Peer to work most efficiently along with cloud proxy solutions (e.g. Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
+          At a minimum, the following FQDN that is used for communication between clients and the Delivery Optimization service should be allowed with direct Internet access and bypass the cloud proxy service: 
+
               •	*.do.dsp.mp.microsoft.com
 
-            If that's not an option, try using Group Download mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
+          If allowing direct Internet access is not an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
       - question: How do I turn off Delivery Optimization?
         answer: |

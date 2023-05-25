@@ -23,9 +23,11 @@ ms.collection: tier3
 
 Microsoft Connected Cache (MCC) is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 
-For more information about MCC, see [Microsoft Connected Cache overview](waas-microsoft-connected-cache.md).
+For more information about MCC, see [Microsoft Connected Cache overview](waas-microsoft-connected-cache.md) There are two different verions, [Microsoft Connected Cache for Enterprise and Education](mcc-ent-edu-overview.md) and [Microsoft Connected Cache for ISPs](mcc-isp-overview.md).
 
-## New in Delivery Optimization for Windows 10, version 20H2 and Windows 11
+## New in Delivery Optimization for Windows
+
+- Delivery Optimization introduced support for receiver side ledbat (rLedbat) in Windows 22H2.
 
 - New peer selection options: Currently the available options include: 0 = None, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2). If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID)."
 - Local Peer Discovery: a new option for **[Restrict Peer Selection By](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection)** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If Group mode is enabled, Delivery Optimization will connect to locally discovered peers that are also part of the same group, for those devices with the same Group ID).

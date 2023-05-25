@@ -144,6 +144,19 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 | project  GroupID , P2PPercentage , MCCPercentage ,  VolumeBytesFromPeers , VolumeBytesFromMCC ,VolumeByCDN , DeviceCount
 ```
 
+### Delivery Optimization Supported Content Types
+
+There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report.
+
+| Content Category | Content Types Included |
+| --- | --- |
+| Apps | Windows 10 Store files,  Windows 10 Store for Business files, Windows 11 UWP Store apps |
+| Driver Updates | Windows Update Driver updates |
+| Feature and Flighting Updates | Windows Update Feature and Flighting updates, language packs |
+| Office | Microsoft 365 Apps and updates |
+| Other | Windows Defender definition updates, Intune Win32 apps, Edge Browser updates, Configuration Manager Express updates, Dynamic updates, MDM Agent, Xbox Game Pass (PC), Windows Package Manager, MSIX Installer (includes Windows 11 Store Win32 apps, Windows 11 Teams updates) |
+| Quality Updates | Windows Updates Quality updates |
+
 ## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
@@ -170,14 +183,8 @@ A row in UCDOAggregatedStatus represents data summarized at the tenant level (Az
 - **How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?**
 If there's a Connected Cache server at the ISP level, BytesFromCache will filter out any bytes coming the ISP's Connected Cache.
 
-- **What does the 'Other' content type represent?**
-The 'Other' category is a subset of the [complete list](../do/waas-delivery-optimization.md) of supported Delivery Optimization content types including:
-  - Windows Defender definition updates
-  - Intune Win32 apps
-  - Edge Browser updates
-  - Configuration Manager Express updates
-  - Dynamic updates
-  - MDM Agent
-  - Xbox Game Pass (PC)
-  - Windows Package Manager
-  - MSIX
+- **How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?**
+[Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
+
+- **The report represents the last 28 days of data, why do some queries include >= 7 days?**
+The data in the report does represent the last 28 days of data. The query for last 7 days is just to get the data for the latest snapshot from past 7 days. It is possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics ans show the latest snapshot.
