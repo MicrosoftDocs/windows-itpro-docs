@@ -204,23 +204,21 @@ Shared PC can be configured using the following methods:
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="../../../../../images/group-policy.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../../images/group-policy.svg"::: **Intune**](#tab/intune)
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`User Account Control`**:
 
-:::image type="content" source="../../../../../images/group-policy.svg" alt-text="Screenshot that shows the Shared PC policies in the Intune settings catalog." lightbox="../../../../../images/group-policy.svg" border="True":::
+:::image type="content" source="../../../images/group-policy.svg" alt-text="Screenshot that shows the Shared PC policies in the Intune settings catalog." lightbox="../../../../../images/group-policy.svg" border="True":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
 Alternatively, you can configure devices using a [custom policy][MEM-1] with the [SharedPC CSP][WIN-3].
 
-#### [:::image type="icon" source="../../../../../images/group-policy.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../../../images/group-policy.svg"::: **PPKG**](#tab/ppkg)
 
 
-#### [:::image type="icon" source="../../../../../images/group-policy.svg"::: **PowerShell**](#tab/powershell)
+#### [:::image type="icon" source="../../../images/group-policy.svg"::: **PowerShell**](#tab/powershell)
 
 To configure devices using the registry
-
-
 
 ---
