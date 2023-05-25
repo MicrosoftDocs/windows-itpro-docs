@@ -1,23 +1,18 @@
 ---
 title: Windows Sandbox
 description: Windows Sandbox overview
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
 ms.collection:
   - highpri
   - tier2
 ms.topic: article
-ms.date: 6/30/2022
-ms.technology: itpro-security
+ms.date: 05/25/2023
 ---
 
 # Windows Sandbox
 
 Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software installed inside the Windows Sandbox environment remains "sandboxed" and runs separately from the host machine.
 
-A sandbox is temporary. When it's closed, all the software and files and the state are deleted. You get a brand-new instance of the sandbox every time you open the application. Note, however, that as of [Windows 11 Build 22509](https://blogs.windows.com/windows-insider/2021/12/01/announcing-windows-11-insider-preview-build-22509/), your data will persist through a restart initiated from inside the virtualized environment—useful for installing applications that require the OS to reboot.
+A sandbox is temporary. When it's closed, all the software and files and the state are deleted. You get a brand-new instance of the sandbox every time you open the application. Note, however, that as of Windows 11, version 22H2, your data will persist through a restart initiated from inside the virtualized environment—useful for installing applications that require the OS to reboot.
 
 Software and applications installed on the host aren't directly available in the sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
 
@@ -32,7 +27,7 @@ Windows Sandbox has the following properties:
 > [!IMPORTANT]
 > Windows Sandbox enables network connection by default. It can be disabled using the [Windows Sandbox configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
 
-[!INCLUDE [windows-sandbox](../../../../includes/licensing/windows-sandbox.md)]
+[!INCLUDE [windows-sandbox](../../../../../includes/licensing/windows-sandbox.md)]
 
 ## Prerequisites
 
