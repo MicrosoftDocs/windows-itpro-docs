@@ -19,6 +19,9 @@ ms.topic: reference
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
+
+> [!IMPORTANT]
+> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
 <!-- Personalization-Editable-End -->
 
 <!-- Personalization-Tree-Begin -->
@@ -88,12 +91,6 @@ This represents the status of the DesktopImage. 1 - Successfully downloaded or c
 <!-- Device-DesktopImageUrl-Description-Begin -->
 <!-- Description-Source-DDF -->
 A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to be used as the Desktop Image.
-
-> [!NOTE]
-> This setting is only compatible with Windows 10 Pro if SetEduPolicy is enabled in 
-[SharedPC](sharedpc-csp.md).
->
-> This only applies to Windows 10 Pro and not the other editions listed.
 <!-- Device-DesktopImageUrl-Description-End -->
 
 <!-- Device-DesktopImageUrl-Editable-Begin -->
