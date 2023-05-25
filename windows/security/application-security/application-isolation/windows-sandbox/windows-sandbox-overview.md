@@ -32,7 +32,7 @@ Windows Sandbox has the following properties:
 > [!IMPORTANT]
 > Windows Sandbox enables network connection by default. It can be disabled using the [Windows Sandbox configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
 
-[!INCLUDE [windows-sandbox](../../../../includes/licensing/windows-sandbox.md)]
+[!INCLUDE [windows-sandbox](../../../../../includes/licensing/windows-sandbox.md)]
 
 ## Prerequisites
 
