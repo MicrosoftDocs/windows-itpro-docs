@@ -1,13 +1,8 @@
 ---
 title: Windows Sandbox architecture
 description: Windows Sandbox architecture
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
 ms.topic: article
-ms.date: 6/30/2022
-ms.technology: itpro-security
+ms.date: 05/25/2023
 ---
 
 # Windows Sandbox architecture
@@ -19,7 +14,7 @@ Windows Sandbox benefits from new container technology in Windows to achieve a c
 Rather than requiring a separate copy of Windows to boot the sandbox, Dynamic Base Image technology uses the copy of Windows already installed on the host.
 
 Most OS files are immutable and can be freely shared with Windows Sandbox. A small subset of operating system files are mutable and can't be shared, so the sandbox base image contains pristine copies of them. A complete Windows image can be constructed from a combination of the sharable immutable files on the host and the pristine copies of the mutable files. With the help of this scheme, Windows Sandbox has a full Windows installation to boot from without needing to download or store an extra copy of Windows.
- 
+
 Before Windows Sandbox is installed, the dynamic base image package is stored as a compressed 30-MB package. Once it's installed, the dynamic base image occupies about 500 MB of disk space.
 
 ![A chart compares scale of dynamic image of files and links with the host file system.](images/1-dynamic-host.png)
@@ -43,7 +38,7 @@ With ordinary virtual machines, the Microsoft hypervisor controls the scheduling
 ![A chart compares the scheduling in Windows Sandbox versus a traditional VM.](images/4-integrated-kernal.png)
 
 Windows Sandbox employs a unique policy that allows the virtual processors of the Sandbox to be scheduled like host threads. Under this scheme, high-priority tasks on the host can preempt less important work in the Sandbox. This preemption means that the most important work will be prioritized, whether it's on the host or in the container.
- 
+
 ## WDDM GPU virtualization
 
 Hardware accelerated rendering is key to a smooth and responsive user experience, especially for graphics-intensive use cases. Microsoft works with its graphics ecosystem partners to integrate modern graphics virtualization capabilities directly into DirectX and Windows Display Driver Model (WDDM), the driver model used by Windows.
@@ -53,7 +48,7 @@ This feature allows programs running inside the sandbox to compete for GPU resou
 ![A chart illustrates graphics kernel use in Sandbox managed alongside apps on the host.](images/5-wddm-gpu-virtualization.png)
 
 To take advantage of these benefits, a system with a compatible GPU and graphics drivers (WDDM 2.5 or newer) is required. Incompatible systems will render apps in Windows Sandbox with Microsoft's CPU-based rendering technology, Windows Advanced Rasterization Platform (WARP).
- 
+
 ## Battery pass-through
 
 Windows Sandbox is also aware of the host's battery state, which allows it to optimize its power consumption. This functionality is critical for technology that is used on laptops, where battery life is often critical.
