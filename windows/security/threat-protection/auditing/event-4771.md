@@ -1,5 +1,5 @@
 ---
-title: 4771(F) Kerberos pre-authentication failed. (Windows 10)
+title: 4771(F) Kerberos pre-authentication failed. 
 description: Describes security event 4771(F) Kerberos pre-authentication failed. This event is generated when the Key Distribution Center fails to issue a Kerberos TGT.
 ms.pagetype: security
 ms.prod: windows-client

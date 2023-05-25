@@ -1,5 +1,5 @@
 ---
-title: Audit MPSSVC Rule-Level Policy Change (Windows 10)
+title: Audit MPSSVC Rule-Level Policy Change 
 description: Audit MPSSVC Rule-Level Policy Change determines if audit events are generated when policy rules are altered for the Microsoft Protection Service (MPSSVC.exe).
 ms.assetid: 263461b3-c61c-4ec3-9dee-851164845019
 ms.reviewer: 

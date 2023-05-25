@@ -1,5 +1,5 @@
 ---
-title: 4910(-) The group policy settings for the TBS were changed. (Windows 10)
+title: 4910(-) The group policy settings for the TBS were changed. 
 description: Describes security event 4910(-) The group policy settings for the TBS were changed.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Credential Guard protection limits (Windows)
+title: Windows Defender Credential Guard protection limits 
 description: Some ways to store credentials are not protected by Windows Defender Credential Guard in Windows. Learn more with this guide.
 ms.date: 08/17/2017
 ms.topic: article

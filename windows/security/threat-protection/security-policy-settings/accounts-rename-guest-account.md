@@ -1,5 +1,5 @@
 ---
-title: Accounts Rename guest account - security policy setting (Windows 10)
+title: Accounts Rename guest account - security policy setting 
 description: Describes the best practices, location, values, and security considerations for the Accounts Rename guest account security policy setting.
 ms.assetid: 9b8052b4-bbb9-4cc1-bfee-ce25390db707
 ms.reviewer: 

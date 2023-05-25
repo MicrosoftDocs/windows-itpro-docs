@@ -1,5 +1,5 @@
 ---
-title: 4740(S) A user account was locked out. (Windows 10)
+title: 4740(S) A user account was locked out. 
 description: Describes security event 4740(S) A user account was locked out. This event is generated every time a user account is locked out.
 ms.pagetype: security
 ms.prod: windows-client

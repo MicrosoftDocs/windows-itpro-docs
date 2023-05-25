@@ -1,5 +1,5 @@
 ---
-title: Force shutdown from a remote system (Windows 10)
+title: Force shutdown from a remote system 
 description: Describes the best practices, location, values, policy management, and security considerations for the Force shutdown from a remote system security policy setting.
 ms.assetid: 63129243-31ea-42a4-a598-c7064f48a3df
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: 6407(-) 1%. (Windows 10)
+title: 6407(-) 1%. 
 description: Describes security event 6407(-) 1%. This event is a BranchCache event, which is outside the scope of this document.
 ms.pagetype: security
 ms.prod: windows-client

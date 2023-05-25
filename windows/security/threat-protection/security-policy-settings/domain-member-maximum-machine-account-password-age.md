@@ -1,5 +1,5 @@
 ---
-title: Domain member Maximum machine account password age (Windows 10)
+title: Domain member Maximum machine account password age 
 description: Describes the best practices, location, values, and security considerations for the Domain member Maximum machine account password age security policy setting.
 ms.assetid: 0ec6f7c1-4d82-4339-94c0-debb2d1ac109
 ms.reviewer: 

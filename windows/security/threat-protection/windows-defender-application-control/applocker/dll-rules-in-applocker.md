@@ -1,5 +1,5 @@
 ---
-title: DLL rules in AppLocker (Windows)
+title: DLL rules in AppLocker 
 description: This topic describes the file formats and available default rules for the DLL rule collection.
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
 ms.reviewer: 

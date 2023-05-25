@@ -1,5 +1,5 @@
 ---
-title: System settings Optional subsystems (Windows 10)
+title: System settings Optional subsystems 
 description: Describes the best practices, location, values, policy management, and security considerations for the System settings Optional subsystems security policy setting.
 ms.assetid: 5cb6519a-4f84-4b45-8072-e2aa8a72fb78
 ms.reviewer: 

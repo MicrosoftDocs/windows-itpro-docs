@@ -1,5 +1,5 @@
 ---
-title: 4622(S) A security package has been loaded by the Local Security Authority. (Windows 10)
+title: 4622(S) A security package has been loaded by the Local Security Authority. 
 description: Describes security event 4622(S) A security package has been loaded by the Local Security Authority.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 4698(S) A scheduled task was created. (Windows 10)
+title: 4698(S) A scheduled task was created. 
 description: Describes security event 4698(S) A scheduled task was created. This event is generated when a scheduled task is created.
 ms.pagetype: security
 ms.prod: windows-client

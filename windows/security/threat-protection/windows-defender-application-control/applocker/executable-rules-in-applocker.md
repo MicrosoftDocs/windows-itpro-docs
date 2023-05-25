@@ -1,5 +1,5 @@
 ---
-title: Executable rules in AppLocker (Windows)
+title: Executable rules in AppLocker 
 description: This topic describes the file formats and available default rules for the executable rule collection.
 ms.assetid: 65e62f90-6caa-48f8-836a-91f8ac9018ee
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: 4782(S) The password hash of an account was accessed. (Windows 10)
+title: 4782(S) The password hash of an account was accessed. 
 description: Describes security event 4782(S) The password hash of an account was accessed.
 ms.pagetype: security
 ms.prod: windows-client

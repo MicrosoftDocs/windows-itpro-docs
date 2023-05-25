@@ -1,5 +1,5 @@
 ---
-title: Increase scheduling priority (Windows 10)
+title: Increase scheduling priority 
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase scheduling priority security policy setting.
 ms.assetid: fbec5973-d35e-4797-9626-d0d56061527f
 ms.reviewer: 

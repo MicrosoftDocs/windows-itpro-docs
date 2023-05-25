@@ -1,5 +1,5 @@
 ---
-title: Account lockout threshold (Windows 10)
+title: Account lockout threshold 
 description: Describes the best practices, location, values, and security considerations for the Account lockout threshold security policy setting.
 ms.assetid: 4904bb40-a2bd-4fef-a102-260ba8d74e30
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Determine the Enterprise Context of an app running in Windows Information Protection (WIP) (Windows 10)
+title: Determine the Enterprise Context of an app running in Windows Information Protection (WIP) 
 description: Use the Task Manager to determine whether an app is considered work, personal or exempt by Windows Information Protection (WIP).
 ms.prod: windows-client
 ms.localizationpriority: medium

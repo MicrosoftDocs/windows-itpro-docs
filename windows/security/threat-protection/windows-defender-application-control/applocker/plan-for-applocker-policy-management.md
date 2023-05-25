@@ -1,5 +1,5 @@
 ---
-title: Plan for AppLocker policy management (Windows)
+title: Plan for AppLocker policy management 
 description: This topic describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.reviewer: 

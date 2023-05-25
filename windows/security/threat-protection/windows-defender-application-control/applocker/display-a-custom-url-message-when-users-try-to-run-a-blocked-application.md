@@ -1,5 +1,5 @@
 ---
-title: Display a custom URL message when users try to run a blocked app (Windows)
+title: Display a custom URL message when users try to run a blocked app 
 description: This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 ms.assetid: 9a2534a5-d1fa-48a9-93c6-989d4857cf85
 ms.reviewer: 
