@@ -22,8 +22,6 @@ items:
       displayName: VSC
     - name: Enterprise Certificate Pinning
       href: enterprise-certificate-pinning.md
-  - name: Advanced credential protection
-    items:
     - name: Account Lockout Policy 🔗
       href: ../threat-protection/security-policy-settings/account-lockout-policy.md
     - name: Technical support policy for lost or forgotten passwords
@@ -43,7 +41,9 @@ items:
         href: access-control/local-accounts.md
     - name: Security policy settings 🔗
       href: ../threat-protection/security-policy-settings/security-policy-settings.md
-    - name: Windows Defender Credential Guard
-      href: credential-guard/toc.yml
-  - name: Windows Defender Remote Credential Guard
-    href: remote-credential-guard.md
+    - name: Advanced credential protection
+      items:
+      - name: Windows Defender Credential Guard
+        href: credential-guard/toc.yml
+      - name: Windows Defender Remote Credential Guard
+        href: remote-credential-guard.md

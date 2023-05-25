@@ -70,11 +70,13 @@
     },
     "fileMetadata": {
       "author":{
+        "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
         "identity-protection/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms"
       },
       "ms.author":{
+        "application-security/application-control/user-account-control/*.md": "paoloma",
         "identity-protection/**/*.md": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
         "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
