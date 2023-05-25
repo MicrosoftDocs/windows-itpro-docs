@@ -118,10 +118,15 @@ sections:
       - question: How do I turn off Delivery Optimization?
         answer: |
           Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default) it will do so in conjunction with the HTTP downloader capabilities to optimize bandwidth usage. 
-          If you'd like to prevent the peering capabilities of Delivery Optimization, you have two options, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to either '0' or '99'. Both modes prevent any peering for the downloaded content while still using the HTTP downloader.
+          If you'd like to disable peer-to-peer capabilities of Delivery Optimization, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to '0', which will disable peer-to-peer and provide hash checks. [Download mode](waas-delivery-optimization-reference.md#download-mode) set to '99' should only be used when the device is offline and does not have internet access.
+          
+          > [!NOTE]
+          > Disabling Delivery Optimization will not prevent content from downloading to your devices. If you are looking to pause updates you will need to set policies for the relevant components such as Windows Update, Windows Store or Edge browser.  If you are looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
       
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
-          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers don't realize the vast application of Delivery Optimization and how it is used across different apps.
-          Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app don't necessarily stop the download.
-          There are different Delivery Optimization [settings](waas-delivery-optimization-reference.md) that can help manage the amount of bandwidth, time of day, etc. 
+          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often times customers may not realize the vast application of Delivery Optimization and how it is used across different apps. Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app may not necessarily stop the download.
+
+      - question: What Delivery Optimization settings are available?
+        answer: |
+          There are many different Delivery Optimization [settings](waas-delivery-optimization-reference.md) available. These settings allow you to effectively manage how Delivery Optimization is used within your environment with control s on bandwidth, time of day, etc. 
