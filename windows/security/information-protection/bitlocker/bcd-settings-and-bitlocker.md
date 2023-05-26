@@ -1,5 +1,5 @@
 ---
-title: BCD settings and BitLocker (Windows 10)
+title: BCD settings and BitLocker 
 description: This article for IT professionals describes the BCD settings that are used by BitLocker.
 ms.reviewer: 
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 6402(-) BranchCache The message to the hosted cache offering it data is incorrectly formatted. (Windows 10)
+title: 6402(-) BranchCache The message to the hosted cache offering it data is incorrectly formatted. 
 description: Describes security event 6402(-) BranchCache The message to the hosted cache offering it data is incorrectly formatted.
 ms.pagetype: security
 ms.prod: windows-client

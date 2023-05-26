@@ -1,5 +1,5 @@
 ---
-title: 5168(F) SPN check for SMB/SMB2 failed. (Windows 10)
+title: 5168(F) SPN check for SMB/SMB2 failed. 
 description: Describes security event 5168(F) SPN check for SMB/SMB2 failed. This event is generated when an SMB SPN check fails.
 ms.pagetype: security
 ms.prod: windows-client

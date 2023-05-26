@@ -1,5 +1,5 @@
 ---
-title: Windows 10 for Education (Windows 10)
+title: Windows 10 for Education 
 description: Learn how to use Windows 10 in schools.
 ms.topic: how-to
 ms.date: 08/10/2022

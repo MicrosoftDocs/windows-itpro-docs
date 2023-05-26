@@ -1,5 +1,5 @@
 ---
-title: Protecting cluster shared volumes and storage area networks with BitLocker (Windows 10)
+title: Protecting cluster shared volumes and storage area networks with BitLocker 
 description: This article for IT pros describes how to protect CSVs and SANs with BitLocker.
 ms.reviewer: 
 ms.prod: windows-client

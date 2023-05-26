@@ -6,8 +6,8 @@ ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.date: 03/27/2017
+manager: laurawi
+ms.date: 05/23/2023
 ms.topic: reference
 ---
 
@@ -3375,7 +3375,7 @@ The following fields are available:
 - **IsDeviceNetworkMetered**  Indicates whether the device is connected to a metered network.
 - **IsDeviceOobeBlocked**  Indicates whether user approval is required to install updates on the device.
 - **IsDeviceRequireUpdateApproval**  Indicates whether user approval is required to install updates on the device.
-- **IsDeviceSccmManaged**  Indicates whether the device is running the Configuration Manager to keep the operating system and applications up to date.
+- **IsDeviceSccmManaged**  Indicates whether the device is running Configuration Manager to keep the operating system and applications up to date.
 - **IsDeviceUninstallActive**  Indicates whether the OS (operating system) on the device was recently updated.
 - **IsDeviceUpdateNotificationLevel**  Indicates whether the device has a set policy to control update notifications.
 - **IsDeviceUpdateServiceManaged**  Indicates whether the device uses WSUS (Windows Server Update Services).
@@ -4249,7 +4249,7 @@ The following fields are available:
 - **FlightId**  The ID of the Windows Insider build the device received.
 - **InstallDate**  The date the driver was installed.
 - **InstallFlags**  The driver installation flags.
-- **OptionalData**  Metadata specific to Windows Update (WU) associated with the driver (flight IDs, recovery IDs, etc.)
+- **OptionalData**  Metadata specific to Windows Update associated with the driver (flight IDs, recovery IDs, etc.)
 - **RebootRequired**  Indicates whether a reboot is required after the installation.
 - **RollbackPossible**  Indicates whether this driver can be rolled back.
 - **WuTargetedHardwareId**  Indicates that the driver was installed because the device hardware ID was targeted by the Windows Update.
@@ -5024,33 +5024,6 @@ This event indicates that this particular data object represented by the ObjectI
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
-
-
-### Microsoft.Windows.Inventory.General.AppHealthStaticAdd
-
-This event sends details collected for a specific application on the source device. The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **AhaVersion**  The binary version of the App Health Analyzer tool.
-- **ApplicationErrors**  The count of application errors from the event log.
-- **Bitness**  The architecture type of the application (16 Bit or 32 bit or 64 bit).
-- **device_level**  Various JRE/JAVA versions installed on a particular device.
-- **ExtendedProperties**  Attribute used for aggregating all other attributes under this event type.
-- **Jar**  Flag to determine if an app has a Java JAR file dependency.
-- **Jre**  Flag to determine if an app has JRE framework dependency.
-- **Jre_version**  JRE versions an app has declared framework dependency for.
-- **Name**  Name of the application.
-- **NonDPIAware**  Flag to determine if an app is non-DPI aware.
-- **NumBinaries**  Count of all binaries (.sys,.dll,.ini) from application install location.
-- **RequiresAdmin**  Flag to determine if an app requests admin privileges for execution.
-- **RequiresAdminv2**  Additional flag to determine if an app requests admin privileges for execution.
-- **RequiresUIAccess**  Flag to determine if an app is based on UI features for accessibility.
-- **VB6**  Flag to determine if an app is based on VB6 framework.
-- **VB6v2**  Additional flag to determine if an app is based on VB6 framework.
-- **Version**  Version of the application.
-- **VersionCheck**  Flag to determine if an app has a static dependency on OS version.
-- **VersionCheckv2**  Additional flag to determine if an app has a static dependency on OS version.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoAdd

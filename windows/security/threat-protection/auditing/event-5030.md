@@ -1,5 +1,5 @@
 ---
-title: 5030(F) The Windows Firewall Service failed to start. (Windows 10)
+title: 5030(F) The Windows Firewall Service failed to start. 
 description: Describes security event 5030(F) The Windows Firewall Service failed to start.
 ms.pagetype: security
 ms.prod: windows-client

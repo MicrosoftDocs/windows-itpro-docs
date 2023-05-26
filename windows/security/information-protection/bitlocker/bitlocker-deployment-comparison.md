@@ -1,5 +1,5 @@
 ---
-title: BitLocker deployment comparison (Windows 10)
+title: BitLocker deployment comparison 
 description: This article shows the BitLocker deployment comparison chart.
 ms.prod: windows-client
 ms.localizationpriority: medium

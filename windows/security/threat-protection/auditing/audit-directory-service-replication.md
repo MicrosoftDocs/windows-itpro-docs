@@ -1,5 +1,5 @@
 ---
-title: Audit Directory Service Replication (Windows 10)
+title: Audit Directory Service Replication 
 description: Audit Directory Service Replication is a policy setting that decides if audit events are created when replication between two domain controllers begins or ends.
 ms.assetid: b95d296c-7993-4e8d-8064-a8bbe284bd56
 ms.reviewer: 

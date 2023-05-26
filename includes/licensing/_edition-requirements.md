@@ -35,7 +35,7 @@ ms.topic: include
 |**[Measured boot](/windows/compatibility/measured-boot)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)**|❌|Yes|❌|Yes|
-|**[Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management](/deployedge/microsoft-edge-security-windows-defender-application-guard)**|❌|Yes|❌|Yes|
+|**[Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management](/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)**|❌|Yes|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge standalone mode](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)**|❌|Yes|❌|Yes|
 |**Microsoft Defender Application Guard (MDAG) public APIs**|❌|Yes|❌|Yes|

@@ -4,7 +4,7 @@ description: Learn more about the ADMX_LanmanServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_LanmanServer-Begin -->
 # Policy CSP - ADMX_LanmanServer
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_LanmanServer-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- Pol_CipherSuiteOrder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_CipherSuiteOrder-Applicability-End -->
 
 <!-- Pol_CipherSuiteOrder-OmaUri-Begin -->
@@ -44,27 +41,30 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting determines the cipher suites used by the SMB server.
 
-- If you enable this policy setting, cipher suites are prioritized in the order specified.
+If you enable this policy setting, cipher suites are prioritized in the order specified.
 
-- If you enable this policy setting and do not specify at least one supported cipher suite, or if you disable or do not configure this policy setting, the default cipher suite order is used.
+If you enable this policy setting and don't specify at least one supported cipher suite, or if you disable or don't configure this policy setting, the default cipher suite order is used.
 
 SMB 3.11 cipher suites:
 
-AES_128_GCM
-AES_128_CCM
-AES_256_GCM
-AES_256_CCM
+AES_128_GCM.
+
+AES_128_CCM.
+
+AES_256_GCM.
+
+AES_256_CCM.
 
 SMB 3.0 and 3.02 cipher suites:
 
-AES_128_CCM
+AES_128_CCM.
 
 How to modify this setting:
 
 Arrange the desired cipher suites in the edit box, one cipher suite per line, in order from most to least preferred, with the most preferred cipher suite at the top. Remove any cipher suites you don't want to use.
 
 > [!NOTE]
-> When configuring this security setting, changes will not take effect until you restart Windows.
+> When configuring this security setting, changes won't take effect until you restart Windows.
 <!-- Pol_CipherSuiteOrder-Description-End -->
 
 <!-- Pol_CipherSuiteOrder-Editable-Begin -->
@@ -76,13 +76,12 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_CipherSuiteOrder-DFProperties-End -->
 
 <!-- Pol_CipherSuiteOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -108,7 +107,7 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 <!-- Pol_HashPublication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_HashPublication-Applicability-End -->
 
 <!-- Pol_HashPublication-OmaUri-Begin -->
@@ -119,15 +118,15 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 
 <!-- Pol_HashPublication-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether a hash generation service generates hashes, also called content information, for data that is stored in shared folders. This policy setting must be applied to server computers that have the File Services role and both the File Server and the BranchCache for Network Files role services installed.
+This policy setting specifies whether a hash generation service generates hashes, also called content information, for data that's stored in shared folders. This policy setting must be applied to server computers that have the File Services role and both the File Server and the BranchCache for Network Files role services installed.
 
-Policy configuration
+Policy configuration.
 
 Select one of the following:
 
-- Not Configured. With this selection, hash publication settings are not applied to file servers. In the circumstance where file servers are domain members but you do not want to enable BranchCache on all file servers, you can specify Not Configured for this domain Group Policy setting, and then configure local machine policy to enable BranchCache on individual file servers. Because the domain Group Policy setting is not configured, it will not over-write the enabled setting that you use on individual servers where you want to enable BranchCache.
+- Not Configured. With this selection, hash publication settings aren't applied to file servers. In the circumstance where file servers are domain members but you don't want to enable BranchCache on all file servers, you can specify Not Configured for this domain Group Policy setting, and then configure local machine policy to enable BranchCache on individual file servers. Because the domain Group Policy setting isn't configured, it won't over-write the enabled setting that you use on individual servers where you want to enable BranchCache.
 
-- Enabled. With this selection, hash publication is turned on for all file servers where Group Policy is applied. For example, if Hash Publication for BranchCache is enabled in domain Group Policy, hash publication is turned on for all domain member file servers to which the policy is applied. The file servers are then able to create content information for all content that is stored in BranchCache-enabled file shares.
+- Enabled. With this selection, hash publication is turned on for all file servers where Group Policy is applied. For example, if Hash Publication for BranchCache is enabled in domain Group Policy, hash publication is turned on for all domain member file servers to which the policy is applied. The file servers are then able to create content information for all content that's stored in BranchCache-enabled file shares.
 
 - Disabled. With this selection, hash publication is turned off for all file servers where Group Policy is applied.
 
@@ -137,7 +136,7 @@ In circumstances where this policy setting is enabled, you can also select the f
 
 - Allow hash publication only for shared folders on which BranchCache is enabled. With this option, content information is generated only for shared folders on which BranchCache is enabled. If you use this setting, you must enable BranchCache for individual shares in Share and Storage Management on the file server.
 
-- Disallow hash publication on all shared folders. With this option, BranchCache does not generate content information for any shares on the computer and does not send content information to client computers that request content.
+- Disallow hash publication on all shared folders. With this option, BranchCache doesn't generate content information for any shares on the computer and doesn't send content information to client computers that request content.
 <!-- Pol_HashPublication-Description-End -->
 
 <!-- Pol_HashPublication-Editable-Begin -->
@@ -149,13 +148,12 @@ In circumstances where this policy setting is enabled, you can also select the f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_HashPublication-DFProperties-End -->
 
 <!-- Pol_HashPublication-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -181,7 +179,7 @@ In circumstances where this policy setting is enabled, you can also select the f
 <!-- Pol_HashSupportVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_HashSupportVersion-Applicability-End -->
 
 <!-- Pol_HashSupportVersion-OmaUri-Begin -->
@@ -194,13 +192,13 @@ In circumstances where this policy setting is enabled, you can also select the f
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether the BranchCache hash generation service supports version 1 (V1) hashes, version 2 (V2) hashes, or both V1 and V2 hashes. Hashes, also called content information, are created based on the data in shared folders where BranchCache is enabled.
 
-If you specify only one version that is supported, content information for that version is the only type that is generated by BranchCache, and it is the only type of content information that can be retrieved by client computers. For example, if you enable support for V1 hashes, BranchCache generates only V1 hashes and client computers can retrieve only V1 hashes.
+If you specify only one version that's supported, content information for that version is the only type that's generated by BranchCache, and it's the only type of content information that can be retrieved by client computers. For example, if you enable support for V1 hashes, BranchCache generates only V1 hashes and client computers can retrieve only V1 hashes.
 
-Policy configuration
+Policy configuration.
 
 Select one of the following:
 
-- Not Configured. With this selection, BranchCache settings are not applied to client computers by this policy setting. In this circumstance, which is the default, both V1 and V2 hash generation and retrieval are supported.
+- Not Configured. With this selection, BranchCache settings aren't applied to client computers by this policy setting. In this circumstance, which is the default, both V1 and V2 hash generation and retrieval are supported.
 
 - Enabled. With this selection, the policy setting is applied and the hash version(s) that are specified in "Hash version supported" are generated and retrieved.
 
@@ -226,13 +224,12 @@ Hash version supported:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_HashSupportVersion-DFProperties-End -->
 
 <!-- Pol_HashSupportVersion-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -258,7 +255,7 @@ Hash version supported:
 <!-- Pol_HonorCipherSuiteOrder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Pol_HonorCipherSuiteOrder-Applicability-End -->
 
 <!-- Pol_HonorCipherSuiteOrder-OmaUri-Begin -->
@@ -273,10 +270,10 @@ This policy setting determines how the SMB server selects a cipher suite when ne
 
 - If you enable this policy setting, the SMB server will select the cipher suite it most prefers from the list of client-supported cipher suites, ignoring the client's preferences.
 
-- If you disable or do not configure this policy setting, the SMB server will select the cipher suite the client most prefers from the list of server-supported cipher suites.
+- If you disable or don't configure this policy setting, the SMB server will select the cipher suite the client most prefers from the list of server-supported cipher suites.
 
 > [!NOTE]
-> When configuring this security setting, changes will not take effect until you restart Windows.
+> When configuring this security setting, changes won't take effect until you restart Windows.
 <!-- Pol_HonorCipherSuiteOrder-Description-End -->
 
 <!-- Pol_HonorCipherSuiteOrder-Editable-Begin -->
@@ -288,13 +285,12 @@ This policy setting determines how the SMB server selects a cipher suite when ne
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Pol_HonorCipherSuiteOrder-DFProperties-End -->
 
 <!-- Pol_HonorCipherSuiteOrder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

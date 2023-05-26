@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 02/28/2023
+ms.date: 05/19/2023
 ---
 
 # Configure Windows Update for Business
@@ -210,14 +210,14 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 | GPO for Windows 10, version 1607 or later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
 
-## Enable features introduced via servicing that are off by default 
+## Enable features that are behind temporary enterprise feature control
 <!--6544872-->
 
-New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
+New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. 
 
-The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them.
+The features that are behind temporary enterprise feature control will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them. For a list of features that are turned off by default, see [Windows 11 features behind temporary enterprise control](/windows/whats-new/temporary-enterprise-feature-control).
 
-**Policy settings to enable features introduced via servicing that are off by default**
+**Policy settings to enable features that are behind temporary enterprise control**
 
 | Policy | Sets registry key under HKLM\Software |
 | --- | --- |
