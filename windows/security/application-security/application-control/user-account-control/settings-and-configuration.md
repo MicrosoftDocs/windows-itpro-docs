@@ -47,18 +47,18 @@ Assign the policy to a security group that contains as members the devices or us
 
 Alternatively, you can configure devices using a [custom policy][MEM-1] with the [LocalPoliciesSecurityOptions Policy CSP][WIN-1].
 
-| CSP path | Setting name |
-| - | - |
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode` | Run all administrators in Admin Approval Mode |
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode` |Admin Approval Mode for the built-in Administrator account |
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation` | Switch to the secure desktop when prompting for elevation|
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators` | Behavior of the elevation prompt for administrators in Admin Approval Mode|
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers` | Behavior of the elevation prompt for standard users | 
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation` |Detect application installations and prompt for elevation |
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated` | Only elevate executables that are signed and validated |
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations` | Only elevate UIAccess applications that are installed in secure locations |
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation` | Allow UIAccess applications to prompt for elevation without using the secure desktop|
-| `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations` | Virtualize file and registry write failures to per-user locations |
+|Setting|
+| - |
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode`<br>**Policy name**: Run all administrators in Admin Approval Mode |
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode`<br>**Policy name**: Admin Approval Mode for the built-in Administrator account |
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation`<br>**Policy name**: Switch to the secure desktop when prompting for elevation|
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators`<br>**Policy name**: Behavior of the elevation prompt for administrators in Admin Approval Mode|
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers`<br>**Policy name**: Behavior of the elevation prompt for standard users | 
+| **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation`<br>**Policy name**: Detect application installations and prompt for elevation |
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated`<br>**Policy name**: Only elevate executables that are signed and validated |
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations`<br>**Policy name**: Only elevate UIAccess applications that are installed in secure locations |
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation`<br>**Policy name**: Allow UIAccess applications to prompt for elevation without using the secure desktop|
+| **OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations`<br>**Policy name**: Virtualize file and registry write failures to per-user locations |
 
 
 #### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
