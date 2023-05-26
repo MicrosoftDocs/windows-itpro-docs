@@ -4,7 +4,7 @@ description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_ControlPanelDisplay-Begin -->
 # Policy CSP - ADMX_ControlPanelDisplay
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_ControlPanelDisplay-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- CPL_Display_Disable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Display_Disable-Applicability-End -->
 
 <!-- CPL_Display_Disable-OmaUri-Begin -->
@@ -44,7 +41,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Disables the Display Control Panel.
 
-If you enable this setting, the Display Control Panel does not run. When users try to start Display, a message appears explaining that a setting prevents the action.
+If you enable this setting, the Display Control Panel doesn't run. When users try to start Display, a message appears explaining that a setting prevents the action.
 
 Also, see the "Prohibit access to the Control Panel" (User Configuration\Administrative Templates\Control Panel) and "Remove programs on Settings menu" (User Configuration\Administrative Templates\Start Menu & Taskbar) settings.
 <!-- CPL_Display_Disable-Description-End -->
@@ -58,13 +55,12 @@ Also, see the "Prohibit access to the Control Panel" (User Configuration\Adminis
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Display_Disable-DFProperties-End -->
 
 <!-- CPL_Display_Disable-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ Also, see the "Prohibit access to the Control Panel" (User Configuration\Adminis
 <!-- CPL_Display_HideSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Display_HideSettings-Applicability-End -->
 
 <!-- CPL_Display_HideSettings-OmaUri-Begin -->
@@ -116,13 +112,12 @@ This setting prevents users from using Control Panel to add, configure, or chang
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Display_HideSettings-DFProperties-End -->
 
 <!-- CPL_Display_HideSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -149,7 +144,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 <!-- CPL_Personalization_DisableColorSchemeChoice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_DisableColorSchemeChoice-Applicability-End -->
 
 <!-- CPL_Personalization_DisableColorSchemeChoice-OmaUri-Begin -->
@@ -162,9 +157,9 @@ This setting prevents users from using Control Panel to add, configure, or chang
 <!-- Description-Source-ADMX -->
 This setting forces the theme color scheme to be the default color scheme.
 
-- If you enable this setting, a user cannot change the color scheme of the current desktop theme.
+- If you enable this setting, a user can't change the color scheme of the current desktop theme.
 
-- If you disable or do not configure this setting, a user may change the color scheme of the current desktop theme.
+- If you disable or don't configure this setting, a user may change the color scheme of the current desktop theme.
 
 For Windows 7 and later, use the "Prevent changing color and appearance" setting.
 <!-- CPL_Personalization_DisableColorSchemeChoice-Description-End -->
@@ -178,13 +173,12 @@ For Windows 7 and later, use the "Prevent changing color and appearance" setting
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_DisableColorSchemeChoice-DFProperties-End -->
 
 <!-- CPL_Personalization_DisableColorSchemeChoice-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -211,7 +205,7 @@ For Windows 7 and later, use the "Prevent changing color and appearance" setting
 <!-- CPL_Personalization_DisableThemeChange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_DisableThemeChange-Applicability-End -->
 
 <!-- CPL_Personalization_DisableThemeChange-OmaUri-Begin -->
@@ -224,12 +218,12 @@ For Windows 7 and later, use the "Prevent changing color and appearance" setting
 <!-- Description-Source-ADMX -->
 This setting disables the theme gallery in the Personalization Control Panel.
 
-- If you enable this setting, users cannot change or save a theme. Elements of a theme such as the desktop background, color, sounds, and screen saver can still be changed (unless policies are set to turn them off).
+- If you enable this setting, users can't change or save a theme. Elements of a theme such as the desktop background, color, sounds, and screen saver can still be changed (unless policies are set to turn them off).
 
-- If you disable or do not configure this setting, there is no effect.
+- If you disable or don't configure this setting, there is no effect.
 
 > [!NOTE]
-> If you enable this setting but do not specify a theme using the "load a specific theme" setting, the theme defaults to whatever the user previously set or the system default.
+> If you enable this setting but don't specify a theme using the "load a specific theme" setting, the theme defaults to whatever the user previously set or the system default.
 <!-- CPL_Personalization_DisableThemeChange-Description-End -->
 
 <!-- CPL_Personalization_DisableThemeChange-Editable-Begin -->
@@ -241,13 +235,12 @@ This setting disables the theme gallery in the Personalization Control Panel.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_DisableThemeChange-DFProperties-End -->
 
 <!-- CPL_Personalization_DisableThemeChange-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -274,7 +267,7 @@ This setting disables the theme gallery in the Personalization Control Panel.
 <!-- CPL_Personalization_DisableVisualStyle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_DisableVisualStyle-Applicability-End -->
 
 <!-- CPL_Personalization_DisableVisualStyle-OmaUri-Begin -->
@@ -301,13 +294,12 @@ When enabled on Windows XP and later systems, this setting prevents users and ap
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_DisableVisualStyle-DFProperties-End -->
 
 <!-- CPL_Personalization_DisableVisualStyle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -334,7 +326,7 @@ When enabled on Windows XP and later systems, this setting prevents users and ap
 <!-- CPL_Personalization_EnableScreenSaver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_EnableScreenSaver-Applicability-End -->
 
 <!-- CPL_Personalization_EnableScreenSaver-OmaUri-Begin -->
@@ -347,9 +339,9 @@ When enabled on Windows XP and later systems, this setting prevents users and ap
 <!-- Description-Source-ADMX -->
 Enables desktop screen savers.
 
-- If you disable this setting, screen savers do not run. Also, this setting disables the Screen Saver section of the Screen Saver dialog in the Personalization or Display Control Panel. As a result, users cannot change the screen saver options.
+- If you disable this setting, screen savers don't run. Also, this setting disables the Screen Saver section of the Screen Saver dialog in the Personalization or Display Control Panel. As a result, users can't change the screen saver options.
 
-- If you do not configure it, this setting has no effect on the system.
+- If you don't configure it, this setting has no effect on the system.
 
 - If you enable it, a screen saver runs, provided the following two conditions hold: First, a valid screen saver on the client is specified through the "Screen Saver executable name" setting or through Control Panel on the client computer. Second, the screen saver timeout is set to a nonzero value through the setting or Control Panel.
 
@@ -365,13 +357,12 @@ Also, see the "Prevent changing Screen Saver" setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_EnableScreenSaver-DFProperties-End -->
 
 <!-- CPL_Personalization_EnableScreenSaver-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -398,7 +389,7 @@ Also, see the "Prevent changing Screen Saver" setting.
 <!-- CPL_Personalization_ForceDefaultLockScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_ForceDefaultLockScreen-Applicability-End -->
 
 <!-- CPL_Personalization_ForceDefaultLockScreen-OmaUri-Begin -->
@@ -430,13 +421,12 @@ This can be used in conjunction with the "Prevent changing lock screen and logon
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_ForceDefaultLockScreen-DFProperties-End -->
 
 <!-- CPL_Personalization_ForceDefaultLockScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -462,7 +452,7 @@ This can be used in conjunction with the "Prevent changing lock screen and logon
 <!-- CPL_Personalization_LockFontSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_LockFontSize-Applicability-End -->
 
 <!-- CPL_Personalization_LockFontSize-OmaUri-Begin -->
@@ -477,7 +467,7 @@ Prevents users from changing the size of the font in the windows and buttons dis
 
 - If this setting is enabled, the "Font size" drop-down list on the Appearance tab in Display Properties is disabled.
 
-- If you disable or do not configure this setting, a user may change the font size using the "Font size" drop-down list on the Appearance tab.
+- If you disable or don't configure this setting, a user may change the font size using the "Font size" drop-down list on the Appearance tab.
 <!-- CPL_Personalization_LockFontSize-Description-End -->
 
 <!-- CPL_Personalization_LockFontSize-Editable-Begin -->
@@ -489,13 +479,12 @@ Prevents users from changing the size of the font in the windows and buttons dis
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_LockFontSize-DFProperties-End -->
 
 <!-- CPL_Personalization_LockFontSize-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -522,7 +511,7 @@ Prevents users from changing the size of the font in the windows and buttons dis
 <!-- CPL_Personalization_NoChangingLockScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoChangingLockScreen-Applicability-End -->
 
 <!-- CPL_Personalization_NoChangingLockScreen-OmaUri-Begin -->
@@ -537,7 +526,7 @@ Prevents users from changing the background image shown when the machine is lock
 
 By default, users can change the background image shown when the machine is locked or displaying the logon screen.
 
-If you enable this setting, the user will not be able to change their lock screen and logon image, and they will instead see the default image.
+If you enable this setting, the user won't be able to change their lock screen and logon image, and they will instead see the default image.
 <!-- CPL_Personalization_NoChangingLockScreen-Description-End -->
 
 <!-- CPL_Personalization_NoChangingLockScreen-Editable-Begin -->
@@ -549,13 +538,12 @@ If you enable this setting, the user will not be able to change their lock scree
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoChangingLockScreen-DFProperties-End -->
 
 <!-- CPL_Personalization_NoChangingLockScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -582,7 +570,7 @@ If you enable this setting, the user will not be able to change their lock scree
 <!-- CPL_Personalization_NoChangingStartMenuBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoChangingStartMenuBackground-Applicability-End -->
 
 <!-- CPL_Personalization_NoChangingStartMenuBackground-OmaUri-Begin -->
@@ -597,7 +585,7 @@ Prevents users from changing the look of their start menu background, such as it
 
 By default, users can change the look of their start menu background, such as its color or accent.
 
-If you enable this setting, the user will be assigned the default start menu background and colors and will not be allowed to change them.
+If you enable this setting, the user will be assigned the default start menu background and colors and won't be allowed to change them.
 
 If the "Force a specific background and accent color" policy is also set on a supported version of Windows, then those colors take precedence over this policy.
 
@@ -613,13 +601,12 @@ If the "Force a specific Start background" policy is also set on a supported ver
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoChangingStartMenuBackground-DFProperties-End -->
 
 <!-- CPL_Personalization_NoChangingStartMenuBackground-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -646,7 +633,7 @@ If the "Force a specific Start background" policy is also set on a supported ver
 <!-- CPL_Personalization_NoColorAppearanceUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoColorAppearanceUI-Applicability-End -->
 
 <!-- CPL_Personalization_NoColorAppearanceUI-OmaUri-Begin -->
@@ -657,7 +644,7 @@ If the "Force a specific Start background" policy is also set on a supported ver
 
 <!-- CPL_Personalization_NoColorAppearanceUI-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Disables the Color (or Window Color) page in the Personalization Control Panel, or the Color Scheme dialog in the Display Control Panel on systems where the Personalization feature is not available.
+Disables the Color (or Window Color) page in the Personalization Control Panel, or the Color Scheme dialog in the Display Control Panel on systems where the Personalization feature isn't available.
 
 This setting prevents users from using Control Panel to change the window border and taskbar color (on Windows 8), glass color (on Windows Vista and Windows 7), system colors, or color scheme of the desktop and windows.
 
@@ -675,13 +662,12 @@ For systems prior to Windows Vista, this setting hides the Appearance and Themes
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoColorAppearanceUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoColorAppearanceUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -708,7 +694,7 @@ For systems prior to Windows Vista, this setting hides the Appearance and Themes
 <!-- CPL_Personalization_NoDesktopBackgroundUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoDesktopBackgroundUI-Applicability-End -->
 
 <!-- CPL_Personalization_NoDesktopBackgroundUI-OmaUri-Begin -->
@@ -742,13 +728,12 @@ Also, see the "Allow only bitmapped wallpaper" setting.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoDesktopBackgroundUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoDesktopBackgroundUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -775,7 +760,7 @@ Also, see the "Allow only bitmapped wallpaper" setting.
 <!-- CPL_Personalization_NoDesktopIconsUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoDesktopIconsUI-Applicability-End -->
 
 <!-- CPL_Personalization_NoDesktopIconsUI-OmaUri-Begin -->
@@ -804,13 +789,12 @@ For systems prior to Windows Vista, this setting also hides the Desktop tab in t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoDesktopIconsUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoDesktopIconsUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -837,7 +821,7 @@ For systems prior to Windows Vista, this setting also hides the Desktop tab in t
 <!-- CPL_Personalization_NoLockScreen-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoLockScreen-Applicability-End -->
 
 <!-- CPL_Personalization_NoLockScreen-OmaUri-Begin -->
@@ -850,9 +834,9 @@ For systems prior to Windows Vista, this setting also hides the Desktop tab in t
 <!-- Description-Source-ADMX -->
 This policy setting controls whether the lock screen appears for users.
 
-- If you enable this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see their selected tile after locking their PC.
+- If you enable this policy setting, users that aren't required to press CTRL + ALT + DEL before signing in will see their selected tile after locking their PC.
 
-- If you disable or do not configure this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see a lock screen after locking their PC. They must dismiss the lock screen using touch, the keyboard, or by dragging it with the mouse.
+- If you disable or don't configure this policy setting, users that aren't required to press CTRL + ALT + DEL before signing in will see a lock screen after locking their PC. They must dismiss the lock screen using touch, the keyboard, or by dragging it with the mouse.
 <!-- CPL_Personalization_NoLockScreen-Description-End -->
 
 <!-- CPL_Personalization_NoLockScreen-Editable-Begin -->
@@ -864,13 +848,12 @@ This policy setting controls whether the lock screen appears for users.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoLockScreen-DFProperties-End -->
 
 <!-- CPL_Personalization_NoLockScreen-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -897,7 +880,7 @@ This policy setting controls whether the lock screen appears for users.
 <!-- CPL_Personalization_NoMousePointersUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoMousePointersUI-Applicability-End -->
 
 <!-- CPL_Personalization_NoMousePointersUI-OmaUri-Begin -->
@@ -924,13 +907,12 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoMousePointersUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoMousePointersUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -957,7 +939,7 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 <!-- CPL_Personalization_NoScreenSaverUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoScreenSaverUI-Applicability-End -->
 
 <!-- CPL_Personalization_NoScreenSaverUI-OmaUri-Begin -->
@@ -970,7 +952,7 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 <!-- Description-Source-ADMX -->
 Prevents the Screen Saver dialog from opening in the Personalization or Display Control Panel.
 
-This setting prevents users from using Control Panel to add, configure, or change the screen saver on the computer. It does not prevent a screen saver from running.
+This setting prevents users from using Control Panel to add, configure, or change the screen saver on the computer. It doesn't prevent a screen saver from running.
 <!-- CPL_Personalization_NoScreenSaverUI-Description-End -->
 
 <!-- CPL_Personalization_NoScreenSaverUI-Editable-Begin -->
@@ -982,13 +964,12 @@ This setting prevents users from using Control Panel to add, configure, or chang
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoScreenSaverUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoScreenSaverUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1015,7 +996,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 <!-- CPL_Personalization_NoSoundSchemeUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_NoSoundSchemeUI-Applicability-End -->
 
 <!-- CPL_Personalization_NoSoundSchemeUI-OmaUri-Begin -->
@@ -1042,13 +1023,12 @@ If you enable this setting, none of the Sound Scheme settings can be changed by 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_NoSoundSchemeUI-DFProperties-End -->
 
 <!-- CPL_Personalization_NoSoundSchemeUI-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1075,7 +1055,7 @@ If you enable this setting, none of the Sound Scheme settings can be changed by 
 <!-- CPL_Personalization_PersonalColors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_PersonalColors-Applicability-End -->
 
 <!-- CPL_Personalization_PersonalColors-OmaUri-Begin -->
@@ -1090,7 +1070,7 @@ Forces Windows to use the specified colors for the background and accent. The co
 
 By default, users can change the background and accent colors.
 
-If this setting is enabled, the background and accent colors of Windows will be set to the specified colors and users cannot change those colors. This setting will not be applied if the specified colors do not meet a contrast ratio of 2:1 with white text.
+If this setting is enabled, the background and accent colors of Windows will be set to the specified colors and users can't change those colors. This setting won't be applied if the specified colors don't meet a contrast ratio of 2:1 with white text.
 <!-- CPL_Personalization_PersonalColors-Description-End -->
 
 <!-- CPL_Personalization_PersonalColors-Editable-Begin -->
@@ -1102,13 +1082,12 @@ If this setting is enabled, the background and accent colors of Windows will be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_PersonalColors-DFProperties-End -->
 
 <!-- CPL_Personalization_PersonalColors-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1134,7 +1113,7 @@ If this setting is enabled, the background and accent colors of Windows will be 
 <!-- CPL_Personalization_ScreenSaverIsSecure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_ScreenSaverIsSecure-Applicability-End -->
 
 <!-- CPL_Personalization_ScreenSaverIsSecure-OmaUri-Begin -->
@@ -1148,11 +1127,12 @@ If this setting is enabled, the background and accent colors of Windows will be 
 Determines whether screen savers used on the computer are password protected.
 
 - If you enable this setting, all screen savers are password protected.
-- If you disable this setting, password protection cannot be set on any screen saver.
+
+- If you disable this setting, password protection can't be set on any screen saver.
 
 This setting also disables the "Password protected" checkbox on the Screen Saver dialog in the Personalization or Display Control Panel, preventing users from changing the password protection setting.
 
-- If you do not configure this setting, users can choose whether or not to set password protection on each screen saver.
+- If you don't configure this setting, users can choose whether or not to set password protection on each screen saver.
 
 To ensure that a computer will be password protected, enable the "Enable Screen Saver" setting and specify a timeout via the "Screen Saver timeout" setting.
 
@@ -1169,13 +1149,12 @@ To ensure that a computer will be password protected, enable the "Enable Screen 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_ScreenSaverIsSecure-DFProperties-End -->
 
 <!-- CPL_Personalization_ScreenSaverIsSecure-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1202,7 +1181,7 @@ To ensure that a computer will be password protected, enable the "Enable Screen 
 <!-- CPL_Personalization_ScreenSaverTimeOut-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_ScreenSaverTimeOut-Applicability-End -->
 
 <!-- CPL_Personalization_ScreenSaverTimeOut-OmaUri-Begin -->
@@ -1215,7 +1194,7 @@ To ensure that a computer will be password protected, enable the "Enable Screen 
 <!-- Description-Source-ADMX -->
 Specifies how much user idle time must elapse before the screen saver is launched.
 
-When configured, this idle time can be set from a minimum of 1 second to a maximum of 86,400 seconds, or 24 hours. If set to zero, the screen saver will not be started.
+When configured, this idle time can be set from a minimum of 1 second to a maximum of 86,400 seconds, or 24 hours. If set to zero, the screen saver won't be started.
 
 This setting has no effect under any of the following circumstances:
 
@@ -1239,13 +1218,12 @@ When not configured, whatever wait time is set on the client through the Screen 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_ScreenSaverTimeOut-DFProperties-End -->
 
 <!-- CPL_Personalization_ScreenSaverTimeOut-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1271,7 +1249,7 @@ When not configured, whatever wait time is set on the client through the Screen 
 <!-- CPL_Personalization_SetScreenSaver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_SetScreenSaver-Applicability-End -->
 
 <!-- CPL_Personalization_SetScreenSaver-OmaUri-Begin -->
@@ -1286,14 +1264,14 @@ Specifies the screen saver for the user's desktop.
 
 - If you enable this setting, the system displays the specified screen saver on the user's desktop. Also, this setting disables the drop-down list of screen savers in the Screen Saver dialog in the Personalization or Display Control Panel, which prevents users from changing the screen saver.
 
-- If you disable this setting or do not configure it, users can select any screen saver.
+- If you disable this setting or don't configure it, users can select any screen saver.
 
-- If you enable this setting, type the name of the file that contains the screen saver, including the .scr file name extension. If the screen saver file is not in the %Systemroot%\System32 directory, type the fully qualified path to the file.
+- If you enable this setting, type the name of the file that contains the screen saver, including the .scr file name extension. If the screen saver file isn't in the %Systemroot%\System32 directory, type the fully qualified path to the file.
 
-If the specified screen saver is not installed on a computer to which this setting applies, the setting is ignored.
+If the specified screen saver isn't installed on a computer to which this setting applies, the setting is ignored.
 
 > [!NOTE]
-> This setting can be superseded by the "Enable Screen Saver" setting. If the "Enable Screen Saver" setting is disabled, this setting is ignored, and screen savers do not run.
+> This setting can be superseded by the "Enable Screen Saver" setting. If the "Enable Screen Saver" setting is disabled, this setting is ignored, and screen savers don't run.
 <!-- CPL_Personalization_SetScreenSaver-Description-End -->
 
 <!-- CPL_Personalization_SetScreenSaver-Editable-Begin -->
@@ -1305,13 +1283,12 @@ If the specified screen saver is not installed on a computer to which this setti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_SetScreenSaver-DFProperties-End -->
 
 <!-- CPL_Personalization_SetScreenSaver-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1337,7 +1314,7 @@ If the specified screen saver is not installed on a computer to which this setti
 <!-- CPL_Personalization_SetTheme-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_SetTheme-Applicability-End -->
 
 <!-- CPL_Personalization_SetTheme-OmaUri-Begin -->
@@ -1354,9 +1331,9 @@ If the specified screen saver is not installed on a computer to which this setti
 <!-- Description-Source-ADMX -->
 Specifies which theme file is applied to the computer the first time a user logs on.
 
-- If you enable this setting, the theme that you specify will be applied when a new user logs on for the first time. This policy does not prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first logon.
+- If you enable this setting, the theme that you specify will be applied when a new user logs on for the first time. This policy doesn't prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first logon.
 
-- If you disable or do not configure this setting, the default theme will be applied at the first logon.
+- If you disable or don't configure this setting, the default theme will be applied at the first logon.
 <!-- CPL_Personalization_SetTheme-Description-End -->
 
 <!-- CPL_Personalization_SetTheme-Editable-Begin -->
@@ -1368,13 +1345,12 @@ Specifies which theme file is applied to the computer the first time a user logs
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_SetTheme-DFProperties-End -->
 
 <!-- CPL_Personalization_SetTheme-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1400,7 +1376,7 @@ Specifies which theme file is applied to the computer the first time a user logs
 <!-- CPL_Personalization_SetVisualStyle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_SetVisualStyle-Applicability-End -->
 
 <!-- CPL_Personalization_SetVisualStyle-OmaUri-Begin -->
@@ -1417,16 +1393,16 @@ This can be a local computer visual style (aero.msstyles), or a file located on 
 
 - If you enable this setting, the visual style file that you specify will be used. Also, a user may not apply a different visual style when changing themes.
 
-- If you disable or do not configure this setting, the users can select the visual style that they want to use by changing themes (if the Personalization Control Panel is available).
+- If you disable or don't configure this setting, the users can select the visual style that they want to use by changing themes (if the Personalization Control Panel is available).
 
 > [!NOTE]
-> If this setting is enabled and the file is not available at user logon, the default visual style is loaded.
+> If this setting is enabled and the file isn't available at user logon, the default visual style is loaded.
 
 > [!NOTE]
-> When running Windows XP, you can select the Luna visual style by typing %windir%\resources\Themes\Luna\Luna.msstyles
+> When running Windows XP, you can select the Luna visual style by typing %windir%\resources\Themes\Luna\Luna.msstyles.
 
 > [!NOTE]
-> To select the Windows Classic visual style, leave the box blank beside "Path to Visual Style:" and enable this setting. When running Windows 8 or Windows RT, you cannot apply the Windows Classic visual style.
+> To select the Windows Classic visual style, leave the box blank beside "Path to Visual Style:" and enable this setting. When running Windows 8 or Windows RT, you can't apply the Windows Classic visual style.
 <!-- CPL_Personalization_SetVisualStyle-Description-End -->
 
 <!-- CPL_Personalization_SetVisualStyle-Editable-Begin -->
@@ -1438,13 +1414,12 @@ This can be a local computer visual style (aero.msstyles), or a file located on 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_SetVisualStyle-DFProperties-End -->
 
 <!-- CPL_Personalization_SetVisualStyle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1470,7 +1445,7 @@ This can be a local computer visual style (aero.msstyles), or a file located on 
 <!-- CPL_Personalization_StartBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CPL_Personalization_StartBackground-Applicability-End -->
 
 <!-- CPL_Personalization_StartBackground-OmaUri-Begin -->
@@ -1485,7 +1460,7 @@ Forces the Start screen to use one of the available backgrounds, 1 through 20, a
 
 If this setting is set to zero or not configured, then Start uses the default background, and users can change it.
 
-If this setting is set to a nonzero value, then Start uses the specified background, and users cannot change it. If the specified background is not supported, the default background is used.
+If this setting is set to a nonzero value, then Start uses the specified background, and users can't change it. If the specified background isn't supported, the default background is used.
 <!-- CPL_Personalization_StartBackground-Description-End -->
 
 <!-- CPL_Personalization_StartBackground-Editable-Begin -->
@@ -1497,13 +1472,12 @@ If this setting is set to a nonzero value, then Start uses the specified backgro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CPL_Personalization_StartBackground-DFProperties-End -->
 
 <!-- CPL_Personalization_StartBackground-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

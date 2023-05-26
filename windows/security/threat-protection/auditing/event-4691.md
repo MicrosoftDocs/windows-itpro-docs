@@ -1,5 +1,5 @@
 ---
-title: 4691(S) Indirect access to an object was requested. (Windows 10)
+title: 4691(S) Indirect access to an object was requested. 
 description: Describes security event 4691(S) Indirect access to an object was requested.
 ms.pagetype: security
 ms.prod: windows-client

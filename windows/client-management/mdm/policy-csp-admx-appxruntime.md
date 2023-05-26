@@ -4,7 +4,7 @@ description: Learn more about the ADMX_AppXRuntime Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/12/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_AppXRuntime-Begin -->
 # Policy CSP - ADMX_AppXRuntime
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_AppXRuntime-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AppxRuntimeApplicationContentUriRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeApplicationContentUriRules-Applicability-End -->
 
 <!-- AppxRuntimeApplicationContentUriRules-OmaUri-Begin -->
@@ -58,13 +55,12 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AppxRuntimeApplicationContentUriRules-DFProperties-End -->
 
 <!-- AppxRuntimeApplicationContentUriRules-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 <!-- AppxRuntimeBlockFileElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeBlockFileElevation-Applicability-End -->
 
 <!-- AppxRuntimeBlockFileElevation-OmaUri-Begin -->
@@ -108,9 +104,9 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 <!-- Description-Source-ADMX -->
 This policy setting lets you control whether Windows Store apps can open files using the default desktop app for a file type. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a Windows Store app might compromise the system by opening a file in the default desktop app for a file type.
 
-- If you enable this policy setting, Windows Store apps cannot open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
+- If you enable this policy setting, Windows Store apps can't open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
 
-- If you disable or do not configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
+- If you disable or don't configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
 <!-- AppxRuntimeBlockFileElevation-Description-End -->
 
 <!-- AppxRuntimeBlockFileElevation-Editable-Begin -->
@@ -122,13 +118,12 @@ This policy setting lets you control whether Windows Store apps can open files u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AppxRuntimeBlockFileElevation-DFProperties-End -->
 
 <!-- AppxRuntimeBlockFileElevation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ This policy setting lets you control whether Windows Store apps can open files u
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Applicability-End -->
 
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-OmaUri-Begin -->
@@ -168,11 +163,11 @@ This policy setting lets you control whether Windows Store apps can open files u
 <!-- Description-Source-ADMX -->
 This policy setting controls whether Universal Windows apps with Windows Runtime API access directly from web content can be launched.
 
-- If you enable this policy setting, Universal Windows apps which declare Windows Runtime API access in ApplicationContentUriRules section of the manifest cannot be launched; Universal Windows apps which have not declared Windows Runtime API access in the manifest are not affected.
+- If you enable this policy setting, Universal Windows apps which declare Windows Runtime API access in ApplicationContentUriRules section of the manifest can't be launched; Universal Windows apps which haven't declared Windows Runtime API access in the manifest aren't affected.
 
-- If you disable or do not configure this policy setting, all Universal Windows apps can be launched.
+- If you disable or don't configure this policy setting, all Universal Windows apps can be launched.
 
-This policy should not be enabled unless recommended by Microsoft as a security response because it can cause severe app compatibility issues.
+This policy shouldn't be enabled unless recommended by Microsoft as a security response because it can cause severe app compatibility issues.
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Description-End -->
 
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Editable-Begin -->
@@ -184,13 +179,12 @@ This policy should not be enabled unless recommended by Microsoft as a security 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-DFProperties-End -->
 
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ This policy should not be enabled unless recommended by Microsoft as a security 
 <!-- AppxRuntimeBlockProtocolElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeBlockProtocolElevation-Applicability-End -->
 
 <!-- AppxRuntimeBlockProtocolElevation-OmaUri-Begin -->
@@ -234,12 +228,12 @@ This policy should not be enabled unless recommended by Microsoft as a security 
 <!-- Description-Source-ADMX -->
 This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.
 
-- If you enable this policy setting, Windows Store apps cannot open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
+- If you enable this policy setting, Windows Store apps can't open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
 
-- If you disable or do not configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
+- If you disable or don't configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
 
 > [!NOTE]
-> Enabling this policy setting does not block Windows Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
+> Enabling this policy setting doesn't block Windows Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
 <!-- AppxRuntimeBlockProtocolElevation-Description-End -->
 
 <!-- AppxRuntimeBlockProtocolElevation-Editable-Begin -->
@@ -251,13 +245,12 @@ This policy setting lets you control whether Windows Store apps can open URIs us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AppxRuntimeBlockProtocolElevation-DFProperties-End -->
 
 <!-- AppxRuntimeBlockProtocolElevation-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

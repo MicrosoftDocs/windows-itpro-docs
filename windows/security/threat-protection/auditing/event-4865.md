@@ -1,5 +1,5 @@
 ---
-title: 4865(S) A trusted forest information entry was added. (Windows 10)
+title: 4865(S) A trusted forest information entry was added. 
 description: Describes security event 4865(S) A trusted forest information entry was added.
 ms.pagetype: security
 ms.prod: windows-client

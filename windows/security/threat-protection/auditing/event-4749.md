@@ -1,5 +1,5 @@
 ---
-title: 4749(S) A security-disabled global group was created. (Windows 10)
+title: 4749(S) A security-disabled global group was created. 
 description: Describes security event 4749(S) A security-disabled global group was created.
 ms.pagetype: security
 ms.prod: windows-client

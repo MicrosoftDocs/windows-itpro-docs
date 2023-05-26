@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Message title for users attempting to log on (Windows 10)
+title: Interactive logon Message title for users attempting to log on 
 description: Best practices, security considerations, and more for the security policy setting, Interactive logon Message title for users attempting to log on.
 ms.assetid: f2596470-4cc0-4ef1-849c-bef9dc3533c6
 ms.reviewer: 

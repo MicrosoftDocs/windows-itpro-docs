@@ -12,12 +12,11 @@ ms.collection:
   - tier2
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 20H2</a>
 ---
 
 # What's new in Windows 10, version 20H2 for IT Pros
-
-**Applies to**
--   Windows 10, version 20H2
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 20H2, also known as the Windows 10 October 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 2004.
 

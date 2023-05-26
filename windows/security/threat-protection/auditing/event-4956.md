@@ -1,5 +1,5 @@
 ---
-title: 4956(S) Windows Firewall has changed the active profile. (Windows 10)
+title: 4956(S) Windows Firewall has changed the active profile. 
 description: Describes security event 4956(S) Windows Firewall has changed the active profile.
 ms.pagetype: security
 ms.prod: windows-client

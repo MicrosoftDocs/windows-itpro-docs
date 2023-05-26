@@ -1,5 +1,5 @@
 ---
-title: 4624(S) An account was successfully logged on. (Windows 10)
+title: 4624(S) An account was successfully logged on. 
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 6419(S) A request was made to disable a device. (Windows 10)
+title: 6419(S) A request was made to disable a device. 
 description: Describes security event 6419(S) A request was made to disable a device.
 ms.pagetype: security
 ms.prod: windows-client

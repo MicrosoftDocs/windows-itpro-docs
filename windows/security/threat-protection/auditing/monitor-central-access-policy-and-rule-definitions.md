@@ -1,5 +1,5 @@
 ---
-title: Monitor central access policy and rule definitions (Windows 10)
+title: Monitor central access policy and rule definitions 
 description: Learn how to use advanced security auditing options to monitor changes to central access policy and central access rule definitions.
 ms.assetid: 553f98a6-7606-4518-a3c5-347a33105130
 ms.reviewer: 
