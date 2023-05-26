@@ -3,12 +3,10 @@ items:
   items:
   - name: Overview
     href: user-account-control/index.md
-  - name: How User Account Control works
+  - name: How UAC works
     href: user-account-control/how-user-account-control-works.md
-  - name: User Account Control security policy settings
-    href: user-account-control/user-account-control-security-policy-settings.md
-  - name: User Account Control Group Policy and registry key settings
-    href: user-account-control/user-account-control-group-policy-and-registry-key-settings.md
+  - name: Configure UAC
+    href: user-account-control/configure.md
 - name: Windows Defender Application Control and virtualization-based protection of code integrity
   href: ../../threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
 - name: Windows Defender Application Control
