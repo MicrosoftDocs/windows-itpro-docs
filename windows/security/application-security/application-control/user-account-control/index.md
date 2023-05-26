@@ -32,8 +32,5 @@ When an app requires to run with more than standard user rights, UAC allows user
 
 ## Next steps
 
-Learn more about UAC in the following articles:
-
 - [How User Account Control works](how-user-account-control-works.md)
-- [User Account Control policy settings](user-account-control-security-policy-settings.md): you can configure UAC using group policy or MDM
-- [User Account Control Group Policy and registry key settings](user-account-control-group-policy-and-registry-key-settings.md): list of UAC group policy, CSP, and registry key settings that your organization can use to manage UAC
+- [UAC settings and how to configure them](configure.md)

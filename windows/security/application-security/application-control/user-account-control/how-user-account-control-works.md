@@ -40,7 +40,7 @@ When an administrator logs on, two separate access tokens are created for the us
 - It's used to start applications that don't perform administrative tasks (standard user apps)
 - It's used to display the desktop by executing the process *explorer.exe*. Explorer.exe is the parent process from which all other user-initiated processes inherit their access token. As a result, all apps run as a standard user unless a user provides consent or credentials to approve an app to use a full administrative access token
 
-A user that is a member of the Administrators group can sign in, browse the Web, and read e-mail while using a standard user access token. When the administrator needs to perform a task that requires the administrator access token, Windows automatically prompts the user for approval. This prompt is called an *elevation prompt*, and its behavior can be configured via policy or registry. For more information, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).
+A user that is a member of the Administrators group can sign in, browse the Web, and read e-mail while using a standard user access token. When the administrator needs to perform a task that requires the administrator access token, Windows automatically prompts the user for approval. This prompt is called an *elevation prompt*, and its behavior can be configured via policy or registry.
 
 ## The UAC user experience
 
@@ -189,3 +189,7 @@ Before a 32-bit process is created, the following attributes are checked to dete
 
 > [!NOTE]
 > The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).
+
+## Next steps
+
+Learn more about about the [UAC settings and how to configure them](configure.md).
