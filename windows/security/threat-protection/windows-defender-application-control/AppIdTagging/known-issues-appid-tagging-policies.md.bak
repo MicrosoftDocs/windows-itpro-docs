@@ -38,7 +38,6 @@ If the AppId Tagging Policy wasn't built off the WDAC base templates or doesn't 
 If you can't allowlist the Windows signers, or build off the WDAC base templates, it is strongly recommended to add the following rule to your policies to improve the performance:
 
 ![Allow all DLLs in the policy.](../images/appid-DLL-rule.png) 
-
 ![Allow all DLLs in the policy.](../images/appid-DLL-rule-xml.png)
 	
 
