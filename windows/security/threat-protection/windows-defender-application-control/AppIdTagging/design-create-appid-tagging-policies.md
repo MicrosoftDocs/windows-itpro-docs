@@ -38,6 +38,10 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. The example below shows beginning with the [Default Windows Mode](../wdac-wizard-create-base-policy.md#template-base-policies) template and build on top of these rules. 
 
 	![Configuring the policy base and template.](../images/appid-wdac-wizard-1.png)
+	
+	> [!NOTE]
+	> If your AppId Tagging Policy does build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. Otherwise, see the [AppId Tagging Known Issues page](./known-issues-appid-tagging-policies).
+
 
 2. 	Set the following rule-options using the Wizard toggles:
 
